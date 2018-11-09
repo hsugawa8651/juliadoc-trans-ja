@@ -683,6 +683,14 @@ unsigned literal.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Both &lt;x19/&gt;&amp;&amp;&lt;x20/&gt; and &lt;x21/&gt;||&lt;x22/&gt; associate to the right, but &lt;x23/&gt;&amp;&amp;&lt;x24/&gt; has higher precedence than &lt;x25/&gt;||&lt;x26/&gt; does.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230244Z" creationid="hsugawa8651" creationdate="20181109T230244Z">
+        <seg>&lt;x19/&gt;&amp;&amp;&lt;x20/&gt;と&lt;X21/&gt;&lt;x22/&gt;の両方が右側に関連付けられますが、&lt;x23/&gt;&amp;&amp;&lt;x24/&gt;は&lt;x25/&gt;&lt;x26/&gt;よりも優先順位が高くなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Built-in representations of such values are called numeric primitives, while representations of
 integers and floating-point numbers as immediate values in code are known as numeric literals.</seg>
       </tuv>
@@ -1037,6 +1045,14 @@ in-memory representations as objects are numeric primitives.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154704Z" creationid="hsugawa8651" creationdate="20181109T154704Z">
         <seg>たとえば、&lt;x11/&gt;任意の[x,y,z]&lt;x12/&gt;は、任意の値を含むことができる異機種間配列を構成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, a recursive factorial routine could be defined like this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230444Z" creationid="hsugawa8651" creationdate="20181109T230444Z">
+        <seg>例えば、再帰階乗ルーチンは、次のように定義できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1403,6 +1419,14 @@ indices and can be converted to such by &lt;x5/&gt;`to_indices`&lt;x6/&gt;:</seg
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the expression &lt;x1/&gt;a || b&lt;x2/&gt;, the subexpression &lt;x3/&gt;b&lt;x4/&gt; is only evaluated if &lt;x5/&gt;a&lt;x6/&gt; evaluates to &lt;x7/&gt;false&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230237Z" creationid="hsugawa8651" creationdate="20181109T230237Z">
+        <seg>&lt;x1/&gt;a b&lt;x2/&gt;の式において、サブ式&lt;x/&gt;b&lt;x4/&gt;は、&lt;x5/&gt;a&lt;x6/&gt;が&lt;x7/&gt;false&lt;x8/&gt;と評価された場合にのみ評価される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the following list of
 such functions, calls with a &lt;x1/&gt;dims...&lt;x2/&gt; argument can either take a single tuple of dimension sizes
 or a series of dimension sizes passed as a variable number of arguments.</seg>
@@ -1484,6 +1508,15 @@ vector of integers that is returned by &lt;x5/&gt;`findall(B)`&lt;x6/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155245Z" creationid="hsugawa8651" creationdate="20181109T155245Z">
         <seg>&lt;x3/&gt;end&lt;x4/&gt;キーワードなしのインデックス構文は、&lt;x5/&gt;`getindex'&lt;x6/&gt;への呼び出しと同じです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Instead of &lt;x3/&gt;if &lt;x4/&gt; &lt;x5/&gt; end&lt;x6/&gt;, one can write &lt;x7/&gt;&lt;x8/&gt; &amp;&amp; &lt;x9/&gt;&lt;x10/&gt; (which could be
+read as: &lt;x11/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230354Z" creationid="hsugawa8651" creationdate="20181109T230354Z">
+        <seg>&lt;x4/&gt;&lt;x5/&gt;end&lt;x6/&gt;ではなく、&lt;x7/&gt;&lt;x8/&gt;&amp;&amp;&lt;x9/&gt;&lt;x10/&gt;(これは以下のようなものがあります)&lt;x x/&gt;&lt;x10/&gt;( read as:&lt;x11/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1579,6 +1612,14 @@ sizes, such as adding a vector to each column of a matrix.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160040Z" creationid="hsugawa8651" creationdate="20181109T160040Z">
         <seg>異なる要素のバイナリ・バイナリ・バイナリ・オペレーションを実行する場合には、次のようにします。 行列の各列にベクトルを追加するなどのサイズです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It's easy to experiment with this behavior:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230248Z" creationid="hsugawa8651" creationdate="20181109T230248Z">
+        <seg>この動作を試してみると簡単です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2378,6 +2419,16 @@ example requires chaining multiple uses of the ternary operator together:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The reasoning is that &lt;x1/&gt;a &amp;&amp; b&lt;x2/&gt; must be &lt;x3/&gt;false&lt;x4/&gt; if &lt;x5/&gt;a&lt;x6/&gt; is &lt;x7/&gt;false&lt;x8/&gt;, regardless of the value of
+&lt;x9/&gt;b&lt;x10/&gt;, and likewise, the value of &lt;x11/&gt;a || b&lt;x12/&gt; must be true if &lt;x13/&gt;a&lt;x14/&gt; is &lt;x15/&gt;true&lt;x16/&gt;, regardless of the value
+of &lt;x17/&gt;b&lt;x18/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230241Z" creationid="hsugawa8651" creationdate="20181109T230241Z">
+        <seg>&lt;x1/&gt;a&amp;b&lt;x2/&gt;は、&lt;x5/&gt;&lt;x6/&gt;が&lt;x7/&gt;であれば&lt;x4/&gt;でなければならない。 &lt;x9/&gt;b&lt;x10/&gt;は、&lt;x13/&gt;a&lt;x12/&gt;が&lt;x15/&gt;真&lt;x16/&gt;である場合、値に関係なく真でなければなりません。&lt;x13/&gt;&lt;x16/&gt; &lt;x17/&gt;b&lt;x18/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The result
 of &lt;x4/&gt;`view`&lt;x5/&gt; looks the same as the result of &lt;x6/&gt;`getindex`&lt;x7/&gt;, except the
 data is left in place.</seg>
@@ -2512,6 +2563,15 @@ that accomplish this: &lt;x1/&gt;begin&lt;x2/&gt; blocks and &lt;x3/&gt;(;)&lt;x
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These are
+normal functions, which happen to support infix operator syntax, but always evaluate their arguments:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230459Z" creationid="hsugawa8651" creationdate="20181109T230459Z">
+        <seg>これらは 通常の関数は、インフィックス演算子の構文をサポートしていますが、常にその引数を評価します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These map
 directly onto numeric types and operations that are natively supported on modern computers, thus
 allowing Julia to take full advantage of computational resources.</seg>
@@ -2612,6 +2672,14 @@ an integer value.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225343Z" creationid="hsugawa8651" creationdate="20181109T225343Z">
         <seg>この動作は、整数に対して符号なしの16進数のリテラルを使用する場合の観察結果に基づいています。 値は通常、固定された数値バイトシーケンスを表すために使用されます。 整数値。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This behavior is frequently used in Julia to form an alternative to very short &lt;x1/&gt;if&lt;x2/&gt; statements.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230359Z" creationid="hsugawa8651" creationdate="20181109T230359Z">
+        <seg>この動作は、&lt;x2/&gt;ステートメントの場合、非常に短い&lt;x1/&gt;の代替を形成するために、Juliaで頻繁に使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2930,6 +2998,15 @@ differences between operating systems.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155300Z" creationid="hsugawa8651" creationdate="20181109T155300Z">
         <seg>X = getindex(A, I_1, I_2, ..., I_n)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can easily experiment in the same way with the associativity and precedence of various combinations
+of &lt;x1/&gt;&amp;&amp;&lt;x2/&gt; and &lt;x3/&gt;||&lt;x4/&gt; operators.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230405Z" creationid="hsugawa8651" creationdate="20181109T230405Z">
+        <seg>さまざまな組み合わせのアソシエティビティと優先順位によって、同じ方法で簡単に実験することができます。 &lt;x1/&gt;&amp;&amp;&lt;x2/&gt;および&lt;x3/&gt;&lt;x4/&gt;演算子のことです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4001,6 +4078,50 @@ julia&gt; string.(1:3, ".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; function fact(n::Int)
+           n &gt;= 0 || error("n must be non-negative")
+           n == 0 &amp;&amp; return 1
+           n * fact(n-1)
+       end
+fact (generic function with 1 method)
+
+julia&gt; fact(5)
+120
+
+julia&gt; fact(0)
+1
+
+julia&gt; fact(-1)
+ERROR: n must be non-negative
+Stacktrace:
+ [1] error at ./error.jl:33 [inlined]
+ [2] fact(::Int64) at ./none:2
+ [3] top-level scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230447Z" creationid="hsugawa8651" creationdate="20181109T230447Z">
+        <seg>julia&gt; function fact(n::Int)
+           n &gt;= 0 || error("n must be non-negative")
+           n == 0 &amp;&amp; return 1
+           n * fact(n-1)
+       end
+fact (generic function with 1 method)
+
+julia&gt; fact(5)
+120
+
+julia&gt; fact(0)
+1
+
+julia&gt; fact(-1)
+ERROR: n must be non-negative
+Stacktrace:
+ [1] error at ./error.jl:33 [inlined]
+ [2] fact(::Int64) at ./none:2
+ [3] top-level scope</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; function test(x, y)
            if x &lt; y
                println("x is less than y")
@@ -4215,6 +4336,94 @@ julia&gt; t
 
 julia&gt; typeof(ans)
 Int32</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; t(x) = (println(x); true)
+t (generic function with 1 method)
+
+julia&gt; f(x) = (println(x); false)
+f (generic function with 1 method)
+
+julia&gt; t(1) &amp;&amp; t(2)
+1
+2
+true
+
+julia&gt; t(1) &amp;&amp; f(2)
+1
+2
+false
+
+julia&gt; f(1) &amp;&amp; t(2)
+1
+false
+
+julia&gt; f(1) &amp;&amp; f(2)
+1
+false
+
+julia&gt; t(1) || t(2)
+1
+true
+
+julia&gt; t(1) || f(2)
+1
+true
+
+julia&gt; f(1) || t(2)
+1
+2
+true
+
+julia&gt; f(1) || f(2)
+1
+2
+false</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230250Z" creationid="hsugawa8651" creationdate="20181109T230250Z">
+        <seg>julia&gt; t(x) = (println(x); true)
+t (generic function with 1 method)
+
+julia&gt; f(x) = (println(x); false)
+f (generic function with 1 method)
+
+julia&gt; t(1) &amp;&amp; t(2)
+1
+2
+true
+
+julia&gt; t(1) &amp;&amp; f(2)
+1
+2
+false
+
+julia&gt; f(1) &amp;&amp; t(2)
+1
+false
+
+julia&gt; f(1) &amp;&amp; f(2)
+1
+false
+
+julia&gt; t(1) || t(2)
+1
+true
+
+julia&gt; t(1) || f(2)
+1
+true
+
+julia&gt; f(1) || t(2)
+1
+2
+true
+
+julia&gt; f(1) || f(2)
+1
+2
+false</seg>
       </tuv>
     </tu>
     <tu>
