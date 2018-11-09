@@ -23,6 +23,34 @@ value of one or more of its arguments (compare, for example, &lt;x2/&gt;`sort`&l
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(For comparison
+operations like &lt;x5/&gt;&lt;&lt;x6/&gt;, &lt;x7/&gt;only&lt;x8/&gt; the elementwise &lt;x9/&gt;.&lt;&lt;x10/&gt; version is applicable to arrays.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160021Z" creationid="hsugawa8651" creationdate="20181109T160021Z">
+        <seg>(比較のために &lt;x5/&gt;&lt;x6/&gt;のような操作、&lt;x7/&gt;&lt;x6/&gt;&lt;x8/&gt;&lt;x10/&gt;&lt;x8/&gt;&lt;x10/&gt;は、配列に適用されます。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x1/&gt;`CartesianIndex` and arrays of `CartesianIndex` are not compatible with the&lt;x2/&gt;&lt;x3/&gt;`end` keyword to represent the last index of a dimension.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155752Z" creationid="hsugawa8651" creationdate="20181109T155752Z">
+        <seg>&lt;x1/&gt;`CartesianIndex'と「CartesianIndex」の配列は、次元の最後のインデックスを表すために、&lt;x2/&gt;&lt;x3/&gt;'end"キーワードと互換性がない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A logical index
+must be a vector of the same length as the dimension it indexes into, or it
+must be the only index provided and match the size and dimensionality of the
+array it indexes into.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155807Z" creationid="hsugawa8651" creationdate="20181109T155807Z">
+        <seg>論理インデックス は、インデックスを作成する寸法と同じ長さのベクトルである必要があります。また 指定された唯一のインデックスであり にインデックスを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A&lt;x1/&gt; is overwritten with the value &lt;x2/&gt;X[i_1, i_2, ..., i_n]&lt;x3/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155417Z" creationid="hsugawa8651" creationdate="20181109T155417Z">
@@ -44,6 +72,24 @@ us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154952Z" creationid="hsugawa8651" creationdate="20181109T154948Z">
         <seg>&lt;x2/&gt;のために&lt;x1/&gt;の後にコンマで区切られたすべての式は、範囲として解釈されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Also notice the difference between &lt;x1/&gt;max.(a,b)&lt;x2/&gt;, which &lt;x3/&gt;`broadcast`&lt;x4/&gt;s &lt;x5/&gt;`max`&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160027Z" creationid="hsugawa8651" creationdate="20181109T160027Z">
+        <seg>また、&lt;x1/&gt;の最大値(a,b)&lt;x2/&gt;は、&lt;x3/&gt;"ブロードキャスト"&lt;x4/&gt;"max"&lt;x6/&gt;"max'&lt;x6/&gt;の差があることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Also, &lt;x1/&gt;every&lt;x2/&gt; binary operator supports a &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-dot-operators)
+that can be applied to arrays (and combinations of arrays and scalars) in such
+&lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref man-vectorized), e.g. &lt;x9/&gt;z .== sin.(x .* y)&lt;x10/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160010Z" creationid="hsugawa8651" creationdate="20181109T160010Z">
+        <seg>また、&lt;x2/&gt;バイナリ演算子の&lt;x1/&gt;は、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man dot演算子)をサポートします。 は、配列(および配列とスカラーの組み合わせ)に適用することができます。 &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref manベクトル化)、例えば&lt;x9/&gt;z.=sin.(x .* y)&lt;x10/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -135,6 +181,14 @@ from &lt;x1/&gt;`AbstractArray`&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154132Z" creationid="hsugawa8651" creationdate="20181109T154132Z">
         <seg>このように、カスタム配列タイプを継承することによって、カスタム配列タイプを定義することも可能です。 &lt;x1/&gt;'AbstractArray'&lt;x2/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.IndexStyle(::Type{&lt;:MyArray}) = IndexLinear()</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155911Z" creationid="hsugawa8651" creationdate="20181109T155911Z">
+        <seg>Base.IndexStyle(::Type{&lt;:MyArray}) = IndexLinear()</seg>
       </tuv>
     </tu>
     <tu>
@@ -383,11 +437,37 @@ omitted it will default to &lt;x7/&gt;`Float64`&lt;x8/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you don't
+specify this trait, the default value &lt;x5/&gt;IndexCartesian()&lt;x6/&gt; is used.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155920Z" creationid="hsugawa8651" creationdate="20181109T155920Z">
+        <seg>もしあなたが この特性を指定します。デフォルト値&lt;x5/&gt;IndexCartesian()&lt;x6/&gt;は使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you write a custom &lt;x1/&gt;`AbstractArray`&lt;x2/&gt; type, you can specify that it has fast linear indexing using</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155906Z" creationid="hsugawa8651" creationdate="20181109T155906Z">
+        <seg>カスタム&lt;x1/&gt;`AbstractArray'&lt;x2/&gt;タイプを書く場合は、次のようにして、高速な線形インデックスを作成することを指定できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In Julia, all arguments to functions are &lt;x1/&gt;passed by
 sharing&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154159Z" creationid="hsugawa8651" creationdate="20181109T154159Z">
         <seg>Juliaでは、関数に対するすべての引数は、&lt;x1/&gt;に渡されます。 共有&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In contrast with &lt;x1/&gt;for i = 1:length(A)&lt;x2/&gt;, iterating with &lt;x3/&gt;`eachindex`&lt;x4/&gt; provides an efficient way to
+iterate over any array type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155900Z" creationid="hsugawa8651" creationdate="20181109T155900Z">
+        <seg>i=1:長さ(A)&lt;x2/&gt;の&lt;x1/&gt;とは対照的に、&lt;x3/&gt;'の反復は、効率的な方法である。&lt;x3/&gt;"エアチンデス"&lt;x4/&gt;である 任意の配列タイプに対して繰り返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -447,12 +527,31 @@ an array may contain objects of type &lt;x1/&gt;`Any`&lt;x2/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the second
+construct, &lt;x1/&gt;i&lt;x2/&gt; will be an &lt;x3/&gt;Int&lt;x4/&gt; if &lt;x5/&gt;A&lt;x6/&gt; is an array type with fast linear indexing; otherwise,
+it will be a &lt;x7/&gt;CartesianIndex&lt;x8/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155838Z" creationid="hsugawa8651" creationdate="20181109T155838Z">
+        <seg>2番目の 構成,&lt;x1/&gt;i&lt;x2/&gt;は&lt;x5/&gt;Int&lt;x6/&gt;であり,&lt;x5/&gt;A&lt;x6/&gt;が高速線形インデックスを用いたアレイ型である場合は,それ以外の値である。 &lt;x7/&gt;CartesianIndex&lt;x8/&gt;になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Indexed assignment
 syntax without the &lt;x6/&gt;end&lt;x7/&gt; keyword is equivalent to a call to
 &lt;x8/&gt;`setindex!`&lt;x9/&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155447Z" creationid="hsugawa8651" creationdate="20181109T155447Z">
         <seg>インデックス付きの割り当て &lt;x6/&gt;end&lt;x7/&gt;キーワードがない構文は、次のような呼び出しに相当します。 &lt;x8/&gt;`setindex!`&lt;x9/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Indexing by a boolean vector &lt;x3/&gt;B&lt;x4/&gt; is effectively the same as indexing by the
+vector of integers that is returned by &lt;x5/&gt;`findall(B)`&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155758Z" creationid="hsugawa8651" creationdate="20181109T155758Z">
+        <seg>ブール型ベクトル&lt;x3/&gt;B&lt;x4/&gt;によるインデックス作成は、実効的には、以下のようにして行われる。 &lt;x5/&gt;`findall(B)`&lt;x6/&gt;によって返される整数のベクトル。</seg>
       </tuv>
     </tu>
     <tu>
@@ -469,6 +568,15 @@ syntax without the &lt;x6/&gt;end&lt;x7/&gt; keyword is equivalent to a call to
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155706Z" creationid="hsugawa8651" creationdate="20181109T155706Z">
         <seg>また、&lt;x8/&gt;:&lt;x9/&gt;と組み合わせることもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is generally more efficient to use boolean arrays as
+indices directly instead of first calling &lt;x13/&gt;`findall`&lt;x14/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155813Z" creationid="hsugawa8651" creationdate="20181109T155813Z">
+        <seg>一般的に、boolean配列を使用する方が効率的です。 は、最初の呼び出し&lt;x13/&gt;'findall&lt;x14/&gt;を呼び出すのではなく、直接インデックスを作成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -572,6 +680,24 @@ also accept a first input &lt;x3/&gt;T&lt;x4/&gt;, which is the element type of 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that comparisons such as &lt;x1/&gt;==&lt;x2/&gt; operate on whole arrays, giving a single boolean
+answer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160005Z" creationid="hsugawa8651" creationdate="20181109T160005Z">
+        <seg>&lt;x1/&gt;==&lt;x2/&gt;のような比較は、すべての配列に対して動作し、単一のブール値を与えることに注意してください。 答えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Often referred to as logical indexing or indexing with a logical mask, indexing
+by a boolean array selects elements at the indices where its values are &lt;x1/&gt;true&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155734Z" creationid="hsugawa8651" creationdate="20181109T155734Z">
+        <seg>論理的なインデックス作成と呼ばれる論理的インデックス作成またはインデックス作成と呼ばれることが多いインデックス作成 ブール型配列では、値が&lt;x1/&gt;真&lt;x2/&gt;であるインデックスで要素を選択します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Otherwise,
 &lt;x5/&gt;X&lt;x6/&gt; is an array with the same number of dimensions as the sum of the dimensionalities of all the
 indices.</seg>
@@ -625,6 +751,16 @@ on implementing a custom array type.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Similarly, indexing
+by a &lt;x7/&gt;N&lt;x8/&gt;-dimensional boolean array is effectively the same as indexing by the
+vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11/&gt;true&lt;x12/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155802Z" creationid="hsugawa8651" creationdate="20181109T155802Z">
+        <seg>同様にインデックス化 &lt;x7/&gt;N&lt;x8/&gt;-次元ブール配列は、実効的には、以下のように、インデックス化と同じである。 &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;sのベクトルであり、その値は&lt;x11/&gt;真&lt;x12/&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The array library is implemented
 almost completely in Julia itself, and derives its performance from the compiler, just like any
 other code written in Julia.</seg>
@@ -639,6 +775,14 @@ other code written in Julia.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154623Z" creationid="hsugawa8651" creationdate="20181109T154623Z">
         <seg>連結関数は、頻繁に使用されるため、特別な構文が使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first construct is used when you need the value, but not index, of each element.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155843Z" creationid="hsugawa8651" creationdate="20181109T155843Z">
+        <seg>最初の構成は、各要素の値が必要な場合に使用されますが、インデックスでは使用されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -691,6 +835,14 @@ of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, e
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154815Z" creationid="hsugawa8651" creationdate="20181109T154815Z">
         <seg>結果は、次元の連結である次元を持つN次元の密配列です。 変数範囲&lt;x13/&gt;rx&lt;x14/&gt;、&lt;x15/&gt;ry&lt;x16/&gt;など、各&lt;x17/&gt;F(x,y,...)&lt;x18/&gt;評価はスカラーを返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The same relationship holds for &lt;x8/&gt;min.(a,b)&lt;x9/&gt; and &lt;x10/&gt;minimum(a)&lt;x11/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160036Z" creationid="hsugawa8651" creationdate="20181109T160036Z">
+        <seg>&lt;x8/&gt;min(a,b)&lt;x9/&gt;と&lt;x10/&gt;最小(a)&lt;x11/&gt;と同じ関係が成り立つ。</seg>
       </tuv>
     </tu>
     <tu>
@@ -776,10 +928,27 @@ an array and storing them in advance (see &lt;x1/&gt;Iteration&lt;x2/&gt;).</seg
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To enable convenient vectorization of mathematical and other operations,
+Julia &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized) &lt;x4/&gt;f.(args...)&lt;x5/&gt;, e.g. &lt;x6/&gt;sin.(x)&lt;x7/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155933Z" creationid="hsugawa8651" creationdate="20181109T155933Z">
+        <seg>数学的およびその他の操作を便利にベクトル化することを可能にするために Julia&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man vectorized)&lt;x4/&gt;f.(args.…)&lt;x6/&gt;sin.(x)&lt;x7/&gt;sin.(x)&lt;x7/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To see the various ways we can pass dimensions to these constructors, consider the following examples:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154524Z" creationid="hsugawa8651" creationdate="20181109T154524Z">
         <seg>これらのコンストラクタに次元を渡すことができるさまざまな方法を確認するには、次の例を考慮してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Use dot operators like &lt;x3/&gt;.==&lt;x4/&gt; for elementwise comparisons.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160015Z" creationid="hsugawa8651" creationdate="20181109T160015Z">
+        <seg>&lt;x3/&gt;.==&lt;x4/&gt;のようなドット演算子を、要素的比較のために使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -956,6 +1125,15 @@ are needed to separate the generator from subsequent arguments:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>a&lt;x1/&gt; and &lt;x2/&gt;b&lt;x3/&gt;, and &lt;x4/&gt;`maximum(a)`&lt;x5/&gt;, which finds the largest value within
+&lt;x6/&gt;a&lt;x7/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160031Z" creationid="hsugawa8651" creationdate="20181109T160031Z">
+        <seg>&lt;x1/&gt;および&lt;x2/&gt;b&lt;x3/&gt;、&lt;x4/&gt;の最大値(a)&lt;x5/&gt;は、最も大きい値を示します。 &lt;x6/&gt;a&lt;x7/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>an &lt;x1/&gt;Array&lt;x2/&gt; of all ones</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154358Z" creationid="hsugawa8651" creationdate="20181109T154358Z">
@@ -1056,6 +1234,58 @@ are needed to separate the generator from subsequent arguments:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154507Z" creationid="hsugawa8651" creationdate="20181109T154507Z">
         <seg>&lt;x3/&gt;x&lt;x4/&gt;の値を持つ配列&lt;x1/&gt;A&lt;x2/&gt;を配列に埋め込みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>for a in A
+    &lt;x1/&gt; Do something with the element a
+end
+
+for i in eachindex(A)
+    &lt;x2/&gt; Do something with i and/or A[i]
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155827Z" creationid="hsugawa8651" creationdate="20181109T155827Z">
+        <seg>for a in A
+    &lt;x1/&gt; Do something with the element a
+end
+
+for i in eachindex(A)
+    &lt;x2/&gt; Do something with i and/or A[i]
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; A = rand(4,3);
+
+julia&gt; B = view(A, 1:3, 2:3);
+
+julia&gt; for i in eachindex(B)
+           @show i
+       end
+i = CartesianIndex(1, 1)
+i = CartesianIndex(2, 1)
+i = CartesianIndex(3, 1)
+i = CartesianIndex(1, 2)
+i = CartesianIndex(2, 2)
+i = CartesianIndex(3, 2)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155847Z" creationid="hsugawa8651" creationdate="20181109T155847Z">
+        <seg>julia&gt; A = rand(4,3);
+
+julia&gt; B = view(A, 1:3, 2:3);
+
+julia&gt; for i in eachindex(B)
+           @show i
+       end
+i = CartesianIndex(1, 1)
+i = CartesianIndex(2, 1)
+i = CartesianIndex(3, 1)
+i = CartesianIndex(1, 2)
+i = CartesianIndex(2, 2)
+i = CartesianIndex(3, 2)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1600,6 +1830,64 @@ julia&gt; x[1, [2 3; 4 1]]
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; x = reshape(1:16, 4, 4)
+4×4 reshape(::UnitRange{Int64}, 4, 4) with eltype Int64:
+ 1  5   9  13
+ 2  6  10  14
+ 3  7  11  15
+ 4  8  12  16
+
+julia&gt; x[[false, true, true, false], :]
+2×4 Array{Int64,2}:
+ 2  6  10  14
+ 3  7  11  15
+
+julia&gt; mask = map(ispow2, x)
+4×4 Array{Bool,2}:
+  true  false  false  false
+  true  false  false  false
+ false  false  false  false
+  true   true  false   true
+
+julia&gt; x[mask]
+5-element Array{Int64,1}:
+  1
+  2
+  4
+  8
+ 16</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155818Z" creationid="hsugawa8651" creationdate="20181109T155818Z">
+        <seg>julia&gt; x = reshape(1:16, 4, 4)
+4×4 reshape(::UnitRange{Int64}, 4, 4) with eltype Int64:
+ 1  5   9  13
+ 2  6  10  14
+ 3  7  11  15
+ 4  8  12  16
+
+julia&gt; x[[false, true, true, false], :]
+2×4 Array{Int64,2}:
+ 2  6  10  14
+ 3  7  11  15
+
+julia&gt; mask = map(ispow2, x)
+4×4 Array{Bool,2}:
+  true  false  false  false
+  true  false  false  false
+ false  false  false  false
+  true   true  false   true
+
+julia&gt; x[mask]
+5-element Array{Int64,1}:
+  1
+  2
+  4
+  8
+ 16</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; zeros(Int8, 2, 3)
 2×3 Array{Int8,2}:
  0  0  0
@@ -1702,6 +1990,14 @@ julia&gt; zeros((2, 3))
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154231Z" creationid="hsugawa8651" creationdate="20181109T154231Z">
         <seg>&lt;x1/&gt;A&lt;x2/&gt;に含まれるエレメントのタイプ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>warning</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155745Z" creationid="hsugawa8651" creationdate="20181109T155745Z">
+        <seg>warning</seg>
       </tuv>
     </tu>
     <tu>
