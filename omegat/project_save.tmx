@@ -15,10 +15,26 @@ value of one or more of its arguments (compare, for example, &lt;x2/&gt;`sort`&l
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>All comma-separated expressions after &lt;x1/&gt;for&lt;x2/&gt; are interpreted as ranges.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154952Z" creationid="hsugawa8651" creationdate="20181109T154948Z">
+        <seg>&lt;x2/&gt;のために&lt;x1/&gt;の後にコンマで区切られたすべての式は、範囲として解釈されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An array is a collection of objects stored in a multi-dimensional grid.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154138Z" creationid="hsugawa8651" creationdate="20181109T154138Z">
         <seg>配列は、多次元グリッドに格納されたオブジェクトの集合です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An array with a specific element type can be constructed using the syntax &lt;x1/&gt;T[A, B, C, ...]&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154659Z" creationid="hsugawa8651" creationdate="20181109T154659Z">
+        <seg>特定の要素タイプを持つ配列は、構文&lt;x1/&gt;T[A,B,C,…]&lt;x2/&gt;を使用して構築することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -57,6 +73,33 @@ they don't intend to change.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Comprehension syntax is
+similar to set construction notation in mathematics:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154804Z" creationid="hsugawa8651" creationdate="20181109T154804Z">
+        <seg>理解の構文は次のとおりです。 数学で設定された建設表記法に似ています</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comprehensions can also be written without the enclosing square brackets, producing an object
+known as a generator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154923Z" creationid="hsugawa8651" creationdate="20181109T154923Z">
+        <seg>包含は、囲まれた角括弧なしで書くこともでき、オブジェクトを生成することができます。 ジェネレータと呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Concatenation syntax can similarly be prefixed with a type to specify the element type of the
+result.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154707Z" creationid="hsugawa8651" creationdate="20181109T154707Z">
+        <seg>連結構文には、同じように 結果。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Consider these examples of this syntax:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154648Z" creationid="hsugawa8651" creationdate="20181109T154648Z">
@@ -73,6 +116,14 @@ they don't intend to change.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Float32[ 0.25*x[i-1] + 0.5*x[i] + 0.25*x[i+1] for i=2:length(x)-1 ]</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154902Z" creationid="hsugawa8651" creationdate="20181109T154902Z">
+        <seg>Float32[ 0.25*x[i-1] + 0.5*x[i] + 0.25*x[i+1] for i=2:length(x)-1 ]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example,</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154603Z" creationid="hsugawa8651" creationdate="20181109T154603Z">
@@ -81,10 +132,36 @@ they don't intend to change.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, &lt;x11/&gt;Any[x, y, z]&lt;x12/&gt; constructs a heterogeneous array that can contain any values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154704Z" creationid="hsugawa8651" creationdate="20181109T154704Z">
+        <seg>たとえば、&lt;x11/&gt;任意の[x,y,z]&lt;x12/&gt;は、任意の値を含むことができる異機種間配列を構成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, the following expression
+sums a series without allocating memory:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154929Z" creationid="hsugawa8651" creationdate="20181109T154929Z">
+        <seg>たとえば、次の式を指定します。 は、メモリを割り当てずに連続した値を加算します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, to match C prototypes of the form:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153924Z" creationid="hsugawa8651" creationdate="20181109T153924Z">
         <seg>たとえば、フォームのCプロトタイプに一致させるには、次のようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, we could have requested
+the result in single precision by writing:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154859Z" creationid="hsugawa8651" creationdate="20181109T154859Z">
+        <seg>例えば 以下のように記述することによって、単精度での結果が得られます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -141,6 +218,15 @@ be written in a vectorized style for performance.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154152Z" creationid="hsugawa8651" creationdate="20181109T154152Z">
         <seg>一般的に、多くの他の技術計算言語とは異なり、Juliaはプログラムを期待していない。 パフォーマンスを向上させるためにベクトル化されたスタイルで記述する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In order to control the
+type explicitly, a type can be prepended to the comprehension.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154854Z" creationid="hsugawa8651" creationdate="20181109T154854Z">
+        <seg>制御を行うには 明示的にタイプを認識することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -278,11 +364,38 @@ other code written in Julia.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following example computes a weighted average of the current element and its left and right
+neighbor along a 1-d grid.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154818Z" creationid="hsugawa8651" creationdate="20181109T154818Z">
+        <seg>次の例では、現在の要素とその左側と右側の加重平均を計算しています。 1Dグリッドに沿った隣接。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The macro &lt;x1/&gt;`@cfunction`&lt;x2/&gt; generates the C-compatible function pointer for a call to a
 Julia function.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153931Z" creationid="hsugawa8651" creationdate="20181109T153931Z">
         <seg>マクロ&lt;x1/&gt;`@cfunction`&lt;x2/&gt;は、コールのC互換関数ポインタを生成します。 Julia関数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The meaning of this form is that &lt;x1/&gt;F(x,y,...)&lt;x2/&gt; is evaluated with the variables &lt;x3/&gt;x&lt;x4/&gt;, &lt;x5/&gt;y&lt;x6/&gt;, etc. taking
+on each value in their given list of values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154807Z" creationid="hsugawa8651" creationdate="20181109T154807Z">
+        <seg>この形式の意味は、&lt;x1/&gt;F(x,y,...)&lt;x2/&gt;は、変数&lt;x3/&gt;x4&lt;x4/&gt;、&lt;x5/&gt;y&lt;x6/&gt;の変数を用いて評価されることである。 指定された値リストの各値です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The result is an N-d dense array with dimensions that are the concatenation of the dimensions
+of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, etc. and each &lt;x17/&gt;F(x,y,...)&lt;x18/&gt; evaluation returns a scalar.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154815Z" creationid="hsugawa8651" creationdate="20181109T154815Z">
+        <seg>結果は、次元の連結である次元を持つN次元の密配列です。 変数範囲&lt;x13/&gt;rx&lt;x14/&gt;、&lt;x15/&gt;ry&lt;x16/&gt;など、各&lt;x17/&gt;F(x,y,...)&lt;x18/&gt;評価はスカラーを返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -303,6 +416,16 @@ Julia function.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This
+will construct a 1-d array with element type &lt;x3/&gt;T&lt;x4/&gt;, initialized to contain elements &lt;x5/&gt;A&lt;x6/&gt;, &lt;x7/&gt;B&lt;x8/&gt;, &lt;x9/&gt;C&lt;x10/&gt;,
+etc.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154702Z" creationid="hsugawa8651" creationdate="20181109T154702Z">
+        <seg>これ 要素タイプ&lt;x3/&gt;T&lt;x4/&gt;を持つ1dアレイを構築し、要素&lt;x5/&gt;A&lt;x6/&gt;、&lt;x7/&gt;B&lt;x8/&gt;、&lt;x9/&gt;C&lt;x10/&gt;を含むように初期化します。 その他。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This means that
 &lt;x1/&gt;@cfunction&lt;x2/&gt;-generated pointers cannot be used in calls where WINAPI expects &lt;x3/&gt;stdcall&lt;x4/&gt;</seg>
       </tuv>
@@ -312,10 +435,37 @@ Julia function.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This object can be iterated to produce values on demand, instead of allocating
+an array and storing them in advance (see &lt;x1/&gt;Iteration&lt;x2/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154927Z" creationid="hsugawa8651" creationdate="20181109T154927Z">
+        <seg>このオブジェクトを反復して、必要に応じて必要に応じて値を生成することができます。 配列とそれを事前に格納する(&lt;x1/&gt;Iteration&lt;x2/&gt;を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To see the various ways we can pass dimensions to these constructors, consider the following examples:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154524Z" creationid="hsugawa8651" creationdate="20181109T154524Z">
         <seg>これらのコンストラクタに次元を渡すことができるさまざまな方法を確認するには、次の例を考慮してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Values can be specified as any iterable object, but
+will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;x10/&gt;, or explicit arrays of values like &lt;x11/&gt;[1.2, 3.4, 5.7]&lt;x12/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154811Z" creationid="hsugawa8651" creationdate="20181109T154811Z">
+        <seg>値は、任意のオブジェクトとして指定することができますが は一般的に&lt;x7/&gt;1:n&lt;x8/&gt;または&lt;x9/&gt;2:(n-1)&lt;x10/&gt;、または&lt;x11/&gt;[1.2、3.4、5.7]&lt;x12/&gt;のような明示的な値の配列である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When writing a generator expression with multiple dimensions inside an argument list, parentheses
+are needed to separate the generator from subsequent arguments:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154940Z" creationid="hsugawa8651" creationdate="20181109T154940Z">
+        <seg>引数リスト内に複数の次元を持つジェネレータ式を記述する場合は、括弧を使用します。 ジェネレータを次の引数から分離する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -536,6 +686,82 @@ Julia function.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; [[1 2] [3 4]]
+1×4 Array{Int64,2}:
+ 1  2  3  4
+
+julia&gt; Int8[[1 2] [3 4]]
+1×4 Array{Int8,2}:
+ 1  2  3  4</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154710Z" creationid="hsugawa8651" creationdate="20181109T154710Z">
+        <seg>julia&gt; [[1 2] [3 4]]
+1×4 Array{Int64,2}:
+ 1  2  3  4
+
+julia&gt; Int8[[1 2] [3 4]]
+1×4 Array{Int8,2}:
+ 1  2  3  4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; [[1; 2]; [3, 4]]
+4-element Array{Int64,1}:
+ 1
+ 2
+ 3
+ 4
+
+julia&gt; [[1 2] [3 4]]
+1×4 Array{Int64,2}:
+ 1  2  3  4
+
+julia&gt; [[1 2]; [3 4]]
+2×2 Array{Int64,2}:
+ 1  2
+ 3  4</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154652Z" creationid="hsugawa8651" creationdate="20181109T154652Z">
+        <seg>julia&gt; [[1; 2]; [3, 4]]
+4-element Array{Int64,1}:
+ 1
+ 2
+ 3
+ 4
+
+julia&gt; [[1 2] [3 4]]
+1×4 Array{Int64,2}:
+ 1  2  3  4
+
+julia&gt; [[1 2]; [3 4]]
+2×2 Array{Int64,2}:
+ 1  2
+ 3  4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; map(tuple, 1/(i+j) for i=1:2, j=1:2, [1:4;])
+ERROR: syntax: invalid iteration specification</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154944Z" creationid="hsugawa8651" creationdate="20181109T154944Z">
+        <seg>julia&gt; map(tuple, 1/(i+j) for i=1:2, j=1:2, [1:4;])
+ERROR: syntax: invalid iteration specification</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; sum(1/n^2 for n=1:1000)
+1.6439345666815615</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154933Z" creationid="hsugawa8651" creationdate="20181109T154933Z">
+        <seg>julia&gt; sum(1/n^2 for n=1:1000)
+1.6439345666815615</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; vcat([1, 2], 3)
 3-element Array{Int64,1}:
  1
@@ -556,6 +782,50 @@ julia&gt; hcat([1 2], 3)
 julia&gt; hcat([1 2], 3)
 1×3 Array{Int64,2}:
  1  2  3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; x = rand(8)
+8-element Array{Float64,1}:
+ 0.843025
+ 0.869052
+ 0.365105
+ 0.699456
+ 0.977653
+ 0.994953
+ 0.41084
+ 0.809411
+
+julia&gt; [ 0.25*x[i-1] + 0.5*x[i] + 0.25*x[i+1] for i=2:length(x)-1 ]
+6-element Array{Float64,1}:
+ 0.736559
+ 0.57468
+ 0.685417
+ 0.912429
+ 0.8446
+ 0.656511</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154823Z" creationid="hsugawa8651" creationdate="20181109T154823Z">
+        <seg>julia&gt; x = rand(8)
+8-element Array{Float64,1}:
+ 0.843025
+ 0.869052
+ 0.365105
+ 0.699456
+ 0.977653
+ 0.994953
+ 0.41084
+ 0.809411
+
+julia&gt; [ 0.25*x[i-1] + 0.5*x[i] + 0.25*x[i+1] for i=2:length(x)-1 ]
+6-element Array{Float64,1}:
+ 0.736559
+ 0.57468
+ 0.685417
+ 0.912429
+ 0.8446
+ 0.656511</seg>
       </tuv>
     </tu>
     <tu>
