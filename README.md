@@ -1,3 +1,3 @@
 # juliadoc-trans-ja
 
-OmegaT による Julia Documentation 和訳するチームの支援ページ。
+OmegaT による Julia Documentation 和訳プロジェクトのチーム支援ページ。
