@@ -123,6 +123,22 @@ be inlined and thus may have even less overhead than calls to shared library fun
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>:a : (@static Sys.isapple() ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225018Z" creationid="hsugawa8651" creationdate="20181109T225018Z">
+        <seg>:a : (@static Sys.isapple() ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:b : :c)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225020Z" creationid="hsugawa8651" creationdate="20181109T225020Z">
+        <seg>:b : :c)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x1/&gt;`CartesianIndex` and arrays of `CartesianIndex` are not compatible with the&lt;x2/&gt;&lt;x3/&gt;`end` keyword to represent the last index of a dimension.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155752Z" creationid="hsugawa8651" creationdate="20181109T155752Z">
@@ -183,6 +199,30 @@ indirectly.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160440Z" creationid="hsugawa8651" creationdate="20181109T160440Z">
         <seg>&lt;x8/&gt;'view'&lt;x9/&gt;は、入力インデックスベクトルを &lt;x10/&gt;サブアレイ&lt;x11/&gt;オブジェクトで、後でオリジナルの配列をインデックス化するために使用できます。 間接的に。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>@static Sys.iswindows() ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225012Z" creationid="hsugawa8651" creationdate="20181109T225012Z">
+        <seg>@static Sys.iswindows() ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>@static if Sys.islinux()
+    linux_specific_thing(a)
+else
+    generic_thing(a)
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224958Z" creationid="hsugawa8651" creationdate="20181109T224958Z">
+        <seg>@static if Sys.islinux()
+    linux_specific_thing(a)
+else
+    generic_thing(a)
+end</seg>
       </tuv>
     </tu>
     <tu>
@@ -257,11 +297,32 @@ us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Additionally,
+there is a macro &lt;x7/&gt;@static&lt;x8/&gt; which makes it possible to use these functions to conditionally hide
+invalid code, as demonstrated in the following examples.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224947Z" creationid="hsugawa8651" creationdate="20181109T224947Z">
+        <seg>さらに マクロ&lt;x7/&gt;@static&lt;x8/&gt;があるため、これらの関数を使用して条件付きで非表示にすることができます。 次の例で示されているように、無効なコードです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Additionally, &lt;x1/&gt;`broadcast`&lt;x2/&gt; is not limited to arrays (see the function documentation),
 it also handles tuples and treats any argument that is not an array, tuple or &lt;x3/&gt;`Ref`&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160134Z" creationid="hsugawa8651" creationdate="20181109T160134Z">
         <seg>さらに、&lt;x1/&gt;`broadcast'&lt;x2/&gt;は配列に限定されるものではありません(関数の文書を参照してください)。 また、タプルや、配列ではない引数、タプル、&lt;x3/&gt;`Ref"&lt;x4/&gt;を処理することもできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Additionally, Julia provides
+software support for &lt;x1/&gt;Arbitrary Precision Arithmetic&lt;x2/&gt;, which can handle operations on numeric
+values that cannot be represented effectively in native hardware representations, but at the cost
+of relatively slower performance.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225054Z" creationid="hsugawa8651" creationdate="20181109T225054Z">
+        <seg>さらに、ジュリアは &lt;x1/&gt;任意精度算術演算&lt;x2/&gt;のソフトウェアサポートで、数値の操作を処理できます。 ネイティブのハードウェア表現では効果的に表現できないが、コストでは効果的に表現できない値 比較的遅いパフォーマンスです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -432,6 +493,15 @@ command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155911Z" creationid="hsugawa8651" creationdate="20181109T155911Z">
         <seg>Base.IndexStyle(::Type{&lt;:MyArray}) = IndexLinear()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Built-in representations of such values are called numeric primitives, while representations of
+integers and floating-point numbers as immediate values in code are known as numeric literals.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225037Z" creationid="hsugawa8651" creationdate="20181109T225037Z">
+        <seg>このような値の組み込み表現は、数値プリミティブと呼ばれますが、表現は次のようになります。 整数と浮動小数点数は、コードの即時値として知られており、数値リテラルと呼ばれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -729,6 +799,15 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154603Z" creationid="hsugawa8651" creationdate="20181109T154603Z">
         <seg>たとえば</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, &lt;x1/&gt;1&lt;x2/&gt; is an integer literal, while &lt;x3/&gt;1.0&lt;x4/&gt; is a floating-point literal; their binary
+in-memory representations as objects are numeric primitives.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225041Z" creationid="hsugawa8651" creationdate="20181109T225041Z">
+        <seg>たとえば、&lt;x1/&gt;1&lt;x2/&gt;は整数リテラルであり、&lt;x3/&gt;1.0&lt;x4/&gt;は浮動小数点リテラルであり、それらのバイナリは2進数リテラルです。 メモリー内表現は、数値プリミティブです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1110,6 +1189,14 @@ vector of integers that is returned by &lt;x5/&gt;`findall(B)`&lt;x6/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Integers and floating-point values are the basic building blocks of arithmetic and computation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225032Z" creationid="hsugawa8651" creationdate="20181109T225032Z">
+        <seg>整数および浮動小数点値は、算術演算と計算の基本的な構成要素です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Interactive mode; REPL runs and &lt;x1/&gt;isinteractive()&lt;x2/&gt; is true</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224718Z" creationid="hsugawa8651" creationdate="20181109T224718Z">
@@ -1201,6 +1288,15 @@ functions can be called directly from Julia without any "glue" code, code genera
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224247Z" creationid="hsugawa8651" creationdate="20181109T224247Z">
         <seg>ジュリアのインストールは、コンパイル済みのバイナリを使用するか、ソースからコンパイルするかにかかわらず、簡単です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia provides a broad range of primitive numeric types, and a full complement of arithmetic and
+bitwise operators as well as standard mathematical functions are defined over them.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225045Z" creationid="hsugawa8651" creationdate="20181109T225045Z">
+        <seg>Juliaは、さまざまな原始的な数値型を提供し、算術演算の完全な補完を提供します。 ビット演算子と標準数学関数がそれらの上に定義されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1358,6 +1454,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that &lt;x1/&gt;islinux&lt;x2/&gt; and &lt;x3/&gt;isapple&lt;x4/&gt; are mutually exclusive subsets of &lt;x5/&gt;isunix&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224942Z" creationid="hsugawa8651" creationdate="20181109T224942Z">
+        <seg>&lt;x1/&gt;アリヌス&lt;x2/&gt;および&lt;x3/&gt;イサプリ&lt;x4/&gt;は、&lt;x5/&gt;イシュニク&lt;x6/&gt;の相互排他的なサブセットであることに留意されたい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that &lt;x9/&gt;ARGS&lt;x10/&gt; is
 also set when a Julia expression is given using the &lt;x11/&gt;-e&lt;x12/&gt; option on the command line (see the
 &lt;x13/&gt;julia&lt;x14/&gt; help output below) but &lt;x15/&gt;PROGRAM_FILE&lt;x16/&gt; will be empty.</seg>
@@ -1381,6 +1485,14 @@ answer.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224054Z" creationid="hsugawa8651" creationdate="20181109T224054Z">
         <seg>引数のタイプは、&lt;x3/&gt;(Cstring)&lt;x4/&gt;ではなく、&lt;x1/&gt;(Cstring,)&lt;x2/&gt;として記述する必要があることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Number of bits</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225120Z" creationid="hsugawa8651" creationdate="20181109T225120Z">
+        <seg>ビット数</seg>
       </tuv>
     </tu>
     <tu>
@@ -1671,6 +1783,14 @@ known as a read-eval-print loop or "REPL") by double-clicking the Julia executab
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following are Julia's primitive numeric types:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225110Z" creationid="hsugawa8651" creationdate="20181109T225110Z">
+        <seg>Juliaのプリミティブな数値型は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following arguments, if any, are the actual argument values passed to the function.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224007Z" creationid="hsugawa8651" creationdate="20181109T224007Z">
@@ -1820,11 +1940,47 @@ of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, e
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The variable &lt;x1/&gt;Sys.KERNEL&lt;x2/&gt; can be used to handle such
+cases.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224825Z" creationid="hsugawa8651" creationdate="20181109T224825Z">
+        <seg>変数&lt;x1/&gt;Sys.KERNEL&lt;x2/&gt;は、このような処理を行うために使用することができます。 のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are several functions in the &lt;x3/&gt;Sys&lt;x4/&gt; module intended to make this easier:
+&lt;x5/&gt;isunix&lt;x6/&gt;, &lt;x7/&gt;islinux&lt;x8/&gt;, &lt;x9/&gt;isapple&lt;x10/&gt;, &lt;x11/&gt;isbsd&lt;x12/&gt;, and &lt;x13/&gt;iswindows&lt;x14/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224828Z" creationid="hsugawa8651" creationdate="20181109T224828Z">
+        <seg>&lt;x3/&gt;Sys&lt;x4/&gt;モジュールには、以下のような機能がいくつか用意されています。 &lt;x5/&gt;イシュニク&lt;x6/&gt;、&lt;x7/&gt;アリヌス&lt;x8/&gt;、&lt;x9/&gt;イサプリ&lt;x10/&gt;、&lt;x11/&gt;イズベスト&lt;x12/&gt;、&lt;x13/&gt;イスウィンドウズ&lt;x14/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are various ways to run Julia code and provide options, similar to those available for the
 &lt;x1/&gt;perl&lt;x2/&gt; and &lt;x3/&gt;ruby&lt;x4/&gt; programs:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224520Z" creationid="hsugawa8651" creationdate="20181109T224520Z">
         <seg>Juliaコードを実行するにはさまざまな方法があり、次のようなオプションを提供することができます。 &lt;x1/&gt;perl&lt;x2/&gt;および&lt;x3/&gt;ruby&lt;x4/&gt;プログラム:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These map
+directly onto numeric types and operations that are natively supported on modern computers, thus
+allowing Julia to take full advantage of computational resources.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225049Z" creationid="hsugawa8651" creationdate="20181109T225049Z">
+        <seg>これらのマップ 現代のコンピューターでネイティブにサポートされている数値型や操作に直接 ジュリアが計算資源を最大限に活用できるようにすることです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These may be used as follows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224831Z" creationid="hsugawa8651" creationdate="20181109T224831Z">
+        <seg>これらは次のように使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2065,6 +2221,15 @@ that can even optimize across this boundary, but Julia does not yet support that
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When chaining conditionals (including &lt;x1/&gt;if&lt;x2/&gt;/&lt;x3/&gt;elseif&lt;x4/&gt;/&lt;x5/&gt;end&lt;x6/&gt;), the &lt;x7/&gt;@static&lt;x8/&gt; must be repeated for
+each level (parentheses optional, but recommended for readability):</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225006Z" creationid="hsugawa8651" creationdate="20181109T225006Z">
+        <seg>&lt;x2/&gt;/&lt;x3/&gt;&lt;x6/&gt;/&lt;x5/&gt;の場合は、&lt;x7/&gt;@static&lt;x8/&gt;を繰り返す必要があります。&lt;x x/&gt;&lt;x8/&gt;&lt;x8/&gt;&lt;x6/&gt;&lt;x8/&gt;は 各レベル(オプションではありますが、読みやすさには推奨されます):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When combined with other indexing forms and iterators
 that yield &lt;x3/&gt;CartesianIndex&lt;x4/&gt;es, however, this can produce very elegant
 and efficient code.</seg>
@@ -2088,6 +2253,15 @@ are needed to separate the generator from subsequent arguments:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154940Z" creationid="hsugawa8651" creationdate="20181109T154940Z">
         <seg>引数リスト内に複数の次元を持つジェネレータ式を記述する場合は、括弧を使用します。 ジェネレータを次の引数から分離する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When writing cross-platform applications or libraries, it is often necessary to allow for
+differences between operating systems.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224823Z" creationid="hsugawa8651" creationdate="20181109T224823Z">
+        <seg>クロスプラットフォームアプリケーションやライブラリを記述する場合は、次のようなことがよくあります。 オペレーティング・システム間の違い。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2437,6 +2611,18 @@ which is a simplified version of the actual definition from &lt;x2/&gt;`env.jl`&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224115Z" creationid="hsugawa8651" creationdate="20181109T224115Z">
         <seg>getenv&lt;x1/&gt;Cライブラリ関数は、次のJulia関数にラップされています。 これは、&lt;x2/&gt;'env.jl'&lt;x3/&gt;からの実際の定義の簡略化されたバージョンです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if Sys.iswindows()
+    windows_specific_thing(a)
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224833Z" creationid="hsugawa8651" creationdate="20181109T224833Z">
+        <seg>if Sys.iswindows()
+    windows_specific_thing(a)
+end</seg>
       </tuv>
     </tu>
     <tu>
