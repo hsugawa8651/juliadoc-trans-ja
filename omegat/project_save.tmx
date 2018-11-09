@@ -15,6 +15,18 @@ value of one or more of its arguments (compare, for example, &lt;x2/&gt;`sort`&l
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>", ["First", "Second", "Third"])
+3-element Array{String,1}:
+ "1.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160149Z" creationid="hsugawa8651" creationdate="20181109T160147Z">
+        <seg>1", ["First", "Second", "Third"])
+3-element Array{String,1}:
+ "1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id man-array-indexing)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155105Z" creationid="hsugawa8651" creationdate="20181109T155105Z">
@@ -68,6 +80,15 @@ us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Additionally, &lt;x1/&gt;`broadcast`&lt;x2/&gt; is not limited to arrays (see the function documentation),
+it also handles tuples and treats any argument that is not an array, tuple or &lt;x3/&gt;`Ref`&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160134Z" creationid="hsugawa8651" creationdate="20181109T160134Z">
+        <seg>さらに、&lt;x1/&gt;`broadcast'&lt;x2/&gt;は配列に限定されるものではありません(関数の文書を参照してください)。 また、タプルや、配列ではない引数、タプル、&lt;x3/&gt;`Ref"&lt;x4/&gt;を処理することもできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All comma-separated expressions after &lt;x1/&gt;for&lt;x2/&gt; are interpreted as ranges.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154952Z" creationid="hsugawa8651" creationdate="20181109T154948Z">
@@ -114,6 +135,15 @@ that can be applied to arrays (and combinations of arrays and scalars) in such
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154659Z" creationid="hsugawa8651" creationdate="20181109T154659Z">
         <seg>特定の要素タイプを持つ配列は、構文&lt;x1/&gt;T[A,B,C,…]&lt;x2/&gt;を使用して構築することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An inefficient way to do this would
+be to replicate the vector to the size of the matrix:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160043Z" creationid="hsugawa8651" creationdate="20181109T160043Z">
+        <seg>非効率的な方法は ベクトルをマトリックスのサイズに複製することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -312,6 +342,15 @@ multidimensional index.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, elements might be computed on request
+rather than stored.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160316Z" creationid="hsugawa8651" creationdate="20181109T160316Z">
+        <seg>たとえば、要求に基づいて要素を計算することができます。 保存するのではなく。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, it enables
 accessing the diagonal elements from the first "page" of &lt;x5/&gt;A&lt;x6/&gt; from above:</seg>
       </tuv>
@@ -379,6 +418,16 @@ objects of a more specific type, such as &lt;x3/&gt;`Float64`&lt;x4/&gt; or &lt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154539Z" creationid="hsugawa8651" creationdate="20181109T154539Z">
         <seg>ここで、&lt;x1/&gt;(2, 3)&lt;x2/&gt;は、&lt;x3/&gt;「タプル」&lt;x4/&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, any concrete &lt;x3/&gt;AbstractArray{T,N}&lt;x4/&gt; type should generally implement
+at least &lt;x5/&gt;`size(A)`&lt;x6/&gt; (returning an &lt;x7/&gt;Int&lt;x8/&gt; tuple), &lt;x9/&gt;`getindex(A,i)`&lt;x10/&gt; and &lt;x11/&gt;&lt;x12/&gt;&lt;x13/&gt;(@ref getindex);
+mutable arrays should also implement &lt;x14/&gt;`setindex!`&lt;x15/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160320Z" creationid="hsugawa8651" creationdate="20181109T160320Z">
+        <seg>しかし、具体的な&lt;x3/&gt;AbstractArray{T,N}&lt;x4/&gt;型は、一般的には実装されるべきである。 &lt;x5/&gt;'size(A)'&lt;x6/&gt;(return an&lt;x7/&gt;Int&lt;x8/&gt;タプルを返す)&lt;x9/&gt;`getindex(A,i)`&lt;x10/&gt;&lt;x13/&gt;&lt;x13/&gt;&lt;x13/&gt;&lt;x13/&gt;(@ref getindex); mutable配列は、&lt;x14/&gt;`setindex!`&lt;x15/&gt;を実装する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -581,10 +630,38 @@ indices directly instead of first calling &lt;x13/&gt;`findall`&lt;x14/&gt;.</se
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is parameterized by
+the number of dimensions &lt;x3/&gt;N&lt;x4/&gt; and the element type &lt;x5/&gt;T&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160240Z" creationid="hsugawa8651" creationdate="20181109T160240Z">
+        <seg>パラメータは、パラメータによってパラメータ化されます。 次元の数&lt;x3/&gt;N&lt;x4/&gt;と、エレメント・タイプ&lt;x5/&gt;T&lt;x6/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is possible to pass Julia functions to native C functions that accept function pointer arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153908Z" creationid="hsugawa8651" creationdate="20181109T153908Z">
         <seg>関数ポインタ引数を受け入れるネイティブC関数にJulia関数を渡すことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is recommended that these operations
+have nearly constant time complexity, or technically Õ(1) complexity, as otherwise some array
+functions may be unexpectedly slow.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160322Z" creationid="hsugawa8651" creationdate="20181109T160322Z">
+        <seg>これらの操作は、次のように操作することをお勧めします。 ほとんど一定の時間的複雑さ(技術的には1)、あるいは技術的には複雑さがある 機能が予期せぬほど遅くなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is sometimes useful to perform element-by-element binary operations on arrays of different
+sizes, such as adding a vector to each column of a matrix.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160040Z" creationid="hsugawa8651" creationdate="20181109T160040Z">
+        <seg>異なる要素のバイナリ・バイナリ・バイナリ・オペレーションを実行する場合には、次のようにします。 行列の各列にベクトルを追加するなどのサイズです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -680,6 +757,15 @@ also accept a first input &lt;x3/&gt;T&lt;x4/&gt;, which is the element type of 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Nested "dot calls" &lt;x5/&gt;f.(...)&lt;x6/&gt; (including calls to &lt;x7/&gt;.+&lt;x8/&gt; etcetera)
+&lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-dot-operators) into a single &lt;x12/&gt;broadcast&lt;x13/&gt; call.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160131Z" creationid="hsugawa8651" creationdate="20181109T160131Z">
+        <seg>ネストされた「ドットコール」&lt;x5/&gt;f.(...)&lt;x6/&gt;(&lt;x7/&gt;.+&lt;x8/&gt;eteteraへの呼び出しを含む) &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man dot演算子)は、単一の&lt;x12/&gt;ブロードキャスト・&lt;x13/&gt;コールに対して使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that comparisons such as &lt;x1/&gt;==&lt;x2/&gt; operate on whole arrays, giving a single boolean
 answer.</seg>
       </tuv>
@@ -694,6 +780,15 @@ by a boolean array selects elements at the indices where its values are &lt;x1/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155734Z" creationid="hsugawa8651" creationdate="20181109T155734Z">
         <seg>論理的なインデックス作成と呼ばれる論理的インデックス作成またはインデックス作成と呼ばれることが多いインデックス作成 ブール型配列では、値が&lt;x1/&gt;真&lt;x2/&gt;であるインデックスで要素を選択します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Operations on &lt;x11/&gt;AbstractArray&lt;x12/&gt; objects are defined using higher
+level operators and functions, in a way that is independent of the underlying storage.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160305Z" creationid="hsugawa8651" creationdate="20181109T160305Z">
+        <seg>&lt;x11/&gt;AbstractArray&lt;x12/&gt;オブジェクトに対する操作は、より高い値を使用して定義されます。 レベル演算子と関数は、基礎となる記憶域とは独立して存在します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -757,6 +852,15 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155802Z" creationid="hsugawa8651" creationdate="20181109T155802Z">
         <seg>同様にインデックス化 &lt;x7/&gt;N&lt;x8/&gt;-次元ブール配列は、実効的には、以下のように、インデックス化と同じである。 &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;sのベクトルであり、その値は&lt;x11/&gt;真&lt;x12/&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;AbstractArray&lt;x2/&gt; type includes anything vaguely array-like, and implementations of it might
+be quite different from conventional arrays.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160313Z" creationid="hsugawa8651" creationdate="20181109T160313Z">
+        <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;タイプは、曖昧な配列を含んでおり、実装は実装されています。 従来のアレイとは大きく異なります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -867,6 +971,15 @@ of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, e
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155412Z" creationid="hsugawa8651" creationdate="20181109T155412Z">
         <seg>location&lt;x5/&gt;I_1[i_1]の値、I_2[i_2]、.…、I_n[i_n]&lt;x6/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These operations
+generally work correctly as a fallback for any specific array implementation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160310Z" creationid="hsugawa8651" creationdate="20181109T160310Z">
+        <seg>これらの操作 一般的には、特定のアレイ実装のフォールバックとして正しく動作します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1612,6 +1725,84 @@ julia&gt; searchsorted(a, 4)
 
 julia&gt; searchsorted(a, 4)
 3:2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; a = rand(2,1); A = rand(2,3);
+
+julia&gt; repeat(a,1,3)+A
+2×3 Array{Float64,2}:
+ 1.20813  1.82068  1.25387
+ 1.56851  1.86401  1.67846</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160046Z" creationid="hsugawa8651" creationdate="20181109T160046Z">
+        <seg>julia&gt; a = rand(2,1); A = rand(2,3);
+
+julia&gt; repeat(a,1,3)+A
+2×3 Array{Float64,2}:
+ 1.20813  1.82068  1.25387
+ 1.56851  1.86401  1.67846</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; broadcast(+, a, A)
+2×3 Array{Float64,2}:
+ 1.20813  1.82068  1.25387
+ 1.56851  1.86401  1.67846
+
+julia&gt; b = rand(1,2)
+1×2 Array{Float64,2}:
+ 0.867535  0.00457906
+
+julia&gt; broadcast(+, a, b)
+2×2 Array{Float64,2}:
+ 1.71056  0.847604
+ 1.73659  0.873631</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160057Z" creationid="hsugawa8651" creationdate="20181109T160057Z">
+        <seg>julia&gt; broadcast(+, a, A)
+2×3 Array{Float64,2}:
+ 1.20813  1.82068  1.25387
+ 1.56851  1.86401  1.67846
+
+julia&gt; b = rand(1,2)
+1×2 Array{Float64,2}:
+ 0.867535  0.00457906
+
+julia&gt; broadcast(+, a, b)
+2×2 Array{Float64,2}:
+ 1.71056  0.847604
+ 1.73659  0.873631</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; convert.(Float32, [1, 2])
+2-element Array{Float32,1}:
+ 1.0
+ 2.0
+
+julia&gt; ceil.((UInt8,), [1.2 3.4; 5.6 6.7])
+2×2 Array{UInt8,2}:
+ 0x02  0x04
+ 0x06  0x07
+
+julia&gt; string.(1:3, ".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160140Z" creationid="hsugawa8651" creationdate="20181109T160140Z">
+        <seg>julia&gt; convert.(Float32, [1, 2])
+2-element Array{Float32,1}:
+ 1.0
+ 2.0
+
+julia&gt; ceil.((UInt8,), [1.2 3.4; 5.6 6.7])
+2×2 Array{UInt8,2}:
+ 0x02  0x04
+ 0x06  0x07
+
+julia&gt; string.(1:3, ".</seg>
       </tuv>
     </tu>
     <tu>
