@@ -683,6 +683,15 @@ unsigned literal.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Boolean operations &lt;x1/&gt;without&lt;x2/&gt; short-circuit evaluation can be done with the bitwise boolean operators
+introduced in &lt;x3/&gt;Mathematical Operations and Elementary Functions&lt;x4/&gt;: &lt;x5/&gt;&amp;&lt;x6/&gt; and &lt;x7/&gt;|&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230550Z" creationid="hsugawa8651" creationdate="20181109T230550Z">
+        <seg>&lt;x2/&gt;短絡評価なしのブール演算&lt;x1/&gt;は、ビット単位のブール演算子で実行できます。 &lt;x3/&gt;演算と基本関数&lt;x4/&gt;:&lt;x5/&gt;&amp;&lt;x6/&gt;&lt;x6/&gt;&lt;x8/&gt;と&lt;x6/&gt;&lt;x8/&gt;で導入されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Both &lt;x19/&gt;&amp;&amp;&lt;x20/&gt; and &lt;x21/&gt;||&lt;x22/&gt; associate to the right, but &lt;x23/&gt;&amp;&amp;&lt;x24/&gt; has higher precedence than &lt;x25/&gt;||&lt;x26/&gt; does.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230244Z" creationid="hsugawa8651" creationdate="20181109T230244Z">
@@ -1616,6 +1625,15 @@ sizes, such as adding a vector to each column of a matrix.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It will
+be evaluated and returned depending on the preceding conditionals:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230826Z" creationid="hsugawa8651" creationdate="20181109T230826Z">
+        <seg>それは 前の条件に応じて評価され、返されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It's easy to experiment with this behavior:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230248Z" creationid="hsugawa8651" creationdate="20181109T230248Z">
@@ -1709,6 +1727,15 @@ inner functions used elsewhere in the language, variables from the enclosing sco
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155005Z" creationid="hsugawa8651" creationdate="20181109T155005Z">
         <seg>ちょうど 言語で他の場所で使用される内部関数、囲みスコープからの変数は、次のようになります。 「取り込み」は内部機能である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Just like condition expressions used in &lt;x1/&gt;if&lt;x2/&gt;, &lt;x3/&gt;elseif&lt;x4/&gt; or the ternary operator, the operands of
+&lt;x5/&gt;&amp;&amp;&lt;x6/&gt; or &lt;x7/&gt;||&lt;x8/&gt; must be boolean values (&lt;x9/&gt;true&lt;x10/&gt; or &lt;x11/&gt;false&lt;x12/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230809Z" creationid="hsugawa8651" creationdate="20181109T230809Z">
+        <seg>&lt;x2/&gt;、&lt;x3/&gt;elseif&lt;x4/&gt;、または三元演算子の&lt;x1/&gt;で使用される条件式と同じように、オペランドは次のようになります。 &lt;x5/&gt;&amp;&amp;&lt;x6/&gt;または&lt;x7/&gt;&lt;x8/&gt;は、ブール値(&lt;x9/&gt;true&lt;x10/&gt;または&lt;x11/&gt;false&lt;x12/&gt;)である必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1920,6 +1947,14 @@ by a boolean array selects elements at the indices where its values are &lt;x1/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155734Z" creationid="hsugawa8651" creationdate="20181109T155734Z">
         <seg>論理的なインデックス作成と呼ばれる論理的インデックス作成またはインデックス作成と呼ばれることが多いインデックス作成 ブール型配列では、値が&lt;x1/&gt;真&lt;x2/&gt;であるインデックスで要素を選択します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>On the other hand, any type of expression can be used at the end of a conditional chain.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230819Z" creationid="hsugawa8651" creationdate="20181109T230819Z">
+        <seg>一方、条件付きチェーンの最後では、任意のタイプの表現を使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2904,6 +2939,15 @@ Julia &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized) &lt;x4/&gt;f.(args.
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Using a non-boolean value anywhere except
+for the last entry in a conditional chain is an error:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230812Z" creationid="hsugawa8651" creationdate="20181109T230812Z">
+        <seg>非ブール値を使用する場合は 条件付きチェーンの最後のエントリはエラーになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Values can be specified as any iterable object, but
 will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;x10/&gt;, or explicit arrays of values like &lt;x11/&gt;[1.2, 3.4, 5.7]&lt;x12/&gt;.</seg>
       </tuv>
@@ -3550,6 +3594,16 @@ julia&gt; 1234
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; 1 &amp;&amp; true
+ERROR: TypeError: non-boolean (Int64) used in boolean context</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230815Z" creationid="hsugawa8651" creationdate="20181109T230815Z">
+        <seg>julia&gt; 1 &amp;&amp; true
+ERROR: TypeError: non-boolean (Int64) used in boolean context</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; A = rand(4,3);
 
 julia&gt; B = view(A, 1:3, 2:3);
@@ -4078,6 +4132,30 @@ julia&gt; string.(1:3, ".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; f(1) &amp; t(2)
+1
+2
+false
+
+julia&gt; t(1) | t(2)
+1
+2
+true</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230755Z" creationid="hsugawa8651" creationdate="20181109T230755Z">
+        <seg>julia&gt; f(1) &amp; t(2)
+1
+2
+false
+
+julia&gt; t(1) | t(2)
+1
+2
+true</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; function fact(n::Int)
            n &gt;= 0 || error("n must be non-negative")
            n == 0 &amp;&amp; return 1
@@ -4212,6 +4290,34 @@ getenv: undefined variable: FOOBAR</seg>
 
 julia&gt; getenv("FOOBAR")
 getenv: undefined variable: FOOBAR</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; i = 1;
+
+julia&gt; while i &lt;= 5
+           println(i)
+           global i += 1
+       end
+1
+2
+3
+4
+5</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230848Z" creationid="hsugawa8651" creationdate="20181109T230848Z">
+        <seg>julia&gt; i = 1;
+
+julia&gt; while i &lt;= 5
+           println(i)
+           global i += 1
+       end
+1
+2
+3
+4
+5</seg>
       </tuv>
     </tu>
     <tu>
@@ -4432,6 +4538,22 @@ false</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230142Z" creationid="hsugawa8651" creationdate="20181109T230142Z">
         <seg>julia&gt; test(x, y) = println(x &lt; y ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; true &amp;&amp; (x = (1, 2, 3))
+(1, 2, 3)
+
+julia&gt; false &amp;&amp; (x = (1, 2, 3))
+false</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230829Z" creationid="hsugawa8651" creationdate="20181109T230829Z">
+        <seg>julia&gt; true &amp;&amp; (x = (1, 2, 3))
+(1, 2, 3)
+
+julia&gt; false &amp;&amp; (x = (1, 2, 3))
+false</seg>
       </tuv>
     </tu>
     <tu>
