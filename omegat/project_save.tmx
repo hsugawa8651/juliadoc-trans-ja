@@ -6,6 +6,64 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>Arguments to &lt;x3/&gt;`@cfunction`&lt;x4/&gt; are as follows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153935Z" creationid="hsugawa8651" creationdate="20181109T153935Z">
+        <seg>&lt;x3/&gt;`@cfunction`&lt;x4/&gt;への引数は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Currently, only the platform-default C calling convention is supported.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153954Z" creationid="hsugawa8651" creationdate="20181109T153954Z">
+        <seg>現在、プラットフォームのデフォルトのC呼び出し規約のみがサポートされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, to match C prototypes of the form:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153924Z" creationid="hsugawa8651" creationdate="20181109T153924Z">
+        <seg>たとえば、フォームのCプロトタイプに一致させるには、次のようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is possible to pass Julia functions to native C functions that accept function pointer arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153908Z" creationid="hsugawa8651" creationdate="20181109T153908Z">
+        <seg>関数ポインタ引数を受け入れるネイティブC関数にJulia関数を渡すことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Like ccall, all of these arguments will be evaluated at compile-time, when the containing method is defined.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153944Z" creationid="hsugawa8651" creationdate="20181109T153944Z">
+        <seg>ccallと同様に、これらの引数はすべてコンパイル時に評価され、containingメソッドが定義されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The macro &lt;x1/&gt;`@cfunction`&lt;x2/&gt; generates the C-compatible function pointer for a call to a
+Julia function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153931Z" creationid="hsugawa8651" creationdate="20181109T153931Z">
+        <seg>マクロ&lt;x1/&gt;`@cfunction`&lt;x2/&gt;は、コールのC互換関数ポインタを生成します。 Julia関数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This means that
+&lt;x1/&gt;@cfunction&lt;x2/&gt;-generated pointers cannot be used in calls where WINAPI expects &lt;x3/&gt;stdcall&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153957Z" creationid="hsugawa8651" creationdate="20181109T153957Z">
+        <seg>つまり &lt;x1/&gt;@cfunction&lt;x2/&gt;-生成されたポインタは、WINAPIが&lt;x3/&gt;stdcall&lt;x4/&gt;を想定している呼び出しでは使用できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`axes(A)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153250Z" creationid="hsugawa8651" creationdate="20181109T153250Z">
