@@ -107,6 +107,16 @@ be inlined and thus may have even less overhead than calls to shared library fun
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(The above expression uses several features that have yet to be introduced, including &lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref man-loops),
+&lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;(@ref man-strings), and &lt;x11/&gt;Interpolation&lt;x12/&gt;, but should be easy enough to understand for users
+with some existing programming experience.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225610Z" creationid="hsugawa8651" creationdate="20181109T225610Z">
+        <seg>(上記の式では、&lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref man loops)など、まだ導入されていないいくつかの機能を使用しています。 &lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;(@ref manストリング)、&lt;x11/&gt;補間&lt;x12/&gt;は、ユーザが理解するのに十分な大きさである必要があります。 既存のプログラミング経験があります)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>-v&lt;x1/&gt;, &lt;x2/&gt;--version&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224601Z" creationid="hsugawa8651" creationdate="20181109T224549Z">
@@ -521,6 +531,14 @@ being indexed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As for hexadecimal literals, binary and octal literals produce unsigned integer types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225505Z" creationid="hsugawa8651" creationdate="20181109T225505Z">
+        <seg>16進数のリテラルに関しては、バイナリと8進数のリテラルは符号なしの整数型を生成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As such, it's also possible to define custom array types by inheriting
 from &lt;x1/&gt;`AbstractArray`&lt;x2/&gt;.</seg>
       </tuv>
@@ -551,6 +569,15 @@ command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225352Z" creationid="hsugawa8651" creationdate="20181109T225352Z">
         <seg>バイナリリテラルと8進数リテラルもサポートされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Binary, octal, and hexadecimal literals may be signed by a &lt;x1/&gt;-&lt;x2/&gt; immediately preceding the
+unsigned literal.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225514Z" creationid="hsugawa8651" creationdate="20181109T225514Z">
+        <seg>バイナリ、8進数、および16進数のリテラルは 署名されていないリテラル。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1111,6 +1138,14 @@ sharing&lt;x2/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In Julia, exceeding the maximum representable value of a given type results in a wraparound behavior:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225601Z" creationid="hsugawa8651" creationdate="20181109T225601Z">
+        <seg>ジュリアでは、指定されたタイプの最大表現可能な値を超えると、ラップアラウンド動作が行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In contrast with &lt;x1/&gt;for i = 1:length(A)&lt;x2/&gt;, iterating with &lt;x3/&gt;`eachindex`&lt;x4/&gt; provides an efficient way to
 iterate over any array type.</seg>
       </tuv>
@@ -1150,6 +1185,15 @@ type explicitly, a type can be prepended to the comprehension.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155056Z" creationid="hsugawa8651" creationdate="20181109T155056Z">
         <seg>この場合、結果は常に1-dになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the case of leading zeros, the size is determined by the minimal needed size for a
+literal, which has the same length but leading digit &lt;x3/&gt;1&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225440Z" creationid="hsugawa8651" creationdate="20181109T225440Z">
+        <seg>先行ゼロの場合、サイズは、必要最小限のサイズで決定されます。 リテラルは同じ長さですが、先頭桁はx3/&gt;1&lt;x4/&gt;です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1795,6 +1839,15 @@ sharing memory with the original array rather than by copying it.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>That allows the user to control
+the size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225434Z" creationid="hsugawa8651" creationdate="20181109T225434Z">
+        <seg>これによってユーザは サイズです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The
 name of the script itself is passed in as the global &lt;x7/&gt;PROGRAM_FILE&lt;x8/&gt;.</seg>
       </tuv>
@@ -2050,6 +2103,16 @@ of the binary data item is the minimal needed size, if the leading digit of the 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The values returned by &lt;x1/&gt;`typemin`&lt;x2/&gt; and &lt;x3/&gt;`typemax`&lt;x4/&gt; are always of the given argument
+type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225538Z" creationid="hsugawa8651" creationdate="20181109T225538Z">
+        <seg>The values returned by &lt;x1/&gt;`typemin`&lt;x2/&gt; and &lt;x3/&gt;`typemax`&lt;x4/&gt; are always of the given argument
+type.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The variable &lt;x1/&gt;Sys.KERNEL&lt;x2/&gt; can be used to handle such
 cases.</seg>
       </tuv>
@@ -2109,6 +2172,15 @@ and can be converted to/from the latter via &lt;x4/&gt;Array(bitarray)&lt;x5/&gt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160451Z" creationid="hsugawa8651" creationdate="20181109T160451Z">
         <seg>これらは、&lt;x2/&gt;Array{Bool}&lt;x3/&gt;配列(ブール値ごとに1バイトを格納する)と同様に使用できます。 また、&lt;x4/&gt;アレイ(bitarray)&lt;x5/&gt;および&lt;x6/&gt;BitArray(配列)&lt;x7/&gt;を介して、後者との間で変換を行うことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They produce an unsigned integer of the same size as the unsigned literal
+would do, with the two's complement of the value:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225518Z" creationid="hsugawa8651" creationdate="20181109T225518Z">
+        <seg>これらは符号なしのリテラルと同じサイズの符号なし整数を生成します。 2年代の価値を補完することができます</seg>
       </tuv>
     </tu>
     <tu>
@@ -2326,6 +2398,14 @@ will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154811Z" creationid="hsugawa8651" creationdate="20181109T154811Z">
         <seg>値は、任意のオブジェクトとして指定することができますが は一般的に&lt;x7/&gt;1:n&lt;x8/&gt;または&lt;x9/&gt;2:(n-1)&lt;x10/&gt;、または&lt;x11/&gt;[1.2、3.4、5.7]&lt;x12/&gt;のような明示的な値の配列である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Values which cannot be stored in &lt;x5/&gt;UInt128&lt;x6/&gt; cannot be written as such literals.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225510Z" creationid="hsugawa8651" creationdate="20181109T225510Z">
+        <seg>&lt;x5/&gt;UInt128&lt;x6/&gt;に格納できない値は、そのようなリテラルとは書くことができません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2800,6 +2880,60 @@ Cstring
 
 julia&gt; (Cstring,)
 (Cstring,)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; (typemin(Int32), typemax(Int32))
+(-2147483648, 2147483647)
+
+julia&gt; for T in [Int8,Int16,Int32,Int64,Int128,UInt8,UInt16,UInt32,UInt64,UInt128]
+           println("$(lpad(T,7)): [$(typemin(T)),$(typemax(T))]")
+       end
+   Int8: [-128,127]
+  Int16: [-32768,32767]
+  Int32: [-2147483648,2147483647]
+  Int64: [-9223372036854775808,9223372036854775807]
+ Int128: [-170141183460469231731687303715884105728,170141183460469231731687303715884105727]
+  UInt8: [0,255]
+ UInt16: [0,65535]
+ UInt32: [0,4294967295]
+ UInt64: [0,18446744073709551615]
+UInt128: [0,340282366920938463463374607431768211455]</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225534Z" creationid="hsugawa8651" creationdate="20181109T225534Z">
+        <seg>julia&gt; (typemin(Int32), typemax(Int32))
+(-2147483648, 2147483647)
+
+julia&gt; for T in [Int8,Int16,Int32,Int64,Int128,UInt8,UInt16,UInt32,UInt64,UInt128]
+           println("$(lpad(T,7)): [$(typemin(T)),$(typemax(T))]")
+       end
+   Int8: [-128,127]
+  Int16: [-32768,32767]
+  Int32: [-2147483648,2147483647]
+  Int64: [-9223372036854775808,9223372036854775807]
+ Int128: [-170141183460469231731687303715884105728,170141183460469231731687303715884105727]
+  UInt8: [0,255]
+ UInt16: [0,65535]
+ UInt32: [0,4294967295]
+ UInt64: [0,18446744073709551615]
+UInt128: [0,340282366920938463463374607431768211455]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; -0x2
+0xfe
+
+julia&gt; -0x0002
+0xfffe</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225522Z" creationid="hsugawa8651" creationdate="20181109T225522Z">
+        <seg>julia&gt; -0x2
+0xfe
+
+julia&gt; -0x0002
+0xfffe</seg>
       </tuv>
     </tu>
     <tu>
@@ -3690,6 +3824,28 @@ julia&gt; x[mask]
   4
   8
  16</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; x = typemax(Int64)
+9223372036854775807
+
+julia&gt; x + 1
+-9223372036854775808
+
+julia&gt; x + 1 == typemin(Int64)
+true</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225616Z" creationid="hsugawa8651" creationdate="20181109T225616Z">
+        <seg>julia&gt; x = typemax(Int64)
+9223372036854775807
+
+julia&gt; x + 1
+-9223372036854775808
+
+julia&gt; x + 1 == typemin(Int64)
+true</seg>
       </tuv>
     </tu>
     <tu>
