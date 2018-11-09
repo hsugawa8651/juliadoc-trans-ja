@@ -89,6 +89,22 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id man-conditional-evaluation)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225826Z" creationid="hsugawa8651" creationdate="20181109T225826Z">
+        <seg>(@id man-conditional-evaluation)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@ref man-conditional-evaluation): &lt;x1/&gt;if&lt;x2/&gt;-&lt;x3/&gt;elseif&lt;x4/&gt;-&lt;x5/&gt;else&lt;x6/&gt; and &lt;x7/&gt;?:&lt;x8/&gt; (ternary operator).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225720Z" creationid="hsugawa8651" creationdate="20181109T225720Z">
+        <seg>(@ref man条件付き評価):&lt;x1/&gt;-&lt;x2/&gt;-&lt;x3/&gt;else&lt;x4/&gt;-&lt;x5/&gt;else&lt;x6/&gt;および&lt;x7/&gt;?:&lt;x8/&gt;(三元演算子):&lt;x8/&gt;&lt;x8/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(For comparison
 operations like &lt;x5/&gt;&lt;&lt;x6/&gt;, &lt;x7/&gt;only&lt;x8/&gt; the elementwise &lt;x9/&gt;.&lt;&lt;x10/&gt; version is applicable to arrays.)</seg>
       </tuv>
@@ -185,6 +201,16 @@ Int64</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155752Z" creationid="hsugawa8651" creationdate="20181109T155752Z">
         <seg>&lt;x1/&gt;`CartesianIndex'と「CartesianIndex」の配列は、次元の最後のインデックスを表すために、&lt;x2/&gt;&lt;x3/&gt;'end"キーワードと互換性がない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x1/&gt;`Task`&lt;x2/&gt;s
+are not so standard: they provide non-local control flow, making it possible to switch between
+temporarily-suspended computations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225746Z" creationid="hsugawa8651" creationdate="20181109T225746Z">
+        <seg>&lt;x1/&gt;`タスク`&lt;x2/&gt;s はあまり標準的ではないため、ローカルではない制御フローを提供することができます。 一時的に中断された計算です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -418,6 +444,15 @@ pointers to allocated values on the heap or stack.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223810Z" creationid="hsugawa8651" creationdate="20181109T223810Z">
         <seg>また、Fortran関数を呼び出す場合は、すべての入力を次のように指定する必要があります。 ヒープまたはスタック上の割り当てられた値へのポインタ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Although it is typical, there is no requirement that &lt;x3/&gt;begin&lt;x4/&gt; blocks be multiline
+or that &lt;x5/&gt;(;)&lt;x6/&gt; chains be single-line:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225821Z" creationid="hsugawa8651" creationdate="20181109T225821Z">
+        <seg>典型的なものではあるが、&lt;x3/&gt;が&lt;x4/&gt;ブロックがマルチラインである必要はない。 または&lt;x5/&gt;(;)&lt;x6/&gt;鎖は単一行である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -666,6 +701,15 @@ result.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Conditional evaluation allows portions of code to be evaluated or not evaluated depending on the
+value of a boolean expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225833Z" creationid="hsugawa8651" creationdate="20181109T225833Z">
+        <seg>条件付き評価は、コードの一部を評価することができます。 ブール式の値。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Consider these examples of this syntax:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154648Z" creationid="hsugawa8651" creationdate="20181109T154648Z">
@@ -864,6 +908,23 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Everyday programming requires no
+direct usage of tasks, but certain problems can be solved much more easily by using tasks.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225751Z" creationid="hsugawa8651" creationdate="20181109T225751Z">
+        <seg>日常的なプログラミングでは タスクを直接使用することはできますが、タスクを使用することによって、特定の問題をより容易に解決することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Exception Handling&lt;x1/&gt;: &lt;x2/&gt;try&lt;x3/&gt;-&lt;x4/&gt;catch&lt;x5/&gt;, &lt;x6/&gt;`error`&lt;x7/&gt; and &lt;x8/&gt;`throw`&lt;x9/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225735Z" creationid="hsugawa8651" creationdate="20181109T225735Z">
+        <seg>例外処理&lt;x1/&gt;:&lt;x2/&gt;try&lt;x3/&gt;-&lt;x4/&gt;catch&lt;x5/&gt;&lt;x6/&gt;'エラー'&lt;x7/&gt;'&lt;x7/&gt;'&lt;x9/&gt;"&lt;x9/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Finally, you can use &lt;x1/&gt;`ccall`&lt;x2/&gt; to actually generate a call to the library function.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223825Z" creationid="hsugawa8651" creationdate="20181109T223825Z">
@@ -1000,6 +1061,30 @@ objects of a more specific type, such as &lt;x3/&gt;`Float64`&lt;x4/&gt; or &lt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155050Z" creationid="hsugawa8651" creationdate="20181109T155050Z">
         <seg>生成された値は、&lt;x2/&gt;キーワードの場合は&lt;x1/&gt;を使用してフィルタできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is the anatomy of the &lt;x1/&gt;if&lt;x2/&gt;-&lt;x3/&gt;elseif&lt;x4/&gt;-&lt;x5/&gt;else&lt;x6/&gt; conditional syntax:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225837Z" creationid="hsugawa8651" creationdate="20181109T225837Z">
+        <seg>&lt;x2/&gt;-&lt;x3/&gt;elseif&lt;x4/&gt;-&lt;x5/&gt;else&lt;x6/&gt;条件付き構文:&lt;x6/&gt;の場合の解剖学的構造は以下の通りである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here it is in action:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225850Z" creationid="hsugawa8651" creationdate="20181109T225850Z">
+        <seg>ここでは次の操作を実行しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here's an example of a &lt;x5/&gt;begin&lt;x6/&gt; block:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225802Z" creationid="hsugawa8651" creationdate="20181109T225802Z">
+        <seg>&lt;x5/&gt;begin&lt;x6/&gt;ブロックの例を次に示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1403,6 +1488,14 @@ bitwise operators as well as standard mathematical functions are defined over th
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia provides a variety of control flow constructs:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225711Z" creationid="hsugawa8651" creationdate="20181109T225711Z">
+        <seg>Juliaは、さまざまな制御フロー構成を提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia's compiler uses type inference and generates
 optimized code for scalar array indexing, allowing programs to be written in a style that is convenient
 and readable, without sacrificing performance, and using less memory at times.</seg>
@@ -1794,6 +1887,14 @@ on implementing a custom array type.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Short-Circuit Evaluation&lt;x1/&gt;: &lt;x2/&gt;&amp;&amp;&lt;x3/&gt;, &lt;x4/&gt;||&lt;x5/&gt; and chained comparisons.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225726Z" creationid="hsugawa8651" creationdate="20181109T225726Z">
+        <seg>短絡評価&lt;x1/&gt;:&lt;x2/&gt;&amp;&amp;&lt;x3/&gt;、&lt;x4/&gt;&lt;x5/&gt;および連鎖比較。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Similarly, indexing
 by a &lt;x7/&gt;N&lt;x8/&gt;-dimensional boolean array is effectively the same as indexing by the
 vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11/&gt;true&lt;x12/&gt;.</seg>
@@ -1804,10 +1905,36 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since these are fairly small, simple expressions, they could easily be placed onto a single line,
+which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225809Z" creationid="hsugawa8651" creationdate="20181109T225809Z">
+        <seg>これらはかなり小さいので、簡単な表現で簡単に1行に配置することができます。 ここでは、&lt;x1/&gt;(;)&lt;x2/&gt;チェイン構文が便利です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Smallest value</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225124Z" creationid="hsugawa8651" creationdate="20181109T225124Z">
         <seg>最小値</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So, we could have defined the &lt;x6/&gt;test&lt;x7/&gt; function above as</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225921Z" creationid="hsugawa8651" creationdate="20181109T225921Z">
+        <seg>そこで、上記の&lt;x6/&gt;test&lt;x7/&gt;関数を定義することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sometimes it is convenient to have a single expression which evaluates several subexpressions
+in order, returning the value of the last subexpression as its value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225754Z" creationid="hsugawa8651" creationdate="20181109T225754Z">
+        <seg>いくつかのサブ式を評価する単一の表現を持つことが便利な場合もあります。 は、最後のサブ式の値をその値として返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1932,6 +2059,14 @@ known as a read-eval-print loop or "REPL") by double-clicking the Julia executab
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155843Z" creationid="hsugawa8651" creationdate="20181109T155843Z">
         <seg>最初の構成は、各要素の値が必要な場合に使用されますが、インデックスでは使用されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first five control flow mechanisms are standard to high-level programming languages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225741Z" creationid="hsugawa8651" creationdate="20181109T225741Z">
+        <seg>最初の5つの制御フローメカニズムは、高レベルプログラミング言語に対して標準的なものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2103,6 +2238,15 @@ of the binary data item is the minimal needed size, if the leading digit of the 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The value of both compound expression constructs
+is that of the last subexpression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225759Z" creationid="hsugawa8651" creationdate="20181109T225759Z">
+        <seg>複合式の両方の構成要素の値 は最後のサブ式のものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The values returned by &lt;x1/&gt;`typemin`&lt;x2/&gt; and &lt;x3/&gt;`typemax`&lt;x4/&gt; are always of the given argument
 type.</seg>
       </tuv>
@@ -2127,6 +2271,15 @@ cases.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224828Z" creationid="hsugawa8651" creationdate="20181109T224828Z">
         <seg>&lt;x3/&gt;Sys&lt;x4/&gt;モジュールには、以下のような機能がいくつか用意されています。 &lt;x5/&gt;イシュニク&lt;x6/&gt;、&lt;x7/&gt;アリヌス&lt;x8/&gt;、&lt;x9/&gt;イサプリ&lt;x10/&gt;、&lt;x11/&gt;イズベスト&lt;x12/&gt;、&lt;x13/&gt;イスウィンドウズ&lt;x14/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are two Julia constructs
+that accomplish this: &lt;x1/&gt;begin&lt;x2/&gt; blocks and &lt;x3/&gt;(;)&lt;x4/&gt; chains.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225757Z" creationid="hsugawa8651" creationdate="20181109T225757Z">
+        <seg>ジュリアの構成が2あります これは、&lt;x1/&gt;が&lt;x2/&gt;ブロックと&lt;x3/&gt;(;)&lt;x4/&gt;鎖を形成することを意味します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2280,6 +2433,15 @@ subsections, and arrays of booleans to select elements at their &lt;x14/&gt;true
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is a powerful construct: both exception handling and
+cooperative multitasking are implemented in Julia using tasks.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225749Z" creationid="hsugawa8651" creationdate="20181109T225749Z">
+        <seg>これは強力な構成であり、例外処理とも呼ばれます。 タスクを使用して、Juliaで協調的マルチタスクを実装します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is accomplished just by making an appropriate call with
 &lt;x1/&gt;`ccall`&lt;x2/&gt; syntax, which looks like an ordinary function call.</seg>
       </tuv>
@@ -2298,11 +2460,30 @@ subsections, and arrays of booleans to select elements at their &lt;x14/&gt;true
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This means that new variables
+defined inside the &lt;x2/&gt;if&lt;x3/&gt; clauses can be used after the &lt;x4/&gt;if&lt;x5/&gt; block, even if they weren't defined
+before.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225918Z" creationid="hsugawa8651" creationdate="20181109T225918Z">
+        <seg>つまり、新しい変数は &lt;x4/&gt;の場合は&lt;x/&gt;の範囲内で、&lt;x4/&gt;の場合は&lt;x4/&gt;の範囲内で定義されていても、定義されていない場合でも定義されます。 の前にあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This object can be iterated to produce values on demand, instead of allocating
 an array and storing them in advance (see &lt;x1/&gt;Iteration&lt;x2/&gt;).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154927Z" creationid="hsugawa8651" creationdate="20181109T154927Z">
         <seg>このオブジェクトを反復して、必要に応じて必要に応じて値を生成することができます。 配列とそれを事前に格納する(&lt;x1/&gt;Iteration&lt;x2/&gt;を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This syntax is particularly useful with the terse single-line function definition form introduced
+in &lt;x1/&gt;Functions&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225818Z" creationid="hsugawa8651" creationdate="20181109T225818Z">
+        <seg>この構文は、簡潔な単一行関数定義フォームが導入された場合に特に有用です。 &lt;x1/&gt;の関数&lt;x2/&gt;である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2840,6 +3021,34 @@ end</seg>
         <seg>if Sys.iswindows()
     windows_specific_thing(a)
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if x &lt; y
+    println("x is less than y")
+elseif x &gt; y
+    println("x is greater than y")
+else
+    println("x is equal to y")
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225839Z" creationid="hsugawa8651" creationdate="20181109T225839Z">
+        <seg>if x &lt; y
+    println("x is less than y")
+elseif x &gt; y
+    println("x is greater than y")
+else
+    println("x is equal to y")
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if&lt;x1/&gt; blocks are "leaky", i.e. they do not introduce a local scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225914Z" creationid="hsugawa8651" creationdate="20181109T225914Z">
+        <seg>&lt;x1/&gt;ブロックが「リーク」である場合、すなわち、ローカルスコープを導入しない。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3442,6 +3651,26 @@ julia&gt; repeat(a,1,3)+A
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; begin x = 1; y = 2; x + y end
+3
+
+julia&gt; (x = 1;
+        y = 2;
+        x + y)
+3</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225823Z" creationid="hsugawa8651" creationdate="20181109T225823Z">
+        <seg>julia&gt; begin x = 1; y = 2; x + y end
+3
+
+julia&gt; (x = 1;
+        y = 2;
+        x + y)
+3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; broadcast(+, a, A)
 2×3 Array{Float64,2}:
  1.20813  1.82068  1.25387
@@ -3498,6 +3727,84 @@ julia&gt; ceil.((UInt8,), [1.2 3.4; 5.6 6.7])
  0x06  0x07
 
 julia&gt; string.(1:3, ".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; function test(x, y)
+           if x &lt; y
+               println("x is less than y")
+           elseif x &gt; y
+               println("x is greater than y")
+           else
+               println("x is equal to y")
+           end
+       end
+test (generic function with 1 method)
+
+julia&gt; test(1, 2)
+x is less than y
+
+julia&gt; test(2, 1)
+x is greater than y
+
+julia&gt; test(1, 1)
+x is equal to y</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225852Z" creationid="hsugawa8651" creationdate="20181109T225852Z">
+        <seg>julia&gt; function test(x, y)
+           if x &lt; y
+               println("x is less than y")
+           elseif x &gt; y
+               println("x is greater than y")
+           else
+               println("x is equal to y")
+           end
+       end
+test (generic function with 1 method)
+
+julia&gt; test(1, 2)
+x is less than y
+
+julia&gt; test(2, 1)
+x is greater than y
+
+julia&gt; test(1, 1)
+x is equal to y</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; function test(x,y)
+           if x &lt; y
+               relation = "less than"
+           elseif x == y
+               relation = "equal to"
+           else
+               relation = "greater than"
+           end
+           println("x is ", relation, " y.")
+       end
+test (generic function with 1 method)
+
+julia&gt; test(2, 1)
+x is greater than y.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225926Z" creationid="hsugawa8651" creationdate="20181109T225926Z">
+        <seg>julia&gt; function test(x,y)
+           if x &lt; y
+               relation = "less than"
+           elseif x == y
+               relation = "equal to"
+           else
+               relation = "greater than"
+           end
+           println("x is ", relation, " y.")
+       end
+test (generic function with 1 method)
+
+julia&gt; test(2, 1)
+x is greater than y.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3846,6 +4153,34 @@ julia&gt; x + 1
 
 julia&gt; x + 1 == typemin(Int64)
 true</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; z = (x = 1; y = 2; x + y)
+3</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225811Z" creationid="hsugawa8651" creationdate="20181109T225811Z">
+        <seg>julia&gt; z = (x = 1; y = 2; x + y)
+3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; z = begin
+           x = 1
+           y = 2
+           x + y
+       end
+3</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225805Z" creationid="hsugawa8651" creationdate="20181109T225805Z">
+        <seg>julia&gt; z = begin
+           x = 1
+           y = 2
+           x + y
+       end
+3</seg>
       </tuv>
     </tu>
     <tu>
