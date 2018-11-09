@@ -163,6 +163,14 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id man-loops)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230921Z" creationid="hsugawa8651" creationdate="20181109T230921Z">
+        <seg>(@id man-loops)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@ref man-conditional-evaluation): &lt;x1/&gt;if&lt;x2/&gt;-&lt;x3/&gt;elseif&lt;x4/&gt;-&lt;x5/&gt;else&lt;x6/&gt; and &lt;x7/&gt;?:&lt;x8/&gt; (ternary operator).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225720Z" creationid="hsugawa8651" creationdate="20181109T225720Z">
@@ -1977,6 +1985,16 @@ written with a trailing comma.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>One rather
+important distinction between the previous &lt;x2/&gt;while&lt;x3/&gt; loop form and the &lt;x4/&gt;for&lt;x5/&gt; loop form is the scope
+during which the variable is visible.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T231156Z" creationid="hsugawa8651" creationdate="20181109T231156Z">
+        <seg>一つ &lt;x3/&gt;ループ形態と&lt;x4/&gt;ループ形態の&lt;x4/&gt;は、前の&lt;x2/&gt;と&lt;x4/&gt;の間の重要な区別である。 変数が表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Operations on &lt;x11/&gt;AbstractArray&lt;x12/&gt; objects are defined using higher
 level operators and functions, in a way that is independent of the underlying storage.</seg>
       </tuv>
@@ -2154,6 +2172,16 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since counting up and
+down like the above &lt;x3/&gt;while&lt;x4/&gt; loop does is so common, it can be expressed more concisely with a
+&lt;x5/&gt;for&lt;x6/&gt; loop:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T231131Z" creationid="hsugawa8651" creationdate="20181109T231131Z">
+        <seg>カウントアップして &lt;x4/&gt;ループは非常に一般的であるので、上記&lt;x3/&gt;のようにダウンすることができる。 &lt;x6/&gt;ループの場合は&lt;x5/&gt;&lt;x6/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since these are fairly small, simple expressions, they could easily be placed onto a single line,
 which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
       </tuv>
@@ -2246,6 +2274,23 @@ be quite different from conventional arrays.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160313Z" creationid="hsugawa8651" creationdate="20181109T160313Z">
         <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;タイプは、曖昧な配列を含んでおり、実装は実装されています。 従来のアレイとは大きく異なります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;for&lt;x2/&gt; loop makes common repeated evaluation idioms easier to write.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T231125Z" creationid="hsugawa8651" creationdate="20181109T231125Z">
+        <seg>&lt;x2/&gt;ループのための&lt;x1/&gt;は、共通の繰り返し評価イディオムを書くのを容易にする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;while&lt;x2/&gt; loop evaluates the condition expression (&lt;x3/&gt;i &lt;= 5&lt;x4/&gt; in this case), and as long it remains
+&lt;x5/&gt;true&lt;x6/&gt;, keeps also evaluating the body of the &lt;x7/&gt;while&lt;x8/&gt; loop.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230858Z" creationid="hsugawa8651" creationdate="20181109T230858Z">
+        <seg>&lt;x1/&gt;while&lt;x2/&gt;ループは条件式(この場合は&lt;x3/&gt;i&lt;=5&lt;x4/&gt;)を評価しており、それは長いままである &lt;x5/&gt;true&lt;x6/&gt;は、&lt;x8/&gt;ループでは、&lt;x7/&gt;のボディを評価します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2585,6 +2630,14 @@ that accomplish this: &lt;x1/&gt;begin&lt;x2/&gt; blocks and &lt;x3/&gt;(;)&lt;x
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225757Z" creationid="hsugawa8651" creationdate="20181109T225757Z">
         <seg>ジュリアの構成が2あります これは、&lt;x1/&gt;が&lt;x2/&gt;ブロックと&lt;x3/&gt;(;)&lt;x4/&gt;鎖を形成することを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are two constructs for repeated evaluation of expressions: the &lt;x1/&gt;while&lt;x2/&gt; loop and the &lt;x3/&gt;for&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230950Z" creationid="hsugawa8651" creationdate="20181109T230950Z">
+        <seg>反復評価には2つの構成があります。&lt;x1/&gt;while&lt;x2/&gt;loop and the&lt;x3/&gt;for&lt;x4/&gt;&lt;x4/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -4152,6 +4205,28 @@ julia&gt; t(1) | t(2)
 1
 2
 true</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; for i = 1:5
+           println(i)
+       end
+1
+2
+3
+4
+5</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T231134Z" creationid="hsugawa8651" creationdate="20181109T231134Z">
+        <seg>julia&gt; for i = 1:5
+           println(i)
+       end
+1
+2
+3
+4
+5</seg>
       </tuv>
     </tu>
     <tu>
