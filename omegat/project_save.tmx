@@ -44,10 +44,59 @@ operations like &lt;x5/&gt;&lt;&lt;x6/&gt;, &lt;x7/&gt;only&lt;x8/&gt; the eleme
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(Non-library function calls in both C and Julia can
+be inlined and thus may have even less overhead than calls to shared library functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160555Z" creationid="hsugawa8651" creationdate="20181109T160555Z">
+        <seg>(CとJuliaの両方での非ライブラリ関数呼び出しは 共有ライブラリ関数への呼び出しよりも、インライン化されているため、オーバーヘッドが少なくて済みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x1/&gt;`CartesianIndex` and arrays of `CartesianIndex` are not compatible with the&lt;x2/&gt;&lt;x3/&gt;`end` keyword to represent the last index of a dimension.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155752Z" creationid="hsugawa8651" creationdate="20181109T155752Z">
         <seg>&lt;x1/&gt;`CartesianIndex'と「CartesianIndex」の配列は、次元の最後のインデックスを表すために、&lt;x2/&gt;&lt;x3/&gt;'end"キーワードと互換性がない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x21/&gt;DenseArray&lt;x22/&gt; is a
+very specific example of a strided array where the elements are arranged contiguously, thus it
+provides its subtypes with the appropriate definition of &lt;x23/&gt;strides&lt;x24/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160511Z" creationid="hsugawa8651" creationdate="20181109T160511Z">
+        <seg>&lt;X21/&gt;DenseArray&lt;x22/&gt;は エレメントが隣接して配置されたストローブ配列の非常に特異的な例であり、したがって は、&lt;x23/&gt;の拡張&lt;x24/&gt;の適切な定義を使用してサブタイプを提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x28/&gt;`StridedVector`&lt;x29/&gt; and &lt;x30/&gt;`StridedMatrix`&lt;x31/&gt; are convenient aliases for many of the builtin array types that
+are considered strided arrays, allowing them to dispatch to select specialized implementations that
+call highly tuned and optimized BLAS and LAPACK functions using just the pointer and strides.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160519Z" creationid="hsugawa8651" creationdate="20181109T160519Z">
+        <seg>&lt;x28/&gt;「StridedVector」&lt;x29/&gt;および&lt;x30/&gt;「StridedMatrix」&lt;x31/&gt;は、組み込み型の配列タイプの多くにとって便利なエイリアスです。 は、ストレーテッド・アレイとみなされ、選択された特殊な実装にディスパッチできるようになります。 ポインタと前進だけを使って、BLASとLAPACK関数を高度に調整し、最適化することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x8/&gt;`view`&lt;x9/&gt; stores the input index vectors in a
+&lt;x10/&gt;SubArray&lt;x11/&gt; object, which can later be used to index the original array
+indirectly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160440Z" creationid="hsugawa8651" creationdate="20181109T160440Z">
+        <seg>&lt;x8/&gt;'view'&lt;x9/&gt;は、入力インデックスベクトルを &lt;x10/&gt;サブアレイ&lt;x11/&gt;オブジェクトで、後でオリジナルの配列をインデックス化するために使用できます。 間接的に。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A "strided" array is stored in memory with elements laid out in regular offsets such that
+an instance with a supported &lt;x1/&gt;isbits&lt;x2/&gt; element type can be passed to
+external C and Fortran functions that expect this memory layout.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160455Z" creationid="hsugawa8651" creationdate="20181109T160455Z">
+        <seg>"stried"配列は、規則的なオフセットに配置された要素を含むメモリに格納されます。 サポートされる&lt;x1/&gt;イスビトス&lt;x2/&gt;エレメントタイプを持つインスタンスは このメモリレイアウトを期待する外部CとFortranの関数です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -231,6 +280,16 @@ from &lt;x1/&gt;`AbstractArray`&lt;x2/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By putting the &lt;x12/&gt;`@views`&lt;x13/&gt; macro in front of an expression or
+block of code, any &lt;x14/&gt;array[...]&lt;x15/&gt; slice in that expression will be converted to
+create a &lt;x16/&gt;SubArray&lt;x17/&gt; view instead.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160443Z" creationid="hsugawa8651" creationdate="20181109T160443Z">
+        <seg>&lt;x12/&gt;`@views'&lt;x13/&gt;マクロを式の前に置くか コードのブロック、任意の&lt;x14/&gt;配列[.]&lt;x15/&gt;スライスは、その式の中に変換されます。 代わりに&lt;x16/&gt;サブアレイを作成&lt;x17/&gt;ビューを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Callees must make explicit copies to ensure that they don't modify inputs that
 they don't intend to change.</seg>
       </tuv>
@@ -267,6 +326,14 @@ result.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Concrete types should also typically provide a &lt;x16/&gt;`similar(A,T=eltype(A),dims=size(A))`&lt;x17/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160350Z" creationid="hsugawa8651" creationdate="20181109T160350Z">
+        <seg>具体的には、典型的には、&lt;x16/&gt;'類似の(A,T=エルテープ(A),dims=size(A))`&lt;x17/&gt;を提供する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Consider these examples of this syntax:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154648Z" creationid="hsugawa8651" creationdate="20181109T154648Z">
@@ -289,6 +356,16 @@ multidimensional index.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153954Z" creationid="hsugawa8651" creationdate="20181109T153954Z">
         <seg>現在、プラットフォームのデフォルトのC呼び出し規約のみがサポートされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>DenseArray&lt;x1/&gt; is an abstract subtype of &lt;x2/&gt;AbstractArray&lt;x3/&gt; intended to include all arrays where
+elements are stored contiguously in column-major order (see additional notes in
+&lt;x4/&gt;&lt;x5/&gt;&lt;x6/&gt;(@ref man-performance-tips)).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160418Z" creationid="hsugawa8651" creationdate="20181109T160418Z">
+        <seg>DenseArray&lt;x1/&gt;は、すべての配列を含むことを意図した&lt;x2/&gt;AbstractArray&lt;x3/&gt;の抽象サブタイプである。 要素は列主順序で連続的に格納されます(追加の注記を参照してください)。 &lt;x4/&gt;&lt;x5/&gt;&lt;x6/&gt;(@ref manのパフォーマンス・ヒント))。</seg>
       </tuv>
     </tu>
     <tu>
@@ -395,6 +472,15 @@ the result in single precision by writing:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For more details on defining custom
+&lt;x16/&gt;AbstractArray&lt;x17/&gt; implementations, see the &lt;x18/&gt;&lt;x19/&gt;&lt;x20/&gt;(@ref man-interface-array).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160400Z" creationid="hsugawa8651" creationdate="20181109T160400Z">
+        <seg>カスタム定義の詳細については &lt;x16/&gt;AbstractArray&lt;x17/&gt;実装を参照してください。&lt;x18/&gt;&lt;x19/&gt;&lt;x20/&gt;(@ref man interface array)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For most computational purposes, arrays should contain
 objects of a more specific type, such as &lt;x3/&gt;`Float64`&lt;x4/&gt; or &lt;x5/&gt;`Int32`&lt;x6/&gt;.</seg>
       </tuv>
@@ -446,6 +532,15 @@ is written to all referenced locations of &lt;x6/&gt;A&lt;x7/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155420Z" creationid="hsugawa8651" creationdate="20181109T155420Z">
         <seg>&lt;x4/&gt;X&lt;x5/&gt;が配列でない場合は、その値は は、&lt;x6/&gt;A&lt;x7/&gt;の参照されたすべての場所に書き込まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a pointer conversion method &lt;x19/&gt;`Base.unsafe_convert(Ptr{T}, A)`&lt;x20/&gt; is
+provided, the memory layout must correspond in the same way to these strides.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160506Z" creationid="hsugawa8651" creationdate="20181109T160506Z">
+        <seg>ポインタ変換方法&lt;x19/&gt;`Base.unsafe_convert(Ptr{T},A)`&lt;x20/&gt;がある場合 この場合、メモリレイアウトは、これらの進歩と同じ方法で対応する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -567,6 +662,15 @@ or a series of dimension sizes passed as a variable number of arguments.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the future,
+however, it may do so, yielding even greater performance gains.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160601Z" creationid="hsugawa8651" creationdate="20181109T160601Z">
+        <seg>将来は しかし、それによってパフォーマンスが向上する可能性があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the most general case,
 an array may contain objects of type &lt;x1/&gt;`Any`&lt;x2/&gt;.</seg>
       </tuv>
@@ -582,6 +686,16 @@ it will be a &lt;x7/&gt;CartesianIndex&lt;x8/&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155838Z" creationid="hsugawa8651" creationdate="20181109T155838Z">
         <seg>2番目の 構成,&lt;x1/&gt;i&lt;x2/&gt;は&lt;x5/&gt;Int&lt;x6/&gt;であり,&lt;x5/&gt;A&lt;x6/&gt;が高速線形インデックスを用いたアレイ型である場合は,それ以外の値である。 &lt;x7/&gt;CartesianIndex&lt;x8/&gt;になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Increasing the
+index of dimension &lt;x9/&gt;k&lt;x10/&gt; by &lt;x11/&gt;1&lt;x12/&gt; should increase the index &lt;x13/&gt;i&lt;x14/&gt; of &lt;x15/&gt;`getindex(A,i)`&lt;x16/&gt; by
+&lt;x17/&gt;`stride(A,k)`&lt;x18/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160502Z" creationid="hsugawa8651" creationdate="20181109T160502Z">
+        <seg>増加 &lt;x11/&gt;1&lt;x12/&gt;&lt;x12/&gt;の寸法&lt;x9/&gt;k&lt;x10/&gt;は、&lt;x15/&gt;'getindex(A,i)'&lt;x15/&gt;のインデックス&lt;x13/&gt;i&lt;x14/&gt;を増加させます。 &lt;x17/&gt;`stride(A,k)`&lt;x18/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -674,6 +788,16 @@ sizes, such as adding a vector to each column of a matrix.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia has a "no boilerplate" philosophy:
+functions can be called directly from Julia without any "glue" code, code generation, or compilation
+-- even from the interactive prompt.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160541Z" creationid="hsugawa8651" creationdate="20181109T160541Z">
+        <seg>Juliaは「ボイラープレートなし」哲学を持っている。 関数は、"glue"コード、コード生成、コンパイルなしで、Juliaから直接呼び出すことができます。 --対話型プロンプトからでも。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia's compiler uses type inference and generates
 optimized code for scalar array indexing, allowing programs to be written in a style that is convenient
 and readable, without sacrificing performance, and using less memory at times.</seg>
@@ -738,12 +862,31 @@ copy of the input, and returning that copy.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>More concrete examples
+can be found within the &lt;x25/&gt;&lt;x26/&gt;&lt;x27/&gt;(@ref man-interface-strided-arrays).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160515Z" creationid="hsugawa8651" creationdate="20181109T160515Z">
+        <seg>具体的な事例 は、&lt;x25/&gt;&lt;x26/&gt;&lt;x27/&gt;(@ref man interface strided配列)内にあることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Most
 technical computing languages pay a lot of attention to their array implementation at the expense
 of other containers.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154112Z" creationid="hsugawa8651" creationdate="20181109T154112Z">
         <seg>ほとんど テクニカル・コンピューティング言語は、アレイ実装に多大な関心を払っています。 その他の容器。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Most C and Fortran libraries ship
+compiled as shared libraries already, but if you are compiling the code yourself using GCC (or
+Clang), you will need to use the &lt;x1/&gt;-shared&lt;x2/&gt; and &lt;x3/&gt;-fPIC&lt;x4/&gt; options.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160550Z" creationid="hsugawa8651" creationdate="20181109T160550Z">
+        <seg>ほとんどのCおよびFortranライブラリは出荷されています。 はすでに共有ライブラリとしてコンパイルされていますが、GCCを使用して自分でコードをコンパイルする場合は Clang)は、&lt;x1/&gt;-shared&lt;x2/&gt;および&lt;x3/&gt;-fPIC&lt;x4/&gt;オプションを使用する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -762,6 +905,16 @@ also accept a first input &lt;x3/&gt;T&lt;x4/&gt;, which is the element type of 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160131Z" creationid="hsugawa8651" creationdate="20181109T160131Z">
         <seg>ネストされた「ドットコール」&lt;x5/&gt;f.(...)&lt;x6/&gt;(&lt;x7/&gt;.+&lt;x8/&gt;eteteraへの呼び出しを含む) &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man dot演算子)は、単一の&lt;x12/&gt;ブロードキャスト・&lt;x13/&gt;コールに対して使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No matter how an &lt;x2/&gt;AbstractArray{T,N}&lt;x3/&gt; is represented internally, &lt;x4/&gt;T&lt;x5/&gt; is the type of
+object returned by &lt;x6/&gt;integer&lt;x7/&gt; indexing (&lt;x8/&gt;A[1, ..., 1]&lt;x9/&gt;, when &lt;x10/&gt;A&lt;x11/&gt; is not empty) and &lt;x12/&gt;N&lt;x13/&gt; should be
+the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160357Z" creationid="hsugawa8651" creationdate="20181109T160357Z">
+        <seg>&lt;x2/&gt;AbstractArray{T,N}&lt;x3/&gt;が内部的にどのように表されても、&lt;x4/&gt;T&lt;x5/&gt;は以下のタイプである。 &lt;x6/&gt;整数&lt;x7/&gt;インデックス(&lt;x8/&gt;A[1,.…,1]&lt;x9/&gt;,&lt;x10/&gt;)は&lt;x10/&gt;A&lt;x11/&gt;であり、&lt;x12/&gt;N&lt;x13/&gt;は&lt;x12/&gt;n&lt;x13/&gt;である。 &lt;x14/&gt;`size'&lt;x15/&gt;によって返されるタプルの長さです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -856,11 +1009,39 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Strided arrays
+must define a &lt;x3/&gt;`strides(A)`&lt;x4/&gt; method that returns a tuple of "strides" for each dimension; a
+provided &lt;x5/&gt;`stride(A,k)`&lt;x6/&gt; method accesses the &lt;x7/&gt;k&lt;x8/&gt;th element within this tuple.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160458Z" creationid="hsugawa8651" creationdate="20181109T160458Z">
+        <seg>ストローブされた配列 は、各次元のタプルを返す&lt;x3/&gt;`end(A)'&lt;x4/&gt;メソッドを定義する必要があります。 &lt;x5/&gt;`stride(A,k)'は、このタプル内の&lt;x7/&gt;k&lt;x8/&gt;番目のエレメントにアクセスします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SubArray&lt;x1/&gt; is a specialization of &lt;x2/&gt;AbstractArray&lt;x3/&gt; that performs indexing by
+sharing memory with the original array rather than by copying it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160427Z" creationid="hsugawa8651" creationdate="20181109T160427Z">
+        <seg>サブアレイ&lt;x1/&gt;は、インデックス作成を実行する&lt;x2/&gt;AbstractArray&lt;x3/&gt;の特殊化です。 コピーするのではなく、オリジナルのアレイとメモリを共有することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;AbstractArray&lt;x2/&gt; type includes anything vaguely array-like, and implementations of it might
 be quite different from conventional arrays.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160313Z" creationid="hsugawa8651" creationdate="20181109T160313Z">
         <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;タイプは、曖昧な配列を含んでおり、実装は実装されています。 従来のアレイとは大きく異なります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x7/&gt;`Array`&lt;x8/&gt; type is a specific instance
+of &lt;x9/&gt;DenseArray&lt;x10/&gt;;  &lt;x11/&gt;`Vector`&lt;x12/&gt; and &lt;x13/&gt;`Matrix`&lt;x14/&gt; are aliases for the 1-d and 2-d cases.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160422Z" creationid="hsugawa8651" creationdate="20181109T160422Z">
+        <seg>&lt;x7/&gt;「Array」&lt;x8/&gt;タイプは、特定のインスタンスです。 &lt;x9/&gt;DenseArray&lt;x10/&gt;;&lt;x11/&gt;'Vector'&lt;x12/&gt;および&lt;x13/&gt;'Matrix'&lt;x14/&gt;は、1-dおよび2-dケースのエイリアスです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -871,6 +1052,14 @@ other code written in Julia.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154129Z" creationid="hsugawa8651" creationdate="20181109T154129Z">
         <seg>アレイ・ライブラリーは実装されています。 ほとんどの場合、ジュリア自身は、コンパイラーからのパフォーマンスを導き出し その他のコードはジュリアに書かれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The code to be called must be available as a shared library.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160547Z" creationid="hsugawa8651" creationdate="20181109T160547Z">
+        <seg>呼び出されるコードは共有ライブラリとして使用できる必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -900,6 +1089,16 @@ neighbor along a 1-d grid.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following example computes the QR decomposition of a small section of a larger array, without
+creating any temporaries, and by calling the appropriate LAPACK function with the right leading
+dimension size and stride parameters.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160522Z" creationid="hsugawa8651" creationdate="20181109T160522Z">
+        <seg>次の例は、大きな配列の小さいセクションのQR分解を計算します。 一時的なものを作成すること、そして適切なLAPACK関数を使って適切な関数を呼び出すこと 寸法のサイズと歩幅のパラメータです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The general syntax for assigning values in an n-dimensional array A is:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155333Z" creationid="hsugawa8651" creationdate="20181109T155333Z">
@@ -912,6 +1111,16 @@ neighbor along a 1-d grid.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155109Z" creationid="hsugawa8651" creationdate="20181109T155109Z">
         <seg>n次元配列Aへの索引付けの一般的な構文は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The machine instructions generated
+by Julia's JIT are the same as a native C call would be, so the resulting overhead is the same
+as calling a library function from C code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160553Z" creationid="hsugawa8651" creationdate="20181109T160553Z">
+        <seg>生成されたマシン命令 JuliaのJITはネイティブのC呼び出しと同じであるため、結果として生じるオーバーヘッドは同じです。 は、Cコードからライブラリ関数を呼び出します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -930,6 +1139,16 @@ on each value in their given list of values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154807Z" creationid="hsugawa8651" creationdate="20181109T154807Z">
         <seg>この形式の意味は、&lt;x1/&gt;F(x,y,...)&lt;x2/&gt;は、変数&lt;x3/&gt;x4&lt;x4/&gt;、&lt;x5/&gt;y&lt;x6/&gt;の変数を用いて評価されることである。 指定された値リストの各値です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The result
+of &lt;x4/&gt;`view`&lt;x5/&gt; looks the same as the result of &lt;x6/&gt;`getindex`&lt;x7/&gt;, except the
+data is left in place.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160436Z" creationid="hsugawa8651" creationdate="20181109T160436Z">
+        <seg>結果 &lt;x4/&gt;'view'&lt;x5/&gt;は、&lt;x6/&gt;'getindex'&lt;x7/&gt;の結果と同じであるが データが残されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -984,6 +1203,15 @@ generally work correctly as a fallback for any specific array implementation.</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>They can be used similarly to &lt;x2/&gt;Array{Bool}&lt;x3/&gt; arrays (which store one byte per boolean value),
+and can be converted to/from the latter via &lt;x4/&gt;Array(bitarray)&lt;x5/&gt; and &lt;x6/&gt;BitArray(array)&lt;x7/&gt;, respectively.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160451Z" creationid="hsugawa8651" creationdate="20181109T160451Z">
+        <seg>これらは、&lt;x2/&gt;Array{Bool}&lt;x3/&gt;配列(ブール値ごとに1バイトを格納する)と同様に使用できます。 また、&lt;x4/&gt;アレイ(bitarray)&lt;x5/&gt;および&lt;x6/&gt;BitArray(配列)&lt;x7/&gt;を介して、後者との間で変換を行うことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>They represent a collection
 of scalar indices that each span &lt;x3/&gt;N&lt;x4/&gt; dimensions, enabling a form of indexing
 that is sometimes referred to as pointwise indexing.</seg>
@@ -1023,6 +1251,15 @@ subsections, and arrays of booleans to select elements at their &lt;x14/&gt;true
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is accomplished just by making an appropriate call with
+&lt;x1/&gt;`ccall`&lt;x2/&gt; syntax, which looks like an ordinary function call.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160544Z" creationid="hsugawa8651" creationdate="20181109T160544Z">
+        <seg>これは、適切な呼び出しを行うことによって実現されます。 &lt;x1/&gt;`ccall'&lt;x2/&gt;構文は、通常の関数呼び出しのように見えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This means that
 &lt;x1/&gt;@cfunction&lt;x2/&gt;-generated pointers cannot be used in calls where WINAPI expects &lt;x3/&gt;stdcall&lt;x4/&gt;</seg>
       </tuv>
@@ -1037,6 +1274,24 @@ an array and storing them in advance (see &lt;x1/&gt;Iteration&lt;x2/&gt;).</seg
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154927Z" creationid="hsugawa8651" creationdate="20181109T154927Z">
         <seg>このオブジェクトを反復して、必要に応じて必要に応じて値を生成することができます。 配列とそれを事前に格納する(&lt;x1/&gt;Iteration&lt;x2/&gt;を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Though most code can be written in Julia, there are many high-quality, mature libraries for numerical
+computing already written in C and Fortran.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160533Z" creationid="hsugawa8651" creationdate="20181109T160533Z">
+        <seg>ほとんどのコードはJuliaで書くことができますが、多くの場合、高品質で成熟したライブラリがあります。 CとFortranではすでに作成されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To allow easy use of this existing code, Julia makes
+it simple and efficient to call C and Fortran functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160536Z" creationid="hsugawa8651" creationdate="20181109T160536Z">
+        <seg>この既存のコードを簡単に利用できるようにするために、Juliaは CとFortranの関数を呼び出すことは簡単で効率的です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1083,6 +1338,26 @@ will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Very few operations are implemented specifically for &lt;x15/&gt;Array&lt;x16/&gt; beyond those that are required
+for all &lt;x17/&gt;AbstractArray&lt;x18/&gt;s; much of the array library is implemented in a generic
+manner that allows all custom arrays to behave similarly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160424Z" creationid="hsugawa8651" creationdate="20181109T160424Z">
+        <seg>&lt;x15/&gt;アレイ&lt;x16/&gt;に対しては、必要な動作を超えて実装されているオペレーションはほとんどありません。 すべての&lt;x17/&gt;AbstractArray&lt;x18/&gt;;アレイライブラリの多くは一般的に実装されています。 すべてのカスタム・アレイが同じように動作するようにする方法です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When both
+libraries and executables are generated by LLVM, it is possible to perform whole-program optimizations
+that can even optimize across this boundary, but Julia does not yet support that.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160558Z" creationid="hsugawa8651" creationdate="20181109T160558Z">
+        <seg>両方 ライブラリと実行可能ファイルはLLVMによって生成されるため、プログラム全体の最適化を実行することができます。 この境界にわたって最適化することもできますが、ジュリアはまだサポートしていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When combined with other indexing forms and iterators
 that yield &lt;x3/&gt;CartesianIndex&lt;x4/&gt;es, however, this can produce very elegant
 and efficient code.</seg>
@@ -1106,6 +1381,14 @@ are needed to separate the generator from subsequent arguments:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155300Z" creationid="hsugawa8651" creationdate="20181109T155300Z">
         <seg>X = getindex(A, I_1, I_2, ..., I_n)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`BitArray`&lt;x1/&gt;s are space-efficient "packed" boolean arrays, which store one bit per boolean value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160448Z" creationid="hsugawa8651" creationdate="20181109T160448Z">
+        <seg>「BitArray」&lt;x1/&gt;は、ブール値ごとに1ビットを格納するスペース効率の高い「パックされた」ブール演算配列です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1186,6 +1469,15 @@ are needed to separate the generator from subsequent arguments:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153242Z" creationid="hsugawa8651" creationdate="20181109T153242Z">
         <seg>`size(A,n)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`view`&lt;x1/&gt; function, which is called the same way as
+&lt;x2/&gt;`getindex`&lt;x3/&gt; (with an array and a series of index arguments).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160431Z" creationid="hsugawa8651" creationdate="20181109T160431Z">
+        <seg>「view」&lt;x1/&gt;関数は、以下と同じ方法で呼び出されます。 &lt;x2/&gt;`getindex'&lt;x3/&gt;(配列と一連のインデックス引数を持つ)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1725,6 +2017,78 @@ julia&gt; searchsorted(a, 4)
 
 julia&gt; searchsorted(a, 4)
 3:2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; a = rand(10, 10)
+10×10 Array{Float64,2}:
+ 0.517515  0.0348206  0.749042   0.0979679  …  0.75984     0.950481   0.579513
+ 0.901092  0.873479   0.134533   0.0697848     0.0586695   0.193254   0.726898
+ 0.976808  0.0901881  0.208332   0.920358      0.288535    0.705941   0.337137
+ 0.657127  0.0317896  0.772837   0.534457      0.0966037   0.700694   0.675999
+ 0.471777  0.144969   0.0718405  0.0827916     0.527233    0.173132   0.694304
+ 0.160872  0.455168   0.489254   0.827851   …  0.62226     0.0995456  0.946522
+ 0.291857  0.769492   0.68043    0.629461      0.727558    0.910796   0.834837
+ 0.775774  0.700731   0.700177   0.0126213     0.00822304  0.327502   0.955181
+ 0.9715    0.64354    0.848441   0.241474      0.591611    0.792573   0.194357
+ 0.646596  0.575456   0.0995212  0.038517      0.709233    0.477657   0.0507231
+
+julia&gt; b = view(a, 2:2:8,2:2:4)
+4×2 view(::Array{Float64,2}, 2:2:8, 2:2:4) with eltype Float64:
+ 0.873479   0.0697848
+ 0.0317896  0.534457
+ 0.455168   0.827851
+ 0.700731   0.0126213
+
+julia&gt; (q, r) = qr(b);
+
+julia&gt; q
+4×4 LinearAlgebra.QRCompactWYQ{Float64,Array{Float64,2}}:
+ -0.722358    0.227524  -0.247784    -0.604181
+ -0.0262896  -0.575919  -0.804227     0.144377
+ -0.376419   -0.75072    0.540177    -0.0541979
+ -0.579497    0.230151  -0.00552346   0.781782
+
+julia&gt; r
+2×2 Array{Float64,2}:
+ -1.20921  -0.383393
+  0.0      -0.910506</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160525Z" creationid="hsugawa8651" creationdate="20181109T160525Z">
+        <seg>julia&gt; a = rand(10, 10)
+10×10 Array{Float64,2}:
+ 0.517515  0.0348206  0.749042   0.0979679  …  0.75984     0.950481   0.579513
+ 0.901092  0.873479   0.134533   0.0697848     0.0586695   0.193254   0.726898
+ 0.976808  0.0901881  0.208332   0.920358      0.288535    0.705941   0.337137
+ 0.657127  0.0317896  0.772837   0.534457      0.0966037   0.700694   0.675999
+ 0.471777  0.144969   0.0718405  0.0827916     0.527233    0.173132   0.694304
+ 0.160872  0.455168   0.489254   0.827851   …  0.62226     0.0995456  0.946522
+ 0.291857  0.769492   0.68043    0.629461      0.727558    0.910796   0.834837
+ 0.775774  0.700731   0.700177   0.0126213     0.00822304  0.327502   0.955181
+ 0.9715    0.64354    0.848441   0.241474      0.591611    0.792573   0.194357
+ 0.646596  0.575456   0.0995212  0.038517      0.709233    0.477657   0.0507231
+
+julia&gt; b = view(a, 2:2:8,2:2:4)
+4×2 view(::Array{Float64,2}, 2:2:8, 2:2:4) with eltype Float64:
+ 0.873479   0.0697848
+ 0.0317896  0.534457
+ 0.455168   0.827851
+ 0.700731   0.0126213
+
+julia&gt; (q, r) = qr(b);
+
+julia&gt; q
+4×4 LinearAlgebra.QRCompactWYQ{Float64,Array{Float64,2}}:
+ -0.722358    0.227524  -0.247784    -0.604181
+ -0.0262896  -0.575919  -0.804227     0.144377
+ -0.376419   -0.75072    0.540177    -0.0541979
+ -0.579497    0.230151  -0.00552346   0.781782
+
+julia&gt; r
+2×2 Array{Float64,2}:
+ -1.20921  -0.383393
+  0.0      -0.910506</seg>
       </tuv>
     </tu>
     <tu>
