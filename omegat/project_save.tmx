@@ -56,10 +56,34 @@ us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An array of scalar indices.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155517Z" creationid="hsugawa8651" creationdate="20181109T155517Z">
+        <seg>スカラー・インデックスの配列です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An array with a specific element type can be constructed using the syntax &lt;x1/&gt;T[A, B, C, ...]&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154659Z" creationid="hsugawa8651" creationdate="20181109T154659Z">
         <seg>特定の要素タイプを持つ配列は、構文&lt;x1/&gt;T[A,B,C,…]&lt;x2/&gt;を使用して構築することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An object that represents an array of scalar indices and can be converted to such by &lt;x1/&gt;`to_indices`&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155534Z" creationid="hsugawa8651" creationdate="20181109T155534Z">
+        <seg>スカラーインデックスの配列を表すオブジェクトであって、&lt;x1/&gt;"to_indices"&lt;x2/&gt;によって変換されることが可能である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Any custom array of scalar indices that is a subtype of &lt;x1/&gt;AbstractArray&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155529Z" creationid="hsugawa8651" creationdate="20181109T155529Z">
+        <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;のサブタイプであるスカラーインデックスの任意のカスタム配列</seg>
       </tuv>
     </tu>
     <tu>
@@ -80,6 +104,22 @@ us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Arrays of &lt;x1/&gt;CartesianIndex{N}&lt;x2/&gt; (see below for more details)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155531Z" creationid="hsugawa8651" creationdate="20181109T155531Z">
+        <seg>&lt;x1/&gt;CartesianIndex{N}&lt;x2/&gt;(詳細については以下を参照)のアレイ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Arrays of booleans, which select elements at their &lt;x1/&gt;true&lt;x2/&gt; indices (see below for more details)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155544Z" creationid="hsugawa8651" creationdate="20181109T155544Z">
+        <seg>ブール値の配列で、&lt;x1/&gt;真の&lt;x2/&gt;インデックスで要素を選択します(詳細については、以下を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As a special part of this syntax, the &lt;x1/&gt;end&lt;x2/&gt; keyword may be used to represent the last index of
 each dimension within the indexing brackets, as determined by the size of the innermost array
 being indexed.</seg>
@@ -95,6 +135,14 @@ from &lt;x1/&gt;`AbstractArray`&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154132Z" creationid="hsugawa8651" creationdate="20181109T154132Z">
         <seg>このように、カスタム配列タイプを継承することによって、カスタム配列タイプを定義することも可能です。 &lt;x1/&gt;'AbstractArray'&lt;x2/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By default this includes:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155509Z" creationid="hsugawa8651" creationdate="20181109T155509Z">
+        <seg>デフォルトでは、次の内容が含まれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -143,10 +191,36 @@ result.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Considered alone, this may seem relatively trivial; &lt;x1/&gt;CartesianIndex&lt;x2/&gt; simply
+gathers multiple integers together into one object that represents a single
+multidimensional index.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155644Z" creationid="hsugawa8651" creationdate="20181109T155644Z">
+        <seg>単独で考慮すると、これは比較的簡単であるように思えるかもしれません。&lt;x1/&gt;CartesianIndex&lt;x2/&gt;は単純です。 複数の整数を1つのオブジェクトに集約して1つのオブジェクトを作成します。 多次元インデックス。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Currently, only the platform-default C calling convention is supported.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153954Z" creationid="hsugawa8651" creationdate="20181109T153954Z">
         <seg>現在、プラットフォームのデフォルトのC呼び出し規約のみがサポートされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Do not use `end`&lt;x4/&gt;&lt;x5/&gt;in indexing expressions that may contain either `CartesianIndex` or arrays thereof.&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155720Z" creationid="hsugawa8651" creationdate="20181109T155720Z">
+        <seg>「CartesianIndex」またはその配列が含まれる可能性のある表現のインデックス作成には「end」&lt;x4/&gt;&lt;x5/&gt;を使用しないでください。&lt;x6/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Empty arrays like &lt;x1/&gt;[]&lt;x2/&gt;, which select no elements</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155524Z" creationid="hsugawa8651" creationdate="20181109T155524Z">
+        <seg>&lt;x1/&gt;[]&lt;x2/&gt;のような空の配列で、要素は選択されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -180,6 +254,15 @@ result.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154704Z" creationid="hsugawa8651" creationdate="20181109T154704Z">
         <seg>たとえば、&lt;x11/&gt;任意の[x,y,z]&lt;x12/&gt;は、任意の値を含むことができる異機種間配列を構成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, it enables
+accessing the diagonal elements from the first "page" of &lt;x5/&gt;A&lt;x6/&gt; from above:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155653Z" creationid="hsugawa8651" creationdate="20181109T155653Z">
+        <seg>たとえば 上からの&lt;x5/&gt;A&lt;x6/&gt;の最初の「ページ」からの対角線要素へのアクセス</seg>
       </tuv>
     </tu>
     <tu>
@@ -335,6 +418,16 @@ type explicitly, a type can be prepended to the comprehension.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the expression &lt;x1/&gt;A[I_1, I_2, ..., I_n]&lt;x2/&gt;, each &lt;x3/&gt;I_k&lt;x4/&gt; may be a scalar index, an
+array of scalar indices, or an object that represents an array of scalar
+indices and can be converted to such by &lt;x5/&gt;`to_indices`&lt;x6/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155503Z" creationid="hsugawa8651" creationdate="20181109T155503Z">
+        <seg>式&lt;x1/&gt;A[I_1,I_2,…I_n]&lt;x2/&gt;では、各&lt;x3/&gt;I_k&lt;x4/&gt;はスカラーインデックスであってもよいし スカラの配列、またはスカラーの配列を表すオブジェクト インデックスは、&lt;x5/&gt;から&lt;x6/&gt;までに変換することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the following list of
 such functions, calls with a &lt;x1/&gt;dims...&lt;x2/&gt; argument can either take a single tuple of dimension sizes
 or a series of dimension sizes passed as a variable number of arguments.</seg>
@@ -354,10 +447,28 @@ an array may contain objects of type &lt;x1/&gt;`Any`&lt;x2/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Indexed assignment
+syntax without the &lt;x6/&gt;end&lt;x7/&gt; keyword is equivalent to a call to
+&lt;x8/&gt;`setindex!`&lt;x9/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155447Z" creationid="hsugawa8651" creationdate="20181109T155447Z">
+        <seg>インデックス付きの割り当て &lt;x6/&gt;end&lt;x7/&gt;キーワードがない構文は、次のような呼び出しに相当します。 &lt;x8/&gt;`setindex!`&lt;x9/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Indexing syntax without the &lt;x3/&gt;end&lt;x4/&gt; keyword is equivalent to a call to &lt;x5/&gt;`getindex`&lt;x6/&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155245Z" creationid="hsugawa8651" creationdate="20181109T155245Z">
         <seg>&lt;x3/&gt;end&lt;x4/&gt;キーワードなしのインデックス構文は、&lt;x5/&gt;`getindex'&lt;x6/&gt;への呼び出しと同じです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It can even be combined with a &lt;x8/&gt;:&lt;x9/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155706Z" creationid="hsugawa8651" creationdate="20181109T155706Z">
+        <seg>また、&lt;x8/&gt;:&lt;x9/&gt;と組み合わせることもできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -392,6 +503,16 @@ and readable, without sacrificing performance, and using less memory at times.</
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154040Z" creationid="hsugawa8651" creationdate="20181109T154040Z">
         <seg>Juliaは、ほとんどの技術的なコンピューティング言語と同様、一流のアレイ実装を提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Just as in &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-array-indexing), the &lt;x4/&gt;end&lt;x5/&gt; keyword may be used
+to represent the last index of each dimension within the indexing brackets, as
+determined by the size of the array being assigned into.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155438Z" creationid="hsugawa8651" creationdate="20181109T155438Z">
+        <seg>&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man array indexing)の場合と同様に、&lt;x4/&gt;end&lt;x5/&gt;キーワードを使用することもできます。 インデックス・ブラケット内の各次元の最後のインデックスを表示するには、次のように指定します。 割り当てられているアレイのサイズによって決定されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -469,10 +590,28 @@ indices.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Ranges like &lt;x1/&gt;a:c&lt;x2/&gt; or &lt;x3/&gt;a:b:c&lt;x4/&gt;, which select contiguous or strided subsections from &lt;x5/&gt;a&lt;x6/&gt; to &lt;x7/&gt;c&lt;x8/&gt; (inclusive)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155527Z" creationid="hsugawa8651" creationdate="20181109T155527Z">
+        <seg>&lt;x1/&gt;a:c&lt;x2/&gt;または&lt;x3/&gt;a:b&lt;x4/&gt;のような範囲。&lt;x5/&gt;から&lt;x6/&gt;&lt;x8/&gt;&lt;x8/&gt;(含む)まで連続するサブセクションまたはストライドされたサブセクションを選択する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Scalar values passed to these functions are treated as 1-element arrays.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154559Z" creationid="hsugawa8651" creationdate="20181109T154559Z">
         <seg>これらの関数に渡されるスカラー値は、1要素配列として扱われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See &lt;x5/&gt;Iteration&lt;x6/&gt; below, and for some more advanced
+examples, see &lt;x7/&gt;this blog post on multidimensional algorithms and
+iteration&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155626Z" creationid="hsugawa8651" creationdate="20181109T155626Z">
+        <seg>以下の「&lt;x5/&gt;イテレーション&lt;x6/&gt;」を参照してください。また、詳細については、以下を参照してください。 例を参照してください。このブログ記事は、多次元アルゴリズムに関するこのブログ記事を参照してください。 繰り返し&lt;x8/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -580,6 +719,16 @@ of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, e
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>They represent a collection
+of scalar indices that each span &lt;x3/&gt;N&lt;x4/&gt; dimensions, enabling a form of indexing
+that is sometimes referred to as pointwise indexing.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155651Z" creationid="hsugawa8651" creationdate="20181109T155651Z">
+        <seg>コレクションを表します。 各スパン&lt;x3/&gt;N&lt;x4/&gt;の各次元を使用可能にするスカラー指数のことで、索引の形式が可能になります。 ポイントワイズインデックスと呼ばれることもあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This
 will construct a 1-d array with element type &lt;x3/&gt;T&lt;x4/&gt;, initialized to contain elements &lt;x5/&gt;A&lt;x6/&gt;, &lt;x7/&gt;B&lt;x8/&gt;, &lt;x9/&gt;C&lt;x10/&gt;,
 etc.</seg>
@@ -597,6 +746,14 @@ subsections, and arrays of booleans to select elements at their &lt;x14/&gt;true
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155120Z" creationid="hsugawa8651" creationdate="20181109T155120Z">
         <seg>これには &lt;x6/&gt;「コロン」&lt;x7/&gt;(&lt;x8/&gt;:&lt;x9/&gt;)は、次元全体のすべてのインデックスを選択するために使用されます。 &lt;x10/&gt;a:c&lt;x11/&gt;または&lt;x12/&gt;a:b:c&lt;x13/&gt;to select連続またはストライドされたものを選択するための範囲 サブセクションは、&lt;x14/&gt;真の&lt;x15/&gt;インデックスで選択要素を選択するためのブール演算の配列です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This includes:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155518Z" creationid="hsugawa8651" creationdate="20181109T155518Z">
+        <seg>これには次のものが含まれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -636,6 +793,24 @@ will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Vectors and multidimensional arrays of integers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155522Z" creationid="hsugawa8651" creationdate="20181109T155522Z">
+        <seg>整数のベクトルおよび多次元配列</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When combined with other indexing forms and iterators
+that yield &lt;x3/&gt;CartesianIndex&lt;x4/&gt;es, however, this can produce very elegant
+and efficient code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155632Z" creationid="hsugawa8651" creationdate="20181109T155632Z">
+        <seg>他のインデックス作成フォームおよびイテレータと組み合わされた場合 しかし、それは&lt;x3/&gt;CartesianIndex&lt;x4/&gt;の収量をもたらすが、これは非常にエレガントなものである。 効率的なコードです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When writing a generator expression with multiple dimensions inside an argument list, parentheses
 are needed to separate the generator from subsequent arguments:</seg>
       </tuv>
@@ -649,6 +824,22 @@ are needed to separate the generator from subsequent arguments:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155300Z" creationid="hsugawa8651" creationdate="20181109T155300Z">
         <seg>X = getindex(A, I_1, I_2, ..., I_n)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`CartesianIndex{N}`&lt;x1/&gt;s, which behave like an &lt;x2/&gt;N&lt;x3/&gt;-tuple of integers spanning multiple dimensions (see below for more details)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155514Z" creationid="hsugawa8651" creationdate="20181109T155514Z">
+        <seg>「CartesianIndex{N}」&lt;x1/&gt;は、複数の次元を超える整数の&lt;x2/&gt;N&lt;x3/&gt;のように動作します(詳細については以下を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Colon()`&lt;x1/&gt; (&lt;x2/&gt;:&lt;x3/&gt;), which represents all indices within an entire dimension or across the entire array</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155540Z" creationid="hsugawa8651" creationdate="20181109T155540Z">
+        <seg>「コロン()」&lt;x1/&gt;(&lt;x2/&gt;:&lt;x3/&gt;)は、全次元または配列全体にわたってすべてのインデックスを表します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -869,6 +1060,26 @@ are needed to separate the generator from subsequent arguments:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; A = reshape(1:32, 4, 4, 2);
+
+julia&gt; A[3, 2, 1]
+7
+
+julia&gt; A[CartesianIndex(3, 2, 1)] == A[3, 2, 1] == 7
+true</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155608Z" creationid="hsugawa8651" creationdate="20181109T155608Z">
+        <seg>julia&gt; A = reshape(1:32, 4, 4, 2);
+
+julia&gt; A[3, 2, 1]
+7
+
+julia&gt; A[CartesianIndex(3, 2, 1)] == A[3, 2, 1] == 7
+true</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; A = reshape(collect(1:16), (2, 2, 2, 2))
 2×2×2×2 Array{Int64,4}:
 [:, :, 1, 1] =
@@ -979,6 +1190,92 @@ julia&gt; A[[1 2; 1 2], 1, 2, 1]
 2×2 Array{Int64,2}:
  5  6
  5  6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; A = reshape(collect(1:2:18), (3, 3))
+3×3 Array{Int64,2}:
+ 1   7  13
+ 3   9  15
+ 5  11  17
+
+julia&gt; A[4]
+7
+
+julia&gt; A[[2, 5, 8]]
+3-element Array{Int64,1}:
+  3
+  9
+ 15
+
+julia&gt; A[[1 4; 3 8]]
+2×2 Array{Int64,2}:
+ 1   7
+ 5  15
+
+julia&gt; A[[]]
+0-element Array{Int64,1}
+
+julia&gt; A[1:2:5]
+3-element Array{Int64,1}:
+ 1
+ 5
+ 9
+
+julia&gt; A[2, :]
+3-element Array{Int64,1}:
+  3
+  9
+ 15
+
+julia&gt; A[:, 3]
+3-element Array{Int64,1}:
+ 13
+ 15
+ 17</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155550Z" creationid="hsugawa8651" creationdate="20181109T155550Z">
+        <seg>julia&gt; A = reshape(collect(1:2:18), (3, 3))
+3×3 Array{Int64,2}:
+ 1   7  13
+ 3   9  15
+ 5  11  17
+
+julia&gt; A[4]
+7
+
+julia&gt; A[[2, 5, 8]]
+3-element Array{Int64,1}:
+  3
+  9
+ 15
+
+julia&gt; A[[1 4; 3 8]]
+2×2 Array{Int64,2}:
+ 1   7
+ 5  15
+
+julia&gt; A[[]]
+0-element Array{Int64,1}
+
+julia&gt; A[1:2:5]
+3-element Array{Int64,1}:
+ 1
+ 5
+ 9
+
+julia&gt; A[2, :]
+3-element Array{Int64,1}:
+  3
+  9
+ 15
+
+julia&gt; A[:, 3]
+3-element Array{Int64,1}:
+ 13
+ 15
+ 17</seg>
       </tuv>
     </tu>
     <tu>
@@ -1113,6 +1410,44 @@ ERROR: syntax: invalid iteration specification</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; page = A[:,:,1]
+4×4 Array{Int64,2}:
+ 1  5   9  13
+ 2  6  10  14
+ 3  7  11  15
+ 4  8  12  16
+
+julia&gt; page[[CartesianIndex(1,1),
+             CartesianIndex(2,2),
+             CartesianIndex(3,3),
+             CartesianIndex(4,4)]]
+4-element Array{Int64,1}:
+  1
+  6
+ 11
+ 16</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155657Z" creationid="hsugawa8651" creationdate="20181109T155657Z">
+        <seg>julia&gt; page = A[:,:,1]
+4×4 Array{Int64,2}:
+ 1  5   9  13
+ 2  6  10  14
+ 3  7  11  15
+ 4  8  12  16
+
+julia&gt; page[[CartesianIndex(1,1),
+             CartesianIndex(2,2),
+             CartesianIndex(3,3),
+             CartesianIndex(4,4)]]
+4-element Array{Int64,1}:
+  1
+  6
+ 11
+ 16</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; sum(1/n^2 for n=1:1000)
 1.6439345666815615</seg>
       </tuv>
@@ -1143,6 +1478,42 @@ julia&gt; hcat([1 2], 3)
 julia&gt; hcat([1 2], 3)
 1×3 Array{Int64,2}:
  1  2  3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; x = collect(reshape(1:9, 3, 3))
+3×3 Array{Int64,2}:
+ 1  4  7
+ 2  5  8
+ 3  6  9
+
+julia&gt; x[3, 3] = -9;
+
+julia&gt; x[1:2, 1:2] = [-1 -4; -2 -5];
+
+julia&gt; x
+3×3 Array{Int64,2}:
+ -1  -4   7
+ -2  -5   8
+  3   6  -9</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155453Z" creationid="hsugawa8651" creationdate="20181109T155453Z">
+        <seg>julia&gt; x = collect(reshape(1:9, 3, 3))
+3×3 Array{Int64,2}:
+ 1  4  7
+ 2  5  8
+ 3  6  9
+
+julia&gt; x[3, 3] = -9;
+
+julia&gt; x[1:2, 1:2] = [-1 -4; -2 -5];
+
+julia&gt; x
+3×3 Array{Int64,2}:
+ -1  -4   7
+ -2  -5   8
+  3   6  -9</seg>
       </tuv>
     </tu>
     <tu>
