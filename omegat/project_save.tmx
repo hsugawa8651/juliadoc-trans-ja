@@ -1314,6 +1314,16 @@ omitted it will default to &lt;x7/&gt;`Float64`&lt;x8/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the variable &lt;x6/&gt;i&lt;x7/&gt; has not been introduced in another
+scope, in the &lt;x8/&gt;for&lt;x9/&gt; loop form, it is visible only inside of the &lt;x10/&gt;for&lt;x11/&gt; loop, and not
+outside/afterwards.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T231159Z" creationid="hsugawa8651" creationdate="20181109T231159Z">
+        <seg>変数&lt;x6/&gt;i&lt;x7/&gt;が別の変数に導入されていない場合 &lt;x8/&gt;ループ形式の&lt;x8/&gt;では、&lt;x10/&gt;ループの場合は&lt;x10/&gt;の内部でのみ可視となります。 その後になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you don't
 specify this trait, the default value &lt;x5/&gt;IndexCartesian()&lt;x6/&gt; is used.</seg>
       </tuv>
@@ -3108,6 +3118,15 @@ of &lt;x1/&gt;&amp;&amp;&lt;x2/&gt; and &lt;x3/&gt;||&lt;x4/&gt; operators.</seg
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You'll either need a new interactive session instance or a different variable
+name to test this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T231201Z" creationid="hsugawa8651" creationdate="20181109T231201Z">
+        <seg>新しい対話型セッション・インスタンスまたは別の変数が必要です。 テストする名前:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`BitArray`&lt;x1/&gt;s are space-efficient "packed" boolean arrays, which store one bit per boolean value.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160448Z" creationid="hsugawa8651" creationdate="20181109T160448Z">
@@ -4227,6 +4246,34 @@ true</seg>
 3
 4
 5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; for j = 1:5
+           println(j)
+       end
+1
+2
+3
+4
+5
+
+julia&gt; j
+ERROR: UndefVarError: j not defined</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T231206Z" creationid="hsugawa8651" creationdate="20181109T231206Z">
+        <seg>julia&gt; for j = 1:5
+           println(j)
+       end
+1
+2
+3
+4
+5
+
+julia&gt; j
+ERROR: UndefVarError: j not defined</seg>
       </tuv>
     </tu>
     <tu>
