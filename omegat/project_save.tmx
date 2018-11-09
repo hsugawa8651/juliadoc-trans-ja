@@ -23,6 +23,14 @@ value of one or more of its arguments (compare, for example, &lt;x2/&gt;`sort`&l
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A&lt;x1/&gt; is overwritten with the value &lt;x2/&gt;X[i_1, i_2, ..., i_n]&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155417Z" creationid="hsugawa8651" creationdate="20181109T155417Z">
+        <seg>&lt;x1/&gt;は、&lt;x2/&gt;X[i_1,i_2,…,i_n]&lt;x3/&gt;の値で上書きされる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Adding parentheses lets
 us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
       </tuv>
@@ -143,6 +151,15 @@ result.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Empty ranges of the form &lt;x1/&gt;n:n-1&lt;x2/&gt; are sometimes used to indicate the inter-index location between
+&lt;x3/&gt;n-1&lt;x4/&gt; and &lt;x5/&gt;n&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155316Z" creationid="hsugawa8651" creationdate="20181109T155316Z">
+        <seg>&lt;x1/&gt;n:n-1&lt;x2/&gt;という形式の空の範囲は、場合によっては、インデックス間の位置を示すために使用される。 &lt;x3/&gt;n-1&lt;x4/&gt;および&lt;x5/&gt;n&lt;x6/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Float32[ 0.25*x[i-1] + 0.5*x[i] + 0.25*x[i+1] for i=2:length(x)-1 ]</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154902Z" creationid="hsugawa8651" creationdate="20181109T154902Z">
@@ -163,6 +180,15 @@ result.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154704Z" creationid="hsugawa8651" creationdate="20181109T154704Z">
         <seg>たとえば、&lt;x11/&gt;任意の[x,y,z]&lt;x12/&gt;は、任意の値を含むことができる異機種間配列を構成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, the &lt;x7/&gt;`searchsorted`&lt;x8/&gt; function uses this convention to indicate
+the insertion point of a value not found in a sorted array:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155312Z" creationid="hsugawa8651" creationdate="20181109T155312Z">
+        <seg>たとえば、&lt;x7/&gt;'のセアルチゾルタド&lt;x8/&gt;関数は、この規則を使用して ソートされた配列に存在しない値の挿入点です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -216,6 +242,24 @@ objects of a more specific type, such as &lt;x3/&gt;`Float64`&lt;x4/&gt; or &lt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154539Z" creationid="hsugawa8651" creationdate="20181109T154539Z">
         <seg>ここで、&lt;x1/&gt;(2, 3)&lt;x2/&gt;は、&lt;x3/&gt;「タプル」&lt;x4/&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If &lt;x1/&gt;X&lt;x2/&gt; is an array, it must have the same number of elements as the product of the lengths of
+the indices: &lt;x3/&gt;prod(length(I_1), length(I_2), ..., length(I_n))&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155408Z" creationid="hsugawa8651" creationdate="20181109T155408Z">
+        <seg>&lt;x1/&gt;X&lt;x2/&gt;が配列である場合、それは長さの積と同じ数の要素を持つ必要があります。 インデックス:&lt;x3/&gt;prod(長さ(I_1),長さ(I_2),…,長さ(I_n))&lt;x4/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If &lt;x4/&gt;X&lt;x5/&gt; is not an array, its value
+is written to all referenced locations of &lt;x6/&gt;A&lt;x7/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155420Z" creationid="hsugawa8651" creationdate="20181109T155420Z">
+        <seg>&lt;x4/&gt;X&lt;x5/&gt;が配列でない場合は、その値は は、&lt;x6/&gt;A&lt;x7/&gt;の参照されたすべての場所に書き込まれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -469,6 +513,14 @@ neighbor along a 1-d grid.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The general syntax for assigning values in an n-dimensional array A is:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155333Z" creationid="hsugawa8651" creationdate="20181109T155333Z">
+        <seg>n次元配列Aの値を代入する一般的な構文は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The general syntax for indexing into an n-dimensional array A is:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155109Z" creationid="hsugawa8651" creationdate="20181109T155109Z">
@@ -516,6 +568,14 @@ of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, e
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154518Z" creationid="hsugawa8651" creationdate="20181109T154518Z">
         <seg>構文&lt;x1/&gt;[A,B,C,…]&lt;x2/&gt;は、その引数の1次元配列(すなわち、ベクトル)を構成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The value in location &lt;x5/&gt;I_1[i_1], I_2[i_2], ..., I_n[i_n]&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155412Z" creationid="hsugawa8651" creationdate="20181109T155412Z">
+        <seg>location&lt;x5/&gt;I_1[i_1]の値、I_2[i_2]、.…、I_n[i_n]&lt;x6/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1015,6 +1075,20 @@ julia&gt; [[1 2]; [3 4]]
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; a = [1,2,5,6,7];
+
+julia&gt; searchsorted(a, 4)
+3:2</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155322Z" creationid="hsugawa8651" creationdate="20181109T155322Z">
+        <seg>julia&gt; a = [1,2,5,6,7];
+
+julia&gt; searchsorted(a, 4)
+3:2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; map(tuple, (1/(i+j) for i=1:2, j=1:2), [1 3; 2 4])
 2×2 Array{Tuple{Float64,Int64},2}:
  (0.5, 1)       (0.333333, 3)
@@ -1113,6 +1187,44 @@ julia&gt; [ 0.25*x[i-1] + 0.5*x[i] + 0.25*x[i+1] for i=2:length(x)-1 ]
  0.912429
  0.8446
  0.656511</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; x = reshape(1:16, 4, 4)
+4×4 reshape(::UnitRange{Int64}, 4, 4) with eltype Int64:
+ 1  5   9  13
+ 2  6  10  14
+ 3  7  11  15
+ 4  8  12  16
+
+julia&gt; x[2:3, 2:end-1]
+2×2 Array{Int64,2}:
+ 6  10
+ 7  11
+
+julia&gt; x[1, [2 3; 4 1]]
+2×2 Array{Int64,2}:
+  5  9
+ 13  1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155304Z" creationid="hsugawa8651" creationdate="20181109T155304Z">
+        <seg>julia&gt; x = reshape(1:16, 4, 4)
+4×4 reshape(::UnitRange{Int64}, 4, 4) with eltype Int64:
+ 1  5   9  13
+ 2  6  10  14
+ 3  7  11  15
+ 4  8  12  16
+
+julia&gt; x[2:3, 2:end-1]
+2×2 Array{Int64,2}:
+ 6  10
+ 7  11
+
+julia&gt; x[1, [2 3; 4 1]]
+2×2 Array{Int64,2}:
+  5  9
+ 13  1</seg>
       </tuv>
     </tu>
     <tu>
@@ -1226,8 +1338,9 @@ julia&gt; zeros((2, 3))
         <seg>where each &lt;x1/&gt;I_k&lt;x2/&gt; may be a scalar integer, an array of integers, or any other
 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-supported-index-types).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155116Z" creationid="hsugawa8651" creationdate="20181109T155116Z">
-        <seg>ここで、各&lt;x1/&gt;I_k&lt;x2/&gt;はスカラー整数、整数の配列、またはその他のいずれかである。 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref manサポートされているインデックス・タイプ)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155358Z" creationid="hsugawa8651" creationdate="20181109T155116Z">
+        <seg>where each &lt;x1/&gt;I_k&lt;x2/&gt; may be a scalar integer, an array of integers, or any other
+&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-supported-index-types).</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
