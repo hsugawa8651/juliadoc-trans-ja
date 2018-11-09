@@ -27,6 +27,60 @@ value of one or more of its arguments (compare, for example, &lt;x2/&gt;`sort`&l
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>$ echo 'println("Greetings!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224456Z" creationid="hsugawa8651" creationdate="20181109T224456Z">
+        <seg>$ echo 'println("Greetings!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$ echo 'println(PROGRAM_FILE); for x in ARGS; println(x); end' &gt; script.jl
+$ julia script.jl foo bar
+script.jl
+foo
+bar</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224352Z" creationid="hsugawa8651" creationdate="20181109T224352Z">
+        <seg>$ echo 'println(PROGRAM_FILE); for x in ARGS; println(x); end' &gt; script.jl
+$ julia script.jl foo bar
+script.jl
+foo
+bar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$ julia --color=yes -O -- foo.jl arg1 arg2..</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224359Z" creationid="hsugawa8651" creationdate="20181109T224359Z">
+        <seg>$ julia --color=yes -O -- foo.jl arg1 arg2..</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$ julia -e 'println(PROGRAM_FILE); for x in ARGS; println(x); end' foo bar
+
+foo
+bar</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224343Z" creationid="hsugawa8651" creationdate="20181109T224343Z">
+        <seg>$ julia -e 'println(PROGRAM_FILE); for x in ARGS; println(x); end' foo bar
+
+foo
+bar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$ julia script.jl arg1 arg2...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224325Z" creationid="hsugawa8651" creationdate="20181109T224325Z">
+        <seg>$ julia script.jl arg1 arg2...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id man-array-indexing)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155105Z" creationid="hsugawa8651" creationdate="20181109T155105Z">
@@ -53,10 +107,36 @@ be inlined and thus may have even less overhead than calls to shared library fun
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224510Z" creationid="hsugawa8651" creationdate="20181109T224510Z">
+        <seg>...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x1/&gt;`CartesianIndex` and arrays of `CartesianIndex` are not compatible with the&lt;x2/&gt;&lt;x3/&gt;`end` keyword to represent the last index of a dimension.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155752Z" creationid="hsugawa8651" creationdate="20181109T155752Z">
         <seg>&lt;x1/&gt;`CartesianIndex'と「CartesianIndex」の配列は、次元の最後のインデックスを表すために、&lt;x2/&gt;&lt;x3/&gt;'end"キーワードと互換性がない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x12/&gt;user&lt;x13/&gt; defaults to current user,
+&lt;x14/&gt;port&lt;x15/&gt; to the standard ssh port.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224441Z" creationid="hsugawa8651" creationdate="20181109T224441Z">
+        <seg>&lt;x12/&gt;ユーザ&lt;x13/&gt;デフォルトは現在のユーザになります。 &lt;x14/&gt;ポート&lt;x15/&gt;は、標準的なsshポートに対して設定されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x16/&gt;count&lt;x17/&gt; is the number of workers to spawn on the node, and defaults
+to 1.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224446Z" creationid="hsugawa8651" creationdate="20181109T224446Z">
+        <seg>&lt;x16/&gt;count&lt;x17/&gt;は、ノード上でスポーンするワーカーの数です。デフォルトは 1です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -77,6 +157,14 @@ call highly tuned and optimized BLAS and LAPACK functions using just the pointer
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160519Z" creationid="hsugawa8651" creationdate="20181109T160519Z">
         <seg>&lt;x28/&gt;「StridedVector」&lt;x29/&gt;および&lt;x30/&gt;「StridedMatrix」&lt;x31/&gt;は、組み込み型の配列タイプの多くにとって便利なエイリアスです。 は、ストレーテッド・アレイとみなされ、選択された特殊な実装にディスパッチできるようになります。 ポインタと前進だけを使って、BLASとLAPACK関数を高度に調整し、最適化することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x5/&gt;-p n&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224412Z" creationid="hsugawa8651" creationdate="20181109T224412Z">
+        <seg>&lt;x5/&gt;-p n&lt;x6/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -315,6 +403,15 @@ from &lt;x1/&gt;`AbstractArray`&lt;x2/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As the example implies, the following command-line arguments to &lt;x1/&gt;julia&lt;x2/&gt; are interpreted as
+command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in the global constant &lt;x5/&gt;ARGS&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224332Z" creationid="hsugawa8651" creationdate="20181109T224332Z">
+        <seg>この例が示すように、&lt;x1/&gt;julia&lt;x2/&gt;への次のコマンドライン引数は、以下のように解釈されます。 グローバル定数&lt;x5/&gt;ARGS&lt;x6/&gt;で渡されたプログラム&lt;x3/&gt;スクリプト.jl&lt;x4/&gt;へのコマンドライン引数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.IndexStyle(::Type{&lt;:MyArray}) = IndexLinear()</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155911Z" creationid="hsugawa8651" creationdate="20181109T155911Z">
@@ -442,6 +539,23 @@ elements are stored contiguously in column-major order (see additional notes in
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Download and install Julia by following the instructions at &lt;x1/&gt;https://julialang.org/downloads/&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224249Z" creationid="hsugawa8651" creationdate="20181109T224249Z">
+        <seg>&lt;x1/&gt;https://julialang.org/downloads/&lt;x2/&gt;の指示に従って、Juliaをダウンロードしてインストールします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each machine definition
+takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224423Z" creationid="hsugawa8651" creationdate="20181109T224423Z">
+        <seg>各マシン定義 は、&lt;x10/&gt;[count*][user@]host[:port][bind_addr[:port]]&lt;x11/&gt;の形式をとることになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Empty arrays like &lt;x1/&gt;[]&lt;x2/&gt;, which select no elements</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155524Z" creationid="hsugawa8651" creationdate="20181109T155524Z">
@@ -532,6 +646,15 @@ the value of an environment variable, one makes a call like this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224039Z" creationid="hsugawa8651" creationdate="20181109T224039Z">
         <seg>たとえば、&lt;x4/&gt;getenv&lt;x5/&gt;関数を呼び出してポインタを取得するには、次のように指定します。 環境変数の値は、次のような呼び出しを行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, to just print the
+arguments given to a script, you could do this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224341Z" creationid="hsugawa8651" creationdate="20181109T224341Z">
+        <seg>たとえば スクリプトに与えられた引数は、次のようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -653,6 +776,15 @@ with location &lt;x5/&gt;(i_1, i_2, ..., i_n)&lt;x6/&gt; of &lt;x7/&gt;X&lt;x8/&
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If an expression is entered into an interactive
+session with a trailing semicolon, its value is not shown.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224315Z" creationid="hsugawa8651" creationdate="20181109T224315Z">
+        <seg>式が対話式に入力された場合 末尾のセミコロンとのセッションは、その値は表示されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the type &lt;x5/&gt;T&lt;x6/&gt; is
 omitted it will default to &lt;x7/&gt;`Float64`&lt;x8/&gt;.</seg>
       </tuv>
@@ -667,6 +799,15 @@ specify this trait, the default value &lt;x5/&gt;IndexCartesian()&lt;x6/&gt; is 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155920Z" creationid="hsugawa8651" creationdate="20181109T155920Z">
         <seg>もしあなたが この特性を指定します。デフォルト値&lt;x5/&gt;IndexCartesian()&lt;x6/&gt;は使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you have code that you want executed whenever Julia is run, you can put it in
+&lt;x1/&gt;&lt;x2/&gt;/.julia/config/startup.jl&lt;x3/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224453Z" creationid="hsugawa8651" creationdate="20181109T224453Z">
+        <seg>Juliaが実行されるたびに実行するコードがある場合は、そのコードを次のように記述することができます。 &lt;x1/&gt;&lt;x2/&gt;/.julia/config/startup.jl&lt;x3/&gt;:</seg>
       </tuv>
     </tu>
     <tu>
@@ -878,6 +1019,14 @@ sizes, such as adding a vector to each column of a matrix.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia can be started in parallel mode with either the &lt;x1/&gt;-p&lt;x2/&gt; or the &lt;x3/&gt;--machine-file&lt;x4/&gt; options.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224410Z" creationid="hsugawa8651" creationdate="20181109T224410Z">
+        <seg>Juliaは、&lt;x1/&gt;-p&lt;x2/&gt;または&lt;x3/&gt;-machinefile&lt;x4/&gt;オプションのいずれかと並行モードで起動できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia does not treat arrays in any special way.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154124Z" creationid="hsugawa8651" creationdate="20181109T154124Z">
@@ -892,6 +1041,14 @@ functions can be called directly from Julia without any "glue" code, code genera
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160541Z" creationid="hsugawa8651" creationdate="20181109T160541Z">
         <seg>Juliaは「ボイラープレートなし」哲学を持っている。 関数は、"glue"コード、コード生成、コンパイルなしで、Juliaから直接呼び出すことができます。 --対話型プロンプトからでも。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia installation is straightforward, whether using precompiled binaries or compiling from source.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224247Z" creationid="hsugawa8651" creationdate="20181109T224247Z">
+        <seg>ジュリアのインストールは、コンパイル済みのバイナリを使用するか、ソースからコンパイルするかにかかわらず、簡単です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1017,6 +1174,16 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that &lt;x9/&gt;ARGS&lt;x10/&gt; is
+also set when a Julia expression is given using the &lt;x11/&gt;-e&lt;x12/&gt; option on the command line (see the
+&lt;x13/&gt;julia&lt;x14/&gt; help output below) but &lt;x15/&gt;PROGRAM_FILE&lt;x16/&gt; will be empty.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224338Z" creationid="hsugawa8651" creationdate="20181109T224338Z">
+        <seg>&lt;x9/&gt;ARGS&lt;x10/&gt;は以下のようになります。 また、コマンドラインで&lt;x11/&gt;-e&lt;x12/&gt;オプションを使用してJulia式を指定したときにも設定されます( &lt;x13/&gt;julia&lt;x14/&gt;ヘルプ出力は次のようになりますが、&lt;x15/&gt;PROGRAM_FILE&lt;x16/&gt;は空です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that comparisons such as &lt;x1/&gt;==&lt;x2/&gt; operate on whole arrays, giving a single boolean
 answer.</seg>
       </tuv>
@@ -1043,6 +1210,15 @@ by a boolean array selects elements at the indices where its values are &lt;x1/&
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Once the user has entered a complete expression, such as &lt;x11/&gt;1 + 2&lt;x12/&gt;, and hits enter, the interactive
+session evaluates the expression and shows its value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224313Z" creationid="hsugawa8651" creationdate="20181109T224313Z">
+        <seg>ユーザーが&lt;x11/&gt;1+2&lt;x12/&gt;などの完全な式を入力してからヒットすると、対話型の sessionは式を評価し、その値を表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One common gotcha is that a 1-tuple must be
 written with a trailing comma.</seg>
       </tuv>
@@ -1057,6 +1233,14 @@ level operators and functions, in a way that is independent of the underlying st
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160305Z" creationid="hsugawa8651" creationdate="20181109T160305Z">
         <seg>&lt;x11/&gt;AbstractArray&lt;x12/&gt;オブジェクトに対する操作は、より高い値を使用して定義されます。 レベル演算子と関数は、基礎となる記憶域とは独立して存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Or you could put that code into a script and run it:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224350Z" creationid="hsugawa8651" creationdate="20181109T224350Z">
+        <seg>あるいは、スクリプトにコードを挿入して実行することもできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1113,6 +1297,14 @@ iteration&lt;x8/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>See also &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-scripting) for more information on writing Julia scripts.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224404Z" creationid="hsugawa8651" creationdate="20181109T224404Z">
+        <seg>Juliaスクリプトの記述についての詳細は、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man scripting)も参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See the &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-interface-array) for more details
 on implementing a custom array type.</seg>
       </tuv>
@@ -1147,6 +1339,23 @@ sharing memory with the original array rather than by copying it.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160427Z" creationid="hsugawa8651" creationdate="20181109T160427Z">
         <seg>サブアレイ&lt;x1/&gt;は、インデックス作成を実行する&lt;x2/&gt;AbstractArray&lt;x3/&gt;の特殊化です。 コピーするのではなく、オリジナルのアレイとメモリを共有することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The
+name of the script itself is passed in as the global &lt;x7/&gt;PROGRAM_FILE&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224334Z" creationid="hsugawa8651" creationdate="20181109T224334Z">
+        <seg>の スクリプト自体の名前は、グローバルな&lt;x7/&gt;PROGRAM_FILE&lt;x8/&gt;として渡されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;--&lt;x2/&gt; delimiter can be used to separate command-line arguments intended for the script file from arguments intended for Julia:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224357Z" creationid="hsugawa8651" creationdate="20181109T224357Z">
+        <seg>&lt;x1/&gt;--&lt;x2/&gt;デリミタは、July:を対象とした引数から、スクリプトファイルに対して指定されたコマンドライン引数を区切るために使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1200,6 +1409,16 @@ other code written in Julia.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154623Z" creationid="hsugawa8651" creationdate="20181109T154623Z">
         <seg>連結関数は、頻繁に使用されるため、特別な構文が使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The easiest way to learn and experiment with Julia is by starting an interactive session (also
+known as a read-eval-print loop or "REPL") by double-clicking the Julia executable or running
+&lt;x1/&gt;julia&lt;x2/&gt; from the command line:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224254Z" creationid="hsugawa8651" creationdate="20181109T224254Z">
+        <seg>Juliaを学習して実験する最も簡単な方法は、対話型セッションを開始することです。 Julia実行可能ファイルをダブルクリックするか、または実行することによって、read-eval-printループまたはREPLと呼ばれる既知の コマンドラインから&lt;x1/&gt;ジュリア&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1274,6 +1493,15 @@ as calling a library function from C code.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The machines defined in &lt;x6/&gt;file&lt;x7/&gt; must be accessible via a password-less
+&lt;x8/&gt;ssh&lt;x9/&gt; login, with Julia installed at the same location as the current host.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224421Z" creationid="hsugawa8651" creationdate="20181109T224421Z">
+        <seg>&lt;x6/&gt;ファイル&lt;x7/&gt;で定義されたマシンは、パスワードなしでアクセスできる必要があります。 &lt;x8/&gt;ssh&lt;x9/&gt;ログインは、現在のホストと同じ場所にJuliaがインストールされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The macro &lt;x1/&gt;`@cfunction`&lt;x2/&gt; generates the C-compatible function pointer for a call to a
 Julia function.</seg>
       </tuv>
@@ -1288,6 +1516,15 @@ on each value in their given list of values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154807Z" creationid="hsugawa8651" creationdate="20181109T154807Z">
         <seg>この形式の意味は、&lt;x1/&gt;F(x,y,...)&lt;x2/&gt;は、変数&lt;x3/&gt;x4&lt;x4/&gt;、&lt;x5/&gt;y&lt;x6/&gt;の変数を用いて評価されることである。 指定された値リストの各値です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The optional &lt;x18/&gt;bind-to bind_addr[:port]&lt;x19/&gt; specifies the IP address and port that other workers
+should use to connect to this worker.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224449Z" creationid="hsugawa8651" creationdate="20181109T224449Z">
+        <seg>オプションの&lt;x18/&gt;bindto bind_addr[:port]&lt;x19/&gt;は、他の作業者がそのIPアドレスとポートを指定します。 この作業者に接続するために使用する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1501,6 +1738,23 @@ Julia &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized) &lt;x4/&gt;f.(args.
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To exit the interactive session, type &lt;x1/&gt;CTRL-D&lt;x2/&gt; (press the Control/&lt;x3/&gt;^&lt;x4/&gt; key together with the &lt;x5/&gt;d&lt;x6/&gt; key), or type
+&lt;x7/&gt;exit()&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224304Z" creationid="hsugawa8651" creationdate="20181109T224304Z">
+        <seg>対話型セッションを終了するには、&lt;x1/&gt;CTRL-D&lt;x2/&gt;(Ctrl+&gt;d&lt;x6/&gt;キーとともにControl/&lt;x/&gt;キーを押します)を入力するか、または入力します。 &lt;x7/&gt;exit()&lt;x8/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To run code in a file non-interactively, you can give it as the first argument to the &lt;x1/&gt;julia&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224323Z" creationid="hsugawa8651" creationdate="20181109T224323Z">
+        <seg>非対話的にファイル内でコードを実行するには、&lt;x1/&gt;july&lt;x2/&gt;の最初の引数として指定できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To see the various ways we can pass dimensions to these constructors, consider the following examples:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154524Z" creationid="hsugawa8651" creationdate="20181109T154524Z">
@@ -1560,6 +1814,14 @@ and efficient code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155632Z" creationid="hsugawa8651" creationdate="20181109T155632Z">
         <seg>他のインデックス作成フォームおよびイテレータと組み合わされた場合 しかし、それは&lt;x3/&gt;CartesianIndex&lt;x4/&gt;の収量をもたらすが、これは非常にエレガントなものである。 効率的なコードです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When run in interactive mode, &lt;x9/&gt;julia&lt;x10/&gt; displays a banner and prompts the user for input.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224306Z" creationid="hsugawa8651" creationdate="20181109T224306Z">
+        <seg>対話モードで実行すると、&lt;x9/&gt;julia&lt;x10/&gt;はバナーを表示し、入力を求めるプロンプトを表示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1902,6 +2164,22 @@ which is a simplified version of the actual definition from &lt;x2/&gt;`env.jl`&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224115Z" creationid="hsugawa8651" creationdate="20181109T224115Z">
         <seg>getenv&lt;x1/&gt;Cライブラリ関数は、次のJulia関数にラップされています。 これは、&lt;x2/&gt;'env.jl'&lt;x3/&gt;からの実際の定義の簡略化されたバージョンです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>io = IOBuffer()
+Base.banner(io)
+banner = String(take!(io))
+import Markdown
+Markdown.parse("```\n\$ julia\n\n$(banner)\njulia&gt; 1 + 2\n3\n\njulia&gt; ans\n3\n```")</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224257Z" creationid="hsugawa8651" creationdate="20181109T224257Z">
+        <seg>io = IOBuffer()
+Base.banner(io)
+banner = String(take!(io))
+import Markdown
+Markdown.parse("```\n\$ julia\n\n$(banner)\njulia&gt; 1 + 2\n3\n\njulia&gt; ans\n3\n```")</seg>
       </tuv>
     </tu>
     <tu>
@@ -2798,6 +3076,15 @@ julia&gt; zeros((2, 3))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>n&lt;x1/&gt; worker processes, while &lt;x2/&gt;--machine-file file&lt;x3/&gt; will launch a worker
+for each line in file &lt;x4/&gt;file&lt;x5/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224417Z" creationid="hsugawa8651" creationdate="20181109T224417Z">
+        <seg>n&lt;x1/&gt;worker processes while&lt;x2/&gt;--machine file file&lt;x3/&gt;はワーカーを起動します。 ファイル&lt;x4/&gt;ファイル&lt;x5/&gt;の各行に対して実行されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>range of &lt;x1/&gt;n&lt;x2/&gt; linearly spaced elements from &lt;x3/&gt;start&lt;x4/&gt; to &lt;x5/&gt;stop&lt;x6/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154500Z" creationid="hsugawa8651" creationdate="20181109T154500Z">
@@ -2876,6 +3163,34 @@ julia&gt; zeros((2, 3))
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155358Z" creationid="hsugawa8651" creationdate="20181109T155116Z">
         <seg>where each &lt;x1/&gt;I_k&lt;x2/&gt; may be a scalar integer, an array of integers, or any other
 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-supported-index-types).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>你好!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224500Z" creationid="hsugawa8651" creationdate="20181109T224500Z">
+        <seg>你好!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>안녕하세요?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224507Z" creationid="hsugawa8651" creationdate="20181109T224507Z">
+        <seg>안녕하세요?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>안녕하세요?")' &gt; &lt;x1/&gt;/.julia/config/startup.jl
+$ julia
+Greetings!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224503Z" creationid="hsugawa8651" creationdate="20181109T224503Z">
+        <seg>안녕하세요?")' &gt; &lt;x1/&gt;/.julia/config/startup.jl
+$ julia
+Greetings!</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
