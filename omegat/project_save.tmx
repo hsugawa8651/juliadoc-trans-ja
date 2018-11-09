@@ -107,6 +107,14 @@ be inlined and thus may have even less overhead than calls to shared library fun
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>-v&lt;x1/&gt;, &lt;x2/&gt;--version&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224601Z" creationid="hsugawa8651" creationdate="20181109T224549Z">
+        <seg>-v&lt;x1/&gt;, &lt;x2/&gt;--version&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>...</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224510Z" creationid="hsugawa8651" creationdate="20181109T224510Z">
@@ -193,6 +201,14 @@ external C and Fortran functions that expect this memory layout.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223837Z" creationid="hsugawa8651" creationdate="20181109T223837Z">
         <seg>&lt;x1/&gt;(:関数、"ライブラリ")&lt;x2/&gt;ペアで、リテラル定数として記述される必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A curated list of useful learning resources to help new users get started can be found on the &lt;x1/&gt;learning&lt;x2/&gt; page of the main Julia web site.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224812Z" creationid="hsugawa8651" creationdate="20181109T224812Z">
+        <seg>新しいユーザを支援するための有用な学習リソースのリストは、Julia Webサイトの&lt;x1/&gt;学習&lt;x2/&gt;ページに掲載されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -513,6 +529,30 @@ multidimensional index.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Control whether inlining is permitted, including overriding &lt;x1/&gt;@inline&lt;x2/&gt; declarations</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224750Z" creationid="hsugawa8651" creationdate="20181109T224750Z">
+        <seg>&lt;x1/&gt;@inline&lt;x2/&gt;宣言の上書きを含め、インライン化が許可されているかどうかを制御する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Count bytes allocated by each source line</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224805Z" creationid="hsugawa8651" creationdate="20181109T224805Z">
+        <seg>各ソース行によって割り当てられたカウントバイト数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Count executions of source lines</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224758Z" creationid="hsugawa8651" creationdate="20181109T224758Z">
+        <seg>ソース行の実行数のカウント</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Currently, only the platform-default C calling convention is supported.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153954Z" creationid="hsugawa8651" creationdate="20181109T153954Z">
@@ -527,6 +567,22 @@ elements are stored contiguously in column-major order (see additional notes in
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160418Z" creationid="hsugawa8651" creationdate="20181109T160418Z">
         <seg>DenseArray&lt;x1/&gt;は、すべての配列を含むことを意図した&lt;x2/&gt;AbstractArray&lt;x3/&gt;の抽象サブタイプである。 要素は列主順序で連続的に格納されます(追加の注記を参照してください)。 &lt;x4/&gt;&lt;x5/&gt;&lt;x6/&gt;(@ref manのパフォーマンス・ヒント))。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Disallow or enable unsafe floating point optimizations (overrides @fastmath declaration)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224756Z" creationid="hsugawa8651" creationdate="20181109T224756Z">
+        <seg>安全でない浮動小数点の最適化を許可または有効にします(@ファストマト宣言を無効にします)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Display version information</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224555Z" creationid="hsugawa8651" creationdate="20181109T224555Z">
+        <seg>バージョン情報を表示する</seg>
       </tuv>
     </tu>
     <tu>
@@ -556,6 +612,14 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Emit bounds checks always or never (ignoring declarations)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224752Z" creationid="hsugawa8651" creationdate="20181109T224752Z">
+        <seg>放出の境界チェックは常に行われる(宣言を無視する)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Empty arrays like &lt;x1/&gt;[]&lt;x2/&gt;, which select no elements</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155524Z" creationid="hsugawa8651" creationdate="20181109T155524Z">
@@ -569,6 +633,78 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155316Z" creationid="hsugawa8651" creationdate="20181109T155316Z">
         <seg>&lt;x1/&gt;n:n-1&lt;x2/&gt;という形式の空の範囲は、場合によっては、インデックス間の位置を示すために使用される。 &lt;x3/&gt;n-1&lt;x4/&gt;および&lt;x5/&gt;n&lt;x6/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enable / Set the level of debug info generation (default level is 1 if unspecified or 2 if used without a level)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224747Z" creationid="hsugawa8651" creationdate="20181109T224747Z">
+        <seg>デバッグ情報の生成レベルを有効/設定します(デフォルトレベルは、指定されていない場合は1、レベルなしでは2を指定します)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enable or disable Julia's default signal handlers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224649Z" creationid="hsugawa8651" creationdate="20181109T224649Z">
+        <seg>ジュリアのデフォルトシグナルハンドラを有効または無効にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enable or disable color text</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224727Z" creationid="hsugawa8651" creationdate="20181109T224727Z">
+        <seg>カラーテキストを有効または無効にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enable or disable incremental precompilation of modules</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224655Z" creationid="hsugawa8651" creationdate="20181109T224655Z">
+        <seg>モジュールのインクリメンタル事前コンパイルを有効または無効にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enable or disable method overwrite warnings</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224735Z" creationid="hsugawa8651" creationdate="20181109T224735Z">
+        <seg>メソッドの上書き警告を有効または無効にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enable or disable startup banner</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224725Z" creationid="hsugawa8651" creationdate="20181109T224725Z">
+        <seg>起動バナーを有効または無効にする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enable or disable syntax and method deprecation warnings (&lt;x1/&gt;error&lt;x2/&gt; turns warnings into errors)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224733Z" creationid="hsugawa8651" creationdate="20181109T224733Z">
+        <seg>構文およびメソッドの非推奨警告を有効または無効にします(&lt;x1/&gt;エラー&lt;x2/&gt;は警告をエラーに変換します)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Evaluate &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224659Z" creationid="hsugawa8651" creationdate="20181109T224659Z">
+        <seg>&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;を評価します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Evaluate &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt; and display the result</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224702Z" creationid="hsugawa8651" creationdate="20181109T224702Z">
+        <seg>&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;を評価し、結果を表示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -966,6 +1102,22 @@ vector of integers that is returned by &lt;x5/&gt;`findall(B)`&lt;x6/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Integer value N launches N additional local worker processes; &lt;x1/&gt;auto&lt;x2/&gt; launches as many workers as the number of local CPU threads (logical cores)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224711Z" creationid="hsugawa8651" creationdate="20181109T224711Z">
+        <seg>整数値Nは、N個のローカル・ワーカー・プロセスを起動します。&lt;x1/&gt;自動&lt;x2/&gt;は、ローカルCPUスレッド(論理コア)の数と同じ数のワーカーを起動します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interactive mode; REPL runs and &lt;x1/&gt;isinteractive()&lt;x2/&gt; is true</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224718Z" creationid="hsugawa8651" creationdate="20181109T224718Z">
+        <seg>Interactiveモード;REPLは実行され、&lt;x1/&gt;イスインタラクティブ()&lt;x2/&gt;はtrueです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It can even be combined with a &lt;x8/&gt;:&lt;x9/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155706Z" creationid="hsugawa8651" creationdate="20181109T155706Z">
@@ -1095,6 +1247,38 @@ inner functions used elsewhere in the language, variables from the enclosing sco
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153944Z" creationid="hsugawa8651" creationdate="20181109T153944Z">
         <seg>ccallと同様に、これらの引数はすべてコンパイル時に評価され、containingメソッドが定義されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Limit usage of CPU features up to &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;; set to &lt;x4/&gt;help&lt;x5/&gt; to see the available options</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224739Z" creationid="hsugawa8651" creationdate="20181109T224739Z">
+        <seg>CPU機能の使用を制限&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;に制限します。&lt;x4/&gt;ヘルプ&lt;x5/&gt;に設定すると、使用可能なオプションが表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Load &lt;x1/&gt;&lt;x2/&gt;/.julia/config/startup.jl&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224646Z" creationid="hsugawa8651" creationdate="20181109T224646Z">
+        <seg>&lt;x1/&gt;&lt;x2/&gt;/.julia/config/startup.jl&lt;x3/&gt;をロードします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Load &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt; immediately on all processors</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224705Z" creationid="hsugawa8651" creationdate="20181109T224705Z">
+        <seg>すべてのプロセッサで&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;を即時にロード</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Load or save history</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224730Z" creationid="hsugawa8651" creationdate="20181109T224730Z">
+        <seg>履歴をロードまたは保存する</seg>
       </tuv>
     </tu>
     <tu>
@@ -1255,6 +1439,22 @@ indices.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Print this message</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224608Z" creationid="hsugawa8651" creationdate="20181109T224608Z">
+        <seg>このメッセージを印刷する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Quiet startup: no banner, suppress REPL warnings</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224722Z" creationid="hsugawa8651" creationdate="20181109T224722Z">
+        <seg>quietスタートアップ:バナーがない、REPL警告が省略されていない</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Ranges in generators and comprehensions can depend on previous ranges by writing multiple &lt;x1/&gt;for&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155036Z" creationid="hsugawa8651" creationdate="20181109T155036Z">
@@ -1275,6 +1475,14 @@ indices.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223843Z" creationid="hsugawa8651" creationdate="20181109T223843Z">
         <seg>戻り型(宣言されたC型をJuliaにマッピングするには、次を参照)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Run processes on hosts listed in &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224714Z" creationid="hsugawa8651" creationdate="20181109T224714Z">
+        <seg>&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;にリストされたホスト上でプロセスを実行する</seg>
       </tuv>
     </tu>
     <tu>
@@ -1314,12 +1522,44 @@ on implementing a custom array type.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Set &lt;x1/&gt; as the home project/environment.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224611Z" creationid="hsugawa8651" creationdate="20181109T224611Z">
+        <seg>&lt;x1/&gt;をホームプロジェクト/環境として設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Set location of &lt;x1/&gt;julia&lt;x2/&gt; executable</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224639Z" creationid="hsugawa8651" creationdate="20181109T224639Z">
+        <seg>&lt;x1/&gt;ジュリア&lt;x2/&gt;実行可能ファイルの場所を設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Set the optimization level (default level is 2 if unspecified or 3 if used without a level)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224743Z" creationid="hsugawa8651" creationdate="20181109T224743Z">
+        <seg>最適化レベルを設定します(指定されていない場合はデフォルトレベルは2、レベルなしで使用される場合は3です)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Similarly, indexing
 by a &lt;x7/&gt;N&lt;x8/&gt;-dimensional boolean array is effectively the same as indexing by the
 vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11/&gt;true&lt;x12/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155802Z" creationid="hsugawa8651" creationdate="20181109T155802Z">
         <seg>同様にインデックス化 &lt;x7/&gt;N&lt;x8/&gt;-次元ブール配列は、実効的には、以下のように、インデックス化と同じである。 &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;sのベクトルであり、その値は&lt;x11/&gt;真&lt;x12/&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Start up with the given system image file</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224637Z" creationid="hsugawa8651" creationdate="20181109T224637Z">
+        <seg>指定されたシステムイメージファイルで起動する</seg>
       </tuv>
     </tu>
     <tu>
@@ -1580,6 +1820,15 @@ of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, e
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are various ways to run Julia code and provide options, similar to those available for the
+&lt;x1/&gt;perl&lt;x2/&gt; and &lt;x3/&gt;ruby&lt;x4/&gt; programs:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224520Z" creationid="hsugawa8651" creationdate="20181109T224520Z">
+        <seg>Juliaコードを実行するにはさまざまな方法があり、次のようなオプションを提供することができます。 &lt;x1/&gt;perl&lt;x2/&gt;および&lt;x3/&gt;ruby&lt;x4/&gt;プログラム:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These operations
 generally work correctly as a fallback for any specific array implementation.</seg>
       </tuv>
@@ -1767,6 +2016,14 @@ Julia &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized) &lt;x4/&gt;f.(args.
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160015Z" creationid="hsugawa8651" creationdate="20181109T160015Z">
         <seg>&lt;x3/&gt;.==&lt;x4/&gt;のようなドット演算子を、要素的比較のために使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Use native code from system image if available</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224652Z" creationid="hsugawa8651" creationdate="20181109T224652Z">
+        <seg>使用可能な場合は、システムイメージからネイティブコードを使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2109,6 +2366,22 @@ are needed to separate the generator from subsequent arguments:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>equivalent to &lt;x1/&gt;--code-coverage=user&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224802Z" creationid="hsugawa8651" creationdate="20181109T224802Z">
+        <seg>&lt;x1/&gt;--code coverage=user&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>equivalent to &lt;x1/&gt;--track-allocation=user&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224807Z" creationid="hsugawa8651" creationdate="20181109T224807Z">
+        <seg>&lt;x1/&gt;に相当する--トラック割り当て=ユーザ&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>fill the array &lt;x1/&gt;A&lt;x2/&gt; with the value &lt;x3/&gt;x&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154507Z" creationid="hsugawa8651" creationdate="20181109T154507Z">
@@ -2180,6 +2453,14 @@ Base.banner(io)
 banner = String(take!(io))
 import Markdown
 Markdown.parse("```\n\$ julia\n\n$(banner)\njulia&gt; 1 + 2\n3\n\njulia&gt; ans\n3\n```")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia [switches] -- [programfile] [args...]</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224522Z" creationid="hsugawa8651" creationdate="20181109T224522Z">
+        <seg>julia [switches] -- [programfile] [args...]</seg>
       </tuv>
     </tu>
     <tu>
