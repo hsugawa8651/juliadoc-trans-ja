@@ -139,6 +139,38 @@ be inlined and thus may have even less overhead than calls to shared library fun
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x1/&gt; 32-bit or 64-bit system:
+julia&gt; typeof(3000000000)
+Int64</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225311Z" creationid="hsugawa8651" creationdate="20181109T225311Z">
+        <seg>&lt;x1/&gt; 32-bit or 64-bit system:
+julia&gt; typeof(3000000000)
+Int64</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x1/&gt; 32-bit system:
+julia&gt; typeof(1)
+Int32
+
+&lt;x2/&gt; 64-bit system:
+julia&gt; typeof(1)
+Int64</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225233Z" creationid="hsugawa8651" creationdate="20181109T225233Z">
+        <seg>&lt;x1/&gt; 32-bit system:
+julia&gt; typeof(1)
+Int32
+
+&lt;x2/&gt; 64-bit system:
+julia&gt; typeof(1)
+Int64</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x1/&gt;`CartesianIndex` and arrays of `CartesianIndex` are not compatible with the&lt;x2/&gt;&lt;x3/&gt;`end` keyword to represent the last index of a dimension.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155752Z" creationid="hsugawa8651" creationdate="20181109T155752Z">
@@ -327,10 +359,28 @@ of relatively slower performance.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Additionally, full support for &lt;x1/&gt;Complex and Rational Numbers&lt;x2/&gt; is built on top of these primitive
+numeric types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225152Z" creationid="hsugawa8651" creationdate="20181109T225152Z">
+        <seg>さらに、&lt;x1/&gt;ComplexおよびRational Numbers&lt;x2/&gt;の完全なサポートは、これらのプリミティブに基づいて構築されています。 数値型。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All comma-separated expressions after &lt;x1/&gt;for&lt;x2/&gt; are interpreted as ranges.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154952Z" creationid="hsugawa8651" creationdate="20181109T154948Z">
         <seg>&lt;x2/&gt;のために&lt;x1/&gt;の後にコンマで区切られたすべての式は、範囲として解釈されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All numeric types interoperate naturally without explicit casting, thanks to a
+flexible, user-extensible &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225156Z" creationid="hsugawa8651" creationdate="20181109T225156Z">
+        <seg>すべての数値型は、明示的なキャストなしで自然に相互運用されます。 柔軟なユーザー拡張可能な&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref変換とプロモーション)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -493,6 +543,14 @@ command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155911Z" creationid="hsugawa8651" creationdate="20181109T155911Z">
         <seg>Base.IndexStyle(::Type{&lt;:MyArray}) = IndexLinear()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Binary and octal literals are also supported:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225352Z" creationid="hsugawa8651" creationdate="20181109T225352Z">
+        <seg>バイナリリテラルと8進数リテラルもサポートされています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1339,6 +1397,23 @@ inner functions used elsewhere in the language, variables from the enclosing sco
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Larger integer literals that cannot be represented using only 32 bits but can be represented in
+64 bits always create 64-bit integers, regardless of the system type:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225319Z" creationid="hsugawa8651" creationdate="20181109T225319Z">
+        <seg>32ビットのみを使用して表現することはできないが、次のように表現できる整数リテラル 64ビットは、システムタイプに関係なく、常に64ビットの整数を作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Largest value</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225129Z" creationid="hsugawa8651" creationdate="20181109T225129Z">
+        <seg>最大値</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Like ccall, all of these arguments will be evaluated at compile-time, when the containing method is defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153944Z" creationid="hsugawa8651" creationdate="20181109T153944Z">
@@ -1351,6 +1426,14 @@ inner functions used elsewhere in the language, variables from the enclosing sco
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224739Z" creationid="hsugawa8651" creationdate="20181109T224739Z">
         <seg>CPU機能の使用を制限&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;に制限します。&lt;x4/&gt;ヘルプ&lt;x5/&gt;に設定すると、使用可能なオプションが表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Literal integers are represented in the standard manner:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225202Z" creationid="hsugawa8651" creationdate="20181109T225202Z">
+        <seg>リテラル整数は、標準的な方法で表されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1583,6 +1666,15 @@ indices.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Recall that the variable &lt;x1/&gt;`ans`&lt;x2/&gt; is set to the value of the last expression evaluated in
+an interactive session.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225338Z" creationid="hsugawa8651" creationdate="20181109T225338Z">
+        <seg>変数&lt;x1/&gt;`は、最後に評価された最後の式の値に設定されていることを思い出してください。 対話型セッションです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Return type (see below for mapping the declared C type to Julia)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223843Z" creationid="hsugawa8651" creationdate="20181109T223843Z">
@@ -1664,6 +1756,14 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155802Z" creationid="hsugawa8651" creationdate="20181109T155802Z">
         <seg>同様にインデックス化 &lt;x7/&gt;N&lt;x8/&gt;-次元ブール配列は、実効的には、以下のように、インデックス化と同じである。 &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;sのベクトルであり、その値は&lt;x11/&gt;真&lt;x12/&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Smallest value</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225124Z" creationid="hsugawa8651" creationdate="20181109T225124Z">
+        <seg>最小値</seg>
       </tuv>
     </tu>
     <tu>
@@ -1924,6 +2024,16 @@ of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, e
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The size
+of the binary data item is the minimal needed size, if the leading digit of the literal is not
+&lt;x1/&gt;0&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225415Z" creationid="hsugawa8651" creationdate="20181109T225415Z">
+        <seg>サイズ リテラルの先頭桁が必要ない場合は、バイナリ・データ項目の最小サイズが2進数データ項目となります。 &lt;x1/&gt;0&lt;x2/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The syntax &lt;x1/&gt;[A, B, C, ...]&lt;x2/&gt; constructs a 1-d array (i.e., a vector) of its arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154518Z" creationid="hsugawa8651" creationdate="20181109T154518Z">
@@ -2052,6 +2162,24 @@ commonly passed in registers when using C or Julia calling conventions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This behavior is based on the observation that when one uses unsigned hex literals for integer
+values, one typically is using them to represent a fixed numeric byte sequence, rather than just
+an integer value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225343Z" creationid="hsugawa8651" creationdate="20181109T225343Z">
+        <seg>この動作は、整数に対して符号なしの16進数のリテラルを使用する場合の観察結果に基づいています。 値は通常、固定された数値バイトシーケンスを表すために使用されます。 整数値。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This does not occur when Julia code is run in other ways.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225348Z" creationid="hsugawa8651" creationdate="20181109T225348Z">
+        <seg>これは、Juliaコードが他の方法で実行されている場合には発生しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This form can be used to call C library
 functions, functions in the Julia runtime, or functions in an application linked to Julia.</seg>
       </tuv>
@@ -2164,6 +2292,15 @@ Julia &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized) &lt;x4/&gt;f.(args.
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154524Z" creationid="hsugawa8651" creationdate="20181109T154524Z">
         <seg>これらのコンストラクタに次元を渡すことができるさまざまな方法を確認するには、次の例を考慮してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unsigned integers are input and output using the &lt;x1/&gt;0x&lt;x2/&gt; prefix and hexadecimal (base 16) digits
+&lt;x3/&gt;0-9a-f&lt;x4/&gt; (the capitalized digits &lt;x5/&gt;A-F&lt;x6/&gt; also work for input).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225306Z" creationid="hsugawa8651" creationdate="20181109T225306Z">
+        <seg>符号なし整数は、&lt;x1/&gt;0x&lt;x2/&gt;プレフィックスおよび16進数(base16)桁を使用して入力および出力されます。 &lt;x3/&gt;0 9a f&lt;x4/&gt;(大文字の数字&lt;x5/&gt;A-F&lt;x6/&gt;も入力に有効です)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2663,6 +2800,62 @@ Cstring
 
 julia&gt; (Cstring,)
 (Cstring,)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 0b10
+0x02
+
+julia&gt; typeof(ans)
+UInt8
+
+julia&gt; 0o010
+0x08
+
+julia&gt; typeof(ans)
+UInt8
+
+julia&gt; 0x00000000000000001111222233334444
+0x00000000000000001111222233334444
+
+julia&gt; typeof(ans)
+UInt128</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225357Z" creationid="hsugawa8651" creationdate="20181109T225357Z">
+        <seg>julia&gt; 0b10
+0x02
+
+julia&gt; typeof(ans)
+UInt8
+
+julia&gt; 0o010
+0x08
+
+julia&gt; typeof(ans)
+UInt8
+
+julia&gt; 0x00000000000000001111222233334444
+0x00000000000000001111222233334444
+
+julia&gt; typeof(ans)
+UInt128</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 1
+1
+
+julia&gt; 1234
+1234</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225207Z" creationid="hsugawa8651" creationdate="20181109T225207Z">
+        <seg>julia&gt; 1
+1
+
+julia&gt; 1234
+1234</seg>
       </tuv>
     </tu>
     <tu>
