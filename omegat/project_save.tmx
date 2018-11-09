@@ -128,6 +128,14 @@ array it indexes into.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A tuple of input types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223952Z" creationid="hsugawa8651" creationdate="20181109T223952Z">
+        <seg>入力タイプのタプル。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A&lt;x1/&gt; is overwritten with the value &lt;x2/&gt;X[i_1, i_2, ..., i_n]&lt;x3/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155417Z" creationid="hsugawa8651" creationdate="20181109T155417Z">
@@ -275,6 +283,15 @@ to &lt;x3/&gt;`ccall`&lt;x4/&gt; are as follows:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155544Z" creationid="hsugawa8651" creationdate="20181109T155544Z">
         <seg>ブール値の配列で、&lt;x1/&gt;真の&lt;x2/&gt;インデックスで要素を選択します(詳細については、以下を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As a complete but simple example, the following calls the &lt;x1/&gt;clock&lt;x2/&gt; function from the standard C
+library:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224014Z" creationid="hsugawa8651" creationdate="20181109T224014Z">
+        <seg>完全ではあるが単純な例として、以下の呼び出しは標準Cから&lt;x1/&gt;クロック&lt;x2/&gt;関数を呼び出します。 ライブラリ:</seg>
       </tuv>
     </tu>
     <tu>
@@ -510,6 +527,15 @@ sums a series without allocating memory:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, to call the &lt;x4/&gt;getenv&lt;x5/&gt; function to get a pointer to
+the value of an environment variable, one makes a call like this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224039Z" creationid="hsugawa8651" creationdate="20181109T224039Z">
+        <seg>たとえば、&lt;x4/&gt;getenv&lt;x5/&gt;関数を呼び出してポインタを取得するには、次のように指定します。 環境変数の値は、次のような呼び出しを行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, to match C prototypes of the form:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153924Z" creationid="hsugawa8651" creationdate="20181109T153924Z">
@@ -694,6 +720,14 @@ type explicitly, a type can be prepended to the comprehension.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154854Z" creationid="hsugawa8651" creationdate="20181109T154854Z">
         <seg>制御を行うには 明示的にタイプを認識することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In practice, especially when providing reusable functionality, one generally wraps &lt;x1/&gt;`ccall`&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224109Z" creationid="hsugawa8651" creationdate="20181109T224109Z">
+        <seg>実際には、特に再利用可能な機能を提供する場合には、一般的には&lt;x1/&gt;"ccall"&lt;x2/&gt;"をラップします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -992,11 +1026,28 @@ answer.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that the argument type tuple must be written as &lt;x1/&gt;(Cstring,)&lt;x2/&gt;, rather than &lt;x3/&gt;(Cstring)&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224054Z" creationid="hsugawa8651" creationdate="20181109T224054Z">
+        <seg>引数のタイプは、&lt;x3/&gt;(Cstring)&lt;x4/&gt;ではなく、&lt;x1/&gt;(Cstring,)&lt;x2/&gt;として記述する必要があることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Often referred to as logical indexing or indexing with a logical mask, indexing
 by a boolean array selects elements at the indices where its values are &lt;x1/&gt;true&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155734Z" creationid="hsugawa8651" creationdate="20181109T155734Z">
         <seg>論理的なインデックス作成と呼ばれる論理的インデックス作成またはインデックス作成と呼ばれることが多いインデックス作成 ブール型配列では、値が&lt;x1/&gt;真&lt;x2/&gt;であるインデックスで要素を選択します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One common gotcha is that a 1-tuple must be
+written with a trailing comma.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224037Z" creationid="hsugawa8651" creationdate="20181109T224037Z">
+        <seg>一般的なゴチャの一つは、1タプルが必要であるということです。 後続のカンマで作成されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1118,6 +1169,15 @@ of &lt;x9/&gt;DenseArray&lt;x10/&gt;;  &lt;x11/&gt;`Vector`&lt;x12/&gt; and &lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The C &lt;x1/&gt;getenv&lt;x2/&gt; function indicates an error by returning &lt;x3/&gt;NULL&lt;x4/&gt;, but other standard C functions
+indicate errors in various different ways, including by returning -1, 0, 1 and other special values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224130Z" creationid="hsugawa8651" creationdate="20181109T224130Z">
+        <seg>C&lt;x1/&gt;getenv&lt;x2/&gt;関数は、&lt;x3/&gt;NULL&lt;x4/&gt;を返すことによってエラーを示しますが、他の標準的なC関数の関数です。 -1 0 1、その他の特別な値を返すなど、さまざまな方法でエラーを表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The array library is implemented
 almost completely in Julia itself, and derives its performance from the compiler, just like any
 other code written in Julia.</seg>
@@ -1148,6 +1208,14 @@ other code written in Julia.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155843Z" creationid="hsugawa8651" creationdate="20181109T155843Z">
         <seg>最初の構成は、各要素の値が必要な場合に使用されますが、インデックスでは使用されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following arguments, if any, are the actual argument values passed to the function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224007Z" creationid="hsugawa8651" creationdate="20181109T224007Z">
+        <seg>次の引数は、関数に渡された実際の引数の値です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1183,6 +1251,15 @@ dimension size and stride parameters.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155109Z" creationid="hsugawa8651" creationdate="20181109T155109Z">
         <seg>n次元配列Aへの索引付けの一般的な構文は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The input types must be written as a literal tuple, not a tuple-valued
+variable or expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223955Z" creationid="hsugawa8651" creationdate="20181109T223955Z">
+        <seg>入力タイプは、タプルではなく、リテラルタプルとして記述する必要があります。 変数または式。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1295,6 +1372,16 @@ that is sometimes referred to as pointwise indexing.</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>This
+is because &lt;x5/&gt;(Cstring)&lt;x6/&gt; is just the expression &lt;x7/&gt;Cstring&lt;x8/&gt; surrounded by parentheses, rather than
+a 1-tuple containing &lt;x9/&gt;Cstring&lt;x10/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224100Z" creationid="hsugawa8651" creationdate="20181109T224100Z">
+        <seg>これ &lt;x5/&gt;(Cstring)&lt;x6/&gt;は、&lt;x7/&gt;Cstring&lt;x8/&gt;で囲まれた括弧で囲まれた表現であり &lt;x9/&gt;Cstring&lt;x10/&gt;:を含む1組のタプル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This
 will construct a 1-d array with element type &lt;x3/&gt;T&lt;x4/&gt;, initialized to contain elements &lt;x5/&gt;A&lt;x6/&gt;, &lt;x7/&gt;B&lt;x8/&gt;, &lt;x9/&gt;C&lt;x10/&gt;,
 etc.</seg>
       </tuv>
@@ -1374,6 +1461,15 @@ an array and storing them in advance (see &lt;x1/&gt;Iteration&lt;x2/&gt;).</seg
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154927Z" creationid="hsugawa8651" creationdate="20181109T154927Z">
         <seg>このオブジェクトを反復して、必要に応じて必要に応じて値を生成することができます。 配列とそれを事前に格納する(&lt;x1/&gt;Iteration&lt;x2/&gt;を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This wrapper throws an exception clearly indicating the problem if the caller tries to get a non-existent
+environment variable:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224133Z" creationid="hsugawa8651" creationdate="20181109T224133Z">
+        <seg>このラッパーは、呼び出し者が存在しないことを示す問題を明確に示す例外をスローします。 環境変数:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1719,6 +1815,14 @@ are needed to separate the generator from subsequent arguments:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>clock&lt;x1/&gt; takes no arguments and returns an &lt;x2/&gt;`Int32`&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224034Z" creationid="hsugawa8651" creationdate="20181109T224034Z">
+        <seg>クロック&lt;x1/&gt;は引数を取らず、&lt;x2/&gt;`Int32`&lt;x3/&gt;を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>concatenate input arrays along dimension(s) &lt;x1/&gt;k&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154549Z" creationid="hsugawa8651" creationdate="20181109T154549Z">
@@ -1767,6 +1871,53 @@ end
 for i in eachindex(A)
     &lt;x2/&gt; Do something with i and/or A[i]
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function getenv(var::AbstractString)
+    val = ccall((:getenv, "libc"),
+                Cstring, (Cstring,), var)
+    if val == C_NULL
+        error("getenv: undefined variable: ", var)
+    end
+    unsafe_string(val)
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224118Z" creationid="hsugawa8651" creationdate="20181109T224118Z">
+        <seg>function getenv(var::AbstractString)
+    val = ccall((:getenv, "libc"),
+                Cstring, (Cstring,), var)
+    if val == C_NULL
+        error("getenv: undefined variable: ", var)
+    end
+    unsafe_string(val)
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>getenv&lt;x1/&gt; C library function is wrapped in the following Julia function,
+which is a simplified version of the actual definition from &lt;x2/&gt;`env.jl`&lt;x3/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224115Z" creationid="hsugawa8651" creationdate="20181109T224115Z">
+        <seg>getenv&lt;x1/&gt;Cライブラリ関数は、次のJulia関数にラップされています。 これは、&lt;x2/&gt;'env.jl'&lt;x3/&gt;からの実際の定義の簡略化されたバージョンです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; (Cstring)
+Cstring
+
+julia&gt; (Cstring,)
+(Cstring,)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224103Z" creationid="hsugawa8651" creationdate="20181109T224103Z">
+        <seg>julia&gt; (Cstring)
+Cstring
+
+julia&gt; (Cstring,)
+(Cstring,)</seg>
       </tuv>
     </tu>
     <tu>
@@ -2279,6 +2430,22 @@ julia&gt; string.(1:3, ".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; getenv("SHELL")
+"/bin/bash"
+
+julia&gt; getenv("FOOBAR")
+getenv: undefined variable: FOOBAR</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224135Z" creationid="hsugawa8651" creationdate="20181109T224135Z">
+        <seg>julia&gt; getenv("SHELL")
+"/bin/bash"
+
+julia&gt; getenv("FOOBAR")
+getenv: undefined variable: FOOBAR</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; map(tuple, (1/(i+j) for i=1:2, j=1:2), [1 3; 2 4])
 2×2 Array{Tuple{Float64,Int64},2}:
  (0.5, 1)       (0.333333, 3)
@@ -2341,12 +2508,50 @@ julia&gt; page[[CartesianIndex(1,1),
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; path = ccall((:getenv, "libc"), Cstring, (Cstring,), "SHELL")
+Cstring(@0x00007fff5fbffc45)
+
+julia&gt; unsafe_string(path)
+"/bin/bash"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224044Z" creationid="hsugawa8651" creationdate="20181109T224044Z">
+        <seg>julia&gt; path = ccall((:getenv, "libc"), Cstring, (Cstring,), "SHELL")
+Cstring(@0x00007fff5fbffc45)
+
+julia&gt; unsafe_string(path)
+"/bin/bash"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; sum(1/n^2 for n=1:1000)
 1.6439345666815615</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154933Z" creationid="hsugawa8651" creationdate="20181109T154933Z">
         <seg>julia&gt; sum(1/n^2 for n=1:1000)
 1.6439345666815615</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; t = ccall((:clock, "libc"), Int32, ())
+2292761
+
+julia&gt; t
+2292761
+
+julia&gt; typeof(ans)
+Int32</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224025Z" creationid="hsugawa8651" creationdate="20181109T224025Z">
+        <seg>julia&gt; t = ccall((:clock, "libc"), Int32, ())
+2292761
+
+julia&gt; t
+2292761
+
+julia&gt; typeof(ans)
+Int32</seg>
       </tuv>
     </tu>
     <tu>
