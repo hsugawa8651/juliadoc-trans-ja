@@ -27,6 +27,72 @@ value of one or more of its arguments (compare, for example, &lt;x2/&gt;`sort`&l
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>"less than" : "not less than")
+less than
+
+julia&gt; x = 1; y = 0;
+
+julia&gt; println(x &lt; y ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230126Z" creationid="hsugawa8651" creationdate="20181109T230126Z">
+        <seg>"less than" : "not less than")
+less than
+
+julia&gt; x = 1; y = 0;
+
+julia&gt; println(x &lt; y ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>"less than" : "not less than")
+not less than</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230129Z" creationid="hsugawa8651" creationdate="20181109T230129Z">
+        <seg>"less than" : "not less than")
+not less than</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>"x is greater than y" : "x is equal to y")
+test (generic function with 1 method)
+
+julia&gt; test(1, 2)
+x is less than y
+
+julia&gt; test(2, 1)
+x is greater than y
+
+julia&gt; test(1, 1)
+x is equal to y</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230146Z" creationid="hsugawa8651" creationdate="20181109T230146Z">
+        <seg>"x is greater than y" : "x is equal to y")
+test (generic function with 1 method)
+
+julia&gt; test(1, 2)
+x is less than y
+
+julia&gt; test(2, 1)
+x is greater than y
+
+julia&gt; test(1, 1)
+x is equal to y</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>"x is less than y"    :
+                            x &gt; y ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230144Z" creationid="hsugawa8651" creationdate="20181109T230144Z">
+        <seg>"x is less than y"    :
+                            x &gt; y ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>$ echo 'println("Greetings!</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224456Z" creationid="hsugawa8651" creationdate="20181109T224456Z">
@@ -925,6 +991,15 @@ direct usage of tasks, but certain problems can be solved much more easily by us
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Explicitly,
+this means that:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230231Z" creationid="hsugawa8651" creationdate="20181109T230231Z">
+        <seg>明示的に つまり、次のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Finally, you can use &lt;x1/&gt;`ccall`&lt;x2/&gt; to actually generate a call to the library function.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223825Z" creationid="hsugawa8651" creationdate="20181109T223825Z">
@@ -1057,6 +1132,15 @@ objects of a more specific type, such as &lt;x3/&gt;`Float64`&lt;x4/&gt; or &lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For the sake of clarity,
+let's try a two-way version first:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230122Z" creationid="hsugawa8651" creationdate="20181109T230122Z">
+        <seg>わかりやすくするために まず2ウェイのバージョンを試してみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Generated values can be filtered using the &lt;x1/&gt;if&lt;x2/&gt; keyword:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155050Z" creationid="hsugawa8651" creationdate="20181109T155050Z">
@@ -1103,6 +1187,15 @@ mutable arrays should also implement &lt;x14/&gt;`setindex!`&lt;x15/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160320Z" creationid="hsugawa8651" creationdate="20181109T160320Z">
         <seg>しかし、具体的な&lt;x3/&gt;AbstractArray{T,N}&lt;x4/&gt;型は、一般的には実装されるべきである。 &lt;x5/&gt;'size(A)'&lt;x6/&gt;(return an&lt;x7/&gt;Int&lt;x8/&gt;タプルを返す)&lt;x9/&gt;`getindex(A,i)`&lt;x10/&gt;&lt;x13/&gt;&lt;x13/&gt;&lt;x13/&gt;&lt;x13/&gt;(@ref getindex); mutable配列は、&lt;x14/&gt;`setindex!`&lt;x15/&gt;を実装する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, when depending
+on this behavior, make sure all possible code paths define a value for the variable.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225955Z" creationid="hsugawa8651" creationdate="20181109T225955Z">
+        <seg>ただし この動作では、可能なすべてのコード・パスが変数の値を定義していることを確認してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1166,6 +1259,15 @@ session with a trailing semicolon, its value is not shown.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224315Z" creationid="hsugawa8651" creationdate="20181109T224315Z">
         <seg>式が対話式に入力された場合 末尾のセミコロンとのセッションは、その値は表示されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the expression &lt;x1/&gt;x &lt; y&lt;x2/&gt; is true, the entire ternary operator expression evaluates to the string
+&lt;x3/&gt;"less than"&lt;x4/&gt; and otherwise it evaluates to the string &lt;x5/&gt;"not less than"&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230135Z" creationid="hsugawa8651" creationdate="20181109T230135Z">
+        <seg>式&lt;x1/&gt;x&lt;y&lt;x2/&gt;がtrueの場合、三元演算子の式全体が文字列に対して評価されます。 &lt;x3/&gt;"より小さい"&lt;x4/&gt;"であり、それ以外の場合は、文字列&lt;x5/&gt;"は&lt;x6/&gt;以上であると評価される。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1293,6 +1395,14 @@ indices and can be converted to such by &lt;x5/&gt;`to_indices`&lt;x6/&gt;:</seg
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the expression &lt;x1/&gt;a &amp;&amp; b&lt;x2/&gt;, the subexpression &lt;x3/&gt;b&lt;x4/&gt; is only evaluated if &lt;x5/&gt;a&lt;x6/&gt; evaluates to &lt;x7/&gt;true&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230234Z" creationid="hsugawa8651" creationdate="20181109T230234Z">
+        <seg>&lt;x1/&gt;a&amp;b&lt;x2/&gt;では、サブ式&lt;x3/&gt;b&lt;x4/&gt;は、&lt;x5/&gt;a&lt;x6/&gt;が&lt;x7/&gt;真&lt;x8/&gt;と評価された場合にのみ評価される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the following list of
 such functions, calls with a &lt;x1/&gt;dims...&lt;x2/&gt; argument can either take a single tuple of dimension sizes
 or a series of dimension sizes passed as a variable number of arguments.</seg>
@@ -1317,6 +1427,16 @@ an array may contain objects of type &lt;x1/&gt;`Any`&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154143Z" creationid="hsugawa8651" creationdate="20181109T154143Z">
         <seg>最も一般的なケースでは 配列は、&lt;x1/&gt;'のタイプのオブジェクトを含むことができます。&lt;x/&gt;&lt;x2/&gt;&lt;x/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the previous example, the
+&lt;x1/&gt;println&lt;x2/&gt; call is shared by all three branches: the only real choice is which literal string to
+print.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230106Z" creationid="hsugawa8651" creationdate="20181109T230106Z">
+        <seg>前の例では &lt;x1/&gt;println&lt;x2/&gt;コールは3つのブランチすべてで共有されます。唯一の実際の選択は、次のいずれかです。 印刷。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1400,6 +1520,15 @@ vector of integers that is returned by &lt;x5/&gt;`findall(B)`&lt;x6/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It gets its name from being the only operator
+in most languages taking three operands:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230049Z" creationid="hsugawa8651" creationdate="20181109T230049Z">
+        <seg>その名前が唯一の演算子となります。 ほとんどの言語で3つのオペランドを使用しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is generally more efficient to use boolean arrays as
 indices directly instead of first calling &lt;x13/&gt;`findall`&lt;x14/&gt;.</seg>
       </tuv>
@@ -1432,6 +1561,15 @@ functions may be unexpectedly slow.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160322Z" creationid="hsugawa8651" creationdate="20181109T160322Z">
         <seg>これらの操作は、次のように操作することをお勧めします。 ほとんど一定の時間的複雑さ(技術的には1)、あるいは技術的には複雑さがある 機能が予期せぬほど遅くなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is significant that like &lt;x1/&gt;if&lt;x2/&gt;-&lt;x3/&gt;elseif&lt;x4/&gt;-&lt;x5/&gt;else&lt;x6/&gt;, the expressions before and after the &lt;x7/&gt;:&lt;x8/&gt; are
+only evaluated if the condition expression evaluates to &lt;x9/&gt;true&lt;x10/&gt; or &lt;x11/&gt;false&lt;x12/&gt;, respectively:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230156Z" creationid="hsugawa8651" creationdate="20181109T230156Z">
+        <seg>&lt;x2/&gt;-&lt;x3/&gt;elseif&lt;x4/&gt;&lt;x5/&gt;else&lt;x6/&gt;以外の&lt;x6/&gt;&lt;x6/&gt;の場合は、&lt;x7/&gt;:&lt;x8/&gt;:&lt;x8/&gt;=&lt;x8/&gt;となる。 条件式が&lt;x9/&gt;真&lt;x10/&gt;または&lt;x11/&gt;false&lt;x12/&gt;と評価された場合にのみ評価されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1709,6 +1847,25 @@ answer.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that the spaces around &lt;x19/&gt;?&lt;x20/&gt; and &lt;x21/&gt;:&lt;x22/&gt; are mandatory: an expression
+like &lt;x23/&gt;a?b:c&lt;x24/&gt; is not a valid ternary expression (but a newline is acceptable after both the &lt;x25/&gt;?&lt;x26/&gt; and
+the &lt;x27/&gt;:&lt;x28/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230058Z" creationid="hsugawa8651" creationdate="20181109T230058Z">
+        <seg>&lt;x19/&gt;?&lt;x20/&gt;と&lt;X21/&gt;:&lt;x22/&gt;以外のスペースは必須です。式は次のようになります。 &lt;x23/&gt;a?b:c&lt;x24/&gt;は、有効な三元表現ではありません(ただし、&lt;x25/&gt;?&lt;x26/&gt;&lt;x26/&gt;)は、&lt;x25/&gt;?&lt;x26/&gt;と &lt;x27/&gt;:&lt;x28/&gt;)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that very short conditional statements (one-liners) are frequently expressed using Short-Circuit
+Evaluation in Julia, as outlined in the next section.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230030Z" creationid="hsugawa8651" creationdate="20181109T230030Z">
+        <seg>非常に短い条件文(oneliner)は、短絡を使用して頻繁に表現されることに注意してください。 次のセクションで概説されているように、Juliaでの評価。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Number of bits</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225120Z" creationid="hsugawa8651" creationdate="20181109T225120Z">
@@ -1887,10 +2044,26 @@ on implementing a custom array type.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Short-Circuit Evaluation</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230217Z" creationid="hsugawa8651" creationdate="20181109T230217Z">
+        <seg>Short-Circuit Evaluation</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Short-Circuit Evaluation&lt;x1/&gt;: &lt;x2/&gt;&amp;&amp;&lt;x3/&gt;, &lt;x4/&gt;||&lt;x5/&gt; and chained comparisons.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225726Z" creationid="hsugawa8651" creationdate="20181109T225726Z">
         <seg>短絡評価&lt;x1/&gt;:&lt;x2/&gt;&amp;&amp;&lt;x3/&gt;、&lt;x4/&gt;&lt;x5/&gt;および連鎖比較。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Short-circuit evaluation is quite similar to conditional evaluation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230224Z" creationid="hsugawa8651" creationdate="20181109T230224Z">
+        <seg>短絡評価は条件付き評価と非常によく似ています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2029,6 +2202,17 @@ other code written in Julia.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The behavior is found in
+most imperative programming languages having the &lt;x1/&gt;&amp;&amp;&lt;x2/&gt; and &lt;x3/&gt;||&lt;x4/&gt; boolean operators: in a series
+of boolean expressions connected by these operators, only the minimum number of expressions are
+evaluated as are necessary to determine the final boolean value of the entire chain.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230229Z" creationid="hsugawa8651" creationdate="20181109T230229Z">
+        <seg>動作は &lt;x1/&gt;&amp;&amp;&lt;x2/&gt;と&lt;x3/&gt;&lt;x4/&gt;ブール演算子を持つ最も命令的なプログラミング言語:シリーズ これらの演算子によって接続されたブール式のうち、最小の数だけが チェーン全体の最終的なブール値を決定するために必要な評価が行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The code to be called must be available as a shared library.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160547Z" creationid="hsugawa8651" creationdate="20181109T160547Z">
@@ -2051,6 +2235,14 @@ known as a read-eval-print loop or "REPL") by double-clicking the Julia executab
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224254Z" creationid="hsugawa8651" creationdate="20181109T224254Z">
         <seg>Juliaを学習して実験する最も簡単な方法は、対話型セッションを開始することです。 Julia実行可能ファイルをダブルクリックするか、または実行することによって、read-eval-printループまたはREPLと呼ばれる既知の コマンドラインから&lt;x1/&gt;ジュリア&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The easiest way to understand this behavior is to see an example.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230103Z" creationid="hsugawa8651" creationdate="20181109T230103Z">
+        <seg>この動作を理解する最も簡単な方法は、例を見ることです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2177,6 +2369,15 @@ should use to connect to this worker.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The original three-way
+example requires chaining multiple uses of the ternary operator together:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230140Z" creationid="hsugawa8651" creationdate="20181109T230140Z">
+        <seg>オリジナルの3ウェイ 例では、三元演算子の複数の使用を一緒に連鎖する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The result
 of &lt;x4/&gt;`view`&lt;x5/&gt; looks the same as the result of &lt;x6/&gt;`getindex`&lt;x7/&gt;, except the
 data is left in place.</seg>
@@ -2222,6 +2423,16 @@ of the binary data item is the minimal needed size, if the leading digit of the 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The so-called "ternary operator", &lt;x1/&gt;?:&lt;x2/&gt;, is closely related to the &lt;x3/&gt;if&lt;x4/&gt;-&lt;x5/&gt;elseif&lt;x6/&gt;-&lt;x7/&gt;else&lt;x8/&gt; syntax,
+but is used where a conditional choice between single expression values is required, as opposed
+to conditional execution of longer blocks of code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230045Z" creationid="hsugawa8651" creationdate="20181109T230045Z">
+        <seg>いわゆる「三元演算子」&lt;x1/&gt;?&lt;x2/&gt;は、&lt;x4/&gt;-&lt;x5/&gt;elseif&lt;x6/&gt;-&lt;x7/&gt;else&lt;x8/&gt;の場合、&lt;x4/&gt;と密接に関係している。 しかし、単一の表現値間の条件付き選択が必要とされる場合に使用されます。 より長いブロックを条件付きで実行することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The syntax &lt;x1/&gt;[A, B, C, ...]&lt;x2/&gt; constructs a 1-d array (i.e., a vector) of its arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154518Z" creationid="hsugawa8651" creationdate="20181109T154518Z">
@@ -2262,6 +2473,14 @@ cases.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224825Z" creationid="hsugawa8651" creationdate="20181109T224825Z">
         <seg>変数&lt;x1/&gt;Sys.KERNEL&lt;x2/&gt;は、このような処理を行うために使用することができます。 のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The variable &lt;x1/&gt;relation&lt;x2/&gt; is declared inside the &lt;x3/&gt;if&lt;x4/&gt; block, but used outside.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225941Z" creationid="hsugawa8651" creationdate="20181109T225941Z">
+        <seg>The variable &lt;x1/&gt;relation&lt;x2/&gt; is declared inside the &lt;x3/&gt;if&lt;x4/&gt; block, but used outside.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2397,10 +2616,27 @@ an integer value.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This could be written more concisely using the ternary operator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230116Z" creationid="hsugawa8651" creationdate="20181109T230116Z">
+        <seg>これは、三元演算子を使用してより簡潔に書くことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This does not occur when Julia code is run in other ways.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225348Z" creationid="hsugawa8651" creationdate="20181109T225348Z">
         <seg>これは、Juliaコードが他の方法で実行されている場合には発生しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This error indicates that the conditional was of the wrong type: &lt;x1/&gt;`Int64`&lt;x2/&gt; rather
+than the required &lt;x3/&gt;`Bool`&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230041Z" creationid="hsugawa8651" creationdate="20181109T230041Z">
+        <seg>このエラーは、条件が間違ったタイプであることを示しています:&lt;x1/&gt;`Int64`&lt;x2/&gt;。 必要な&lt;x3/&gt;`Bool'&lt;x4/&gt;よりも多くなります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2488,6 +2724,15 @@ in &lt;x1/&gt;Functions&lt;x2/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This value is simply the return value of the last executed statement in the branch that was chosen,
+so</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230023Z" creationid="hsugawa8651" creationdate="20181109T230023Z">
+        <seg>この値は、選択された分岐内の最後に実行された文の戻り値です。 だから</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This wrapper throws an exception clearly indicating the problem if the caller tries to get a non-existent
 environment variable:</seg>
       </tuv>
@@ -2533,6 +2778,14 @@ Julia &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized) &lt;x4/&gt;f.(args.
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To facilitate chaining, the operator associates from right to left.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230200Z" creationid="hsugawa8651" creationdate="20181109T230200Z">
+        <seg>連鎖を容易にするために、オペレータは右から左へと関連する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To run code in a file non-interactively, you can give it as the first argument to the &lt;x1/&gt;julia&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224323Z" creationid="hsugawa8651" creationdate="20181109T224323Z">
@@ -2545,6 +2798,15 @@ Julia &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized) &lt;x4/&gt;f.(args.
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154524Z" creationid="hsugawa8651" creationdate="20181109T154524Z">
         <seg>これらのコンストラクタに次元を渡すことができるさまざまな方法を確認するには、次の例を考慮してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike C, MATLAB, Perl, Python, and Ruby -- but like Java, and a few other stricter, typed languages
+-- it is an error if the value of a conditional expression is anything but &lt;x1/&gt;true&lt;x2/&gt; or &lt;x3/&gt;false&lt;x4/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230035Z" creationid="hsugawa8651" creationdate="20181109T230035Z">
+        <seg>Cとは異なり、MATLAB、Perl、Python、Rubyなどですが、Javaと同様に、さらに厳密なタイプの言語もあります。 --条件式の値が&lt;x1/&gt;真&lt;x2/&gt;または&lt;x3/&gt;false&lt;x4/&gt;以外の値である場合はエラーになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3041,6 +3303,14 @@ elseif x &gt; y
 else
     println("x is equal to y")
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if&lt;x1/&gt; blocks also return a value, which may seem unintuitive to users coming from many other languages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230019Z" creationid="hsugawa8651" creationdate="20181109T230019Z">
+        <seg>もし&lt;x1/&gt;ブロックが値を返すと、他の多くの言語から来るユーザーにとって直感的ではないように思えるかもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3825,6 +4095,20 @@ getenv: undefined variable: FOOBAR</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; if 1
+           println("true")
+       end
+ERROR: TypeError: non-boolean (Int64) used in boolean context</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230038Z" creationid="hsugawa8651" creationdate="20181109T230038Z">
+        <seg>julia&gt; if 1
+           println("true")
+       end
+ERROR: TypeError: non-boolean (Int64) used in boolean context</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; map(tuple, (1/(i+j) for i=1:2, j=1:2), [1 3; 2 4])
 2×2 Array{Tuple{Float64,Int64},2}:
  (0.5, 1)       (0.333333, 3)
@@ -3935,6 +4219,28 @@ Int32</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; test(x, y) = println(x &lt; y ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230142Z" creationid="hsugawa8651" creationdate="20181109T230142Z">
+        <seg>julia&gt; test(x, y) = println(x &lt; y ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; v(x) = (println(x); x)
+v (generic function with 1 method)
+
+julia&gt; 1 &lt; 2 ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230204Z" creationid="hsugawa8651" creationdate="20181109T230204Z">
+        <seg>julia&gt; v(x) = (println(x); x)
+v (generic function with 1 method)
+
+julia&gt; 1 &lt; 2 ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; vcat([1, 2], 3)
 3-element Array{Int64,1}:
  1
@@ -3955,6 +4261,42 @@ julia&gt; hcat([1 2], 3)
 julia&gt; hcat([1 2], 3)
 1×3 Array{Int64,2}:
  1  2  3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; x = 1; y = 2;
+
+julia&gt; println(x &lt; y ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230124Z" creationid="hsugawa8651" creationdate="20181109T230124Z">
+        <seg>julia&gt; x = 1; y = 2;
+
+julia&gt; println(x &lt; y ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; x = 3
+3
+
+julia&gt; if x &gt; 0
+           "positive!"
+       else
+           "negative..."
+       end
+"positive!"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230026Z" creationid="hsugawa8651" creationdate="20181109T230026Z">
+        <seg>julia&gt; x = 3
+3
+
+julia&gt; if x &gt; 0
+           "positive!"
+       else
+           "negative..."
+       end
+"positive!"</seg>
       </tuv>
     </tu>
     <tu>
@@ -4296,6 +4638,34 @@ for each line in file &lt;x4/&gt;file&lt;x5/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154231Z" creationid="hsugawa8651" creationdate="20181109T154231Z">
         <seg>&lt;x1/&gt;A&lt;x2/&gt;に含まれるエレメントのタイプ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>v("yes") : v("no")
+no
+"no"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230210Z" creationid="hsugawa8651" creationdate="20181109T230210Z">
+        <seg>v("yes") : v("no")
+no
+"no"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>v("yes") : v("no")
+yes
+"yes"
+
+julia&gt; 1 &gt; 2 ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230206Z" creationid="hsugawa8651" creationdate="20181109T230206Z">
+        <seg>v("yes") : v("no")
+yes
+"yes"
+
+julia&gt; 1 &gt; 2 ?</seg>
       </tuv>
     </tu>
     <tu>
