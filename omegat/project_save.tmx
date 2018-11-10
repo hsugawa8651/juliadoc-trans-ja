@@ -1083,6 +1083,15 @@ rather than stored.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, if &lt;x1/&gt;A&lt;x2/&gt; is a gigabyte-sized array that you no longer need, you can free the memory
+with &lt;x3/&gt;A = nothing&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024646Z" creationid="hsugawa8651" creationdate="20181110T024646Z">
+        <seg>たとえば、&lt;x1/&gt;A&lt;x2/&gt;が必要なくなったギガバイトサイズのアレイである場合は、メモリを解放することができます。 &lt;x3/&gt;A=何もありません&lt;x4/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, it enables
 accessing the diagonal elements from the first "page" of &lt;x5/&gt;A&lt;x6/&gt; from above:</seg>
       </tuv>
@@ -1214,6 +1223,14 @@ let's try a two-way version first:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>How can I modify the declaration of a type in my session?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024709Z" creationid="hsugawa8651" creationdate="20181110T024709Z">
+        <seg>セッション内のタイプの宣言を変更するにはどうすればよいですか。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, any concrete &lt;x3/&gt;AbstractArray{T,N}&lt;x4/&gt; type should generally implement
 at least &lt;x5/&gt;`size(A)`&lt;x6/&gt; (returning an &lt;x7/&gt;Int&lt;x8/&gt; tuple), &lt;x9/&gt;`getindex(A,i)`&lt;x10/&gt; and &lt;x11/&gt;&lt;x12/&gt;&lt;x13/&gt;(@ref getindex);
 mutable arrays should also implement &lt;x14/&gt;`setindex!`&lt;x15/&gt;.</seg>
@@ -1296,6 +1313,14 @@ session with a trailing semicolon, its value is not shown.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If memory usage is your concern, you can always replace objects with ones that consume less memory.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024641Z" creationid="hsugawa8651" creationdate="20181110T024641Z">
+        <seg>メモリ使用量が問題になる場合は、常にメモリを消費するオブジェクトを使用してオブジェクトを置き換えることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the expression &lt;x1/&gt;x &lt; y&lt;x2/&gt; is true, the entire ternary operator expression evaluates to the string
 &lt;x3/&gt;"less than"&lt;x4/&gt; and otherwise it evaluates to the string &lt;x5/&gt;"not less than"&lt;x6/&gt;.</seg>
       </tuv>
@@ -1338,6 +1363,15 @@ specify this trait, the default value &lt;x5/&gt;IndexCartesian()&lt;x6/&gt; is 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224453Z" creationid="hsugawa8651" creationdate="20181109T224453Z">
         <seg>Juliaが実行されるたびに実行するコードがある場合は、そのコードを次のように記述することができます。 &lt;x1/&gt;&lt;x2/&gt;/.julia/config/startup.jl&lt;x3/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you try this at
+the REPL, you get the error:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024718Z" creationid="hsugawa8651" creationdate="20181110T024718Z">
+        <seg>これを REPLはエラーを受け取ります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1668,6 +1702,15 @@ be evaluated and returned depending on the preceding conditionals:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia does not have an analog of MATLAB's &lt;x1/&gt;clear&lt;x2/&gt; function; once a name is defined in a Julia
+session (technically, in module &lt;x3/&gt;Main&lt;x4/&gt;), it is always present.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024636Z" creationid="hsugawa8651" creationdate="20181110T024636Z">
+        <seg>JuliaはMATLABの&lt;x1/&gt;clear&lt;x2/&gt;関数のアナログを持っていない;名前がJuliaで定義された場合 セッション(技術的には、モジュール&lt;x3/&gt;メイン&lt;x4/&gt;)は常に存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia does not treat arrays in any special way.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154124Z" creationid="hsugawa8651" creationdate="20181109T154124Z">
@@ -1841,11 +1884,28 @@ copy of the input, and returning that copy.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Modules can be replaced by redefining them, and so if you wrap all your new code inside a module
+you can redefine types and constants.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024738Z" creationid="hsugawa8651" creationdate="20181110T024738Z">
+        <seg>モジュールを再定義すると、モジュールを再定義することができます。したがって、モジュール内の新しいコードをすべてラップすることができます。 タイプと定数を再定義できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>More concrete examples
 can be found within the &lt;x25/&gt;&lt;x26/&gt;&lt;x27/&gt;(@ref man-interface-strided-arrays).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160515Z" creationid="hsugawa8651" creationdate="20181109T160515Z">
         <seg>具体的な事例 は、&lt;x25/&gt;&lt;x26/&gt;&lt;x27/&gt;(@ref man interface strided配列)内にあることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Moreover, an attempt to use &lt;x8/&gt;A&lt;x9/&gt; will likely result in an error, because most methods are not defined on type &lt;x10/&gt;Nothing&lt;x11/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024705Z" creationid="hsugawa8651" creationdate="20181110T024705Z">
+        <seg>さらに、&lt;x8/&gt;A&lt;x9/&gt;を使用しようとすると、エラーが発生する可能性があります。なぜなら、ほとんどのメソッドは、タイプ&lt;x10/&gt;Nothing&lt;x11/&gt;では定義されていないからです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2028,6 +2088,14 @@ indices.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155131Z" creationid="hsugawa8651" creationdate="20181109T155131Z">
         <seg>そうでない場合は &lt;x5/&gt;x&lt;x6/&gt;は、すべての次元の次元性の合計と同じ数の次元を持つ配列です。 索引。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Perhaps you've defined a type and then realize you need to add a new field.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024714Z" creationid="hsugawa8651" creationdate="20181110T024714Z">
+        <seg>おそらく、タイプを定義してから、新しいフィールドを追加する必要があることを認識しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2487,6 +2555,15 @@ on each value in their given list of values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154807Z" creationid="hsugawa8651" creationdate="20181109T154807Z">
         <seg>この形式の意味は、&lt;x1/&gt;F(x,y,...)&lt;x2/&gt;は、変数&lt;x3/&gt;x4&lt;x4/&gt;、&lt;x5/&gt;y&lt;x6/&gt;の変数を用いて評価されることである。 指定された値リストの各値です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The memory will be released the next time the garbage collector runs; you can force
+this to happen with &lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref Base.GC.gc).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024659Z" creationid="hsugawa8651" creationdate="20181110T024659Z">
+        <seg>次にガーベッジ・コレクターが実行されるとメモリーが解放され、次のように強制的に実行されます。 これは&lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref Base.GC.gc)で起こる。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3097,6 +3174,14 @@ differences between operating systems.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224823Z" creationid="hsugawa8651" creationdate="20181109T224823Z">
         <seg>クロスプラットフォームアプリケーションやライブラリを記述する場合は、次のようなことがよくあります。 オペレーティング・システム間の違い。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>While this can be inconvenient when you are developing new code, there's an excellent workaround.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024734Z" creationid="hsugawa8651" creationdate="20181110T024734Z">
+        <seg>これは、新しいコードを開発する際に不便な場合がありますが、優れた回避策があります。</seg>
       </tuv>
     </tu>
     <tu>
