@@ -866,6 +866,42 @@ command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.ndims
+Base.size
+Base.axes(::Any)
+Base.axes(::AbstractArray, ::Any)
+Base.length(::AbstractArray)
+Base.eachindex
+Base.IndexStyle
+Base.IndexLinear
+Base.IndexCartesian
+Base.conj!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T033608Z" creationid="hsugawa8651" creationdate="20181110T033608Z">
+        <seg>Base.ndims
+Base.size
+Base.axes(::Any)
+Base.axes(::AbstractArray, ::Any)
+Base.length(::AbstractArray)
+Base.eachindex
+Base.IndexStyle
+Base.IndexLinear
+Base.IndexCartesian
+Base.conj!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.stride
+Base.strides</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T033616Z" creationid="hsugawa8651" creationdate="20181110T033616Z">
+        <seg>Base.stride
+Base.strides</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Binary and octal literals are also supported:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225352Z" creationid="hsugawa8651" creationdate="20181109T225352Z">
