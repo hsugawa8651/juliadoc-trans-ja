@@ -209,6 +209,32 @@ with some existing programming experience.)</seg>
       <tuv lang="EN-US">
         <seg>(generic function with 1 method)
 
+julia&gt; change_array!(x)
+5
+
+julia&gt; x
+3-element Array{Int64,1}:
+ 5
+ 2
+ 3</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025053Z" creationid="hsugawa8651" creationdate="20181110T025053Z">
+        <seg>(generic function with 1 method)
+
+julia&gt; change_array!(x)
+5
+
+julia&gt; x
+3-element Array{Int64,1}:
+ 5
+ 2
+ 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(generic function with 1 method)
+
 julia&gt; change_value!(x)
 17
 
@@ -839,6 +865,14 @@ they don't intend to change.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Can I use &lt;x1/&gt;using&lt;x2/&gt; or &lt;x3/&gt;import&lt;x4/&gt; inside a function?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025127Z" creationid="hsugawa8651" creationdate="20181110T025127Z">
+        <seg>関数の中で&lt;x2/&gt;または&lt;x3/&gt;インポート&lt;x4/&gt;を使用して、&lt;x1/&gt;を使用することはできますか?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Change something in "mynewcode.jl"
 include("mynewcode.jl")              &lt;x3/&gt; reload the module
 obj1 = MyModule.ObjConstructor(a, b) &lt;x4/&gt; old objects are no longer valid, must reconstruct
@@ -1320,6 +1354,15 @@ but you can change its content.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here we created a function &lt;x1/&gt;change_array!&lt;x2/&gt;, that assigns &lt;x3/&gt;5&lt;x4/&gt; to the first element of the passed
+array (bound to &lt;x5/&gt;x&lt;x6/&gt; at the call site, and bound to &lt;x7/&gt;A&lt;x8/&gt; within the function).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025123Z" creationid="hsugawa8651" creationdate="20181110T025123Z">
+        <seg>ここでは、渡された第1の要素に&lt;x3/&gt;5&lt;x4/&gt;を割り当てる関数&lt;x1/&gt;change_array!&lt;x2/&gt;を作成しました。 array(&lt;x5/&gt;x&lt;x6/&gt;at the call site,and bound to the function in the function内で&lt;x7/&gt;A&lt;x8/&gt;にバインドされます)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here's an example of a &lt;x5/&gt;begin&lt;x6/&gt; block:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225802Z" creationid="hsugawa8651" creationdate="20181109T225802Z">
@@ -1521,6 +1564,16 @@ the REPL, you get the error:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you want
+to import a module but only use its symbols inside a specific function or set of functions, you
+have two options:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025135Z" creationid="hsugawa8651" creationdate="20181110T025135Z">
+        <seg>必要な場合 モジュールをインポートするために、特定の関数または関数のセット内のシンボルのみを使用するには、次のようにします。 には次の2つのオプションがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you write a custom &lt;x1/&gt;`AbstractArray`&lt;x2/&gt; type, you can specify that it has fast linear indexing using</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155906Z" creationid="hsugawa8651" creationdate="20181109T155906Z">
@@ -1631,6 +1684,15 @@ literal, which has the same length but leading digit &lt;x3/&gt;1&lt;x4/&gt;.</s
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225440Z" creationid="hsugawa8651" creationdate="20181109T225440Z">
         <seg>先行ゼロの場合、サイズは、必要最小限のサイズで決定されます。 リテラルは同じ長さですが、先頭桁はx3/&gt;1&lt;x4/&gt;です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the context of function definitions, the &lt;x1/&gt;...&lt;x2/&gt; operator is used to combine many different arguments
+into a single argument.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025236Z" creationid="hsugawa8651" creationdate="20181110T025236Z">
+        <seg>関数定義のコンテキストでは、&lt;x1/&gt;.…&lt;x2/&gt;演算子は、多くの異なる引数を結合するために使用されます。 単一の引数に。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2055,6 +2117,14 @@ inner functions used elsewhere in the language, variables from the enclosing sco
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Many newcomers to Julia find the use of &lt;x1/&gt;...&lt;x2/&gt; operator confusing.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025227Z" creationid="hsugawa8651" creationdate="20181110T025227Z">
+        <seg>Juliaの新規参入者の多くは、&lt;x1/&gt;.…&lt;x2/&gt;演算子を混同していることを発見しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Many non- mutating functions are implemented by
 calling a function of the same name with an added &lt;x6/&gt;!&lt;x7/&gt; at the end on an explicit
 copy of the input, and returning that copy.</seg>
@@ -2139,6 +2209,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No, you are not allowed to have a &lt;x1/&gt;using&lt;x2/&gt; or &lt;x3/&gt;import&lt;x4/&gt; statement inside a function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025132Z" creationid="hsugawa8651" creationdate="20181110T025132Z">
+        <seg>いいえ、関数内の&lt;x/&gt;または&lt;x3/&gt;インポート&lt;x4/&gt;ステートメントを&lt;x2/&gt;のインポートを使用することはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that &lt;x1/&gt;islinux&lt;x2/&gt; and &lt;x3/&gt;isapple&lt;x4/&gt; are mutually exclusive subsets of &lt;x5/&gt;isunix&lt;x6/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224942Z" creationid="hsugawa8651" creationdate="20181109T224942Z">
@@ -2189,6 +2267,16 @@ Evaluation in Julia, as outlined in the next section.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230030Z" creationid="hsugawa8651" creationdate="20181109T230030Z">
         <seg>非常に短い条件文(oneliner)は、短絡を使用して頻繁に表現されることに注意してください。 次のセクションで概説されているように、Juliaでの評価。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notice that, after
+the function call, &lt;x9/&gt;x&lt;x10/&gt; is still bound to the same array, but the content of that array changed:
+the variables &lt;x11/&gt;A&lt;x12/&gt; and &lt;x13/&gt;x&lt;x14/&gt; were distinct bindings referring to the same mutable &lt;x15/&gt;Array&lt;x16/&gt; object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025111Z" creationid="hsugawa8651" creationdate="20181110T025111Z">
+        <seg>次の点に注目してください。 関数呼び出し&lt;x9/&gt;x&lt;x10/&gt;は、まだ同じ配列にバインドされていますが、その配列の内容は変更されています。 変数&lt;x11/&gt;A&lt;x12/&gt;および&lt;x13/&gt;x14/&gt;は、同じ可変の&lt;x15/&gt;配列&lt;x16/&gt;オブジェクトを参照する別個のバインディングである。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2868,6 +2956,14 @@ to conditional execution of longer blocks of code.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The two uses of the &lt;x1/&gt;...&lt;x2/&gt; operator: slurping and splatting</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025224Z" creationid="hsugawa8651" creationdate="20181110T025224Z">
+        <seg>&lt;x1/&gt;.…&lt;x2/&gt;演算子の2つの用途:slingingとspliting</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The value in location &lt;x5/&gt;I_1[i_1], I_2[i_2], ..., I_n[i_n]&lt;x6/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155412Z" creationid="hsugawa8651" creationdate="20181109T155412Z">
@@ -3185,6 +3281,15 @@ in &lt;x1/&gt;Functions&lt;x2/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This use of &lt;x3/&gt;...&lt;x4/&gt; for combining many different arguments into a single
+argument is called slurping:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025239Z" creationid="hsugawa8651" creationdate="20181110T025239Z">
+        <seg>&lt;x3/&gt;.&lt;x4/&gt;を使用して、さまざまな引数を一つに組み合わせて使用します。 引数はsluffingと呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This value is simply the return value of the last executed statement in the branch that was chosen,
 so</seg>
       </tuv>
@@ -3444,6 +3549,15 @@ to be able to redefine them there, but you can use the module name to resolve th
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024742Z" creationid="hsugawa8651" creationdate="20181110T024742Z">
         <seg>&lt;x1/&gt;メイン&lt;x2/&gt;にはタイプ名をインポートできないので、次のように入力することはできません。 で再定義することができますが、このモジュール名を使用してスコープを解決することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You refer to the
+&lt;x5/&gt;Foo&lt;x6/&gt; symbols by their qualified names &lt;x7/&gt;Foo.bar&lt;x8/&gt; etc.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025154Z" creationid="hsugawa8651" creationdate="20181110T025154Z">
+        <seg>ここでは &lt;x5/&gt;Foo&lt;x6/&gt;記号は、それらの修飾名&lt;x7/&gt;Foo.bar&lt;x8/&gt;などで表されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3723,6 +3837,18 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>end
+end
+using Bar</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025208Z" creationid="hsugawa8651" creationdate="20181110T025208Z">
+        <seg>end
+end
+using Bar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>equivalent to &lt;x1/&gt;--code-coverage=user&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224802Z" creationid="hsugawa8651" creationdate="20181109T224802Z">
@@ -3842,6 +3968,20 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225914Z" creationid="hsugawa8651" creationdate="20181109T225914Z">
         <seg>&lt;x1/&gt;ブロックが「リーク」である場合、すなわち、ローカルスコープを導入しない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>import Foo
+function bar(...)
+    &lt;x1/&gt; ... refer to Foo symbols via Foo.baz ...
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025140Z" creationid="hsugawa8651" creationdate="20181110T025140Z">
+        <seg>import Foo
+function bar(...)
+    &lt;x1/&gt; ... refer to Foo symbols via Foo.baz ...
+end</seg>
       </tuv>
     </tu>
     <tu>
@@ -4666,6 +4806,38 @@ Stacktrace:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; function printargs(args...)
+           println(typeof(args))
+           for (i, arg) in enumerate(args)
+               println("Arg &lt;x1/&gt;$i = $arg")
+           end
+       end
+printargs (generic function with 1 method)
+
+julia&gt; printargs(1, 2, 3)
+Tuple{Int64,Int64,Int64}
+Arg &lt;x2/&gt;1 = 1
+Arg &lt;x3/&gt;2 = 2
+Arg &lt;x4/&gt;3 = 3</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025242Z" creationid="hsugawa8651" creationdate="20181110T025242Z">
+        <seg>julia&gt; function printargs(args...)
+           println(typeof(args))
+           for (i, arg) in enumerate(args)
+               println("Arg &lt;x1/&gt;$i = $arg")
+           end
+       end
+printargs (generic function with 1 method)
+
+julia&gt; printargs(1, 2, 3)
+Tuple{Int64,Int64,Int64}
+Arg &lt;x2/&gt;1 = 1
+Arg &lt;x3/&gt;2 = 2
+Arg &lt;x4/&gt;3 = 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; function test(x, y)
            if x &lt; y
                println("x is less than y")
@@ -5118,6 +5290,32 @@ julia&gt; if x &gt; 0
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; x = [1,2,3]
+3-element Array{Int64,1}:
+ 1
+ 2
+ 3
+
+julia&gt; function change_array!(A)
+           A[1] = 5
+       end
+change_array!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025049Z" creationid="hsugawa8651" creationdate="20181110T025049Z">
+        <seg>julia&gt; x = [1,2,3]
+3-element Array{Int64,1}:
+ 1
+ 2
+ 3
+
+julia&gt; function change_array!(A)
+           A[1] = 5
+       end
+change_array!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; x = collect(reshape(1:9, 3, 3))
 3×3 Array{Int64,2}:
  1  4  7
@@ -5382,6 +5580,22 @@ julia&gt; zeros((2, 3))
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154456Z" creationid="hsugawa8651" creationdate="20181109T154456Z">
         <seg>m&lt;x1/&gt;-by-&lt;x2/&gt;n&lt;x3/&gt;識別マトリクス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>module Bar
+export bar
+using Foo
+function bar(...)
+    &lt;x1/&gt; ... refer to Foo.baz as simply baz ....</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025158Z" creationid="hsugawa8651" creationdate="20181110T025158Z">
+        <seg>module Bar
+export bar
+using Foo
+function bar(...)
+    &lt;x1/&gt; ... refer to Foo.baz as simply baz ....</seg>
       </tuv>
     </tu>
     <tu>
