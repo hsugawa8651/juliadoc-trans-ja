@@ -611,6 +611,14 @@ us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Additional functionality is available from a growing collection of available packages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041650Z" creationid="hsugawa8651" creationdate="20181110T041650Z">
+        <seg>Additional functionality is available from a growing collection of available packages.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Additionally,
 there is a macro &lt;x7/&gt;@static&lt;x8/&gt; which makes it possible to use these functions to conditionally hide
 invalid code, as demonstrated in the following examples.</seg>
@@ -667,6 +675,14 @@ flexible, user-extensible &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Also &lt;x3/&gt;in&lt;x4/&gt; and &lt;x5/&gt;isa&lt;x6/&gt; are parsed as infix operators.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041805Z" creationid="hsugawa8651" creationdate="20181110T041805Z">
+        <seg>&lt;x4/&gt;では&lt;x3/&gt;、&lt;x5/&gt;では&lt;x6/&gt;である&lt;x6/&gt;は、インフィックス演算子として解析されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Also notice the difference between &lt;x1/&gt;max.(a,b)&lt;x2/&gt;, which &lt;x3/&gt;`broadcast`&lt;x4/&gt;s &lt;x5/&gt;`max`&lt;x6/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160027Z" creationid="hsugawa8651" creationdate="20181109T160027Z">
@@ -690,6 +706,14 @@ pointers to allocated values on the heap or stack.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223810Z" creationid="hsugawa8651" creationdate="20181109T223810Z">
         <seg>また、Fortran関数を呼び出す場合は、すべての入力を次のように指定する必要があります。 ヒープまたはスタック上の割り当てられた値へのポインタ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Alternatively, &lt;x1/&gt;using Module&lt;x2/&gt; will import all exported &lt;x3/&gt;Module&lt;x4/&gt; functions into the current namespace.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041717Z" creationid="hsugawa8651" creationdate="20181110T041717Z">
+        <seg>あるいは、モジュール&lt;x2/&gt;を使用する&lt;x1/&gt;は、エクスポートされたすべての&lt;x3/&gt;モジュール&lt;x4/&gt;関数を現在の名前空間にインポートします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -858,10 +882,134 @@ command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.Base
+Base.Broadcast
+Base.Docs
+Base.Iterators
+Base.Libc
+Base.Meta
+Base.StackTraces
+Base.Sys
+Base.Threads
+Base.GC</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041817Z" creationid="hsugawa8651" creationdate="20181110T041817Z">
+        <seg>Base.Base
+Base.Broadcast
+Base.Docs
+Base.Iterators
+Base.Libc
+Base.Meta
+Base.StackTraces
+Base.Sys
+Base.Threads
+Base.GC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.IndexStyle(::Type{&lt;:MyArray}) = IndexLinear()</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155911Z" creationid="hsugawa8651" creationdate="20181109T155911Z">
         <seg>Base.IndexStyle(::Type{&lt;:MyArray}) = IndexLinear()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.accumulate
+Base.accumulate!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041610Z" creationid="hsugawa8651" creationdate="20181110T041610Z">
+        <seg>Base.accumulate
+Base.accumulate!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.cumprod
+Base.cumprod!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041615Z" creationid="hsugawa8651" creationdate="20181110T041615Z">
+        <seg>Base.cumprod
+Base.cumprod!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.cumsum
+Base.cumsum!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041619Z" creationid="hsugawa8651" creationdate="20181110T041619Z">
+        <seg>Base.cumsum
+Base.cumsum!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.diff
+Base.repeat
+Base.rot180
+Base.rotl90
+Base.rotr90
+Base.mapslices</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041623Z" creationid="hsugawa8651" creationdate="20181110T041623Z">
+        <seg>Base.diff
+Base.repeat
+Base.rot180
+Base.rotl90
+Base.rotr90
+Base.mapslices</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.exit
+Base.atexit
+Base.isinteractive
+Base.summarysize
+Base.require
+Base.compilecache
+Base.__precompile__
+Base.include
+Base.MainInclude.include
+Base.include_string
+Base.include_dependency
+Base.which(::Any, ::Any)
+Base.methods
+Base.@show
+ans</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041730Z" creationid="hsugawa8651" creationdate="20181110T041730Z">
+        <seg>Base.exit
+Base.atexit
+Base.isinteractive
+Base.summarysize
+Base.require
+Base.compilecache
+Base.__precompile__
+Base.include
+Base.MainInclude.include
+Base.include_string
+Base.include_dependency
+Base.which(::Any, ::Any)
+Base.methods
+Base.@show
+ans</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.invperm
+Base.isperm
+Base.permute!(::Any, ::AbstractVector)
+Base.invpermute!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041628Z" creationid="hsugawa8651" creationdate="20181110T041628Z">
+        <seg>Base.invperm
+Base.isperm
+Base.permute!(::Any, ::AbstractVector)
+Base.invpermute!</seg>
       </tuv>
     </tu>
     <tu>
@@ -888,6 +1036,16 @@ Base.IndexStyle
 Base.IndexLinear
 Base.IndexCartesian
 Base.conj!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.reverse(::AbstractVector; kwargs...)
+Base.reverseind
+Base.reverse!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041634Z" creationid="hsugawa8651" creationdate="20181110T041634Z">
+        <seg>Base.reverse(::AbstractVector;クワークス.) Base.レヴェルセイント ベース.リバース!</seg>
       </tuv>
     </tu>
     <tu>
@@ -949,6 +1107,14 @@ integers and floating-point numbers as immediate values in code are known as num
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025034Z" creationid="hsugawa8651" creationdate="20181110T025034Z">
         <seg>しかし、ここで注意すべき点は、&lt;x1/&gt;x&lt;x2/&gt;が&lt;x3/&gt;配列&lt;x4/&gt;型のオブジェクトにバインドされていると仮定することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By convention, function names ending with an exclamation point (&lt;x1/&gt;!&lt;x2/&gt;) modify their arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041720Z" creationid="hsugawa8651" creationdate="20181110T041720Z">
+        <seg>慣例によっては、感嘆符(&lt;x1/&gt;!&lt;x2/&gt;)で終わる関数名は、引数を変更します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1085,6 +1251,46 @@ multidimensional index.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Core.:(===)
+Core.isa
+Base.isequal
+Base.isless
+Base.ifelse
+Core.typeassert
+Core.typeof
+Core.tuple
+Base.ntuple
+Base.objectid
+Base.hash
+Base.finalizer
+Base.finalize
+Base.copy
+Base.deepcopy
+Base.getproperty
+Base.setproperty!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041822Z" creationid="hsugawa8651" creationdate="20181110T041822Z">
+        <seg>Core.:(===)
+Core.isa
+Base.isequal
+Base.isless
+Base.ifelse
+Core.typeassert
+Core.typeof
+Core.tuple
+Base.ntuple
+Base.objectid
+Base.hash
+Base.finalizer
+Base.finalize
+Base.copy
+Base.deepcopy
+Base.getproperty
+Base.setproperty!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Count bytes allocated by each source line</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224805Z" creationid="hsugawa8651" creationdate="20181109T224805Z">
@@ -1097,6 +1303,14 @@ multidimensional index.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224758Z" creationid="hsugawa8651" creationdate="20181109T224758Z">
         <seg>ソース行の実行数のカウント</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creation of a variable named &lt;x7/&gt;where&lt;x8/&gt;, &lt;x9/&gt;in&lt;x10/&gt; or &lt;x11/&gt;isa&lt;x12/&gt; is allowed though.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041808Z" creationid="hsugawa8651" creationdate="20181110T041808Z">
+        <seg>&lt;x8/&gt;は&lt;x8/&gt;、&lt;x10/&gt;は&lt;x10/&gt;isa&lt;x12/&gt;では&lt;x12/&gt;であるが、&lt;x12/&gt;は&lt;x12/&gt;&lt;x12/&gt;である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1241,6 +1455,14 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Essentials</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041641Z" creationid="hsugawa8651" creationdate="20181110T041641Z">
+        <seg>Essentials</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Evaluate &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224659Z" creationid="hsugawa8651" creationdate="20181109T224659Z">
@@ -1287,6 +1509,15 @@ this means that:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223825Z" creationid="hsugawa8651" creationdate="20181109T223825Z">
         <seg>最後に、&lt;x1/&gt;`ccall'&lt;x2/&gt;を使ってライブラリ関数への呼び出しを実際に生成することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Finally,&lt;x1/&gt;where&lt;x2/&gt; is parsed as an infix operator for writing parametric method
+and type definitions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041802Z" creationid="hsugawa8651" creationdate="20181110T041802Z">
+        <seg>最後に&lt;x1/&gt;は、&lt;x2/&gt;がパラメトリックメソッドを記述するためのインフィックス演算子として構文解析される。 定義します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1468,6 +1699,14 @@ are identical to the passed values.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Functions are grouped by topic below.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041654Z" creationid="hsugawa8651" creationdate="20181110T041654Z">
+        <seg>Functions are grouped by topic below.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Generated values can be filtered using the &lt;x1/&gt;if&lt;x2/&gt; keyword:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155050Z" creationid="hsugawa8651" creationdate="20181109T155050Z">
@@ -1564,6 +1803,15 @@ on this behavior, make sure all possible code paths define a value for the varia
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225955Z" creationid="hsugawa8651" creationdate="20181109T225955Z">
         <seg>ただし この動作では、可能なすべてのコード・パスが変数の値を定義していることを確認してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, you can create variables with names:
+&lt;x7/&gt;abstract&lt;x8/&gt;, &lt;x9/&gt;mutable&lt;x10/&gt;, &lt;x11/&gt;primitive&lt;x12/&gt; and &lt;x13/&gt;type&lt;x14/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041759Z" creationid="hsugawa8651" creationdate="20181110T041759Z">
+        <seg>ただし、名前を使用して変数を作成することはできます。 &lt;x7/&gt;抽象&lt;x8/&gt;,&lt;x9/&gt;mutable&lt;x10/&gt;,&lt;x11/&gt;プリミティブ&lt;x12/&gt;,&lt;x13/&gt;&lt;x14/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2115,6 +2363,18 @@ by the global state of the program.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025452Z" creationid="hsugawa8651" creationdate="20181110T025452Z">
         <seg>ジュリア 関数は純粋な数学的関数ではなく、関数が変更され、影響を受けることがあるという意味では プログラムの世界的な状態です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia Base contains a range of functions and macros appropriate for performing
+scientific and numerical computing, but is also as broad as those of many general purpose programming
+languages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041646Z" creationid="hsugawa8651" creationdate="20181110T041646Z">
+        <seg>Julia Base contains a range of functions and macros appropriate for performing
+scientific and numerical computing, but is also as broad as those of many general purpose programming
+languages.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2783,6 +3043,14 @@ which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Some functions have both modifying (e.g., &lt;x3/&gt;sort!&lt;x4/&gt;) and non-modifying (&lt;x5/&gt;sort&lt;x6/&gt;) versions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041726Z" creationid="hsugawa8651" creationdate="20181110T041726Z">
+        <seg>関数の中には、修正(例えば&lt;x3/&gt;ソート!&lt;x4/&gt;)や修正されない(&lt;x5/&gt;ソート&lt;x6/&gt;)バージョンの両方があるものがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Sometimes it is convenient to have a single expression which evaluates several subexpressions
 in order, returning the value of the last subexpression as its value.</seg>
       </tuv>
@@ -3007,6 +3275,15 @@ dimension size and stride parameters.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160522Z" creationid="hsugawa8651" creationdate="20181109T160522Z">
         <seg>次の例は、大きな配列の小さいセクションのQR分解を計算します。 一時的なものを作成すること、そして適切なLAPACK関数を使って適切な関数を呼び出すこと 寸法のサイズと歩幅のパラメータです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following two-word sequences are reserved:
+&lt;x1/&gt;abstract type&lt;x2/&gt;, &lt;x3/&gt;mutable struct&lt;x4/&gt;, &lt;x5/&gt;primitive type&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041755Z" creationid="hsugawa8651" creationdate="20181110T041755Z">
+        <seg>次の2語のシーケンスが予約されています。 &lt;x1/&gt;抽象型&lt;x2/&gt;,&lt;x3/&gt;mutable構造体&lt;x4/&gt;,&lt;x5/&gt;プリミティブ型&lt;x6/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3496,6 +3773,22 @@ is platform-dependent and not well-specified.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is the list of reserved keywords in Julia:
+&lt;x1/&gt;baremodule&lt;x2/&gt;, &lt;x3/&gt;begin&lt;x4/&gt;, &lt;x5/&gt;break&lt;x6/&gt;, &lt;x7/&gt;catch&lt;x8/&gt;, &lt;x9/&gt;const&lt;x10/&gt;, &lt;x11/&gt;continue&lt;x12/&gt;, &lt;x13/&gt;do&lt;x14/&gt;,
+&lt;x15/&gt;else&lt;x16/&gt;, &lt;x17/&gt;elseif&lt;x18/&gt;, &lt;x19/&gt;end&lt;x20/&gt;, &lt;x21/&gt;export&lt;x22/&gt;, &lt;x23/&gt;false&lt;x24/&gt;, &lt;x25/&gt;finally&lt;x26/&gt;, &lt;x27/&gt;for&lt;x28/&gt;, &lt;x29/&gt;function&lt;x30/&gt;,
+&lt;x31/&gt;global&lt;x32/&gt;, &lt;x33/&gt;if&lt;x34/&gt;, &lt;x35/&gt;import&lt;x36/&gt;, &lt;x37/&gt;let&lt;x38/&gt;, &lt;x39/&gt;local&lt;x40/&gt;, &lt;x41/&gt;macro&lt;x42/&gt;, &lt;x43/&gt;module&lt;x44/&gt;, &lt;x45/&gt;quote&lt;x46/&gt;,
+&lt;x47/&gt;return&lt;x48/&gt;, &lt;x49/&gt;struct&lt;x50/&gt;, &lt;x51/&gt;true&lt;x52/&gt;, &lt;x53/&gt;try&lt;x54/&gt;, &lt;x55/&gt;using&lt;x56/&gt;, &lt;x57/&gt;while&lt;x58/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041738Z" creationid="hsugawa8651" creationdate="20181110T041738Z">
+        <seg>This is the list of reserved keywords in Julia:
+&lt;x1/&gt;baremodule&lt;x2/&gt;, &lt;x3/&gt;begin&lt;x4/&gt;, &lt;x5/&gt;break&lt;x6/&gt;, &lt;x7/&gt;catch&lt;x8/&gt;, &lt;x9/&gt;const&lt;x10/&gt;, &lt;x11/&gt;continue&lt;x12/&gt;, &lt;x13/&gt;do&lt;x14/&gt;,
+&lt;x15/&gt;else&lt;x16/&gt;, &lt;x17/&gt;elseif&lt;x18/&gt;, &lt;x19/&gt;end&lt;x20/&gt;, &lt;x21/&gt;export&lt;x22/&gt;, &lt;x23/&gt;false&lt;x24/&gt;, &lt;x25/&gt;finally&lt;x26/&gt;, &lt;x27/&gt;for&lt;x28/&gt;, &lt;x29/&gt;function&lt;x30/&gt;,
+&lt;x31/&gt;global&lt;x32/&gt;, &lt;x33/&gt;if&lt;x34/&gt;, &lt;x35/&gt;import&lt;x36/&gt;, &lt;x37/&gt;let&lt;x38/&gt;, &lt;x39/&gt;local&lt;x40/&gt;, &lt;x41/&gt;macro&lt;x42/&gt;, &lt;x43/&gt;module&lt;x44/&gt;, &lt;x45/&gt;quote&lt;x46/&gt;,
+&lt;x47/&gt;return&lt;x48/&gt;, &lt;x49/&gt;struct&lt;x50/&gt;, &lt;x51/&gt;true&lt;x52/&gt;, &lt;x53/&gt;try&lt;x54/&gt;, &lt;x55/&gt;using&lt;x56/&gt;, &lt;x57/&gt;while&lt;x58/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is the same behavior found in Scheme, most Lisps,
 Python, Ruby and Perl, among other dynamic languages.</seg>
       </tuv>
@@ -3569,6 +3862,14 @@ environment variable:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Those keywords are not allowed to be used as variable names.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041751Z" creationid="hsugawa8651" creationdate="20181110T041742Z">
+        <seg>これらのキーワードは、変数名として使用することはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Though most code can be written in Julia, there are many high-quality, mature libraries for numerical
 computing already written in C and Fortran.</seg>
       </tuv>
@@ -3634,6 +3935,15 @@ which may or may not be caused by CTRL-C, use &lt;x5/&gt;`atexit`&lt;x6/&gt;.</s
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154524Z" creationid="hsugawa8651" creationdate="20181109T154524Z">
         <seg>これらのコンストラクタに次元を渡すことができるさまざまな方法を確認するには、次の例を考慮してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To use module functions, use &lt;x1/&gt;import Module&lt;x2/&gt; to import the module, and &lt;x3/&gt;Module.fn(x)&lt;x4/&gt; to use the
+functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041713Z" creationid="hsugawa8651" creationdate="20181110T041659Z">
+        <seg>モジュール関数を使用するには、&lt;x1/&gt;インポートモジュール&lt;x2/&gt;を使用してモジュールをインポートし、&lt;x3/&gt;モジュール.fn(x)&lt;x4/&gt;を使用して 関数。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6752,6 +7062,72 @@ end</seg>
            end
        end,
     [A, B, C])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>module
+export
+import
+using
+baremodule
+function
+macro
+return
+do
+begin
+end
+let
+if
+for
+while
+break
+continue
+try
+finally
+quote
+local
+global
+const
+struct
+mutable struct
+abstract type
+primitive type
+where
+...
+;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041812Z" creationid="hsugawa8651" creationdate="20181110T041812Z">
+        <seg>module
+export
+import
+using
+baremodule
+function
+macro
+return
+do
+begin
+end
+let
+if
+for
+while
+break
+continue
+try
+finally
+quote
+local
+global
+const
+struct
+mutable struct
+abstract type
+primitive type
+where
+...
+;</seg>
       </tuv>
     </tu>
     <tu>
