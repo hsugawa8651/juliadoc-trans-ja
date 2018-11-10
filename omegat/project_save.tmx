@@ -147,6 +147,14 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id man-anonymous-functions)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025951Z" creationid="hsugawa8651" creationdate="20181110T025951Z">
+        <seg>(@id man-anonymous-functions)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id man-array-indexing)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155105Z" creationid="hsugawa8651" creationdate="20181109T155105Z">
@@ -255,6 +263,24 @@ julia&gt; change_value!(x)
 17
 
 julia&gt; x &lt;x1/&gt; x is unchanged!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(y, x) : (x, y)
+
+julia&gt; range((min, max)) = max - min
+
+julia&gt; range(minmax(10, 2))
+8</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030043Z" creationid="hsugawa8651" creationdate="20181110T030043Z">
+        <seg>(y, x) : (x, y)
+
+julia&gt; range((min, max)) = max - min
+
+julia&gt; range(minmax(10, 2))
+8</seg>
       </tuv>
     </tu>
     <tu>
@@ -3743,6 +3769,24 @@ like any value:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>X = sin(cos(Y)) &lt;x2/&gt; equivalent to X .= sin.(cos.(Y))
+4-element Array{Float64,1}:
+  0.5143952585235492
+ -0.4042391538522658
+ -0.8360218615377305
+ -0.6080830096407656</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030245Z" creationid="hsugawa8651" creationdate="20181110T030245Z">
+        <seg>X = sin(cos(Y)) &lt;x2/&gt; equivalent to X .= sin.(cos.(Y))
+4-element Array{Float64,1}:
+  0.5143952585235492
+ -0.4042391538522658
+ -0.8360218615377305
+ -0.6080830096407656</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can easily experiment in the same way with the associativity and precedence of various combinations
 of &lt;x1/&gt;&amp;&amp;&lt;x2/&gt; and &lt;x3/&gt;||&lt;x4/&gt; operators.</seg>
       </tuv>
@@ -4173,6 +4217,86 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>function Date(y::Int64, m::Int64=1, d::Int64=1)
+    err = validargs(Date, y, m, d)
+    err === nothing || throw(err)
+    return Date(UTD(totaldays(y, m, d)))
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030121Z" creationid="hsugawa8651" creationdate="20181110T030121Z">
+        <seg>function Date(y::Int64, m::Int64=1, d::Int64=1)
+    err = validargs(Date, y, m, d)
+    err === nothing || throw(err)
+    return Date(UTD(totaldays(y, m, d)))
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function f(;x::Int=1)
+    &lt;x1/&gt;
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030145Z" creationid="hsugawa8651" creationdate="20181110T030145Z">
+        <seg>function f(;x::Int=1)
+    &lt;x1/&gt;
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function f(x, a=b, b=1)
+    &lt;x1/&gt;
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030205Z" creationid="hsugawa8651" creationdate="20181110T030205Z">
+        <seg>function f(x, a=b, b=1)
+    &lt;x1/&gt;
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function f(x; y)
+    &lt;x1/&gt;
+end
+f(3, y=5) &lt;x2/&gt; ok, y is assigned
+f(3)      &lt;x3/&gt; throws UndefKeywordError(:y)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030153Z" creationid="hsugawa8651" creationdate="20181110T030153Z">
+        <seg>function f(x; y)
+    &lt;x1/&gt;
+end
+f(3, y=5) &lt;x2/&gt; ok, y is assigned
+f(3)      &lt;x3/&gt; throws UndefKeywordError(:y)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function f(x; y=0, kwargs...)
+    &lt;x1/&gt;
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030148Z" creationid="hsugawa8651" creationdate="20181110T030148Z">
+        <seg>function f(x; y=0, kwargs...)
+    &lt;x1/&gt;
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function foo(a,b)
+    return a+b, a*b
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030038Z" creationid="hsugawa8651" creationdate="20181110T030038Z">
+        <seg>function foo(a,b)
+    return a+b, a*b
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>function g(x,y)
     return x * y
     x + y
@@ -4204,6 +4328,40 @@ end</seg>
         error("getenv: undefined variable: ", var)
     end
     unsafe_string(val)
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function open(f::Function, args...)
+    io = open(args...)
+    try
+        f(io)
+    finally
+        close(io)
+    end
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030220Z" creationid="hsugawa8651" creationdate="20181110T030220Z">
+        <seg>function open(f::Function, args...)
+    io = open(args...)
+    try
+        f(io)
+    finally
+        close(io)
+    end
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function plot(x, y; style="solid", width=1, color="black")
+    &lt;x1/&gt;
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030138Z" creationid="hsugawa8651" creationdate="20181110T030138Z">
+        <seg>function plot(x, y; style="solid", width=1, color="black")
+    &lt;x1/&gt;
 end</seg>
       </tuv>
     </tu>
@@ -4314,6 +4472,34 @@ Markdown.parse("```\n\$ julia\n\n$(banner)\njulia&gt; 1 + 2\n3\n\njulia&gt; ans\
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224522Z" creationid="hsugawa8651" creationdate="20181109T224522Z">
         <seg>julia [switches] -- [programfile] [args...]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; (1, 1+1)
+(1, 2)
+
+julia&gt; (1,)
+(1,)
+
+julia&gt; x = (0.0, "hello", 6*7)
+(0.0, "hello", 42)
+
+julia&gt; x[2]
+"hello"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030017Z" creationid="hsugawa8651" creationdate="20181110T030017Z">
+        <seg>julia&gt; (1, 1+1)
+(1, 2)
+
+julia&gt; (1,)
+(1,)
+
+julia&gt; x = (0.0, "hello", 6*7)
+(0.0, "hello", 42)
+
+julia&gt; x[2]
+"hello"</seg>
       </tuv>
     </tu>
     <tu>
@@ -4466,6 +4652,34 @@ julia&gt; +(1,2,3)
 
 julia&gt; +(1,2,3)
 6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; A = [1.0, 2.0, 3.0]
+3-element Array{Float64,1}:
+ 1.0
+ 2.0
+ 3.0
+
+julia&gt; sin.(A)
+3-element Array{Float64,1}:
+ 0.8414709848078965
+ 0.9092974268256817
+ 0.1411200080598672</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030231Z" creationid="hsugawa8651" creationdate="20181110T030231Z">
+        <seg>julia&gt; A = [1.0, 2.0, 3.0]
+3-element Array{Float64,1}:
+ 1.0
+ 2.0
+ 3.0
+
+julia&gt; sin.(A)
+3-element Array{Float64,1}:
+ 0.8414709848078965
+ 0.9092974268256817
+ 0.1411200080598672</seg>
       </tuv>
     </tu>
     <tu>
@@ -4722,6 +4936,22 @@ julia&gt; A[:, 3]
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; Y = [1.0, 2.0, 3.0, 4.0];
+
+julia&gt; X = similar(Y); &lt;x1/&gt; pre-allocate output array
+
+julia&gt; @.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030248Z" creationid="hsugawa8651" creationdate="20181110T030248Z">
+        <seg>julia&gt; Y = [1.0, 2.0, 3.0, 4.0];
+
+julia&gt; X = similar(Y); &lt;x1/&gt; pre-allocate output array
+
+julia&gt; @.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; [(i,j) for i=1:3 for j=1:i if i+j == 4]
 2-element Array{Tuple{Int64,Int64},1}:
  (2, 2)
@@ -4918,6 +5148,90 @@ julia&gt; repeat(a,1,3)+A
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; bar(1,2)
+(1, 2, ())
+
+julia&gt; bar(1,2,3)
+(1, 2, (3,))
+
+julia&gt; bar(1, 2, 3, 4)
+(1, 2, (3, 4))
+
+julia&gt; bar(1,2,3,4,5,6)
+(1, 2, (3, 4, 5, 6))</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030058Z" creationid="hsugawa8651" creationdate="20181110T030058Z">
+        <seg>julia&gt; bar(1,2)
+(1, 2, ())
+
+julia&gt; bar(1,2,3)
+(1, 2, (3,))
+
+julia&gt; bar(1, 2, 3, 4)
+(1, 2, (3, 4))
+
+julia&gt; bar(1,2,3,4,5,6)
+(1, 2, (3, 4, 5, 6))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; bar(a,b,x...) = (a,b,x)
+bar (generic function with 1 method)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030056Z" creationid="hsugawa8651" creationdate="20181110T030056Z">
+        <seg>julia&gt; bar(a,b,x...) = (a,b,x)
+bar (generic function with 1 method)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; baz(a,b) = a + b;
+
+julia&gt; args = [1,2]
+2-element Array{Int64,1}:
+ 1
+ 2
+
+julia&gt; baz(args...)
+3
+
+julia&gt; args = [1,2,3]
+3-element Array{Int64,1}:
+ 1
+ 2
+ 3
+
+julia&gt; baz(args...)
+ERROR: MethodError: no method matching baz(::Int64, ::Int64, ::Int64)
+Closest candidates are:
+  baz(::Any, ::Any) at none:1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030114Z" creationid="hsugawa8651" creationdate="20181110T030114Z">
+        <seg>julia&gt; baz(a,b) = a + b;
+
+julia&gt; args = [1,2]
+2-element Array{Int64,1}:
+ 1
+ 2
+
+julia&gt; baz(args...)
+3
+
+julia&gt; args = [1,2,3]
+3-element Array{Int64,1}:
+ 1
+ 2
+ 3
+
+julia&gt; baz(args...)
+ERROR: MethodError: no method matching baz(::Int64, ::Int64, ::Int64)
+Closest candidates are:
+  baz(::Any, ::Any) at none:1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; begin x = 1; y = 2; x + y end
 3
 
@@ -5046,6 +5360,46 @@ true</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; f(x,y) = 3x + 4y;
+
+julia&gt; A = [1.0, 2.0, 3.0];
+
+julia&gt; B = [4.0, 5.0, 6.0];
+
+julia&gt; f.(pi, A)
+3-element Array{Float64,1}:
+ 13.42477796076938
+ 17.42477796076938
+ 21.42477796076938
+
+julia&gt; f.(A, B)
+3-element Array{Float64,1}:
+ 19.0
+ 26.0
+ 33.0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030235Z" creationid="hsugawa8651" creationdate="20181110T030235Z">
+        <seg>julia&gt; f(x,y) = 3x + 4y;
+
+julia&gt; A = [1.0, 2.0, 3.0];
+
+julia&gt; B = [4.0, 5.0, 6.0];
+
+julia&gt; f.(pi, A)
+3-element Array{Float64,1}:
+ 13.42477796076938
+ 17.42477796076938
+ 21.42477796076938
+
+julia&gt; f.(A, B)
+3-element Array{Float64,1}:
+ 19.0
+ 26.0
+ 33.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; f(x,y) = x + y
 f (generic function with 1 method)</seg>
       </tuv>
@@ -5086,6 +5440,16 @@ julia&gt; f(2,3)
 
 julia&gt; g(2,3)
 6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; foo(2,3)
+(5, 6)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030031Z" creationid="hsugawa8651" creationdate="20181110T030031Z">
+        <seg>julia&gt; foo(2,3)
+(5, 6)</seg>
       </tuv>
     </tu>
     <tu>
@@ -5194,6 +5558,20 @@ Stacktrace:
  [1] error at ./error.jl:33 [inlined]
  [2] fact(::Int64) at ./none:2
  [3] top-level scope</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; function foo(a,b)
+           a+b, a*b
+       end
+foo (generic function with 1 method)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030028Z" creationid="hsugawa8651" creationdate="20181110T030028Z">
+        <seg>julia&gt; function foo(a,b)
+           a+b, a*b
+       end
+foo (generic function with 1 method)</seg>
       </tuv>
     </tu>
     <tu>
@@ -5438,6 +5816,22 @@ ERROR: TypeError: non-boolean (Int64) used in boolean context</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; map(round, [1.2,3.5,1.7])
+3-element Array{Float64,1}:
+ 1.0
+ 4.0
+ 2.0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030004Z" creationid="hsugawa8651" creationdate="20181110T030004Z">
+        <seg>julia&gt; map(round, [1.2,3.5,1.7])
+3-element Array{Float64,1}:
+ 1.0
+ 4.0
+ 2.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; map(tuple, (1/(i+j) for i=1:2, j=1:2), [1 3; 2 4])
 2×2 Array{Tuple{Float64,Int64},2}:
  (0.5, 1)       (0.333333, 3)
@@ -5458,6 +5852,30 @@ ERROR: syntax: invalid iteration specification</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154944Z" creationid="hsugawa8651" creationdate="20181109T154944Z">
         <seg>julia&gt; map(tuple, 1/(i+j) for i=1:2, j=1:2, [1:4;])
 ERROR: syntax: invalid iteration specification</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; map(x -&gt; x^2 + 2x - 1, [1,3,-1])
+3-element Array{Int64,1}:
+  2
+ 14
+ -2</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030009Z" creationid="hsugawa8651" creationdate="20181110T030009Z">
+        <seg>julia&gt; map(x -&gt; x^2 + 2x - 1, [1,3,-1])
+3-element Array{Int64,1}:
+  2
+ 14
+ -2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; minmax(x, y) = (y &lt; x) ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030048Z" creationid="hsugawa8651" creationdate="20181110T030048Z">
+        <seg>julia&gt; minmax(x, y) = (y &lt; x) ?</seg>
       </tuv>
     </tu>
     <tu>
@@ -5660,6 +6078,32 @@ false</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; using Dates
+
+julia&gt; Date(2000, 12, 12)
+2000-12-12
+
+julia&gt; Date(2000, 12)
+2000-12-01
+
+julia&gt; Date(2000)
+2000-01-01</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030125Z" creationid="hsugawa8651" creationdate="20181110T030125Z">
+        <seg>julia&gt; using Dates
+
+julia&gt; Date(2000, 12, 12)
+2000-12-12
+
+julia&gt; Date(2000, 12)
+2000-12-01
+
+julia&gt; Date(2000)
+2000-01-01</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; v(x) = (println(x); x)
 v (generic function with 1 method)
 
@@ -5694,6 +6138,86 @@ julia&gt; hcat([1 2], 3)
 julia&gt; hcat([1 2], 3)
 1×3 Array{Int64,2}:
  1  2  3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; x -&gt; x^2 + 2x - 1
+&lt;x1/&gt;1 (generic function with 1 method)
+
+julia&gt; function (x)
+           x^2 + 2x - 1
+       end
+&lt;x2/&gt;3 (generic function with 1 method)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025957Z" creationid="hsugawa8651" creationdate="20181110T025957Z">
+        <seg>julia&gt; x -&gt; x^2 + 2x - 1
+&lt;x1/&gt;1 (generic function with 1 method)
+
+julia&gt; function (x)
+           x^2 + 2x - 1
+       end
+&lt;x2/&gt;3 (generic function with 1 method)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; x = (2, 3, 4)
+(2, 3, 4)
+
+julia&gt; bar(1,x...)
+(1, 2, (3, 4))
+
+julia&gt; x = (1, 2, 3, 4)
+(1, 2, 3, 4)
+
+julia&gt; bar(x...)
+(1, 2, (3, 4))</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030107Z" creationid="hsugawa8651" creationdate="20181110T030107Z">
+        <seg>julia&gt; x = (2, 3, 4)
+(2, 3, 4)
+
+julia&gt; bar(1,x...)
+(1, 2, (3, 4))
+
+julia&gt; x = (1, 2, 3, 4)
+(1, 2, 3, 4)
+
+julia&gt; bar(x...)
+(1, 2, (3, 4))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; x = (3, 4)
+(3, 4)
+
+julia&gt; bar(1,2,x...)
+(1, 2, (3, 4))</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030104Z" creationid="hsugawa8651" creationdate="20181110T030104Z">
+        <seg>julia&gt; x = (3, 4)
+(3, 4)
+
+julia&gt; bar(1,2,x...)
+(1, 2, (3, 4))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; x = (a=1, b=1+1)
+(a = 1, b = 2)
+
+julia&gt; x.a
+1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030023Z" creationid="hsugawa8651" creationdate="20181110T030023Z">
+        <seg>julia&gt; x = (a=1, b=1+1)
+(a = 1, b = 2)
+
+julia&gt; x.a
+1</seg>
       </tuv>
     </tu>
     <tu>
@@ -5776,6 +6300,46 @@ julia&gt; function change_array!(A)
            A[1] = 5
        end
 change_array!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; x = [3,4]
+2-element Array{Int64,1}:
+ 3
+ 4
+
+julia&gt; bar(1,2,x...)
+(1, 2, (3, 4))
+
+julia&gt; x = [1,2,3,4]
+4-element Array{Int64,1}:
+ 1
+ 2
+ 3
+ 4
+
+julia&gt; bar(x...)
+(1, 2, (3, 4))</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030112Z" creationid="hsugawa8651" creationdate="20181110T030112Z">
+        <seg>julia&gt; x = [3,4]
+2-element Array{Int64,1}:
+ 3
+ 4
+
+julia&gt; bar(1,2,x...)
+(1, 2, (3, 4))
+
+julia&gt; x = [1,2,3,4]
+4-element Array{Int64,1}:
+ 1
+ 2
+ 3
+ 4
+
+julia&gt; bar(x...)
+(1, 2, (3, 4))</seg>
       </tuv>
     </tu>
     <tu>
@@ -5978,6 +6542,28 @@ true</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; x, y = foo(2,3)
+(5, 6)
+
+julia&gt; x
+5
+
+julia&gt; y
+6</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030035Z" creationid="hsugawa8651" creationdate="20181110T030035Z">
+        <seg>julia&gt; x, y = foo(2,3)
+(5, 6)
+
+julia&gt; x
+5
+
+julia&gt; y
+6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; z = (x = 1; y = 2; x + y)
 3</seg>
       </tuv>
@@ -6064,6 +6650,56 @@ julia&gt; ∑(2, 3)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>map([A, B, C]) do x
+    if x &lt; 0 &amp;&amp; iseven(x)
+        return 0
+    elseif x == 0
+        return 1
+    else
+        return x
+    end
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030213Z" creationid="hsugawa8651" creationdate="20181110T030213Z">
+        <seg>map([A, B, C]) do x
+    if x &lt; 0 &amp;&amp; iseven(x)
+        return 0
+    elseif x == 0
+        return 1
+    else
+        return x
+    end
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>map(x-&gt;begin
+           if x &lt; 0 &amp;&amp; iseven(x)
+               return 0
+           elseif x == 0
+               return 1
+           else
+               return x
+           end
+       end,
+    [A, B, C])</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030210Z" creationid="hsugawa8651" creationdate="20181110T030210Z">
+        <seg>map(x-&gt;begin
+           if x &lt; 0 &amp;&amp; iseven(x)
+               return 0
+           elseif x == 0
+               return 1
+           else
+               return x
+           end
+       end,
+    [A, B, C])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>module Bar
 export bar
 using Foo
@@ -6095,6 +6731,18 @@ for each line in file &lt;x4/&gt;file&lt;x5/&gt;.</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024805Z" creationid="hsugawa8651" creationdate="20181110T024805Z">
         <seg>obj3 = MyModule.someotherfunction(obj2, c)
 ...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>open("outfile", "w") do io
+    write(io, data)
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030218Z" creationid="hsugawa8651" creationdate="20181110T030218Z">
+        <seg>open("outfile", "w") do io
+    write(io, data)
+end</seg>
       </tuv>
     </tu>
     <tu>
