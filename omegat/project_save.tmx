@@ -476,6 +476,14 @@ external C and Fortran functions that expect this memory layout.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A function is called using the traditional parenthesis syntax:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025625Z" creationid="hsugawa8651" creationdate="20181110T025625Z">
+        <seg>関数は、従来の括弧構文を使用して呼び出されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A function name may be used alone in place of the tuple (just &lt;x1/&gt;:function&lt;x2/&gt; or &lt;x3/&gt;"function"&lt;x4/&gt;).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223757Z" creationid="hsugawa8651" creationdate="20181109T223757Z">
@@ -1591,6 +1599,14 @@ this case the name is resolved within the current process.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In Julia, a function is an object that maps a tuple of argument values to a return value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025448Z" creationid="hsugawa8651" creationdate="20181110T025448Z">
+        <seg>Juliaでは、関数は引数値のタプルを戻り値にマップするオブジェクトです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In Julia, all arguments to functions are &lt;x1/&gt;passed by
 sharing&lt;x2/&gt;</seg>
       </tuv>
@@ -1675,6 +1691,15 @@ words, while developing you might use a workflow something like this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155056Z" creationid="hsugawa8651" creationdate="20181109T155056Z">
         <seg>この場合、結果は常に1-dになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the assignment form, the body of the function must be a single expression, although it can
+be a compound expression (see &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-compound-expressions)).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025518Z" creationid="hsugawa8651" creationdate="20181110T025518Z">
+        <seg>割り当てフォームでは、関数の本文は単一の式である必要がありますが 複合式(&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man compound expressions)を参照)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1933,6 +1958,16 @@ be evaluated and returned depending on the preceding conditionals:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230248Z" creationid="hsugawa8651" creationdate="20181109T230248Z">
         <seg>この動作を試してみると簡単です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia
+functions are not pure mathematical functions, in the sense that functions can alter and be affected
+by the global state of the program.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025452Z" creationid="hsugawa8651" creationdate="20181110T025452Z">
+        <seg>ジュリア 関数は純粋な数学的関数ではなく、関数が変更され、影響を受けることがあるという意味では プログラムの世界的な状態です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2505,6 +2540,15 @@ on implementing a custom array type.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Short, simple function definitions
+are common in Julia.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025617Z" creationid="hsugawa8651" creationdate="20181110T025617Z">
+        <seg>簡潔で単純な関数定義 ジュリアによく見られます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Short-Circuit Evaluation</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230217Z" creationid="hsugawa8651" creationdate="20181109T230217Z">
@@ -2694,6 +2738,14 @@ other code written in Julia.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154129Z" creationid="hsugawa8651" creationdate="20181109T154129Z">
         <seg>アレイ・ライブラリーは実装されています。 ほとんどの場合、ジュリア自身は、コンパイラーからのパフォーマンスを導き出し その他のコードはジュリアに書かれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The basic syntax for defining functions in Julia is:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025456Z" creationid="hsugawa8651" creationdate="20181110T025456Z">
+        <seg>Juliaで関数を定義するための基本的な構文は次のとおりです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2928,6 +2980,15 @@ of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, e
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The short function syntax is accordingly quite idiomatic, considerably reducing
+both typing and visual noise.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025621Z" creationid="hsugawa8651" creationdate="20181110T025621Z">
+        <seg>したがって、短い関数構文は非常に奇妙なものになり、大幅に減少します。 タイプとビジュアルノイズの両方です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The size
 of the binary data item is the minimal needed size, if the leading digit of the literal is not
 &lt;x1/&gt;0&lt;x2/&gt;.</seg>
@@ -2952,6 +3013,15 @@ to conditional execution of longer blocks of code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154518Z" creationid="hsugawa8651" creationdate="20181109T154518Z">
         <seg>構文&lt;x1/&gt;[A,B,C,…]&lt;x2/&gt;は、その引数の1次元配列(すなわち、ベクトル)を構成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The traditional function
+declaration syntax demonstrated above is equivalent to the following compact "assignment form":</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025506Z" creationid="hsugawa8651" creationdate="20181110T025506Z">
+        <seg>従来の機能 上記の宣言構文は、次のコンパクトな「割り当てフォーム」に相当します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3039,6 +3109,14 @@ that accomplish this: &lt;x1/&gt;begin&lt;x2/&gt; blocks and &lt;x3/&gt;(;)&lt;x
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224520Z" creationid="hsugawa8651" creationdate="20181109T224520Z">
         <seg>Juliaコードを実行するにはさまざまな方法があり、次のようなオプションを提供することができます。 &lt;x1/&gt;perl&lt;x2/&gt;および&lt;x3/&gt;ruby&lt;x4/&gt;プログラム:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is a second, more terse syntax for defining a function in Julia.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025503Z" creationid="hsugawa8651" creationdate="20181110T025503Z">
+        <seg>Juliaで関数を定義するには、2番目のより簡潔な構文があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3523,6 +3601,15 @@ differences between operating systems.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024734Z" creationid="hsugawa8651" creationdate="20181110T024734Z">
         <seg>これは、新しいコードを開発する際に不便な場合がありますが、優れた回避策があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Without parentheses, the expression &lt;x1/&gt;f&lt;x2/&gt; refers to the function object, and can be passed around
+like any value:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025632Z" creationid="hsugawa8651" creationdate="20181110T025632Z">
+        <seg>括弧なしでは、式&lt;x1/&gt;f&lt;x2/&gt;は関数オブジェクトを参照しており、この関数オブジェクトを渡すことができます。 どの値でも</seg>
       </tuv>
     </tu>
     <tu>
@@ -4712,6 +4799,26 @@ true</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; f(2,3)
+5</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025628Z" creationid="hsugawa8651" creationdate="20181110T025628Z">
+        <seg>julia&gt; f(2,3)
+5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; f(x,y) = x + y
+f (generic function with 1 method)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025509Z" creationid="hsugawa8651" creationdate="20181110T025509Z">
+        <seg>julia&gt; f(x,y) = x + y
+f (generic function with 1 method)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; for i = 1:5
            println(i)
        end
@@ -4758,6 +4865,20 @@ ERROR: UndefVarError: j not defined</seg>
 
 julia&gt; j
 ERROR: UndefVarError: j not defined</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; function f(x,y)
+           x + y
+       end
+f (generic function with 1 method)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025459Z" creationid="hsugawa8651" creationdate="20181110T025459Z">
+        <seg>julia&gt; function f(x,y)
+           x + y
+       end
+f (generic function with 1 method)</seg>
       </tuv>
     </tu>
     <tu>
@@ -4912,6 +5033,20 @@ test (generic function with 1 method)
 
 julia&gt; test(2, 1)
 x is greater than y.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; g = f;
+
+julia&gt; g(2,3)
+5</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025635Z" creationid="hsugawa8651" creationdate="20181110T025635Z">
+        <seg>julia&gt; g = f;
+
+julia&gt; g(2,3)
+5</seg>
       </tuv>
     </tu>
     <tu>
