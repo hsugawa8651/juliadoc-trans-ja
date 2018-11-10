@@ -207,6 +207,24 @@ with some existing programming experience.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(generic function with 1 method)
+
+julia&gt; change_value!(x)
+17
+
+julia&gt; x &lt;x1/&gt; x is unchanged!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025006Z" creationid="hsugawa8651" creationdate="20181110T025006Z">
+        <seg>(generic function with 1 method)
+
+julia&gt; change_value!(x)
+17
+
+julia&gt; x &lt;x1/&gt; x is unchanged!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>-v&lt;x1/&gt;, &lt;x2/&gt;--version&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224601Z" creationid="hsugawa8651" creationdate="20181109T224549Z">
@@ -219,6 +237,14 @@ with some existing programming experience.)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224510Z" creationid="hsugawa8651" creationdate="20181109T224510Z">
         <seg>...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>10</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025013Z" creationid="hsugawa8651" creationdate="20181110T025013Z">
+        <seg>10</seg>
       </tuv>
     </tu>
     <tu>
@@ -267,6 +293,26 @@ Int32
 &lt;x2/&gt; 64-bit system:
 julia&gt; typeof(1)
 Int64</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x1/&gt;!/bin/bash
+&lt;x2/&gt;=
+exec julia --color=yes --startup-file=no -e 'include(popfirst!(ARGS))' \
+    "${BASH_SOURCE[0]}" "$@"
+=&lt;x3/&gt;
+
+@show ARGS  &lt;x4/&gt; put any Julia code here</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024929Z" creationid="hsugawa8651" creationdate="20181110T024929Z">
+        <seg>&lt;x1/&gt;!/bin/bash
+&lt;x2/&gt;=
+exec julia --color=yes --startup-file=no -e 'include(popfirst!(ARGS))' \
+    "${BASH_SOURCE[0]}" "$@"
+=&lt;x3/&gt;
+
+@show ARGS  &lt;x4/&gt; put any Julia code here</seg>
       </tuv>
     </tu>
     <tu>
@@ -345,6 +391,15 @@ indirectly.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>=&lt;x1/&gt;&lt;x2/&gt; is ignored by &lt;x3/&gt;bash&lt;x4/&gt; since it stops
+parsing the file once it reaches to the &lt;x5/&gt;exec&lt;x6/&gt; statement.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024947Z" creationid="hsugawa8651" creationdate="20181110T024947Z">
+        <seg>=&lt;x1/&gt;&lt;x2/&gt;は、&lt;x3/&gt;bash&lt;x4/&gt;によって無視されます。なぜならば、それは停止するからです。 &lt;x5/&gt;exec&lt;x6/&gt;ステートメントに到達したファイルを解析します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>@static Sys.iswindows() ?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225012Z" creationid="hsugawa8651" creationdate="20181109T225012Z">
@@ -418,6 +473,15 @@ array it indexes into.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223952Z" creationid="hsugawa8651" creationdate="20181109T223952Z">
         <seg>入力タイプのタプル。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A way to determine that a file is run in
+this fashion is to check if &lt;x3/&gt;abspath(PROGRAM_FILE) == @__FILE__&lt;x4/&gt; is &lt;x5/&gt;true&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024900Z" creationid="hsugawa8651" creationdate="20181110T024900Z">
+        <seg>ファイルが実行されることを判別する方法 この方法は、&lt;x3/&gt;アブスパス(PROGRAM_FILE)==@_FILE__&lt;x4/&gt;が&lt;x6/&gt;真&lt;x6/&gt;であるかどうかをチェックすることです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -518,6 +582,16 @@ pointers to allocated values on the heap or stack.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223810Z" creationid="hsugawa8651" creationdate="20181109T223810Z">
         <seg>また、Fortran関数を呼び出す場合は、すべての入力を次のように指定する必要があります。 ヒープまたはスタック上の割り当てられた値へのポインタ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Alternatively, you can use &lt;x7/&gt;julia -e 'include(popfirst!(ARGS))'
+file.jl&lt;x8/&gt; to execute a script while being able to catch
+&lt;x9/&gt;InterruptException&lt;x10/&gt; in the &lt;x11/&gt;`try`&lt;x12/&gt; block.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024913Z" creationid="hsugawa8651" creationdate="20181110T024913Z">
+        <seg>または、&lt;x7/&gt;julia-e'include(ポプファースト!(ARGS))'を使用することもできます。 ファイル.jl&lt;x8/&gt;を実行すると、スクリプトをキャッチしながらスクリプトを実行することができます。 &lt;x11/&gt;'try'&lt;x12/&gt;ブロックで&lt;x9/&gt;InterruptException&lt;x10/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -717,6 +791,14 @@ integers and floating-point numbers as immediate values in code are known as num
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But here is a thing you should pay attention to: suppose &lt;x1/&gt;x&lt;x2/&gt; is bound to an object of type &lt;x3/&gt;Array&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025034Z" creationid="hsugawa8651" creationdate="20181110T025034Z">
+        <seg>しかし、ここで注意すべき点は、&lt;x1/&gt;x&lt;x2/&gt;が&lt;x3/&gt;配列&lt;x4/&gt;型のオブジェクトにバインドされていると仮定することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By default this includes:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155509Z" creationid="hsugawa8651" creationdate="20181109T155509Z">
@@ -753,6 +835,20 @@ they don't intend to change.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154219Z" creationid="hsugawa8651" creationdate="20181109T154219Z">
         <seg>呼び出し側は、入力を変更しないことを確実にするために、明示的なコピーを作成する必要があります。 変化するつもりはありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Change something in "mynewcode.jl"
+include("mynewcode.jl")              &lt;x3/&gt; reload the module
+obj1 = MyModule.ObjConstructor(a, b) &lt;x4/&gt; old objects are no longer valid, must reconstruct
+obj2 = MyModule.somefunction(obj1)   &lt;x5/&gt; this time it worked!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024757Z" creationid="hsugawa8651" creationdate="20181110T024757Z">
+        <seg>Change something in "mynewcode.jl"
+include("mynewcode.jl")              &lt;x3/&gt; reload the module
+obj1 = MyModule.ObjConstructor(a, b) &lt;x4/&gt; old objects are no longer valid, must reconstruct
+obj2 = MyModule.somefunction(obj1)   &lt;x5/&gt; this time it worked!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1154,6 +1250,14 @@ the result in single precision by writing:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025044Z" creationid="hsugawa8651" creationdate="20181110T025044Z">
+        <seg>次に例を示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For more details on defining custom
 &lt;x16/&gt;AbstractArray&lt;x17/&gt; implementations, see the &lt;x18/&gt;&lt;x19/&gt;&lt;x20/&gt;(@ref man-interface-array).</seg>
       </tuv>
@@ -1179,6 +1283,15 @@ let's try a two-way version first:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230122Z" creationid="hsugawa8651" creationdate="20181109T230122Z">
         <seg>わかりやすくするために まず2ウェイのバージョンを試してみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>From within the function, you cannot "unbind" &lt;x2/&gt;x&lt;x3/&gt; from this Array,
+but you can change its content.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025041Z" creationid="hsugawa8651" creationdate="20181110T025041Z">
+        <seg>この機能の中からは、この配列から&lt;x2/&gt;x&lt;x3/&gt;の"バインド解除"はできません。 コンテンツを変更することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1231,6 +1344,30 @@ let's try a two-way version first:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>How do I catch CTRL-C in a script?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024903Z" creationid="hsugawa8651" creationdate="20181110T024903Z">
+        <seg>スクリプトでCTRL-Cを取得するにはどうすればよいですか。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How do I check if the current file is being run as the main script?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024829Z" creationid="hsugawa8651" creationdate="20181110T024829Z">
+        <seg>メインスクリプトとして現在のファイルが実行されているかどうかを確認するにはどうすればよいですか。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How do I pass options to &lt;x1/&gt;julia&lt;x2/&gt; using &lt;x3/&gt;&lt;x4/&gt;!/usr/bin/env&lt;x5/&gt;?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024917Z" creationid="hsugawa8651" creationdate="20181110T024917Z">
+        <seg>&lt;x3/&gt;&lt;x4/&gt;!/usr/bin/env&lt;x5/&gt;?を使用して、&lt;x1/&gt;ジュリア&lt;x2/&gt;にオプションを渡す方法を教えてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, any concrete &lt;x3/&gt;AbstractArray{T,N}&lt;x4/&gt; type should generally implement
 at least &lt;x5/&gt;`size(A)`&lt;x6/&gt; (returning an &lt;x7/&gt;Int&lt;x8/&gt; tuple), &lt;x9/&gt;`getindex(A,i)`&lt;x10/&gt; and &lt;x11/&gt;&lt;x12/&gt;&lt;x13/&gt;(@ref getindex);
 mutable arrays should also implement &lt;x14/&gt;`setindex!`&lt;x15/&gt;.</seg>
@@ -1246,6 +1383,14 @@ on this behavior, make sure all possible code paths define a value for the varia
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225955Z" creationid="hsugawa8651" creationdate="20181109T225955Z">
         <seg>ただし この動作では、可能なすべてのコード・パスが変数の値を定義していることを確認してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>I passed an argument &lt;x1/&gt;x&lt;x2/&gt; to a function, modified it inside that function, but on the outside, the variable &lt;x3/&gt;x&lt;x4/&gt; is still unchanged.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024952Z" creationid="hsugawa8651" creationdate="20181110T024952Z">
+        <seg>関数に対して引数&lt;x1/&gt;x2/&gt;を渡したが、その関数内で修正されたが、外側では変数&lt;x3/&gt;x&lt;x4/&gt;は変更されないままであった。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1410,6 +1555,25 @@ sharing&lt;x2/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In Julia, the binding of a variable &lt;x1/&gt;x&lt;x2/&gt; cannot be changed by passing &lt;x3/&gt;x&lt;x4/&gt; as an argument to a function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025027Z" creationid="hsugawa8651" creationdate="20181110T025027Z">
+        <seg>Juliaでは、変数&lt;x1/&gt;x&lt;x2/&gt;の結合は、関数の引数として&lt;x3/&gt;x&lt;x4/&gt;を渡すことで変更することはできない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In a Unix-like
+environment, a reliable way to pass options to &lt;x6/&gt;julia&lt;x7/&gt; in an
+executable script would be to start the script as a &lt;x8/&gt;bash&lt;x9/&gt; script and
+use &lt;x10/&gt;exec&lt;x11/&gt; to replace the process to &lt;x12/&gt;julia&lt;x13/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024926Z" creationid="hsugawa8651" creationdate="20181110T024926Z">
+        <seg>Unixライクな 環境、信頼できる方法で&lt;x6/&gt;julia&lt;x7/&gt;にオプションを渡すことができます。 実行可能スクリプトは、スクリプトを&lt;x8/&gt;bash&lt;x9/&gt;スクリプトとして起動します。 &lt;x10/&gt;exec&lt;x11/&gt;を使用して、プロセスを&lt;x12/&gt;ジュリア&lt;x13/&gt;に置き換えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In contrast with &lt;x1/&gt;for i = 1:length(A)&lt;x2/&gt;, iterating with &lt;x3/&gt;`eachindex`&lt;x4/&gt; provides an efficient way to
 iterate over any array type.</seg>
       </tuv>
@@ -1437,6 +1601,15 @@ type explicitly, a type can be prepended to the comprehension.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In other
+words, while developing you might use a workflow something like this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024745Z" creationid="hsugawa8651" creationdate="20181110T024745Z">
+        <seg>その他 開発中にワークフローを使用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In practice, especially when providing reusable functionality, one generally wraps &lt;x1/&gt;`ccall`&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224109Z" creationid="hsugawa8651" creationdate="20181109T224109Z">
@@ -1458,6 +1631,14 @@ literal, which has the same length but leading digit &lt;x3/&gt;1&lt;x4/&gt;.</s
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225440Z" creationid="hsugawa8651" creationdate="20181109T225440Z">
         <seg>先行ゼロの場合、サイズは、必要最小限のサイズで決定されます。 リテラルは同じ長さですが、先頭桁はx3/&gt;1&lt;x4/&gt;です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the example above, the code between &lt;x1/&gt;&lt;x2/&gt;=&lt;x3/&gt; and &lt;x4/&gt;=&lt;x5/&gt;&lt;x6/&gt; is run as a &lt;x7/&gt;bash&lt;x8/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024937Z" creationid="hsugawa8651" creationdate="20181110T024937Z">
+        <seg>上記の例では、&lt;x1/&gt;&lt;x2/&gt;=&lt;x3/&gt;と&lt;x4/&gt;=&lt;x5/&gt;&lt;x6/&gt;の間のコードは、&lt;x7/&gt;bash&lt;x8/&gt;のように実行されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2092,6 +2273,16 @@ indices.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Passing options to &lt;x1/&gt;julia&lt;x2/&gt; in so-called shebang by, e.g.,
+&lt;x3/&gt;&lt;x4/&gt;!/usr/bin/env julia --startup-file=no&lt;x5/&gt; may not work in some
+platforms such as Linux.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024920Z" creationid="hsugawa8651" creationdate="20181110T024920Z">
+        <seg>例えば、シェバンでは、&lt;x1/&gt;july&lt;x2/&gt;に渡すオプションを指定します。 &lt;x3/&gt;&lt;x4/&gt;!/usr/bin/env julia--startup file=no&lt;x5/&gt;は動作しない場合があります。 Linuxなどのプラットフォームです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perhaps you've defined a type and then realize you need to add a new field.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024714Z" creationid="hsugawa8651" creationdate="20181110T024714Z">
@@ -2153,6 +2344,16 @@ an interactive session.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224714Z" creationid="hsugawa8651" creationdate="20181109T224714Z">
         <seg>&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;にリストされたホスト上でプロセスを実行する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Running a Julia script using &lt;x1/&gt;julia file.jl&lt;x2/&gt; does not throw
+&lt;x3/&gt;`InterruptException`&lt;x4/&gt; when you try to terminate it with CTRL-C
+(SIGINT).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024906Z" creationid="hsugawa8651" creationdate="20181110T024906Z">
+        <seg>&lt;x1/&gt;ジュリアファイル.jl&lt;x2/&gt;を使用してジュリアスクリプトを実行しても、スローされません。 CTRL-Cで終了しようとすると、&lt;x3/&gt;'InterruptException'&lt;x4/&gt;となります。 (SIGINT)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2317,6 +2518,14 @@ sharing memory with the original array rather than by copying it.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160427Z" creationid="hsugawa8651" creationdate="20181109T160427Z">
         <seg>サブアレイ&lt;x1/&gt;は、インデックス作成を実行する&lt;x2/&gt;AbstractArray&lt;x3/&gt;の特殊化です。 コピーするのではなく、オリジナルのアレイとメモリを共有することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Suppose you call a function like this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024957Z" creationid="hsugawa8651" creationdate="20181110T024957Z">
+        <seg>次のような関数を呼び出すとします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2930,6 +3139,15 @@ cooperative multitasking are implemented in Julia using tasks.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is because argument parsing in shebang
+is platform-dependent and not well-specified.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024923Z" creationid="hsugawa8651" creationdate="20181110T024923Z">
+        <seg>これは、シェバンの引数の構文解析が はプラットフォーム依存であり、よく指定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This means that
 &lt;x1/&gt;@cfunction&lt;x2/&gt;-generated pointers cannot be used in calls where WINAPI expects &lt;x3/&gt;stdcall&lt;x4/&gt;</seg>
       </tuv>
@@ -3029,6 +3247,15 @@ Julia &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized) &lt;x4/&gt;f.(args.
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To run a certain code before terminating a Julia script,
+which may or may not be caused by CTRL-C, use &lt;x5/&gt;`atexit`&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024910Z" creationid="hsugawa8651" creationdate="20181110T024910Z">
+        <seg>Juliaスクリプトを終了する前に特定のコードを実行するには、次の手順を実行します。 これは、CTRL-Cによって引き起こされることもないこともあれば、引き起こされることもないことがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To run code in a file non-interactively, you can give it as the first argument to the &lt;x1/&gt;julia&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224323Z" creationid="hsugawa8651" creationdate="20181109T224323Z">
@@ -3123,6 +3350,15 @@ manner that allows all custom arrays to behave similarly.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When a file is run as the main script using &lt;x1/&gt;julia file.jl&lt;x2/&gt; one might want to activate extra
+functionality like command line argument handling.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024843Z" creationid="hsugawa8651" creationdate="20181110T024843Z">
+        <seg>&lt;x1/&gt;juliaファイルを使用して、ファイルがメイン・スクリプトとして実行される場合、&lt;x1/&gt;juliaファイル.jl&lt;x2/&gt;を使用して追加のファイルをアクティブ化する必要があります コマンドライン引数の処理などの機能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When both
 libraries and executables are generated by LLVM, it is possible to perform whole-program optimizations
 that can even optimize across this boundary, but Julia does not yet support that.</seg>
@@ -3199,6 +3435,15 @@ of &lt;x1/&gt;&amp;&amp;&lt;x2/&gt; and &lt;x3/&gt;||&lt;x4/&gt; operators.</seg
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230405Z" creationid="hsugawa8651" creationdate="20181109T230405Z">
         <seg>さまざまな組み合わせのアソシエティビティと優先順位によって、同じ方法で簡単に実験することができます。 &lt;x1/&gt;&amp;&amp;&lt;x2/&gt;および&lt;x3/&gt;&lt;x4/&gt;演算子のことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can't import the type names into &lt;x1/&gt;Main&lt;x2/&gt; and then expect
+to be able to redefine them there, but you can use the module name to resolve the scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024742Z" creationid="hsugawa8651" creationdate="20181110T024742Z">
+        <seg>&lt;x1/&gt;メイン&lt;x2/&gt;にはタイプ名をインポートできないので、次のように入力することはできません。 で再定義することができますが、このモジュール名を使用してスコープを解決することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3597,6 +3842,20 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225914Z" creationid="hsugawa8651" creationdate="20181109T225914Z">
         <seg>&lt;x1/&gt;ブロックが「リーク」である場合、すなわち、ローカルスコープを導入しない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>include("mynewcode.jl")              &lt;x1/&gt; this defines a module MyModule
+obj1 = MyModule.ObjConstructor(a, b)
+obj2 = MyModule.somefunction(obj1)
+&lt;x2/&gt; Got an error.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024750Z" creationid="hsugawa8651" creationdate="20181110T024750Z">
+        <seg>include("mynewcode.jl")              &lt;x1/&gt; this defines a module MyModule
+obj1 = MyModule.ObjConstructor(a, b)
+obj2 = MyModule.somefunction(obj1)
+&lt;x2/&gt; Got an error.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4803,6 +5062,26 @@ julia&gt; hcat([1 2], 3)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; x = 10
+10
+
+julia&gt; function change_value!(y)
+           y = 17
+       end
+change_value!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025000Z" creationid="hsugawa8651" creationdate="20181110T025000Z">
+        <seg>julia&gt; x = 10
+10
+
+julia&gt; function change_value!(y)
+           y = 17
+       end
+change_value!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; x = 1; y = 2;
 
 julia&gt; println(x &lt; y ?</seg>
@@ -5112,6 +5391,16 @@ for each line in file &lt;x4/&gt;file&lt;x5/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224417Z" creationid="hsugawa8651" creationdate="20181109T224417Z">
         <seg>n&lt;x1/&gt;worker processes while&lt;x2/&gt;--machine file file&lt;x3/&gt;はワーカーを起動します。 ファイル&lt;x4/&gt;ファイル&lt;x5/&gt;の各行に対して実行されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>obj3 = MyModule.someotherfunction(obj2, c)
+...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024805Z" creationid="hsugawa8651" creationdate="20181110T024805Z">
+        <seg>obj3 = MyModule.someotherfunction(obj2, c)
+...</seg>
       </tuv>
     </tu>
     <tu>
