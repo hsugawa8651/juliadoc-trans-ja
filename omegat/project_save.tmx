@@ -4988,6 +4988,26 @@ julia&gt; @.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; [1:5;] .|&gt; [x-&gt;x^2, inv, x-&gt;2*x, -, isodd]
+5-element Array{Real,1}:
+    1
+    0.5
+    6
+   -4
+ true</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030300Z" creationid="hsugawa8651" creationdate="20181110T030300Z">
+        <seg>julia&gt; [1:5;] .|&gt; [x-&gt;x^2, inv, x-&gt;2*x, -, isodd]
+5-element Array{Real,1}:
+    1
+    0.5
+    6
+   -4
+ true</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; [[1 2] [3 4]]
 1×4 Array{Int64,2}:
  1  2  3  4
