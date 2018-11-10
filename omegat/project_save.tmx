@@ -908,10 +908,84 @@ Base.GC</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.GC.gc
+Base.GC.enable
+Base.GC.@preserve
+Meta.lower
+Meta.@lower
+Meta.parse(::AbstractString, ::Int)
+Meta.parse(::AbstractString)
+Meta.ParseError
+Base.macroexpand
+Base.@macroexpand
+Base.@macroexpand1
+Base.code_lowered
+Base.code_typed
+Base.precompile</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042021Z" creationid="hsugawa8651" creationdate="20181110T042021Z">
+        <seg>Base.GC.gc
+Base.GC.enable
+Base.GC.@preserve
+Meta.lower
+Meta.@lower
+Meta.parse(::AbstractString, ::Int)
+Meta.parse(::AbstractString)
+Meta.ParseError
+Base.macroexpand
+Base.@macroexpand
+Base.@macroexpand1
+Base.code_lowered
+Base.code_typed
+Base.precompile</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.IndexStyle(::Type{&lt;:MyArray}) = IndexLinear()</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155911Z" creationid="hsugawa8651" creationdate="20181109T155911Z">
         <seg>Base.IndexStyle(::Type{&lt;:MyArray}) = IndexLinear()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Missing
+Base.missing
+Base.coalesce
+Base.ismissing
+Base.skipmissing</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041934Z" creationid="hsugawa8651" creationdate="20181110T041934Z">
+        <seg>Base.Missing
+Base.missing
+Base.coalesce
+Base.ismissing
+Base.skipmissing</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Timer(::Function, ::Real)
+Base.Timer
+Base.AsyncCondition
+Base.AsyncCondition(::Function)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042015Z" creationid="hsugawa8651" creationdate="20181110T042015Z">
+        <seg>Base.Timer(::Function, ::Real)
+Base.Timer
+Base.AsyncCondition
+Base.AsyncCondition(::Function)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.VersionNumber
+Base.@v_str</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041945Z" creationid="hsugawa8651" creationdate="20181110T041945Z">
+        <seg>Base.VersionNumber
+Base.@v_str</seg>
       </tuv>
     </tu>
     <tu>
@@ -960,6 +1034,82 @@ Base.rot180
 Base.rotl90
 Base.rotr90
 Base.mapslices</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.error
+Core.throw
+Base.rethrow
+Base.backtrace
+Base.catch_backtrace
+Base.catch_stack
+Base.@assert
+Base.ArgumentError
+Base.AssertionError
+Core.BoundsError
+Base.CompositeException
+Base.DimensionMismatch
+Core.DivideError
+Core.DomainError
+Base.EOFError
+Core.ErrorException
+Core.InexactError
+Core.InterruptException
+Base.KeyError
+Base.LoadError
+Base.MethodError
+Base.MissingException
+Core.OutOfMemoryError
+Core.ReadOnlyMemoryError
+Core.OverflowError
+Core.StackOverflowError
+Base.SystemError
+Core.TypeError
+Core.UndefKeywordError
+Core.UndefRefError
+Core.UndefVarError
+Base.StringIndexError
+Base.InitError
+Base.retry
+Base.ExponentialBackOff</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042002Z" creationid="hsugawa8651" creationdate="20181110T042002Z">
+        <seg>Base.error
+Core.throw
+Base.rethrow
+Base.backtrace
+Base.catch_backtrace
+Base.catch_stack
+Base.@assert
+Base.ArgumentError
+Base.AssertionError
+Core.BoundsError
+Base.CompositeException
+Base.DimensionMismatch
+Core.DivideError
+Core.DomainError
+Base.EOFError
+Core.ErrorException
+Core.InexactError
+Core.InterruptException
+Base.KeyError
+Base.LoadError
+Base.MethodError
+Base.MissingException
+Core.OutOfMemoryError
+Core.ReadOnlyMemoryError
+Core.OverflowError
+Core.StackOverflowError
+Base.SystemError
+Core.TypeError
+Core.UndefKeywordError
+Core.UndefRefError
+Core.UndefVarError
+Base.StringIndexError
+Base.InitError
+Base.retry
+Base.ExponentialBackOff</seg>
       </tuv>
     </tu>
     <tu>
@@ -1014,6 +1164,56 @@ Base.invpermute!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.isimmutable
+Base.isabstracttype
+Base.isprimitivetype
+Base.isstructtype
+Base.nameof(::DataType)
+Base.fieldnames
+Base.fieldname</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041848Z" creationid="hsugawa8651" creationdate="20181110T041848Z">
+        <seg>Base.isimmutable
+Base.isabstracttype
+Base.isprimitivetype
+Base.isstructtype
+Base.nameof(::DataType)
+Base.fieldnames
+Base.fieldname</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.nameof(::Module)
+Base.parentmodule
+Base.pathof(::Module)
+Base.moduleroot
+Base.@__MODULE__
+Base.fullname
+Base.names
+Core.nfields
+Base.isconst
+Base.nameof(::Function)
+Base.functionloc(::Any, ::Any)
+Base.functionloc(::Method)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042018Z" creationid="hsugawa8651" creationdate="20181110T042018Z">
+        <seg>Base.nameof(::Module)
+Base.parentmodule
+Base.pathof(::Module)
+Base.moduleroot
+Base.@__MODULE__
+Base.fullname
+Base.names
+Core.nfields
+Base.isconst
+Base.nameof(::Function)
+Base.functionloc(::Any, ::Any)
+Base.functionloc(::Method)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.ndims
 Base.size
 Base.axes(::Any)
@@ -1040,6 +1240,82 @@ Base.conj!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.pointer
+Base.unsafe_wrap{T,N}(::Union{Type{Array},Type{Array{T}},Type{Array{T,N}}}, ::Ptr{T}, ::NTuple{N,Int})
+Base.pointer_from_objref
+Base.unsafe_pointer_to_objref
+Base.disable_sigint
+Base.reenable_sigint
+Base.systemerror
+Core.Ptr
+Core.Ref
+Base.Cchar
+Base.Cuchar
+Base.Cshort
+Base.Cstring
+Base.Cushort
+Base.Cint
+Base.Cuint
+Base.Clong
+Base.Culong
+Base.Clonglong
+Base.Culonglong
+Base.Cintmax_t
+Base.Cuintmax_t
+Base.Csize_t
+Base.Cssize_t
+Base.Cptrdiff_t
+Base.Cwchar_t
+Base.Cwstring
+Base.Cfloat
+Base.Cdouble</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042028Z" creationid="hsugawa8651" creationdate="20181110T042028Z">
+        <seg>Base.pointer
+Base.unsafe_wrap{T,N}(::Union{Type{Array},Type{Array{T}},Type{Array{T,N}}}, ::Ptr{T}, ::NTuple{N,Int})
+Base.pointer_from_objref
+Base.unsafe_pointer_to_objref
+Base.disable_sigint
+Base.reenable_sigint
+Base.systemerror
+Core.Ptr
+Core.Ref
+Base.Cchar
+Base.Cuchar
+Base.Cshort
+Base.Cstring
+Base.Cushort
+Base.Cint
+Base.Cuint
+Base.Clong
+Base.Culong
+Base.Clonglong
+Base.Culonglong
+Base.Cintmax_t
+Base.Cuintmax_t
+Base.Csize_t
+Base.Cssize_t
+Base.Cptrdiff_t
+Base.Cwchar_t
+Base.Cwstring
+Base.Cfloat
+Base.Cdouble</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.propertynames
+Core.getfield
+Core.setfield!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041828Z" creationid="hsugawa8651" creationdate="20181110T041828Z">
+        <seg>Base.propertynames
+Core.getfield
+Core.setfield!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.reverse(::AbstractVector; kwargs...)
 Base.reverseind
 Base.reverse!</seg>
@@ -1050,12 +1326,168 @@ Base.reverse!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.run
+Base.devnull
+Base.success
+Base.process_running
+Base.process_exited
+Base.kill(::Base.Process, ::Integer)
+Base.Sys.set_process_title
+Base.Sys.get_process_title
+Base.ignorestatus
+Base.detach
+Base.Cmd
+Base.setenv
+Base.withenv
+Base.pipeline(::Any, ::Any, ::Any, ::Any...)
+Base.pipeline(::Base.AbstractCmd)
+Base.Libc.gethostname
+Base.Libc.getpid
+Base.Libc.time()
+Base.time_ns
+Base.@time
+Base.@timev
+Base.@timed
+Base.@elapsed
+Base.@allocated
+Base.EnvDict
+Base.ENV
+Base.Sys.isunix
+Base.Sys.isapple
+Base.Sys.islinux
+Base.Sys.isbsd
+Base.Sys.iswindows
+Base.Sys.windows_version
+Base.@static</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041940Z" creationid="hsugawa8651" creationdate="20181110T041940Z">
+        <seg>Base.run
+Base.devnull
+Base.success
+Base.process_running
+Base.process_exited
+Base.kill(::Base.Process, ::Integer)
+Base.Sys.set_process_title
+Base.Sys.get_process_title
+Base.ignorestatus
+Base.detach
+Base.Cmd
+Base.setenv
+Base.withenv
+Base.pipeline(::Any, ::Any, ::Any, ::Any...)
+Base.pipeline(::Base.AbstractCmd)
+Base.Libc.gethostname
+Base.Libc.getpid
+Base.Libc.time()
+Base.time_ns
+Base.@time
+Base.@timev
+Base.@timed
+Base.@elapsed
+Base.@allocated
+Base.EnvDict
+Base.ENV
+Base.Sys.isunix
+Base.Sys.isapple
+Base.Sys.islinux
+Base.Sys.isbsd
+Base.Sys.iswindows
+Base.Sys.windows_version
+Base.@static</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.sizeof(::Type)
+Base.isconcretetype
+Base.isbits
+Base.isbitstype
+Core.fieldtype
+Base.fieldtypes
+Base.fieldcount
+Base.fieldoffset
+Base.datatype_alignment
+Base.datatype_haspadding
+Base.datatype_pointerfree</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041856Z" creationid="hsugawa8651" creationdate="20181110T041856Z">
+        <seg>Base.sizeof(::Type)
+Base.isconcretetype
+Base.isbits
+Base.isbitstype
+Core.fieldtype
+Base.fieldtypes
+Base.fieldcount
+Base.fieldoffset
+Base.datatype_alignment
+Base.datatype_haspadding
+Base.datatype_pointerfree</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.stride
 Base.strides</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T033616Z" creationid="hsugawa8651" creationdate="20181110T033616Z">
         <seg>Base.stride
 Base.strides</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.supertype
+Core.:(&lt;:)
+Base.:(&gt;:)
+Base.typejoin
+Base.typeintersect
+Base.promote_type
+Base.promote_rule
+Base.isdispatchtuple</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041843Z" creationid="hsugawa8651" creationdate="20181110T041843Z">
+        <seg>Base.supertype
+Core.:(&lt;:)
+Base.:(&gt;:)
+Base.typejoin
+Base.typeintersect
+Base.promote_type
+Base.promote_rule
+Base.isdispatchtuple</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.typemin
+Base.typemax
+Base.floatmin
+Base.floatmax
+Base.maxintfloat
+Base.eps(::Type{&lt;:AbstractFloat})
+Base.eps(::AbstractFloat)
+Base.instances</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041908Z" creationid="hsugawa8651" creationdate="20181110T041908Z">
+        <seg>Base.typemin
+Base.typemax
+Base.floatmin
+Base.floatmax
+Base.maxintfloat
+Base.eps(::Type{&lt;:AbstractFloat})
+Base.eps(::AbstractFloat)
+Base.instances</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.unsafe_copyto!{T}(::Ptr{T}, ::Ptr{T}, ::Any)
+Base.unsafe_copyto!{T}(::Array{T}, ::Any, ::Array{T}, ::Any, ::Any)
+Base.copyto!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042026Z" creationid="hsugawa8651" creationdate="20181110T042026Z">
+        <seg>Base.unsafe_copyto!{T}(::Ptr{T}, ::Ptr{T}, ::Any)
+Base.unsafe_copyto!{T}(::Array{T}, ::Any, ::Array{T}, ::Any, ::Any)
+Base.copyto!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1146,6 +1578,14 @@ create a &lt;x16/&gt;SubArray&lt;x17/&gt; view instead.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160443Z" creationid="hsugawa8651" creationdate="20181109T160443Z">
         <seg>&lt;x12/&gt;`@views'&lt;x13/&gt;マクロを式の前に置くか コードのブロック、任意の&lt;x14/&gt;配列[.]&lt;x15/&gt;スライスは、その式の中に変換されます。 代わりに&lt;x16/&gt;サブアレイを作成&lt;x17/&gt;ビューを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>C Interface</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042024Z" creationid="hsugawa8651" creationdate="20181110T042024Z">
+        <seg>C Interface</seg>
       </tuv>
     </tu>
     <tu>
@@ -1287,6 +1727,132 @@ Base.copy
 Base.deepcopy
 Base.getproperty
 Base.setproperty!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Core.Any
+Core.Union
+Union{}
+Core.UnionAll
+Core.Tuple
+Core.NamedTuple
+Base.Val
+Core.Vararg
+Core.Nothing
+Base.isnothing
+Base.Some
+Base.something
+Base.Enums.@enum</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041916Z" creationid="hsugawa8651" creationdate="20181110T041916Z">
+        <seg>Core.Any
+Core.Union
+Union{}
+Core.UnionAll
+Core.Tuple
+Core.NamedTuple
+Base.Val
+Core.Vararg
+Core.Nothing
+Base.isnothing
+Base.Some
+Base.something
+Base.Enums.@enum</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Core.Function
+Base.hasmethod
+Core.applicable
+Core.invoke
+Base.invokelatest
+new
+Base.:(|&gt;)
+Base.:(∘)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041920Z" creationid="hsugawa8651" creationdate="20181110T041920Z">
+        <seg>Core.Function
+Base.hasmethod
+Core.applicable
+Core.invoke
+Base.invokelatest
+new
+Base.:(|&gt;)
+Base.:(∘)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Core.Intrinsics.llvmcall</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042030Z" creationid="hsugawa8651" creationdate="20181110T042030Z">
+        <seg>Core.Intrinsics.llvmcall</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Core.eval
+Base.MainInclude.eval
+Base.@eval
+Base.evalfile
+Base.esc
+Base.@inbounds
+Base.@boundscheck
+Base.@inline
+Base.@noinline
+Base.@nospecialize
+Base.@specialize
+Base.gensym
+Base.@gensym
+Base.@goto
+Base.@label
+Base.@simd
+Base.@polly
+Base.@generated
+Base.@pure</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041926Z" creationid="hsugawa8651" creationdate="20181110T041926Z">
+        <seg>Core.eval
+Base.MainInclude.eval
+Base.@eval
+Base.evalfile
+Base.esc
+Base.@inbounds
+Base.@boundscheck
+Base.@inline
+Base.@noinline
+Base.@nospecialize
+Base.@specialize
+Base.gensym
+Base.@gensym
+Base.@goto
+Base.@label
+Base.@simd
+Base.@polly
+Base.@generated
+Base.@pure</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Core.isdefined
+Base.@isdefined
+Base.convert
+Base.promote
+Base.oftype
+Base.widen
+Base.identity</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041832Z" creationid="hsugawa8651" creationdate="20181110T041832Z">
+        <seg>Core.isdefined
+Base.@isdefined
+Base.convert
+Base.promote
+Base.oftype
+Base.widen
+Base.identity</seg>
       </tuv>
     </tu>
     <tu>
@@ -1475,6 +2041,14 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224702Z" creationid="hsugawa8651" creationdate="20181109T224702Z">
         <seg>&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;を評価し、結果を表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Events</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042013Z" creationid="hsugawa8651" creationdate="20181110T042013Z">
+        <seg>Events</seg>
       </tuv>
     </tu>
     <tu>
@@ -2269,6 +2843,14 @@ read as: &lt;x11/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Internals</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042019Z" creationid="hsugawa8651" creationdate="20181110T042019Z">
+        <seg>Internals</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It can even be combined with a &lt;x8/&gt;:&lt;x9/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155706Z" creationid="hsugawa8651" creationdate="20181109T155706Z">
@@ -2495,6 +3077,14 @@ inner functions used elsewhere in the language, variables from the enclosing sco
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>LLVM Interface</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042029Z" creationid="hsugawa8651" creationdate="20181110T042029Z">
+        <seg>LLVM Interface</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Larger integer literals that cannot be represented using only 32 bits but can be represented in
 64 bits always create 64-bit integers, regardless of the system type:</seg>
       </tuv>
@@ -2582,6 +3172,14 @@ copy of the input, and returning that copy.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154222Z" creationid="hsugawa8651" creationdate="20181109T154222Z">
         <seg>多くの非重複関数は、次のように実装されています。 明示的に最後に&lt;x6/&gt;!&lt;x7/&gt;を追加して、同じ名前の関数を呼び出します。 入力のコピーを返し、そのコピーを返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Memory layout</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041853Z" creationid="hsugawa8651" creationdate="20181110T041853Z">
+        <seg>Memory layout</seg>
       </tuv>
     </tu>
     <tu>
@@ -2847,6 +3445,14 @@ platforms such as Linux.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Properties of Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041836Z" creationid="hsugawa8651" creationdate="20181110T041836Z">
+        <seg>Properties of Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Quiet startup: no banner, suppress REPL warnings</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224722Z" creationid="hsugawa8651" creationdate="20181109T224722Z">
@@ -2876,6 +3482,14 @@ an interactive session.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225338Z" creationid="hsugawa8651" creationdate="20181109T225338Z">
         <seg>変数&lt;x1/&gt;`は、最後に評価された最後の式の値に設定されていることを思い出してください。 対話型セッションです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reflection</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042017Z" creationid="hsugawa8651" creationdate="20181110T042017Z">
+        <seg>Reflection</seg>
       </tuv>
     </tu>
     <tu>
@@ -3056,6 +3670,14 @@ in order, returning the value of the last subexpression as its value.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225754Z" creationid="hsugawa8651" creationdate="20181109T225754Z">
         <seg>いくつかのサブ式を評価する単一の表現を持つことが便利な場合もあります。 は、最後のサブ式の値をその値として返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Special Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041912Z" creationid="hsugawa8651" creationdate="20181110T041912Z">
+        <seg>Special Types</seg>
       </tuv>
     </tu>
     <tu>
@@ -3284,6 +3906,14 @@ dimension size and stride parameters.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041755Z" creationid="hsugawa8651" creationdate="20181110T041755Z">
         <seg>次の2語のシーケンスが予約されています。 &lt;x1/&gt;抽象型&lt;x2/&gt;,&lt;x3/&gt;mutable構造体&lt;x4/&gt;,&lt;x5/&gt;プリミティブ型&lt;x6/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The general &lt;x3/&gt;for&lt;x4/&gt; loop:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042052Z" creationid="hsugawa8651" creationdate="20181110T042052Z">
+        <seg>&lt;x4/&gt;ループの一般的な&lt;x3/&gt;は次のようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3948,6 +4578,14 @@ functions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Type relations</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041840Z" creationid="hsugawa8651" creationdate="20181110T041840Z">
+        <seg>Type relations</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Unlike C, MATLAB, Perl, Python, and Ruby -- but like Java, and a few other stricter, typed languages
 -- it is an error if the value of a conditional expression is anything but &lt;x1/&gt;true&lt;x2/&gt; or &lt;x3/&gt;false&lt;x4/&gt;:</seg>
       </tuv>
@@ -4475,6 +5113,28 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>ccall
+Core.Intrinsics.cglobal
+Base.@cfunction
+Base.CFunction
+Base.unsafe_convert
+Base.cconvert
+Base.unsafe_load
+Base.unsafe_store!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042025Z" creationid="hsugawa8651" creationdate="20181110T042025Z">
+        <seg>ccall
+Core.Intrinsics.cglobal
+Base.@cfunction
+Base.CFunction
+Base.unsafe_convert
+Base.cconvert
+Base.unsafe_load
+Base.unsafe_store!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>clock&lt;x1/&gt; takes no arguments and returns an &lt;x2/&gt;`Int32`&lt;x3/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224034Z" creationid="hsugawa8651" creationdate="20181109T224034Z">
@@ -4558,6 +5218,18 @@ end
 
 for i in eachindex(A)
     &lt;x2/&gt; Do something with i and/or A[i]
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>for i in iter   &lt;x1/&gt; or  "for i = iter"
+    &lt;x2/&gt; body
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042045Z" creationid="hsugawa8651" creationdate="20181110T042045Z">
+        <seg>for i in iter   &lt;x1/&gt; or  "for i = iter"
+    &lt;x2/&gt; body
 end</seg>
       </tuv>
     </tu>
@@ -4810,6 +5482,14 @@ Base.banner(io)
 banner = String(take!(io))
 import Markdown
 Markdown.parse("```\n\$ julia\n\n$(banner)\njulia&gt; 1 + 2\n3\n\njulia&gt; ans\n3\n```")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>is translated into:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042111Z" creationid="hsugawa8651" creationdate="20181110T042111Z">
+        <seg>は次のように変換されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7153,6 +7833,24 @@ for each line in file &lt;x4/&gt;file&lt;x5/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224417Z" creationid="hsugawa8651" creationdate="20181109T224417Z">
         <seg>n&lt;x1/&gt;worker processes while&lt;x2/&gt;--machine file file&lt;x3/&gt;はワーカーを起動します。 ファイル&lt;x4/&gt;ファイル&lt;x5/&gt;の各行に対して実行されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>next = iterate(iter)
+while next !== nothing
+    (i, state) = next
+    &lt;x1/&gt; body
+    next = iterate(iter, state)
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042115Z" creationid="hsugawa8651" creationdate="20181110T042115Z">
+        <seg>next = iterate(iter)
+while next !== nothing
+    (i, state) = next
+    &lt;x1/&gt; body
+    next = iterate(iter, state)
+end</seg>
       </tuv>
     </tu>
     <tu>
