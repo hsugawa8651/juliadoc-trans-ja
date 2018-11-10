@@ -171,6 +171,14 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@ref Base.getproperty)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025921Z" creationid="hsugawa8651" creationdate="20181110T025921Z">
+        <seg>(@ref Base.getproperty)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@ref man-conditional-evaluation): &lt;x1/&gt;if&lt;x2/&gt;-&lt;x3/&gt;elseif&lt;x4/&gt;-&lt;x5/&gt;else&lt;x6/&gt; and &lt;x7/&gt;?:&lt;x8/&gt; (ternary operator).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225720Z" creationid="hsugawa8651" creationdate="20181109T225720Z">
@@ -520,10 +528,50 @@ this fashion is to check if &lt;x3/&gt;abspath(PROGRAM_FILE) == @__FILE__&lt;x4/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A'&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025859Z" creationid="hsugawa8651" creationdate="20181110T025859Z">
+        <seg>A'&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A.n = x&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025934Z" creationid="hsugawa8651" creationdate="20181110T025934Z">
+        <seg>A.n = x&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A.n&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025918Z" creationid="hsugawa8651" creationdate="20181110T025918Z">
+        <seg>A.n&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A&lt;x1/&gt; is overwritten with the value &lt;x2/&gt;X[i_1, i_2, ..., i_n]&lt;x3/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155417Z" creationid="hsugawa8651" creationdate="20181109T155417Z">
         <seg>&lt;x1/&gt;は、&lt;x2/&gt;X[i_1,i_2,…,i_n]&lt;x3/&gt;の値で上書きされる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A[i] = x&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025915Z" creationid="hsugawa8651" creationdate="20181110T025915Z">
+        <seg>A[i] = x&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A[i]&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025906Z" creationid="hsugawa8651" creationdate="20181110T025906Z">
+        <seg>A[i]&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -752,6 +800,16 @@ being indexed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225505Z" creationid="hsugawa8651" creationdate="20181109T225505Z">
         <seg>16進数のリテラルに関しては、バイナリと8進数のリテラルは符号なしの整数型を生成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As in C and most other imperative
+or functional languages, the &lt;x5/&gt;return&lt;x6/&gt; keyword causes a function to return immediately, providing
+an expression whose value is returned:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025731Z" creationid="hsugawa8651" creationdate="20181110T025731Z">
+        <seg>Cとその他のほとんどの命令 または関数を使用すると、&lt;x5/&gt;return&lt;x6/&gt;キーワードによって関数が即座に返され、次の関数が返されます。 値が返される式。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1338,6 +1396,16 @@ but you can change its content.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Function arguments themselves act as
+new variable &lt;x1/&gt;bindings&lt;x2/&gt; (new locations that can refer to values), but the values they refer to
+are identical to the passed values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025708Z" creationid="hsugawa8651" creationdate="20181110T025708Z">
+        <seg>関数引数自体は 新しい変数&lt;x1/&gt;バインディング&lt;x2/&gt;(値を参照できる新しい場所)ですが、それらが参照する値は は、渡された値と同じです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Generated values can be filtered using the &lt;x1/&gt;if&lt;x2/&gt; keyword:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155050Z" creationid="hsugawa8651" creationdate="20181109T155050Z">
@@ -1643,6 +1711,14 @@ use &lt;x10/&gt;exec&lt;x11/&gt; to replace the process to &lt;x12/&gt;julia&lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In conjunction with other control flow, however, &lt;x11/&gt;return&lt;x12/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025752Z" creationid="hsugawa8651" creationdate="20181110T025752Z">
+        <seg>しかし、他の制御フローと連動して、&lt;x11/&gt;return&lt;x12/&gt;を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In contrast with &lt;x1/&gt;for i = 1:length(A)&lt;x2/&gt;, iterating with &lt;x3/&gt;`eachindex`&lt;x4/&gt; provides an efficient way to
 iterate over any array type.</seg>
       </tuv>
@@ -1726,6 +1802,15 @@ into a single argument.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024937Z" creationid="hsugawa8651" creationdate="20181110T024937Z">
         <seg>上記の例では、&lt;x1/&gt;&lt;x2/&gt;=&lt;x3/&gt;と&lt;x4/&gt;=&lt;x5/&gt;&lt;x6/&gt;の間のコードは、&lt;x7/&gt;bash&lt;x8/&gt;のように実行されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the example function, &lt;x1/&gt;f&lt;x2/&gt;, from
+the previous section this is the value of the expression &lt;x3/&gt;x + y&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025728Z" creationid="hsugawa8651" creationdate="20181110T025728Z">
+        <seg>例の関数では、&lt;x1/&gt;f&lt;x2/&gt;は 前のセクションは、式&lt;x3/&gt;x+y&lt;x4/&gt;の値です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1997,6 +2082,15 @@ session (technically, in module &lt;x3/&gt;Main&lt;x4/&gt;), it is always presen
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia function arguments follow a convention sometimes called "pass-by-sharing", which means that
+values are not copied when they are passed to functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025705Z" creationid="hsugawa8651" creationdate="20181110T025705Z">
+        <seg>Julia関数の引数は、「共有によるパス」と呼ばれる規則に従うことがあります。これは 値が関数に渡されると、値はコピーされません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia has a "no boilerplate" philosophy:
 functions can be called directly from Julia without any "glue" code, code generation, or compilation
 -- even from the interactive prompt.</seg>
@@ -2166,6 +2260,15 @@ copy of the input, and returning that copy.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154222Z" creationid="hsugawa8651" creationdate="20181109T154222Z">
         <seg>多くの非重複関数は、次のように実装されています。 明示的に最後に&lt;x6/&gt;!&lt;x7/&gt;を追加して、同じ名前の関数を呼び出します。 入力のコピーを返し、そのコピーを返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Modifications to mutable values (such as &lt;x3/&gt;Array&lt;x4/&gt;s) made within
+a function will be visible to the caller.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025712Z" creationid="hsugawa8651" creationdate="20181110T025712Z">
+        <seg>(&lt;x3/&gt;Array&lt;x4/&gt;s)のような可変値への変更 呼び出し側から関数が表示されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3051,6 +3154,15 @@ is that of the last subexpression.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The value returned by a function is the value of the last expression evaluated, which, by default,
+is the last expression in the body of the function definition.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025723Z" creationid="hsugawa8651" creationdate="20181110T025723Z">
+        <seg>関数によって返される値は、評価された最後の式の値です。これは、デフォルトでは次の値です。 は、関数定義の本文で最後の式です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The values returned by &lt;x1/&gt;`typemin`&lt;x2/&gt; and &lt;x3/&gt;`typemax`&lt;x4/&gt; are always of the given argument
 type.</seg>
       </tuv>
@@ -3318,6 +3430,15 @@ is platform-dependent and not well-specified.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024923Z" creationid="hsugawa8651" creationdate="20181110T024923Z">
         <seg>これは、シェバンの引数の構文解析が はプラットフォーム依存であり、よく指定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is the same behavior found in Scheme, most Lisps,
+Python, Ruby and Perl, among other dynamic languages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025715Z" creationid="hsugawa8651" creationdate="20181110T025715Z">
+        <seg>これはSchemeで見られる動作と同じです。ほとんどのLispです。 Python、Ruby、Perlは、その他の動的言語の中でもとりわけ優れています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3658,6 +3779,30 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>[A B C ...]&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025839Z" creationid="hsugawa8651" creationdate="20181110T025839Z">
+        <seg>[A B C ...]&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[A B; C D; ...]&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025852Z" creationid="hsugawa8651" creationdate="20181110T025852Z">
+        <seg>[A B; C D; ...]&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[A; B; C; ...]&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025846Z" creationid="hsugawa8651" creationdate="20181110T025846Z">
+        <seg>[A; B; C; ...]&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`BitArray`&lt;x1/&gt;s are space-efficient "packed" boolean arrays, which store one bit per boolean value.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160448Z" creationid="hsugawa8651" creationdate="20181109T160448Z">
@@ -3678,6 +3823,14 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155540Z" creationid="hsugawa8651" creationdate="20181109T155540Z">
         <seg>「コロン()」&lt;x1/&gt;(&lt;x2/&gt;:&lt;x3/&gt;)は、全次元または配列全体にわたってすべてのインデックスを表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`adjoint`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025903Z" creationid="hsugawa8651" creationdate="20181110T025903Z">
+        <seg>`adjoint`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3706,6 +3859,30 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`getindex`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025910Z" creationid="hsugawa8651" creationdate="20181110T025910Z">
+        <seg>`getindex`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`hcat`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025842Z" creationid="hsugawa8651" creationdate="20181110T025842Z">
+        <seg>`hcat`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`hvcat`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025855Z" creationid="hsugawa8651" creationdate="20181110T025855Z">
+        <seg>`hvcat`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`hvcat`&lt;x1/&gt; concatenates in both dimension 1 (with semicolons) and dimension 2 (with spaces).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154644Z" creationid="hsugawa8651" creationdate="20181109T154644Z">
@@ -3730,6 +3907,14 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`setindex!`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025917Z" creationid="hsugawa8651" creationdate="20181110T025917Z">
+        <seg>`setindex!`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`size(A)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153236Z" creationid="hsugawa8651" creationdate="20181109T153236Z">
@@ -3742,6 +3927,14 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153242Z" creationid="hsugawa8651" creationdate="20181109T153242Z">
         <seg>`size(A,n)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`vcat`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025849Z" creationid="hsugawa8651" creationdate="20181110T025849Z">
+        <seg>`vcat`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3975,6 +4168,20 @@ end
 
 for i in eachindex(A)
     &lt;x2/&gt; Do something with i and/or A[i]
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function g(x,y)
+    return x * y
+    x + y
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025734Z" creationid="hsugawa8651" creationdate="20181110T025734Z">
+        <seg>function g(x,y)
+    return x * y
+    x + y
 end</seg>
       </tuv>
     </tu>
@@ -4243,6 +4450,22 @@ ERROR: TypeError: non-boolean (Int64) used in boolean context</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230815Z" creationid="hsugawa8651" creationdate="20181109T230815Z">
         <seg>julia&gt; 1 &amp;&amp; true
 ERROR: TypeError: non-boolean (Int64) used in boolean context</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 1 + 2 + 3
+6
+
+julia&gt; +(1,2,3)
+6</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025821Z" creationid="hsugawa8651" creationdate="20181110T025821Z">
+        <seg>julia&gt; 1 + 2 + 3
+6
+
+julia&gt; +(1,2,3)
+6</seg>
       </tuv>
     </tu>
     <tu>
@@ -4775,6 +4998,20 @@ julia&gt; string.(1:3, ".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; f = +;
+
+julia&gt; f(1,2,3)
+6</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025828Z" creationid="hsugawa8651" creationdate="20181110T025828Z">
+        <seg>julia&gt; f = +;
+
+julia&gt; f(1,2,3)
+6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; f(1) &amp; t(2)
 1
 2
@@ -4815,6 +5052,40 @@ f (generic function with 1 method)</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025509Z" creationid="hsugawa8651" creationdate="20181110T025509Z">
         <seg>julia&gt; f(x,y) = x + y
 f (generic function with 1 method)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; f(x,y) = x + y
+f (generic function with 1 method)
+
+julia&gt; function g(x,y)
+           return x * y
+           x + y
+       end
+g (generic function with 1 method)
+
+julia&gt; f(2,3)
+5
+
+julia&gt; g(2,3)
+6</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025743Z" creationid="hsugawa8651" creationdate="20181110T025743Z">
+        <seg>julia&gt; f(x,y) = x + y
+f (generic function with 1 method)
+
+julia&gt; function g(x,y)
+           return x * y
+           x + y
+       end
+g (generic function with 1 method)
+
+julia&gt; f(2,3)
+5
+
+julia&gt; g(2,3)
+6</seg>
       </tuv>
     </tu>
     <tu>
@@ -4923,6 +5194,64 @@ Stacktrace:
  [1] error at ./error.jl:33 [inlined]
  [2] fact(::Int64) at ./none:2
  [3] top-level scope</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; function g(x, y)::Int8
+           return x * y
+       end;
+
+julia&gt; typeof(g(1, 2))
+Int8</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025812Z" creationid="hsugawa8651" creationdate="20181110T025812Z">
+        <seg>julia&gt; function g(x, y)::Int8
+           return x * y
+       end;
+
+julia&gt; typeof(g(1, 2))
+Int8</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; function hypot(x,y)
+           x = abs(x)
+           y = abs(y)
+           if x &gt; y
+               r = y/x
+               return x*sqrt(1+r*r)
+           end
+           if y == 0
+               return zero(x)
+           end
+           r = x/y
+           return y*sqrt(1+r*r)
+       end
+hypot (generic function with 1 method)
+
+julia&gt; hypot(3, 4)
+5.0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025759Z" creationid="hsugawa8651" creationdate="20181110T025759Z">
+        <seg>julia&gt; function hypot(x,y)
+           x = abs(x)
+           y = abs(y)
+           if x &gt; y
+               r = y/x
+               return x*sqrt(1+r*r)
+           end
+           if y == 0
+               return zero(x)
+           end
+           r = x/y
+           return y*sqrt(1+r*r)
+       end
+hypot (generic function with 1 method)
+
+julia&gt; hypot(3, 4)
+5.0</seg>
       </tuv>
     </tu>
     <tu>
@@ -5711,6 +6040,22 @@ julia&gt; zeros((2, 3))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; ∑(x,y) = x + y
+∑ (generic function with 1 method)
+
+julia&gt; ∑(2, 3)
+5</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025648Z" creationid="hsugawa8651" creationdate="20181110T025648Z">
+        <seg>julia&gt; ∑(x,y) = x + y
+∑ (generic function with 1 method)
+
+julia&gt; ∑(2, 3)
+5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>m&lt;x1/&gt;-by-&lt;x2/&gt;n&lt;x3/&gt; identity matrix</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154456Z" creationid="hsugawa8651" creationdate="20181109T154456Z">
@@ -5860,6 +6205,14 @@ julia&gt; 1 &gt; 2 ?</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155358Z" creationid="hsugawa8651" creationdate="20181109T155116Z">
         <seg>where each &lt;x1/&gt;I_k&lt;x2/&gt; may be a scalar integer, an array of integers, or any other
 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-supported-index-types).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x&lt;x1/&gt; and &lt;x2/&gt;y&lt;x3/&gt;, avoiding overflow:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025755Z" creationid="hsugawa8651" creationdate="20181110T025755Z">
+        <seg>x&lt;x1/&gt;と&lt;x2/&gt;y&lt;x3/&gt;はオーバーフローを回避します。</seg>
       </tuv>
     </tu>
     <tu>
