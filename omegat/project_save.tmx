@@ -602,6 +602,14 @@ this fashion is to check if &lt;x3/&gt;abspath(PROGRAM_FILE) == @__FILE__&lt;x4/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>AbstractString&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041613Z" creationid="hsugawa8651" creationdate="20181112T041613Z">
+        <seg>AbstractString&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Adding parentheses lets
 us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
       </tuv>
@@ -882,6 +890,24 @@ command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.AbstractRange
+Base.OrdinalRange
+Base.AbstractUnitRange
+Base.StepRange
+Base.UnitRange
+Base.LinRange</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041618Z" creationid="hsugawa8651" creationdate="20181112T041618Z">
+        <seg>Base.AbstractRange
+Base.OrdinalRange
+Base.AbstractUnitRange
+Base.StepRange
+Base.UnitRange
+Base.LinRange</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.Base
 Base.Broadcast
 Base.Docs
@@ -996,6 +1022,66 @@ Base.accumulate!</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041610Z" creationid="hsugawa8651" creationdate="20181110T041610Z">
         <seg>Base.accumulate
 Base.accumulate!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.all(::Any)
+Base.all(::AbstractArray, ::Any)
+Base.all!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041641Z" creationid="hsugawa8651" creationdate="20181112T041641Z">
+        <seg>Base.all(::Any)
+Base.all(::AbstractArray, ::Any)
+Base.all!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.allunique
+Base.reduce(::Any, ::Any)
+Base.foldl(::Any, ::Any)
+Base.foldr(::Any, ::Any)
+Base.maximum
+Base.maximum!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041633Z" creationid="hsugawa8651" creationdate="20181112T041633Z">
+        <seg>Base.allunique
+Base.reduce(::Any, ::Any)
+Base.foldl(::Any, ::Any)
+Base.foldr(::Any, ::Any)
+Base.maximum
+Base.maximum!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.any(::Any)
+Base.any(::AbstractArray, ::Any)
+Base.any!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041640Z" creationid="hsugawa8651" creationdate="20181112T041640Z">
+        <seg>Base.any(::Any)
+Base.any(::AbstractArray, ::Any)
+Base.any!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.count
+Base.any(::Any, ::Any)
+Base.all(::Any, ::Any)
+Base.foreach
+Base.map
+Base.map!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041642Z" creationid="hsugawa8651" creationdate="20181112T041642Z">
+        <seg>Base.count
+Base.any(::Any, ::Any)
+Base.all(::Any, ::Any)
+Base.foreach
+Base.map
+Base.map!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1150,6 +1236,70 @@ ans</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.extrema
+Base.argmax
+Base.argmin
+Base.findmax
+Base.findmin
+Base.findmax!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041635Z" creationid="hsugawa8651" creationdate="20181112T041635Z">
+        <seg>Base.extrema
+Base.argmax
+Base.argmin
+Base.findmax
+Base.findmin
+Base.findmax!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.findmin!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041636Z" creationid="hsugawa8651" creationdate="20181112T041636Z">
+        <seg>Base.findmin!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.firstindex
+Base.lastindex</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041648Z" creationid="hsugawa8651" creationdate="20181112T041648Z">
+        <seg>Base.firstindex
+Base.lastindex</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.getindex
+Base.setindex!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041647Z" creationid="hsugawa8651" creationdate="20181112T041647Z">
+        <seg>Base.getindex
+Base.setindex!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.in
+Base.:∉
+Base.eltype
+Base.indexin
+Base.unique
+Base.unique!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041632Z" creationid="hsugawa8651" creationdate="20181112T041632Z">
+        <seg>Base.in
+Base.:∉
+Base.eltype
+Base.indexin
+Base.unique
+Base.unique!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.invperm
 Base.isperm
 Base.permute!(::Any, ::AbstractVector)
@@ -1160,6 +1310,16 @@ Base.invpermute!</seg>
 Base.isperm
 Base.permute!(::Any, ::AbstractVector)
 Base.invpermute!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.isempty
+Base.empty!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041622Z" creationid="hsugawa8651" creationdate="20181112T041622Z">
+        <seg>Base.isempty
+Base.empty!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1180,6 +1340,62 @@ Base.isstructtype
 Base.nameof(::DataType)
 Base.fieldnames
 Base.fieldname</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.iterate
+Base.IteratorSize
+Base.IteratorEltype</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041553Z" creationid="hsugawa8651" creationdate="20181112T041553Z">
+        <seg>Base.iterate
+Base.IteratorSize
+Base.IteratorEltype</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.length</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041623Z" creationid="hsugawa8651" creationdate="20181112T041623Z">
+        <seg>Base.length</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.mapreduce(::Any, ::Any, ::Any)
+Base.mapfoldl(::Any, ::Any, ::Any)
+Base.mapfoldr(::Any, ::Any, ::Any)
+Base.first
+Base.last
+Base.step
+Base.collect(::Any)
+Base.collect(::Type, ::Any)
+Base.filter
+Base.filter!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041643Z" creationid="hsugawa8651" creationdate="20181112T041643Z">
+        <seg>Base.mapreduce(::Any, ::Any, ::Any)
+Base.mapfoldl(::Any, ::Any, ::Any)
+Base.mapfoldr(::Any, ::Any, ::Any)
+Base.first
+Base.last
+Base.step
+Base.collect(::Any)
+Base.collect(::Type, ::Any)
+Base.filter
+Base.filter!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.minimum
+Base.minimum!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041634Z" creationid="hsugawa8651" creationdate="20181112T041634Z">
+        <seg>Base.minimum
+Base.minimum!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1304,6 +1520,16 @@ Base.Cdouble</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.prod
+Base.prod!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041639Z" creationid="hsugawa8651" creationdate="20181112T041639Z">
+        <seg>Base.prod
+Base.prod!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.propertynames
 Core.getfield
 Core.setfield!</seg>
@@ -1312,6 +1538,18 @@ Core.setfield!</seg>
         <seg>Base.propertynames
 Core.getfield
 Core.setfield!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.replace(::Any, ::Pair...)
+Base.replace(::Base.Callable, ::Any)
+Base.replace!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041644Z" creationid="hsugawa8651" creationdate="20181112T041644Z">
+        <seg>Base.replace(::Any, ::Pair...)
+Base.replace(::Base.Callable, ::Any)
+Base.replace!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1432,6 +1670,16 @@ Base.strides</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T033616Z" creationid="hsugawa8651" creationdate="20181110T033616Z">
         <seg>Base.stride
 Base.strides</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.sum
+Base.sum!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041638Z" creationid="hsugawa8651" creationdate="20181112T041638Z">
+        <seg>Base.sum
+Base.sum!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1940,6 +2188,14 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>EachLine&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041611Z" creationid="hsugawa8651" creationdate="20181112T041611Z">
+        <seg>EachLine&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Emit bounds checks always or never (ignoring declarations)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224752Z" creationid="hsugawa8651" creationdate="20181109T224752Z">
@@ -2263,6 +2519,14 @@ but you can change its content.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Fully implemented by:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041624Z" creationid="hsugawa8651" creationdate="20181112T041624Z">
+        <seg>Fully implemented by:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Function arguments themselves act as
 new variable &lt;x1/&gt;bindings&lt;x2/&gt; (new locations that can refer to values), but the values they refer to
 are identical to the passed values.</seg>
@@ -2277,6 +2541,14 @@ are identical to the passed values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041654Z" creationid="hsugawa8651" creationdate="20181110T041654Z">
         <seg>Functions are grouped by topic below.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>General Collections</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041620Z" creationid="hsugawa8651" creationdate="20181112T041620Z">
+        <seg>General Collections</seg>
       </tuv>
     </tu>
     <tu>
@@ -2779,6 +3051,14 @@ index of dimension &lt;x9/&gt;k&lt;x10/&gt; by &lt;x11/&gt;1&lt;x12/&gt; should 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160502Z" creationid="hsugawa8651" creationdate="20181109T160502Z">
         <seg>増加 &lt;x11/&gt;1&lt;x12/&gt;&lt;x12/&gt;の寸法&lt;x9/&gt;k&lt;x10/&gt;は、&lt;x15/&gt;'getindex(A,i)'&lt;x15/&gt;のインデックス&lt;x13/&gt;i&lt;x14/&gt;を増加させます。 &lt;x17/&gt;`stride(A,k)`&lt;x18/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Indexable Collections</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041646Z" creationid="hsugawa8651" creationdate="20181112T041646Z">
+        <seg>Indexable Collections</seg>
       </tuv>
     </tu>
     <tu>
@@ -3347,6 +3627,14 @@ the variables &lt;x11/&gt;A&lt;x12/&gt; and &lt;x13/&gt;x&lt;x14/&gt; were disti
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Number&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041604Z" creationid="hsugawa8651" creationdate="20181112T041604Z">
+        <seg>Number&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Often referred to as logical indexing or indexing with a logical mask, indexing
 by a boolean array selects elements at the indices where its values are &lt;x1/&gt;true&lt;x2/&gt;.</seg>
       </tuv>
@@ -3415,6 +3703,14 @@ indices.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155131Z" creationid="hsugawa8651" creationdate="20181109T155131Z">
         <seg>そうでない場合は &lt;x5/&gt;x&lt;x6/&gt;は、すべての次元の次元性の合計と同じ数の次元を持つ配列です。 索引。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Partially implemented by:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041654Z" creationid="hsugawa8651" creationdate="20181112T041654Z">
+        <seg>Partially implemented by:</seg>
       </tuv>
     </tu>
     <tu>
@@ -3551,6 +3847,15 @@ on implementing a custom array type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154135Z" creationid="hsugawa8651" creationdate="20181109T154135Z">
         <seg>詳細については、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man interface array)を参照してください。 カスタム・アレイ・タイプの実装です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See the &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-interface-iteration) for more details about defining a custom
+iterable type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041550Z" creationid="hsugawa8651" creationdate="20181112T041550Z">
+        <seg>カスタムを定義する方法の詳細については、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man interface iteration)を参照してください。 iterable型。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3696,6 +4001,14 @@ provided &lt;x5/&gt;`stride(A,k)`&lt;x6/&gt; method accesses the &lt;x7/&gt;k&lt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160458Z" creationid="hsugawa8651" creationdate="20181109T160458Z">
         <seg>ストローブされた配列 は、各次元のタプルを返す&lt;x3/&gt;`end(A)'&lt;x4/&gt;メソッドを定義する必要があります。 &lt;x5/&gt;`stride(A,k)'は、このタプル内の&lt;x7/&gt;k&lt;x8/&gt;番目のエレメントにアクセスします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SubArray&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041653Z" creationid="hsugawa8651" creationdate="20181112T041653Z">
+        <seg>SubArray&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -4578,6 +4891,14 @@ functions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Tuple&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041603Z" creationid="hsugawa8651" creationdate="20181112T041603Z">
+        <seg>Tuple&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Type relations</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041840Z" creationid="hsugawa8651" creationdate="20181110T041840Z">
@@ -4831,10 +5152,50 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`AbstractArray`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041605Z" creationid="hsugawa8651" creationdate="20181112T041605Z">
+        <seg>`AbstractArray`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`AbstractRange`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041600Z" creationid="hsugawa8651" creationdate="20181112T041600Z">
+        <seg>`AbstractRange`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Array`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041650Z" creationid="hsugawa8651" creationdate="20181112T041650Z">
+        <seg>`Array`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`BitArray`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041651Z" creationid="hsugawa8651" creationdate="20181112T041651Z">
+        <seg>`BitArray`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`BitArray`&lt;x1/&gt;s are space-efficient "packed" boolean arrays, which store one bit per boolean value.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160448Z" creationid="hsugawa8651" creationdate="20181109T160448Z">
         <seg>「BitArray」&lt;x1/&gt;は、ブール値ごとに1ビットを格納するスペース効率の高い「パックされた」ブール演算配列です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`BitSet`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041606Z" creationid="hsugawa8651" creationdate="20181112T041606Z">
+        <seg>`BitSet`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -4851,6 +5212,62 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155540Z" creationid="hsugawa8651" creationdate="20181109T155540Z">
         <seg>「コロン()」&lt;x1/&gt;(&lt;x2/&gt;:&lt;x3/&gt;)は、全次元または配列全体にわたってすべてのインデックスを表します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Dict`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041609Z" creationid="hsugawa8651" creationdate="20181112T041609Z">
+        <seg>`Dict`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`IdDict`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041608Z" creationid="hsugawa8651" creationdate="20181112T041608Z">
+        <seg>`IdDict`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`NamedTuple`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041616Z" creationid="hsugawa8651" creationdate="20181112T041616Z">
+        <seg>`NamedTuple`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Pair`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041615Z" creationid="hsugawa8651" creationdate="20181112T041615Z">
+        <seg>`Pair`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Set`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041614Z" creationid="hsugawa8651" creationdate="20181112T041614Z">
+        <seg>`Set`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`UnitRange`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041602Z" creationid="hsugawa8651" creationdate="20181112T041602Z">
+        <seg>`UnitRange`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`WeakKeyDict`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041610Z" creationid="hsugawa8651" creationdate="20181112T041610Z">
+        <seg>`WeakKeyDict`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
