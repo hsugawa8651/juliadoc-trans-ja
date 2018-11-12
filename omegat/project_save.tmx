@@ -279,6 +279,15 @@ operations like &lt;x5/&gt;&lt;&lt;x6/&gt;, &lt;x7/&gt;only&lt;x8/&gt; the eleme
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(Given &lt;x8/&gt;r::Iterators.Reverse{T}&lt;x9/&gt;, the underling iterator of type &lt;x10/&gt;T&lt;x11/&gt; is &lt;x12/&gt;r.itr&lt;x13/&gt;.)
+In our &lt;x14/&gt;Squares&lt;x15/&gt; example, we would implement &lt;x16/&gt;Iterators.Reverse{Squares}&lt;x17/&gt; methods:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112931Z" creationid="hsugawa8651" creationdate="20181112T112931Z">
+        <seg>(&lt;x8/&gt;r::Iterator.Reverse{T}&lt;x9/&gt;,the undering iterator of type&lt;x10/&gt;T&lt;x11/&gt;)は、&lt;x12/&gt;r.itr&lt;x13/&gt;である。 &lt;x14/&gt;Squares&lt;x15/&gt;の例では、&lt;x16/&gt;イテレータを実装します。逆{Squares}&lt;x17/&gt;メソッド:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(Non-library function calls in both C and Julia can
 be inlined and thus may have even less overhead than calls to shared library functions.</seg>
       </tuv>
@@ -4642,6 +4651,15 @@ sums a series without allocating memory:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, there's a formula to compute the sum of squares, so
+we can override the generic iterative version with a more performant solution:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112738Z" creationid="hsugawa8651" creationdate="20181112T112738Z">
+        <seg>たとえば、2乗の合計を計算するための数式があります。 汎用的な反復バージョンをより効率的なソリューションでオーバーライドすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, to call the &lt;x4/&gt;getenv&lt;x5/&gt; function to get a pointer to
 the value of an environment variable, one makes a call like this:</seg>
       </tuv>
@@ -5273,6 +5291,16 @@ farther away from zero.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In some cases, types will want
+to additionally specialize those extra behaviors when they know a more efficient algorithm can
+be used in their specific case.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112852Z" creationid="hsugawa8651" creationdate="20181112T112852Z">
+        <seg>場合によっては、タイプが必要になることがあります。 さらに効率的なアルゴリズムを知っているときにそれらの余分な行動を追加的に専門化すること 特定の場合に使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In such cases, the result is always 1-d.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155056Z" creationid="hsugawa8651" creationdate="20181109T155056Z">
@@ -5573,6 +5601,14 @@ in most languages taking three operands:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230049Z" creationid="hsugawa8651" creationdate="20181109T230049Z">
         <seg>その名前が唯一の演算子となります。 ほとんどの言語で3つのオペランドを使用しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is also often useful to allow iteration over a collection in &lt;x1/&gt;reverse order&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112857Z" creationid="hsugawa8651" creationdate="20181112T112857Z">
+        <seg>また、&lt;x1/&gt;逆順&lt;x2/&gt;でのコレクションでの反復を可能にすることも、しばしば有用である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6345,6 +6381,14 @@ the variables &lt;x11/&gt;A&lt;x12/&gt; and &lt;x13/&gt;x&lt;x14/&gt; were disti
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025111Z" creationid="hsugawa8651" creationdate="20181110T025111Z">
         <seg>次の点に注目してください。 関数呼び出し&lt;x9/&gt;x&lt;x10/&gt;は、まだ同じ配列にバインドされていますが、その配列の内容は変更されています。 変数&lt;x11/&gt;A&lt;x12/&gt;および&lt;x13/&gt;x14/&gt;は、同じ可変の&lt;x15/&gt;配列&lt;x16/&gt;オブジェクトを参照する別個のバインディングである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now, when we ask Julia to &lt;x1/&gt;`collect`&lt;x2/&gt; all the elements into an array it can preallocate a &lt;x3/&gt;Vector{Int}&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112802Z" creationid="hsugawa8651" creationdate="20181112T112802Z">
+        <seg>さて、ジュリアに「collect」&lt;x×2/&gt;の要素を「collect」&lt;x2/&gt;に尋ねると、&lt;x3/&gt;Vector{Int}&lt;x4/&gt;をプリ割り当てすることができる。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7876,6 +7920,15 @@ cooperative multitasking are implemented in Julia using tasks.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is a very common pattern throughout Julia Base: a small set of required methods
+define an informal interface that enable many fancier behaviors.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112840Z" creationid="hsugawa8651" creationdate="20181112T112840Z">
+        <seg>これは、Julia Base全体で非常に一般的なパターンです。必要なメソッドの集合です。 多くのファン的な振る舞いを可能にするインフォーマルなインターフェースを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is accomplished just by making an appropriate call with
 &lt;x1/&gt;`ccall`&lt;x2/&gt; syntax, which looks like an ordinary function call.</seg>
       </tuv>
@@ -8372,6 +8425,15 @@ differences between operating systems.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>While we can rely upon generic implementations, we can also extend specific methods where we know
+there is a simpler algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112745Z" creationid="hsugawa8651" creationdate="20181112T112745Z">
+        <seg>一般的な実装に依存することもできますが、特定の方法を拡張することもできます。 より単純なアルゴリズムがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>William Kahan&lt;x1/&gt;, commonly known as the "Father
 of Floating-Point".</seg>
       </tuv>
@@ -8684,6 +8746,14 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`Iterators.reverse(iterator)`&lt;x1/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112900Z" creationid="hsugawa8651" creationdate="20181112T112900Z">
+        <seg>`Iterators.reverse(iterator)`&lt;x1/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`NamedTuple`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041616Z" creationid="hsugawa8651" creationdate="20181112T041616Z">
@@ -8864,6 +8934,14 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112015Z" creationid="hsugawa8651" creationdate="20181112T112015Z">
         <seg>`one(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`push!`&lt;x1/&gt;ing each element into a &lt;x2/&gt;Vector{Any}&lt;x3/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112721Z" creationid="hsugawa8651" creationdate="20181112T112721Z">
+        <seg>「プッシュ!」&lt;x1/&gt;各要素を&lt;x2/&gt;ベクトル{Any}&lt;x3/&gt;に押し込みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10376,6 +10454,40 @@ julia&gt; A[:, 3]
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; Base.eltype(::Type{Squares}) = Int &lt;x1/&gt; Note that this is defined for the type
+
+julia&gt; Base.length(S::Squares) = S.count</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112644Z" creationid="hsugawa8651" creationdate="20181112T112644Z">
+        <seg>julia&gt; Base.eltype(::Type{Squares}) = Int &lt;x1/&gt; Note that this is defined for the type
+
+julia&gt; Base.length(S::Squares) = S.count</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Base.iterate(rS::Iterators.Reverse{Squares}, state=rS.itr.count) = state &lt; 1 ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112915Z" creationid="hsugawa8651" creationdate="20181112T112915Z">
+        <seg>julia&gt; Base.iterate(rS::Iterators.Reverse{Squares}, state=rS.itr.count) = state &lt; 1 ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Base.sum(S::Squares) = (n = S.count; return n*(n+1)*(2n+1)÷6)
+
+julia&gt; sum(Squares(1803))
+1955361914</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112844Z" creationid="hsugawa8651" creationdate="20181112T112844Z">
+        <seg>julia&gt; Base.sum(S::Squares) = (n = S.count; return n*(n+1)*(2n+1)÷6)
+
+julia&gt; sum(Squares(1803))
+1955361914</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; BigInt(typemax(Int64)) + 1
 9223372036854775808
 
@@ -10814,6 +10926,24 @@ julia&gt; broadcast(+, a, b)
 2×2 Array{Float64,2}:
  1.71056  0.847604
  1.73659  0.873631</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; collect(Squares(4))
+4-element Array{Int64,1}:
+  1
+  4
+  9
+ 16</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112726Z" creationid="hsugawa8651" creationdate="20181112T112726Z">
+        <seg>julia&gt; collect(Squares(4))
+4-element Array{Int64,1}:
+  1
+  4
+  9
+ 16</seg>
       </tuv>
     </tu>
     <tu>
