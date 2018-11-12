@@ -211,6 +211,14 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id man-interface-array)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113200Z" creationid="hsugawa8651" creationdate="20181112T113200Z">
+        <seg>(@id man-interface-array)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id man-loops)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230921Z" creationid="hsugawa8651" creationdate="20181109T230921Z">
@@ -1108,6 +1116,15 @@ of the expression by the variable:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111834Z" creationid="hsugawa8651" creationdate="20181112T111834Z">
         <seg>さらに、括弧で括られた表現は変数の係数として使用され、乗算を意味します。 変数による表現は次のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Additionally, to support the syntax &lt;x1/&gt;S[end]&lt;x2/&gt;, we must define &lt;x3/&gt;`lastindex`&lt;x4/&gt; to specify the last
+valid index.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113116Z" creationid="hsugawa8651" creationdate="20181112T113116Z">
+        <seg>さらに、構文&lt;x1/&gt;S[end]&lt;x2/&gt;をサポートするためには、最後の値を指定するために&lt;x3/&gt;`lastindex'&lt;x4/&gt;を定義する必要があります。 有効なインデックスです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4732,6 +4749,15 @@ objects of a more specific type, such as &lt;x3/&gt;`Float64`&lt;x4/&gt; or &lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For the &lt;x1/&gt;Squares&lt;x2/&gt; iterable above, we can easily compute the &lt;x3/&gt;i&lt;x4/&gt;th element of the sequence by squaring
+it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113043Z" creationid="hsugawa8651" creationdate="20181112T113043Z">
+        <seg>上記の&lt;x1/&gt;の2乗&lt;x2/&gt;iterable上では、シーケンスの&lt;x3/&gt;i&lt;x4/&gt;番目の要素を2乗することによって簡単に計算することができます。 そうです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For the sake of clarity,
 let's try a two-way version first:</seg>
       </tuv>
@@ -5264,6 +5290,14 @@ type explicitly, a type can be prepended to the comprehension.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In order to support indexing with ranges or vectors of &lt;x9/&gt;Int&lt;x10/&gt;s, separate methods must be written:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113139Z" creationid="hsugawa8651" creationdate="20181112T113139Z">
+        <seg>&lt;x9/&gt;Int&lt;x10/&gt;の範囲またはベクトルを用いたインデックス作成をサポートするためには、別の方法を記述する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In other
 words, while developing you might use a workflow something like this:</seg>
       </tuv>
@@ -5472,6 +5506,15 @@ vector of integers that is returned by &lt;x5/&gt;`findall(B)`&lt;x6/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Indexing with
+anything other than an &lt;x5/&gt;Int&lt;x6/&gt; will throw a &lt;x7/&gt;`MethodError`&lt;x8/&gt; saying that there was no matching method.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113131Z" creationid="hsugawa8651" creationdate="20181112T113131Z">
+        <seg>インデックス作成 &lt;x5/&gt;Int&lt;x6/&gt;以外の何かは、一致する方法がないことを示す&lt;x7/&gt;'MethodError'&lt;x8/&gt;をスローします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Inf16&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110804Z" creationid="hsugawa8651" creationdate="20181112T110804Z">
@@ -5511,6 +5554,15 @@ read as: &lt;x11/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230354Z" creationid="hsugawa8651" creationdate="20181109T230354Z">
         <seg>&lt;x4/&gt;&lt;x5/&gt;end&lt;x6/&gt;ではなく、&lt;x7/&gt;&lt;x8/&gt;&amp;&amp;&lt;x9/&gt;&lt;x10/&gt;(これは以下のようなものがあります)&lt;x x/&gt;&lt;x10/&gt;( read as:&lt;x11/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Instead of defining all these behaviors
+ourselves, we can officially define it as a subtype of an &lt;x6/&gt;`AbstractArray`&lt;x7/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113207Z" creationid="hsugawa8651" creationdate="20181112T113207Z">
+        <seg>これらすべての行動を定義する代わりに 私たちは、公式には、&lt;x6/&gt;'AbstractArray'&lt;x7/&gt;のサブタイプとして定義することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5654,6 +5706,14 @@ functions may be unexpectedly slow.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160322Z" creationid="hsugawa8651" creationdate="20181109T160322Z">
         <seg>これらの操作は、次のように操作することをお勧めします。 ほとんど一定の時間的複雑さ(技術的には1)、あるいは技術的には複雑さがある 機能が予期せぬほど遅くなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is recommended to also define &lt;x5/&gt;`firstindex`&lt;x6/&gt; to specify the first valid index:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113111Z" creationid="hsugawa8651" creationdate="20181112T113111Z">
+        <seg>また、最初の有効なインデックスを指定するには、&lt;x5/&gt;'firstindex&lt;x6/&gt;を定義することをお勧めします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6375,6 +6435,14 @@ Evaluation in Julia, as outlined in the next section.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note, though, that the above &lt;x1/&gt;only&lt;x2/&gt; defines &lt;x3/&gt;`getindex`&lt;x4/&gt; with one integer index.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113135Z" creationid="hsugawa8651" creationdate="20181112T113135Z">
+        <seg>しかし、上記の&lt;x1/&gt;は、1つの整数インデックスを有する&lt;x3/&gt;'getindex'&lt;x4/&gt;を定義することに注意されたい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Notice that, after
 the function call, &lt;x9/&gt;x&lt;x10/&gt; is still bound to the same array, but the content of that array changed:
 the variables &lt;x11/&gt;A&lt;x12/&gt; and &lt;x13/&gt;x&lt;x14/&gt; were distinct bindings referring to the same mutable &lt;x15/&gt;Array&lt;x16/&gt; object.</seg>
@@ -6627,6 +6695,14 @@ an interactive session.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223843Z" creationid="hsugawa8651" creationdate="20181109T223843Z">
         <seg>戻り型(宣言されたC型をJuliaにマッピングするには、次を参照)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Returns a tuple containing the dimensions of &lt;x1/&gt;A&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113218Z" creationid="hsugawa8651" creationdate="20181112T113218Z">
+        <seg>&lt;x1/&gt;A&lt;x2/&gt;の次元を含むタプルを返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7259,6 +7335,14 @@ known as a read-eval-print loop or "REPL") by double-clicking the Julia executab
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The first index</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113023Z" creationid="hsugawa8651" creationdate="20181112T113012Z">
+        <seg>最初のインデックス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The floating-point literal expression &lt;x1/&gt;1e10&lt;x2/&gt; could be interpreted as the numeric literal &lt;x3/&gt;1&lt;x4/&gt; multiplied
 by the variable &lt;x5/&gt;e10&lt;x6/&gt;, and similarly with the equivalent &lt;x7/&gt;E&lt;x8/&gt; form.</seg>
       </tuv>
@@ -7350,6 +7434,14 @@ variable or expression.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223955Z" creationid="hsugawa8651" creationdate="20181109T223955Z">
         <seg>入力タイプは、タプルではなく、リテラルタプルとして記述する必要があります。 変数または式。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The last index, used in &lt;x1/&gt;X[end]&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113029Z" creationid="hsugawa8651" creationdate="20181112T113029Z">
+        <seg>最後のインデックスで、&lt;x1/&gt;X[end]&lt;x2/&gt;で使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7813,6 +7905,15 @@ etc.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This &lt;x4/&gt;Squares&lt;x5/&gt; sequence is starting to look
+more and more like a vector as we've added behaviors to it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113152Z" creationid="hsugawa8651" creationdate="20181112T113152Z">
+        <seg>この&lt;x4/&gt;Squares&lt;x5/&gt;シーケンスが開始され始めています。 これは、ビヘイビアを追加したときのベクトルに似ています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This applies not only to
 arrays and other mutable objects which are normally heap-allocated, but also to
 scalar values such as integers and floats which are normally stack-allocated and
@@ -8097,6 +8198,16 @@ cases, an error occurs since the left-hand value is not a function.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To actually support
+reverse-order iteration, however, an iterator
+type &lt;x2/&gt;T&lt;x3/&gt; needs to implement &lt;x4/&gt;iterate&lt;x5/&gt; for &lt;x6/&gt;Iterators.Reverse{T}&lt;x7/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112942Z" creationid="hsugawa8651" creationdate="20181112T112942Z">
+        <seg>実際にサポートするには 逆の順序で反復される反復 &lt;x2/&gt;T&lt;x3/&gt;は&lt;x6/&gt;反復子に&lt;x4/&gt;反復&lt;x5/&gt;を実装する必要があります。逆{T}&lt;x7/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To allow computations with arbitrary-precision integers and floating point numbers, Julia wraps
 the &lt;x1/&gt;GNU Multiple Precision Arithmetic Library (GMP)&lt;x2/&gt; and the &lt;x3/&gt;GNU MPFR Library&lt;x4/&gt;,
 respectively.</seg>
@@ -8156,6 +8267,14 @@ preceded by a numeric literal, implying multiplication.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111730Z" creationid="hsugawa8651" creationdate="20181112T111730Z">
         <seg>一般的な数式や式をより明確にするために、Juliaは変数をすぐに使用できるようにします。 先行する数値リテラルは、乗算を意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To opt into this behavior, &lt;x7/&gt;Squares&lt;x8/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113053Z" creationid="hsugawa8651" creationdate="20181112T113053Z">
+        <seg>この動作を選択するには、&lt;x7/&gt;Squares&lt;x8/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -8329,6 +8448,14 @@ manner that allows all custom arrays to behave similarly.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We can expose this as an indexing expression &lt;x5/&gt;S[i]&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113049Z" creationid="hsugawa8651" creationdate="20181112T113049Z">
+        <seg>これは、インデックス表現&lt;x5/&gt;S[i]&lt;x6/&gt;として公開することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We can iterate over all the elements:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112506Z" creationid="hsugawa8651" creationdate="20181112T112506Z">
@@ -8482,6 +8609,22 @@ like any value:</seg>
  -0.4042391538522658
  -0.8360218615377305
  -0.6080830096407656</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>X[i] = v&lt;x1/&gt;, indexed assignment</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113006Z" creationid="hsugawa8651" creationdate="20181112T113006Z">
+        <seg>X[i] = v&lt;x1/&gt;, indexed assignment</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>X[i]&lt;x1/&gt;, indexed element access</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112959Z" creationid="hsugawa8651" creationdate="20181112T112959Z">
+        <seg>X[i]&lt;x1/&gt;, indexed element access</seg>
       </tuv>
     </tu>
     <tu>
@@ -8870,6 +9013,14 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025910Z" creationid="hsugawa8651" creationdate="20181110T025910Z">
         <seg>`getindex`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`getindex`&lt;x1/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113057Z" creationid="hsugawa8651" creationdate="20181112T113057Z">
+        <seg>`getindex`&lt;x1/&gt;:</seg>
       </tuv>
     </tu>
     <tu>
@@ -9528,6 +9679,30 @@ which is a simplified version of the actual definition from &lt;x2/&gt;`env.jl`&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224115Z" creationid="hsugawa8651" creationdate="20181109T224115Z">
         <seg>getenv&lt;x1/&gt;Cライブラリ関数は、次のJulia関数にラップされています。 これは、&lt;x2/&gt;'env.jl'&lt;x3/&gt;からの実際の定義の簡略化されたバージョンです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>getindex(A, I::Vararg{Int, N})&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113231Z" creationid="hsugawa8651" creationdate="20181112T113231Z">
+        <seg>getindex(A, I::Vararg{Int, N})&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>getindex(A, i::Int)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113222Z" creationid="hsugawa8651" creationdate="20181112T113222Z">
+        <seg>getindex(A, i::Int)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>getindex(X, i)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112956Z" creationid="hsugawa8651" creationdate="20181112T112956Z">
+        <seg>getindex(X, i)&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -10466,6 +10641,48 @@ julia&gt; Base.length(S::Squares) = S.count</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; Base.firstindex(S::Squares) = 1
+
+julia&gt; Base.lastindex(S::Squares) = length(S)
+
+julia&gt; Squares(23)[end]
+529</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113120Z" creationid="hsugawa8651" creationdate="20181112T113120Z">
+        <seg>julia&gt; Base.firstindex(S::Squares) = 1
+
+julia&gt; Base.lastindex(S::Squares) = length(S)
+
+julia&gt; Squares(23)[end]
+529</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Base.getindex(S::Squares, i::Number) = S[convert(Int, i)]
+
+julia&gt; Base.getindex(S::Squares, I) = [S[i] for i in I]
+
+julia&gt; Squares(10)[[3,4.,5]]
+3-element Array{Int64,1}:
+  9
+ 16
+ 25</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113142Z" creationid="hsugawa8651" creationdate="20181112T113142Z">
+        <seg>julia&gt; Base.getindex(S::Squares, i::Number) = S[convert(Int, i)]
+
+julia&gt; Base.getindex(S::Squares, I) = [S[i] for i in I]
+
+julia&gt; Squares(10)[[3,4.,5]]
+3-element Array{Int64,1}:
+  9
+ 16
+ 25</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; Base.iterate(rS::Iterators.Reverse{Squares}, state=rS.itr.count) = state &lt; 1 ?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112915Z" creationid="hsugawa8651" creationdate="20181112T112915Z">
@@ -11240,6 +11457,26 @@ ERROR: UndefVarError: j not defined</seg>
 
 julia&gt; j
 ERROR: UndefVarError: j not defined</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; function Base.getindex(S::Squares, i::Int)
+           1 &lt;= i &lt;= S.count || throw(BoundsError(S, i))
+           return i*i
+       end
+
+julia&gt; Squares(100)[23]
+529</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113100Z" creationid="hsugawa8651" creationdate="20181112T113100Z">
+        <seg>julia&gt; function Base.getindex(S::Squares, i::Int)
+           1 &lt;= i &lt;= S.count || throw(BoundsError(S, i))
+           return i*i
+       end
+
+julia&gt; Squares(100)[23]
+529</seg>
       </tuv>
     </tu>
     <tu>
@@ -12722,6 +12959,14 @@ julia&gt; ∑(2, 3)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>lastindex(X)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113016Z" creationid="hsugawa8651" creationdate="20181112T113016Z">
+        <seg>lastindex(X)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>length(iter)&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112217Z" creationid="hsugawa8651" creationdate="20181112T112217Z">
@@ -12921,6 +13166,28 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>nothing : (state*state, state-1)
+
+julia&gt; collect(Iterators.reverse(Squares(4)))
+4-element Array{Int64,1}:
+ 16
+  9
+  4
+  1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112945Z" creationid="hsugawa8651" creationdate="20181112T112945Z">
+        <seg>nothing : (state*state, state-1)
+
+julia&gt; collect(Iterators.reverse(Squares(4)))
+4-element Array{Int64,1}:
+ 16
+  9
+  4
+  1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>obj3 = MyModule.someotherfunction(obj2, c)
 ...</seg>
       </tuv>
@@ -12959,6 +13226,14 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>setindex!(A, v, i::Int)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113245Z" creationid="hsugawa8651" creationdate="20181112T113245Z">
+        <seg>setindex!(A, v, i::Int)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>shorthand for &lt;x1/&gt;cat(A...; dims=1)&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154553Z" creationid="hsugawa8651" creationdate="20181109T154553Z">
@@ -12979,6 +13254,14 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110235Z" creationid="hsugawa8651" creationdate="20181112T110235Z">
         <seg>single&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>size(A)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113213Z" creationid="hsugawa8651" creationdate="20181112T113213Z">
+        <seg>size(A)&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
