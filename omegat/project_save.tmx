@@ -4449,6 +4449,15 @@ outside/afterwards.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you call it in an interactive session without assigning the return value anywhere, you will
+see the tuple returned:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101352Z" creationid="hsugawa8651" creationdate="20181112T101352Z">
+        <seg>これを対話型セッションで呼び出しても、戻り値はどこにも割り当てられない場合は 戻されたタプルを参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you don't
 specify this trait, the default value &lt;x5/&gt;IndexCartesian()&lt;x6/&gt; is used.</seg>
       </tuv>
