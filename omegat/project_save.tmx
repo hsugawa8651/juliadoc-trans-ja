@@ -941,6 +941,14 @@ array it indexes into.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A simple example is an iterable sequence of square numbers with a defined length:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112450Z" creationid="hsugawa8651" creationdate="20181112T112450Z">
+        <seg>単純な例は、定義された長さの2乗数のiterableシーケンスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A tuple of input types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223952Z" creationid="hsugawa8651" creationdate="20181109T223952Z">
@@ -1247,6 +1255,14 @@ be to replicate the vector to the size of the matrix:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155529Z" creationid="hsugawa8651" creationdate="20181109T155529Z">
         <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;のサブタイプであるスカラーインデックスの任意のカスタム配列</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Any object that defines this function is iterable and can be used in the &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref lib-collections-iteration).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112432Z" creationid="hsugawa8651" creationdate="20181112T112432Z">
+        <seg>この関数を定義するすべてのオブジェクトは、iterableであることができ、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref libコレクション反復)で使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4249,6 +4265,14 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>EltypeUnknown()&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112342Z" creationid="hsugawa8651" creationdate="20181112T112342Z">
+        <seg>EltypeUnknown()&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Emit bounds checks always or never (ignoring declarations)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224752Z" creationid="hsugawa8651" creationdate="20181109T224752Z">
@@ -5444,6 +5468,16 @@ vector of integers that is returned by &lt;x5/&gt;`findall(B)`&lt;x6/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Instead
+of mutating objects as they are iterated over, Julia iterators may keep track
+of the iteration state externally from the object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112355Z" creationid="hsugawa8651" creationdate="20181112T112355Z">
+        <seg>代わりに 反復されるときにオブジェクトをミューテートすることで、ジュリア反復子は追跡することができる オブジェクトからの繰り返し状態の繰り返し状態です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Instead of &lt;x3/&gt;if &lt;x4/&gt; &lt;x5/&gt; end&lt;x6/&gt;, one can write &lt;x7/&gt;&lt;x8/&gt; &amp;&amp; &lt;x9/&gt;&lt;x10/&gt; (which could be
 read as: &lt;x11/&gt;</seg>
       </tuv>
@@ -5514,6 +5548,14 @@ the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111756Z" creationid="hsugawa8651" creationdate="20181112T111736Z">
         <seg>また、指数関数をよりエレガントに書くことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It can also be used directly in a &lt;x4/&gt;`for`&lt;x5/&gt; loop since the syntax:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112437Z" creationid="hsugawa8651" creationdate="20181112T112437Z">
+        <seg>構文は、構文が次のように指定されているため、&lt;x x/&gt;ループでは直接&lt;x4/&gt;で使用することもできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6631,6 +6673,14 @@ iterable type.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Sequential iteration is implemented by the &lt;x1/&gt;`iterate`&lt;x2/&gt; function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112352Z" creationid="hsugawa8651" creationdate="20181112T112352Z">
+        <seg>逐次的反復は、&lt;x1/&gt;'reiterate'&lt;x2/&gt;関数によって実装される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Set &lt;x1/&gt; as the home project/environment.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224611Z" creationid="hsugawa8651" creationdate="20181109T224611Z">
@@ -6729,6 +6779,14 @@ which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225809Z" creationid="hsugawa8651" creationdate="20181109T225809Z">
         <seg>これらはかなり小さいので、簡単な表現で簡単に1行に配置することができます。 ここでは、&lt;x1/&gt;(;)&lt;x2/&gt;チェイン構文が便利です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SizeUnknown()&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112328Z" creationid="hsugawa8651" creationdate="20181112T112328Z">
+        <seg>SizeUnknown()&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -7371,6 +7429,15 @@ of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, e
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The return value from iterate
+is always either a tuple of a value and a state, or &lt;x3/&gt;nothing&lt;x4/&gt; if no elements remain.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112400Z" creationid="hsugawa8651" creationdate="20181112T112400Z">
+        <seg>反復からの戻り値 は常に値と状態のタプルであるか、あるいは&lt;x3/&gt;何もない場合は&lt;x3/&gt;何もしません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The same relationship holds for &lt;x8/&gt;min.(a,b)&lt;x9/&gt; and &lt;x10/&gt;minimum(a)&lt;x11/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160036Z" creationid="hsugawa8651" creationdate="20181109T160036Z">
@@ -7421,6 +7488,15 @@ to conditional execution of longer blocks of code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230045Z" creationid="hsugawa8651" creationdate="20181109T230045Z">
         <seg>いわゆる「三元演算子」&lt;x1/&gt;?&lt;x2/&gt;は、&lt;x4/&gt;-&lt;x5/&gt;elseif&lt;x6/&gt;-&lt;x7/&gt;else&lt;x8/&gt;の場合、&lt;x4/&gt;と密接に関係している。 しかし、単一の表現値間の条件付き選択が必要とされる場合に使用されます。 より長いブロックを条件付きで実行することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The state object will be passed back to the iterate function on the next iteration
+and is generally considered an implementation detail private to the iterable object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112403Z" creationid="hsugawa8651" creationdate="20181112T112403Z">
+        <seg>状態オブジェクトは、次の反復の繰り返し関数に渡されます。 一般的には、iterableオブジェクトに対してプライベートな実装の詳細と見なされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7526,6 +7602,15 @@ usually by calling &lt;x13/&gt;`show(io, mime, x)`&lt;x14/&gt; or &lt;x15/&gt;`r
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043318Z" creationid="hsugawa8651" creationdate="20181112T043318Z">
         <seg>次に、&lt;x7/&gt;D&lt;x8/&gt;上に表示できるMIMEタイプ(&lt;x5/&gt;mime&lt;x6/&gt;ストリング)ごとに、次のいずれかを実行する必要があります。 関数&lt;x9/&gt;ディスプレイ(d::D,:MIME"mime",x)=&lt;x10/&gt;x12/&gt;を定義します。&lt;x11/&gt;x12/&gt;は、MIMEタイプとして&lt;x11/&gt;x&lt;x12/&gt;を表示します。 通常は、&lt;x13/&gt;`show(io,mime,x)`&lt;x14/&gt;または&lt;x15/&gt;`repr(io,mime,x)`&lt;x16/&gt;を呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are a few more methods we can extend to give Julia more information about this iterable
+collection.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112544Z" creationid="hsugawa8651" creationdate="20181112T112527Z">
+        <seg>その他にも、Juliaにこの問題に関する情報を提供する方法がいくつかある。 のリストを参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8140,6 +8225,14 @@ for the last entry in a conditional chain is an error:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Value returned by &lt;x1/&gt;IteratorEltype(IterType)&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112335Z" creationid="hsugawa8651" creationdate="20181112T112335Z">
+        <seg>&lt;x1/&gt;IteratorEltypeによって返される値&lt;x/&gt;(IterType)&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Value returned by &lt;x1/&gt;IteratorSize(IterType)&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112254Z" creationid="hsugawa8651" creationdate="20181112T112254Z">
@@ -8179,6 +8272,22 @@ manner that allows all custom arrays to behave similarly.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160424Z" creationid="hsugawa8651" creationdate="20181109T160424Z">
         <seg>&lt;x15/&gt;アレイ&lt;x16/&gt;に対しては、必要な動作を超えて実装されているオペレーションはほとんどありません。 すべての&lt;x17/&gt;AbstractArray&lt;x18/&gt;;アレイライブラリの多くは一般的に実装されています。 すべてのカスタム・アレイが同じように動作するようにする方法です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We can iterate over all the elements:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112506Z" creationid="hsugawa8651" creationdate="20181112T112506Z">
+        <seg>すべての要素を繰り返し処理することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We know that the elements in a &lt;x1/&gt;Squares&lt;x2/&gt; sequence will always be &lt;x3/&gt;Int&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112536Z" creationid="hsugawa8651" creationdate="20181112T112536Z">
+        <seg>&lt;x1/&gt;2乗&lt;x2/&gt;の配列内の要素は常に&lt;x3/&gt;Int&lt;x4/&gt;であることがわかる。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8268,6 +8377,14 @@ of Floating-Point".</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111531Z" creationid="hsugawa8651" creationdate="20181112T111531Z">
         <seg>ウィリアム・カハン&lt;x1/&gt;、通称「父」 浮動小数点の値を指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>With only &lt;x1/&gt;`iterate`&lt;x2/&gt; definition, the &lt;x3/&gt;Squares&lt;x4/&gt; type is already pretty powerful.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112503Z" creationid="hsugawa8651" creationdate="20181112T112503Z">
+        <seg>&lt;x1/&gt;'reiterate''&lt;x2/&gt;定義では、&lt;x3/&gt;Squares&lt;x4/&gt;タイプはすでにかなり強力です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9943,6 +10060,32 @@ NaN</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; 25 in Squares(10)
+true
+
+julia&gt; using Statistics
+
+julia&gt; mean(Squares(100))
+3383.5
+
+julia&gt; std(Squares(100))
+3024.355854282583</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112556Z" creationid="hsugawa8651" creationdate="20181112T112556Z">
+        <seg>julia&gt; 25 in Squares(10)
+true
+
+julia&gt; using Statistics
+
+julia&gt; mean(Squares(100))
+3383.5
+
+julia&gt; std(Squares(100))
+3024.355854282583</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; 2^2x
 64</seg>
       </tuv>
@@ -10917,6 +11060,32 @@ julia&gt; g(2,3)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; for i in Squares(7)
+           println(i)
+       end
+1
+4
+9
+16
+25
+36
+49</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112509Z" creationid="hsugawa8651" creationdate="20181112T112509Z">
+        <seg>julia&gt; for i in Squares(7)
+           println(i)
+       end
+1
+4
+9
+16
+25
+36
+49</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; for j = 1:5
            println(j)
        end
@@ -11513,6 +11682,22 @@ Float16(8.0)</seg>
   0.382396
   0.297288
  -0.0104452</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; struct Squares
+           count::Int
+       end
+
+julia&gt; Base.iterate(S::Squares, state=1) = state &gt; S.count ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112454Z" creationid="hsugawa8651" creationdate="20181112T112454Z">
+        <seg>julia&gt; struct Squares
+           count::Int
+       end
+
+julia&gt; Base.iterate(S::Squares, state=1) = state &gt; S.count ?</seg>
       </tuv>
     </tu>
     <tu>
@@ -12594,6 +12779,14 @@ while next !== nothing
     &lt;x1/&gt; body
     next = iterate(iter, state)
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>nothing : (state*state, state+1)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112458Z" creationid="hsugawa8651" creationdate="20181112T112458Z">
+        <seg>nothing : (state*state, state+1)</seg>
       </tuv>
     </tu>
     <tu>
