@@ -336,6 +336,22 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>-2^15</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110132Z" creationid="hsugawa8651" creationdate="20181112T110132Z">
+        <seg>-2^15</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-2^7</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110121Z" creationid="hsugawa8651" creationdate="20181112T110121Z">
+        <seg>-2^7</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>-v&lt;x1/&gt;, &lt;x2/&gt;--version&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224601Z" creationid="hsugawa8651" creationdate="20181109T224549Z">
@@ -348,6 +364,14 @@ julia&gt; range(minmax(10, 2))
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224510Z" creationid="hsugawa8651" creationdate="20181109T224510Z">
         <seg>...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110126Z" creationid="hsugawa8651" creationdate="20181112T110126Z">
+        <seg>0</seg>
       </tuv>
     </tu>
     <tu>
@@ -372,6 +396,46 @@ julia&gt; range(minmax(10, 2))
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025013Z" creationid="hsugawa8651" creationdate="20181110T025013Z">
         <seg>10</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>16</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110131Z" creationid="hsugawa8651" creationdate="20181112T110131Z">
+        <seg>16</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>2^15 - 1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110133Z" creationid="hsugawa8651" creationdate="20181112T110133Z">
+        <seg>2^15 - 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>2^7 - 1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110122Z" creationid="hsugawa8651" creationdate="20181112T110122Z">
+        <seg>2^7 - 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>2^8 - 1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110127Z" creationid="hsugawa8651" creationdate="20181112T110127Z">
+        <seg>2^8 - 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>8</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110043Z" creationid="hsugawa8651" creationdate="20181112T110043Z">
+        <seg>8</seg>
       </tuv>
     </tu>
     <tu>
@@ -504,6 +568,15 @@ call highly tuned and optimized BLAS and LAPACK functions using just the pointer
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224412Z" creationid="hsugawa8651" creationdate="20181109T224412Z">
         <seg>&lt;x5/&gt;-p n&lt;x6/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x5/&gt;X .+= Y&lt;x6/&gt; etcetera is equivalent to &lt;x7/&gt;X .= X .+ Y&lt;x8/&gt; and results in a fused in-place assignment;
+see also &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-dot-operators).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T105916Z" creationid="hsugawa8651" creationdate="20181112T105916Z">
+        <seg>&lt;x5/&gt;X.+=Y&lt;x6/&gt;eteteraは&lt;x7/&gt;Xと同等であり、X.+Y&lt;x8/&gt;Y&lt;x8/&gt;となり、結果は融合されたインプレース割り当てになります。 &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man dot演算子)も参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3141,6 +3214,15 @@ Base.IOContext(::IO, ::IOContext)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Binary (or unary) operators like &lt;x1/&gt;.+&lt;x2/&gt; are handled with the same mechanism:
+they are equivalent to &lt;x3/&gt;broadcast&lt;x4/&gt; calls and are fused with other nested "dot" calls.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T105913Z" creationid="hsugawa8651" creationdate="20181112T105913Z">
+        <seg>&lt;x1/&gt;.+&lt;x2/&gt;のようなバイナリ演算子(または単項演算子)は、同じメカニズムで処理されます。 これらは、&lt;x3/&gt;ブロードキャスト&lt;x4/&gt;コールと同等であり、他のネストされた"ドット"コールと融合されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Binary and octal literals are also supported:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225352Z" creationid="hsugawa8651" creationdate="20181109T225352Z">
@@ -5014,6 +5096,15 @@ values are not copied when they are passed to functions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia has
+a sophisticated type system and allows multiple dispatch on argument types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T105931Z" creationid="hsugawa8651" creationdate="20181112T105931Z">
+        <seg>ジュリアは 洗練されたタイプのシステムで、引数型で複数のディスパッチを実行することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia has a "no boilerplate" philosophy:
 functions can be called directly from Julia without any "glue" code, code generation, or compilation
 -- even from the interactive prompt.</seg>
@@ -5382,6 +5473,18 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025132Z" creationid="hsugawa8651" creationdate="20181110T025132Z">
         <seg>いいえ、関数内の&lt;x/&gt;または&lt;x3/&gt;インポート&lt;x4/&gt;ステートメントを&lt;x2/&gt;のインポートを使用することはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>None of the examples
+given here provide any type annotations on their arguments, meaning that they are applicable to
+all types of arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T105935Z" creationid="hsugawa8651" creationdate="20181112T105935Z">
+        <seg>None of the examples
+given here provide any type annotations on their arguments, meaning that they are applicable to
+all types of arguments.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5786,6 +5889,14 @@ are common in Julia.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230224Z" creationid="hsugawa8651" creationdate="20181109T230224Z">
         <seg>短絡評価は条件付き評価と非常によく似ています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Signed?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110030Z" creationid="hsugawa8651" creationdate="20181112T110030Z">
+        <seg>Signed?</seg>
       </tuv>
     </tu>
     <tu>
@@ -6348,6 +6459,15 @@ declaration syntax demonstrated above is equivalent to the following compact "as
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025224Z" creationid="hsugawa8651" creationdate="20181110T025224Z">
         <seg>&lt;x1/&gt;.…&lt;x2/&gt;演算子の2つの用途:slingingとspliting</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The type system is described in &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-types) and defining a function
+in terms of methods chosen by multiple dispatch on run-time argument types is described in &lt;x4/&gt;Methods&lt;x5/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T105942Z" creationid="hsugawa8651" creationdate="20181112T105939Z">
+        <seg>タイプシステムは&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref manタイプ)で記述され、関数を定義します。 ランタイム引数の種類に対する複数のディスパッチによって選択されるメソッドについては、&lt;x4/&gt;メソッド&lt;x5/&gt;で説明されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6961,6 +7081,14 @@ manner that allows all custom arrays to behave similarly.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We should mention here that this is far from a complete picture of defining functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T105929Z" creationid="hsugawa8651" creationdate="20181112T105929Z">
+        <seg>ここでは、関数を定義する完全な全体像とは程遠いことを説明しておきましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When a file is run as the main script using &lt;x1/&gt;julia file.jl&lt;x2/&gt; one might want to activate extra
 functionality like command line argument handling.</seg>
       </tuv>
@@ -7064,6 +7192,14 @@ like any value:</seg>
  -0.4042391538522658
  -0.8360218615377305
  -0.6080830096407656</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can also combine dot operations with function chaining using &lt;x1/&gt;`|&gt;`&lt;x2/&gt;, as in this example:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T105918Z" creationid="hsugawa8651" creationdate="20181112T105918Z">
+        <seg>また、次の例のように、ドット操作を&lt;x1/&gt;`&lt;x2/&gt;を使って関数連鎖と組み合わせることもできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7248,6 +7384,22 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`Int16`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110129Z" creationid="hsugawa8651" creationdate="20181112T110129Z">
+        <seg>`Int16`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Int8`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110036Z" creationid="hsugawa8651" creationdate="20181112T110036Z">
+        <seg>`Int8`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`Iterators.Pairs`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041819Z" creationid="hsugawa8651" creationdate="20181112T041819Z">
@@ -7276,6 +7428,22 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041614Z" creationid="hsugawa8651" creationdate="20181112T041614Z">
         <seg>`Set`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`UInt16`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110135Z" creationid="hsugawa8651" creationdate="20181112T110135Z">
+        <seg>`UInt16`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`UInt8`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110124Z" creationid="hsugawa8651" creationdate="20181112T110124Z">
+        <seg>`UInt8`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -10682,6 +10850,14 @@ julia&gt; 1 &gt; 2 ?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025755Z" creationid="hsugawa8651" creationdate="20181110T025755Z">
         <seg>x&lt;x1/&gt;と&lt;x2/&gt;y&lt;x3/&gt;はオーバーフローを回避します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>✓</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110039Z" creationid="hsugawa8651" creationdate="20181112T110039Z">
+        <seg>✓</seg>
       </tuv>
     </tu>
     <tu>
