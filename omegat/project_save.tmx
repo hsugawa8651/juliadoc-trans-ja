@@ -336,10 +336,34 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>-2^127</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110210Z" creationid="hsugawa8651" creationdate="20181112T110210Z">
+        <seg>-2^127</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>-2^15</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110132Z" creationid="hsugawa8651" creationdate="20181112T110132Z">
         <seg>-2^15</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-2^31</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110150Z" creationid="hsugawa8651" creationdate="20181112T110150Z">
+        <seg>-2^31</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-2^63</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110200Z" creationid="hsugawa8651" creationdate="20181112T110200Z">
+        <seg>-2^63</seg>
       </tuv>
     </tu>
     <tu>
@@ -400,6 +424,14 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>128</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110209Z" creationid="hsugawa8651" creationdate="20181112T110209Z">
+        <seg>128</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>16</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110131Z" creationid="hsugawa8651" creationdate="20181112T110131Z">
@@ -408,10 +440,66 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>2^127 - 1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110211Z" creationid="hsugawa8651" creationdate="20181112T110211Z">
+        <seg>2^127 - 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>2^128 - 1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110216Z" creationid="hsugawa8651" creationdate="20181112T110216Z">
+        <seg>2^128 - 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>2^15 - 1</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110133Z" creationid="hsugawa8651" creationdate="20181112T110133Z">
         <seg>2^15 - 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>2^16 - 1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110139Z" creationid="hsugawa8651" creationdate="20181112T110139Z">
+        <seg>2^16 - 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>2^31 - 1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110151Z" creationid="hsugawa8651" creationdate="20181112T110151Z">
+        <seg>2^31 - 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>2^32 - 1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110155Z" creationid="hsugawa8651" creationdate="20181112T110155Z">
+        <seg>2^32 - 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>2^63 - 1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110201Z" creationid="hsugawa8651" creationdate="20181112T110201Z">
+        <seg>2^63 - 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>2^64 - 1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110205Z" creationid="hsugawa8651" creationdate="20181112T110205Z">
+        <seg>2^64 - 1</seg>
       </tuv>
     </tu>
     <tu>
@@ -428,6 +516,22 @@ julia&gt; range(minmax(10, 2))
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110127Z" creationid="hsugawa8651" creationdate="20181112T110127Z">
         <seg>2^8 - 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>32</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110149Z" creationid="hsugawa8651" creationdate="20181112T110149Z">
+        <seg>32</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>64</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110158Z" creationid="hsugawa8651" creationdate="20181112T110158Z">
+        <seg>64</seg>
       </tuv>
     </tu>
     <tu>
@@ -464,6 +568,54 @@ Int64</seg>
         <seg>&lt;x1/&gt; 32-bit or 64-bit system:
 julia&gt; typeof(3000000000)
 Int64</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x1/&gt; 32-bit system:
+julia&gt; Int
+Int32
+julia&gt; UInt
+UInt32
+
+&lt;x2/&gt; 64-bit system:
+julia&gt; Int
+Int64
+julia&gt; UInt
+UInt64</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110343Z" creationid="hsugawa8651" creationdate="20181112T110343Z">
+        <seg>&lt;x1/&gt; 32-bit system:
+julia&gt; Int
+Int32
+julia&gt; UInt
+UInt32
+
+&lt;x2/&gt; 64-bit system:
+julia&gt; Int
+Int64
+julia&gt; UInt
+UInt64</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x1/&gt; 32-bit system:
+julia&gt; Sys.WORD_SIZE
+32
+
+&lt;x2/&gt; 64-bit system:
+julia&gt; Sys.WORD_SIZE
+64</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110333Z" creationid="hsugawa8651" creationdate="20181112T110333Z">
+        <seg>&lt;x1/&gt; 32-bit system:
+julia&gt; Sys.WORD_SIZE
+32
+
+&lt;x2/&gt; 64-bit system:
+julia&gt; Sys.WORD_SIZE
+64</seg>
       </tuv>
     </tu>
     <tu>
@@ -5062,6 +5214,15 @@ languages.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia also defines the types &lt;x1/&gt;Int&lt;x2/&gt; and &lt;x3/&gt;UInt&lt;x4/&gt;, which are aliases for the system's signed and unsigned
+native integer types respectively:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110348Z" creationid="hsugawa8651" creationdate="20181112T110348Z">
+        <seg>また、Juliaは、システムの署名と符号なしのエイリアスである、&lt;x1/&gt;Int&lt;x2/&gt;と&lt;x3/&gt;UInt&lt;x4/&gt;のタイプを定義します。 ネイティブの整数型:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia can be started in parallel mode with either the &lt;x1/&gt;-p&lt;x2/&gt; or the &lt;x3/&gt;--machine-file&lt;x4/&gt; options.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224410Z" creationid="hsugawa8651" creationdate="20181109T224410Z">
@@ -5450,6 +5611,14 @@ and pushing them onto a stack of display backends via &lt;x3/&gt;`pushdisplay`&l
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>N/A</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110219Z" creationid="hsugawa8651" creationdate="20181112T110219Z">
+        <seg>N/A</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Nested "dot calls" &lt;x5/&gt;f.(...)&lt;x6/&gt; (including calls to &lt;x7/&gt;.+&lt;x8/&gt; etcetera)
 &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-dot-operators) into a single &lt;x12/&gt;broadcast&lt;x13/&gt; call.</seg>
       </tuv>
@@ -5555,8 +5724,8 @@ the variables &lt;x11/&gt;A&lt;x12/&gt; and &lt;x13/&gt;x&lt;x14/&gt; were disti
       <tuv lang="EN-US">
         <seg>Number of bits</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225120Z" creationid="hsugawa8651" creationdate="20181109T225120Z">
-        <seg>ビット数</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110228Z" creationid="hsugawa8651" creationdate="20181109T225120Z">
+        <seg>Number of bits</seg>
       </tuv>
     </tu>
     <tu>
@@ -5689,6 +5858,14 @@ platforms such as Linux.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024714Z" creationid="hsugawa8651" creationdate="20181110T024714Z">
         <seg>おそらく、タイプを定義してから、新しいフィールドを追加する必要があることを認識しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Precision</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110226Z" creationid="hsugawa8651" creationdate="20181112T110226Z">
+        <seg>Precision</seg>
       </tuv>
     </tu>
     <tu>
@@ -6116,6 +6293,15 @@ indicate errors in various different ways, including by returning -1, 0, 1 and o
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The Julia internal variable &lt;x1/&gt;`Sys.WORD_SIZE`&lt;x2/&gt; indicates whether the target system is 32-bit
+or 64-bit:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110332Z" creationid="hsugawa8651" creationdate="20181112T110332Z">
+        <seg>Julia内部変数&lt;x1/&gt;`Sys.WORD_SIZE`&lt;x2/&gt;は、ターゲットシステムが32ビットであるかどうかを示します。 または64ビット:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The array library is implemented
 almost completely in Julia itself, and derives its performance from the compiler, just like any
 other code written in Julia.</seg>
@@ -6167,6 +6353,15 @@ evaluated as are necessary to determine the final boolean value of the entire ch
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154623Z" creationid="hsugawa8651" creationdate="20181109T154623Z">
         <seg>連結関数は、頻繁に使用されるため、特別な構文が使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default type for an integer literal depends on whether the target system has a 32-bit architecture
+or a 64-bit architecture:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110320Z" creationid="hsugawa8651" creationdate="20181112T110320Z">
+        <seg>整数リテラルのデフォルト・タイプは、ターゲット・システムに32ビット・アーキテクチャーがあるかどうかによって異なります。 64ビットのアーキテクチャ:</seg>
       </tuv>
     </tu>
     <tu>
@@ -6424,6 +6619,15 @@ of the binary data item is the minimal needed size, if the leading digit of the 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225415Z" creationid="hsugawa8651" creationdate="20181109T225415Z">
         <seg>サイズ リテラルの先頭桁が必要ない場合は、バイナリ・データ項目の最小サイズが2進数データ項目となります。 &lt;x1/&gt;0&lt;x2/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The size of the unsigned value is
+determined by the number of hex digits used:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110409Z" creationid="hsugawa8651" creationdate="20181112T110409Z">
+        <seg>符号なし値のサイズは 使用される16進数の数によって決定されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7320,6 +7524,14 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`Bool`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110217Z" creationid="hsugawa8651" creationdate="20181112T110217Z">
+        <seg>`Bool`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`CartesianIndex{N}`&lt;x1/&gt;s, which behave like an &lt;x2/&gt;N&lt;x3/&gt;-tuple of integers spanning multiple dimensions (see below for more details)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155514Z" creationid="hsugawa8651" creationdate="20181109T155514Z">
@@ -7368,6 +7580,30 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`Float16`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110230Z" creationid="hsugawa8651" creationdate="20181112T110230Z">
+        <seg>`Float16`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Float32`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110233Z" creationid="hsugawa8651" creationdate="20181112T110233Z">
+        <seg>`Float32`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Float64`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110237Z" creationid="hsugawa8651" creationdate="20181112T110237Z">
+        <seg>`Float64`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`IdDict`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041608Z" creationid="hsugawa8651" creationdate="20181112T041608Z">
@@ -7384,10 +7620,26 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`Int128`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110206Z" creationid="hsugawa8651" creationdate="20181112T110206Z">
+        <seg>`Int128`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`Int16`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110129Z" creationid="hsugawa8651" creationdate="20181112T110129Z">
         <seg>`Int16`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Int64`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110156Z" creationid="hsugawa8651" creationdate="20181112T110156Z">
+        <seg>`Int64`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -7432,10 +7684,34 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`UInt128`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110212Z" creationid="hsugawa8651" creationdate="20181112T110212Z">
+        <seg>`UInt128`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`UInt16`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110135Z" creationid="hsugawa8651" creationdate="20181112T110135Z">
         <seg>`UInt16`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`UInt32`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110152Z" creationid="hsugawa8651" creationdate="20181112T110152Z">
+        <seg>`UInt32`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`UInt64`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110202Z" creationid="hsugawa8651" creationdate="20181112T110202Z">
+        <seg>`UInt64`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -7846,6 +8122,14 @@ code_native(triple,(m128,))</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>double&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110238Z" creationid="hsugawa8651" creationdate="20181112T110238Z">
+        <seg>double&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>end
 end
 using Bar</seg>
@@ -7870,6 +8154,14 @@ using Bar</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224807Z" creationid="hsugawa8651" creationdate="20181109T224807Z">
         <seg>&lt;x1/&gt;に相当する--トラック割り当て=ユーザ&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>false&lt;x1/&gt; (0)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110221Z" creationid="hsugawa8651" creationdate="20181112T110221Z">
+        <seg>false&lt;x1/&gt; (0)</seg>
       </tuv>
     </tu>
     <tu>
@@ -8069,6 +8361,14 @@ which is a simplified version of the actual definition from &lt;x2/&gt;`env.jl`&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224115Z" creationid="hsugawa8651" creationdate="20181109T224115Z">
         <seg>getenv&lt;x1/&gt;Cライブラリ関数は、次のJulia関数にラップされています。 これは、&lt;x2/&gt;'env.jl'&lt;x3/&gt;からの実際の定義の簡略化されたバージョンです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>half&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110231Z" creationid="hsugawa8651" creationdate="20181112T110231Z">
+        <seg>half&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -8312,6 +8612,70 @@ UInt8
 
 julia&gt; 0x00000000000000001111222233334444
 0x00000000000000001111222233334444
+
+julia&gt; typeof(ans)
+UInt128</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 0x1
+0x01
+
+julia&gt; typeof(ans)
+UInt8
+
+julia&gt; 0x123
+0x0123
+
+julia&gt; typeof(ans)
+UInt16
+
+julia&gt; 0x1234567
+0x01234567
+
+julia&gt; typeof(ans)
+UInt32
+
+julia&gt; 0x123456789abcdef
+0x0123456789abcdef
+
+julia&gt; typeof(ans)
+UInt64
+
+julia&gt; 0x11112222333344445555666677778888
+0x11112222333344445555666677778888
+
+julia&gt; typeof(ans)
+UInt128</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110410Z" creationid="hsugawa8651" creationdate="20181112T110410Z">
+        <seg>julia&gt; 0x1
+0x01
+
+julia&gt; typeof(ans)
+UInt8
+
+julia&gt; 0x123
+0x0123
+
+julia&gt; typeof(ans)
+UInt16
+
+julia&gt; 0x1234567
+0x01234567
+
+julia&gt; typeof(ans)
+UInt32
+
+julia&gt; 0x123456789abcdef
+0x0123456789abcdef
+
+julia&gt; typeof(ans)
+UInt64
+
+julia&gt; 0x11112222333344445555666677778888
+0x11112222333344445555666677778888
 
 julia&gt; typeof(ans)
 UInt128</seg>
@@ -10748,6 +11112,14 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>single&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110235Z" creationid="hsugawa8651" creationdate="20181112T110235Z">
+        <seg>single&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>struct VecElement{T}
     value::T
 end</seg>
@@ -10796,6 +11168,14 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154231Z" creationid="hsugawa8651" creationdate="20181109T154231Z">
         <seg>&lt;x1/&gt;A&lt;x2/&gt;に含まれるエレメントのタイプ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>true&lt;x1/&gt; (1)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110222Z" creationid="hsugawa8651" creationdate="20181112T110222Z">
+        <seg>true&lt;x1/&gt; (1)</seg>
       </tuv>
     </tu>
     <tu>
