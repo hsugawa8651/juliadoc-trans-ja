@@ -416,6 +416,44 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>1.0
+
+julia&gt; 0.5
+0.5
+
+julia&gt; .5
+0.5
+
+julia&gt; -1.23
+-1.23
+
+julia&gt; 1e10
+1.0e10
+
+julia&gt; 2.5e-4
+0.00025</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110544Z" creationid="hsugawa8651" creationdate="20181112T110544Z">
+        <seg>1.0
+
+julia&gt; 0.5
+0.5
+
+julia&gt; .5
+0.5
+
+julia&gt; -1.23
+-1.23
+
+julia&gt; 1e10
+1.0e10
+
+julia&gt; 2.5e-4
+0.00025</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>10</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025013Z" creationid="hsugawa8651" creationdate="20181110T025013Z">
@@ -3417,6 +3455,14 @@ introduced in &lt;x3/&gt;Mathematical Operations and Elementary Functions&lt;x4/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Both of these cases throw a &lt;x5/&gt;`DivideError`&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110529Z" creationid="hsugawa8651" creationdate="20181112T110529Z">
+        <seg>これらの場合は両方とも、&lt;x6/&gt;「DivideError」&lt;x6/&gt;をスローします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Built-in representations of such values are called numeric primitives, while representations of
 integers and floating-point numbers as immediate values in code are known as numeric literals.</seg>
       </tuv>
@@ -4222,6 +4268,15 @@ and type definitions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Floating-point numbers have &lt;x1/&gt;two zeros&lt;x2/&gt;, positive zero
+and negative zero.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110744Z" creationid="hsugawa8651" creationdate="20181112T110744Z">
+        <seg>浮動小数点数は&lt;x1/&gt;2 0x2/&gt;、正0は正の値です。 マイナス0です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example,</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154603Z" creationid="hsugawa8651" creationdate="20181109T154603Z">
@@ -4512,6 +4567,15 @@ array (bound to &lt;x5/&gt;x&lt;x6/&gt; at the call site, and bound to &lt;x7/&g
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154539Z" creationid="hsugawa8651" creationdate="20181109T154539Z">
         <seg>ここで、&lt;x1/&gt;(2, 3)&lt;x2/&gt;は、&lt;x3/&gt;「タプル」&lt;x4/&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Hexadecimal floating-point literals are also valid, but only as &lt;x1/&gt;`Float64`&lt;x2/&gt; values,
+with &lt;x3/&gt;p&lt;x4/&gt; preceding the base-2 exponent:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110630Z" creationid="hsugawa8651" creationdate="20181112T110630Z">
+        <seg>16進数浮動小数点リテラルは有効であるが、&lt;x1/&gt;'Float64&lt;x2/&gt;の値としてのみ有効である。 &lt;x3/&gt;p&lt;x4/&gt;は、ベース2指数の前にあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4807,6 +4871,15 @@ use &lt;x10/&gt;exec&lt;x11/&gt; to replace the process to &lt;x12/&gt;julia&lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In applications where overflow is possible, explicit checking for wraparound produced
+by overflow is essential; otherwise, the &lt;x3/&gt;`BigInt`&lt;x4/&gt; type in &lt;x5/&gt;Arbitrary Precision Arithmetic&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110524Z" creationid="hsugawa8651" creationdate="20181112T110524Z">
+        <seg>オーバーフローが可能なアプリケーションでは、ラップアラウンドの明示的なチェックが行われます。 オーバフローは必須である。それ以外の場合は、&lt;x5/&gt;'BigInt'&lt;x4/&gt;は任意精度演算&lt;x6/&gt;任意精度演算&lt;x6/&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In conjunction with other control flow, however, &lt;x11/&gt;return&lt;x12/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025752Z" creationid="hsugawa8651" creationdate="20181110T025752Z">
@@ -5035,6 +5108,15 @@ read as: &lt;x11/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230354Z" creationid="hsugawa8651" creationdate="20181109T230354Z">
         <seg>&lt;x4/&gt;&lt;x5/&gt;end&lt;x6/&gt;ではなく、&lt;x7/&gt;&lt;x8/&gt;&amp;&amp;&lt;x9/&gt;&lt;x10/&gt;(これは以下のようなものがあります)&lt;x x/&gt;&lt;x10/&gt;( read as:&lt;x11/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Integer division (the &lt;x1/&gt;div&lt;x2/&gt; function) has two exceptional cases: dividing by zero, and dividing
+the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110528Z" creationid="hsugawa8651" creationdate="20181112T110528Z">
+        <seg>整数除算(&lt;x1/&gt;div&lt;x2/&gt;関数)は2つの例外的なケースを持っています:0で除算して除算します。 -1で最も低い負の数(&lt;x3/&gt;`テーパミン'&lt;x4/&gt;)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5427,6 +5509,24 @@ inner functions used elsewhere in the language, variables from the enclosing sco
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224739Z" creationid="hsugawa8651" creationdate="20181109T224739Z">
         <seg>CPU機能の使用を制限&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;に制限します。&lt;x4/&gt;ヘルプ&lt;x5/&gt;に設定すると、使用可能なオプションが表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Literal &lt;x3/&gt;`Float32`&lt;x4/&gt; values can be
+entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110604Z" creationid="hsugawa8651" creationdate="20181112T110604Z">
+        <seg>リテラル&lt;x3/&gt;`Float32'&lt;x4/&gt;の値は &lt;x7/&gt;e&lt;x8/&gt;の代わりに&lt;x5/&gt;f&lt;x6/&gt;を書き込むことによって入力されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Literal floating-point numbers are represented in the standard formats, using
+&lt;x1/&gt;E-notation&lt;x2/&gt; when necessary:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110539Z" creationid="hsugawa8651" creationdate="20181112T110539Z">
+        <seg>リテラル浮動小数点数は、標準形式で表されます。 &lt;x1/&gt;E表記法&lt;x2/&gt;必要に応じて&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -6302,6 +6402,14 @@ or 64-bit:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The above results are all &lt;x1/&gt;`Float64`&lt;x2/&gt; values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110619Z" creationid="hsugawa8651" creationdate="20181112T110619Z">
+        <seg>上記の結果は全て&lt;x1/&gt;'Float64&lt;x2/&gt;の値である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The array library is implemented
 almost completely in Julia itself, and derives its performance from the compiler, just like any
 other code written in Julia.</seg>
@@ -6569,6 +6677,15 @@ of &lt;x17/&gt;b&lt;x18/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The remainder and modulus functions (&lt;x7/&gt;rem&lt;x8/&gt; and &lt;x9/&gt;mod&lt;x10/&gt;) throw a &lt;x11/&gt;`DivideError`&lt;x12/&gt; when their
+second argument is zero.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110536Z" creationid="hsugawa8651" creationdate="20181112T110536Z">
+        <seg>残りと弾性関数(&lt;x7/&gt;rem&lt;x8/&gt;および&lt;x9/&gt;mod&lt;x10/&gt;)は、それらの関数を用いた場合、&lt;x11/&gt;'DivideError&lt;x12/&gt;をスローする。 2番目の引数は0です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The result
 of &lt;x4/&gt;`view`&lt;x5/&gt; looks the same as the result of &lt;x6/&gt;`getindex`&lt;x7/&gt;, except the
 data is left in place.</seg>
@@ -6818,6 +6935,15 @@ generally work correctly as a fallback for any specific array implementation.</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>They are equal to each other but have different binary representations, as
+can be seen using the &lt;x3/&gt;`bitstring`&lt;x4/&gt; function:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110747Z" creationid="hsugawa8651" creationdate="20181112T110747Z">
+        <seg>これらは互いに等しいが、バイナリ表現は異なっている。 は、&lt;x3/&gt;`bitstring'&lt;x4/&gt;関数を使用して表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>They can be used similarly to &lt;x2/&gt;Array{Bool}&lt;x3/&gt; arrays (which store one byte per boolean value),
 and can be converted to/from the latter via &lt;x4/&gt;Array(bitarray)&lt;x5/&gt; and &lt;x6/&gt;BitArray(array)&lt;x7/&gt;, respectively.</seg>
       </tuv>
@@ -7044,6 +7170,15 @@ an array and storing them in advance (see &lt;x1/&gt;Iteration&lt;x2/&gt;).</seg
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This reflects the characteristics of the underlying arithmetic of integers as implemented on modern
+computers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110518Z" creationid="hsugawa8651" creationdate="20181112T110518Z">
+        <seg>これは、近現代で実装されている整数の基礎となる算術の特性を反映しています。 コンピューター。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This syntax is particularly useful with the terse single-line function definition form introduced
 in &lt;x1/&gt;Functions&lt;x2/&gt;.</seg>
       </tuv>
@@ -7093,6 +7228,14 @@ computing already written in C and Fortran.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160533Z" creationid="hsugawa8651" creationdate="20181109T160533Z">
         <seg>ほとんどのコードはJuliaで書くことができますが、多くの場合、高品質で成熟したライブラリがあります。 CとFortranではすでに作成されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thus, arithmetic with Julia integers is actually a form of &lt;x1/&gt;modular arithmetic&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110521Z" creationid="hsugawa8651" creationdate="20181112T110521Z">
+        <seg>したがって、Julia整数による算術は実際には&lt;x1/&gt;モジュラ算術&lt;x2/&gt;の形式である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8579,6 +8722,50 @@ julia&gt; -0x0002
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; 0.0 == -0.0
+true
+
+julia&gt; bitstring(0.0)
+"0000000000000000000000000000000000000000000000000000000000000000"
+
+julia&gt; bitstring(-0.0)
+"1000000000000000000000000000000000000000000000000000000000000000"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110748Z" creationid="hsugawa8651" creationdate="20181112T110748Z">
+        <seg>julia&gt; 0.0 == -0.0
+true
+
+julia&gt; bitstring(0.0)
+"0000000000000000000000000000000000000000000000000000000000000000"
+
+julia&gt; bitstring(-0.0)
+"1000000000000000000000000000000000000000000000000000000000000000"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 0.5f0
+0.5f0
+
+julia&gt; typeof(ans)
+Float32
+
+julia&gt; 2.5f-4
+0.00025f0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110606Z" creationid="hsugawa8651" creationdate="20181112T110606Z">
+        <seg>julia&gt; 0.5f0
+0.5f0
+
+julia&gt; typeof(ans)
+Float32
+
+julia&gt; 2.5f-4
+0.00025f0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; 0b10
 0x02
 
@@ -8683,6 +8870,34 @@ UInt128</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; 0x1p0
+1.0
+
+julia&gt; 0x1.8p3
+12.0
+
+julia&gt; 0x.4p-1
+0.125
+
+julia&gt; typeof(ans)
+Float64</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110706Z" creationid="hsugawa8651" creationdate="20181112T110706Z">
+        <seg>julia&gt; 0x1p0
+1.0
+
+julia&gt; 0x1.8p3
+12.0
+
+julia&gt; 0x.4p-1
+0.125
+
+julia&gt; typeof(ans)
+Float64</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; 1
 1
 
@@ -8721,6 +8936,30 @@ julia&gt; +(1,2,3)
 
 julia&gt; +(1,2,3)
 6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 1.0
+1.0
+
+julia&gt; 1.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110548Z" creationid="hsugawa8651" creationdate="20181112T110548Z">
+        <seg>julia&gt; 1.0
+1.0
+
+julia&gt; 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 10_000, 0.000_000_005, 0xdead_beef, 0b1011_0010
+(10000, 5.0e-9, 0xdeadbeef, 0xb2)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110736Z" creationid="hsugawa8651" creationdate="20181112T110736Z">
+        <seg>julia&gt; 10_000, 0.000_000_005, 0xdead_beef, 0b1011_0010
+(10000, 5.0e-9, 0xdeadbeef, 0xb2)</seg>
       </tuv>
     </tu>
     <tu>
@@ -9001,6 +9240,22 @@ julia&gt; A[:, 3]
  13
  15
  17</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Float32(-1.5)
+-1.5f0
+
+julia&gt; typeof(ans)
+Float32</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110637Z" creationid="hsugawa8651" creationdate="20181112T110637Z">
+        <seg>julia&gt; Float32(-1.5)
+-1.5f0
+
+julia&gt; typeof(ans)
+Float32</seg>
       </tuv>
     </tu>
     <tu>
@@ -10043,6 +10298,22 @@ Cstring(@0x00007fff5fbffc45)
 
 julia&gt; unsafe_string(path)
 "/bin/bash"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; sizeof(Float16(4.))
+2
+
+julia&gt; 2*Float16(4.)
+Float16(8.0)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110716Z" creationid="hsugawa8651" creationdate="20181112T110716Z">
+        <seg>julia&gt; sizeof(Float16(4.))
+2
+
+julia&gt; 2*Float16(4.)
+Float16(8.0)</seg>
       </tuv>
     </tu>
     <tu>
