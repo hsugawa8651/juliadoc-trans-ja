@@ -630,6 +630,14 @@ array it indexes into.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A typical usage of such a pair of return values, however, extracts each value into a variable.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101451Z" creationid="hsugawa8651" creationdate="20181112T101451Z">
+        <seg>しかし、このような戻り値の典型的な使用法は、それぞれの値を変数に抽出することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A way to determine that a file is run in
 this fashion is to check if &lt;x3/&gt;abspath(PROGRAM_FILE) == @__FILE__&lt;x4/&gt; is &lt;x5/&gt;true&lt;x6/&gt;.</seg>
       </tuv>
@@ -4368,6 +4376,15 @@ is written to all referenced locations of &lt;x6/&gt;A&lt;x7/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If a function argument name is written as a tuple (e.g. &lt;x1/&gt;(x, y)&lt;x2/&gt;) instead of just
+a symbol, then an assignment &lt;x3/&gt;(x, y) = argument&lt;x4/&gt; will be inserted for you:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101540Z" creationid="hsugawa8651" creationdate="20181112T101540Z">
+        <seg>関数引数の名前がタプル(例えば&lt;x1/&gt;(x, y)&lt;x2/&gt;)ではなく、タプルとして記述されている場合 次に、割り当て&lt;x3/&gt;(x, y)=引数&lt;x4/&gt;が挿入されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If a pointer conversion method &lt;x19/&gt;`Base.unsafe_convert(Ptr{T}, A)`&lt;x20/&gt; is
 provided, the memory layout must correspond in the same way to these strides.</seg>
       </tuv>
@@ -4863,6 +4880,15 @@ the number of dimensions &lt;x3/&gt;N&lt;x4/&gt; and the element type &lt;x5/&gt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is possible to constrain the number of values passed as a variable argument; this will be discussed
+later in &lt;x1/&gt;Parametrically-constrained Varargs methods&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101624Z" creationid="hsugawa8651" creationdate="20181112T101624Z">
+        <seg>変数引数として渡される値の数を制限することは可能です。これについては、以下を参照してください。 &lt;x1/&gt;パラメトリックに拘束されたVarargsメソッド&lt;x2/&gt;の後にあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is possible to pass Julia functions to native C functions that accept function pointer arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153908Z" creationid="hsugawa8651" creationdate="20181109T153908Z">
@@ -5019,6 +5045,14 @@ bitwise operators as well as standard mathematical functions are defined over th
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225711Z" creationid="hsugawa8651" creationdate="20181109T225711Z">
         <seg>Juliaは、さまざまな制御フロー構成を提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia supports simple tuple "destructuring" that facilitates this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101454Z" creationid="hsugawa8651" creationdate="20181112T101454Z">
+        <seg>Juliaは単純なタプル"destructing"をサポートしており、これを容易にしています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5437,6 +5471,15 @@ by a boolean array selects elements at the indices where its values are &lt;x1/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155734Z" creationid="hsugawa8651" creationdate="20181109T155734Z">
         <seg>論理的なインデックス作成と呼ばれる論理的インデックス作成またはインデックス作成と呼ばれることが多いインデックス作成 ブール型配列では、値が&lt;x1/&gt;真&lt;x2/&gt;であるインデックスで要素を選択します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>On the flip side, it is often handy to "splat" the values contained in an iterable collection
+into a function call as individual arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101627Z" creationid="hsugawa8651" creationdate="20181112T101627Z">
+        <seg>逆に、iterableコレクションに含まれる値を"splat"するのは便利なことが多い。 関数呼び出しに個別の引数として指定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6017,6 +6060,14 @@ evaluated as are necessary to determine the final boolean value of the entire ch
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The destructuring feature can also be used within a function argument.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101537Z" creationid="hsugawa8651" creationdate="20181112T101537Z">
+        <seg>デストラクチャリング機能は、関数引数内で使用することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The display functions for &lt;x11/&gt;D&lt;x12/&gt; can then be called directly, but they can also be invoked
 automatically from &lt;x13/&gt;`display(x)`&lt;x14/&gt; simply by pushing a new display onto the display-backend stack
 with:</seg>
@@ -6562,6 +6613,14 @@ functions, functions in the Julia runtime, or functions in an application linked
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This has the exact same effect as the previous definition of &lt;x1/&gt;foo&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101533Z" creationid="hsugawa8651" creationdate="20181112T101533Z">
+        <seg>これは、&lt;x1/&gt;foo&lt;x2/&gt;の前の定義とまったく同じ効果を持っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This includes
 &lt;x6/&gt;`Colon`&lt;x7/&gt; (&lt;x8/&gt;:&lt;x9/&gt;) to select all indices within the entire dimension,
 ranges of the form &lt;x10/&gt;a:c&lt;x11/&gt; or &lt;x12/&gt;a:b:c&lt;x13/&gt; to select contiguous or strided
@@ -7005,6 +7064,14 @@ like any value:</seg>
  -0.4042391538522658
  -0.8360218615377305
  -0.6080830096407656</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can also return multiple values via an explicit usage of the &lt;x1/&gt;return&lt;x2/&gt; keyword:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101528Z" creationid="hsugawa8651" creationdate="20181112T101528Z">
+        <seg>また、&lt;x1/&gt;return&lt;x2/&gt;キーワードを明示的に使用して、複数の値を返すこともできます。</seg>
       </tuv>
     </tu>
     <tu>
