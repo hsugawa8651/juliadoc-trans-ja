@@ -1097,6 +1097,14 @@ on the values to be manipulated.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Also recommended is Bruce Dawson's &lt;x1/&gt;series of blog posts on floating-point numbers&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111500Z" creationid="hsugawa8651" creationdate="20181112T111500Z">
+        <seg>また、浮動小数点数&lt;x2/&gt;についてはBruce Dawsonの&lt;x1/&gt;シリーズのブログ記事をお勧めします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Also, &lt;x1/&gt;every&lt;x2/&gt; binary operator supports a &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-dot-operators)
 that can be applied to arrays (and combinations of arrays and scalars) in such
 &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref man-vectorized), e.g. &lt;x9/&gt;z .== sin.(x .* y)&lt;x10/&gt;.</seg>
@@ -1120,6 +1128,16 @@ pointers to allocated values on the heap or stack.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041717Z" creationid="hsugawa8651" creationdate="20181110T041717Z">
         <seg>あるいは、モジュール&lt;x2/&gt;を使用する&lt;x1/&gt;は、エクスポートされたすべての&lt;x3/&gt;モジュール&lt;x4/&gt;関数を現在の名前空間にインポートします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Alternatively, the precision
+or the rounding can be changed only within the execution of a particular block of code by using
+the same functions with a &lt;x4/&gt;do&lt;x5/&gt; block:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111701Z" creationid="hsugawa8651" creationdate="20181112T111701Z">
+        <seg>あるいは、精度 または、次のようにして、特定のコード・ブロックを実行する場合にのみ、丸めを変更することができます。 &lt;x4/&gt;do&lt;x5/&gt;ブロックを持つ同じ機能を持つ。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3678,6 +3696,14 @@ multidimensional index.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Constructors exist to create these types from primitive numerical types, and &lt;x1/&gt;`parse`&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111546Z" creationid="hsugawa8651" creationdate="20181112T111546Z">
+        <seg>コンストラクタはプリミティブな数値型からこれらのタイプを作成するために存在します。&lt;x1/&gt;`parse'&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Control whether inlining is permitted, including overriding &lt;x1/&gt;@inline&lt;x2/&gt; declarations</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224750Z" creationid="hsugawa8651" creationdate="20181109T224750Z">
@@ -4360,6 +4386,33 @@ and negative zero.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For a brief but lucid presentation of how floating-point numbers are represented, see John D.
+Cook's &lt;x1/&gt;article&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111455Z" creationid="hsugawa8651" creationdate="20181112T111455Z">
+        <seg>浮動小数点数がどのように表されるかについての簡潔な説明は、John Dを参照してください。 クックの&lt;x1/&gt;成形品&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For an excellent, in-depth discussion of floating-point numbers and issues of numerical accuracy
+encountered when computing with them, see David Goldberg's paper &lt;x1/&gt;What Every Computer Scientist Should Know About Floating-Point Arithmetic&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111503Z" creationid="hsugawa8651" creationdate="20181112T111503Z">
+        <seg>浮動小数点数と数値精度の問題について、優れた詳細な議論を行うには、次のようにします。 これらを使って計算する際に遭遇するのは、David Goldbergの論文&lt;x1/&gt;What Every計算機科学者Should知っておくべき浮動小数点演算&lt;x2/&gt;を参照することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For even more extensive documentation of the history of, rationale for, and issues with floating-point
+numbers, as well as discussion of many other topics in numerical computing, see the &lt;x1/&gt;collected writings&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111506Z" creationid="hsugawa8651" creationdate="20181112T111506Z">
+        <seg>浮動小数点の履歴、理論的根拠、問題についてさらに広範な文書を作成するには、次の手順を実行します。 数値計算は、数値計算では他の多くのトピックについて議論するだけでなく、&lt;x1/&gt;収集された文書を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example,</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154603Z" creationid="hsugawa8651" creationdate="20181109T154603Z">
@@ -4710,6 +4763,15 @@ mutable arrays should also implement &lt;x14/&gt;`setindex!`&lt;x15/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160320Z" creationid="hsugawa8651" creationdate="20181109T160320Z">
         <seg>しかし、具体的な&lt;x3/&gt;AbstractArray{T,N}&lt;x4/&gt;型は、一般的には実装されるべきである。 &lt;x5/&gt;'size(A)'&lt;x6/&gt;(return an&lt;x7/&gt;Int&lt;x8/&gt;タプルを返す)&lt;x9/&gt;`getindex(A,i)`&lt;x10/&gt;&lt;x13/&gt;&lt;x13/&gt;&lt;x13/&gt;&lt;x13/&gt;(@ref getindex); mutable配列は、&lt;x14/&gt;`setindex!`&lt;x15/&gt;を実装する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, these subtleties are described in detail in
+most books on scientific computation, and also in the following references:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111444Z" creationid="hsugawa8651" creationdate="20181112T111444Z">
+        <seg>しかし、これらの微妙な点については、以下で詳細に説明します。 科学的計算に関する本や、以下の参考文献にもある。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6024,6 +6086,14 @@ the variables &lt;x11/&gt;A&lt;x12/&gt; and &lt;x13/&gt;x&lt;x14/&gt; were disti
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Of particular interest may be &lt;x2/&gt;An Interview with the Old Man of Floating-Point&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111534Z" creationid="hsugawa8651" creationdate="20181112T111534Z">
+        <seg>特に関心があるのは、&lt;x2/&gt;である。浮動小数点のOld Manとのインタビューである&lt;x3/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Often referred to as logical indexing or indexing with a logical mask, indexing
 by a boolean array selects elements at the indices where its values are &lt;x1/&gt;true&lt;x2/&gt;.</seg>
       </tuv>
@@ -6046,6 +6116,15 @@ into a function call as individual arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230819Z" creationid="hsugawa8651" creationdate="20181109T230819Z">
         <seg>一方、条件付きチェーンの最後では、任意のタイプの表現を使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once created, they participate in arithmetic
+with all other numeric types thanks to Julia's &lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref conversion-and-promotion):</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111549Z" creationid="hsugawa8651" creationdate="20181112T111549Z">
+        <seg>作成されると、計算に参加します。 その他の数値タイプは、Juliaの&lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref conversion and promotion)(@ref conversion and promotion)のおかげです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6586,6 +6665,15 @@ be quite different from conventional arrays.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x5/&gt;`BigInt`&lt;x6/&gt; and &lt;x7/&gt;`BigFloat`&lt;x8/&gt; types are available in Julia for arbitrary
+precision integer and floating point numbers respectively.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111544Z" creationid="hsugawa8651" creationdate="20181112T111544Z">
+        <seg>&lt;x5/&gt;"BigInt"&lt;x6/&gt;および&lt;x7/&gt;"BigFloat"&lt;x8/&gt;"は、任意のためにJuliaで利用可能である。 精度整数と浮動小数点数をそれぞれ指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x7/&gt;`Array`&lt;x8/&gt; type is a specific instance
 of &lt;x9/&gt;DenseArray&lt;x10/&gt;;  &lt;x11/&gt;`Vector`&lt;x12/&gt; and &lt;x13/&gt;`Matrix`&lt;x14/&gt; are aliases for the 1-d and 2-d cases.</seg>
       </tuv>
@@ -6695,11 +6783,28 @@ value, with ties rounded towards the nearest value with an even least significan
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The default precision (in number of bits of the significand) and rounding mode of &lt;x1/&gt;`BigFloat`&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111601Z" creationid="hsugawa8651" creationdate="20181112T111601Z">
+        <seg>&lt;x1/&gt;'BigFloat&lt;x2/&gt;のデフォルト精度(ビット数のビット数)と丸めモード&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The default type for an integer literal depends on whether the target system has a 32-bit architecture
 or a 64-bit architecture:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110320Z" creationid="hsugawa8651" creationdate="20181112T110320Z">
         <seg>整数リテラルのデフォルト・タイプは、ターゲット・システムに32ビット・アーキテクチャーがあるかどうかによって異なります。 64ビットのアーキテクチャ:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The definitive guide to floating point arithmetic is the &lt;x1/&gt;IEEE 754-2008 Standard&lt;x2/&gt;;
+however, it is not available for free online.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111446Z" creationid="hsugawa8651" creationdate="20181112T111446Z">
+        <seg>浮動小数点演算の最終的なガイドは、&lt;x1/&gt;IEEE754-2008標準&lt;x2/&gt;です。 ただし、無料のオンラインでは利用できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7488,6 +7593,16 @@ computing already written in C and Fortran.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To allow computations with arbitrary-precision integers and floating point numbers, Julia wraps
+the &lt;x1/&gt;GNU Multiple Precision Arithmetic Library (GMP)&lt;x2/&gt; and the &lt;x3/&gt;GNU MPFR Library&lt;x4/&gt;,
+respectively.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111540Z" creationid="hsugawa8651" creationdate="20181112T111540Z">
+        <seg>任意精度の整数と浮動小数点数を使用して計算を可能にするには、Juliaラップを使用します。 &lt;x1/&gt;GNU Multi-Precision Library(GMP)&lt;x2/&gt;および&lt;x3/&gt;GNU MPFRライブラリ&lt;x4/&gt; それぞれ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To allow easy use of this existing code, Julia makes
 it simple and efficient to call C and Fortran functions.</seg>
       </tuv>
@@ -7752,6 +7867,15 @@ differences between operating systems.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024734Z" creationid="hsugawa8651" creationdate="20181110T024734Z">
         <seg>これは、新しいコードを開発する際に不便な場合がありますが、優れた回避策があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>William Kahan&lt;x1/&gt;, commonly known as the "Father
+of Floating-Point".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111531Z" creationid="hsugawa8651" creationdate="20181112T111531Z">
+        <seg>ウィリアム・カハン&lt;x1/&gt;、通称「父」 浮動小数点の値を指定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9610,6 +9734,40 @@ julia&gt; A[:, 3]
  13
  15
  17</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; BigInt(typemax(Int64)) + 1
+9223372036854775808
+
+julia&gt; parse(BigInt, "123456789012345678901234567890") + 1
+123456789012345678901234567891
+
+julia&gt; parse(BigFloat, "1.23456789012345678901")
+1.234567890123456789010000000000000000000000000000000000000000000000000000000004
+
+julia&gt; BigFloat(2.0^66) / 3
+2.459565876494606882133333333333333333333333333333333333333333333333333333333344e+19
+
+julia&gt; factorial(BigInt(40))
+815915283247897734345611269596115894272000000000</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111550Z" creationid="hsugawa8651" creationdate="20181112T111550Z">
+        <seg>julia&gt; BigInt(typemax(Int64)) + 1
+9223372036854775808
+
+julia&gt; parse(BigInt, "123456789012345678901234567890") + 1
+123456789012345678901234567891
+
+julia&gt; parse(BigFloat, "1.23456789012345678901")
+1.234567890123456789010000000000000000000000000000000000000000000000000000000004
+
+julia&gt; BigFloat(2.0^66) / 3
+2.459565876494606882133333333333333333333333333333333333333333333333333333333344e+19
+
+julia&gt; factorial(BigInt(40))
+815915283247897734345611269596115894272000000000</seg>
       </tuv>
     </tu>
     <tu>
@@ -11526,6 +11684,46 @@ julia&gt; x + 1
 
 julia&gt; x + 1 == typemin(Int64)
 true</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; x = typemin(Int64)
+-9223372036854775808
+
+julia&gt; x = x - 1
+9223372036854775807
+
+julia&gt; typeof(x)
+Int64
+
+julia&gt; y = BigInt(typemin(Int64))
+-9223372036854775808
+
+julia&gt; y = y - 1
+-9223372036854775809
+
+julia&gt; typeof(y)
+BigInt</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111557Z" creationid="hsugawa8651" creationdate="20181112T111557Z">
+        <seg>julia&gt; x = typemin(Int64)
+-9223372036854775808
+
+julia&gt; x = x - 1
+9223372036854775807
+
+julia&gt; typeof(x)
+Int64
+
+julia&gt; y = BigInt(typemin(Int64))
+-9223372036854775808
+
+julia&gt; y = y - 1
+-9223372036854775809
+
+julia&gt; typeof(y)
+BigInt</seg>
       </tuv>
     </tu>
     <tu>
