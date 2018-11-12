@@ -147,6 +147,14 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id lib-constants)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043136Z" creationid="hsugawa8651" creationdate="20181112T043136Z">
+        <seg>(@id lib-constants)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id man-anonymous-functions)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025951Z" creationid="hsugawa8651" creationdate="20181110T025951Z">
@@ -179,6 +187,14 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id math-ops)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043422Z" creationid="hsugawa8651" creationdate="20181112T043422Z">
+        <seg>(@id math-ops)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@ref Base.EnvDict)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041814Z" creationid="hsugawa8651" creationdate="20181112T041814Z">
@@ -207,6 +223,17 @@ bar</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225720Z" creationid="hsugawa8651" creationdate="20181109T225720Z">
         <seg>(@ref man条件付き評価):&lt;x1/&gt;-&lt;x2/&gt;-&lt;x3/&gt;else&lt;x4/&gt;-&lt;x5/&gt;else&lt;x6/&gt;および&lt;x7/&gt;?:&lt;x8/&gt;(三元演算子):&lt;x8/&gt;&lt;x8/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Again, one should
+&lt;x7/&gt;import Base.display&lt;x8/&gt; to add new methods to &lt;x9/&gt;display&lt;x10/&gt;.) The return values of these functions are
+up to the implementation (since in some cases it may be useful to return a display "handle" of
+some type).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043334Z" creationid="hsugawa8651" creationdate="20181112T043334Z">
+        <seg>(再度 &lt;x7/&gt;import Base.display&lt;x8/&gt;to add new methods to&lt;x9/&gt;display&lt;x10/&gt;.これらの関数の戻り値は、次のようになります。 実装まで(ある場合には、「handle」の「handle」を返すことが役に立つことがあるので、それを実行することができます。 あるタイプ)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -313,6 +340,22 @@ julia&gt; range(minmax(10, 2))
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224510Z" creationid="hsugawa8651" creationdate="20181109T224510Z">
         <seg>...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>1-dimensional &lt;x2/&gt;`Array`&lt;x3/&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043131Z" creationid="hsugawa8651" creationdate="20181112T043131Z">
+        <seg>1-dimensional &lt;x2/&gt;`Array`&lt;x3/&gt;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>1-dimensional &lt;x2/&gt;`BitArray`&lt;x3/&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043133Z" creationid="hsugawa8651" creationdate="20181112T043133Z">
+        <seg>1-dimensional &lt;x2/&gt;`BitArray`&lt;x3/&gt;)</seg>
       </tuv>
     </tu>
     <tu>
@@ -518,10 +561,28 @@ external C and Fortran functions that expect this memory layout.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A &lt;x17/&gt;MethodError&lt;x18/&gt; should be thrown if &lt;x19/&gt;x&lt;x20/&gt; cannot be displayed
+as that MIME type; this is automatic if one calls &lt;x21/&gt;show&lt;x22/&gt; or &lt;x23/&gt;repr&lt;x24/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043316Z" creationid="hsugawa8651" creationdate="20181112T043316Z">
+        <seg>&lt;x19/&gt;x&lt;x20/&gt;が表示されない場合は、&lt;x17/&gt;MethodError&lt;x18/&gt;をスローする必要があります。 このMIMEタイプは、&lt;X21/&gt;show&lt;x22/&gt;または&lt;x23/&gt;repr&lt;x24/&gt;を呼び出すと自動的に表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A curated list of useful learning resources to help new users get started can be found on the &lt;x1/&gt;learning&lt;x2/&gt; page of the main Julia web site.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224812Z" creationid="hsugawa8651" creationdate="20181109T224812Z">
         <seg>新しいユーザを支援するための有用な学習リソースのリストは、Julia Webサイトの&lt;x1/&gt;学習&lt;x2/&gt;ページに掲載されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A function &lt;x1/&gt;`display(x)`&lt;x2/&gt; to request the richest available multimedia display of a Julia object
+&lt;x3/&gt;x&lt;x4/&gt; (with a plain-text fallback).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043225Z" creationid="hsugawa8651" creationdate="20181112T043225Z">
+        <seg>Juliaオブジェクトの最もリッチなマルチメディアディスプレイを要求する関数&lt;x1/&gt;`display(x)`&lt;x2/&gt; &lt;x3/&gt;x&lt;x4/&gt;(プレーンテキストのフォールバックを使用)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -888,6 +949,14 @@ an expression whose value is returned:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As mentioned above, one can also define new display backends.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043304Z" creationid="hsugawa8651" creationdate="20181112T043304Z">
+        <seg>上記のように、新しいディスプレイバックエンドを定義することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As such, it's also possible to define custom array types by inheriting
 from &lt;x1/&gt;`AbstractArray`&lt;x2/&gt;.</seg>
       </tuv>
@@ -902,6 +971,108 @@ command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224332Z" creationid="hsugawa8651" creationdate="20181109T224332Z">
         <seg>この例が示すように、&lt;x1/&gt;julia&lt;x2/&gt;への次のコマンドライン引数は、以下のように解釈されます。 グローバル定数&lt;x5/&gt;ARGS&lt;x6/&gt;で渡されたプログラム&lt;x3/&gt;スクリプト.jl&lt;x4/&gt;へのコマンドライン引数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.:-(::Any)
+Base.:(+)
+Base.:-(::Any, ::Any)
+Base.:*(::Any, ::Any...)
+Base.:(/)
+Base.:\(::Any, ::Any)
+Base.:^(::Number, ::Number)
+Base.fma
+Base.muladd
+Base.inv(::Number)
+Base.div
+Base.fld
+Base.cld
+Base.mod
+Base.rem
+Base.rem2pi
+Base.Math.mod2pi
+Base.divrem
+Base.fldmod
+Base.fld1
+Base.mod1
+Base.fldmod1
+Base.:(//)
+Base.rationalize
+Base.numerator
+Base.denominator
+Base.:(&lt;&lt;)
+Base.:(&gt;&gt;)
+Base.:(&gt;&gt;&gt;)
+Base.:(:)
+Base.range
+Base.OneTo
+Base.StepRangeLen
+Base.:(==)
+Base.:(!=)
+Base.:(!==)
+Base.:(&lt;)
+Base.:(&lt;=)
+Base.:(&gt;)
+Base.:(&gt;=)
+Base.cmp
+Base.:(&lt;x1/&gt;)
+Base.:(&amp;)
+Base.:(|)
+Base.xor
+Base.:(!)
+&amp;&amp;
+||</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043423Z" creationid="hsugawa8651" creationdate="20181112T043423Z">
+        <seg>Base.:-(::Any)
+Base.:(+)
+Base.:-(::Any, ::Any)
+Base.:*(::Any, ::Any...)
+Base.:(/)
+Base.:\(::Any, ::Any)
+Base.:^(::Number, ::Number)
+Base.fma
+Base.muladd
+Base.inv(::Number)
+Base.div
+Base.fld
+Base.cld
+Base.mod
+Base.rem
+Base.rem2pi
+Base.Math.mod2pi
+Base.divrem
+Base.fldmod
+Base.fld1
+Base.mod1
+Base.fldmod1
+Base.:(//)
+Base.rationalize
+Base.numerator
+Base.denominator
+Base.:(&lt;&lt;)
+Base.:(&gt;&gt;)
+Base.:(&gt;&gt;&gt;)
+Base.:(:)
+Base.range
+Base.OneTo
+Base.StepRangeLen
+Base.:(==)
+Base.:(!=)
+Base.:(!==)
+Base.:(&lt;)
+Base.:(&lt;=)
+Base.:(&gt;)
+Base.:(&gt;=)
+Base.cmp
+Base.:(&lt;x1/&gt;)
+Base.:(&amp;)
+Base.:(|)
+Base.xor
+Base.:(!)
+&amp;&amp;
+||</seg>
       </tuv>
     </tu>
     <tu>
@@ -978,6 +1149,136 @@ Base.delete!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.Filesystem.pwd
+Base.Filesystem.cd(::AbstractString)
+Base.Filesystem.cd(::Function)
+Base.Filesystem.readdir
+Base.Filesystem.walkdir
+Base.Filesystem.mkdir
+Base.Filesystem.mkpath
+Base.Filesystem.symlink
+Base.Filesystem.readlink
+Base.Filesystem.chmod
+Base.Filesystem.chown
+Base.RawFD
+Base.stat
+Base.Filesystem.lstat
+Base.Filesystem.ctime
+Base.Filesystem.mtime
+Base.Filesystem.filemode
+Base.Filesystem.filesize
+Base.Filesystem.uperm
+Base.Filesystem.gperm
+Base.Filesystem.operm
+Base.Filesystem.cp
+Base.download
+Base.Filesystem.mv
+Base.Filesystem.rm
+Base.Filesystem.touch
+Base.Filesystem.tempname
+Base.Filesystem.tempdir
+Base.Filesystem.mktemp(::Any)
+Base.Filesystem.mktemp(::Function, ::Any)
+Base.Filesystem.mktempdir(::Any)
+Base.Filesystem.mktempdir(::Function, ::Any)
+Base.Filesystem.isblockdev
+Base.Filesystem.ischardev
+Base.Filesystem.isdir
+Base.Filesystem.isfifo
+Base.Filesystem.isfile
+Base.Filesystem.islink
+Base.Filesystem.ismount
+Base.Filesystem.ispath
+Base.Filesystem.issetgid
+Base.Filesystem.issetuid
+Base.Filesystem.issocket
+Base.Filesystem.issticky
+Base.Filesystem.homedir
+Base.Filesystem.dirname
+Base.Filesystem.basename
+Base.@__FILE__
+Base.@__DIR__
+Base.@__LINE__
+Base.Filesystem.isabspath
+Base.Filesystem.isdirpath
+Base.Filesystem.joinpath
+Base.Filesystem.abspath
+Base.Filesystem.normpath
+Base.Filesystem.realpath
+Base.Filesystem.relpath
+Base.Filesystem.expanduser
+Base.Filesystem.splitdir
+Base.Filesystem.splitdrive
+Base.Filesystem.splitext
+Base.Filesystem.splitpath</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043207Z" creationid="hsugawa8651" creationdate="20181112T043207Z">
+        <seg>Base.Filesystem.pwd
+Base.Filesystem.cd(::AbstractString)
+Base.Filesystem.cd(::Function)
+Base.Filesystem.readdir
+Base.Filesystem.walkdir
+Base.Filesystem.mkdir
+Base.Filesystem.mkpath
+Base.Filesystem.symlink
+Base.Filesystem.readlink
+Base.Filesystem.chmod
+Base.Filesystem.chown
+Base.RawFD
+Base.stat
+Base.Filesystem.lstat
+Base.Filesystem.ctime
+Base.Filesystem.mtime
+Base.Filesystem.filemode
+Base.Filesystem.filesize
+Base.Filesystem.uperm
+Base.Filesystem.gperm
+Base.Filesystem.operm
+Base.Filesystem.cp
+Base.download
+Base.Filesystem.mv
+Base.Filesystem.rm
+Base.Filesystem.touch
+Base.Filesystem.tempname
+Base.Filesystem.tempdir
+Base.Filesystem.mktemp(::Any)
+Base.Filesystem.mktemp(::Function, ::Any)
+Base.Filesystem.mktempdir(::Any)
+Base.Filesystem.mktempdir(::Function, ::Any)
+Base.Filesystem.isblockdev
+Base.Filesystem.ischardev
+Base.Filesystem.isdir
+Base.Filesystem.isfifo
+Base.Filesystem.isfile
+Base.Filesystem.islink
+Base.Filesystem.ismount
+Base.Filesystem.ispath
+Base.Filesystem.issetgid
+Base.Filesystem.issetuid
+Base.Filesystem.issocket
+Base.Filesystem.issticky
+Base.Filesystem.homedir
+Base.Filesystem.dirname
+Base.Filesystem.basename
+Base.@__FILE__
+Base.@__DIR__
+Base.@__LINE__
+Base.Filesystem.isabspath
+Base.Filesystem.isdirpath
+Base.Filesystem.joinpath
+Base.Filesystem.abspath
+Base.Filesystem.normpath
+Base.Filesystem.realpath
+Base.Filesystem.relpath
+Base.Filesystem.expanduser
+Base.Filesystem.splitdir
+Base.Filesystem.splitdrive
+Base.Filesystem.splitext
+Base.Filesystem.splitpath</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.GC.gc
 Base.GC.enable
 Base.GC.@preserve
@@ -1020,6 +1321,72 @@ Base.precompile</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.Iterators.Stateful
+Base.Iterators.zip
+Base.Iterators.enumerate
+Base.Iterators.rest
+Base.Iterators.countfrom
+Base.Iterators.take
+Base.Iterators.drop
+Base.Iterators.cycle
+Base.Iterators.repeated
+Base.Iterators.product
+Base.Iterators.flatten
+Base.Iterators.partition
+Base.Iterators.filter
+Base.Iterators.reverse</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043416Z" creationid="hsugawa8651" creationdate="20181112T043416Z">
+        <seg>Base.Iterators.Stateful
+Base.Iterators.zip
+Base.Iterators.enumerate
+Base.Iterators.rest
+Base.Iterators.countfrom
+Base.Iterators.take
+Base.Iterators.drop
+Base.Iterators.cycle
+Base.Iterators.repeated
+Base.Iterators.product
+Base.Iterators.flatten
+Base.Iterators.partition
+Base.Iterators.filter
+Base.Iterators.reverse</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Libc.malloc
+Base.Libc.calloc
+Base.Libc.realloc
+Base.Libc.free
+Base.Libc.errno
+Base.Libc.strerror
+Base.Libc.GetLastError
+Base.Libc.FormatMessage
+Base.Libc.time(::Base.Libc.TmStruct)
+Base.Libc.strftime
+Base.Libc.strptime
+Base.Libc.TmStruct
+Base.Libc.flush_cstdio</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043420Z" creationid="hsugawa8651" creationdate="20181112T043420Z">
+        <seg>Base.Libc.malloc
+Base.Libc.calloc
+Base.Libc.realloc
+Base.Libc.free
+Base.Libc.errno
+Base.Libc.strerror
+Base.Libc.GetLastError
+Base.Libc.FormatMessage
+Base.Libc.time(::Base.Libc.TmStruct)
+Base.Libc.strftime
+Base.Libc.strptime
+Base.Libc.TmStruct
+Base.Libc.flush_cstdio</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.Missing
 Base.missing
 Base.coalesce
@@ -1032,6 +1399,48 @@ Base.missing
 Base.coalesce
 Base.ismissing
 Base.skipmissing</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Multimedia.display
+Base.Multimedia.redisplay
+Base.Multimedia.displayable
+Base.show(::Any, ::Any, ::Any)
+Base.Multimedia.showable
+Base.repr(::MIME, ::Any)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043300Z" creationid="hsugawa8651" creationdate="20181112T043300Z">
+        <seg>Base.Multimedia.display
+Base.Multimedia.redisplay
+Base.Multimedia.displayable
+Base.show(::Any, ::Any, ::Any)
+Base.Multimedia.showable
+Base.repr(::MIME, ::Any)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Multimedia.pushdisplay
+Base.Multimedia.popdisplay
+Base.Multimedia.TextDisplay
+Base.Multimedia.istextmime</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043352Z" creationid="hsugawa8651" creationdate="20181112T043352Z">
+        <seg>Base.Multimedia.pushdisplay
+Base.Multimedia.popdisplay
+Base.Multimedia.TextDisplay
+Base.Multimedia.istextmime</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Pair
+Iterators.Pairs</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043135Z" creationid="hsugawa8651" creationdate="20181112T043135Z">
+        <seg>Base.Pair
+Iterators.Pairs</seg>
       </tuv>
     </tu>
     <tu>
@@ -1070,6 +1479,98 @@ Base.@v_str</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041945Z" creationid="hsugawa8651" creationdate="20181110T041945Z">
         <seg>Base.VersionNumber
 Base.@v_str</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.abs
+Base.Checked.checked_abs
+Base.Checked.checked_neg
+Base.Checked.checked_add
+Base.Checked.checked_sub
+Base.Checked.checked_mul
+Base.Checked.checked_div
+Base.Checked.checked_rem
+Base.Checked.checked_fld
+Base.Checked.checked_mod
+Base.Checked.checked_cld
+Base.Checked.add_with_overflow
+Base.Checked.sub_with_overflow
+Base.Checked.mul_with_overflow
+Base.abs2
+Base.copysign
+Base.sign
+Base.signbit
+Base.flipsign
+Base.sqrt(::Real)
+Base.isqrt
+Base.Math.cbrt
+Base.real(::Complex)
+Base.imag
+Base.reim
+Base.conj
+Base.angle
+Base.cis
+Base.binomial
+Base.factorial
+Base.gcd
+Base.lcm
+Base.gcdx
+Base.ispow2
+Base.nextpow
+Base.prevpow
+Base.nextprod
+Base.invmod
+Base.powermod
+Base.ndigits
+Base.widemul
+Base.Math.@evalpoly
+Base.FastMath.@fastmath</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043426Z" creationid="hsugawa8651" creationdate="20181112T043426Z">
+        <seg>Base.abs
+Base.Checked.checked_abs
+Base.Checked.checked_neg
+Base.Checked.checked_add
+Base.Checked.checked_sub
+Base.Checked.checked_mul
+Base.Checked.checked_div
+Base.Checked.checked_rem
+Base.Checked.checked_fld
+Base.Checked.checked_mod
+Base.Checked.checked_cld
+Base.Checked.add_with_overflow
+Base.Checked.sub_with_overflow
+Base.Checked.mul_with_overflow
+Base.abs2
+Base.copysign
+Base.sign
+Base.signbit
+Base.flipsign
+Base.sqrt(::Real)
+Base.isqrt
+Base.Math.cbrt
+Base.real(::Complex)
+Base.imag
+Base.reim
+Base.conj
+Base.angle
+Base.cis
+Base.binomial
+Base.factorial
+Base.gcd
+Base.lcm
+Base.gcdx
+Base.ispow2
+Base.nextpow
+Base.prevpow
+Base.nextprod
+Base.invmod
+Base.powermod
+Base.ndigits
+Base.widemul
+Base.Math.@evalpoly
+Base.FastMath.@fastmath</seg>
       </tuv>
     </tu>
     <tu>
@@ -1130,6 +1631,24 @@ Base.any!</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041923Z" creationid="hsugawa8651" creationdate="20181112T041923Z">
         <seg>Base.append!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.bytesavailable
+Base.ntoh
+Base.hton
+Base.ltoh
+Base.htol
+Base.ENDIAN_BOM</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043413Z" creationid="hsugawa8651" creationdate="20181112T043413Z">
+        <seg>Base.bytesavailable
+Base.ntoh
+Base.hton
+Base.ltoh
+Base.htol
+Base.ENDIAN_BOM</seg>
       </tuv>
     </tu>
     <tu>
@@ -1412,6 +1931,164 @@ Base.invpermute!</seg>
 Base.isperm
 Base.permute!(::Any, ::AbstractVector)
 Base.invpermute!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.isapprox
+Base.sin(::Number)
+Base.cos(::Number)
+Base.sincos(::Float64)
+Base.tan(::Number)
+Base.Math.sind
+Base.Math.cosd
+Base.Math.tand
+Base.Math.sinpi
+Base.Math.cospi
+Base.sinh(::Number)
+Base.cosh(::Number)
+Base.tanh(::Number)
+Base.asin(::Number)
+Base.acos(::Number)
+Base.atan(::Number)
+Base.Math.asind
+Base.Math.acosd
+Base.Math.atand
+Base.Math.sec(::Number)
+Base.Math.csc(::Number)
+Base.Math.cot(::Number)
+Base.Math.secd
+Base.Math.cscd
+Base.Math.cotd
+Base.Math.asec(::Number)
+Base.Math.acsc(::Number)
+Base.Math.acot(::Number)
+Base.Math.asecd
+Base.Math.acscd
+Base.Math.acotd
+Base.Math.sech(::Number)
+Base.Math.csch(::Number)
+Base.Math.coth(::Number)
+Base.asinh(::Number)
+Base.acosh(::Number)
+Base.atanh(::Number)
+Base.Math.asech(::Number)
+Base.Math.acsch(::Number)
+Base.Math.acoth(::Number)
+Base.Math.sinc
+Base.Math.cosc
+Base.Math.deg2rad
+Base.Math.rad2deg
+Base.Math.hypot
+Base.log(::Number)
+Base.log(::Number, ::Number)
+Base.log2
+Base.log10
+Base.log1p
+Base.Math.frexp
+Base.exp(::Float64)
+Base.exp2
+Base.exp10
+Base.Math.ldexp
+Base.Math.modf
+Base.expm1
+Base.round(::Type, ::Any)
+Base.Rounding.RoundingMode
+Base.Rounding.RoundNearest
+Base.Rounding.RoundNearestTiesAway
+Base.Rounding.RoundNearestTiesUp
+Base.Rounding.RoundToZero
+Base.Rounding.RoundFromZero
+Base.Rounding.RoundUp
+Base.Rounding.RoundDown
+Base.round(::Complex{&lt;: AbstractFloat}, ::RoundingMode, ::RoundingMode)
+Base.ceil
+Base.floor
+Base.trunc
+Base.unsafe_trunc
+Base.min
+Base.max
+Base.minmax
+Base.Math.clamp
+Base.Math.clamp!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043425Z" creationid="hsugawa8651" creationdate="20181112T043425Z">
+        <seg>Base.isapprox
+Base.sin(::Number)
+Base.cos(::Number)
+Base.sincos(::Float64)
+Base.tan(::Number)
+Base.Math.sind
+Base.Math.cosd
+Base.Math.tand
+Base.Math.sinpi
+Base.Math.cospi
+Base.sinh(::Number)
+Base.cosh(::Number)
+Base.tanh(::Number)
+Base.asin(::Number)
+Base.acos(::Number)
+Base.atan(::Number)
+Base.Math.asind
+Base.Math.acosd
+Base.Math.atand
+Base.Math.sec(::Number)
+Base.Math.csc(::Number)
+Base.Math.cot(::Number)
+Base.Math.secd
+Base.Math.cscd
+Base.Math.cotd
+Base.Math.asec(::Number)
+Base.Math.acsc(::Number)
+Base.Math.acot(::Number)
+Base.Math.asecd
+Base.Math.acscd
+Base.Math.acotd
+Base.Math.sech(::Number)
+Base.Math.csch(::Number)
+Base.Math.coth(::Number)
+Base.asinh(::Number)
+Base.acosh(::Number)
+Base.atanh(::Number)
+Base.Math.asech(::Number)
+Base.Math.acsch(::Number)
+Base.Math.acoth(::Number)
+Base.Math.sinc
+Base.Math.cosc
+Base.Math.deg2rad
+Base.Math.rad2deg
+Base.Math.hypot
+Base.log(::Number)
+Base.log(::Number, ::Number)
+Base.log2
+Base.log10
+Base.log1p
+Base.Math.frexp
+Base.exp(::Float64)
+Base.exp2
+Base.exp10
+Base.Math.ldexp
+Base.Math.modf
+Base.expm1
+Base.round(::Type, ::Any)
+Base.Rounding.RoundingMode
+Base.Rounding.RoundNearest
+Base.Rounding.RoundNearestTiesAway
+Base.Rounding.RoundNearestTiesUp
+Base.Rounding.RoundToZero
+Base.Rounding.RoundFromZero
+Base.Rounding.RoundUp
+Base.Rounding.RoundDown
+Base.round(::Complex{&lt;: AbstractFloat}, ::RoundingMode, ::RoundingMode)
+Base.ceil
+Base.floor
+Base.trunc
+Base.unsafe_trunc
+Base.min
+Base.max
+Base.minmax
+Base.Math.clamp
+Base.Math.clamp!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1730,6 +2407,14 @@ Core.setfield!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.readbytes!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043211Z" creationid="hsugawa8651" creationdate="20181112T043211Z">
+        <seg>Base.readbytes!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.replace(::Any, ::Pair...)
 Base.replace(::Base.Callable, ::Any)
 Base.replace!</seg>
@@ -1832,6 +2517,40 @@ Base.@static</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.show(::Any)
+Base.summary
+Base.print
+Base.println
+Base.printstyled
+Base.sprint
+Base.showerror
+Base.dump
+Meta.@dump
+Base.readline
+Base.readuntil
+Base.readlines
+Base.eachline
+Base.displaysize</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043214Z" creationid="hsugawa8651" creationdate="20181112T043214Z">
+        <seg>Base.show(::Any)
+Base.summary
+Base.print
+Base.println
+Base.printstyled
+Base.sprint
+Base.showerror
+Base.dump
+Meta.@dump
+Base.readline
+Base.readuntil
+Base.readlines
+Base.eachline
+Base.displaysize</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.sizeof(::Type)
 Base.isconcretetype
 Base.isbits
@@ -1864,6 +2583,36 @@ Base.datatype_pointerfree</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041921Z" creationid="hsugawa8651" creationdate="20181112T041921Z">
         <seg>Base.splice!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.stdout
+Base.stderr
+Base.stdin
+Base.open
+Base.IOBuffer
+Base.take!(::Base.GenericIOBuffer)
+Base.fdio
+Base.flush
+Base.close
+Base.write
+Base.read
+Base.read!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043210Z" creationid="hsugawa8651" creationdate="20181112T043210Z">
+        <seg>Base.stdout
+Base.stderr
+Base.stdin
+Base.open
+Base.IOBuffer
+Base.take!(::Base.GenericIOBuffer)
+Base.fdio
+Base.flush
+Base.close
+Base.write
+Base.read
+Base.read!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1954,6 +2703,78 @@ Base.copyto!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.unsafe_read
+Base.unsafe_write
+Base.position
+Base.seek
+Base.seekstart
+Base.seekend
+Base.skip
+Base.mark
+Base.unmark
+Base.reset
+Base.ismarked
+Base.eof
+Base.isreadonly
+Base.iswritable
+Base.isreadable
+Base.isopen
+Base.Grisu.print_shortest
+Base.fd
+Base.redirect_stdout
+Base.redirect_stdout(::Function, ::Any)
+Base.redirect_stderr
+Base.redirect_stderr(::Function, ::Any)
+Base.redirect_stdin
+Base.redirect_stdin(::Function, ::Any)
+Base.readchomp
+Base.truncate
+Base.skipchars
+Base.countlines
+Base.PipeBuffer
+Base.readavailable
+Base.IOContext
+Base.IOContext(::IO, ::Pair)
+Base.IOContext(::IO, ::IOContext)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043212Z" creationid="hsugawa8651" creationdate="20181112T043212Z">
+        <seg>Base.unsafe_read
+Base.unsafe_write
+Base.position
+Base.seek
+Base.seekstart
+Base.seekend
+Base.skip
+Base.mark
+Base.unmark
+Base.reset
+Base.ismarked
+Base.eof
+Base.isreadonly
+Base.iswritable
+Base.isreadable
+Base.isopen
+Base.Grisu.print_shortest
+Base.fd
+Base.redirect_stdout
+Base.redirect_stdout(::Function, ::Any)
+Base.redirect_stderr
+Base.redirect_stderr(::Function, ::Any)
+Base.redirect_stdin
+Base.redirect_stdin(::Function, ::Any)
+Base.readchomp
+Base.truncate
+Base.skipchars
+Base.countlines
+Base.PipeBuffer
+Base.readavailable
+Base.IOContext
+Base.IOContext(::IO, ::Pair)
+Base.IOContext(::IO, ::IOContext)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Binary and octal literals are also supported:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225352Z" creationid="hsugawa8651" creationdate="20181109T225352Z">
@@ -1967,6 +2788,14 @@ unsigned literal.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225514Z" creationid="hsugawa8651" creationdate="20181109T225514Z">
         <seg>バイナリ、8進数、および16進数のリテラルは 署名されていないリテラル。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>BitVector&lt;x1/&gt; (a.k.a.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043132Z" creationid="hsugawa8651" creationdate="20181112T043132Z">
+        <seg>BitVector&lt;x1/&gt; (a.k.a.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2048,6 +2877,14 @@ create a &lt;x16/&gt;SubArray&lt;x17/&gt; view instead.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042024Z" creationid="hsugawa8651" creationdate="20181110T042024Z">
         <seg>C Interface</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>C Standard Library</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043418Z" creationid="hsugawa8651" creationdate="20181112T043418Z">
+        <seg>C Standard Library</seg>
       </tuv>
     </tu>
     <tu>
@@ -2315,6 +3152,36 @@ Base.promote
 Base.oftype
 Base.widen
 Base.identity</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Core.nothing
+Base.PROGRAM_FILE
+Base.ARGS
+Base.C_NULL
+Base.VERSION
+Base.LOAD_PATH
+Base.Sys.BINDIR
+Base.Sys.CPU_THREADS
+Base.Sys.WORD_SIZE
+Base.Sys.KERNEL
+Base.Sys.ARCH
+Base.Sys.MACHINE</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043137Z" creationid="hsugawa8651" creationdate="20181112T043137Z">
+        <seg>Core.nothing
+Base.PROGRAM_FILE
+Base.ARGS
+Base.C_NULL
+Base.VERSION
+Base.LOAD_PATH
+Base.Sys.BINDIR
+Base.Sys.CPU_THREADS
+Base.Sys.WORD_SIZE
+Base.Sys.KERNEL
+Base.Sys.ARCH
+Base.Sys.MACHINE</seg>
       </tuv>
     </tu>
     <tu>
@@ -2590,6 +3457,14 @@ this means that:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Filesystem</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043206Z" creationid="hsugawa8651" creationdate="20181112T043206Z">
+        <seg>Filesystem</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Finally, you can use &lt;x1/&gt;`ccall`&lt;x2/&gt; to actually generate a call to the library function.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223825Z" creationid="hsugawa8651" creationdate="20181109T223825Z">
@@ -2652,6 +3527,16 @@ in-memory representations as objects are numeric primitives.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041747Z" creationid="hsugawa8651" creationdate="20181112T041747Z">
         <seg>たとえば、&lt;x6/&gt;Dict{String,Int32}("A"=&gt;1, "B"=&gt;2)&lt;x7/&gt;を指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, a module that can display
+PNG images in a window can register this capability with Julia, so that calling &lt;x1/&gt;`display(x)`&lt;x2/&gt; on
+types with PNG representations will automatically display the image using the module's window.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043307Z" creationid="hsugawa8651" creationdate="20181112T043307Z">
+        <seg>たとえば、次のようなモジュールを表示することができます。 ウィンドウ内のPNGイメージは、この機能をJuliaに登録することができます。したがって、&lt;x1/&gt;`display(x)`&lt;x2/&gt;を呼び出すことができます。 PNG表示を持つタイプは、モジュールのウィンドウを使用してイメージを自動的に表示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2824,6 +3709,14 @@ are identical to the passed values.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>General I/O</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043209Z" creationid="hsugawa8651" creationdate="20181112T043209Z">
+        <seg>General I/O</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Generated values can be filtered using the &lt;x1/&gt;if&lt;x2/&gt; keyword:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155050Z" creationid="hsugawa8651" creationdate="20181109T155050Z">
@@ -2947,6 +3840,14 @@ on this behavior, make sure all possible code paths define a value for the varia
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024952Z" creationid="hsugawa8651" creationdate="20181110T024952Z">
         <seg>関数に対して引数&lt;x1/&gt;x2/&gt;を渡したが、その関数内で修正されたが、外側では変数&lt;x3/&gt;x&lt;x4/&gt;は変更されないままであった。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>I/O and Network</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043208Z" creationid="hsugawa8651" creationdate="20181112T043208Z">
+        <seg>I/O and Network</seg>
       </tuv>
     </tu>
     <tu>
@@ -3500,6 +4401,14 @@ be evaluated and returned depending on the preceding conditionals:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Iteration utilities</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043415Z" creationid="hsugawa8651" creationdate="20181112T043415Z">
+        <seg>Iteration utilities</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Its implementation uses &lt;x2/&gt;`hash`&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041720Z" creationid="hsugawa8651" creationdate="20181112T041720Z">
@@ -3627,6 +4536,16 @@ determined by the size of the array being assigned into.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Just as text output is performed by &lt;x1/&gt;`print`&lt;x2/&gt; and user-defined types can indicate their textual
+representation by overloading &lt;x3/&gt;`show`&lt;x4/&gt;, Julia provides a standardized mechanism for rich multimedia
+output (such as images, formatted text, or even audio and video), consisting of three parts:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043250Z" creationid="hsugawa8651" creationdate="20181112T043216Z">
+        <seg>テキスト出力が&lt;x1/&gt;`印刷"&lt;x2/&gt;によって実行されるように、ユーザ定義型はそのテキストを示すことができる オーバーロード&lt;x3/&gt;"show`&lt;x4/&gt;をオーバーロードすることで表現することで、リッチなマルチメディアを実現するための標準化されたメカニズムを提供する 出力(イメージ、フォーマットされたテキスト、オーディオやビデオなど)、3つの部分から構成されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Just like
 inner functions used elsewhere in the language, variables from the enclosing scope can be
 "captured" in the inner function.</seg>
@@ -3667,6 +4586,30 @@ inner functions used elsewhere in the language, variables from the enclosing sco
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225129Z" creationid="hsugawa8651" creationdate="20181109T225129Z">
         <seg>最大値</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Libc.MS_ASYNC&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043203Z" creationid="hsugawa8651" creationdate="20181112T043203Z">
+        <seg>Libc.MS_ASYNC&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Libc.MS_INVALIDATE&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043204Z" creationid="hsugawa8651" creationdate="20181112T043204Z">
+        <seg>Libc.MS_INVALIDATE&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Libc.MS_SYNC&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043205Z" creationid="hsugawa8651" creationdate="20181112T043205Z">
+        <seg>Libc.MS_SYNC&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3745,10 +4688,35 @@ copy of the input, and returning that copy.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Mathematical Functions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043424Z" creationid="hsugawa8651" creationdate="20181112T043424Z">
+        <seg>Mathematical Functions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Mathematics</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043421Z" creationid="hsugawa8651" creationdate="20181112T043421Z">
+        <seg>Mathematics</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Memory layout</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041853Z" creationid="hsugawa8651" creationdate="20181110T041853Z">
         <seg>Memory layout</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>MethodError&lt;x1/&gt; should be thrown if no supported MIME types are found
+for &lt;x2/&gt;x&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043329Z" creationid="hsugawa8651" creationdate="20181112T043329Z">
+        <seg>サポートされているMIMEタイプが見つからない場合は、MethodError&lt;x1/&gt;をスローする必要があります。 &lt;x2/&gt;x&lt;x3/&gt;である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3813,6 +4781,31 @@ also accept a first input &lt;x3/&gt;T&lt;x4/&gt;, which is the element type of 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154343Z" creationid="hsugawa8651" creationdate="20181109T154343Z">
         <seg>これらの関数の大部分 また、配列の要素タイプである最初の入力&lt;x3/&gt;T&lt;x4/&gt;を受け入れます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Multi-Threading</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043427Z" creationid="hsugawa8651" creationdate="20181112T043427Z">
+        <seg>Multi-Threading</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Multimedia I/O</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043215Z" creationid="hsugawa8651" creationdate="20181112T043215Z">
+        <seg>Multimedia I/O</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Multimedia-capable display backends may be registered by subclassing a generic &lt;x1/&gt;AbstractDisplay&lt;x2/&gt; type
+and pushing them onto a stack of display backends via &lt;x3/&gt;`pushdisplay`&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043256Z" creationid="hsugawa8651" creationdate="20181112T043256Z">
+        <seg>マルチメディア対応のディスプレイバックエンドは、一般的な&lt;x1/&gt;AbstractDisplay&lt;x2/&gt;タイプをサブクラス化することによって登録することができる。 そして、&lt;x3/&gt;"プッシュディスプレイ"&lt;x4/&gt;を介して、ディスプレイのバックエンドのスタックに押し込まれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3996,6 +4989,15 @@ indices.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Overloading &lt;x1/&gt;`show`&lt;x2/&gt; allows one to indicate arbitrary multimedia representations (keyed by standard
+MIME types) of user-defined types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043253Z" creationid="hsugawa8651" creationdate="20181112T043253Z">
+        <seg>オーバロード&lt;x1/&gt;`show`&lt;x2/&gt;は、任意のマルチメディア表現を示すことができます(標準でキー設定されています)。 ユーザー定義型のMIMEタイプ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Partially implemented by:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041654Z" creationid="hsugawa8651" creationdate="20181112T041654Z">
@@ -4127,6 +5129,14 @@ iteration&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224404Z" creationid="hsugawa8651" creationdate="20181109T224404Z">
         <seg>Juliaスクリプトの記述についての詳細は、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man scripting)も参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See also:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043138Z" creationid="hsugawa8651" creationdate="20181112T043138Z">
+        <seg>See also:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4327,6 +5337,14 @@ sharing memory with the original array rather than by copying it.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Text I/O</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043213Z" creationid="hsugawa8651" creationdate="20181112T043213Z">
+        <seg>Text I/O</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>That allows the user to control
 the size.</seg>
       </tuv>
@@ -4407,6 +5425,16 @@ other code written in Julia.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The base Julia runtime provides only plain-text display, but richer displays may be enabled by
+loading external modules or by using graphical Julia environments (such as the IPython-based IJulia
+notebook).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043259Z" creationid="hsugawa8651" creationdate="20181112T043259Z">
+        <seg>基本的なJuliaランタイムはプレーンテキスト表示のみを提供しますが、よりリッチなディスプレイを有効にすることができます。 外部モジュールをロードするか、グラフィカルなJulia環境(IPythonベースのIJuliaなど)を使用する )を使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The basic syntax for defining functions in Julia is:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025456Z" creationid="hsugawa8651" creationdate="20181110T025456Z">
@@ -4438,6 +5466,16 @@ evaluated as are necessary to determine the final boolean value of the entire ch
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154623Z" creationid="hsugawa8651" creationdate="20181109T154623Z">
         <seg>連結関数は、頻繁に使用されるため、特別な構文が使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The display functions for &lt;x11/&gt;D&lt;x12/&gt; can then be called directly, but they can also be invoked
+automatically from &lt;x13/&gt;`display(x)`&lt;x14/&gt; simply by pushing a new display onto the display-backend stack
+with:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043339Z" creationid="hsugawa8651" creationdate="20181112T043339Z">
+        <seg>&lt;x11/&gt;D&lt;x12/&gt;の表示関数は直接呼び出すことができますが、呼び出されることもあります。 display(x)`&lt;x14/&gt;display(x)`&lt;x14/&gt;単に新しいディスプレイをディスプレイのバックエンド・スタックにプッシュすることによって、自動的に&lt;x13/&gt;`display(x)`&lt;x14/&gt;から :</seg>
       </tuv>
     </tu>
     <tu>
@@ -4765,6 +5803,16 @@ cases.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225941Z" creationid="hsugawa8651" creationdate="20181109T225941Z">
         <seg>The variable &lt;x1/&gt;relation&lt;x2/&gt; is declared inside the &lt;x3/&gt;if&lt;x4/&gt; block, but used outside.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Then, for each MIME type (&lt;x5/&gt;mime&lt;x6/&gt; string) that can be displayed on &lt;x7/&gt;D&lt;x8/&gt;, one should
+define a function &lt;x9/&gt;display(d::D, ::MIME"mime", x) = ...&lt;x10/&gt; that displays &lt;x11/&gt;x&lt;x12/&gt; as that MIME type,
+usually by calling &lt;x13/&gt;`show(io, mime, x)`&lt;x14/&gt; or &lt;x15/&gt;`repr(io, mime, x)`&lt;x16/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043318Z" creationid="hsugawa8651" creationdate="20181112T043318Z">
+        <seg>次に、&lt;x7/&gt;D&lt;x8/&gt;上に表示できるMIMEタイプ(&lt;x5/&gt;mime&lt;x6/&gt;ストリング)ごとに、次のいずれかを実行する必要があります。 関数&lt;x9/&gt;ディスプレイ(d::D,:MIME"mime",x)=&lt;x10/&gt;x12/&gt;を定義します。&lt;x11/&gt;x12/&gt;は、MIMEタイプとして&lt;x11/&gt;x&lt;x12/&gt;を表示します。 通常は、&lt;x13/&gt;`show(io,mime,x)`&lt;x14/&gt;または&lt;x15/&gt;`repr(io,mime,x)`&lt;x16/&gt;を呼び出します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5256,6 +6304,14 @@ for the last entry in a conditional chain is an error:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Utility Collections</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043134Z" creationid="hsugawa8651" creationdate="20181112T043134Z">
+        <seg>Utility Collections</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Values can be specified as any iterable object, but
 will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;x10/&gt;, or explicit arrays of values like &lt;x11/&gt;[1.2, 3.4, 5.7]&lt;x12/&gt;.</seg>
       </tuv>
@@ -5546,6 +6602,14 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`ENDIAN_BOM`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043202Z" creationid="hsugawa8651" creationdate="20181112T043202Z">
+        <seg>`ENDIAN_BOM`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`IdDict`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041608Z" creationid="hsugawa8651" creationdate="20181112T041608Z">
@@ -5718,6 +6782,30 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153242Z" creationid="hsugawa8651" creationdate="20181109T153242Z">
         <seg>`size(A,n)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`stderr`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043141Z" creationid="hsugawa8651" creationdate="20181112T043141Z">
+        <seg>`stderr`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`stdin`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043139Z" creationid="hsugawa8651" creationdate="20181112T043139Z">
+        <seg>`stdin`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`stdout`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043140Z" creationid="hsugawa8651" creationdate="20181112T043140Z">
+        <seg>`stdout`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
