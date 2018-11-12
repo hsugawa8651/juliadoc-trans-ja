@@ -5471,6 +5471,22 @@ index of dimension &lt;x9/&gt;k&lt;x10/&gt; by &lt;x11/&gt;1&lt;x12/&gt; should 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>IndexCartesian()&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113313Z" creationid="hsugawa8651" creationdate="20181112T113313Z">
+        <seg>IndexCartesian()&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>IndexStyle(::Type)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113308Z" creationid="hsugawa8651" creationdate="20181112T113308Z">
+        <seg>IndexStyle(::Type)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Indexable Collections</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041646Z" creationid="hsugawa8651" creationdate="20181112T041646Z">
@@ -6707,6 +6723,14 @@ an interactive session.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Returns either &lt;x1/&gt;IndexLinear()&lt;x2/&gt; or &lt;x3/&gt;IndexCartesian()&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113322Z" creationid="hsugawa8651" creationdate="20181112T113322Z">
+        <seg>&lt;x1/&gt;IndexLinear()&lt;x2/&gt;または&lt;x3/&gt;IndexCartesian()&lt;x4/&gt;のいずれかを返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Returns either a tuple of the first item and initial state or &lt;x1/&gt;`nothing`&lt;x2/&gt; if empty</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112101Z" creationid="hsugawa8651" creationdate="20181112T112101Z">
@@ -6789,6 +6813,14 @@ iterable type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041550Z" creationid="hsugawa8651" creationdate="20181112T041550Z">
         <seg>カスタムを定義する方法の詳細については、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man interface iteration)を参照してください。 iterable型。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See the description below.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113328Z" creationid="hsugawa8651" creationdate="20181112T113328Z">
+        <seg>以下の説明を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9679,6 +9711,14 @@ which is a simplified version of the actual definition from &lt;x2/&gt;`env.jl`&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224115Z" creationid="hsugawa8651" creationdate="20181109T224115Z">
         <seg>getenv&lt;x1/&gt;Cライブラリ関数は、次のJulia関数にラップされています。 これは、&lt;x2/&gt;'env.jl'&lt;x3/&gt;からの実際の定義の簡略化されたバージョンです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>getindex(A, I...)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113332Z" creationid="hsugawa8651" creationdate="20181112T113332Z">
+        <seg>getindex(A, I...)&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -13222,6 +13262,14 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154500Z" creationid="hsugawa8651" creationdate="20181109T154500Z">
         <seg>&lt;x1/&gt;n&lt;x2/&gt;の範囲で、&lt;x3/&gt;開始&lt;x4/&gt;から&lt;x5/&gt;&lt;x6/&gt;までの直線的に間隔をあけた要素の範囲</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>setindex!(A, v, I::Vararg{Int, N})&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113256Z" creationid="hsugawa8651" creationdate="20181112T113256Z">
+        <seg>setindex!(A, v, I::Vararg{Int, N})&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
