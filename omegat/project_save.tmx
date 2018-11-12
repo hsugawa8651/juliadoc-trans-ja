@@ -3533,6 +3533,15 @@ compiler.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By definition, &lt;x1/&gt;eps(1.0)&lt;x2/&gt; is the same as &lt;x3/&gt;eps(Float64)&lt;x4/&gt; since &lt;x5/&gt;1.0&lt;x6/&gt; is
+a 64-bit floating-point value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111220Z" creationid="hsugawa8651" creationdate="20181112T111220Z">
+        <seg>定義では&lt;x1/&gt;eps(1.0)&lt;x2/&gt;は&lt;x3/&gt;(Float64)&lt;x4/&gt;と同じであり、&lt;x5/&gt;は&lt;x5/&gt;1.0&lt;x6/&gt;である。 64ビットの浮動小数点値です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By putting the &lt;x12/&gt;`@views`&lt;x13/&gt; macro in front of an expression or
 block of code, any &lt;x14/&gt;array[...]&lt;x15/&gt; slice in that expression will be converted to
 create a &lt;x16/&gt;SubArray&lt;x17/&gt; view instead.</seg>
@@ -4333,6 +4342,15 @@ and type definitions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Floating-point arithmetic entails many subtleties which can be surprising to users who are unfamiliar
+with the low-level implementation details.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111346Z" creationid="hsugawa8651" creationdate="20181112T111346Z">
+        <seg>浮動小数点演算は、慣れ親しみのあるユーザに驚くほどの繊細さを必要とします。 低レベルの実装の詳細です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Floating-point numbers have &lt;x1/&gt;two zeros&lt;x2/&gt;, positive zero
 and negative zero.</seg>
       </tuv>
@@ -4998,6 +5016,16 @@ words, while developing you might use a workflow something like this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In other words, the representable floating-point
+numbers are densest in the real number line near zero, and grow sparser exponentially as one moves
+farther away from zero.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111224Z" creationid="hsugawa8651" creationdate="20181112T111224Z">
+        <seg>言い換えれば、表現可能浮動小数点 数は0近くの実数線で最も密集しており、指数関数的に成長するにつれて指数関数的に成長する 0から遠く離れています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In practice, especially when providing reusable functionality, one generally wraps &lt;x1/&gt;`ccall`&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224109Z" creationid="hsugawa8651" creationdate="20181109T224109Z">
@@ -5403,6 +5431,15 @@ native integer types respectively:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia also provides the &lt;x1/&gt;`nextfloat`&lt;x2/&gt; and &lt;x3/&gt;`prevfloat`&lt;x4/&gt; functions which return
+the next largest or smallest representable floating-point number to the argument respectively:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111320Z" creationid="hsugawa8651" creationdate="20181112T111320Z">
+        <seg>また、Juliaは、&lt;x1/&gt;`ネクトフロート'&lt;x2/&gt;と、&lt;x3/&gt;'プレビフロート'&lt;x4/&gt;関数を提供します。 引数に対して次の最大または最小の表現可能浮動小数点数をそれぞれ指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia can be started in parallel mode with either the &lt;x1/&gt;-p&lt;x2/&gt; or the &lt;x3/&gt;--machine-file&lt;x4/&gt; options.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224410Z" creationid="hsugawa8651" creationdate="20181109T224410Z">
@@ -5460,6 +5497,15 @@ functions can be called directly from Julia without any "glue" code, code genera
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224247Z" creationid="hsugawa8651" creationdate="20181109T224247Z">
         <seg>ジュリアのインストールは、コンパイル済みのバイナリを使用するか、ソースからコンパイルするかにかかわらず、簡単です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia provides &lt;x1/&gt;`eps`&lt;x2/&gt;, which gives the distance between &lt;x3/&gt;1.0&lt;x4/&gt; and the next larger representable
+floating-point value:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111137Z" creationid="hsugawa8651" creationdate="20181112T111137Z">
+        <seg>Juliaは&lt;x1/&gt;'eps'&lt;x2/&gt;を提供する。これは&lt;x3/&gt;1.0&lt;x4/&gt;と次に大きい表現型の距離を与える。 浮動小数点値:</seg>
       </tuv>
     </tu>
     <tu>
@@ -5780,6 +5826,16 @@ also accept a first input &lt;x3/&gt;T&lt;x4/&gt;, which is the element type of 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154343Z" creationid="hsugawa8651" creationdate="20181109T154343Z">
         <seg>これらの関数の大部分 また、配列の要素タイプである最初の入力&lt;x3/&gt;T&lt;x4/&gt;を受け入れます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Most real numbers cannot be represented exactly with floating-point numbers, and so for many purposes
+it is important to know the distance between two adjacent representable floating-point numbers,
+which is often known as &lt;x1/&gt;machine epsilon&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111132Z" creationid="hsugawa8651" creationdate="20181112T111132Z">
+        <seg>ほとんどの実数は浮動小数点数で正確に表現することはできません。したがって、多くの目的で使用することはできません。 2つの隣接する表現可能浮動小数点数間の距離を知ることが重要です。 これはしばしば&lt;x1/&gt;機械イプシロン&lt;x2/&gt;と呼ばれる。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6470,6 +6526,15 @@ the size.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>That is, &lt;x11/&gt;eps(x)&lt;x12/&gt; yields a value of the same type as &lt;x13/&gt;x&lt;x14/&gt; such that
+&lt;x15/&gt;x + eps(x)&lt;x16/&gt; is the next representable floating-point value larger than &lt;x17/&gt;x&lt;x18/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111202Z" creationid="hsugawa8651" creationdate="20181112T111202Z">
+        <seg>すなわち、&lt;x11/&gt;eps(x)&lt;x12/&gt;は、&lt;x13/&gt;x&lt;x14/&gt;と同じタイプの値を生成し、それによって &lt;x15/&gt;x+eps(x)&lt;x16/&gt;は、&lt;x17/&gt;x&lt;x18/&gt;より大きい次の表現可能浮動小数点値です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The
 name of the script itself is passed in as the global &lt;x7/&gt;PROGRAM_FILE&lt;x8/&gt;.</seg>
       </tuv>
@@ -6498,8 +6563,8 @@ be quite different from conventional arrays.</seg>
       <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;`typemin`&lt;x2/&gt; and &lt;x3/&gt;`typemax`&lt;x4/&gt; functions also apply to floating-point types:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110920Z" creationid="hsugawa8651" creationdate="20181112T110920Z">
-        <seg>The &lt;x1/&gt;`typemin`&lt;x2/&gt; and &lt;x3/&gt;`typemax`&lt;x4/&gt; functions also apply to floating-point types:</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111123Z" creationid="hsugawa8651" creationdate="20181112T110920Z">
+        <seg>&lt;x1/&gt;`テーパミン'&lt;x2/&gt;と&lt;x3/&gt;'テーペマス'&lt;x4/&gt;関数も浮動小数点型に適用される。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6526,6 +6591,16 @@ of &lt;x9/&gt;DenseArray&lt;x10/&gt;;  &lt;x11/&gt;`Vector`&lt;x12/&gt; and &lt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160422Z" creationid="hsugawa8651" creationdate="20181109T160422Z">
         <seg>&lt;x7/&gt;「Array」&lt;x8/&gt;タイプは、特定のインスタンスです。 &lt;x9/&gt;DenseArray&lt;x10/&gt;;&lt;x11/&gt;'Vector'&lt;x12/&gt;および&lt;x13/&gt;'Matrix'&lt;x14/&gt;は、1-dおよび2-dケースのエイリアスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x9/&gt;`eps`&lt;x10/&gt; function can also take a floating-point value as an
+argument, and gives the absolute difference between that value and the next representable
+floating point value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111150Z" creationid="hsugawa8651" creationdate="20181112T111150Z">
+        <seg>&lt;x9/&gt;'eps'&lt;x10/&gt;関数は、浮動小数点値を 引数は、その値と次の表現可能な値との間に絶対差を与えます。 浮動小数点値。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6611,6 +6686,15 @@ evaluated as are necessary to determine the final boolean value of the entire ch
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The default mode used is always &lt;x1/&gt;`RoundNearest`&lt;x2/&gt;, which rounds to the nearest representable
+value, with ties rounded towards the nearest value with an even least significant bit.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111339Z" creationid="hsugawa8651" creationdate="20181112T111339Z">
+        <seg>使用されるデフォルト・モードは常に&lt;x1/&gt;`RoundNearest'&lt;x2/&gt;であり、これは最も近い表現可能なものに丸められます。 値は、最も近い値に対して、最も近い値に丸められ、最も重要なビットであることを示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The default type for an integer literal depends on whether the target system has a 32-bit architecture
 or a 64-bit architecture:</seg>
       </tuv>
@@ -6634,6 +6718,15 @@ with:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043339Z" creationid="hsugawa8651" creationdate="20181112T043339Z">
         <seg>&lt;x11/&gt;D&lt;x12/&gt;の表示関数は直接呼び出すことができますが、呼び出されることもあります。 display(x)`&lt;x14/&gt;display(x)`&lt;x14/&gt;単に新しいディスプレイをディスプレイのバックエンド・スタックにプッシュすることによって、自動的に&lt;x13/&gt;`display(x)`&lt;x14/&gt;から :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The distance between two adjacent representable floating-point numbers is not constant, but is
+smaller for smaller values and larger for larger values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111227Z" creationid="hsugawa8651" creationdate="20181112T111227Z">
+        <seg>2つの隣接する表現可能浮動小数点数の間の距離は一定ではありませんが 小さい値では小さくなり、大きい値ほど大きい値になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7077,6 +7170,15 @@ generally work correctly as a fallback for any specific array implementation.</s
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160310Z" creationid="hsugawa8651" creationdate="20181109T160310Z">
         <seg>これらの操作 一般的には、特定のアレイ実装のフォールバックとして正しく動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These values are &lt;x1/&gt;2.0^-23&lt;x2/&gt; and &lt;x3/&gt;2.0^-52&lt;x4/&gt; as &lt;x5/&gt;`Float32`&lt;x6/&gt; and &lt;x7/&gt;`Float64`&lt;x8/&gt; values,
+respectively.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111157Z" creationid="hsugawa8651" creationdate="20181112T111157Z">
+        <seg>これらの値は&lt;x1/&gt;2.0^-23&lt;x2/&gt;と&lt;x2.0/&gt;52&lt;x6/&gt;であり、&lt;x5/&gt;"Floating32"&lt;x6/&gt;および&lt;x7/&gt;'Float64'&lt;x8/&gt;の値である。 それぞれ。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9948,6 +10050,56 @@ julia&gt; string.(1:3, ".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; eps(1.0)
+2.220446049250313e-16
+
+julia&gt; eps(1000.)
+1.1368683772161603e-13
+
+julia&gt; eps(1e-27)
+1.793662034335766e-43
+
+julia&gt; eps(0.0)
+5.0e-324</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111203Z" creationid="hsugawa8651" creationdate="20181112T111203Z">
+        <seg>julia&gt; eps(1.0)
+2.220446049250313e-16
+
+julia&gt; eps(1000.)
+1.1368683772161603e-13
+
+julia&gt; eps(1e-27)
+1.793662034335766e-43
+
+julia&gt; eps(0.0)
+5.0e-324</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; eps(Float32)
+1.1920929f-7
+
+julia&gt; eps(Float64)
+2.220446049250313e-16
+
+julia&gt; eps() &lt;x1/&gt; same as eps(Float64)
+2.220446049250313e-16</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111138Z" creationid="hsugawa8651" creationdate="20181112T111138Z">
+        <seg>julia&gt; eps(Float32)
+1.1920929f-7
+
+julia&gt; eps(Float64)
+2.220446049250313e-16
+
+julia&gt; eps() &lt;x1/&gt; same as eps(Float64)
+2.220446049250313e-16</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; f = +;
 
 julia&gt; f(1,2,3)
@@ -11014,6 +11166,46 @@ julia&gt; x.a
 
 julia&gt; x.a
 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; x = 1.25f0
+1.25f0
+
+julia&gt; nextfloat(x)
+1.2500001f0
+
+julia&gt; prevfloat(x)
+1.2499999f0
+
+julia&gt; bitstring(prevfloat(x))
+"00111111100111111111111111111111"
+
+julia&gt; bitstring(x)
+"00111111101000000000000000000000"
+
+julia&gt; bitstring(nextfloat(x))
+"00111111101000000000000000000001"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111321Z" creationid="hsugawa8651" creationdate="20181112T111321Z">
+        <seg>julia&gt; x = 1.25f0
+1.25f0
+
+julia&gt; nextfloat(x)
+1.2500001f0
+
+julia&gt; prevfloat(x)
+1.2499999f0
+
+julia&gt; bitstring(prevfloat(x))
+"00111111100111111111111111111111"
+
+julia&gt; bitstring(x)
+"00111111101000000000000000000000"
+
+julia&gt; bitstring(nextfloat(x))
+"00111111101000000000000000000001"</seg>
       </tuv>
     </tu>
     <tu>
