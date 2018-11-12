@@ -155,6 +155,22 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(&lt;x1/&gt;none&lt;x2/&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112324Z" creationid="hsugawa8651" creationdate="20181112T112324Z">
+        <seg>(&lt;x1/&gt;none&lt;x2/&gt;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(&lt;x1/&gt;undefined&lt;x2/&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112222Z" creationid="hsugawa8651" creationdate="20181112T112222Z">
+        <seg>(&lt;x1/&gt;undefined&lt;x2/&gt;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id lib-constants)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043136Z" creationid="hsugawa8651" creationdate="20181112T043136Z">
@@ -917,6 +933,14 @@ array it indexes into.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A lot of the power and extensibility in Julia comes from a collection of informal interfaces.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112047Z" creationid="hsugawa8651" creationdate="20181112T112047Z">
+        <seg>Juliaのパワーと拡張性の多くは、インフォーマルなインターフェースの集合から生まれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A tuple of input types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223952Z" creationid="hsugawa8651" creationdate="20181109T223952Z">
@@ -1223,6 +1247,14 @@ be to replicate the vector to the size of the matrix:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155529Z" creationid="hsugawa8651" creationdate="20181109T155529Z">
         <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;のサブタイプであるスカラーインデックスの任意のカスタム配列</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Any&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112202Z" creationid="hsugawa8651" creationdate="20181112T112202Z">
+        <seg>Any&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3587,6 +3619,16 @@ a 64-bit floating-point value.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By extending a few specific methods to work for a custom type, objects of that type not only
+receive those functionalities, but they are also able to be used in other methods that are written
+to generically build upon those behaviors.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112041Z" creationid="hsugawa8651" creationdate="20181112T112041Z">
+        <seg>カスタムタイプで作業するためのいくつかの特定の方法を拡張することによって、そのタイプのオブジェクトは、以下のように表示されます。 これらの機能を受け取りますが、他の方法で書かれることもあります。 一般的に構築されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By putting the &lt;x12/&gt;`@views`&lt;x13/&gt; macro in front of an expression or
 block of code, any &lt;x14/&gt;array[...]&lt;x15/&gt; slice in that expression will be converted to
 create a &lt;x16/&gt;SubArray&lt;x17/&gt; view instead.</seg>
@@ -4199,6 +4241,14 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Either &lt;x1/&gt;EltypeUnknown()&lt;x2/&gt; or &lt;x3/&gt;HasEltype()&lt;x4/&gt; as appropriate</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112153Z" creationid="hsugawa8651" creationdate="20181112T112153Z">
+        <seg>&lt;x1/&gt;EltypeUnknown()&lt;x2/&gt;または&lt;x3/&gt;HasEltype()&lt;x4/&gt;のいずれか適切な場合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Emit bounds checks always or never (ignoring declarations)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224752Z" creationid="hsugawa8651" creationdate="20181109T224752Z">
@@ -4722,6 +4772,22 @@ for the key &lt;x13/&gt;x&lt;x14/&gt;).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041754Z" creationid="hsugawa8651" creationdate="20181112T041754Z">
         <seg>辞書&lt;x1/&gt;D&lt;x2/&gt;を与えられると、構文&lt;x3/&gt;D[x]&lt;x4/&gt;は、キー&lt;x5/&gt;x&lt;x6/&gt;(存在する場合)の値を返すか、あるいはスローします。 エラーと&lt;x7/&gt;D[x]=y&lt;x8/&gt;は、&lt;x11/&gt;D&lt;x12/&gt;(既存の値を置き換える)の&lt;x9/&gt;x=&gt;y&lt;x10/&gt;のキー値ペアを格納します。 &lt;x13/&gt;x&lt;x14/&gt;x14/&gt;)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HasEltype()&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112145Z" creationid="hsugawa8651" creationdate="20181112T112145Z">
+        <seg>HasEltype()&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HasLength()&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112122Z" creationid="hsugawa8651" creationdate="20181112T112122Z">
+        <seg>HasLength()&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5436,6 +5502,14 @@ the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>IsInfinite()&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112319Z" creationid="hsugawa8651" creationdate="20181112T112319Z">
+        <seg>IsInfinite()&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It also makes writing exponential functions more elegant:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111756Z" creationid="hsugawa8651" creationdate="20181112T111736Z">
@@ -5545,6 +5619,22 @@ be evaluated and returned depending on the preceding conditionals:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043415Z" creationid="hsugawa8651" creationdate="20181112T043415Z">
         <seg>Iteration utilities</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>IteratorEltype(IterType)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112140Z" creationid="hsugawa8651" creationdate="20181112T112140Z">
+        <seg>IteratorEltype(IterType)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>IteratorSize(IterType)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112117Z" creationid="hsugawa8651" creationdate="20181112T112117Z">
+        <seg>IteratorSize(IterType)&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5854,6 +5944,14 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225202Z" creationid="hsugawa8651" creationdate="20181109T225202Z">
         <seg>リテラル整数は、標準的な方法で表されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Literal one of type &lt;x1/&gt;x&lt;x2/&gt; or type of variable &lt;x3/&gt;x&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112020Z" creationid="hsugawa8651" creationdate="20181112T112020Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;または変数&lt;x3/&gt;x&lt;x4/&gt;の型のリテラル</seg>
       </tuv>
     </tu>
     <tu>
@@ -6286,6 +6384,14 @@ written with a trailing comma.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>One of &lt;x1/&gt;HasLength()&lt;x2/&gt;, &lt;x3/&gt;HasShape{N}()&lt;x4/&gt;, &lt;x5/&gt;IsInfinite()&lt;x6/&gt;, or &lt;x7/&gt;SizeUnknown()&lt;x8/&gt; as appropriate</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112136Z" creationid="hsugawa8651" creationdate="20181112T112126Z">
+        <seg>&lt;x1/&gt;HasLength()&lt;x2/&gt;の一つ、&lt;x3/&gt;HasShape{N}()&lt;x4/&gt;、&lt;x5/&gt;IsInfinite()&lt;x6/&gt;、必要に応じて&lt;x8/&gt;、&lt;x8/&gt;SizeUnknown()&lt;x8/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One rather
 important distinction between the previous &lt;x2/&gt;while&lt;x3/&gt; loop form and the &lt;x4/&gt;for&lt;x5/&gt; loop form is the scope
 during which the variable is visible.</seg>
@@ -6435,6 +6541,22 @@ an interactive session.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223843Z" creationid="hsugawa8651" creationdate="20181109T223843Z">
         <seg>戻り型(宣言されたC型をJuliaにマッピングするには、次を参照)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Returns either a tuple of the first item and initial state or &lt;x1/&gt;`nothing`&lt;x2/&gt; if empty</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112101Z" creationid="hsugawa8651" creationdate="20181112T112101Z">
+        <seg>最初の項目と初期状態のタプルを返すか、&lt;x1/&gt;'nothing"&lt;x2/&gt;"&lt;x2/&gt;のいずれかを返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Returns either a tuple of the next item and next state or &lt;x1/&gt;nothing&lt;x2/&gt; if no items remain</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112109Z" creationid="hsugawa8651" creationdate="20181112T112109Z">
+        <seg>次の項目のタプルを返し、次の状態または&lt;x1/&gt;何もしない&lt;x2/&gt;を返します。項目が残っていない場合は、&lt;x/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -7176,6 +7298,14 @@ this to happen with &lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref Base.GC.gc).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The number of items, if known</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112228Z" creationid="hsugawa8651" creationdate="20181112T112228Z">
+        <seg>品目数(既知の場合)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The optional &lt;x18/&gt;bind-to bind_addr[:port]&lt;x19/&gt; specifies the IP address and port that other workers
 should use to connect to this worker.</seg>
       </tuv>
@@ -7320,6 +7450,14 @@ declaration syntax demonstrated above is equivalent to the following compact "as
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The type of the first entry of the tuple returned by &lt;x1/&gt;iterate()&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112213Z" creationid="hsugawa8651" creationdate="20181112T112213Z">
+        <seg>&lt;x1/&gt;によって返されるタプルの最初のエントリのタイプは()&lt;x2/&gt;で返されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The type system is described in &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-types) and defining a function
 in terms of methods chosen by multiple dispatch on run-time argument types is described in &lt;x4/&gt;Methods&lt;x5/&gt;.</seg>
       </tuv>
@@ -7440,6 +7578,15 @@ normal functions, which happen to support infix operator syntax, but always eval
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230459Z" creationid="hsugawa8651" creationdate="20181109T230459Z">
         <seg>これらは 通常の関数は、インフィックス演算子の構文をサポートしていますが、常にその引数を評価します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These functions are useful in &lt;x1/&gt;Numeric Comparisons&lt;x2/&gt; to avoid overhead from unnecessary
+&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112023Z" creationid="hsugawa8651" creationdate="20181112T112023Z">
+        <seg>これらの関数は、不要なオーバーヘッドを回避するために&lt;x1/&gt;数値比較&lt;x2/&gt;で役立ちます。 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref変換とプロモーション)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7989,6 +8136,14 @@ for the last entry in a conditional chain is an error:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043134Z" creationid="hsugawa8651" creationdate="20181112T043134Z">
         <seg>Utility Collections</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Value returned by &lt;x1/&gt;IteratorSize(IterType)&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112254Z" creationid="hsugawa8651" creationdate="20181112T112254Z">
+        <seg>&lt;x1/&gt;IteratorSizeによって返される値&lt;x/&gt;(IterType)&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -8572,6 +8727,14 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`length(iter)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112304Z" creationid="hsugawa8651" creationdate="20181112T112304Z">
+        <seg>`length(iter)`&lt;x1/&gt;`length(iter)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`ndims(A)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153230Z" creationid="hsugawa8651" creationdate="20181109T153230Z">
@@ -8931,6 +9094,14 @@ code_native(triple,(m128,))</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>eltype(IterType)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112156Z" creationid="hsugawa8651" creationdate="20181112T112156Z">
+        <seg>eltype(IterType)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>end
 end
 using Bar</seg>
@@ -9270,6 +9441,22 @@ Markdown.parse("```\n\$ julia\n\n$(banner)\njulia&gt; 1 + 2\n3\n\njulia&gt; ans\
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042111Z" creationid="hsugawa8651" creationdate="20181110T042111Z">
         <seg>は次のように変換されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>iterate(iter)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112056Z" creationid="hsugawa8651" creationdate="20181112T112056Z">
+        <seg>iterate(iter)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>iterate(iter, state)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112106Z" creationid="hsugawa8651" creationdate="20181112T112106Z">
+        <seg>iterate(iter, state)&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12142,6 +12329,34 @@ julia&gt; y
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; zero(Float32)
+0.0f0
+
+julia&gt; zero(1.0)
+0.0
+
+julia&gt; one(Int32)
+1
+
+julia&gt; one(BigFloat)
+1.0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112028Z" creationid="hsugawa8651" creationdate="20181112T112028Z">
+        <seg>julia&gt; zero(Float32)
+0.0f0
+
+julia&gt; zero(1.0)
+0.0
+
+julia&gt; one(Int32)
+1
+
+julia&gt; one(BigFloat)
+1.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; zeros(Int8, 2, 3)
 2×3 Array{Int8,2}:
  0  0  0
@@ -12188,6 +12403,22 @@ julia&gt; ∑(2, 3)
 
 julia&gt; ∑(2, 3)
 5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>length(iter)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112217Z" creationid="hsugawa8651" creationdate="20181112T112217Z">
+        <seg>length(iter)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>length(iter)&lt;x1/&gt;  and &lt;x2/&gt;size(iter, [dim])&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112314Z" creationid="hsugawa8651" creationdate="20181112T112314Z">
+        <seg>length(iter)&lt;x1/&gt;  and &lt;x2/&gt;size(iter, [dim])&lt;x3/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12425,6 +12656,14 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110235Z" creationid="hsugawa8651" creationdate="20181112T110235Z">
         <seg>single&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>size(iter, [dim])&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112237Z" creationid="hsugawa8651" creationdate="20181112T112237Z">
+        <seg>size(iter, [dim])&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
