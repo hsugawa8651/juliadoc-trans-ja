@@ -179,6 +179,22 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@ref Base.EnvDict)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041814Z" creationid="hsugawa8651" creationdate="20181112T041814Z">
+        <seg>(@ref Base.EnvDict)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@ref Base.ImmutableDict)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041818Z" creationid="hsugawa8651" creationdate="20181112T041818Z">
+        <seg>(@ref Base.ImmutableDict)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@ref Base.getproperty)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025921Z" creationid="hsugawa8651" creationdate="20181110T025921Z">
@@ -934,6 +950,34 @@ Base.GC</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.Dict
+Base.IdDict
+Base.WeakKeyDict
+Base.ImmutableDict
+Base.haskey
+Base.get(::Any, ::Any, ::Any)
+Base.get
+Base.get!(::Any, ::Any, ::Any)
+Base.get!(::Function, ::Any, ::Any)
+Base.getkey
+Base.delete!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041800Z" creationid="hsugawa8651" creationdate="20181112T041800Z">
+        <seg>Base.Dict
+Base.IdDict
+Base.WeakKeyDict
+Base.ImmutableDict
+Base.haskey
+Base.get(::Any, ::Any, ::Any)
+Base.get
+Base.get!(::Any, ::Any, ::Any)
+Base.get!(::Function, ::Any, ::Any)
+Base.getkey
+Base.delete!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.GC.gc
 Base.GC.enable
 Base.GC.@preserve
@@ -988,6 +1032,20 @@ Base.missing
 Base.coalesce
 Base.ismissing
 Base.skipmissing</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Set
+Base.BitSet
+Base.union
+Base.union!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041821Z" creationid="hsugawa8651" creationdate="20181112T041821Z">
+        <seg>Base.Set
+Base.BitSet
+Base.union
+Base.union!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1068,6 +1126,14 @@ Base.any!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.append!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041923Z" creationid="hsugawa8651" creationdate="20181112T041923Z">
+        <seg>Base.append!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.count
 Base.any(::Any, ::Any)
 Base.all(::Any, ::Any)
@@ -1102,6 +1168,14 @@ Base.cumsum!</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041619Z" creationid="hsugawa8651" creationdate="20181110T041619Z">
         <seg>Base.cumsum
 Base.cumsum!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.deleteat!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041920Z" creationid="hsugawa8651" creationdate="20181112T041920Z">
+        <seg>Base.deleteat!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1300,6 +1374,34 @@ Base.unique!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.insert!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041919Z" creationid="hsugawa8651" creationdate="20181112T041919Z">
+        <seg>Base.insert!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.intersect
+Base.setdiff
+Base.setdiff!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041822Z" creationid="hsugawa8651" creationdate="20181112T041822Z">
+        <seg>Base.intersect
+Base.setdiff
+Base.setdiff!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.intersect!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041825Z" creationid="hsugawa8651" creationdate="20181112T041825Z">
+        <seg>Base.intersect!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.invperm
 Base.isperm
 Base.permute!(::Any, ::AbstractVector)
@@ -1344,6 +1446,20 @@ Base.fieldname</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.issubset
+Base.:⊈
+Base.:⊊
+Base.issetequal</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041826Z" creationid="hsugawa8651" creationdate="20181112T041826Z">
+        <seg>Base.issubset
+Base.:⊈
+Base.:⊊
+Base.issetequal</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.iterate
 Base.IteratorSize
 Base.IteratorEltype</seg>
@@ -1352,6 +1468,16 @@ Base.IteratorEltype</seg>
         <seg>Base.iterate
 Base.IteratorSize
 Base.IteratorEltype</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.keytype
+Base.valtype</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041804Z" creationid="hsugawa8651" creationdate="20181112T041804Z">
+        <seg>Base.keytype
+Base.valtype</seg>
       </tuv>
     </tu>
     <tu>
@@ -1520,6 +1646,52 @@ Base.Cdouble</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.pop!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041834Z" creationid="hsugawa8651" creationdate="20181112T041834Z">
+        <seg>Base.pop!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.pop!(::Any, ::Any, ::Any)
+Base.keys
+Base.values
+Base.pairs
+Base.merge
+Base.merge!(::AbstractDict, ::AbstractDict...)
+Base.merge!(::Function, ::AbstractDict, ::AbstractDict...)
+Base.sizehint!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041802Z" creationid="hsugawa8651" creationdate="20181112T041802Z">
+        <seg>Base.pop!(::Any, ::Any, ::Any)
+Base.keys
+Base.values
+Base.pairs
+Base.merge
+Base.merge!(::AbstractDict, ::AbstractDict...)
+Base.merge!(::Function, ::AbstractDict, ::AbstractDict...)
+Base.sizehint!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.popfirst!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041918Z" creationid="hsugawa8651" creationdate="20181112T041918Z">
+        <seg>Base.popfirst!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.prepend!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041924Z" creationid="hsugawa8651" creationdate="20181112T041924Z">
+        <seg>Base.prepend!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.prod
 Base.prod!</seg>
       </tuv>
@@ -1542,6 +1714,22 @@ Core.setfield!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.push!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041833Z" creationid="hsugawa8651" creationdate="20181112T041833Z">
+        <seg>Base.push!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.pushfirst!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041917Z" creationid="hsugawa8651" creationdate="20181112T041917Z">
+        <seg>Base.pushfirst!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.replace(::Any, ::Pair...)
 Base.replace(::Base.Callable, ::Any)
 Base.replace!</seg>
@@ -1550,6 +1738,14 @@ Base.replace!</seg>
         <seg>Base.replace(::Any, ::Pair...)
 Base.replace(::Base.Callable, ::Any)
 Base.replace!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.resize!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041922Z" creationid="hsugawa8651" creationdate="20181112T041922Z">
+        <seg>Base.resize!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1664,6 +1860,14 @@ Base.datatype_pointerfree</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.splice!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041921Z" creationid="hsugawa8651" creationdate="20181112T041921Z">
+        <seg>Base.splice!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.stride
 Base.strides</seg>
       </tuv>
@@ -1702,6 +1906,16 @@ Base.typeintersect
 Base.promote_type
 Base.promote_rule
 Base.isdispatchtuple</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.symdiff
+Base.symdiff!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041824Z" creationid="hsugawa8651" creationdate="20181112T041824Z">
+        <seg>Base.symdiff
+Base.symdiff!</seg>
       </tuv>
     </tu>
     <tu>
@@ -2137,12 +2351,53 @@ Base.identity</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Define these
+two functions for custom types to override how they are stored in a hash table.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041724Z" creationid="hsugawa8651" creationdate="20181112T041724Z">
+        <seg>これらを定義する ハッシュテーブルに格納される方法を上書きするカスタムタイプ用の2つの関数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>DenseArray&lt;x1/&gt; is an abstract subtype of &lt;x2/&gt;AbstractArray&lt;x3/&gt; intended to include all arrays where
 elements are stored contiguously in column-major order (see additional notes in
 &lt;x4/&gt;&lt;x5/&gt;&lt;x6/&gt;(@ref man-performance-tips)).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160418Z" creationid="hsugawa8651" creationdate="20181109T160418Z">
         <seg>DenseArray&lt;x1/&gt;は、すべての配列を含むことを意図した&lt;x2/&gt;AbstractArray&lt;x3/&gt;の抽象サブタイプである。 要素は列主順序で連続的に格納されます(追加の注記を参照してください)。 &lt;x4/&gt;&lt;x5/&gt;&lt;x6/&gt;(@ref manのパフォーマンス・ヒント))。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Dequeues</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041832Z" creationid="hsugawa8651" creationdate="20181112T041832Z">
+        <seg>Dequeues</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Dict("A"=&gt;1, "B"=&gt;2)&lt;x1/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041733Z" creationid="hsugawa8651" creationdate="20181112T041733Z">
+        <seg>Dict("A"=&gt;1, "B"=&gt;2)&lt;x1/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Dictionaries</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041713Z" creationid="hsugawa8651" creationdate="20181112T041713Z">
+        <seg>Dictionaries</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Dictionaries may also be created with generators.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041748Z" creationid="hsugawa8651" creationdate="20181112T041748Z">
+        <seg>辞書はジェネレータで作成することもできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2377,10 +2632,26 @@ in-memory representations as objects are numeric primitives.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, &lt;x1/&gt;Dict(i =&gt; f(i) for i = 1:10)&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041750Z" creationid="hsugawa8651" creationdate="20181112T041750Z">
+        <seg>例えば、&lt;x1/&gt;Dict(i=&gt;f(i=&gt;f(i)for i=1:10)&lt;x2/&gt;)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, &lt;x11/&gt;Any[x, y, z]&lt;x12/&gt; constructs a heterogeneous array that can contain any values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154704Z" creationid="hsugawa8651" creationdate="20181109T154704Z">
         <seg>たとえば、&lt;x11/&gt;任意の[x,y,z]&lt;x12/&gt;は、任意の値を含むことができる異機種間配列を構成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, &lt;x6/&gt;Dict{String,Int32}("A"=&gt;1, "B"=&gt;2)&lt;x7/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041747Z" creationid="hsugawa8651" creationdate="20181112T041747Z">
+        <seg>たとえば、&lt;x6/&gt;Dict{String,Int32}("A"=&gt;1, "B"=&gt;2)&lt;x7/&gt;を指定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2557,6 +2828,16 @@ are identical to the passed values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155050Z" creationid="hsugawa8651" creationdate="20181109T155050Z">
         <seg>生成された値は、&lt;x2/&gt;キーワードの場合は&lt;x1/&gt;を使用してフィルタできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Given a dictionary &lt;x1/&gt;D&lt;x2/&gt;, the syntax &lt;x3/&gt;D[x]&lt;x4/&gt; returns the value of key &lt;x5/&gt;x&lt;x6/&gt; (if it exists) or throws
+an error, and &lt;x7/&gt;D[x] = y&lt;x8/&gt; stores the key-value pair &lt;x9/&gt;x =&gt; y&lt;x10/&gt; in &lt;x11/&gt;D&lt;x12/&gt; (replacing any existing value
+for the key &lt;x13/&gt;x&lt;x14/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041754Z" creationid="hsugawa8651" creationdate="20181112T041754Z">
+        <seg>辞書&lt;x1/&gt;D&lt;x2/&gt;を与えられると、構文&lt;x3/&gt;D[x]&lt;x4/&gt;は、キー&lt;x5/&gt;x&lt;x6/&gt;(存在する場合)の値を返すか、あるいはスローします。 エラーと&lt;x7/&gt;D[x]=y&lt;x8/&gt;は、&lt;x11/&gt;D&lt;x12/&gt;(既存の値を置き換える)の&lt;x9/&gt;x=&gt;y&lt;x10/&gt;のキー値ペアを格納します。 &lt;x13/&gt;x&lt;x14/&gt;x14/&gt;)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3215,6 +3496,14 @@ be evaluated and returned depending on the preceding conditionals:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230248Z" creationid="hsugawa8651" creationdate="20181109T230248Z">
         <seg>この動作を試してみると簡単です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Its implementation uses &lt;x2/&gt;`hash`&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041720Z" creationid="hsugawa8651" creationdate="20181112T041720Z">
+        <seg>その実装は、&lt;x2/&gt;'ハッシュを使用します。&lt;x3/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3880,6 +4169,14 @@ iterable type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224743Z" creationid="hsugawa8651" creationdate="20181109T224743Z">
         <seg>最適化レベルを設定します(指定されていない場合はデフォルトレベルは2、レベルなしで使用される場合は3です)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Set-Like Collections</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041820Z" creationid="hsugawa8651" creationdate="20181112T041820Z">
+        <seg>Set-Like Collections</seg>
       </tuv>
     </tu>
     <tu>
@@ -4849,6 +5146,15 @@ Julia &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized) &lt;x4/&gt;f.(args.
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To explicitly specify types
+use the syntax &lt;x4/&gt;Dict{KeyType,ValueType}(...)&lt;x5/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041745Z" creationid="hsugawa8651" creationdate="20181112T041745Z">
+        <seg>タイプを明示的に指定するには 構文&lt;x4/&gt;Dict{KeyType,ValueType}(...)&lt;x5/&gt;を使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To facilitate chaining, the operator associates from right to left.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230200Z" creationid="hsugawa8651" creationdate="20181109T230200Z">
@@ -5224,10 +5530,42 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`Dict`&lt;x1/&gt; is the standard dictionary.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041718Z" creationid="hsugawa8651" creationdate="20181112T041718Z">
+        <seg>「Dict」&lt;x1/&gt;は標準辞書です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Dict`&lt;x1/&gt;s can be created by passing pair objects constructed with &lt;x2/&gt;=&gt;&lt;x3/&gt; to a &lt;x4/&gt;`Dict`&lt;x5/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041731Z" creationid="hsugawa8651" creationdate="20181112T041731Z">
+        <seg>「Dict」&lt;x1/&gt;は、&lt;x2/&gt;=&gt;&lt;x3/&gt;で構成されたペアオブジェクトを、&lt;x4/&gt;'Dict'&lt;x5/&gt;に渡すことで作成できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`IdDict`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041608Z" creationid="hsugawa8651" creationdate="20181112T041608Z">
         <seg>`IdDict`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`IdDict`&lt;x1/&gt; is a special hash table where the keys are always object identities.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041725Z" creationid="hsugawa8651" creationdate="20181112T041725Z">
+        <seg>「IdDict」&lt;x1/&gt;は、鍵が常にオブジェクト識別子である特殊なハッシュ表です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Iterators.Pairs`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041819Z" creationid="hsugawa8651" creationdate="20181112T041819Z">
+        <seg>`Iterators.Pairs`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5332,6 +5670,14 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154644Z" creationid="hsugawa8651" creationdate="20181109T154644Z">
         <seg>「ホフカト」&lt;x1/&gt;は、次元1(セミコロン)と次元2(スペースを含む)の両方で連結されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`isequal`&lt;x1/&gt; to determine equality.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041722Z" creationid="hsugawa8651" creationdate="20181112T041722Z">
+        <seg>等価を決定するには、「isequal」&lt;x1/&gt;を指定します。</seg>
       </tuv>
     </tu>
     <tu>
