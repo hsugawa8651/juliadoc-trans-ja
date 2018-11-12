@@ -155,6 +155,14 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id lib-numbers)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044706Z" creationid="hsugawa8651" creationdate="20181112T044706Z">
+        <seg>(@id lib-numbers)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id man-anonymous-functions)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025951Z" creationid="hsugawa8651" creationdate="20181110T025951Z">
@@ -679,6 +687,14 @@ this fashion is to check if &lt;x3/&gt;abspath(PROGRAM_FILE) == @__FILE__&lt;x4/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Abstract number types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044708Z" creationid="hsugawa8651" creationdate="20181112T044708Z">
+        <seg>Abstract number types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>AbstractString&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041613Z" creationid="hsugawa8651" creationdate="20181112T041613Z">
@@ -756,6 +772,16 @@ flexible, user-extensible &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225156Z" creationid="hsugawa8651" creationdate="20181109T225156Z">
         <seg>すべての数値型は、明示的なキャストなしで自然に相互運用されます。 柔軟なユーザー拡張可能な&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref変換とプロモーション)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All the sorting and order related functions rely on a "less than" relation defining a total order
+on the values to be manipulated.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T045027Z" creationid="hsugawa8651" creationdate="20181112T045027Z">
+        <seg>All the sorting and order related functions rely on a "less than" relation defining a total order
+on the values to be manipulated.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1077,6 +1103,14 @@ Base.:(!)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.@threadcall</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044703Z" creationid="hsugawa8651" creationdate="20181112T044703Z">
+        <seg>Base.@threadcall</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.AbstractRange
 Base.OrdinalRange
 Base.AbstractUnitRange
@@ -1387,6 +1421,30 @@ Base.Libc.flush_cstdio</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.MPFR.BigFloat(::Any)
+Base.precision
+Base.MPFR.precision(::Type{BigFloat})
+Base.MPFR.setprecision
+Base.MPFR.BigFloat(x, prec::Int)
+Base.MPFR.BigFloat(x::Union{Integer, AbstractFloat, String}, rounding::RoundingMode)
+Base.MPFR.BigFloat(x, prec::Int, rounding::RoundingMode)
+Base.GMP.BigInt(::Any)
+Base.@big_str</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044736Z" creationid="hsugawa8651" creationdate="20181112T044736Z">
+        <seg>Base.MPFR.BigFloat(::Any)
+Base.precision
+Base.MPFR.precision(::Type{BigFloat})
+Base.MPFR.setprecision
+Base.MPFR.BigFloat(x, prec::Int)
+Base.MPFR.BigFloat(x::Union{Integer, AbstractFloat, String}, rounding::RoundingMode)
+Base.MPFR.BigFloat(x, prec::Int, rounding::RoundingMode)
+Base.GMP.BigInt(::Any)
+Base.@big_str</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.Missing
 Base.missing
 Base.coalesce
@@ -1455,6 +1513,132 @@ Base.union!</seg>
 Base.BitSet
 Base.union
 Base.union!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Threads.AbstractLock
+Base.lock
+Base.unlock
+Base.trylock
+Base.islocked
+Base.ReentrantLock
+Base.Threads.Mutex
+Base.Threads.SpinLock
+Base.Threads.RecursiveSpinLock
+Base.Semaphore
+Base.acquire
+Base.release</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044705Z" creationid="hsugawa8651" creationdate="20181112T044705Z">
+        <seg>Base.Threads.AbstractLock
+Base.lock
+Base.unlock
+Base.trylock
+Base.islocked
+Base.ReentrantLock
+Base.Threads.Mutex
+Base.Threads.SpinLock
+Base.Threads.RecursiveSpinLock
+Base.Semaphore
+Base.acquire
+Base.release</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Threads.atomic_add!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044652Z" creationid="hsugawa8651" creationdate="20181112T044652Z">
+        <seg>Base.Threads.atomic_add!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Threads.atomic_and!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044655Z" creationid="hsugawa8651" creationdate="20181112T044655Z">
+        <seg>Base.Threads.atomic_and!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Threads.atomic_fence</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044701Z" creationid="hsugawa8651" creationdate="20181112T044701Z">
+        <seg>Base.Threads.atomic_fence</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Threads.atomic_max!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044659Z" creationid="hsugawa8651" creationdate="20181112T044659Z">
+        <seg>Base.Threads.atomic_max!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Threads.atomic_min!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044700Z" creationid="hsugawa8651" creationdate="20181112T044700Z">
+        <seg>Base.Threads.atomic_min!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Threads.atomic_nand!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044656Z" creationid="hsugawa8651" creationdate="20181112T044656Z">
+        <seg>Base.Threads.atomic_nand!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Threads.atomic_or!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044657Z" creationid="hsugawa8651" creationdate="20181112T044657Z">
+        <seg>Base.Threads.atomic_or!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Threads.atomic_sub!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044654Z" creationid="hsugawa8651" creationdate="20181112T044654Z">
+        <seg>Base.Threads.atomic_sub!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Threads.atomic_xchg!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044651Z" creationid="hsugawa8651" creationdate="20181112T044651Z">
+        <seg>Base.Threads.atomic_xchg!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Threads.atomic_xor!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044658Z" creationid="hsugawa8651" creationdate="20181112T044658Z">
+        <seg>Base.Threads.atomic_xor!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Threads.threadid
+Base.Threads.nthreads
+Base.Threads.@threads
+Base.Threads.Atomic
+Base.Threads.atomic_cas!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044650Z" creationid="hsugawa8651" creationdate="20181112T044650Z">
+        <seg>Base.Threads.threadid
+Base.Threads.nthreads
+Base.Threads.@threads
+Base.Threads.Atomic
+Base.Threads.atomic_cas!</seg>
       </tuv>
     </tu>
     <tu>
@@ -1635,6 +1819,46 @@ Base.any!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.bitstring
+Base.parse
+Base.tryparse
+Base.big
+Base.signed
+Base.unsigned
+Base.float(::Any)
+Base.Math.significand
+Base.Math.exponent
+Base.complex(::Complex)
+Base.bswap
+Base.hex2bytes
+Base.hex2bytes!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044714Z" creationid="hsugawa8651" creationdate="20181112T044714Z">
+        <seg>Base.bitstring
+Base.parse
+Base.tryparse
+Base.big
+Base.signed
+Base.unsigned
+Base.float(::Any)
+Base.Math.significand
+Base.Math.exponent
+Base.complex(::Complex)
+Base.bswap
+Base.hex2bytes
+Base.hex2bytes!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.bytes2hex</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044715Z" creationid="hsugawa8651" creationdate="20181112T044715Z">
+        <seg>Base.bytes2hex</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.bytesavailable
 Base.ntoh
 Base.hton
@@ -1667,6 +1891,32 @@ Base.all(::Any, ::Any)
 Base.foreach
 Base.map
 Base.map!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.count_ones
+Base.count_zeros
+Base.leading_zeros
+Base.leading_ones
+Base.trailing_zeros
+Base.trailing_ones
+Base.isodd
+Base.iseven
+Base.@int128_str
+Base.@uint128_str</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044718Z" creationid="hsugawa8651" creationdate="20181112T044718Z">
+        <seg>Base.count_ones
+Base.count_zeros
+Base.leading_zeros
+Base.leading_ones
+Base.trailing_zeros
+Base.trailing_ones
+Base.isodd
+Base.iseven
+Base.@int128_str
+Base.@uint128_str</seg>
       </tuv>
     </tu>
     <tu>
@@ -1713,6 +1963,16 @@ Base.rot180
 Base.rotl90
 Base.rotr90
 Base.mapslices</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.digits
+Base.digits!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044713Z" creationid="hsugawa8651" creationdate="20181112T044713Z">
+        <seg>Base.digits
+Base.digits!</seg>
       </tuv>
     </tu>
     <tu>
@@ -2259,6 +2519,76 @@ Base.conj!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.one
+Base.oneunit
+Base.zero
+Base.im
+Base.MathConstants.pi
+Base.MathConstants.ℯ
+Base.MathConstants.catalan
+Base.MathConstants.eulergamma
+Base.MathConstants.golden
+Base.Inf
+Base.Inf32
+Base.Inf16
+Base.NaN
+Base.NaN32
+Base.NaN16
+Base.issubnormal
+Base.isfinite
+Base.isinf
+Base.isnan
+Base.iszero
+Base.isone
+Base.nextfloat
+Base.prevfloat
+Base.isinteger
+Base.isreal
+Core.Float32(::Any)
+Core.Float64(::Any)
+Base.Rounding.rounding
+Base.Rounding.setrounding(::Type, ::Any)
+Base.Rounding.setrounding(::Function, ::Type, ::RoundingMode)
+Base.Rounding.get_zero_subnormals
+Base.Rounding.set_zero_subnormals</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044716Z" creationid="hsugawa8651" creationdate="20181112T044716Z">
+        <seg>Base.one
+Base.oneunit
+Base.zero
+Base.im
+Base.MathConstants.pi
+Base.MathConstants.ℯ
+Base.MathConstants.catalan
+Base.MathConstants.eulergamma
+Base.MathConstants.golden
+Base.Inf
+Base.Inf32
+Base.Inf16
+Base.NaN
+Base.NaN32
+Base.NaN16
+Base.issubnormal
+Base.isfinite
+Base.isinf
+Base.isnan
+Base.iszero
+Base.isone
+Base.nextfloat
+Base.prevfloat
+Base.isinteger
+Base.isreal
+Core.Float32(::Any)
+Core.Float64(::Any)
+Base.Rounding.rounding
+Base.Rounding.setrounding(::Type, ::Any)
+Base.Rounding.setrounding(::Function, ::Type, ::RoundingMode)
+Base.Rounding.get_zero_subnormals
+Base.Rounding.set_zero_subnormals</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.pointer
 Base.unsafe_wrap{T,N}(::Union{Type{Array},Type{Array{T}},Type{Array{T,N}}}, ::Ptr{T}, ::NTuple{N,Int})
 Base.pointer_from_objref
@@ -2579,6 +2909,26 @@ Base.datatype_pointerfree</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.sort
+Base.sortperm
+Base.InsertionSort
+Base.MergeSort
+Base.QuickSort
+Base.PartialQuickSort
+Base.Sort.sortperm!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044931Z" creationid="hsugawa8651" creationdate="20181112T044931Z">
+        <seg>Base.sort
+Base.sortperm
+Base.InsertionSort
+Base.MergeSort
+Base.QuickSort
+Base.PartialQuickSort
+Base.Sort.sortperm!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.splice!</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041921Z" creationid="hsugawa8651" creationdate="20181112T041921Z">
@@ -2775,6 +3125,14 @@ Base.IOContext(::IO, ::IOContext)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>BigFloats and BigInts</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044719Z" creationid="hsugawa8651" creationdate="20181112T044719Z">
+        <seg>BigFloats and BigInts</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Binary and octal literals are also supported:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225352Z" creationid="hsugawa8651" creationdate="20181109T225352Z">
@@ -2947,6 +3305,14 @@ result.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Concrete number types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044710Z" creationid="hsugawa8651" creationdate="20181112T044710Z">
+        <seg>Concrete number types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Concrete types should also typically provide a &lt;x16/&gt;`similar(A,T=eltype(A),dims=size(A))`&lt;x17/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160350Z" creationid="hsugawa8651" creationdate="20181109T160350Z">
@@ -3062,6 +3428,50 @@ Base.Enums.@enum</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Core.Float16
+Core.Float32
+Core.Float64
+Base.BigFloat
+Core.Bool
+Core.Int8
+Core.UInt8
+Core.Int16
+Core.UInt16
+Core.Int32
+Core.UInt32
+Core.Int64
+Core.UInt64
+Core.Int128
+Core.UInt128
+Base.BigInt
+Base.Complex
+Base.Rational
+Base.Irrational</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044711Z" creationid="hsugawa8651" creationdate="20181112T044711Z">
+        <seg>Core.Float16
+Core.Float32
+Core.Float64
+Base.BigFloat
+Core.Bool
+Core.Int8
+Core.UInt8
+Core.Int16
+Core.UInt16
+Core.Int32
+Core.UInt32
+Core.Int64
+Core.UInt64
+Core.Int128
+Core.UInt128
+Base.BigInt
+Base.Complex
+Base.Rational
+Base.Irrational</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Core.Function
 Base.hasmethod
 Core.applicable
@@ -3088,6 +3498,78 @@ Base.:(∘)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042030Z" creationid="hsugawa8651" creationdate="20181110T042030Z">
         <seg>Core.Intrinsics.llvmcall</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Core.Number
+Core.Real
+Core.AbstractFloat
+Core.Integer
+Core.Signed
+Core.Unsigned
+Base.AbstractIrrational</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044709Z" creationid="hsugawa8651" creationdate="20181112T044709Z">
+        <seg>Core.Number
+Core.Real
+Core.AbstractFloat
+Core.Integer
+Core.Signed
+Core.Unsigned
+Base.AbstractIrrational</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Core.Task
+Base.current_task
+Base.istaskdone
+Base.istaskstarted
+Base.yield
+Base.yieldto
+Base.task_local_storage(::Any)
+Base.task_local_storage(::Any, ::Any)
+Base.task_local_storage(::Function, ::Any, ::Any)
+Base.Condition
+Base.notify
+Base.schedule
+Base.@task
+Base.sleep
+Base.Channel
+Base.put!(::Channel, ::Any)
+Base.take!(::Channel)
+Base.isready(::Channel)
+Base.fetch(::Channel)
+Base.close(::Channel)
+Base.bind(c::Channel, task::Task)
+Base.asyncmap
+Base.asyncmap!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044739Z" creationid="hsugawa8651" creationdate="20181112T044739Z">
+        <seg>Core.Task
+Base.current_task
+Base.istaskdone
+Base.istaskstarted
+Base.yield
+Base.yieldto
+Base.task_local_storage(::Any)
+Base.task_local_storage(::Any, ::Any)
+Base.task_local_storage(::Function, ::Any, ::Any)
+Base.Condition
+Base.notify
+Base.schedule
+Base.@task
+Base.sleep
+Base.Channel
+Base.put!(::Channel, ::Any)
+Base.take!(::Channel)
+Base.isready(::Channel)
+Base.fetch(::Channel)
+Base.close(::Channel)
+Base.bind(c::Channel, task::Task)
+Base.asyncmap
+Base.asyncmap!</seg>
       </tuv>
     </tu>
     <tu>
@@ -3214,6 +3696,14 @@ Base.Sys.MACHINE</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153954Z" creationid="hsugawa8651" creationdate="20181109T153954Z">
         <seg>現在、プラットフォームのデフォルトのC呼び出し規約のみがサポートされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Data Formats</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044712Z" creationid="hsugawa8651" creationdate="20181112T044712Z">
+        <seg>Data Formats</seg>
       </tuv>
     </tu>
     <tu>
@@ -3713,6 +4203,14 @@ are identical to the passed values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043209Z" creationid="hsugawa8651" creationdate="20181112T043209Z">
         <seg>General I/O</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>General Number Functions and Constants</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044715Z" creationid="hsugawa8651" creationdate="20181112T044715Z">
+        <seg>General Number Functions and Constants</seg>
       </tuv>
     </tu>
     <tu>
@@ -4285,6 +4783,14 @@ read as: &lt;x11/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224711Z" creationid="hsugawa8651" creationdate="20181109T224711Z">
         <seg>整数値Nは、N個のローカル・ワーカー・プロセスを起動します。&lt;x1/&gt;自動&lt;x2/&gt;は、ローカルCPUスレッド(論理コア)の数と同じ数のワーカーを起動します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Integers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044717Z" creationid="hsugawa8651" creationdate="20181112T044717Z">
+        <seg>Integers</seg>
       </tuv>
     </tu>
     <tu>
@@ -4971,6 +5477,14 @@ level operators and functions, in a way that is independent of the underlying st
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Or in reverse order by a transformation:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044919Z" creationid="hsugawa8651" creationdate="20181112T044919Z">
+        <seg>Or in reverse order by a transformation:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Or you could put that code into a script and run it:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224350Z" creationid="hsugawa8651" creationdate="20181109T224350Z">
@@ -5294,6 +5808,14 @@ in order, returning the value of the last subexpression as its value.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Standard Numeric Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044707Z" creationid="hsugawa8651" creationdate="20181112T044707Z">
+        <seg>Standard Numeric Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Start up with the given system image file</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224637Z" creationid="hsugawa8651" creationdate="20181109T224637Z">
@@ -5333,6 +5855,22 @@ sharing memory with the original array rather than by copying it.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024957Z" creationid="hsugawa8651" creationdate="20181110T024957Z">
         <seg>次のような関数を呼び出すとします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Synchronization Primitives</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044704Z" creationid="hsugawa8651" creationdate="20181112T044704Z">
+        <seg>Synchronization Primitives</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tasks</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044738Z" creationid="hsugawa8651" creationdate="20181112T044738Z">
+        <seg>Tasks</seg>
       </tuv>
     </tu>
     <tu>
@@ -6236,6 +6774,14 @@ which may or may not be caused by CTRL-C, use &lt;x5/&gt;`atexit`&lt;x6/&gt;.</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To sort an array in-place, use the "bang" version of the sort function:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044840Z" creationid="hsugawa8651" creationdate="20181112T044840Z">
+        <seg>To sort an array in-place, use the "bang" version of the sort function:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To use module functions, use &lt;x1/&gt;import Module&lt;x2/&gt; to import the module, and &lt;x3/&gt;Module.fn(x)&lt;x4/&gt; to use the
 functions.</seg>
       </tuv>
@@ -6986,6 +7532,14 @@ Base.unsafe_store!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>ccall using a threadpool (Experimental)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044702Z" creationid="hsugawa8651" creationdate="20181112T044702Z">
+        <seg>ccall using a threadpool (Experimental)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>clock&lt;x1/&gt; takes no arguments and returns an &lt;x2/&gt;`Int32`&lt;x3/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224034Z" creationid="hsugawa8651" creationdate="20181109T224034Z">
@@ -6998,6 +7552,36 @@ Base.unsafe_store!</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154549Z" creationid="hsugawa8651" creationdate="20181109T154549Z">
         <seg>次元に沿って入力配列を連結する&lt;x1/&gt;k&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>const m128 = NTuple{4,VecElement{Float32}}
+
+function add(a::m128, b::m128)
+    (VecElement(a[1].value+b[1].value),
+     VecElement(a[2].value+b[2].value),
+     VecElement(a[3].value+b[3].value),
+     VecElement(a[4].value+b[4].value))
+end
+
+triple(c::m128) = add(add(c,c),c)
+
+code_native(triple,(m128,))</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044828Z" creationid="hsugawa8651" creationdate="20181112T044828Z">
+        <seg>const m128 = NTuple{4,VecElement{Float32}}
+
+function add(a::m128, b::m128)
+    (VecElement(a[1].value+b[1].value),
+     VecElement(a[2].value+b[2].value),
+     VecElement(a[3].value+b[3].value),
+     VecElement(a[4].value+b[4].value))
+end
+
+triple(c::m128) = add(add(c,c),c)
+
+code_native(triple,(m128,))</seg>
       </tuv>
     </tu>
     <tu>
@@ -7955,6 +8539,30 @@ julia&gt; searchsorted(a, 4)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; a = [2,3,1];
+
+julia&gt; sort!(a);
+
+julia&gt; a
+3-element Array{Int64,1}:
+ 1
+ 2
+ 3</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044850Z" creationid="hsugawa8651" creationdate="20181112T044850Z">
+        <seg>julia&gt; a = [2,3,1];
+
+julia&gt; sort!(a);
+
+julia&gt; a
+3-element Array{Int64,1}:
+ 1
+ 2
+ 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; a = rand(10, 10)
 10×10 Array{Float64,2}:
  0.517515  0.0348206  0.749042   0.0979679  …  0.75984     0.950481   0.579513
@@ -8831,6 +9439,98 @@ julia&gt; unsafe_string(path)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; sort([2,3,1])
+3-element Array{Int64,1}:
+ 1
+ 2
+ 3</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044836Z" creationid="hsugawa8651" creationdate="20181112T044836Z">
+        <seg>julia&gt; sort([2,3,1])
+3-element Array{Int64,1}:
+ 1
+ 2
+ 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; sort([2,3,1], rev=true)
+3-element Array{Int64,1}:
+ 3
+ 2
+ 1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044838Z" creationid="hsugawa8651" creationdate="20181112T044838Z">
+        <seg>julia&gt; sort([2,3,1], rev=true)
+3-element Array{Int64,1}:
+ 3
+ 2
+ 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; sort(v, alg=InsertionSort)
+5-element Array{Float64,1}:
+ -0.839027
+ -0.597634
+ -0.0104452
+  0.297288
+  0.382396</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044925Z" creationid="hsugawa8651" creationdate="20181112T044925Z">
+        <seg>julia&gt; sort(v, alg=InsertionSort)
+5-element Array{Float64,1}:
+ -0.839027
+ -0.597634
+ -0.0104452
+  0.297288
+  0.382396</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; sort(v, by=abs)
+5-element Array{Float64,1}:
+ -0.0104452
+  0.297288
+  0.382396
+ -0.597634
+ -0.839027</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044917Z" creationid="hsugawa8651" creationdate="20181112T044917Z">
+        <seg>julia&gt; sort(v, by=abs)
+5-element Array{Float64,1}:
+ -0.0104452
+  0.297288
+  0.382396
+ -0.597634
+ -0.839027</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; sort(v, by=abs, rev=true)
+5-element Array{Float64,1}:
+ -0.839027
+ -0.597634
+  0.382396
+  0.297288
+ -0.0104452</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044921Z" creationid="hsugawa8651" creationdate="20181112T044921Z">
+        <seg>julia&gt; sort(v, by=abs, rev=true)
+5-element Array{Float64,1}:
+ -0.839027
+ -0.597634
+  0.382396
+  0.297288
+ -0.0104452</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; sum(1/n^2 for n=1:1000)
 1.6439345666815615</seg>
       </tuv>
@@ -8997,6 +9697,58 @@ julia&gt; Date(2000, 12)
 
 julia&gt; Date(2000)
 2000-01-01</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; v = randn(5)
+5-element Array{Float64,1}:
+  0.297288
+  0.382396
+ -0.597634
+ -0.0104452
+ -0.839027
+
+julia&gt; p = sortperm(v)
+5-element Array{Int64,1}:
+ 5
+ 3
+ 4
+ 1
+ 2
+
+julia&gt; v[p]
+5-element Array{Float64,1}:
+ -0.839027
+ -0.597634
+ -0.0104452
+  0.297288
+  0.382396</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044905Z" creationid="hsugawa8651" creationdate="20181112T044905Z">
+        <seg>julia&gt; v = randn(5)
+5-element Array{Float64,1}:
+  0.297288
+  0.382396
+ -0.597634
+ -0.0104452
+ -0.839027
+
+julia&gt; p = sortperm(v)
+5-element Array{Int64,1}:
+ 5
+ 3
+ 4
+ 1
+ 2
+
+julia&gt; v[p]
+5-element Array{Float64,1}:
+ -0.839027
+ -0.597634
+ -0.0104452
+  0.297288
+  0.382396</seg>
       </tuv>
     </tu>
     <tu>
@@ -9748,6 +10500,18 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154557Z" creationid="hsugawa8651" creationdate="20181109T154557Z">
         <seg>&lt;x1/&gt;cat(A.…;dims=2)&lt;x2/&gt;の短縮形</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>struct VecElement{T}
+    value::T
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044821Z" creationid="hsugawa8651" creationdate="20181112T044821Z">
+        <seg>struct VecElement{T}
+    value::T
+end</seg>
       </tuv>
     </tu>
     <tu>
