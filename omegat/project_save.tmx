@@ -376,6 +376,30 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>-Inf16&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110818Z" creationid="hsugawa8651" creationdate="20181112T110818Z">
+        <seg>-Inf16&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-Inf32&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110819Z" creationid="hsugawa8651" creationdate="20181112T110819Z">
+        <seg>-Inf32&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-Inf&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110820Z" creationid="hsugawa8651" creationdate="20181112T110820Z">
+        <seg>-Inf&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>-v&lt;x1/&gt;, &lt;x2/&gt;--version&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224601Z" creationid="hsugawa8651" creationdate="20181109T224549Z">
@@ -3519,6 +3543,15 @@ create a &lt;x16/&gt;SubArray&lt;x17/&gt; view instead.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By the &lt;x3/&gt;IEEE 754 standard&lt;x4/&gt;,
+these floating-point values are the results of certain arithmetic operations:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110847Z" creationid="hsugawa8651" creationdate="20181112T110847Z">
+        <seg>&lt;x3/&gt;IEEE754規格の&lt;x4/&gt;では これらの浮動小数点値は、特定の算術演算の結果です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>C Interface</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042024Z" creationid="hsugawa8651" creationdate="20181110T042024Z">
@@ -4023,6 +4056,14 @@ elements are stored contiguously in column-major order (see additional notes in
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Description</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110803Z" creationid="hsugawa8651" creationdate="20181112T110803Z">
+        <seg>Description</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Dict("A"=&gt;1, "B"=&gt;2)&lt;x1/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041733Z" creationid="hsugawa8651" creationdate="20181112T041733Z">
@@ -4260,10 +4301,34 @@ and type definitions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Float16&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110758Z" creationid="hsugawa8651" creationdate="20181112T110758Z">
+        <seg>Float16&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Float32&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110800Z" creationid="hsugawa8651" creationdate="20181112T110800Z">
+        <seg>Float32&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Float32[ 0.25*x[i-1] + 0.5*x[i] + 0.25*x[i+1] for i=2:length(x)-1 ]</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154902Z" creationid="hsugawa8651" creationdate="20181109T154902Z">
         <seg>Float32[ 0.25*x[i-1] + 0.5*x[i] + 0.25*x[i+1] for i=2:length(x)-1 ]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Float64&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110801Z" creationid="hsugawa8651" creationdate="20181112T110801Z">
+        <seg>Float64&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -4420,6 +4485,15 @@ the result in single precision by writing:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025044Z" creationid="hsugawa8651" creationdate="20181110T025044Z">
         <seg>次に例を示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For further discussion of how these non-finite floating-point values are ordered with respect
+to each other and other floats, see &lt;x1/&gt;Numeric Comparisons&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110845Z" creationid="hsugawa8651" creationdate="20181112T110845Z">
+        <seg>これらの非有限浮動小数点値がどのように並べられるかについてのさらなる議論については、次の通りである。 お互いや他のフロートについては、&lt;x1/&gt;数値比較&lt;x2/&gt;を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5103,6 +5177,30 @@ vector of integers that is returned by &lt;x5/&gt;`findall(B)`&lt;x6/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Inf16&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110804Z" creationid="hsugawa8651" creationdate="20181112T110804Z">
+        <seg>Inf16&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Inf32&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110805Z" creationid="hsugawa8651" creationdate="20181112T110805Z">
+        <seg>Inf32&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Inf&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110806Z" creationid="hsugawa8651" creationdate="20181112T110806Z">
+        <seg>Inf&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Instead of &lt;x3/&gt;if &lt;x4/&gt; &lt;x5/&gt; end&lt;x6/&gt;, one can write &lt;x7/&gt;&lt;x8/&gt; &amp;&amp; &lt;x9/&gt;&lt;x10/&gt; (which could be
 read as: &lt;x11/&gt;</seg>
       </tuv>
@@ -5719,6 +5817,38 @@ and pushing them onto a stack of display backends via &lt;x3/&gt;`pushdisplay`&l
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>NaN16&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110837Z" creationid="hsugawa8651" creationdate="20181112T110837Z">
+        <seg>NaN16&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>NaN32&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110838Z" creationid="hsugawa8651" creationdate="20181112T110838Z">
+        <seg>NaN32&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>NaN&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110839Z" creationid="hsugawa8651" creationdate="20181112T110839Z">
+        <seg>NaN&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Name</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110802Z" creationid="hsugawa8651" creationdate="20181112T110802Z">
+        <seg>Name</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Nested "dot calls" &lt;x5/&gt;f.(...)&lt;x6/&gt; (including calls to &lt;x7/&gt;.+&lt;x8/&gt; etcetera)
 &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-dot-operators) into a single &lt;x12/&gt;broadcast&lt;x13/&gt; call.</seg>
       </tuv>
@@ -6248,6 +6378,14 @@ in order, returning the value of the last subexpression as its value.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Special floating-point values</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110751Z" creationid="hsugawa8651" creationdate="20181112T110751Z">
+        <seg>Special floating-point values</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Standard Numeric Types</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044707Z" creationid="hsugawa8651" creationdate="20181112T044707Z">
@@ -6354,6 +6492,14 @@ be quite different from conventional arrays.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160313Z" creationid="hsugawa8651" creationdate="20181109T160313Z">
         <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;タイプは、曖昧な配列を含んでおり、実装は実装されています。 従来のアレイとは大きく異なります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;`typemin`&lt;x2/&gt; and &lt;x3/&gt;`typemax`&lt;x4/&gt; functions also apply to floating-point types:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110920Z" creationid="hsugawa8651" creationdate="20181112T110920Z">
+        <seg>The &lt;x1/&gt;`typemin`&lt;x2/&gt; and &lt;x3/&gt;`typemax`&lt;x4/&gt; functions also apply to floating-point types:</seg>
       </tuv>
     </tu>
     <tu>
@@ -8092,6 +8238,30 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>a value greater than all finite floating-point values</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110817Z" creationid="hsugawa8651" creationdate="20181112T110817Z">
+        <seg>すべての有限浮動小数点値より大きい値</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>a value less than all finite floating-point values</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110835Z" creationid="hsugawa8651" creationdate="20181112T110835Z">
+        <seg>すべての有限浮動小数点値より小さい値</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>a value not &lt;x1/&gt;==&lt;x2/&gt; to any floating-point value (including itself)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110843Z" creationid="hsugawa8651" creationdate="20181112T110843Z">
+        <seg>浮動小数点値(自身を含む)に対して&lt;x1/&gt;==&lt;x2/&gt;ではない値</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>a&lt;x1/&gt; and &lt;x2/&gt;b&lt;x3/&gt;, and &lt;x4/&gt;`maximum(a)`&lt;x5/&gt;, which finds the largest value within
 &lt;x6/&gt;a&lt;x7/&gt;.</seg>
       </tuv>
@@ -8668,6 +8838,28 @@ julia&gt; (Cstring,)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; (typemin(Float16),typemax(Float16))
+(-Inf16, Inf16)
+
+julia&gt; (typemin(Float32),typemax(Float32))
+(-Inf32, Inf32)
+
+julia&gt; (typemin(Float64),typemax(Float64))
+(-Inf, Inf)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110853Z" creationid="hsugawa8651" creationdate="20181112T110853Z">
+        <seg>julia&gt; (typemin(Float16),typemax(Float16))
+(-Inf16, Inf16)
+
+julia&gt; (typemin(Float32),typemax(Float32))
+(-Inf32, Inf32)
+
+julia&gt; (typemin(Float64),typemax(Float64))
+(-Inf, Inf)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; (typemin(Int32), typemax(Int32))
 (-2147483648, 2147483647)
 
@@ -8950,6 +9142,82 @@ julia&gt; 1.</seg>
 1.0
 
 julia&gt; 1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 1/Inf
+0.0
+
+julia&gt; 1/0
+Inf
+
+julia&gt; -5/0
+-Inf
+
+julia&gt; 0.000001/0
+Inf
+
+julia&gt; 0/0
+NaN
+
+julia&gt; 500 + Inf
+Inf
+
+julia&gt; 500 - Inf
+-Inf
+
+julia&gt; Inf + Inf
+Inf
+
+julia&gt; Inf - Inf
+NaN
+
+julia&gt; Inf * Inf
+Inf
+
+julia&gt; Inf / Inf
+NaN
+
+julia&gt; 0 * Inf
+NaN</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110848Z" creationid="hsugawa8651" creationdate="20181112T110848Z">
+        <seg>julia&gt; 1/Inf
+0.0
+
+julia&gt; 1/0
+Inf
+
+julia&gt; -5/0
+-Inf
+
+julia&gt; 0.000001/0
+Inf
+
+julia&gt; 0/0
+NaN
+
+julia&gt; 500 + Inf
+Inf
+
+julia&gt; 500 - Inf
+-Inf
+
+julia&gt; Inf + Inf
+Inf
+
+julia&gt; Inf - Inf
+NaN
+
+julia&gt; Inf * Inf
+Inf
+
+julia&gt; Inf / Inf
+NaN
+
+julia&gt; 0 * Inf
+NaN</seg>
       </tuv>
     </tu>
     <tu>
@@ -11319,6 +11587,14 @@ for each line in file &lt;x4/&gt;file&lt;x5/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>negative infinity</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110833Z" creationid="hsugawa8651" creationdate="20181112T110833Z">
+        <seg>負の無限大</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>next = iterate(iter)
 while next !== nothing
     (i, state) = next
@@ -11355,6 +11631,14 @@ end</seg>
         <seg>open("outfile", "w") do io
     write(io, data)
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>positive infinity</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110813Z" creationid="hsugawa8651" creationdate="20181112T110813Z">
+        <seg>正の無限大</seg>
       </tuv>
     </tu>
     <tu>
