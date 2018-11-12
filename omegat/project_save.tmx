@@ -6,6 +6,14 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="EN-US">
+        <seg>!!!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111813Z" creationid="hsugawa8651" creationdate="20181112T111813Z">
+        <seg>!!!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>!&lt;x1/&gt; indicates that it will mutate or destroy the
 value of one or more of its arguments (compare, for example, &lt;x2/&gt;`sort`&lt;x3/&gt; and &lt;x4/&gt;`sort!`&lt;x5/&gt;).</seg>
       </tuv>
@@ -1050,6 +1058,15 @@ numeric types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225152Z" creationid="hsugawa8651" creationdate="20181109T225152Z">
         <seg>さらに、&lt;x1/&gt;ComplexおよびRational Numbers&lt;x2/&gt;の完全なサポートは、これらのプリミティブに基づいて構築されています。 数値型。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Additionally, parenthesized expressions can be used as coefficients to variables, implying multiplication
+of the expression by the variable:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111834Z" creationid="hsugawa8651" creationdate="20181112T111834Z">
+        <seg>さらに、括弧で括られた表現は変数の係数として使用され、乗算を意味します。 変数による表現は次のようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3497,6 +3514,16 @@ introduced in &lt;x3/&gt;Mathematical Operations and Elementary Functions&lt;x4/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Both expressions are interpreted as function application: any expression that is not a numeric
+literal, when immediately followed by a parenthetical, is interpreted as a function applied to
+the values in parentheses (see &lt;x1/&gt;Functions&lt;x2/&gt; for more about functions).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111859Z" creationid="hsugawa8651" creationdate="20181112T111859Z">
+        <seg>両方の式は、関数アプリケーションとして解釈されます。数値ではない任意の式です。 リテラルは、直後に括弧で囲まれた後に、関数として解釈されます。 括弧内の値(関数の関数については&lt;x1/&gt;関数を参照&lt;x2/&gt;を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Both of these cases throw a &lt;x5/&gt;`DivideError`&lt;x6/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110529Z" creationid="hsugawa8651" creationdate="20181112T110529Z">
@@ -4311,6 +4338,30 @@ this means that:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Expressions starting with &lt;x1/&gt;0x&lt;x2/&gt; are always hexadecimal literals.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111941Z" creationid="hsugawa8651" creationdate="20181112T111941Z">
+        <seg>&lt;x1/&gt;0x&lt;x2/&gt;で始まる式は常に16進数のリテラルです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Expressions starting with a numeric literal followed by &lt;x1/&gt;e&lt;x2/&gt; or &lt;x3/&gt;E&lt;x4/&gt; are always floating-point literals.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111944Z" creationid="hsugawa8651" creationdate="20181112T111944Z">
+        <seg>数字リテラル後に&lt;x1/&gt;e&lt;x2/&gt;または&lt;x3/&gt;E&lt;x4/&gt;が続く式は常に浮動小数点リテラルである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Expressions starting with a numeric literal followed by &lt;x1/&gt;f&lt;x2/&gt; are always 32-bit floating-point literals.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111947Z" creationid="hsugawa8651" creationdate="20181112T111947Z">
+        <seg>数値リテラルで始まり、&lt;x x/&gt;f&lt;x2/&gt;が続く式は常に32ビット浮動小数点リテラルです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Filesystem</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043206Z" creationid="hsugawa8651" creationdate="20181112T043206Z">
@@ -4675,6 +4726,25 @@ for the key &lt;x13/&gt;x&lt;x14/&gt;).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Hence, expressions starting with a numeric literal
+followed by &lt;x9/&gt;F&lt;x10/&gt; are interpreted as the numerical literal multiplied by a variable, which means that, for
+example, &lt;x11/&gt;1.5F22&lt;x12/&gt; is equal to &lt;x13/&gt;1.5 * F22&lt;x14/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111954Z" creationid="hsugawa8651" creationdate="20181112T111954Z">
+        <seg>したがって、数値リテラルで始まる式 続いて&lt;x9/&gt;F&lt;x10/&gt;は、数値的リテラル乗算された数値を変数で乗算したものと解釈されます。これは 例:&lt;x11/&gt;1F22&lt;x12/&gt;は、&lt;x13/&gt;1.5*F22&lt;x14/&gt;と等しくなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here are some situations
+where syntactic conflicts arise:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111920Z" creationid="hsugawa8651" creationdate="20181112T111920Z">
+        <seg>次に状況を示します。 構文的な競合が発生します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is the anatomy of the &lt;x1/&gt;if&lt;x2/&gt;-&lt;x3/&gt;elseif&lt;x4/&gt;-&lt;x5/&gt;else&lt;x6/&gt; conditional syntax:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225837Z" creationid="hsugawa8651" creationdate="20181109T225837Z">
@@ -4763,6 +4833,15 @@ mutable arrays should also implement &lt;x14/&gt;`setindex!`&lt;x15/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160320Z" creationid="hsugawa8651" creationdate="20181109T160320Z">
         <seg>しかし、具体的な&lt;x3/&gt;AbstractArray{T,N}&lt;x4/&gt;型は、一般的には実装されるべきである。 &lt;x5/&gt;'size(A)'&lt;x6/&gt;(return an&lt;x7/&gt;Int&lt;x8/&gt;タプルを返す)&lt;x9/&gt;`getindex(A,i)`&lt;x10/&gt;&lt;x13/&gt;&lt;x13/&gt;&lt;x13/&gt;&lt;x13/&gt;(@ref getindex); mutable配列は、&lt;x14/&gt;`setindex!`&lt;x15/&gt;を実装する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, numeric literal coefficients parse similarly to unary operators when
+combined with exponentiation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111803Z" creationid="hsugawa8651" creationdate="20181112T111803Z">
+        <seg>しかし、数値リテラル係数は、次のように単項演算子と同じように解析されます。 指数関数と組み合わせます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5021,6 +5100,14 @@ use &lt;x10/&gt;exec&lt;x11/&gt; to replace the process to &lt;x12/&gt;julia&lt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024926Z" creationid="hsugawa8651" creationdate="20181110T024926Z">
         <seg>Unixライクな 環境、信頼できる方法で&lt;x6/&gt;julia&lt;x7/&gt;にオプションを渡すことができます。 実行可能スクリプトは、スクリプトを&lt;x8/&gt;bash&lt;x9/&gt;スクリプトとして起動します。 &lt;x10/&gt;exec&lt;x11/&gt;を使用して、プロセスを&lt;x12/&gt;ジュリア&lt;x13/&gt;に置き換えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In all cases the ambiguity is resolved in favor of interpretation as numeric literals:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111937Z" creationid="hsugawa8651" creationdate="20181112T111937Z">
+        <seg>すべての場合に、あいまいさは数値リテラルとして解釈されるために解決されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5349,6 +5436,14 @@ the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It also makes writing exponential functions more elegant:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111756Z" creationid="hsugawa8651" creationdate="20181112T111736Z">
+        <seg>また、指数関数をよりエレガントに書くことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It can even be combined with a &lt;x8/&gt;:&lt;x9/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155706Z" creationid="hsugawa8651" creationdate="20181109T155706Z">
@@ -5589,6 +5684,15 @@ bitwise operators as well as standard mathematical functions are defined over th
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia provides functions which return literal 0 and 1 corresponding to a specified type or the
+type of a given variable.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112000Z" creationid="hsugawa8651" creationdate="20181112T112000Z">
+        <seg>Juliaは、指定されたタイプまたは指定されたタイプに対応するリテラル0および1を返す関数を返します。 指定された変数のタイプです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia supports simple tuple "destructuring" that facilitates this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101454Z" creationid="hsugawa8651" creationdate="20181112T101454Z">
@@ -5650,6 +5754,15 @@ inner functions used elsewhere in the language, variables from the enclosing sco
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230809Z" creationid="hsugawa8651" creationdate="20181109T230809Z">
         <seg>&lt;x2/&gt;、&lt;x3/&gt;elseif&lt;x4/&gt;、または三元演算子の&lt;x1/&gt;で使用される条件式と同じように、オペランドは次のようになります。 &lt;x5/&gt;&amp;&amp;&lt;x6/&gt;または&lt;x7/&gt;&lt;x8/&gt;は、ブール値(&lt;x9/&gt;true&lt;x10/&gt;または&lt;x11/&gt;false&lt;x12/&gt;)である必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Juxtaposed literal coefficient syntax may conflict with two numeric literal syntaxes: hexadecimal
+integer literals and engineering notation for floating-point literals.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111916Z" creationid="hsugawa8651" creationdate="20181112T111916Z">
+        <seg>並列リテラル係数構文は、2つの数値リテラル構文と矛盾する場合があります:16進数 浮動小数点リテラルの整数リテラルとエンジニアリング表記。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5741,6 +5854,14 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225202Z" creationid="hsugawa8651" creationdate="20181109T225202Z">
         <seg>リテラル整数は、標準的な方法で表されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Literal zero of type &lt;x1/&gt;x&lt;x2/&gt; or type of variable &lt;x3/&gt;x&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112010Z" creationid="hsugawa8651" creationdate="20181112T112010Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;のリテラル0、または変数&lt;x3/&gt;x&lt;x4/&gt;のタイプ</seg>
       </tuv>
     </tu>
     <tu>
@@ -5967,6 +6088,15 @@ and pushing them onto a stack of display backends via &lt;x3/&gt;`pushdisplay`&l
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Neither juxtaposition of two parenthesized expressions, nor placing a variable before a parenthesized
+expression, however, can be used to imply multiplication:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111842Z" creationid="hsugawa8651" creationdate="20181112T111842Z">
+        <seg>括弧で括られた2つの表現の並列化はなく、括弧で括られたものの前に変数を配置することもない しかし、表現は乗算を意味するために使用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Nested "dot calls" &lt;x5/&gt;f.(...)&lt;x6/&gt; (including calls to &lt;x7/&gt;.+&lt;x8/&gt; etcetera)
 &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-dot-operators) into a single &lt;x12/&gt;broadcast&lt;x13/&gt; call.</seg>
       </tuv>
@@ -6029,6 +6159,15 @@ answer.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160005Z" creationid="hsugawa8651" creationdate="20181109T160005Z">
         <seg>&lt;x1/&gt;==&lt;x2/&gt;のような比較は、すべての配列に対して動作し、単一のブール値を与えることに注意してください。 答えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that no whitespace may come between a numeric literal coefficient
+and the identifier or parenthesized expression which it multiplies.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111907Z" creationid="hsugawa8651" creationdate="20181112T111907Z">
+        <seg>数値リテラル係数の間に空白がないことに注意してください。 また、乗算する識別子または括弧で括られた式を指定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6480,6 +6619,14 @@ which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>So &lt;x1/&gt;-2x&lt;x2/&gt; is parsed as &lt;x3/&gt;(-2) * x&lt;x4/&gt; and &lt;x5/&gt;√2x&lt;x6/&gt; is parsed as &lt;x7/&gt;(√2) * x&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111801Z" creationid="hsugawa8651" creationdate="20181112T111801Z">
+        <seg>&lt;x1/&gt;-2x&lt;x2/&gt;は&lt;x3/&gt;(-2)*x&lt;x4/&gt;と解析され、&lt;x2/&gt;は&lt;x7/&gt;(√2)×x&lt;x8/&gt;と解析され、&lt;x7/&gt;となる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>So, we could have defined the &lt;x6/&gt;test&lt;x7/&gt; function above as</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225921Z" creationid="hsugawa8651" creationdate="20181109T225921Z">
@@ -6623,6 +6770,15 @@ name of the script itself is passed in as the global &lt;x7/&gt;PROGRAM_FILE&lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The 32-bit floating-point literal expression &lt;x1/&gt;1.5f22&lt;x2/&gt; could be interpreted as the numeric literal
+&lt;x3/&gt;1.5&lt;x4/&gt; multiplied by the variable &lt;x5/&gt;f22&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111934Z" creationid="hsugawa8651" creationdate="20181112T111934Z">
+        <seg>32ビット浮動小数点リテラル式&lt;x1/&gt;1f22&lt;x2/&gt;は、数値リテラルとして解釈することができます。 &lt;x3/&gt;1.5&lt;x4/&gt;は、変数&lt;x5/&gt;F22&lt;x6/&gt;で乗算されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;--&lt;x2/&gt; delimiter can be used to separate command-line arguments intended for the script file from arguments intended for Julia:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224357Z" creationid="hsugawa8651" creationdate="20181109T224357Z">
@@ -6715,6 +6871,15 @@ or 64-bit:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110619Z" creationid="hsugawa8651" creationdate="20181112T110619Z">
         <seg>上記の結果は全て&lt;x1/&gt;'Float64&lt;x2/&gt;の値である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The above syntactic enhancements significantly reduce the visual noise incurred when writing common
+mathematical formulae.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111904Z" creationid="hsugawa8651" creationdate="20181112T111904Z">
+        <seg>上記の構文的拡張は、一般的な書き込みの際に発生する視覚的なノイズを大幅に低減します。 数式。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6870,6 +7035,15 @@ known as a read-eval-print loop or "REPL") by double-clicking the Julia executab
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The floating-point literal expression &lt;x1/&gt;1e10&lt;x2/&gt; could be interpreted as the numeric literal &lt;x3/&gt;1&lt;x4/&gt; multiplied
+by the variable &lt;x5/&gt;e10&lt;x6/&gt;, and similarly with the equivalent &lt;x7/&gt;E&lt;x8/&gt; form.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111928Z" creationid="hsugawa8651" creationdate="20181112T111928Z">
+        <seg>浮動小数点リテラル式&lt;x1/&gt;1e10&lt;x2/&gt;は、数値リテラル&lt;x3/&gt;1&lt;x4/&gt;を乗算したものと解釈することができます。 変数&lt;x5/&gt;E10&lt;x6/&gt;であり、同様に等価な&lt;x7/&gt;E&lt;x8/&gt;の形式である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following are Julia's primitive numeric types:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225110Z" creationid="hsugawa8651" creationdate="20181109T225110Z">
@@ -6934,6 +7108,15 @@ dimension size and stride parameters.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155109Z" creationid="hsugawa8651" creationdate="20181109T155109Z">
         <seg>n次元配列Aへの索引付けの一般的な構文は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The hexadecimal integer literal expression &lt;x1/&gt;0xff&lt;x2/&gt; could be interpreted as the numeric literal
+&lt;x3/&gt;0&lt;x4/&gt; multiplied by the variable &lt;x5/&gt;xff&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111924Z" creationid="hsugawa8651" creationdate="20181112T111924Z">
+        <seg>16進数の整数リテラル式&lt;x1/&gt;0xff&lt;x2/&gt;は、数値リテラルとして解釈することができます。 &lt;x3/&gt;0&lt;x4/&gt;は、変数&lt;x5/&gt;xff&lt;x6/&gt;で乗算されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7007,6 +7190,15 @@ example requires chaining multiple uses of the ternary operator together:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230140Z" creationid="hsugawa8651" creationdate="20181109T230140Z">
         <seg>オリジナルの3ウェイ 例では、三元演算子の複数の使用を一緒に連鎖する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The precedence of numeric literal coefficients is slightly lower than that of
+unary operators such as negation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111745Z" creationid="hsugawa8651" creationdate="20181112T111745Z">
+        <seg>数値リテラル係数の優先順位は、次の値よりもわずかに低くなります。 否定のような単項演算子です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7495,6 +7687,15 @@ Python, Ruby and Perl, among other dynamic languages.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This makes writing polynomial expressions
+much cleaner:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111727Z" creationid="hsugawa8651" creationdate="20181112T111727Z">
+        <seg>これにより、多項式式が作成されます。 よりクリーンです</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This means that
 &lt;x1/&gt;@cfunction&lt;x2/&gt;-generated pointers cannot be used in calls where WINAPI expects &lt;x3/&gt;stdcall&lt;x4/&gt;</seg>
       </tuv>
@@ -7510,6 +7711,15 @@ before.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225918Z" creationid="hsugawa8651" creationdate="20181109T225918Z">
         <seg>つまり、新しい変数は &lt;x4/&gt;の場合は&lt;x/&gt;の範囲内で、&lt;x4/&gt;の場合は&lt;x4/&gt;の範囲内で定義されていても、定義されていない場合でも定義されます。 の前にあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This means, for example, that
+&lt;x9/&gt;1 / 2im&lt;x10/&gt; equals &lt;x11/&gt;-0.5im&lt;x12/&gt; and &lt;x13/&gt;6 // 2(2 + 1)&lt;x14/&gt; equals &lt;x15/&gt;1 // 1&lt;x16/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111830Z" creationid="hsugawa8651" creationdate="20181112T111830Z">
+        <seg>これは例えば &lt;x9/&gt;1/2im&lt;x10/&gt;=&lt;x11/&gt;-0.5im&lt;x12/&gt;6//2(2 + 1)&lt;x14/&gt;=&lt;x15/&gt;=&lt;x15/&gt;1//1&lt;x16/&gt;となります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7593,6 +7803,15 @@ computing already written in C and Fortran.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Thus, in both of these
+cases, an error occurs since the left-hand value is not a function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111854Z" creationid="hsugawa8651" creationdate="20181112T111854Z">
+        <seg>これらの両方で 左側の値は関数ではないため、エラーが発生します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To allow computations with arbitrary-precision integers and floating point numbers, Julia wraps
 the &lt;x1/&gt;GNU Multiple Precision Arithmetic Library (GMP)&lt;x2/&gt; and the &lt;x3/&gt;GNU MPFR Library&lt;x4/&gt;,
 respectively.</seg>
@@ -7643,6 +7862,15 @@ use the syntax &lt;x4/&gt;Dict{KeyType,ValueType}(...)&lt;x5/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230200Z" creationid="hsugawa8651" creationdate="20181109T230200Z">
         <seg>連鎖を容易にするために、オペレータは右から左へと関連する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To make common numeric formulae and expressions clearer, Julia allows variables to be immediately
+preceded by a numeric literal, implying multiplication.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111730Z" creationid="hsugawa8651" creationdate="20181112T111730Z">
+        <seg>一般的な数式や式をより明確にするために、Juliaは変数をすぐに使用できるようにします。 先行する数値リテラルは、乗算を意味します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7701,6 +7929,15 @@ functions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041840Z" creationid="hsugawa8651" creationdate="20181110T041840Z">
         <seg>Type relations</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike &lt;x1/&gt;E&lt;x2/&gt;, which is equivalent to &lt;x3/&gt;e&lt;x4/&gt; in numeric literals for historical reasons, &lt;x5/&gt;F&lt;x6/&gt; is just another
+letter and does not behave like &lt;x7/&gt;f&lt;x8/&gt; in numeric literals.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111951Z" creationid="hsugawa8651" creationdate="20181112T111951Z">
+        <seg>歴史的理由から、数値リテラルで&lt;x3/&gt;e&lt;x4/&gt;と等価な&lt;x1/&gt;E&lt;x2/&gt;とは異なり、&lt;x5/&gt;F&lt;x6/&gt;は単に別個のものである。 文字は数値リテラルで&lt;x7/&gt;f&lt;x8/&gt;のように動作しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8343,10 +8580,27 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`one(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112015Z" creationid="hsugawa8651" creationdate="20181112T112015Z">
+        <seg>`one(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`setindex!`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025917Z" creationid="hsugawa8651" creationdate="20181110T025917Z">
         <seg>`setindex!`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`setprecision`&lt;x1/&gt; and &lt;x2/&gt;`setrounding`&lt;x3/&gt;,
+and all further calculations will take these changes in account.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111713Z" creationid="hsugawa8651" creationdate="20181112T111713Z">
+        <seg>'setprecision'&lt;x1/&gt;および&lt;x2/&gt;'セロウンディング'&lt;x3/&gt; さらに計算を行うと、これらの変更は考慮されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8404,6 +8658,14 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160431Z" creationid="hsugawa8651" creationdate="20181109T160431Z">
         <seg>「view」&lt;x1/&gt;関数は、以下と同じ方法で呼び出されます。 &lt;x2/&gt;`getindex'&lt;x3/&gt;(配列と一連のインデックス引数を持つ)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`zero(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112005Z" creationid="hsugawa8651" creationdate="20181112T112005Z">
+        <seg>'0(x)'&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -9124,6 +9386,32 @@ UInt128: [0,340282366920938463463374607431768211455]</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; (x-1)(x+1)
+ERROR: MethodError: objects of type Int64 are not callable
+
+julia&gt; x(x+1)
+ERROR: MethodError: objects of type Int64 are not callable</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111843Z" creationid="hsugawa8651" creationdate="20181112T111843Z">
+        <seg>julia&gt; (x-1)(x+1)
+ERROR: MethodError: objects of type Int64 are not callable
+
+julia&gt; x(x+1)
+ERROR: MethodError: objects of type Int64 are not callable</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; (x-1)x
+6</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111836Z" creationid="hsugawa8651" creationdate="20181112T111836Z">
+        <seg>julia&gt; (x-1)x
+6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; -0x2
 0xfe
 
@@ -9454,6 +9742,26 @@ NaN</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110736Z" creationid="hsugawa8651" creationdate="20181112T110736Z">
         <seg>julia&gt; 10_000, 0.000_000_005, 0xdead_beef, 0b1011_0010
 (10000, 5.0e-9, 0xdeadbeef, 0xb2)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 2(x-1)^2 - 3(x-1) + 1
+3</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111809Z" creationid="hsugawa8651" creationdate="20181112T111809Z">
+        <seg>julia&gt; 2(x-1)^2 - 3(x-1) + 1
+3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 2^2x
+64</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111740Z" creationid="hsugawa8651" creationdate="20181112T111740Z">
+        <seg>julia&gt; 2^2x
+64</seg>
       </tuv>
     </tu>
     <tu>
@@ -10880,6 +11188,40 @@ julia&gt; unsafe_string(path)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; setrounding(BigFloat, RoundUp) do
+           BigFloat(1) + parse(BigFloat, "0.1")
+       end
+1.100000000000000000000000000000000000000000000000000000000000000000000000000003
+
+julia&gt; setrounding(BigFloat, RoundDown) do
+           BigFloat(1) + parse(BigFloat, "0.1")
+       end
+1.099999999999999999999999999999999999999999999999999999999999999999999999999986
+
+julia&gt; setprecision(40) do
+           BigFloat(1) + parse(BigFloat, "0.1")
+       end
+1.1000000000004</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111716Z" creationid="hsugawa8651" creationdate="20181112T111716Z">
+        <seg>julia&gt; setrounding(BigFloat, RoundUp) do
+           BigFloat(1) + parse(BigFloat, "0.1")
+       end
+1.100000000000000000000000000000000000000000000000000000000000000000000000000003
+
+julia&gt; setrounding(BigFloat, RoundDown) do
+           BigFloat(1) + parse(BigFloat, "0.1")
+       end
+1.099999999999999999999999999999999999999999999999999999999999999999999999999986
+
+julia&gt; setprecision(40) do
+           BigFloat(1) + parse(BigFloat, "0.1")
+       end
+1.1000000000004</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; sizeof(Float16(4.))
 2
 
@@ -11396,6 +11738,28 @@ julia&gt; println(x &lt; y ?</seg>
         <seg>julia&gt; x = 1; y = 2;
 
 julia&gt; println(x &lt; y ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; x = 3
+3
+
+julia&gt; 2x^2 - 3x + 1
+10
+
+julia&gt; 1.5x^2 - .5x + 1
+13.0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111734Z" creationid="hsugawa8651" creationdate="20181112T111734Z">
+        <seg>julia&gt; x = 3
+3
+
+julia&gt; 2x^2 - 3x + 1
+10
+
+julia&gt; 1.5x^2 - .5x + 1
+13.0</seg>
       </tuv>
     </tu>
     <tu>
