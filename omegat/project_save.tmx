@@ -418,6 +418,14 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>+ x&lt;x4/&gt; or &lt;x5/&gt;1 .+ x&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132647Z" creationid="hsugawa8651" creationdate="20181113T132647Z">
+        <seg>+ x&lt;x4/&gt; or &lt;x5/&gt;1 .+ x&lt;x6/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>+=  -=  *=  /=  \=  ÷=  %=  ^=  &amp;=  |=  ⊻=  &gt;&gt;&gt;=  &gt;&gt;=  &lt;&lt;=</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132406Z" creationid="hsugawa8651" creationdate="20181113T132406Z">
@@ -604,6 +612,15 @@ julia&gt; 2.5e-4
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110131Z" creationid="hsugawa8651" creationdate="20181112T110131Z">
         <seg>16</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>2A^2 + sin(A)&lt;x16/&gt;, using the &lt;x17/&gt;&lt;x18/&gt;&lt;x19/&gt;(@ref @&lt;x20/&gt;dot&lt;x21/&gt;) macro) for
+an array &lt;x22/&gt;A&lt;x23/&gt;, it performs a &lt;x24/&gt;single&lt;x25/&gt; loop over &lt;x26/&gt;A&lt;x27/&gt;, computing &lt;x28/&gt;2a^2 + sin(a)&lt;x29/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132558Z" creationid="hsugawa8651" creationdate="20181113T132553Z">
+        <seg>2a^2+sin(A)&lt;x16/&gt;&lt;x19/&gt;&lt;x19/&gt;(@ref@&lt;x20/&gt;dot&lt;X21/&gt;)マクロを使用して array&lt;x22/&gt;A&lt;x23/&gt;&lt;x26/&gt;A&lt;x27/&gt;で&lt;x24/&gt;ループを実行し、&lt;x28/&gt;2A^2+sin(a)&lt;x29/&gt;を計算します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1170,6 +1187,14 @@ this fashion is to check if &lt;x3/&gt;abspath(PROGRAM_FILE) == @__FILE__&lt;x4/
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155417Z" creationid="hsugawa8651" creationdate="20181109T155417Z">
         <seg>&lt;x1/&gt;は、&lt;x2/&gt;X[i_1,i_2,…,i_n]&lt;x3/&gt;の値で上書きされる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A&lt;x1/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132601Z" creationid="hsugawa8651" creationdate="20181113T132601Z">
+        <seg>A&lt;x1/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4153,6 +4178,14 @@ obj2 = MyModule.somefunction(obj1)   &lt;x5/&gt; this time it worked!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Combining dot operators with numeric literals can be ambiguous.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132640Z" creationid="hsugawa8651" creationdate="20181113T132640Z">
+        <seg>ドット演算子と数値リテラルを組み合わせることは、あいまいです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Comprehension syntax is
 similar to set construction notation in mathematics:</seg>
       </tuv>
@@ -5237,11 +5270,38 @@ with &lt;x3/&gt;A = nothing&lt;x4/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, if you compute &lt;x13/&gt;2 .* A.^2 .+ sin.(A)&lt;x14/&gt; (or
+equivalently &lt;x15/&gt;@.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132550Z" creationid="hsugawa8651" creationdate="20181113T132550Z">
+        <seg>たとえば、&lt;x13/&gt;2.*A.^2.+sin.(A)&lt;x14/&gt;(または 等価的に&lt;x15/&gt;@。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, if you define &lt;x1/&gt;⊗(A,B) = kron(A,B)&lt;x2/&gt; to give a convenient
+infix syntax &lt;x3/&gt;A ⊗ B&lt;x4/&gt; for Kronecker products (&lt;x5/&gt;`kron`&lt;x6/&gt;), then
+&lt;x7/&gt;[A,B] .⊗ [C,D]&lt;x8/&gt; will compute &lt;x9/&gt;[A⊗C, B⊗D]&lt;x10/&gt; with no additional coding.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132636Z" creationid="hsugawa8651" creationdate="20181113T132636Z">
+        <seg>たとえば、&lt;x1/&gt;(A,B)=kon(A,B)&lt;x2/&gt;を定義して便利な値を指定するとします。 infix syntax&lt;x3/&gt;A∩B&lt;x4/&gt;Kronecker製品の場合(&lt;x5/&gt;kon'&lt;x6/&gt;)、次に &lt;x7/&gt;[A,B].0.23[C,D]&lt;x8/&gt;は、追加符号化なしで&lt;x9/&gt;[AúC]&lt;x10/&gt;を計算する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, it enables
 accessing the diagonal elements from the first "page" of &lt;x5/&gt;A&lt;x6/&gt; from above:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155653Z" creationid="hsugawa8651" creationdate="20181109T155653Z">
         <seg>たとえば 上からの&lt;x5/&gt;A&lt;x6/&gt;の最初の「ページ」からの対角線要素へのアクセス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, it is not clear whether &lt;x1/&gt;1.+x&lt;x2/&gt; means &lt;x3/&gt;1.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132644Z" creationid="hsugawa8651" creationdate="20181113T132644Z">
+        <seg>例えば、&lt;x1/&gt;1.+x&lt;x2/&gt;が&lt;x3/&gt;1を意味するかどうかは明らかではない。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5462,6 +5522,14 @@ are identical to the passed values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041654Z" creationid="hsugawa8651" creationdate="20181110T041654Z">
         <seg>Functions are grouped by topic below.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Furthermore, "dotted" updating operators like &lt;x1/&gt;a .+= b&lt;x2/&gt; (or &lt;x3/&gt;@.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132626Z" creationid="hsugawa8651" creationdate="20181113T132626Z">
+        <seg>さらに、「ドット」の更新演算子は、&lt;x1/&gt;a.+=b&lt;x2/&gt;(または&lt;x3/&gt;@)のようなものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6062,6 +6130,14 @@ farther away from zero.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111224Z" creationid="hsugawa8651" creationdate="20181112T111224Z">
         <seg>言い換えれば、表現可能浮動小数点 数は0近くの実数線で最も密集しており、指数関数的に成長するにつれて指数関数的に成長する 0から遠く離れています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In particular, nested dot calls like &lt;x2/&gt;f.(g.(x))&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132604Z" creationid="hsugawa8651" creationdate="20181113T132604Z">
+        <seg>特に、&lt;x2/&gt;f.(g.(x))&lt;x3/&gt;のようなネストされたドットコール</seg>
       </tuv>
     </tu>
     <tu>
@@ -7340,6 +7416,14 @@ Evaluation in Julia, as outlined in the next section.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note the dot syntax is also applicable to user-defined operators.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132633Z" creationid="hsugawa8651" creationdate="20181113T132633Z">
+        <seg>ドット構文は、ユーザ定義の演算子にも適用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note, though, that the above &lt;x1/&gt;only&lt;x2/&gt; defines &lt;x3/&gt;`getindex`&lt;x4/&gt; with one integer index.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113135Z" creationid="hsugawa8651" creationdate="20181112T113135Z">
@@ -8055,6 +8139,14 @@ and so we can mutate the array:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044707Z" creationid="hsugawa8651" creationdate="20181112T044707Z">
         <seg>Standard Numeric Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Standard comparison operations are defined for all the primitive numeric types:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132654Z" creationid="hsugawa8651" creationdate="20181113T132654Z">
+        <seg>標準的な比較操作は、すべてのプリミティブ数値タイプに対して定義されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9042,6 +9134,15 @@ ways of doing so:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025503Z" creationid="hsugawa8651" creationdate="20181110T025503Z">
         <seg>Juliaで関数を定義するには、2番目のより簡潔な構文があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Therefore this syntax is disallowed, and spaces must be used around
+the operator in such cases.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132651Z" creationid="hsugawa8651" creationdate="20181113T132651Z">
+        <seg>したがって、この構文は使用できません。また、スペースを使用してスペースを使用する必要があります。 この場合の演算子です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10144,6 +10245,30 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`!=`&lt;x1/&gt;, &lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref !=)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132703Z" creationid="hsugawa8651" creationdate="20181113T132703Z">
+        <seg>`!=`&lt;x1/&gt;, &lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref !=)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`&lt;`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132713Z" creationid="hsugawa8651" creationdate="20181113T132713Z">
+        <seg>`&lt;`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`==`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132659Z" creationid="hsugawa8651" creationdate="20181113T132659Z">
+        <seg>`==`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`AbstractArray`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041605Z" creationid="hsugawa8651" creationdate="20181112T041605Z">
@@ -10614,6 +10739,16 @@ and all further calculations will take these changes in account.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112005Z" creationid="hsugawa8651" creationdate="20181112T112005Z">
         <seg>'0(x)'&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>a += b&lt;x4/&gt;) are parsed
+as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused &lt;x9/&gt;in-place&lt;x10/&gt; assignment operation
+(see the &lt;x11/&gt;&lt;x12/&gt;&lt;x13/&gt;(@ref man-vectorized)).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132629Z" creationid="hsugawa8651" creationdate="20181113T132629Z">
+        <seg>+=b&lt;x4/&gt;)は解析されます。 &lt;x5/&gt;a.=a.+b&lt;x6/&gt;。ここで&lt;x7/&gt;=&lt;x8/&gt;は、&lt;x9/&gt;&lt;x8/&gt;であり、&lt;x7/&gt;は、&lt;x9/&gt;のインプレースである。 (&lt;x11/&gt;&lt;x12/&gt;&lt;x13/&gt;(@ref man vectorized))を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15720,6 +15855,15 @@ arguments of &lt;x5/&gt;Style1&lt;x6/&gt; and &lt;x7/&gt;Style2&lt;x8/&gt;.</seg
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132014Z" creationid="hsugawa8651" creationdate="20181113T132014Z">
         <seg>x - y&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x .+ 3 .* x.^2&lt;x1/&gt; are
+equivalent to nested dot calls &lt;x2/&gt;(+).(x, (*).(3, (^).(x, 2)))&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132615Z" creationid="hsugawa8651" creationdate="20181113T132609Z">
+        <seg>x.+3.*x.^2&lt;x1/&gt;は次のとおりです。 ネストされたドット呼び出し&lt;x2/&gt;(+)(x,(*).(3,(^).(x, 2)).())&lt;x3/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
