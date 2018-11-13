@@ -998,10 +998,27 @@ array it indexes into.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A strided array is a subtype of &lt;x1/&gt;AbstractArray&lt;x2/&gt; whose entries are stored in memory with fixed strides.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083457Z" creationid="hsugawa8651" creationdate="20181113T083457Z">
+        <seg>ストローブされたアレイは、&lt;x1/&gt;AbstractArray&lt;x2/&gt;のサブタイプであり、そのエントリは固定された歩進でメモリ内に格納される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A tuple of input types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223952Z" creationid="hsugawa8651" creationdate="20181109T223952Z">
         <seg>入力タイプのタプル。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A typical example of a user-defined strided array is one
+that wraps a standard &lt;x3/&gt;Array&lt;x4/&gt; with additional structure.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083506Z" creationid="hsugawa8651" creationdate="20181113T083506Z">
+        <seg>ユーザ定義のストローブ配列の典型的な例は一つです。 これは、標準的な&lt;x3/&gt;アレイ&lt;x/&gt;を追加の構造でラップします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1184,6 +1201,14 @@ on the values to be manipulated.</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T045027Z" creationid="hsugawa8651" creationdate="20181112T045027Z">
         <seg>All the sorting and order related functions rely on a "less than" relation defining a total order
 on the values to be manipulated.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Allocation of output container</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083532Z" creationid="hsugawa8651" creationdate="20181113T083532Z">
+        <seg>Allocation of output container</seg>
       </tuv>
     </tu>
     <tu>
@@ -1614,6 +1639,38 @@ Base.StackTraces
 Base.Sys
 Base.Threads
 Base.GC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Broadcast.broadcasted(f, args...)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083628Z" creationid="hsugawa8651" creationdate="20181113T083628Z">
+        <seg>Base.Broadcast.broadcasted(f, args...)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Broadcast.instantiate(bc::Broadcasted{DestStyle})&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083641Z" creationid="hsugawa8651" creationdate="20181113T083641Z">
+        <seg>Base.Broadcast.instantiate(bc::Broadcasted{DestStyle})&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.BroadcastStyle(::Style1, ::Style2) = Style12()&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083536Z" creationid="hsugawa8651" creationdate="20181113T083536Z">
+        <seg>Base.BroadcastStyle(::Style1, ::Style2) = Style12()&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.BroadcastStyle(::Type{SrcType}) = SrcStyle()&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083522Z" creationid="hsugawa8651" creationdate="20181113T083522Z">
+        <seg>Base.BroadcastStyle(::Type{SrcType}) = SrcStyle()&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -2314,6 +2371,14 @@ Base.hex2bytes!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.broadcastable(x)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083544Z" creationid="hsugawa8651" creationdate="20181113T083544Z">
+        <seg>Base.broadcastable(x)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.bytes2hex</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044715Z" creationid="hsugawa8651" creationdate="20181112T044715Z">
@@ -2336,6 +2401,30 @@ Base.hton
 Base.ltoh
 Base.htol
 Base.ENDIAN_BOM</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.copy(bc::Broadcasted{DestStyle})&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083600Z" creationid="hsugawa8651" creationdate="20181113T083600Z">
+        <seg>Base.copy(bc::Broadcasted{DestStyle})&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.copyto!(dest, bc::Broadcasted{DestStyle})&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083609Z" creationid="hsugawa8651" creationdate="20181113T083609Z">
+        <seg>Base.copyto!(dest, bc::Broadcasted{DestStyle})&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.copyto!(dest::DestType, bc::Broadcasted{Nothing})&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083619Z" creationid="hsugawa8651" creationdate="20181113T083619Z">
+        <seg>Base.copyto!(dest::DestType, bc::Broadcasted{Nothing})&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3344,6 +3433,14 @@ Base.displaysize</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.similar(bc::Broadcasted{DestStyle}, ::Type{ElType})&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083529Z" creationid="hsugawa8651" creationdate="20181113T083529Z">
+        <seg>Base.similar(bc::Broadcasted{DestStyle}, ::Type{ElType})&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.sizeof(::Type)
 Base.isconcretetype
 Base.isbits
@@ -3757,6 +3854,14 @@ these floating-point values are the results of certain arithmetic operations:</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Bypassing default machinery&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083554Z" creationid="hsugawa8651" creationdate="20181113T083554Z">
+        <seg>デフォルトのマシンをバイパスする&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>C Interface</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042024Z" creationid="hsugawa8651" creationdate="20181110T042024Z">
@@ -3886,6 +3991,14 @@ multidimensional index.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224750Z" creationid="hsugawa8651" creationdate="20181109T224750Z">
         <seg>&lt;x1/&gt;@inline&lt;x2/&gt;宣言の上書きを含め、インライン化が許可されているかどうかを制御する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Convert &lt;x1/&gt;x&lt;x2/&gt; to an object that has &lt;x3/&gt;axes&lt;x4/&gt; and supports indexing</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083558Z" creationid="hsugawa8651" creationdate="20181113T083558Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;を&lt;x3/&gt;軸を持つオブジェクトに変換して、インデックスを作成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4243,10 +4356,42 @@ Base.Sys.MACHINE</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Custom implementation of &lt;x1/&gt;broadcast!&lt;x2/&gt;, specializing on &lt;x3/&gt;DestStyle&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083617Z" creationid="hsugawa8651" creationdate="20181113T083617Z">
+        <seg>&lt;x1/&gt;ブロードキャストのカスタム実装!&lt;x2/&gt;DestStyle&lt;x4/&gt;を専門にしています。&lt;x/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Custom implementation of &lt;x1/&gt;broadcast!&lt;x2/&gt;, specializing on &lt;x3/&gt;DestType&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083625Z" creationid="hsugawa8651" creationdate="20181113T083625Z">
+        <seg>&lt;x1/&gt;ブロードキャストのカスタム実装!&lt;x2/&gt;DestType&lt;x4/&gt;を専門にしています。&lt;x3/&gt;&lt;x/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Custom implementation of &lt;x1/&gt;broadcast&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083607Z" creationid="hsugawa8651" creationdate="20181113T083607Z">
+        <seg>&lt;x1/&gt;ブロードキャストのカスタム実装&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Data Formats</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044712Z" creationid="hsugawa8651" creationdate="20181112T044712Z">
         <seg>Data Formats</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Declaration of the indices of &lt;x1/&gt;x&lt;x2/&gt;, as per &lt;x3/&gt;`axes(x)`&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083541Z" creationid="hsugawa8651" creationdate="20181113T083541Z">
+        <seg>&lt;x3/&gt;x&lt;x2/&gt;の指数を&lt;x3/&gt;の軸(x)&lt;x4/&gt;に従って宣言する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4970,6 +5115,14 @@ example, &lt;x11/&gt;1.5F22&lt;x12/&gt; is equal to &lt;x13/&gt;1.5 * F22&lt;x14
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111954Z" creationid="hsugawa8651" creationdate="20181112T111954Z">
         <seg>したがって、数値リテラルで始まる式 続いて&lt;x9/&gt;F&lt;x10/&gt;は、数値的リテラル乗算された数値を変数で乗算したものと解釈されます。これは 例:&lt;x11/&gt;1F22&lt;x12/&gt;は、&lt;x13/&gt;1.5*F22&lt;x14/&gt;と等しくなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here are some examples to demonstrate which type of arrays are strided and which are not:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083514Z" creationid="hsugawa8651" creationdate="20181113T083514Z">
+        <seg>ここでは、どのタイプのアレイがストローブされていて、どのタイプがストライドされていないかを示す例をいくつか示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6762,6 +6915,14 @@ MIME types) of user-defined types.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Override the default lazy behavior within a fused expression</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083633Z" creationid="hsugawa8651" creationdate="20181113T083633Z">
+        <seg>融合式の中でデフォルトの遅延動作をオーバーライドする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Partially implemented by:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041654Z" creationid="hsugawa8651" creationdate="20181112T041654Z">
@@ -6808,6 +6969,15 @@ platforms such as Linux.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041836Z" creationid="hsugawa8651" creationdate="20181110T041836Z">
         <seg>Properties of Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Provided the element type of the array is compatible with BLAS, a strided array can utilize BLAS and LAPACK routines
+for more efficient linear algebra routines.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083503Z" creationid="hsugawa8651" creationdate="20181113T083503Z">
+        <seg>配列の要素タイプがBLASと互換性がある場合、strider配列はBLASとLAPACKルーチンを利用することができます。 より効率的な線形代数のルーチンです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8718,6 +8888,15 @@ manner that allows all custom arrays to behave similarly.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160424Z" creationid="hsugawa8651" creationdate="20181109T160424Z">
         <seg>&lt;x15/&gt;アレイ&lt;x16/&gt;に対しては、必要な動作を超えて実装されているオペレーションはほとんどありません。 すべての&lt;x17/&gt;AbstractArray&lt;x18/&gt;;アレイライブラリの多くは一般的に実装されています。 すべてのカスタム・アレイが同じように動作するようにする方法です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Warning: do not implement these methods if the underlying storage is not actually strided, as it
+may lead to incorrect results or segmentation faults.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083508Z" creationid="hsugawa8651" creationdate="20181113T083508Z">
+        <seg>警告:基礎となるストレージが実際にはストライドされていない場合は、これらのメソッドを実装しないでください。 誤った結果やセグメント化の障害につながる可能性があります。</seg>
       </tuv>
     </tu>
     <tu>
