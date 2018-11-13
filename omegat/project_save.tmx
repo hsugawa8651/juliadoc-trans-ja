@@ -771,6 +771,14 @@ exec julia --color=yes --startup-file=no -e 'include(popfirst!(ARGS))' \
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x1/&gt;IndexLinear()&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022821Z" creationid="hsugawa8651" creationdate="20181113T022821Z">
+        <seg>&lt;x1/&gt;IndexLinear()&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x1/&gt;`CartesianIndex` and arrays of `CartesianIndex` are not compatible with the&lt;x2/&gt;&lt;x3/&gt;`end` keyword to represent the last index of a dimension.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155752Z" creationid="hsugawa8651" creationdate="20181109T155752Z">
@@ -943,6 +951,14 @@ as that MIME type; this is automatic if one calls &lt;x21/&gt;show&lt;x22/&gt; o
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223757Z" creationid="hsugawa8651" creationdate="20181109T223757Z">
         <seg>関数の関数名はタプルの代わりに単独で使用することができる(単に&lt;x1/&gt;:関数&lt;x2/&gt;または&lt;x3/&gt;"関数&lt;x4/&gt;)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A key part in defining an &lt;x1/&gt;AbstractArray&lt;x2/&gt; subtype is &lt;x3/&gt;`IndexStyle`&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022659Z" creationid="hsugawa8651" creationdate="20181113T022659Z">
+        <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;サブタイプの定義における重要な部分は&lt;x3/&gt;'IndexStyleである&lt;x4/&gt;である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1322,6 +1338,16 @@ to &lt;x3/&gt;`ccall`&lt;x4/&gt; are as follows:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153935Z" creationid="hsugawa8651" creationdate="20181109T153935Z">
         <seg>&lt;x3/&gt;`@cfunction`&lt;x4/&gt;への引数は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Array data structures are typically
+defined in one of two ways: either it most efficiently accesses its elements using just one index
+(linear indexing) or it intrinsically accesses the elements with indices specified for every dimension.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022707Z" creationid="hsugawa8651" creationdate="20181113T022707Z">
+        <seg>アレイ・データ構造は通常 2つの方法の一つで定義されています:1つのインデックスのみを使用して、その要素に最も効率的にアクセスすることができます (linear indexing)または本質的に、すべての次元に指定されたインデックスを持つ要素にアクセスします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3839,6 +3865,15 @@ multidimensional index.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Converting a linear index to multiple indexing subscripts is typically very expensive, so this
+provides a traits-based mechanism to enable efficient generic code for all array types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022812Z" creationid="hsugawa8651" creationdate="20181113T022812Z">
+        <seg>リニアインデックスを複数のインデックス添字に変換することは、一般的に非常に高価です。したがって、次のようになります。 は、すべての配列タイプに対して効率的な汎用コードを有効にするための属性ベースのメカニズムを提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Core.:(===)
 Core.isa
 Base.isequal
@@ -5071,6 +5106,15 @@ provided, the memory layout must correspond in the same way to these strides.</s
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160506Z" creationid="hsugawa8651" creationdate="20181109T160506Z">
         <seg>ポインタ変換方法&lt;x19/&gt;`Base.unsafe_convert(Ptr{T},A)`&lt;x20/&gt;がある場合 この場合、メモリレイアウトは、これらの進歩と同じ方法で対応する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a type is defined as a subtype of &lt;x1/&gt;AbstractArray&lt;x2/&gt;, it inherits a very large set of rich behaviors
+including iteration and multidimensional indexing built on top of single-element access.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022653Z" creationid="hsugawa8651" creationdate="20181113T022653Z">
+        <seg>もしタイプが&lt;x1/&gt;AbstractArray&lt;x2/&gt;のサブタイプとして定義されるなら、それは非常に大きな一連の豊かな振る舞いを継承する。 単一要素アクセスの上に構築された反復と多次元索引付けを含む。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6731,6 +6775,14 @@ an interactive session.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Return an array similar to &lt;x1/&gt;T&lt;x2/&gt; with the specified indices &lt;x3/&gt;inds&lt;x4/&gt; (see below)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022647Z" creationid="hsugawa8651" creationdate="20181113T022647Z">
+        <seg>&lt;x1/&gt;T&lt;x2/&gt;のような配列を指定されたインデックス&lt;x3/&gt;inds&lt;x4/&gt;(以下参照)と同様に返す。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Return type (see below for mapping the declared C type to Julia)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223843Z" creationid="hsugawa8651" creationdate="20181109T223843Z">
@@ -6793,6 +6845,15 @@ an interactive session.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154559Z" creationid="hsugawa8651" creationdate="20181109T154559Z">
         <seg>これらの関数に渡されるスカラー値は、1要素配列として扱われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See
+the &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-multi-dim-arrays) and the &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref lib-arrays) for more supported methods.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022656Z" creationid="hsugawa8651" creationdate="20181113T022656Z">
+        <seg>「」を参照してください。 サポートされるメソッドについては、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref manマルチdimアレイ)および&lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref lib arrays)を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6946,6 +7007,16 @@ down like the above &lt;x3/&gt;while&lt;x4/&gt; loop does is so common, it can b
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T231131Z" creationid="hsugawa8651" creationdate="20181109T231131Z">
         <seg>カウントアップして &lt;x4/&gt;ループは非常に一般的であるので、上記&lt;x3/&gt;のようにダウンすることができる。 &lt;x6/&gt;ループの場合は&lt;x5/&gt;&lt;x6/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since indexing is
+such an important part of an array and often occurs in hot loops, it's important to make both
+indexing and indexed assignment as efficient as possible.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022702Z" creationid="hsugawa8651" creationdate="20181113T022702Z">
+        <seg>インデックス作成は このような重要な部分は、多くの場合、ホット・ループで発生するため、両方とも重要です。 インデックス化とインデックス化された割り当ては可能な限り効率的です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7891,6 +7962,14 @@ generally work correctly as a fallback for any specific array implementation.</s
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160310Z" creationid="hsugawa8651" creationdate="20181109T160310Z">
         <seg>これらの操作 一般的には、特定のアレイ実装のフォールバックとして正しく動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These two modalities are identified by Julia as &lt;x5/&gt;IndexLinear()&lt;x6/&gt; and &lt;x7/&gt;IndexCartesian()&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022712Z" creationid="hsugawa8651" creationdate="20181113T022712Z">
+        <seg>これらの2つの方法は、Juliaによって&lt;x5/&gt;IndexLinear()&lt;x6/&gt;および&lt;x7/&gt;IndexCartesian()&lt;x8/&gt;と同定されている。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9775,6 +9854,14 @@ which is a simplified version of the actual definition from &lt;x2/&gt;`env.jl`&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113222Z" creationid="hsugawa8651" creationdate="20181112T113222Z">
         <seg>getindex(A, i::Int)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>getindex(A::ArrayType, i::Int)&lt;x1/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022831Z" creationid="hsugawa8651" creationdate="20181113T022831Z">
+        <seg>getindex(A::ArrayType, i::Int)&lt;x1/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
