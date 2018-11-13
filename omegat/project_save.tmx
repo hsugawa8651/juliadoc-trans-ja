@@ -797,6 +797,14 @@ temporarily-suspended computations.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x1/&gt;strides(A)[i]&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083450Z" creationid="hsugawa8651" creationdate="20181113T083450Z">
+        <seg>&lt;x1/&gt;strides(A)[i]&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x12/&gt;user&lt;x13/&gt; defaults to current user,
 &lt;x14/&gt;port&lt;x15/&gt; to the standard ssh port.</seg>
       </tuv>
@@ -1389,6 +1397,15 @@ library:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224014Z" creationid="hsugawa8651" creationdate="20181109T224014Z">
         <seg>完全ではあるが単純な例として、以下の呼び出しは標準Cから&lt;x1/&gt;クロック&lt;x2/&gt;関数を呼び出します。 ライブラリ:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As a more complicated example, let's define our own toy N-dimensional sparse-like array type built
+on top of &lt;x1/&gt;`Dict`&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083217Z" creationid="hsugawa8651" creationdate="20181113T083217Z">
+        <seg>より複雑な例として、独自の玩具N次元の疎な配列タイプの配列を作成します。 top of&lt;x1/&gt;'Dict'&lt;x2/&gt;:</seg>
       </tuv>
     </tu>
     <tu>
@@ -3487,6 +3504,14 @@ Base.instances</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.unsafe_convert(::Type{Ptr{T}}, A)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083438Z" creationid="hsugawa8651" creationdate="20181113T083438Z">
+        <seg>Base.unsafe_convert(::Type{Ptr{T}}, A)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.unsafe_copyto!{T}(::Ptr{T}, ::Ptr{T}, ::Any)
 Base.unsafe_copyto!{T}(::Array{T}, ::Any, ::Array{T}, ::Any, ::Any)
 Base.copyto!</seg>
@@ -4235,6 +4260,15 @@ two functions for custom types to override how they are stored in a hash table.<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Defining &lt;x6/&gt;similar&lt;x7/&gt;, &lt;x8/&gt;getindex&lt;x9/&gt; and
+&lt;x10/&gt;setindex!&lt;x11/&gt; for &lt;x12/&gt;SparseArray&lt;x13/&gt; also makes it possible to &lt;x14/&gt;`copy`&lt;x15/&gt; the array:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083320Z" creationid="hsugawa8651" creationdate="20181113T083320Z">
+        <seg>&lt;x6/&gt;類似の&lt;x7/&gt;を定義し、&lt;x8/&gt;getindex&lt;x9/&gt;を定義します。 &lt;x12/&gt;setindex!&lt;x12/&gt;&lt;x12/&gt;SparseArray&lt;x13/&gt;は、&lt;x14/&gt;'コピー&lt;x15/&gt;を可能にします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>DenseArray&lt;x1/&gt; is an abstract subtype of &lt;x2/&gt;AbstractArray&lt;x3/&gt; intended to include all arrays where
 elements are stored contiguously in column-major order (see additional notes in
 &lt;x4/&gt;&lt;x5/&gt;&lt;x6/&gt;(@ref man-performance-tips)).</seg>
@@ -4648,6 +4682,16 @@ in-memory representations as objects are numeric primitives.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, &lt;x2/&gt;`SparseMatrixCSC`&lt;x3/&gt; from the &lt;x4/&gt;SparseArrays&lt;x5/&gt; standard
+library module, only supports two dimensions, so it just defines
+&lt;x6/&gt;getindex(A::SparseMatrixCSC, i::Int, j::Int)&lt;x7/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083154Z" creationid="hsugawa8651" creationdate="20181113T083154Z">
+        <seg>例えば、&lt;x4/&gt;SparseArrays&lt;x5/&gt;の&lt;x4/&gt;は、&lt;x4/&gt;の&lt;x/&gt;から&lt;x/&gt;の範囲である。SparseMatrixCSC ライブラリモジュールは、2つの次元のみをサポートしているため &lt;x6/&gt;getindex(A::SparseMatrixCSC,i::Int,j::Int)&lt;x7/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, &lt;x6/&gt;Dict{String,Int32}("A"=&gt;1, "B"=&gt;2)&lt;x7/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041747Z" creationid="hsugawa8651" creationdate="20181112T041747Z">
@@ -4785,6 +4829,15 @@ to each other and other floats, see &lt;x1/&gt;Numeric Comparisons&lt;x2/&gt;.</
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160400Z" creationid="hsugawa8651" creationdate="20181109T160400Z">
         <seg>カスタム定義の詳細については &lt;x16/&gt;AbstractArray&lt;x17/&gt;実装を参照してください。&lt;x18/&gt;&lt;x19/&gt;&lt;x20/&gt;(@ref man interface array)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For more information, see
+&lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;(@ref man-custom-indices).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083421Z" creationid="hsugawa8651" creationdate="20181113T083421Z">
+        <seg>詳細については、を参照してください。 &lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;(@ref manカスタムインデックス)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5517,6 +5570,14 @@ it will be a &lt;x7/&gt;CartesianIndex&lt;x8/&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155838Z" creationid="hsugawa8651" creationdate="20181109T155838Z">
         <seg>2番目の 構成,&lt;x1/&gt;i&lt;x2/&gt;は&lt;x5/&gt;Int&lt;x6/&gt;であり,&lt;x5/&gt;A&lt;x6/&gt;が高速線形インデックスを用いたアレイ型である場合は,それ以外の値である。 &lt;x7/&gt;CartesianIndex&lt;x8/&gt;になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this example it is accomplished by defining &lt;x1/&gt;Base.similar{T}(A::SparseArray, ::Type{T}, dims::Dims)&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083257Z" creationid="hsugawa8651" creationdate="20181113T083257Z">
+        <seg>この例では、&lt;x1/&gt;のような{T}(A::SparseArray,::Type{T},dims::Dims)&lt;x2/&gt;を定義することによって達成される。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6483,6 +6544,15 @@ answer.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that it's very important to specify the two parameters of the &lt;x1/&gt;AbstractArray&lt;x2/&gt;; the first
+defines the &lt;x3/&gt;`eltype`&lt;x4/&gt;, and the second defines the &lt;x5/&gt;`ndims`&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083208Z" creationid="hsugawa8651" creationdate="20181113T083208Z">
+        <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;の2つのパラメータを指定することが非常に重要であることに注意してください。最初のパラメータは次のようになります。 &lt;x3/&gt;'エルテープ&lt;x4/&gt;を定義し、2番目は&lt;x5/&gt;'ンダムス''&lt;x6/&gt;を定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that no whitespace may come between a numeric literal coefficient
 and the identifier or parenthesized expression which it multiplies.</seg>
       </tuv>
@@ -6523,6 +6593,14 @@ Evaluation in Julia, as outlined in the next section.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113135Z" creationid="hsugawa8651" creationdate="20181112T113135Z">
         <seg>しかし、上記の&lt;x1/&gt;は、1つの整数インデックスを有する&lt;x3/&gt;'getindex'&lt;x4/&gt;を定義することに注意されたい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notice that this is an &lt;x1/&gt;IndexCartesian&lt;x2/&gt; array, so we must manually define &lt;x3/&gt;`getindex`&lt;x4/&gt; and &lt;x5/&gt;`setindex!`&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083225Z" creationid="hsugawa8651" creationdate="20181113T083225Z">
+        <seg>これは、&lt;x1/&gt;IndexCartesian&lt;x2/&gt;配列であることに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6795,6 +6873,15 @@ an interactive session.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223843Z" creationid="hsugawa8651" creationdate="20181109T223843Z">
         <seg>戻り型(宣言されたC型をJuliaにマッピングするには、次を参照)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Returning to the sequence of squares from above, we could instead define it as a subtype of an
+&lt;x1/&gt;AbstractArray{Int, 1}&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083159Z" creationid="hsugawa8651" creationdate="20181113T083159Z">
+        <seg>上からの2乗のシーケンスに戻ると、それをサブタイプとして定義することができます。 &lt;x1/&gt;AbstractArray{Int,1}&lt;x2/&gt;:</seg>
       </tuv>
     </tu>
     <tu>
@@ -7103,6 +7190,15 @@ in order, returning the value of the last subexpression as its value.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>SquaresVector&lt;x1/&gt;, we are able to define &lt;x2/&gt;`setindex!`&lt;x3/&gt;,
+and so we can mutate the array:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083229Z" creationid="hsugawa8651" creationdate="20181113T083229Z">
+        <seg>SquaresVector&lt;x1/&gt;では、&lt;x2/&gt;'setindex!&lt;x3/&gt;を定義することができます。 配列を突然変異させることができます</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Standard Numeric Types</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044707Z" creationid="hsugawa8651" creationdate="20181112T044707Z">
@@ -7196,6 +7292,16 @@ the size.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>That supertype and those three
+methods are all it takes for &lt;x7/&gt;SquaresVector&lt;x8/&gt; to be an iterable, indexable, and completely functional
+array:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083211Z" creationid="hsugawa8651" creationdate="20181113T083211Z">
+        <seg>そのスーパータイプと3は メソッドは、&lt;x7/&gt;SquaresVector&lt;x8/&gt;を実行するために必要とされるものであり、これは、実行可能な、インデックス可能な、完全に機能するものです。 配列:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The
 name of the script itself is passed in as the global &lt;x7/&gt;PROGRAM_FILE&lt;x8/&gt;.</seg>
       </tuv>
@@ -7252,6 +7358,14 @@ be quite different from conventional arrays.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230858Z" creationid="hsugawa8651" creationdate="20181109T230858Z">
         <seg>&lt;x1/&gt;while&lt;x2/&gt;ループは条件式(この場合は&lt;x3/&gt;i&lt;=5&lt;x4/&gt;)を評価しており、それは長いままである &lt;x5/&gt;true&lt;x6/&gt;は、&lt;x8/&gt;ループでは、&lt;x7/&gt;のボディを評価します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x5/&gt;AbstractArray&lt;x6/&gt; fallback methods use &lt;x7/&gt;`similar`&lt;x8/&gt; to allocate an &lt;x9/&gt;Array&lt;x10/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083303Z" creationid="hsugawa8651" creationdate="20181113T083303Z">
+        <seg>&lt;x5/&gt;AbstractArray&lt;x6/&gt;フォールバックメソッドは&lt;x7/&gt;'を使用して、&lt;x9/&gt;アレイを割り当てます。&lt;x6/&gt;&lt;x10/&gt;&lt;x10/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -7700,11 +7814,28 @@ of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, e
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The result of indexing an &lt;x1/&gt;AbstractArray&lt;x2/&gt; can itself be an array (for instance when indexing by
+an &lt;x3/&gt;AbstractRange&lt;x4/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083307Z" creationid="hsugawa8651" creationdate="20181113T083307Z">
+        <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;のインデックス作成の結果は、それ自体が配列(例えば、インデックス作成の際に)であることができます。 &lt;x3/&gt;AbstractRange&lt;x4/&gt;)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The return value from iterate
 is always either a tuple of a value and a state, or &lt;x3/&gt;nothing&lt;x4/&gt; if no elements remain.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112400Z" creationid="hsugawa8651" creationdate="20181112T112400Z">
         <seg>反復からの戻り値 は常に値と状態のタプルであるか、あるいは&lt;x3/&gt;何もない場合は&lt;x3/&gt;何もしません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The same holds for &lt;x8/&gt;`setindex!`&lt;x9/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083157Z" creationid="hsugawa8651" creationdate="20181113T083157Z">
+        <seg>同じことが&lt;x8/&gt;`setindex!`&lt;x9/&gt;に対しても当てはまります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9600,6 +9731,15 @@ code_native(triple,(m128,))</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>dims&lt;x1/&gt; argument (ordinarily a &lt;x2/&gt;Dims&lt;x3/&gt; size-tuple) can accept &lt;x4/&gt;AbstractUnitRange&lt;x5/&gt; objects,
+perhaps range-types &lt;x6/&gt;Ind&lt;x7/&gt; of your own design.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083418Z" creationid="hsugawa8651" creationdate="20181113T083418Z">
+        <seg>&lt;x1/&gt;引数(通常は&lt;x2/&gt;Dimms&lt;x3/&gt;サイズのタプル)は&lt;x4/&gt;AbstractUnitRange&lt;x5/&gt;オブジェクトを受け入れることができます。 独自の設計では、おそらく範囲のタイプは&lt;x6/&gt;Ind&lt;x7/&gt;です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>double&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110238Z" creationid="hsugawa8651" creationdate="20181112T110238Z">
@@ -10533,6 +10673,46 @@ julia&gt; std(Squares(100))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; A = SparseArray(Float64, 3, 3)
+3×3 SparseArray{Float64,2}:
+ 0.0  0.0  0.0
+ 0.0  0.0  0.0
+ 0.0  0.0  0.0
+
+julia&gt; fill!(A, 2)
+3×3 SparseArray{Float64,2}:
+ 2.0  2.0  2.0
+ 2.0  2.0  2.0
+ 2.0  2.0  2.0
+
+julia&gt; A[:] = 1:length(A); A
+3×3 SparseArray{Float64,2}:
+ 1.0  4.0  7.0
+ 2.0  5.0  8.0
+ 3.0  6.0  9.0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083232Z" creationid="hsugawa8651" creationdate="20181113T083232Z">
+        <seg>julia&gt; A = SparseArray(Float64, 3, 3)
+3×3 SparseArray{Float64,2}:
+ 0.0  0.0  0.0
+ 0.0  0.0  0.0
+ 0.0  0.0  0.0
+
+julia&gt; fill!(A, 2)
+3×3 SparseArray{Float64,2}:
+ 2.0  2.0  2.0
+ 2.0  2.0  2.0
+ 2.0  2.0  2.0
+
+julia&gt; A[:] = 1:length(A); A
+3×3 SparseArray{Float64,2}:
+ 1.0  4.0  7.0
+ 2.0  5.0  8.0
+ 3.0  6.0  9.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; A = [1.0, 2.0, 3.0]
 3-element Array{Float64,1}:
  1.0
@@ -10809,6 +10989,42 @@ julia&gt; A[:, 3]
  13
  15
  17</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; A[1:2,:]
+2×3 SparseArray{Float64,2}:
+ 1.0  4.0  7.0
+ 2.0  5.0  8.0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083241Z" creationid="hsugawa8651" creationdate="20181113T083241Z">
+        <seg>julia&gt; A[1:2,:]
+2×3 SparseArray{Float64,2}:
+ 1.0  4.0  7.0
+ 2.0  5.0  8.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; A[SquaresVector(3)]
+3-element SparseArray{Float64,1}:
+ 1.0
+ 4.0
+ 9.0
+
+julia&gt; sum(A)
+45.0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083334Z" creationid="hsugawa8651" creationdate="20181113T083334Z">
+        <seg>julia&gt; A[SquaresVector(3)]
+3-element SparseArray{Float64,1}:
+ 1.0
+ 4.0
+ 9.0
+
+julia&gt; sum(A)
+45.0</seg>
       </tuv>
     </tu>
     <tu>
@@ -11373,6 +11589,22 @@ julia&gt; ceil.((UInt8,), [1.2 3.4; 5.6 6.7])
  0x06  0x07
 
 julia&gt; string.(1:3, ".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; copy(A)
+3×3 SparseArray{Float64,2}:
+ 1.0  4.0  7.0
+ 2.0  5.0  8.0
+ 3.0  6.0  9.0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083324Z" creationid="hsugawa8651" creationdate="20181113T083324Z">
+        <seg>julia&gt; copy(A)
+3×3 SparseArray{Float64,2}:
+ 1.0  4.0  7.0
+ 2.0  5.0  8.0
+ 3.0  6.0  9.0</seg>
       </tuv>
     </tu>
     <tu>
@@ -12095,6 +12327,62 @@ julia&gt; unsafe_string(path)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; s = SquaresVector(4)
+4-element SquaresVector:
+  1
+  4
+  9
+ 16
+
+julia&gt; s[s .&gt; 8]
+2-element Array{Int64,1}:
+  9
+ 16
+
+julia&gt; s + s
+4-element Array{Int64,1}:
+  2
+  8
+ 18
+ 32
+
+julia&gt; sin.(s)
+4-element Array{Float64,1}:
+  0.8414709848078965
+ -0.7568024953079282
+  0.4121184852417566
+ -0.2879033166650653</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083214Z" creationid="hsugawa8651" creationdate="20181113T083214Z">
+        <seg>julia&gt; s = SquaresVector(4)
+4-element SquaresVector:
+  1
+  4
+  9
+ 16
+
+julia&gt; s[s .&gt; 8]
+2-element Array{Int64,1}:
+  9
+ 16
+
+julia&gt; s + s
+4-element Array{Int64,1}:
+  2
+  8
+ 18
+ 32
+
+julia&gt; sin.(s)
+4-element Array{Float64,1}:
+  0.8414709848078965
+ -0.7568024953079282
+  0.4121184852417566
+ -0.2879033166650653</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; setrounding(BigFloat, RoundUp) do
            BigFloat(1) + parse(BigFloat, "0.1")
        end
@@ -12237,6 +12525,44 @@ Float16(8.0)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; struct SparseArray{T,N} &lt;: AbstractArray{T,N}
+           data::Dict{NTuple{N,Int}, T}
+           dims::NTuple{N,Int}
+       end
+
+julia&gt; SparseArray(::Type{T}, dims::Int...) where {T} = SparseArray(T, dims);
+
+julia&gt; SparseArray(::Type{T}, dims::NTuple{N,Int}) where {T,N} = SparseArray{T,N}(Dict{NTuple{N,Int}, T}(), dims);
+
+julia&gt; Base.size(A::SparseArray) = A.dims
+
+julia&gt; Base.similar(A::SparseArray, ::Type{T}, dims::Dims) where {T} = SparseArray(T, dims)
+
+julia&gt; Base.getindex(A::SparseArray{T,N}, I::Vararg{Int,N}) where {T,N} = get(A.data, I, zero(T))
+
+julia&gt; Base.setindex!(A::SparseArray{T,N}, v, I::Vararg{Int,N}) where {T,N} = (A.data[I] = v)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083222Z" creationid="hsugawa8651" creationdate="20181113T083222Z">
+        <seg>julia&gt; struct SparseArray{T,N} &lt;: AbstractArray{T,N}
+           data::Dict{NTuple{N,Int}, T}
+           dims::NTuple{N,Int}
+       end
+
+julia&gt; SparseArray(::Type{T}, dims::Int...) where {T} = SparseArray(T, dims);
+
+julia&gt; SparseArray(::Type{T}, dims::NTuple{N,Int}) where {T,N} = SparseArray{T,N}(Dict{NTuple{N,Int}, T}(), dims);
+
+julia&gt; Base.size(A::SparseArray) = A.dims
+
+julia&gt; Base.similar(A::SparseArray, ::Type{T}, dims::Dims) where {T} = SparseArray(T, dims)
+
+julia&gt; Base.getindex(A::SparseArray{T,N}, I::Vararg{Int,N}) where {T,N} = get(A.data, I, zero(T))
+
+julia&gt; Base.setindex!(A::SparseArray{T,N}, v, I::Vararg{Int,N}) where {T,N} = (A.data[I] = v)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; struct Squares
            count::Int
        end
@@ -12249,6 +12575,30 @@ julia&gt; Base.iterate(S::Squares, state=1) = state &gt; S.count ?</seg>
        end
 
 julia&gt; Base.iterate(S::Squares, state=1) = state &gt; S.count ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; struct SquaresVector &lt;: AbstractArray{Int, 1}
+           count::Int
+       end
+
+julia&gt; Base.size(S::SquaresVector) = (S.count,)
+
+julia&gt; Base.IndexStyle(::Type{&lt;:SquaresVector}) = IndexLinear()
+
+julia&gt; Base.getindex(S::SquaresVector, i::Int) = i*i</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083203Z" creationid="hsugawa8651" creationdate="20181113T083203Z">
+        <seg>julia&gt; struct SquaresVector &lt;: AbstractArray{Int, 1}
+           count::Int
+       end
+
+julia&gt; Base.size(S::SquaresVector) = (S.count,)
+
+julia&gt; Base.IndexStyle(::Type{&lt;:SquaresVector}) = IndexLinear()
+
+julia&gt; Base.getindex(S::SquaresVector, i::Int) = i*i</seg>
       </tuv>
     </tu>
     <tu>
@@ -13562,6 +13912,16 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>similar&lt;x1/&gt; supports 1- and 2-argument
+forms, in most case you only need to specialize the 3-argument form.) For this to work it's important
+that &lt;x2/&gt;SparseArray&lt;x3/&gt; is mutable (supports &lt;x4/&gt;setindex!&lt;x5/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083312Z" creationid="hsugawa8651" creationdate="20181113T083312Z">
+        <seg>同様の&lt;x1/&gt;は1と2の引数をサポートします ほとんどの場合、3引数形式の特殊化のみが必要となります。)この場合、重要なのは、このフォームを使用することです。 &lt;x2/&gt;SparseArray&lt;x3/&gt;は可変です(&lt;x4/&gt;setindex!&lt;x5/&gt;をサポートします)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>single&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110235Z" creationid="hsugawa8651" creationdate="20181112T110235Z">
@@ -13582,6 +13942,22 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112237Z" creationid="hsugawa8651" creationdate="20181112T112237Z">
         <seg>size(iter, [dim])&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>stride(A, i::Int)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083446Z" creationid="hsugawa8651" creationdate="20181113T083446Z">
+        <seg>stride(A, i::Int)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>strides(A)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083428Z" creationid="hsugawa8651" creationdate="20181113T083428Z">
+        <seg>strides(A)&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
