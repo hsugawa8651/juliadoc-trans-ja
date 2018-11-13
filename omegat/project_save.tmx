@@ -5643,6 +5643,14 @@ ourselves, we can officially define it as a subtype of an &lt;x6/&gt;`AbstractAr
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Int&lt;x1/&gt; indices.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083104Z" creationid="hsugawa8651" creationdate="20181113T083104Z">
+        <seg>Int&lt;x1/&gt; indices.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Integer division (the &lt;x1/&gt;div&lt;x2/&gt; function) has two exceptional cases: dividing by zero, and dividing
 the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
       </tuv>
@@ -8657,6 +8665,15 @@ and efficient code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224306Z" creationid="hsugawa8651" creationdate="20181109T224306Z">
         <seg>対話モードで実行すると、&lt;x9/&gt;julia&lt;x10/&gt;はバナーを表示し、入力を求めるプロンプトを表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the array is subsequently
+indexed with a multidimensional set of indices, the fallback &lt;x2/&gt;getindex(A::AbstractArray, I...)()&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083148Z" creationid="hsugawa8651" creationdate="20181113T083148Z">
+        <seg>アレイが次に 索引の多次元集合でインデックスを作成します。フォールバック&lt;x2/&gt;getindex(A::AbstractArray, I...)()&lt;x3/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -13311,6 +13328,14 @@ for each line in file &lt;x4/&gt;file&lt;x5/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224417Z" creationid="hsugawa8651" creationdate="20181109T224417Z">
         <seg>n&lt;x1/&gt;worker processes while&lt;x2/&gt;--machine file file&lt;x3/&gt;はワーカーを起動します。 ファイル&lt;x4/&gt;ファイル&lt;x5/&gt;の各行に対して実行されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>ndims(A)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083058Z" creationid="hsugawa8651" creationdate="20181113T083058Z">
+        <seg>ndims(A)&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
