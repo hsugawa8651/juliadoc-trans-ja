@@ -259,6 +259,14 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@ref man-array-indexing)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022353Z" creationid="hsugawa8651" creationdate="20181113T022353Z">
+        <seg>(@ref man-array-indexing)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@ref man-conditional-evaluation): &lt;x1/&gt;if&lt;x2/&gt;-&lt;x3/&gt;elseif&lt;x4/&gt;-&lt;x5/&gt;else&lt;x6/&gt; and &lt;x7/&gt;?:&lt;x8/&gt; (ternary operator).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225720Z" creationid="hsugawa8651" creationdate="20181109T225720Z">
@@ -1338,6 +1346,14 @@ to &lt;x3/&gt;`ccall`&lt;x4/&gt; are as follows:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155544Z" creationid="hsugawa8651" creationdate="20181109T155544Z">
         <seg>ブール値の配列で、&lt;x1/&gt;真の&lt;x2/&gt;インデックスで要素を選択します(詳細については、以下を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Array{S}(undef, dims)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022453Z" creationid="hsugawa8651" creationdate="20181113T022453Z">
+        <seg>Array{S}(undef, dims)&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -6707,6 +6723,14 @@ an interactive session.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Return a mutable array with the specified indices &lt;x1/&gt;inds&lt;x2/&gt; (see below)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022621Z" creationid="hsugawa8651" creationdate="20181113T022621Z">
+        <seg>指定されたインデックス&lt;x1/&gt;インスタンス&lt;x2/&gt;(以下参照)を使用して、可変配列を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Return type (see below for mapping the declared C type to Julia)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223843Z" creationid="hsugawa8651" creationdate="20181109T223843Z">
@@ -9372,6 +9396,14 @@ and all further calculations will take these changes in account.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>axes(A)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022510Z" creationid="hsugawa8651" creationdate="20181113T022510Z">
+        <seg>axes(A)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>ccall
 Core.Intrinsics.cglobal
 Base.@cfunction
@@ -9460,6 +9492,14 @@ code_native(triple,(m128,))</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154435Z" creationid="hsugawa8651" creationdate="20181109T154435Z">
         <seg>&lt;x1/&gt;A&lt;x2/&gt;をコピーして、その要素を再帰的にコピーする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>defined in terms of scalar &lt;x1/&gt;setindex!&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022349Z" creationid="hsugawa8651" creationdate="20181113T022349Z">
+        <seg>スカラー&lt;x1/&gt;setindex!&lt;x2/&gt;の観点から定義されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13007,6 +13047,14 @@ julia&gt; ∑(2, 3)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>length(A)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022406Z" creationid="hsugawa8651" creationdate="20181113T022406Z">
+        <seg>length(A)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>length(iter)&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112217Z" creationid="hsugawa8651" creationdate="20181112T112217Z">
@@ -13027,6 +13075,14 @@ julia&gt; ∑(2, 3)
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154456Z" creationid="hsugawa8651" creationdate="20181109T154456Z">
         <seg>m&lt;x1/&gt;-by-&lt;x2/&gt;n&lt;x3/&gt;識別マトリクス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>map(OneTo, size(A))&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022516Z" creationid="hsugawa8651" creationdate="20181113T022516Z">
+        <seg>map(OneTo, size(A))&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -13258,10 +13314,26 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>prod(size(A))&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022410Z" creationid="hsugawa8651" creationdate="20181113T022410Z">
+        <seg>prod(size(A))&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>range of &lt;x1/&gt;n&lt;x2/&gt; linearly spaced elements from &lt;x3/&gt;start&lt;x4/&gt; to &lt;x5/&gt;stop&lt;x6/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154500Z" creationid="hsugawa8651" creationdate="20181109T154500Z">
         <seg>&lt;x1/&gt;n&lt;x2/&gt;の範囲で、&lt;x3/&gt;開始&lt;x4/&gt;から&lt;x5/&gt;&lt;x6/&gt;までの直線的に間隔をあけた要素の範囲</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>setindex!(A, I...)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022344Z" creationid="hsugawa8651" creationdate="20181113T022344Z">
+        <seg>setindex!(A, I...)&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -13294,6 +13366,86 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154557Z" creationid="hsugawa8651" creationdate="20181109T154557Z">
         <seg>&lt;x1/&gt;cat(A.…;dims=2)&lt;x2/&gt;の短縮形</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>similar(A)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022415Z" creationid="hsugawa8651" creationdate="20181113T022415Z">
+        <seg>similar(A)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>similar(A, ::Type{S})&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022423Z" creationid="hsugawa8651" creationdate="20181113T022423Z">
+        <seg>similar(A, ::Type{S})&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>similar(A, ::Type{S}, dims::Dims)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022448Z" creationid="hsugawa8651" creationdate="20181113T022448Z">
+        <seg>similar(A, ::Type{S}, dims::Dims)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>similar(A, ::Type{S}, inds)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022521Z" creationid="hsugawa8651" creationdate="20181113T022521Z">
+        <seg>similar(A, ::Type{S}, inds)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>similar(A, S, Base.to_shape(inds))&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022525Z" creationid="hsugawa8651" creationdate="20181113T022525Z">
+        <seg>similar(A, S, Base.to_shape(inds))&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>similar(A, S, size(A))&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022426Z" creationid="hsugawa8651" creationdate="20181113T022426Z">
+        <seg>similar(A, S, size(A))&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>similar(A, dims::Dims)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022435Z" creationid="hsugawa8651" creationdate="20181113T022435Z">
+        <seg>similar(A, dims::Dims)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>similar(A, eltype(A), dims)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022439Z" creationid="hsugawa8651" creationdate="20181113T022439Z">
+        <seg>similar(A, eltype(A), dims)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>similar(A, eltype(A), size(A))&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022419Z" creationid="hsugawa8651" creationdate="20181113T022419Z">
+        <seg>similar(A, eltype(A), size(A))&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>similar(T::Union{Type,Function}, inds)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022608Z" creationid="hsugawa8651" creationdate="20181113T022608Z">
+        <seg>similar(T::Union{Type,Function}, inds)&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
