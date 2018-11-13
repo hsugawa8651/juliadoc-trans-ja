@@ -868,6 +868,15 @@ see also &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-dot-operators).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x7/&gt;DefaultArrayStyle&lt;x8/&gt; and the abstract supertype, &lt;x9/&gt;AbstractArrayStyle&lt;x10/&gt;, store the dimensionality as a type parameter to support specialized
+array types that have fixed dimensionality requirements.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131806Z" creationid="hsugawa8651" creationdate="20181113T131806Z">
+        <seg>&lt;x7/&gt;DefaultArrayStyle&lt;x8/&gt;と抽象型スーパータイプ&lt;x9/&gt;AbstractArrayStyle&lt;x10/&gt;は、特殊化されたものをサポートするために、次元をタイプパラメータとして格納します。 固定された次元要件を持つ配列タイプ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x8/&gt;`view`&lt;x9/&gt; stores the input index vectors in a
 &lt;x10/&gt;SubArray&lt;x11/&gt; object, which can later be used to index the original array
 indirectly.</seg>
@@ -1703,6 +1712,22 @@ Base.GC</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083641Z" creationid="hsugawa8651" creationdate="20181113T083641Z">
         <seg>Base.Broadcast.instantiate(bc::Broadcasted{DestStyle})&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.BroadcastStyle(::Broadcast.Style{Tuple}, ::Broadcast.AbstractArrayStyle{0}) = Broadcast.Style{Tuple}()</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131750Z" creationid="hsugawa8651" creationdate="20181113T131750Z">
+        <seg>Base.BroadcastStyle(::Broadcast.Style{Tuple}, ::Broadcast.AbstractArrayStyle{0}) = Broadcast.Style{Tuple}()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.BroadcastStyle(::Style1, ::Style2) = Style12()</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131741Z" creationid="hsugawa8651" creationdate="20181113T131741Z">
+        <seg>Base.BroadcastStyle(::Style1, ::Style2) = Style12()</seg>
       </tuv>
     </tu>
     <tu>
@@ -3873,6 +3898,29 @@ implementation.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Broadcast.flatten&lt;x1/&gt; recomputes the potentially nested operation into a single
+function and flat list of arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131722Z" creationid="hsugawa8651" creationdate="20181113T131722Z">
+        <seg>broadcast.flatflating&lt;x1/&gt;は、ネストされたオペレーションを1つのファイルに再計算します。 引数の関数とフラット・リスト。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>BroadcastStyle(a::AbstractArrayStyle{Any}, ::DefaultArrayStyle) = a
+BroadcastStyle(a::AbstractArrayStyle{N}, ::DefaultArrayStyle{N}) where N = a
+BroadcastStyle(a::AbstractArrayStyle{M}, ::DefaultArrayStyle{N}) where {M,N} =
+    typeof(a)(_max(Val(M),Val(N)))</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131814Z" creationid="hsugawa8651" creationdate="20181113T131814Z">
+        <seg>BroadcastStyle(a::AbstractArrayStyle{Any}, ::DefaultArrayStyle) = a
+BroadcastStyle(a::AbstractArrayStyle{N}, ::DefaultArrayStyle{N}) where N = a
+BroadcastStyle(a::AbstractArrayStyle{M}, ::DefaultArrayStyle{N}) where {M,N} =
+    typeof(a)(_max(Val(M),Val(N)))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Broadcasting&lt;x1/&gt; is triggered by an explicit call to &lt;x2/&gt;broadcast&lt;x3/&gt; or &lt;x4/&gt;broadcast!&lt;x5/&gt;, or implicitly by
 "dot" operations like &lt;x6/&gt;A .+ b&lt;x7/&gt; or &lt;x8/&gt;f.(x, y)&lt;x9/&gt;.</seg>
       </tuv>
@@ -4079,6 +4127,15 @@ value of a boolean expression.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225833Z" creationid="hsugawa8651" creationdate="20181109T225833Z">
         <seg>条件付き評価は、コードの一部を評価することができます。 ブール式の値。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Consequently, specializing on &lt;x5/&gt;DestType&lt;x6/&gt; has lower precedence than
+methods that specialize on &lt;x7/&gt;DestStyle&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131705Z" creationid="hsugawa8651" creationdate="20181113T131705Z">
+        <seg>したがって、&lt;x5/&gt;DestType&lt;x6/&gt;に特化することは、以下の優先順位よりも優先順位が低くなります。 &lt;x7/&gt;DestStyle&lt;x8/&gt;に特化した方法。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4528,6 +4585,23 @@ Base.Sys.MACHINE</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>DefaultArrayStyle&lt;x1/&gt; "loses" to any other
+&lt;x2/&gt;AbstractArrayStyle&lt;x3/&gt; that has been defined because of the following methods:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131811Z" creationid="hsugawa8651" creationdate="20181113T131811Z">
+        <seg>DefaultArrayStyle&lt;x1/&gt;"は他のすべてに"失われます" &lt;x2/&gt;AbstractArrayStyle&lt;x3/&gt;は、以下の方法により定義されている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>DefaultArrayStyle&lt;x1/&gt; types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131826Z" creationid="hsugawa8651" creationdate="20181113T131826Z">
+        <seg>DefaultArrayStyle&lt;x1/&gt; types.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Define these
 two functions for custom types to override how they are stored in a hash table.</seg>
       </tuv>
@@ -4907,6 +4981,15 @@ and negative zero.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For &lt;x1/&gt;AbstractArray&lt;x2/&gt; types, defining a &lt;x3/&gt;BroadcastStyle&lt;x4/&gt; supersedes the fallback choice,
+&lt;x5/&gt;`Broadcast.DefaultArrayStyle`&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131802Z" creationid="hsugawa8651" creationdate="20181113T131802Z">
+        <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;タイプでは、&lt;x3/&gt;BroadcastStyleを定義することによって、フォールバック選択が優先されます。 &lt;x5/&gt;`ブロードキャスト.DefaultArrayStyle'&lt;x6/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For &lt;x1/&gt;AbstractArrays&lt;x2/&gt; that only support a certain dimensionality, create a subtype of &lt;x3/&gt;Broadcast.AbstractArrayStyle{N}&lt;x4/&gt; (see below).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131244Z" creationid="hsugawa8651" creationdate="20181113T131244Z">
@@ -5067,11 +5150,27 @@ the insertion point of a value not found in a sorted array:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, the following definition supports the negation of ranges:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131622Z" creationid="hsugawa8651" creationdate="20181113T131622Z">
+        <seg>たとえば、次の定義は範囲の否定をサポートしています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, the following expression
 sums a series without allocating memory:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154929Z" creationid="hsugawa8651" creationdate="20181109T154929Z">
         <seg>たとえば、次の式を指定します。 は、メモリを割り当てずに連続した値を加算します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, the sparse array code has the following definitions:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131841Z" creationid="hsugawa8651" creationdate="20181113T131841Z">
+        <seg>たとえば、疎な配列コードには次の定義があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5562,6 +5661,15 @@ session with a trailing semicolon, its value is not shown.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If instead you want to specialize on the destination type &lt;x1/&gt;DestType&lt;x2/&gt; without specializing
+on &lt;x3/&gt;DestStyle&lt;x4/&gt;, then you should define a method with the following signature:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131655Z" creationid="hsugawa8651" creationdate="20181113T131655Z">
+        <seg>その代わりに、宛先タイプ&lt;x1/&gt;DestType&lt;x2/&gt;に特化する必要はありません。 &lt;x3/&gt;DestStyle&lt;x4/&gt;では、次のシグニチャを使用してメソッドを定義する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If memory usage is your concern, you can always replace objects with ones that consume less memory.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024641Z" creationid="hsugawa8651" creationdate="20181110T024641Z">
@@ -5644,10 +5752,27 @@ have two options:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you wish to specialize on a particular style &lt;x1/&gt;DestStyle&lt;x2/&gt;, define a method for</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131644Z" creationid="hsugawa8651" creationdate="20181113T131644Z">
+        <seg>特定のスタイル&lt;x1/&gt;DestStyle&lt;x2/&gt;に特化する場合は、次の方法を定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you write a custom &lt;x1/&gt;`AbstractArray`&lt;x2/&gt; type, you can specify that it has fast linear indexing using</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155906Z" creationid="hsugawa8651" creationdate="20181109T155906Z">
         <seg>カスタム&lt;x1/&gt;`AbstractArray'&lt;x2/&gt;タイプを書く場合は、次のようにして、高速な線形インデックスを作成することを指定できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If your array type does have fixed dimensionality requirements, then you should
+subtype &lt;x1/&gt;AbstractArrayStyle&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131830Z" creationid="hsugawa8651" creationdate="20181113T131830Z">
+        <seg>配列タイプに固定次元要件がある場合は、次の操作を行います。 サブタイプ&lt;x1/&gt;AbstractArrayStyle&lt;x2/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5762,6 +5887,15 @@ type explicitly, a type can be prepended to the comprehension.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154854Z" creationid="hsugawa8651" creationdate="20181109T154854Z">
         <seg>制御を行うには 明示的にタイプを認識することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In order to implement such a &lt;x1/&gt;copy&lt;x2/&gt; or &lt;x3/&gt;copyto!&lt;x4/&gt;, method, of course, you must
+work with the &lt;x5/&gt;Broadcasted&lt;x6/&gt; wrapper to compute each element.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131713Z" creationid="hsugawa8651" creationdate="20181113T131713Z">
+        <seg>このような&lt;x1/&gt;コピー&lt;x2/&gt;または&lt;x3/&gt;コピーを実装するには、もちろん、メソッドを使用する必要があります。 &lt;x5/&gt;ブロードキャストされた&lt;x6/&gt;ラッパーを使用して、各要素を計算します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5961,6 +6095,14 @@ it will be a &lt;x7/&gt;CartesianIndex&lt;x8/&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083257Z" creationid="hsugawa8651" creationdate="20181113T083257Z">
         <seg>この例では、&lt;x1/&gt;のような{T}(A::SparseArray,::Type{T},dims::Dims)&lt;x2/&gt;を定義することによって達成される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In-place broadcasting can be supported by defining the appropriate &lt;x1/&gt;copyto!(dest, bc::Broadcasted)&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131637Z" creationid="hsugawa8651" creationdate="20181113T131637Z">
+        <seg>インプレースブロードキャストは、適切な&lt;x1/&gt;copyto!(dest,bc::Broadcast)&lt;x2/&gt;を定義することでサポートできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6264,6 +6406,15 @@ sizes, such as adding a vector to each column of a matrix.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is worth noting that you do not need to (and should not) define both argument orders
+of this call; defining one is sufficient no matter what order the user supplies the arguments in.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131758Z" creationid="hsugawa8651" creationdate="20181113T131758Z">
+        <seg>両方の引数の両方を定義する必要はありませんが、両方の命令を定義する必要はありません。 この呼び出しの定義では、ユーザが引数を指定する順序にかかわらず、一つだけで十分であることになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It will
 be evaluated and returned depending on the preceding conditionals:</seg>
       </tuv>
@@ -6277,6 +6428,15 @@ be evaluated and returned depending on the preceding conditionals:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230248Z" creationid="hsugawa8651" creationdate="20181109T230248Z">
         <seg>この動作を試してみると簡単です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Iterating over the &lt;x1/&gt;CartesianIndices&lt;x2/&gt; of the &lt;x3/&gt;axes(::Broadcasted)&lt;x4/&gt; and using
+indexing with the resulting &lt;x5/&gt;CartesianIndex&lt;x6/&gt; object to compute the result.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131732Z" creationid="hsugawa8651" creationdate="20181113T131732Z">
+        <seg>&lt;x3/&gt;軸の&lt;x1/&gt;CartesianIndices&lt;x2/&gt;を繰り返し(::ブロードキャスト)&lt;x4/&gt;を使用して繰り返します。 結果の計算には、結果の&lt;x5/&gt;CartesianIndex&lt;x6/&gt;オブジェクトを使用してインデックスを作成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7149,6 +7309,14 @@ level operators and functions, in a way that is independent of the underlying st
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Optionally, with this form you can also specialize on the type of &lt;x1/&gt;dest&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131651Z" creationid="hsugawa8651" creationdate="20181113T131651Z">
+        <seg>オプションで、このフォームでは、&lt;x1/&gt;dest&lt;x2/&gt;のタイプに特化することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Or in reverse order by a transformation:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044919Z" creationid="hsugawa8651" creationdate="20181112T044919Z">
@@ -7559,6 +7727,14 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Similarly, you can completely override out-of-place broadcasting with a &lt;x1/&gt;copy(::Broadcasted)&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131708Z" creationid="hsugawa8651" creationdate="20181113T131708Z">
+        <seg>同様に、&lt;x1/&gt;コピー(:ブロードキャスト)&lt;x2/&gt;を使用して、場所を指定しないブロードキャストを完全に上書きできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since counting up and
 down like the above &lt;x3/&gt;while&lt;x4/&gt; loop does is so common, it can be expressed more concisely with a
 &lt;x5/&gt;for&lt;x6/&gt; loop:</seg>
@@ -7633,6 +7809,20 @@ in order, returning the value of the last subexpression as its value.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225754Z" creationid="hsugawa8651" creationdate="20181109T225754Z">
         <seg>いくつかのサブ式を評価する単一の表現を持つことが便利な場合もあります。 は、最後のサブ式の値をその値として返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SparseVecStyle(::Val{0}) = SparseVecStyle()
+SparseVecStyle(::Val{1}) = SparseVecStyle()
+SparseVecStyle(::Val{2}) = SparseMatStyle()
+SparseVecStyle(::Val{N}) where N = Broadcast.DefaultArrayStyle{N}()</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131900Z" creationid="hsugawa8651" creationdate="20181113T131900Z">
+        <seg>SparseVecStyle(::Val{0}) = SparseVecStyle()
+SparseVecStyle(::Val{1}) = SparseVecStyle()
+SparseVecStyle(::Val{2}) = SparseMatStyle()
+SparseVecStyle(::Val{N}) where N = Broadcast.DefaultArrayStyle{N}()</seg>
       </tuv>
     </tu>
     <tu>
@@ -8313,6 +8503,14 @@ unary operators such as negation.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The precedence rules are defined by binary &lt;x1/&gt;BroadcastStyle&lt;x2/&gt; calls:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131737Z" creationid="hsugawa8651" creationdate="20181113T131737Z">
+        <seg>優先順位ルールは、バイナリ&lt;x1/&gt;BroadcastStyle&lt;x2/&gt;コールによって定義されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The reasoning is that &lt;x1/&gt;a &amp;&amp; b&lt;x2/&gt; must be &lt;x3/&gt;false&lt;x4/&gt; if &lt;x5/&gt;a&lt;x6/&gt; is &lt;x7/&gt;false&lt;x8/&gt;, regardless of the value of
 &lt;x9/&gt;b&lt;x10/&gt;, and likewise, the value of &lt;x11/&gt;a || b&lt;x12/&gt; must be true if &lt;x13/&gt;a&lt;x14/&gt; is &lt;x15/&gt;true&lt;x16/&gt;, regardless of the value
 of &lt;x17/&gt;b&lt;x18/&gt;.</seg>
@@ -8590,6 +8788,15 @@ that accomplish this: &lt;x1/&gt;begin&lt;x2/&gt; blocks and &lt;x3/&gt;(;)&lt;x
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are two main
+ways of doing so:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131717Z" creationid="hsugawa8651" creationdate="20181113T131717Z">
+        <seg>主に2つの その方法は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are various ways to run Julia code and provide options, similar to those available for the
 &lt;x1/&gt;perl&lt;x2/&gt; and &lt;x3/&gt;ruby&lt;x4/&gt; programs:</seg>
       </tuv>
@@ -8648,6 +8855,25 @@ generally work correctly as a fallback for any specific array implementation.</s
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160310Z" creationid="hsugawa8651" creationdate="20181109T160310Z">
         <seg>これらの操作 一般的には、特定のアレイ実装のフォールバックとして正しく動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These rules allow broadcasting to keep the sparse representation for operations that result
+in one or two dimensional outputs, but produce an &lt;x7/&gt;Array&lt;x8/&gt; for any other dimensionality.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131914Z" creationid="hsugawa8651" creationdate="20181113T131914Z">
+        <seg>これらのルールにより、ブロードキャストを実行して、操作のスパース表現を維持することができます。 1次元または2次元の出力では、他の次元に対して&lt;x7/&gt;配列&lt;x8/&gt;を生成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These rules indicate that the combination of a &lt;x1/&gt;SparseVecStyle&lt;x2/&gt; with 0- or 1-dimensional arrays
+yields another &lt;x3/&gt;SparseVecStyle&lt;x4/&gt;, that its combination with a 2-dimensional array
+yields a &lt;x5/&gt;SparseMatStyle&lt;x6/&gt;, and anything of higher dimensionality falls back to the dense arbitrary-dimensional framework.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131922Z" creationid="hsugawa8651" creationdate="20181113T131922Z">
+        <seg>これらの規則は、&lt;x1/&gt;SparseVecStyle&lt;x2/&gt;と0次元あるいは1次元の配列との組み合わせを示している。 2次元配列との組合せにより、別の&lt;x3/&gt;SparseVecStyle&lt;x4/&gt;を生成する。 は、&lt;x5/&gt;SparseMatStyle&lt;x6/&gt;を生成し、高い次元のすべては、密な任意の次元フレームワークに戻ります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8936,6 +9162,15 @@ Python, Ruby and Perl, among other dynamic languages.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025715Z" creationid="hsugawa8651" creationdate="20181110T025715Z">
         <seg>これはSchemeで見られる動作と同じです。ほとんどのLispです。 Python、Ruby、Perlは、その他の動的言語の中でもとりわけ優れています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This leverages a fallback implementation of &lt;x1/&gt;copyto!&lt;x2/&gt; that converts the wrapper into a
+&lt;x3/&gt;Broadcasted{Nothing}&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131702Z" creationid="hsugawa8651" creationdate="20181113T131702Z">
+        <seg>これは、ラッパーを変換する&lt;x1/&gt;copyto!&lt;x2/&gt;のフォールバック実装を活用します。 &lt;x3/&gt;ブロードキャスト{なし}&lt;x4/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -9482,6 +9717,15 @@ combined to determine a single &lt;x1/&gt;DestStyle&lt;x2/&gt; that controls the
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Whenever you subtype &lt;x1/&gt;AbstractArrayStyle&lt;x2/&gt;, you also need to define rules for combining
+dimensionalities, by creating a constructor for your style that takes a &lt;x3/&gt;Val(N)&lt;x4/&gt; argument.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131857Z" creationid="hsugawa8651" creationdate="20181113T131857Z">
+        <seg>&lt;x1/&gt;AbstractArrayStyle&lt;x2/&gt;をサブタイプ化する場合は必ず、結合するルールを定義する必要があります。 &lt;x3/&gt;Val(N)&lt;x4/&gt;引数を取るスタイルのコンストラクタを作成することによって、次元性を実現します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>While this can be inconvenient when you are developing new code, there's an excellent workaround.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024734Z" creationid="hsugawa8651" creationdate="20181110T024734Z">
@@ -9567,6 +9811,15 @@ like any value:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You are responsible for implementing the
+broadcasting shape rules yourself, but this may be helpful in limited situations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131727Z" creationid="hsugawa8651" creationdate="20181113T131727Z">
+        <seg>あなたは 放送の形状ルールは自分自身であるが、これは限られた状況では役に立つかもしれない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can also combine dot operations with function chaining using &lt;x1/&gt;`|&gt;`&lt;x2/&gt;, as in this example:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T105918Z" creationid="hsugawa8651" creationdate="20181112T105918Z">
@@ -9597,6 +9850,14 @@ to be able to redefine them there, but you can use the module name to resolve th
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024742Z" creationid="hsugawa8651" creationdate="20181110T024742Z">
         <seg>&lt;x1/&gt;メイン&lt;x2/&gt;にはタイプ名をインポートできないので、次のように入力することはできません。 で再定義することができますが、このモジュール名を使用してスコープを解決することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You do not need to write binary &lt;x1/&gt;BroadcastStyle&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131836Z" creationid="hsugawa8651" creationdate="20181113T131836Z">
+        <seg>バイナリの&lt;x1/&gt;BroadcastStyle&lt;x2/&gt;を書く必要はありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10294,6 +10555,14 @@ and all further calculations will take these changes in account.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>broadcasted(::DefaultArrayStyle{1}, ::typeof(-), r::OrdinalRange) = range(-first(r), step=-step(r), length=length(r))</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131627Z" creationid="hsugawa8651" creationdate="20181113T131627Z">
+        <seg>broadcasted(::DefaultArrayStyle{1}, ::typeof(-), r::OrdinalRange) = range(-first(r), step=-step(r), length=length(r))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>ccall
 Core.Intrinsics.cglobal
 Base.@cfunction
@@ -10386,10 +10655,35 @@ code_native(triple,(m128,))</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>copyto!(dest, bc::Broadcasted{DestStyle})</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131647Z" creationid="hsugawa8651" creationdate="20181113T131647Z">
+        <seg>copyto!(dest, bc::Broadcasted{DestStyle})</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>copyto!(dest::DestType, bc::Broadcasted{Nothing})</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131658Z" creationid="hsugawa8651" creationdate="20181113T131658Z">
+        <seg>copyto!(dest::DestType, bc::Broadcasted{Nothing})</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>defined in terms of scalar &lt;x1/&gt;setindex!&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022349Z" creationid="hsugawa8651" creationdate="20181113T022349Z">
         <seg>スカラー&lt;x1/&gt;setindex!&lt;x2/&gt;の観点から定義されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>dest&lt;x1/&gt; or the specific subtype of &lt;x2/&gt;bc&lt;x3/&gt;,
+to avoid ambiguities between packages we recommend the following convention.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131641Z" creationid="hsugawa8651" creationdate="20181113T131641Z">
+        <seg>dest&lt;x1/&gt;または&lt;x2/&gt;bc&lt;x3/&gt;の特定のサブタイプ パッケージ間の曖昧さを避けるために、次の規則が推奨されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10818,6 +11112,14 @@ obj2 = MyModule.somefunction(obj1)
 obj1 = MyModule.ObjConstructor(a, b)
 obj2 = MyModule.somefunction(obj1)
 &lt;x2/&gt; Got an error.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>indicates that &lt;x1/&gt;Tuple&lt;x2/&gt; "wins" over zero-dimensional arrays (the output container will be a tuple).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131755Z" creationid="hsugawa8651" creationdate="20181113T131755Z">
+        <seg>&lt;x1/&gt;タプル&lt;x2/&gt;"が0次元配列に対して(出力コンテナはタプルになります)"勝ち"であることを示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14746,6 +15048,20 @@ Base.BroadcastStyle(::Type{&lt;:MyType}) = MyStyle()</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>struct SparseVecStyle &lt;: Broadcast.AbstractArrayStyle{1} end
+struct SparseMatStyle &lt;: Broadcast.AbstractArrayStyle{2} end
+Base.BroadcastStyle(::Type{&lt;:SparseVector}) = SparseVecStyle()
+Base.BroadcastStyle(::Type{&lt;:SparseMatrixCSC}) = SparseMatStyle()</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131845Z" creationid="hsugawa8651" creationdate="20181113T131845Z">
+        <seg>struct SparseVecStyle &lt;: Broadcast.AbstractArrayStyle{1} end
+struct SparseMatStyle &lt;: Broadcast.AbstractArrayStyle{2} end
+Base.BroadcastStyle(::Type{&lt;:SparseVector}) = SparseVecStyle()
+Base.BroadcastStyle(::Type{&lt;:SparseMatrixCSC}) = SparseMatStyle()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>struct VecElement{T}
     value::T
 end</seg>
@@ -14838,6 +15154,15 @@ julia&gt; 1 &gt; 2 ?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155745Z" creationid="hsugawa8651" creationdate="20181109T155745Z">
         <seg>warning</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>where &lt;x1/&gt;Style12&lt;x2/&gt; is the &lt;x3/&gt;BroadcastStyle&lt;x4/&gt; you want to choose for outputs involving
+arguments of &lt;x5/&gt;Style1&lt;x6/&gt; and &lt;x7/&gt;Style2&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131746Z" creationid="hsugawa8651" creationdate="20181113T131746Z">
+        <seg>ここで、&lt;x1/&gt;Style12&lt;x2/&gt;は、出力を選択する&lt;x3/&gt;BroadcastStyle&lt;x4/&gt;である。 &lt;x5/&gt;Style1&lt;x6/&gt;および&lt;x7/&gt;Style2&lt;x8/&gt;の引数。</seg>
       </tuv>
     </tu>
     <tu>
