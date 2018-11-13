@@ -227,6 +227,14 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id man-dot-operators)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132431Z" creationid="hsugawa8651" creationdate="20181113T132431Z">
+        <seg>(@id man-dot-operators)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id man-interface-array)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113200Z" creationid="hsugawa8651" creationdate="20181112T113200Z">
@@ -406,6 +414,14 @@ julia&gt; range((min, max)) = max - min
 
 julia&gt; range(minmax(10, 2))
 8</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>+=  -=  *=  /=  \=  ÷=  %=  ^=  &amp;=  |=  ⊻=  &gt;&gt;&gt;=  &gt;&gt;=  &lt;&lt;=</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132406Z" creationid="hsugawa8651" creationdate="20181113T132406Z">
+        <seg>+=  -=  *=  /=  \=  ÷=  %=  ^=  &amp;=  |=  ⊻=  &gt;&gt;&gt;=  &gt;&gt;=  &lt;&lt;=</seg>
       </tuv>
     </tu>
     <tu>
@@ -834,6 +850,14 @@ temporarily-suspended computations.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225746Z" creationid="hsugawa8651" creationdate="20181109T225746Z">
         <seg>&lt;x1/&gt;`タスク`&lt;x2/&gt;s はあまり標準的ではないため、ローカルではない制御フローを提供することができます。 一時的に中断された計算です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x1/&gt;```jldoctest&lt;x2/&gt;&lt;x3/&gt;julia&gt; x = 0x01; typeof(x)&lt;x4/&gt;&lt;x5/&gt;UInt8&lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;julia&gt; x *= 2 &lt;x10/&gt; Same as x = x * 2&lt;x11/&gt;&lt;x12/&gt;2&lt;x13/&gt;&lt;x14/&gt;&lt;x15/&gt;&lt;x16/&gt;julia&gt; typeof(x)&lt;x17/&gt;&lt;x18/&gt;Int64&lt;x19/&gt;&lt;x20/&gt;```&lt;x21/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132427Z" creationid="hsugawa8651" creationdate="20181113T132427Z">
+        <seg>&lt;x1/&gt;```jldoctest&lt;x2/&gt;&lt;x3/&gt;julia&gt; x = 0x01; typeof(x)&lt;x4/&gt;&lt;x5/&gt;UInt8&lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;julia&gt; x *= 2 &lt;x10/&gt; Same as x = x * 2&lt;x11/&gt;&lt;x12/&gt;2&lt;x13/&gt;&lt;x14/&gt;&lt;x15/&gt;&lt;x16/&gt;julia&gt; typeof(x)&lt;x17/&gt;&lt;x18/&gt;Int64&lt;x19/&gt;&lt;x20/&gt;```&lt;x21/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1519,6 +1543,15 @@ on top of &lt;x1/&gt;`Dict`&lt;x2/&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083217Z" creationid="hsugawa8651" creationdate="20181113T083217Z">
         <seg>より複雑な例として、独自の玩具N次元の疎な配列タイプの配列を作成します。 top of&lt;x1/&gt;'Dict'&lt;x2/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As a result, the type of the
+variable may change.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132421Z" creationid="hsugawa8651" creationdate="20181113T132421Z">
+        <seg>その結果 変数が変更される可能性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4897,6 +4930,15 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Every binary arithmetic and bitwise operator also has an updating version that assigns the result
+of the operation back into its left operand.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132351Z" creationid="hsugawa8651" creationdate="20181113T132351Z">
+        <seg>すべてのバイナリ算術演算子とビット演算子には、結果を指定する更新バージョンもあります。 は左オペランドに戻る。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Everyday programming requires no
 direct usage of tasks, but certain problems can be solved much more easily by using tasks.</seg>
       </tuv>
@@ -5039,6 +5081,16 @@ and negative zero.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For &lt;x1/&gt;every&lt;x2/&gt; binary operation like &lt;x3/&gt;^&lt;x4/&gt;, there is a corresponding
+"dot" operation &lt;x5/&gt;.^&lt;x6/&gt; that is &lt;x7/&gt;automatically&lt;x8/&gt; defined
+to perform &lt;x9/&gt;^&lt;x10/&gt; element-by-element on arrays.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132457Z" creationid="hsugawa8651" creationdate="20181113T132457Z">
+        <seg>&lt;x3/&gt;^&lt;x4/&gt;のように&lt;x1/&gt;のバイナリ演算に対しては、対応するものが存在する。 「ドット」操作&lt;x5/&gt;.^&lt;x6/&gt;は自動的に&lt;x8/&gt;定義され、&lt;x8/&gt;は自動的に&lt;x8/&gt;定義されます 配列上で&lt;x9/&gt;^&lt;x10/&gt;エレメント単位で実行することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For a brief but lucid presentation of how floating-point numbers are represented, see John D.
 Cook's &lt;x1/&gt;article&lt;x2/&gt;</seg>
       </tuv>
@@ -5090,6 +5142,18 @@ numbers, as well as discussion of many other topics in numerical computing, see 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154603Z" creationid="hsugawa8651" creationdate="20181109T154603Z">
         <seg>たとえば</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example,
+&lt;x11/&gt;[1,2,3] ^ 3&lt;x12/&gt; is not defined, since there is no standard
+mathematical meaning to "cubing" a (non-square) array, but
+&lt;x13/&gt;[1,2,3] .^ 3&lt;x14/&gt; is defined as computing the elementwise
+(or "vectorized") result &lt;x15/&gt;[1^3, 2^3, 3^3]&lt;x16/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132451Z" creationid="hsugawa8651" creationdate="20181113T132451Z">
+        <seg>たとえば &lt;x11/&gt;[1,2,3]^3&lt;x12/&gt;は定義されていません。これは、標準がないためです。 (非正方形の)配列を"cubing"するための数学的意味はあるが &lt;x13/&gt;[1,2,3].^3&lt;x14/&gt;は、要素を計算するために定義されています。 (または"ベクトル化された")結果&lt;x15/&gt;[1^3 2^3 3^3]&lt;x16/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5256,6 +5320,15 @@ the result in single precision by writing:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154859Z" creationid="hsugawa8651" creationdate="20181109T154859Z">
         <seg>例えば 以下のように記述することによって、単精度での結果が得られます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, writing &lt;x3/&gt;x += 3&lt;x4/&gt; is equivalent to
+writing &lt;x5/&gt;x = x + 3&lt;x6/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132344Z" creationid="hsugawa8651" creationdate="20181113T132344Z">
+        <seg>たとえば、&lt;x3/&gt;x+=3&lt;x4/&gt;の書き込みは、次のようになります。 書き込み&lt;x5/&gt;x=x+3&lt;x6/&gt;:</seg>
       </tuv>
     </tu>
     <tu>
@@ -5465,6 +5538,14 @@ example, &lt;x11/&gt;1.5F22&lt;x12/&gt; is equal to &lt;x13/&gt;1.5 * F22&lt;x14
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083514Z" creationid="hsugawa8651" creationdate="20181113T083514Z">
         <seg>ここでは、どのタイプのアレイがストローブされていて、どのタイプがストライドされていないかを示す例をいくつか示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here are some examples with bitwise operators:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132327Z" creationid="hsugawa8651" creationdate="20181113T132327Z">
+        <seg>ビット演算子の例を次に示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6988,10 +7069,32 @@ can be found within the &lt;x25/&gt;&lt;x26/&gt;&lt;x27/&gt;(@ref man-interface-
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>More specifically, &lt;x1/&gt;a .^ b&lt;x2/&gt; is parsed as the &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-vectorized)
+&lt;x6/&gt;(^).(a,b)&lt;x7/&gt;, which performs a &lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;(@ref Broadcasting) operation:
+it can combine arrays and scalars, arrays of the same size (performing
+the operation elementwise), and even arrays of different shapes (e.g.
+combining row and column vectors to produce a matrix).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132539Z" creationid="hsugawa8651" creationdate="20181113T132539Z">
+        <seg>より具体的には、&lt;x1/&gt;a.^b&lt;x2/&gt;は、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref manベクトル化)として解析されます。 &lt;x6/&gt;(^).(a,b)&lt;x7/&gt;&lt;x8/&gt;&lt;x8/&gt;&lt;x9/&gt;(@ref Broadcasting)動作を実行します。 配列とスカラを組み合わせることができ、同じサイズの配列(実行することができる) この操作エレメントは、異なる形状の配列(例えば 行列を生成するために行と列のベクトルを結合します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Moreover, an attempt to use &lt;x8/&gt;A&lt;x9/&gt; will likely result in an error, because most methods are not defined on type &lt;x10/&gt;Nothing&lt;x11/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024705Z" creationid="hsugawa8651" creationdate="20181110T024705Z">
         <seg>さらに、&lt;x8/&gt;A&lt;x9/&gt;を使用しようとすると、エラーが発生する可能性があります。なぜなら、ほとんどのメソッドは、タイプ&lt;x10/&gt;Nothing&lt;x11/&gt;では定義されていないからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Moreover, like
+all vectorized "dot calls," these "dot operators" are
+&lt;x11/&gt;fusing&lt;x12/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132535Z" creationid="hsugawa8651" creationdate="20181113T132535Z">
+        <seg>さらに すべてのベクトル化された"ドット・コール"ドット・オペレーター"ドット・オペレーター"は &lt;x11/&gt;融合&lt;x12/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7799,6 +7902,16 @@ are common in Julia.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110030Z" creationid="hsugawa8651" creationdate="20181112T110030Z">
         <seg>Signed?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Similarly for unary
+operators like &lt;x17/&gt;!&lt;x18/&gt; or &lt;x19/&gt;√&lt;x20/&gt;, there is a corresponding &lt;x21/&gt;.√&lt;x22/&gt; that
+applies the operator elementwise.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132515Z" creationid="hsugawa8651" creationdate="20181113T132501Z">
+        <seg>単項についても同様 &lt;x17/&gt;!&lt;x18/&gt;や&lt;x19/&gt;√x20/&gt;のような演算子は、対応する&lt;X21/&gt;.√&lt;x22/&gt;となります。 は、演算子要素を適用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8788,6 +8901,23 @@ rely on the default fallback &lt;x2/&gt;`Broadcast.DefaultArrayStyle`&lt;x3/&gt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131129Z" creationid="hsugawa8651" creationdate="20181113T131129Z">
         <seg>単項変異体の状態 特定のブロードキャスト動作や出力タイプを実装することを意図しており デフォルトのフォールバック&lt;x2/&gt;`ブロードキャスト.DefaultArrayStyle'&lt;x3/&gt;に依存します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The updating version of the binary operator is formed
+by placing a &lt;x1/&gt;=&lt;x2/&gt; immediately after the operator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132348Z" creationid="hsugawa8651" creationdate="20181113T132348Z">
+        <seg>バイナリ演算子の更新バージョンが形成されます。 演算子の直後に&lt;x1/&gt;=&lt;x2/&gt;を配置します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The updating versions of all the binary arithmetic and bitwise operators are:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132411Z" creationid="hsugawa8651" creationdate="20181113T132411Z">
+        <seg>すべてのバイナリ算術演算子とビット演算子の更新バージョンは次のとおりです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10673,6 +10803,30 @@ and all further calculations will take these changes in account.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>bitwise and</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132241Z" creationid="hsugawa8651" creationdate="20181113T132241Z">
+        <seg>bitwise and</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>bitwise or</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132250Z" creationid="hsugawa8651" creationdate="20181113T132250Z">
+        <seg>bitwise or</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>bitwise xor (exclusive or)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132300Z" creationid="hsugawa8651" creationdate="20181113T132300Z">
+        <seg>ビット単位のXOR(排他的な排他的な排他的論理和)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>broadcasted(::DefaultArrayStyle{1}, ::typeof(-), r::OrdinalRange) = range(-first(r), step=-step(r), length=length(r))</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131627Z" creationid="hsugawa8651" creationdate="20181113T131627Z">
@@ -11862,6 +12016,52 @@ julia&gt; std(Squares(100))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; &lt;x1/&gt;123
+-124
+
+julia&gt; 123 &amp; 234
+106
+
+julia&gt; 123 | 234
+251
+
+julia&gt; 123 ⊻ 234
+145
+
+julia&gt; xor(123, 234)
+145
+
+julia&gt; &lt;x2/&gt;UInt32(123)
+0xffffff84
+
+julia&gt; &lt;x3/&gt;UInt8(123)
+0x84</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132330Z" creationid="hsugawa8651" creationdate="20181113T132330Z">
+        <seg>julia&gt; &lt;x1/&gt;123
+-124
+
+julia&gt; 123 &amp; 234
+106
+
+julia&gt; 123 | 234
+251
+
+julia&gt; 123 ⊻ 234
+145
+
+julia&gt; xor(123, 234)
+145
+
+julia&gt; &lt;x2/&gt;UInt32(123)
+0xffffff84
+
+julia&gt; &lt;x3/&gt;UInt8(123)
+0x84</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; A = SparseArray(Float64, 3, 3)
 3×3 SparseArray{Float64,2}:
  0.0  0.0  0.0
@@ -12392,6 +12592,22 @@ julia&gt; @.</seg>
  (3, 1)
  (3, 2)
  (3, 3)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; [1,2,3] .^ 3
+3-element Array{Int64,1}:
+  1
+  8
+ 27</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132518Z" creationid="hsugawa8651" creationdate="20181113T132518Z">
+        <seg>julia&gt; [1,2,3] .^ 3
+3-element Array{Int64,1}:
+  1
+  8
+ 27</seg>
       </tuv>
     </tu>
     <tu>
@@ -14166,6 +14382,28 @@ julia&gt; x.a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; x = 1
+1
+
+julia&gt; x += 3
+4
+
+julia&gt; x
+4</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132355Z" creationid="hsugawa8651" creationdate="20181113T132355Z">
+        <seg>julia&gt; x = 1
+1
+
+julia&gt; x += 3
+4
+
+julia&gt; x
+4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; x = 1.25f0
 1.25f0
 
@@ -14748,6 +14986,22 @@ julia&gt; ∑(2, 3)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>logical shift&lt;x1/&gt; right</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132309Z" creationid="hsugawa8651" creationdate="20181113T132309Z">
+        <seg>論理シフト&lt;x1/&gt;右</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>logical/arithmetic shift left</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132323Z" creationid="hsugawa8651" creationdate="20181113T132323Z">
+        <seg>論理/算術シフト左</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>m&lt;x1/&gt;-by-&lt;x2/&gt;n&lt;x3/&gt; identity matrix</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154456Z" creationid="hsugawa8651" creationdate="20181109T154456Z">
@@ -14943,6 +15197,15 @@ while next !== nothing
     &lt;x1/&gt; body
     next = iterate(iter, state)
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>note
+An updating operator rebinds the variable on the left-hand side.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132418Z" creationid="hsugawa8651" creationdate="20181113T132418Z">
+        <seg>メモ 更新演算子は、左側の変数を再バインドします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15429,6 +15692,14 @@ arguments of &lt;x5/&gt;Style1&lt;x6/&gt; and &lt;x7/&gt;Style2&lt;x8/&gt;.</seg
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>x &amp; y&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132238Z" creationid="hsugawa8651" creationdate="20181113T132238Z">
+        <seg>x &amp; y&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>x * y&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132028Z" creationid="hsugawa8651" creationdate="20181113T132028Z">
@@ -15469,10 +15740,42 @@ arguments of &lt;x5/&gt;Style1&lt;x6/&gt; and &lt;x7/&gt;Style2&lt;x8/&gt;.</seg
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>x &lt;&lt; y&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132319Z" creationid="hsugawa8651" creationdate="20181113T132319Z">
+        <seg>x &lt;&lt; y&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x &gt;&gt; y&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132313Z" creationid="hsugawa8651" creationdate="20181113T132313Z">
+        <seg>x &gt;&gt; y&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x &gt;&gt;&gt; y&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132304Z" creationid="hsugawa8651" creationdate="20181113T132304Z">
+        <seg>x &gt;&gt;&gt; y&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>x \ y&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132113Z" creationid="hsugawa8651" creationdate="20181113T132113Z">
         <seg>x \ y&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x \| y&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132246Z" creationid="hsugawa8651" creationdate="20181113T132246Z">
+        <seg>x \| y&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -15489,6 +15792,14 @@ arguments of &lt;x5/&gt;Style1&lt;x6/&gt; and &lt;x7/&gt;Style2&lt;x8/&gt;.</seg
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132058Z" creationid="hsugawa8651" creationdate="20181113T132058Z">
         <seg>x ÷ y&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x ⊻ y&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132255Z" creationid="hsugawa8651" creationdate="20181113T132255Z">
+        <seg>x ⊻ y&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
