@@ -6915,6 +6915,14 @@ MIME types) of user-defined types.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Override the computation of the lazy broadcast's axes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131004Z" creationid="hsugawa8651" creationdate="20181113T131004Z">
+        <seg>遅延ブロードキャストの軸の計算をオーバーライドします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Override the default lazy behavior within a fused expression</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083633Z" creationid="hsugawa8651" creationdate="20181113T083633Z">
