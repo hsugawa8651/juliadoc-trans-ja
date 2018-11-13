@@ -990,6 +990,16 @@ array it indexes into.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A notable exception is &lt;x25/&gt;AbstractString&lt;x26/&gt;;
+strings are special-cased to behave as scalars for the purposes of broadcast even though
+they are iterable collections of their characters (see &lt;x27/&gt;Strings&lt;x28/&gt; for more).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131103Z" creationid="hsugawa8651" creationdate="20181113T131103Z">
+        <seg>注目すべき例外は&lt;x25/&gt;AbstractString&lt;x26/&gt;です。 文字列は、ブロードキャストの目的で、ブロードキャストのために それらは、それらの文字(詳細は&lt;x27/&gt;の文字列&lt;x28/&gt;を参照)のコレクションです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A simple example is an iterable sequence of square numbers with a defined length:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112450Z" creationid="hsugawa8651" creationdate="20181112T112450Z">
@@ -1350,6 +1360,16 @@ be to replicate the vector to the size of the matrix:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Any object that has &lt;x10/&gt;`axes`&lt;x11/&gt; and supports
+indexing can participate as an argument in broadcasting, and by default the result is stored
+in an &lt;x12/&gt;Array&lt;x13/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131018Z" creationid="hsugawa8651" creationdate="20181113T131018Z">
+        <seg>&lt;x10/&gt;'軸&lt;x11/&gt;を持つすべてのオブジェクトをサポートします。 インデックス作成はブロードキャスト時に引き数として参加することができ、デフォルトではその結果は格納される &lt;x12/&gt;アレイ&lt;x13/&gt;で使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Any&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112202Z" creationid="hsugawa8651" creationdate="20181112T112202Z">
@@ -1667,10 +1687,37 @@ Base.GC</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.BroadcastStyle(::Type{&lt;:MyType}) = Broadcast.ArrayStyle{MyType}()&lt;x1/&gt; is preferred
+if &lt;x2/&gt;MyType&lt;x3/&gt; is an &lt;x4/&gt;AbstractArray&lt;x5/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131239Z" creationid="hsugawa8651" creationdate="20181113T131152Z">
+        <seg>Base.BroadcastStyle(::Type{&lt;:MyType})=ブロードキャスト.ArrayStyle{MyType}()&lt;x1/&gt;は優先されます。 &lt;x2/&gt;MyType&lt;x3/&gt;が&lt;x4/&gt;AbstractArray&lt;x5/&gt;である場合。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.BroadcastStyle(::Type{&lt;:MyType}) = Broadcast.Style{MyType}()&lt;x1/&gt; can be
+used for arbitrary types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131144Z" creationid="hsugawa8651" creationdate="20181113T131144Z">
+        <seg>Base.BroadcastStyle(::Type{&lt;:MyType}) = Broadcast.Style{MyType}()&lt;x1/&gt; can be
+used for arbitrary types.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.BroadcastStyle(::Type{SrcType}) = SrcStyle()&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083522Z" creationid="hsugawa8651" creationdate="20181113T083522Z">
         <seg>Base.BroadcastStyle(::Type{SrcType}) = SrcStyle()&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.BroadcastStyle&lt;x1/&gt; is the abstract type from which all broadcast styles are derived.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131117Z" creationid="hsugawa8651" creationdate="20181113T131117Z">
+        <seg>Base.BroadcastStyle&lt;x1/&gt;は、すべてのブロードキャストスタイルが派生する抽象型のタイプです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3433,6 +3480,14 @@ Base.displaysize</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Base.similar(bc::Broadcasted{DestStyle}, ::Type{ElType})</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131307Z" creationid="hsugawa8651" creationdate="20181113T131307Z">
+        <seg>Base.similar(bc::Broadcasted{DestStyle}, ::Type{ElType})</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Base.similar(bc::Broadcasted{DestStyle}, ::Type{ElType})&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083529Z" creationid="hsugawa8651" creationdate="20181113T083529Z">
@@ -3770,6 +3825,25 @@ the values in parentheses (see &lt;x1/&gt;Functions&lt;x2/&gt; for more about fu
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Broadcast must take all the varied
+types of its arguments and collapse them down to just one output array and one
+implementation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131110Z" creationid="hsugawa8651" creationdate="20181113T131110Z">
+        <seg>ブロードキャストは様々な変化をもたらす 引数の種類と集約を1つの出力配列と1つの出力配列に集約します。 実装。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Broadcasting&lt;x1/&gt; is triggered by an explicit call to &lt;x2/&gt;broadcast&lt;x3/&gt; or &lt;x4/&gt;broadcast!&lt;x5/&gt;, or implicitly by
+"dot" operations like &lt;x6/&gt;A .+ b&lt;x7/&gt; or &lt;x8/&gt;f.(x, y)&lt;x9/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131014Z" creationid="hsugawa8651" creationdate="20181113T131014Z">
+        <seg>ブロードキャスト&lt;x1/&gt;は、&lt;x2/&gt;ブロードキャスト&lt;x3/&gt;ブロードキャスト!&lt;x4/&gt;ブロードキャスト!&lt;x5/&gt;への明示的な呼び出しによってトリガされます。 &lt;x6/&gt;A.+b&lt;x7/&gt;または&lt;x8/&gt;f.(x, y)&lt;x9/&gt;のような「ドット」操作。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Built-in representations of such values are called numeric primitives, while representations of
 integers and floating-point numbers as immediate values in code are known as numeric literals.</seg>
       </tuv>
@@ -3783,6 +3857,16 @@ integers and floating-point numbers as immediate values in code are known as num
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025034Z" creationid="hsugawa8651" creationdate="20181110T025034Z">
         <seg>しかし、ここで注意すべき点は、&lt;x1/&gt;x&lt;x2/&gt;が&lt;x3/&gt;配列&lt;x4/&gt;型のオブジェクトにバインドされていると仮定することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By
+default, this is the identity function for all &lt;x7/&gt;AbstractArray&lt;x8/&gt;s and &lt;x9/&gt;Number&lt;x10/&gt;s — they already
+support &lt;x11/&gt;axes&lt;x12/&gt; and indexing.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131041Z" creationid="hsugawa8651" creationdate="20181113T131041Z">
+        <seg>by デフォルトでは、すべての&lt;x7/&gt;AbstractArray&lt;x8/&gt;と&lt;x9/&gt;の番号&lt;x10/&gt;の識別関数です。 &lt;x11/&gt;軸のサポート&lt;x12/&gt;とインデックス作成をサポートします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4380,6 +4464,16 @@ Base.Sys.MACHINE</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Custom types can similarly specialize
+&lt;x21/&gt;Base.broadcastable&lt;x22/&gt; to define their shape, but they should follow the convention that
+&lt;x23/&gt;collect(Base.broadcastable(x)) == collect(x)&lt;x24/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131100Z" creationid="hsugawa8651" creationdate="20181113T131100Z">
+        <seg>カスタム・タイプも同様に特殊化できます。 &lt;X21/&gt;Base.broadcastable&lt;x22/&gt;のシェイプを定義するには、次の規則に従う必要があります。 &lt;x23/&gt;collect(Base.broadcastable(x))==collect(x)&lt;x24/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Data Formats</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044712Z" creationid="hsugawa8651" creationdate="20181112T044712Z">
@@ -4610,6 +4704,14 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Ensuring that all arguments support broadcast</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131024Z" creationid="hsugawa8651" creationdate="20181113T131024Z">
+        <seg>すべての引数がブロードキャストをサポートすることを確認する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Essentials</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041641Z" creationid="hsugawa8651" creationdate="20181110T041641Z">
@@ -4767,11 +4869,30 @@ and negative zero.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For &lt;x1/&gt;AbstractArrays&lt;x2/&gt; that only support a certain dimensionality, create a subtype of &lt;x3/&gt;Broadcast.AbstractArrayStyle{N}&lt;x4/&gt; (see below).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131244Z" creationid="hsugawa8651" creationdate="20181113T131244Z">
+        <seg>特定の次元のみをサポートする&lt;x1/&gt;AbstractArrays&lt;x2/&gt;では、&lt;x3/&gt;ブロードキャストのサブタイプを作成します。AbstractArrayStyle{N}&lt;x4/&gt;(以下を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For a brief but lucid presentation of how floating-point numbers are represented, see John D.
 Cook's &lt;x1/&gt;article&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111455Z" creationid="hsugawa8651" creationdate="20181112T111455Z">
         <seg>浮動小数点数がどのように表されるかについての簡潔な説明は、John Dを参照してください。 クックの&lt;x1/&gt;成形品&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For a handful of other types (including but not limited to
+types themselves, functions, special singletons like &lt;x13/&gt;`missing`&lt;x14/&gt; and &lt;x15/&gt;`nothing`&lt;x16/&gt;, and dates),
+&lt;x17/&gt;Base.broadcastable&lt;x18/&gt; returns the argument wrapped in a &lt;x19/&gt;Ref&lt;x20/&gt; to act as a 0-dimensional
+"scalar" for the purposes of broadcasting.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131053Z" creationid="hsugawa8651" creationdate="20181113T131053Z">
+        <seg>その他の種類(これに限定されるものではないが タイプ自身、関数、&lt;x13/&gt;'missing"&lt;x14/&gt;、&lt;x15/&gt;`nothing"&lt;x15/&gt;のような特別な単一トン、そして日付)などです。 &lt;x17/&gt;Base.broadcastable&lt;x18/&gt;は、&lt;x19/&gt;Ref&lt;x20/&gt;でラップされた引数を返し、0次元として動作します。 ブロードキャストのための「スカラー」。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4974,6 +5095,14 @@ to each other and other floats, see &lt;x1/&gt;Numeric Comparisons&lt;x2/&gt;.</
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160400Z" creationid="hsugawa8651" creationdate="20181109T160400Z">
         <seg>カスタム定義の詳細については &lt;x16/&gt;AbstractArray&lt;x17/&gt;実装を参照してください。&lt;x18/&gt;&lt;x19/&gt;&lt;x20/&gt;(@ref man interface array)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For more details, see &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref writing-binary-broadcasting-rules).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131253Z" creationid="hsugawa8651" creationdate="20181113T131253Z">
+        <seg>詳細は、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref writing binary broadcasting rules)を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5587,6 +5716,15 @@ farther away from zero.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224109Z" creationid="hsugawa8651" creationdate="20181109T224109Z">
         <seg>実際には、特に再利用可能な機能を提供する場合には、一般的には&lt;x1/&gt;"ccall"&lt;x2/&gt;"をラップします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In some cases it might be convenient not to have to define &lt;x1/&gt;MyStyle&lt;x2/&gt;, in which case you can
+leverage one of the general broadcast wrappers:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131138Z" creationid="hsugawa8651" creationdate="20181113T131138Z">
+        <seg>場合によっては、&lt;x1/&gt;MyStyle&lt;x2/&gt;を定義しなくてもよい場合があります。この場合は、次のような操作を行います。 一般的なブロードキャストラッパーの一つを活用する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6670,6 +6808,14 @@ all types of arguments.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Not all types support &lt;x1/&gt;axes&lt;x2/&gt; and indexing, but many are convenient to allow in broadcast.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131033Z" creationid="hsugawa8651" creationdate="20181113T131033Z">
+        <seg>すべてのタイプが&lt;x1/&gt;軸&lt;x2/&gt;とインデックス作成をサポートするわけではありませんが、ブロードキャストでは多くの場合に便利です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that &lt;x1/&gt;islinux&lt;x2/&gt; and &lt;x3/&gt;isapple&lt;x4/&gt; are mutually exclusive subsets of &lt;x5/&gt;isunix&lt;x6/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224942Z" creationid="hsugawa8651" creationdate="20181109T224942Z">
@@ -7183,6 +7329,22 @@ iterable type.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Selecting an appropriate output array for the given set of arguments</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131027Z" creationid="hsugawa8651" creationdate="20181113T131027Z">
+        <seg>指定された引数のセットに対して適切な出力配列を選択する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Selecting an efficient implementation for the given set of arguments</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131030Z" creationid="hsugawa8651" creationdate="20181113T131030Z">
+        <seg>指定された引数のセットに対する効率的な実装の選択</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Sequential iteration is implemented by the &lt;x1/&gt;`iterate`&lt;x2/&gt; function.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112352Z" creationid="hsugawa8651" creationdate="20181112T112352Z">
@@ -7540,6 +7702,15 @@ be quite different from conventional arrays.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x3/&gt;`Base.broadcastable`&lt;x4/&gt; function is called on each argument to broadcast, allowing
+it to return something different that supports &lt;x5/&gt;axes&lt;x6/&gt; and indexing.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131036Z" creationid="hsugawa8651" creationdate="20181113T131036Z">
+        <seg>&lt;x3/&gt;'Base.broadcastable'&lt;x4/&gt;関数は、各引数で呼び出され、ブロードキャストされます。 &lt;x5/&gt;軸&lt;x6/&gt;とインデックス作成をサポートするものとは異なるものを返すことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x5/&gt;AbstractArray&lt;x6/&gt; fallback methods use &lt;x7/&gt;`similar`&lt;x8/&gt; to allocate an &lt;x9/&gt;Array&lt;x10/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083303Z" creationid="hsugawa8651" creationdate="20181113T083303Z">
@@ -7611,6 +7782,15 @@ mathematical formulae.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The actual allocation of the result array is
+handled by &lt;x1/&gt;similar&lt;x2/&gt;, using the Broadcasted object as its first argument.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131302Z" creationid="hsugawa8651" creationdate="20181113T131302Z">
+        <seg>結果配列の実際の割り当ては次のとおりです。 ブロードキャストオブジェクトを最初の引数として使用して、&lt;x1/&gt;類似の&lt;x2/&gt;で処理されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The array library is implemented
 almost completely in Julia itself, and derives its performance from the compiler, just like any
 other code written in Julia.</seg>
@@ -7646,6 +7826,15 @@ evaluated as are necessary to determine the final boolean value of the entire ch
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230229Z" creationid="hsugawa8651" creationdate="20181109T230229Z">
         <seg>動作は &lt;x1/&gt;&amp;&amp;&lt;x2/&gt;と&lt;x3/&gt;&lt;x4/&gt;ブール演算子を持つ最も命令的なプログラミング言語:シリーズ これらの演算子によって接続されたブール式のうち、最小の数だけが チェーン全体の最終的なブール値を決定するために必要な評価が行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The broadcast style is computed for every broadcasting operation to allow for
+dispatch and specialization.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131259Z" creationid="hsugawa8651" creationdate="20181113T131259Z">
+        <seg>ブロードキャスト・スタイルは、すべてのブロードキャスト・オペレーションに対して計算され 派遣・専門化。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7919,6 +8108,15 @@ this to happen with &lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref Base.GC.gc).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The next two steps (selecting the output array and implementation) are dependent upon
+determining a single answer for a given set of arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131106Z" creationid="hsugawa8651" creationdate="20181113T131106Z">
+        <seg>次の2つのステップ(出力配列と実装を選択)は、次のように依存します。 指定された引数の集合に対する単一の応答を決定することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The number of items, if known</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112228Z" creationid="hsugawa8651" creationdate="20181112T112228Z">
@@ -8119,6 +8317,16 @@ in terms of methods chosen by multiple dispatch on run-time argument types is de
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T105942Z" creationid="hsugawa8651" creationdate="20181112T105939Z">
         <seg>タイプシステムは&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref manタイプ)で記述され、関数を定義します。 ランタイム引数の種類に対する複数のディスパッチによって選択されるメソッドについては、&lt;x4/&gt;メソッド&lt;x5/&gt;で説明されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The unary variant states
+that you intend to implement specific broadcasting behavior and/or output type, and do not wish to
+rely on the default fallback &lt;x2/&gt;`Broadcast.DefaultArrayStyle`&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131129Z" creationid="hsugawa8651" creationdate="20181113T131129Z">
+        <seg>単項変異体の状態 特定のブロードキャスト動作や出力タイプを実装することを意図しており デフォルトのフォールバック&lt;x2/&gt;`ブロードキャスト.DefaultArrayStyle'&lt;x3/&gt;に依存します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8381,6 +8589,14 @@ commonly passed in registers when using C or Julia calling conventions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223844Z" creationid="hsugawa8651" creationdate="20181109T223844Z">
         <seg>この引数は、containingメソッドが定義された時にコンパイル時に評価されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This basic framework is extensible in three major ways:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131021Z" creationid="hsugawa8651" creationdate="20181113T131021Z">
+        <seg>この基本的なフレームワークは、次の3つの主要な方法で拡張できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8731,6 +8947,14 @@ preceded by a numeric literal, implying multiplication.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To override these defaults, you can define a custom &lt;x1/&gt;BroadcastStyle&lt;x2/&gt; for your object:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131132Z" creationid="hsugawa8651" creationdate="20181113T131132Z">
+        <seg>これらの既定値をオーバーライドするには、オブジェクトに対してカスタム&lt;x1/&gt;BroadcastStyle&lt;x2/&gt;を定義できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To run a certain code before terminating a Julia script,
 which may or may not be caused by CTRL-C, use &lt;x5/&gt;`atexit`&lt;x6/&gt;.</seg>
       </tuv>
@@ -8996,6 +9220,15 @@ indexed with a multidimensional set of indices, the fallback &lt;x2/&gt;getindex
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When used as a
+function it has two possible forms, unary (single-argument) and binary.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131120Z" creationid="hsugawa8651" creationdate="20181113T131120Z">
+        <seg>使用する場合 関数は、単項(単一引数)とバイナリの2つの可能な形式を持つことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When writing a generator expression with multiple dimensions inside an argument list, parentheses
 are needed to separate the generator from subsequent arguments:</seg>
       </tuv>
@@ -9010,6 +9243,15 @@ differences between operating systems.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224823Z" creationid="hsugawa8651" creationdate="20181109T224823Z">
         <seg>クロスプラットフォームアプリケーションやライブラリを記述する場合は、次のようなことがよくあります。 オペレーティング・システム間の違い。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When your broadcast operation involves several arguments, individual argument styles get
+combined to determine a single &lt;x1/&gt;DestStyle&lt;x2/&gt; that controls the type of the output container.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131249Z" creationid="hsugawa8651" creationdate="20181113T131249Z">
+        <seg>ブロードキャスト操作に複数の引数が含まれる場合、個々の引数スタイルは次のようになります。 結合して、出力コンテナのタイプを制御する単一の&lt;x1/&gt;DestStyle&lt;x2/&gt;を決定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14145,6 +14387,15 @@ that &lt;x2/&gt;SparseArray&lt;x3/&gt; is mutable (supports &lt;x4/&gt;setindex!
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083428Z" creationid="hsugawa8651" creationdate="20181113T083428Z">
         <seg>strides(A)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>struct MyStyle &lt;: Broadcast.BroadcastStyle end
+Base.BroadcastStyle(::Type{&lt;:MyType}) = MyStyle()</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131135Z" creationid="hsugawa8651" creationdate="20181113T131135Z">
+        <seg>struct MyStyle&lt;:Broadcast.BroadcastStyle end#struct MyStyle&lt;:Broadcast.Schedule end# Base.BroadcastStyle(::Type{&lt;:MyType})=MyStyle()</seg>
       </tuv>
     </tu>
     <tu>
