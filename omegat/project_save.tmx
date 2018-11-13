@@ -171,6 +171,14 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id extending-in-place-broadcast)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131444Z" creationid="hsugawa8651" creationdate="20181113T131444Z">
+        <seg>(@id extending-in-place-broadcast)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id lib-constants)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043136Z" creationid="hsugawa8651" creationdate="20181112T043136Z">
@@ -990,6 +998,16 @@ array it indexes into.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A nested tree of
+&lt;x5/&gt;Broadcasted&lt;x6/&gt; containers is directly constructed by the implicit dot syntax; &lt;x7/&gt;5 .+ 2.*x&lt;x8/&gt; is
+transiently represented by &lt;x9/&gt;Broadcasted(+, 5, Broadcasted(*, 2, x))&lt;x10/&gt;, for example.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131520Z" creationid="hsugawa8651" creationdate="20181113T131520Z">
+        <seg>ネストされたツリー &lt;x5/&gt;ブロードキャスト&lt;x6/&gt;コンテナは、暗黙的なドット構文によって構成されます。&lt;x7/&gt;5.+2.*x&lt;x8/&gt;は &lt;x9/&gt;ブロードキャスト(+,5,ブロードキャスト(*, 2, x))&lt;x10/&gt;などによって一時的に表現される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A notable exception is &lt;x25/&gt;AbstractString&lt;x26/&gt;;
 strings are special-cased to behave as scalars for the purposes of broadcast even though
 they are iterable collections of their characters (see &lt;x27/&gt;Strings&lt;x28/&gt; for more).</seg>
@@ -1465,6 +1483,16 @@ being indexed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As an example, the builtin &lt;x1/&gt;AbstractRange&lt;x2/&gt; objects use this machinery to optimize pieces
+of broadcasted expressions that can be eagerly evaluated purely in terms of the start,
+step, and length (or stop) instead of computing every single element.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131616Z" creationid="hsugawa8651" creationdate="20181113T131616Z">
+        <seg>たとえば、組み込みの&lt;x1/&gt;AbstractRange&lt;x2/&gt;オブジェクトは、この機械を使用してピースを最適化します。 純粋に評価された表現の始まりです 1つの要素を計算するのではなく、ステップと長さ(または停止)を計算します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As for hexadecimal literals, binary and octal literals produce unsigned integer types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225505Z" creationid="hsugawa8651" creationdate="20181109T225505Z">
@@ -1683,6 +1711,16 @@ Base.GC</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083536Z" creationid="hsugawa8651" creationdate="20181113T083536Z">
         <seg>Base.BroadcastStyle(::Style1, ::Style2) = Style12()&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.BroadcastStyle(::Type{&lt;:ArrayAndChar}) = Broadcast.ArrayStyle{ArrayAndChar}()
+&lt;x1/&gt; output</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131405Z" creationid="hsugawa8651" creationdate="20181113T131405Z">
+        <seg>Base.BroadcastStyle(::Type{&lt;:ArrayAndChar}) = Broadcast.ArrayStyle{ArrayAndChar}()
+&lt;x1/&gt; output</seg>
       </tuv>
     </tu>
     <tu>
@@ -4886,6 +4924,15 @@ Cook's &lt;x1/&gt;article&lt;x2/&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For a complete example, let's say you have created a type, &lt;x1/&gt;ArrayAndChar&lt;x2/&gt;, that stores an
+array and a single character:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131352Z" creationid="hsugawa8651" creationdate="20181113T131352Z">
+        <seg>完全な例では、&lt;x1/&gt;ArrayAndChar&lt;x2/&gt;というタイプを作成し、それを保存するとします。 配列と単一文字:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For a handful of other types (including but not limited to
 types themselves, functions, special singletons like &lt;x13/&gt;`missing`&lt;x14/&gt; and &lt;x15/&gt;`nothing`&lt;x16/&gt;, and dates),
 &lt;x17/&gt;Base.broadcastable&lt;x18/&gt; returns the argument wrapped in a &lt;x19/&gt;Ref&lt;x20/&gt; to act as a 0-dimensional
@@ -5127,6 +5174,15 @@ objects of a more specific type, such as &lt;x3/&gt;`Float64`&lt;x4/&gt; or &lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For some types, the machinery to "fuse" operations across nested levels of broadcasting
+is not available or could be done more efficiently incrementally.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131558Z" creationid="hsugawa8651" creationdate="20181113T131558Z">
+        <seg>ある種のタイプでは、ネストされた放送レベルでの動作を「融合」するための機械が必要です。 は使用できないか、より効率的に段階的に実行される可能性があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For the &lt;x1/&gt;Squares&lt;x2/&gt; iterable above, we can easily compute the &lt;x3/&gt;i&lt;x4/&gt;th element of the sequence by squaring
 it.</seg>
       </tuv>
@@ -5141,6 +5197,14 @@ let's try a two-way version first:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230122Z" creationid="hsugawa8651" creationdate="20181109T230122Z">
         <seg>わかりやすくするために まず2ウェイのバージョンを試してみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>From these definitions, one obtains the following behavior:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131454Z" creationid="hsugawa8651" creationdate="20181113T131454Z">
+        <seg>これらの定義から、次の動作が得られます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5353,6 +5417,14 @@ mutable arrays should also implement &lt;x14/&gt;`setindex!`&lt;x15/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160320Z" creationid="hsugawa8651" creationdate="20181109T160320Z">
         <seg>しかし、具体的な&lt;x3/&gt;AbstractArray{T,N}&lt;x4/&gt;型は、一般的には実装されるべきである。 &lt;x5/&gt;'size(A)'&lt;x6/&gt;(return an&lt;x7/&gt;Int&lt;x8/&gt;タプルを返す)&lt;x9/&gt;`getindex(A,i)`&lt;x10/&gt;&lt;x13/&gt;&lt;x13/&gt;&lt;x13/&gt;&lt;x13/&gt;(@ref getindex); mutable配列は、&lt;x14/&gt;`setindex!`&lt;x15/&gt;を実装する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, if needed you can specialize on any or all of these arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131338Z" creationid="hsugawa8651" creationdate="20181113T131338Z">
+        <seg>ただし、必要に応じて、これらの引数のいずれかまたはすべてを専門にすることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5667,6 +5739,15 @@ iterate over any array type.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In general, a broadcast operation is represented by a lazy &lt;x1/&gt;Broadcasted&lt;x2/&gt; container that holds onto
+the function to be applied alongside its arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131512Z" creationid="hsugawa8651" creationdate="20181113T131512Z">
+        <seg>一般的に、ブロードキャスト動作は 引数と共に適用される関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In general, unlike many other technical computing languages, Julia does not expect programs to
 be written in a vectorized style for performance.</seg>
       </tuv>
@@ -5743,6 +5824,17 @@ be used in their specific case.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155056Z" creationid="hsugawa8651" creationdate="20181109T155056Z">
         <seg>この場合、結果は常に1-dになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In such cases, you may
+need or want to evaluate &lt;x1/&gt;x .* (x .+ 1)&lt;x2/&gt; as if it had been
+written &lt;x3/&gt;broadcast(*, x, broadcast(+, x, 1))&lt;x4/&gt;, where the inner operation is evaluated before
+tackling the outer operation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131603Z" creationid="hsugawa8651" creationdate="20181113T131603Z">
+        <seg>このような場合は &lt;x1/&gt;x.*(x .+ 1)&lt;x2/&gt;を必要とするか、または評価する必要があるかを判断します。 &lt;x3/&gt;ブロードキャスト(*,x,ブロードキャスト(+, x, 1))&lt;x4/&gt;で、インナー操作は事前に評価されます。 外部操作に取り組んでいます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6413,6 +6505,17 @@ inner functions used elsewhere in the language, variables from the enclosing sco
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Just like all the
+other machinery, &lt;x3/&gt;broadcasted&lt;x4/&gt; also computes and exposes the combined broadcast style of its
+arguments, so instead of specializing on &lt;x5/&gt;broadcasted(f, args...)&lt;x6/&gt;, you can specialize on
+&lt;x7/&gt;broadcasted(::DestStyle, f, args...)&lt;x8/&gt; for any combination of style, function, and arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131620Z" creationid="hsugawa8651" creationdate="20181113T131620Z">
+        <seg>まるで その他の機械は、&lt;x3/&gt;をブロードキャストして、その組み合わせを計算します。 引数は、&lt;x5/&gt;ブロードキャスト(f,args.)&lt;x6/&gt;に特化するのではなく、特殊化することができます。 &lt;x7/&gt;ブロードキャスト(::DestStyle,f,args.)&lt;x8/&gt;任意のスタイル、関数、引数の組み合わせに対して&lt;x8/&gt;を指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Just like condition expressions used in &lt;x1/&gt;if&lt;x2/&gt;, &lt;x3/&gt;elseif&lt;x4/&gt; or the ternary operator, the operands of
 &lt;x5/&gt;&amp;&amp;&lt;x6/&gt; or &lt;x7/&gt;||&lt;x8/&gt; must be boolean values (&lt;x9/&gt;true&lt;x10/&gt; or &lt;x11/&gt;false&lt;x12/&gt;).</seg>
       </tuv>
@@ -6861,6 +6964,15 @@ and the identifier or parenthesized expression which it multiplies.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that the argument
+list can — and often does — include other nested &lt;x4/&gt;Broadcasted&lt;x5/&gt; wrappers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131346Z" creationid="hsugawa8651" creationdate="20181113T131346Z">
+        <seg>引数は リストは、他のネストされた&lt;x4/&gt;ブロードキャストされた&lt;x5/&gt;ラッパーを含むことが多い。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that the argument type tuple must be written as &lt;x1/&gt;(Cstring,)&lt;x2/&gt;, rather than &lt;x3/&gt;(Cstring)&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224054Z" creationid="hsugawa8651" creationdate="20181109T224054Z">
@@ -6910,6 +7022,17 @@ the variables &lt;x11/&gt;A&lt;x12/&gt; and &lt;x13/&gt;x&lt;x14/&gt; were disti
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025111Z" creationid="hsugawa8651" creationdate="20181110T025111Z">
         <seg>次の点に注目してください。 関数呼び出し&lt;x9/&gt;x&lt;x10/&gt;は、まだ同じ配列にバインドされていますが、その配列の内容は変更されています。 変数&lt;x11/&gt;A&lt;x12/&gt;および&lt;x13/&gt;x14/&gt;は、同じ可変の&lt;x15/&gt;配列&lt;x16/&gt;オブジェクトを参照する別個のバインディングである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now,
+by default, &lt;x11/&gt;broadcasted&lt;x12/&gt; just calls the &lt;x13/&gt;Broadcasted&lt;x14/&gt; constructor to create the lazy representation
+of the fused expression tree, but you can choose to override it for a particular combination
+of function and arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131612Z" creationid="hsugawa8651" creationdate="20181113T131612Z">
+        <seg>さて デフォルトでは、&lt;x11/&gt;ブロードキャストされた&lt;x12/&gt;は、&lt;x13/&gt;ブロードキャストされた&lt;x14/&gt;コンストラクタを呼び出して、遅延表現を作成します。 融合された表現ツリーのうち、特定の組み合わせに対して上書きすることを選択できます。 関数と引数を指定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7839,6 +7962,27 @@ dispatch and specialization.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The built-in
+broadcast machinery will then determine the result type and size based upon the arguments, allocate
+it, and then finally copy the realization of the &lt;x13/&gt;Broadcasted&lt;x14/&gt; object into it with a default
+&lt;x15/&gt;copyto!(::AbstractArray, ::Broadcasted)&lt;x16/&gt; method.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131542Z" creationid="hsugawa8651" creationdate="20181113T131542Z">
+        <seg>内蔵の ブロードキャスト・マシンは、引数に基づいて結果のタイプとサイズを決定し、割り当てます。 そして、最後に、&lt;x13/&gt;ブロードキャストされた&lt;x14/&gt;オブジェクトの実現をデフォルトでその中にコピーします。 &lt;x15/&gt;copyto!(::AbstractArray,::ブロードキャスト)&lt;x16/&gt;メソッド。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The built-in fallback &lt;x17/&gt;broadcast&lt;x18/&gt; and
+&lt;x19/&gt;broadcast!&lt;x20/&gt; methods similarly construct a transient &lt;x21/&gt;Broadcasted&lt;x22/&gt; representation of the operation
+so they can follow the same codepath.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131537Z" creationid="hsugawa8651" creationdate="20181113T131537Z">
+        <seg>組み込みのフォールバック&lt;x17/&gt;ブロードキャスト&lt;x18/&gt;と &lt;x19/&gt;ブロードキャスト!&lt;x20/&gt;メソッドは、同様に、操作の一時的な&lt;X21/&gt;ブロードキャスト&lt;x22/&gt;表現を構成します。 同じコデパスにたどり着くことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The code to be called must be available as a shared library.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160547Z" creationid="hsugawa8651" creationdate="20181109T160547Z">
@@ -7931,6 +8075,23 @@ known as a read-eval-print loop or "REPL") by double-clicking the Julia executab
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230103Z" creationid="hsugawa8651" creationdate="20181109T230103Z">
         <seg>この動作を理解する最も簡単な方法は、例を見ることです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The fallback definition is</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131316Z" creationid="hsugawa8651" creationdate="20181113T131316Z">
+        <seg>フォールバック定義は、次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The final argument
+&lt;x1/&gt;bc&lt;x2/&gt; is a lazy representation of a (potentially fused) broadcast operation, a &lt;x3/&gt;Broadcasted&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131331Z" creationid="hsugawa8651" creationdate="20181113T131331Z">
+        <seg>最後の引数 &lt;x1/&gt;bc&lt;x2/&gt;は(潜在的に融合された)ブロードキャスト動作の遅延表現であり、&lt;x3/&gt;ブロードキャストされた&lt;x4/&gt;である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8574,6 +8735,16 @@ more and more like a vector as we've added behaviors to it.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This allows custom array implementations to
+provide their own &lt;x23/&gt;copyto!&lt;x24/&gt; specialization to customize and
+optimize broadcasting.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131547Z" creationid="hsugawa8651" creationdate="20181113T131547Z">
+        <seg>これにより、カスタム・アレイの実装が可能になります。 独自の&lt;x23/&gt;copyto!&lt;x24/&gt;特殊化を提供してカスタマイズし 放送を最適化する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This applies not only to
 arrays and other mutable objects which are normally heap-allocated, but also to
 scalar values such as integers and floats which are normally stack-allocated and
@@ -8680,6 +8851,16 @@ subsections, and arrays of booleans to select elements at their &lt;x14/&gt;true
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is
+invisible to users as it is immediately realized through a call to &lt;x11/&gt;copy&lt;x12/&gt;, but it is this container
+that provides the basis for broadcast's extensibility for authors of custom types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131523Z" creationid="hsugawa8651" creationdate="20181113T131523Z">
+        <seg>これは &lt;x11/&gt;コピー&lt;x12/&gt;の呼び出しによってすぐに実現されるため、ユーザには見えませんが、このコンテナはこのコンテナです。 は、カスタム・タイプの作成者にとって、ブロードキャストの拡張性の基礎を提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is a powerful construct: both exception handling and
 cooperative multitasking are implemented in Julia using tasks.</seg>
       </tuv>
@@ -8707,11 +8888,29 @@ define an informal interface that enable many fancier behaviors.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is again determined by the computed broadcast style.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131550Z" creationid="hsugawa8651" creationdate="20181113T131550Z">
+        <seg>これは、計算されたブロードキャスト・スタイルによって再度決定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is because argument parsing in shebang
 is platform-dependent and not well-specified.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024923Z" creationid="hsugawa8651" creationdate="20181110T024923Z">
         <seg>これは、シェバンの引数の構文解析が はプラットフォーム依存であり、よく指定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is such
+an important part of the operation that it is stored as the first type parameter of the
+&lt;x25/&gt;Broadcasted&lt;x26/&gt; type, allowing for dispatch and specialization.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131554Z" creationid="hsugawa8651" creationdate="20181113T131554Z">
+        <seg>これは の最初のタイプパラメータとして格納される操作の重要な部分です。 &lt;x25/&gt;ブロードキャストされた&lt;x26/&gt;タイプで、ディスパッチと特殊化を可能にします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8769,6 +8968,14 @@ before.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This means we must also define a corresponding &lt;x1/&gt;similar&lt;x2/&gt; method:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131420Z" creationid="hsugawa8651" creationdate="20181113T131420Z">
+        <seg>これはまた、対応する&lt;x1/&gt;類似の&lt;x2/&gt;の方法を定義する必要があることを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This means, for example, that
 &lt;x9/&gt;1 / 2im&lt;x10/&gt; equals &lt;x11/&gt;-0.5im&lt;x12/&gt; and &lt;x13/&gt;6 // 2(2 + 1)&lt;x14/&gt; equals &lt;x15/&gt;1 // 1&lt;x16/&gt;.</seg>
       </tuv>
@@ -8792,6 +8999,16 @@ computers.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110518Z" creationid="hsugawa8651" creationdate="20181112T110518Z">
         <seg>これは、近現代で実装されている整数の基礎となる算術の特性を反映しています。 コンピューター。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This sort of eager operation is directly supported by a bit
+of indirection; instead of directly constructing &lt;x5/&gt;Broadcasted&lt;x6/&gt; objects, Julia lowers the
+fused expression &lt;x7/&gt;x .* (x .+ 1)&lt;x8/&gt; to &lt;x9/&gt;Broadcast.broadcasted(*, x, Broadcast.broadcasted(+, x, 1))&lt;x10/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131609Z" creationid="hsugawa8651" creationdate="20181113T131609Z">
+        <seg>この種の意欲的な操作は、直接的にサポートされています。 indirection;&lt;x5/&gt;ブロードキャスト&lt;x6/&gt;オブジェクトを直接構築するのではなく、Juliaは次のように説明します。 融合式&lt;x7/&gt;x.*(x .+ 1)&lt;x8/&gt;から&lt;x9/&gt;ブロードキャスト放送(*,x,ブロードキャスト.ブロードキャスト(+, x, 1))&lt;x10/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8828,6 +9045,15 @@ environment variable:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224133Z" creationid="hsugawa8651" creationdate="20181109T224133Z">
         <seg>このラッパーは、呼び出し者が存在しないことを示す問題を明確に示す例外をスローします。 環境変数:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Those arguments may themselves be more nested
+&lt;x3/&gt;Broadcasted&lt;x4/&gt; containers, forming a large expression tree to be evaluated.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131508Z" creationid="hsugawa8651" creationdate="20181113T131508Z">
+        <seg>これらの引数自体がネストされている可能性があります。 &lt;x3/&gt;ブロードキャスト&lt;x4/&gt;コンテナで、評価対象となる大きな表現ツリーを形成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9371,6 +9597,14 @@ to be able to redefine them there, but you can use the module name to resolve th
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024742Z" creationid="hsugawa8651" creationdate="20181110T024742Z">
         <seg>&lt;x1/&gt;メイン&lt;x2/&gt;にはタイプ名をインポートできないので、次のように入力することはできません。 で再定義することができますが、このモジュール名を使用してスコープを解決することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You might want broadcasting to preserve the &lt;x1/&gt;char&lt;x2/&gt; "metadata." First we define</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131414Z" creationid="hsugawa8651" creationdate="20181113T131414Z">
+        <seg>&lt;x1/&gt;char&lt;x2/&gt;"メタデータを保存するためにブロードキャストを行うことができます。まず、次のように定義します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10213,6 +10447,14 @@ using Bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>f&lt;x1/&gt; and &lt;x2/&gt;args&lt;x3/&gt;, describing the function and argument list, respectively.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131342Z" creationid="hsugawa8651" creationdate="20181113T131342Z">
+        <seg>f&lt;x1/&gt;と&lt;x2/&gt;args&lt;x3/&gt;は、関数と引数リストをそれぞれ記述しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>false&lt;x1/&gt; (0)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110221Z" creationid="hsugawa8651" creationdate="20181112T110221Z">
@@ -10257,6 +10499,42 @@ end</seg>
         <seg>for i in iter   &lt;x1/&gt; or  "for i = iter"
     &lt;x2/&gt; body
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function Base.similar(bc::Broadcast.Broadcasted{Broadcast.ArrayStyle{ArrayAndChar}}, ::Type{ElType}) where ElType
+    &lt;x1/&gt; Scan the inputs for the ArrayAndChar:
+    A = find_aac(bc)
+    &lt;x2/&gt; Use the char field of A to create the output
+    ArrayAndChar(similar(Array{ElType}, axes(bc)), A.char)
+end
+
+"`A = find_aac(As)` returns the first ArrayAndChar among the arguments."
+find_aac(bc::Base.Broadcast.Broadcasted) = find_aac(bc.args)
+find_aac(args::Tuple) = find_aac(find_aac(args[1]), Base.tail(args))
+find_aac(x) = x
+find_aac(a::ArrayAndChar, rest) = a
+find_aac(::Any, rest) = find_aac(rest)
+&lt;x3/&gt; output
+find_aac (generic function with 5 methods)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131423Z" creationid="hsugawa8651" creationdate="20181113T131423Z">
+        <seg>function Base.similar(bc::Broadcast.Broadcasted{Broadcast.ArrayStyle{ArrayAndChar}}, ::Type{ElType}) where ElType
+    &lt;x1/&gt; Scan the inputs for the ArrayAndChar:
+    A = find_aac(bc)
+    &lt;x2/&gt; Use the char field of A to create the output
+    ArrayAndChar(similar(Array{ElType}, axes(bc)), A.char)
+end
+
+"`A = find_aac(As)` returns the first ArrayAndChar among the arguments."
+find_aac(bc::Base.Broadcast.Broadcasted) = find_aac(bc.args)
+find_aac(args::Tuple) = find_aac(find_aac(args[1]), Base.tail(args))
+find_aac(x) = x
+find_aac(a::ArrayAndChar, rest) = a
+find_aac(::Any, rest) = find_aac(rest)
+&lt;x3/&gt; output
+find_aac (generic function with 5 methods)</seg>
       </tuv>
     </tu>
     <tu>
@@ -11708,6 +11986,40 @@ julia&gt; [[1 2]; [3 4]]
 2×2 Array{Int64,2}:
  1  2
  3  4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; a = ArrayAndChar([1 2; 3 4], 'x')
+2×2 ArrayAndChar{Int64,2} with char 'x':
+ 1  2
+ 3  4
+
+julia&gt; a .+ 1
+2×2 ArrayAndChar{Int64,2} with char 'x':
+ 2  3
+ 4  5
+
+julia&gt; a .+ [5,10]
+2×2 ArrayAndChar{Int64,2} with char 'x':
+  6   7
+ 13  14</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131434Z" creationid="hsugawa8651" creationdate="20181113T131434Z">
+        <seg>julia&gt; a = ArrayAndChar([1 2; 3 4], 'x')
+2×2 ArrayAndChar{Int64,2} with char 'x':
+ 1  2
+ 3  4
+
+julia&gt; a .+ 1
+2×2 ArrayAndChar{Int64,2} with char 'x':
+ 2  3
+ 4  5
+
+julia&gt; a .+ [5,10]
+2×2 ArrayAndChar{Int64,2} with char 'x':
+  6   7
+ 13  14</seg>
       </tuv>
     </tu>
     <tu>
@@ -14341,6 +14653,16 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>similar(bc::Broadcasted{DefaultArrayStyle{N}}, ::Type{ElType}) where {N,ElType} =
+    similar(Array{ElType}, axes(bc))</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131319Z" creationid="hsugawa8651" creationdate="20181113T131319Z">
+        <seg>similar(bc::Broadcasted{DefaultArrayStyle{N}}, ::Type{ElType}) where {N,ElType} =
+    similar(Array{ElType}, axes(bc))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>similar&lt;x1/&gt; supports 1- and 2-argument
 forms, in most case you only need to specialize the 3-argument form.) For this to work it's important
 that &lt;x2/&gt;SparseArray&lt;x3/&gt; is mutable (supports &lt;x4/&gt;setindex!&lt;x5/&gt;).</seg>
@@ -14387,6 +14709,30 @@ that &lt;x2/&gt;SparseArray&lt;x3/&gt; is mutable (supports &lt;x4/&gt;setindex!
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083428Z" creationid="hsugawa8651" creationdate="20181113T083428Z">
         <seg>strides(A)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>struct ArrayAndChar{T,N} &lt;: AbstractArray{T,N}
+    data::Array{T,N}
+    char::Char
+end
+Base.size(A::ArrayAndChar) = size(A.data)
+Base.getindex(A::ArrayAndChar{T,N}, inds::Vararg{Int,N}) where {T,N} = A.data[inds...]
+Base.setindex!(A::ArrayAndChar{T,N}, val, inds::Vararg{Int,N}) where {T,N} = A.data[inds...] = val
+Base.showarg(io::IO, A::ArrayAndChar, toplevel) = print(io, typeof(A), " with char '", A.char, "'")
+&lt;x1/&gt; output</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131355Z" creationid="hsugawa8651" creationdate="20181113T131355Z">
+        <seg>struct ArrayAndChar{T,N} &lt;: AbstractArray{T,N}
+    data::Array{T,N}
+    char::Char
+end
+Base.size(A::ArrayAndChar) = size(A.data)
+Base.getindex(A::ArrayAndChar{T,N}, inds::Vararg{Int,N}) where {T,N} = A.data[inds...]
+Base.setindex!(A::ArrayAndChar{T,N}, val, inds::Vararg{Int,N}) where {T,N} = A.data[inds...] = val
+Base.showarg(io::IO, A::ArrayAndChar, toplevel) = print(io, typeof(A), " with char '", A.char, "'")
+&lt;x1/&gt; output</seg>
       </tuv>
     </tu>
     <tu>
