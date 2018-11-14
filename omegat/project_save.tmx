@@ -538,6 +538,14 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>.&lt;x1/&gt; followed by &lt;x2/&gt;::&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030812Z" creationid="hsugawa8651" creationdate="20181114T030812Z">
+        <seg>&lt;x1/&gt;に続いて&lt;x2/&gt;::&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>0</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110126Z" creationid="hsugawa8651" creationdate="20181112T110126Z">
@@ -1006,6 +1014,15 @@ end</seg>
 else
     generic_thing(a)
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A
+great deal of care has been taken to ensure that Julia does them correctly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030659Z" creationid="hsugawa8651" creationdate="20181114T030659Z">
+        <seg>A ジュリアが正しいことをすることを保証するために、細心の注意が払われてきました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3960,6 +3977,14 @@ unsigned literal.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Bitshifts</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030823Z" creationid="hsugawa8651" creationdate="20181114T030823Z">
+        <seg>Bitshifts</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Boolean operations &lt;x1/&gt;without&lt;x2/&gt; short-circuit evaluation can be done with the bitwise boolean operators
 introduced in &lt;x3/&gt;Mathematical Operations and Elementary Functions&lt;x4/&gt;: &lt;x5/&gt;&amp;&lt;x6/&gt; and &lt;x7/&gt;|&lt;x8/&gt;.</seg>
       </tuv>
@@ -4168,6 +4193,24 @@ they don't intend to change.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025127Z" creationid="hsugawa8651" creationdate="20181110T025127Z">
         <seg>関数の中で&lt;x2/&gt;または&lt;x3/&gt;インポート&lt;x4/&gt;を使用して、&lt;x1/&gt;を使用することはできますか?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Chained comparisons use the
+&lt;x1/&gt;&amp;&amp;&lt;x2/&gt; operator for scalar comparisons, and the &lt;x3/&gt;`&amp;`&lt;x4/&gt; operator for elementwise comparisons,
+which allows them to work on arrays.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030720Z" creationid="hsugawa8651" creationdate="20181114T030720Z">
+        <seg>チェーン化された比較は スカラー比較のための&lt;x1/&gt;&amp;&amp;&lt;x2/&gt;演算子と、エレメント比較のための&lt;x3/&gt;&amp;"&lt;x4/&gt;演算子 これにより、アレイ上での作業が可能になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Chaining comparisons is often quite convenient in numerical code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030717Z" creationid="hsugawa8651" creationdate="20181114T030717Z">
+        <seg>連鎖比較は、数値コードにおいて非常に便利であることが多い。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5251,6 +5294,15 @@ library module, only supports two dimensions, so it just defines
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, &lt;x5/&gt;0 .&lt; A .&lt; 1&lt;x6/&gt; gives a boolean array whose entries
+are true where the corresponding elements of &lt;x7/&gt;A&lt;x8/&gt; are between 0 and 1.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030724Z" creationid="hsugawa8651" creationdate="20181114T030724Z">
+        <seg>たとえば、&lt;x5/&gt;0.&lt;A.&lt;1&lt;x6/&gt;は、エントリを入力するブール型配列を示します。 は、&lt;x7/&gt;A&lt;x8/&gt;の対応する要素が0から1の間であることを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, &lt;x6/&gt;Dict{String,Int32}("A"=&gt;1, "B"=&gt;2)&lt;x7/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041747Z" creationid="hsugawa8651" creationdate="20181112T041747Z">
@@ -5477,6 +5529,15 @@ objects of a more specific type, such as &lt;x3/&gt;`Float64`&lt;x4/&gt; or &lt;
         <seg>For most computational purposes, arrays should contain
 objects of a more specific type, such as &lt;x3/&gt;`Float64`&lt;x4/&gt; or &lt;x5/&gt;`Int32`&lt;x6/&gt;.For most computational purposes, arrays should contain
 objects of a more specific type, such as &lt;x3/&gt;`Float64`&lt;x4/&gt; or &lt;x5/&gt;`Int32`&lt;x6/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For other types, &lt;x1/&gt;isequal&lt;x2/&gt; defaults to calling &lt;x3/&gt;`==`&lt;x4/&gt;, so if you want to define
+equality for your own types then you only need to add a &lt;x5/&gt;`==`&lt;x6/&gt; method.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030654Z" creationid="hsugawa8651" creationdate="20181114T030654Z">
+        <seg>他のタイプについては、&lt;x1/&gt;等価&lt;x2/&gt;はデフォルトで&lt;x3/&gt;==`&lt;x4/&gt;を呼び出しますので、もしあなたがそれを定義する場合には 独自のタイプに対しては、&lt;x5/&gt;'==`&lt;x6/&gt;のメソッドを追加する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5777,6 +5838,15 @@ combined with exponentiation.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, the order of evaluations in a chained
+comparison is undefined.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030738Z" creationid="hsugawa8651" creationdate="20181114T030738Z">
+        <seg>しかし、連鎖的な評価の順序は 比較は未定義です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, these subtleties are described in detail in
 most books on scientific computation, and also in the following references:</seg>
       </tuv>
@@ -5918,6 +5988,15 @@ on &lt;x3/&gt;DestStyle&lt;x4/&gt;, then you should define a method with the fol
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If side effects are required, the short-circuit &lt;x3/&gt;&amp;&amp;&lt;x4/&gt; operator
+should be used explicitly (see &lt;x5/&gt;Short-Circuit Evaluation&lt;x6/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030751Z" creationid="hsugawa8651" creationdate="20181114T030751Z">
+        <seg>副作用が必要な場合は、短絡&lt;x3/&gt;&amp;&amp;&lt;x4/&gt;演算子を使用します。 明示的に使用する必要があります(&lt;x5/&gt;Short-Term Evaluation&lt;x6/&gt;を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the expression &lt;x1/&gt;x &lt; y&lt;x2/&gt; is true, the entire ternary operator expression evaluates to the string
 &lt;x3/&gt;"less than"&lt;x4/&gt; and otherwise it evaluates to the string &lt;x5/&gt;"not less than"&lt;x6/&gt;.</seg>
       </tuv>
@@ -5951,6 +6030,16 @@ see the tuple returned:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101352Z" creationid="hsugawa8651" creationdate="20181112T101352Z">
         <seg>これを対話型セッションで呼び出しても、戻り値はどこにも割り当てられない場合は 戻されたタプルを参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you define
+your own equality function, you should probably define a corresponding &lt;x7/&gt;`hash`&lt;x8/&gt; method
+to ensure that &lt;x9/&gt;isequal(x,y)&lt;x10/&gt; implies &lt;x11/&gt;hash(x) == hash(y)&lt;x12/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030708Z" creationid="hsugawa8651" creationdate="20181114T030708Z">
+        <seg>定義する場合 独自の等価性関数は、おそらく対応する&lt;x7/&gt;'ハッシュ''&lt;x8/&gt;メソッドを定義する必要があります。 &lt;x9/&gt;isequal(x,y)&lt;x10/&gt;が&lt;x11/&gt;ハッシュ(x)==hash(y)&lt;x12/&gt;を意味することを保証する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6670,6 +6759,15 @@ sizes, such as adding a vector to each column of a matrix.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is strongly recommended not to use expressions with side effects (such
+as printing) in chained comparisons.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030749Z" creationid="hsugawa8651" creationdate="20181114T030749Z">
+        <seg>副作用のない表現式を使用しないことを強くお勧めします。 連鎖比較では、印刷として使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is worth noting that you do not need to (and should not) define both argument orders
 of this call; defining one is sufficient no matter what order the user supplies the arguments in.</seg>
       </tuv>
@@ -6777,6 +6875,14 @@ the next largest or smallest representable floating-point number to the argument
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia applies the following order and associativity of operations, from highest precedence to lowest:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030806Z" creationid="hsugawa8651" creationdate="20181114T030806Z">
+        <seg>Juliaは、最高優先順位から最低への順序付けと関連付けを適用し、次の順序を適用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia can be started in parallel mode with either the &lt;x1/&gt;-p&lt;x2/&gt; or the &lt;x3/&gt;--machine-file&lt;x4/&gt; options.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224410Z" creationid="hsugawa8651" creationdate="20181109T224410Z">
@@ -6866,10 +6972,27 @@ collection of standard mathematical functions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia provides a comprehensive collection of mathematical functions and operators.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030755Z" creationid="hsugawa8651" creationdate="20181114T030755Z">
+        <seg>Juliaは、数学的関数と演算子の包括的なコレクションを提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia provides a variety of control flow constructs:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225711Z" creationid="hsugawa8651" creationdate="20181109T225711Z">
         <seg>Juliaは、さまざまな制御フロー構成を提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia provides additional functions to test numbers for special values, which can be useful in
+situations like hash key comparisons:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030534Z" creationid="hsugawa8651" creationdate="20181114T030534Z">
+        <seg>Juliaは特別な値の数値をテストするための追加機能を提供しています。 ハッシュ・キー比較のような状況:</seg>
       </tuv>
     </tu>
     <tu>
@@ -6998,6 +7121,14 @@ integer literals and engineering notation for floating-point literals.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225129Z" creationid="hsugawa8651" creationdate="20181109T225129Z">
         <seg>最大値</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Left</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030817Z" creationid="hsugawa8651" creationdate="20181114T030817Z">
+        <seg>Left</seg>
       </tuv>
     </tu>
     <tu>
@@ -7167,6 +7298,14 @@ for &lt;x2/&gt;x&lt;x3/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Mixed-type comparisons between signed integers, unsigned integers, and floats can be tricky.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030621Z" creationid="hsugawa8651" creationdate="20181114T030621Z">
+        <seg>符号付き整数、符号なし整数、浮動小数点間の混合型比較は、難しいことがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Modifications to mutable values (such as &lt;x3/&gt;Array&lt;x4/&gt;s) made within
 a function will be visible to the caller.</seg>
       </tuv>
@@ -7220,6 +7359,16 @@ all vectorized "dot calls," these "dot operators" are
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132535Z" creationid="hsugawa8651" creationdate="20181113T132535Z">
         <seg>さらに すべてのベクトル化された"ドット・コール"ドット・オペレーター"ドット・オペレーター"は &lt;x11/&gt;融合&lt;x12/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Moreover, these functions (like any Julia function) can be applied in "vectorized" fashion to
+arrays and other collections with the &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized) &lt;x4/&gt;f.(A)&lt;x5/&gt;,
+e.g. &lt;x6/&gt;sin.(A)&lt;x7/&gt; will compute the sine of each element of an array &lt;x8/&gt;A&lt;x9/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030803Z" creationid="hsugawa8651" creationdate="20181114T030803Z">
+        <seg>さらに、これらの関数(Julia関数のような)は、「ベクトル化」された形式で適用することができます。 &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man vectorized)&lt;x4/&gt;f.(A)&lt;x5/&gt;(A)&lt;x5/&gt;の配列とその他のコレクション 例えば、&lt;x6/&gt;sin(A)&lt;x7/&gt;は、配列&lt;x8/&gt;A&lt;x9/&gt;の各要素の正弦を計算します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7477,6 +7626,14 @@ Evaluation in Julia, as outlined in the next section.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132633Z" creationid="hsugawa8651" creationdate="20181113T132633Z">
         <seg>ドット構文は、ユーザ定義の演算子にも適用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note the evaluation behavior of chained comparisons:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030727Z" creationid="hsugawa8651" creationdate="20181114T030727Z">
+        <seg>チェーン化された比較の評価動作に注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8839,6 +8996,15 @@ this to happen with &lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref Base.GC.gc).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The middle expression is only evaluated once, rather than twice as it would be if the expression
+were written as &lt;x1/&gt;v(1) &lt; v(2) &amp;&amp; v(2) &lt;= v(3)&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030745Z" creationid="hsugawa8651" creationdate="20181114T030745Z">
+        <seg>中間表現は、式が1回だけ評価されるのではなく、1回だけ評価されます。 &lt;x1/&gt;v(1)&lt;v(2)&amp;v(2)&lt;=v(3)&lt;x2/&gt;と記述されている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The next two steps (selecting the output array and implementation) are dependent upon
 determining a single answer for a given set of arguments.</seg>
       </tuv>
@@ -9244,6 +9410,17 @@ allowing Julia to take full advantage of computational resources.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225049Z" creationid="hsugawa8651" creationdate="20181109T225049Z">
         <seg>これらのマップ 現代のコンピューターでネイティブにサポートされている数値型や操作に直接 ジュリアが計算資源を最大限に活用できるようにすることです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These mathematical
+operations are defined over as broad a class of numerical values as permit sensible definitions,
+including integers, floating-point numbers, rationals, and complex numbers,
+wherever such definitions make sense.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030759Z" creationid="hsugawa8651" creationdate="20181114T030759Z">
+        <seg>これらの数学的な 操作は、許容可能な定義として、数値の幅広いクラスにわたって定義されます。 整数、浮動小数点数、理数、複素数などを含みます。 このような定義が意味を持つのです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9894,6 +10071,15 @@ letter and does not behave like &lt;x7/&gt;f&lt;x8/&gt; in numeric literals.</se
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230035Z" creationid="hsugawa8651" creationdate="20181109T230035Z">
         <seg>Cとは異なり、MATLAB、Perl、Python、Rubyなどですが、Javaと同様に、さらに厳密なタイプの言語もあります。 --条件式の値が&lt;x1/&gt;真&lt;x2/&gt;または&lt;x3/&gt;false&lt;x4/&gt;以外の値である場合はエラーになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike most languages, with the &lt;x1/&gt;notable exception of Python&lt;x2/&gt;,
+comparisons can be arbitrarily chained:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030712Z" creationid="hsugawa8651" creationdate="20181114T030712Z">
+        <seg>ほとんどの言語とは異なり、&lt;x1/&gt;はPython&lt;x2/&gt;の例外的な例外です。 比較は任意に連鎖させることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10710,10 +10896,50 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`isequal(x, y)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030539Z" creationid="hsugawa8651" creationdate="20181114T030539Z">
+        <seg>`isequal(x, y)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`isequal`&lt;x1/&gt; considers &lt;x2/&gt;NaN&lt;x3/&gt;s equal to each other:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030606Z" creationid="hsugawa8651" creationdate="20181114T030603Z">
+        <seg>「isequal」&lt;x1/&gt;は、&lt;x2/&gt;NaN&lt;x3/&gt;を互いに等しいとみなします:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`isequal`&lt;x1/&gt; to determine equality.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041722Z" creationid="hsugawa8651" creationdate="20181112T041722Z">
         <seg>等価を決定するには、「isequal」&lt;x1/&gt;を指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`isfinite(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030545Z" creationid="hsugawa8651" creationdate="20181114T030545Z">
+        <seg>`isfinite(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`isinf(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030549Z" creationid="hsugawa8651" creationdate="20181114T030549Z">
+        <seg>`isinf(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`isnan(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030558Z" creationid="hsugawa8651" creationdate="20181114T030558Z">
+        <seg>`isnan(x)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -11007,6 +11233,14 @@ as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154351Z" creationid="hsugawa8651" creationdate="20181109T154351Z">
         <seg>初期化されていない密な&lt;x1/&gt;`配列"&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>and can cause especial headaches with &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-multi-dim-arrays):</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030531Z" creationid="hsugawa8651" creationdate="20181114T030531Z">
+        <seg>また、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man multi dim arrayS)で特別な頭痛を引き起こす可能性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11708,6 +11942,14 @@ Markdown.parse("```\n\$ julia\n\n$(banner)\njulia&gt; 1 + 2\n3\n\njulia&gt; ans\
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>isequal&lt;x1/&gt; can also be used to distinguish signed zeros:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030613Z" creationid="hsugawa8651" creationdate="20181114T030613Z">
+        <seg>isequal&lt;x1/&gt; can also be used to distinguish signed zeros:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>iterate(iter)&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112056Z" creationid="hsugawa8651" creationdate="20181112T112056Z">
@@ -11858,6 +12100,22 @@ ERROR: MethodError: objects of type Int64 are not callable</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111836Z" creationid="hsugawa8651" creationdate="20181112T111836Z">
         <seg>julia&gt; (x-1)x
 6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; -0.0 == 0.0
+true
+
+julia&gt; isequal(-0.0, 0.0)
+false</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030616Z" creationid="hsugawa8651" creationdate="20181114T030616Z">
+        <seg>julia&gt; -0.0 == 0.0
+true
+
+julia&gt; isequal(-0.0, 0.0)
+false</seg>
       </tuv>
     </tu>
     <tu>
@@ -12114,6 +12372,16 @@ julia&gt; 1 - 2
 
 julia&gt; 3*2/12
 0.5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 1 &lt; 2 &lt;= 2 &lt; 3 == 3 &gt; 2 &gt;= 1 == 1 &lt; 3 != 5
+true</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030714Z" creationid="hsugawa8651" creationdate="20181114T030714Z">
+        <seg>julia&gt; 1 &lt; 2 &lt;= 2 &lt; 3 == 3 &gt; 2 &gt;= 1 == 1 &lt; 3 != 5
+true</seg>
       </tuv>
     </tu>
     <tu>
@@ -12938,6 +13206,16 @@ julia&gt; @.</seg>
  (3, 1)
  (3, 2)
  (3, 3)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; [1 NaN] == [1 NaN]
+false</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030525Z" creationid="hsugawa8651" creationdate="20181114T030525Z">
+        <seg>julia&gt; [1 NaN] == [1 NaN]
+false</seg>
       </tuv>
     </tu>
     <tu>
@@ -13994,6 +14272,28 @@ ERROR: TypeError: non-boolean (Int64) used in boolean context</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; isequal(NaN, NaN)
+true
+
+julia&gt; isequal([1 NaN], [1 NaN])
+true
+
+julia&gt; isequal(NaN, NaN32)
+true</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030607Z" creationid="hsugawa8651" creationdate="20181114T030607Z">
+        <seg>julia&gt; isequal(NaN, NaN)
+true
+
+julia&gt; isequal([1 NaN], [1 NaN])
+true
+
+julia&gt; isequal(NaN, NaN32)
+true</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; map(round, [1.2,3.5,1.7])
 3-element Array{Float64,1}:
  1.0
@@ -14620,6 +14920,38 @@ julia&gt; 1 &lt; 2 ?</seg>
 v (generic function with 1 method)
 
 julia&gt; 1 &lt; 2 ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; v(x) = (println(x); x)
+v (generic function with 1 method)
+
+julia&gt; v(1) &lt; v(2) &lt;= v(3)
+2
+1
+3
+true
+
+julia&gt; v(1) &gt; v(2) &lt;= v(3)
+2
+1
+false</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030729Z" creationid="hsugawa8651" creationdate="20181114T030729Z">
+        <seg>julia&gt; v(x) = (println(x); x)
+v (generic function with 1 method)
+
+julia&gt; v(1) &lt; v(2) &lt;= v(3)
+2
+1
+3
+true
+
+julia&gt; v(1) &gt; v(2) &lt;= v(3)
+2
+1
+false</seg>
       </tuv>
     </tu>
     <tu>
@@ -16167,10 +16499,42 @@ equivalent to nested dot calls &lt;x2/&gt;(+).(x, (*).(3, (^).(x, 2)))&lt;x3/&gt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>x&lt;x1/&gt; and &lt;x2/&gt;y&lt;x3/&gt; are identical</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030543Z" creationid="hsugawa8651" creationdate="20181114T030543Z">
+        <seg>x&lt;x1/&gt;および&lt;x2/&gt;y&lt;x3/&gt;は同一である</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>x&lt;x1/&gt; and &lt;x2/&gt;y&lt;x3/&gt;, avoiding overflow:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025755Z" creationid="hsugawa8651" creationdate="20181110T025755Z">
         <seg>x&lt;x1/&gt;と&lt;x2/&gt;y&lt;x3/&gt;はオーバーフローを回避します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x&lt;x1/&gt; is a finite number</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030547Z" creationid="hsugawa8651" creationdate="20181114T030547Z">
+        <seg>x&lt;x1/&gt;は有限数である</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x&lt;x1/&gt; is infinite</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030555Z" creationid="hsugawa8651" creationdate="20181114T030555Z">
+        <seg>x&lt;x1/&gt;は無限です</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x&lt;x1/&gt; is not a number</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030601Z" creationid="hsugawa8651" creationdate="20181114T030601Z">
+        <seg>x&lt;x1/&gt;は数値ではありません</seg>
       </tuv>
     </tu>
     <tu>
