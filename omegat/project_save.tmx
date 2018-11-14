@@ -2167,6 +2167,14 @@ defined in one of two ways: either it most efficiently accesses its elements usi
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Arrays of &lt;x1/&gt;CartesianIndex{N}&lt;x2/&gt; are also supported.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161022Z" creationid="hsugawa8651" creationdate="20181114T161022Z">
+        <seg>&lt;x1/&gt;CartesianIndex{N}&lt;x2/&gt;のアレイもサポートされている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Arrays of booleans, which select elements at their &lt;x1/&gt;true&lt;x2/&gt; indices (see below for more details)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155544Z" creationid="hsugawa8651" creationdate="20181109T155544Z">
@@ -4632,6 +4640,14 @@ they are equivalent to &lt;x3/&gt;broadcast&lt;x4/&gt; calls and are fused with 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Binary arithmetic -- &lt;x1/&gt;-&lt;x2/&gt;, &lt;x3/&gt;+&lt;x4/&gt;, &lt;x5/&gt;*&lt;x6/&gt;, &lt;x7/&gt;/&lt;x8/&gt;, &lt;x9/&gt;\&lt;x10/&gt;, &lt;x11/&gt;^&lt;x12/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161215Z" creationid="hsugawa8651" creationdate="20181114T161215Z">
+        <seg>バイナリ算術-&lt;x1/&gt;-&lt;x2/&gt;,&lt;x3/&gt;+&lt;x4/&gt;,&lt;x5/&gt;*&lt;x6/&gt;,&lt;x7/&gt;/&lt;x8/&gt;,&lt;x9/&gt;&lt;x12/&gt;,&lt;x11/&gt;^&lt;x12/&gt;&lt;x12/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Binary, octal, and hexadecimal literals may be signed by a &lt;x1/&gt;-&lt;x2/&gt; immediately preceding the
 unsigned literal.</seg>
       </tuv>
@@ -4922,6 +4938,14 @@ obj2 = MyModule.somefunction(obj1)   &lt;x5/&gt; this time it worked!</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132640Z" creationid="hsugawa8651" creationdate="20181113T132640Z">
         <seg>ドット演算子と数値リテラルを組み合わせることは、あいまいです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comparison -- &lt;x1/&gt;==&lt;x2/&gt;, &lt;x3/&gt;!=&lt;x4/&gt;, &lt;x5/&gt;≈&lt;x6/&gt; (&lt;x7/&gt;`isapprox`&lt;x8/&gt;), &lt;x9/&gt;≉&lt;x10/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161218Z" creationid="hsugawa8651" creationdate="20181114T161218Z">
+        <seg>比較-&lt;x1/&gt;==&lt;x2/&gt;,&lt;x3/&gt;!=&lt;x4/&gt;,&lt;x5/&gt;≒&lt;x6/&gt;(&lt;x7/&gt;'&lt;x6/&gt;(&lt;x7/&gt;'イサッポロス&lt;x8/&gt;)&lt;x9/&gt;≉&lt;x10/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -10150,6 +10174,14 @@ as &lt;x3/&gt;StackTraces.lookup(ptr)&lt;x4/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following operators are supported for arrays:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161207Z" creationid="hsugawa8651" creationdate="20181114T161207Z">
+        <seg>配列では、次の演算子がサポートされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following two-word sequences are reserved:
 &lt;x1/&gt;abstract type&lt;x2/&gt;, &lt;x3/&gt;mutable struct&lt;x4/&gt;, &lt;x5/&gt;primitive type&lt;x6/&gt;.</seg>
       </tuv>
@@ -10362,6 +10394,14 @@ of &lt;x17/&gt;b&lt;x18/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230241Z" creationid="hsugawa8651" creationdate="20181109T230241Z">
         <seg>&lt;x1/&gt;a&amp;b&lt;x2/&gt;は、&lt;x5/&gt;&lt;x6/&gt;が&lt;x7/&gt;であれば&lt;x4/&gt;でなければならない。 &lt;x9/&gt;b&lt;x10/&gt;は、&lt;x13/&gt;a&lt;x12/&gt;が&lt;x15/&gt;真&lt;x16/&gt;である場合、値に関係なく真でなければなりません。&lt;x13/&gt;&lt;x16/&gt; &lt;x17/&gt;b&lt;x18/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The recommended ways to iterate over a whole array are</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161138Z" creationid="hsugawa8651" creationdate="20181114T161138Z">
+        <seg>配列全体を繰り返し処理するには、次のような方法が推奨されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10951,6 +10991,16 @@ keys and values (i.e. this example creates a &lt;x2/&gt;Dict{String, Int64}&lt;x
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This can be expressed much more simply with &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized)
+and by combining it with a normal integer index (instead of extracting the
+first &lt;x4/&gt;page&lt;x5/&gt; from &lt;x6/&gt;A&lt;x7/&gt; as a separate step).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161052Z" creationid="hsugawa8651" creationdate="20181114T161052Z">
+        <seg>これは、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref manベクトル化)ではるかに簡単に表現することができます。 そして、それを通常の整数インデックスと組み合わせることで( 最初の&lt;x4/&gt;ページ&lt;x6/&gt;&lt;x6/&gt;から個別のステップとして&lt;x7/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This could be written more concisely using the ternary operator.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230116Z" creationid="hsugawa8651" creationdate="20181109T230116Z">
@@ -11177,6 +11227,14 @@ computers.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110518Z" creationid="hsugawa8651" creationdate="20181112T110518Z">
         <seg>これは、近現代で実装されている整数の基礎となる算術の特性を反映しています。 コンピューター。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This setting will cause &lt;x1/&gt;eachindex&lt;x2/&gt; iteration over a &lt;x3/&gt;MyArray&lt;x4/&gt; to use integers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161200Z" creationid="hsugawa8651" creationdate="20181114T161200Z">
+        <seg>この設定により、&lt;x3/&gt;MyArray&lt;x4/&gt;では&lt;x1/&gt;エアチンデス&lt;x2/&gt;反復が行われ、整数を使用することになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11455,6 +11513,14 @@ described here might (and likely will) change in the future.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063131Z" creationid="hsugawa8651" creationdate="20181114T063131Z">
         <seg>T{ }&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unary arithmetic -- &lt;x1/&gt;-&lt;x2/&gt;, &lt;x3/&gt;+&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161212Z" creationid="hsugawa8651" creationdate="20181114T161212Z">
+        <seg>単項算術--&lt;x1/&gt;-&lt;x2/&gt;,&lt;x3/&gt;+&lt;x4/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -14963,6 +15029,38 @@ julia&gt; A[:, 3]
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; A[CartesianIndex.(axes(A, 1), axes(A, 2)), 1]
+4-element Array{Int64,1}:
+  1
+  6
+ 11
+ 16
+
+julia&gt; A[CartesianIndex.(axes(A, 1), axes(A, 2)), :]
+4×2 Array{Int64,2}:
+  1  17
+  6  22
+ 11  27
+ 16  32</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161101Z" creationid="hsugawa8651" creationdate="20181114T161101Z">
+        <seg>julia&gt; A[CartesianIndex.(axes(A, 1), axes(A, 2)), 1]
+4-element Array{Int64,1}:
+  1
+  6
+ 11
+ 16
+
+julia&gt; A[CartesianIndex.(axes(A, 1), axes(A, 2)), :]
+4×2 Array{Int64,2}:
+  1  17
+  6  22
+ 11  27
+ 16  32</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; A[SquaresVector(3)]
 3-element SparseArray{Float64,1}:
  1.0
@@ -17845,6 +17943,16 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131958Z" creationid="hsugawa8651" creationdate="20181113T131958Z">
         <seg>値を加算インスタンスにマップします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>min.(x,y)&lt;x1/&gt;, for elementwise operations over arrays or mixtures of arrays and
+scalars (a &lt;x2/&gt;Broadcasting&lt;x3/&gt; operation); these have the additional advantage of
+"fusing" into a single loop when combined with other dot calls, e.g. &lt;x4/&gt;sin.(cos.(x))&lt;x5/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161224Z" creationid="hsugawa8651" creationdate="20181114T161224Z">
+        <seg>(x,y)&lt;x1/&gt;配列またはアレイの混合物を構成する要素演算に対して&lt;x x1/&gt; スカラー(&lt;x2/&gt;ブロードキャスト&lt;x3/&gt;オペレーション);これらは追加の利点を有する。 他のドット呼び出し(例えば&lt;x4/&gt;sin.(cos.(x))&lt;x5/&gt;)と組み合わされた場合、単一ループへの「融合」。</seg>
       </tuv>
     </tu>
     <tu>
