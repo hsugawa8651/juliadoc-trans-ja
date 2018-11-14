@@ -578,6 +578,14 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>--track-allocation&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031912Z" creationid="hsugawa8651" creationdate="20181114T031912Z">
+        <seg>--track-allocation&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>--track-allocation={none\|user\|all}&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031905Z" creationid="hsugawa8651" creationdate="20181114T031905Z">
@@ -11898,6 +11906,14 @@ Base.unsafe_store!</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044702Z" creationid="hsugawa8651" creationdate="20181112T044702Z">
         <seg>ccall using a threadpool (Experimental)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>ccall((@static Sys.iswindows() ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031926Z" creationid="hsugawa8651" creationdate="20181114T031926Z">
+        <seg>ccall((@static Sys.iswindows() ?</seg>
       </tuv>
     </tu>
     <tu>
