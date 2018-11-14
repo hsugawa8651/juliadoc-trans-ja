@@ -506,6 +506,14 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>-Inf&lt;x1/&gt; is equal to itself and less then everything else except &lt;x2/&gt;NaN&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030505Z" creationid="hsugawa8651" creationdate="20181114T030505Z">
+        <seg>-Inf&lt;x1/&gt;はそれ自身と等しく、&lt;x2/&gt;NaN&lt;x3/&gt;以外のすべてのものはそれより小さい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>-v&lt;x1/&gt;, &lt;x2/&gt;--version&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224601Z" creationid="hsugawa8651" creationdate="20181109T224549Z">
@@ -5047,6 +5055,14 @@ and type definitions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Finite numbers are ordered in the usual manner.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030459Z" creationid="hsugawa8651" creationdate="20181114T030459Z">
+        <seg>有限数は通常の方法で順序付けされる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Float16&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110758Z" creationid="hsugawa8651" creationdate="20181112T110758Z">
@@ -5084,6 +5100,15 @@ with the low-level implementation details.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111346Z" creationid="hsugawa8651" creationdate="20181112T111346Z">
         <seg>浮動小数点演算は、慣れ親しみのあるユーザに驚くほどの繊細さを必要とします。 低レベルの実装の詳細です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Floating-point numbers
+are compared according to the &lt;x1/&gt;IEEE 754 standard&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030457Z" creationid="hsugawa8651" creationdate="20181114T030457Z">
+        <seg>浮動小数点数 は、&lt;x1/&gt;IEEE754規格&lt;x2/&gt;に従って比較されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5622,6 +5647,14 @@ example, &lt;x11/&gt;1.5F22&lt;x12/&gt; is equal to &lt;x13/&gt;1.5 * F22&lt;x14
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132210Z" creationid="hsugawa8651" creationdate="20181113T132210Z">
         <seg>次に、算術演算子を使用する簡単な例をいくつか示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here are some simple examples:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030450Z" creationid="hsugawa8651" creationdate="20181114T030450Z">
+        <seg>簡単な例を次に示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6416,6 +6449,14 @@ anything other than an &lt;x5/&gt;Int&lt;x6/&gt; will throw a &lt;x7/&gt;`Method
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Inf&lt;x1/&gt; is equal to itself and greater than everything else except &lt;x2/&gt;NaN&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030503Z" creationid="hsugawa8651" creationdate="20181114T030503Z">
+        <seg>Inf&lt;x1/&gt;はそれ自身に等しく、&lt;x2/&gt;NaN&lt;x3/&gt;を除く他のすべてより大きい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Instead
 of mutating objects as they are iterated over, Julia iterators may keep track
 of the iteration state externally from the object.</seg>
@@ -6481,6 +6522,14 @@ the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225032Z" creationid="hsugawa8651" creationdate="20181109T225032Z">
         <seg>整数および浮動小数点値は、算術演算と計算の基本的な構成要素です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Integers are compared in the standard manner -- by comparison of bits.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030454Z" creationid="hsugawa8651" creationdate="20181114T030454Z">
+        <seg>整数は、標準的な方法で比較されます(ビットを比較します)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7271,6 +7320,14 @@ and pushing them onto a stack of display backends via &lt;x3/&gt;`pushdisplay`&l
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>NaN&lt;x1/&gt; is not equal to, not less than, and not greater than anything, including itself.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030509Z" creationid="hsugawa8651" creationdate="20181114T030509Z">
+        <seg>NaN&lt;x1/&gt;は、それ自体を含めて、以下ではなく、それ以上ではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Name</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110802Z" creationid="hsugawa8651" creationdate="20181112T110802Z">
@@ -7654,6 +7711,14 @@ platforms such as Linux.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024714Z" creationid="hsugawa8651" creationdate="20181110T024714Z">
         <seg>おそらく、タイプを定義してから、新しいフィールドを追加する必要があることを認識しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Positive zero is equal but not greater than negative zero.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030501Z" creationid="hsugawa8651" creationdate="20181114T030501Z">
+        <seg>正の0は負の値で、負の値は0より大きくなります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8716,6 +8781,14 @@ variable or expression.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113029Z" creationid="hsugawa8651" creationdate="20181112T113029Z">
         <seg>最後のインデックスで、&lt;x1/&gt;X[end]&lt;x2/&gt;で使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The last point is potentially surprising and thus worth noting:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030511Z" creationid="hsugawa8651" creationdate="20181114T030511Z">
+        <seg>最後の点は潜在的に驚くべきものであり、注目すべきことである。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10253,6 +10326,14 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`&lt;=`&lt;x1/&gt;, &lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref &lt;=)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030437Z" creationid="hsugawa8651" creationdate="20181114T030437Z">
+        <seg>`&lt;=`&lt;x1/&gt;, &lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref &lt;=)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`&lt;`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132713Z" creationid="hsugawa8651" creationdate="20181113T132713Z">
@@ -10265,6 +10346,22 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132659Z" creationid="hsugawa8651" creationdate="20181113T132659Z">
         <seg>`==`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`&gt;=`&lt;x1/&gt;, &lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref &gt;=)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030427Z" creationid="hsugawa8651" creationdate="20181114T030427Z">
+        <seg>`&gt;=`&lt;x1/&gt;, &lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref &gt;=)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`&gt;`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030422Z" creationid="hsugawa8651" creationdate="20181114T030422Z">
+        <seg>`&gt;`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -11471,6 +11568,22 @@ which is a simplified version of the actual definition from &lt;x2/&gt;`env.jl`&
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>greater than</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030425Z" creationid="hsugawa8651" creationdate="20181114T030425Z">
+        <seg>より大きい</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>greater than or equal to</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030448Z" creationid="hsugawa8651" creationdate="20181114T030448Z">
+        <seg>以上</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>half&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110231Z" creationid="hsugawa8651" creationdate="20181112T110231Z">
@@ -12001,6 +12114,76 @@ julia&gt; 1 - 2
 
 julia&gt; 3*2/12
 0.5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 1 == 1
+true
+
+julia&gt; 1 == 2
+false
+
+julia&gt; 1 != 2
+true
+
+julia&gt; 1 == 1.0
+true
+
+julia&gt; 1 &lt; 2
+true
+
+julia&gt; 1.0 &gt; 3
+false
+
+julia&gt; 1 &gt;= 1.0
+true
+
+julia&gt; -1 &lt;= 1
+true
+
+julia&gt; -1 &lt;= -1
+true
+
+julia&gt; -1 &lt;= -2
+false
+
+julia&gt; 3 &lt; -0.5
+false</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030451Z" creationid="hsugawa8651" creationdate="20181114T030451Z">
+        <seg>julia&gt; 1 == 1
+true
+
+julia&gt; 1 == 2
+false
+
+julia&gt; 1 != 2
+true
+
+julia&gt; 1 == 1.0
+true
+
+julia&gt; 1 &lt; 2
+true
+
+julia&gt; 1.0 &gt; 3
+false
+
+julia&gt; 1 &gt;= 1.0
+true
+
+julia&gt; -1 &lt;= 1
+true
+
+julia&gt; -1 &lt;= -1
+true
+
+julia&gt; -1 &lt;= -2
+false
+
+julia&gt; 3 &lt; -0.5
+false</seg>
       </tuv>
     </tu>
     <tu>
@@ -12675,6 +12858,34 @@ Float32</seg>
 
 julia&gt; typeof(ans)
 Float32</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; NaN == NaN
+false
+
+julia&gt; NaN != NaN
+true
+
+julia&gt; NaN &lt; NaN
+false
+
+julia&gt; NaN &gt; NaN
+false</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030512Z" creationid="hsugawa8651" creationdate="20181114T030512Z">
+        <seg>julia&gt; NaN == NaN
+false
+
+julia&gt; NaN != NaN
+true
+
+julia&gt; NaN &lt; NaN
+false
+
+julia&gt; NaN &gt; NaN
+false</seg>
       </tuv>
     </tu>
     <tu>
@@ -15117,6 +15328,14 @@ julia&gt; ∑(2, 3)
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112314Z" creationid="hsugawa8651" creationdate="20181112T112314Z">
         <seg>length(iter)&lt;x1/&gt;  and &lt;x2/&gt;size(iter, [dim])&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>less than or equal to</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030435Z" creationid="hsugawa8651" creationdate="20181114T030412Z">
+        <seg>以下の値以下</seg>
       </tuv>
     </tu>
     <tu>
