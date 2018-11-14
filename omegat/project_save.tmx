@@ -219,6 +219,14 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>''&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063508Z" creationid="hsugawa8651" creationdate="20181114T063508Z">
+        <seg>''&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>'&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063017Z" creationid="hsugawa8651" creationdate="20181114T063017Z">
@@ -335,6 +343,30 @@ bar</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043422Z" creationid="hsugawa8651" creationdate="20181112T043422Z">
         <seg>(@id math-ops)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@ref &lt;:)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063600Z" creationid="hsugawa8651" creationdate="20181114T063600Z">
+        <seg>(@ref &lt;:)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@ref ===)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063626Z" creationid="hsugawa8651" creationdate="20181114T063626Z">
+        <seg>(@ref ===)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@ref &gt;:) (reverse of subtype operator)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063616Z" creationid="hsugawa8651" creationdate="20181114T063604Z">
+        <seg>(@ref&gt;:)(サブタイプ演算子の逆)</seg>
       </tuv>
     </tu>
     <tu>
@@ -882,6 +914,22 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>...&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063526Z" creationid="hsugawa8651" creationdate="20181114T063526Z">
+        <seg>...&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>.&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063530Z" creationid="hsugawa8651" creationdate="20181114T063530Z">
+        <seg>.&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>.&lt;x1/&gt; followed by &lt;x2/&gt;::&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030812Z" creationid="hsugawa8651" creationdate="20181114T030812Z">
@@ -1106,10 +1154,42 @@ The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>:( )&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063553Z" creationid="hsugawa8651" creationdate="20181114T063553Z">
+        <seg>:( )&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>::&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063547Z" creationid="hsugawa8651" creationdate="20181114T063547Z">
+        <seg>::&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063544Z" creationid="hsugawa8651" creationdate="20181114T063544Z">
+        <seg>:&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>:a : (@static Sys.isapple() ?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225018Z" creationid="hsugawa8651" creationdate="20181109T225018Z">
         <seg>:a : (@static Sys.isapple() ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:a&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063556Z" creationid="hsugawa8651" creationdate="20181114T063556Z">
+        <seg>:a&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1126,6 +1206,14 @@ The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063149Z" creationid="hsugawa8651" creationdate="20181114T063149Z">
         <seg>;&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;:&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063559Z" creationid="hsugawa8651" creationdate="20181114T063559Z">
+        <seg>&lt;:&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1422,6 +1510,14 @@ parsing the file once it reaches to the &lt;x5/&gt;exec&lt;x6/&gt; statement.</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>===&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063624Z" creationid="hsugawa8651" creationdate="20181114T063624Z">
+        <seg>===&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=&gt;&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030907Z" creationid="hsugawa8651" creationdate="20181114T030907Z">
@@ -1434,6 +1530,14 @@ parsing the file once it reaches to the &lt;x5/&gt;exec&lt;x6/&gt; statement.</s
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030859Z" creationid="hsugawa8651" creationdate="20181114T030859Z">
         <seg>&gt; &lt; &gt;= &lt;= == === != !== &lt;:&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;:&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063602Z" creationid="hsugawa8651" creationdate="20181114T063602Z">
+        <seg>&gt;:&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -2118,6 +2222,14 @@ command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224332Z" creationid="hsugawa8651" creationdate="20181109T224332Z">
         <seg>この例が示すように、&lt;x1/&gt;julia&lt;x2/&gt;への次のコマンドライン引数は、以下のように解釈されます。 グローバル定数&lt;x5/&gt;ARGS&lt;x6/&gt;で渡されたプログラム&lt;x3/&gt;スクリプト.jl&lt;x4/&gt;へのコマンドライン引数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At &lt;x1/&gt;-O3&lt;x2/&gt;, the compiler &lt;x3/&gt;might&lt;x4/&gt; automatically vectorize operations on such tuples.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063651Z" creationid="hsugawa8651" creationdate="20181114T063651Z">
+        <seg>&lt;x1/&gt;-O3&lt;x2/&gt;では、コンパイラ&lt;x/&gt;は、そのようなタプル上のオペレーションを自動的にベクトル化することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4570,6 +4682,14 @@ compiler.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By default, Julia picks reasonable algorithms and sorts in standard ascending order:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063711Z" creationid="hsugawa8651" creationdate="20181114T063711Z">
+        <seg>デフォルトでは、Juliaは標準的な昇順で妥当なアルゴリズムとソートを選択します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By definition, &lt;x1/&gt;eps(1.0)&lt;x2/&gt; is the same as &lt;x3/&gt;eps(Float64)&lt;x4/&gt; since &lt;x5/&gt;1.0&lt;x6/&gt; is
 a 64-bit floating-point value.</seg>
       </tuv>
@@ -5747,6 +5867,16 @@ mathematical meaning to "cubing" a (non-square) array, but
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example,
+the following program, when compiled with &lt;x5/&gt;julia -O3&lt;x6/&gt; generates two SIMD addition instructions
+(&lt;x7/&gt;addps&lt;x8/&gt;) on x86 systems:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063653Z" creationid="hsugawa8651" creationdate="20181114T063653Z">
+        <seg>たとえば &lt;x5/&gt;julia-O3&lt;x6/&gt;でコンパイルされると、次のプログラムは2つのSIMD付加命令を生成します。 x86システム上での(&lt;x7/&gt;アデプス&lt;x8/&gt;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, &lt;x1/&gt;1&lt;x2/&gt; is an integer literal, while &lt;x3/&gt;1.0&lt;x4/&gt; is a floating-point literal; their binary
 in-memory representations as objects are numeric primitives.</seg>
       </tuv>
@@ -6338,6 +6468,16 @@ combined with exponentiation.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111803Z" creationid="hsugawa8651" creationdate="20181112T111803Z">
         <seg>しかし、数値リテラル係数は、次のように単項演算子と同じように解析されます。 指数関数と組み合わせます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, since the automatic vectorization cannot be relied upon, future use will mostly be via
+libraries that use &lt;x1/&gt;llvmcall&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063702Z" creationid="hsugawa8651" creationdate="20181114T063702Z">
+        <seg>However, since the automatic vectorization cannot be relied upon, future use will mostly be via
+libraries that use &lt;x1/&gt;llvmcall&lt;x2/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7235,6 +7375,14 @@ in most languages taking three operands:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It has a special compilation rule: a homogeneous tuple of &lt;x1/&gt;VecElement{T}&lt;x2/&gt; maps to an LLVM &lt;x3/&gt;vector&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063645Z" creationid="hsugawa8651" creationdate="20181114T063645Z">
+        <seg>それは特別なコンパイル規則をもち、&lt;x1/&gt;VecElement{T}&lt;x2/&gt;マップの同種タプルをLLVM&lt;x3/&gt;ベクトル&lt;x4/&gt;にマッピングする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is also often useful to allow iteration over a collection in &lt;x1/&gt;reverse order&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112857Z" creationid="hsugawa8651" creationdate="20181112T112857Z">
@@ -7487,6 +7635,15 @@ functions can be called directly from Julia without any "glue" code, code genera
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160541Z" creationid="hsugawa8651" creationdate="20181109T160541Z">
         <seg>Juliaは「ボイラープレートなし」哲学を持っている。 関数は、"glue"コード、コード生成、コンパイルなしで、Juliaから直接呼び出すことができます。 --対話型プロンプトからでも。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia has an extensive, flexible API for sorting and interacting with already-sorted arrays of
+values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063708Z" creationid="hsugawa8651" creationdate="20181114T063708Z">
+        <seg>Juliaは、すでにソートされた配列をソートし、相互に作用させるための広範で柔軟なAPIを持っています。 値。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8478,6 +8635,15 @@ platforms such as Linux.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Practical use of it
+requires using &lt;x3/&gt;llvmcall&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063640Z" creationid="hsugawa8651" creationdate="20181114T063640Z">
+        <seg>実用化 &lt;x3/&gt;リウムカル&lt;x4/&gt;を使用する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Precision</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110226Z" creationid="hsugawa8651" creationdate="20181112T110226Z">
@@ -8631,6 +8797,14 @@ an interactive session.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024906Z" creationid="hsugawa8651" creationdate="20181110T024906Z">
         <seg>&lt;x1/&gt;ジュリアファイル.jl&lt;x2/&gt;を使用してジュリアスクリプトを実行しても、スローされません。 CTRL-Cで終了しようとすると、&lt;x3/&gt;'InterruptException'&lt;x4/&gt;となります。 (SIGINT)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>SIMD Support</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063634Z" creationid="hsugawa8651" creationdate="20181114T063634Z">
+        <seg>SIMDサポート</seg>
       </tuv>
     </tu>
     <tu>
@@ -9042,6 +9216,14 @@ sharing memory with the original array rather than by copying it.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031120Z" creationid="hsugawa8651" creationdate="20181114T031120Z">
         <seg>T&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>T&lt;x1/&gt; is a primitive bits type and the tuple length is in the set {2-6,8-10,16}.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063648Z" creationid="hsugawa8651" creationdate="20181114T063648Z">
+        <seg>T&lt;x1/&gt;はプリミティブビット型であり、タプル長はセット{2-6,8-10,16}にあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9877,6 +10059,14 @@ declaration syntax demonstrated above is equivalent to the following compact "as
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025224Z" creationid="hsugawa8651" creationdate="20181110T025224Z">
         <seg>&lt;x1/&gt;.…&lt;x2/&gt;演算子の2つの用途:slingingとspliting</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The type is defined as:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063642Z" creationid="hsugawa8651" creationdate="20181114T063642Z">
+        <seg>タイプは次のように定義されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10741,8 +10931,8 @@ which may or may not be caused by CTRL-C, use &lt;x5/&gt;`atexit`&lt;x6/&gt;.</s
       <tuv lang="EN-US">
         <seg>To sort an array in-place, use the "bang" version of the sort function:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044840Z" creationid="hsugawa8651" creationdate="20181112T044840Z">
-        <seg>To sort an array in-place, use the "bang" version of the sort function:</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063731Z" creationid="hsugawa8651" creationdate="20181112T044840Z">
+        <seg>配列をインプレイスにソートするには、ソート関数の「bang」バージョンを使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10760,6 +10950,14 @@ functions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041603Z" creationid="hsugawa8651" creationdate="20181112T041603Z">
         <seg>Tuple&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Type &lt;x1/&gt;VecElement{T}&lt;x2/&gt; is intended for building libraries of SIMD operations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063637Z" creationid="hsugawa8651" creationdate="20181114T063637Z">
+        <seg>タイプ&lt;x1/&gt;VecElement{T}&lt;x2/&gt;はSIMD演算のライブラリを構築することを目的としている。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11304,6 +11502,14 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032311Z" creationid="hsugawa8651" creationdate="20181114T032311Z">
         <seg>^&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>` ` &lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063522Z" creationid="hsugawa8651" creationdate="20181114T063522Z">
+        <seg>` ` &lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12073,6 +12279,22 @@ as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>a:b&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063537Z" creationid="hsugawa8651" creationdate="20181114T063537Z">
+        <seg>a:b&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>a:s:b&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063541Z" creationid="hsugawa8651" creationdate="20181114T063541Z">
+        <seg>a:s:b&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>a&lt;x1/&gt; and &lt;x2/&gt;b&lt;x3/&gt;, and &lt;x4/&gt;`maximum(a)`&lt;x5/&gt;, which finds the largest value within
 &lt;x6/&gt;a&lt;x7/&gt;.</seg>
       </tuv>
@@ -12086,6 +12308,14 @@ as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063025Z" creationid="hsugawa8651" creationdate="20181114T063025Z">
         <seg>a[]&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>access named fields in objects/modules (calling &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref Base.getproperty) or &lt;x4/&gt;&lt;x5/&gt;&lt;x6/&gt;(@ref Base.setproperty!)), also prefixes elementwise function calls (calling &lt;x7/&gt;`broadcast`&lt;x8/&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063536Z" creationid="hsugawa8651" creationdate="20181114T063536Z">
+        <seg>オブジェクト/モジュールの名前付きフィールド(呼び出し&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref Base.getproperty)または&lt;x4/&gt;&lt;x6/&gt;&lt;x6/&gt;&lt;x6/&gt;&lt;x6/&gt;(@ref Base.setproperty!))は、要素関数呼び出し(&lt;x7/&gt;ブロードキャスト"&lt;x8/&gt;)を呼び出します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12394,6 +12624,30 @@ code_native(triple,(m128,))</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022349Z" creationid="hsugawa8651" creationdate="20181113T022349Z">
         <seg>スカラー&lt;x1/&gt;setindex!&lt;x2/&gt;の観点から定義されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>delimit character literals</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063521Z" creationid="hsugawa8651" creationdate="20181114T063521Z">
+        <seg>文字リテラルを区切る</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>delimit external process (command) specifications</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063525Z" creationid="hsugawa8651" creationdate="20181114T063525Z">
+        <seg>外部プロセス(コマンド)仕様の境界指定</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>delimit string literals</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063507Z" creationid="hsugawa8651" creationdate="20181114T063507Z">
+        <seg>文字列リテラルを区切る</seg>
       </tuv>
     </tu>
     <tu>
@@ -12903,6 +13157,14 @@ obj2 = MyModule.somefunction(obj1)
 obj1 = MyModule.ObjConstructor(a, b)
 obj2 = MyModule.somefunction(obj1)
 &lt;x2/&gt; Got an error.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>index an entire dimension (firstindex:lastindex), see &lt;x1/&gt;`Colon`&lt;x2/&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063546Z" creationid="hsugawa8651" creationdate="20181114T063546Z">
+        <seg>索引全体(firstindex:lastindex)をインデックス化します。&lt;x1/&gt;`コロン`&lt;x2/&gt;を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17155,6 +17417,22 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>range a, a+1, a+2, ..., b</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063539Z" creationid="hsugawa8651" creationdate="20181114T063539Z">
+        <seg>range a, a+1, a+2, ..., b</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>range a, a+s, a+2s, ..., b</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063542Z" creationid="hsugawa8651" creationdate="20181114T063542Z">
+        <seg>range a, a+s, a+2s, ..., b</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>range of &lt;x1/&gt;n&lt;x2/&gt; linearly spaced elements from &lt;x3/&gt;start&lt;x4/&gt; to &lt;x5/&gt;stop&lt;x6/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154500Z" creationid="hsugawa8651" creationdate="20181109T154500Z">
@@ -17367,6 +17645,14 @@ that &lt;x2/&gt;SparseArray&lt;x3/&gt; is mutable (supports &lt;x4/&gt;setindex!
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>splice arguments into a function call or declare a varargs function</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063529Z" creationid="hsugawa8651" creationdate="20181114T063529Z">
+        <seg>関数呼び出しに引数を指定するか、またはvarargs関数を宣言します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>statement separator</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063155Z" creationid="hsugawa8651" creationdate="20181114T063155Z">
@@ -17458,6 +17744,14 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>symbol a</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063557Z" creationid="hsugawa8651" creationdate="20181114T063557Z">
+        <seg>symbol a</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>the identity operation</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131949Z" creationid="hsugawa8651" creationdate="20181113T131949Z">
@@ -17518,6 +17812,14 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031243Z" creationid="hsugawa8651" creationdate="20181114T031243Z">
         <seg>分割された除算;商は0に向かって丸められます</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>type annotation or &lt;x1/&gt;`typeassert`&lt;x2/&gt;, depending on context</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063552Z" creationid="hsugawa8651" creationdate="20181114T063552Z">
+        <seg>コンテキストに応じて、タイプの注釈または&lt;x1/&gt;`テーペアセルト'&lt;x2/&gt;を入力します。</seg>
       </tuv>
     </tu>
     <tu>
