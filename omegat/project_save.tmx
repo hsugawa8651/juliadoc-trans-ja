@@ -1927,6 +1927,14 @@ valid index.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>All dimensions indexed with scalars are dropped.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160835Z" creationid="hsugawa8651" creationdate="20181114T160835Z">
+        <seg>スカラーでインデックス付けされたすべての次元は削除されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All numeric types interoperate naturally without explicit casting, thanks to a
 flexible, user-extensible &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion).</seg>
       </tuv>
@@ -6312,6 +6320,15 @@ sums a series without allocating memory:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, the result of &lt;x5/&gt;A[2, I, 3]&lt;x6/&gt; is an
+array with size &lt;x7/&gt;size(I)&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160817Z" creationid="hsugawa8651" creationdate="20181114T160817Z">
+        <seg>たとえば、&lt;x5/&gt;A[2,I,3]&lt;x6/&gt;の結果は size&lt;x7/&gt;サイズ(I)&lt;x8/&gt;の配列。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, the sparse array code has the following definitions:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131841Z" creationid="hsugawa8651" creationdate="20181113T131841Z">
@@ -6813,6 +6830,15 @@ on this behavior, make sure all possible code paths define a value for the varia
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043208Z" creationid="hsugawa8651" creationdate="20181112T043208Z">
         <seg>I/O and Network</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If &lt;x1/&gt;I_1&lt;x2/&gt; is changed to a two-dimensional matrix, then &lt;x3/&gt;X&lt;x4/&gt; becomes an &lt;x5/&gt;n+1&lt;x6/&gt;-dimensional array of
+shape &lt;x7/&gt;(size(I_1, 1), size(I_1, 2), length(I_2), ..., length(I_n))&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160908Z" creationid="hsugawa8651" creationdate="20181114T160908Z">
+        <seg>&lt;x1/&gt;I_1&lt;x2/&gt;が2次元マトリクスに変化すると、&lt;x3/&gt;X&lt;x4/&gt;は&lt;x5/&gt;n+1&lt;x6/&gt;次元配列となる。 形状&lt;x7/&gt;(サイズ(I_1 1)、サイズ(I_1 2)、長さ(I_2)、.…、長さ(I_n))&lt;x8/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7830,6 +7856,14 @@ indexing with the resulting &lt;x5/&gt;CartesianIndex&lt;x6/&gt; object to compu
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Its &lt;x9/&gt;i&lt;x10/&gt;th element is populated by &lt;x11/&gt;A[2, I[i], 3]&lt;x12/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160823Z" creationid="hsugawa8651" creationdate="20181114T160823Z">
+        <seg>その&lt;x9/&gt;i&lt;x10/&gt;番目の要素は、&lt;x11/&gt;A[2,I[I],3]&lt;x12/&gt;で占められている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Its implementation uses &lt;x2/&gt;`hash`&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041720Z" creationid="hsugawa8651" creationdate="20181112T041720Z">
@@ -8585,6 +8619,14 @@ all types of arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131033Z" creationid="hsugawa8651" creationdate="20181113T131033Z">
         <seg>すべてのタイプが&lt;x1/&gt;軸&lt;x2/&gt;とインデックス作成をサポートするわけではありませんが、ブロードキャストでは多くの場合に便利です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note how the size of the resulting array is different in the last two cases.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160912Z" creationid="hsugawa8651" creationdate="20181114T160912Z">
+        <seg>最後の2つのケースでは、結果として得られる配列のサイズが異なることに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10175,6 +10217,14 @@ variable or expression.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The location &lt;x1/&gt;(i_1, i_2, i_3, ..., i_{n+1})&lt;x2/&gt; contains the value at &lt;x3/&gt;A[I_1[i_1, i_2], I_2[i_3], ..., I_n[i_{n+1}]]&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160844Z" creationid="hsugawa8651" creationdate="20181114T160844Z">
+        <seg>位置&lt;x1/&gt;(i_1,i_2,i_3,.…i_{n+1})&lt;x2/&gt;は、&lt;x3/&gt;A[I_1[i_1,i_2],I_2[i_3],.…I_n[i_{n+1}]]&lt;x4/&gt;の値を含む。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The machine instructions generated
 by Julia's JIT are the same as a native C call would be, so the resulting overhead is the same
 as calling a library function from C code.</seg>
@@ -10199,6 +10249,14 @@ Julia function.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153931Z" creationid="hsugawa8651" creationdate="20181109T153931Z">
         <seg>マクロ&lt;x1/&gt;`@cfunction`&lt;x2/&gt;は、コールのC互換関数ポインタを生成します。 Julia関数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The matrix adds a dimension.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160902Z" creationid="hsugawa8651" creationdate="20181114T160902Z">
+        <seg>マトリックスは寸法を追加します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10412,6 +10470,15 @@ to conditional execution of longer blocks of code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230045Z" creationid="hsugawa8651" creationdate="20181109T230045Z">
         <seg>いわゆる「三元演算子」&lt;x1/&gt;?&lt;x2/&gt;は、&lt;x4/&gt;-&lt;x5/&gt;elseif&lt;x6/&gt;-&lt;x7/&gt;else&lt;x8/&gt;の場合、&lt;x4/&gt;と密接に関係している。 しかし、単一の表現値間の条件付き選択が必要とされる場合に使用されます。 より長いブロックを条件付きで実行することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The special &lt;x1/&gt;CartesianIndex{N}&lt;x2/&gt; object represents a scalar index that behaves
+like an &lt;x3/&gt;N&lt;x4/&gt;-tuple of integers spanning multiple dimensions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160948Z" creationid="hsugawa8651" creationdate="20181114T160948Z">
+        <seg>特殊な&lt;x1/&gt;CartesianIndex{N}&lt;x2/&gt;オブジェクトは、スカラーインデックスを表します。 &lt;x3/&gt;N&lt;x4/&gt;のように、複数の次元にまたがる整数の&lt;x/&gt;N&lt;x4/&gt;のようになります。</seg>
       </tuv>
     </tu>
     <tu>
