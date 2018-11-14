@@ -466,6 +466,14 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>--project[={&lt;x1/&gt;\|@.}]&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031505Z" creationid="hsugawa8651" creationdate="20181114T031505Z">
+        <seg>--project[={&lt;x1/&gt;\|@.}]&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>-2^127</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110210Z" creationid="hsugawa8651" creationdate="20181112T110210Z">
@@ -506,6 +514,14 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>-H&lt;x1/&gt;, &lt;x2/&gt;--home &lt;x3/&gt;&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031548Z" creationid="hsugawa8651" creationdate="20181114T031548Z">
+        <seg>-H&lt;x1/&gt;, &lt;x2/&gt;--home &lt;x3/&gt;&lt;x4/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>-Inf16&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110818Z" creationid="hsugawa8651" creationdate="20181112T110818Z">
@@ -534,6 +550,22 @@ julia&gt; range(minmax(10, 2))
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030505Z" creationid="hsugawa8651" creationdate="20181114T030505Z">
         <seg>-Inf&lt;x1/&gt;はそれ自身と等しく、&lt;x2/&gt;NaN&lt;x3/&gt;以外のすべてのものはそれより小さい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-J&lt;x1/&gt;, &lt;x2/&gt;--sysimage &lt;x3/&gt;&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031542Z" creationid="hsugawa8651" creationdate="20181114T031542Z">
+        <seg>-J&lt;x1/&gt;, &lt;x2/&gt;--sysimage &lt;x3/&gt;&lt;x4/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-h&lt;x1/&gt;, &lt;x2/&gt;--help&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031510Z" creationid="hsugawa8651" creationdate="20181114T031510Z">
+        <seg>-h&lt;x1/&gt;, &lt;x2/&gt;--help&lt;x3/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -7377,8 +7409,8 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
       <tuv lang="EN-US">
         <seg>Load &lt;x1/&gt;&lt;x2/&gt;/.julia/config/startup.jl&lt;x3/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224646Z" creationid="hsugawa8651" creationdate="20181109T224646Z">
-        <seg>&lt;x1/&gt;&lt;x2/&gt;/.julia/config/startup.jl&lt;x3/&gt;をロードします。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031557Z" creationid="hsugawa8651" creationdate="20181109T224646Z">
+        <seg>Load &lt;x1/&gt;&lt;x2/&gt;/.julia/config/startup.jl&lt;x3/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -8728,6 +8760,15 @@ be quite different from conventional arrays.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x15/&gt;ans&lt;x16/&gt; variable is only
+bound in interactive sessions, not when Julia code is run in other ways.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031402Z" creationid="hsugawa8651" creationdate="20181114T031402Z">
+        <seg>&lt;x15/&gt;と&lt;x16/&gt;の変数は は、Julia codeが他の方法で実行される場合ではなく、対話型セッションにバインドされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x3/&gt;`Base.broadcastable`&lt;x4/&gt; function is called on each argument to broadcast, allowing
 it to return something different that supports &lt;x5/&gt;axes&lt;x6/&gt; and indexing.</seg>
       </tuv>
@@ -9522,6 +9563,15 @@ cases.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The variable &lt;x13/&gt;ans&lt;x14/&gt; is bound to the
+value of the last evaluated expression whether it is shown or not.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031359Z" creationid="hsugawa8651" creationdate="20181114T031359Z">
+        <seg>変数&lt;x13/&gt;ans&lt;x14/&gt;は、次のようにバインドされています。 最後に評価された式の値が表示されているか否かを示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Then, for each MIME type (&lt;x5/&gt;mime&lt;x6/&gt; string) that can be displayed on &lt;x7/&gt;D&lt;x8/&gt;, one should
 define a function &lt;x9/&gt;display(d::D, ::MIME"mime", x) = ...&lt;x10/&gt; that displays &lt;x11/&gt;x&lt;x12/&gt; as that MIME type,
 usually by calling &lt;x13/&gt;`show(io, mime, x)`&lt;x14/&gt; or &lt;x15/&gt;`repr(io, mime, x)`&lt;x16/&gt;.</seg>
@@ -10169,6 +10219,14 @@ Julia &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized) &lt;x4/&gt;f.(args.
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155933Z" creationid="hsugawa8651" creationdate="20181109T155933Z">
         <seg>数学的およびその他の操作を便利にベクトル化することを可能にするために Julia&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man vectorized)&lt;x4/&gt;f.(args.…)&lt;x6/&gt;sin.(x)&lt;x7/&gt;sin.(x)&lt;x7/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To evaluate expressions written in a source file &lt;x1/&gt;file.jl&lt;x2/&gt;, write &lt;x3/&gt;include("file.jl")&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031403Z" creationid="hsugawa8651" creationdate="20181114T031403Z">
+        <seg>ソースファイル&lt;x1/&gt;ファイル.jl&lt;x2/&gt;で記述された式を評価するために、write&lt;x3/&gt;は("file.jl")&lt;x4/&gt;を含む。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11081,10 +11139,42 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`ceil(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031212Z" creationid="hsugawa8651" creationdate="20181114T031212Z">
+        <seg>`ceil(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`div(x,y)`&lt;x1/&gt;, &lt;x2/&gt;x÷y&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031239Z" creationid="hsugawa8651" creationdate="20181114T031239Z">
+        <seg>`div(x,y)`&lt;x1/&gt;, &lt;x2/&gt;x÷y&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`eachindex(A)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153302Z" creationid="hsugawa8651" creationdate="20181109T153302Z">
         <seg>`eachindex(A)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`fld(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031244Z" creationid="hsugawa8651" creationdate="20181114T031244Z">
+        <seg>`fld(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`floor(T, x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031151Z" creationid="hsugawa8651" creationdate="20181114T031151Z">
+        <seg>`floor(T, x)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -11201,6 +11291,30 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`mod(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031255Z" creationid="hsugawa8651" creationdate="20181114T031255Z">
+        <seg>`mod(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`mod1(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031310Z" creationid="hsugawa8651" creationdate="20181114T031310Z">
+        <seg>`mod1(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`mod2pi(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031316Z" creationid="hsugawa8651" creationdate="20181114T031316Z">
+        <seg>`mod2pi(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`ndims(A)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153230Z" creationid="hsugawa8651" creationdate="20181109T153230Z">
@@ -11294,6 +11408,14 @@ and all further calculations will take these changes in account.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043140Z" creationid="hsugawa8651" creationdate="20181112T043140Z">
         <seg>`stdout`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`trunc(T, x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031229Z" creationid="hsugawa8651" creationdate="20181114T031229Z">
+        <seg>`trunc(T, x)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -16215,6 +16337,14 @@ function bar(...)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>modulus; satisfies &lt;x1/&gt;x == fld(x,y)*y + mod(x,y)&lt;x2/&gt;; sign matches &lt;x3/&gt;y&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031309Z" creationid="hsugawa8651" creationdate="20181114T031309Z">
+        <seg>係数;&lt;x1/&gt;x==fld(x,y)*y+mod(x,y)&lt;x2/&gt;;符号は&lt;x3/&gt;y&lt;x4/&gt;に一致する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>n&lt;x1/&gt; worker processes, while &lt;x2/&gt;--machine-file file&lt;x3/&gt; will launch a worker
 for each line in file &lt;x4/&gt;file&lt;x5/&gt;.</seg>
       </tuv>
@@ -16315,6 +16445,14 @@ end</seg>
         <seg>open("outfile", "w") do io
     write(io, data)
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>option will search through parent directories until a Project.toml or JuliaProject.toml file is found.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031541Z" creationid="hsugawa8651" creationdate="20181114T031541Z">
+        <seg>オプションは、Project.トミルまたはJuliaProject.トミルファイルが見つかるまで、親ディレクトリを検索します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16698,6 +16836,14 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110222Z" creationid="hsugawa8651" creationdate="20181112T110222Z">
         <seg>true&lt;x1/&gt; (1)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>truncated division; quotient rounded towards zero</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031243Z" creationid="hsugawa8651" creationdate="20181114T031243Z">
+        <seg>分割された除算;商は0に向かって丸められます</seg>
       </tuv>
     </tu>
     <tu>
