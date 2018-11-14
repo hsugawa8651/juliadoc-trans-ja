@@ -163,6 +163,14 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&amp;&amp;&lt;x1/&gt; followed by &lt;x2/&gt;\|\|&lt;x3/&gt; followed by &lt;x4/&gt;?&lt;x5/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030904Z" creationid="hsugawa8651" creationdate="20181114T030904Z">
+        <seg>&amp;&amp;&lt;x1/&gt; followed by &lt;x2/&gt;\|\|&lt;x3/&gt; followed by &lt;x4/&gt;?&lt;x5/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(&lt;x1/&gt;none&lt;x2/&gt;)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112324Z" creationid="hsugawa8651" creationdate="20181112T112324Z">
@@ -414,6 +422,22 @@ julia&gt; range((min, max)) = max - min
 
 julia&gt; range(minmax(10, 2))
 8</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* / % &amp; \ ÷&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030836Z" creationid="hsugawa8651" creationdate="20181114T030836Z">
+        <seg>* / % &amp; \ ÷&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>+ - \| ⊻&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030842Z" creationid="hsugawa8651" creationdate="20181114T030842Z">
+        <seg>+ - \| ⊻&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -745,6 +769,15 @@ an array &lt;x22/&gt;A&lt;x23/&gt;, it performs a &lt;x24/&gt;single&lt;x25/&gt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>:
+The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require explicit parentheses around their argument to disambiguate them from the operator &lt;x5/&gt;++&lt;x6/&gt;, etc.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030927Z" creationid="hsugawa8651" creationdate="20181114T030915Z">
+        <seg>: 単項演算子&lt;x1/&gt;+&lt;x2/&gt;と&lt;x3/&gt;は、演算子&lt;x5/&gt;++&lt;x6/&gt;などからそれらを区別するために、引数の周りに明示的な括弧を必要とします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>:a : (@static Sys.isapple() ?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225018Z" creationid="hsugawa8651" creationdate="20181109T225018Z">
@@ -757,6 +790,14 @@ an array &lt;x22/&gt;A&lt;x23/&gt;, it performs a &lt;x24/&gt;single&lt;x25/&gt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225020Z" creationid="hsugawa8651" creationdate="20181109T225020Z">
         <seg>:b : :c)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;\|&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030856Z" creationid="hsugawa8651" creationdate="20181114T030856Z">
+        <seg>&lt;\|&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -911,6 +952,15 @@ temporarily-suspended computations.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x11/&gt;&lt;x12/&gt;&lt;x13/&gt;:
+The operators &lt;x14/&gt;+&lt;x15/&gt;, &lt;x16/&gt;++&lt;x17/&gt; and &lt;x18/&gt;*&lt;x19/&gt; are non-associative.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030943Z" creationid="hsugawa8651" creationdate="20181114T030934Z">
+        <seg>&lt;x11/&gt;&lt;x12/&gt;&lt;x13/&gt;: 演算子&lt;x14/&gt;+&lt;x15/&gt;、&lt;x16/&gt;++&lt;x17/&gt;、&lt;x18/&gt;*&lt;x19/&gt;は、非自動調整ではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x12/&gt;user&lt;x13/&gt; defaults to current user,
 &lt;x14/&gt;port&lt;x15/&gt; to the standard ssh port.</seg>
       </tuv>
@@ -925,6 +975,16 @@ to 1.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224446Z" creationid="hsugawa8651" creationdate="20181109T224446Z">
         <seg>&lt;x16/&gt;count&lt;x17/&gt;は、ノード上でスポーンするワーカーの数です。デフォルトは 1です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x20/&gt;a + b + c&lt;x21/&gt; is parsed as &lt;x22/&gt;+(a, b, c)&lt;x23/&gt; not &lt;x24/&gt;+(+(a, b),
+c)&lt;x25/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030937Z" creationid="hsugawa8651" creationdate="20181114T030937Z">
+        <seg>&lt;x20/&gt;a + b + c&lt;x21/&gt; is parsed as &lt;x22/&gt;+(a, b, c)&lt;x23/&gt; not &lt;x24/&gt;+(+(a, b),
+c)&lt;x25/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -985,11 +1045,35 @@ indirectly.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>= += -= *= /= //= \= ^= ÷= %= \|= &amp;= ⊻= &lt;&lt;= &gt;&gt;= &gt;&gt;&gt;=&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030912Z" creationid="hsugawa8651" creationdate="20181114T030912Z">
+        <seg>= += -= *= /= //= \= ^= ÷= %= \|= &amp;= ⊻= &lt;&lt;= &gt;&gt;= &gt;&gt;&gt;=&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>=&lt;x1/&gt;&lt;x2/&gt; is ignored by &lt;x3/&gt;bash&lt;x4/&gt; since it stops
 parsing the file once it reaches to the &lt;x5/&gt;exec&lt;x6/&gt; statement.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024947Z" creationid="hsugawa8651" creationdate="20181110T024947Z">
         <seg>=&lt;x1/&gt;&lt;x2/&gt;は、&lt;x3/&gt;bash&lt;x4/&gt;によって無視されます。なぜならば、それは停止するからです。 &lt;x5/&gt;exec&lt;x6/&gt;ステートメントに到達したファイルを解析します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=&gt;&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030907Z" creationid="hsugawa8651" creationdate="20181114T030907Z">
+        <seg>=&gt;&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt; &lt; &gt;= &lt;= == === != !== &lt;:&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030859Z" creationid="hsugawa8651" creationdate="20181114T030859Z">
+        <seg>&gt; &lt; &gt;= &lt;= == === != !== &lt;:&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5210,6 +5294,15 @@ array and a single character:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For a complete list of &lt;x1/&gt;every&lt;x2/&gt; Julia operator's precedence, see the top of this file:
+&lt;x3/&gt;`src/julia-parser.scm`&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030950Z" creationid="hsugawa8651" creationdate="20181114T030950Z">
+        <seg>&lt;x2/&gt;ジュリア演算子の優先順位の&lt;x1/&gt;の完全なリストについては、このファイルの一番上を参照してください。 &lt;x3/&gt;`src/julia parser.scm'&lt;x4/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For a handful of other types (including but not limited to
 types themselves, functions, special singletons like &lt;x13/&gt;`missing`&lt;x14/&gt; and &lt;x15/&gt;`nothing`&lt;x16/&gt;, and dates),
 &lt;x17/&gt;Base.broadcastable&lt;x18/&gt; returns the argument wrapped in a &lt;x19/&gt;Ref&lt;x20/&gt; to act as a 0-dimensional
@@ -5299,6 +5392,14 @@ are true where the corresponding elements of &lt;x7/&gt;A&lt;x8/&gt; are between
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030724Z" creationid="hsugawa8651" creationdate="20181114T030724Z">
         <seg>たとえば、&lt;x5/&gt;0.&lt;A.&lt;1&lt;x6/&gt;は、エントリを入力するブール型配列を示します。 は、&lt;x7/&gt;A&lt;x8/&gt;の対応する要素が0から1の間であることを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, &lt;x5/&gt;round(Int,x)&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031052Z" creationid="hsugawa8651" creationdate="20181114T031052Z">
+        <seg>たとえば、&lt;x5/&gt;round(Int,x)&lt;x6/&gt;です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5565,6 +5666,14 @@ let's try a two-way version first:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230122Z" creationid="hsugawa8651" creationdate="20181109T230122Z">
         <seg>わかりやすくするために まず2ウェイのバージョンを試してみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fractions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030828Z" creationid="hsugawa8651" creationdate="20181114T030828Z">
+        <seg>Fractions</seg>
       </tuv>
     </tu>
     <tu>
@@ -5838,6 +5947,14 @@ combined with exponentiation.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, the fallback methods for &lt;x26/&gt;+(a, b, c, d...)&lt;x27/&gt; and &lt;x28/&gt;*(a, b, c, d...)&lt;x29/&gt; both default to left-associative evaluation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030947Z" creationid="hsugawa8651" creationdate="20181114T030947Z">
+        <seg>ただし、&lt;x26/&gt;+(a, b, c, d...)&lt;x27/&gt;および&lt;x28/&gt;*(a, b, c, d...)&lt;x29/&gt;両方のフォールバック方法は、デフォルトでは左連想評価に使用されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, the order of evaluations in a chained
 comparison is undefined.</seg>
       </tuv>
@@ -5886,6 +6003,23 @@ on this behavior, make sure all possible code paths define a value for the varia
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043208Z" creationid="hsugawa8651" creationdate="20181112T043208Z">
         <seg>I/O and Network</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If &lt;x1/&gt;T&lt;x2/&gt; is a floating-point type, the result is the nearest representable value, which could be
+positive or negative infinity.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031034Z" creationid="hsugawa8651" creationdate="20181114T031034Z">
+        <seg>&lt;x1/&gt;T&lt;x2/&gt;が浮動小数点型である場合、その結果は最も近い表現可能な値となり 正または負の無限大。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If &lt;x1/&gt;T&lt;x2/&gt; is an integer type, an &lt;x3/&gt;InexactError&lt;x4/&gt; is raised if &lt;x5/&gt;x&lt;x6/&gt; is not representable by &lt;x7/&gt;T&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031036Z" creationid="hsugawa8651" creationdate="20181114T031036Z">
+        <seg>&lt;x1/&gt;T&lt;x2/&gt;が整数の場合、&lt;x5/&gt;x&lt;x6/&gt;が&lt;x7/&gt;T&lt;x8/&gt;で表されない場合、&lt;x3/&gt;InexactError&lt;x4/&gt;が生成される。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6246,6 +6380,15 @@ words, while developing you might use a workflow something like this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In other words, the binary representation is truncated
+to fit.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031042Z" creationid="hsugawa8651" creationdate="20181114T031042Z">
+        <seg>つまり、2進数表現は切り捨てられます。 フィットします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In other words, the representable floating-point
 numbers are densest in the real number line near zero, and grow sparser exponentially as one moves
 farther away from zero.</seg>
@@ -6570,6 +6713,14 @@ ourselves, we can officially define it as a subtype of an &lt;x6/&gt;`AbstractAr
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113207Z" creationid="hsugawa8651" creationdate="20181112T113207Z">
         <seg>これらすべての行動を定義する代わりに 私たちは、公式には、&lt;x6/&gt;'AbstractArray'&lt;x7/&gt;のサブタイプとして定義することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Int(round(x))&lt;x1/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031053Z" creationid="hsugawa8651" creationdate="20181114T031053Z">
+        <seg>Int(round(x))&lt;x1/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -7010,6 +7161,15 @@ type of a given variable.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101454Z" creationid="hsugawa8651" creationdate="20181112T101454Z">
         <seg>Juliaは単純なタプル"destructing"をサポートしており、これを容易にしています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia supports three forms of numerical conversion, which differ in their handling of inexact
+conversions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031029Z" creationid="hsugawa8651" creationdate="20181114T031029Z">
+        <seg>Juliaは、3つの形式の数値変換をサポートしていますが、それは不正確であるためです。 変換。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7586,6 +7746,14 @@ and the identifier or parenthesized expression which it multiplies.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that symbols such as &lt;x1/&gt;:sin&lt;x2/&gt; return precedence &lt;x3/&gt;0&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031020Z" creationid="hsugawa8651" creationdate="20181114T031020Z">
+        <seg>&lt;x1/&gt;:sin&lt;x2/&gt;return precedence&lt;x3/&gt;0&lt;x4/&gt;のような記号があることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that the argument
 list can — and often does — include other nested &lt;x4/&gt;Broadcasted&lt;x5/&gt; wrappers.</seg>
       </tuv>
@@ -7807,6 +7975,14 @@ level operators and functions, in a way that is independent of the underlying st
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224350Z" creationid="hsugawa8651" creationdate="20181109T224350Z">
         <seg>あるいは、スクリプトにコードを挿入して実行することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Other compositions of unary operators are parsed with right-associativity, e.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030930Z" creationid="hsugawa8651" creationdate="20181114T030918Z">
+        <seg>単項演算子の他の組成は、右の連想であるeで解析されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8424,6 +8600,22 @@ sharing memory with the original array rather than by copying it.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Syntax</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030853Z" creationid="hsugawa8651" creationdate="20181114T030853Z">
+        <seg>Syntax</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>T&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031120Z" creationid="hsugawa8651" creationdate="20181114T031120Z">
+        <seg>T&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Tasks</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044738Z" creationid="hsugawa8651" creationdate="20181112T044738Z">
@@ -8499,6 +8691,14 @@ be quite different from conventional arrays.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160313Z" creationid="hsugawa8651" creationdate="20181109T160313Z">
         <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;タイプは、曖昧な配列を含んでおり、実装は実装されています。 従来のアレイとは大きく異なります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;Rounding functions&lt;x2/&gt; take a type &lt;x3/&gt;T&lt;x4/&gt; as an optional argument.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031049Z" creationid="hsugawa8651" creationdate="20181114T031049Z">
+        <seg>&lt;x1/&gt;丸め関数&lt;x2/&gt;は、オプションの引数として&lt;x3/&gt;T&lt;x4/&gt;の型をとる。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8883,6 +9083,14 @@ dimension size and stride parameters.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following examples show the different forms.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031056Z" creationid="hsugawa8651" creationdate="20181114T031056Z">
+        <seg>次の例は、さまざまな形式を示しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following two-word sequences are reserved:
 &lt;x1/&gt;abstract type&lt;x2/&gt;, &lt;x3/&gt;mutable struct&lt;x4/&gt;, &lt;x5/&gt;primitive type&lt;x6/&gt;.</seg>
       </tuv>
@@ -9010,6 +9218,14 @@ determining a single answer for a given set of arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131106Z" creationid="hsugawa8651" creationdate="20181113T131106Z">
         <seg>次の2つのステップ(出力配列と実装を選択)は、次のように依存します。 指定された引数の集合に対する単一の応答を決定することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The notation &lt;x1/&gt;T(x)&lt;x2/&gt; or &lt;x3/&gt;convert(T,x)&lt;x4/&gt; converts &lt;x5/&gt;x&lt;x6/&gt; to a value of type &lt;x7/&gt;T&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031031Z" creationid="hsugawa8651" creationdate="20181114T031031Z">
+        <seg>&lt;x1/&gt;T(x)&lt;x2/&gt;または&lt;x3/&gt;変換(T,x)&lt;x4/&gt;は、&lt;x5/&gt;x&lt;x6/&gt;を&lt;x7/&gt;T&lt;x8/&gt;型の値に変換する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9858,6 +10074,15 @@ so</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This value represents invalid operators and not
+operators of lowest precedence.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031014Z" creationid="hsugawa8651" creationdate="20181114T031014Z">
+        <seg>この値は無効な演算子を表しています。 優先順位の低い演算子です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This wrapper throws an exception clearly indicating the problem if the caller tries to get a non-existent
 environment variable:</seg>
       </tuv>
@@ -10420,6 +10645,14 @@ broadcasting shape rules yourself, but this may be helpful in limited situations
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can also find the numerical precedence for any given operator via the built-in function &lt;x1/&gt;Base.operator_precedence&lt;x2/&gt;, where higher numbers take precedence:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030952Z" creationid="hsugawa8651" creationdate="20181114T030952Z">
+        <seg>また、組み込み関数&lt;x1/&gt;Base.operator_precedence&lt;x2/&gt;を使用して、任意の演算子の優先順位を検索することもできます。ここでは、より高い数値が優先されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can also return multiple values via an explicit usage of the &lt;x1/&gt;return&lt;x2/&gt; keyword:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101528Z" creationid="hsugawa8651" creationdate="20181112T101528Z">
@@ -10856,6 +11089,14 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`floor(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031122Z" creationid="hsugawa8651" creationdate="20181114T031122Z">
+        <seg>`floor(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`getindex`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025910Z" creationid="hsugawa8651" creationdate="20181110T025910Z">
@@ -10980,6 +11221,22 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112721Z" creationid="hsugawa8651" creationdate="20181112T112721Z">
         <seg>「プッシュ!」&lt;x1/&gt;各要素を&lt;x2/&gt;ベクトル{Any}&lt;x3/&gt;に押し込みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`round(T, x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031114Z" creationid="hsugawa8651" creationdate="20181114T031114Z">
+        <seg>`round(T, x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`round(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031107Z" creationid="hsugawa8651" creationdate="20181114T031107Z">
+        <seg>`round(x)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -11749,6 +12006,14 @@ end</seg>
         <seg>function plot(x, y; style="solid", width=1, color="black")
     &lt;x1/&gt;
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>g., &lt;x7/&gt;√√-a&lt;x8/&gt; as &lt;x9/&gt;√(√(-a))&lt;x10/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030932Z" creationid="hsugawa8651" creationdate="20181114T030932Z">
+        <seg>g., &lt;x7/&gt;√√-a&lt;x8/&gt; as &lt;x9/&gt;√(√(-a))&lt;x10/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -13066,6 +13331,38 @@ julia&gt; Squares(10)[[3,4.,5]]
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; Base.operator_associativity(:-), Base.operator_associativity(:+), Base.operator_associativity(:^)
+(:left, :none, :right)
+
+julia&gt; Base.operator_associativity(:⊗), Base.operator_associativity(:sin), Base.operator_associativity(:→)
+(:left, :none, :right)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031001Z" creationid="hsugawa8651" creationdate="20181114T031001Z">
+        <seg>julia&gt; Base.operator_associativity(:-), Base.operator_associativity(:+), Base.operator_associativity(:^)
+(:left, :none, :right)
+
+julia&gt; Base.operator_associativity(:⊗), Base.operator_associativity(:sin), Base.operator_associativity(:→)
+(:left, :none, :right)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Base.operator_precedence(:+), Base.operator_precedence(:*), Base.operator_precedence(:.)
+(11, 13, 17)
+
+julia&gt; Base.operator_precedence(:sin), Base.operator_precedence(:+=), Base.operator_precedence(:(=))  &lt;x1/&gt; (Note the necessary parens on `:(=)`)
+(0, 1, 1)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030953Z" creationid="hsugawa8651" creationdate="20181114T030953Z">
+        <seg>julia&gt; Base.operator_precedence(:+), Base.operator_precedence(:*), Base.operator_precedence(:.)
+(11, 13, 17)
+
+julia&gt; Base.operator_precedence(:sin), Base.operator_precedence(:+=), Base.operator_precedence(:(=))  &lt;x1/&gt; (Note the necessary parens on `:(=)`)
+(0, 1, 1)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; Base.sum(S::Squares) = (n = S.count; return n*(n+1)*(2n+1)÷6)
 
 julia&gt; sum(Squares(1803))
@@ -13126,6 +13423,80 @@ Float32</seg>
 
 julia&gt; typeof(ans)
 Float32</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Int8(127)
+127
+
+julia&gt; Int8(128)
+ERROR: InexactError: trunc(Int8, 128)
+Stacktrace:
+[...]
+
+julia&gt; Int8(127.0)
+127
+
+julia&gt; Int8(3.14)
+ERROR: InexactError: Int8(Int8, 3.14)
+Stacktrace:
+[...]
+
+julia&gt; Int8(128.0)
+ERROR: InexactError: Int8(Int8, 128.0)
+Stacktrace:
+[...]
+
+julia&gt; 127 % Int8
+127
+
+julia&gt; 128 % Int8
+-128
+
+julia&gt; round(Int8,127.4)
+127
+
+julia&gt; round(Int8,127.6)
+ERROR: InexactError: trunc(Int8, 128.0)
+Stacktrace:
+[...]</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031057Z" creationid="hsugawa8651" creationdate="20181114T031057Z">
+        <seg>julia&gt; Int8(127)
+127
+
+julia&gt; Int8(128)
+ERROR: InexactError: trunc(Int8, 128)
+Stacktrace:
+[...]
+
+julia&gt; Int8(127.0)
+127
+
+julia&gt; Int8(3.14)
+ERROR: InexactError: Int8(Int8, 3.14)
+Stacktrace:
+[...]
+
+julia&gt; Int8(128.0)
+ERROR: InexactError: Int8(Int8, 128.0)
+Stacktrace:
+[...]
+
+julia&gt; 127 % Int8
+127
+
+julia&gt; 128 % Int8
+-128
+
+julia&gt; round(Int8,127.4)
+127
+
+julia&gt; round(Int8,127.6)
+ERROR: InexactError: trunc(Int8, 128.0)
+Stacktrace:
+[...]</seg>
       </tuv>
     </tu>
     <tu>
@@ -16020,6 +16391,22 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>round &lt;x1/&gt;x&lt;x2/&gt; to the nearest integer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031119Z" creationid="hsugawa8651" creationdate="20181114T031119Z">
+        <seg>最も近い整数に対して&lt;x1/&gt;x&lt;x2/&gt;を四捨五入する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>round &lt;x1/&gt;x&lt;x2/&gt; towards &lt;x3/&gt;-Inf&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031130Z" creationid="hsugawa8651" creationdate="20181114T031125Z">
+        <seg>round &lt;x1/&gt;x&lt;x2/&gt; towards &lt;x3/&gt;-Inf&lt;x4/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>setindex!(A, I...)&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022344Z" creationid="hsugawa8651" creationdate="20181113T022344Z">
@@ -16315,6 +16702,14 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>typeof(x)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031111Z" creationid="hsugawa8651" creationdate="20181114T031111Z">
+        <seg>typeof(x)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>v("yes") : v("no")
 no
 "no"</seg>
@@ -16366,6 +16761,15 @@ arguments of &lt;x5/&gt;Style1&lt;x6/&gt; and &lt;x7/&gt;Style2&lt;x8/&gt;.</seg
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155358Z" creationid="hsugawa8651" creationdate="20181109T155116Z">
         <seg>where each &lt;x1/&gt;I_k&lt;x2/&gt; may be a scalar integer, an array of integers, or any other
 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-supported-index-types).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x % T&lt;x1/&gt; converts an integer &lt;x2/&gt;x&lt;x3/&gt; to a value of integer type &lt;x4/&gt;T&lt;x5/&gt; congruent to &lt;x6/&gt;x&lt;x7/&gt; modulo &lt;x8/&gt;2^n&lt;x9/&gt;,
+where &lt;x10/&gt;n&lt;x11/&gt; is the number of bits in &lt;x12/&gt;T&lt;x13/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031040Z" creationid="hsugawa8651" creationdate="20181114T031040Z">
+        <seg>x%T&lt;x1/&gt;は整数&lt;x2/&gt;x&lt;x3/&gt;を整数型&lt;x4/&gt;T&lt;x5/&gt;の値に変換し、&lt;x8/&gt;x&lt;x7/&gt;&lt;x8/&gt;2^n&lt;x9/&gt;のモジュロ&lt;x8/&gt;の値に変換する。 ここで、&lt;x10/&gt;n&lt;x11/&gt;は、&lt;x12/&gt;T&lt;x13/&gt;のビット数である。</seg>
       </tuv>
     </tu>
     <tu>
