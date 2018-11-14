@@ -4869,6 +4869,15 @@ they don't intend to change.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Captured variables can present performance challenges; see
+&lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref man-performance-tips).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160702Z" creationid="hsugawa8651" creationdate="20181114T160702Z">
+        <seg>キャプチャされた変数はパフォーマンス上の問題を提示することがあります。 &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref manのパフォーマンス・ヒント)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Chained comparisons use the
 &lt;x1/&gt;&amp;&amp;&lt;x2/&gt; operator for scalar comparisons, and the &lt;x3/&gt;`&amp;`&lt;x4/&gt; operator for elementwise comparisons,
 which allows them to work on arrays.</seg>
@@ -6150,6 +6159,14 @@ in-memory representations as objects are numeric primitives.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041750Z" creationid="hsugawa8651" creationdate="20181112T041750Z">
         <seg>例えば、&lt;x1/&gt;Dict(i=&gt;f(i=&gt;f(i)for i=1:10)&lt;x2/&gt;)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, &lt;x1/&gt;sum(p[i] - q[i] for i=1:n)&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160647Z" creationid="hsugawa8651" creationdate="20181114T160647Z">
+        <seg>For example, &lt;x1/&gt;sum(p[i] - q[i] for i=1:n)&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -11683,6 +11700,14 @@ like any value:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025632Z" creationid="hsugawa8651" creationdate="20181110T025632Z">
         <seg>括弧なしでは、式&lt;x1/&gt;f&lt;x2/&gt;は関数オブジェクトを参照しており、この関数オブジェクトを渡すことができます。 どの値でも</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>X = A[I_1, I_2, ..., I_n]</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160712Z" creationid="hsugawa8651" creationdate="20181114T160712Z">
+        <seg>X = A[I_1, I_2, ..., I_n]</seg>
       </tuv>
     </tu>
     <tu>
@@ -17959,6 +17984,14 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>p&lt;x1/&gt;, &lt;x2/&gt;q&lt;x3/&gt; and &lt;x4/&gt;n&lt;x5/&gt; from the enclosing scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160657Z" creationid="hsugawa8651" creationdate="20181114T160657Z">
+        <seg>p&lt;x1/&gt;、&lt;x2/&gt;q&lt;x3/&gt;、および&lt;x4/&gt;n&lt;x5/&gt;を囲むスコープからの値。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>parametric type instantiation</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063146Z" creationid="hsugawa8651" creationdate="20181114T063146Z">
@@ -18510,9 +18543,8 @@ arguments of &lt;x5/&gt;Style1&lt;x6/&gt; and &lt;x7/&gt;Style2&lt;x8/&gt;.</seg
         <seg>where each &lt;x1/&gt;I_k&lt;x2/&gt; may be a scalar integer, an array of integers, or any other
 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-supported-index-types).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155358Z" creationid="hsugawa8651" creationdate="20181109T155116Z">
-        <seg>where each &lt;x1/&gt;I_k&lt;x2/&gt; may be a scalar integer, an array of integers, or any other
-&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-supported-index-types).</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160720Z" creationid="hsugawa8651" creationdate="20181109T155116Z">
+        <seg>ここで、各&lt;x1/&gt;I_k&lt;x2/&gt;はスカラー整数、整数の配列、またはその他のいずれかである。 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref manサポートされているインデックス・タイプ)。</seg>
       </tuv>
     </tu>
     <tu>
