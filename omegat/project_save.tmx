@@ -39,6 +39,14 @@ value of one or more of its arguments (compare, for example, &lt;x2/&gt;`sort`&l
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>""&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063211Z" creationid="hsugawa8651" creationdate="20181114T063211Z">
+        <seg>""&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>", ["First", "Second", "Third"])
 3-element Array{String,1}:
  "1.</seg>
@@ -534,6 +542,14 @@ julia&gt; range(minmax(10, 2))
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131941Z" creationid="hsugawa8651" creationdate="20181113T131941Z">
         <seg>+x&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>,&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063157Z" creationid="hsugawa8651" creationdate="20181114T063157Z">
+        <seg>,&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1049,6 +1065,14 @@ an array &lt;x22/&gt;A&lt;x23/&gt;, it performs a &lt;x24/&gt;single&lt;x25/&gt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>3-argument conditional operator (used like: &lt;x1/&gt;conditional ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063206Z" creationid="hsugawa8651" creationdate="20181114T063206Z">
+        <seg>3引数条件付き演算子(&lt;x1/&gt;条件付きのように使用されますか?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>32</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110149Z" creationid="hsugawa8651" creationdate="20181112T110149Z">
@@ -1094,6 +1118,14 @@ The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225020Z" creationid="hsugawa8651" creationdate="20181109T225020Z">
         <seg>:b : :c)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>;&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063149Z" creationid="hsugawa8651" creationdate="20181114T063149Z">
+        <seg>;&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1402,6 +1434,14 @@ parsing the file once it reaches to the &lt;x5/&gt;exec&lt;x6/&gt; statement.</s
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030859Z" creationid="hsugawa8651" creationdate="20181114T030859Z">
         <seg>&gt; &lt; &gt;= &lt;= == === != !== &lt;:&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>?&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063201Z" creationid="hsugawa8651" creationdate="20181114T063201Z">
+        <seg>?&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5485,10 +5525,27 @@ this means that:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Extended documentation for mathematical symbols &amp; functions is &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref math-ops).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063434Z" creationid="hsugawa8651" creationdate="20181114T063434Z">
+        <seg>数学的シンボルと関数の拡張ドキュメントは&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref math ops)です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Filesystem</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043206Z" creationid="hsugawa8651" creationdate="20181112T043206Z">
         <seg>Filesystem</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Finally, one should define a function
+&lt;x25/&gt;display(d::D, x)&lt;x26/&gt; that queries &lt;x27/&gt;`showable(mime, x)`&lt;x28/&gt; for the &lt;x29/&gt;mime&lt;x30/&gt; types supported by &lt;x31/&gt;D&lt;x32/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063325Z" creationid="hsugawa8651" creationdate="20181114T063325Z">
+        <seg>最後に、関数を定義する必要があります。 &lt;x25/&gt;display(d::D, x)&lt;x26/&gt;'&lt;x31/&gt;'showable(mime、x)`&lt;x31/&gt;D&lt;x32/&gt;D&lt;x32/&gt;でサポートされている&lt;x29/&gt;mime&lt;x30/&gt;の種類については、&lt;x27/&gt;を参照してください。x28</seg>
       </tuv>
     </tu>
     <tu>
@@ -6688,6 +6745,15 @@ type explicitly, a type can be prepended to the comprehension.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154854Z" creationid="hsugawa8651" creationdate="20181109T154854Z">
         <seg>制御を行うには 明示的にタイプを認識することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In order to define a new display backend, one should first create a subtype &lt;x1/&gt;D&lt;x2/&gt; of the abstract
+class &lt;x3/&gt;AbstractDisplay&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063320Z" creationid="hsugawa8651" creationdate="20181114T063320Z">
+        <seg>新しい表示バックエンドを定義するには、まず抽象のサブタイプ&lt;x1/&gt;D&lt;x2/&gt;を作成する必要があります。 クラス&lt;x3/&gt;AbstractDisplay&lt;x4/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7944,6 +8010,15 @@ and pushing them onto a stack of display backends via &lt;x3/&gt;`pushdisplay`&l
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Multiple arguments to &lt;x15/&gt;D[...]&lt;x16/&gt; are converted to tuples; for example, the syntax
+&lt;x17/&gt;D[x,y]&lt;x18/&gt;  is equivalent to &lt;x19/&gt;D[(x,y)]&lt;x20/&gt;, i.e. it refers to the value keyed by the tuple &lt;x21/&gt;(x,y)&lt;x22/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063224Z" creationid="hsugawa8651" creationdate="20181114T063224Z">
+        <seg>&lt;x15/&gt;D[.…]&lt;x16/&gt;への複数の引数は、タプルに変換されます。たとえば、構文は &lt;x17/&gt;D[x,y]&lt;x18/&gt;は、&lt;x19/&gt;D[(x,y)]&lt;x20/&gt;、即ち、タプル&lt;X21/&gt;(x,y)&lt;x22/&gt;によってキー付けされる値を意味する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>N/A</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110219Z" creationid="hsugawa8651" creationdate="20181112T110219Z">
@@ -8751,6 +8826,14 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155802Z" creationid="hsugawa8651" creationdate="20181109T155802Z">
         <seg>同様にインデックス化 &lt;x7/&gt;N&lt;x8/&gt;-次元ブール配列は、実効的には、以下のように、インデックス化と同じである。 &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;sのベクトルであり、その値は&lt;x11/&gt;真&lt;x12/&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Similarly, some subtypes may wish to override &lt;x4/&gt;&lt;x5/&gt;&lt;x6/&gt;(@ref Base.Multimedia.redisplay).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063328Z" creationid="hsugawa8651" creationdate="20181114T063328Z">
+        <seg>同様に、サブタイプによっては、&lt;x4/&gt;&lt;x5/&gt;&lt;x6/&gt;(@ref Base.Multimedia.redisplay)をオーバーライドすることを希望する場合もあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10808,6 +10891,14 @@ will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Vector&lt;x1/&gt; (a.k.a.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063243Z" creationid="hsugawa8651" creationdate="20181114T063243Z">
+        <seg>Vector&lt;x1/&gt; (a.k.a.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Vectors and multidimensional arrays of integers</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155522Z" creationid="hsugawa8651" creationdate="20181109T155522Z">
@@ -11365,6 +11456,14 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043202Z" creationid="hsugawa8651" creationdate="20181112T043202Z">
         <seg>`ENDIAN_BOM`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`ENV`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063251Z" creationid="hsugawa8651" creationdate="20181114T063251Z">
+        <seg>`ENV`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12768,6 +12867,14 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225914Z" creationid="hsugawa8651" creationdate="20181109T225914Z">
         <seg>&lt;x1/&gt;ブロックが「リーク」である場合、すなわち、ローカルスコープを導入しない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if_true : if_false&lt;x2/&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063208Z" creationid="hsugawa8651" creationdate="20181114T063208Z">
+        <seg>if_true : if_false&lt;x2/&gt;)</seg>
       </tuv>
     </tu>
     <tu>
@@ -17088,6 +17195,14 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>separate function arguments or tuple components</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063200Z" creationid="hsugawa8651" creationdate="20181114T063200Z">
+        <seg>個別の関数の引数またはタプル・コンポーネント</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>setindex!(A, I...)&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022344Z" creationid="hsugawa8651" creationdate="20181113T022344Z">
@@ -17248,6 +17363,14 @@ that &lt;x2/&gt;SparseArray&lt;x3/&gt; is mutable (supports &lt;x4/&gt;setindex!
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112237Z" creationid="hsugawa8651" creationdate="20181112T112237Z">
         <seg>size(iter, [dim])&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>statement separator</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063155Z" creationid="hsugawa8651" creationdate="20181114T063155Z">
+        <seg>文区切り文字</seg>
       </tuv>
     </tu>
     <tu>
