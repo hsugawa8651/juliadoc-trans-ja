@@ -2206,6 +2206,16 @@ step, and length (or stop) instead of computing every single element.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As for numeric arrays, choosing a non-stable default algorithm for array types for which the notion
+of a stable sort is meaningless (i.e. when two values comparing equal can not be distinguished)
+may make sense.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064234Z" creationid="hsugawa8651" creationdate="20181114T064234Z">
+        <seg>数値配列については、概念が存在する配列タイプに対して、安定していないデフォルトアルゴリズムを選択してください。 安定したソートは意味がありません(つまり、等しい値を比較する2つの値が区別されない場合) 意味があるかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As in C and most other imperative
 or functional languages, the &lt;x5/&gt;return&lt;x6/&gt; keyword causes a function to return immediately, providing
 an expression whose value is returned:</seg>
@@ -2859,6 +2869,28 @@ Base.Sort.partialsortperm!</seg>
         <seg>Base.Sort.partialsort
 Base.Sort.partialsortperm
 Base.Sort.partialsortperm!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.StackTraces.StackFrame
+Base.StackTraces.StackTrace
+Base.StackTraces.stacktrace</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064238Z" creationid="hsugawa8651" creationdate="20181114T064238Z">
+        <seg>Base.StackTraces.StackFrame
+Base.StackTraces.StackTrace
+Base.StackTraces.stacktrace</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.StackTraces.lookup
+Base.StackTraces.remove_frames!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064252Z" creationid="hsugawa8651" creationdate="20181114T064252Z">
+        <seg>Base.StackTraces.lookup
+Base.StackTraces.remove_frames!</seg>
       </tuv>
     </tu>
     <tu>
@@ -7532,6 +7564,14 @@ as printing) in chained comparisons.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is the default algorithm for non-numeric data.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064113Z" creationid="hsugawa8651" creationdate="20181114T064113Z">
+        <seg>これは、非数値データのデフォルトアルゴリズムです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is worth noting that you do not need to (and should not) define both argument orders
 of this call; defining one is sufficient no matter what order the user supplies the arguments in.</seg>
       </tuv>
@@ -8076,6 +8116,15 @@ copy of the input, and returning that copy.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041853Z" creationid="hsugawa8651" creationdate="20181110T041853Z">
         <seg>Memory layout</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>MergeSort&lt;x1/&gt; is an O(n log n) stable sorting algorithm but is not in-place – it requires a temporary
+array of half the size of the input array – and is typically not quite as fast as &lt;x2/&gt;QuickSort&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064117Z" creationid="hsugawa8651" creationdate="20181114T064117Z">
+        <seg>MergeSort&lt;x1/&gt;は、O(nログn)安定ソートアルゴリズムですが、インプレースではありません。一時的に必要です。 入力アレイのサイズの半分の配列で、通常は&lt;x2/&gt;QuickSort&lt;x3/&gt;のように高速ではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8757,6 +8806,15 @@ appeared in the array to be sorted.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>QuickSort&lt;x1/&gt; is selected as it is faster and indistinguishable
+in this case from a stable sort (unless the array records its mutations in some way).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064123Z" creationid="hsugawa8651" creationdate="20181114T064123Z">
+        <seg>クイックソート&lt;x1/&gt;が選択されると同時に選択され、識別できなくなります。 この場合は、安定なソート(配列が何らかの方法でその突然変異を記録しない限り)である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Quiet startup: no banner, suppress REPL warnings</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224722Z" creationid="hsugawa8651" creationdate="20181109T224722Z">
@@ -9225,6 +9283,14 @@ and so we can mutate the array:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>StackTraces</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064236Z" creationid="hsugawa8651" creationdate="20181114T064236Z">
+        <seg>StackTraces</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Standard Numeric Types</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044707Z" creationid="hsugawa8651" creationdate="20181112T044707Z">
@@ -9654,6 +9720,14 @@ value, with ties rounded towards the nearest value with an even least significan
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The default sorting algorithms are chosen on the basis that they are fast and stable, or &lt;x1/&gt;appear&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064120Z" creationid="hsugawa8651" creationdate="20181114T064120Z">
+        <seg>デフォルトのソートアルゴリズムは、高速で安定しているか、&lt;x1/&gt;が&lt;x2/&gt;であることに基づいて選択されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The default type for an integer literal depends on whether the target system has a 32-bit architecture
 or a 64-bit architecture:</seg>
       </tuv>
@@ -9826,6 +9900,15 @@ dimension size and stride parameters.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following methods and types in &lt;x1/&gt;Base.StackTraces&lt;x2/&gt; are not exported and need to be called e.g.
+as &lt;x3/&gt;StackTraces.lookup(ptr)&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064304Z" creationid="hsugawa8651" creationdate="20181114T064304Z">
+        <seg>&lt;x1/&gt;ベース.StackTraces&lt;x2/&gt;では、次のメソッドとタイプはエクスポートされず、呼び出される必要があります。 &lt;x3/&gt;StackTraces.lookup(ptr)&lt;x4/&gt;となります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following two-word sequences are reserved:
 &lt;x1/&gt;abstract type&lt;x2/&gt;, &lt;x3/&gt;mutable struct&lt;x4/&gt;, &lt;x5/&gt;primitive type&lt;x6/&gt;.</seg>
       </tuv>
@@ -9926,6 +10009,14 @@ on each value in their given list of values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154807Z" creationid="hsugawa8651" creationdate="20181109T154807Z">
         <seg>この形式の意味は、&lt;x1/&gt;F(x,y,...)&lt;x2/&gt;は、変数&lt;x3/&gt;x4&lt;x4/&gt;、&lt;x5/&gt;y&lt;x6/&gt;の変数を用いて評価されることである。 指定された値リストの各値です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The mechanism by which Julia picks default sorting algorithms is implemented via the &lt;x1/&gt;Base.Sort.defalg&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064226Z" creationid="hsugawa8651" creationdate="20181114T064226Z">
+        <seg>Juliaがデフォルトのソートアルゴリズムを選択するメカニズムは、&lt;x1/&gt;Base.Sort.デフォルグ&lt;x2/&gt;を介して実装されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10122,6 +10213,16 @@ to conditional execution of longer blocks of code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230045Z" creationid="hsugawa8651" creationdate="20181109T230045Z">
         <seg>いわゆる「三元演算子」&lt;x1/&gt;?&lt;x2/&gt;は、&lt;x4/&gt;-&lt;x5/&gt;elseif&lt;x6/&gt;-&lt;x7/&gt;else&lt;x8/&gt;の場合、&lt;x4/&gt;と密接に関係している。 しかし、単一の表現値間の条件付き選択が必要とされる場合に使用されます。 より長いブロックを条件付きで実行することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The stability
+property comes at a non-negligible cost, so if you don't need it, you may want to explicitly specify
+your preferred algorithm, e.g. &lt;x2/&gt;sort!(v, alg=QuickSort)&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064159Z" creationid="hsugawa8651" creationdate="20181114T064159Z">
+        <seg>安定性 プロパティーは無視できないコストで発生するため、必要がない場合は、明示的に指定する必要があります。 たとえば、&lt;x2/&gt;ソート!(v,alg=QuickSort)&lt;x3/&gt;のような優先アルゴリズムを指定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12261,6 +12362,14 @@ and all further calculations will take these changes in account.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`sort.jl`&lt;x1/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064222Z" creationid="hsugawa8651" creationdate="20181114T064222Z">
+        <seg>`sort.jl`&lt;x1/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`stderr`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043141Z" creationid="hsugawa8651" creationdate="20181112T043141Z">
@@ -12753,6 +12862,16 @@ code_native(triple,(m128,))</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131658Z" creationid="hsugawa8651" creationdate="20181113T131658Z">
         <seg>copyto!(dest::DestType, bc::Broadcasted{Nothing})</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>defalg(v::AbstractArray) = MergeSort
+defalg(v::AbstractArray{&lt;:Number}) = QuickSort</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064228Z" creationid="hsugawa8651" creationdate="20181114T064228Z">
+        <seg>defalg(v::AbstractArray) = MergeSort
+defalg(v::AbstractArray{&lt;:Number}) = QuickSort</seg>
       </tuv>
     </tu>
     <tu>
