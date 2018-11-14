@@ -1419,6 +1419,15 @@ to 1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x2/&gt;QuickSort&lt;x3/&gt; is the default algorithm for numeric values, including
+integers and floats.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064035Z" creationid="hsugawa8651" creationdate="20181114T064035Z">
+        <seg>&lt;x2/&gt;QuickSort&lt;x3/&gt;は、次のような数値のデフォルト・アルゴリズムです。 整数と浮動小数点を指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x20/&gt;a + b + c&lt;x21/&gt; is parsed as &lt;x22/&gt;+(a, b, c)&lt;x23/&gt; not &lt;x24/&gt;+(+(a, b),
 c)&lt;x25/&gt;.</seg>
       </tuv>
@@ -1906,9 +1915,8 @@ flexible, user-extensible &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-
         <seg>All the sorting and order related functions rely on a "less than" relation defining a total order
 on the values to be manipulated.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T045027Z" creationid="hsugawa8651" creationdate="20181112T045027Z">
-        <seg>All the sorting and order related functions rely on a "less than" relation defining a total order
-on the values to be manipulated.</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063939Z" creationid="hsugawa8651" creationdate="20181112T045027Z">
+        <seg>ソートと順序の関連関数はすべて、合計オーダーを定義する「より少ない」リレーションに依存しています。 操作する値を指定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2107,6 +2115,14 @@ defined in one of two ways: either it most efficiently accesses its elements usi
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154543Z" creationid="hsugawa8651" creationdate="20181109T154543Z">
         <seg>配列は、次の関数を使用して構成したり、連結することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Arrays can easily be sorted according to an arbitrary transformation of their values:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063824Z" creationid="hsugawa8651" creationdate="20181114T063824Z">
+        <seg>配列は、値の任意の変換に従って簡単に並べ替えることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2831,6 +2847,18 @@ Base.union!</seg>
 Base.BitSet
 Base.union
 Base.union!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.Sort.partialsort
+Base.Sort.partialsortperm
+Base.Sort.partialsortperm!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063957Z" creationid="hsugawa8651" creationdate="20181114T063957Z">
+        <seg>Base.Sort.partialsort
+Base.Sort.partialsortperm
+Base.Sort.partialsortperm!</seg>
       </tuv>
     </tu>
     <tu>
@@ -3729,6 +3757,22 @@ Base.isstructtype
 Base.nameof(::DataType)
 Base.fieldnames
 Base.fieldname</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.issorted
+Base.Sort.searchsorted
+Base.Sort.searchsortedfirst
+Base.Sort.searchsortedlast
+Base.Sort.partialsort!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063955Z" creationid="hsugawa8651" creationdate="20181114T063955Z">
+        <seg>Base.issorted
+Base.Sort.searchsorted
+Base.Sort.searchsortedfirst
+Base.Sort.searchsortedlast
+Base.Sort.partialsort!</seg>
       </tuv>
     </tu>
     <tu>
@@ -7233,6 +7277,14 @@ anything other than an &lt;x5/&gt;Int&lt;x6/&gt; will throw a &lt;x7/&gt;`Method
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>InsertionSort&lt;x1/&gt; is an O(n^2) stable sorting algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064050Z" creationid="hsugawa8651" creationdate="20181114T064050Z">
+        <seg>InsertionSort&lt;x1/&gt;は、O(n^2)安定ソートアルゴリズムである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Instead
 of mutating objects as they are iterated over, Julia iterators may keep track
 of the iteration state externally from the object.</seg>
@@ -7387,6 +7439,15 @@ in most languages taking three operands:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112857Z" creationid="hsugawa8651" creationdate="20181112T112857Z">
         <seg>また、&lt;x1/&gt;逆順&lt;x2/&gt;でのコレクションでの反復を可能にすることも、しばしば有用である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is efficient for very small &lt;x2/&gt;n&lt;x3/&gt;, and
+is used internally by &lt;x4/&gt;QuickSort&lt;x5/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064045Z" creationid="hsugawa8651" creationdate="20181114T064045Z">
+        <seg>非常に小さい&lt;x2/&gt;n&lt;x3/&gt;に対しては効率的である。 は、&lt;x4/&gt;QuickSort&lt;x5/&gt;によって内部的に使用されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8601,6 +8662,15 @@ MIME types) of user-defined types.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>PartialQuickSort(k)&lt;x1/&gt; is similar to &lt;x2/&gt;QuickSort&lt;x3/&gt;, but the output array is only sorted up to index
+&lt;x4/&gt;k&lt;x5/&gt; if &lt;x6/&gt;k&lt;x7/&gt; is an integer, or in the range of &lt;x8/&gt;k&lt;x9/&gt; if &lt;x10/&gt;k&lt;x11/&gt; is an &lt;x12/&gt;OrdinalRange&lt;x13/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064103Z" creationid="hsugawa8651" creationdate="20181114T064103Z">
+        <seg>PartialQuickSort(k)&lt;x1/&gt;は&lt;x2/&gt;QuickSort&lt;x3/&gt;と類似していますが、出力配列はインデックスにのみソートされています。 &lt;x4/&gt;k&lt;x5/&gt;は、&lt;x6/&gt;k&lt;x7/&gt;が整数である場合、&lt;x10/&gt;k&lt;x11/&gt;が&lt;x12/&gt;k&lt;x11/&gt;の場合、&lt;x12/&gt;k&lt;x11/&gt;の範囲である。OrdinalRange。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Partially implemented by:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041654Z" creationid="hsugawa8651" creationdate="20181112T041654Z">
@@ -8673,6 +8743,16 @@ for more efficient linear algebra routines.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083503Z" creationid="hsugawa8651" creationdate="20181113T083503Z">
         <seg>配列の要素タイプがBLASと互換性がある場合、strider配列はBLASとLAPACKルーチンを利用することができます。 より効率的な線形代数のルーチンです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>QuickSort&lt;x1/&gt; is an O(n log n) sorting algorithm which is in-place, very fast, but not stable –
+i.e. elements which are considered equal will not remain in the same order in which they originally
+appeared in the array to be sorted.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064040Z" creationid="hsugawa8651" creationdate="20181114T064040Z">
+        <seg>QuickSort&lt;x1/&gt;はO(nログn)ソートアルゴリズムで、インプレースではなく、非常に高速ですが、安定しています。 すなわち、等しいと考えられる要素は、本来は同じ順序では存在しない 配列に表示され、ソートされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9098,6 +9178,14 @@ in order, returning the value of the last subexpression as its value.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Sorting Algorithms</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063958Z" creationid="hsugawa8651" creationdate="20181114T063958Z">
+        <seg>Sorting Algorithms</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>SparseVecStyle(::Val{0}) = SparseVecStyle()
 SparseVecStyle(::Val{1}) = SparseVecStyle()
 SparseVecStyle(::Val{2}) = SparseMatStyle()
@@ -9336,6 +9424,15 @@ arbitrary-precision floating point and integer arithmetic, respectively.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T231125Z" creationid="hsugawa8651" creationdate="20181109T231125Z">
         <seg>&lt;x2/&gt;ループのための&lt;x1/&gt;は、共通の繰り返し評価イディオムを書くのを容易にする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;isless&lt;x2/&gt; function is invoked by default, but the relation
+can be specified via the &lt;x3/&gt;lt&lt;x4/&gt; keyword.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063935Z" creationid="hsugawa8651" creationdate="20181114T063935Z">
+        <seg>&lt;x1/&gt;isless&lt;x2/&gt;関数はデフォルトで呼び出されますが、関係は次のようになります。 は&lt;x3/&gt;lt&lt;x4/&gt;キーワードで指定することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10192,6 +10289,14 @@ collection.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112544Z" creationid="hsugawa8651" creationdate="20181112T112527Z">
         <seg>その他にも、Juliaにこの問題に関する情報を提供する方法がいくつかある。 のリストを参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are currently four sorting algorithms available in base Julia:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064002Z" creationid="hsugawa8651" creationdate="20181114T064002Z">
+        <seg>現在、基本的なJuliaには4つのソートアルゴリズムが用意されている。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11714,6 +11819,14 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`InsertionSort`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064003Z" creationid="hsugawa8651" creationdate="20181114T064003Z">
+        <seg>`InsertionSort`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`Int128`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110206Z" creationid="hsugawa8651" creationdate="20181112T110206Z">
@@ -11762,6 +11875,14 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`MergeSort`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064007Z" creationid="hsugawa8651" creationdate="20181114T064007Z">
+        <seg>`MergeSort`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`NamedTuple`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041616Z" creationid="hsugawa8651" creationdate="20181112T041616Z">
@@ -11774,6 +11895,22 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041615Z" creationid="hsugawa8651" creationdate="20181112T041615Z">
         <seg>`Pair`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`PartialQuickSort(k)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064006Z" creationid="hsugawa8651" creationdate="20181114T064006Z">
+        <seg>`PartialQuickSort(k)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`QuickSort`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064004Z" creationid="hsugawa8651" creationdate="20181114T064004Z">
+        <seg>`QuickSort`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -17989,6 +18126,34 @@ equivalent to nested dot calls &lt;x2/&gt;(+).(x, (*).(3, (^).(x, 2)))&lt;x3/&gt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132319Z" creationid="hsugawa8651" creationdate="20181113T132319Z">
         <seg>x &lt;&lt; y&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x = rand(1:500, 100)
+k = 50
+k2 = 50:100
+s = sort(x; alg=QuickSort)
+ps = sort(x; alg=PartialQuickSort(k))
+qs = sort(x; alg=PartialQuickSort(k2))
+map(issorted, (s, ps, qs))             &lt;x1/&gt; =&gt; (true, false, false)
+map(x-&gt;issorted(x[1:k]), (s, ps, qs))  &lt;x2/&gt; =&gt; (true, true, false)
+map(x-&gt;issorted(x[k2]), (s, ps, qs))   &lt;x3/&gt; =&gt; (true, false, true)
+s[1:k] == ps[1:k]                      &lt;x4/&gt; =&gt; true
+s[k2] == qs[k2]                        &lt;x5/&gt; =&gt; true</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064105Z" creationid="hsugawa8651" creationdate="20181114T064105Z">
+        <seg>x = rand(1:500, 100)
+k = 50
+k2 = 50:100
+s = sort(x; alg=QuickSort)
+ps = sort(x; alg=PartialQuickSort(k))
+qs = sort(x; alg=PartialQuickSort(k2))
+map(issorted, (s, ps, qs))             &lt;x1/&gt; =&gt; (true, false, false)
+map(x-&gt;issorted(x[1:k]), (s, ps, qs))  &lt;x2/&gt; =&gt; (true, true, false)
+map(x-&gt;issorted(x[k2]), (s, ps, qs))   &lt;x3/&gt; =&gt; (true, false, true)
+s[1:k] == ps[1:k]                      &lt;x4/&gt; =&gt; true
+s[k2] == qs[k2]                        &lt;x5/&gt; =&gt; true</seg>
       </tuv>
     </tu>
     <tu>
