@@ -171,10 +171,50 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>$&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032304Z" creationid="hsugawa8651" creationdate="20181114T032304Z">
+        <seg>$&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>%&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032308Z" creationid="hsugawa8651" creationdate="20181114T032308Z">
+        <seg>%&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;&amp;&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032324Z" creationid="hsugawa8651" creationdate="20181114T032324Z">
+        <seg>&amp;&amp;&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&amp;&amp;&lt;x1/&gt; followed by &lt;x2/&gt;\|\|&lt;x3/&gt; followed by &lt;x4/&gt;?&lt;x5/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030904Z" creationid="hsugawa8651" creationdate="20181114T030904Z">
         <seg>&amp;&amp;&lt;x1/&gt; followed by &lt;x2/&gt;\|\|&lt;x3/&gt; followed by &lt;x4/&gt;?&lt;x5/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032315Z" creationid="hsugawa8651" creationdate="20181114T032315Z">
+        <seg>&amp;&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>()&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032338Z" creationid="hsugawa8651" creationdate="20181114T032338Z">
+        <seg>()&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -446,6 +486,14 @@ julia&gt; range(minmax(10, 2))
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030836Z" creationid="hsugawa8651" creationdate="20181114T030836Z">
         <seg>* / % &amp; \ ÷&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032336Z" creationid="hsugawa8651" creationdate="20181114T032336Z">
+        <seg>*&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1313,6 +1361,14 @@ indirectly.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030912Z" creationid="hsugawa8651" creationdate="20181114T030912Z">
         <seg>= += -= *= /= //= \= ^= ÷= %= \|= &amp;= ⊻= &lt;&lt;= &gt;&gt;= &gt;&gt;&gt;=&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=&lt;x1/&gt;&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032255Z" creationid="hsugawa8651" creationdate="20181114T032255Z">
+        <seg>=&lt;x1/&gt;&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -11089,6 +11145,30 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>\|&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032327Z" creationid="hsugawa8651" creationdate="20181114T032327Z">
+        <seg>\|&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>\|\|&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032330Z" creationid="hsugawa8651" creationdate="20181114T032330Z">
+        <seg>\|\|&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>^&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032311Z" creationid="hsugawa8651" creationdate="20181114T032311Z">
+        <seg>^&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`!=`&lt;x1/&gt;, &lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref !=)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132703Z" creationid="hsugawa8651" creationdate="20181113T132703Z">
@@ -11951,6 +12031,14 @@ as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>begin multi-line comment (these are nestable)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032254Z" creationid="hsugawa8651" creationdate="20181114T032254Z">
+        <seg>複数行コメントを開始します(これらはnestableです)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>begin single line comment</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032249Z" creationid="hsugawa8651" creationdate="20181114T032249Z">
@@ -12193,6 +12281,14 @@ using Bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>end multi-line comment</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032303Z" creationid="hsugawa8651" creationdate="20181114T032303Z">
+        <seg>複数行コメント</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>equivalent to &lt;x1/&gt;--code-coverage=user&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224802Z" creationid="hsugawa8651" creationdate="20181109T224802Z">
@@ -12221,6 +12317,14 @@ using Bar</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132124Z" creationid="hsugawa8651" creationdate="20181113T132124Z">
         <seg>&lt;x1/&gt;y/x&lt;x2/&gt;に相当する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>exponent operator</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032314Z" creationid="hsugawa8651" creationdate="20181114T032314Z">
+        <seg>指数演算子</seg>
       </tuv>
     </tu>
     <tu>
@@ -16880,6 +16984,14 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>remainder operator</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032310Z" creationid="hsugawa8651" creationdate="20181114T032310Z">
+        <seg>剰余演算子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>round &lt;x1/&gt;x&lt;x2/&gt; to the nearest integer</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031119Z" creationid="hsugawa8651" creationdate="20181114T031119Z">
@@ -17072,6 +17184,14 @@ that &lt;x2/&gt;SparseArray&lt;x3/&gt; is mutable (supports &lt;x4/&gt;setindex!
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083428Z" creationid="hsugawa8651" creationdate="20181113T083428Z">
         <seg>strides(A)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>string and expression interpolation</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032307Z" creationid="hsugawa8651" creationdate="20181114T032307Z">
+        <seg>文字列と式の補間</seg>
       </tuv>
     </tu>
     <tu>
@@ -17436,6 +17556,14 @@ equivalent to nested dot calls &lt;x2/&gt;(+).(x, (*).(3, (^).(x, 2)))&lt;x3/&gt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030601Z" creationid="hsugawa8651" creationdate="20181114T030601Z">
         <seg>x&lt;x1/&gt;は数値ではありません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>⊻&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032333Z" creationid="hsugawa8651" creationdate="20181114T032333Z">
+        <seg>⊻&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
