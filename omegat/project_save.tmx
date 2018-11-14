@@ -339,6 +339,14 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id man-multi-dim-arrays)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064312Z" creationid="hsugawa8651" creationdate="20181114T064312Z">
+        <seg>(@id man-multi-dim-arrays)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id math-ops)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043422Z" creationid="hsugawa8651" creationdate="20181112T043422Z">
@@ -1154,6 +1162,14 @@ The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>: &lt;x1/&gt;iid&lt;x2/&gt;, independently and identically distributed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064449Z" creationid="hsugawa8651" creationdate="20181114T064449Z">
+        <seg>&lt;x1/&gt;iid&lt;x2/&gt;、独立して、同一に分布している。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>:( )&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063553Z" creationid="hsugawa8651" creationdate="20181114T063553Z">
@@ -1615,6 +1631,14 @@ as that MIME type; this is automatic if one calls &lt;x21/&gt;show&lt;x22/&gt; o
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043316Z" creationid="hsugawa8651" creationdate="20181112T043316Z">
         <seg>&lt;x19/&gt;x&lt;x20/&gt;が表示されない場合は、&lt;x17/&gt;MethodError&lt;x18/&gt;をスローする必要があります。 このMIMEタイプは、&lt;X21/&gt;show&lt;x22/&gt;または&lt;x23/&gt;repr&lt;x24/&gt;を呼び出すと自動的に表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A = [ F(x,y,...) for x=rx, y=ry, ... ]</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064529Z" creationid="hsugawa8651" creationdate="20181114T064529Z">
+        <seg>A = [ F(x,y,...) for x=rx, y=ry, ... ]</seg>
       </tuv>
     </tu>
     <tu>
@@ -5037,6 +5061,166 @@ Base.setproperty!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Core.AbstractChar
+Core.Char
+Base.codepoint
+Base.length(::AbstractString)
+Base.sizeof(::AbstractString)
+Base.:*(::Union{AbstractChar, AbstractString}, ::Union{AbstractChar, AbstractString}...)
+Base.:^(::AbstractString, ::Integer)
+Base.string
+Base.repeat(::AbstractString, ::Integer)
+Base.repeat(::AbstractChar, ::Integer)
+Base.repr(::Any)
+Core.String(::AbstractString)
+Base.SubString
+Base.transcode
+Base.unsafe_string
+Base.ncodeunits(::AbstractString)
+Base.codeunit
+Base.codeunits
+Base.ascii
+Base.@r_str
+Base.SubstitutionString
+Base.@s_str
+Base.@raw_str
+Base.Docs.@html_str
+Base.Docs.@text_str
+Base.isvalid(::Any)
+Base.isvalid(::Any, ::Any)
+Base.isvalid(::AbstractString, ::Integer)
+Base.match
+Base.eachmatch
+Base.isless(::AbstractString, ::AbstractString)
+Base.:(==)(::AbstractString, ::AbstractString)
+Base.cmp(::AbstractString, ::AbstractString)
+Base.lpad
+Base.rpad
+Base.findfirst(::AbstractString, ::AbstractString)
+Base.findnext(::AbstractString, ::AbstractString, ::Integer)
+Base.findlast(::AbstractString, ::AbstractString)
+Base.findprev(::AbstractString, ::AbstractString, ::Integer)
+Base.occursin
+Base.reverse(::Union{String,SubString{String}})
+Base.replace(s::AbstractString, ::Pair)
+Base.split
+Base.rsplit
+Base.strip
+Base.lstrip
+Base.rstrip
+Base.startswith
+Base.endswith
+Base.first(::AbstractString, ::Integer)
+Base.last(::AbstractString, ::Integer)
+Base.uppercase
+Base.lowercase
+Base.titlecase
+Base.uppercasefirst
+Base.lowercasefirst
+Base.join
+Base.chop
+Base.chomp
+Base.thisind
+Base.nextind
+Base.prevind
+Base.textwidth
+Base.isascii
+Base.iscntrl
+Base.isdigit
+Base.isletter
+Base.islowercase
+Base.isnumeric
+Base.isprint
+Base.ispunct
+Base.isspace
+Base.isuppercase
+Base.isxdigit
+Core.Symbol
+Base.escape_string
+Base.unescape_string</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064309Z" creationid="hsugawa8651" creationdate="20181114T064309Z">
+        <seg>Core.AbstractChar
+Core.Char
+Base.codepoint
+Base.length(::AbstractString)
+Base.sizeof(::AbstractString)
+Base.:*(::Union{AbstractChar, AbstractString}, ::Union{AbstractChar, AbstractString}...)
+Base.:^(::AbstractString, ::Integer)
+Base.string
+Base.repeat(::AbstractString, ::Integer)
+Base.repeat(::AbstractChar, ::Integer)
+Base.repr(::Any)
+Core.String(::AbstractString)
+Base.SubString
+Base.transcode
+Base.unsafe_string
+Base.ncodeunits(::AbstractString)
+Base.codeunit
+Base.codeunits
+Base.ascii
+Base.@r_str
+Base.SubstitutionString
+Base.@s_str
+Base.@raw_str
+Base.Docs.@html_str
+Base.Docs.@text_str
+Base.isvalid(::Any)
+Base.isvalid(::Any, ::Any)
+Base.isvalid(::AbstractString, ::Integer)
+Base.match
+Base.eachmatch
+Base.isless(::AbstractString, ::AbstractString)
+Base.:(==)(::AbstractString, ::AbstractString)
+Base.cmp(::AbstractString, ::AbstractString)
+Base.lpad
+Base.rpad
+Base.findfirst(::AbstractString, ::AbstractString)
+Base.findnext(::AbstractString, ::AbstractString, ::Integer)
+Base.findlast(::AbstractString, ::AbstractString)
+Base.findprev(::AbstractString, ::AbstractString, ::Integer)
+Base.occursin
+Base.reverse(::Union{String,SubString{String}})
+Base.replace(s::AbstractString, ::Pair)
+Base.split
+Base.rsplit
+Base.strip
+Base.lstrip
+Base.rstrip
+Base.startswith
+Base.endswith
+Base.first(::AbstractString, ::Integer)
+Base.last(::AbstractString, ::Integer)
+Base.uppercase
+Base.lowercase
+Base.titlecase
+Base.uppercasefirst
+Base.lowercasefirst
+Base.join
+Base.chop
+Base.chomp
+Base.thisind
+Base.nextind
+Base.prevind
+Base.textwidth
+Base.isascii
+Base.iscntrl
+Base.isdigit
+Base.isletter
+Base.islowercase
+Base.isnumeric
+Base.isprint
+Base.ispunct
+Base.isspace
+Base.isuppercase
+Base.isxdigit
+Core.Symbol
+Base.escape_string
+Base.unescape_string</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Core.Any
 Core.Union
 Union{}
@@ -6227,10 +6411,8 @@ and then &lt;x5/&gt;2&lt;x6/&gt; is added to that result.)</seg>
         <seg>For most computational purposes, arrays should contain
 objects of a more specific type, such as &lt;x3/&gt;`Float64`&lt;x4/&gt; or &lt;x5/&gt;`Int32`&lt;x6/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154148Z" creationid="hsugawa8651" creationdate="20181109T154148Z">
-        <seg>For most computational purposes, arrays should contain
-objects of a more specific type, such as &lt;x3/&gt;`Float64`&lt;x4/&gt; or &lt;x5/&gt;`Int32`&lt;x6/&gt;.For most computational purposes, arrays should contain
-objects of a more specific type, such as &lt;x3/&gt;`Float64`&lt;x4/&gt; or &lt;x5/&gt;`Int32`&lt;x6/&gt;.</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064325Z" creationid="hsugawa8651" creationdate="20181109T154148Z">
+        <seg>ほとんどの計算目的では、アレイは &lt;x3/&gt;`Float64'&lt;x4/&gt;または&lt;x5/&gt;`Int32/&gt;のようなより特定のタイプのオブジェクト。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11792,6 +11974,14 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`Array{T}(undef, dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064354Z" creationid="hsugawa8651" creationdate="20181114T064354Z">
+        <seg>`Array{T}(undef, dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`BitArray`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041651Z" creationid="hsugawa8651" creationdate="20181112T041651Z">
@@ -11976,6 +12166,14 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`Matrix{T}(I, m, n)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064433Z" creationid="hsugawa8651" creationdate="20181114T064433Z">
+        <seg>`Matrix{T}(I, m, n)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`MergeSort`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064007Z" creationid="hsugawa8651" creationdate="20181114T064007Z">
@@ -12113,10 +12311,34 @@ thus may be garbage collected even when referenced in a hash table.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`cat(A...; dims=k)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064509Z" creationid="hsugawa8651" creationdate="20181114T064509Z">
+        <seg>`cat(A...; dims=k)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`ceil(x)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031212Z" creationid="hsugawa8651" creationdate="20181114T031212Z">
         <seg>`ceil(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`copy(A)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064414Z" creationid="hsugawa8651" creationdate="20181114T064414Z">
+        <seg>`copy(A)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`deepcopy(A)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064418Z" creationid="hsugawa8651" creationdate="20181114T064418Z">
+        <seg>`deepcopy(A)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12133,6 +12355,30 @@ thus may be garbage collected even when referenced in a hash table.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153302Z" creationid="hsugawa8651" creationdate="20181109T153302Z">
         <seg>`eachindex(A)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`falses(dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064409Z" creationid="hsugawa8651" creationdate="20181114T064409Z">
+        <seg>`falses(dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`fill!(A, x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064438Z" creationid="hsugawa8651" creationdate="20181114T064438Z">
+        <seg>`fill!(A, x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`fill(x, dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064440Z" creationid="hsugawa8651" creationdate="20181114T064440Z">
+        <seg>`fill(x, dims...)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12173,6 +12419,14 @@ thus may be garbage collected even when referenced in a hash table.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113057Z" creationid="hsugawa8651" creationdate="20181112T113057Z">
         <seg>`getindex`&lt;x1/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`hcat(A...)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064514Z" creationid="hsugawa8651" creationdate="20181114T064514Z">
+        <seg>`hcat(A...)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12305,10 +12559,58 @@ thus may be garbage collected even when referenced in a hash table.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`ones(T, dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064400Z" creationid="hsugawa8651" creationdate="20181114T064400Z">
+        <seg>`ones(T, dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`push!`&lt;x1/&gt;ing each element into a &lt;x2/&gt;Vector{Any}&lt;x3/&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112721Z" creationid="hsugawa8651" creationdate="20181112T112721Z">
         <seg>「プッシュ!」&lt;x1/&gt;各要素を&lt;x2/&gt;ベクトル{Any}&lt;x3/&gt;に押し込みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`rand(T, dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064427Z" creationid="hsugawa8651" creationdate="20181114T064427Z">
+        <seg>`rand(T, dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`randn(T, dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064430Z" creationid="hsugawa8651" creationdate="20181114T064430Z">
+        <seg>`randn(T, dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`range(start, stop=stop, length=n)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064435Z" creationid="hsugawa8651" creationdate="20181114T064435Z">
+        <seg>`range(start, stop=stop, length=n)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`reinterpret(T, A)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064424Z" creationid="hsugawa8651" creationdate="20181114T064424Z">
+        <seg>`reinterpret(T, A)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`reshape(A, dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064412Z" creationid="hsugawa8651" creationdate="20181114T064412Z">
+        <seg>`reshape(A, dims...)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12342,6 +12644,14 @@ and all further calculations will take these changes in account.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111713Z" creationid="hsugawa8651" creationdate="20181112T111713Z">
         <seg>'setprecision'&lt;x1/&gt;および&lt;x2/&gt;'セロウンディング'&lt;x3/&gt; さらに計算を行うと、これらの変更は考慮されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`similar(A, T, dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064421Z" creationid="hsugawa8651" creationdate="20181114T064421Z">
+        <seg>`similar(A, T, dims...)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12394,10 +12704,42 @@ and all further calculations will take these changes in account.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`stride(A,k)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064339Z" creationid="hsugawa8651" creationdate="20181114T064339Z">
+        <seg>`stride(A,k)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`strides(A)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064343Z" creationid="hsugawa8651" creationdate="20181114T064343Z">
+        <seg>`strides(A)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`trues(dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064403Z" creationid="hsugawa8651" creationdate="20181114T064403Z">
+        <seg>`trues(dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`trunc(T, x)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031229Z" creationid="hsugawa8651" creationdate="20181114T031229Z">
         <seg>`trunc(T, x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`vcat(A...)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064511Z" creationid="hsugawa8651" creationdate="20181114T064511Z">
+        <seg>`vcat(A...)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12427,6 +12769,14 @@ and all further calculations will take these changes in account.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`zeros(T, dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064357Z" creationid="hsugawa8651" creationdate="20181114T064357Z">
+        <seg>`zeros(T, dims...)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>a += b&lt;x4/&gt;) are parsed
 as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused &lt;x9/&gt;in-place&lt;x10/&gt; assignment operation
 (see the &lt;x11/&gt;&lt;x12/&gt;&lt;x13/&gt;(@ref man-vectorized)).</seg>
@@ -12447,7 +12797,7 @@ as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused 
       <tuv lang="EN-US">
         <seg>a &lt;x1/&gt;`BitArray`&lt;x2/&gt; with all values &lt;x3/&gt;true&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154402Z" creationid="hsugawa8651" creationdate="20181109T154402Z">
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064408Z" creationid="hsugawa8651" creationdate="20181109T154402Z">
         <seg>&lt;x1/&gt;'BitArray'&lt;x2/&gt;はすべての値が&lt;x3/&gt;真&lt;x4/&gt;である</seg>
       </tuv>
     </tu>
@@ -12562,6 +12912,14 @@ as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063536Z" creationid="hsugawa8651" creationdate="20181114T063536Z">
         <seg>オブジェクト/モジュールの名前付きフィールド(呼び出し&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref Base.getproperty)または&lt;x4/&gt;&lt;x6/&gt;&lt;x6/&gt;&lt;x6/&gt;&lt;x6/&gt;(@ref Base.setproperty!))は、要素関数呼び出し(&lt;x7/&gt;ブロードキャスト"&lt;x8/&gt;)を呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>an &lt;x1/&gt;Array&lt;x2/&gt; filled with the value &lt;x3/&gt;x&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064443Z" creationid="hsugawa8651" creationdate="20181114T064443Z">
+        <seg>&lt;x3/&gt;x&lt;x4/&gt;の値で満たされた&lt;x1/&gt;配列&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12836,8 +13194,8 @@ code_native(triple,(m128,))</seg>
       <tuv lang="EN-US">
         <seg>copy &lt;x1/&gt;A&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154430Z" creationid="hsugawa8651" creationdate="20181109T154430Z">
-        <seg>コピー&lt;x1/&gt;A&lt;x2/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064416Z" creationid="hsugawa8651" creationdate="20181109T154430Z">
+        <seg>copy &lt;x1/&gt;A&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
