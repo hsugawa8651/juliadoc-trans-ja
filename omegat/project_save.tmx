@@ -466,10 +466,130 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>--banner={yes\|no\|auto}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031804Z" creationid="hsugawa8651" creationdate="20181114T031804Z">
+        <seg>--banner={yes\|no\|auto}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>--check-bounds={yes\|no}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031833Z" creationid="hsugawa8651" creationdate="20181114T031833Z">
+        <seg>--check-bounds={yes\|no}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>--code-coverage&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031909Z" creationid="hsugawa8651" creationdate="20181114T031909Z">
+        <seg>--code-coverage&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>--code-coverage={none\|user\|all}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031849Z" creationid="hsugawa8651" creationdate="20181114T031849Z">
+        <seg>--code-coverage={none\|user\|all}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>--color={yes\|no\|auto}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031808Z" creationid="hsugawa8651" creationdate="20181114T031808Z">
+        <seg>--color={yes\|no\|auto}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>--compiled-modules={yes\|no}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031709Z" creationid="hsugawa8651" creationdate="20181114T031709Z">
+        <seg>--compiled-modules={yes\|no}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>--depwarn={yes\|no\|error}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031816Z" creationid="hsugawa8651" creationdate="20181114T031816Z">
+        <seg>--depwarn={yes\|no\|error}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>--handle-signals={yes\|no}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031655Z" creationid="hsugawa8651" creationdate="20181114T031655Z">
+        <seg>--handle-signals={yes\|no}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>--history-file={yes\|no}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031812Z" creationid="hsugawa8651" creationdate="20181114T031812Z">
+        <seg>--history-file={yes\|no}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>--inline={yes\|no}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031830Z" creationid="hsugawa8651" creationdate="20181114T031830Z">
+        <seg>--inline={yes\|no}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>--machine-file &lt;x1/&gt;&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031749Z" creationid="hsugawa8651" creationdate="20181114T031749Z">
+        <seg>--machine-file &lt;x1/&gt;&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>--project[={&lt;x1/&gt;\|@.}]&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031505Z" creationid="hsugawa8651" creationdate="20181114T031505Z">
         <seg>--project[={&lt;x1/&gt;\|@.}]&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>--startup-file={yes\|no}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031700Z" creationid="hsugawa8651" creationdate="20181114T031700Z">
+        <seg>--startup-file={yes\|no}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>--sysimage-native-code={yes\|no}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031705Z" creationid="hsugawa8651" creationdate="20181114T031705Z">
+        <seg>--sysimage-native-code={yes\|no}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>--track-allocation={none\|user\|all}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031905Z" creationid="hsugawa8651" creationdate="20181114T031905Z">
+        <seg>--track-allocation={none\|user\|all}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>--warn-overwrite={yes\|no}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031819Z" creationid="hsugawa8651" creationdate="20181114T031819Z">
+        <seg>--warn-overwrite={yes\|no}&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -510,6 +630,22 @@ julia&gt; range(minmax(10, 2))
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110121Z" creationid="hsugawa8651" creationdate="20181112T110121Z">
         <seg>-2^7</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-C&lt;x1/&gt;, &lt;x2/&gt;--cpu-target &lt;x3/&gt;&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031822Z" creationid="hsugawa8651" creationdate="20181114T031822Z">
+        <seg>-C&lt;x1/&gt;, &lt;x2/&gt;--cpu-target &lt;x3/&gt;&lt;x4/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-E&lt;x1/&gt;, &lt;x2/&gt;--print &lt;x3/&gt;&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031738Z" creationid="hsugawa8651" creationdate="20181114T031738Z">
+        <seg>-E&lt;x1/&gt;, &lt;x2/&gt;--print &lt;x3/&gt;&lt;x4/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -562,10 +698,66 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>-L&lt;x1/&gt;, &lt;x2/&gt;--load &lt;x3/&gt;&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031733Z" creationid="hsugawa8651" creationdate="20181114T031733Z">
+        <seg>-L&lt;x1/&gt;, &lt;x2/&gt;--load &lt;x3/&gt;&lt;x4/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-O&lt;x1/&gt;, &lt;x2/&gt;--optimize={0,1,2,3}&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031825Z" creationid="hsugawa8651" creationdate="20181114T031825Z">
+        <seg>-O&lt;x1/&gt;, &lt;x2/&gt;--optimize={0,1,2,3}&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-e&lt;x1/&gt;, &lt;x2/&gt;--eval &lt;x3/&gt;&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031712Z" creationid="hsugawa8651" creationdate="20181114T031712Z">
+        <seg>-e&lt;x1/&gt;, &lt;x2/&gt;--eval &lt;x3/&gt;&lt;x4/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-g&lt;x1/&gt;, &lt;x2/&gt;-g &lt;x3/&gt;&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031827Z" creationid="hsugawa8651" creationdate="20181114T031827Z">
+        <seg>-g&lt;x1/&gt;, &lt;x2/&gt;-g &lt;x3/&gt;&lt;x4/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>-h&lt;x1/&gt;, &lt;x2/&gt;--help&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031510Z" creationid="hsugawa8651" creationdate="20181114T031510Z">
         <seg>-h&lt;x1/&gt;, &lt;x2/&gt;--help&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-i&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031753Z" creationid="hsugawa8651" creationdate="20181114T031753Z">
+        <seg>-i&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-p&lt;x1/&gt;, &lt;x2/&gt;--procs {N\|auto&lt;x3/&gt;}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031745Z" creationid="hsugawa8651" creationdate="20181114T031745Z">
+        <seg>-p&lt;x1/&gt;, &lt;x2/&gt;--procs {N\|auto&lt;x3/&gt;}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-q&lt;x1/&gt;, &lt;x2/&gt;--quiet&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031758Z" creationid="hsugawa8651" creationdate="20181114T031758Z">
+        <seg>-q&lt;x1/&gt;, &lt;x2/&gt;--quiet&lt;x3/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5116,8 +5308,8 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
       <tuv lang="EN-US">
         <seg>Evaluate &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt; and display the result</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224702Z" creationid="hsugawa8651" creationdate="20181109T224702Z">
-        <seg>&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;を評価し、結果を表示します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031719Z" creationid="hsugawa8651" creationdate="20181109T224702Z">
+        <seg>Evaluate &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt; and display the result</seg>
       </tuv>
     </tu>
     <tu>
@@ -7409,8 +7601,8 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
       <tuv lang="EN-US">
         <seg>Load &lt;x1/&gt;&lt;x2/&gt;/.julia/config/startup.jl&lt;x3/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031557Z" creationid="hsugawa8651" creationdate="20181109T224646Z">
-        <seg>Load &lt;x1/&gt;&lt;x2/&gt;/.julia/config/startup.jl&lt;x3/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031604Z" creationid="hsugawa8651" creationdate="20181109T224646Z">
+        <seg>&lt;x1/&gt;&lt;x2/&gt;/.julia/config/startup.jl&lt;x3/&gt;をロードします。</seg>
       </tuv>
     </tu>
     <tu>
