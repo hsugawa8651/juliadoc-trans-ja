@@ -235,6 +235,14 @@ bar</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>("function", "library")&lt;x1/&gt; where &lt;x2/&gt;function&lt;x3/&gt; is the C-exported function name.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161428Z" creationid="hsugawa8651" creationdate="20181114T161428Z">
+        <seg>(「関数」、「ライブラリ」)&lt;x1/&gt;&lt;x2/&gt;&lt;x2/&gt;関数&lt;x3/&gt;は、Cエクスポートされた関数名です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>()&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032338Z" creationid="hsugawa8651" creationdate="20181114T032338Z">
@@ -415,6 +423,15 @@ bar</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225720Z" creationid="hsugawa8651" creationdate="20181109T225720Z">
         <seg>(@ref man条件付き評価):&lt;x1/&gt;-&lt;x2/&gt;-&lt;x3/&gt;else&lt;x4/&gt;-&lt;x5/&gt;else&lt;x6/&gt;および&lt;x7/&gt;?:&lt;x8/&gt;(三元演算子):&lt;x8/&gt;&lt;x8/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@ref man-dot-operators) such as &lt;x1/&gt;.+&lt;x2/&gt; and &lt;x3/&gt;.*&lt;x4/&gt; are equivalent
+to &lt;x5/&gt;broadcast&lt;x6/&gt; calls (except that they fuse, as described below).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161313Z" creationid="hsugawa8651" creationdate="20181114T161313Z">
+        <seg>(@ref man dot演算子)例えば&lt;x1/&gt;.+&lt;x2/&gt;&lt;x3/&gt;.*&lt;x4/&gt;は等価です。 &lt;x5/&gt;ブロードキャスト&lt;x6/&gt;コール(以下に説明するように融合することを除く)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1474,6 +1491,16 @@ call highly tuned and optimized BLAS and LAPACK functions using just the pointer
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x4/&gt;library&lt;x5/&gt; refers
+to the shared library name: shared libraries available in the (platform-specific) load path will
+be resolved by name, and if necessary a direct path may be specified.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161423Z" creationid="hsugawa8651" creationdate="20181114T161423Z">
+        <seg>&lt;x4/&gt;ライブラリ&lt;x5/&gt;は以下のとおりです。 共有ライブラリの名前:(プラットフォーム固有の)ロードパスで使用可能な共有ライブラリ 名前で解決する必要があり、必要に応じて直接パスを指定することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x5/&gt;-p n&lt;x6/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224412Z" creationid="hsugawa8651" creationdate="20181109T224412Z">
@@ -1496,6 +1523,15 @@ array types that have fixed dimensionality requirements.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131806Z" creationid="hsugawa8651" creationdate="20181113T131806Z">
         <seg>&lt;x7/&gt;DefaultArrayStyle&lt;x8/&gt;と抽象型スーパータイプ&lt;x9/&gt;AbstractArrayStyle&lt;x10/&gt;は、特殊化されたものをサポートするために、次元をタイプパラメータとして格納します。 固定された次元要件を持つ配列タイプ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x7/&gt;`AbstractVector`&lt;x8/&gt; and &lt;x9/&gt;`AbstractMatrix`&lt;x10/&gt; are
+aliases for the 1-d and 2-d cases.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161351Z" creationid="hsugawa8651" creationdate="20181114T161351Z">
+        <seg>&lt;x7/&gt;'AbstractVector'&lt;x8/&gt;および&lt;x9/&gt;'AbstractMatrix&lt;x10/&gt;は 1-dおよび2-dケースのエイリアス。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5996,6 +6032,16 @@ and type definitions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>First"
+ "2.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161329Z" creationid="hsugawa8651" creationdate="20181114T161329Z">
+        <seg>First"
+ "2.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Float16&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110758Z" creationid="hsugawa8651" creationdate="20181112T110758Z">
@@ -7183,6 +7229,14 @@ iterate over any array type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155900Z" creationid="hsugawa8651" creationdate="20181109T155900Z">
         <seg>i=1:長さ(A)&lt;x2/&gt;の&lt;x1/&gt;とは対照的に、&lt;x3/&gt;'の反復は、効率的な方法である。&lt;x3/&gt;"エアチンデス"&lt;x4/&gt;である 任意の配列タイプに対して繰り返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In fact, &lt;x11/&gt;f.(args...)&lt;x12/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161317Z" creationid="hsugawa8651" creationdate="20181114T161317Z">
+        <seg>実際には、&lt;x11/&gt;f.(args.)&lt;x12/&gt;です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9220,6 +9274,16 @@ an interactive session.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Second"
+ "3.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161332Z" creationid="hsugawa8651" creationdate="20181114T161332Z">
+        <seg>Second"
+ "3.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See
 the &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-multi-dim-arrays) and the &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref lib-arrays) for more supported methods.</seg>
       </tuv>
@@ -9342,6 +9406,14 @@ iterable type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041820Z" creationid="hsugawa8651" creationdate="20181112T041820Z">
         <seg>Set-Like Collections</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Shared libraries and functions are referenced by a tuple of the form &lt;x1/&gt;(:function, "library")&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161432Z" creationid="hsugawa8651" creationdate="20181114T161432Z">
+        <seg>共有ライブラリと関数は、&lt;x1/&gt;(:関数、"ライブラリ")&lt;x2/&gt;という形式のタプルによって参照されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9899,6 +9971,14 @@ notebook).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043259Z" creationid="hsugawa8651" creationdate="20181112T043259Z">
         <seg>基本的なJuliaランタイムはプレーンテキスト表示のみを提供しますが、よりリッチなディスプレイを有効にすることができます。 外部モジュールをロードするか、グラフィカルなJulia環境(IPythonベースのIJuliaなど)を使用する )を使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The base array type in Julia is the abstract type &lt;x1/&gt;`AbstractArray{T,N}`&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161340Z" creationid="hsugawa8651" creationdate="20181114T161340Z">
+        <seg>ジュリアのベース・アレイ型は、抽象型の&lt;x1/&gt;`AbstractArray{T,N}'&lt;x2/&gt;である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10760,6 +10840,16 @@ ways of doing so:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There is also a
+&lt;x7/&gt;`broadcast!`&lt;x8/&gt; function to specify an explicit destination (which can also
+be accessed in a fusing fashion by &lt;x9/&gt;.=&lt;x10/&gt; assignment).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161307Z" creationid="hsugawa8651" creationdate="20181114T161307Z">
+        <seg>また &lt;x7/&gt;'ブロードキャスト!&lt;x8/&gt;関数は明示的な宛先を指定することができます(これは &lt;x9/&gt;.=&lt;x10/&gt;割り当てにより、融合方式でアクセスすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Therefore this syntax is disallowed, and spaces must be used around
 the operator in such cases.</seg>
       </tuv>
@@ -11155,6 +11245,16 @@ Python, Ruby and Perl, among other dynamic languages.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025715Z" creationid="hsugawa8651" creationdate="20181110T025715Z">
         <seg>これはSchemeで見られる動作と同じです。ほとんどのLispです。 Python、Ruby、Perlは、その他の動的言語の中でもとりわけ優れています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is wasteful when dimensions get large, so Julia provides &lt;x1/&gt;`broadcast`&lt;x2/&gt;, which expands
+singleton dimensions in array arguments to match the corresponding dimension in the other array
+without using extra memory, and applies the given function elementwise:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161257Z" creationid="hsugawa8651" creationdate="20181114T161257Z">
+        <seg>次元が大きくなると無駄になります。したがって、Juliaは&lt;x1/&gt;'ブロードキャスト''&lt;x2/&gt;を提供します。これは拡張されます。 配列引数内の単一の次元を、他の配列内の対応する次元に一致させます。 は、余分なメモリを使用せず、指定された関数要素を適用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13238,6 +13338,15 @@ as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132300Z" creationid="hsugawa8651" creationdate="20181113T132300Z">
         <seg>ビット単位のXOR(排他的な排他的な排他的論理和)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>broadcast(f, args...)&lt;x1/&gt;, providing a convenient syntax to broadcast any function
+(&lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref man-vectorized)).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161321Z" creationid="hsugawa8651" creationdate="20181114T161321Z">
+        <seg>ブロードキャスト(f,args.)&lt;x1/&gt;は、任意の関数をブロードキャストするための便利な構文を提供します。 (&lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref manベクトル化))。</seg>
       </tuv>
     </tu>
     <tu>
