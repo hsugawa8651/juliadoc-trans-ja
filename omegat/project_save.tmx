@@ -14,6 +14,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>!&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032237Z" creationid="hsugawa8651" creationdate="20181114T032237Z">
+        <seg>!&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>!&lt;x1/&gt; indicates that it will mutate or destroy the
 value of one or more of its arguments (compare, for example, &lt;x2/&gt;`sort`&lt;x3/&gt; and &lt;x4/&gt;`sort!`&lt;x5/&gt;).</seg>
       </tuv>
@@ -191,6 +199,14 @@ bar</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131444Z" creationid="hsugawa8651" creationdate="20181113T131444Z">
         <seg>(@id extending-in-place-broadcast)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@id lib-collections-iteration)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032020Z" creationid="hsugawa8651" creationdate="20181114T032020Z">
+        <seg>(@id lib-collections-iteration)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1130,6 +1146,22 @@ exec julia --color=yes --startup-file=no -e 'include(popfirst!(ARGS))' \
 =&lt;x3/&gt;
 
 @show ARGS  &lt;x4/&gt; put any Julia code here</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x1/&gt;&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032247Z" creationid="hsugawa8651" creationdate="20181114T032247Z">
+        <seg>&lt;x1/&gt;&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x1/&gt;=&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032251Z" creationid="hsugawa8651" creationdate="20181114T032251Z">
+        <seg>&lt;x1/&gt;=&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5481,6 +5513,16 @@ and negative zero.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For
+&lt;x5/&gt;`BigFloat`&lt;x6/&gt; the &lt;x7/&gt;GNU MPFR library&lt;x8/&gt; is used,
+and for &lt;x9/&gt;`BigInt`&lt;x10/&gt; the &lt;x11/&gt;&lt;x12/&gt;&lt;x13/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032207Z" creationid="hsugawa8651" creationdate="20181114T032207Z">
+        <seg>その他 &lt;x5/&gt;'BigFloat'&lt;x6/&gt;&lt;x7/&gt;GNU MPFRライブラリ&lt;x8/&gt;は使用されます。 そして&lt;x9/&gt;'BigInt'&lt;x10/&gt;&lt;x11/&gt;&lt;x12/&gt;&lt;x13/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For &lt;x1/&gt;AbstractArray&lt;x2/&gt; types, defining a &lt;x3/&gt;BroadcastStyle&lt;x4/&gt; supersedes the fallback choice,
 &lt;x5/&gt;`Broadcast.DefaultArrayStyle`&lt;x6/&gt;.</seg>
       </tuv>
@@ -7549,6 +7591,15 @@ integer literals and engineering notation for floating-point literals.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Like &lt;x2/&gt;Dict&lt;x3/&gt; it uses &lt;x4/&gt;hash&lt;x5/&gt; for hashing and &lt;x6/&gt;isequal&lt;x7/&gt; for equality, unlike &lt;x8/&gt;Dict&lt;x9/&gt; it does
+not convert keys on insertion.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032110Z" creationid="hsugawa8651" creationdate="20181114T032110Z">
+        <seg>&lt;x2/&gt;Dict&lt;x3/&gt;と同様に、&lt;x4/&gt;はハッシュに&lt;x4/&gt;ハッシュ&lt;x5/&gt;を使用し、&lt;x8/&gt;等価&lt;x7/&gt;は&lt;x8/&gt;等価&lt;x7/&gt;である。 挿入時にキーを変換しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Like ccall, all of these arguments will be evaluated at compile-time, when the containing method is defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153944Z" creationid="hsugawa8651" creationdate="20181109T153944Z">
@@ -8935,6 +8986,15 @@ be quite different from conventional arrays.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;`BigFloat`&lt;x2/&gt; and &lt;x3/&gt;`BigInt`&lt;x4/&gt; types implements
+arbitrary-precision floating point and integer arithmetic, respectively.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032210Z" creationid="hsugawa8651" creationdate="20181114T032210Z">
+        <seg>&lt;x1/&gt;`BigFloat'&lt;x2/&gt;と、&lt;x3/&gt;"BigInt"&lt;x4/&gt;型は実装されている。 任意精度浮動小数点および整数算術。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;`typemin`&lt;x2/&gt; and &lt;x3/&gt;`typemax`&lt;x4/&gt; functions also apply to floating-point types:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111123Z" creationid="hsugawa8651" creationdate="20181112T110920Z">
@@ -8947,6 +9007,14 @@ be quite different from conventional arrays.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T231125Z" creationid="hsugawa8651" creationdate="20181109T231125Z">
         <seg>&lt;x2/&gt;ループのための&lt;x1/&gt;は、共通の繰り返し評価イディオムを書くのを容易にする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;state&lt;x2/&gt; object may be anything, and should be chosen appropriately for each iterable type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032029Z" creationid="hsugawa8651" creationdate="20181114T032029Z">
+        <seg>The &lt;x1/&gt;state&lt;x2/&gt; object may be anything, and should be chosen appropriately for each iterable type.</seg>
       </tuv>
     </tu>
     <tu>
@@ -10065,6 +10133,15 @@ an integer value.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This call will attempt to infer type information from the
+keys and values (i.e. this example creates a &lt;x2/&gt;Dict{String, Int64}&lt;x3/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032114Z" creationid="hsugawa8651" creationdate="20181114T032114Z">
+        <seg>この呼び出しは、以下のようなタイプ情報を推測しようとします。 キーと値(すなわち、この例では、&lt;x2/&gt;Dict{String,Int64}&lt;x3/&gt;を作成します)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This could be written more concisely using the ternary operator.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230116Z" creationid="hsugawa8651" creationdate="20181109T230116Z">
@@ -10086,6 +10163,14 @@ than the required &lt;x3/&gt;`Bool`&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230041Z" creationid="hsugawa8651" creationdate="20181109T230041Z">
         <seg>このエラーは、条件が間違ったタイプであることを示しています:&lt;x1/&gt;`Int64`&lt;x2/&gt;。 必要な&lt;x3/&gt;`Bool'&lt;x4/&gt;よりも多くなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This experimental interface supports Julia's multi-threading capabilities.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032154Z" creationid="hsugawa8651" creationdate="20181114T032154Z">
+        <seg>この実験インターフェースは、Juliaのマルチスレッド機能をサポートしています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10536,6 +10621,15 @@ functions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041840Z" creationid="hsugawa8651" creationdate="20181110T041840Z">
         <seg>Type relations</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Types and functions
+described here might (and likely will) change in the future.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032156Z" creationid="hsugawa8651" creationdate="20181114T032156Z">
+        <seg>タイプと機能 ここで説明することは将来的に変化する可能性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11315,6 +11409,15 @@ name to test this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`WeakKeyDict`&lt;x1/&gt; is a hash table implementation where the keys are weak references to objects, and
+thus may be garbage collected even when referenced in a hash table.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032106Z" creationid="hsugawa8651" creationdate="20181114T032106Z">
+        <seg>「WeakKeyDict」&lt;x1/&gt;はハッシュ表の実装で、鍵はオブジェクトへの弱い参照であり したがって、ハッシュ・テーブルで参照されている場合でも、ガーベッジ・コレクションを収集することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`adjoint`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025903Z" creationid="hsugawa8651" creationdate="20181110T025903Z">
@@ -11735,6 +11838,14 @@ as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>a!( )&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032243Z" creationid="hsugawa8651" creationdate="20181114T032243Z">
+        <seg>a!( )&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>a&lt;x1/&gt; and &lt;x2/&gt;b&lt;x3/&gt;, and &lt;x4/&gt;`maximum(a)`&lt;x5/&gt;, which finds the largest value within
 &lt;x6/&gt;a&lt;x7/&gt;.</seg>
       </tuv>
@@ -11824,10 +11935,26 @@ as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>at the end of a function name, &lt;x1/&gt;!&lt;x2/&gt; is used as a convention to indicate that a function modifies its argument(s)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032245Z" creationid="hsugawa8651" creationdate="20181114T032245Z">
+        <seg>関数名の最後に、&lt;x1/&gt;!&lt;x2/&gt;は関数がその引数を変更することを示す規則として使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>axes(A)&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022510Z" creationid="hsugawa8651" creationdate="20181113T022510Z">
         <seg>axes(A)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>begin single line comment</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032249Z" creationid="hsugawa8651" creationdate="20181114T032249Z">
+        <seg>単一行コメントを開始する</seg>
       </tuv>
     </tu>
     <tu>
@@ -12509,6 +12636,14 @@ obj2 = MyModule.somefunction(obj1)
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132104Z" creationid="hsugawa8651" creationdate="20181113T132104Z">
         <seg>整数除算</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>invoke macro &lt;x1/&gt;m&lt;x2/&gt;; followed by space-separated expressions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032235Z" creationid="hsugawa8651" creationdate="20181114T032229Z">
+        <seg>呼び出しマクロ&lt;x1/&gt;m&lt;x2/&gt;;それに続く空間的に区切られた式</seg>
       </tuv>
     </tu>
     <tu>
@@ -16701,6 +16836,14 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110813Z" creationid="hsugawa8651" creationdate="20181112T110813Z">
         <seg>正の無限大</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>prefix "not" (logical negation) operator</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032241Z" creationid="hsugawa8651" creationdate="20181114T032241Z">
+        <seg>接頭語"not"(論理否定)演算子</seg>
       </tuv>
     </tu>
     <tu>
