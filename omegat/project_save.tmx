@@ -10511,6 +10511,14 @@ indexing and indexed assignment as efficient as possible.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since the body of the generated function is non-deterministic, its behavior, &lt;x1/&gt;and the behavior of all subsequent code&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032051Z" creationid="hsugawa8651" creationdate="20181116T032051Z">
+        <seg>生成された関数の本体は決定的ではないので、その振る舞いは、&lt;x1/&gt;と、その後のすべてのコード&lt;x2/&gt;の振る舞いとなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since these are fairly small, simple expressions, they could easily be placed onto a single line,
 which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
       </tuv>
@@ -11910,6 +11918,15 @@ normal functions, which happen to support infix operator syntax, but always eval
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230459Z" creationid="hsugawa8651" creationdate="20181109T230459Z">
         <seg>これらは 通常の関数は、インフィックス演算子の構文をサポートしていますが、常にその引数を評価します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These examples are hopefully helpful to illustrate how generated functions work, both in the definition
+end and at the call site; however, &lt;x1/&gt;don't copy them&lt;x2/&gt;, for the following reasons:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032054Z" creationid="hsugawa8651" creationdate="20181116T032054Z">
+        <seg>これらの例は、定義された関数がどのように機能するかを説明するために役立つことが望まれます。 ただし、次の理由により、&lt;x1/&gt;はコピーされません。&lt;x/&gt;:&lt;x1/&gt;&lt;x2/&gt;&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -25575,6 +25592,15 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063557Z" creationid="hsugawa8651" creationdate="20181114T063557Z">
         <seg>symbol a</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the &lt;x1/&gt;foo&lt;x2/&gt; function has side-effects (the call to &lt;x3/&gt;Core.println&lt;x4/&gt;), and it is undefined exactly
+when, how often or how many times these side-effects will occur</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032206Z" creationid="hsugawa8651" creationdate="20181116T032206Z">
+        <seg>&lt;x1/&gt;foo&lt;x2/&gt;関数は副作用(&lt;x3/&gt;Core.println&lt;x4/&gt;の呼び出し)を持っており、厳密には定義されていません。 これらの副作用が何回、何回発生するか、何回起こるか</seg>
       </tuv>
     </tu>
     <tu>
