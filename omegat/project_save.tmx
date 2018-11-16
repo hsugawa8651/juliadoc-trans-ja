@@ -2694,6 +2694,15 @@ flexible, user-extensible &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>All the looping is performed compile-time,
+and we avoid looping during execution entirely.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032336Z" creationid="hsugawa8651" creationdate="20181116T032336Z">
+        <seg>すべてのループはコンパイル時に実行されます。 実行中のループを完全に回避することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All the sorting and order related functions rely on a "less than" relation defining a total order
 on the values to be manipulated.</seg>
       </tuv>
@@ -2707,6 +2716,15 @@ on the values to be manipulated.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083532Z" creationid="hsugawa8651" creationdate="20181113T083532Z">
         <seg>Allocation of output container</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Alright, now that we have a better understanding of how generated functions work, let's use them
+to build some more advanced (and valid) functionality...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032239Z" creationid="hsugawa8651" creationdate="20181116T032239Z">
+        <seg>分かりました、生成された関数がどのように機能するかをよく理解してから、それを使ってみましょう。 より高度な(かつ有効な)機能を構築するために。。。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2862,6 +2880,14 @@ in an &lt;x12/&gt;Array&lt;x13/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112202Z" creationid="hsugawa8651" creationdate="20181112T112202Z">
         <seg>Any&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Applied to the &lt;x1/&gt;sub2ind&lt;x2/&gt; example above, it would look like this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032353Z" creationid="hsugawa8651" creationdate="20181116T032353Z">
+        <seg>上記の&lt;x1/&gt;sub2ind&lt;x2/&gt;の例に適用されますが、次のようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5519,6 +5545,15 @@ Base.vec</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Because the function generator is
+run during inference, it must respect all of the limitations of that code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032221Z" creationid="hsugawa8651" creationdate="20181116T032221Z">
+        <seg>関数ジェネレータは は、そのコードのすべての制限を尊重する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>BigFloats and BigInts</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044719Z" creationid="hsugawa8651" creationdate="20181112T044719Z">
@@ -5608,6 +5643,15 @@ the values in parentheses (see &lt;x1/&gt;Functions&lt;x2/&gt; for more about fu
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110529Z" creationid="hsugawa8651" creationdate="20181112T110529Z">
         <seg>これらの場合は両方とも、&lt;x6/&gt;「DivideError」&lt;x6/&gt;をスローします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Both these implementations, although different, do essentially the same thing: a runtime loop
+over the dimensions of the array, collecting the offset in each dimension into the final index.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032309Z" creationid="hsugawa8651" creationdate="20181116T032252Z">
+        <seg>これらの実装は両方とも異なるが、基本的には、ランタイム・ループと同じものです。 配列の寸法を超えて、各次元のオフセットを最終インデックスに収集します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5793,6 +5837,14 @@ they don't intend to change.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154219Z" creationid="hsugawa8651" creationdate="20181109T154219Z">
         <seg>呼び出し側は、入力を変更しないことを確実にするために、明示的なコピーを作成する必要があります。 変化するつもりはありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Calling any function that is defined after the body of the generated function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032235Z" creationid="hsugawa8651" creationdate="20181116T032235Z">
+        <seg>生成された関数のボディの後に定義された関数を呼び出します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7620,6 +7672,15 @@ are identical to the passed values.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Generated functions can achieve high efficiency at run time, but come with a compile time cost:
+a new function body must be generated for every combination of concrete argument types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032341Z" creationid="hsugawa8651" creationdate="20181116T032341Z">
+        <seg>生成された関数は、実行時に高い効率を実現できますが、コンパイル時にはコストがかかります。 具体的な引数型の組合せごとに、新しい関数本体を生成する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Generated values can be filtered using the &lt;x1/&gt;if&lt;x2/&gt; keyword:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155050Z" creationid="hsugawa8651" creationdate="20181109T155050Z">
@@ -7787,6 +7848,14 @@ with &lt;x3/&gt;p&lt;x4/&gt; preceding the base-2 exponent:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, all the information we need for the loop is embedded in the type information of the arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032307Z" creationid="hsugawa8651" creationdate="20181116T032307Z">
+        <seg>しかし、ループに必要なすべての情報は、引数の型情報に埋め込まれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, any concrete &lt;x3/&gt;AbstractArray{T,N}&lt;x4/&gt; type should generally implement
 at least &lt;x5/&gt;`size(A)`&lt;x6/&gt; (returning an &lt;x7/&gt;Int&lt;x8/&gt; tuple), &lt;x9/&gt;`getindex(A,i)`&lt;x10/&gt; and &lt;x11/&gt;&lt;x12/&gt;&lt;x13/&gt;(@ref getindex);
 mutable arrays should also implement &lt;x14/&gt;`setindex!`&lt;x15/&gt;.</seg>
@@ -7855,6 +7924,15 @@ on this behavior, make sure all possible code paths define a value for the varia
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225955Z" creationid="hsugawa8651" creationdate="20181109T225955Z">
         <seg>ただし この動作では、可能なすべてのコード・パスが変数の値を定義していることを確認してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, which implementation is used depends on compiler implementation details, so it
+is essential for the two implementations to behave identically.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032421Z" creationid="hsugawa8651" creationdate="20181116T032421Z">
+        <seg>しかし、どの実装が使用されるのかは、コンパイラの実装の詳細に依存します。 2つの実装が同じように動作するためには必須です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8482,6 +8560,15 @@ it will be a &lt;x7/&gt;CartesianIndex&lt;x8/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this style of definition, the code generation feature is essentially an optional
+optimization.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032415Z" creationid="hsugawa8651" creationdate="20181116T032415Z">
+        <seg>この定義の定義では、コード生成機能は基本的にオプションです。 最適化。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In-place broadcasting can be supported by defining the appropriate &lt;x1/&gt;copyto!(dest, bc::Broadcasted)&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131637Z" creationid="hsugawa8651" creationdate="20181113T131637Z">
@@ -8592,10 +8679,28 @@ anything other than an &lt;x5/&gt;Int&lt;x6/&gt; will throw a &lt;x7/&gt;`Method
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Inference on the generated function may be run at &lt;x1/&gt;any&lt;x2/&gt; time, including while your code is attempting
+to observe or mutate this state.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032230Z" creationid="hsugawa8651" creationdate="20181116T032230Z">
+        <seg>生成された関数の推論は、コードが試行されている間も、&lt;x x/&gt;&lt;x x2/&gt;時間で実行されることがあります。 この状態を観察または突然変異させます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>InsertionSort&lt;x1/&gt; is an O(n^2) stable sorting algorithm.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064050Z" creationid="hsugawa8651" creationdate="20181114T064050Z">
         <seg>InsertionSort&lt;x1/&gt;は、O(n^2)安定ソートアルゴリズムである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Inside the &lt;x5/&gt;then&lt;x6/&gt; part of the &lt;x7/&gt;if @generated&lt;x8/&gt; block, code has the same semantics as other
+generated functions: argument names refer to types, and the code should return an expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032402Z" creationid="hsugawa8651" creationdate="20181116T032402Z">
+        <seg>&lt;x8/&gt;の&lt;x5/&gt;の中で、@生成された&lt;x8/&gt;ブロックの場合、コードは他のものと同じ意味を持つ。 生成された関数:引数名は型を参照し、コードは式を返す必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8685,10 +8790,27 @@ the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Interacting with the contents or methods of &lt;x1/&gt;Core.Compiler&lt;x2/&gt; in any way.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032226Z" creationid="hsugawa8651" creationdate="20181116T032226Z">
+        <seg>&lt;x1/&gt;コアの内容または方法との相互作用。コンパイラ&lt;x2/&gt;は任意の方法で動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Interactive mode; REPL runs and &lt;x1/&gt;isinteractive()&lt;x2/&gt; is true</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224718Z" creationid="hsugawa8651" creationdate="20181109T224718Z">
         <seg>Interactiveモード;REPLは実行され、&lt;x1/&gt;イスインタラクティブ()&lt;x2/&gt;はtrueです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Internally, this code creates two implementations of the function: a generated one where
+the first block in &lt;x1/&gt;if @generated&lt;x2/&gt; is used, and a normal one where the &lt;x3/&gt;else&lt;x4/&gt; block is used.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032404Z" creationid="hsugawa8651" creationdate="20181116T032404Z">
+        <seg>内部的には、このコードは次の2つの実装を作成します:a生成された関数: &lt;x1/&gt;の最初のブロックは、@generated&lt;x2/&gt;が使用され、かつ&lt;x/&gt;else&lt;x4/&gt;ブロックが使用される通常のブロックである。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9123,6 +9245,16 @@ conversions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031029Z" creationid="hsugawa8651" creationdate="20181114T031029Z">
         <seg>Juliaは、3つの形式の数値変換をサポートしていますが、それは不正確であるためです。 変換。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia's base library has a an internal &lt;x1/&gt;sub2ind&lt;x2/&gt; function to calculate a linear index into an n-dimensional
+array, based on a set of n multilinear indices - in other words, to calculate the index &lt;x3/&gt;i&lt;x4/&gt; that
+can be used to index into an array &lt;x5/&gt;A&lt;x6/&gt; using &lt;x7/&gt;A[i]&lt;x8/&gt;, instead of &lt;x9/&gt;A[x,y,z,...]&lt;x10/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032243Z" creationid="hsugawa8651" creationdate="20181116T032243Z">
+        <seg>Juliaのベースライブラリは、n次元の線形インデックスを計算するための内部&lt;x1/&gt;sub2ind&lt;x2/&gt;関数を持っています。 配列は、n個の多線形インデックスの集合に基づいて、言い換えれば、インデックス&lt;x3/&gt;i&lt;x4/&gt;を計算することを意味する。 &lt;x9/&gt;A[i]&lt;x8/&gt;を用いて、&lt;x9/&gt;A[x,y,z,…]&lt;x10/&gt;の代わりに、配列&lt;x5/&gt;A&lt;x6/&gt;をインデックスにすることができる。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9568,6 +9700,15 @@ and pushing them onto a stack of display backends via &lt;x3/&gt;`pushdisplay`&l
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Multiple &lt;x9/&gt;if @generated&lt;x10/&gt; blocks may occur, in which case the generated implementation uses
+all of the &lt;x11/&gt;then&lt;x12/&gt; blocks and the alternate implementation uses all of the &lt;x13/&gt;else&lt;x14/&gt; blocks.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032408Z" creationid="hsugawa8651" creationdate="20181116T032408Z">
+        <seg>@生成&lt;x10/&gt;ブロックが発生した場合には複数の&lt;x9/&gt;が存在し、その場合には生成された実装が使用される。 すべての&lt;x11/&gt;&lt;x12/&gt;ブロックと代替実装は、すべて&lt;x13/&gt;else&lt;x14/&gt;ブロックを使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Multiple arguments to &lt;x15/&gt;D[...]&lt;x16/&gt; are converted to tuples; for example, the syntax
 &lt;x17/&gt;D[x,y]&lt;x18/&gt;  is equivalent to &lt;x19/&gt;D[(x,y)]&lt;x20/&gt;, i.e. it refers to the value keyed by the tuple &lt;x21/&gt;(x,y)&lt;x22/&gt;.</seg>
       </tuv>
@@ -9755,6 +9896,15 @@ list can — and often does — include other nested &lt;x4/&gt;Broadcasted&lt;x
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224054Z" creationid="hsugawa8651" creationdate="20181109T224054Z">
         <seg>引数のタイプは、&lt;x3/&gt;(Cstring)&lt;x4/&gt;ではなく、&lt;x1/&gt;(Cstring,)&lt;x2/&gt;として記述する必要があることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that the set of operations that should not be attempted in a generated function is unbounded,
+and the runtime system can currently only detect a subset of the invalid operations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032217Z" creationid="hsugawa8651" creationdate="20181116T032217Z">
+        <seg>生成された関数で試行されるべきではない一連の操作は、制限されないことに注意してください。 ランタイム・システムは、現在、無効な操作のサブセットのみを検出できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10552,6 +10702,15 @@ which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>So, the method body that will be used here doesn't include a loop at all - just indexing into
+the two tuples, multiplication and addition/subtraction.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032334Z" creationid="hsugawa8651" creationdate="20181116T032334Z">
+        <seg>このため、ここで使用されるメソッド本体はループを一切含まず、単にインデックス作成するだけです。 2つのタプル、乗算と加算、減算。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>So, we could have defined the &lt;x6/&gt;test&lt;x7/&gt; function above as</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225921Z" creationid="hsugawa8651" creationdate="20181109T225921Z">
@@ -10564,6 +10723,14 @@ which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041726Z" creationid="hsugawa8651" creationdate="20181110T041726Z">
         <seg>関数の中には、修正(例えば&lt;x3/&gt;ソート!&lt;x4/&gt;)や修正されない(&lt;x5/&gt;ソート&lt;x6/&gt;)バージョンの両方があるものがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some operations that should not be attempted include:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032222Z" creationid="hsugawa8651" creationdate="20181116T032222Z">
+        <seg>試行されるべきでない操作には、次のものがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10731,6 +10898,16 @@ sharing memory with the original array rather than by copying it.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Taking any locks: C code you call out to may use locks internally, (for example, it is not problematic
+to call &lt;x1/&gt;malloc&lt;x2/&gt;, even though most implementations require locks internally) but don't attempt
+to hold or acquire any while executing Julia code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032233Z" creationid="hsugawa8651" creationdate="20181116T032233Z">
+        <seg>ロックを取る:呼び出し先のCコードは、内部的にロックを使用することがあります(たとえば、問題が発生しないようにします)。 &lt;x1/&gt;malloc&lt;x2/&gt;を呼び出すためには、ほとんどの実装は内部的にロックを必要としますが、実行しないでください。 は、ジュリア・コードの実行中に保持または取得されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Tasks</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044738Z" creationid="hsugawa8651" creationdate="20181112T044738Z">
@@ -10761,6 +10938,15 @@ the size.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111202Z" creationid="hsugawa8651" creationdate="20181112T111202Z">
         <seg>すなわち、&lt;x11/&gt;eps(x)&lt;x12/&gt;は、&lt;x13/&gt;x&lt;x14/&gt;と同じタイプの値を生成し、それによって &lt;x15/&gt;x+eps(x)&lt;x16/&gt;は、&lt;x17/&gt;x&lt;x18/&gt;より大きい次の表現可能浮動小数点値です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>That means that the values and types of local variables are not available at code generation
+time --- the code-generation code can only see the types of arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032413Z" creationid="hsugawa8651" creationdate="20181116T032413Z">
+        <seg>つまり、ローカル変数の値と型は、コード生成では使用できないということです。 time--コード生成コードは、引数の種類だけを見ることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11056,6 +11242,15 @@ evaluated as are necessary to determine the final boolean value of the entire ch
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The body becomes almost identical, but
+instead of calculating the linear index, we build up an &lt;x1/&gt;expression&lt;x2/&gt; that calculates the index:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032316Z" creationid="hsugawa8651" creationdate="20181116T032316Z">
+        <seg>体はほぼ同じですが 線形インデックスを計算する代わりに、インデックスを計算する&lt;x1/&gt;式&lt;x2/&gt;を構築します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The broadcast style is computed for every broadcasting operation to allow for
 dispatch and specialization.</seg>
       </tuv>
@@ -11090,6 +11285,15 @@ so they can follow the same codepath.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160547Z" creationid="hsugawa8651" creationdate="20181109T160547Z">
         <seg>呼び出されるコードは共有ライブラリとして使用できる必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The compiler will use it if convenient, but otherwise may choose to use the normal
+implementation instead.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032417Z" creationid="hsugawa8651" creationdate="20181116T032417Z">
+        <seg>コンパイラは、便利であればそれを使用しますが、そうでなければ通常のものを使用することを選択することができます。 代わりに実装する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11825,6 +12029,16 @@ usually by calling &lt;x13/&gt;`show(io, mime, x)`&lt;x14/&gt; or &lt;x15/&gt;`r
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are
+many other operations that will simply corrupt the runtime system without notification, usually
+in subtle ways not obviously connected to the bad definition.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032219Z" creationid="hsugawa8651" creationdate="20181116T032219Z">
+        <seg>その他 通知なしでランタイム・システムを単純に破壊する他の多くの操作 明らかに悪い定義とは関係ありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are a few more methods we can extend to give Julia more information about this iterable
 collection.</seg>
       </tuv>
@@ -12154,6 +12368,24 @@ first &lt;x4/&gt;page&lt;x5/&gt; from &lt;x6/&gt;A&lt;x7/&gt; as a separate step
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This code will be common to both versions, and is run-time code in both versions
+(it will be quoted and returned as an expression from the generated version).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032411Z" creationid="hsugawa8651" creationdate="20181116T032411Z">
+        <seg>このコードは両方のバージョンに共通で、両方のバージョンで実行されるランタイム・コードです。 (これは、生成されたバージョンからの式として引用され、返されます)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This condition
+is relaxed for incrementally-loaded precompiled modules to allow calling any function in the module.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032238Z" creationid="hsugawa8651" creationdate="20181116T032238Z">
+        <seg>この状態 は、モジュール内の任意の関数を呼び出し可能にするために、段階的にロードされたプリコンパイル済みモジュールに対して、リラックスされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This could be written more concisely using the ternary operator.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230116Z" creationid="hsugawa8651" creationdate="20181109T230116Z">
@@ -12373,6 +12605,15 @@ before.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This means that programs making heavy use of generated functions might be impossible to
+statically compile.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032346Z" creationid="hsugawa8651" creationdate="20181116T032346Z">
+        <seg>つまり、生成された関数を大量に使用するプログラムは不可能である可能性があります。 静的にコンパイルします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This means we must also define a corresponding &lt;x1/&gt;similar&lt;x2/&gt; method:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131420Z" creationid="hsugawa8651" creationdate="20181113T131420Z">
@@ -12422,6 +12663,15 @@ fused expression &lt;x7/&gt;x .* (x .+ 1)&lt;x8/&gt; to &lt;x9/&gt;Broadcast.bro
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131609Z" creationid="hsugawa8651" creationdate="20181113T131609Z">
         <seg>この種の意欲的な操作は、直接的にサポートされています。 indirection;&lt;x5/&gt;ブロードキャスト&lt;x6/&gt;オブジェクトを直接構築するのではなく、Juliaは次のように説明します。 融合式&lt;x7/&gt;x.*(x .+ 1)&lt;x8/&gt;から&lt;x9/&gt;ブロードキャスト放送(*,x,ブロードキャスト.ブロードキャスト(+, x, 1))&lt;x10/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This style is preferred, since it allows the compiler to make more decisions and compile
+programs in more ways, and since normal code is more readable than code-generating code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032419Z" creationid="hsugawa8651" creationdate="20181116T032419Z">
+        <seg>このスタイルは、コンパイラーがより多くの決定とコンパイルを行うことができるので、このスタイルは好ましいです。 プログラムはより多くの方法で実行され、通常のコードはコード生成コードよりも読みやすくなります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12510,6 +12760,25 @@ cases, an error occurs since the left-hand value is not a function.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111854Z" creationid="hsugawa8651" creationdate="20181112T111854Z">
         <seg>これらの両方で 左側の値は関数ではないため、エラーが発生します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thus, we can utilize generated functions to move the iteration to compile-time; in compiler parlance,
+we use generated functions to manually unroll the loop.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032314Z" creationid="hsugawa8651" creationdate="20181116T032314Z">
+        <seg>このように、生成された関数を利用して反復をコンパイル時に移動させることができます。コンパイラの文法では 生成された関数を使用してループを手動でアンロールします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thus, we only loop &lt;x1/&gt;once per type&lt;x2/&gt;, in this case
+once per &lt;x3/&gt;N&lt;x4/&gt; (except in edge cases where the function is generated more than once - see disclaimer
+above).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032339Z" creationid="hsugawa8651" creationdate="20181116T032339Z">
+        <seg>したがって、我々は、&lt;x2/&gt;のタイプごとに&lt;x1/&gt;をループするだけである。この場合には &lt;x3/&gt;N&lt;x4/&gt;(関数が生成される関数が複数回生成されるエッジを除く)&lt;x3/&gt;で一度1回指定します。 )。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12636,6 +12905,15 @@ which may or may not be caused by CTRL-C, use &lt;x5/&gt;`atexit`&lt;x6/&gt;.</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To solve this problem, the language provides syntax for writing normal, non-generated
+alternative implementations of generated functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032351Z" creationid="hsugawa8651" creationdate="20181116T032351Z">
+        <seg>この問題を解決するために、言語は、生成されていない通常の言語を記述するための構文を提供します。 生成された関数の代替実装。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To sort an array in-place, use the "bang" version of the sort function:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063731Z" creationid="hsugawa8651" creationdate="20181112T044840Z">
@@ -12682,6 +12960,15 @@ described here might (and likely will) change in the future.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032156Z" creationid="hsugawa8651" creationdate="20181114T032156Z">
         <seg>タイプと機能 ここで説明することは将来的に変化する可能性があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Typically, Julia is able to compile "generic" versions of functions that will work for any
+arguments, but with generated functions this is impossible.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032348Z" creationid="hsugawa8651" creationdate="20181116T032348Z">
+        <seg>一般的に、Juliaは、すべての関数の「汎用」バージョンをコンパイルできます。 引数は生成されますが、生成された関数を使用することはできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14491,6 +14778,14 @@ abstract type Unsigned &lt;: Integer end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>bar(x::Integer) = x ^ 2&lt;x1/&gt; will do the same thing, but it is both simpler and faster.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032213Z" creationid="hsugawa8651" creationdate="20181116T032213Z">
+        <seg>bar(x::Integer)=x^2&lt;x1/&gt;は同じことを行いますが、どちらもより単純で速くなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>begin multi-line comment (these are nestable)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032254Z" creationid="hsugawa8651" creationdate="20181114T032254Z">
@@ -15437,6 +15732,48 @@ end</seg>
         return 1
     end
     return sin(pi*x)/(pi*x)
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function sub2ind_gen(dims::NTuple{N}, I::Integer...) where N
+    if N != length(I)
+        throw(ArgumentError("Number of dimensions must match number of indices."))
+    end
+    if @generated
+        ex = :(I[$N] - 1)
+        for i = (N - 1):-1:1
+            ex = :(I[$i] - 1 + dims[$i] * $ex)
+        end
+        return :($ex + 1)
+    else
+        ind = I[N] - 1
+        for i = (N - 1):-1:1
+            ind = I[i] - 1 + dims[i]*ind
+        end
+        return ind + 1
+    end
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032354Z" creationid="hsugawa8651" creationdate="20181116T032354Z">
+        <seg>function sub2ind_gen(dims::NTuple{N}, I::Integer...) where N
+    if N != length(I)
+        throw(ArgumentError("Number of dimensions must match number of indices."))
+    end
+    if @generated
+        ex = :(I[$N] - 1)
+        for i = (N - 1):-1:1
+            ex = :(I[$i] - 1 + dims[$i] * $ex)
+        end
+        return :($ex + 1)
+    else
+        ind = I[N] - 1
+        for i = (N - 1):-1:1
+            ind = I[i] - 1 + dims[i]*ind
+        end
+        return ind + 1
+    end
 end</seg>
       </tuv>
     </tu>
@@ -16883,6 +17220,68 @@ foo (generic function with 1 method)</seg>
            return :(x * x)
        end
 foo (generic function with 1 method)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; @generated function sub2ind_gen(dims::NTuple{N}, I::Integer...) where N
+           ex = :(I[$N] - 1)
+           for i = (N - 1):-1:1
+               ex = :(I[$i] - 1 + dims[$i] * $ex)
+           end
+           return :($ex + 1)
+       end
+sub2ind_gen (generic function with 1 method)
+
+julia&gt; sub2ind_gen((3, 5), 1, 2)
+4</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032317Z" creationid="hsugawa8651" creationdate="20181116T032317Z">
+        <seg>julia&gt; @generated function sub2ind_gen(dims::NTuple{N}, I::Integer...) where N
+           ex = :(I[$N] - 1)
+           for i = (N - 1):-1:1
+               ex = :(I[$i] - 1 + dims[$i] * $ex)
+           end
+           return :($ex + 1)
+       end
+sub2ind_gen (generic function with 1 method)
+
+julia&gt; sub2ind_gen((3, 5), 1, 2)
+4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; @generated function sub2ind_gen(dims::NTuple{N}, I::Integer...) where N
+           return sub2ind_gen_impl(dims, I...)
+       end
+sub2ind_gen (generic function with 1 method)
+
+julia&gt; function sub2ind_gen_impl(dims::Type{T}, I...) where T &lt;: NTuple{N,Any} where N
+           length(I) == N || return :(error("partial indexing is unsupported"))
+           ex = :(I[$N] - 1)
+           for i = (N - 1):-1:1
+               ex = :(I[$i] - 1 + dims[$i] * $ex)
+           end
+           return :($ex + 1)
+       end
+sub2ind_gen_impl (generic function with 1 method)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032322Z" creationid="hsugawa8651" creationdate="20181116T032322Z">
+        <seg>julia&gt; @generated function sub2ind_gen(dims::NTuple{N}, I::Integer...) where N
+           return sub2ind_gen_impl(dims, I...)
+       end
+sub2ind_gen (generic function with 1 method)
+
+julia&gt; function sub2ind_gen_impl(dims::Type{T}, I...) where T &lt;: NTuple{N,Any} where N
+           length(I) == N || return :(error("partial indexing is unsupported"))
+           ex = :(I[$N] - 1)
+           for i = (N - 1):-1:1
+               ex = :(I[$i] - 1 + dims[$i] * $ex)
+           end
+           return :($ex + 1)
+       end
+sub2ind_gen_impl (generic function with 1 method)</seg>
       </tuv>
     </tu>
     <tu>
@@ -20591,6 +20990,34 @@ Arg &lt;x4/&gt;3 = 3</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; function sub2ind_loop(dims::NTuple{N}, I::Integer...) where N
+           ind = I[N] - 1
+           for i = N-1:-1:1
+               ind = I[i]-1 + dims[i]*ind
+           end
+           return ind + 1
+       end
+sub2ind_loop (generic function with 1 method)
+
+julia&gt; sub2ind_loop((3, 5), 1, 2)
+4</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032245Z" creationid="hsugawa8651" creationdate="20181116T032245Z">
+        <seg>julia&gt; function sub2ind_loop(dims::NTuple{N}, I::Integer...) where N
+           ind = I[N] - 1
+           for i = N-1:-1:1
+               ind = I[i]-1 + dims[i]*ind
+           end
+           return ind + 1
+       end
+sub2ind_loop (generic function with 1 method)
+
+julia&gt; sub2ind_loop((3, 5), 1, 2)
+4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; function test(x, y)
            if x &lt; y
                println("x is less than y")
@@ -22647,6 +23074,30 @@ Val</seg>
 
 julia&gt; Val(x) = Val{x}()
 Val</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; sub2ind_gen_impl(Tuple{Int,Int}, Int, Int)
+:(((I[1] - 1) + dims[1] * (I[2] - 1)) + 1)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032331Z" creationid="hsugawa8651" creationdate="20181116T032331Z">
+        <seg>julia&gt; sub2ind_gen_impl(Tuple{Int,Int}, Int, Int)
+:(((I[1] - 1) + dims[1] * (I[2] - 1)) + 1)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; sub2ind_rec(dims::Tuple{}) = 1;
+
+julia&gt; sub2ind_rec(dims::Tuple{}, i1::Integer, I::Integer...) =
+           i1 == 1 ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032248Z" creationid="hsugawa8651" creationdate="20181116T032248Z">
+        <seg>julia&gt; sub2ind_rec(dims::Tuple{}) = 1;
+
+julia&gt; sub2ind_rec(dims::Tuple{}, i1::Integer, I::Integer...) =
+           i1 == 1 ?</seg>
       </tuv>
     </tu>
     <tu>
@@ -25588,10 +26039,50 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>sub2ind_rec(dims, I...) : throw(BoundsError());
+
+julia&gt; sub2ind_rec(dims::Tuple{Integer, Vararg{Integer}}, i1::Integer) = i1;
+
+julia&gt; sub2ind_rec(dims::Tuple{Integer, Vararg{Integer}}, i1::Integer, I::Integer...) =
+           i1 + dims[1] * (sub2ind_rec(Base.tail(dims), I...) - 1);
+
+julia&gt; sub2ind_rec((3, 5), 1, 2)
+4</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032255Z" creationid="hsugawa8651" creationdate="20181116T032255Z">
+        <seg>sub2ind_rec(dims, I...) : throw(BoundsError());
+
+julia&gt; sub2ind_rec(dims::Tuple{Integer, Vararg{Integer}}, i1::Integer) = i1;
+
+julia&gt; sub2ind_rec(dims::Tuple{Integer, Vararg{Integer}}, i1::Integer, I::Integer...) =
+           i1 + dims[1] * (sub2ind_rec(Base.tail(dims), I...) - 1);
+
+julia&gt; sub2ind_rec((3, 5), 1, 2)
+4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>symbol a</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063557Z" creationid="hsugawa8651" creationdate="20181114T063557Z">
         <seg>symbol a</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the &lt;x1/&gt;bar&lt;x2/&gt; function solves a problem that is better solved with multiple dispatch - defining &lt;x3/&gt;bar(x) = x&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032211Z" creationid="hsugawa8651" creationdate="20181116T032211Z">
+        <seg>&lt;x1/&gt;bar&lt;x2/&gt;関数は、複数のディスパッチによって解決される問題を解決します。&lt;x3/&gt;bar(x)=x&lt;x4/&gt;を定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the &lt;x1/&gt;baz&lt;x2/&gt; function is pathological</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032215Z" creationid="hsugawa8651" creationdate="20181116T032215Z">
+        <seg>&lt;x1/&gt;baz&lt;x2/&gt;関数は病的である</seg>
       </tuv>
     </tu>
     <tu>
