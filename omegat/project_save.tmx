@@ -455,6 +455,34 @@ $ cat -n Tmp/src/Tmp.jl
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>$JULIA_BINDIR/$DATAROOTDIR/julia/base</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054804Z" creationid="hsugawa8651" creationdate="20181116T054804Z">
+        <seg>$JULIA_BINDIR/$DATAROOTDIR/julia/base</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$JULIA_BINDIR/$SYSCONFDIR/julia/startup.jl
+$JULIA_BINDIR/../etc/julia/startup.jl</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054817Z" creationid="hsugawa8651" creationdate="20181116T054817Z">
+        <seg>$JULIA_BINDIR/$SYSCONFDIR/julia/startup.jl
+$JULIA_BINDIR/../etc/julia/startup.jl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$JULIA_BINDIR/julia
+$JULIA_BINDIR/julia-debug</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054746Z" creationid="hsugawa8651" creationdate="20181116T054746Z">
+        <seg>$JULIA_BINDIR/julia
+$JULIA_BINDIR/julia-debug</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>%&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032308Z" creationid="hsugawa8651" creationdate="20181114T032308Z">
@@ -651,6 +679,14 @@ $ cat -n Tmp/src/Tmp.jl
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T015249Z" creationid="hsugawa8651" creationdate="20181116T015249Z">
         <seg>(@id man-macros)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@id man-method-design-ambiguities)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054400Z" creationid="hsugawa8651" creationdate="20181116T054400Z">
+        <seg>(@id man-method-design-ambiguities)</seg>
       </tuv>
     </tu>
     <tu>
@@ -919,6 +955,36 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>+(a, b) = +(promote(a, b)...)
+&lt;x4/&gt; Once the elements have the same type, they can be added.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054210Z" creationid="hsugawa8651" creationdate="20181116T054210Z">
+        <seg>+(a, b) = +(promote(a, b)...)
+&lt;x4/&gt; Once the elements have the same type, they can be added.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>+(a::Float64, b::Float64) = Core.add(a, b)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054218Z" creationid="hsugawa8651" creationdate="20181116T054218Z">
+        <seg>+(a::Float64, b::Float64) = Core.add(a, b)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>+(a::Matrix, b::Matrix) = map(+, a, b)
+&lt;x2/&gt; Then dispatch handles each element and selects the appropriate
+&lt;x3/&gt; common element type for the computation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054205Z" creationid="hsugawa8651" creationdate="20181116T054205Z">
+        <seg>+(a::Matrix, b::Matrix) = map(+, a, b)
+&lt;x2/&gt; Then dispatch handles each element and selects the appropriate
+&lt;x3/&gt; common element type for the computation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>+1 : 0)
        end
 mycompare (generic function with 1 method)</seg>
@@ -951,6 +1017,22 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063157Z" creationid="hsugawa8651" creationdate="20181114T063157Z">
         <seg>,&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-(A::AbstractArray{T}, b::Date) where {T&lt;:Date}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054448Z" creationid="hsugawa8651" creationdate="20181116T054448Z">
+        <seg>-(A::AbstractArray{T}, b::Date) where {T&lt;:Date}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-(A::MyArrayType{T}, b::T) where {T}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054450Z" creationid="hsugawa8651" creationdate="20181116T054450Z">
+        <seg>-(A::MyArrayType{T}, b::T) where {T}</seg>
       </tuv>
     </tu>
     <tu>
@@ -1311,6 +1393,14 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030812Z" creationid="hsugawa8651" creationdate="20181114T030812Z">
         <seg>&lt;x1/&gt;に続いて&lt;x2/&gt;::&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>/etc/julia/startup.jl</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054824Z" creationid="hsugawa8651" creationdate="20181116T054824Z">
+        <seg>/etc/julia/startup.jl</seg>
       </tuv>
     </tu>
     <tu>
@@ -5857,6 +5947,22 @@ they don't intend to change.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Candidates:
+  g(x, y::Float64) in Main at none:1
+  g(x::Float64, y) in Main at none:1
+Possible fix, define
+  g(::Float64, ::Float64)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054004Z" creationid="hsugawa8651" creationdate="20181116T054004Z">
+        <seg>Candidates:
+  g(x, y::Float64) in Main at none:1
+  g(x::Float64, y) in Main at none:1
+Possible fix, define
+  g(::Float64, ::Float64)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Captured variables can present performance challenges; see
 &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref man-performance-tips).</seg>
       </tuv>
@@ -5894,6 +6000,26 @@ obj2 = MyModule.somefunction(obj1)   &lt;x5/&gt; this time it worked!</seg>
 include("mynewcode.jl")              &lt;x3/&gt; reload the module
 obj1 = MyModule.ObjConstructor(a, b) &lt;x4/&gt; old objects are no longer valid, must reconstruct
 obj2 = MyModule.somefunction(obj1)   &lt;x5/&gt; this time it worked!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Closest candidates are:
+  newfun() at none:1 (method too new to be called from this world context.)
+ in tryeval() at none:1
+ ...
+
+julia&gt; newfun()
+1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054054Z" creationid="hsugawa8651" creationdate="20181116T054054Z">
+        <seg>Closest candidates are:
+  newfun() at none:1 (method too new to be called from this world context.)
+ in tryeval() at none:1
+ ...
+
+julia&gt; newfun()
+1</seg>
       </tuv>
     </tu>
     <tu>
@@ -9052,6 +9178,14 @@ indexing with the resulting &lt;x5/&gt;CartesianIndex&lt;x6/&gt; object to compu
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>JULIA_BINDIR&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054734Z" creationid="hsugawa8651" creationdate="20181116T054734Z">
+        <seg>JULIA_BINDIR&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia
 functions are not pure mathematical functions, in the sense that functions can alter and be affected
 by the global state of the program.</seg>
@@ -11150,6 +11284,16 @@ mathematical formulae.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111904Z" creationid="hsugawa8651" creationdate="20181112T111904Z">
         <seg>上記の構文的拡張は、一般的な書き込みの際に発生する視覚的なノイズを大幅に低減します。 数式。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The absolute path of the directory containing the Julia executable, which sets
+the global variable &lt;x1/&gt;`Sys.BINDIR`&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054725Z" creationid="hsugawa8651" creationdate="20181116T054725Z">
+        <seg>The absolute path of the directory containing the Julia executable, which sets
+the global variable &lt;x1/&gt;`Sys.BINDIR`&lt;x2/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -14632,6 +14776,32 @@ as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>abstract type AbstractArray{T, N} end
+eltype(::Type{&lt;:AbstractArray{T}}) where {T} = T</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054127Z" creationid="hsugawa8651" creationdate="20181116T054127Z">
+        <seg>abstract type AbstractArray{T, N} end
+eltype(::Type{&lt;:AbstractArray{T}}) where {T} = T</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>abstract type AbstractArray{T, N} end
+eltype(::Type{AbstractArray}) = Any
+eltype(::Type{AbstractArray{T}}) where {T} = T
+eltype(::Type{AbstractArray{T, N}}) where {T, N} = T
+eltype(::Type{A}) where {A&lt;:AbstractArray} = eltype(supertype(A))</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054135Z" creationid="hsugawa8651" creationdate="20181116T054135Z">
+        <seg>abstract type AbstractArray{T, N} end
+eltype(::Type{AbstractArray}) = Any
+eltype(::Type{AbstractArray{T}}) where {T} = T
+eltype(::Type{AbstractArray{T, N}}) where {T, N} = T
+eltype(::Type{A}) where {A&lt;:AbstractArray} = eltype(supertype(A))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>abstract type Number end
 abstract type Real     &lt;: Number end
 abstract type AbstractFloat &lt;: Real end
@@ -14949,6 +15119,22 @@ Base.unsafe_store!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>complexfunction(arg::Int) = ...
+complexfunction(arg::Any) = complexfunction(convert(Int, arg))
+
+matmul(a::T, b::T) = ...
+matmul(a, b) = matmul(promote(a, b)...)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054308Z" creationid="hsugawa8651" creationdate="20181116T054308Z">
+        <seg>complexfunction(arg::Int) = ...
+complexfunction(arg::Any) = complexfunction(convert(Int, arg))
+
+matmul(a::T, b::T) = ...
+matmul(a, b) = matmul(promote(a, b)...)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>concatenate input arrays along dimension(s) &lt;x1/&gt;k&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154549Z" creationid="hsugawa8651" creationdate="20181109T154549Z">
@@ -15103,10 +15289,34 @@ perhaps range-types &lt;x6/&gt;Ind&lt;x7/&gt; of your own design.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>eltype(::Type{AbstractArray{T, N} where {T&lt;:S, N&lt;:M}}) where {M, S} = Any
+eltype(::Type{AbstractArray{T, N} where {T&lt;:S}}) where {N, S} = Any
+eltype(::Type{AbstractArray{T, N} where {N&lt;:M}}) where {M, T} = T
+eltype(::Type{AbstractArray{T, N}}) where {T, N} = T
+eltype(::Type{A}) where {A &lt;: AbstractArray} = eltype(supertype(A))</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054140Z" creationid="hsugawa8651" creationdate="20181116T054140Z">
+        <seg>eltype(::Type{AbstractArray{T, N} where {T&lt;:S, N&lt;:M}}) where {M, S} = Any
+eltype(::Type{AbstractArray{T, N} where {T&lt;:S}}) where {N, S} = Any
+eltype(::Type{AbstractArray{T, N} where {N&lt;:M}}) where {M, T} = T
+eltype(::Type{AbstractArray{T, N}}) where {T, N} = T
+eltype(::Type{A}) where {A &lt;: AbstractArray} = eltype(supertype(A))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>eltype(IterType)&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112156Z" creationid="hsugawa8651" creationdate="20181112T112156Z">
         <seg>eltype(IterType)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>eltype_wrong(::Type{A}) where {A&lt;:AbstractArray} = A.parameters[1]</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054146Z" creationid="hsugawa8651" creationdate="20181116T054146Z">
+        <seg>eltype_wrong(::Type{A}) where {A&lt;:AbstractArray} = A.parameters[1]</seg>
       </tuv>
     </tu>
     <tu>
@@ -15179,6 +15389,114 @@ using Bar</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032314Z" creationid="hsugawa8651" creationdate="20181114T032314Z">
         <seg>指数演算子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>f(a,b) = a+2b
+f(a) = f(a,2)
+f() = f(1,2)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054330Z" creationid="hsugawa8651" creationdate="20181116T054330Z">
+        <seg>f(a,b) = a+2b
+f(a) = f(a,2)
+f() = f(1,2)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>f(a::Int,b::Int) = a-2b</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054335Z" creationid="hsugawa8651" creationdate="20181116T054335Z">
+        <seg>f(a::Int,b::Int) = a-2b</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>f(a=1,b=2) = a+2b</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054328Z" creationid="hsugawa8651" creationdate="20181116T054328Z">
+        <seg>f(a=1,b=2) = a+2b</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>f(x, y::Int) = 1
+f(x::Int, y) = 2</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054405Z" creationid="hsugawa8651" creationdate="20181116T054405Z">
+        <seg>f(x, y::Int) = 1
+f(x::Int, y) = 2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>f(x::A, y) = _fA(x, y)
+f(x::B, y) = _fB(x, y)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054442Z" creationid="hsugawa8651" creationdate="20181116T054442Z">
+        <seg>f(x::A, y) = _fA(x, y)
+f(x::B, y) = _fB(x, y)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>f(x::A, y::A) = ...
+f(x, y) = f(g(x), g(y))</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054432Z" creationid="hsugawa8651" creationdate="20181116T054432Z">
+        <seg>f(x::A, y::A) = ...
+f(x, y) = f(g(x), g(y))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>f(x::A, y::A) = ...
+f(x::A, y::B) = ...
+f(x::B, y::A) = ...
+f(x::B, y::B) = ...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054430Z" creationid="hsugawa8651" creationdate="20181116T054430Z">
+        <seg>f(x::A, y::A) = ...
+f(x::A, y::B) = ...
+f(x::B, y::A) = ...
+f(x::B, y::B) = ...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>f(x::Int, y::Int) = 3</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054407Z" creationid="hsugawa8651" creationdate="20181116T054407Z">
+        <seg>f(x::Int, y::Int) = 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>f(x::NTuple{N,Int}) where {N} = 1
+f(x::NTuple{N,Float64}) where {N} = 2</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054413Z" creationid="hsugawa8651" creationdate="20181116T054413Z">
+        <seg>f(x::NTuple{N,Int}) where {N} = 1
+f(x::NTuple{N,Float64}) where {N} = 2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>f(x::T, y::T) where {T} = ...
+f(x, y) = f(promote(x, y)...)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054439Z" creationid="hsugawa8651" creationdate="20181116T054439Z">
+        <seg>f(x::T, y::T) where {T} = ...
+f(x, y) = f(promote(x, y)...)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>f(x::Tuple{}) = 3</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054426Z" creationid="hsugawa8651" creationdate="20181116T054426Z">
+        <seg>f(x::Tuple{}) = 3</seg>
       </tuv>
     </tu>
     <tu>
@@ -15649,6 +15967,114 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>function getindex(A::AbstractArray{T,N}, indices::Vararg{Number,N}) where {T,N}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054322Z" creationid="hsugawa8651" creationdate="20181116T054322Z">
+        <seg>function getindex(A::AbstractArray{T,N}, indices::Vararg{Number,N}) where {T,N}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function matmul(a::AbstractMatrix, b::AbstractMatrix)
+    op = (ai, bi) -&gt; ai * bi + ai * bi
+
+    &lt;x1/&gt; this is insufficient because it assumes `one(eltype(a))` is constructable:
+    &lt;x2/&gt; R = typeof(op(one(eltype(a)), one(eltype(b))))
+
+    &lt;x3/&gt; this fails because it assumes `a[1]` exists and is representative of all elements of the array
+    &lt;x4/&gt; R = typeof(op(a[1], b[1]))
+
+    &lt;x5/&gt; this is incorrect because it assumes that `+` calls `promote_type`
+    &lt;x6/&gt; but this is not true for some types, such as Bool:
+    &lt;x7/&gt; R = promote_type(ai, bi)
+
+    &lt;x8/&gt; this is wrong, since depending on the return value
+    &lt;x9/&gt; of type-inference is very brittle (as well as not being optimizable):
+    &lt;x10/&gt; R = Base.return_types(op, (eltype(a), eltype(b)))
+
+    &lt;x11/&gt; but, finally, this works:
+    R = promote_op(op, eltype(a), eltype(b))
+    &lt;x12/&gt; although sometimes it may give a larger type than desired
+    &lt;x13/&gt; it will always give a correct type
+
+    output = similar(b, R, (size(a, 1), size(b, 2)))
+    if size(a, 2) &gt; 0
+        for j in 1:size(b, 2)
+            for i in 1:size(b, 1)
+                &lt;x14/&gt; here we don't use `ab = zero(R)`,
+                &lt;x15/&gt; since `R` might be `Any` and `zero(Any)` is not defined
+                &lt;x16/&gt; we also must declare `ab::R` to make the type of `ab` constant in the loop,
+                &lt;x17/&gt; since it is possible that typeof(a * b) != typeof(a * b + a * b) == R
+                ab::R = a[i, 1] * b[1, j]
+                for k in 2:size(a, 2)
+                    ab += a[i, k] * b[k, j]
+                end
+                output[i, j] = ab
+            end
+        end
+    end
+    return output
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054234Z" creationid="hsugawa8651" creationdate="20181116T054234Z">
+        <seg>function matmul(a::AbstractMatrix, b::AbstractMatrix)
+    op = (ai, bi) -&gt; ai * bi + ai * bi
+
+    &lt;x1/&gt; this is insufficient because it assumes `one(eltype(a))` is constructable:
+    &lt;x2/&gt; R = typeof(op(one(eltype(a)), one(eltype(b))))
+
+    &lt;x3/&gt; this fails because it assumes `a[1]` exists and is representative of all elements of the array
+    &lt;x4/&gt; R = typeof(op(a[1], b[1]))
+
+    &lt;x5/&gt; this is incorrect because it assumes that `+` calls `promote_type`
+    &lt;x6/&gt; but this is not true for some types, such as Bool:
+    &lt;x7/&gt; R = promote_type(ai, bi)
+
+    &lt;x8/&gt; this is wrong, since depending on the return value
+    &lt;x9/&gt; of type-inference is very brittle (as well as not being optimizable):
+    &lt;x10/&gt; R = Base.return_types(op, (eltype(a), eltype(b)))
+
+    &lt;x11/&gt; but, finally, this works:
+    R = promote_op(op, eltype(a), eltype(b))
+    &lt;x12/&gt; although sometimes it may give a larger type than desired
+    &lt;x13/&gt; it will always give a correct type
+
+    output = similar(b, R, (size(a, 1), size(b, 2)))
+    if size(a, 2) &gt; 0
+        for j in 1:size(b, 2)
+            for i in 1:size(b, 1)
+                &lt;x14/&gt; here we don't use `ab = zero(R)`,
+                &lt;x15/&gt; since `R` might be `Any` and `zero(Any)` is not defined
+                &lt;x16/&gt; we also must declare `ab::R` to make the type of `ab` constant in the loop,
+                &lt;x17/&gt; since it is possible that typeof(a * b) != typeof(a * b + a * b) == R
+                ab::R = a[i, 1] * b[1, j]
+                for k in 2:size(a, 2)
+                    ab += a[i, k] * b[k, j]
+                end
+                output[i, j] = ab
+            end
+        end
+    end
+    return output
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function myfilter(A, kernel, ::Replicate)
+    Apadded = replicate_edges(A, size(kernel))
+    myfilter(Apadded, kernel)  &lt;x1/&gt; now perform the "real" computation
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054456Z" creationid="hsugawa8651" creationdate="20181116T054456Z">
+        <seg>function myfilter(A, kernel, ::Replicate)
+    Apadded = replicate_edges(A, size(kernel))
+    myfilter(Apadded, kernel)  &lt;x1/&gt; now perform the "real" computation
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>function myplus(x,y)
     x+y
 end</seg>
@@ -15775,6 +16201,14 @@ end</seg>
         return ind + 1
     end
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>g(x::A) = x</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054437Z" creationid="hsugawa8651" creationdate="20181116T054437Z">
+        <seg>g(x::A) = x</seg>
       </tuv>
     </tu>
     <tu>
@@ -16092,6 +16526,16 @@ obj2 = MyModule.somefunction(obj1)
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131755Z" creationid="hsugawa8651" creationdate="20181113T131755Z">
         <seg>&lt;x1/&gt;タプル&lt;x2/&gt;"が0次元配列に対して(出力コンテナはタプルになります)"勝ち"であることを示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>input = convert(AbstractArray{Eltype}, input)
+output = similar(input, Eltype)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054157Z" creationid="hsugawa8651" creationdate="20181116T054157Z">
+        <seg>input = convert(AbstractArray{Eltype}, input)
+output = similar(input, Eltype)</seg>
       </tuv>
     </tu>
     <tu>
@@ -19288,6 +19732,42 @@ bar (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; bar(a,b,x::Vararg{Any,2}) = (a,b,x)
+bar (generic function with 1 method)
+
+julia&gt; bar(1,2,3)
+ERROR: MethodError: no method matching bar(::Int64, ::Int64, ::Int64)
+Closest candidates are:
+  bar(::Any, ::Any, ::Any, !Matched::Any) at none:1
+
+julia&gt; bar(1,2,3,4)
+(1, 2, (3, 4))
+
+julia&gt; bar(1,2,3,4,5)
+ERROR: MethodError: no method matching bar(::Int64, ::Int64, ::Int64, ::Int64, ::Int64)
+Closest candidates are:
+  bar(::Any, ::Any, ::Any, ::Any) at none:1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054317Z" creationid="hsugawa8651" creationdate="20181116T054317Z">
+        <seg>julia&gt; bar(a,b,x::Vararg{Any,2}) = (a,b,x)
+bar (generic function with 1 method)
+
+julia&gt; bar(1,2,3)
+ERROR: MethodError: no method matching bar(::Int64, ::Int64, ::Int64)
+Closest candidates are:
+  bar(::Any, ::Any, ::Any, !Matched::Any) at none:1
+
+julia&gt; bar(1,2,3,4)
+(1, 2, (3, 4))
+
+julia&gt; bar(1,2,3,4,5)
+ERROR: MethodError: no method matching bar(::Int64, ::Int64, ::Int64, ::Int64, ::Int64)
+Closest candidates are:
+  bar(::Any, ::Any, ::Any, ::Any) at none:1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; baz(a,b) = a + b;
 
 julia&gt; args = [1,2]
@@ -20004,6 +20484,16 @@ julia&gt; grandparent()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; f
+f (generic function with 2 methods)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T053936Z" creationid="hsugawa8651" creationdate="20181116T053936Z">
+        <seg>julia&gt; f
+f (generic function with 2 methods)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; f = +;
 
 julia&gt; f(1,2,3)
@@ -20044,6 +20534,64 @@ julia&gt; a = 1
 
 julia&gt; f(3)
 4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; f("foo", 3)
+ERROR: MethodError: no method matching f(::String, ::Int64)
+Closest candidates are:
+  f(!Matched::Number, ::Number) at none:1
+
+julia&gt; f()
+ERROR: MethodError: no method matching f()
+Closest candidates are:
+  f(!Matched::Float64, !Matched::Float64) at none:1
+  f(!Matched::Number, !Matched::Number) at none:1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T053933Z" creationid="hsugawa8651" creationdate="20181116T053933Z">
+        <seg>julia&gt; f("foo", 3)
+ERROR: MethodError: no method matching f(::String, ::Int64)
+Closest candidates are:
+  f(!Matched::Number, ::Number) at none:1
+
+julia&gt; f()
+ERROR: MethodError: no method matching f()
+Closest candidates are:
+  f(!Matched::Float64, !Matched::Float64) at none:1
+  f(!Matched::Number, !Matched::Number) at none:1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; f(1)
+"definition for Int"
+
+julia&gt; g(1)
+"definition for Int"
+
+julia&gt; fetch(schedule(t, 1))
+"original definition"
+
+julia&gt; t = @async f(wait()); yield();
+
+julia&gt; fetch(schedule(t, 1))
+"definition for Int"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054120Z" creationid="hsugawa8651" creationdate="20181116T054120Z">
+        <seg>julia&gt; f(1)
+"definition for Int"
+
+julia&gt; g(1)
+"definition for Int"
+
+julia&gt; fetch(schedule(t, 1))
+"original definition"
+
+julia&gt; t = @async f(wait()); yield();
+
+julia&gt; fetch(schedule(t, 1))
+"definition for Int"</seg>
       </tuv>
     </tu>
     <tu>
@@ -20106,6 +20654,94 @@ true</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025628Z" creationid="hsugawa8651" creationdate="20181110T025628Z">
         <seg>julia&gt; f(2,3)
 5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; f(2.0, 3)
+ERROR: MethodError: no method matching f(::Float64, ::Int64)
+Closest candidates are:
+  f(::Float64, !Matched::Float64) at none:1
+
+julia&gt; f(Float32(2.0), 3.0)
+ERROR: MethodError: no method matching f(::Float32, ::Float64)
+Closest candidates are:
+  f(!Matched::Float64, ::Float64) at none:1
+
+julia&gt; f(2.0, "3.0")
+ERROR: MethodError: no method matching f(::Float64, ::String)
+Closest candidates are:
+  f(::Float64, !Matched::Float64) at none:1
+
+julia&gt; f("2.0", "3.0")
+ERROR: MethodError: no method matching f(::String, ::String)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T053858Z" creationid="hsugawa8651" creationdate="20181116T053858Z">
+        <seg>julia&gt; f(2.0, 3)
+ERROR: MethodError: no method matching f(::Float64, ::Int64)
+Closest candidates are:
+  f(::Float64, !Matched::Float64) at none:1
+
+julia&gt; f(Float32(2.0), 3.0)
+ERROR: MethodError: no method matching f(::Float32, ::Float64)
+Closest candidates are:
+  f(!Matched::Float64, ::Float64) at none:1
+
+julia&gt; f(2.0, "3.0")
+ERROR: MethodError: no method matching f(::Float64, ::String)
+Closest candidates are:
+  f(::Float64, !Matched::Float64) at none:1
+
+julia&gt; f("2.0", "3.0")
+ERROR: MethodError: no method matching f(::String, ::String)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; f(2.0, 3.0)
+7.0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T053905Z" creationid="hsugawa8651" creationdate="20181116T053905Z">
+        <seg>julia&gt; f(2.0, 3.0)
+7.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; f(2.0, 3.0)
+7.0
+
+julia&gt; f(2, 3.0)
+1.0
+
+julia&gt; f(2.0, 3)
+1.0
+
+julia&gt; f(2, 3)
+1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T053925Z" creationid="hsugawa8651" creationdate="20181116T053925Z">
+        <seg>julia&gt; f(2.0, 3.0)
+7.0
+
+julia&gt; f(2, 3.0)
+1.0
+
+julia&gt; f(2.0, 3)
+1.0
+
+julia&gt; f(2, 3)
+1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; f(x) = "original definition"
+f (generic function with 1 method)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054109Z" creationid="hsugawa8651" creationdate="20181116T054109Z">
+        <seg>julia&gt; f(x) = "original definition"
+f (generic function with 1 method)</seg>
       </tuv>
     </tu>
     <tu>
@@ -20186,6 +20822,22 @@ julia&gt; f.(A, B)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; f(x,y) = println("Whoa there, Nelly.")
+f (generic function with 3 methods)
+
+julia&gt; f("foo", 1)
+Whoa there, Nelly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T053947Z" creationid="hsugawa8651" creationdate="20181116T053947Z">
+        <seg>julia&gt; f(x,y) = println("Whoa there, Nelly.")
+f (generic function with 3 methods)
+
+julia&gt; f("foo", 1)
+Whoa there, Nelly.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; f(x,y) = x + y
 f (generic function with 1 method)</seg>
       </tuv>
@@ -20230,6 +20882,32 @@ julia&gt; g(2,3)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; f(x::Float64, y::Float64) = 2x + y
+f (generic function with 1 method)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T053909Z" creationid="hsugawa8651" creationdate="20181116T053909Z">
+        <seg>julia&gt; f(x::Float64, y::Float64) = 2x + y
+f (generic function with 1 method)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; f(x::Int) = "definition for Int"
+f (generic function with 2 methods)
+
+julia&gt; f(x::Type{Int}) = "definition for Type{Int}"
+f (generic function with 3 methods)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054115Z" creationid="hsugawa8651" creationdate="20181116T054115Z">
+        <seg>julia&gt; f(x::Int) = "definition for Int"
+f (generic function with 2 methods)
+
+julia&gt; f(x::Type{Int}) = "definition for Type{Int}"
+f (generic function with 3 methods)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; f(x::Int) = "definition for Int";
 
 julia&gt; f(x::Type{Int}) = "definition for Type{Int}";</seg>
@@ -20238,6 +20916,22 @@ julia&gt; f(x::Type{Int}) = "definition for Type{Int}";</seg>
         <seg>julia&gt; f(x::Int) = "definition for Int";
 
 julia&gt; f(x::Type{Int}) = "definition for Type{Int}";</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; f(x::Number, y::Number) = 2x - y
+f (generic function with 2 methods)
+
+julia&gt; f(2.0, 3)
+1.0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T053919Z" creationid="hsugawa8651" creationdate="20181116T053919Z">
+        <seg>julia&gt; f(x::Number, y::Number) = 2x - y
+f (generic function with 2 methods)
+
+julia&gt; f(2.0, 3)
+1.0</seg>
       </tuv>
     </tu>
     <tu>
@@ -21096,6 +21790,52 @@ x is greater than y.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; function tryeval()
+           @eval newfun() = 1
+           newfun()
+       end
+tryeval (generic function with 1 method)
+
+julia&gt; tryeval()
+ERROR: MethodError: no method matching newfun()
+The applicable method may be too new: running in world age xxxx1, while current world is xxxx2.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054039Z" creationid="hsugawa8651" creationdate="20181116T054039Z">
+        <seg>julia&gt; function tryeval()
+           @eval newfun() = 1
+           newfun()
+       end
+tryeval (generic function with 1 method)
+
+julia&gt; tryeval()
+ERROR: MethodError: no method matching newfun()
+The applicable method may be too new: running in world age xxxx1, while current world is xxxx2.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; function tryeval2()
+           @eval newfun2() = 2
+           Base.invokelatest(newfun2)
+       end
+tryeval2 (generic function with 1 method)
+
+julia&gt; tryeval2()
+2</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054103Z" creationid="hsugawa8651" creationdate="20181116T054103Z">
+        <seg>julia&gt; function tryeval2()
+           @eval newfun2() = 2
+           Base.invokelatest(newfun2)
+       end
+tryeval2 (generic function with 1 method)
+
+julia&gt; tryeval2()
+2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; g = f;
 
 julia&gt; g(2,3)
@@ -21138,6 +21878,20 @@ julia&gt; g(1)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; g(x) = f(x)
+g (generic function with 1 method)
+
+julia&gt; t = @async f(wait()); yield();</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054112Z" creationid="hsugawa8651" creationdate="20181116T054112Z">
+        <seg>julia&gt; g(x) = f(x)
+g (generic function with 1 method)
+
+julia&gt; t = @async f(wait()); yield();</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; g(x) = f(x);
 
 julia&gt; @generated gen1(x) = f(x);
@@ -21150,6 +21904,68 @@ julia&gt; @generated gen2(x) = :(f(x));</seg>
 julia&gt; @generated gen1(x) = f(x);
 
 julia&gt; @generated gen2(x) = :(f(x));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; g(x::Float64, y) = 2x + y
+g (generic function with 1 method)
+
+julia&gt; g(x, y::Float64) = x + 2y
+g (generic function with 2 methods)
+
+julia&gt; g(2.0, 3)
+7.0
+
+julia&gt; g(2, 3.0)
+8.0
+
+julia&gt; g(2.0, 3.0)
+ERROR: MethodError: g(::Float64, ::Float64) is ambiguous.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T053955Z" creationid="hsugawa8651" creationdate="20181116T053955Z">
+        <seg>julia&gt; g(x::Float64, y) = 2x + y
+g (generic function with 1 method)
+
+julia&gt; g(x, y::Float64) = x + 2y
+g (generic function with 2 methods)
+
+julia&gt; g(2.0, 3)
+7.0
+
+julia&gt; g(2, 3.0)
+8.0
+
+julia&gt; g(2.0, 3.0)
+ERROR: MethodError: g(::Float64, ::Float64) is ambiguous.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; g(x::Float64, y::Float64) = 2x + 2y
+g (generic function with 3 methods)
+
+julia&gt; g(2.0, 3)
+7.0
+
+julia&gt; g(2, 3.0)
+8.0
+
+julia&gt; g(2.0, 3.0)
+10.0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054010Z" creationid="hsugawa8651" creationdate="20181116T054010Z">
+        <seg>julia&gt; g(x::Float64, y::Float64) = 2x + 2y
+g (generic function with 3 methods)
+
+julia&gt; g(2.0, 3)
+7.0
+
+julia&gt; g(2, 3.0)
+8.0
+
+julia&gt; g(2.0, 3.0)
+10.0</seg>
       </tuv>
     </tu>
     <tu>
@@ -21886,10 +22702,122 @@ RegexMatch("&lt;x4/&gt;")</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; methods(+)
+&lt;x1/&gt; 180 methods for generic function "+":
+[1] +(x::Bool, z::Complex{Bool}) in Base at complex.jl:227
+[2] +(x::Bool, y::Bool) in Base at bool.jl:89
+[3] +(x::Bool) in Base at bool.jl:86
+[4] +(x::Bool, y::T) where T&lt;:AbstractFloat in Base at bool.jl:96
+[5] +(x::Bool, z::Complex) in Base at complex.jl:234
+[6] +(a::Float16, b::Float16) in Base at float.jl:373
+[7] +(x::Float32, y::Float32) in Base at float.jl:375
+[8] +(x::Float64, y::Float64) in Base at float.jl:376
+[9] +(z::Complex{Bool}, x::Bool) in Base at complex.jl:228
+[10] +(z::Complex{Bool}, x::Real) in Base at complex.jl:242
+[11] +(x::Char, y::Integer) in Base at char.jl:40
+[12] +(c::BigInt, x::BigFloat) in Base.MPFR at mpfr.jl:307
+[13] +(a::BigInt, b::BigInt, c::BigInt, d::BigInt, e::BigInt) in Base.GMP at gmp.jl:392
+[14] +(a::BigInt, b::BigInt, c::BigInt, d::BigInt) in Base.GMP at gmp.jl:391
+[15] +(a::BigInt, b::BigInt, c::BigInt) in Base.GMP at gmp.jl:390
+[16] +(x::BigInt, y::BigInt) in Base.GMP at gmp.jl:361
+[17] +(x::BigInt, c::Union{UInt16, UInt32, UInt64, UInt8}) in Base.GMP at gmp.jl:398
+...
+[180] +(a, b, c, xs...) in Base at operators.jl:424</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T053951Z" creationid="hsugawa8651" creationdate="20181116T053951Z">
+        <seg>julia&gt; methods(+)
+&lt;x1/&gt; 180 methods for generic function "+":
+[1] +(x::Bool, z::Complex{Bool}) in Base at complex.jl:227
+[2] +(x::Bool, y::Bool) in Base at bool.jl:89
+[3] +(x::Bool) in Base at bool.jl:86
+[4] +(x::Bool, y::T) where T&lt;:AbstractFloat in Base at bool.jl:96
+[5] +(x::Bool, z::Complex) in Base at complex.jl:234
+[6] +(a::Float16, b::Float16) in Base at float.jl:373
+[7] +(x::Float32, y::Float32) in Base at float.jl:375
+[8] +(x::Float64, y::Float64) in Base at float.jl:376
+[9] +(z::Complex{Bool}, x::Bool) in Base at complex.jl:228
+[10] +(z::Complex{Bool}, x::Real) in Base at complex.jl:242
+[11] +(x::Char, y::Integer) in Base at char.jl:40
+[12] +(c::BigInt, x::BigFloat) in Base.MPFR at mpfr.jl:307
+[13] +(a::BigInt, b::BigInt, c::BigInt, d::BigInt, e::BigInt) in Base.GMP at gmp.jl:392
+[14] +(a::BigInt, b::BigInt, c::BigInt, d::BigInt) in Base.GMP at gmp.jl:391
+[15] +(a::BigInt, b::BigInt, c::BigInt) in Base.GMP at gmp.jl:390
+[16] +(x::BigInt, y::BigInt) in Base.GMP at gmp.jl:361
+[17] +(x::BigInt, c::Union{UInt16, UInt32, UInt64, UInt8}) in Base.GMP at gmp.jl:398
+...
+[180] +(a, b, c, xs...) in Base at operators.jl:424</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; methods(f)
+&lt;x1/&gt; 2 methods for generic function "f":
+[1] f(x::Float64, y::Float64) in Main at none:1
+[2] f(x::Number, y::Number) in Main at none:1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T053940Z" creationid="hsugawa8651" creationdate="20181116T053940Z">
+        <seg>julia&gt; methods(f)
+&lt;x1/&gt; 2 methods for generic function "f":
+[1] f(x::Float64, y::Float64) in Main at none:1
+[2] f(x::Number, y::Number) in Main at none:1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; minmax(x, y) = (y &lt; x) ?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T030048Z" creationid="hsugawa8651" creationdate="20181110T030048Z">
         <seg>julia&gt; minmax(x, y) = (y &lt; x) ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; missing + 1
+missing
+
+julia&gt; "a" * missing
+missing
+
+julia&gt; abs(missing)
+missing</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054512Z" creationid="hsugawa8651" creationdate="20181116T054512Z">
+        <seg>julia&gt; missing + 1
+missing
+
+julia&gt; "a" * missing
+missing
+
+julia&gt; abs(missing)
+missing</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; missing == 1
+missing
+
+julia&gt; missing == missing
+missing
+
+julia&gt; missing &lt; 1
+missing
+
+julia&gt; 2 &gt;= missing
+missing</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054518Z" creationid="hsugawa8651" creationdate="20181116T054518Z">
+        <seg>julia&gt; missing == 1
+missing
+
+julia&gt; missing == missing
+missing
+
+julia&gt; missing &lt; 1
+missing
+
+julia&gt; 2 &gt;= missing
+missing</seg>
       </tuv>
     </tu>
     <tu>
@@ -21992,6 +22920,64 @@ julia&gt; bar.baz = 1//2
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; myappend(v::Vector{T}, x::T) where {T} = [v..., x]
+myappend (generic function with 1 method)
+
+julia&gt; myappend([1,2,3],4)
+4-element Array{Int64,1}:
+ 1
+ 2
+ 3
+ 4
+
+julia&gt; myappend([1,2,3],2.5)
+ERROR: MethodError: no method matching myappend(::Array{Int64,1}, ::Float64)
+Closest candidates are:
+  myappend(::Array{T,1}, !Matched::T) where T at none:1
+
+julia&gt; myappend([1.0,2.0,3.0],4.0)
+4-element Array{Float64,1}:
+ 1.0
+ 2.0
+ 3.0
+ 4.0
+
+julia&gt; myappend([1.0,2.0,3.0],4)
+ERROR: MethodError: no method matching myappend(::Array{Float64,1}, ::Int64)
+Closest candidates are:
+  myappend(::Array{T,1}, !Matched::T) where T at none:1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054024Z" creationid="hsugawa8651" creationdate="20181116T054024Z">
+        <seg>julia&gt; myappend(v::Vector{T}, x::T) where {T} = [v..., x]
+myappend (generic function with 1 method)
+
+julia&gt; myappend([1,2,3],4)
+4-element Array{Int64,1}:
+ 1
+ 2
+ 3
+ 4
+
+julia&gt; myappend([1,2,3],2.5)
+ERROR: MethodError: no method matching myappend(::Array{Int64,1}, ::Float64)
+Closest candidates are:
+  myappend(::Array{T,1}, !Matched::T) where T at none:1
+
+julia&gt; myappend([1.0,2.0,3.0],4.0)
+4-element Array{Float64,1}:
+ 1.0
+ 2.0
+ 3.0
+ 4.0
+
+julia&gt; myappend([1.0,2.0,3.0],4)
+ERROR: MethodError: no method matching myappend(::Array{Float64,1}, ::Int64)
+Closest candidates are:
+  myappend(::Array{T,1}, !Matched::T) where T at none:1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; mytupletype = Tuple{AbstractString,Vararg{Int}}
 Tuple{AbstractString,Vararg{Int64,N} where N}
 
@@ -22022,6 +23008,28 @@ true
 
 julia&gt; isa(("1",1,2,3.0), mytupletype)
 false</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; mytypeof(x::T) where {T} = T
+mytypeof (generic function with 1 method)
+
+julia&gt; mytypeof(1)
+Int64
+
+julia&gt; mytypeof(1.0)
+Float64</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054028Z" creationid="hsugawa8651" creationdate="20181116T054028Z">
+        <seg>julia&gt; mytypeof(x::T) where {T} = T
+mytypeof (generic function with 1 method)
+
+julia&gt; mytypeof(1)
+Int64
+
+julia&gt; mytypeof(1.0)
+Float64</seg>
       </tuv>
     </tu>
     <tu>
@@ -22066,6 +23074,28 @@ false
 
 julia&gt; occursin(r"^\s*(?:&lt;x2/&gt;|$)", "&lt;x3/&gt; a comment")
 true</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; p = Polynomial([1,10,100])
+Polynomial{Int64}([1, 10, 100])
+
+julia&gt; p(3)
+931
+
+julia&gt; p()
+2551</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054346Z" creationid="hsugawa8651" creationdate="20181116T054346Z">
+        <seg>julia&gt; p = Polynomial([1,10,100])
+Polynomial{Int64}([1, 10, 100])
+
+julia&gt; p(3)
+931
+
+julia&gt; p()
+2551</seg>
       </tuv>
     </tu>
     <tu>
@@ -22530,6 +23560,120 @@ julia&gt; s[4]
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; same_type(1, 2)
+true
+
+julia&gt; same_type(1, 2.0)
+false
+
+julia&gt; same_type(1.0, 2.0)
+true
+
+julia&gt; same_type("foo", 2.0)
+false
+
+julia&gt; same_type("foo", "bar")
+true
+
+julia&gt; same_type(Int32(1), Int64(2))
+false</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054019Z" creationid="hsugawa8651" creationdate="20181116T054019Z">
+        <seg>julia&gt; same_type(1, 2)
+true
+
+julia&gt; same_type(1, 2.0)
+false
+
+julia&gt; same_type(1.0, 2.0)
+true
+
+julia&gt; same_type("foo", 2.0)
+false
+
+julia&gt; same_type("foo", "bar")
+true
+
+julia&gt; same_type(Int32(1), Int64(2))
+false</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; same_type(x::T, y::T) where {T} = true
+same_type (generic function with 1 method)
+
+julia&gt; same_type(x,y) = false
+same_type (generic function with 2 methods)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054016Z" creationid="hsugawa8651" creationdate="20181116T054016Z">
+        <seg>julia&gt; same_type(x::T, y::T) where {T} = true
+same_type (generic function with 1 method)
+
+julia&gt; same_type(x,y) = false
+same_type (generic function with 2 methods)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; same_type_numeric(x::T, y::T) where {T&lt;:Number} = true
+same_type_numeric (generic function with 1 method)
+
+julia&gt; same_type_numeric(x::Number, y::Number) = false
+same_type_numeric (generic function with 2 methods)
+
+julia&gt; same_type_numeric(1, 2)
+true
+
+julia&gt; same_type_numeric(1, 2.0)
+false
+
+julia&gt; same_type_numeric(1.0, 2.0)
+true
+
+julia&gt; same_type_numeric("foo", 2.0)
+ERROR: MethodError: no method matching same_type_numeric(::String, ::Float64)
+Closest candidates are:
+  same_type_numeric(!Matched::T&lt;:Number, ::T&lt;:Number) where T&lt;:Number at none:1
+  same_type_numeric(!Matched::Number, ::Number) at none:1
+
+julia&gt; same_type_numeric("foo", "bar")
+ERROR: MethodError: no method matching same_type_numeric(::String, ::String)
+
+julia&gt; same_type_numeric(Int32(1), Int64(2))
+false</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054030Z" creationid="hsugawa8651" creationdate="20181116T054030Z">
+        <seg>julia&gt; same_type_numeric(x::T, y::T) where {T&lt;:Number} = true
+same_type_numeric (generic function with 1 method)
+
+julia&gt; same_type_numeric(x::Number, y::Number) = false
+same_type_numeric (generic function with 2 methods)
+
+julia&gt; same_type_numeric(1, 2)
+true
+
+julia&gt; same_type_numeric(1, 2.0)
+false
+
+julia&gt; same_type_numeric(1.0, 2.0)
+true
+
+julia&gt; same_type_numeric("foo", 2.0)
+ERROR: MethodError: no method matching same_type_numeric(::String, ::Float64)
+Closest candidates are:
+  same_type_numeric(!Matched::T&lt;:Number, ::T&lt;:Number) where T&lt;:Number at none:1
+  same_type_numeric(!Matched::Number, ::Number) at none:1
+
+julia&gt; same_type_numeric("foo", "bar")
+ERROR: MethodError: no method matching same_type_numeric(::String, ::String)
+
+julia&gt; same_type_numeric(Int32(1), Int64(2))
+false</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; setrounding(BigFloat, RoundUp) do
            BigFloat(1) + parse(BigFloat, "0.1")
        end
@@ -22980,6 +24124,38 @@ Polar</seg>
 
 julia&gt; Polar(r::Real,Θ::Real) = Polar(promote(r,Θ)...)
 Polar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; struct Polynomial{R}
+           coeffs::Vector{R}
+       end
+
+julia&gt; function (p::Polynomial)(x)
+           v = p.coeffs[end]
+           for i = (length(p.coeffs)-1):-1:1
+               v = v*x + p.coeffs[i]
+           end
+           return v
+       end
+
+julia&gt; (p::Polynomial)() = p(5)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054341Z" creationid="hsugawa8651" creationdate="20181116T054341Z">
+        <seg>julia&gt; struct Polynomial{R}
+           coeffs::Vector{R}
+       end
+
+julia&gt; function (p::Polynomial)(x)
+           v = p.coeffs[end]
+           for i = (length(p.coeffs)-1):-1:1
+               v = v*x + p.coeffs[i]
+           end
+           return v
+       end
+
+julia&gt; (p::Polynomial)() = p(5)</seg>
       </tuv>
     </tu>
     <tu>
@@ -25953,6 +27129,40 @@ Docs.getdoc(t::MyType) = "Documentation for MyType with value $(t.value)"
 
 x = MyType("x")
 y = MyType("y")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>struct NoPad end  &lt;x1/&gt; indicate that no padding is desired, or that it's already applied
+
+myfilter(A, kernel) = myfilter(A, kernel, Replicate())  &lt;x2/&gt; default boundary conditions
+
+function myfilter(A, kernel, ::Replicate)
+    Apadded = replicate_edges(A, size(kernel))
+    myfilter(Apadded, kernel, NoPad())  &lt;x3/&gt; indicate the new boundary conditions
+end
+
+&lt;x4/&gt; other padding methods go here
+
+function myfilter(A, kernel, ::NoPad)
+    &lt;x5/&gt; Here's the "real" implementation of the core computation
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054503Z" creationid="hsugawa8651" creationdate="20181116T054503Z">
+        <seg>struct NoPad end  &lt;x1/&gt; indicate that no padding is desired, or that it's already applied
+
+myfilter(A, kernel) = myfilter(A, kernel, Replicate())  &lt;x2/&gt; default boundary conditions
+
+function myfilter(A, kernel, ::Replicate)
+    Apadded = replicate_edges(A, size(kernel))
+    myfilter(Apadded, kernel, NoPad())  &lt;x3/&gt; indicate the new boundary conditions
+end
+
+&lt;x4/&gt; other padding methods go here
+
+function myfilter(A, kernel, ::NoPad)
+    &lt;x5/&gt; Here's the "real" implementation of the core computation
+end</seg>
       </tuv>
     </tu>
     <tu>
