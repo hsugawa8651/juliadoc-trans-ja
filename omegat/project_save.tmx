@@ -2191,6 +2191,14 @@ temporarily-suspended computations.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x1/&gt;```c&lt;x2/&gt;&lt;x3/&gt;int main(int argc, char **argv);&lt;x4/&gt;&lt;x5/&gt;```&lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;can be called via the following Julia code:&lt;x10/&gt;&lt;x11/&gt;&lt;x12/&gt;&lt;x13/&gt;```julia&lt;x14/&gt;&lt;x15/&gt;argv = [ "a.out", "arg1", "arg2" ]&lt;x16/&gt;&lt;x17/&gt;ccall(:main, Int32, (Int32, Ptr{Ptr{UInt8}}), length(argv), argv)&lt;x18/&gt;&lt;x19/&gt;```&lt;x20/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151041Z" creationid="hsugawa8651" creationdate="20181117T151041Z">
+        <seg>&lt;x1/&gt;`"c&lt;x2/&gt;&lt;x3/&gt;int主(int argc,char**argv);&lt;x4/&gt;&lt;x5/&gt;`"&lt;x6/&gt;&lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;&lt;x13/&gt;`"julia&lt;x14/&gt;&lt;x15/&gt;&lt;x20/&gt;""julia&lt;x14/&gt;&lt;x15/&gt;&lt;x20/&gt;&lt;x17/&gt;&lt;x15/&gt;&lt;x17/&gt;"x18/&gt;&lt;x19/&gt;&lt;x19/&gt;"&lt;x18/&gt;&lt;x19/&gt;&lt;x20/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x1/&gt;```jldoctest&lt;x2/&gt;&lt;x3/&gt;julia&gt; x = 0x01; typeof(x)&lt;x4/&gt;&lt;x5/&gt;UInt8&lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;julia&gt; x *= 2 &lt;x10/&gt; Same as x = x * 2&lt;x11/&gt;&lt;x12/&gt;2&lt;x13/&gt;&lt;x14/&gt;&lt;x15/&gt;&lt;x16/&gt;julia&gt; typeof(x)&lt;x17/&gt;&lt;x18/&gt;Int64&lt;x19/&gt;&lt;x20/&gt;```&lt;x21/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132427Z" creationid="hsugawa8651" creationdate="20181113T132427Z">
@@ -2325,6 +2333,16 @@ function unicode_data()
             codepoint = parse(UInt32, "0x$id")
             names[codepoint] = titlecase(lowercase(
                 name == "" ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x4/&gt;Cstring&lt;x5/&gt; can also be used as
+the &lt;x6/&gt;`ccall`&lt;x7/&gt; return type, but in that case it obviously does not introduce any extra
+checks and is only meant to improve readability of the call.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150955Z" creationid="hsugawa8651" creationdate="20181117T150955Z">
+        <seg>&lt;x4/&gt;Cstring&lt;x5/&gt;は、次のように使用することもできます。 &lt;x6/&gt;`ccall'&lt;x7/&gt;return typeであるが、この場合は明らかに余分なものは導入されない。 は、呼び出しの可読性を向上させることを目的としています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3069,6 +3087,15 @@ flexible, user-extensible &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>All other types are stored as a pointer
+to the data.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151139Z" creationid="hsugawa8651" creationdate="20181117T151139Z">
+        <seg>他のすべてのタイプはポインタとして保存されます。 データに変換します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All the looping is performed compile-time,
 and we avoid looping during execution entirely.</seg>
       </tuv>
@@ -3407,6 +3434,14 @@ accessing the diagonal elements from the first "page" of &lt;x5/&gt;A&lt;x6/&gt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155544Z" creationid="hsugawa8651" creationdate="20181109T155544Z">
         <seg>ブール値の配列で、&lt;x1/&gt;真の&lt;x2/&gt;インデックスで要素を選択します(詳細については、以下を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Arrays of parameters can be expressed with &lt;x1/&gt;NTuple&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151154Z" creationid="hsugawa8651" creationdate="20181117T151154Z">
+        <seg>パラメータの配列は、&lt;x1/&gt;NUpset&lt;x2/&gt;で表現することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6611,6 +6646,16 @@ julia&gt; newfun()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Composite types, aka &lt;x1/&gt;struct&lt;x2/&gt; in C or &lt;x3/&gt;TYPE&lt;x4/&gt; in Fortran90 (or &lt;x5/&gt;STRUCTURE&lt;x6/&gt; / &lt;x7/&gt;RECORD&lt;x8/&gt; in some variants
+of F77), can be mirrored in Julia by creating a &lt;x9/&gt;struct&lt;x10/&gt; definition with the same
+field layout.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151135Z" creationid="hsugawa8651" creationdate="20181117T151135Z">
+        <seg>Fortran90(或いは、いくつかの変形例においては、&lt;x1/&gt;構造体&lt;x2/&gt;in Cまたは&lt;x3/&gt;TYPE&lt;x6/&gt;&lt;x6/&gt;/&lt;x6/&gt;RECORD&lt;x8/&gt;(ある種の変数ではRECORD&lt;x8/&gt;) は、同じ名前で&lt;x9/&gt;構造体&lt;x10/&gt;定義を作成することによって、ジュリアにミラーリングすることができます。 フィールドのレイアウトです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Comprehension syntax is
 similar to set construction notation in mathematics:</seg>
       </tuv>
@@ -7399,6 +7444,14 @@ Base.Sys.MACHINE</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cshort&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150910Z" creationid="hsugawa8651" creationdate="20181117T150910Z">
+        <seg>Cshort&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Cstring&lt;x1/&gt; type here: as the array is uninitialized, it could contain NUL bytes.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150520Z" creationid="hsugawa8651" creationdate="20181117T150520Z">
@@ -7611,6 +7664,15 @@ manner that allows all custom arrays to behave similarly.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155720Z" creationid="hsugawa8651" creationdate="20181109T155720Z">
         <seg>「CartesianIndex」またはその配列が含まれる可能性のある表現のインデックス作成には「end」&lt;x4/&gt;&lt;x5/&gt;を使用しないでください。&lt;x6/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Do not use this for functions that return no value
+(&lt;x11/&gt;void&lt;x12/&gt;) but do return, use &lt;x13/&gt;Cvoid&lt;x14/&gt; instead.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151026Z" creationid="hsugawa8651" creationdate="20181117T151026Z">
+        <seg>値を返さない関数にはこれを使用しない (&lt;x11/&gt;void&lt;x12/&gt;)しかし、リターンする場合は、&lt;x13/&gt;Cvoid&lt;x14/&gt;を使用してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8268,6 +8330,14 @@ are true where the corresponding elements of &lt;x7/&gt;A&lt;x8/&gt; are between
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041747Z" creationid="hsugawa8651" creationdate="20181112T041747Z">
         <seg>たとえば、&lt;x6/&gt;Dict{String,Int32}("A"=&gt;1, "B"=&gt;2)&lt;x7/&gt;を指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, Fortran subroutines of the form</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151053Z" creationid="hsugawa8651" creationdate="20181117T151053Z">
+        <seg>たとえば、Fortranのサブルーチンは</seg>
       </tuv>
     </tu>
     <tu>
@@ -8992,6 +9062,14 @@ is essential for the two implementations to behave identically.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>INTEGER*2&lt;x1/&gt;, &lt;x2/&gt;LOGICAL*2&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150909Z" creationid="hsugawa8651" creationdate="20181117T150909Z">
+        <seg>INTEGER*2&lt;x1/&gt;, &lt;x2/&gt;LOGICAL*2&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If &lt;x1/&gt;I_1&lt;x2/&gt; is changed to a two-dimensional matrix, then &lt;x3/&gt;X&lt;x4/&gt; becomes an &lt;x5/&gt;n+1&lt;x6/&gt;-dimensional array of
 shape &lt;x7/&gt;(size(I_1, 1), size(I_1, 2), length(I_2), ..., length(I_n))&lt;x8/&gt;.</seg>
       </tuv>
@@ -9642,6 +9720,15 @@ it will be a &lt;x7/&gt;CartesianIndex&lt;x8/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this case there will be no hidden arguments, at the cost of some
+language features (e.g. only &lt;x11/&gt;character(len=1)&lt;x12/&gt; will be permitted to pass strings).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151123Z" creationid="hsugawa8651" creationdate="20181117T151123Z">
+        <seg>この場合は、隠れた引数はありません。 言語機能(例えば、&lt;x11/&gt;文字(len=1)&lt;x12/&gt;は文字列を渡すことが許されます)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In this example it is accomplished by defining &lt;x1/&gt;Base.similar{T}(A::SparseArray, ::Type{T}, dims::Dims)&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083257Z" creationid="hsugawa8651" creationdate="20181113T083257Z">
@@ -9850,10 +9937,26 @@ puts the array into sorted order:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Instead, declare an &lt;x3/&gt;isbits&lt;x4/&gt; struct type and use that instead.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151144Z" creationid="hsugawa8651" creationdate="20181117T151144Z">
+        <seg>代わりに、&lt;x3/&gt;イスビトス&lt;x4/&gt;構造体を宣言し、代わりにそれを使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Int(round(x))&lt;x1/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031053Z" creationid="hsugawa8651" creationdate="20181114T031053Z">
         <seg>Int(round(x))&lt;x1/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Int16&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150913Z" creationid="hsugawa8651" creationdate="20181117T150913Z">
+        <seg>Int16&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -11102,6 +11205,17 @@ all types of arguments.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note also that UTF-8 string data in Julia is internally
+NUL-terminated, so it can be passed to C functions expecting NUL-terminated data without making
+a copy (but using the &lt;x7/&gt;Cwstring&lt;x8/&gt; type will cause an error to be thrown if the string itself contains
+NUL characters).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151033Z" creationid="hsugawa8651" creationdate="20181117T151033Z">
+        <seg>また、JuliaのUTF-8文字列データは内部的に存在することにも注意してください。 NUE終端されているので、Nendは コピー(ただし、&lt;x7/&gt;Cwstring&lt;x8/&gt;タイプを使用すると、文字列自体にエラーが発生することがあります) NUL文字)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note how the size of the resulting array is different in the last two cases.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160912Z" creationid="hsugawa8651" creationdate="20181114T160912Z">
@@ -11396,6 +11510,14 @@ indices directly instead of first calling &lt;x13/&gt;`findall`&lt;x14/&gt;.</se
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Often the best way to deal with these is to deal with the byte offsets directly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151211Z" creationid="hsugawa8651" creationdate="20181117T151211Z">
+        <seg>これらを処理する最良の方法は、バイトオフセットを直接処理することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>On all systems we currently support, basic C/C++ value types may be translated to Julia types
 as follows.</seg>
       </tuv>
@@ -11566,6 +11688,14 @@ MIME types) of user-defined types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083633Z" creationid="hsugawa8651" creationdate="20181113T083633Z">
         <seg>融合式の中でデフォルトの遅延動作をオーバーライドする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Packed structs and union declarations are not supported by Julia.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151147Z" creationid="hsugawa8651" creationdate="20181117T151147Z">
+        <seg>Packed構造体とUnion宣言は、Juliaではサポートされていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12090,6 +12220,15 @@ applies the operator elementwise.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Similarly, for array arguments (&lt;x11/&gt;T[]&lt;x12/&gt; or &lt;x13/&gt;T*&lt;x14/&gt;), the
+Julia type should again be &lt;x15/&gt;Ptr{T}&lt;x16/&gt;, not &lt;x17/&gt;Vector{T}&lt;x18/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151015Z" creationid="hsugawa8651" creationdate="20181117T151015Z">
+        <seg>同様に、配列引数(&lt;x11/&gt;T[]&lt;x12/&gt;または&lt;x13/&gt;T*&lt;x14/&gt;)では、次のようになります。 また、Julia型は、再び&lt;x15/&gt;Ptr{T}&lt;x16/&gt;であり、&lt;x17/&gt;ベクトル{T}&lt;x18/&gt;ではない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Similarly, indexing
 by a &lt;x7/&gt;N&lt;x8/&gt;-dimensional boolean array is effectively the same as indexing by the
 vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11/&gt;true&lt;x12/&gt;.</seg>
@@ -12356,6 +12495,14 @@ provided &lt;x5/&gt;`stride(A,k)`&lt;x6/&gt; method accesses the &lt;x7/&gt;k&lt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Struct Type correspondences</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151131Z" creationid="hsugawa8651" creationdate="20181117T151131Z">
+        <seg>構造型の対応付け</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>SubArray&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041653Z" creationid="hsugawa8651" creationdate="20181112T041653Z">
@@ -12378,6 +12525,16 @@ sharing memory with the original array rather than by copying it. A &lt;x4/&gt;S
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135339Z" creationid="hsugawa8651" creationdate="20181117T135339Z">
         <seg>サブアレイ&lt;x1/&gt;は、インデックス作成を実行する&lt;x2/&gt;AbstractArray&lt;x3/&gt;の特殊化です。 コピーするよりも、元のアレイとのメモリを共有することです。&lt;x4/&gt;サブアレイ&lt;x5/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Such behaviour can be avoided by using &lt;x7/&gt;ISO_C_BINDING&lt;x8/&gt; and
+including &lt;x9/&gt;bind(c)&lt;x10/&gt; in the definition of the subroutine, which is strongly recommended for
+interoperable code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151121Z" creationid="hsugawa8651" creationdate="20181117T151121Z">
+        <seg>このような動作は、&lt;x7/&gt;ISO_C_BINDING&lt;x8/&gt;を使用して回避することができます。 サブルーチンの定義には&lt;x9/&gt;bind(c)&lt;x10/&gt;を含めることが強く推奨されます。このサブルーチンは、以下のように強く推奨されます。 相互運用可能なコードです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12418,6 +12575,22 @@ sharing memory with the original array rather than by copying it. A &lt;x4/&gt;S
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150843Z" creationid="hsugawa8651" creationdate="20181117T150843Z">
         <seg>システムに依存しない:&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>System-dependent:&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150959Z" creationid="hsugawa8651" creationdate="20181117T150959Z">
+        <seg>システム依存:&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>T...&lt;x1/&gt; (where &lt;x2/&gt;T&lt;x3/&gt; is one of the above types, variadic functions of different argument types are not supported)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150946Z" creationid="hsugawa8651" creationdate="20181117T150946Z">
+        <seg>T.…&lt;x1/&gt;(ここで、&lt;x2/&gt;T&lt;x3/&gt;は、異なる引数タイプの変数はサポートされていません。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -12573,6 +12746,14 @@ arbitrary-precision floating point and integer arithmetic, respectively.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032210Z" creationid="hsugawa8651" creationdate="20181114T032210Z">
         <seg>&lt;x1/&gt;`BigFloat'&lt;x2/&gt;と、&lt;x3/&gt;"BigInt"&lt;x4/&gt;型は実装されている。 任意精度浮動小数点および整数算術。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;`Cstring`&lt;x2/&gt; type is essentially a synonym for &lt;x3/&gt;Ptr{UInt8}&lt;x4/&gt;, except the conversion to &lt;x5/&gt;Cstring&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150948Z" creationid="hsugawa8651" creationdate="20181117T150948Z">
+        <seg>&lt;x1/&gt;のCstring&lt;x2/&gt;型は本質的に&lt;x3/&gt;Ptr{UInt8}&lt;x4/&gt;の同義語であり、&lt;x5/&gt;Cstring&lt;x6/&gt;への変換を除く。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14775,6 +14956,16 @@ functions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Type and position of these arguments in the list are compiler
+specific, where compiler vendors usually default to using &lt;x5/&gt;Csize_t&lt;x6/&gt; as type and append the hidden
+arguments at the end of the argument list.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151047Z" creationid="hsugawa8651" creationdate="20181117T151047Z">
+        <seg>リストにこれらの引数を入力して配置するには、コンパイラを使用します。 特定の場合、コンパイラ・ベンダーは通常、&lt;x5/&gt;Csize_t&lt;x6/&gt;をタイプとして使用し、非表示を追加します。 引数リストの最後にある引数を指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Type relations</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041840Z" creationid="hsugawa8651" creationdate="20181110T041840Z">
@@ -14825,6 +15016,14 @@ arguments, but with generated functions this is impossible.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>UInt8&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150904Z" creationid="hsugawa8651" creationdate="20181117T150904Z">
+        <seg>UInt8&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Unary arithmetic -- &lt;x1/&gt;-&lt;x2/&gt;, &lt;x3/&gt;+&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161212Z" creationid="hsugawa8651" creationdate="20181114T161212Z">
@@ -14856,6 +15055,15 @@ comparisons can be arbitrarily chained:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030712Z" creationid="hsugawa8651" creationdate="20181114T030712Z">
         <seg>ほとんどの言語とは異なり、&lt;x1/&gt;はPython&lt;x2/&gt;の例外的な例外です。 比較は任意に連鎖させることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unnamed structs
+are not possible in the translation to Julia.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151146Z" creationid="hsugawa8651" creationdate="20181117T151146Z">
+        <seg>名前のない構造体 ジュリアへの翻訳では不可能です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15073,6 +15281,16 @@ and efficient code.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When mirroring a struct used by-value inside another struct in C, it is imperative
+that you do not attempt to manually copy the fields over, as this will not preserve the correct
+field alignment.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151142Z" creationid="hsugawa8651" creationdate="20181117T151142Z">
+        <seg>Cの別の構造体内の値で使用される構造体をミラーリングする場合は、それは必須です。 フィールドを手動でコピーしないようにします。これは、正しいフィールドを保持しないためです。 フィールドの位置合わせ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When run in interactive mode, &lt;x9/&gt;julia&lt;x10/&gt; displays a banner and prompts the user for input.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224306Z" creationid="hsugawa8651" creationdate="20181109T224306Z">
@@ -15090,11 +15308,28 @@ indexed with a multidimensional set of indices, the fallback &lt;x2/&gt;getindex
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When translating your fields to Julia, declare
+the Julia field to be only of that type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151152Z" creationid="hsugawa8651" creationdate="20181117T151152Z">
+        <seg>フィールドをジュリアに変換するときは、次のように宣言します。 Juliaフィールドはそのタイプのみであることを示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When used as a
 function it has two possible forms, unary (single-argument) and binary.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131120Z" creationid="hsugawa8651" creationdate="20181113T131120Z">
         <seg>使用する場合 関数は、単項(単一引数)とバイナリの2つの可能な形式を持つことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When used recursively, &lt;x1/&gt;isbits&lt;x2/&gt; types are stored inline.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151137Z" creationid="hsugawa8651" creationdate="20181117T151137Z">
+        <seg>再帰的に使用される場合、&lt;x1/&gt;イスビトス&lt;x2/&gt;タイプはインラインに格納される。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15131,6 +15366,15 @@ dimensionalities, by creating a constructor for your style that takes a &lt;x3/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131857Z" creationid="hsugawa8651" creationdate="20181113T131857Z">
         <seg>&lt;x1/&gt;AbstractArrayStyle&lt;x2/&gt;をサブタイプ化する場合は必ず、結合するルールを定義する必要があります。 &lt;x3/&gt;Val(N)&lt;x4/&gt;引数を取るスタイルのコンストラクタを作成することによって、次元性を実現します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>While this behaviour is fixed for some compilers (GNU),
+others &lt;x7/&gt;optionally&lt;x8/&gt; permit placing hidden arguments directly after the character argument (Intel,PGI).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151051Z" creationid="hsugawa8651" creationdate="20181117T151051Z">
+        <seg>この動作は、いくつかのコンパイラ(GNU)では修正されています。 他の&lt;x7/&gt;オプション&lt;x8/&gt;は、文字引数(インテル、PGI)の直後に、非表示の引数を直接配置することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15274,6 +15518,15 @@ of &lt;x1/&gt;&amp;&amp;&lt;x2/&gt; and &lt;x3/&gt;||&lt;x4/&gt; operators.</seg
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150310Z" creationid="hsugawa8651" creationdate="20181117T150310Z">
         <seg>逆順でも簡単にソートできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can get a near approximation of a &lt;x1/&gt;union&lt;x2/&gt; if you know, a priori, the field that will have
+the greatest size (potentially including padding).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151150Z" creationid="hsugawa8651" creationdate="20181117T151150Z">
+        <seg>&lt;x1/&gt;の近似を知ることができるのなら、それは&lt;x x/&gt;&lt;x2/&gt;の近似値を得ることができる。 最大サイズ(パディングを含む可能性があります)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16912,6 +17165,14 @@ abstract type Unsigned &lt;: Integer end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>bool&lt;x1/&gt; (only in C++)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150906Z" creationid="hsugawa8651" creationdate="20181117T150906Z">
+        <seg>bool&lt;x1/&gt; (only in C++)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>broadcast(f, args...)&lt;x1/&gt;, providing a convenient syntax to broadcast any function
 (&lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref man-vectorized)).</seg>
       </tuv>
@@ -17001,6 +17262,16 @@ Base.unsafe_store!</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132157Z" creationid="hsugawa8651" creationdate="20181113T132157Z">
         <seg>changes &lt;x1/&gt;true&lt;x2/&gt; to &lt;x3/&gt;false&lt;x4/&gt; and vice versa</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>char*&lt;x1/&gt; to a C routine that does not assume NUL termination (e.g. because you pass an explicit
+string length), or if you know for certain that your Julia string does not contain NUL and want
+to skip the check, you can use &lt;x2/&gt;Ptr{UInt8}&lt;x3/&gt; as the argument type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150952Z" creationid="hsugawa8651" creationdate="20181117T150952Z">
+        <seg>char*&lt;x1/&gt;はNUL終了を想定していないCルーチンに対して(例えば明示的なものを渡すなど) 文字列の長さ)、またはJulia文字列にNULが含まれていないことがわかっている場合は このチェックをスキップするには、引数のタイプとして&lt;x2/&gt;Ptr{UInt8}&lt;x3/&gt;を使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18426,6 +18697,22 @@ end</seg>
 function bar(...)
     &lt;x1/&gt; ... refer to Foo symbols via Foo.baz ...
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>in C:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151157Z" creationid="hsugawa8651" creationdate="20181117T151157Z">
+        <seg>C:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>in Julia:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151205Z" creationid="hsugawa8651" creationdate="20181117T151200Z">
+        <seg>ジュリア:</seg>
       </tuv>
     </tu>
     <tu>
@@ -28397,10 +28684,48 @@ end</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>note
+A C function declared to return &lt;x1/&gt;Cvoid&lt;x2/&gt; will return the value &lt;x3/&gt;nothing&lt;x4/&gt; in Julia.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151128Z" creationid="hsugawa8651" creationdate="20181117T151128Z">
+        <seg>メモ &lt;x1/&gt;Cvoid&lt;x2/&gt;を返すことを宣言したC関数は、ジュリアでは&lt;x3/&gt;何も返さない&lt;x4/&gt;の値を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>note
 An updating operator rebinds the variable on the left-hand side.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132418Z" creationid="hsugawa8651" creationdate="20181113T132418Z">
         <seg>メモ 更新演算子は、左側の変数を再バインドします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>note
+C functions that take an argument of the type &lt;x1/&gt;char**&lt;x2/&gt; can be called by using a &lt;x3/&gt;Ptr{Ptr{UInt8}}&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151035Z" creationid="hsugawa8651" creationdate="20181117T151035Z">
+        <seg>メモ &lt;x1/&gt;char**&lt;x2/&gt;という型の引数をとるC関数は、&lt;x3/&gt;Ptr{Ptr{UInt8}}&lt;x4/&gt;を使って呼び出すことができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>note
+For &lt;x1/&gt;wchar_t*&lt;x2/&gt; arguments, the Julia type should be &lt;x3/&gt;`Cwstring`&lt;x4/&gt; (if the C routine expects a NUL-terminated
+string) or &lt;x5/&gt;Ptr{Cwchar_t}&lt;x6/&gt; otherwise.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151029Z" creationid="hsugawa8651" creationdate="20181117T151029Z">
+        <seg>メモ &lt;x1/&gt;wchar_t*&lt;x2/&gt;引数に対しては、Julia型は&lt;x3/&gt;`Cwstring'&lt;x4/&gt;(もしCルーチンがあると想定した場合)&lt;x4/&gt;でなければなりません。 string)または&lt;x5/&gt;Ptr{Cwchar_t}&lt;x6/&gt;それ以外の場合。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>note
+For Fortran functions taking variable length strings of type &lt;x1/&gt;character(len=*)&lt;x2/&gt; the string lengths
+are provided as &lt;x3/&gt;hidden arguments&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151043Z" creationid="hsugawa8651" creationdate="20181117T151043Z">
+        <seg>メモ Fortran関数の長さが&lt;x1/&gt;文字(len=*)&lt;x2/&gt;の可変長文字列を持つ場合は、文字列の長さを指定します。 は、&lt;x3/&gt;隠し引数&lt;x4/&gt;として提供されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28945,6 +29270,14 @@ paths = reduce(merge, reverse([paths₁, paths₂, …]))</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>short&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150907Z" creationid="hsugawa8651" creationdate="20181117T150907Z">
+        <seg>short&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>shorthand for &lt;x1/&gt;cat(A...; dims=1)&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154553Z" creationid="hsugawa8651" creationdate="20181109T154553Z">
@@ -29190,6 +29523,20 @@ Base.getindex(A::ArrayAndChar{T,N}, inds::Vararg{Int,N}) where {T,N} = A.data[in
 Base.setindex!(A::ArrayAndChar{T,N}, val, inds::Vararg{Int,N}) where {T,N} = A.data[inds...] = val
 Base.showarg(io::IO, A::ArrayAndChar, toplevel) = print(io, typeof(A), " with char '", A.char, "'")
 &lt;x1/&gt; output</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>struct B
+    A::NTuple{3, Cint}
+end
+b_a_2 = B.A[3]  &lt;x1/&gt; note the difference in indexing (1-based in Julia, 0-based in C)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151207Z" creationid="hsugawa8651" creationdate="20181117T151207Z">
+        <seg>struct B
+    A::NTuple{3, Cint}
+end
+b_a_2 = B.A[3]  &lt;x1/&gt; note the difference in indexing (1-based in Julia, 0-based in C)</seg>
       </tuv>
     </tu>
     <tu>
@@ -29608,6 +29955,47 @@ julia&gt; 1 &gt; 2 ?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155745Z" creationid="hsugawa8651" creationdate="20181109T155745Z">
         <seg>warning</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>warning
+A return type of &lt;x1/&gt;Union{}&lt;x2/&gt; means the function will not return i.e. C++11 &lt;x3/&gt;[[noreturn]]&lt;x4/&gt; or C11
+&lt;x5/&gt;_Noreturn&lt;x6/&gt; (e.g. &lt;x7/&gt;jl_throw&lt;x8/&gt; or &lt;x9/&gt;longjmp&lt;x10/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151023Z" creationid="hsugawa8651" creationdate="20181117T151023Z">
+        <seg>警告 &lt;x1/&gt;Union{}&lt;x2/&gt;の戻り型は、関数がi.すなわちC++11&lt;x3/&gt;[noreturn]&lt;x4/&gt;またはC11を返すことはないことを意味します。 &lt;x5/&gt;_Noreturn&lt;x6/&gt;(例:&lt;x7/&gt;jl_throw&lt;x8/&gt;または&lt;x9/&gt;longjmp&lt;x10/&gt;)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>warning
+For string arguments (&lt;x1/&gt;char*&lt;x2/&gt;) the Julia type should be &lt;x3/&gt;Cstring&lt;x4/&gt; (if NUL- terminated data is
+expected) or either &lt;x5/&gt;Ptr{Cchar}&lt;x6/&gt; or &lt;x7/&gt;Ptr{UInt8}&lt;x8/&gt; otherwise (these two pointer types have the same
+effect), as described above, not &lt;x9/&gt;String&lt;x10/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151012Z" creationid="hsugawa8651" creationdate="20181117T151012Z">
+        <seg>警告 文字列引数(&lt;x1/&gt;char*&lt;x2/&gt;)では、Julia型は&lt;x3/&gt;Cstring&lt;x4/&gt;(NUL-terminated dataがある場合)を指定する必要があります。 期待されるか、または&lt;x5/&gt;Ptr{Cchar}&lt;x6/&gt;または&lt;x7/&gt;Ptr{UInt8}&lt;x8/&gt;それ以外の場合(これらの2つのポインタタイプは同じですが、これらのポインタは同じです)。 上述のように、効果は&lt;x9/&gt;String&lt;x10/&gt;ではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>warning
+Fortran compilers &lt;x1/&gt;may&lt;x2/&gt; also add other hidden arguments for pointers, assumed-shape (&lt;x3/&gt;:&lt;x4/&gt;)
+and assumed-size (&lt;x5/&gt;*&lt;x6/&gt;) arrays.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151118Z" creationid="hsugawa8651" creationdate="20181117T151118Z">
+        <seg>警告 Fortranコンパイラ&lt;x1/&gt;はまた、ポインタに対して他の隠れた引数を追加することができます(&lt;x3/&gt;:&lt;x4/&gt;)。 そして、サイズは(&lt;x5/&gt;*&lt;x6/&gt;)であると考えられる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>warning
+Julia's &lt;x1/&gt;Char&lt;x2/&gt; type is 32 bits, which is not the same as the wide character type (&lt;x3/&gt;wchar_t&lt;x4/&gt; or
+&lt;x5/&gt;wint_t&lt;x6/&gt;) on all platforms.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151018Z" creationid="hsugawa8651" creationdate="20181117T151018Z">
+        <seg>警告 Juliaの&lt;x1/&gt;Char&lt;x2/&gt;型は32ビットで、ワイド文字タイプ(&lt;x3/&gt;wchar_t&lt;x4/&gt;または すべてのプラットフォームで、&lt;x5/&gt;wint_t&lt;x6/&gt;)。</seg>
       </tuv>
     </tu>
     <tu>
