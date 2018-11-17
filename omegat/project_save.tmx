@@ -1004,6 +1004,14 @@ n)`&lt;x18/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(Julia values &lt;x13/&gt;v&lt;x14/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152549Z" creationid="hsugawa8651" creationdate="20181117T152549Z">
+        <seg>(Julia values &lt;x13/&gt;v&lt;x14/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(Non-library function calls in both C and Julia can
 be inlined and thus may have even less overhead than calls to shared library functions.</seg>
       </tuv>
@@ -2743,6 +2751,14 @@ external C and Fortran functions that expect this memory layout.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A &lt;x1/&gt;package&lt;x2/&gt; is a source tree with a standard layout providing functionality that can be reused by other Julia projects.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152804Z" creationid="hsugawa8651" creationdate="20181117T152804Z">
+        <seg>&lt;x1/&gt;パッケージ&lt;x2/&gt;は、他のジュリアプロジェクトによって再利用可能な機能を提供する標準的なレイアウトを備えたソースツリーです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A &lt;x17/&gt;MethodError&lt;x18/&gt; should be thrown if &lt;x19/&gt;x&lt;x20/&gt; cannot be displayed
 as that MIME type; this is automatic if one calls &lt;x21/&gt;show&lt;x22/&gt; or &lt;x23/&gt;repr&lt;x24/&gt;.</seg>
       </tuv>
@@ -2886,6 +2902,14 @@ they are iterable collections of their characters (see &lt;x27/&gt;Strings&lt;x2
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152246Z" creationid="hsugawa8651" creationdate="20181117T152246Z">
         <seg>注目すべき例外は、&lt;x5/&gt;'insafe_wrap'&lt;x6/&gt;です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A package is loaded by &lt;x3/&gt;import X&lt;x4/&gt; or  &lt;x5/&gt;using X&lt;x6/&gt; statements.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152801Z" creationid="hsugawa8651" creationdate="20181117T152801Z">
+        <seg>X&lt;x6/&gt;ステートメントを使用して、&lt;x3/&gt;インポートX&lt;x4/&gt;または&lt;x5/&gt;を使用してパッケージをロードします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3161,6 +3185,15 @@ Dingo/
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152506Z" creationid="hsugawa8651" creationdate="20181117T152506Z">
         <seg>グローバル変数へのアクセス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Adding an integer to a &lt;x5/&gt;Ptr&lt;x6/&gt; in Julia always moves the pointer by some number of
+&lt;x7/&gt;bytes&lt;x8/&gt;, not elements.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152616Z" creationid="hsugawa8651" creationdate="20181117T152616Z">
+        <seg>ジュリアの&lt;x6/&gt;Ptr&lt;x6/&gt;に整数を追加すると、常にポインタがいくつかの数だけ移動します。 &lt;x7/&gt;バイト&lt;x8/&gt;で、要素ではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3508,6 +3541,15 @@ in an &lt;x12/&gt;Array&lt;x13/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Any operation that throws an error is probably currently unimplemented and should be posted as
+a bug so that it can be resolved.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152604Z" creationid="hsugawa8651" creationdate="20181117T152604Z">
+        <seg>エラーをスローする操作は、現在実装されていないため、次のように記述する必要があります。 バグを解決できるようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Any&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112202Z" creationid="hsugawa8651" creationdate="20181112T112202Z">
@@ -3545,6 +3587,15 @@ to &lt;x3/&gt;`ccall`&lt;x4/&gt; are as follows:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153935Z" creationid="hsugawa8651" creationdate="20181109T153935Z">
         <seg>&lt;x3/&gt;`@cfunction`&lt;x4/&gt;への引数は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Arithmetic on the &lt;x1/&gt;Ptr&lt;x2/&gt; type in Julia (e.g. using &lt;x3/&gt;+&lt;x4/&gt;) does not behave the same as C's pointer
+arithmetic.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152613Z" creationid="hsugawa8651" creationdate="20181117T152613Z">
+        <seg>&lt;x1/&gt;Ptr&lt;x2/&gt;の算術は、ジュリア(例えば&lt;x3/&gt;+&lt;x4/&gt;)の場合と同じように、Cのポインタと同じように動作しません。 演算。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6854,6 +6905,30 @@ julia&gt; newfun()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Code Loading</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152653Z" creationid="hsugawa8651" creationdate="20181117T152653Z">
+        <seg>コードの読み込み</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Code inclusion is quite straightforward: it simply parses and evaluates a source file in the context of the caller.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152747Z" creationid="hsugawa8651" creationdate="20181117T152747Z">
+        <seg>コードインクルージョンは非常に単純です。呼び出し元のコンテキストでソースファイルを解析し、評価するだけです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Code inclusion:&lt;x1/&gt; e.g. &lt;x2/&gt;include("source.jl")&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152657Z" creationid="hsugawa8651" creationdate="20181117T152657Z">
+        <seg>コードインクルージョン:&lt;x1/&gt;例えば&lt;x2/&gt;は("source.jl")&lt;x3/&gt;を含む。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Collections and Data Structures</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150130Z" creationid="hsugawa8651" creationdate="20181117T150130Z">
@@ -7759,6 +7834,14 @@ throw a conversion error.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Currently, this is only supported for primitive types or other pointer-free (&lt;x5/&gt;isbits&lt;x6/&gt;) immutable struct types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152601Z" creationid="hsugawa8651" creationdate="20181117T152601Z">
+        <seg>現在では、これはプリミティブ型または他のポインタフリー(&lt;x5/&gt;イスビトス&lt;x6/&gt;)の不変構造型タイプでのみサポートされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Custom implementation of &lt;x1/&gt;broadcast!&lt;x2/&gt;, specializing on &lt;x3/&gt;DestStyle&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083617Z" creationid="hsugawa8651" creationdate="20181113T083617Z">
@@ -8297,6 +8380,14 @@ this means that:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Federation of packages</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152820Z" creationid="hsugawa8651" creationdate="20181117T152820Z">
+        <seg>パッケージの連合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Filesystem</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043206Z" creationid="hsugawa8651" creationdate="20181112T043206Z">
@@ -8515,6 +8606,14 @@ encountered when computing with them, see David Goldberg's paper &lt;x1/&gt;What
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111503Z" creationid="hsugawa8651" creationdate="20181112T111503Z">
         <seg>浮動小数点数と数値精度の問題について、優れた詳細な議論を行うには、次のようにします。 これらを使って計算する際に遭遇するのは、David Goldbergの論文&lt;x1/&gt;What Every計算機科学者Should知っておくべき浮動小数点演算&lt;x2/&gt;を参照することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For direct C++ interfacing, see the &lt;x1/&gt;Cxx&lt;x2/&gt; package.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152645Z" creationid="hsugawa8651" creationdate="20181117T152645Z">
+        <seg>直接的なC++インターフェイスの場合は、&lt;x1/&gt;Cxx&lt;x2/&gt;パッケージを参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8939,6 +9038,14 @@ and load in the new changes.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For more details on how to pass callbacks to C libraries, see this &lt;x1/&gt;blog post&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152640Z" creationid="hsugawa8651" creationdate="20181117T152640Z">
+        <seg>Cライブラリへのコールバックを渡す方法の詳細については、この&lt;x1/&gt;ブログ記事&lt;x2/&gt;を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For more details, see &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref writing-binary-broadcasting-rules).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131253Z" creationid="hsugawa8651" creationdate="20181113T131253Z">
@@ -9022,6 +9129,15 @@ when wrapping libraries that contain many similar functions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152313Z" creationid="hsugawa8651" creationdate="20181117T152313Z">
         <seg>このため、&lt;x4/&gt;eval&lt;x5/&gt;は通常、最上位レベルの定義を形成するためにのみ使用されます。たとえば、次のようになります。 は、多くの類似する関数を含むライブラリをラップするときに使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For tools to create C++
+bindings, see the &lt;x3/&gt;CxxWrap&lt;x4/&gt; package.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152647Z" creationid="hsugawa8651" creationdate="20181117T152647Z">
+        <seg>C++を作成するためのツールについて バインディングは、&lt;x3/&gt;CxxWrap&lt;x4/&gt;パッケージを参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9587,6 +9703,15 @@ shape &lt;x7/&gt;(size(I_1, 1), size(I_1, 2), length(I_2), ..., length(I_n))&lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If &lt;x1/&gt;T&lt;x2/&gt; is &lt;x3/&gt;Any&lt;x4/&gt;, then the memory is assumed to contain a reference to a Julia object (a &lt;x5/&gt;jl_value_t*&lt;x6/&gt;),
+the result will be a reference to this object, and the object will not be copied.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152538Z" creationid="hsugawa8651" creationdate="20181117T152538Z">
+        <seg>&lt;x1/&gt;T&lt;x2/&gt;が&lt;x3/&gt;であれば、メモリはジュリアオブジェクトへの参照を含むものと仮定します(&lt;x5/&gt;jl_value_t*&lt;x6/&gt;)。 結果はこのオブジェクトへの参照になり、オブジェクトはコピーされません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If &lt;x1/&gt;T&lt;x2/&gt; is a floating-point type, the result is the nearest representable value, which could be
 positive or negative infinity.</seg>
       </tuv>
@@ -9618,6 +9743,14 @@ the indices: &lt;x3/&gt;prod(length(I_1), length(I_2), ..., length(I_n))&lt;x4/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134924Z" creationid="hsugawa8651" creationdate="20181117T134924Z">
         <seg>&lt;x1/&gt;X&lt;x2/&gt;が配列である場合、それは長さの積と同じ数の要素を持つ必要があります。 インデックス:&lt;x3/&gt;prod(長さI_1)、長さ(I_2)、…、長さ(I_n)&lt;x4/&gt;。位置&lt;x5/&gt;I_1[i_1]の値、I_2[i_2]、.…、I_n[i_n]&lt;x6/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If &lt;x10/&gt;include("source.jl")&lt;x11/&gt; is called multiple times, &lt;x12/&gt;source.jl&lt;x13/&gt; is evaluated multiple times.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152704Z" creationid="hsugawa8651" creationdate="20181117T152704Z">
+        <seg>&lt;x10/&gt;が("source.jl")を含む場合、&lt;x11/&gt;は複数回呼び出されます。&lt;x12/&gt;source.jl&lt;x13/&gt;は複数回評価されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9774,6 +9907,25 @@ should be used explicitly (see &lt;x5/&gt;Short-Circuit Evaluation&lt;x6/&gt;).<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the
+&lt;x4/&gt;own&lt;x5/&gt; parameter is omitted or false, the caller must ensure the buffer remains in existence until
+all access is complete.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152611Z" creationid="hsugawa8651" creationdate="20181117T152611Z">
+        <seg>の &lt;x4/&gt;独自の&lt;x5/&gt;パラメータは省略されるか、またはfalseであるため、呼び出し側はバッファが存在しないことを確認する必要があります。 すべてのアクセスが完了しました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the &lt;x7/&gt;Ptr&lt;x8/&gt; itself is actually a &lt;x9/&gt;jl_value_t*&lt;x10/&gt;, it can be converted
+back to a Julia object reference by &lt;x11/&gt;`unsafe_pointer_to_objref(ptr)`&lt;x12/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152546Z" creationid="hsugawa8651" creationdate="20181117T152546Z">
+        <seg>&lt;x7/&gt;Ptr&lt;x8/&gt;自身が実際に&lt;x9/&gt;jl_value_t*&lt;x10/&gt;である場合、それは変換されることができる。 &lt;x11/&gt;`unsafe_pointer_to_objref(ptr)`&lt;x12/&gt;でJuliaオブジェクト参照に戻ります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the C wrapper never expects the user to pass pointers to memory managed by Julia, then using
 &lt;x1/&gt;p::Ptr{gsl_permutation}&lt;x2/&gt; for the method signature of the wrapper and similarly in the &lt;x3/&gt;`ccall`&lt;x4/&gt;</seg>
       </tuv>
@@ -9804,6 +9956,22 @@ should be used explicitly (see &lt;x5/&gt;Short-Circuit Evaluation&lt;x6/&gt;).<
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151818Z" creationid="hsugawa8651" creationdate="20181117T151818Z">
         <seg>メモリがC:に所有されている場合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the pointer of interest is a plain-data array (primitive type or immutable struct), the function &lt;x1/&gt;`unsafe_wrap(Array, ptr,dims, own = false)`&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152606Z" creationid="hsugawa8651" creationdate="20181117T152606Z">
+        <seg>関心のあるポインタがプレーン・データ・アレイ(プリミティブ・タイプまたは不変構造体)である場合、関数&lt;x1/&gt;'unsafe_wrap(Array,ptr,dims,own=false)`&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the same &lt;x8/&gt;X&lt;x9/&gt; package is imported multiple times in the same Julia session, it is only loaded the first time—on subsequent imports, the importing module gets a reference to the same module.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152740Z" creationid="hsugawa8651" creationdate="20181117T152740Z">
+        <seg>同じ&lt;x8/&gt;x9/&gt;パッケージが同じジュリアセッションに複数回インポートされた場合は、最初にインポートされたときにのみ読み込まれます。インポートモジュールは、同じモジュールへの参照を取得します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9860,6 +10028,14 @@ specify this trait, the default value &lt;x5/&gt;IndexCartesian()&lt;x6/&gt; is 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224453Z" creationid="hsugawa8651" creationdate="20181109T224453Z">
         <seg>Juliaが実行されるたびに実行するコードがある場合は、そのコードを次のように記述することができます。 &lt;x1/&gt;&lt;x2/&gt;/.julia/config/startup.jl&lt;x3/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you just want to install and use packages, simply use Julia's built-in package manager to add packages to your environment and write &lt;x1/&gt;import X&lt;x2/&gt; or &lt;x3/&gt;using X&lt;x4/&gt; in your code to load packages that you've added.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152754Z" creationid="hsugawa8651" creationdate="20181117T152754Z">
+        <seg>パッケージをインストールして使用する場合は、Juliaの組み込みパッケージ・マネージャーを使用して、パッケージを環境に追加し、X&lt;x4/&gt;を使用してx2/&gt;を記述するか、X&lt;x4/&gt;を使用して、追加したパッケージをロードしてください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10144,6 +10320,16 @@ farther away from zero.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In particular, you'll need to set up a two-layered
+system: the C callback should only &lt;x1/&gt;schedule&lt;x2/&gt; (via Julia's event loop) the execution of your "real"
+callback.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152626Z" creationid="hsugawa8651" creationdate="20181117T152626Z">
+        <seg>特に、2層を設定する必要があります。 システム:Cコールバックは、&lt;x1/&gt;スケジュール&lt;x2/&gt;(ジュリアのイベントループ経由)を実行して、"実"を実行することができます。 コールバック。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In practice, especially when providing reusable functionality, one generally wraps &lt;x1/&gt;`ccall`&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224109Z" creationid="hsugawa8651" creationdate="20181109T224109Z">
@@ -10348,6 +10534,14 @@ optimization.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131637Z" creationid="hsugawa8651" creationdate="20181113T131637Z">
         <seg>インプレースブロードキャストは、適切な&lt;x1/&gt;copyto!(dest,bc::Broadcast)&lt;x2/&gt;を定義することでサポートできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Inclusion allows you to split a single program across multiple source files.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152659Z" creationid="hsugawa8651" creationdate="20181117T152659Z">
+        <seg>インクルージョンを使用すると、複数のソースファイルにわたって単一のプログラムを分割できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10685,6 +10879,14 @@ the first block in &lt;x1/&gt;if @generated&lt;x2/&gt; is used, and a normal one
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155706Z" creationid="hsugawa8651" creationdate="20181109T155706Z">
         <seg>また、&lt;x8/&gt;:&lt;x9/&gt;と組み合わせることもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It does this by creating and manipulating project files that describe what your project depends on, and manifest files that snapshot exact versions of your project's complete dependency graph.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152830Z" creationid="hsugawa8651" creationdate="20181117T152830Z">
+        <seg>これはプロジェクトファイルを記述するプロジェクトファイルを作成して操作することによって、プロジェクトの完全な依存関係グラフの正確なバージョンをスナップショットで表示するファイルを作成することによって実現されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11115,6 +11317,14 @@ values.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia has two mechanisms for loading code:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152655Z" creationid="hsugawa8651" creationdate="20181117T152655Z">
+        <seg>Juliaには、コードをロードするための2つのメカニズムがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia installation is straightforward, whether using precompiled binaries or compiling from source.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224247Z" creationid="hsugawa8651" creationdate="20181109T224247Z">
@@ -11181,6 +11391,14 @@ type of a given variable.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112000Z" creationid="hsugawa8651" creationdate="20181112T112000Z">
         <seg>Juliaは、指定されたタイプまたは指定されたタイプに対応するリテラル0および1を返す関数を返します。 指定された変数のタイプです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia supports federated management of packages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152821Z" creationid="hsugawa8651" creationdate="20181117T152821Z">
+        <seg>Juliaは、パッケージの連合管理をサポートしています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11611,11 +11829,27 @@ you can redefine types and constants.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>More About Callbacks</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152638Z" creationid="hsugawa8651" creationdate="20181117T152638Z">
+        <seg>コールバックの詳細</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>More concrete examples
 can be found within the &lt;x25/&gt;&lt;x26/&gt;&lt;x27/&gt;(@ref man-interface-strided-arrays).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160515Z" creationid="hsugawa8651" creationdate="20181109T160515Z">
         <seg>具体的な事例 は、&lt;x25/&gt;&lt;x26/&gt;&lt;x27/&gt;(@ref man interface strided配列)内にあることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>More on this below.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152745Z" creationid="hsugawa8651" creationdate="20181117T152745Z">
+        <seg>以下にその詳細を示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11879,6 +12113,16 @@ all types of arguments.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note
+that if the object was not originally allocated by Julia, the new object will never be finalized
+by Julia's garbage collector.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152543Z" creationid="hsugawa8651" creationdate="20181117T152543Z">
+        <seg>注 オブジェクトが元々ジュリアによって割り当てられていない場合、新しいオブジェクトは最終的にはファイナライズされません。 ジュリアのガーベジ・コレクターです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note also that UTF-8 string data in Julia is internally
 NUL-terminated, so it can be passed to C functions expecting NUL-terminated data without making
 a copy (but using the &lt;x7/&gt;Cwstring&lt;x8/&gt; type will cause an error to be thrown if the string itself contains
@@ -11941,6 +12185,15 @@ operations like &lt;x5/&gt;&lt;&lt;x6/&gt;, &lt;x7/&gt;only&lt;x8/&gt; the eleme
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135141Z" creationid="hsugawa8651" creationdate="20181117T135141Z">
         <seg>&lt;x1/&gt;==&lt;x2/&gt;のような比較は、すべての配列に対して動作し、単一のブール値を与えることに注意してください。 答え:&lt;x3/&gt;.==&lt;x4/&gt;のようなドット演算子を使用して、要素ごとの比較を行います(比較のために)。 &lt;x5/&gt;&lt;x6/&gt;のような操作、&lt;x7/&gt;&lt;x6/&gt;&lt;x8/&gt;&lt;x10/&gt;&lt;x8/&gt;&lt;x10/&gt;は、配列に適用されます。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that events may be coalesced, so multiple calls to &lt;x1/&gt;uv_async_send&lt;x2/&gt; may result in a single wakeup
+notification to the condition.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152636Z" creationid="hsugawa8651" creationdate="20181117T152636Z">
+        <seg>イベントは合体することがあるので、&lt;x1/&gt;uv_async_send&lt;x2/&gt;への複数の呼び出しは単一のウェイクアップを引き起こす可能性があることに注意してください。 条件への通知。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12077,6 +12330,14 @@ and it may not be explicitly closed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030727Z" creationid="hsugawa8651" creationdate="20181114T030727Z">
         <seg>チェーン化された比較の評価動作に注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note though, that &lt;x10/&gt;import X&lt;x11/&gt; can load different packages in different contexts: &lt;x12/&gt;X&lt;x13/&gt; can refer to one package named &lt;x14/&gt;X&lt;x15/&gt; in the main project but potentially different packages named &lt;x16/&gt;X&lt;x17/&gt; in each dependency.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152743Z" creationid="hsugawa8651" creationdate="20181117T152743Z">
+        <seg>ただし、&lt;x10/&gt;インポートX&lt;x11/&gt;は異なるコンテキストで異なるパッケージをロードできます。&lt;x12/&gt;X&lt;x13/&gt;は主プロジェクトで&lt;x14/&gt;X&lt;x15/&gt;という名前のパッケージを参照できますが、各依存関係では&lt;x16/&gt;X&lt;x17/&gt;という名前のパッケージがある可能性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12291,6 +12552,14 @@ written with a trailing comma.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>One consequence of federation is that there cannot be a central authority for package naming.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152831Z" creationid="hsugawa8651" creationdate="20181117T152831Z">
+        <seg>フェデレーションの一つの結果は、パッケージ命名の中心的な権限を持つことができないということです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One of &lt;x1/&gt;HasLength()&lt;x2/&gt;, &lt;x3/&gt;HasShape{N}()&lt;x4/&gt;, &lt;x5/&gt;IsInfinite()&lt;x6/&gt;, or &lt;x7/&gt;SizeUnknown()&lt;x8/&gt; as appropriate</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112136Z" creationid="hsugawa8651" creationdate="20181112T112126Z">
@@ -12405,6 +12674,30 @@ MIME types) of user-defined types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083633Z" creationid="hsugawa8651" creationdate="20181113T083633Z">
         <seg>融合式の中でデフォルトの遅延動作をオーバーライドする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Package loading is built on top of code inclusion and is a lot more complex.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152749Z" creationid="hsugawa8651" creationdate="20181117T152749Z">
+        <seg>パッケージのロードはコードインクルージョンの上に構築され、より複雑なものになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Package loading:&lt;x1/&gt; e.g. &lt;x2/&gt;import X&lt;x3/&gt; or &lt;x4/&gt;using X&lt;x5/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152734Z" creationid="hsugawa8651" creationdate="20181117T152734Z">
+        <seg>パッケージ荷重:&lt;x1/&gt;例えば&lt;x2/&gt;インポートX&lt;x3/&gt;または&lt;x4/&gt;をX&lt;x5/&gt;を使用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Packages from various registries are installed and managed using a common set of tools and workflows.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152825Z" creationid="hsugawa8651" creationdate="20181117T152825Z">
+        <seg>さまざまなレジストリからのパッケージは、共通のツールとワークフローを使用してインストールされ、管理されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13132,6 +13425,15 @@ the two tuples, multiplication and addition/subtraction.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Some C libraries execute their callbacks from a different thread, and since Julia isn't thread-safe
+you'll need to take some extra precautions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152623Z" creationid="hsugawa8651" creationdate="20181117T152623Z">
+        <seg>Cライブラリの中には、別のスレッドからコールバックを実行するものもあれば、スレッドセーフではないものもあります。 さらに注意する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Some Examples of C Wrappers</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151907Z" creationid="hsugawa8651" creationdate="20181117T151907Z">
@@ -13649,6 +13951,14 @@ function &lt;x7/&gt;gsl_permutation_alloc&lt;x8/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;Pkg&lt;x2/&gt; package manager ships with Julia 0.7/1.0 and lets you install and manage your projects' dependencies.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152827Z" creationid="hsugawa8651" creationdate="20181117T152827Z">
+        <seg>&lt;x1/&gt;Pkg&lt;x2/&gt;パッケージマネージャはJulia0.7/1.0と一緒に出荷され、プロジェクトの依存関係をインストールして管理することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;Rounding functions&lt;x2/&gt; take a type &lt;x3/&gt;T&lt;x4/&gt; as an optional argument.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031049Z" creationid="hsugawa8651" creationdate="20181114T031049Z">
@@ -14003,6 +14313,16 @@ so they can follow the same codepath.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The callback you pass to C should only execute a &lt;x1/&gt;`ccall`&lt;x2/&gt; to &lt;x3/&gt;:uv_async_send&lt;x4/&gt;, passing
+&lt;x5/&gt;cond.handle&lt;x6/&gt; as the argument, taking care to avoid any allocations or other interactions with the
+Julia runtime.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152633Z" creationid="hsugawa8651" creationdate="20181117T152633Z">
+        <seg>Cに渡されるコールバックは、&lt;x1/&gt;`ccall'&lt;x2/&gt;を実行して、&lt;x3/&gt;:uv_async_send&lt;x4/&gt;を通過させるべきです。 &lt;x5/&gt;cond.handle&lt;x6/&gt;は引数として指定し、割り当てやその他の相互作用がないように注意してください。 Juliaランタイム。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The code to be called must be available as a shared library.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160547Z" creationid="hsugawa8651" creationdate="20181109T160547Z">
@@ -14140,11 +14460,27 @@ known as a read-eval-print loop or "REPL") by double-clicking the Julia executab
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The effect of &lt;x15/&gt;import X&lt;x16/&gt; depends on two questions:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152813Z" creationid="hsugawa8651" creationdate="20181117T152813Z">
+        <seg>&lt;x15/&gt;インポートX&lt;x16/&gt;の効果は、次の2つの質問に依存しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The element type of the tuple must be an instance of &lt;x1/&gt;VecElement{T}&lt;x2/&gt; where &lt;x3/&gt;T&lt;x4/&gt; is a primitive type that
 is 1, 2, 4 or 8 bytes.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151316Z" creationid="hsugawa8651" creationdate="20181117T151316Z">
         <seg>タプルの要素タイプは、&lt;x1/&gt;VecElement{T}&lt;x2/&gt;のインスタンスでなければならない。ここで、&lt;x3/&gt;T&lt;x4/&gt;はプリミティブ型である。 は、1 2 4バイトまたは8バイトです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The expression &lt;x4/&gt;include("source.jl")&lt;x5/&gt; causes the contents of the file &lt;x6/&gt;source.jl&lt;x7/&gt; to be evaluated in the global scope of the module where the &lt;x8/&gt;include&lt;x9/&gt; call occurs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152713Z" creationid="hsugawa8651" creationdate="20181117T152713Z">
+        <seg>&lt;x4/&gt;の表現は、&lt;x8/&gt;が&lt;x9/&gt;のコールが発生するモジュールのグローバルスコープで、ファイル&lt;x6/&gt;ソース.jl&lt;x7/&gt;の内容を評価することを意味します。&lt;x4/&gt;は、&lt;x8/&gt;の内容を表します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14402,6 +14738,31 @@ cause Julia to terminate abruptly.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The import mechanism allows you to load a package—i.e. an independent, reusable collection of Julia code, wrapped in a module—and makes the resulting module available by the name &lt;x6/&gt;X&lt;x7/&gt; inside of the importing module.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152737Z" creationid="hsugawa8651" creationdate="20181117T152737Z">
+        <seg>インポート機構を使用すると、モジュールにラップされたJulia codeの独立した再利用可能なコレクションをロードできます。また、インポートモジュールの内部では、そのモジュールを&lt;x6/&gt;x7/&gt;x&lt;x7/&gt;の名前で使用できるようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The included path, &lt;x14/&gt;source.jl&lt;x15/&gt;, is interpreted relative to the file where the &lt;x16/&gt;include&lt;x17/&gt; call occurs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152708Z" creationid="hsugawa8651" creationdate="20181117T152708Z">
+        <seg>インクルードパス&lt;x14/&gt;ソース.jl&lt;x15/&gt;は、&lt;x16/&gt;が&lt;x17/&gt;コールが発生するファイルに対して相対的に解釈されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The index argument is optional (default
+is 1), and follows the Julia-convention of 1-based indexing.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152529Z" creationid="hsugawa8651" creationdate="20181117T152529Z">
+        <seg>index引数はオプションです(デフォルトです)。 は1)で、1ベースのインデックス作成のJulia条約に従っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The input &lt;x1/&gt;n&lt;x2/&gt; is passed by value, and so the function's input signature is
 simply declared as &lt;x3/&gt;(Csize_t,)&lt;x4/&gt; without any &lt;x5/&gt;Ref&lt;x6/&gt; or &lt;x7/&gt;Ptr&lt;x8/&gt; necessary.</seg>
       </tuv>
@@ -14495,6 +14856,14 @@ Julia function. Arguments to &lt;x3/&gt;`@cfunction`&lt;x4/&gt; are as follows:<
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160902Z" creationid="hsugawa8651" creationdate="20181114T160902Z">
         <seg>マトリックスは寸法を追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The meaning of &lt;x9/&gt;X&lt;x10/&gt; in &lt;x11/&gt;import X&lt;x12/&gt; is context-dependent: which &lt;x13/&gt;X&lt;x14/&gt; package is loaded depends on what code the statement occurs in.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152810Z" creationid="hsugawa8651" creationdate="20181117T152810Z">
+        <seg>&lt;x11/&gt;インポートX&lt;x12/&gt;における&lt;x9/&gt;x10/&gt;の意味はコンテキスト依存であり、&lt;x13/&gt;X&lt;x14/&gt;パッケージは、文がどのコードによって生成されるかによって異なります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14650,6 +15019,14 @@ of &lt;x17/&gt;b&lt;x18/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The referenced memory can safely be freed or released.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152535Z" creationid="hsugawa8651" creationdate="20181117T152535Z">
+        <seg>参照メモリは、安全に解放されたり解放されたりすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The remainder and modulus functions (&lt;x7/&gt;rem&lt;x8/&gt; and &lt;x9/&gt;mod&lt;x10/&gt;) throw a &lt;x11/&gt;`DivideError`&lt;x12/&gt; when their
 second argument is zero.</seg>
       </tuv>
@@ -14740,11 +15117,28 @@ is always either a tuple of a value and a state, or &lt;x3/&gt;nothing&lt;x4/&gt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The return value will be a new object initialized to contain a copy of the contents of the referenced
+memory.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152533Z" creationid="hsugawa8651" creationdate="20181117T152533Z">
+        <seg>戻り値は、参照される内容のコピーを含むように初期化された新しいオブジェクトになります。 メモリー。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The reverse (passing an object
 allocated in Julia to be freed by an external library) is equally invalid.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151434Z" creationid="hsugawa8651" creationdate="20181117T151434Z">
         <seg>逆(オブジェクトを渡すこと) 外部ライブラリによって解放されるためにJuliaに割り当てられていることは、同じように無効です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The reverse operation (writing data to a &lt;x1/&gt;Ptr{T}&lt;x2/&gt;), can be performed using &lt;x3/&gt;`unsafe_store!(ptr, value, [index])`&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152559Z" creationid="hsugawa8651" creationdate="20181117T152559Z">
+        <seg>逆の操作(&lt;x1/&gt;Ptr{T}&lt;x2/&gt;への書き込み)は、&lt;x3/&gt;"unsafe_store!(ptr,value,[index])`&lt;x4/&gt;を使って実行することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15193,6 +15587,14 @@ Julia to be used.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Therefore, the rest of this chapter focuses on the behavior and mechanics of package loading.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152750Z" creationid="hsugawa8651" creationdate="20181117T152750Z">
+        <seg>したがって、この章の残りはパッケージロードの動作とメカニズムに焦点を当てています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These are
 normal functions, which happen to support infix operator syntax, but always evaluate their arguments:</seg>
       </tuv>
@@ -15273,6 +15675,14 @@ yields a &lt;x5/&gt;SparseMatStyle&lt;x6/&gt;, and anything of higher dimensiona
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131922Z" creationid="hsugawa8651" creationdate="20181113T131922Z">
         <seg>これらの規則は、&lt;x1/&gt;SparseVecStyle&lt;x2/&gt;と0次元あるいは1次元の配列との組み合わせを示している。 2次元配列との組合せにより、別の&lt;x3/&gt;SparseVecStyle&lt;x4/&gt;を生成する。 は、&lt;x5/&gt;SparseMatStyle&lt;x6/&gt;を生成し、高い次元のすべては、密な任意の次元フレームワークに戻ります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These statements also make the module named &lt;x7/&gt;X&lt;x8/&gt;, which results from loading the package code, available within the module where the import statement occurs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152809Z" creationid="hsugawa8651" creationdate="20181117T152809Z">
+        <seg>これらのステートメントは、インポート・ステートメントが発生するモジュール内で使用可能なパッケージ・コードをロードした結果として、&lt;x7/&gt;X&lt;x8/&gt;という名前のモジュールを作成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15563,6 +15973,15 @@ functions, functions in the Julia runtime, or functions in an application linked
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This function is intentionally similar
+to the behavior of &lt;x7/&gt;`getindex`&lt;x8/&gt; and &lt;x9/&gt;`setindex!`&lt;x10/&gt; (e.g. &lt;x11/&gt;[]&lt;x12/&gt; access syntax).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152531Z" creationid="hsugawa8651" creationdate="20181117T152531Z">
+        <seg>この関数は意図的に似ています &lt;x7/&gt;`getindex'&lt;x8/&gt;および&lt;x9/&gt;`setindex!`&lt;x10/&gt;(例:&lt;x11/&gt;[]&lt;x12/&gt;アクセス構文)の動作です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This has the exact same effect as the previous definition of &lt;x1/&gt;foo&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101533Z" creationid="hsugawa8651" creationdate="20181112T101533Z">
@@ -15712,6 +16131,14 @@ without using extra memory, and applies the given function elementwise:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This makes it simple to relocate a subtree of source files.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152720Z" creationid="hsugawa8651" creationdate="20181117T152720Z">
+        <seg>これによって、ソースファイルのサブツリーを簡単に再配置することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This makes writing polynomial expressions
 much cleaner:</seg>
       </tuv>
@@ -15736,6 +16163,14 @@ its functions can only accept argument types with a statically-known, fixed sign
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153957Z" creationid="hsugawa8651" creationdate="20181109T153957Z">
         <seg>つまり &lt;x1/&gt;@cfunction&lt;x2/&gt;-生成されたポインタは、WINAPIが&lt;x3/&gt;stdcall&lt;x4/&gt;を想定している呼び出しでは使用できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This means that multiple independent parties can maintain both public and private packages and registries of them, and that projects can depend on a mix of public and private packages from different registries.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152823Z" creationid="hsugawa8651" creationdate="20181117T152823Z">
+        <seg>これは、複数の独立した当事者が、パブリック・パッケージとプライベート・パッケージの両方を維持することができること、およびプロジェクトが異なるレジストリーからのパブリック・パッケージとプライベート・パッケージの混在に依存することを意味します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15877,6 +16312,15 @@ the Julia pointer to a Julia array data structure into a form understandable by 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This way, the address values obtained from pointer arithmetic do not depend
+on the element types of pointers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152619Z" creationid="hsugawa8651" creationdate="20181117T152619Z">
+        <seg>このようにして、ポインタ演算から得られたアドレス値は依存しない。 ポインタのエレメント・タイプを指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This wrapper throws an exception clearly indicating the problem if the caller tries to get a non-existent
 environment variable:</seg>
       </tuv>
@@ -15921,6 +16365,14 @@ functions can be called directly from Julia without any "glue" code, code genera
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133701Z" creationid="hsugawa8651" creationdate="20181117T133701Z">
         <seg>ほとんどのコードはJuliaで書くことができますが、多くの場合、高品質で成熟したライブラリがあります。 この既存のコードを簡単に使用できるようにするために、JuliaはCとFortranに既に記述されています。 CとFortranの関数を呼び出すことは簡単で効率的です。Juliaは「ボイラープレートなし」の哲学を持っています。 関数は、"glue"コード、コード生成、コンパイルなしで、Juliaから直接呼び出すことができます。 --対話型プロンプトからでも、適切な呼び出しを行うことで &lt;x1/&gt;`ccall'&lt;x2/&gt;構文は、通常の関数呼び出しのように見えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thread-safety</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152621Z" creationid="hsugawa8651" creationdate="20181117T152621Z">
+        <seg>スレッドセーフ</seg>
       </tuv>
     </tu>
     <tu>
@@ -15995,6 +16447,14 @@ it simple and efficient to call C and Fortran functions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160536Z" creationid="hsugawa8651" creationdate="20181109T160536Z">
         <seg>この既存のコードを簡単に利用できるようにするために、Juliaは CとFortranの関数を呼び出すことは簡単で効率的です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To do this, create an &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref Base.AsyncCondition) object and &lt;x6/&gt;`wait`&lt;x7/&gt; on it:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152628Z" creationid="hsugawa8651" creationdate="20181117T152628Z">
+        <seg>これを行うには、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref Base.AsyncCondition)オブジェクトを作成し、&lt;x6/&gt;`wait`&lt;x7/&gt;を次のようにします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16236,6 +16696,14 @@ arguments, but with generated functions this is impossible.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Understanding how Julia answers these questions is key to understanding package loading.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152818Z" creationid="hsugawa8651" creationdate="20181117T152818Z">
+        <seg>Juliaがこれらの質問に答えることを理解することは、パッケージのロードを理解する上で重要です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Unlike &lt;x1/&gt;E&lt;x2/&gt;, which is equivalent to &lt;x3/&gt;e&lt;x4/&gt; in numeric literals for historical reasons, &lt;x5/&gt;F&lt;x6/&gt; is just another
 letter and does not behave like &lt;x7/&gt;f&lt;x8/&gt; in numeric literals.</seg>
       </tuv>
@@ -16447,6 +16915,14 @@ may lead to incorrect results or segmentation faults.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>What&lt;x1/&gt; package is &lt;x2/&gt;X&lt;x3/&gt; in this context?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152815Z" creationid="hsugawa8651" creationdate="20181117T152815Z">
+        <seg>この文脈では&lt;x1/&gt;パッケージは&lt;x2/&gt;X&lt;x3/&gt;であるか?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When a file is run as the main script using &lt;x1/&gt;julia file.jl&lt;x2/&gt; one might want to activate extra
 functionality like command line argument handling.</seg>
       </tuv>
@@ -16622,6 +17098,14 @@ dimensionalities, by creating a constructor for your style that takes a &lt;x3/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131857Z" creationid="hsugawa8651" creationdate="20181113T131857Z">
         <seg>&lt;x1/&gt;AbstractArrayStyle&lt;x2/&gt;をサブタイプ化する場合は必ず、結合するルールを定義する必要があります。 &lt;x3/&gt;Val(N)&lt;x4/&gt;引数を取るスタイルのコンストラクタを作成することによって、次元性を実現します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Where&lt;x1/&gt; can that &lt;x2/&gt;X&lt;x3/&gt; package be found?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152817Z" creationid="hsugawa8651" creationdate="20181117T152817Z">
+        <seg>&lt;x1/&gt;は&lt;x2/&gt;X&lt;x3/&gt;パッケージが存在する可能性がある。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16816,6 +17300,16 @@ to be able to redefine them there, but you can use the module name to resolve th
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131414Z" creationid="hsugawa8651" creationdate="20181113T131414Z">
         <seg>&lt;x1/&gt;char&lt;x2/&gt;"メタデータを保存するためにブロードキャストを行うことができます。まず、次のように定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You must be
+careful in this case to ensure that the object was always visible to the garbage collector (pointers
+do not count, but the new reference does) to ensure the memory is not prematurely freed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152541Z" creationid="hsugawa8651" creationdate="20181117T152541Z">
+        <seg>あなたは この場合は、オブジェクトが常にガーベッジ・コレクターに表示されるように注意する必要があります。 メモリが初期解放されていないことを確認するために、この新しい参照はカウントしませんが、新しい参照は必要ありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18705,6 +19199,16 @@ matmul(a, b) = matmul(promote(a, b)...)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>cond = Base.AsyncCondition()
+wait(cond)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152629Z" creationid="hsugawa8651" creationdate="20181117T152629Z">
+        <seg>cond = Base.AsyncCondition()
+wait(cond)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>const m128 = NTuple{4,VecElement{Float32}}
 
 function add(a::m128, b::m128)
@@ -19348,6 +19852,14 @@ end
     end)
 end
 &lt;x1/&gt; output</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>free(ptr)&lt;x1/&gt; when the returned &lt;x2/&gt;Array&lt;x3/&gt; object is finalized.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152608Z" creationid="hsugawa8651" creationdate="20181117T152608Z">
+        <seg>返された&lt;x2/&gt;アレイ&lt;x3/&gt;オブジェクトがファイナライズされたときに、フリー(ptr)&lt;x1/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20344,6 +20856,14 @@ Markdown.parse("```\n\$ julia\n\n$(banner)\njulia&gt; 1 + 2\n3\n\njulia&gt; ans\
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151529Z" creationid="hsugawa8651" creationdate="20181117T151529Z">
         <seg>jl_value_t*&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>jl_value_t*&lt;x1/&gt; pointers, as &lt;x2/&gt;Ptr{Cvoid}&lt;x3/&gt;, by calling &lt;x4/&gt;`pointer_from_objref(v)`&lt;x5/&gt;.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152556Z" creationid="hsugawa8651" creationdate="20181117T152556Z">
+        <seg>jl_value_t*&lt;x2/&gt;ポインタは&lt;x2/&gt;Ptr{Cvoid}&lt;x3/&gt;、&lt;x4/&gt;'ポインタ_from_objref(v)`&lt;x5/&gt;を呼び出します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30355,6 +30875,15 @@ are provided as &lt;x3/&gt;hidden arguments&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151043Z" creationid="hsugawa8651" creationdate="20181117T151043Z">
         <seg>メモ Fortran関数の長さが&lt;x1/&gt;文字(len=*)&lt;x2/&gt;の可変長文字列を持つ場合は、文字列の長さを指定します。 は、&lt;x3/&gt;隠し引数&lt;x4/&gt;として提供されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>note
+You only need to read this chapter if you want to understand the technical details of package loading.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152756Z" creationid="hsugawa8651" creationdate="20181117T152756Z">
+        <seg>メモ パッケージのロードに関する技術的な詳細を理解するには、この章を読む必要があります。</seg>
       </tuv>
     </tu>
     <tu>
