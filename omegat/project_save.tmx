@@ -17700,6 +17700,14 @@ Base.unsafe_store!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>ccall&lt;x1/&gt; / &lt;x2/&gt;@cfunction&lt;x3/&gt; return type translation guide</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151737Z" creationid="hsugawa8651" creationdate="20181117T151734Z">
+        <seg>ccall&lt;x1/&gt;/&lt;x2/&gt;@cfunction&lt;x3/&gt;return type translation guide</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>changes &lt;x1/&gt;true&lt;x2/&gt; to &lt;x3/&gt;false&lt;x4/&gt; and vice versa</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132157Z" creationid="hsugawa8651" creationdate="20181113T132157Z">
@@ -17860,6 +17868,14 @@ println(call_dist(a,b))</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131658Z" creationid="hsugawa8651" creationdate="20181113T131658Z">
         <seg>copyto!(dest::DestType, bc::Broadcasted{Nothing})</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>currently unsupported by &lt;x1/&gt;@cfunction&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151722Z" creationid="hsugawa8651" creationdate="20181117T151722Z">
+        <seg>現在は&lt;x1/&gt;@cfunction&lt;x2/&gt;によってサポートされていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29184,6 +29200,14 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>not supported by &lt;x1/&gt;ccall&lt;x2/&gt; or &lt;x3/&gt;@cfunction&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151731Z" creationid="hsugawa8651" creationdate="20181117T151731Z">
+        <seg>&lt;x1/&gt;ccall&lt;x2/&gt;または&lt;x3/&gt;@cfunction&lt;x4/&gt;ではサポートされていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>note
 A C function declared to return &lt;x1/&gt;Cvoid&lt;x2/&gt; will return the value &lt;x3/&gt;nothing&lt;x4/&gt; in Julia.</seg>
       </tuv>
@@ -30438,6 +30462,14 @@ yes
 "yes"
 
 julia&gt; 1 &gt; 2 ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>va_arg&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151724Z" creationid="hsugawa8651" creationdate="20181117T151724Z">
+        <seg>va_arg&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
