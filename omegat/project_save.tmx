@@ -1916,6 +1916,17 @@ an array &lt;x22/&gt;A&lt;x23/&gt;, it performs a &lt;x24/&gt;single&lt;x25/&gt;
     <tu>
       <tuv lang="EN-US">
         <seg>:
+Nomenclature: while the term "constructor" generally refers to the entire function which constructs
+objects of a type, it is common to abuse terminology slightly and refer to specific constructor
+methods as "constructors".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155659Z" creationid="hsugawa8651" creationdate="20181117T155659Z">
+        <seg>: 命名法:「コンストラクタ」という用語は、一般的には、次のような機能を構成する関数全体を指します。 タイプのオブジェクトで、用語をわずかに乱用し、特定のコンストラクタを参照することが一般的です。 「コンストラクタ」としてのメソッド。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:
 The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require explicit parentheses around their argument to disambiguate them from the operator &lt;x5/&gt;++&lt;x6/&gt;, etc.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030927Z" creationid="hsugawa8651" creationdate="20181114T030915Z">
@@ -2260,6 +2271,17 @@ exec julia --color=yes --startup-file=no -e 'include(popfirst!(ARGS))' \
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022821Z" creationid="hsugawa8651" creationdate="20181113T022821Z">
         <seg>&lt;x1/&gt;IndexLinear()&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x1/&gt;Recursive data structures&lt;x2/&gt;,
+especially those that may be self-referential, often cannot be constructed cleanly without first
+being created in an incomplete state and then altered programmatically to be made whole, as a
+separate step from object creation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155652Z" creationid="hsugawa8651" creationdate="20181117T155652Z">
+        <seg>&lt;x1/&gt;再帰データ構造体&lt;x2/&gt; 特に、自己参照することができるものは、しばしば、最初には、きれいに構築することはできない は不完全な状態で作成され、次にプログラムによって変更されて全体として作成されます。 オブジェクト作成とは別のステップです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2816,6 +2838,15 @@ as that MIME type; this is automatic if one calls &lt;x21/&gt;show&lt;x22/&gt; o
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A constructor is just like any other function in Julia in that its overall behavior is defined
+by the combined behavior of its methods.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155705Z" creationid="hsugawa8651" creationdate="20181117T155705Z">
+        <seg>コンストラクタは、その全体的な振る舞いが定義されているという点で、Juliaの他の関数と同じです。 それは、その方法の組み合わせによるものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A curated list of useful learning resources to help new users get started can be found on the &lt;x1/&gt;learning&lt;x2/&gt; page of the main Julia web site.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224812Z" creationid="hsugawa8651" creationdate="20181109T224812Z">
@@ -3229,6 +3260,15 @@ Dingo/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Accordingly, you can add functionality to a constructor
+by simply defining new methods.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155707Z" creationid="hsugawa8651" creationdate="20181117T155707Z">
+        <seg>したがって、コンストラクタに機能を追加することができます。 新しい方法を定義することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Adding an integer to a &lt;x5/&gt;Ptr&lt;x6/&gt; in Julia always moves the pointer by some number of
 &lt;x7/&gt;bytes&lt;x8/&gt;, not elements.</seg>
       </tuv>
@@ -3243,6 +3283,16 @@ us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154956Z" creationid="hsugawa8651" creationdate="20181109T154956Z">
         <seg>括弧を追加すると &lt;x3/&gt;'map`&lt;x4/&gt;:に3番目の引数を追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Additional
+convenience constructor methods, supplying default values or auxiliary transformations, should
+be provided as outer constructors that call the inner constructors to do the heavy lifting.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155833Z" creationid="hsugawa8651" creationdate="20181117T155833Z">
+        <seg>追加 便利なコンストラクタメソッド、デフォルト値または補助変換を提供する必要があります。 内部コンストラクタを呼び出す外部コンストラクタとして提供され、このコンストラクタは重いリフティングを実行します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3535,6 +3585,15 @@ be to replicate the vector to the size of the matrix:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160043Z" creationid="hsugawa8651" creationdate="20181109T160043Z">
         <seg>非効率的な方法は ベクトルをマトリックスのサイズに複製することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An inner constructor method
+is like an outer constructor method, except for two differences:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155735Z" creationid="hsugawa8651" creationdate="20181117T155735Z">
+        <seg>内部コンストラクタのメソッド は、2つの違いを除いて、外部コンストラクタメソッドのようなものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8911,6 +8970,24 @@ accessing the diagonal elements from the first "page" of &lt;x5/&gt;A&lt;x6/&gt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, let's say you want to add a constructor method for
+&lt;x1/&gt;Foo&lt;x2/&gt; objects that takes only one argument and uses the given value for both the &lt;x3/&gt;bar&lt;x4/&gt; and &lt;x5/&gt;baz&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155710Z" creationid="hsugawa8651" creationdate="20181117T155710Z">
+        <seg>たとえば、次のようにコンストラクタメソッドを追加するとします。 &lt;x1/&gt;Foo&lt;x2/&gt;オブジェクトは1つの引数をとり、&lt;x3/&gt;bar&lt;x4/&gt;と&lt;x5/&gt;baz&lt;x6/&gt;の両方で指定された値を使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, suppose one wants to declare a type that holds a pair of real numbers, subject to
+the constraint that the first number is not greater than the second one.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155741Z" creationid="hsugawa8651" creationdate="20181117T155741Z">
+        <seg>たとえば、実数のペアを保持するタイプを宣言する場合は、次のように指定します。 最初の数値が2番目の数値より大きい制約がないことを示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, the &lt;x7/&gt;`searchsorted`&lt;x8/&gt; function uses this convention to indicate
 the insertion point of a value not found in a sorted array:</seg>
       </tuv>
@@ -9093,6 +9170,15 @@ and load in the new changes.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For many types, forming new objects by binding their field values together is all that is ever
+needed to create instances.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155640Z" creationid="hsugawa8651" creationdate="20181117T155640Z">
+        <seg>多くのタイプでは、フィールド値を結合することで新しいオブジェクトを作成することは、すべてのタイプであり インスタンスを作成する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For more details on defining custom
 &lt;x16/&gt;AbstractArray&lt;x17/&gt; implementations, see the &lt;x18/&gt;&lt;x19/&gt;&lt;x20/&gt;(@ref man-interface-array).</seg>
       </tuv>
@@ -9153,6 +9239,16 @@ equality for your own types then you only need to add a &lt;x5/&gt;`==`&lt;x6/&g
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For reasons that will
+become clear very shortly, additional constructor methods declared as normal methods like this
+are called &lt;x1/&gt;outer&lt;x2/&gt; constructor methods.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155727Z" creationid="hsugawa8651" creationdate="20181117T155727Z">
+        <seg>理由は 次のようなコンストラクタメソッドは、ごく短時間で明確になります。 は、&lt;x1/&gt;外部&lt;x2/&gt;コンストラクタ・メソッドと呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For some types, the machinery to "fuse" operations across nested levels of broadcasting
 is not available or could be done more efficiently incrementally.</seg>
       </tuv>
@@ -9184,6 +9280,14 @@ let's try a two-way version first:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230122Z" creationid="hsugawa8651" creationdate="20181109T230122Z">
         <seg>わかりやすくするために まず2ウェイのバージョンを試してみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For these problems, one needs &lt;x1/&gt;inner&lt;x2/&gt; constructor methods.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155734Z" creationid="hsugawa8651" creationdate="20181117T155734Z">
+        <seg>これらの問題に対しては、&lt;x1/&gt;内部の&lt;x2/&gt;コンストラクタのメソッドが必要です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9514,6 +9618,15 @@ where syntactic conflicts arise:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here the zero-argument constructor method calls the single-argument constructor method, which
+in turn calls the automatically provided two-argument constructor method.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155724Z" creationid="hsugawa8651" creationdate="20181117T155724Z">
+        <seg>ここでは、0つの引数コンストラクタメソッドは、単一引数コンストラクタメソッドを呼び出します。 は自動的に提供された2引数コンストラクタメソッドを呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here we created a function &lt;x1/&gt;change_array!&lt;x2/&gt;, that assigns &lt;x3/&gt;5&lt;x4/&gt; to the first element of the passed
 array (bound to &lt;x5/&gt;x&lt;x6/&gt; at the call site, and bound to &lt;x7/&gt;A&lt;x8/&gt; within the function).</seg>
       </tuv>
@@ -9639,6 +9752,15 @@ mutable arrays should also implement &lt;x14/&gt;`setindex!`&lt;x15/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131338Z" creationid="hsugawa8651" creationdate="20181113T131338Z">
         <seg>ただし、必要に応じて、これらの引数のいずれかまたはすべてを専門にすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, in some cases more functionality is required when
+creating composite objects.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155642Z" creationid="hsugawa8651" creationdate="20181117T155642Z">
+        <seg>ただし、場合によっては、次のような機能が必要になります。 合成オブジェクトを作成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9944,6 +10066,15 @@ session with a trailing semicolon, its value is not shown.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If any inner constructor method is defined, no default constructor method is provided: it is presumed
+that you have supplied yourself with all the inner constructors you need.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155806Z" creationid="hsugawa8651" creationdate="20181117T155806Z">
+        <seg>内部コンストラクタメソッドが定義されている場合は、デフォルトのコンストラクタメソッドは提供されません。これは 必要なすべてのインナー・コンストラクターを自分で提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If instead you want to specialize on the destination type &lt;x1/&gt;DestType&lt;x2/&gt; without specializing
 on &lt;x3/&gt;DestStyle&lt;x4/&gt;, then you should define a method with the following signature:</seg>
       </tuv>
@@ -10061,6 +10192,15 @@ omitted it will default to &lt;x7/&gt;`Float64`&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154346Z" creationid="hsugawa8651" creationdate="20181109T154346Z">
         <seg>&lt;x5/&gt;T&lt;x6/&gt;の場合 省略すると、デフォルトでは&lt;x7/&gt;"Float64&lt;x8/&gt;になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the type were declared &lt;x1/&gt;mutable&lt;x2/&gt;, you could reach in and directly change the field values to
+violate this invariant.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155755Z" creationid="hsugawa8651" creationdate="20181117T155755Z">
+        <seg>タイプが宣言されている場合は、&lt;x1/&gt;mutable&lt;x2/&gt;の値を入力すると、フィールド値を入力して、フィールド値を直接変更することができます。 この不変に違反します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10229,6 +10369,15 @@ sharing&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025027Z" creationid="hsugawa8651" creationdate="20181110T025027Z">
         <seg>Juliaでは、変数&lt;x1/&gt;x&lt;x2/&gt;の結合は、関数の引数として&lt;x3/&gt;x&lt;x4/&gt;を渡すことで変更することはできない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In Julia, type objects also serve as constructor functions: they create new instances of themselves
+when applied to an argument tuple as a function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155624Z" creationid="hsugawa8651" creationdate="20181117T155624Z">
+        <seg>ジュリアでは、オブジェクトもコンストラクタ関数として機能します。これらは、自分自身の新しいインスタンスを作成するためのものです。 関数として引数タプルに適用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10460,6 +10609,16 @@ tackling the outer operation.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131603Z" creationid="hsugawa8651" creationdate="20181113T131603Z">
         <seg>このような場合は &lt;x1/&gt;x.*(x .+ 1)&lt;x2/&gt;を必要とするか、または評価する必要があるかを判断します。 &lt;x3/&gt;ブロードキャスト(*,x,ブロードキャスト(+, x, 1))&lt;x4/&gt;で、インナー操作は事前に評価されます。 外部操作に取り組んでいます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In such situations, it is generally clear from the context that the term
+is used to mean "constructor method" rather than "constructor function", especially as it is often
+used in the sense of singling out a particular method of the constructor from all of the others.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155702Z" creationid="hsugawa8651" creationdate="20181117T155702Z">
+        <seg>このような状況では、一般的には、この用語は は、「コンストラクタ関数」ではなく「コンストラクタメソッド」を意味するために使用されます。特に コンストラクタの特定のメソッドを、他のすべてのコンストラクタから削除するという意味で使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10763,6 +10922,14 @@ to observe or mutate this state.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Inner Constructor Methods</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155731Z" creationid="hsugawa8651" creationdate="20181117T155731Z">
+        <seg>内部コンストラクタのメソッド</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>InsertionSort&lt;x1/&gt; is an O(n^2) stable sorting algorithm.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064050Z" creationid="hsugawa8651" creationdate="20181114T064050Z">
@@ -11004,6 +11171,15 @@ in most languages taking three operands:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It has access to a special locally existent function called &lt;x1/&gt;`new`&lt;x2/&gt; that creates objects of the
+block's type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155739Z" creationid="hsugawa8651" creationdate="20181117T155739Z">
+        <seg>それは、オブジェクトを作成する&lt;x1/&gt;'新しい&lt;x2/&gt;という特別なローカルに存在する機能にアクセスすることができます。 ブロックのタイプ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is also often useful to allow iteration over a collection in &lt;x1/&gt;reverse order&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112857Z" creationid="hsugawa8651" creationdate="20181112T112857Z">
@@ -11040,6 +11216,14 @@ a different system.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is declared inside the block of a type declaration, rather than outside of it like normal methods.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155737Z" creationid="hsugawa8651" creationdate="20181117T155737Z">
+        <seg>それは、通常のメソッドのような外部ではなく、型宣言のブロック内で宣言されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is defined by-value, and is stored without a type-tag.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150732Z" creationid="hsugawa8651" creationdate="20181117T150732Z">
@@ -11070,6 +11254,15 @@ indices directly instead of first calling &lt;x13/&gt;`findall`&lt;x14/&gt;.</se
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155813Z" creationid="hsugawa8651" creationdate="20181109T155813Z">
         <seg>一般的に、boolean配列を使用する方が効率的です。 は、最初の呼び出し&lt;x13/&gt;'findall&lt;x14/&gt;を呼び出すのではなく、直接インデックスを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is good practice to provide as few inner constructor methods as possible: only those
+taking all arguments explicitly and enforcing essential error checking and transformation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155831Z" creationid="hsugawa8651" creationdate="20181117T155831Z">
+        <seg>できるだけ少ないインナーコンストラクタメソッドを提供することは良い習慣ですが、それだけでよいのです。 すべての引数を明示的に取得し、必須のエラーチェックと変換を実行します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12513,6 +12706,14 @@ the variables &lt;x11/&gt;A&lt;x12/&gt; and &lt;x13/&gt;x&lt;x14/&gt; were disti
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Now &lt;x1/&gt;OrderedPair&lt;x2/&gt; objects can only be constructed such that &lt;x3/&gt;x &lt;= y&lt;x4/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155749Z" creationid="hsugawa8651" creationdate="20181117T155749Z">
+        <seg>&lt;x1/&gt;OrderedPair&lt;x2/&gt;オブジェクトは、&lt;x3/&gt;x&lt;=y&lt;x4/&gt;のように構成できるようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Now,
 by default, &lt;x11/&gt;broadcasted&lt;x12/&gt; just calls the &lt;x13/&gt;Broadcasted&lt;x14/&gt; constructor to create the lazy representation
 of the fused expression tree, but you can choose to override it for a particular combination
@@ -12561,6 +12762,14 @@ using the &lt;x19/&gt;qsort&lt;x20/&gt; function (rather than Julia's built-in &
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135422Z" creationid="hsugawa8651" creationdate="20181117T135422Z">
         <seg>または</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Of course, messing around with an object's internals uninvited is bad practice.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155757Z" creationid="hsugawa8651" creationdate="20181117T155757Z">
+        <seg>もちろん、オブジェクトの内部悪魔の招待状を回避することは、不適切なプラクティスです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12688,6 +12897,15 @@ written with a trailing comma.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>One could declare it
+like this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155742Z" creationid="hsugawa8651" creationdate="20181117T155742Z">
+        <seg>それを宣言することができる こんな感じです</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One of &lt;x1/&gt;HasLength()&lt;x2/&gt;, &lt;x3/&gt;HasShape{N}()&lt;x4/&gt;, &lt;x5/&gt;IsInfinite()&lt;x6/&gt;, or &lt;x7/&gt;SizeUnknown()&lt;x8/&gt; as appropriate</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112136Z" creationid="hsugawa8651" creationdate="20181112T112126Z">
@@ -12777,6 +12995,15 @@ indices.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155131Z" creationid="hsugawa8651" creationdate="20181109T155131Z">
         <seg>そうでない場合は &lt;x5/&gt;x&lt;x6/&gt;は、すべての次元の次元性の合計と同じ数の次元を持つ配列です。 索引。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Outer constructor methods can only ever create a new instance
+by calling another constructor method, such as the automatically provided default ones.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155729Z" creationid="hsugawa8651" creationdate="20181117T155729Z">
+        <seg>外部コンストラクタのメソッドは、新しいインスタンスを作成することしかできません。 別のコンストラクタ・メソッド(自動的に提供されるデフォルトのデフォルト値など)を呼び出します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13503,6 +13730,16 @@ indexing and indexed assignment as efficient as possible.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since outer constructor
+methods can only create objects by calling other constructor methods, ultimately, some inner constructor
+must be called to create an object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155801Z" creationid="hsugawa8651" creationdate="20181117T155801Z">
+        <seg>外部コンストラクタ メソッドは、他のコンストラクタ・メソッドを呼び出してオブジェクトを作成できるだけで、最終的には内部コンストラクタを作成できます オブジェクトを作成するために呼び出される必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since the body of the generated function is non-deterministic, its behavior, &lt;x1/&gt;and the behavior of all subsequent code&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032051Z" creationid="hsugawa8651" creationdate="20181116T032051Z">
@@ -13626,11 +13863,29 @@ you'll need to take some extra precautions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Sometimes invariants must be enforced, either by checking arguments
+or by transforming them.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155644Z" creationid="hsugawa8651" creationdate="20181117T155644Z">
+        <seg>時には、引数をチェックすることによって、変数を強制する必要があります。 変えることです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Sometimes it is convenient to have a single expression which evaluates several subexpressions
 in order, returning the value of the last subexpression as its value.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225754Z" creationid="hsugawa8651" creationdate="20181109T225754Z">
         <seg>いくつかのサブ式を評価する単一の表現を持つことが便利な場合もあります。 は、最後のサブ式の値をその値として返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sometimes, it's just convenient to be able to construct objects
+with fewer or different types of parameters than they have fields.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155648Z" creationid="hsugawa8651" creationdate="20181117T155648Z">
+        <seg>場合によっては、オブジェクトを構築することができます。 フィールドには、フィールドとは異なるタイプのパラメータが含まれています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14540,6 +14795,17 @@ implementation instead.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The default constructor
+is equivalent to writing your own inner constructor method that takes all of the object's fields
+as parameters (constrained to be of the correct type, if the corresponding field has a type),
+and passes them to &lt;x1/&gt;new&lt;x2/&gt;, returning the resulting object:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155809Z" creationid="hsugawa8651" creationdate="20181117T155809Z">
+        <seg>デフォルトのコンストラクタ は、すべてのオブジェクトのフィールドを取得する独自のインナー・コンストラクタ・メソッドを記述することと同じです。 パラメータとして指定します(対応するフィールドが型を持つ場合は、正しいタイプに制限されます)。 そして、それらを&lt;x1/&gt;新しい&lt;x2/&gt;に渡して、結果として得られるオブジェクトを返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The default mode used is always &lt;x1/&gt;`RoundNearest`&lt;x2/&gt;, which rounds to the nearest representable
 value, with ties rounded towards the nearest value with an even least significant bit.</seg>
       </tuv>
@@ -14844,6 +15110,15 @@ cause Julia to terminate abruptly.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161207Z" creationid="hsugawa8651" creationdate="20181114T161207Z">
         <seg>配列では、次の演算子がサポートされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following two types are equivalent -- one with a default constructor,
+the other with an explicit constructor:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155817Z" creationid="hsugawa8651" creationdate="20181117T155817Z">
+        <seg>次の2つのタイプは、デフォルトコンストラクタを使用した場合と同じです。 もう一つは明示的なコンストラクタである。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16131,6 +16406,15 @@ is relaxed for incrementally-loaded precompiled modules to allow calling any fun
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This declaration has the same effect as the earlier definition of the &lt;x1/&gt;Foo&lt;x2/&gt; type without an explicit
+inner constructor method.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155814Z" creationid="hsugawa8651" creationdate="20181117T155814Z">
+        <seg>この宣言は、明示的には&lt;x1/&gt;Foo&lt;x2/&gt;タイプの以前の定義と同じ効果を持っています。 インナーコンストラクタメソッド。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This does not occur when Julia code is run in other ways.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225348Z" creationid="hsugawa8651" creationdate="20181109T225348Z">
@@ -16186,6 +16470,16 @@ to the behavior of &lt;x7/&gt;`getindex`&lt;x8/&gt; and &lt;x9/&gt;`setindex!`&l
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152531Z" creationid="hsugawa8651" creationdate="20181117T152531Z">
         <seg>この関数は意図的に似ています &lt;x7/&gt;`getindex'&lt;x8/&gt;および&lt;x9/&gt;`setindex!`&lt;x10/&gt;(例:&lt;x11/&gt;[]&lt;x12/&gt;アクセス構文)の動作です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This guarantees that all objects of the declared type must come into
+existence by a call to one of the inner constructor methods provided with the type, thereby giving
+some degree of enforcement of a type's invariants.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155804Z" creationid="hsugawa8651" creationdate="20181117T155804Z">
+        <seg>これにより、宣言されたタイプのすべてのオブジェクトが、次のように指定されることが保証されます。 型で提供される内部コンストラクタメソッドの一つを呼び出して存在することによって タイプの不変度のある程度の強制。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16423,6 +16717,15 @@ statically compile.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111830Z" creationid="hsugawa8651" creationdate="20181112T111830Z">
         <seg>これは例えば &lt;x9/&gt;1/2im&lt;x10/&gt;=&lt;x11/&gt;-0.5im&lt;x12/&gt;6//2(2 + 1)&lt;x14/&gt;=&lt;x15/&gt;=&lt;x15/&gt;1//1&lt;x16/&gt;となります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This much was already mentioned briefly when
+composite types were introduced.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155626Z" creationid="hsugawa8651" creationdate="20181117T155626Z">
+        <seg>このことは、すでに簡単に述べた。 複合型が導入されました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17342,6 +17645,17 @@ dimensionalities, by creating a constructor for your style that takes a &lt;x3/&
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>While outer constructor methods succeed in addressing the problem of providing additional convenience
+methods for constructing objects, they fail to address the other two use cases mentioned in the
+introduction of this chapter: enforcing invariants, and allowing construction of self-referential
+objects.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155732Z" creationid="hsugawa8651" creationdate="20181117T155732Z">
+        <seg>外部コンストラクタのメソッドは、追加の利便性を提供する問題に対処することに成功しています。 オブジェクトを構築するためのメソッドです。これらのメソッドは、次の2つのユースケースに対応しています。 この章の導入:インバリアントの適用、自己参照の可能化 オブジェクトを選択します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>While this behaviour is fixed for some compilers (GNU),
 others &lt;x7/&gt;optionally&lt;x8/&gt; permit placing hidden arguments directly after the character argument (Intel,PGI).</seg>
       </tuv>
@@ -17452,6 +17766,15 @@ like any value:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You (or someone else) can also provide additional outer constructor methods at any later point, but
+once a type is declared, there is no way to add more inner constructor methods.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155800Z" creationid="hsugawa8651" creationdate="20181117T155800Z">
+        <seg>また、別の時点で外部コンストラクタのメソッドを追加することもできます。 タイプが宣言されると、インナー・コンストラクタ・メソッドを追加する方法はありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You are responsible for implementing the
 broadcasting shape rules yourself, but this may be helpful in limited situations.</seg>
       </tuv>
@@ -17516,6 +17839,15 @@ to be able to redefine them there, but you can use the module name to resolve th
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024742Z" creationid="hsugawa8651" creationdate="20181110T024742Z">
         <seg>&lt;x1/&gt;メイン&lt;x2/&gt;にはタイプ名をインポートできないので、次のように入力することはできません。 で再定義することができますが、このモジュール名を使用してスコープを解決することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You could also add a zero-argument &lt;x1/&gt;Foo&lt;x2/&gt; constructor method that supplies default values for both
+of the &lt;x3/&gt;bar&lt;x4/&gt; and &lt;x5/&gt;baz&lt;x6/&gt; fields:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155715Z" creationid="hsugawa8651" creationdate="20181117T155715Z">
+        <seg>また、0つの引数&lt;x1/&gt;Foo&lt;x2/&gt;コンストラクタメソッドを追加して、両方のデフォルト値を指定することもできます。 &lt;x3/&gt;bar&lt;x4/&gt;および&lt;x5/&gt;baz&lt;x6/&gt;の各フィールドのうち、以下のようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19720,6 +20052,16 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132124Z" creationid="hsugawa8651" creationdate="20181113T132124Z">
         <seg>&lt;x1/&gt;y/x&lt;x2/&gt;に相当する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>error("out of order") : new(x,y)
+       end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155746Z" creationid="hsugawa8651" creationdate="20181117T155746Z">
+        <seg>error("out of order") : new(x,y)
+       end</seg>
       </tuv>
     </tu>
     <tu>
@@ -23088,6 +23430,38 @@ Stacktrace:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; Foo() = Foo(0)
+Foo
+
+julia&gt; Foo()
+Foo(0, 0)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155717Z" creationid="hsugawa8651" creationdate="20181117T155717Z">
+        <seg>julia&gt; Foo() = Foo(0)
+Foo
+
+julia&gt; Foo()
+Foo(0, 0)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Foo(x) = Foo(x,x)
+Foo
+
+julia&gt; Foo(1)
+Foo(1, 1)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155711Z" creationid="hsugawa8651" creationdate="20181117T155711Z">
+        <seg>julia&gt; Foo(x) = Foo(x,x)
+Foo
+
+julia&gt; Foo(1)
+Foo(1, 1)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; Fs = Vector{Any}(undef, 2);
 
 julia&gt; for j = 1:2
@@ -23404,6 +23778,30 @@ julia&gt; NamedTuple{(:a, :b)}((1,""))
 
 julia&gt; NamedTuple{(:a, :b)}((1,""))
 (a = 1, b = "")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; OrderedPair(1, 2)
+OrderedPair(1, 2)
+
+julia&gt; OrderedPair(2,1)
+ERROR: out of order
+Stacktrace:
+ [1] error at ./error.jl:33 [inlined]
+ [2] OrderedPair(::Int64, ::Int64) at ./none:4
+ [3] top-level scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155751Z" creationid="hsugawa8651" creationdate="20181117T155751Z">
+        <seg>julia&gt; OrderedPair(1, 2)
+OrderedPair(1, 2)
+
+julia&gt; OrderedPair(2,1)
+ERROR: out of order
+Stacktrace:
+ [1] error at ./error.jl:33 [inlined]
+ [2] OrderedPair(::Int64, ::Int64) at ./none:4
+ [3] top-level scope</seg>
       </tuv>
     </tu>
     <tu>
@@ -28622,6 +29020,54 @@ julia&gt; str[end÷2]
       <tuv lang="EN-US">
         <seg>julia&gt; struct Foo
            bar
+           baz
+           Foo(bar,baz) = new(bar,baz)
+       end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155810Z" creationid="hsugawa8651" creationdate="20181117T155810Z">
+        <seg>julia&gt; struct Foo
+           bar
+           baz
+           Foo(bar,baz) = new(bar,baz)
+       end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; struct Foo
+           bar
+           baz
+       end
+
+julia&gt; foo = Foo(1, 2)
+Foo(1, 2)
+
+julia&gt; foo.bar
+1
+
+julia&gt; foo.baz
+2</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155629Z" creationid="hsugawa8651" creationdate="20181117T155629Z">
+        <seg>julia&gt; struct Foo
+           bar
+           baz
+       end
+
+julia&gt; foo = Foo(1, 2)
+Foo(1, 2)
+
+julia&gt; foo.bar
+1
+
+julia&gt; foo.baz
+2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; struct Foo
+           bar
            baz::Int
            qux::Float64
        end</seg>
@@ -28648,6 +29094,20 @@ true</seg>
 
 julia&gt; NoFields() === NoFields()
 true</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; struct OrderedPair
+           x::Real
+           y::Real
+           OrderedPair(x,y) = x &gt; y ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155743Z" creationid="hsugawa8651" creationdate="20181117T155743Z">
+        <seg>julia&gt; struct OrderedPair
+           x::Real
+           y::Real
+           OrderedPair(x,y) = x &gt; y ?</seg>
       </tuv>
     </tu>
     <tu>
@@ -28806,6 +29266,52 @@ julia&gt; Base.size(S::SquaresVector) = (S.count,)
 julia&gt; Base.IndexStyle(::Type{&lt;:SquaresVector}) = IndexLinear()
 
 julia&gt; Base.getindex(S::SquaresVector, i::Int) = i*i</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; struct T1
+           x::Int64
+       end
+
+julia&gt; struct T2
+           x::Int64
+           T2(x) = new(x)
+       end
+
+julia&gt; T1(1)
+T1(1)
+
+julia&gt; T2(1)
+T2(1)
+
+julia&gt; T1(1.0)
+T1(1)
+
+julia&gt; T2(1.0)
+T2(1)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155818Z" creationid="hsugawa8651" creationdate="20181117T155818Z">
+        <seg>julia&gt; struct T1
+           x::Int64
+       end
+
+julia&gt; struct T2
+           x::Int64
+           T2(x) = new(x)
+       end
+
+julia&gt; T1(1)
+T1(1)
+
+julia&gt; T2(1)
+T2(1)
+
+julia&gt; T1(1.0)
+T1(1)
+
+julia&gt; T2(1.0)
+T2(1)</seg>
       </tuv>
     </tu>
     <tu>
