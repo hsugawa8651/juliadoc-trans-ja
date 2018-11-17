@@ -539,6 +539,16 @@ $JULIA_BINDIR/julia-debug</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>("function", "library")&lt;x1/&gt; where &lt;x2/&gt;function&lt;x3/&gt; is the C-exported function name. &lt;x4/&gt;library&lt;x5/&gt; refers
+to the shared library name: shared libraries available in the (platform-specific) load path will
+be resolved by name, and if necessary a direct path may be specified.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133743Z" creationid="hsugawa8651" creationdate="20181117T133743Z">
+        <seg>(「関数」、「ライブラリ」)&lt;x1/&gt;&lt;x2/&gt;関数&lt;x3/&gt;は、Cエクスポートされた関数名です。&lt;x4/&gt;ライブラリ&lt;x5/&gt;は 共有ライブラリの名前:(プラットフォーム固有の)ロードパスで使用可能な共有ライブラリ 名前で解決する必要があり、必要に応じて直接パスを指定することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>()&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032338Z" creationid="hsugawa8651" creationdate="20181114T032338Z">
@@ -2417,6 +2427,22 @@ as that MIME type; this is automatic if one calls &lt;x21/&gt;show&lt;x22/&gt; o
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A Julia Function</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133904Z" creationid="hsugawa8651" creationdate="20181117T133904Z">
+        <seg>ジュリア関数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A classic example is the standard C library &lt;x1/&gt;qsort&lt;x2/&gt; function, declared as:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133921Z" creationid="hsugawa8651" creationdate="20181117T133921Z">
+        <seg>典型的な例として、標準的なCライブラリ&lt;x1/&gt;qsort&lt;x2/&gt;関数があり、次のように宣言されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A curated list of useful learning resources to help new users get started can be found on the &lt;x1/&gt;learning&lt;x2/&gt; page of the main Julia web site.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224812Z" creationid="hsugawa8651" creationdate="20181109T224812Z">
@@ -2450,10 +2476,28 @@ as that MIME type; this is automatic if one calls &lt;x21/&gt;show&lt;x22/&gt; o
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A function name may be used alone in place of the tuple (just &lt;x1/&gt;:function&lt;x2/&gt; or &lt;x3/&gt;"function"&lt;x4/&gt;). In
+this case the name is resolved within the current process. This form can be used to call C library
+functions, functions in the Julia runtime, or functions in an application linked to Julia.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133752Z" creationid="hsugawa8651" creationdate="20181117T133752Z">
+        <seg>タプルの代わりに関数名を使用することができます(単に&lt;x1/&gt;:関数&lt;x2/&gt;または&lt;x3/&gt;"関数&lt;x4/&gt;&lt;x x/&gt;&lt;x4/&gt;&lt;x/&gt;)。 この場合、現在のプロセス内で名前が解決されます。このフォームを使用してCライブラリを呼び出すことができます。 関数、Juliaランタイム内の関数、またはJuliaにリンクされたアプリケーションの関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A key part in defining an &lt;x1/&gt;AbstractArray&lt;x2/&gt; subtype is &lt;x3/&gt;`IndexStyle`&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022659Z" creationid="hsugawa8651" creationdate="20181113T022659Z">
         <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;サブタイプの定義における重要な部分は&lt;x3/&gt;'IndexStyleである&lt;x4/&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A literal tuple of input types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133909Z" creationid="hsugawa8651" creationdate="20181117T133909Z">
+        <seg>入力タイプのリテラル・タプル</seg>
       </tuv>
     </tu>
     <tu>
@@ -2517,6 +2561,15 @@ they are iterable collections of their characters (see &lt;x27/&gt;Strings&lt;x2
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223952Z" creationid="hsugawa8651" creationdate="20181109T223952Z">
         <seg>入力タイプのタプル。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A tuple of input types. The input types must be written as a literal tuple, not a tuple-valued
+variable or expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133810Z" creationid="hsugawa8651" creationdate="20181117T133810Z">
+        <seg>入力タイプのタプル。入力タイプはタプルではなくリテラル・タプルとして記述される必要があります。 変数または式。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5852,6 +5905,23 @@ compiler.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By default, Fortran compilers &lt;x1/&gt;generate mangled
+names&lt;x2/&gt; (for example,
+converting function names to lowercase or uppercase, often appending an
+underscore), and so to call a Fortran function via &lt;x3/&gt;`ccall`&lt;x4/&gt; you must pass
+the mangled identifier corresponding to the rule followed by your Fortran
+compiler.  Also, when calling a Fortran function, all inputs must be passed as
+pointers to allocated values on the heap or stack. This applies not only to
+arrays and other mutable objects which are normally heap-allocated, but also to
+scalar values such as integers and floats which are normally stack-allocated and
+commonly passed in registers when using C or Julia calling conventions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133755Z" creationid="hsugawa8651" creationdate="20181117T133755Z">
+        <seg>デフォルトでは、Fortranコンパイラ&lt;x1/&gt;はmangledを生成します。 名前&lt;x2/&gt;(例: 関数名を小文字または大文字に変換し、通常は アンダースコア)は、Fortran関数を&lt;x3/&gt;`ccall`&lt;x4/&gt;経由で呼び出す必要があります。 ルールに従うルールに従って、ルールに対応するマクロ識別子を指定します。 コンパイラー。また、Fortran関数を呼び出す場合は、すべての入力が必要です。 ヒープまたはスタック上の割り当てられた値へのポインタです。これは 通常はヒープ割り当てされた配列やその他のmutableオブジェクトですが 通常スタック割り当てされた整数や浮動小数点のようなスカラー値 一般的には、CまたはJuliaの呼び出し規約を使用するときにレジスタで渡されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By default, Julia picks reasonable algorithms and sorts in standard ascending order:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063711Z" creationid="hsugawa8651" creationdate="20181114T063711Z">
@@ -5927,6 +5997,14 @@ they don't intend to change.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154219Z" creationid="hsugawa8651" creationdate="20181109T154219Z">
         <seg>呼び出し側は、入力を変更しないことを確実にするために、明示的なコピーを作成する必要があります。 変化するつもりはありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Calling C and Fortran Code</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133658Z" creationid="hsugawa8651" creationdate="20181117T133658Z">
+        <seg>CとFortranのコードを呼び出す</seg>
       </tuv>
     </tu>
     <tu>
@@ -6736,6 +6814,14 @@ Base.Sys.MACHINE</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Creating C-Compatible Julia Function Pointers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133847Z" creationid="hsugawa8651" creationdate="20181117T133847Z">
+        <seg>C互換性のあるJulia関数ポインタの作成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Creation of a variable named &lt;x7/&gt;where&lt;x8/&gt;, &lt;x9/&gt;in&lt;x10/&gt; or &lt;x11/&gt;isa&lt;x12/&gt; is allowed though.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041808Z" creationid="hsugawa8651" creationdate="20181110T041808Z">
@@ -6744,10 +6830,29 @@ Base.Sys.MACHINE</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cstring&lt;x1/&gt; type here: as the array is uninitialized, it could contain NUL bytes. Converting
+to a &lt;x2/&gt;Cstring&lt;x3/&gt; as part of the &lt;x4/&gt;`ccall`&lt;x5/&gt; checks for contained NUL bytes and could therefore
+throw a conversion error.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133845Z" creationid="hsugawa8651" creationdate="20181117T133845Z">
+        <seg>Cstring&lt;x1/&gt;タイプ:配列は初期化されていないため、NULバイトを含むことができます。変換 &lt;x4/&gt;Cstring&lt;x3/&gt;は、含まれるNULバイトを&lt;x4/&gt;'ccall&lt;x5/&gt;チェックの一部として&lt;x2/&gt;にします。したがって 変換エラーをスローします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Currently, only the platform-default C calling convention is supported.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153954Z" creationid="hsugawa8651" creationdate="20181109T153954Z">
         <seg>現在、プラットフォームのデフォルトのC呼び出し規約のみがサポートされています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Currently, only the platform-default C calling convention is supported. This means that
+&lt;x1/&gt;@cfunction&lt;x2/&gt;-generated pointers cannot be used in calls where WINAPI expects &lt;x3/&gt;stdcall&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133912Z" creationid="hsugawa8651" creationdate="20181117T133912Z">
+        <seg>現在、プラットフォームのデフォルトのC呼び出し規則のみがサポートされています。これは、次のことを意味します。 &lt;x1/&gt;@cfunction&lt;x2/&gt;-生成されたポインタは、WINAPIが&lt;x3/&gt;stdcall&lt;x4/&gt;を想定している呼び出しでは使用できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7169,6 +7274,15 @@ this means that:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223825Z" creationid="hsugawa8651" creationdate="20181109T223825Z">
         <seg>最後に、&lt;x1/&gt;`ccall'&lt;x2/&gt;を使ってライブラリ関数への呼び出しを実際に生成することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Finally, you can use &lt;x1/&gt;`ccall`&lt;x2/&gt; to actually generate a call to the library function. Arguments
+to &lt;x3/&gt;`ccall`&lt;x4/&gt; are as follows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133759Z" creationid="hsugawa8651" creationdate="20181117T133759Z">
+        <seg>最後に、&lt;x1/&gt;`ccall'&lt;x2/&gt;を使ってライブラリ関数への呼び出しを実際に生成することができます。引数は引数を指定します。 &lt;x3/&gt;'ccall'&lt;x4/&gt;は次のようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7888,6 +8002,14 @@ where syntactic conflicts arise:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111920Z" creationid="hsugawa8651" creationdate="20181112T111920Z">
         <seg>次に状況を示します。 構文的な競合が発生します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is a slightly more complex example that discovers the local machine's hostname:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133838Z" creationid="hsugawa8651" creationdate="20181117T133838Z">
+        <seg>ここでは、ローカルマシンのホスト名を検出するもう少し複雑な例を示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9058,6 +9180,15 @@ later in &lt;x1/&gt;Parametrically-constrained Varargs methods&lt;x2/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is possible to pass Julia functions to native C functions that accept function pointer arguments.
+For example, to match C prototypes of the form:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133850Z" creationid="hsugawa8651" creationdate="20181117T133850Z">
+        <seg>関数ポインタ引数を受け入れるネイティブC関数にJulia関数を渡すことができます。 たとえば、フォームのCプロトタイプに一致させるには、次のようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is recommended that these operations
 have nearly constant time complexity, or technically Õ(1) complexity, as otherwise some array
 functions may be unexpectedly slow.</seg>
@@ -10042,6 +10173,16 @@ list can — and often does — include other nested &lt;x4/&gt;Broadcasted&lt;x
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that the argument type tuple must be written as &lt;x1/&gt;(Cstring,)&lt;x2/&gt;, rather than &lt;x3/&gt;(Cstring)&lt;x4/&gt;. This
+is because &lt;x5/&gt;(Cstring)&lt;x6/&gt; is just the expression &lt;x7/&gt;Cstring&lt;x8/&gt; surrounded by parentheses, rather than
+a 1-tuple containing &lt;x9/&gt;Cstring&lt;x10/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133827Z" creationid="hsugawa8651" creationdate="20181117T133827Z">
+        <seg>引数のタイプは、&lt;x3/&gt;(Cstring)&lt;x4/&gt;ではなく&lt;x1/&gt;(Cstring)&lt;x2/&gt;として記述する必要があることに注意してください。 &lt;x5/&gt;(Cstring)&lt;x6/&gt;は、&lt;x7/&gt;Cstring&lt;x8/&gt;で囲まれた括弧で囲まれた表現であり &lt;x9/&gt;Cstring&lt;x10/&gt;:を含む1組のタプル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that the set of operations that should not be attempted in a generated function is unbounded,
 and the runtime system can currently only detect a subset of the invalid operations.</seg>
       </tuv>
@@ -10484,6 +10625,14 @@ an interactive session.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022647Z" creationid="hsugawa8651" creationdate="20181113T022647Z">
         <seg>&lt;x1/&gt;T&lt;x2/&gt;のような配列を指定されたインデックス&lt;x3/&gt;inds&lt;x4/&gt;(以下参照)と同様に返す。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Return type</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133907Z" creationid="hsugawa8651" creationdate="20181117T133907Z">
+        <seg>戻り値の型</seg>
       </tuv>
     </tu>
     <tu>
@@ -11182,6 +11331,20 @@ arbitrary-precision floating point and integer arithmetic, respectively.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;base&lt;x2/&gt; argument is a pointer to an array of length &lt;x3/&gt;nmemb&lt;x4/&gt;, with elements of &lt;x5/&gt;size&lt;x6/&gt; bytes
+each. &lt;x7/&gt;compare&lt;x8/&gt; is a callback function which takes pointers to two elements &lt;x9/&gt;a&lt;x10/&gt; and &lt;x11/&gt;b&lt;x12/&gt; and returns
+an integer less/greater than zero if &lt;x13/&gt;a&lt;x14/&gt; should appear before/after &lt;x15/&gt;b&lt;x16/&gt; (or zero if any order
+is permitted). Now, suppose that we have a 1d array &lt;x17/&gt;A&lt;x18/&gt; of values in Julia that we want to sort
+using the &lt;x19/&gt;qsort&lt;x20/&gt; function (rather than Julia's built-in &lt;x21/&gt;sort&lt;x22/&gt; function). Before we worry about
+calling &lt;x23/&gt;qsort&lt;x24/&gt; and passing arguments, we need to write a comparison function that works for some
+arbitrary objects (which define &lt;x25/&gt;&lt;&lt;x26/&gt;):</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133931Z" creationid="hsugawa8651" creationdate="20181117T133931Z">
+        <seg>&lt;x1/&gt;の基本&lt;x2/&gt;引数は、&lt;x5/&gt;nmemb&lt;x4/&gt;の配列へのポインタであり、&lt;x5/&gt;サイズ&lt;x6/&gt;バイトの要素がある。 &lt;x7/&gt;比較&lt;x8/&gt;は、2つの要素&lt;x9/&gt;a&lt;x10/&gt;と&lt;x11/&gt;b&lt;x12/&gt;のポインタを取得して返すコールバック関数です。 &lt;x15/&gt;b&lt;x16/&gt;の前/後&lt;x15/&gt;b&lt;x16/&gt;(いずれかの順序がある場合は0)の前に&lt;x13/&gt;a&lt;x14/&gt;を表示する必要がある場合は、0より小さい/大きい整数 が許可されました)。1D配列が指定されている場合は、次の値を指定します。 &lt;x19/&gt;qsort&lt;x20/&gt;関数(Juliaの組み込み&lt;X21/&gt;ソート&lt;x22/&gt;関数ではなく)を使用します。 &lt;x23/&gt;qsort&lt;x24/&gt;を呼び出して引数を渡す必要があります。 任意のオブジェクト(&lt;x25/&gt;&lt;&lt;x26/&gt;を定義します):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;for&lt;x2/&gt; loop makes common repeated evaluation idioms easier to write.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T231125Z" creationid="hsugawa8651" creationdate="20181109T231125Z">
@@ -11446,6 +11609,22 @@ so they can follow the same codepath.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160547Z" creationid="hsugawa8651" creationdate="20181109T160547Z">
         <seg>呼び出されるコードは共有ライブラリとして使用できる必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The code to be called must be available as a shared library. Most C and Fortran libraries ship
+compiled as shared libraries already, but if you are compiling the code yourself using GCC (or
+Clang), you will need to use the &lt;x1/&gt;-shared&lt;x2/&gt; and &lt;x3/&gt;-fPIC&lt;x4/&gt; options. The machine instructions generated
+by Julia's JIT are the same as a native C call would be, so the resulting overhead is the same
+as calling a library function from C code. (Non-library function calls in both C and Julia can
+be inlined and thus may have even less overhead than calls to shared library functions. When both
+libraries and executables are generated by LLVM, it is possible to perform whole-program optimizations
+that can even optimize across this boundary, but Julia does not yet support that. In the future,
+however, it may do so, yielding even greater performance gains.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133708Z" creationid="hsugawa8651" creationdate="20181117T133708Z">
+        <seg>呼び出されるコードは共有ライブラリとして使用可能である必要があります。ほとんどのCおよびFortranライブラリは、次のようになります。 はすでに共有ライブラリとしてコンパイルされていますが、GCCを使用して自分でコードをコンパイルする場合は Clang)は、&lt;x1/&gt;-共有&lt;x2/&gt;および&lt;x3/&gt;-fPIC&lt;x4/&gt;オプションを使用する必要があります。 JuliaのJITはネイティブのC呼び出しと同じであるため、結果として生じるオーバーヘッドは同じです。 Cコードからライブラリ関数を呼び出します(CとJuliaの両方での非ライブラリ関数呼び出しです)。 共有ライブラリ関数への呼び出しよりも、インライン化されるため、オーバーヘッドが少なくなります。両方とも ライブラリと実行可能ファイルはLLVMによって生成されるため、プログラム全体の最適化を実行することができます。 この境界を越えて最適化することもできますがジュリアはまだサポートしていません将来は しかし、それによってパフォーマンスが向上する可能性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11780,6 +11959,15 @@ Julia function.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153931Z" creationid="hsugawa8651" creationdate="20181109T153931Z">
         <seg>マクロ&lt;x1/&gt;`@cfunction`&lt;x2/&gt;は、コールのC互換関数ポインタを生成します。 Julia関数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The macro &lt;x1/&gt;`@cfunction`&lt;x2/&gt; generates the C-compatible function pointer for a call to a
+Julia function. Arguments to &lt;x3/&gt;`@cfunction`&lt;x4/&gt; are as follows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133859Z" creationid="hsugawa8651" creationdate="20181117T133859Z">
+        <seg>マクロ&lt;x1/&gt;`@cfunction`&lt;x2/&gt;は、コールのC互換関数ポインタを生成します。 Julia関数。&lt;x3/&gt;`@cfunction`&lt;x4/&gt;への引数は次のとおりです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12572,6 +12760,14 @@ than the required &lt;x3/&gt;`Bool`&lt;x4/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This example first allocates an array of bytes, then calls the C library function &lt;x1/&gt;gethostname&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133842Z" creationid="hsugawa8651" creationdate="20181117T133842Z">
+        <seg>この例ではまず、バイトの配列を割り当て、次にCライブラリ関数&lt;x1/&gt;gethostname&lt;x2/&gt;を呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This experimental interface supports Julia's multi-threading capabilities.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032154Z" creationid="hsugawa8651" creationdate="20181114T032154Z">
@@ -12904,6 +13100,19 @@ computing already written in C and Fortran.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160533Z" creationid="hsugawa8651" creationdate="20181109T160533Z">
         <seg>ほとんどのコードはJuliaで書くことができますが、多くの場合、高品質で成熟したライブラリがあります。 CとFortranではすでに作成されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Though most code can be written in Julia, there are many high-quality, mature libraries for numerical
+computing already written in C and Fortran. To allow easy use of this existing code, Julia makes
+it simple and efficient to call C and Fortran functions. Julia has a "no boilerplate" philosophy:
+functions can be called directly from Julia without any "glue" code, code generation, or compilation
+-- even from the interactive prompt. This is accomplished just by making an appropriate call with
+&lt;x1/&gt;`ccall`&lt;x2/&gt; syntax, which looks like an ordinary function call.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133701Z" creationid="hsugawa8651" creationdate="20181117T133701Z">
+        <seg>ほとんどのコードはJuliaで書くことができますが、多くの場合、高品質で成熟したライブラリがあります。 この既存のコードを簡単に使用できるようにするために、JuliaはCとFortranに既に記述されています。 CとFortranの関数を呼び出すことは簡単で効率的です。Juliaは「ボイラープレートなし」の哲学を持っています。 関数は、"glue"コード、コード生成、コンパイルなしで、Juliaから直接呼び出すことができます。 --対話型プロンプトからでも、適切な呼び出しを行うことで &lt;x1/&gt;`ccall'&lt;x2/&gt;構文は、通常の関数呼び出しのように見えます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27065,6 +27274,15 @@ that &lt;x2/&gt;SparseArray&lt;x3/&gt; is mutable (supports &lt;x4/&gt;setindex!
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>stdcall&lt;x1/&gt; is unified with the
+C calling convention).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133918Z" creationid="hsugawa8651" creationdate="20181117T133918Z">
+        <seg>stdcall&lt;x1/&gt;は C呼び出し規約)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>str = from_c::Ptr{Cvoid}
 len = unsafe_load(Ptr{Cint}(str))
 unsafe_string(str + Core.sizeof(Cint), len)</seg>
@@ -27441,6 +27659,14 @@ julia&gt; odd(n) = (n == 0) ?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>typedef returntype (*functiontype)(argumenttype, ...)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133852Z" creationid="hsugawa8651" creationdate="20181117T133852Z">
+        <seg>typedef returntype (*functiontype)(argumenttype, ...)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>typeof(x)&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031111Z" creationid="hsugawa8651" creationdate="20181114T031111Z">
@@ -27489,6 +27715,16 @@ julia&gt; 1 &gt; 2 ?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063117Z" creationid="hsugawa8651" creationdate="20181114T063117Z">
         <seg>垂直連結(calling&lt;x1/&gt;`vcat'&lt;x2/&gt;or&lt;x3/&gt;`ホフカト'&lt;x4/&gt;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>void qsort(void *base, size_t nmemb, size_t size,
+           int (*compare)(const void*, const void*));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133922Z" creationid="hsugawa8651" creationdate="20181117T133922Z">
+        <seg>void qsort(void *base, size_t nmemb, size_t size,
+           int (*compare)(const void*, const void*));</seg>
       </tuv>
     </tu>
     <tu>
