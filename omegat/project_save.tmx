@@ -2374,6 +2374,14 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>@m&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150220Z" creationid="hsugawa8651" creationdate="20181117T150220Z">
+        <seg>@m&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>@name (expr1, expr2, ...)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T015403Z" creationid="hsugawa8651" creationdate="20181116T015403Z">
@@ -2817,8 +2825,8 @@ us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
       <tuv lang="EN-US">
         <seg>Additional functionality is available from a growing collection of available packages.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041650Z" creationid="hsugawa8651" creationdate="20181110T041650Z">
-        <seg>Additional functionality is available from a growing collection of available packages.</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150049Z" creationid="hsugawa8651" creationdate="20181110T041650Z">
+        <seg>その他の機能は、利用可能なパッケージのコレクションから入手できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3389,6 +3397,14 @@ command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063651Z" creationid="hsugawa8651" creationdate="20181114T063651Z">
         <seg>&lt;x1/&gt;-O3&lt;x2/&gt;では、コンパイラ&lt;x/&gt;は、そのようなタプル上のオペレーションを自動的にベクトル化することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base Modules</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150102Z" creationid="hsugawa8651" creationdate="20181117T150102Z">
+        <seg>Base Modules</seg>
       </tuv>
     </tu>
     <tu>
@@ -4382,6 +4398,16 @@ Base.complex(::Complex)
 Base.bswap
 Base.hex2bytes
 Base.hex2bytes!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.broadcast
+Base.Broadcast.broadcast!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150011Z" creationid="hsugawa8651" creationdate="20181117T150011Z">
+        <seg>Base.broadcast
+Base.Broadcast.broadcast!</seg>
       </tuv>
     </tu>
     <tu>
@@ -6292,6 +6318,14 @@ julia&gt; newfun()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Collections and Data Structures</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150130Z" creationid="hsugawa8651" creationdate="20181117T150130Z">
+        <seg>コレクションとデータ構造</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Combining dot operators with numeric literals can be ambiguous.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132640Z" creationid="hsugawa8651" creationdate="20181113T132640Z">
@@ -6457,6 +6491,14 @@ iteration&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135021Z" creationid="hsugawa8651" creationdate="20181117T135021Z">
         <seg>単独で考慮すると、これは比較的簡単であるように思えるかもしれません。&lt;x1/&gt;CartesianIndex&lt;x2/&gt;は単純です。 複数の整数を1つのオブジェクトに集約して1つのオブジェクトを作成します。 多次元インデックス。他のインデックス作成フォームおよびイテレータと組み合わせて使用します。 しかし、それは&lt;x3/&gt;CartesianIndex&lt;x4/&gt;の収量をもたらすが、これは非常にエレガントなものである。 そして、効率的なコードがあります。&lt;x5/&gt;Iteration&lt;x6/&gt;&lt;x6/&gt;を参照してください。 例を参照してください。このブログ記事は、多次元アルゴリズムに関するこのブログ記事を参照してください。 繰り返し&lt;x8/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Constructors and Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150137Z" creationid="hsugawa8651" creationdate="20181117T150137Z">
+        <seg>コンストラクタとタイプ</seg>
       </tuv>
     </tu>
     <tu>
@@ -7426,6 +7468,14 @@ the insertion point of a value not found in a sorted array:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Errors</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150120Z" creationid="hsugawa8651" creationdate="20181117T150120Z">
+        <seg>Errors</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Essentials</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041641Z" creationid="hsugawa8651" creationdate="20181110T041641Z">
@@ -8148,6 +8198,14 @@ is not available or could be done more efficiently incrementally.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For specializing broadcast on custom types, see</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150018Z" creationid="hsugawa8651" creationdate="20181117T150018Z">
+        <seg>カスタム・タイプでのブロードキャストの特殊化については</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For the &lt;x1/&gt;Squares&lt;x2/&gt; iterable above, we can easily compute the &lt;x3/&gt;i&lt;x4/&gt;th element of the sequence by squaring
 it.</seg>
       </tuv>
@@ -8219,8 +8277,8 @@ are identical to the passed values.</seg>
       <tuv lang="EN-US">
         <seg>Functions are grouped by topic below.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041654Z" creationid="hsugawa8651" creationdate="20181110T041654Z">
-        <seg>Functions are grouped by topic below.</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150046Z" creationid="hsugawa8651" creationdate="20181110T041654Z">
+        <seg>関数は以下のトピックでグループ化されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9268,6 +9326,14 @@ syntax without the &lt;x6/&gt;end&lt;x7/&gt; keyword is equivalent to a call to
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Indexing and assignment</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150029Z" creationid="hsugawa8651" creationdate="20181117T150029Z">
+        <seg>インデックス作成と割り当て</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Indexing by a boolean vector &lt;x3/&gt;B&lt;x4/&gt; is effectively the same as indexing by the
 vector of integers that is returned by &lt;x5/&gt;`findall(B)`&lt;x6/&gt;.</seg>
       </tuv>
@@ -9758,10 +9824,8 @@ by the global state of the program.</seg>
 scientific and numerical computing, but is also as broad as those of many general purpose programming
 languages.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041646Z" creationid="hsugawa8651" creationdate="20181110T041646Z">
-        <seg>Julia Base contains a range of functions and macros appropriate for performing
-scientific and numerical computing, but is also as broad as those of many general purpose programming
-languages.</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150054Z" creationid="hsugawa8651" creationdate="20181110T041646Z">
+        <seg>Julia Baseには、実行するために適切な関数とマクロが含まれています。 科学的・数値的計算ではあるが、一般的なプログラミングと同様に広範なものである 言語。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10505,6 +10569,14 @@ expression, however, can be used to imply multiplication:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Network I/O</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150200Z" creationid="hsugawa8651" creationdate="20181117T150200Z">
+        <seg>ネットワークI/O</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No matter how an &lt;x2/&gt;AbstractArray{T,N}&lt;x3/&gt; is represented internally, &lt;x4/&gt;T&lt;x5/&gt; is the type of
 object returned by &lt;x6/&gt;integer&lt;x7/&gt; indexing (&lt;x8/&gt;A[1, ..., 1]&lt;x9/&gt;, when &lt;x10/&gt;A&lt;x11/&gt; is not empty) and &lt;x12/&gt;N&lt;x13/&gt; should be
 the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;.</seg>
@@ -11058,6 +11130,14 @@ for more efficient linear algebra routines.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Punctuation</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150207Z" creationid="hsugawa8651" creationdate="20181117T150202Z">
+        <seg>句読点</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>QuickSort&lt;x1/&gt; is an O(n log n) sorting algorithm which is in-place, very fast, but not stable –
 i.e. elements which are considered equal will not remain in the same order in which they originally
 appeared in the array to be sorted.</seg>
@@ -11097,6 +11177,14 @@ in this case from a stable sort (unless the array records its mutations in some 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155527Z" creationid="hsugawa8651" creationdate="20181109T155527Z">
         <seg>&lt;x1/&gt;a:c&lt;x2/&gt;または&lt;x3/&gt;a:b&lt;x4/&gt;のような範囲。&lt;x5/&gt;から&lt;x6/&gt;&lt;x8/&gt;&lt;x8/&gt;(含む)まで連続するサブセクションまたはストライドされたサブセクションを選択する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Rather than relying on "vectorized" methods of functions like &lt;x8/&gt;sin&lt;x9/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150005Z" creationid="hsugawa8651" creationdate="20181117T150005Z">
+        <seg>&lt;x8/&gt;sin&lt;x9/&gt;のような"ベクトル化された"関数の関数に依存するのではなく</seg>
       </tuv>
     </tu>
     <tu>
@@ -11291,6 +11379,15 @@ iteration&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224404Z" creationid="hsugawa8651" creationdate="20181109T224404Z">
         <seg>Juliaスクリプトの記述についての詳細は、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man scripting)も参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See also the &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized);
+for example, &lt;x4/&gt;f.(args...)&lt;x5/&gt; implicitly calls &lt;x6/&gt;broadcast(f, args...)&lt;x7/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150003Z" creationid="hsugawa8651" creationdate="20181117T150003Z">
+        <seg>&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref manベクトル化)も参照してください。 たとえば、&lt;x4/&gt;f.(args...)&lt;x5/&gt;は暗黙的に&lt;x6/&gt;ブロードキャスト(f,args.…)&lt;x7/&gt;を呼び出します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11568,6 +11665,14 @@ the two tuples, multiplication and addition/subtraction.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041726Z" creationid="hsugawa8651" creationdate="20181110T041726Z">
         <seg>関数の中には、修正(例えば&lt;x3/&gt;ソート!&lt;x4/&gt;)や修正されない(&lt;x5/&gt;ソート&lt;x6/&gt;)バージョンの両方があるものがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some general notes:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150044Z" creationid="hsugawa8651" creationdate="20181117T150044Z">
+        <seg>一般的な注意事項は次のとおりです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14207,6 +14312,14 @@ will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Versioning</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150115Z" creationid="hsugawa8651" creationdate="20181117T150115Z">
+        <seg>Versioning</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Very few operations are implemented specifically for &lt;x15/&gt;Array&lt;x16/&gt; beyond those that are required
 for all &lt;x17/&gt;AbstractArray&lt;x18/&gt;s; much of the array library is implemented in a generic
 manner that allows all custom arrays to behave similarly.</seg>
@@ -16057,6 +16170,14 @@ abstract type Unsigned &lt;: Integer end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132300Z" creationid="hsugawa8651" creationdate="20181113T132300Z">
         <seg>ビット単位のXOR(排他的な排他的な排他的論理和)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>bitwise xor operator</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150247Z" creationid="hsugawa8651" creationdate="20181117T150247Z">
+        <seg>ビット単位のXOR演算子</seg>
       </tuv>
     </tu>
     <tu>
@@ -27283,6 +27404,14 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>meaning</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150217Z" creationid="hsugawa8651" creationdate="20181117T150217Z">
+        <seg>意味</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>min.(x,y)&lt;x1/&gt;, for elementwise operations over arrays or mixtures of arrays and
 scalars (a &lt;x2/&gt;Broadcasting&lt;x3/&gt; operation); these have the additional advantage of
 "fusing" into a single loop when combined with other dot calls, e.g. &lt;x4/&gt;sin.(cos.(x))&lt;x5/&gt;.</seg>
@@ -28038,6 +28167,22 @@ paths = reduce(merge, reverse([paths₁, paths₂, …]))</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>short-circuiting boolean and</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150227Z" creationid="hsugawa8651" creationdate="20181117T150227Z">
+        <seg>短絡ブール値</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>short-circuiting boolean or</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150244Z" creationid="hsugawa8651" creationdate="20181117T150244Z">
+        <seg>短絡ブール値</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>shorthand for &lt;x1/&gt;cat(A...; dims=1)&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154553Z" creationid="hsugawa8651" creationdate="20181109T154553Z">
@@ -28158,6 +28303,14 @@ that &lt;x2/&gt;SparseArray&lt;x3/&gt; is mutable (supports &lt;x4/&gt;setindex!
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083312Z" creationid="hsugawa8651" creationdate="20181113T083312Z">
         <seg>同様の&lt;x1/&gt;は1と2の引数をサポートします ほとんどの場合、3引数形式の特殊化のみが必要となります。)この場合、重要なのは、このフォームを使用することです。 &lt;x2/&gt;SparseArray&lt;x3/&gt;は可変です(&lt;x4/&gt;setindex!&lt;x5/&gt;をサポートします)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>sin.(a)&lt;x1/&gt; to vectorize via &lt;x2/&gt;broadcast&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150008Z" creationid="hsugawa8651" creationdate="20181117T150008Z">
+        <seg>sin.(a)&lt;x2/&gt;ブロードキャストを介してベクトル化する&lt;x2/&gt;ブロードキャスト&lt;x/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
