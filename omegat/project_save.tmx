@@ -2836,6 +2836,15 @@ valid index.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>All comma-separated expressions after &lt;x1/&gt;for&lt;x2/&gt; are interpreted as ranges. Adding parentheses lets
+us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134816Z" creationid="hsugawa8651" creationdate="20181117T134816Z">
+        <seg>&lt;x2/&gt;で&lt;x1/&gt;の後にカンマで区切られたすべての式は、範囲として解釈されます。括弧を追加すると &lt;x3/&gt;'map`&lt;x4/&gt;:に3番目の引数を追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All dimensions indexed with scalars are dropped.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160835Z" creationid="hsugawa8651" creationdate="20181114T160835Z">
@@ -2992,6 +3001,16 @@ or that &lt;x5/&gt;(;)&lt;x6/&gt; chains be single-line:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An array with a specific element type can be constructed using the syntax &lt;x1/&gt;T[A, B, C, ...]&lt;x2/&gt;. This
+will construct a 1-d array with element type &lt;x3/&gt;T&lt;x4/&gt;, initialized to contain elements &lt;x5/&gt;A&lt;x6/&gt;, &lt;x7/&gt;B&lt;x8/&gt;, &lt;x9/&gt;C&lt;x10/&gt;,
+etc. For example, &lt;x11/&gt;Any[x, y, z]&lt;x12/&gt; constructs a heterogeneous array that can contain any values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134641Z" creationid="hsugawa8651" creationdate="20181117T134641Z">
+        <seg>特定のエレメントタイプを持つ配列は、構文&lt;x1/&gt;T[A,B,C,…]&lt;x2/&gt;を使用して構築できます。 要素タイプ&lt;x3/&gt;T&lt;x4/&gt;を持つ1dアレイを構築し、要素&lt;x5/&gt;A&lt;x6/&gt;、&lt;x7/&gt;B&lt;x8/&gt;、&lt;x9/&gt;C&lt;x10/&gt;を含むように初期化します。 たとえば、&lt;x11/&gt;任意の[x,y,z]&lt;x12/&gt;は、任意の値を含むことができる異機種間配列を構成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An inefficient way to do this would
 be to replicate the vector to the size of the matrix:</seg>
       </tuv>
@@ -3142,6 +3161,14 @@ defined in one of two ways: either it most efficiently accesses its elements usi
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Array{T,N}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134455Z" creationid="hsugawa8651" creationdate="20181117T134455Z">
+        <seg>Array{T,N}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As a complete but simple example, the following calls the &lt;x1/&gt;clock&lt;x2/&gt; function from the standard C
 library:</seg>
       </tuv>
@@ -3175,6 +3202,16 @@ being indexed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155252Z" creationid="hsugawa8651" creationdate="20181109T155252Z">
         <seg>この構文の特殊な部分として、&lt;x1/&gt;end&lt;x2/&gt;キーワードを使用して、最後のインデックスを表すことができます。 最も内側の配列のサイズによって決定される、索引付けブラケット内の各寸法 インデックス化されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As a special part of this syntax, the &lt;x1/&gt;end&lt;x2/&gt; keyword may be used to represent the last index of
+each dimension within the indexing brackets, as determined by the size of the innermost array
+being indexed. Indexing syntax without the &lt;x3/&gt;end&lt;x4/&gt; keyword is equivalent to a call to &lt;x5/&gt;`getindex`&lt;x6/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134841Z" creationid="hsugawa8651" creationdate="20181117T134841Z">
+        <seg>この構文の特殊な部分として、&lt;x1/&gt;end&lt;x2/&gt;キーワードを使用して、最後のインデックスを表すことができます。 最も内側の配列のサイズによって決定される、索引付けブラケット内の各寸法 インデックス作成されています。&lt;x3/&gt;end&lt;x4/&gt;キーワードなしのインデックス構文は、&lt;x5/&gt;`getindex'&lt;x6/&gt;への呼び出しと同じです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -5723,6 +5760,14 @@ run during inference, it must respect all of the limitations of that code.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Behaves like a &lt;x1/&gt;Ptr{T}&lt;x2/&gt; that can manage its memory via the Julia GC.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134453Z" creationid="hsugawa8651" creationdate="20181117T134453Z">
+        <seg>Julia GCを介してメモリを管理することができる&lt;x1/&gt;Ptr{T}&lt;x2/&gt;のように動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>BigFloats and BigInts</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044719Z" creationid="hsugawa8651" creationdate="20181112T044719Z">
@@ -6051,6 +6096,14 @@ they don't intend to change.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Calls</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134559Z" creationid="hsugawa8651" creationdate="20181117T134559Z">
+        <seg>Calls</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Can I use &lt;x1/&gt;using&lt;x2/&gt; or &lt;x3/&gt;import&lt;x4/&gt; inside a function?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025127Z" creationid="hsugawa8651" creationdate="20181110T025127Z">
@@ -6152,6 +6205,22 @@ julia&gt; newfun()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>ComplexF32&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134419Z" creationid="hsugawa8651" creationdate="20181117T134419Z">
+        <seg>ComplexF32&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>ComplexF64&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134428Z" creationid="hsugawa8651" creationdate="20181117T134428Z">
+        <seg>ComplexF64&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Complex{Float64}(x)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T021149Z" creationid="hsugawa8651" creationdate="20181116T021149Z">
@@ -6174,6 +6243,34 @@ known as a generator.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154923Z" creationid="hsugawa8651" creationdate="20181109T154923Z">
         <seg>包含は、囲まれた角括弧なしで書くこともでき、オブジェクトを生成することができます。 ジェネレータと呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comprehensions can also be written without the enclosing square brackets, producing an object
+known as a generator. This object can be iterated to produce values on demand, instead of allocating
+an array and storing them in advance (see &lt;x1/&gt;Iteration&lt;x2/&gt;). For example, the following expression
+sums a series without allocating memory:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134812Z" creationid="hsugawa8651" creationdate="20181117T134812Z">
+        <seg>包含は、囲まれた角括弧なしで書くこともでき、オブジェクトを生成することができます。 ジェネレータと呼ばれます。このオブジェクトは、必要に応じて反復処理を行うことができます。必要に応じて値を割り当てることはできません。 配列とそれを事前に格納します(&lt;x1/&gt;Iteration&lt;x2/&gt;を参照)。たとえば、次の式を指定します。 は、メモリを割り当てずに連続した値を加算します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comprehensions provide a general and powerful way to construct arrays. Comprehension syntax is
+similar to set construction notation in mathematics:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134740Z" creationid="hsugawa8651" creationdate="20181117T134740Z">
+        <seg>インクルージョンは、配列を構築するための一般的で強力な方法です。理解の構文は次のとおりです。 数学で設定された建設表記法に似ています</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Concatenation</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134534Z" creationid="hsugawa8651" creationdate="20181117T134534Z">
+        <seg>連結</seg>
       </tuv>
     </tu>
     <tu>
@@ -7124,6 +7221,16 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Empty ranges of the form &lt;x1/&gt;n:n-1&lt;x2/&gt; are sometimes used to indicate the inter-index location between
+&lt;x3/&gt;n-1&lt;x4/&gt; and &lt;x5/&gt;n&lt;x6/&gt;. For example, the &lt;x7/&gt;`searchsorted`&lt;x8/&gt; function uses this convention to indicate
+the insertion point of a value not found in a sorted array:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134844Z" creationid="hsugawa8651" creationdate="20181117T134844Z">
+        <seg>&lt;x1/&gt;n:n-1&lt;x2/&gt;という形式の空の範囲は、場合によっては、インデックス間の位置を示すために使用される。 &lt;x3/&gt;n-1&lt;x4/&gt;と&lt;x5/&gt;n&lt;x6/&gt;。たとえば、&lt;x7/&gt;'セアルチゾルタド'&lt;x8/&gt;はこの表記法を使用します。 ソートされた配列に存在しない値の挿入点です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Enable / Set the level of debug info generation (default level is 1 if unspecified or 2 if used without a level)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224747Z" creationid="hsugawa8651" creationdate="20181109T224747Z">
@@ -7238,6 +7345,55 @@ direct usage of tasks, but certain problems can be solved much more easily by us
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Exactly corresponds to the &lt;x1/&gt;complex double&lt;x2/&gt; type in C (or &lt;x3/&gt;COMPLEX*16&lt;x4/&gt; in Fortran).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134434Z" creationid="hsugawa8651" creationdate="20181117T134434Z">
+        <seg>厳密には、Cの&lt;x1/&gt;複合体二重&lt;x2/&gt;型(Fortranの場合は&lt;x3/&gt;COMPLEX*16&lt;x4/&gt;)に対応する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Exactly corresponds to the &lt;x1/&gt;complex float&lt;x2/&gt; type in C (or &lt;x3/&gt;COMPLEX*8&lt;x4/&gt; in Fortran).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134426Z" creationid="hsugawa8651" creationdate="20181117T134426Z">
+        <seg>厳密には、Cの&lt;x1/&gt;複合float&lt;x2/&gt;タイプ(Fortranの場合は&lt;x3/&gt;COMPLEX*8&lt;x4/&gt;)に対応しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Exactly corresponds to the &lt;x1/&gt;double&lt;x2/&gt; type in C (or &lt;x3/&gt;REAL*8&lt;x4/&gt; in Fortran).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134416Z" creationid="hsugawa8651" creationdate="20181117T134416Z">
+        <seg>厳密には、Cの&lt;x1/&gt;double&lt;x2/&gt;型(Fortranの場合は&lt;x3/&gt;REAL*8&lt;x4/&gt;)に対応しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Exactly corresponds to the &lt;x1/&gt;float&lt;x2/&gt; type in C (or &lt;x3/&gt;REAL*4&lt;x4/&gt; in Fortran).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134412Z" creationid="hsugawa8651" creationdate="20181117T134412Z">
+        <seg>厳密には、Cの&lt;x1/&gt;float&lt;x2/&gt;タイプ(Fortranの場合は&lt;x3/&gt;REAL*4&lt;x4/&gt;)に対応します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Exactly corresponds to the &lt;x1/&gt;signed&lt;x2/&gt; type annotation in C (or any &lt;x3/&gt;INTEGER&lt;x4/&gt; type in Fortran).
+Any Julia type that is not a subtype of &lt;x5/&gt;`Signed`&lt;x6/&gt; is assumed to be unsigned.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134446Z" creationid="hsugawa8651" creationdate="20181117T134446Z">
+        <seg>厳密には、C(またはFortranでは任意の&lt;x3/&gt;INTEGER&lt;x4/&gt;タイプ)の&lt;x1/&gt;署名された&lt;x2/&gt;型の注釈に対応しています。 &lt;x5/&gt;'署名された&lt;x6/&gt;のサブタイプではないジュリア型は、符号なしであると仮定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Example:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134832Z" creationid="hsugawa8651" creationdate="20181117T134832Z">
+        <seg>例:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Exception Handling&lt;x1/&gt;: &lt;x2/&gt;try&lt;x3/&gt;-&lt;x4/&gt;catch&lt;x5/&gt;, &lt;x6/&gt;`error`&lt;x7/&gt; and &lt;x8/&gt;`throw`&lt;x9/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225735Z" creationid="hsugawa8651" creationdate="20181109T225735Z">
@@ -7251,6 +7407,14 @@ this means that:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230231Z" creationid="hsugawa8651" creationdate="20181109T230231Z">
         <seg>明示的に つまり、次のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Expression</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134547Z" creationid="hsugawa8651" creationdate="20181117T134547Z">
+        <seg>式</seg>
       </tuv>
     </tu>
     <tu>
@@ -7904,6 +8068,14 @@ but you can change its content.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Function</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134537Z" creationid="hsugawa8651" creationdate="20181117T134537Z">
+        <seg>関数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Function arguments themselves act as
 new variable &lt;x1/&gt;bindings&lt;x2/&gt; (new locations that can refer to values), but the values they refer to
 are identical to the passed values.</seg>
@@ -7967,6 +8139,16 @@ a new function body must be generated for every combination of concrete argument
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155050Z" creationid="hsugawa8651" creationdate="20181109T155050Z">
         <seg>生成された値は、&lt;x2/&gt;キーワードの場合は&lt;x1/&gt;を使用してフィルタできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Generators are implemented via inner functions. Just like
+inner functions used elsewhere in the language, variables from the enclosing scope can be
+"captured" in the inner function.  For example, &lt;x1/&gt;sum(p[i] - q[i] for i=1:n)&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134820Z" creationid="hsugawa8651" creationdate="20181117T134820Z">
+        <seg>ジェネレータは内部機能によって実装されています。 言語で他の場所で使用される内部関数、囲みスコープからの変数は、次のようになります。 "捕獲された"内部関数では、例えば&lt;x1/&gt;sum(p[i]-q[i]for i=1:n)&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -8261,6 +8443,15 @@ shape &lt;x7/&gt;(size(I_1, 1), size(I_1, 2), length(I_2), ..., length(I_n))&lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If &lt;x1/&gt;I_1&lt;x2/&gt; is changed to a two-dimensional matrix, then &lt;x3/&gt;X&lt;x4/&gt; becomes an &lt;x5/&gt;n+1&lt;x6/&gt;-dimensional array of
+shape &lt;x7/&gt;(size(I_1, 1), size(I_1, 2), length(I_2), ..., length(I_n))&lt;x8/&gt;. The matrix adds a dimension.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134835Z" creationid="hsugawa8651" creationdate="20181117T134835Z">
+        <seg>&lt;x1/&gt;I_1&lt;x2/&gt;が2次元マトリクスに変化すると、&lt;x3/&gt;X&lt;x4/&gt;は&lt;x5/&gt;n+1&lt;x6/&gt;次元配列となる。 形状&lt;x7/&gt;(サイズ(I_1 1)、サイズ(I_1 2)、長さ(I_2)、…、長さ(I_n))&lt;x8/&gt;。マトリックスは次元を追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If &lt;x1/&gt;T&lt;x2/&gt; is a floating-point type, the result is the nearest representable value, which could be
 positive or negative infinity.</seg>
       </tuv>
@@ -8346,6 +8537,16 @@ with location &lt;x5/&gt;(i_1, i_2, ..., i_n)&lt;x6/&gt; of &lt;x7/&gt;X&lt;x8/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155128Z" creationid="hsugawa8651" creationdate="20181109T155128Z">
         <seg>すべての指標がスカラーである場合、結果&lt;x1/&gt;X&lt;x2/&gt;は、配列&lt;x3/&gt;A&lt;x4/&gt;からの単一要素である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If all the indices are scalars, then the result &lt;x1/&gt;X&lt;x2/&gt; is a single element from the array &lt;x3/&gt;A&lt;x4/&gt;. Otherwise,
+&lt;x5/&gt;X&lt;x6/&gt; is an array with the same number of dimensions as the sum of the dimensionalities of all the
+indices.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134829Z" creationid="hsugawa8651" creationdate="20181117T134829Z">
+        <seg>すべてのインデックスがスカラーである場合、結果&lt;x1/&gt;X&lt;x2/&gt;は、配列&lt;x3/&gt;A&lt;x4/&gt;からの単一要素である。それ以外の場合は &lt;x5/&gt;x&lt;x6/&gt;は、すべての次元の次元性の合計と同じ数の次元を持つ配列です。 索引。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10677,6 +10878,14 @@ an interactive session.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Ref{T}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134447Z" creationid="hsugawa8651" creationdate="20181117T134447Z">
+        <seg>Ref{T}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Regex("^\\s*(?:&lt;x1/&gt;|\$)")</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T015626Z" creationid="hsugawa8651" creationdate="20181116T015626Z">
@@ -10788,6 +10997,14 @@ an interactive session.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154559Z" creationid="hsugawa8651" creationdate="20181109T154559Z">
         <seg>これらの関数に渡されるスカラー値は、1要素配列として扱われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Scalar values passed to these functions are treated as 1-element arrays. For example,</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134540Z" creationid="hsugawa8651" creationdate="20181117T134540Z">
+        <seg>これらの関数に渡されるスカラー値は、1要素配列として扱われます。たとえば、次のようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10965,6 +11182,14 @@ are common in Julia.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230224Z" creationid="hsugawa8651" creationdate="20181109T230224Z">
         <seg>短絡評価は条件付き評価と非常によく似ています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Signed&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134438Z" creationid="hsugawa8651" creationdate="20181117T134438Z">
+        <seg>Signed&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -11914,6 +12139,15 @@ neighbor along a 1-d grid.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following example computes a weighted average of the current element and its left and right
+neighbor along a 1-d grid. :</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134801Z" creationid="hsugawa8651" creationdate="20181117T134801Z">
+        <seg>次の例では、現在の要素とその左側と右側の加重平均を計算しています。 1Dグリッドに沿った隣接するもの:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following example computes the QR decomposition of a small section of a larger array, without
 creating any temporaries, and by calling the appropriate LAPACK function with the right leading
 dimension size and stride parameters.</seg>
@@ -12024,6 +12258,16 @@ variable or expression.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The location &lt;x1/&gt;(i_1, i_2, i_3, ..., i_{n+1})&lt;x2/&gt; contains the value at &lt;x3/&gt;A[I_1[i_1, i_2], I_2[i_3], ..., I_n[i_{n+1}]]&lt;x4/&gt;.
+All dimensions indexed with scalars are dropped. For example, the result of &lt;x5/&gt;A[2, I, 3]&lt;x6/&gt; is an
+array with size &lt;x7/&gt;size(I)&lt;x8/&gt;. Its &lt;x9/&gt;i&lt;x10/&gt;th element is populated by &lt;x11/&gt;A[2, I[i], 3]&lt;x12/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134838Z" creationid="hsugawa8651" creationdate="20181117T134838Z">
+        <seg>位置&lt;x1/&gt;(i_1,i_2,i_3,.…i_{n+1})&lt;x2/&gt;は、&lt;x3/&gt;A[I_1[i_1,i_2],I_2[i_3],.…I_n[i_{n+1}]]&lt;x4/&gt;の値を含む。 スカラーでインデックス付けされたすべての次元は削除されます。たとえば、&lt;x5/&gt;A[2,I,3]&lt;x6/&gt;の結果は size&lt;x7/&gt;サイズ(I)&lt;x8/&gt;の配列。&lt;x9/&gt;i&lt;x10/&gt;th要素は&lt;x11/&gt;A[2,I[I],3]&lt;x12/&gt;で占められる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The machine instructions generated
 by Julia's JIT are the same as a native C call would be, so the resulting overhead is the same
 as calling a library function from C code.</seg>
@@ -12074,6 +12318,18 @@ on each value in their given list of values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154807Z" creationid="hsugawa8651" creationdate="20181109T154807Z">
         <seg>この形式の意味は、&lt;x1/&gt;F(x,y,...)&lt;x2/&gt;は、変数&lt;x3/&gt;x4&lt;x4/&gt;、&lt;x5/&gt;y&lt;x6/&gt;の変数を用いて評価されることである。 指定された値リストの各値です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The meaning of this form is that &lt;x1/&gt;F(x,y,...)&lt;x2/&gt; is evaluated with the variables &lt;x3/&gt;x&lt;x4/&gt;, &lt;x5/&gt;y&lt;x6/&gt;, etc. taking
+on each value in their given list of values. Values can be specified as any iterable object, but
+will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;x10/&gt;, or explicit arrays of values like &lt;x11/&gt;[1.2, 3.4, 5.7]&lt;x12/&gt;.
+The result is an N-d dense array with dimensions that are the concatenation of the dimensions
+of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, etc. and each &lt;x17/&gt;F(x,y,...)&lt;x18/&gt; evaluation returns a scalar.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134758Z" creationid="hsugawa8651" creationdate="20181117T134758Z">
+        <seg>この形式の意味は、&lt;x1/&gt;F(x,y,...)&lt;x2/&gt;は、変数&lt;x3/&gt;x4&lt;x4/&gt;、&lt;x5/&gt;y&lt;x6/&gt;の変数を用いて評価されることである。 指定された値リストの各値を指定します。値は、任意のオブジェクトとして指定することができますが は一般的に&lt;x7/&gt;1:n&lt;x8/&gt;または&lt;x9/&gt;2:(n-1)&lt;x10/&gt;、または&lt;x11/&gt;[1.2、3.4、5.7]&lt;x12/&gt;のような明示的な値の配列である。 結果は、次元の連結である次元を持つN次元の密配列です。 変数範囲&lt;x13/&gt;rx&lt;x14/&gt;、&lt;x15/&gt;ry&lt;x16/&gt;など、各&lt;x17/&gt;F(x,y,...)&lt;x18/&gt;評価はスカラーを返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12219,6 +12475,16 @@ an &lt;x3/&gt;AbstractRange&lt;x4/&gt;).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The resulting array type depends on the types of the computed elements. In order to control the
+type explicitly, a type can be prepended to the comprehension. For example, we could have requested
+the result in single precision by writing:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134806Z" creationid="hsugawa8651" creationdate="20181117T134806Z">
+        <seg>結果の配列タイプは、計算された要素のタイプに依存します。 明示的にタイプを指定することができます。たとえば、次のように入力することができます。 以下のように記述することによって、単精度での結果が得られます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The return value from iterate
 is always either a tuple of a value and a state, or &lt;x3/&gt;nothing&lt;x4/&gt; if no elements remain.</seg>
       </tuv>
@@ -12322,6 +12588,16 @@ and is generally considered an implementation detail private to the iterable obj
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154518Z" creationid="hsugawa8651" creationdate="20181109T154518Z">
         <seg>構文&lt;x1/&gt;[A,B,C,…]&lt;x2/&gt;は、その引数の1次元配列(すなわち、ベクトル)を構成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The syntax &lt;x1/&gt;[A, B, C, ...]&lt;x2/&gt; constructs a 1-d array (i.e., a vector) of its arguments. If all
+arguments have a common &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion) then they get
+converted to that type using &lt;x6/&gt;`convert`&lt;x7/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134526Z" creationid="hsugawa8651" creationdate="20181117T134526Z">
+        <seg>構文&lt;x1/&gt;[A,B,C,.]&lt;x2/&gt;は、引数の1d配列(ベクトル)を構成します。すべての引数を指定します。 引数には共通の&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref変換とプロモーション)があります。 &lt;x6/&gt;'convert`&lt;x7/&gt;を使用して、そのタイプに変換されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12503,6 +12779,15 @@ collection.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are several special types to be aware of, as no other type can be defined to behave the
+same:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134404Z" creationid="hsugawa8651" creationdate="20181117T134404Z">
+        <seg>他のタイプが定義されていないため、以下のように注意すべき特殊なタイプがいくつかあります。 同じ:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are two Julia constructs
 that accomplish this: &lt;x1/&gt;begin&lt;x2/&gt; blocks and &lt;x3/&gt;(;)&lt;x4/&gt; chains.</seg>
       </tuv>
@@ -12561,6 +12846,16 @@ the operator in such cases.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132651Z" creationid="hsugawa8651" creationdate="20181113T132651Z">
         <seg>したがって、この構文は使用できません。また、スペースを使用してスペースを使用する必要があります。 この場合の演算子です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Therefore, if an &lt;x1/&gt;Array&lt;x2/&gt; contains data in the wrong format, it will have to be explicitly converted
+using a call such as &lt;x3/&gt;trunc(Int32, a)&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134507Z" creationid="hsugawa8651" creationdate="20181117T134507Z">
+        <seg>Therefore, if an &lt;x1/&gt;Array&lt;x2/&gt; contains data in the wrong format, it will have to be explicitly converted
+using a call such as &lt;x3/&gt;trunc(Int32, a)&lt;x4/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -13414,6 +13709,14 @@ functions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Typed array initializers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134637Z" creationid="hsugawa8651" creationdate="20181117T134637Z">
+        <seg>型化された配列初期化装置</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Types and functions
 described here might (and likely will) change in the future.</seg>
       </tuv>
@@ -13630,6 +13933,15 @@ functionality like command line argument handling.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024843Z" creationid="hsugawa8651" creationdate="20181110T024843Z">
         <seg>&lt;x1/&gt;juliaファイルを使用して、ファイルがメイン・スクリプトとして実行される場合、&lt;x1/&gt;juliaファイル.jl&lt;x2/&gt;を使用して追加のファイルをアクティブ化する必要があります コマンドライン引数の処理などの機能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When an array is passed to C as a &lt;x1/&gt;Ptr{T}&lt;x2/&gt; argument, it is not reinterpret-cast: Julia requires
+that the element type of the array matches &lt;x3/&gt;T&lt;x4/&gt;, and the address of the first element is passed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134502Z" creationid="hsugawa8651" creationdate="20181117T134502Z">
+        <seg>配列が&lt;x1/&gt;Ptr{T}&lt;x2/&gt;引数としてCに渡されるとき、キャストは再解釈されません:Juliaが必要とする 配列のエレメント・タイプが&lt;x3/&gt;T&lt;x4/&gt;と一致し、最初のエレメントのアドレスが渡されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14651,6 +14963,15 @@ ERROR: DivideError: integer division error
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`hvcat`&lt;x1/&gt; concatenates in both dimension 1 (with semicolons) and dimension 2 (with spaces).
+Consider these examples of this syntax:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134628Z" creationid="hsugawa8651" creationdate="20181117T134628Z">
+        <seg>「ホフカト」&lt;x1/&gt;は、次元1(セミコロン)と次元2(スペースを含む)の両方で連結されます。 この構文の例を次に示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`isequal(x, y)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030539Z" creationid="hsugawa8651" creationdate="20181114T030539Z">
@@ -15232,6 +15553,14 @@ abstract type Unsigned &lt;: Integer end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154439Z" creationid="hsugawa8651" creationdate="20181109T154439Z">
         <seg>&lt;x1/&gt;A&lt;x2/&gt;(密、疎等)と同じタイプの初期化されていない配列ですが、指定されたエレメントタイプとディメンションがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>an uninitialized array of the same type as &lt;x1/&gt;A&lt;x2/&gt; (dense, sparse, etc.), but with the specified element type and dimensions. The second and third arguments are both optional, defaulting to the element type and dimensions of &lt;x3/&gt;A&lt;x4/&gt; if omitted.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134523Z" creationid="hsugawa8651" creationdate="20181117T134523Z">
+        <seg>&lt;x1/&gt;A&lt;x2/&gt;(密、疎など)と同じタイプの初期化されていない配列ですが、指定された要素タイプと次元があります。2番目と3番目の引数は両方ともオプションで、&lt;x/&gt;A&lt;x4/&gt;の要素タイプと次元は省略されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26889,6 +27218,16 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>p&lt;x1/&gt;, &lt;x2/&gt;q&lt;x3/&gt; and &lt;x4/&gt;n&lt;x5/&gt; from the enclosing scope.
+Captured variables can present performance challenges; see
+&lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref man-performance-tips).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134823Z" creationid="hsugawa8651" creationdate="20181117T134823Z">
+        <seg>p&lt;x1/&gt;、&lt;x2/&gt;q&lt;x3/&gt;、および&lt;x4/&gt;n&lt;x5/&gt;を囲むスコープからの値。 キャプチャされた変数はパフォーマンス上の問題を提示することがあります。 &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref manのパフォーマンス・ヒント)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>parametric type instantiation</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063146Z" creationid="hsugawa8651" creationdate="20181114T063146Z">
@@ -27902,6 +28241,18 @@ arguments of &lt;x5/&gt;Style1&lt;x6/&gt; and &lt;x7/&gt;Style2&lt;x8/&gt;.</seg
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160720Z" creationid="hsugawa8651" creationdate="20181109T155116Z">
         <seg>ここで、各&lt;x1/&gt;I_k&lt;x2/&gt;はスカラー整数、整数の配列、またはその他のいずれかである。 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref manサポートされているインデックス・タイプ)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>where each &lt;x1/&gt;I_k&lt;x2/&gt; may be a scalar integer, an array of integers, or any other
+&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-supported-index-types). This includes
+&lt;x6/&gt;`Colon`&lt;x7/&gt; (&lt;x8/&gt;:&lt;x9/&gt;) to select all indices within the entire dimension,
+ranges of the form &lt;x10/&gt;a:c&lt;x11/&gt; or &lt;x12/&gt;a:b:c&lt;x13/&gt; to select contiguous or strided
+subsections, and arrays of booleans to select elements at their &lt;x14/&gt;true&lt;x15/&gt; indices.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134826Z" creationid="hsugawa8651" creationdate="20181117T134826Z">
+        <seg>ここで、各&lt;x1/&gt;I_k&lt;x2/&gt;はスカラー整数、整数の配列、またはその他のいずれかである。 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref manサポートされているインデックス・タイプ)。これには、以下のものが含まれます。 &lt;x6/&gt;「コロン」&lt;x7/&gt;(&lt;x8/&gt;:&lt;x9/&gt;)は、次元全体のすべてのインデックスを選択するために使用されます。 &lt;x10/&gt;a:c&lt;x11/&gt;または&lt;x12/&gt;a:b:c&lt;x13/&gt;to select連続またはストライドされたものを選択するための範囲 サブセクションは、&lt;x14/&gt;真の&lt;x15/&gt;インデックスで選択要素を選択するためのブール演算の配列です。</seg>
       </tuv>
     </tu>
     <tu>
