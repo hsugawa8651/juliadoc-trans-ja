@@ -8470,6 +8470,14 @@ work with the &lt;x5/&gt;Broadcasted&lt;x6/&gt; wrapper to compute each element.
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In order to pass this function to C, we obtain its address using the macro &lt;x1/&gt;@cfunction&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133256Z" creationid="hsugawa8651" creationdate="20181117T133256Z">
+        <seg>この関数をCに渡すためには、マクロ&lt;x1/&gt;@cfunction&lt;x2/&gt;:を使ってアドレスを取得します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In order to support indexing with ranges or vectors of &lt;x9/&gt;Int&lt;x10/&gt;s, separate methods must be written:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113139Z" creationid="hsugawa8651" creationdate="20181112T113139Z">
@@ -10090,6 +10098,15 @@ Evaluation in Julia, as outlined in the next section.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083225Z" creationid="hsugawa8651" creationdate="20181113T083225Z">
         <seg>これは、&lt;x1/&gt;IndexCartesian&lt;x2/&gt;配列であることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notice that we have to be careful about the return type: &lt;x1/&gt;qsort&lt;x2/&gt; expects a function returning
+a C &lt;x3/&gt;int&lt;x4/&gt;, so we annotate the return type of the function to be sure it returns a &lt;x5/&gt;Cint&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133254Z" creationid="hsugawa8651" creationdate="20181117T133254Z">
+        <seg>戻り値のタイプに注意する必要があることに注意してください。&lt;x1/&gt;qsort&lt;x2/&gt;qsort&lt;x2/&gt;は関数を返すことに注意してください。 C&lt;x3/&gt;int&lt;x4/&gt;であるため、関数の戻り値の型に注釈を付けて、&lt;x5/&gt;Cint&lt;x6/&gt;を返すことを確認します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15329,6 +15346,16 @@ using Bar</seg>
         <seg>end
 end
 using Bar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>end
+mycompare (generic function with 1 method)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133233Z" creationid="hsugawa8651" creationdate="20181117T133233Z">
+        <seg>end
+mycompare (generic function with 1 method)</seg>
       </tuv>
     </tu>
     <tu>
@@ -21642,6 +21669,14 @@ julia&gt; eval(ex)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; function mycompare(a, b)::Cint</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133239Z" creationid="hsugawa8651" creationdate="20181117T133239Z">
+        <seg>julia&gt; function mycompare(a, b)::Cint</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; function mycompare(a, b)::Cint
            return (a &lt; b) ?</seg>
       </tuv>
@@ -22974,6 +23009,14 @@ julia&gt; myappend([1.0,2.0,3.0],4)
 ERROR: MethodError: no method matching myappend(::Array{Float64,1}, ::Int64)
 Closest candidates are:
   myappend(::Array{T,1}, !Matched::T) where T at none:1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; mycompare_c = @cfunction(mycompare, Cint, (Ref{Cdouble}, Ref{Cdouble}));</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133258Z" creationid="hsugawa8651" creationdate="20181117T133258Z">
+        <seg>julia&gt; mycompare_c = @cfunction(mycompare, Cint, (Ref{Cdouble}, Ref{Cdouble}));</seg>
       </tuv>
     </tu>
     <tu>
@@ -26752,6 +26795,14 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032310Z" creationid="hsugawa8651" creationdate="20181114T032310Z">
         <seg>剰余演算子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>return (a &lt; b) ? -1 : ((a &gt; b) ? +1 : 0)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133236Z" creationid="hsugawa8651" creationdate="20181117T133236Z">
+        <seg>return (a &lt; b) ? -1 : ((a &gt; b) ? +1 : 0)</seg>
       </tuv>
     </tu>
     <tu>
