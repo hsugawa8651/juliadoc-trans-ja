@@ -8691,6 +8691,14 @@ indices.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If an array of eltype &lt;x1/&gt;Ptr{T}&lt;x2/&gt; is passed as a &lt;x3/&gt;Ptr{Ptr{T}}&lt;x4/&gt; argument, &lt;x5/&gt;`Base.cconvert`&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T140903Z" creationid="hsugawa8651" creationdate="20181117T140903Z">
+        <seg>エルテープ&lt;x1/&gt;Ptr{T}&lt;x2/&gt;の配列が&lt;x3/&gt;Ptr{Ptr{T}}&lt;x4/&gt;引数として渡された場合、&lt;x5/&gt;'Base.チコンベルト'&lt;x6/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If an expression is entered into an interactive
 session with a trailing semicolon, its value is not shown.</seg>
       </tuv>
@@ -10804,6 +10812,17 @@ indices directly instead of first calling &lt;x13/&gt;`findall`&lt;x14/&gt;.</se
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135109Z" creationid="hsugawa8651" creationdate="20181117T135109Z">
         <seg>論理的なインデックス作成と呼ばれる論理的インデックス作成またはインデックス作成と呼ばれることが多いインデックス作成 ブール型配列では、値が&lt;x1/&gt;真&lt;x2/&gt;であるインデックスで要素を選択します。 ブール型ベクトル&lt;x3/&gt;B&lt;x4/&gt;によるインデックス作成は、実効的には、以下のようにして行われる。 &lt;x5/&gt;'findall(B)`&lt;x6/&gt;によって返される整数のベクトル。同様に索引付け &lt;x7/&gt;N&lt;x8/&gt;-次元ブール配列は、実効的には、以下のように、インデックス化と同じである。 &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;sのベクトル。その値は&lt;x11/&gt;真&lt;x12/&gt;である。論理インデックス は、インデックスを作成する寸法と同じ長さのベクトルである必要があります。また 指定された唯一のインデックスであり にインデックスを作成する配列です。一般的には、ブール型配列を使用する方が効率的です。 は、最初の呼び出し&lt;x13/&gt;'findall&lt;x14/&gt;を呼び出すのではなく、直接インデックスを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>On all systems we currently support, basic C/C++ value types may be translated to Julia types
+as follows. Every C type also has a corresponding Julia type with the same name, prefixed by C.
+This can help for writing portable code (and remembering that an &lt;x1/&gt;int&lt;x2/&gt; in C is not the same as
+an &lt;x3/&gt;Int&lt;x4/&gt; in Julia).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T140911Z" creationid="hsugawa8651" creationdate="20181117T140911Z">
+        <seg>現在サポートされているすべてのシステムでは、基本的なC/C++の値タイプがJuliaタイプに変換されることがあります。 次のように、C型はすべて、同じ名前で接頭辞をつけられた同じ名前を持つ、対応するジュリア型を持っています。 これは、移植可能なコードを書くのに役立ちます(そして、Cでは&lt;x1/&gt;int&lt;x2/&gt;が同じではないことを思い出してください)。 &lt;x3/&gt;のInt&lt;x4/&gt;Int&lt;x4/&gt;int&lt;x4/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13136,9 +13155,8 @@ the operator in such cases.</seg>
         <seg>Therefore, if an &lt;x1/&gt;Array&lt;x2/&gt; contains data in the wrong format, it will have to be explicitly converted
 using a call such as &lt;x3/&gt;trunc(Int32, a)&lt;x4/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134507Z" creationid="hsugawa8651" creationdate="20181117T134507Z">
-        <seg>Therefore, if an &lt;x1/&gt;Array&lt;x2/&gt; contains data in the wrong format, it will have to be explicitly converted
-using a call such as &lt;x3/&gt;trunc(Int32, a)&lt;x4/&gt;.</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T140857Z" creationid="hsugawa8651" creationdate="20181117T134507Z">
+        <seg>したがって、&lt;x1/&gt;配列&lt;x2/&gt;が誤った形式でデータを含む場合は、明示的に変換する必要があります。 &lt;x3/&gt;trunc(Int32,a)&lt;x4/&gt;のようなコールを使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13932,6 +13950,16 @@ preceded by a numeric literal, implying multiplication.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131132Z" creationid="hsugawa8651" creationdate="20181113T131132Z">
         <seg>これらの既定値をオーバーライドするには、オブジェクトに対してカスタム&lt;x1/&gt;BroadcastStyle&lt;x2/&gt;を定義できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To pass an array &lt;x1/&gt;A&lt;x2/&gt; as a pointer of a different type &lt;x3/&gt;without&lt;x4/&gt; converting the data beforehand
+(for example, to pass a &lt;x5/&gt;Float64&lt;x6/&gt; array to a function that operates on uninterpreted bytes), you
+can declare the argument as &lt;x7/&gt;Ptr{Cvoid}&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T140855Z" creationid="hsugawa8651" creationdate="20181117T140855Z">
+        <seg>データを事前に変換することなく、異なるタイプ&lt;x3/&gt;のポインタとして配列&lt;x1/&gt;A&lt;x2/&gt;を通過させること。 (例えば、&lt;x5/&gt;Float64&lt;x6/&gt;アレイを、解釈されていないバイトで動作する関数に渡すために) は、引数を&lt;x7/&gt;Ptr{Cvoid}&lt;x8/&gt;として宣言することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14744,6 +14772,15 @@ For example, this is used to convert an &lt;x4/&gt;Array&lt;x5/&gt; of objects (
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134302Z" creationid="hsugawa8651" creationdate="20181117T134302Z">
         <seg>'Base.チコンベルト'&lt;x1/&gt;は通常、&lt;x2/&gt;'convert`&lt;x3/&gt;を呼び出しますが、次のように定義することができます。 任意の新しいオブジェクトを渡すには、任意の新しいオブジェクトが必要です。 これは、Cコードによってアクセスされるメモリーのすべての割り当てを実行するために使用される必要があります。 たとえば、これは、オブジェクトの&lt;x4/&gt;配列&lt;x5/&gt;をポインタの配列に変換するために使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Base.cconvert`&lt;x1/&gt; version. This allows, for example, passing an &lt;x2/&gt;argv&lt;x3/&gt; pointer array of type
+&lt;x4/&gt;Vector{String}&lt;x5/&gt; to an argument of type &lt;x6/&gt;Ptr{Ptr{Cchar}}&lt;x7/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T140907Z" creationid="hsugawa8651" creationdate="20181117T140907Z">
+        <seg>'Base.チコンベルト'&lt;x1/&gt;バージョン。これにより、例えば、&lt;x2/&gt;argv&lt;x3/&gt;ポインタ配列を渡すことができます。 &lt;x4/&gt;Vector{String}&lt;x5/&gt;は、&lt;x6/&gt;Ptr{Ptr{Cchar}}&lt;x7/&gt;の型を引数にします。</seg>
       </tuv>
     </tu>
     <tu>
