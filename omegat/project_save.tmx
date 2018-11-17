@@ -247,6 +247,22 @@ f</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>"Is-Bits"   :: A &lt;x1/&gt;primitive type&lt;x2/&gt;, or a &lt;x3/&gt;struct&lt;x4/&gt; type where all fields are other &lt;x5/&gt;isbits&lt;x6/&gt; types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150729Z" creationid="hsugawa8651" creationdate="20181117T150729Z">
+        <seg>「ビット」::&lt;x1/&gt;プリミティブ型&lt;x2/&gt;、または&lt;x3/&gt;構造体&lt;x4/&gt;型であり、すべてのフィールドはその他の&lt;x5/&gt;イスビトス&lt;x6/&gt;タイプである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>"Leaf Type" :: A group of related data that includes a type-tag, is managed by the Julia GC, and is defined by object-identity.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150619Z" creationid="hsugawa8651" creationdate="20181117T150619Z">
+        <seg>「リーフタイプ」::タイプタグを含む関連データのグループは、Julia GCによって管理され、オブジェクト識別によって定義されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>"Leaf Type" :: A group of related data that includes a type-tag, is managed by the Julia GC, and is defined by object-identity. The type parameters of a leaf type must be fully defined (no &lt;x1/&gt;TypeVars&lt;x2/&gt; are allowed) in order for the instance to be constructed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134329Z" creationid="hsugawa8651" creationdate="20181117T134329Z">
@@ -255,10 +271,66 @@ f</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>"Primitive Type" :: A type with no fields, but a size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150703Z" creationid="hsugawa8651" creationdate="20181117T150703Z">
+        <seg>「プリミティブ型」::フィールドがなくても、サイズがあるタイプです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>"Singleton" :: a Leaf Type or Struct with no fields.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150740Z" creationid="hsugawa8651" creationdate="20181117T150740Z">
+        <seg>"Singleton"::a Leaf Type or Struct with no fields.(Singleton::a Leaf TypeまたはStruct with no fields.)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>"Struct" :: A type with all fields defined to be constant.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150713Z" creationid="hsugawa8651" creationdate="20181117T150713Z">
+        <seg>"Struct"::A type with all fieldsが定義されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>"Super Type" :: A super-type (not a leaf-type) that cannot be instantiated, but can be used to describe a group of types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150637Z" creationid="hsugawa8651" creationdate="20181117T150637Z">
+        <seg>「スーパータイプ」:インスタンス化できないスーパータイプ(リーフタイプではない)ですが、タイプのグループを記述するために使用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>"Tuple" :: an immutable data-structure similar to an anonymous struct type, or a constant array.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150800Z" creationid="hsugawa8651" creationdate="20181117T150800Z">
+        <seg>「タプル」:匿名構造型と似た不変のデータ構造、あるいは定数配列です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>"Tuple" :: an immutable data-structure similar to an anonymous struct type, or a constant array. Represented as either an array or a struct.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134345Z" creationid="hsugawa8651" creationdate="20181117T134345Z">
         <seg>「タプル」:匿名構造体タイプと同様の不変データ構造、あるいは定数配列です。配列または構造体のいずれかとして表されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>"Type Parameter" :: A specialization of a type (typically used for dispatch or storage optimization).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150647Z" creationid="hsugawa8651" creationdate="20181117T150647Z">
+        <seg>「Type Parameter」:タイプの特殊化(通常はディスパッチまたはストレージの最適化に使用されます)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>"TypeVar" :: The &lt;x1/&gt;T&lt;x2/&gt; in the type parameter declaration is referred to as a TypeVar (short for type variable).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150650Z" creationid="hsugawa8651" creationdate="20181117T150650Z">
+        <seg>「TypeVar」:&lt;x1/&gt;T&lt;x2/&gt;型パラメータ宣言の&lt;x1/&gt;は、TypeVar(型変数の短縮形)と呼ばれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -573,6 +645,22 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(...)&lt;x1/&gt; or &lt;x2/&gt;tuple(...)&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150743Z" creationid="hsugawa8651" creationdate="20181117T150743Z">
+        <seg>(...)&lt;x1/&gt; or &lt;x2/&gt;tuple(...)&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(1, 2, 3)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150754Z" creationid="hsugawa8651" creationdate="20181117T150754Z">
+        <seg>(1, 2, 3)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(&lt;x1/&gt;none&lt;x2/&gt;)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112324Z" creationid="hsugawa8651" creationdate="20181112T112324Z">
@@ -649,6 +737,14 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155105Z" creationid="hsugawa8651" creationdate="20181109T155105Z">
         <seg>(@id man-array-indexing)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@id man-bits-types)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150804Z" creationid="hsugawa8651" creationdate="20181117T150804Z">
+        <seg>(@id man-bits-types)</seg>
       </tuv>
     </tu>
     <tu>
@@ -3155,6 +3251,14 @@ be to replicate the vector to the size of the matrix:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Any Julia type that is not a subtype of &lt;x5/&gt;`Signed`&lt;x6/&gt; is assumed to be unsigned.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150822Z" creationid="hsugawa8651" creationdate="20181117T150822Z">
+        <seg>&lt;x5/&gt;'署名された&lt;x6/&gt;のサブタイプではないジュリア型は、符号なしであると仮定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Any custom array of scalar indices that is a subtype of &lt;x1/&gt;AbstractArray&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155529Z" creationid="hsugawa8651" creationdate="20181109T155529Z">
@@ -3185,6 +3289,14 @@ in an &lt;x12/&gt;Array&lt;x13/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112202Z" creationid="hsugawa8651" creationdate="20181112T112202Z">
         <seg>Any&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Any&lt;x1/&gt;, &lt;x2/&gt;AbstractArray{T, N}&lt;x3/&gt;, &lt;x4/&gt;Complex{T}&lt;x5/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150633Z" creationid="hsugawa8651" creationdate="20181117T150633Z">
+        <seg>Any&lt;x1/&gt;, &lt;x2/&gt;AbstractArray{T, N}&lt;x3/&gt;, &lt;x4/&gt;Complex{T}&lt;x5/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3464,6 +3576,14 @@ command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063651Z" creationid="hsugawa8651" creationdate="20181114T063651Z">
         <seg>&lt;x1/&gt;-O3&lt;x2/&gt;では、コンパイラ&lt;x/&gt;は、そのようなタプル上のオペレーションを自動的にベクトル化することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Auto-conversion:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150557Z" creationid="hsugawa8651" creationdate="20181117T150557Z">
+        <seg>自動変換:</seg>
       </tuv>
     </tu>
     <tu>
@@ -6301,6 +6421,14 @@ these floating-point values are the results of certain arithmetic operations:</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>C name</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150848Z" creationid="hsugawa8651" creationdate="20181117T150848Z">
+        <seg>C名</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Callees must make explicit copies to ensure that they don't modify inputs that
 they don't intend to change.</seg>
       </tuv>
@@ -6463,6 +6591,14 @@ julia&gt; newfun()
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134428Z" creationid="hsugawa8651" creationdate="20181117T134428Z">
         <seg>ComplexF64&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>ComplexF64&lt;x1/&gt; (&lt;x2/&gt;isbits&lt;x3/&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150720Z" creationid="hsugawa8651" creationdate="20181117T150720Z">
+        <seg>ComplexF64&lt;x1/&gt; (&lt;x2/&gt;isbits&lt;x3/&gt;)</seg>
       </tuv>
     </tu>
     <tu>
@@ -7281,6 +7417,14 @@ throw a conversion error.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cuchar&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150900Z" creationid="hsugawa8651" creationdate="20181117T150900Z">
+        <seg>Cuchar&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Currently, only the platform-default C calling convention is supported.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153954Z" creationid="hsugawa8651" creationdate="20181109T153954Z">
@@ -7659,6 +7803,16 @@ the insertion point of a value not found in a sorted array:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Every C type also has a corresponding Julia type with the same name, prefixed by C.
+This can help for writing portable code (and remembering that an &lt;x1/&gt;int&lt;x2/&gt; in C is not the same as
+an &lt;x3/&gt;Int&lt;x4/&gt; in Julia).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150838Z" creationid="hsugawa8651" creationdate="20181117T150838Z">
+        <seg>すべてのC型は同じ名前を冠した同じ名前を持つ、対応するジュリア型を持っています。 これは、移植可能なコードを書くのに役立ちます(そして、Cでは&lt;x1/&gt;int&lt;x2/&gt;が同じではないことを思い出してください)。 &lt;x3/&gt;のInt&lt;x4/&gt;Int&lt;x4/&gt;int&lt;x4/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Every binary arithmetic and bitwise operator also has an updating version that assigns the result
 of the operation back into its left operand.</seg>
       </tuv>
@@ -7709,11 +7863,27 @@ direct usage of tasks, but certain problems can be solved much more easily by us
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Exactly corresponds to the &lt;x1/&gt;signed&lt;x2/&gt; type annotation in C (or any &lt;x3/&gt;INTEGER&lt;x4/&gt; type in Fortran).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150815Z" creationid="hsugawa8651" creationdate="20181117T150815Z">
+        <seg>厳密には、C(またはFortranでは任意の&lt;x3/&gt;INTEGER&lt;x4/&gt;タイプ)の&lt;x1/&gt;署名された&lt;x2/&gt;型の注釈に対応しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Exactly corresponds to the &lt;x1/&gt;signed&lt;x2/&gt; type annotation in C (or any &lt;x3/&gt;INTEGER&lt;x4/&gt; type in Fortran).
 Any Julia type that is not a subtype of &lt;x5/&gt;`Signed`&lt;x6/&gt; is assumed to be unsigned.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134446Z" creationid="hsugawa8651" creationdate="20181117T134446Z">
         <seg>厳密には、C(またはFortranでは任意の&lt;x3/&gt;INTEGER&lt;x4/&gt;タイプ)の&lt;x1/&gt;署名された&lt;x2/&gt;型の注釈に対応しています。 &lt;x5/&gt;'署名された&lt;x6/&gt;のサブタイプではないジュリア型は、符号なしであると仮定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Example</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150617Z" creationid="hsugawa8651" creationdate="20181117T150617Z">
+        <seg>例</seg>
       </tuv>
     </tu>
     <tu>
@@ -8183,6 +8353,14 @@ the insertion point of a value not found in a sorted array:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, the following call:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150602Z" creationid="hsugawa8651" creationdate="20181117T150602Z">
+        <seg>たとえば、次の呼び出しを行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, the following definition supports the negation of ranges:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131622Z" creationid="hsugawa8651" creationdate="20181113T131622Z">
@@ -8222,6 +8400,14 @@ we can override the generic iterative version with a more performant solution:</
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112738Z" creationid="hsugawa8651" creationdate="20181112T112738Z">
         <seg>たとえば、2乗の合計を計算するための数式があります。 汎用的な反復バージョンをより効率的なソリューションでオーバーライドすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, this is used to convert an &lt;x4/&gt;Array&lt;x5/&gt; of objects (e.g. strings) to an array of pointers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150606Z" creationid="hsugawa8651" creationdate="20181117T150606Z">
+        <seg>たとえば、これは、オブジェクトの&lt;x4/&gt;配列&lt;x5/&gt;をポインタの配列に変換するために使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8379,6 +8565,14 @@ let's try a two-way version first:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230122Z" creationid="hsugawa8651" creationdate="20181109T230122Z">
         <seg>わかりやすくするために まず2ウェイのバージョンを試してみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fortran name</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150849Z" creationid="hsugawa8651" creationdate="20181117T150849Z">
+        <seg>Fortran名</seg>
       </tuv>
     </tu>
     <tu>
@@ -9672,6 +9866,14 @@ puts the array into sorted order:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Int&lt;x1/&gt;, &lt;x2/&gt;Float64&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150659Z" creationid="hsugawa8651" creationdate="20181117T150659Z">
+        <seg>Int&lt;x1/&gt;, &lt;x2/&gt;Float64&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Integer division (the &lt;x1/&gt;div&lt;x2/&gt; function) has two exceptional cases: dividing by zero, and dividing
 the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
       </tuv>
@@ -9803,6 +10005,16 @@ in most languages taking three operands:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is considered unsafe because
+converting an object to a native pointer can hide the object from the garbage collector, causing
+it to be freed prematurely.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150611Z" creationid="hsugawa8651" creationdate="20181117T150611Z">
+        <seg>それは安全ではないと考えられている。 オブジェクトをネイティブ・ポインタに変換すると、ガーベッジ・コレクターからオブジェクトを非表示にすることができます。 早期に解放することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is critical to exactly match the declared C type with its declaration in Julia.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150549Z" creationid="hsugawa8651" creationdate="20181117T150549Z">
@@ -9817,6 +10029,22 @@ a different system.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134217Z" creationid="hsugawa8651" creationdate="20181117T134217Z">
         <seg>宣言されたCタイプと、Juliaの宣言を正確に一致させることが重要です。 は、1つのシステム上で正しく動作するコードを生成することができます。 別のシステムです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is defined by-value, and is stored without a type-tag.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150732Z" creationid="hsugawa8651" creationdate="20181117T150732Z">
+        <seg>これは値によって定義され、タイプタグなしで保存されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is defined by-value, and may be stored with a type-tag.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150717Z" creationid="hsugawa8651" creationdate="20181117T150717Z">
+        <seg>それは値によって定義され、タイプタグとともに格納されることがある。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9916,6 +10144,14 @@ be to replicate the vector to the size of the matrix:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135218Z" creationid="hsugawa8651" creationdate="20181117T135218Z">
         <seg>異なる要素のバイナリ・バイナリ・バイナリ・オペレーションを実行する場合には、次のようにします。 行列の各列にベクトルを追加するなどのサイズです。効率的な方法はありません。 ベクトルをマトリックスのサイズに複製することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is stored and defined by-value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150705Z" creationid="hsugawa8651" creationdate="20181117T150705Z">
+        <seg>それは値によって保存され、定義される。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10038,6 +10274,14 @@ by the global state of the program.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia Base Type</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150853Z" creationid="hsugawa8651" creationdate="20181117T150853Z">
+        <seg>ジュリア・ベース・タイプ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia Base contains a range of functions and macros appropriate for performing
 scientific and numerical computing, but is also as broad as those of many general purpose programming
 languages.</seg>
@@ -10070,6 +10314,15 @@ the next largest or smallest representable floating-point number to the argument
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030806Z" creationid="hsugawa8651" creationdate="20181114T030806Z">
         <seg>Juliaは、最高優先順位から最低への順序付けと関連付けを適用し、次の順序を適用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia automatically inserts calls to the &lt;x1/&gt;`Base.cconvert`&lt;x2/&gt; function to convert each argument
+to the specified type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150600Z" creationid="hsugawa8651" creationdate="20181117T150600Z">
+        <seg>Juliaは、各引数を変換するために&lt;x1/&gt;'Base.チコンベルト'&lt;x2/&gt;関数への呼び出しを自動的に挿入します。 で指定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11144,6 +11397,15 @@ indices directly instead of first calling &lt;x13/&gt;`findall`&lt;x14/&gt;.</se
     <tu>
       <tuv lang="EN-US">
         <seg>On all systems we currently support, basic C/C++ value types may be translated to Julia types
+as follows.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150836Z" creationid="hsugawa8651" creationdate="20181117T150836Z">
+        <seg>現在サポートされているすべてのシステムでは、基本的なC/C++の値タイプがJuliaタイプに変換されることがあります。 以下のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>On all systems we currently support, basic C/C++ value types may be translated to Julia types
 as follows. Every C type also has a corresponding Julia type with the same name, prefixed by C.
 This can help for writing portable code (and remembering that an &lt;x1/&gt;int&lt;x2/&gt; in C is not the same as
 an &lt;x3/&gt;Int&lt;x4/&gt; in Julia).</seg>
@@ -11304,6 +11566,14 @@ MIME types) of user-defined types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083633Z" creationid="hsugawa8651" creationdate="20181113T083633Z">
         <seg>融合式の中でデフォルトの遅延動作をオーバーライドする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Pair{Int, Int}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150709Z" creationid="hsugawa8651" creationdate="20181117T150709Z">
+        <seg>Pair{Int, Int}&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -11481,6 +11751,14 @@ an interactive session.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T015626Z" creationid="hsugawa8651" creationdate="20181116T015626Z">
         <seg>Regex("^\\s*(?:&lt;x1/&gt;|\$)")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Represented as either an array or a struct.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150802Z" creationid="hsugawa8651" creationdate="20181117T150802Z">
+        <seg>配列または構造体として表されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12028,6 +12306,14 @@ and so we can mutate the array:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Standard Julia Alias</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150851Z" creationid="hsugawa8651" creationdate="20181117T150851Z">
+        <seg>標準ジュリアエイリアス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Standard Numeric Types</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044707Z" creationid="hsugawa8651" creationdate="20181112T044707Z">
@@ -12116,6 +12402,22 @@ sharing memory with the original array rather than by copying it. A &lt;x4/&gt;S
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030853Z" creationid="hsugawa8651" creationdate="20181114T030853Z">
         <seg>Syntax</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Syntax / Keyword</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150615Z" creationid="hsugawa8651" creationdate="20181117T150615Z">
+        <seg>構文/キーワード</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>System Independent:&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150843Z" creationid="hsugawa8651" creationdate="20181117T150843Z">
+        <seg>システムに依存しない:&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -13346,6 +13648,14 @@ declaration syntax demonstrated above is equivalent to the following compact "as
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The type parameters of a leaf type must be fully defined (no &lt;x1/&gt;TypeVars&lt;x2/&gt; are allowed) in order for the instance to be constructed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150621Z" creationid="hsugawa8651" creationdate="20181117T150621Z">
+        <seg>インスタンスを構築するには、リーフタイプのタイプパラメータを完全に定義する必要があります(&lt;x1/&gt;TypeVars&lt;x2/&gt;は許可されません)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The type system is described in &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-types) and defining a function
 in terms of methods chosen by multiple dispatch on run-time argument types is described in &lt;x4/&gt;Methods&lt;x5/&gt;.</seg>
       </tuv>
@@ -13751,6 +14061,15 @@ optimize broadcasting.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131547Z" creationid="hsugawa8651" creationdate="20181113T131547Z">
         <seg>これにより、カスタム・アレイの実装が可能になります。 独自の&lt;x23/&gt;copyto!&lt;x24/&gt;特殊化を提供してカスタマイズし 放送を最適化する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This allows, for example, passing an &lt;x2/&gt;argv&lt;x3/&gt; pointer array of type
+&lt;x4/&gt;Vector{String}&lt;x5/&gt; to an argument of type &lt;x6/&gt;Ptr{Ptr{Cchar}}&lt;x7/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150834Z" creationid="hsugawa8651" creationdate="20181117T150834Z">
+        <seg>これにより、例えば、&lt;x2/&gt;argv&lt;x3/&gt;ポインタ配列を通過させることができる。 &lt;x4/&gt;Vector{String}&lt;x5/&gt;は、&lt;x6/&gt;Ptr{Ptr{Cchar}}&lt;x7/&gt;の型を引数にします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14448,6 +14767,14 @@ functions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Type Correspondences:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150612Z" creationid="hsugawa8651" creationdate="20181117T150612Z">
+        <seg>タイプ対応:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Type relations</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041840Z" creationid="hsugawa8651" creationdate="20181110T041840Z">
@@ -14486,6 +14813,14 @@ arguments, but with generated functions this is impossible.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063131Z" creationid="hsugawa8651" creationdate="20181114T063131Z">
         <seg>T{ }&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>T{A}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150639Z" creationid="hsugawa8651" creationdate="20181117T150639Z">
+        <seg>T{A}&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -14612,6 +14947,14 @@ will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155522Z" creationid="hsugawa8651" creationdate="20181109T155522Z">
         <seg>整数のベクトルおよび多次元配列</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Vector{Int}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150643Z" creationid="hsugawa8651" creationdate="20181117T150643Z">
+        <seg>Vector{Int}&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -15209,6 +15552,16 @@ version = "3.4.2"</seg>
       <tuv lang="EN-US">
         <seg>`Base.cconvert`&lt;x1/&gt; normally just calls &lt;x2/&gt;`convert`&lt;x3/&gt;, but can be defined to return an
 arbitrary new object more appropriate for passing to C.
+This should be used to perform all allocations of memory that will be accessed by the C code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150605Z" creationid="hsugawa8651" creationdate="20181117T150605Z">
+        <seg>'Base.チコンベルト'&lt;x1/&gt;は通常、&lt;x2/&gt;'convert`&lt;x3/&gt;を呼び出しますが、次のように定義することができます。 任意の新しいオブジェクトを渡すには、任意の新しいオブジェクトが必要です。 これは、Cコードによってアクセスされるメモリーのすべての割り当てを実行するために使用される必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Base.cconvert`&lt;x1/&gt; normally just calls &lt;x2/&gt;`convert`&lt;x3/&gt;, but can be defined to return an
+arbitrary new object more appropriate for passing to C.
 This should be used to perform all allocations of memory that will be accessed by the C code.
 For example, this is used to convert an &lt;x4/&gt;Array&lt;x5/&gt; of objects (e.g. strings) to an array of pointers.</seg>
       </tuv>
@@ -15218,11 +15571,27 @@ For example, this is used to convert an &lt;x4/&gt;Array&lt;x5/&gt; of objects (
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`Base.cconvert`&lt;x1/&gt; version.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150829Z" creationid="hsugawa8651" creationdate="20181117T150829Z">
+        <seg>`Base.cconvert`&lt;x1/&gt; version.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`Base.cconvert`&lt;x1/&gt; version. This allows, for example, passing an &lt;x2/&gt;argv&lt;x3/&gt; pointer array of type
 &lt;x4/&gt;Vector{String}&lt;x5/&gt; to an argument of type &lt;x6/&gt;Ptr{Ptr{Cchar}}&lt;x7/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T140907Z" creationid="hsugawa8651" creationdate="20181117T140907Z">
         <seg>'Base.チコンベルト'&lt;x1/&gt;バージョン。これにより、例えば、&lt;x2/&gt;argv&lt;x3/&gt;ポインタ配列を渡すことができます。 &lt;x4/&gt;Vector{String}&lt;x5/&gt;は、&lt;x6/&gt;Ptr{Ptr{Cchar}}&lt;x7/&gt;の型を引数にします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Base.unsafe_convert`&lt;x1/&gt; handles conversion to &lt;x2/&gt;`Ptr`&lt;x3/&gt; types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150609Z" creationid="hsugawa8651" creationdate="20181117T150609Z">
+        <seg>'Base.unsafe_convert'&lt;x1/&gt;は、&lt;x2/&gt;`Ptr'&lt;x3/&gt;型への変換を処理する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28108,6 +28477,14 @@ julia&gt; collect(Iterators.reverse(Squares(4)))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>nothing&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150737Z" creationid="hsugawa8651" creationdate="20181117T150737Z">
+        <seg>nothing&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>obj3 = MyModule.someotherfunction(obj2, c)
 ...</seg>
       </tuv>
@@ -28334,6 +28711,14 @@ primitive type «name» &lt;: «supertype» «bits» end</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T021627Z" creationid="hsugawa8651" creationdate="20181116T021627Z">
         <seg>primitive type «name» «bits» end
 primitive type «name» &lt;: «supertype» «bits» end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>primitive type&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150655Z" creationid="hsugawa8651" creationdate="20181117T150655Z">
+        <seg>primitive type&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -28777,6 +29162,14 @@ unsafe_string(str + Core.sizeof(Cint), len)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>struct ...; end&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150734Z" creationid="hsugawa8651" creationdate="20181117T150734Z">
+        <seg>struct ...; end&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>struct ArrayAndChar{T,N} &lt;: AbstractArray{T,N}
     data::Array{T,N}
     char::Char
@@ -28976,6 +29369,14 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>struct&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150707Z" creationid="hsugawa8651" creationdate="20181117T150707Z">
+        <seg>struct&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>sub2ind_rec(dims, I...) : throw(BoundsError());
 
 julia&gt; sub2ind_rec(dims::Tuple{Integer, Vararg{Integer}}, i1::Integer) = i1;
@@ -29137,6 +29538,14 @@ julia&gt; odd(n) = (n == 0) ?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031111Z" creationid="hsugawa8651" creationdate="20181114T031111Z">
         <seg>typeof(x)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>unsigned char&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150854Z" creationid="hsugawa8651" creationdate="20181117T150854Z">
+        <seg>unsigned char&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
