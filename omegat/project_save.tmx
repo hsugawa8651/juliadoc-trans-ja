@@ -3521,6 +3521,15 @@ file.jl&lt;x8/&gt; to execute a script while being able to catch
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Although it is generally a good idea to return a fully initialized object from an inner constructor,
+it is possible to return incompletely initialized objects:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155923Z" creationid="hsugawa8651" creationdate="20181117T155923Z">
+        <seg>一般的には、内部コンストラクタから完全に初期化されたオブジェクトを返すことは、良い考えです。 不完全に初期化されたオブジェクトを返すことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Although it is typical, there is no requirement that &lt;x3/&gt;begin&lt;x4/&gt; blocks be multiline
 or that &lt;x5/&gt;(;)&lt;x6/&gt; chains be single-line:</seg>
       </tuv>
@@ -6736,6 +6745,15 @@ integers and floating-point numbers as immediate values in code are known as num
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But how does one construct the first instance when no instance exists to provide as a valid value
+for its &lt;x1/&gt;obj&lt;x2/&gt; field?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155851Z" creationid="hsugawa8651" creationdate="20181117T155851Z">
+        <seg>しかし、有効な値として提供するインスタンスが存在しない場合は、最初のインスタンスを構築する方法はどうすればよいのですか。 &lt;x1/&gt;obj&lt;x2/&gt;フィールドに対して。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But, &lt;x2/&gt;g(x::T) where {T} = ccall(:notvalid, T, (T,), x)&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151243Z" creationid="hsugawa8651" creationdate="20181117T151243Z">
@@ -7219,6 +7237,14 @@ methods that specialize on &lt;x7/&gt;DestStyle&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T015906Z" creationid="hsugawa8651" creationdate="20181116T015906Z">
         <seg>Consider the following example manifest file for &lt;x4/&gt;App&lt;x5/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Consider the following recursive type declaration:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155842Z" creationid="hsugawa8651" creationdate="20181117T155842Z">
+        <seg>次の再帰タイプ宣言を考慮してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9652,6 +9678,16 @@ array (bound to &lt;x5/&gt;x&lt;x6/&gt; at the call site, and bound to &lt;x7/&g
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here, for example, is another attempt
+at defining the &lt;x3/&gt;SelfReferential&lt;x4/&gt; type, this time using a zero-argument inner constructor returning instances
+having &lt;x5/&gt;obj&lt;x6/&gt; fields pointing to themselves:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155902Z" creationid="hsugawa8651" creationdate="20181117T155902Z">
+        <seg>ここでは、別の試みを行います。 &lt;x3/&gt;SelfReferential&lt;x4/&gt;タイプを定義する際には、0つの引数内部コンストラクタを使用してインスタンスを返します。 &lt;x5/&gt;obj&lt;x6/&gt;フィールドが自分自身を指していることを示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here, the input &lt;x1/&gt;p&lt;x2/&gt; is declared to be of type &lt;x3/&gt;Ref{gsl_permutation}&lt;x4/&gt;, meaning that the memory
 that &lt;x5/&gt;p&lt;x6/&gt; points to may be managed by Julia or by C. A pointer to memory allocated by C should
 be of type &lt;x7/&gt;Ptr{gsl_permutation}&lt;x8/&gt;, but it is convertible using &lt;x9/&gt;`Base.cconvert`&lt;x10/&gt; and therefore
@@ -9937,6 +9973,14 @@ the indices: &lt;x3/&gt;prod(length(I_1), length(I_2), ..., length(I_n))&lt;x4/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134924Z" creationid="hsugawa8651" creationdate="20181117T134924Z">
         <seg>&lt;x1/&gt;X&lt;x2/&gt;が配列である場合、それは長さの積と同じ数の要素を持つ必要があります。 インデックス:&lt;x3/&gt;prod(長さI_1)、長さ(I_2)、…、長さ(I_n)&lt;x4/&gt;。位置&lt;x5/&gt;I_1[i_1]の値、I_2[i_2]、.…、I_n[i_n]&lt;x6/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If &lt;x1/&gt;a&lt;x2/&gt; is an instance of &lt;x3/&gt;SelfReferential&lt;x4/&gt;, then a second instance can be created by the call:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155847Z" creationid="hsugawa8651" creationdate="20181117T155847Z">
+        <seg>&lt;x1/&gt;a&lt;x2/&gt;が&lt;x3/&gt;SelfReferential&lt;x4/&gt;のインスタンスである場合は、次のように呼び出しによって2番目のインスタンスを作成することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10789,6 +10833,14 @@ optimization.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152659Z" creationid="hsugawa8651" creationdate="20181117T152659Z">
         <seg>インクルージョンを使用すると、複数のソースファイルにわたって単一のプログラムを分割できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Incomplete Initialization</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155836Z" creationid="hsugawa8651" creationdate="20181117T155836Z">
+        <seg>不完全な初期化</seg>
       </tuv>
     </tu>
     <tu>
@@ -13756,6 +13808,15 @@ must be called to create an object.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since the fundamental difficulty may not be immediately
+obvious, let us briefly explain it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155840Z" creationid="hsugawa8651" creationdate="20181117T155840Z">
+        <seg>根本的な困難はすぐにはない わかりやすく説明しましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since these are fairly small, simple expressions, they could easily be placed onto a single line,
 which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
       </tuv>
@@ -14944,6 +15005,15 @@ is 1, 2, 4 or 8 bytes.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The final problem which has still not been addressed is construction of self-referential objects,
+or more generally, recursive data structures.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155838Z" creationid="hsugawa8651" creationdate="20181117T155838Z">
+        <seg>まだ取り組まれていない最後の問題は、自己参照オブジェクトの構築です。 より一般的には、再帰データ構造体です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The first argument to &lt;x1/&gt;`@cfunction`&lt;x2/&gt; can be marked with a &lt;x3/&gt;$&lt;x4/&gt;, in which case
 the return value will instead be a &lt;x5/&gt;struct CFunction&lt;x6/&gt; which closes over the argument.</seg>
       </tuv>
@@ -15206,6 +15276,15 @@ is 1), and follows the Julia-convention of 1-based indexing.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The inner constructor method can then use the incomplete
+object, finishing its initialization before returning it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155859Z" creationid="hsugawa8651" creationdate="20181117T155859Z">
+        <seg>内部コンストラクタメソッドは、不完全な オブジェクトは初期化を終了してから戻す。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The input &lt;x1/&gt;n&lt;x2/&gt; is passed by value, and so the function's input signature is
 simply declared as &lt;x3/&gt;(Csize_t,)&lt;x4/&gt; without any &lt;x5/&gt;Ref&lt;x6/&gt; or &lt;x7/&gt;Ptr&lt;x8/&gt; necessary.</seg>
       </tuv>
@@ -15413,6 +15492,16 @@ determining a single answer for a given set of arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112228Z" creationid="hsugawa8651" creationdate="20181112T112228Z">
         <seg>品目数(既知の場合)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The only solution is to allow creating an incompletely initialized instance
+of &lt;x3/&gt;SelfReferential&lt;x4/&gt; with an unassigned &lt;x5/&gt;obj&lt;x6/&gt; field, and using that incomplete instance as a valid
+value for the &lt;x7/&gt;obj&lt;x8/&gt; field of another instance, such as, for example, itself.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155854Z" creationid="hsugawa8651" creationdate="20181117T155854Z">
+        <seg>唯一の解決策は、不完全に初期化されたインスタンスを作成することです。 &lt;x3/&gt;SelfReferential&lt;x4/&gt;のうち、未割り当ての&lt;x6/&gt;obj&lt;x6/&gt;&lt;x6/&gt;フィールドを指定し、その不完全なインスタンスを有効にして使用します。 他のインスタンスの&lt;x7/&gt;obj&lt;x8/&gt;フィールドの値(例えば、それ自体)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16252,6 +16341,15 @@ a 1-tuple containing &lt;x9/&gt;Cstring&lt;x10/&gt;:</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>This
+separation is typically quite natural.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155835Z" creationid="hsugawa8651" creationdate="20181117T155835Z">
+        <seg>これ 分離は、典型的には非常に自然なものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This
 will construct a 1-d array with element type &lt;x3/&gt;T&lt;x4/&gt;, initialized to contain elements &lt;x5/&gt;A&lt;x6/&gt;, &lt;x7/&gt;B&lt;x8/&gt;, &lt;x9/&gt;C&lt;x10/&gt;,
 etc.</seg>
       </tuv>
@@ -16801,6 +16899,14 @@ in &lt;x1/&gt;Functions&lt;x2/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This type may appear innocuous enough, until one considers how to construct an instance of it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155845Z" creationid="hsugawa8651" creationdate="20181117T155845Z">
+        <seg>このタイプは、インスタンスの作成方法を考慮するまでは、十分に無害である可能性があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This use of &lt;x3/&gt;...&lt;x4/&gt; for combining many different arguments into a single
 argument is called slurping:</seg>
       </tuv>
@@ -16974,6 +17080,16 @@ it simple and efficient to call C and Fortran functions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160536Z" creationid="hsugawa8651" creationdate="20181109T160536Z">
         <seg>この既存のコードを簡単に利用できるようにするために、Juliaは CとFortranの関数を呼び出すことは簡単で効率的です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To allow for the creation of incompletely initialized objects, Julia allows the &lt;x1/&gt;`new`&lt;x2/&gt; function
+to be called with fewer than the number of fields that the type has, returning an object with
+the unspecified fields uninitialized.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155857Z" creationid="hsugawa8651" creationdate="20181117T155857Z">
+        <seg>不完全に初期化されたオブジェクトを作成できるようにするために、Juliaは&lt;x1/&gt;"new`&lt;x2/&gt;関数を許可します。 は、型が持つフィールド数よりも少ない数で呼び出され、オブジェクトを使用してオブジェクトを返します。 未指定のフィールドが初期化されていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17422,6 +17538,14 @@ may lead to incorrect results or segmentation faults.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112506Z" creationid="hsugawa8651" creationdate="20181112T112506Z">
         <seg>すべての要素を繰り返し処理することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We can verify that this constructor works and constructs objects that are, in fact, self-referential:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155908Z" creationid="hsugawa8651" creationdate="20181117T155908Z">
+        <seg>このコンストラクタが動作し、実際には自己参照であるオブジェクトを構成していることを確認できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24540,6 +24664,14 @@ julia&gt; :(f(1, $(args...)))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; b = SelfReferential(a)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155848Z" creationid="hsugawa8651" creationdate="20181117T155848Z">
+        <seg>julia&gt; b = SelfReferential(a)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; b"DATA\xff\u2200"
 8-element Base.CodeUnits{UInt8,String}:
  0x44
@@ -27882,6 +28014,50 @@ julia&gt; bar.baz = 1//2
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; mutable struct Incomplete
+           data
+           Incomplete() = new()
+       end
+
+julia&gt; z = Incomplete();</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155925Z" creationid="hsugawa8651" creationdate="20181117T155925Z">
+        <seg>julia&gt; mutable struct Incomplete
+           data
+           Incomplete() = new()
+       end
+
+julia&gt; z = Incomplete();</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; mutable struct SelfReferential
+           obj::SelfReferential
+           SelfReferential() = (x = new(); x.obj = x)
+       end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155903Z" creationid="hsugawa8651" creationdate="20181117T155903Z">
+        <seg>julia&gt; mutable struct SelfReferential
+           obj::SelfReferential
+           SelfReferential() = (x = new(); x.obj = x)
+       end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; mutable struct SelfReferential
+           obj::SelfReferential
+       end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155843Z" creationid="hsugawa8651" creationdate="20181117T155843Z">
+        <seg>julia&gt; mutable struct SelfReferential
+           obj::SelfReferential
+       end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; myappend(v::Vector{T}, x::T) where {T} = [v..., x]
 myappend (generic function with 1 method)
 
@@ -30330,6 +30506,32 @@ MyNumber(1.2246467991473532e-16)
 
 julia&gt; cos(x)
 MyNumber(-1.0)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; x = SelfReferential();
+
+julia&gt; x === x
+true
+
+julia&gt; x === x.obj
+true
+
+julia&gt; x === x.obj.obj
+true</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155909Z" creationid="hsugawa8651" creationdate="20181117T155909Z">
+        <seg>julia&gt; x = SelfReferential();
+
+julia&gt; x === x
+true
+
+julia&gt; x === x.obj
+true
+
+julia&gt; x === x.obj.obj
+true</seg>
       </tuv>
     </tu>
     <tu>
