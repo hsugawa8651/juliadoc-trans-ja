@@ -2396,6 +2396,14 @@ provides its subtypes with the appropriate definition of &lt;x23/&gt;strides&lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x23/&gt;App&lt;x24/&gt; has a direct dependency on your private &lt;x25/&gt;Priv&lt;x26/&gt; package, and an indirect dependency, through &lt;x27/&gt;Pub&lt;x28/&gt;, on the new public &lt;x29/&gt;Priv&lt;x30/&gt; package.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152902Z" creationid="hsugawa8651" creationdate="20181117T152902Z">
+        <seg>&lt;x23/&gt;アプリケーション&lt;x24/&gt;は、&lt;x27/&gt;Priv&lt;x26/&gt;パッケージに直接依存します。また、&lt;x27/&gt;Pub&lt;x28/&gt;を介して、新しい&lt;x29/&gt;Priv&lt;x30/&gt;パッケージ上の間接的な依存関係もあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x28/&gt;`StridedVector`&lt;x29/&gt; and &lt;x30/&gt;`StridedMatrix`&lt;x31/&gt; are convenient aliases for many of the builtin array types that
 are considered strided arrays, allowing them to dispatch to select specialized implementations that
 call highly tuned and optimized BLAS and LAPACK functions using just the pointer and strides.</seg>
@@ -2496,6 +2504,14 @@ array types that have fixed dimensionality requirements.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131806Z" creationid="hsugawa8651" creationdate="20181113T131806Z">
         <seg>&lt;x7/&gt;DefaultArrayStyle&lt;x8/&gt;と抽象型スーパータイプ&lt;x9/&gt;AbstractArrayStyle&lt;x10/&gt;は、特殊化されたものをサポートするために、次元をタイプパラメータとして格納します。 固定された次元要件を持つ配列タイプ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x7/&gt;Priv&lt;x8/&gt; is a private package that you created, whereas &lt;x9/&gt;Pub&lt;x10/&gt; is a public package that you use but don't control.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152850Z" creationid="hsugawa8651" creationdate="20181117T152850Z">
+        <seg>&lt;x7/&gt;Priv&lt;x8/&gt;は、作成したプライベート・パッケージですが、&lt;x9/&gt;Pub&lt;x10/&gt;は使用するパブリック・パッケージですが、制御することはできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2906,6 +2922,14 @@ they are iterable collections of their characters (see &lt;x27/&gt;Strings&lt;x2
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A package directory&lt;x1/&gt; is a directory containing the source trees of a set of packages as subdirectories.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152923Z" creationid="hsugawa8651" creationdate="20181117T152923Z">
+        <seg>パッケージディレクトリ&lt;x1/&gt;は、サブディレクトリとしてパッケージセットのソースツリーを格納したディレクトリです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A package is loaded by &lt;x3/&gt;import X&lt;x4/&gt; or  &lt;x5/&gt;using X&lt;x6/&gt; statements.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152801Z" creationid="hsugawa8651" creationdate="20181117T152801Z">
@@ -2931,6 +2955,14 @@ arguments, as noted above).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151844Z" creationid="hsugawa8651" creationdate="20181117T151844Z">
         <seg>プレフィックス&lt;x1/&gt;&amp;&lt;x2/&gt;は、スカラーへのポインタを示すために、&lt;x3/&gt;'ccall'&lt;x4/&gt;への引数で使用されます。 スカラー値自体の代わりに引数を渡す必要があります(すべてのFortran関数に対して必要です)。 引数は前述のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A project environment&lt;x1/&gt; is a directory with a project file and an optional manifest file.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152917Z" creationid="hsugawa8651" creationdate="20181117T152917Z">
+        <seg>プロジェクト環境&lt;x1/&gt;は、プロジェクトファイルとオプションのマニフェストファイルを持つディレクトリです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2963,6 +2995,14 @@ arguments, as noted above).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112450Z" creationid="hsugawa8651" creationdate="20181112T112450Z">
         <seg>単純な例は、定義された長さの2乗数のiterableシーケンスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A stacked environment&lt;x1/&gt; is an ordered set of project environments and package directories, overlaid to make a single composite environment in which all the packages available in its constituent environments are available.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152930Z" creationid="hsugawa8651" creationdate="20181117T152930Z">
+        <seg>スタック環境&lt;x1/&gt;は、プロジェクト環境とパッケージディレクトリの順序付きセットで、その構成環境で使用可能なすべてのパッケージが利用可能な単一の複合環境を作成するためにオーバーレイされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3436,6 +3476,14 @@ or that &lt;x5/&gt;(;)&lt;x6/&gt; chains be single-line:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225821Z" creationid="hsugawa8651" creationdate="20181109T225821Z">
         <seg>典型的なものではあるが、&lt;x3/&gt;が&lt;x4/&gt;ブロックがマルチラインである必要はない。 または&lt;x5/&gt;(;)&lt;x6/&gt;鎖は単一行である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An &lt;x1/&gt;environment&lt;x2/&gt; determines what &lt;x3/&gt;import X&lt;x4/&gt; and &lt;x5/&gt;using X&lt;x6/&gt; mean in various code contexts and what files these statements cause to be loaded.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152914Z" creationid="hsugawa8651" creationdate="20181117T152914Z">
+        <seg>&lt;x1/&gt;環境&lt;x2/&gt;は、X&lt;x6/&gt;のインポートX&lt;x4/&gt;および&lt;x5/&gt;を、さまざまなコードコンテキストでX&lt;x6/&gt;平均を使用して決定し、これらの文がロードするファイルを決定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6409,6 +6457,14 @@ that the function will modify.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Because of the lack of a central naming authority, a single project can quite possibly end up depending on different packages that have the same name.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152837Z" creationid="hsugawa8651" creationdate="20181117T152837Z">
+        <seg>中央の名前付け権限がないため、同じ名前を持つパッケージによっては、単一のプロジェクトが終了する可能性が非常に高くなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because the function generator is
 run during inference, it must respect all of the limitations of that code.</seg>
       </tuv>
@@ -8190,6 +8246,14 @@ the insertion point of a value not found in a sorted array:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Environments</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152911Z" creationid="hsugawa8651" creationdate="20181117T152911Z">
+        <seg>環境</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Errors</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150120Z" creationid="hsugawa8651" creationdate="20181117T150120Z">
@@ -9527,6 +9591,14 @@ with &lt;x3/&gt;p&lt;x4/&gt; preceding the base-2 exponent:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>How this distinction works is determined by environments, as explained in the following sections.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152910Z" creationid="hsugawa8651" creationdate="20181117T152910Z">
+        <seg>この区別の仕組みは、次のセクションで説明するように、環境によって決まります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However,
 even for immutable structs it will not cause any harm for called functions to attempt such modifications
 (that is, writing through the passed pointers).</seg>
@@ -9751,6 +9823,14 @@ the indices: &lt;x3/&gt;prod(length(I_1), length(I_2), ..., length(I_n))&lt;x4/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152704Z" creationid="hsugawa8651" creationdate="20181117T152704Z">
         <seg>&lt;x10/&gt;が("source.jl")を含む場合、&lt;x11/&gt;は複数回呼び出されます。&lt;x12/&gt;source.jl&lt;x13/&gt;は複数回評価されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If &lt;x2/&gt;X&lt;x3/&gt; is a subdirectory of a package directory and &lt;x4/&gt;X/src/X.jl&lt;x5/&gt; exists, then the package &lt;x6/&gt;X&lt;x7/&gt; is available in the package directory environment and &lt;x8/&gt;X/src/X.jl&lt;x9/&gt; is the source file by which it is loaded.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152928Z" creationid="hsugawa8651" creationdate="20181117T152928Z">
+        <seg>&lt;x2/&gt;X&lt;x3/&gt;がパッケージディレクトリのサブディレクトリであり、&lt;x4/&gt;X/src/X.jl&lt;x5/&gt;が存在する場合、パッケージ&lt;x6/&gt;X&lt;x7/&gt;は、パッケージディレクトリ環境で使用可能であり、&lt;x8/&gt;X/src/X.jl&lt;x9/&gt;は、それがロードされるソースファイルである。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10219,6 +10299,14 @@ iterate over any array type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161317Z" creationid="hsugawa8651" creationdate="20181114T161317Z">
         <seg>実際には、&lt;x11/&gt;f.(args.)&lt;x12/&gt;です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In fact, the &lt;x15/&gt;Pub&lt;x16/&gt; package has started to use it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152856Z" creationid="hsugawa8651" creationdate="20181117T152856Z">
+        <seg>実際には、&lt;x15/&gt;Pub&lt;x16/&gt;パッケージが使用されるようになりました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10741,6 +10829,14 @@ puts the array into sorted order:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151144Z" creationid="hsugawa8651" creationdate="20181117T151144Z">
         <seg>代わりに、&lt;x3/&gt;イスビトス&lt;x4/&gt;構造体を宣言し、代わりにそれを使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Instead, packages are identified by &lt;x1/&gt;universally unique identifiers&lt;x2/&gt; (UUIDs) which are assigned to them before they are registered.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152842Z" creationid="hsugawa8651" creationdate="20181117T152842Z">
+        <seg>その代わりに、パッケージは、登録される前に割り当てられた&lt;x1/&gt;ユニバーサル一意識別子&lt;x2/&gt;(UUID)によって識別されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11420,6 +11516,14 @@ conversions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia understands three kinds of environments:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152915Z" creationid="hsugawa8651" creationdate="20181117T152915Z">
+        <seg>Juliaは3種類の環境を理解しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia's base library has a an internal &lt;x1/&gt;sub2ind&lt;x2/&gt; function to calculate a linear index into an n-dimensional
 array, based on a set of n multilinear indices - in other words, to calculate the index &lt;x3/&gt;i&lt;x4/&gt; that
 can be used to index into an array &lt;x5/&gt;A&lt;x6/&gt; using &lt;x7/&gt;A[i]&lt;x8/&gt;, instead of &lt;x9/&gt;A[x,y,z,...]&lt;x10/&gt;.</seg>
@@ -11436,6 +11540,30 @@ and readable, without sacrificing performance, and using less memory at times.</
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154155Z" creationid="hsugawa8651" creationdate="20181109T154155Z">
         <seg>Juliaのコンパイラーは型推論を使用し スカラー配列インデックスの最適化されたコードで、プログラムをスタイルに便利なスタイルで記述できるようにします。 パフォーマンスを犠牲にすることなく読み取り可能で、時にはメモリを減らすことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia's load path is a stacked environment, for example.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152932Z" creationid="hsugawa8651" creationdate="20181117T152932Z">
+        <seg>Juliaのロードパスは、たとえばスタックされた環境です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia's package loading mechanism allows this by distinguishing the two &lt;x43/&gt;Priv&lt;x44/&gt; packages by context and UUID.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152908Z" creationid="hsugawa8651" creationdate="20181117T152908Z">
+        <seg>Juliaのパッケージロードメカニズムでは、2つの&lt;x43/&gt;Priv&lt;x44/&gt;パッケージをコンテキストとUUIDで識別することによってこれを実現しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia's package loading mechanism handles this by not requiring package names to be globally unique, even within the dependency graph of a single project.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152839Z" creationid="hsugawa8651" creationdate="20181117T152839Z">
+        <seg>Juliaのパッケージロードメカニズムは、単一のプロジェクトの依存グラフ内でも、パッケージ名をグローバルに一意にする必要がないため、これを処理します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13375,11 +13503,27 @@ indexing and indexed assignment as efficient as possible.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since the decentralized naming problem is somewhat abstract, it may help to walk through a concrete scenario to understand the issue.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152846Z" creationid="hsugawa8651" creationdate="20181117T152846Z">
+        <seg>分散ネーミング問題は幾分抽象的なので、この問題を理解するためには、具体的なシナリオをウォークスルーすることが有用です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since these are fairly small, simple expressions, they could easily be placed onto a single line,
 which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225809Z" creationid="hsugawa8651" creationdate="20181109T225809Z">
         <seg>これらはかなり小さいので、簡単な表現で簡単に1行に配置することができます。 ここでは、&lt;x1/&gt;(;)&lt;x2/&gt;チェイン構文が便利です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since these two &lt;x31/&gt;Priv&lt;x32/&gt; packages are different but both required for &lt;x33/&gt;App&lt;x34/&gt; to continue working correctly, the expression &lt;x35/&gt;import Priv&lt;x36/&gt; must refer to different &lt;x37/&gt;Priv&lt;x38/&gt; packages depending on whether it occurs in &lt;x39/&gt;App&lt;x40/&gt;'s code or in &lt;x41/&gt;Pub&lt;x42/&gt;'s code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152906Z" creationid="hsugawa8651" creationdate="20181117T152906Z">
+        <seg>これらの2つの&lt;x31/&gt;Priv&lt;x32/&gt;パッケージは異なりますが、&lt;x33/&gt;App&lt;x34/&gt;は正常に動作するためには必要です。&lt;x35/&gt;import Priv&lt;x36/&gt;は、&lt;x41/&gt;の&lt;x40/&gt;のコードで発生するか、&lt;x41/&gt;Pub&lt;x42/&gt;Pub&lt;x42/&gt;のコードで発生するかによって、&lt;x33/&gt;Priv&lt;x38/&gt;の異なるを参照しなければなりません。x39。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13654,6 +13798,14 @@ sharing memory with the original array rather than by copying it. A &lt;x4/&gt;S
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Subsequently, however, an unrelated package also named &lt;x13/&gt;Priv&lt;x14/&gt; has been published and become popular.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152854Z" creationid="hsugawa8651" creationdate="20181117T152854Z">
+        <seg>その後、&lt;x13/&gt;Priv&lt;x14/&gt;という名前の無関係なパッケージが発行され、一般的になりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Such behaviour can be avoided by using &lt;x7/&gt;ISO_C_BINDING&lt;x8/&gt; and
 including &lt;x9/&gt;bind(c)&lt;x10/&gt; in the definition of the subroutine, which is strongly recommended for
 interoperable code.</seg>
@@ -13668,6 +13820,14 @@ interoperable code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024957Z" creationid="hsugawa8651" creationdate="20181110T024957Z">
         <seg>次のような関数を呼び出すとします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Suppose you're developing an application called &lt;x1/&gt;App&lt;x2/&gt;, which uses two packages: &lt;x3/&gt;Pub&lt;x4/&gt; and  &lt;x5/&gt;Priv&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152848Z" creationid="hsugawa8651" creationdate="20181117T152848Z">
+        <seg>&lt;x1/&gt;App&lt;x2/&gt;というアプリケーションを開発していると仮定します。&lt;x3/&gt;Pub&lt;x4/&gt;と&lt;x5/&gt;Priv&lt;x6/&gt;の2つのパッケージを使用しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14852,6 +15012,14 @@ Julia function. Arguments to &lt;x3/&gt;`@cfunction`&lt;x4/&gt; are as follows:<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The manifest file, if present, gives a complete dependency graph, including all direct and indirect dependencies, exact versions of each dependency, and sufficient information to locate and load the correct version.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152921Z" creationid="hsugawa8651" creationdate="20181117T152921Z">
+        <seg>マニフェスト・ファイルが存在する場合、すべての依存関係、依存関係の正確なバージョン、適切なバージョンを検索してロードするための十分な情報など、すべての依存関係を含む完全な依存関係グラフが表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The matrix adds a dimension.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160902Z" creationid="hsugawa8651" creationdate="20181114T160902Z">
@@ -14997,6 +15165,22 @@ unary operators such as negation.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131737Z" creationid="hsugawa8651" creationdate="20181113T131737Z">
         <seg>優先順位ルールは、バイナリ&lt;x1/&gt;BroadcastStyle&lt;x2/&gt;コールによって定義されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The project file determines what the names and identities of the direct dependencies of a project are.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152919Z" creationid="hsugawa8651" creationdate="20181117T152919Z">
+        <seg>プロジェクトファイルは、プロジェクトの直接的な依存関係の名前と識別情報を決定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The question &lt;x3/&gt;"what is `X`?"&lt;x4/&gt; is answered by determining the UUID of &lt;x5/&gt;X&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152844Z" creationid="hsugawa8651" creationdate="20181117T152844Z">
+        <seg>&lt;x3/&gt;"what is"X"と"は、&lt;x5/&gt;X&lt;x6/&gt;のUUIDを決定することによって答えます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15595,6 +15779,14 @@ Julia to be used.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Therefore, when you next upgrade &lt;x17/&gt;Pub&lt;x18/&gt; to get the latest bug fixes and features, &lt;x19/&gt;App&lt;x20/&gt; will end up—through no action of yours other than upgrading—depending on two different packages named &lt;x21/&gt;Priv&lt;x22/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152900Z" creationid="hsugawa8651" creationdate="20181117T152900Z">
+        <seg>したがって、&lt;x17/&gt;Pub&lt;x18/&gt;をアップグレードして最新のバグ修正と機能を取得する場合、&lt;x19/&gt;App&lt;x20/&gt;は、&lt;X21/&gt;Priv&lt;x22/&gt;という名前の2つの異なるパッケージに依存してアップグレードする以外の操作は行いません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These are
 normal functions, which happen to support infix operator syntax, but always evaluate their arguments:</seg>
       </tuv>
@@ -15683,6 +15875,14 @@ yields a &lt;x5/&gt;SparseMatStyle&lt;x6/&gt;, and anything of higher dimensiona
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152809Z" creationid="hsugawa8651" creationdate="20181117T152809Z">
         <seg>これらのステートメントは、インポート・ステートメントが発生するモジュール内で使用可能なパッケージ・コードをロードした結果として、&lt;x7/&gt;X&lt;x8/&gt;という名前のモジュールを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These three kinds of environment each serve a different purpose:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152934Z" creationid="hsugawa8651" creationdate="20181117T152934Z">
+        <seg>これら3種類の環境は、それぞれ異なる目的で提供されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16122,6 +16322,14 @@ without using extra memory, and applies the given function elementwise:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This kind of environment was the only kind that existed in Julia 0.6 and earlier.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152925Z" creationid="hsugawa8651" creationdate="20181117T152925Z">
+        <seg>この種の環境は、ジュリア0.6以前に存在していた唯一の種であった。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This leverages a fallback implementation of &lt;x1/&gt;copyto!&lt;x2/&gt; that converts the wrapper into a
 &lt;x3/&gt;Broadcasted{Nothing}&lt;x4/&gt;.</seg>
       </tuv>
@@ -16216,6 +16424,14 @@ an array and storing them in advance (see &lt;x1/&gt;Iteration&lt;x2/&gt;).</seg
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154927Z" creationid="hsugawa8651" creationdate="20181109T154927Z">
         <seg>このオブジェクトを反復して、必要に応じて必要に応じて値を生成することができます。 配列とそれを事前に格納する(&lt;x1/&gt;Iteration&lt;x2/&gt;を参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This possibility is unavoidable since these entities do not coordinate and may not even know about each other.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152835Z" creationid="hsugawa8651" creationdate="20181117T152835Z">
+        <seg>この可能性は、これらのエンティティが調整されておらず、互いに認識されていない可能性があるため、避けられません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17062,6 +17278,14 @@ differences between operating systems.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224823Z" creationid="hsugawa8651" creationdate="20181109T224823Z">
         <seg>クロスプラットフォームアプリケーションやライブラリを記述する場合は、次のようなことがよくあります。 オペレーティング・システム間の違い。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When you created &lt;x11/&gt;Priv&lt;x12/&gt;, there was no public package by that name.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152852Z" creationid="hsugawa8651" creationdate="20181117T152852Z">
+        <seg>&lt;x11/&gt;Priv&lt;x12/&gt;を作成すると、その名前ではパブリックパッケージは作成されませんでした。</seg>
       </tuv>
     </tu>
     <tu>
