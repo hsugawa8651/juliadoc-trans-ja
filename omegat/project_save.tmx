@@ -991,6 +991,19 @@ In our &lt;x14/&gt;Squares&lt;x15/&gt; example, we would implement &lt;x16/&gt;I
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(If the
+wrapper was calling a Fortran function instead, the corresponding function input
+signature should instead be &lt;x9/&gt;(Ref{Csize_t},)&lt;x10/&gt;, since Fortran variables are
+passed by pointers.) Furthermore, &lt;x11/&gt;n&lt;x12/&gt; can be any type that is convertible to a
+&lt;x13/&gt;Csize_t&lt;x14/&gt; integer; the &lt;x15/&gt;`ccall`&lt;x16/&gt; implicitly calls &lt;x17/&gt;`Base.cconvert(Csize_t,
+n)`&lt;x18/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152055Z" creationid="hsugawa8651" creationdate="20181117T152055Z">
+        <seg>( ラッパーは、代わりにFortran関数を呼び出し、対応する関数入力を呼び出しました。 Fortranの変数は次のようなものであるため、署名は&lt;x9/&gt;(Ref{Csize_t},)&lt;x10/&gt;でなければなりません。 ポインタによって渡される)。また、&lt;x11/&gt;n&lt;x12/&gt;は、変換可能な任意のタイプであることができます。 &lt;x13/&gt;Csize_t&lt;x14/&gt;integer;&lt;x15/&gt;`ccall`&lt;x16/&gt;は暗黙的に&lt;x17/&gt;`Base.チコンベルト(Csize_t n)`&lt;x18/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(Non-library function calls in both C and Julia can
 be inlined and thus may have even less overhead than calls to shared library functions.</seg>
       </tuv>
@@ -2129,6 +2142,76 @@ julia&gt; a = [1 2; 3 4]
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x1/&gt; The corresponding C signature is
+&lt;x2/&gt;     void gsl_permutation_free (gsl_permutation * p);
+function permutation_free(p::Ref{gsl_permutation})
+    ccall(
+        (:gsl_permutation_free, :libgsl), &lt;x3/&gt; name of C function and library
+        Cvoid,                             &lt;x4/&gt; output type
+        (Ref{gsl_permutation},),          &lt;x5/&gt; tuple of input types
+        p                                 &lt;x6/&gt; name of Julia variable to pass in
+    )
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152059Z" creationid="hsugawa8651" creationdate="20181117T152059Z">
+        <seg>&lt;x1/&gt; The corresponding C signature is
+&lt;x2/&gt;     void gsl_permutation_free (gsl_permutation * p);
+function permutation_free(p::Ref{gsl_permutation})
+    ccall(
+        (:gsl_permutation_free, :libgsl), &lt;x3/&gt; name of C function and library
+        Cvoid,                             &lt;x4/&gt; output type
+        (Ref{gsl_permutation},),          &lt;x5/&gt; tuple of input types
+        p                                 &lt;x6/&gt; name of Julia variable to pass in
+    )
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x1/&gt; The corresponding C signature is
+&lt;x2/&gt;    int gsl_sf_bessel_Jn_array (int nmin, int nmax, double x,
+&lt;x3/&gt;                                double result_array[])
+function sf_bessel_Jn_array(nmin::Integer, nmax::Integer, x::Real)
+    if nmax &lt; nmin
+        throw(DomainError())
+    end
+    result_array = Vector{Cdouble}(undef, nmax - nmin + 1)
+    errorcode = ccall(
+        (:gsl_sf_bessel_Jn_array, :libgsl), &lt;x4/&gt; name of C function and library
+        Cint,                               &lt;x5/&gt; output type
+        (Cint, Cint, Cdouble, Ref{Cdouble}),&lt;x6/&gt; tuple of input types
+        nmin, nmax, x, result_array         &lt;x7/&gt; names of Julia variables to pass in
+    )
+    if errorcode != 0
+        error("GSL error code $errorcode")
+    end
+    return result_array
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152147Z" creationid="hsugawa8651" creationdate="20181117T152147Z">
+        <seg>&lt;x1/&gt; The corresponding C signature is
+&lt;x2/&gt;    int gsl_sf_bessel_Jn_array (int nmin, int nmax, double x,
+&lt;x3/&gt;                                double result_array[])
+function sf_bessel_Jn_array(nmin::Integer, nmax::Integer, x::Real)
+    if nmax &lt; nmin
+        throw(DomainError())
+    end
+    result_array = Vector{Cdouble}(undef, nmax - nmin + 1)
+    errorcode = ccall(
+        (:gsl_sf_bessel_Jn_array, :libgsl), &lt;x4/&gt; name of C function and library
+        Cint,                               &lt;x5/&gt; output type
+        (Cint, Cint, Cdouble, Ref{Cdouble}),&lt;x6/&gt; tuple of input types
+        nmin, nmax, x, result_array         &lt;x7/&gt; names of Julia variables to pass in
+    )
+    if errorcode != 0
+        error("GSL error code $errorcode")
+    end
+    return result_array
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x1/&gt;!/bin/bash
 &lt;x2/&gt;=
 exec julia --color=yes --startup-file=no -e 'include(popfirst!(ARGS))' \
@@ -2771,6 +2854,27 @@ they are iterable collections of their characters (see &lt;x27/&gt;Strings&lt;x2
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131103Z" creationid="hsugawa8651" creationdate="20181113T131103Z">
         <seg>注目すべき例外は&lt;x25/&gt;AbstractString&lt;x26/&gt;です。 文字列は、ブロードキャストの目的で、ブロードキャストのために それらは、それらの文字(詳細は&lt;x27/&gt;の文字列&lt;x28/&gt;を参照)のコレクションです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A pointer
+to memory allocated by Julia must be of type &lt;x13/&gt;Ref{gsl_permutation}&lt;x14/&gt;, to ensure that the memory
+address pointed to is valid and that Julia's garbage collector manages the chunk of memory pointed
+to correctly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152134Z" creationid="hsugawa8651" creationdate="20181117T152134Z">
+        <seg>ポインタ Juliaによって割り当てられたメモリは、メモリを確保するためには&lt;x13/&gt;Ref{gsl_mutation}&lt;x14/&gt;のようにする必要があります。 指定されたアドレスは有効であり、ジュリアのガーベッジ・コレクターは、指定されたメモリーのチャンクを管理しています。 正確に。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A prefix &lt;x1/&gt;&amp;&lt;x2/&gt; is used on an argument to &lt;x3/&gt;`ccall`&lt;x4/&gt; to indicate that a pointer to a scalar
+argument should be passed instead of the scalar value itself (required for all Fortran function
+arguments, as noted above).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151844Z" creationid="hsugawa8651" creationdate="20181117T151844Z">
+        <seg>プレフィックス&lt;x1/&gt;&amp;&lt;x2/&gt;は、スカラーへのポインタを示すために、&lt;x3/&gt;'ccall'&lt;x4/&gt;への引数で使用されます。 スカラー値自体の代わりに引数を渡す必要があります(すべてのFortran関数に対して必要です)。 引数は前述のとおりです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3621,6 +3725,14 @@ command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224332Z" creationid="hsugawa8651" creationdate="20181109T224332Z">
         <seg>この例が示すように、&lt;x1/&gt;julia&lt;x2/&gt;への次のコマンドライン引数は、以下のように解釈されます。 グローバル定数&lt;x5/&gt;ARGS&lt;x6/&gt;で渡されたプログラム&lt;x3/&gt;スクリプト.jl&lt;x4/&gt;へのコマンドライン引数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As user code never has to look inside the &lt;x9/&gt;gsl_permutation&lt;x10/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151936Z" creationid="hsugawa8651" creationdate="20181117T151936Z">
+        <seg>ユーザコードは、&lt;x9/&gt;gsl_mutation&lt;x10/&gt;の中では絶対に内部を見る必要がない。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6144,6 +6256,15 @@ Base.vec</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Because C doesn't support multiple return values, often C functions will take pointers to data
+that the function will modify.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151825Z" creationid="hsugawa8651" creationdate="20181117T151825Z">
+        <seg>Cは複数の戻り値をサポートしていないため、しばしばC関数はデータのポインタを取得します。 関数が変更されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because the function generator is
 run during inference, it must respect all of the limitations of that code.</seg>
       </tuv>
@@ -6470,6 +6591,14 @@ these floating-point values are the results of certain arithmetic operations:</s
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083554Z" creationid="hsugawa8651" creationdate="20181113T083554Z">
         <seg>デフォルトのマシンをバイパスする&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>C &lt;x1/&gt;MUST NOT&lt;x2/&gt; modify the memory returned via &lt;x3/&gt;Ref{T}&lt;x4/&gt; if &lt;x5/&gt;T&lt;x6/&gt; is an &lt;x7/&gt;isbits&lt;x8/&gt; type</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151816Z" creationid="hsugawa8651" creationdate="20181117T151816Z">
+        <seg>&lt;x1/&gt;は、&lt;x5/&gt;T&lt;x6/&gt;が&lt;x7/&gt;イスビトス&lt;x×&gt;&lt;x8/&gt;で返されるメモリを変更してはならない。&lt;x4/&gt;&lt;x6/&gt;は、&lt;x7/&gt;の場合である。&lt;x8/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -7559,6 +7688,14 @@ throw a conversion error.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131100Z" creationid="hsugawa8651" creationdate="20181113T131100Z">
         <seg>カスタム・タイプも同様に特殊化できます。 &lt;X21/&gt;Base.broadcastable&lt;x22/&gt;のシェイプを定義するには、次の規則に従う必要があります。 &lt;x23/&gt;collect(Base.broadcastable(x))==collect(x)&lt;x24/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cvoid&lt;x1/&gt; (this will return the singleton instance &lt;x2/&gt;nothing::Cvoid&lt;x3/&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151800Z" creationid="hsugawa8651" creationdate="20181117T151800Z">
+        <seg>Cvoid&lt;x1/&gt;(これはシングルトンインスタンス&lt;x2/&gt;なし:Cvoid&lt;x3/&gt;を返します)</seg>
       </tuv>
     </tu>
     <tu>
@@ -8742,6 +8879,14 @@ let's try a two-way version first:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For translating a C return type to Julia:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151754Z" creationid="hsugawa8651" creationdate="20181117T151754Z">
+        <seg>Cリターン・タイプをジュリアに変換するには:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Fortran name</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150849Z" creationid="hsugawa8651" creationdate="20181117T150849Z">
@@ -8961,10 +9106,34 @@ where syntactic conflicts arise:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is a second example wrapping the corresponding destructor:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152058Z" creationid="hsugawa8651" creationdate="20181117T152058Z">
+        <seg>次に、対応するデストラクタをラップする2番目の例を示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is a simple example of a C wrapper that returns a &lt;x1/&gt;Ptr&lt;x2/&gt; type:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151909Z" creationid="hsugawa8651" creationdate="20181117T151909Z">
+        <seg>ここでは、&lt;x1/&gt;Ptr&lt;x2/&gt;型を返すCラッパーの簡単な例を次に示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is a slightly more complex example that discovers the local machine's hostname:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133838Z" creationid="hsugawa8651" creationdate="20181117T133838Z">
         <seg>ここでは、ローカルマシンのホスト名を検出するもう少し複雑な例を示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is a third example passing Julia arrays:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152146Z" creationid="hsugawa8651" creationdate="20181117T152146Z">
+        <seg>次に、Julia配列を渡す3番目の例を示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9010,6 +9179,17 @@ array (bound to &lt;x5/&gt;x&lt;x6/&gt; at the call site, and bound to &lt;x7/&g
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here, the input &lt;x1/&gt;p&lt;x2/&gt; is declared to be of type &lt;x3/&gt;Ref{gsl_permutation}&lt;x4/&gt;, meaning that the memory
+that &lt;x5/&gt;p&lt;x6/&gt; points to may be managed by Julia or by C. A pointer to memory allocated by C should
+be of type &lt;x7/&gt;Ptr{gsl_permutation}&lt;x8/&gt;, but it is convertible using &lt;x9/&gt;`Base.cconvert`&lt;x10/&gt; and therefore
+can be used in the same (covariant) context of the input argument to a &lt;x11/&gt;`ccall`&lt;x12/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152108Z" creationid="hsugawa8651" creationdate="20181117T152108Z">
+        <seg>ここで、入力&lt;x1/&gt;p&lt;x2/&gt;は、タイプ&lt;x3/&gt;Ref{gsl_mutation}&lt;x4/&gt;であることを宣言され、メモリは、メモリを意味する。 &lt;x5/&gt;p&lt;x6/&gt;は、ジュリアまたはC.Aポインタによって割り当てられたメモリへのC.Aポインタによって管理されることがあります。 &lt;x7/&gt;Ptr{gsl mutation}&lt;x8/&gt;であるが、&lt;x9/&gt;'Base.チコンベルト'&lt;x10/&gt;を用いて変換することができ、したがって は、&lt;x11/&gt;`ccall'&lt;x12/&gt;への入力引数の同じ(共変)コンテキストで使用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Hexadecimal floating-point literals are also valid, but only as &lt;x1/&gt;`Float64`&lt;x2/&gt; values,
 with &lt;x3/&gt;p&lt;x4/&gt; preceding the base-2 exponent:</seg>
       </tuv>
@@ -9047,6 +9227,16 @@ with &lt;x3/&gt;p&lt;x4/&gt; preceding the base-2 exponent:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024917Z" creationid="hsugawa8651" creationdate="20181110T024917Z">
         <seg>&lt;x3/&gt;&lt;x4/&gt;!/usr/bin/env&lt;x5/&gt;?を使用して、&lt;x1/&gt;ジュリア&lt;x2/&gt;にオプションを渡す方法を教えてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However,
+even for immutable structs it will not cause any harm for called functions to attempt such modifications
+(that is, writing through the passed pointers).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151856Z" creationid="hsugawa8651" creationdate="20181117T151856Z">
+        <seg>しかし 不変構造体でさえ、呼び出された関数がこのような修正を試みることを妨げることはないでしょう。 (つまり、渡されたポインタを通して書くこと)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9244,6 +9434,16 @@ is written to all referenced locations of &lt;x6/&gt;A&lt;x7/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If &lt;x8/&gt;Ptr{Cdouble}&lt;x9/&gt; were used instead, the &lt;x10/&gt;`ccall`&lt;x11/&gt; may still work, but Julia's garbage
+collector would not be aware that the memory declared for &lt;x12/&gt;result_array&lt;x13/&gt; is being used by the
+external C function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152217Z" creationid="hsugawa8651" creationdate="20181117T152217Z">
+        <seg>もし&lt;x8/&gt;Ptr{Cdouble}&lt;x9/&gt;が代わりに使われたとしたら、&lt;x10/&gt;`ccall'&lt;x11/&gt;は依然として動作しますが、ジュリアのゴミはまだ動作していません。 コレクタは、&lt;x12/&gt;result_array&lt;x13/&gt;のために宣言されたメモリが使用されていないことを認識しません。 外部C関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If a C/C++ routine has an argument or return value that is a native SIMD type, the corresponding
 Julia type is a homogeneous tuple of &lt;x1/&gt;VecElement&lt;x2/&gt; that naturally maps to the SIMD type.</seg>
       </tuv>
@@ -9368,11 +9568,36 @@ should be used explicitly (see &lt;x5/&gt;Short-Circuit Evaluation&lt;x6/&gt;).<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the C wrapper never expects the user to pass pointers to memory managed by Julia, then using
+&lt;x1/&gt;p::Ptr{gsl_permutation}&lt;x2/&gt; for the method signature of the wrapper and similarly in the &lt;x3/&gt;`ccall`&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152144Z" creationid="hsugawa8651" creationdate="20181117T152144Z">
+        <seg>Cラッパーが、ユーザーがジュリアによって管理されたメモリーへのポインタを渡すことを予期しない場合は &lt;x1/&gt;p::Ptr{gsl mutations}&lt;x2/&gt;ラッパーの方が、同様に&lt;x3/&gt;の"ccall"&lt;x4/&gt;においても同様である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the expression &lt;x1/&gt;x &lt; y&lt;x2/&gt; is true, the entire ternary operator expression evaluates to the string
 &lt;x3/&gt;"less than"&lt;x4/&gt; and otherwise it evaluates to the string &lt;x5/&gt;"not less than"&lt;x6/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230135Z" creationid="hsugawa8651" creationdate="20181109T230135Z">
         <seg>式&lt;x1/&gt;x&lt;y&lt;x2/&gt;がtrueの場合、三元演算子の式全体が文字列に対して評価されます。 &lt;x3/&gt;"より小さい"&lt;x4/&gt;"であり、それ以外の場合は、文字列&lt;x5/&gt;"は&lt;x6/&gt;以上であると評価される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the memory is already owned by Julia, or is an &lt;x1/&gt;isbits&lt;x2/&gt; type, and is known to be non-null:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151809Z" creationid="hsugawa8651" creationdate="20181117T151809Z">
+        <seg>メモリが既にJuliaによって所有されている場合、または&lt;x1/&gt;イスビトス&lt;x2/&gt;タイプであり、非NULLであることが知られている場合は、次のように指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the memory is owned by C:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151818Z" creationid="hsugawa8651" creationdate="20181117T151818Z">
+        <seg>メモリがC:に所有されている場合</seg>
       </tuv>
     </tu>
     <tu>
@@ -11157,6 +11382,15 @@ combining row and column vectors to produce a matrix).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Moreover, &lt;x5/&gt;&amp;&lt;x6/&gt; may be used with any expression,
+such as &lt;x7/&gt;&amp;0&lt;x8/&gt; or &lt;x9/&gt;&amp;f(x)&lt;x10/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151902Z" creationid="hsugawa8651" creationdate="20181117T151858Z">
+        <seg>さらに、&lt;x5/&gt;&amp;&lt;x6/&gt;は、任意の発現とともに使用することができる。 &lt;x7/&gt;&amp;0&lt;x8/&gt;や&lt;x9/&gt;&amp;f(x)&lt;x10/&gt;のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Moreover, an attempt to use &lt;x8/&gt;A&lt;x9/&gt; will likely result in an error, because most methods are not defined on type &lt;x10/&gt;Nothing&lt;x11/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024705Z" creationid="hsugawa8651" creationdate="20181110T024705Z">
@@ -11449,6 +11683,14 @@ operations like &lt;x5/&gt;&lt;&lt;x6/&gt;, &lt;x7/&gt;only&lt;x8/&gt; the eleme
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135141Z" creationid="hsugawa8651" creationdate="20181117T135141Z">
         <seg>&lt;x1/&gt;==&lt;x2/&gt;のような比較は、すべての配列に対して動作し、単一のブール値を与えることに注意してください。 答え:&lt;x3/&gt;.==&lt;x4/&gt;のようなドット演算子を使用して、要素ごとの比較を行います(比較のために)。 &lt;x5/&gt;&lt;x6/&gt;のような操作、&lt;x7/&gt;&lt;x6/&gt;&lt;x8/&gt;&lt;x10/&gt;&lt;x8/&gt;&lt;x10/&gt;は、配列に適用されます。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that for this code to work correctly, &lt;x1/&gt;result_array&lt;x2/&gt; must be declared to be of type &lt;x3/&gt;Ref{Cdouble}&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152205Z" creationid="hsugawa8651" creationdate="20181117T152205Z">
+        <seg>このコードが正しく動作するためには、&lt;x1/&gt;の結果_array&lt;x2/&gt;は&lt;x3/&gt;Ref{Cdouble}&lt;x4/&gt;の型であることが宣言されている必要があることに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11915,6 +12157,14 @@ MIME types) of user-defined types.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Passing Pointers for Modifying Inputs</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151822Z" creationid="hsugawa8651" creationdate="20181117T151822Z">
+        <seg>入力を変更するためのポインタを渡す</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Passing options to &lt;x1/&gt;julia&lt;x2/&gt; in so-called shebang by, e.g.,
 &lt;x3/&gt;&lt;x4/&gt;!/usr/bin/env julia --startup-file=no&lt;x5/&gt; may not work in some
 platforms such as Linux.</seg>
@@ -12001,10 +12251,34 @@ for more efficient linear algebra routines.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Ptr{Any}&lt;x1/&gt; (&lt;x2/&gt;Ref{Any}&lt;x3/&gt; is invalid as a return type)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151807Z" creationid="hsugawa8651" creationdate="20181117T151807Z">
+        <seg>Ptr{Any}&lt;x1/&gt;(&lt;x2/&gt;Ref{Any}&lt;x3/&gt;は、戻り型として無効です)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ptr{Cdouble}&lt;x1/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152206Z" creationid="hsugawa8651" creationdate="20181117T152206Z">
+        <seg>Ptr{Cdouble}&lt;x1/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Ptr{Cvoid}&lt;x1/&gt; (you may need to use &lt;x2/&gt;`@cfunction`&lt;x3/&gt; explicitly to create this pointer)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151602Z" creationid="hsugawa8651" creationdate="20181117T151602Z">
         <seg>Ptr{Cvoid}&lt;x1/&gt;(このポインタを作成するためには、&lt;x2/&gt;`@cfunction`&lt;x3/&gt;を明示的に使用する必要があります)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ptr{T}&lt;x1/&gt;, where &lt;x2/&gt;T&lt;x3/&gt; is the Julia type corresponding to &lt;x4/&gt;T&lt;x5/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151820Z" creationid="hsugawa8651" creationdate="20181117T151820Z">
+        <seg>Ptr{T}&lt;x1/&gt;。ここで、&lt;x2/&gt;T&lt;x3/&gt;は、&lt;x4/&gt;T&lt;x5/&gt;に対応するジュリア型である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12573,6 +12847,14 @@ the two tuples, multiplication and addition/subtraction.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Some Examples of C Wrappers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151907Z" creationid="hsugawa8651" creationdate="20181117T151907Z">
+        <seg>Cラッパーのいくつかの例</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Some examples:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135007Z" creationid="hsugawa8651" creationdate="20181117T135007Z">
@@ -12648,6 +12930,14 @@ SparseVecStyle(::Val{N}) where N = Broadcast.DefaultArrayStyle{N}()</seg>
 SparseVecStyle(::Val{1}) = SparseVecStyle()
 SparseVecStyle(::Val{2}) = SparseMatStyle()
 SparseVecStyle(::Val{N}) where N = Broadcast.DefaultArrayStyle{N}()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Special Reference Syntax for ccall (deprecated):</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151838Z" creationid="hsugawa8651" creationdate="20181117T151838Z">
+        <seg>ccall(廃止された)のための特別なリファレンス構文:</seg>
       </tuv>
     </tu>
     <tu>
@@ -12891,6 +13181,14 @@ interoperable code.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>T&lt;x1/&gt;, where &lt;x2/&gt;T&lt;x3/&gt; is a Julia Leaf Type</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151805Z" creationid="hsugawa8651" creationdate="20181117T151805Z">
+        <seg>T&lt;x1/&gt;。ここで&lt;x2/&gt;T&lt;x3/&gt;はJulia Leaf Typeである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>T&lt;x1/&gt;, where &lt;x2/&gt;T&lt;x3/&gt; is a Julia leaf type</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151519Z" creationid="hsugawa8651" creationdate="20181117T151519Z">
@@ -13007,6 +13305,14 @@ resulting expression contains &lt;x5/&gt;only&lt;x6/&gt; the second &lt;x7/&gt;p
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;&amp;&lt;x2/&gt; syntax is deprecated, use the &lt;x3/&gt;Ref{T}&lt;x4/&gt; argument type instead.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151841Z" creationid="hsugawa8651" creationdate="20181117T151841Z">
+        <seg>&lt;x1/&gt;&amp;&lt;x2/&gt;構文は廃止されます。代わりに、&lt;x3/&gt;Ref{T}&lt;x4/&gt;引数タイプを使用してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;--&lt;x2/&gt; delimiter can be used to separate command-line arguments intended for the script file from arguments intended for Julia:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224357Z" creationid="hsugawa8651" creationdate="20181109T224357Z">
@@ -13034,6 +13340,16 @@ functions may be unexpectedly slow. Concrete types should also typically provide
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135318Z" creationid="hsugawa8651" creationdate="20181117T135318Z">
         <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;タイプは、曖昧な配列を含んでおり、実装は実装されています。 従来のアレイとはかなり異なります。たとえば、要求に対して要素が計算される場合があります。 ただし、保存するのではなく、すべての具体的な&lt;x3/&gt;AbstractArray{T,N}&lt;x4/&gt;タイプを実装する必要があります。 &lt;x5/&gt;'size(A)'&lt;x6/&gt;(return an&lt;x7/&gt;Int&lt;x8/&gt;タプルを返す)&lt;x9/&gt;`getindex(A,i)`&lt;x10/&gt;&lt;x13/&gt;&lt;x13/&gt;&lt;x13/&gt;&lt;x13/&gt;(@ref getindex); mutable配列は、&lt;x14/&gt;'setindex!`&lt;x15/&gt;を実装する必要があります。これらの操作を行うには、次の操作を行うことをお勧めします ほとんど一定の時間的複雑さ(技術的には1)、あるいは技術的には複雑さがある 関数は予期せぬほど遅くなります。具体的には、&lt;x16/&gt;`同様(A、T=エルテープ(A)、dims=size(A))`&lt;x17/&gt;を指定する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;GNU Scientific Library&lt;x2/&gt; (here assumed to be accessible
+through &lt;x3/&gt;:libgsl&lt;x4/&gt;) defines an opaque pointer, &lt;x5/&gt;gsl_permutation *&lt;x6/&gt;, as the return type of the C
+function &lt;x7/&gt;gsl_permutation_alloc&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152041Z" creationid="hsugawa8651" creationdate="20181117T152041Z">
+        <seg>&lt;x1/&gt;GNU Scientific Library&lt;x2/&gt;(ここではアクセス可能であると仮定される) &lt;x3/&gt;:libgsl&lt;x4/&gt;は、Cの戻り型として、不透明ポインタ&lt;x5/&gt;gsl_substitutions*&lt;x6/&gt;を定義している。 関数&lt;x7/&gt;gsl_mutation_alloc&lt;x8/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13204,6 +13520,15 @@ environment variable:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134122Z" creationid="hsugawa8651" creationdate="20181117T134122Z">
         <seg>C&lt;x1/&gt;getenv&lt;x2/&gt;関数は、&lt;x3/&gt;NULL&lt;x4/&gt;を返すことによってエラーを示しますが、他の標準的なC関数の関数です。 -1 0 1、その他の特別な値を返すなど、さまざまな方法でエラーを表示します。 このラッパーは、呼び出し者が存在しないことを示す問題を明確に示す例外をスローします。 環境変数:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The C function wrapped returns an integer error code; the results of the actual evaluation of
+the Bessel J function populate the Julia array &lt;x1/&gt;result_array&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152202Z" creationid="hsugawa8651" creationdate="20181117T152202Z">
+        <seg>C関数は、整数エラー・コードを返します。実際の評価結果は次のようになります。 Bessel J関数は、Julia配列&lt;x1/&gt;result_array&lt;x2/&gt;を生成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13629,6 +13954,14 @@ by the variable &lt;x5/&gt;e10&lt;x6/&gt;, and similarly with the equivalent &lt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following example computes a dot product using a BLAS function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151846Z" creationid="hsugawa8651" creationdate="20181117T151846Z">
+        <seg>次の例では、BLAS関数を使用してドット製品を計算します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following example computes a weighted average of the current element and its left and right
 neighbor along a 1-d grid.</seg>
       </tuv>
@@ -13732,6 +14065,15 @@ as &lt;x3/&gt;StackTraces.lookup(ptr)&lt;x4/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The input &lt;x1/&gt;n&lt;x2/&gt; is passed by value, and so the function's input signature is
+simply declared as &lt;x3/&gt;(Csize_t,)&lt;x4/&gt; without any &lt;x5/&gt;Ref&lt;x6/&gt; or &lt;x7/&gt;Ptr&lt;x8/&gt; necessary.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152051Z" creationid="hsugawa8651" creationdate="20181117T152051Z">
+        <seg>入力&lt;x1/&gt;n&lt;x2/&gt;は値によって渡されるので、関数の入力シグネチャは次のようになります。 &lt;x3/&gt;(Csize_t,)&lt;x4/&gt;は、必要な&lt;x5/&gt;Ref&lt;x6/&gt;&lt;x7/&gt;Ptr&lt;x8/&gt;Ptr&lt;x8/&gt;を必要としません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The input types must be written as a literal tuple, not a tuple-valued
 variable or expression.</seg>
       </tuv>
@@ -13820,6 +14162,15 @@ Julia function. Arguments to &lt;x3/&gt;`@cfunction`&lt;x4/&gt; are as follows:<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The meaning of prefix &lt;x1/&gt;&amp;&lt;x2/&gt; is not quite the same as in C. In particular, any changes to the referenced
+variables will not be visible in Julia unless the type is mutable (declared via &lt;x3/&gt;mutable struct&lt;x4/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151853Z" creationid="hsugawa8651" creationdate="20181117T151853Z">
+        <seg>プレフィックス&lt;x1/&gt;&amp;&lt;x2/&gt;の意味は、Cとまったく同じではありません。特に、参照されているものの変更はありません。 変数は、そのタイプがmutable(&lt;x3/&gt;mutable構造体&lt;x4/&gt;によって宣言されている)でない限り、Juliaでは表示されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The meaning of this form is that &lt;x1/&gt;F(x,y,...)&lt;x2/&gt; is evaluated with the variables &lt;x3/&gt;x&lt;x4/&gt;, &lt;x5/&gt;y&lt;x6/&gt;, etc. taking
 on each value in their given list of values.</seg>
       </tuv>
@@ -13845,6 +14196,15 @@ of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, e
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064226Z" creationid="hsugawa8651" creationdate="20181114T064226Z">
         <seg>Juliaがデフォルトのソートアルゴリズムを選択するメカニズムは、&lt;x1/&gt;Base.Sort.デフォルグ&lt;x2/&gt;を介して実装されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The memory is managed by Julia and the &lt;x2/&gt;Ref&lt;x3/&gt; signature alerts Julia's
+garbage collector to keep managing the memory for &lt;x4/&gt;result_array&lt;x5/&gt; while the &lt;x6/&gt;`ccall`&lt;x7/&gt; executes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152212Z" creationid="hsugawa8651" creationdate="20181117T152212Z">
+        <seg>メモリはJuliaによって管理され、&lt;x2/&gt;Ref&lt;x3/&gt;&lt;x3/&gt;のシグニチャアラートが表示されます。 &lt;x6/&gt;のccall&lt;x7/&gt;が実行されている間に、&lt;x4/&gt;result_array&lt;x5/&gt;のメモリを管理するためのガーベッジ・コレクタです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13996,6 +14356,15 @@ the result in single precision by writing:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134806Z" creationid="hsugawa8651" creationdate="20181117T134806Z">
         <seg>結果の配列タイプは、計算された要素のタイプに依存します。 明示的にタイプを指定することができます。たとえば、次のように入力することができます。 以下のように記述することによって、単精度での結果が得られます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The return type of the &lt;x4/&gt;`ccall`&lt;x5/&gt; is declared as &lt;x6/&gt;Ptr{gsl_permutation}&lt;x7/&gt;, since
+the memory allocated and pointed to by &lt;x8/&gt;output_ptr&lt;x9/&gt; is controlled by C (and not Julia).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152048Z" creationid="hsugawa8651" creationdate="20181117T152048Z">
+        <seg>&lt;x4/&gt;'ccall'&lt;x5/&gt;の戻り型は、&lt;x6/&gt;Ptr{gsl_mutation}&lt;x7/&gt;として宣言されている。 &lt;x8/&gt;出力ptr&lt;x9/&gt;によって割り当てられ、指示されたメモリーは、C(およびジュリアではない)によって制御されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14431,6 +14800,15 @@ using a call such as &lt;x3/&gt;trunc(Int32, a)&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T140857Z" creationid="hsugawa8651" creationdate="20181117T134507Z">
         <seg>したがって、&lt;x1/&gt;配列&lt;x2/&gt;が誤った形式でデータを含む場合は、明示的に変換する必要があります。 &lt;x3/&gt;trunc(Int32,a)&lt;x4/&gt;のようなコールを使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Therefore, the &lt;x15/&gt;Ref{gsl_permutation}&lt;x16/&gt; declaration allows pointers managed by C or
+Julia to be used.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152140Z" creationid="hsugawa8651" creationdate="20181117T152140Z">
+        <seg>したがって、&lt;x15/&gt;Ref{gsl_mutation}&lt;x16/&gt;宣言は、Cによって管理されるポインタを許可する。 ジュリアは使用される。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15083,6 +15461,17 @@ operators of lowest precedence.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This variable can only be used
+with corresponding input type declaration &lt;x3/&gt;Ref{Cdouble}&lt;x4/&gt;, since its memory is allocated and managed
+by Julia, not C. The implicit call to &lt;x5/&gt;`Base.cconvert(Ref{Cdouble}, result_array)`&lt;x6/&gt; unpacks
+the Julia pointer to a Julia array data structure into a form understandable by C.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152159Z" creationid="hsugawa8651" creationdate="20181117T152159Z">
+        <seg>この変数は 対応する入力タイプ宣言&lt;x3/&gt;Ref{Cdouble}&lt;x4/&gt;であり、そのメモリは割り当てられ、管理されているため &lt;x5/&gt;'Base.チコンベルト(Ref{Cdouble},result_array)`&lt;x6/&gt;unpacksを暗黙的に呼び出すことはできません。 Juliaの配列データ構造体へのJuliaポインタで、Cによって理解可能な形式に変換されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This wrapper throws an exception clearly indicating the problem if the caller tries to get a non-existent
 environment variable:</seg>
       </tuv>
@@ -15163,6 +15552,15 @@ above).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032339Z" creationid="hsugawa8651" creationdate="20181116T032339Z">
         <seg>したがって、我々は、&lt;x2/&gt;のタイプごとに&lt;x1/&gt;をループするだけである。この場合には &lt;x3/&gt;N&lt;x4/&gt;(関数が生成される関数が複数回生成されるエッジを除く)&lt;x3/&gt;で一度1回指定します。 )。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To accomplish this within a &lt;x1/&gt;`ccall`&lt;x2/&gt;, you need to first
+encapsulate the value inside a &lt;x3/&gt;`Ref{T}`&lt;x4/&gt; of the appropriate type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151827Z" creationid="hsugawa8651" creationdate="20181117T151827Z">
+        <seg>&lt;x1/&gt;'ccall'&lt;x2/&gt;の中でこれを達成するためには、まず 該当するタイプの&lt;x3/&gt;'Ref{T}&lt;x4/&gt;の内部に値をカプセル化します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15478,6 +15876,15 @@ are not possible in the translation to Julia.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Upon return, the contents of &lt;x1/&gt;width&lt;x2/&gt; and &lt;x3/&gt;range&lt;x4/&gt; can be retrieved (if they were changed by &lt;x5/&gt;foo&lt;x6/&gt;)
+by &lt;x7/&gt;width[]&lt;x8/&gt; and &lt;x9/&gt;range[]&lt;x10/&gt;; that is, they act like zero-dimensional arrays.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151836Z" creationid="hsugawa8651" creationdate="20181117T151836Z">
+        <seg>返されると、&lt;x1/&gt;の幅&lt;x2/&gt;と&lt;x3/&gt;の範囲&lt;x4/&gt;の内容が検索される(&lt;x5/&gt;foo&lt;x6/&gt;によって変更された場合)。 &lt;x7/&gt;幅[]&lt;x8/&gt;と&lt;x9/&gt;の範囲[]&lt;x10/&gt;;すなわち、それらは0次元配列のように作用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Use dot operators like &lt;x3/&gt;.==&lt;x4/&gt; for elementwise comparisons.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160015Z" creationid="hsugawa8651" creationdate="20181109T160015Z">
@@ -15644,6 +16051,15 @@ functionality like command line argument handling.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When a scalar value is passed with &lt;x1/&gt;&amp;&lt;x2/&gt; as an argument of type &lt;x3/&gt;Ptr{T}&lt;x4/&gt;, the value will first be
+converted to type &lt;x5/&gt;T&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151905Z" creationid="hsugawa8651" creationdate="20181117T151905Z">
+        <seg>&lt;x3/&gt;Ptr{T}&lt;x4/&gt;の引数として&lt;x1/&gt;&amp;&lt;x2/&gt;とスカラー値を渡すと、まず値が次のようになります。 &lt;x5/&gt;T&lt;x6/&gt;に変換されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When an array is passed to C as a &lt;x1/&gt;Ptr{T}&lt;x2/&gt; argument, it is not reinterpret-cast: Julia requires
 that the element type of the array matches &lt;x3/&gt;T&lt;x4/&gt;, and the address of the first element is passed.</seg>
       </tuv>
@@ -15757,6 +16173,15 @@ differences between operating systems.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224823Z" creationid="hsugawa8651" creationdate="20181109T224823Z">
         <seg>クロスプラットフォームアプリケーションやライブラリを記述する場合は、次のようなことがよくあります。 オペレーティング・システム間の違い。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When you pass this &lt;x5/&gt;Ref&lt;x6/&gt; object
+as an argument, Julia will automatically pass a C pointer to the encapsulated data:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151830Z" creationid="hsugawa8651" creationdate="20181117T151830Z">
+        <seg>この&lt;x5/&gt;Ref&lt;x6/&gt;オブジェクトを渡すと 引数として、Juliaは自動的にCポインタをカプセル化されたデータに渡します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17208,6 +17633,15 @@ as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>a return type of &lt;x1/&gt;Ref{Any}&lt;x2/&gt; is invalid, it should either be &lt;x3/&gt;Any&lt;x4/&gt; (corresponding to &lt;x5/&gt;jl_value_t*&lt;x6/&gt;)
+or &lt;x7/&gt;Ptr{Any}&lt;x8/&gt; (corresponding to &lt;x9/&gt;jl_value_t**&lt;x10/&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151813Z" creationid="hsugawa8651" creationdate="20181117T151813Z">
+        <seg>&lt;x1/&gt;Ref{Any}&lt;x2/&gt;の戻り値が無効です。&lt;x3/&gt;Any&lt;x4/&gt;(&lt;x5/&gt;jl_value_t*&lt;x6/&gt;に対応します) または&lt;x7/&gt;Ptr{Any}&lt;x8/&gt;(&lt;x9/&gt;jl_value_t**&lt;x10/&gt;に対応する)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>a tuple containing the dimensions of &lt;x1/&gt;A&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154246Z" creationid="hsugawa8651" creationdate="20181109T154246Z">
@@ -17482,6 +17916,14 @@ abstract type Unsigned &lt;: Integer end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151515Z" creationid="hsugawa8651" creationdate="20181117T151515Z">
         <seg>引数の値がコピーされます(値によって渡されます)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>argument value will be copied (returned by-value)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151802Z" creationid="hsugawa8651" creationdate="20181117T151802Z">
+        <seg>引数の値がコピーされます(値によって返されます)</seg>
       </tuv>
     </tu>
     <tu>
@@ -18481,6 +18923,32 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>function compute_dot(DX::Vector{Float64}, DY::Vector{Float64})
+    @assert length(DX) == length(DY)
+    n = length(DX)
+    incx = incy = 1
+    product = ccall((:ddot_, "libLAPACK"),
+                    Float64,
+                    (Ref{Int32}, Ptr{Float64}, Ref{Int32}, Ptr{Float64}, Ref{Int32}),
+                    n, DX, incx, DY, incy)
+    return product
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151848Z" creationid="hsugawa8651" creationdate="20181117T151848Z">
+        <seg>function compute_dot(DX::Vector{Float64}, DY::Vector{Float64})
+    @assert length(DX) == length(DY)
+    n = length(DX)
+    incx = incy = 1
+    product = ccall((:ddot_, "libLAPACK"),
+                    Float64,
+                    (Ref{Int32}, Ptr{Float64}, Ref{Int32}, Ptr{Float64}, Ref{Int32}),
+                    n, DX, incx, DY, incy)
+    return product
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>function double!(a::AbstractArray{&lt;:Number})
     for i = firstindex(a):lastindex(a)
         a[i] *= 2
@@ -19062,6 +19530,16 @@ which is a simplified version of the actual definition from &lt;x2/&gt;`env.jl`&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030448Z" creationid="hsugawa8651" creationdate="20181114T030448Z">
         <seg>以上</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>gsl_permutation&lt;x1/&gt;,
+that has no internal fields and whose sole purpose is to be placed in the type parameter of a
+&lt;x2/&gt;Ptr&lt;x3/&gt; type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152044Z" creationid="hsugawa8651" creationdate="20181117T152044Z">
+        <seg>gsl remutation&lt;x1/&gt; は、内部フィールドを持たず、その唯一の目的は &lt;x2/&gt;Ptr&lt;x3/&gt;型。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29110,6 +29588,46 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>mutable struct gsl_permutation
+end
+
+&lt;x1/&gt; The corresponding C signature is
+&lt;x2/&gt;     gsl_permutation * gsl_permutation_alloc (size_t n);
+function permutation_alloc(n::Integer)
+    output_ptr = ccall(
+        (:gsl_permutation_alloc, :libgsl), &lt;x3/&gt; name of C function and library
+        Ptr{gsl_permutation},              &lt;x4/&gt; output type
+        (Csize_t,),                        &lt;x5/&gt; tuple of input types
+        n                                  &lt;x6/&gt; name of Julia variable to pass in
+    )
+    if output_ptr == C_NULL &lt;x7/&gt; Could not allocate memory
+        throw(OutOfMemoryError())
+    end
+    return output_ptr
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151911Z" creationid="hsugawa8651" creationdate="20181117T151911Z">
+        <seg>mutable struct gsl_permutation
+end
+
+&lt;x1/&gt; The corresponding C signature is
+&lt;x2/&gt;     gsl_permutation * gsl_permutation_alloc (size_t n);
+function permutation_alloc(n::Integer)
+    output_ptr = ccall(
+        (:gsl_permutation_alloc, :libgsl), &lt;x3/&gt; name of C function and library
+        Ptr{gsl_permutation},              &lt;x4/&gt; output type
+        (Csize_t,),                        &lt;x5/&gt; tuple of input types
+        n                                  &lt;x6/&gt; name of Julia variable to pass in
+    )
+    if output_ptr == C_NULL &lt;x7/&gt; Could not allocate memory
+        throw(OutOfMemoryError())
+    end
+    return output_ptr
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>mutable struct&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134317Z" creationid="hsugawa8651" creationdate="20181117T134317Z">
@@ -30516,6 +31034,14 @@ julia&gt; 1 &gt; 2 ?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>void&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151756Z" creationid="hsugawa8651" creationdate="20181117T151756Z">
+        <seg>void&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>warning</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155745Z" creationid="hsugawa8651" creationdate="20181109T155745Z">
@@ -30591,6 +31117,18 @@ subsections, and arrays of booleans to select elements at their &lt;x14/&gt;true
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134826Z" creationid="hsugawa8651" creationdate="20181117T134826Z">
         <seg>ここで、各&lt;x1/&gt;I_k&lt;x2/&gt;はスカラー整数、整数の配列、またはその他のいずれかである。 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref manサポートされているインデックス・タイプ)。これには、以下のものが含まれます。 &lt;x6/&gt;「コロン」&lt;x7/&gt;(&lt;x8/&gt;:&lt;x9/&gt;)は、次元全体のすべてのインデックスを選択するために使用されます。 &lt;x10/&gt;a:c&lt;x11/&gt;または&lt;x12/&gt;a:b:c&lt;x13/&gt;to select連続またはストライドされたものを選択するための範囲 サブセクションは、&lt;x14/&gt;真の&lt;x15/&gt;インデックスで選択要素を選択するためのブール演算の配列です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>width = Ref{Cint}(0)
+range = Ref{Cfloat}(0)
+ccall(:foo, Cvoid, (Ref{Cint}, Ref{Cfloat}), width, range)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151831Z" creationid="hsugawa8651" creationdate="20181117T151831Z">
+        <seg>width = Ref{Cint}(0)
+range = Ref{Cfloat}(0)
+ccall(:foo, Cvoid, (Ref{Cint}, Ref{Cfloat}), width, range)</seg>
       </tuv>
     </tu>
     <tu>
