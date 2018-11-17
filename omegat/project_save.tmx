@@ -247,6 +247,22 @@ f</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>"Leaf Type" :: A group of related data that includes a type-tag, is managed by the Julia GC, and is defined by object-identity. The type parameters of a leaf type must be fully defined (no &lt;x1/&gt;TypeVars&lt;x2/&gt; are allowed) in order for the instance to be constructed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134329Z" creationid="hsugawa8651" creationdate="20181117T134329Z">
+        <seg>「リーフタイプ」::タイプタグを含む関連データのグループは、ジュリアGCによって管理され、オブジェクト識別子によって定義されます。リーフタイプのタイプパラメータは、インスタンスが構築されるには完全に定義(&lt;x1/&gt;TypeVars&lt;x2/&gt;は許可されません)されている必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>"Tuple" :: an immutable data-structure similar to an anonymous struct type, or a constant array. Represented as either an array or a struct.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134345Z" creationid="hsugawa8651" creationdate="20181117T134345Z">
+        <seg>「タプル」:匿名構造体タイプと同様の不変データ構造、あるいは定数配列です。配列または構造体のいずれかとして表されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>"less than" : "not less than")
 less than
 
@@ -3173,6 +3189,16 @@ step, and length (or stop) instead of computing every single element.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As can be seen, &lt;x1/&gt;A&lt;x2/&gt; is changed to the sorted array &lt;x3/&gt;[-2.7, 1.3, 3.1, 4.4]&lt;x4/&gt;. Note that Julia
+knows how to convert an array into a &lt;x5/&gt;Ptr{Cdouble}&lt;x6/&gt;, how to compute the size of a type in bytes
+(identical to C's &lt;x7/&gt;sizeof&lt;x8/&gt; operator), and so on. For fun, try inserting a &lt;x9/&gt;println("mycompare($a, $b)")&lt;x10/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134209Z" creationid="hsugawa8651" creationdate="20181117T134209Z">
+        <seg>図のように、&lt;x1/&gt;A&lt;x2/&gt;はソートされた配列&lt;x3/&gt;[-2.7、1.3、3.1、4.4]&lt;x4/&gt;に変更されることに注意してください。 配列を&lt;x5/&gt;Ptr{Cdouble}&lt;x6/&gt;に変換する方法を知っています。バイト単位でタイプのサイズを計算する方法 (Cの&lt;x7/&gt;sizeof&lt;x8/&gt;演算子と同じ)。遊びの場合は&lt;x9/&gt;println("ミコンパレ($a, $b)")を挿入してください。&lt;x10/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As for hexadecimal literals, binary and octal literals produce unsigned integer types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225505Z" creationid="hsugawa8651" creationdate="20181109T225505Z">
@@ -5739,6 +5765,14 @@ unsigned literal.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>BitSet&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134320Z" creationid="hsugawa8651" creationdate="20181117T134320Z">
+        <seg>BitSet&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>BitVector&lt;x1/&gt; (a.k.a.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043132Z" creationid="hsugawa8651" creationdate="20181112T043132Z">
@@ -7310,6 +7344,14 @@ and type definitions.</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161329Z" creationid="hsugawa8651" creationdate="20181114T161329Z">
         <seg>First"
  "2.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>First, a review of some relevant Julia type terminology:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134309Z" creationid="hsugawa8651" creationdate="20181117T134309Z">
+        <seg>まず、いくつかの関連するJulia型用語のレビューを行います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9136,6 +9178,16 @@ in most languages taking three operands:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is critical to exactly match the declared C type with its declaration in Julia. Inconsistencies
+can cause code that works correctly on one system to fail or produce indeterminate results on
+a different system.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134217Z" creationid="hsugawa8651" creationdate="20181117T134217Z">
+        <seg>宣言されたCタイプと、Juliaの宣言を正確に一致させることが重要です。 は、1つのシステム上で正しく動作するコードを生成することができます。 別のシステムです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is efficient for very small &lt;x2/&gt;n&lt;x3/&gt;, and
 is used internally by &lt;x4/&gt;QuickSort&lt;x5/&gt;.</seg>
       </tuv>
@@ -9369,6 +9421,15 @@ the next largest or smallest representable floating-point number to the argument
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030806Z" creationid="hsugawa8651" creationdate="20181114T030806Z">
         <seg>Juliaは、最高優先順位から最低への順序付けと関連付けを適用し、次の順序を適用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia automatically inserts calls to the &lt;x1/&gt;`Base.cconvert`&lt;x2/&gt; function to convert each argument
+to the specified type. For example, the following call:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134250Z" creationid="hsugawa8651" creationdate="20181117T134250Z">
+        <seg>Juliaは、各引数を変換するために&lt;x1/&gt;'Base.チコンベルト'&lt;x2/&gt;関数への呼び出しを自動的に挿入します。 指定されたタイプです。たとえば、次の呼び出しが行われます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10135,6 +10196,17 @@ defines the &lt;x3/&gt;`eltype`&lt;x4/&gt;, and the second defines the &lt;x5/&g
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083208Z" creationid="hsugawa8651" creationdate="20181113T083208Z">
         <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;の2つのパラメータを指定することが非常に重要であることに注意してください。最初のパラメータは次のようになります。 &lt;x3/&gt;'エルテープ&lt;x4/&gt;を定義し、2番目は&lt;x5/&gt;'ンダムス''&lt;x6/&gt;を定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that no C header files are used anywhere in the process of calling C functions: you are responsible
+for making sure that your Julia types and call signatures accurately reflect those in the C header
+file. (The &lt;x1/&gt;Clang package&lt;x2/&gt; can be used to auto-generate
+Julia code from a C header file.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134221Z" creationid="hsugawa8651" creationdate="20181117T134221Z">
+        <seg>Cの関数を呼び出すプロセスでは、Cヘッダー・ファイルは使用されないことに注意してください。 あなたのジュリア・タイプとコール・シグニチャーがCヘッダーにあるものを正確に反映していることを確認するために ファイル(&lt;x1/&gt;Clangパッケージ&lt;x2/&gt;は自動生成のために使用できます。 Cヘッダー・ファイルからのJuliaコード。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -11444,6 +11516,17 @@ indicate errors in various different ways, including by returning -1, 0, 1 and o
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224130Z" creationid="hsugawa8651" creationdate="20181109T224130Z">
         <seg>C&lt;x1/&gt;getenv&lt;x2/&gt;関数は、&lt;x3/&gt;NULL&lt;x4/&gt;を返すことによってエラーを示しますが、他の標準的なC関数の関数です。 -1 0 1、その他の特別な値を返すなど、さまざまな方法でエラーを表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The C &lt;x1/&gt;getenv&lt;x2/&gt; function indicates an error by returning &lt;x3/&gt;NULL&lt;x4/&gt;, but other standard C functions
+indicate errors in various different ways, including by returning -1, 0, 1 and other special values.
+This wrapper throws an exception clearly indicating the problem if the caller tries to get a non-existent
+environment variable:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134122Z" creationid="hsugawa8651" creationdate="20181117T134122Z">
+        <seg>C&lt;x1/&gt;getenv&lt;x2/&gt;関数は、&lt;x3/&gt;NULL&lt;x4/&gt;を返すことによってエラーを示しますが、他の標準的なC関数の関数です。 -1 0 1、その他の特別な値を返すなど、さまざまな方法でエラーを表示します。 このラッパーは、呼び出し者が存在しないことを示す問題を明確に示す例外をスローします。 環境変数:</seg>
       </tuv>
     </tu>
     <tu>
@@ -14050,6 +14133,27 @@ version = "3.4.2"</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`Base.cconvert`&lt;x1/&gt; normally just calls &lt;x2/&gt;`convert`&lt;x3/&gt;, but can be defined to return an
+arbitrary new object more appropriate for passing to C.
+This should be used to perform all allocations of memory that will be accessed by the C code.
+For example, this is used to convert an &lt;x4/&gt;Array&lt;x5/&gt; of objects (e.g. strings) to an array of pointers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134302Z" creationid="hsugawa8651" creationdate="20181117T134302Z">
+        <seg>'Base.チコンベルト'&lt;x1/&gt;は通常、&lt;x2/&gt;'convert`&lt;x3/&gt;を呼び出しますが、次のように定義することができます。 任意の新しいオブジェクトを渡すには、任意の新しいオブジェクトが必要です。 これは、Cコードによってアクセスされるメモリーのすべての割り当てを実行するために使用される必要があります。 たとえば、これは、オブジェクトの&lt;x4/&gt;配列&lt;x5/&gt;をポインタの配列に変換するために使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Base.unsafe_convert`&lt;x1/&gt; handles conversion to &lt;x2/&gt;`Ptr`&lt;x3/&gt; types. It is considered unsafe because
+converting an object to a native pointer can hide the object from the garbage collector, causing
+it to be freed prematurely.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134306Z" creationid="hsugawa8651" creationdate="20181117T134306Z">
+        <seg>'Base.unsafe_convert'&lt;x1/&gt;は、&lt;x2/&gt;`Ptr'&lt;x3/&gt;型への変換を処理します。安全ではないと考えられます。 オブジェクトをネイティブ・ポインタに変換すると、ガーベッジ・コレクターからオブジェクトを非表示にすることができます。 早期に解放することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`BitArray`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041651Z" creationid="hsugawa8651" creationdate="20181112T041651Z">
@@ -15331,6 +15435,16 @@ Base.unsafe_store!</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224034Z" creationid="hsugawa8651" creationdate="20181109T224034Z">
         <seg>クロック&lt;x1/&gt;は引数を取らず、&lt;x2/&gt;`Int32`&lt;x3/&gt;を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>clock&lt;x1/&gt; takes no arguments and returns an &lt;x2/&gt;`Int32`&lt;x3/&gt;. One common gotcha is that a 1-tuple must be
+written with a trailing comma. For example, to call the &lt;x4/&gt;getenv&lt;x5/&gt; function to get a pointer to
+the value of an environment variable, one makes a call like this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134117Z" creationid="hsugawa8651" creationdate="20181117T134117Z">
+        <seg>clock&lt;x1/&gt;は引数を取らず、&lt;x2/&gt;`Int32`&lt;x3/&gt;を返します。1つの一般的なgotchaは1タプルを必要とします。 は、次のように記述されます。たとえば、&lt;x4/&gt;getenv&lt;x5/&gt;関数を呼び出してポインタを取得するには、次のようにカンマで区切ります。 環境変数の値は、次のような呼び出しを行います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26558,6 +26672,23 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>mutable struct&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134317Z" creationid="hsugawa8651" creationdate="20181117T134317Z">
+        <seg>mutable struct&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>mycompare&lt;x1/&gt;, which will allow you to see the comparisons that &lt;x2/&gt;qsort&lt;x3/&gt; is performing
+(and to verify that it is really calling the Julia function that you passed to it).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134203Z" creationid="hsugawa8651" creationdate="20181117T134203Z">
+        <seg>&lt;x2/&gt;qsort&lt;x3/&gt;が実行されている比較を表示するためのミコンパレ&lt;x1/&gt; (そして、それが渡されたJulia関数を実際に呼び出していることを確認するためです)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>n&lt;x1/&gt; worker processes, while &lt;x2/&gt;--machine-file file&lt;x3/&gt; will launch a worker
 for each line in file &lt;x4/&gt;file&lt;x5/&gt;.</seg>
       </tuv>
@@ -27779,6 +27910,14 @@ arguments of &lt;x5/&gt;Style1&lt;x6/&gt; and &lt;x7/&gt;Style2&lt;x8/&gt;.</seg
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T020134Z" creationid="hsugawa8651" creationdate="20181116T020134Z">
         <seg>will add documentation to &lt;x1/&gt;f(x)&lt;x2/&gt; when &lt;x3/&gt;condition()&lt;x4/&gt; is &lt;x5/&gt;true&lt;x6/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>will behave as if the following were written:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134254Z" creationid="hsugawa8651" creationdate="20181117T134254Z">
+        <seg>次のような動作をします。</seg>
       </tuv>
     </tu>
     <tu>
