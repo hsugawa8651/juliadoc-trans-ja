@@ -14733,6 +14733,15 @@ version = "3.4.2"</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`@cfunction`&lt;x1/&gt; requires three arguments: the Julia function (&lt;x2/&gt;mycompare&lt;x3/&gt;), the return type
+(&lt;x4/&gt;Cint&lt;x5/&gt;), and a literal tuple of the input argument types, in this case to sort an array of &lt;x6/&gt;Cdouble&lt;x7/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T145915Z" creationid="hsugawa8651" creationdate="20181117T145915Z">
+        <seg>`@cfunction&lt;x1/&gt;は3つの引数を必要とします:Julia関数(&lt;x2/&gt;ミコンパレ&lt;x3/&gt;)、戻り値のタイプ (&lt;x4/&gt;Cint&lt;x5/&gt;)と、入力引数型のリテラルタプルで、この場合は&lt;x6/&gt;Cdouble&lt;x7/&gt;の配列をソートします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`AbstractArray`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041605Z" creationid="hsugawa8651" creationdate="20181112T041605Z">
