@@ -10766,6 +10766,14 @@ of function and arguments.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>OR</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135422Z" creationid="hsugawa8651" creationdate="20181117T135422Z">
+        <seg>または</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Of particular interest may be &lt;x2/&gt;An Interview with the Old Man of Floating-Point&lt;x3/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111534Z" creationid="hsugawa8651" creationdate="20181112T111534Z">
@@ -14697,16 +14705,6 @@ version = "3.4.2"</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>`@cfunction`&lt;x1/&gt; requires three arguments: the Julia function (&lt;x2/&gt;mycompare&lt;x3/&gt;), the return type
-(&lt;x4/&gt;Cint&lt;x5/&gt;), and a literal tuple of the input argument types, in this case to sort an array of &lt;x6/&gt;Cdouble&lt;x7/&gt;</seg>
-      </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T022655Z" creationid="hsugawa8651" creationdate="20181116T022655Z">
-        <seg>`@cfunction`&lt;x1/&gt; requires three arguments: the Julia function (&lt;x2/&gt;mycompare&lt;x3/&gt;), the return type
-(&lt;x4/&gt;Cint&lt;x5/&gt;), and a literal tuple of the input argument types, in this case to sort an array of &lt;x6/&gt;Cdouble&lt;x7/&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>`AbstractArray`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041605Z" creationid="hsugawa8651" creationdate="20181112T041605Z">
@@ -14772,6 +14770,16 @@ it to be freed prematurely.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160448Z" creationid="hsugawa8651" creationdate="20181109T160448Z">
         <seg>「BitArray」&lt;x1/&gt;は、ブール値ごとに1ビットを格納するスペース効率の高い「パックされた」ブール演算配列です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`BitArray`&lt;x1/&gt;s are space-efficient "packed" boolean arrays, which store one bit per boolean value.
+They can be used similarly to &lt;x2/&gt;Array{Bool}&lt;x3/&gt; arrays (which store one byte per boolean value),
+and can be converted to/from the latter via &lt;x4/&gt;Array(bitarray)&lt;x5/&gt; and &lt;x6/&gt;BitArray(array)&lt;x7/&gt;, respectively.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135407Z" creationid="hsugawa8651" creationdate="20181117T135407Z">
+        <seg>「BitArray」&lt;x1/&gt;は、ブール値ごとに1ビットを格納するスペース効率の高い「パックされた」ブール演算配列です。 これらは、&lt;x2/&gt;Array{Bool}&lt;x3/&gt;配列(ブール値ごとに1バイトを格納する)と同様に使用できます。 また、&lt;x4/&gt;アレイ(bitarray)&lt;x5/&gt;および&lt;x6/&gt;BitArray(配列)&lt;x7/&gt;を介して、後者との間で変換を行うことができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15580,6 +15588,21 @@ and all further calculations will take these changes in account.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160431Z" creationid="hsugawa8651" creationdate="20181109T160431Z">
         <seg>「view」&lt;x1/&gt;関数は、以下と同じ方法で呼び出されます。 &lt;x2/&gt;`getindex'&lt;x3/&gt;(配列と一連のインデックス引数を持つ)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`view`&lt;x1/&gt; function, which is called the same way as
+&lt;x2/&gt;`getindex`&lt;x3/&gt; (with an array and a series of index arguments). The result
+of &lt;x4/&gt;`view`&lt;x5/&gt; looks the same as the result of &lt;x6/&gt;`getindex`&lt;x7/&gt;, except the
+data is left in place. &lt;x8/&gt;`view`&lt;x9/&gt; stores the input index vectors in a
+&lt;x10/&gt;SubArray&lt;x11/&gt; object, which can later be used to index the original array
+indirectly.  By putting the &lt;x12/&gt;`@views`&lt;x13/&gt; macro in front of an expression or
+block of code, any &lt;x14/&gt;array[...]&lt;x15/&gt; slice in that expression will be converted to
+create a &lt;x16/&gt;SubArray&lt;x17/&gt; view instead.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135345Z" creationid="hsugawa8651" creationdate="20181117T135345Z">
+        <seg>「view」&lt;x1/&gt;関数は、以下と同じ方法で呼び出されます。 &lt;x2/&gt;`getindex'&lt;x3/&gt;(配列と一連のインデックス引数を持つ)。結果 &lt;x4/&gt;'view'&lt;x5/&gt;は、&lt;x6/&gt;'getindex'&lt;x7/&gt;の結果と同じであるが データは所定の場所に残されます。&lt;x8/&gt;'view'&lt;x9/&gt;は、入力インデックスベクトルを格納します。 &lt;x10/&gt;サブアレイ&lt;x11/&gt;オブジェクトで、後でオリジナルの配列をインデックス化するために使用できます。 間接的には、&lt;x12/&gt;`@views`&lt;x13/&gt;マクロを式の前に置くか、または コードのブロック、任意の&lt;x14/&gt;配列[.]&lt;x15/&gt;スライスは、その式の中に変換されます。 代わりに&lt;x16/&gt;サブアレイを作成&lt;x17/&gt;ビューを作成します。</seg>
       </tuv>
     </tu>
     <tu>
