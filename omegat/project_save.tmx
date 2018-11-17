@@ -12932,6 +12932,14 @@ requires using &lt;x3/&gt;llvmcall&lt;x4/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Project environments provide &lt;x1/&gt;reproducibility.&lt;x2/&gt; By checking a project environment into version control—e.g. a git repository—along with the rest of the project's source code, you can reproduce the exact state of the project &lt;x3/&gt;and&lt;x4/&gt; all of its dependencies since the manifest file captures the exact version of every dependency.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T153207Z" creationid="hsugawa8651" creationdate="20181117T153207Z">
+        <seg>プロジェクト環境は、&lt;x1/&gt;再現性を提供します。&lt;x2/&gt;プロジェクト環境をバージョン制御することによって&lt;x/&gt;は、プロジェクトのソースコードとともに、プロジェクトの正確な状態を再現できます。&lt;x3/&gt;は、すべての依存関係の正確なバージョンをキャプチャするため、すべての依存関係の正確な状態を再現できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Properties of Types</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041836Z" creationid="hsugawa8651" creationdate="20181110T041836Z">
