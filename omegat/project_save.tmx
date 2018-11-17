@@ -11339,8 +11339,14 @@ using the &lt;x19/&gt;qsort&lt;x20/&gt; function (rather than Julia's built-in &
 calling &lt;x23/&gt;qsort&lt;x24/&gt; and passing arguments, we need to write a comparison function that works for some
 arbitrary objects (which define &lt;x25/&gt;&lt;&lt;x26/&gt;):</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133931Z" creationid="hsugawa8651" creationdate="20181117T133931Z">
-        <seg>&lt;x1/&gt;の基本&lt;x2/&gt;引数は、&lt;x5/&gt;nmemb&lt;x4/&gt;の配列へのポインタであり、&lt;x5/&gt;サイズ&lt;x6/&gt;バイトの要素がある。 &lt;x7/&gt;比較&lt;x8/&gt;は、2つの要素&lt;x9/&gt;a&lt;x10/&gt;と&lt;x11/&gt;b&lt;x12/&gt;のポインタを取得して返すコールバック関数です。 &lt;x15/&gt;b&lt;x16/&gt;の前/後&lt;x15/&gt;b&lt;x16/&gt;(いずれかの順序がある場合は0)の前に&lt;x13/&gt;a&lt;x14/&gt;を表示する必要がある場合は、0より小さい/大きい整数 が許可されました)。1D配列が指定されている場合は、次の値を指定します。 &lt;x19/&gt;qsort&lt;x20/&gt;関数(Juliaの組み込み&lt;X21/&gt;ソート&lt;x22/&gt;関数ではなく)を使用します。 &lt;x23/&gt;qsort&lt;x24/&gt;を呼び出して引数を渡す必要があります。 任意のオブジェクト(&lt;x25/&gt;&lt;&lt;x26/&gt;を定義します):</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133933Z" creationid="hsugawa8651" creationdate="20181117T133931Z">
+        <seg>The &lt;x1/&gt;base&lt;x2/&gt; argument is a pointer to an array of length &lt;x3/&gt;nmemb&lt;x4/&gt;, with elements of &lt;x5/&gt;size&lt;x6/&gt; bytes
+each. &lt;x7/&gt;compare&lt;x8/&gt; is a callback function which takes pointers to two elements &lt;x9/&gt;a&lt;x10/&gt; and &lt;x11/&gt;b&lt;x12/&gt; and returns
+an integer less/greater than zero if &lt;x13/&gt;a&lt;x14/&gt; should appear before/after &lt;x15/&gt;b&lt;x16/&gt; (or zero if any order
+is permitted). Now, suppose that we have a 1d array &lt;x17/&gt;A&lt;x18/&gt; of values in Julia that we want to sort
+using the &lt;x19/&gt;qsort&lt;x20/&gt; function (rather than Julia's built-in &lt;x21/&gt;sort&lt;x22/&gt; function). Before we worry about
+calling &lt;x23/&gt;qsort&lt;x24/&gt; and passing arguments, we need to write a comparison function that works for some
+arbitrary objects (which define &lt;x25/&gt;&lt;&lt;x26/&gt;):</seg>
       </tuv>
     </tu>
     <tu>
@@ -21892,6 +21898,20 @@ julia&gt; eval(ex)
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T022642Z" creationid="hsugawa8651" creationdate="20181116T022642Z">
         <seg>julia&gt; function mycompare(a, b)::Cint
            return (a &lt; b) ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; function mycompare(a, b)::Cint
+           return (a &lt; b) ? -1 : ((a &gt; b) ? +1 : 0)
+       end
+mycompare (generic function with 1 method)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133940Z" creationid="hsugawa8651" creationdate="20181117T133940Z">
+        <seg>julia&gt; function mycompare(a, b)::Cint
+           return (a &lt; b) ? -1 : ((a &gt; b) ? +1 : 0)
+       end
+mycompare (generic function with 1 method)</seg>
       </tuv>
     </tu>
     <tu>
