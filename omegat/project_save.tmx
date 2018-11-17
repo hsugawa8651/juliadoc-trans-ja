@@ -1539,6 +1539,14 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>...&lt;x1/&gt; (e.g. a vararg)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151603Z" creationid="hsugawa8651" creationdate="20181117T151603Z">
+        <seg>...&lt;x1/&gt; (e.g. a vararg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>.&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063530Z" creationid="hsugawa8651" creationdate="20181114T063530Z">
@@ -11993,6 +12001,14 @@ for more efficient linear algebra routines.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Ptr{Cvoid}&lt;x1/&gt; (you may need to use &lt;x2/&gt;`@cfunction`&lt;x3/&gt; explicitly to create this pointer)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151602Z" creationid="hsugawa8651" creationdate="20181117T151602Z">
+        <seg>Ptr{Cvoid}&lt;x1/&gt;(このポインタを作成するためには、&lt;x2/&gt;`@cfunction`&lt;x3/&gt;を明示的に使用する必要があります)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Punctuation</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150207Z" creationid="hsugawa8651" creationdate="20181117T150202Z">
@@ -12069,10 +12085,26 @@ an interactive session.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Ref{Any}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151540Z" creationid="hsugawa8651" creationdate="20181117T151540Z">
+        <seg>Ref{Any}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Ref{T}&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134447Z" creationid="hsugawa8651" creationdate="20181117T134447Z">
         <seg>Ref{T}&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ref{T}&lt;x1/&gt;, where &lt;x2/&gt;T&lt;x3/&gt; is the Julia type corresponding to &lt;x4/&gt;T&lt;x5/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151553Z" creationid="hsugawa8651" creationdate="20181117T151553Z">
+        <seg>参照{T}&lt;x1/&gt;。&lt;x2/&gt;T&lt;x3/&gt;は、&lt;x4/&gt;T&lt;x5/&gt;に対応するジュリア型である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12803,6 +12835,22 @@ interoperable code.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>T (*)(...)&lt;x1/&gt; (e.g. a pointer to a function)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151559Z" creationid="hsugawa8651" creationdate="20181117T151559Z">
+        <seg>T(*)(...)&lt;x1/&gt;(例:関数へのポインタ)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>T*&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151547Z" creationid="hsugawa8651" creationdate="20181117T151547Z">
+        <seg>T*&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>T...&lt;x1/&gt; (where &lt;x2/&gt;T&lt;x3/&gt; is one of the above types, variadic functions of different argument types are not supported)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150946Z" creationid="hsugawa8651" creationdate="20181117T150946Z">
@@ -12831,6 +12879,14 @@ interoperable code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151245Z" creationid="hsugawa8651" creationdate="20181117T151245Z">
         <seg>T&lt;x1/&gt;は静的に認識されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>T&lt;x1/&gt;, where &lt;x2/&gt;T&lt;x3/&gt; is a Julia leaf type</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151519Z" creationid="hsugawa8651" creationdate="20181117T151519Z">
+        <seg>T&lt;x1/&gt;は、&lt;x2/&gt;T&lt;x3/&gt;はJulia leaf型である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17398,10 +17454,35 @@ abstract type Unsigned &lt;: Integer end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>argument value must be a valid Julia object</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151536Z" creationid="hsugawa8651" creationdate="20181117T151533Z">
+        <seg>引数の値は有効なJuliaオブジェクトでなければなりません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>argument value must be a valid Julia object (or &lt;x1/&gt;C_NULL&lt;x2/&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151546Z" creationid="hsugawa8651" creationdate="20181117T151546Z">
+        <seg>引数の値は有効なジュリアオブジェクトでなければなりません(または&lt;x1/&gt;C_NULL&lt;x2/&gt;)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>argument value will be copied (passed by value)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151515Z" creationid="hsugawa8651" creationdate="20181117T151515Z">
         <seg>引数の値がコピーされます(値によって渡されます)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>argument value will be copied if it is an &lt;x1/&gt;isbits&lt;x2/&gt; type otherwise, the value must be a valid Julia
+object</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151556Z" creationid="hsugawa8651" creationdate="20181117T151556Z">
+        <seg>引数の値は、&lt;x1/&gt;イスビトス&lt;x2/&gt;の場合はコピーされます。それ以外の場合は、有効なジュリアである必要があります。 オブジェクト</seg>
       </tuv>
     </tu>
     <tu>
@@ -17821,6 +17902,15 @@ defalg(v::AbstractArray{&lt;:Number}) = QuickSort</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063507Z" creationid="hsugawa8651" creationdate="20181114T063507Z">
         <seg>文字列リテラルを区切る</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>depends on how this parameter is used, first translate this to the intended pointer type, then
+determine the Julia equivalent using the remaining rules in this list</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151525Z" creationid="hsugawa8651" creationdate="20181117T151525Z">
+        <seg>このパラメータがどのように使用されるかによって異なります。まず、このパラメータを目的のポインタ・タイプに変換します。 このリストの残りのルールを使用して、Julia equivalentを決定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19212,6 +19302,22 @@ Markdown.parse("```\n\$ julia\n\n$(banner)\njulia&gt; 1 + 2\n3\n\njulia&gt; ans\
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112106Z" creationid="hsugawa8651" creationdate="20181112T112106Z">
         <seg>iterate(iter, state)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>jl_value_t**&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151537Z" creationid="hsugawa8651" creationdate="20181117T151537Z">
+        <seg>jl_value_t**&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>jl_value_t*&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151529Z" creationid="hsugawa8651" creationdate="20181117T151529Z">
+        <seg>jl_value_t*&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -30240,6 +30346,14 @@ when, how often or how many times these side-effects will occur</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>this argument may be declared as &lt;x1/&gt;Ptr{Cvoid}&lt;x2/&gt;, if it really is just an unknown pointer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151527Z" creationid="hsugawa8651" creationdate="20181117T151527Z">
+        <seg>この引数は、実際には未知のポインタである場合、&lt;x1/&gt;Ptr{Cvoid}&lt;x2/&gt;として宣言されることがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>true : odd(n - 1);
 
 julia&gt; odd(n) = (n == 0) ?</seg>
@@ -30350,6 +30464,14 @@ julia&gt; 1 &gt; 2 ?</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133922Z" creationid="hsugawa8651" creationdate="20181117T133922Z">
         <seg>void qsort(void *base, size_t nmemb, size_t size,
            int (*compare)(const void*, const void*));</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>void*&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151521Z" creationid="hsugawa8651" creationdate="20181117T151521Z">
+        <seg>void*&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
