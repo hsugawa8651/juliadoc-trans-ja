@@ -12859,6 +12859,14 @@ interoperable code.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>T...&lt;x1/&gt;, where &lt;x2/&gt;T&lt;x3/&gt; is the Julia type</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151748Z" creationid="hsugawa8651" creationdate="20181117T151748Z">
+        <seg>T.…&lt;x1/&gt;は、&lt;x2/&gt;T&lt;x3/&gt;はジュリア型である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>T&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031120Z" creationid="hsugawa8651" creationdate="20181114T031120Z">
