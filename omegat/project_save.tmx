@@ -2501,6 +2501,14 @@ aliases for the 1-d and 2-d cases.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x7/&gt;`ccall`&lt;x8/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152231Z" creationid="hsugawa8651" creationdate="20181117T152231Z">
+        <seg>&lt;x7/&gt;`ccall`&lt;x8/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x7/&gt;compare&lt;x8/&gt; is a callback function which takes pointers to two elements &lt;x9/&gt;a&lt;x10/&gt; and &lt;x11/&gt;b&lt;x12/&gt; and returns
 an integer less/greater than zero if &lt;x13/&gt;a&lt;x14/&gt; should appear before/after &lt;x15/&gt;b&lt;x16/&gt; (or zero if any order
 is permitted).</seg>
@@ -2632,6 +2640,14 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>@eval ccall(($(string("a", "b")), "lib"), ...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152304Z" creationid="hsugawa8651" creationdate="20181117T152304Z">
+        <seg>@eval ccall(($(string("a", "b")), "lib"), ...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>@m&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150220Z" creationid="hsugawa8651" creationdate="20181117T150220Z">
@@ -2715,6 +2731,14 @@ external C and Fortran functions that expect this memory layout.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223837Z" creationid="hsugawa8651" creationdate="20181109T223837Z">
         <seg>&lt;x1/&gt;(:関数、"ライブラリ")&lt;x2/&gt;ペアで、リテラル定数として記述される必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;x1/&gt;(name, library)&lt;x2/&gt; function specification must be a constant expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152259Z" creationid="hsugawa8651" creationdate="20181117T152259Z">
+        <seg>&lt;x1/&gt;(名前、ライブラリ)&lt;x2/&gt;関数仕様は、定数式でなければなりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2858,6 +2882,14 @@ they are iterable collections of their characters (see &lt;x27/&gt;Strings&lt;x2
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A notable exception is &lt;x5/&gt;`unsafe_wrap`&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152246Z" creationid="hsugawa8651" creationdate="20181117T152246Z">
+        <seg>注目すべき例外は、&lt;x5/&gt;'insafe_wrap'&lt;x6/&gt;です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A pointer
 to memory allocated by Julia must be of type &lt;x13/&gt;Ref{gsl_permutation}&lt;x14/&gt;, to ensure that the memory
 address pointed to is valid and that Julia's garbage collector manages the chunk of memory pointed
@@ -2891,6 +2923,14 @@ arguments, as noted above).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134945Z" creationid="hsugawa8651" creationdate="20181117T134945Z">
         <seg>スカラー・インデックスです。デフォルトでは、次のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A similar example can be constructed for &lt;x6/&gt;`@cfunction`&lt;x7/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152315Z" creationid="hsugawa8651" creationdate="20181117T152315Z">
+        <seg>同様の例は、&lt;x6/&gt;`@cfunction`&lt;x7/&gt;のために構成することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3109,6 +3149,22 @@ Dingo/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Accessing Data through a Pointer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152522Z" creationid="hsugawa8651" creationdate="20181117T152522Z">
+        <seg>ポインタを介してデータにアクセスする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Accessing Global Variables</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152506Z" creationid="hsugawa8651" creationdate="20181117T152506Z">
+        <seg>グローバル変数へのアクセス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Adding parentheses lets
 us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
       </tuv>
@@ -3291,6 +3347,16 @@ that can be applied to arrays (and combinations of arrays and scalars) in such
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160010Z" creationid="hsugawa8651" creationdate="20181109T160010Z">
         <seg>また、&lt;x2/&gt;バイナリ演算子の&lt;x1/&gt;は、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man dot演算子)をサポートします。 は、配列(および配列とスカラーの組み合わせ)に適用することができます。 &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref manベクトル化)、例えば&lt;x9/&gt;z.=sin.(x .* y)&lt;x10/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Also, note that there is no compatibility layer that ensures the intrinsic makes
+sense and works on the current target,
+unlike the equivalent Julia functions exposed by &lt;x3/&gt;Core.Intrinsics&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152503Z" creationid="hsugawa8651" creationdate="20181117T152503Z">
+        <seg>また、固有のmakeを確実にする互換性レイヤーは存在しないことに注意してください。 現在の目標を意識して これは、&lt;x3/&gt;コアによって露出される同等のジュリア関数とは異なります。inintrics&lt;x4/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3584,6 +3650,15 @@ accessing the diagonal elements from the first "page" of &lt;x5/&gt;A&lt;x6/&gt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Array{Ref,1}&lt;x1/&gt; to hold these values, until
+the C library notifies you that it is finished with them.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152238Z" creationid="hsugawa8651" creationdate="20181117T152238Z">
+        <seg>配列{Ref,1}&lt;x1/&gt;を指定して、次の値を保持します。 Cライブラリは、それが完了したことを通知します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Array{S}(undef, dims)&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022453Z" creationid="hsugawa8651" creationdate="20181113T022453Z">
@@ -3614,6 +3689,16 @@ on top of &lt;x1/&gt;`Dict`&lt;x2/&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083217Z" creationid="hsugawa8651" creationdate="20181113T083217Z">
         <seg>より複雑な例として、独自の玩具N次元の疎な配列タイプの配列を作成します。 top of&lt;x1/&gt;'Dict'&lt;x2/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As a result, the code may produce a memory leak if &lt;x14/&gt;result_array&lt;x15/&gt; never gets
+freed by the garbage collector, or if the garbage collector prematurely frees &lt;x16/&gt;result_array&lt;x17/&gt;,
+the C function may end up throwing an invalid memory access exception.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152221Z" creationid="hsugawa8651" creationdate="20181117T152221Z">
+        <seg>結果として、&lt;x14/&gt;result_array&lt;x15/&gt;が決して実行されない場合、コードはメモリリークを生成する可能性があります。 ガーベッジ・コレクタによって解放されるか、ガーベッジ・コレクタが&lt;x16/&gt;の結果_array&lt;x17/&gt;を早期に解放するか C関数は、無効なメモリアクセス例外をスローする可能性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3733,6 +3818,14 @@ command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151936Z" creationid="hsugawa8651" creationdate="20181117T151936Z">
         <seg>ユーザコードは、&lt;x9/&gt;gsl_mutation&lt;x10/&gt;の中では絶対に内部を見る必要がない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As with any &lt;x1/&gt;ccall&lt;x2/&gt;, it is essential to get the argument signature exactly correct.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152501Z" creationid="hsugawa8651" creationdate="20181117T152501Z">
+        <seg>任意の&lt;x1/&gt;ccall&lt;x2/&gt;と同様に、引数シグニチャを正確に取得することが必須です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6644,6 +6737,14 @@ they don't intend to change.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Calling Convention</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152415Z" creationid="hsugawa8651" creationdate="20181117T152415Z">
+        <seg>通話条約</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Calling any function that is defined after the body of the generated function.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032235Z" creationid="hsugawa8651" creationdate="20181116T032235Z">
@@ -8427,6 +8528,16 @@ numbers, as well as discussion of many other topics in numerical computing, see 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example (from
+&lt;x11/&gt;base/libc.jl&lt;x12/&gt;) we see the same &lt;x13/&gt;gethostname&lt;x14/&gt;&lt;x15/&gt;`ccall`&lt;x16/&gt; as above, but with the correct
+signature for Windows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152434Z" creationid="hsugawa8651" creationdate="20181117T152434Z">
+        <seg>たとえば &lt;x11/&gt;ベース/libc.jl&lt;x12/&gt;は上記と同じように&lt;x13/&gt;gethostname&lt;x15/&gt;`ccall'&lt;x16/&gt;のように見えますが、正しいものは正しいものです。 Windowsのシグニチャ:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example,</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154603Z" creationid="hsugawa8651" creationdate="20181109T154603Z">
@@ -8572,6 +8683,14 @@ rather than stored.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160316Z" creationid="hsugawa8651" creationdate="20181109T160316Z">
         <seg>たとえば、要求に基づいて要素を計算することができます。 保存するのではなく。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, for &lt;x4/&gt;CUDA&lt;x5/&gt;, we need to be able to read the thread index:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152451Z" creationid="hsugawa8651" creationdate="20181117T152451Z">
+        <seg>たとえば、&lt;x4/&gt;CUDA&lt;x5/&gt;の場合は、スレッド・インデックスを読み取る必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8750,6 +8869,15 @@ writing &lt;x5/&gt;x = x + 3&lt;x6/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, you might look up the function via &lt;x1/&gt;dlsym&lt;x2/&gt;,
+then cache it in a shared reference for that session.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152330Z" creationid="hsugawa8651" creationdate="20181117T152330Z">
+        <seg>たとえば、&lt;x1/&gt;dlsym&lt;x2/&gt;を使用して関数を検索することができます。 そのセッションの共有参照にキャッシュされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025044Z" creationid="hsugawa8651" creationdate="20181110T025044Z">
@@ -8792,6 +8920,16 @@ and then &lt;x5/&gt;2&lt;x6/&gt; is added to that result.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For instance, when developing C code for use with Julia, one may need to compile,
+call the C code from Julia, then close the library, make an edit, recompile,
+and load in the new changes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152355Z" creationid="hsugawa8651" creationdate="20181117T152355Z">
+        <seg>たとえば、Juliaと共に使用するCコードを作成する場合は、コンパイルする必要があります。 Cコードをジュリアから呼び出して、ライブラリを閉じ、編集を行い、再コンパイルします。 新しい変更にロードされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For more details on defining custom
 &lt;x16/&gt;AbstractArray&lt;x17/&gt; implementations, see the &lt;x18/&gt;&lt;x19/&gt;&lt;x20/&gt;(@ref man-interface-array).</seg>
       </tuv>
@@ -8805,6 +8943,14 @@ and then &lt;x5/&gt;2&lt;x6/&gt; is added to that result.)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131253Z" creationid="hsugawa8651" creationdate="20181113T131253Z">
         <seg>詳細は、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref writing binary broadcasting rules)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For more information, please see the &lt;x1/&gt;LLVM Language Reference&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152445Z" creationid="hsugawa8651" creationdate="20181117T152445Z">
+        <seg>詳細については、「&lt;x1/&gt;LLVM言語リファレンス&lt;x2/&gt;」を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8867,6 +9013,15 @@ let's try a two-way version first:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230122Z" creationid="hsugawa8651" creationdate="20181109T230122Z">
         <seg>わかりやすくするために まず2ウェイのバージョンを試してみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For this reason, &lt;x4/&gt;eval&lt;x5/&gt; is typically only used to form top-level definitions, for example
+when wrapping libraries that contain many similar functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152313Z" creationid="hsugawa8651" creationdate="20181117T152313Z">
+        <seg>このため、&lt;x4/&gt;eval&lt;x5/&gt;は通常、最上位レベルの定義を形成するためにのみ使用されます。たとえば、次のようになります。 は、多くの類似する関数を含むライブラリをラップするときに使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8962,6 +9117,14 @@ are identical to the passed values.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Garbage Collection Safety</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152223Z" creationid="hsugawa8651" creationdate="20181117T152223Z">
+        <seg>ゴミ回収の安全</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>General Collections</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041620Z" creationid="hsugawa8651" creationdate="20181112T041620Z">
@@ -9029,12 +9192,29 @@ inner functions used elsewhere in the language, variables from the enclosing sco
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Given a &lt;x1/&gt;Ptr{T}&lt;x2/&gt;, the contents of type &lt;x3/&gt;T&lt;x4/&gt; can generally be copied from the referenced memory
+into a Julia object using &lt;x5/&gt;unsafe_load(ptr, [index])&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152527Z" creationid="hsugawa8651" creationdate="20181117T152527Z">
+        <seg>&lt;x1/&gt;Ptr{T}&lt;x2/&gt;を与えられると、タイプ&lt;x3/&gt;T&lt;x4/&gt;の内容は、一般的に参照されたメモリからコピーされる。 &lt;x5/&gt;unsafe_load(ptr,[index])&lt;x6/&gt;を使用してジュリアオブジェクトに変換します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Given a dictionary &lt;x1/&gt;D&lt;x2/&gt;, the syntax &lt;x3/&gt;D[x]&lt;x4/&gt; returns the value of key &lt;x5/&gt;x&lt;x6/&gt; (if it exists) or throws
 an error, and &lt;x7/&gt;D[x] = y&lt;x8/&gt; stores the key-value pair &lt;x9/&gt;x =&gt; y&lt;x10/&gt; in &lt;x11/&gt;D&lt;x12/&gt; (replacing any existing value
 for the key &lt;x13/&gt;x&lt;x14/&gt;).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041754Z" creationid="hsugawa8651" creationdate="20181112T041754Z">
         <seg>辞書&lt;x1/&gt;D&lt;x2/&gt;を与えられると、構文&lt;x3/&gt;D[x]&lt;x4/&gt;は、キー&lt;x5/&gt;x&lt;x6/&gt;(存在する場合)の値を返すか、あるいはスローします。 エラーと&lt;x7/&gt;D[x]=y&lt;x8/&gt;は、&lt;x11/&gt;D&lt;x12/&gt;(既存の値を置き換える)の&lt;x9/&gt;x=&gt;y&lt;x10/&gt;のキー値ペアを格納します。 &lt;x13/&gt;x&lt;x14/&gt;x14/&gt;)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Global variables exported by native libraries can be accessed by name using the &lt;x1/&gt;`cglobal`&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152508Z" creationid="hsugawa8651" creationdate="20181117T152508Z">
+        <seg>ネイティブライブラリによってエクスポートされたグローバル変数は、&lt;x1/&gt;`cglobal`&lt;x2/&gt;を使用して名前によってアクセスできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9259,10 +9439,27 @@ mutable arrays should also implement &lt;x14/&gt;`setindex!`&lt;x15/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, doing this will also be very slow and leak memory, so you should usually avoid this and instead keep reading.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152317Z" creationid="hsugawa8651" creationdate="20181117T152317Z">
+        <seg>しかし、これは非常に低速でリークメモリもあるので、通常はこれを避けてから、読み続けてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, if needed you can specialize on any or all of these arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131338Z" creationid="hsugawa8651" creationdate="20181113T131338Z">
         <seg>ただし、必要に応じて、これらの引数のいずれかまたはすべてを専門にすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, it is possible
+to use computed values as function names by staging through &lt;x3/&gt;`eval`&lt;x4/&gt; as follows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152302Z" creationid="hsugawa8651" creationdate="20181117T152302Z">
+        <seg>しかし、それは可能である。 次のように&lt;x3/&gt;'eval'&lt;x4/&gt;を通してステージングすることによって関数名として計算された値を使用することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9555,6 +9752,15 @@ on &lt;x3/&gt;DestStyle&lt;x4/&gt;, then you should define a method with the fol
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150316Z" creationid="hsugawa8651" creationdate="20181117T150316Z">
         <seg>必要に応じて、ソート・アルゴリズムを選択できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If proper finalization of &lt;x13/&gt;a&lt;x14/&gt; depends on &lt;x15/&gt;b&lt;x16/&gt; being valid,
+it must be handled in other ways.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152255Z" creationid="hsugawa8651" creationdate="20181117T152255Z">
+        <seg>&lt;x13/&gt;a&lt;x14/&gt;の適切なファイナライズは、&lt;x15/&gt;b&lt;x16/&gt;が有効であることによって異なります。 他の方法で処理する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10102,6 +10308,16 @@ it will be a &lt;x7/&gt;CartesianIndex&lt;x8/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this
+case, the expression must evaluate to a &lt;x3/&gt;Ptr&lt;x4/&gt;, which will be used as the address of the native
+function to call.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152325Z" creationid="hsugawa8651" creationdate="20181117T152325Z">
+        <seg>この 例:式は、ネイティブのアドレスとして使用される&lt;x3/&gt;Ptr&lt;x4/&gt;に評価される必要があります。 関数が呼び出されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In this case there will be no hidden arguments, at the cost of some
 language features (e.g. only &lt;x11/&gt;character(len=1)&lt;x12/&gt; will be permitted to pass strings).</seg>
       </tuv>
@@ -10288,6 +10504,14 @@ of the iteration state externally from the object.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112355Z" creationid="hsugawa8651" creationdate="20181112T112355Z">
         <seg>代わりに 反復されるときにオブジェクトをミューテートすることで、ジュリア反復子は追跡することができる オブジェクトからの繰り返し状態の繰り返し状態です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Instead define a convert method and pass the variables directly to the &lt;x5/&gt;`ccall`&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152230Z" creationid="hsugawa8651" creationdate="20181117T152230Z">
+        <seg>代わりに変換メソッドを定義して、変数を直接&lt;x5/&gt;`ccall'&lt;x6/&gt;に渡します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10610,6 +10834,14 @@ only evaluated if the condition expression evaluates to &lt;x9/&gt;true&lt;x10/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230156Z" creationid="hsugawa8651" creationdate="20181109T230156Z">
         <seg>&lt;x2/&gt;-&lt;x3/&gt;elseif&lt;x4/&gt;&lt;x5/&gt;else&lt;x6/&gt;以外の&lt;x6/&gt;&lt;x6/&gt;の場合は、&lt;x7/&gt;:&lt;x8/&gt;:&lt;x8/&gt;=&lt;x8/&gt;となる。 条件式が&lt;x9/&gt;真&lt;x10/&gt;または&lt;x11/&gt;false&lt;x12/&gt;と評価された場合にのみ評価されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is sometimes useful to close (unload) a library so that it can be reloaded.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152352Z" creationid="hsugawa8651" creationdate="20181117T152352Z">
+        <seg>ライブラリを閉じる(アンロードする)ことによって、ライブラリを再ロードすることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11135,6 +11367,14 @@ integer literals and engineering notation for floating-point literals.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Libdl.dlclose(lib) &lt;x4/&gt; Close the library explicitly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152410Z" creationid="hsugawa8651" creationdate="20181117T152410Z">
+        <seg>Libdl.dlclose(lib)&lt;x4/&gt;ライブラリを明示的に閉じます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Like &lt;x2/&gt;Dict&lt;x3/&gt; it uses &lt;x4/&gt;hash&lt;x5/&gt; for hashing and &lt;x6/&gt;isequal&lt;x7/&gt; for equality, unlike &lt;x8/&gt;Dict&lt;x9/&gt; it does
 not convert keys on insertion.</seg>
       </tuv>
@@ -11238,6 +11478,16 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154333Z" creationid="hsugawa8651" creationdate="20181109T154333Z">
         <seg>配列を作成して初期化するための多くの関数が用意されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Many methods in Julia such as &lt;x1/&gt;`unsafe_load`&lt;x2/&gt; and
+&lt;x3/&gt;`String`&lt;x4/&gt; make copies of data instead of taking ownership of the buffer, so that it is
+safe to free (or alter) the original data without affecting Julia.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152244Z" creationid="hsugawa8651" creationdate="20181117T152244Z">
+        <seg>&lt;x1/&gt;"unsafe_load"&lt;x2/&gt;などのJuliaでは多くのメソッドがあり &lt;x3/&gt;'String'&lt;x4/&gt;は、バッファの所有権を取得する代わりに、データのコピーを作成します。したがって、次のような結果が得られます。 Juliaに影響を与えることなく、元のデータを自由に(または変更)することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11601,6 +11851,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Non-constant Function Specifications</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152257Z" creationid="hsugawa8651" creationdate="20181117T152257Z">
+        <seg>非定常関数仕様</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>None of the examples
 given here provide any type annotations on their arguments, meaning that they are applicable to
 all types of arguments.</seg>
@@ -11793,6 +12051,16 @@ Evaluation in Julia, as outlined in the next section.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230030Z" creationid="hsugawa8651" creationdate="20181109T230030Z">
         <seg>非常に短い条件文(oneliner)は、短絡を使用して頻繁に表現されることに注意してください。 次のセクションで概説されているように、Juliaでの評価。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that when using &lt;x1/&gt;ccall&lt;x2/&gt; with the tuple input
+(e.g., &lt;x3/&gt;ccall((:my_fcn, "./my_lib.so"), ...)&lt;x4/&gt;), the library is opened implicitly
+and it may not be explicitly closed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152413Z" creationid="hsugawa8651" creationdate="20181117T152413Z">
+        <seg>タプル入力で&lt;x1/&gt;ccall&lt;x2/&gt;を使用するときに注意してください。 (例:&lt;x3/&gt;ccall((:my_fcn,"./my_lib.so"),.)&lt;x4/&gt;)ライブラリは暗黙的にオープンされます。 明示的にクローズされることはありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12005,6 +12273,15 @@ session evaluates the expression and shows its value.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>One can either restart Julia or use the
+&lt;x1/&gt;Libdl&lt;x2/&gt; functions to manage the library explicitly, such as:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152357Z" creationid="hsugawa8651" creationdate="20181117T152357Z">
+        <seg>Juliaを再起動するか &lt;x1/&gt;Libdl&lt;x2/&gt;は、ライブラリを明示的に管理するために、次のような関数を実行します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One common gotcha is that a 1-tuple must be
 written with a trailing comma.</seg>
       </tuv>
@@ -12085,6 +12362,14 @@ level operators and functions, in a way that is independent of the underlying st
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030930Z" creationid="hsugawa8651" creationdate="20181114T030918Z">
         <seg>単項演算子の他の組成は、右の連想であるeで解析されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Other supported conventions are: &lt;x3/&gt;stdcall&lt;x4/&gt;, &lt;x5/&gt;cdecl&lt;x6/&gt;, &lt;x7/&gt;fastcall&lt;x8/&gt;, and &lt;x9/&gt;thiscall&lt;x10/&gt; (no-op on 64-bit Windows).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152431Z" creationid="hsugawa8651" creationdate="20181117T152431Z">
+        <seg>その他のサポートされる規則は以下の通りです:&lt;x3/&gt;stdcall&lt;x4/&gt;,&lt;x5/&gt;cdecl&lt;x6/&gt;,&lt;x7/&gt;fastcall&lt;x8/&gt;,&lt;x9/&gt;(64ビットWindows上でのno-op on64ビットWindows)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13258,6 +13543,16 @@ the size.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>That is, if &lt;x1/&gt;a&lt;x2/&gt; contained
+a reference to &lt;x3/&gt;b&lt;x4/&gt; and both &lt;x5/&gt;a&lt;x6/&gt; and &lt;x7/&gt;b&lt;x8/&gt; are due for garbage collection, there is no guarantee
+that &lt;x9/&gt;b&lt;x10/&gt; would be finalized after &lt;x11/&gt;a&lt;x12/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152252Z" creationid="hsugawa8651" creationdate="20181117T152252Z">
+        <seg>すなわち、&lt;x1/&gt;a&lt;x2/&gt;が含まれる場合 &lt;x3/&gt;b&lt;x4/&gt;への参照と、&lt;x5/&gt;a&lt;x6/&gt;と&lt;x7/&gt;b&lt;x8/&gt;は、ガーベッジ・コレクションのためのものであり、保証するものではありません。 &lt;x9/&gt;b&lt;x10/&gt;は、&lt;x11/&gt;a&lt;x12/&gt;の後に最終的に確定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>That means that the values and types of local variables are not available at code generation
 time --- the code-generation code can only see the types of arguments.</seg>
       </tuv>
@@ -13749,6 +14044,14 @@ implementation instead.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The contents and code at the cfunction pointer will be erased via a &lt;x7/&gt;`finalizer`&lt;x8/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152344Z" creationid="hsugawa8651" creationdate="20181117T152344Z">
+        <seg>cfunctionポインタでの内容とコードは、&lt;x7/&gt;`ファイナライザー''&lt;x8/&gt;によって消去されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The default mode used is always &lt;x1/&gt;`RoundNearest`&lt;x2/&gt;, which rounds to the nearest representable
 value, with ties rounded towards the nearest value with an even least significant bit.</seg>
       </tuv>
@@ -13867,6 +14170,23 @@ is 1, 2, 4 or 8 bytes.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150536Z" creationid="hsugawa8651" creationdate="20181117T150536Z">
         <seg>&lt;x1/&gt;qsort&lt;x2/&gt;の最終的な呼び出しは、次のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first argument to &lt;x1/&gt;`@cfunction`&lt;x2/&gt; can be marked with a &lt;x3/&gt;$&lt;x4/&gt;, in which case
+the return value will instead be a &lt;x5/&gt;struct CFunction&lt;x6/&gt; which closes over the argument.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152340Z" creationid="hsugawa8651" creationdate="20181117T152340Z">
+        <seg>&lt;x1/&gt;`@cfunction`&lt;x2/&gt;の最初の引数は、&lt;x3/&gt;$&lt;x4/&gt;でマークすることができます。この場合は 戻り値は、引数の上で閉じる&lt;x5/&gt;構造体CFunction&lt;x6/&gt;となります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first argument to &lt;x1/&gt;`ccall`&lt;x2/&gt; can also be an expression evaluated at run time.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152323Z" creationid="hsugawa8651" creationdate="20181117T152323Z">
+        <seg>&lt;x1/&gt;`ccall'&lt;x2/&gt;への最初の引数は、実行時に評価された式でもあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14007,6 +14327,15 @@ as &lt;x3/&gt;StackTraces.lookup(ptr)&lt;x4/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following methods are described as "unsafe" because a bad pointer or type declaration can
+cause Julia to terminate abruptly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152524Z" creationid="hsugawa8651" creationdate="20181117T152524Z">
+        <seg>次のメソッドは、不正なポインタまたはタイプ宣言は、「安全でない」と記述されています。 ジュリアが突然終了する原因です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following operators are supported for arrays:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161207Z" creationid="hsugawa8651" creationdate="20181114T161207Z">
@@ -14020,6 +14349,14 @@ as &lt;x3/&gt;StackTraces.lookup(ptr)&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041755Z" creationid="hsugawa8651" creationdate="20181110T041755Z">
         <seg>次の2語のシーケンスが予約されています。 &lt;x1/&gt;抽象型&lt;x2/&gt;,&lt;x3/&gt;mutable構造体&lt;x4/&gt;,&lt;x5/&gt;プリミティブ型&lt;x6/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The garbage collector does not guarantee any order of finalization.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152248Z" creationid="hsugawa8651" creationdate="20181117T152248Z">
+        <seg>ガーベジ・コレクターは、最終化の順序を保証しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14227,6 +14564,14 @@ were written as &lt;x1/&gt;v(1) &lt; v(2) &amp;&amp; v(2) &lt;= v(3)&lt;x2/&gt;.
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The next section discusses how to use indirect calls to efficiently accomplish a similar effect.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152318Z" creationid="hsugawa8651" creationdate="20181117T152318Z">
+        <seg>次のセクションでは、間接呼び出しを使用して同様の効果を効率的に達成する方法について説明します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The next two steps (selecting the output array and implementation) are dependent upon
 determining a single answer for a given set of arguments.</seg>
       </tuv>
@@ -14324,6 +14669,14 @@ data is left in place.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The result is a pointer giving the address of the value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152516Z" creationid="hsugawa8651" creationdate="20181117T152516Z">
+        <seg>その結果、値のアドレスを示すポインタが表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The result is an N-d dense array with dimensions that are the concatenation of the dimensions
 of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, etc. and each &lt;x17/&gt;F(x,y,...)&lt;x18/&gt; evaluation returns a scalar.</seg>
       </tuv>
@@ -14416,6 +14769,15 @@ allocated in Julia to be freed by an external library) is equally invalid.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154442Z" creationid="hsugawa8651" creationdate="20181109T154442Z">
         <seg>2番目と3番目の引数は両方とも省略可能です。デフォルトでは、&lt;x3/&gt;A&lt;x4/&gt;&lt;x/&gt;の要素タイプと次元は省略されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The second argument to &lt;x1/&gt;`ccall`&lt;x2/&gt; can optionally be a calling convention specifier (immediately
+preceding return type).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152426Z" creationid="hsugawa8651" creationdate="20181117T152426Z">
+        <seg>&lt;x1/&gt;`ccall'&lt;x2/&gt;への2番目の引数は、オプションとして、呼び出し規約指定子(即時に)とすることができます。 先行する戻り値のタイプ)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14616,6 +14978,15 @@ by placing a &lt;x1/&gt;=&lt;x2/&gt; immediately after the operator.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The value can be manipulated through
+this pointer using &lt;x1/&gt;`unsafe_load`&lt;x2/&gt; and &lt;x3/&gt;`unsafe_store!`&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152518Z" creationid="hsugawa8651" creationdate="20181117T152518Z">
+        <seg>この値は、以下のように操作して操作することができます。 このポインタは、&lt;x1/&gt;`unsafe_load'&lt;x2/&gt;と、&lt;x3/&gt;"unsafe_store!"&lt;x4/&gt;を使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The value in location &lt;x5/&gt;I_1[i_1], I_2[i_2], ..., I_n[i_n]&lt;x6/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155412Z" creationid="hsugawa8651" creationdate="20181109T155412Z">
@@ -14782,6 +15153,15 @@ be accessed in a fusing fashion by &lt;x9/&gt;.=&lt;x10/&gt; assignment).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161307Z" creationid="hsugawa8651" creationdate="20181114T161307Z">
         <seg>また &lt;x7/&gt;'ブロードキャスト!&lt;x8/&gt;関数は明示的な宛先を指定することができます(これは &lt;x9/&gt;.=&lt;x10/&gt;割り当てにより、融合方式でアクセスすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is one additional special calling convention &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref Base.llvmcall),
+which allows inserting calls to LLVM intrinsics directly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152448Z" creationid="hsugawa8651" creationdate="20181117T152448Z">
+        <seg>さらに特別な呼び出し規則が一つあります&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref Base.リウムカル)。 ではLLVM組み込みへの呼び出しを直接挿入することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15061,11 +15441,28 @@ an integer value.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This behavior occurs when the first &lt;x5/&gt;`ccall`&lt;x6/&gt; argument contains references
+to non-constants, such as local variables, function arguments, or non-constant globals.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152327Z" creationid="hsugawa8651" creationdate="20181117T152327Z">
+        <seg>この振る舞いは、最初の&lt;x5/&gt;`ccall'&lt;x6/&gt;引数が参照を含んでいるときに発生します。 ローカル変数、関数引数、非定数グローバルなどの非定数に指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This call will attempt to infer type information from the
 keys and values (i.e. this example creates a &lt;x2/&gt;Dict{String, Int64}&lt;x3/&gt;).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032114Z" creationid="hsugawa8651" creationdate="20181114T032114Z">
         <seg>この呼び出しは、以下のようなタイプ情報を推測しようとします。 キーと値(すなわち、この例では、&lt;x2/&gt;Dict{String,Int64}&lt;x3/&gt;を作成します)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This can be especially useful when targeting unusual platforms such as GPGPUs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152449Z" creationid="hsugawa8651" creationdate="20181117T152449Z">
+        <seg>これは、GPGPUsなどの特殊なプラットフォームをターゲットにする場合に特に役立ちます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15145,6 +15542,14 @@ than the required &lt;x3/&gt;`Bool`&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032154Z" creationid="hsugawa8651" creationdate="20181114T032154Z">
         <seg>この実験インターフェースは、Juliaのマルチスレッド機能をサポートしています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This expression constructs a name using &lt;x1/&gt;string&lt;x2/&gt;, then substitutes this name into a new &lt;x3/&gt;`ccall`&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152307Z" creationid="hsugawa8651" creationdate="20181117T152307Z">
+        <seg>この表現は&lt;x1/&gt;ストリング&lt;x2/&gt;を使用して名前を作成し、次にこの名前を新しい&lt;x3/&gt;`ccall'&lt;x4/&gt;に置き換えます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16108,6 +16513,14 @@ field alignment.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When passing data to a &lt;x1/&gt;`ccall`&lt;x2/&gt;, it is best to avoid using the &lt;x3/&gt;`pointer`&lt;x4/&gt; function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152227Z" creationid="hsugawa8651" creationdate="20181117T152227Z">
+        <seg>&lt;x1/&gt;"ccall"&lt;x2/&gt;"にデータを渡す場合は、&lt;x3/&gt;'ポインタ''&lt;x4/&gt;関数を使用しないことをお勧めします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When run in interactive mode, &lt;x9/&gt;julia&lt;x10/&gt; displays a banner and prompts the user for input.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224306Z" creationid="hsugawa8651" creationdate="20181109T224306Z">
@@ -16195,6 +16608,15 @@ combined to determine a single &lt;x1/&gt;DestStyle&lt;x2/&gt; that controls the
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Whenever you have created a pointer to Julia data, you must ensure the original data exists until
+you are done with using the pointer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152241Z" creationid="hsugawa8651" creationdate="20181117T152241Z">
+        <seg>Juliaデータへのポインタを作成したときは必ず、元のデータが存在することを確認する必要があります。 ポインタを使用して終了します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Whenever you subtype &lt;x1/&gt;AbstractArrayStyle&lt;x2/&gt;, you also need to define rules for combining
 dimensionalities, by creating a constructor for your style that takes a &lt;x3/&gt;Val(N)&lt;x4/&gt; argument.</seg>
       </tuv>
@@ -16243,6 +16665,14 @@ of Floating-Point".</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112503Z" creationid="hsugawa8651" creationdate="20181112T112503Z">
         <seg>&lt;x1/&gt;'reiterate''&lt;x2/&gt;定義では、&lt;x3/&gt;Squares&lt;x4/&gt;タイプはすでにかなり強力です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Without any specifier, the platform-default C calling convention is used.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152420Z" creationid="hsugawa8651" creationdate="20181117T152420Z">
+        <seg>指定されていない場合は、プラットフォームデフォルトのC呼び出し規約が使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16386,6 +16816,14 @@ to be able to redefine them there, but you can use the module name to resolve th
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131414Z" creationid="hsugawa8651" creationdate="20181113T131414Z">
         <seg>&lt;x1/&gt;char&lt;x2/&gt;"メタデータを保存するためにブロードキャストを行うことができます。まず、次のように定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You must ensure that this return object is kept alive until all uses of it are done.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152342Z" creationid="hsugawa8651" creationdate="20181117T152342Z">
+        <seg>この戻りオブジェクトは、すべての使用が完了するまで生きていることを確認する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17072,10 +17510,27 @@ ERROR: DivideError: integer division error
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`ccall`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152234Z" creationid="hsugawa8651" creationdate="20181117T152234Z">
+        <seg>`ccall`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`ceil(x)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031212Z" creationid="hsugawa8651" creationdate="20181114T031212Z">
         <seg>`ceil(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`cglobal`&lt;x1/&gt; are a symbol specification identical to that used
+by &lt;x2/&gt;`ccall`&lt;x3/&gt;, and a type describing the value stored in the variable:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152511Z" creationid="hsugawa8651" creationdate="20181117T152511Z">
+        <seg>'cglobal'&lt;x1/&gt;は、使用されたものと同じシンボル仕様です。 &lt;x2/&gt;'ccall'&lt;x3/&gt;によって、変数に格納された値を記述するタイプが次のようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18114,6 +18569,14 @@ Base.unsafe_store!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>ccall("llvm.nvvm.read.ptx.sreg.tid.x", llvmcall, Int32, ())</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152453Z" creationid="hsugawa8651" creationdate="20181117T152453Z">
+        <seg>ccall("llvm.nvvm.read.ptx.sreg.tid.x", llvmcall, Int32, ())</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>ccall((:foo, "libfoo"), Cvoid, (Int32, Float64),
       Base.unsafe_convert(Int32, Base.cconvert(Int32, x)),
       Base.unsafe_convert(Float64, Base.cconvert(Float64, y)))</seg>
@@ -18138,6 +18601,14 @@ Base.unsafe_store!</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031926Z" creationid="hsugawa8651" creationdate="20181114T031926Z">
         <seg>ccall((@static Sys.iswindows() ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>ccall(sym, ...) &lt;x3/&gt; Use the pointer `sym` instead of the (symbol, library) tuple (remaining arguments are the same).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152406Z" creationid="hsugawa8651" creationdate="20181117T152406Z">
+        <seg>ccall(sym, ...)&lt;x3/&gt;(シンボル、ライブラリ)タプルの代わりにポインタ`sym'を使用します(残りの引数は同じです)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18513,6 +18984,16 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132124Z" creationid="hsugawa8651" creationdate="20181113T132124Z">
         <seg>&lt;x1/&gt;y/x&lt;x2/&gt;に相当する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>eval&lt;x1/&gt; only operates at the top level,
+so within this expression local variables will not be available (unless their values are substituted
+with &lt;x2/&gt;$&lt;x3/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152309Z" creationid="hsugawa8651" creationdate="20181117T152309Z">
+        <seg>eval&lt;x1/&gt;は最上位レベルでのみ動作します。 この式では、ローカル変数は使用できません(値が代入されない限り)。 &lt;x2/&gt;$&lt;x3/&gt;となります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19315,6 +19796,40 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>function qsort(a::Vector{T}, cmp) where T
+    isbits(T) || throw(ArgumentError("this method can only qsort isbits arrays"))
+    callback = @cfunction $cmp Cint (Ref{T}, Ref{T})
+    &lt;x1/&gt; Here, `callback` isa Base.CFunction, which will be converted to Ptr{Cvoid}
+    &lt;x2/&gt; (and protected against finalization) by the ccall
+    ccall(:qsort, Cvoid, (Ptr{T}, Csize_t, Csize_t, Ptr{Cvoid}),
+        a, length(a), Base.elsize(a), callback)
+    &lt;x3/&gt; We could instead use:
+    &lt;x4/&gt;    GC.@preserve callback begin
+    &lt;x5/&gt;        use(Base.unsafe_convert(Ptr{Cvoid}, callback))
+    &lt;x6/&gt;    end
+    &lt;x7/&gt; if we needed to use it outside of a `ccall`
+    return a
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152345Z" creationid="hsugawa8651" creationdate="20181117T152345Z">
+        <seg>function qsort(a::Vector{T}, cmp) where T
+    isbits(T) || throw(ArgumentError("this method can only qsort isbits arrays"))
+    callback = @cfunction $cmp Cint (Ref{T}, Ref{T})
+    &lt;x1/&gt; Here, `callback` isa Base.CFunction, which will be converted to Ptr{Cvoid}
+    &lt;x2/&gt; (and protected against finalization) by the ccall
+    ccall(:qsort, Cvoid, (Ptr{T}, Csize_t, Csize_t, Ptr{Cvoid}),
+        a, length(a), Base.elsize(a), callback)
+    &lt;x3/&gt; We could instead use:
+    &lt;x4/&gt;    GC.@preserve callback begin
+    &lt;x5/&gt;        use(Base.unsafe_convert(Ptr{Cvoid}, callback))
+    &lt;x6/&gt;    end
+    &lt;x7/&gt; if we needed to use it outside of a `ccall`
+    return a
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>function sinc(x)::Float64
     if x == 0
         return 1
@@ -19548,6 +20063,15 @@ that has no internal fields and whose sole purpose is to be placed in the type p
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110231Z" creationid="hsugawa8651" creationdate="20181112T110231Z">
         <seg>half&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>hn = Vector{UInt8}(undef, 256)
+err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152443Z" creationid="hsugawa8651" creationdate="20181117T152436Z">
+        <seg>hn=Vector{UInt8}(undef,256) err=ccall(:gethostname,stdcall,Int32,(Ptr{UInt8},UInt32),hn,長さ(hn))</seg>
       </tuv>
     </tu>
     <tu>
@@ -23098,6 +23622,16 @@ julia&gt; "hi, $c"
 
 julia&gt; "hi, $c"
 "hi, x"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; cglobal((:errno, :libc), Int32)
+Ptr{Int32} @0x00007f418d0816b8</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152512Z" creationid="hsugawa8651" creationdate="20181117T152512Z">
+        <seg>julia&gt; cglobal((:errno, :libc), Int32)
+Ptr{Int32} @0x00007f418d0816b8</seg>
       </tuv>
     </tu>
     <tu>
@@ -29216,6 +29750,14 @@ julia&gt; ∑(2, 3)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>lib = Libdl.dlopen("./my_lib.so") &lt;x1/&gt; Open the library explicitly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152359Z" creationid="hsugawa8651" creationdate="20181117T152359Z">
+        <seg>lib = Libdl.dlopen("./my_lib.so") &lt;x1/&gt; Open the library explicitly.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>local x::Int8  &lt;x1/&gt; in a local declaration
 x::Int8 = 10   &lt;x2/&gt; as the left-hand side of an assignment</seg>
       </tuv>
@@ -29276,6 +29818,42 @@ end</seg>
         <seg>macro cmd(str)
     :(cmd_gen($(shell_parse(str)[1])))
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>macro dlsym(func, lib)
+    z = Ref{Ptr{Cvoid}}(C_NULL)
+    quote
+        let zlocal = $z[]
+            if zlocal == C_NULL
+                zlocal = dlsym($(esc(lib))::Ptr{Cvoid}, $(esc(func)))::Ptr{Cvoid}
+                $z[] = $zlocal
+            end
+            zlocal
+        end
+    end
+end
+
+mylibvar = Libdl.dlopen("mylib")
+ccall(@dlsym("myfunc", mylibvar), Cvoid, ())</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152331Z" creationid="hsugawa8651" creationdate="20181117T152331Z">
+        <seg>macro dlsym(func, lib)
+    z = Ref{Ptr{Cvoid}}(C_NULL)
+    quote
+        let zlocal = $z[]
+            if zlocal == C_NULL
+                zlocal = dlsym($(esc(lib))::Ptr{Cvoid}, $(esc(func)))::Ptr{Cvoid}
+                $z[] = $zlocal
+            end
+            zlocal
+        end
+    end
+end
+
+mylibvar = Libdl.dlopen("mylib")
+ccall(@dlsym("myfunc", mylibvar), Cvoid, ())</seg>
       </tuv>
     </tu>
     <tu>
@@ -30803,6 +31381,14 @@ julia&gt; sub2ind_rec(dims::Tuple{Integer, Vararg{Integer}}, i1::Integer, I::Int
 
 julia&gt; sub2ind_rec((3, 5), 1, 2)
 4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>sym = Libdl.dlsym(lib, :my_fcn)   &lt;x2/&gt; Get a symbol for the function to call.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152402Z" creationid="hsugawa8651" creationdate="20181117T152402Z">
+        <seg>sym = Libdl.dlsym(lib, :my_fcn)   &lt;x2/&gt; Get a symbol for the function to call.</seg>
       </tuv>
     </tu>
     <tu>
