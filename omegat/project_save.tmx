@@ -10251,6 +10251,14 @@ with the low-level implementation details.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Floating-point arithmetic entails many subtleties which can be surprising to users who are unfamiliar with the low-level implementation details.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191526Z" creationid="hsugawa8651" creationdate="20181118T191526Z">
+        <seg>浮動小数点演算は、慣れ親しみのあるユーザに驚くほどの繊細さを必要とします。 低レベルの実装の詳細です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Floating-point numbers
 are compared according to the &lt;x1/&gt;IEEE 754 standard&lt;x2/&gt;:</seg>
       </tuv>
@@ -11951,6 +11959,14 @@ standard&lt;x2/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, the manner in which this rounding is done can be changed if required according to the rounding modes presented in the &lt;a0&gt;IEEE 754 standard&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191501Z" creationid="hsugawa8651" creationdate="20181118T191501Z">
+        <seg>しかし、この丸めが行われる方法は &lt;x1/&gt;IEEE754で提示された丸めモードに従って必要に応じて変更された 標準的な&lt;x2/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, the order of evaluations in a chained
 comparison is undefined.</seg>
       </tuv>
@@ -11972,6 +11988,14 @@ comparison is undefined.</seg>
 most books on scientific computation, and also in the following references:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111444Z" creationid="hsugawa8651" creationdate="20181112T111444Z">
+        <seg>しかし、これらの微妙な点については、以下で詳細に説明します。 科学的計算に関する本や、以下の参考文献にもある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, these subtleties are described in detail in most books on scientific computation, and also in the following references:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191530Z" creationid="hsugawa8651" creationdate="20181118T191530Z">
         <seg>しかし、これらの微妙な点については、以下で詳細に説明します。 科学的計算に関する本や、以下の参考文献にもある。</seg>
       </tuv>
     </tu>
@@ -12222,6 +12246,14 @@ a symbol, then an assignment &lt;x3/&gt;(x, y) = argument&lt;x4/&gt; will be ins
 appropriate representable value.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T093739Z" creationid="hsugawa8651" creationdate="20181118T093739Z">
+        <seg>数値が正確な浮動小数点表現を持たない場合は、次のように丸めます。 適切な表現可能な値。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a number doesn't have an exact floating-point representation, it must be rounded to an appropriate representable value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191458Z" creationid="hsugawa8651" creationdate="20181118T191458Z">
         <seg>数値が正確な浮動小数点表現を持たない場合は、次のように丸めます。 適切な表現可能な値。</seg>
       </tuv>
     </tu>
@@ -14394,6 +14426,14 @@ native integer types respectively:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110348Z" creationid="hsugawa8651" creationdate="20181112T110348Z">
         <seg>また、Juliaは、システムの署名と符号なしのエイリアスである、&lt;x1/&gt;Int&lt;x2/&gt;と&lt;x3/&gt;UInt&lt;x4/&gt;のタイプを定義します。 ネイティブの整数型:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia also provides the &lt;a0&gt;&lt;c1&gt;nextfloat&lt;/c1&gt;&lt;/a0&gt; and &lt;a2&gt;&lt;c3&gt;prevfloat&lt;/c3&gt;&lt;/a2&gt; functions which return the next largest or smallest representable floating-point number to the argument respectively:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191434Z" creationid="hsugawa8651" creationdate="20181118T191434Z">
+        <seg>また、Juliaは、&lt;a0&gt;&lt;c1&gt;nextfloat&lt;/c1&gt;&lt;/a0&gt;と、&lt;a2&gt;&lt;c3&gt;prevfloat&lt;/c3&gt;&lt;/a2&gt;関数を提供します。 引数に対して次の最大または最小の表現可能浮動小数点数をそれぞれ指定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19421,6 +19461,14 @@ and passes them to &lt;x1/&gt;new&lt;x2/&gt;, returning the resulting object:</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The default mode used is always &lt;a0&gt;&lt;c1&gt;RoundNearest&lt;/c1&gt;&lt;/a0&gt;, which rounds to the nearest representable value, with ties rounded towards the nearest value with an even least significant bit.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191521Z" creationid="hsugawa8651" creationdate="20181118T191521Z">
+        <seg>使用されるデフォルト・モードは常に&lt;a0&gt;&lt;c1&gt;RoundNearest&lt;/c1&gt;&lt;/a0&gt;であり、これは最も近い表現可能なものに丸められます。 値は、最も近い値に対して、最も近い値に丸められ、最も重要なビットであることを示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The default mode used is always &lt;x1/&gt;`RoundNearest`&lt;x2/&gt;, which rounds to the nearest representable
 value, with ties rounded towards the nearest value with an even least significant bit.</seg>
       </tuv>
@@ -19459,6 +19507,14 @@ or a 64-bit architecture:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T184844Z" creationid="hsugawa8651" creationdate="20181118T184844Z">
         <seg>整数リテラルのデフォルト・タイプは、ターゲット・システムが32ビット・アーキテクチャーであるか、または、 64ビットのアーキテクチャであるかによって異なります。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The definitive guide to floating point arithmetic is the &lt;a0&gt;IEEE 754-2008 Standard&lt;/a0&gt;; however, it is not available for free online.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191537Z" creationid="hsugawa8651" creationdate="20181118T191537Z">
+        <seg>浮動小数点演算の最終的なガイドは、&lt;x1/&gt;IEEE754-2008標準&lt;x2/&gt;です。 ただし、無料のオンラインでは利用できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21978,6 +22034,14 @@ than the required &lt;x3/&gt;`Bool`&lt;x4/&gt;.</seg>
 also have adjacent binary integer representations.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120352Z" creationid="hsugawa8651" creationdate="20181118T120352Z">
+        <seg>この例では、隣接する表現可能浮動小数点数を示す一般的な原理が強調されています。 また、隣接するバイナリ整数表現もあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This example highlights the general principle that the adjacent representable floating-point numbers also have adjacent binary integer representations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191452Z" creationid="hsugawa8651" creationdate="20181118T191452Z">
         <seg>この例では、隣接する表現可能浮動小数点数を示す一般的な原理が強調されています。 また、隣接するバイナリ整数表現もあります。</seg>
       </tuv>
     </tu>
