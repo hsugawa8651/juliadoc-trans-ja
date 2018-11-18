@@ -8481,6 +8481,14 @@ manner that allows all custom arrays to behave similarly.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Division functions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095820Z" creationid="hsugawa8651" creationdate="20181118T095820Z">
+        <seg>割り算関数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Do not try to free an
 object received from a C library with &lt;x1/&gt;`Libc.free`&lt;x2/&gt; in Julia, as this may result in the &lt;x3/&gt;free&lt;x4/&gt; function
 being called via the wrong &lt;x5/&gt;libc&lt;x6/&gt; library and cause Julia to crash.</seg>
@@ -14284,6 +14292,14 @@ an interactive session.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Rounding functions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095723Z" creationid="hsugawa8651" creationdate="20181118T095723Z">
+        <seg>丸め関数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Run processes on hosts listed in &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224714Z" creationid="hsugawa8651" creationdate="20181109T224714Z">
@@ -14534,6 +14550,14 @@ are common in Julia.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230224Z" creationid="hsugawa8651" creationdate="20181109T230224Z">
         <seg>短絡評価は条件付き評価と非常によく似ています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sign and absolute value functions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095905Z" creationid="hsugawa8651" creationdate="20181118T095905Z">
+        <seg>符号および絶対値関数</seg>
       </tuv>
     </tu>
     <tu>
@@ -19795,6 +19819,22 @@ ERROR: DivideError: integer division error
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`abs(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095921Z" creationid="hsugawa8651" creationdate="20181118T095921Z">
+        <seg>`abs(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`abs2(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095925Z" creationid="hsugawa8651" creationdate="20181118T095925Z">
+        <seg>`abs2(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`adjoint`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025903Z" creationid="hsugawa8651" creationdate="20181110T025903Z">
@@ -19852,6 +19892,14 @@ by &lt;x2/&gt;`ccall`&lt;x3/&gt;, and a type describing the value stored in the 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`cld(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095826Z" creationid="hsugawa8651" creationdate="20181118T095826Z">
+        <seg>`cld(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`copy(A)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064414Z" creationid="hsugawa8651" creationdate="20181114T064414Z">
@@ -19893,6 +19941,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;. For more det
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031239Z" creationid="hsugawa8651" creationdate="20181114T031239Z">
         <seg>`div(x,y)`&lt;x1/&gt;, &lt;x2/&gt;x÷y&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`divrem(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095850Z" creationid="hsugawa8651" creationdate="20181118T095850Z">
+        <seg>`divrem(x,y)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -19945,6 +20001,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;. For more det
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`fldmod(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095854Z" creationid="hsugawa8651" creationdate="20181118T095854Z">
+        <seg>`fldmod(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`floor(T, x)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031151Z" creationid="hsugawa8651" creationdate="20181114T031151Z">
@@ -19957,6 +20021,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;. For more det
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031122Z" creationid="hsugawa8651" creationdate="20181114T031122Z">
         <seg>`floor(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`gcd(x,y...)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095857Z" creationid="hsugawa8651" creationdate="20181118T095857Z">
+        <seg>`gcd(x,y...)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -20066,6 +20138,14 @@ Consider these examples of this syntax:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`lcm(x,y...)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095901Z" creationid="hsugawa8651" creationdate="20181118T095901Z">
+        <seg>`lcm(x,y...)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`length(A)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153218Z" creationid="hsugawa8651" creationdate="20181109T153218Z">
@@ -20084,8 +20164,8 @@ Consider these examples of this syntax:</seg>
       <tuv lang="EN-US">
         <seg>`mod(x,y)`&lt;x1/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031255Z" creationid="hsugawa8651" creationdate="20181114T031255Z">
-        <seg>`mod(x,y)`&lt;x1/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095839Z" creationid="hsugawa8651" creationdate="20181114T031255Z">
+        <seg>'mod(x,y)'&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -20170,6 +20250,14 @@ Consider these examples of this syntax:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`rem(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095830Z" creationid="hsugawa8651" creationdate="20181118T095830Z">
+        <seg>`rem(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`reshape(A, dims...)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064412Z" creationid="hsugawa8651" creationdate="20181114T064412Z">
@@ -20207,6 +20295,14 @@ and all further calculations will take these changes in account.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111713Z" creationid="hsugawa8651" creationdate="20181112T111713Z">
         <seg>'setprecision'&lt;x1/&gt;および&lt;x2/&gt;'セロウンディング'&lt;x3/&gt; さらに計算を行うと、これらの変更は考慮されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`sign(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095928Z" creationid="hsugawa8651" creationdate="20181118T095928Z">
+        <seg>`sign(x)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -20393,6 +20489,14 @@ as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223840Z" creationid="hsugawa8651" creationdate="20181109T223840Z">
         <seg>関数ポインタ(たとえば、&lt;x1/&gt;dlsym&lt;x2/&gt;からの関数ポインタです)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>a positive value with the magnitude of &lt;x1/&gt;x&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095924Z" creationid="hsugawa8651" creationdate="20181118T095924Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の大きさをもつ正の値</seg>
       </tuv>
     </tu>
     <tu>
@@ -20966,6 +21070,14 @@ Base.unsafe_store!</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151737Z" creationid="hsugawa8651" creationdate="20181117T151734Z">
         <seg>ccall&lt;x1/&gt;/&lt;x2/&gt;@cfunction&lt;x3/&gt;return type translation guide</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>ceiling division; quotient rounded towards &lt;x1/&gt;+Inf&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095829Z" creationid="hsugawa8651" creationdate="20181118T095829Z">
+        <seg>天井部;商は&lt;x1/&gt;+Inf&lt;x2/&gt;に向かって丸められる</seg>
       </tuv>
     </tu>
     <tu>
@@ -21575,6 +21687,14 @@ table_entries(
     ),
     unicode_data()
 )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>floored division; quotient rounded towards &lt;x1/&gt;-Inf&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095825Z" creationid="hsugawa8651" creationdate="20181118T095825Z">
+        <seg>床分割部;商は&lt;x1/&gt;-Inf&lt;x2/&gt;に丸められる</seg>
       </tuv>
     </tu>
     <tu>
@@ -22426,6 +22546,14 @@ which is a simplified version of the actual definition from &lt;x2/&gt;`env.jl`&
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>greatest positive common divisor of &lt;x1/&gt;x&lt;x2/&gt;, &lt;x3/&gt;y&lt;x4/&gt;,...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095900Z" creationid="hsugawa8651" creationdate="20181118T095900Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の最大公約数、&lt;x3/&gt;y&lt;x4/&gt;、……。。。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>gsl_permutation&lt;x1/&gt;,
 that has no internal fields and whose sole purpose is to be placed in the type parameter of a
 &lt;x2/&gt;Ptr&lt;x3/&gt; type.</seg>
@@ -22631,6 +22759,14 @@ obj2 = MyModule.somefunction(obj1)
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131755Z" creationid="hsugawa8651" creationdate="20181113T131755Z">
         <seg>&lt;x1/&gt;タプル&lt;x2/&gt;"が0次元配列に対して(出力コンテナはタプルになります)"勝ち"であることを示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>indicates the sign of &lt;x1/&gt;x&lt;x2/&gt;, returning -1, 0, or +1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095931Z" creationid="hsugawa8651" creationdate="20181118T095931Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の符号を示し、-1 0、または+1を返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -32351,6 +32487,14 @@ julia&gt; ∑(2, 3)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>least positive common multiple of &lt;x1/&gt;x&lt;x2/&gt;, &lt;x3/&gt;y&lt;x4/&gt;,...</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095903Z" creationid="hsugawa8651" creationdate="20181118T095903Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の最小公倍数、&lt;x3/&gt;y&lt;x4/&gt;、……。。。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>length(A)&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022406Z" creationid="hsugawa8651" creationdate="20181113T022406Z">
@@ -32661,6 +32805,14 @@ scalars (a &lt;x2/&gt;Broadcasting&lt;x3/&gt; operation); these have the additio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>mod&lt;x1/&gt; with offset 1; returns &lt;x2/&gt;r∈(0,y]&lt;x3/&gt; for &lt;x4/&gt;y&gt;0&lt;x5/&gt; or &lt;x6/&gt;r∈[y,0)&lt;x7/&gt; for &lt;x8/&gt;y&lt;0&lt;x9/&gt;, where &lt;x10/&gt;mod(r, y) == mod(x, y)&lt;x11/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095846Z" creationid="hsugawa8651" creationdate="20181118T095846Z">
+        <seg>&lt;x1/&gt;&lt;x0&gt;&lt;x0/&gt;&lt;x8/&gt;&lt;x9/&gt;&lt;x8/&gt;&lt;x9/&gt;&lt;x9/&gt;&lt;x9/&gt;&lt;x9/&gt;(r, y)==mod(x, y)&lt;x11/&gt;&lt;x9/&gt;0 0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>module
 export
 import
@@ -32773,6 +32925,14 @@ time() = ... &lt;x1/&gt; compute something
 
 @time time()
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>modulus with respect to 2pi;  &lt;x1/&gt;0 &lt;= mod2pi(x)    &lt; 2pi&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095849Z" creationid="hsugawa8651" creationdate="20181118T095849Z">
+        <seg>2πに対する係数&lt;x1/&gt;0&lt;=mod2pi(x)&lt;2pi&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -33450,10 +33610,34 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>remainder; satisfies &lt;x1/&gt;x == div(x,y)*y + rem(x,y)&lt;x2/&gt;; sign matches &lt;x3/&gt;x&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095841Z" creationid="hsugawa8651" creationdate="20181118T095841Z">
+        <seg>残り;&lt;x1/&gt;x==div(x,y)*y+rem(x,y)&lt;x2/&gt;;符号は&lt;x3/&gt;x&lt;x4/&gt;に一致する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>return (a &lt; b) ? -1 : ((a &gt; b) ? +1 : 0)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133236Z" creationid="hsugawa8651" creationdate="20181117T133236Z">
         <seg>return (a &lt; b) ? -1 : ((a &gt; b) ? +1 : 0)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>returns &lt;x1/&gt;(div(x,y),rem(x,y))&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095853Z" creationid="hsugawa8651" creationdate="20181118T095853Z">
+        <seg>は&lt;x1/&gt;(div(x,y),rem(x,y))&lt;x2/&gt;を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>returns &lt;x1/&gt;(fld(x,y),mod(x,y))&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095856Z" creationid="hsugawa8651" creationdate="20181118T095856Z">
+        <seg>&lt;x1/&gt;(fld(x,y),mod(x,y))&lt;x2/&gt;を返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33512,10 +33696,26 @@ paths = reduce(merge, reverse([paths₁, paths₂, …]))</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>round &lt;x1/&gt;x&lt;x2/&gt; towards &lt;x3/&gt;+Inf&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095740Z" creationid="hsugawa8651" creationdate="20181118T095740Z">
+        <seg>round&lt;x1/&gt;x&lt;x2/&gt;&lt;x3/&gt;+Inf&lt;x4/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>round &lt;x1/&gt;x&lt;x2/&gt; towards &lt;x3/&gt;-Inf&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031130Z" creationid="hsugawa8651" creationdate="20181114T031125Z">
         <seg>round &lt;x1/&gt;x&lt;x2/&gt; towards &lt;x3/&gt;-Inf&lt;x4/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>round &lt;x1/&gt;x&lt;x2/&gt; towards zero</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095757Z" creationid="hsugawa8651" creationdate="20181118T095757Z">
+        <seg>round&lt;x1/&gt;x&lt;x2/&gt;(0に対して)</seg>
       </tuv>
     </tu>
     <tu>
@@ -34139,6 +34339,14 @@ when, how often or how many times these side-effects will occur</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154250Z" creationid="hsugawa8651" creationdate="20181109T154250Z">
         <seg>&lt;x3/&gt;n&lt;x4/&gt;の寸法に沿って&lt;x1/&gt;A&lt;x2/&gt;の大きさ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the squared magnitude of &lt;x1/&gt;x&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095927Z" creationid="hsugawa8651" creationdate="20181118T095927Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の二乗された大きさ</seg>
       </tuv>
     </tu>
     <tu>
