@@ -4058,6 +4058,14 @@ flexible, user-extensible &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>All numeric types interoperate naturally without explicit casting, thanks to a flexible, user-extensible &lt;a1&gt;type promotion system&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T184752Z" creationid="hsugawa8651" creationdate="20181118T184752Z">
+        <seg>すべての数値型は、 柔軟なユーザー拡張可能な&lt;a1&gt;type promotion system&lt;/a1&gt; のおかげで、明示的なキャストなしで自然に相互運用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All other types are stored as a pointer
 to the data.</seg>
       </tuv>
@@ -18886,6 +18894,14 @@ the Bessel J function populate the Julia array &lt;x1/&gt;result_array&lt;x2/&gt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The Julia internal variable &lt;a0&gt;&lt;c1&gt;Sys.WORD_SIZE&lt;/c1&gt;&lt;/a0&gt; indicates whether the target system is 32-bit or 64-bit:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T184926Z" creationid="hsugawa8651" creationdate="20181118T184904Z">
+        <seg>Julia内部変数 &lt;a0&gt;&lt;c1&gt;Sys.WORD_SIZE&lt;/c1&gt;&lt;/a0&gt;は、ターゲットシステムが32ビット、または、64ビットであるかどうかを示します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The Julia internal variable &lt;x1/&gt;`Sys.WORD_SIZE`&lt;x2/&gt; indicates whether the target system is 32-bit
 or 64-bit:</seg>
       </tuv>
@@ -19259,6 +19275,14 @@ or a 64-bit architecture:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110320Z" creationid="hsugawa8651" creationdate="20181112T110320Z">
         <seg>整数リテラルのデフォルト・タイプは、ターゲット・システムに32ビット・アーキテクチャーがあるかどうかによって異なります。 64ビットのアーキテクチャ:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default type for an integer literal depends on whether the target system has a 32-bit architecture or a 64-bit architecture:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T184844Z" creationid="hsugawa8651" creationdate="20181118T184844Z">
+        <seg>整数リテラルのデフォルト・タイプは、ターゲット・システムが32ビット・アーキテクチャーであるか、または、 64ビットのアーキテクチャであるかによって異なります。:</seg>
       </tuv>
     </tu>
     <tu>
