@@ -1084,6 +1084,14 @@ julia&gt; x &lt;x1/&gt; x is unchanged!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(if &lt;x1/&gt;IndexCartesian&lt;x2/&gt;, where &lt;x3/&gt;N = ndims(A)&lt;x4/&gt;) N-dimensional scalar indexing</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094445Z" creationid="hsugawa8651" creationdate="20181118T094445Z">
+        <seg>(もし&lt;x1/&gt;IndexCartesian&lt;x2/&gt;である場合&lt;x3/&gt;N = ndims(A)&lt;x4/&gt;)N-次元スカラーインデックス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(y, x) : (x, y)
 
 julia&gt; range((min, max)) = max - min
@@ -1748,6 +1756,24 @@ julia&gt; 2.5e-4
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110131Z" creationid="hsugawa8651" creationdate="20181112T110131Z">
         <seg>16</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>1:5   &lt;x1/&gt; not strided (there is no storage associated with this array.)
+Vector(1:5)  &lt;x2/&gt; is strided with strides (1,)
+A = [1 5; 2 6; 3 7; 4 8]  &lt;x3/&gt; is strided with strides (1,4)
+V = view(A, 1:2, :)   &lt;x4/&gt; is strided with strides (1,4)
+V = view(A, 1:2:3, 1:2)   &lt;x5/&gt; is strided with strides (2,4)
+V = view(A, [1,2,4], :)   &lt;x6/&gt; is not strided, as the spacing between rows is not fixed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094616Z" creationid="hsugawa8651" creationdate="20181118T094616Z">
+        <seg>1:5   &lt;x1/&gt; not strided (there is no storage associated with this array.)
+Vector(1:5)  &lt;x2/&gt; is strided with strides (1,)
+A = [1 5; 2 6; 3 7; 4 8]  &lt;x3/&gt; is strided with strides (1,4)
+V = view(A, 1:2, :)   &lt;x4/&gt; is strided with strides (1,4)
+V = view(A, 1:2:3, 1:2)   &lt;x5/&gt; is strided with strides (2,4)
+V = view(A, [1,2,4], :)   &lt;x6/&gt; is not strided, as the spacing between rows is not fixed.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3878,6 +3904,14 @@ to &lt;x3/&gt;`ccall`&lt;x4/&gt; are as follows:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153935Z" creationid="hsugawa8651" creationdate="20181109T153935Z">
         <seg>&lt;x3/&gt;`@cfunction`&lt;x4/&gt;への引数は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Arithmetic Operators</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094728Z" creationid="hsugawa8651" creationdate="20181118T094728Z">
+        <seg>算術演算子</seg>
       </tuv>
     </tu>
     <tu>
@@ -6891,10 +6925,28 @@ over the dimensions of the array, collecting the offset in each dimension into t
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Broadcast Styles</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094634Z" creationid="hsugawa8651" creationdate="20181118T094634Z">
+        <seg>ブロードキャストスタイル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Broadcast and vectorization</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T020223Z" creationid="hsugawa8651" creationdate="20181116T020223Z">
         <seg>Broadcast and vectorization</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Broadcast calls this single answer a "style." Every broadcastable object
+each has its own preferred style, and a promotion-like system is used to combine these
+styles into a single answer — the "destination style".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094639Z" creationid="hsugawa8651" creationdate="20181118T094639Z">
+        <seg>ブロードキャストコールは、この単一の応答を「スタイル」と呼びます。すべてのブロードキャスト可能なオブジェクト それぞれが独自の優先スタイルを持ち、システムのようなプロモーションを使ってこれらを結合します。 スタイルは1つの応答-「destination style」になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10298,6 +10350,14 @@ the static parameters of the function are considered to be part of this static e
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If &lt;x1/&gt;A&lt;x2/&gt; is an &lt;x3/&gt;AbstractArray{T,0}&lt;x4/&gt;, this should return an empty tuple.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094601Z" creationid="hsugawa8651" creationdate="20181118T094601Z">
+        <seg>&lt;x1/&gt;A&lt;x2/&gt;が&lt;x3/&gt;AbstractArray{T,0}&lt;x4/&gt;である場合、この値は空のタプルを返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If &lt;x1/&gt;I_1&lt;x2/&gt; is changed to a two-dimensional matrix, then &lt;x3/&gt;X&lt;x4/&gt; becomes an &lt;x5/&gt;n+1&lt;x6/&gt;-dimensional array of
 shape &lt;x7/&gt;(size(I_1, 1), size(I_1, 2), length(I_2), ..., length(I_n))&lt;x8/&gt;.</seg>
       </tuv>
@@ -10660,6 +10720,15 @@ outside/afterwards.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you are defining an array type that allows non-traditional indexing (indices that start at
+something other than 1), you should specialize &lt;x1/&gt;`axes`&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094526Z" creationid="hsugawa8651" creationdate="20181118T094526Z">
+        <seg>非伝統的なインデックスを作成するための配列タイプを定義する場合は 1以外のものは、&lt;x1/&gt;'の軸を特殊化してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you call it in an interactive session without assigning the return value anywhere, you will
 see the tuple returned:</seg>
       </tuv>
@@ -10883,6 +10952,15 @@ use &lt;x10/&gt;exec&lt;x11/&gt; to replace the process to &lt;x12/&gt;julia&lt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024926Z" creationid="hsugawa8651" creationdate="20181110T024926Z">
         <seg>Unixライクな 環境、信頼できる方法で&lt;x6/&gt;julia&lt;x7/&gt;にオプションを渡すことができます。 実行可能スクリプトは、スクリプトを&lt;x8/&gt;bash&lt;x9/&gt;スクリプトとして起動します。 &lt;x10/&gt;exec&lt;x11/&gt;を使用して、プロセスを&lt;x12/&gt;ジュリア&lt;x13/&gt;に置き換えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In addition to all the iterable and indexable methods from above, these types can also interact
+with each other and use most of the methods defined in Julia Base for &lt;x1/&gt;AbstractArrays&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094522Z" creationid="hsugawa8651" creationdate="20181118T094522Z">
+        <seg>これらのタイプは、上記のすべてのiterableメソッドとindexableメソッドに加えて、相互作用することもできます。 &lt;x1/&gt;AbstractArrays&lt;x2/&gt;のために、Julia Baseで定義されたほとんどのメソッドをお互いに使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13028,6 +13106,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Non-traditional indices&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094502Z" creationid="hsugawa8651" creationdate="20181118T094502Z">
+        <seg>非伝統的なインデックス&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>None of the examples
 given here provide any type annotations on their arguments, meaning that they are applicable to
 all types of arguments.</seg>
@@ -13585,6 +13671,14 @@ addition to new user-defined data types, you define new methods for the
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Optional methods&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094608Z" creationid="hsugawa8651" creationdate="20181118T094608Z">
+        <seg>オプションのメソッド&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Optionally, with this form you can also specialize on the type of &lt;x1/&gt;dest&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131651Z" creationid="hsugawa8651" creationdate="20181113T131651Z">
@@ -14021,6 +14115,14 @@ an interactive session.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Return a mutable array with the specified element type and size</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094500Z" creationid="hsugawa8651" creationdate="20181118T094500Z">
+        <seg>指定されたエレメントタイプとともに、可変配列を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Return a mutable array with the specified indices &lt;x1/&gt;inds&lt;x2/&gt; (see below)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022621Z" creationid="hsugawa8651" creationdate="20181113T022621Z">
@@ -14033,6 +14135,38 @@ an interactive session.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022647Z" creationid="hsugawa8651" creationdate="20181113T022647Z">
         <seg>&lt;x1/&gt;T&lt;x2/&gt;のような配列を指定されたインデックス&lt;x3/&gt;inds&lt;x4/&gt;(以下参照)と同様に返す。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Return the &lt;x1/&gt;AbstractUnitRange&lt;x2/&gt; of valid indices</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094507Z" creationid="hsugawa8651" creationdate="20181118T094507Z">
+        <seg>有効なインデックスの&lt;x1/&gt;AbstractUnitRange&lt;x2/&gt;を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Return the distance in memory (in number of elements) between adjacent elements in dimension k.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094614Z" creationid="hsugawa8651" creationdate="20181118T094614Z">
+        <seg>寸法kの隣り合う要素間のメモリ内の距離(要素数)を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Return the distance in memory (in number of elements) between adjacent elements in each dimension as a tuple.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094558Z" creationid="hsugawa8651" creationdate="20181118T094558Z">
+        <seg>各次元内の隣り合う要素間の距離をタプルとして、メモリ内の距離を返します(要素数)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Return the native address of an array.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094606Z" creationid="hsugawa8651" creationdate="20181118T094606Z">
+        <seg>配列のネイティブ・アドレスを返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14839,6 +14973,14 @@ interoperable code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151559Z" creationid="hsugawa8651" creationdate="20181117T151559Z">
         <seg>T(*)(...)&lt;x1/&gt;(例:関数へのポインタ)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>T(Base.to_shape(inds))&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094513Z" creationid="hsugawa8651" creationdate="20181118T094513Z">
+        <seg>T(Base.to_shape(inds))&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -17284,6 +17426,14 @@ inner constructor method.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This distinction determines which scalar indexing methods the type must define.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094519Z" creationid="hsugawa8651" creationdate="20181118T094519Z">
+        <seg>この区別によって、タイプが定義するスカラー・インデックス・メソッドが決まります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This does not occur when Julia code is run in other ways.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225348Z" creationid="hsugawa8651" creationdate="20181109T225348Z">
@@ -18912,6 +19062,14 @@ do not count, but the new reference does) to ensure the memory is not prematurel
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025154Z" creationid="hsugawa8651" creationdate="20181110T025154Z">
         <seg>ここでは &lt;x5/&gt;Foo&lt;x6/&gt;記号は、それらの修飾名&lt;x7/&gt;Foo.bar&lt;x8/&gt;などで表されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You should also specialize &lt;x3/&gt;`similar`&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094540Z" creationid="hsugawa8651" creationdate="20181118T094540Z">
+        <seg>また、&lt;x3/&gt;`similar`&lt;x4/&gt;を特化する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33905,6 +34063,14 @@ julia&gt; odd(n) = (n == 0) ?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031111Z" creationid="hsugawa8651" creationdate="20181114T031111Z">
         <seg>typeof(x)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>unary plus</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094734Z" creationid="hsugawa8651" creationdate="20181118T094734Z">
+        <seg>単項プラス</seg>
       </tuv>
     </tu>
     <tu>
