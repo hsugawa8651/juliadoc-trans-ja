@@ -14158,8 +14158,8 @@ binaries or compiling from source.</seg>
       <tuv lang="EN-US">
         <seg>Julia installation is straightforward, whether using precompiled binaries or compiling from source.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224247Z" creationid="hsugawa8651" creationdate="20181109T224247Z">
-        <seg>ジュリアのインストールは、コンパイル済みのバイナリを使用するか、ソースからコンパイルするかにかかわらず、簡単です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T173308Z" creationid="hsugawa8651" creationdate="20181109T224247Z">
+        <seg>Juliaのインストールは、コンパイル済みのバイナリを使用するか、ソースからコンパイルするかにかかわらず、簡単です。</seg>
       </tuv>
     </tu>
     <tu>
