@@ -2668,14 +2668,6 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>&lt;x5/&gt;-p n&lt;x6/&gt;</seg>
-      </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224412Z" creationid="hsugawa8651" creationdate="20181109T224412Z">
-        <seg>&lt;x5/&gt;-p n&lt;x6/&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>&lt;x5/&gt;X .+= Y&lt;x6/&gt; etcetera is equivalent to &lt;x7/&gt;X .= X .+ Y&lt;x8/&gt; and results in a fused in-place assignment;
 see also &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-dot-operators).</seg>
       </tuv>
@@ -12024,8 +12016,8 @@ to the specified type. For example, the following call:</seg>
       <tuv lang="EN-US">
         <seg>Julia can be started in parallel mode with either the &lt;x1/&gt;-p&lt;x2/&gt; or the &lt;x3/&gt;--machine-file&lt;x4/&gt; options.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224410Z" creationid="hsugawa8651" creationdate="20181109T224410Z">
-        <seg>Juliaは、&lt;x1/&gt;-p&lt;x2/&gt;または&lt;x3/&gt;-machinefile&lt;x4/&gt;オプションのいずれかと並行モードで起動できます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T092131Z" creationid="hsugawa8651" creationdate="20181109T224410Z">
+        <seg>&lt;x1/&gt;-p&lt;x2/&gt; もしくは &lt;x3/&gt;--machinefile&lt;x4/&gt; オプションを設定することで、Juliaを並列モードで開始することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15970,8 +15962,8 @@ current host.</seg>
         <seg>The machines defined in &lt;x6/&gt;file&lt;x7/&gt; must be accessible via a password-less
 &lt;x8/&gt;ssh&lt;x9/&gt; login, with Julia installed at the same location as the current host.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224421Z" creationid="hsugawa8651" creationdate="20181109T224421Z">
-        <seg>&lt;x6/&gt;ファイル&lt;x7/&gt;で定義されたマシンは、パスワードなしでアクセスできる必要があります。 &lt;x8/&gt;ssh&lt;x9/&gt;ログインは、現在のホストと同じ場所にJuliaがインストールされています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T092400Z" creationid="hsugawa8651" creationdate="20181109T224421Z">
+        <seg>&lt;x6/&gt;file&lt;x7/&gt; で定義されたマシンは、パスワード無しで &lt;x8&gt;ssh&lt;x9/&gt; アクセスでき、現在のホストと同じ場所にJuliaがインストールされている必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -32443,8 +32435,8 @@ end</seg>
         <seg>n&lt;x1/&gt; worker processes, while &lt;x2/&gt;--machine-file file&lt;x3/&gt; will launch a worker
 for each line in file &lt;x4/&gt;file&lt;x5/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224417Z" creationid="hsugawa8651" creationdate="20181109T224417Z">
-        <seg>n&lt;x1/&gt;worker processes while&lt;x2/&gt;--machine file file&lt;x3/&gt;はワーカーを起動します。 ファイル&lt;x4/&gt;ファイル&lt;x5/&gt;の各行に対して実行されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T092316Z" creationid="hsugawa8651" creationdate="20181118T092316Z">
+        <seg>&lt;x5/&gt;-p n&lt;x6/&gt; でn&lt;x1/&gt;個のワーカーを追加で起動することができ、 &lt;x2/&gt;--machinefile file&lt;x3/&gt; では &lt;x4/&gt;file&lt;x5/&gt; ファイルの各行ごとにワーカーが起動されます。</seg>
       </tuv>
     </tu>
     <tu>
