@@ -15873,8 +15873,8 @@ with all other numeric types thanks to Julia's &lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;
       <tuv lang="EN-US">
         <seg>Once the user has entered a complete expression, such as &lt;c5&gt;1 + 2&lt;/c5&gt;, and hits enter, the interactive session evaluates the expression and shows its value.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T173443Z" creationid="hsugawa8651" creationdate="20181118T173443Z">
-        <seg>ユーザーが完全な式、例えば &lt;x11/&gt; 1 + &lt;x12/&gt; を入力し、エンターキーを押すと、その式が評価され、値が表示されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T181351Z" creationid="hsugawa8651" creationdate="20181118T173443Z">
+        <seg>ユーザーが完全な式、例えば &lt;c5&gt;1 + 2&lt;/c5&gt; を入力し、エンターキーを押すと、その式が評価され、値が表示されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22077,8 +22077,8 @@ together with the &lt;c2&gt;&lt;s3&gt;d&lt;/s3&gt;&lt;/c2&gt; key or type &lt;c4
       <tuv lang="EN-US">
         <seg>To exit the interactive session, type &lt;c0&gt;CTRL-D&lt;/c0&gt; (press the Control/&lt;c1&gt;^&lt;/c1&gt; key together with the &lt;c2&gt;d&lt;/c2&gt; key), or type &lt;c3&gt;exit()&lt;/c3&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T173433Z" creationid="hsugawa8651" creationdate="20181118T173433Z">
-        <seg>インタラクティブ・セッションを終了するには、&lt;x1/&gt;^D&lt;x2/&gt; — コントロールキー&lt;x3/&gt;^&lt;x4/&gt;と &lt;x5/&gt;d&lt;x6/&gt; キーを同時に押す — もしくは、 &lt;x7/&gt;quit()&lt;s8/&gt; と入力してください。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T181322Z" creationid="hsugawa8651" creationdate="20181118T173433Z">
+        <seg>インタラクティブ・セッションを終了するには、&lt;c0&gt;CTRL-D&lt;/c0&gt;— コントロールキー &lt;c1&gt;^&lt;/c1&gt;と &lt;c2&gt;d&lt;/c2&gt; キーを同時に押す — もしくは、 &lt;c3&gt;exit()&lt;/c3&gt; と入力してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22851,8 +22851,8 @@ mode, &lt;c6&gt;&lt;s7&gt;julia&lt;/s7&gt;&lt;/c6&gt; displays a banner and prom
       <tuv lang="EN-US">
         <seg>When run in interactive mode, &lt;c4&gt;julia&lt;/c4&gt; displays a banner and prompts the user for input.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T173437Z" creationid="hsugawa8651" creationdate="20181118T173437Z">
-        <seg>インタラクティブ・モードで起動すると、 &lt;x9/&gt;julia&lt;x10/&gt; のバナーが表示され、プロンプトがユーザーの入力を待ちます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T181339Z" creationid="hsugawa8651" creationdate="20181118T173437Z">
+        <seg>インタラクティブ・モードで起動すると、 &lt;c4&gt;julia&lt;/c4&gt; のバナーが表示され、プロンプトがユーザーの入力を待ちます。</seg>
       </tuv>
     </tu>
     <tu>
