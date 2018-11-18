@@ -14095,8 +14095,8 @@ to the specified type. For example, the following call:</seg>
       <tuv lang="EN-US">
         <seg>Julia can be started in parallel mode with either the &lt;c0&gt;-p&lt;/c0&gt; or the &lt;c1&gt;--machine-file&lt;/c1&gt; options.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T173653Z" creationid="hsugawa8651" creationdate="20181118T173653Z">
-        <seg>&lt;x1/&gt;-p&lt;x2/&gt; もしくは &lt;x3/&gt;--machinefile&lt;x4/&gt; オプションを設定することで、Juliaを並列モードで開始することができます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T181912Z" creationid="hsugawa8651" creationdate="20181118T173653Z">
+        <seg>&lt;c0&gt;-p&lt;/c0&gt;もしくは &lt;c1&gt;--machine-file&lt;/c1&gt; オプションを設定することで、Juliaを並列モードで開始することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15313,8 +15313,8 @@ NUL characters).</seg>
       <tuv lang="EN-US">
         <seg>Note that &lt;c4&gt;ARGS&lt;/c4&gt; is also set when a Julia expression is given using the &lt;c5&gt;-e&lt;/c5&gt; option on the command line (see the &lt;c6&gt;julia&lt;/c6&gt; help output below) but &lt;c7&gt;PROGRAM_FILE&lt;/c7&gt; will be empty.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T173615Z" creationid="hsugawa8651" creationdate="20181118T173549Z">
-        <seg>コマンドラインで &lt;x11/&gt;-e&lt;x12/&gt; オプションが設定された際にも &lt;x9/&gt;ARGS&lt;x10/&gt; は設定されます（下の &lt;x13/&gt;julia&lt;x14/&gt; ヘルプ出力を参照してください）が、&lt;x15/&gt;PROGRAM_FILE&lt;x16/&gt;は空です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T181824Z" creationid="hsugawa8651" creationdate="20181118T173549Z">
+        <seg>コマンドラインで  &lt;c5&gt;-e&lt;/c5&gt; オプションが設定された際にも &lt;c4&gt;ARGS&lt;/c4&gt; は設定されます（下の &lt;c6&gt;julia&lt;/c6&gt; ヘルプ出力を参照してください）が、&lt;c7&gt;PROGRAM_FILE&lt;/c7&gt;は空です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18116,8 +18116,8 @@ resulting expression contains &lt;x5/&gt;only&lt;x6/&gt; the second &lt;x7/&gt;p
       <tuv lang="EN-US">
         <seg>The &lt;c0&gt;--&lt;/c0&gt; delimiter can be used to separate command-line arguments intended for the script file from arguments intended for Julia:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T173643Z" creationid="hsugawa8651" creationdate="20181118T173643Z">
-        <seg>&lt;x1/&gt;--&lt;x2/&gt;デリミタは、July:を対象とした引数から、スクリプトファイルに対して指定されたコマンドライン引数を区切るために使用できます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T181836Z" creationid="hsugawa8651" creationdate="20181118T173643Z">
+        <seg>&lt;c0&gt;--&lt;/c0&gt;デリミタは、July:を対象とした引数から、スクリプトファイルに対して指定されたコマンドライン引数を区切るために使用できます。</seg>
       </tuv>
     </tu>
     <tu>
