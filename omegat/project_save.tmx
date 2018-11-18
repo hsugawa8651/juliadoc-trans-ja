@@ -2023,6 +2023,16 @@ The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c4&gt;&lt;s5&gt;-p&lt;/s5&gt; &lt;s6&gt;n&lt;/s6&gt;&lt;/c4&gt; will launch an additional &lt;c7&gt;&lt;s8&gt;n&lt;/s8&gt;&lt;/c7&gt; worker
+processes, while &lt;c9&gt;&lt;s10&gt;--machinefile&lt;/s10&gt; &lt;s11&gt;file&lt;/s11&gt;&lt;/c9&gt; will launch a worker for each line in
+file &lt;c12&gt;&lt;s13&gt;file&lt;/s13&gt;&lt;/c12&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084910Z" creationid="hsugawa8651" creationdate="20181118T084910Z">
+        <seg>-p n でn個のワーカーを追加で起動することができ、 --machinefile file では file ファイルの各行ごとにワーカーが起動されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c6&gt;&lt;s7&gt;ARGS&lt;/s7&gt;&lt;/c6&gt; is also set when script code
 is given using the &lt;c8&gt;&lt;s9&gt;-e&lt;/s9&gt;&lt;/c8&gt; option on the command line (see the &lt;c10&gt;&lt;s11&gt;julia&lt;/s11&gt;&lt;/c10&gt;
 help output below).</seg>
@@ -4033,8 +4043,8 @@ from &lt;x1/&gt;`AbstractArray`&lt;x2/&gt;.</seg>
 are taken as command-line arguments to the program &lt;c2&gt;&lt;s3&gt;script.jl&lt;/s3&gt;&lt;/c2&gt;, passed
 in the global constant &lt;c4&gt;&lt;s5&gt;ARGS&lt;/s5&gt;&lt;/c4&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084507Z" creationid="hsugawa8651" creationdate="20181118T084507Z">
-        <seg>上の例が示すように、後ろの引数は script.jl というプログラムのコマンドライン引数として取られ、 グローバル定数 ARGS に渡されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084705Z" creationid="hsugawa8651" creationdate="20181118T084507Z">
+        <seg>上の例が示すように、後ろの引数は &lt;c2&gt;&lt;s3&gt;script.jl&lt;/s3&gt;&lt;/c2&gt; というプログラムのコマンドライン引数として取られ、 グローバル定数 &lt;c4&gt;&lt;s5&gt;ARGS&lt;/s5&gt;&lt;/c4&gt;に渡されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11854,6 +11864,15 @@ to the specified type. For example, the following call:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134250Z" creationid="hsugawa8651" creationdate="20181117T134250Z">
         <seg>Juliaは、各引数を変換するために&lt;x1/&gt;'Base.チコンベルト'&lt;x2/&gt;関数への呼び出しを自動的に挿入します。 指定されたタイプです。たとえば、次の呼び出しが行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia can be started in parallel mode with either the &lt;c0&gt;&lt;s1&gt;-p&lt;/s1&gt;&lt;/c0&gt; or the
+&lt;c2&gt;&lt;s3&gt;--machinefile&lt;/s3&gt;&lt;/c2&gt; options.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084853Z" creationid="hsugawa8651" creationdate="20181118T084853Z">
+        <seg>-p もしくは --machinefile オプションを設定することで、Juliaを並列モードで開始することができます。</seg>
       </tuv>
     </tu>
     <tu>
