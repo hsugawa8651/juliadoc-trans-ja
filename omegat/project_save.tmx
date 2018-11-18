@@ -12312,8 +12312,8 @@ syntax without the &lt;x6/&gt;end&lt;x7/&gt; keyword is equivalent to a call to
 representation by overloading &lt;x3/&gt;`show`&lt;x4/&gt;, Julia provides a standardized mechanism for rich multimedia
 output (such as images, formatted text, or even audio and video), consisting of three parts:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043250Z" creationid="hsugawa8651" creationdate="20181112T043216Z">
-        <seg>テキスト出力が&lt;x1/&gt;`印刷"&lt;x2/&gt;によって実行されるように、ユーザ定義型はそのテキストを示すことができる オーバーロード&lt;x3/&gt;"show`&lt;x4/&gt;をオーバーロードすることで表現することで、リッチなマルチメディアを実現するための標準化されたメカニズムを提供する 出力(イメージ、フォーマットされたテキスト、オーディオやビデオなど)、3つの部分から構成されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T090648Z" creationid="hsugawa8651" creationdate="20181112T043216Z">
+        <seg>テキスト出力が&lt;x1/&gt;`print`&lt;x2/&gt;によって実行されるように、ユーザ定義型はそのテキストを示すことができる オーバーロード&lt;x3/&gt;"show`&lt;x4/&gt;をオーバーロードすることで表現することで、リッチなマルチメディアを実現するための標準化されたメカニズムを提供する 出力(イメージ、フォーマットされたテキスト、オーディオやビデオなど)、3つの部分から構成されます。</seg>
       </tuv>
     </tu>
     <tu>
