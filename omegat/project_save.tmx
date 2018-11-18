@@ -8817,6 +8817,14 @@ manner that allows all custom arrays to behave similarly.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Different entities may use the same name to refer to unrelated packages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T122953Z" creationid="hsugawa8651" creationdate="20181118T122953Z">
+        <seg>異なるエンティティは、無関係パッケージを参照するために同じ名前を使用することがある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Dingo&lt;x1/&gt; cannot import anything because it has a project file without a &lt;x2/&gt;[deps]&lt;x3/&gt; section.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121355Z" creationid="hsugawa8651" creationdate="20181118T121355Z">
@@ -12091,6 +12099,14 @@ simply apply a given function &lt;x1/&gt;f(x)&lt;x2/&gt; to each element of an a
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120053Z" creationid="hsugawa8651" creationdate="20181118T120053Z">
         <seg>技術計算言語では、関数の「ベクトル化」バージョンが一般的であることが一般的です。 単純に与えられた関数&lt;x1/&gt;f(x)&lt;x2/&gt;を配列&lt;x3/&gt;A&lt;x4/&gt;の各要素に適用して、新しい配列を生成する。 &lt;x5/&gt;f(A)&lt;x6/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the REPL, included paths are interpreted relative to the current working directory, &lt;x18/&gt;pwd()&lt;x19/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T122935Z" creationid="hsugawa8651" creationdate="20181118T122935Z">
+        <seg>REPLでは、含まれるパスは、現在のワーキングディレクトリ&lt;x18/&gt;pwd()&lt;x19/&gt;に相対的に解釈されます。</seg>
       </tuv>
     </tu>
     <tu>
