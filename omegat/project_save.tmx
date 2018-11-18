@@ -4168,8 +4168,8 @@ in the global constant &lt;c4&gt;&lt;s5&gt;ARGS&lt;/s5&gt;&lt;/c4&gt;.</seg>
         <seg>As the example implies, the following command-line arguments to &lt;x1/&gt;julia&lt;x2/&gt; are interpreted as
 command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in the global constant &lt;x5/&gt;ARGS&lt;x6/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224332Z" creationid="hsugawa8651" creationdate="20181109T224332Z">
-        <seg>この例が示すように、&lt;x1/&gt;julia&lt;x2/&gt;への次のコマンドライン引数は、以下のように解釈されます。 グローバル定数&lt;x5/&gt;ARGS&lt;x6/&gt;で渡されたプログラム&lt;x3/&gt;スクリプト.jl&lt;x4/&gt;へのコマンドライン引数。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T091747Z" creationid="hsugawa8651" creationdate="20181109T224332Z">
+        <seg>上の例が示すように、後ろの引数は &lt;x1/&gt;script.jl&lt;x2/&gt;というプログラムのコマンドライン引数として取られ、 グローバル定数 &lt;x5/&gt;ARGS&lt;x6/&gt;に渡されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9383,8 +9383,8 @@ the value of an environment variable, one makes a call like this:</seg>
         <seg>For example, to just print the
 arguments given to a script, you could do this:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224341Z" creationid="hsugawa8651" creationdate="20181109T224341Z">
-        <seg>たとえば スクリプトに与えられた引数は、次のようになります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T092013Z" creationid="hsugawa8651" creationdate="20181109T224341Z">
+        <seg>例えば以下のようにすることで、スクリプトに渡された引数を単純に出力することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13009,8 +13009,8 @@ NUL characters).</seg>
 also set when a Julia expression is given using the &lt;x11/&gt;-e&lt;x12/&gt; option on the command line (see the
 &lt;x13/&gt;julia&lt;x14/&gt; help output below) but &lt;x15/&gt;PROGRAM_FILE&lt;x16/&gt; will be empty.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224338Z" creationid="hsugawa8651" creationdate="20181109T224338Z">
-        <seg>&lt;x9/&gt;ARGS&lt;x10/&gt;は以下のようになります。 また、コマンドラインで&lt;x11/&gt;-e&lt;x12/&gt;オプションを使用してJulia式を指定したときにも設定されます( &lt;x13/&gt;julia&lt;x14/&gt;ヘルプ出力は次のようになりますが、&lt;x15/&gt;PROGRAM_FILE&lt;x16/&gt;は空です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T091953Z" creationid="hsugawa8651" creationdate="20181109T224338Z">
+        <seg>コマンドラインで &lt;x11/&gt;-e&lt;x12/&gt; オプションが設定された際にも &lt;x9/&gt;ARGS&lt;x10/&gt; は設定されます（下の &lt;x13/&gt;julia&lt;x14/&gt; ヘルプ出力を参照してください）が、&lt;x15/&gt;PROGRAM_FILE&lt;x16/&gt;は空です。</seg>
       </tuv>
     </tu>
     <tu>
