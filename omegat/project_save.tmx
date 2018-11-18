@@ -2538,8 +2538,8 @@ The operators &lt;x14/&gt;+&lt;x15/&gt;, &lt;x16/&gt;++&lt;x17/&gt; and &lt;x18/
         <seg>&lt;x12/&gt;user&lt;x13/&gt; defaults to current user,
 &lt;x14/&gt;port&lt;x15/&gt; to the standard ssh port.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224441Z" creationid="hsugawa8651" creationdate="20181109T224441Z">
-        <seg>&lt;x12/&gt;ユーザ&lt;x13/&gt;デフォルトは現在のユーザになります。 &lt;x14/&gt;ポート&lt;x15/&gt;は、標準的なsshポートに対して設定されています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T092522Z" creationid="hsugawa8651" creationdate="20181109T224441Z">
+        <seg>デフォルトでは、&lt;x12/&gt;user&lt;x13/&gt; は現在のユーザー、 &lt;x14/&gt;port&lt;x15/&gt; は標準のsshポートになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2547,8 +2547,8 @@ The operators &lt;x14/&gt;+&lt;x15/&gt;, &lt;x16/&gt;++&lt;x17/&gt; and &lt;x18/
         <seg>&lt;x16/&gt;count&lt;x17/&gt; is the number of workers to spawn on the node, and defaults
 to 1.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224446Z" creationid="hsugawa8651" creationdate="20181109T224446Z">
-        <seg>&lt;x16/&gt;count&lt;x17/&gt;は、ノード上でスポーンするワーカーの数です。デフォルトは 1です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T092547Z" creationid="hsugawa8651" creationdate="20181109T224446Z">
+        <seg>&lt;x16/&gt;count&lt;x17/&gt;はノードで作成されるワーカーの数で、デフォルトは1です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8427,8 +8427,8 @@ following the instructions at
         <seg>Each machine definition
 takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224423Z" creationid="hsugawa8651" creationdate="20181109T224423Z">
-        <seg>各マシン定義 は、&lt;x10/&gt;[count*][user@]host[:port][bind_addr[:port]]&lt;x11/&gt;の形式をとることになります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T092436Z" creationid="hsugawa8651" creationdate="20181109T224423Z">
+        <seg>各マシンの定義は &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/&gt;という形式で書かれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10642,8 +10642,10 @@ put it in &lt;c0&gt;&lt;s1&gt;~/.juliarc.jl&lt;/s1&gt;&lt;/c0&gt;:</seg>
         <seg>If you have code that you want executed whenever Julia is run, you can put it in
 &lt;x1/&gt;&lt;x2/&gt;/.julia/config/startup.jl&lt;x3/&gt;:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224453Z" creationid="hsugawa8651" creationdate="20181109T224453Z">
-        <seg>Juliaが実行されるたびに実行するコードがある場合は、そのコードを次のように記述することができます。 &lt;x1/&gt;&lt;x2/&gt;/.julia/config/startup.jl&lt;x3/&gt;:</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T092649Z" creationid="hsugawa8651" creationdate="20181109T224453Z">
+        <seg>Juliaの起動時に毎回実行したいコードがあれば、 &lt;x1/&gt;&lt;x2/&gt;/.julia/config/startup.jl&lt;x3/&gt; に書いておくことができます。
+
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -16141,8 +16143,8 @@ connect to this worker.</seg>
         <seg>The optional &lt;x18/&gt;bind-to bind_addr[:port]&lt;x19/&gt; specifies the IP address and port that other workers
 should use to connect to this worker.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224449Z" creationid="hsugawa8651" creationdate="20181109T224449Z">
-        <seg>オプションの&lt;x18/&gt;bindto bind_addr[:port]&lt;x19/&gt;は、他の作業者がそのIPアドレスとポートを指定します。 この作業者に接続するために使用する必要があります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T092621Z" creationid="hsugawa8651" creationdate="20181109T224449Z">
+        <seg>&lt;x18/&gt;bind-to bind_addr[:port]&lt;x19/&gt; オプションを指定すると、他のワーカーがそのワーカーと接続する際に使うIPアドレスとポートを設定することもできます。</seg>
       </tuv>
     </tu>
     <tu>
