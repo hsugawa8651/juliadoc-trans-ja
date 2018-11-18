@@ -11005,6 +11005,14 @@ efficient enough for deploying performance-intensive applications.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Fortunately, modern language design and compiler techniques make it possible to mostly eliminate the performance trade-off and provide a single environment productive enough for prototyping and efficient enough for deploying performance-intensive applications.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182312Z" creationid="hsugawa8651" creationdate="20181118T182312Z">
+        <seg> 幸い、最近の言語設計やコンパイラの進歩によって、性能の低下を避けつつ、「生産的なプロトタイピング」と「高性能なアプリケーションの効率的なデプロイ」の両方をひとつの環境で提供することが可能になりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Fortunately, most Julia users can remain oblivious to the technical details of code loading and simply use the built-in package manager to add a package &lt;x1/&gt;X&lt;x2/&gt; to the appropriate project and manifest files and then write &lt;x3/&gt;import X&lt;x4/&gt; to load &lt;x5/&gt;X&lt;x6/&gt; without a further thought.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121446Z" creationid="hsugawa8651" creationdate="20181118T121446Z">
@@ -16945,6 +16953,14 @@ daily work.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Scientific computing has traditionally required the highest performance, yet domain experts have largely moved to slower dynamic languages for daily work.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182247Z" creationid="hsugawa8651" creationdate="20181118T182247Z">
+        <seg>科学技術計算には常に最高の性能が求められますが、この分野のエキスパートたちはより低速な動的言語を使って仕事をしています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Second"
  "3.</seg>
       </tuv>
@@ -18545,6 +18561,14 @@ or 64-bit:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110332Z" creationid="hsugawa8651" creationdate="20181112T110332Z">
         <seg>Julia内部変数&lt;x1/&gt;`Sys.WORD_SIZE`&lt;x2/&gt;は、ターゲットシステムが32ビットであるかどうかを示します。 または64ビット:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Julia programming language fills this role: it is a flexible dynamic language, appropriate for scientific and numerical computing, with performance comparable to traditional statically-typed languages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182315Z" creationid="hsugawa8651" creationdate="20181118T182315Z">
+        <seg> Juliaはこのような目的のために開発されています。つまり、Juliaは柔軟な動的言語であると同時に、古くからの静的型付け言語と同等の性能を実現することで科学計算や数値計算に適してたものになっています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22629,6 +22653,14 @@ languages for these applications, and we do not expect their use to
 diminish.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081351Z" creationid="hsugawa8651" creationdate="20181118T081351Z">
+        <seg> 私達はこの分野で動的言語を用いることにたくさんの利点があることを理解していますし、動的言語が使われないようにしたいわけでもありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We believe there are many good reasons to prefer dynamic languages for these applications, and we do not expect their use to diminish.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182303Z" creationid="hsugawa8651" creationdate="20181118T182303Z">
         <seg> 私達はこの分野で動的言語を用いることにたくさんの利点があることを理解していますし、動的言語が使われないようにしたいわけでもありません。</seg>
       </tuv>
     </tu>
