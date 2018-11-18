@@ -14285,6 +14285,14 @@ and efficiency in a single language.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia also defines the types &lt;c0&gt;Int&lt;/c0&gt; and &lt;c1&gt;UInt&lt;/c1&gt;, which are aliases for the system's signed and unsigned native integer types respectively:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185155Z" creationid="hsugawa8651" creationdate="20181118T185155Z">
+        <seg>また、Juliaは、&lt;c0&gt;Int&lt;/c0&gt;と&lt;c1&gt;UInt&lt;/c1&gt; の型を定義します。 これらは、それぞれ、システムの符号つきと符号なしのネイティブの整数型の別名（エイリアス）です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia also defines the types &lt;x1/&gt;Int&lt;x2/&gt; and &lt;x3/&gt;UInt&lt;x4/&gt;, which are aliases for the system's signed and unsigned
 native integer types respectively:</seg>
       </tuv>
@@ -14782,6 +14790,14 @@ integer literals and engineering notation for floating-point literals.</seg>
 64 bits always create 64-bit integers, regardless of the system type:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225319Z" creationid="hsugawa8651" creationdate="20181109T225319Z">
+        <seg>32ビットのみを使用して表現することはできないが、次のように表現できる整数リテラル 64ビットは、システムタイプに関係なく、常に64ビットの整数を作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Larger integer literals that cannot be represented using only 32 bits but can be represented in 64 bits always create 64-bit integers, regardless of the system type:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185213Z" creationid="hsugawa8651" creationdate="20181118T185213Z">
         <seg>32ビットのみを使用して表現することはできないが、次のように表現できる整数リテラル 64ビットは、システムタイプに関係なく、常に64ビットの整数を作成します。</seg>
       </tuv>
     </tu>
@@ -16969,6 +16985,14 @@ using the &lt;x1/&gt;`//`&lt;x2/&gt; operator:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123828Z" creationid="hsugawa8651" creationdate="20181118T123828Z">
         <seg>&lt;x1/&gt;パラメトリックタイプ&lt;x2/&gt;からリコールされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Recall that the variable &lt;a0&gt;&lt;c1&gt;ans&lt;/c1&gt;&lt;/a0&gt; is set to the value of the last expression evaluated in an interactive session.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185314Z" creationid="hsugawa8651" creationdate="20181118T185314Z">
+        <seg>変数&lt;x1/&gt;`は、最後に評価された最後の式の値に設定されていることを思い出してください。 対話型セッションです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20582,6 +20606,14 @@ determined by the number of hex digits used:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The size of the unsigned value is determined by the number of hex digits used:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185304Z" creationid="hsugawa8651" creationdate="20181118T185304Z">
+        <seg>符号なし値のサイズは 使用される16進数の数によって決定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The so-called "ternary operator", &lt;x1/&gt;?:&lt;x2/&gt;, is closely related to the &lt;x3/&gt;if&lt;x4/&gt;-&lt;x5/&gt;elseif&lt;x6/&gt;-&lt;x7/&gt;else&lt;x8/&gt; syntax,
 but is used where a conditional choice between single expression values is required, as opposed
 to conditional execution of longer blocks of code.</seg>
@@ -21527,6 +21559,14 @@ values, one typically is using them to represent a fixed numeric byte sequence, 
 an integer value.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225343Z" creationid="hsugawa8651" creationdate="20181109T225343Z">
+        <seg>この動作は、整数に対して符号なしの16進数のリテラルを使用する場合の観察結果に基づいています。 値は通常、固定された数値バイトシーケンスを表すために使用されます。 整数値。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This behavior is based on the observation that when one uses unsigned hex literals for integer values, one typically is using them to represent a fixed numeric byte sequence, rather than just an integer value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185310Z" creationid="hsugawa8651" creationdate="20181118T185310Z">
         <seg>この動作は、整数に対して符号なしの16進数のリテラルを使用する場合の観察結果に基づいています。 値は通常、固定された数値バイトシーケンスを表すために使用されます。 整数値。</seg>
       </tuv>
     </tu>
@@ -22897,6 +22937,14 @@ are not possible in the translation to Julia.</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082831Z" creationid="hsugawa8651" creationdate="20181118T082831Z">
         <seg>控えめかつ強力な型システム
 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unsigned integers are input and output using the &lt;c0&gt;0x&lt;/c0&gt; prefix and hexadecimal (base 16) digits &lt;c1&gt;0-9a-f&lt;/c1&gt; (the capitalized digits &lt;c2&gt;A-F&lt;/c2&gt; also work for input).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185258Z" creationid="hsugawa8651" creationdate="20181118T185258Z">
+        <seg>符号なし整数は、&lt;c0&gt;0x&lt;/c0&gt; プレフィックスおよび16進数(base16)桁を使用して入力および出力されます。 &lt;c1&gt;0-9a-f&lt;/c1&gt;(大文字の数字 &lt;c2&gt;A-F&lt;/c2&gt;も入力に有効です)。</seg>
       </tuv>
     </tu>
     <tu>
