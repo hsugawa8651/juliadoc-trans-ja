@@ -18515,8 +18515,8 @@ when the method containing the usage is defined.</seg>
         <seg>The type system is described in &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-types) and defining a function
 in terms of methods chosen by multiple dispatch on run-time argument types is described in &lt;x4/&gt;Methods&lt;x5/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T105942Z" creationid="hsugawa8651" creationdate="20181112T105939Z">
-        <seg>タイプシステムは&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref manタイプ)で記述され、関数を定義します。 ランタイム引数の種類に対する複数のディスパッチによって選択されるメソッドについては、&lt;x4/&gt;メソッド&lt;x5/&gt;で説明されています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T122504Z" creationid="hsugawa8651" creationdate="20181112T105939Z">
+        <seg>タイプシステムは&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;@ref man-types)で記述され、関数を定義します。 ランタイム引数の種類に対する複数のディスパッチによって選択されるメソッドについては、&lt;x4/&gt;メソッド&lt;x5/&gt;で説明されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18800,8 +18800,8 @@ be accessed in a fusing fashion by &lt;x9/&gt;.=&lt;x10/&gt; assignment).</seg>
         <seg>There is one additional special calling convention &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref Base.llvmcall),
 which allows inserting calls to LLVM intrinsics directly.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152448Z" creationid="hsugawa8651" creationdate="20181117T152448Z">
-        <seg>さらに特別な呼び出し規則が一つあります&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref Base.リウムカル)。 ではLLVM組み込みへの呼び出しを直接挿入することができます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T122410Z" creationid="hsugawa8651" creationdate="20181117T152448Z">
+        <seg>さらに特別な呼び出し規則が一つあります&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref Base.llvmcall)。 ではLLVM組み込みへの呼び出しを直接挿入することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -37009,8 +37009,8 @@ arguments of &lt;x5/&gt;Style1&lt;x6/&gt; and &lt;x7/&gt;Style2&lt;x8/&gt;.</seg
         <seg>where each &lt;x1/&gt;I_k&lt;x2/&gt; may be a scalar integer, an array of integers, or any other
 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-supported-index-types).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160720Z" creationid="hsugawa8651" creationdate="20181109T155116Z">
-        <seg>ここで、各&lt;x1/&gt;I_k&lt;x2/&gt;はスカラー整数、整数の配列、またはその他のいずれかである。 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref manサポートされているインデックス・タイプ)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T122241Z" creationid="hsugawa8651" creationdate="20181109T155116Z">
+        <seg>ここで、各&lt;x1/&gt;I_k&lt;x2/&gt;はスカラー整数、整数の配列、またはその他のいずれかである。 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-supported-index-types)。</seg>
       </tuv>
     </tu>
     <tu>
