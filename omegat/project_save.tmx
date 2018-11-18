@@ -6943,6 +6943,15 @@ these floating-point values are the results of certain arithmetic operations:</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Call C functions directly (no wrappers or special APIs needed)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082910Z" creationid="hsugawa8651" creationdate="20181118T082910Z">
+        <seg>ラッパーや特別なAPIを必要としない、Cの関数の直接の呼び出し
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Callees must make explicit copies to ensure that they don't modify inputs that
 they don't intend to change.</seg>
       </tuv>
@@ -8155,6 +8164,15 @@ manner that allows all custom arrays to behave similarly.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Designed for parallelism and distributed computation</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082802Z" creationid="hsugawa8651" creationdate="20181118T082653Z">
+        <seg>並列コンピューティング・分散コンピューティングを意図した設計
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Dict("A"=&gt;1, "B"=&gt;2)&lt;x1/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041733Z" creationid="hsugawa8651" creationdate="20181112T041733Z">
@@ -8255,10 +8273,31 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Efficient support for
+&lt;a0&gt;Unicode&lt;/a0&gt;, including but not
+limited to &lt;a1&gt;UTF-8&lt;/a1&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082900Z" creationid="hsugawa8651" creationdate="20181118T082900Z">
+        <seg>Unicode の効率的なサポート。 UTF-8 も含みますが、これに限定しません
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Either &lt;x1/&gt;EltypeUnknown()&lt;x2/&gt; or &lt;x3/&gt;HasEltype()&lt;x4/&gt; as appropriate</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112153Z" creationid="hsugawa8651" creationdate="20181112T112153Z">
         <seg>&lt;x1/&gt;EltypeUnknown()&lt;x2/&gt;または&lt;x3/&gt;HasEltype()&lt;x4/&gt;のいずれか適切な場合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Elegant and extensible conversions and promotions for numeric and
+other types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082846Z" creationid="hsugawa8651" creationdate="20181118T082846Z">
+        <seg>数値型他の型の、エレガントで拡張性のある変換やプロモーション [2]
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -9438,6 +9477,16 @@ efficient enough for deploying performance-intensive applications.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Free and open source (&lt;a0&gt;MIT
+licensed&lt;/a0&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082628Z" creationid="hsugawa8651" creationdate="20181118T082628Z">
+        <seg>フリーかつオープンソース（ MITライセンス ）
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>From these definitions, one obtains the following behavior:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131454Z" creationid="hsugawa8651" creationdate="20181113T131454Z">
@@ -10540,6 +10589,15 @@ use &lt;x10/&gt;exec&lt;x11/&gt; to replace the process to &lt;x12/&gt;julia&lt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024926Z" creationid="hsugawa8651" creationdate="20181110T024926Z">
         <seg>Unixライクな 環境、信頼できる方法で&lt;x6/&gt;julia&lt;x7/&gt;にオプションを渡すことができます。 実行可能スクリプトは、スクリプトを&lt;x8/&gt;bash&lt;x9/&gt;スクリプトとして起動します。 &lt;x10/&gt;exec&lt;x11/&gt;を使用して、プロセスを&lt;x12/&gt;ジュリア&lt;x13/&gt;に置き換えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In addition to the above, some
+advantages of Julia over comparable systems include:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082616Z" creationid="hsugawa8651" creationdate="20181118T082616Z">
+        <seg>これに加え、Juliaは以下のような長所を持ちます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12115,6 +12173,16 @@ integer literals and engineering notation for floating-point literals.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Lightweight “green” threading
+(&lt;a0&gt;coroutines&lt;/a0&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082816Z" creationid="hsugawa8651" creationdate="20181118T082816Z">
+        <seg>軽量で”greenな”スレッドシステム [1] （ コルーチン ）
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Like &lt;x2/&gt;Dict&lt;x3/&gt; it uses &lt;x4/&gt;hash&lt;x5/&gt; for hashing and &lt;x6/&gt;isequal&lt;x7/&gt; for equality, unlike &lt;x8/&gt;Dict&lt;x9/&gt; it does
 not convert keys on insertion.</seg>
       </tuv>
@@ -12587,6 +12655,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160357Z" creationid="hsugawa8651" creationdate="20181109T160357Z">
         <seg>&lt;x2/&gt;AbstractArray{T,N}&lt;x3/&gt;が内部的にどのように表されても、&lt;x4/&gt;T&lt;x5/&gt;は以下のタイプである。 &lt;x6/&gt;整数&lt;x7/&gt;インデックス(&lt;x8/&gt;A[1,.…,1]&lt;x9/&gt;,&lt;x10/&gt;)は&lt;x10/&gt;A&lt;x11/&gt;であり、&lt;x12/&gt;N&lt;x13/&gt;は&lt;x12/&gt;n&lt;x13/&gt;である。 &lt;x14/&gt;`size'&lt;x15/&gt;によって返されるタプルの長さです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No need to vectorize code for performance; devectorized code is fast</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082754Z" creationid="hsugawa8651" creationdate="20181118T082737Z">
+        <seg>性能のためにコードをベクトル化する必要がありません。ベクトル化されていないコードも高速に動作します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13362,6 +13438,15 @@ types designed to mimic the internal structure of corresponding C structs.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030501Z" creationid="hsugawa8651" creationdate="20181114T030501Z">
         <seg>正の0は負の値で、負の値は0より大きくなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Powerful shell-like capabilities for managing other processes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082917Z" creationid="hsugawa8651" creationdate="20181118T082917Z">
+        <seg>シェルのような強力なプロセス管理
+n</seg>
       </tuv>
     </tu>
     <tu>
@@ -17649,6 +17734,15 @@ are not possible in the translation to Julia.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Unobtrusive yet powerful type system</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082831Z" creationid="hsugawa8651" creationdate="20181118T082831Z">
+        <seg>控えめかつ強力な型システム
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Unsigned integers are input and output using the &lt;x1/&gt;0x&lt;x2/&gt; prefix and hexadecimal (base 16) digits
 &lt;x3/&gt;0-9a-f&lt;x4/&gt; (the capitalized digits &lt;x5/&gt;A-F&lt;x6/&gt; also work for input).</seg>
       </tuv>
@@ -17679,6 +17773,14 @@ by &lt;x7/&gt;width[]&lt;x8/&gt; and &lt;x9/&gt;range[]&lt;x10/&gt;; that is, th
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224652Z" creationid="hsugawa8651" creationdate="20181109T224652Z">
         <seg>使用可能な場合は、システムイメージからネイティブコードを使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User-defined types are as fast and compact as built-ins</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082721Z" creationid="hsugawa8651" creationdate="20181118T082639Z">
+        <seg>コンパクトで組み込み型と同等の速度を持つユーザー定義型</seg>
       </tuv>
     </tu>
     <tu>
