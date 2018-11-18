@@ -1092,6 +1092,14 @@ julia&gt; x &lt;x1/&gt; x is unchanged!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(to view the structure of this expression, try &lt;x1/&gt;ex.head&lt;x2/&gt; and &lt;x3/&gt;ex.args&lt;x4/&gt;, or use &lt;x5/&gt;`dump`&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115345Z" creationid="hsugawa8651" creationdate="20181118T115345Z">
+        <seg>(この式の構造を表示するには、&lt;x1/&gt;ex.head&lt;x2/&gt;と&lt;x3/&gt;ex.args&lt;x4/&gt;を使用するか、&lt;x5/&gt;`dump'&lt;x6/&gt;を使用してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(y, x) : (x, y)
 
 julia&gt; range((min, max)) = max - min
@@ -3237,6 +3245,14 @@ that can also optionally be used to make type declarations</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A symbol is an &lt;x3/&gt;interned string&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115212Z" creationid="hsugawa8651" creationdate="20181118T115212Z">
+        <seg>シンボルは、&lt;x3/&gt;インターンの文字列&lt;x4/&gt;です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A symbol representing the operator associativity can also be found by calling the built-in function &lt;x1/&gt;Base.operator_associativity&lt;x2/&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095638Z" creationid="hsugawa8651" creationdate="20181118T095638Z">
@@ -3845,6 +3861,14 @@ is like an outer constructor method, except for two differences:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135000Z" creationid="hsugawa8651" creationdate="20181117T135000Z">
         <seg>スカラーインデックスの配列を表すオブジェクトで、&lt;x1/&gt;によって変換されて、&lt;x1/&gt;によって変換されます。デフォルトでは、次のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Another way to view expressions is with &lt;x1/&gt;Meta.show_sexpr&lt;x2/&gt;, which displays the &lt;x3/&gt;S-expression&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115255Z" creationid="hsugawa8651" creationdate="20181118T115255Z">
+        <seg>式を表示するもう一つの方法は、&lt;x1/&gt;Meta.show_screen&lt;x2/&gt;であり、&lt;x3/&gt;S式&lt;x4/&gt;を表示します。セクプル</seg>
       </tuv>
     </tu>
     <tu>
@@ -6789,6 +6813,15 @@ is unintuitive at first.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Because all data types and
+code in Julia are represented by Julia data structures, powerful &lt;x3/&gt;reflection&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115144Z" creationid="hsugawa8651" creationdate="20181118T115144Z">
+        <seg>すべてのデータ型と Juliaのコードは、Juliaのデータ構造で表され、強力な&lt;x3/&gt;リフレクション&lt;x4/&gt;で表されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because of the lack of a central naming authority, a single project can quite possibly end up depending on different packages that have the same name.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152837Z" creationid="hsugawa8651" creationdate="20181117T152837Z">
@@ -8779,6 +8812,14 @@ an &lt;x3/&gt;Int&lt;x4/&gt; in Julia).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Every Julia program starts life as a string:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115150Z" creationid="hsugawa8651" creationdate="20181118T115150Z">
+        <seg>すべてのジュリアプログラムは文字列として始まります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Every binary arithmetic and bitwise operator also has an updating version that assigns the result
 of the operation back into its left operand.</seg>
       </tuv>
@@ -8896,10 +8937,50 @@ this means that:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Expr&lt;x1/&gt; objects contain two parts:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115208Z" creationid="hsugawa8651" creationdate="20181118T115208Z">
+        <seg>expr&lt;x1/&gt;オブジェクトには、次の2つのパーツが含まれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Expr&lt;x1/&gt; objects may also be nested:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115249Z" creationid="hsugawa8651" creationdate="20181118T115249Z">
+        <seg>Expr&lt;x1/&gt;オブジェクトはネストされている場合もあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Expr&lt;x1/&gt;, which may look very familiar to users of Lisp.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115258Z" creationid="hsugawa8651" creationdate="20181118T115258Z">
+        <seg>Expr&lt;x1/&gt;。Lispのユーザには非常に馴染みのあるものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Expression</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134547Z" creationid="hsugawa8651" creationdate="20181117T134547Z">
         <seg>式</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Expressions and evaluation</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115329Z" creationid="hsugawa8651" creationdate="20181118T115326Z">
+        <seg>式と評価</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Expressions may also be constructed directly in &lt;x1/&gt;prefix notation&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115234Z" creationid="hsugawa8651" creationdate="20181118T115225Z">
+        <seg>式は、&lt;x1/&gt;プレフィックス表記&lt;x2/&gt;で直接構築することもできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10118,6 +10199,14 @@ where syntactic conflicts arise:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is example of the short form used to quote an arithmetic expression:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115343Z" creationid="hsugawa8651" creationdate="20181118T115343Z">
+        <seg>算術式の引用に使用される短い形式の例を次に示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is the anatomy of the &lt;x1/&gt;if&lt;x2/&gt;-&lt;x3/&gt;elseif&lt;x4/&gt;-&lt;x5/&gt;else&lt;x6/&gt; conditional syntax:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225837Z" creationid="hsugawa8651" creationdate="20181109T225837Z">
@@ -10148,6 +10237,15 @@ array (bound to &lt;x5/&gt;x&lt;x6/&gt; at the call site, and bound to &lt;x7/&g
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025123Z" creationid="hsugawa8651" creationdate="20181110T025123Z">
         <seg>ここでは、渡された第1の要素に&lt;x3/&gt;5&lt;x4/&gt;を割り当てる関数&lt;x1/&gt;change_array!&lt;x2/&gt;を作成しました。 array(&lt;x5/&gt;x&lt;x6/&gt;at the call site,and bound to the function in the function内で&lt;x7/&gt;A&lt;x8/&gt;にバインドされます)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here's an example illustrating
+the display on a nested &lt;x2/&gt;Expr&lt;x3/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115301Z" creationid="hsugawa8651" creationdate="20181118T115301Z">
+        <seg>次に例を示します ネストされた&lt;x2/&gt;Expr&lt;x3/&gt;上の表示</seg>
       </tuv>
     </tu>
     <tu>
@@ -11091,6 +11189,15 @@ iterate over any array type.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In contrast, preprocessor "macro" systems, like that of C and C++, perform textual manipulation
+and substitution before any actual parsing or interpretation occurs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115141Z" creationid="hsugawa8651" creationdate="20181118T115141Z">
+        <seg>これとは対照的に、プリプロセッサ「マクロ」システムは、CおよびC++のシステムと同様に、テキスト操作を実行します。 実際の構文解析または解釈の前に置換する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In fact, &lt;x11/&gt;f.(args...)&lt;x12/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161317Z" creationid="hsugawa8651" creationdate="20181114T161317Z">
@@ -11303,6 +11410,15 @@ literal, which has the same length but leading digit &lt;x3/&gt;1&lt;x4/&gt;.</s
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225440Z" creationid="hsugawa8651" creationdate="20181109T225440Z">
         <seg>先行ゼロの場合、サイズは、必要最小限のサイズで決定されます。 リテラルは同じ長さですが、先頭桁はx3/&gt;1&lt;x4/&gt;です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the context of an expression, symbols are used to indicate access to variables; when an expression
+is evaluated, a symbol is replaced with the value bound to that symbol in the appropriate &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref scope-of-variables).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115322Z" creationid="hsugawa8651" creationdate="20181118T115322Z">
+        <seg>式のコンテキストでは、シンボルは変数へのアクセスを示すために使用されます。式の場合は、次のようになります。 は評価され、シンボルは該当する&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(変数の@ref scope of variables)内のそのシンボルにバインドされた値に置き換えられます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13302,6 +13418,14 @@ operations like &lt;x5/&gt;&lt;&lt;x6/&gt;, &lt;x7/&gt;only&lt;x8/&gt; the eleme
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that equivalent expressions may be constructed using &lt;x1/&gt;`Meta.parse`&lt;x2/&gt; or the direct &lt;x3/&gt;Expr&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115347Z" creationid="hsugawa8651" creationdate="20181118T115347Z">
+        <seg>等価な表現は、&lt;x1/&gt;'Meta.parse'&lt;x2/&gt;または直接&lt;x3/&gt;Expr&lt;x4/&gt;を用いて構成されることがあることに注意されたい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that events may be coalesced, so multiple calls to &lt;x1/&gt;uv_async_send&lt;x2/&gt; may result in a single wakeup
 notification to the condition.</seg>
       </tuv>
@@ -14150,6 +14274,14 @@ in this case from a stable sort (unless the array records its mutations in some 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Quoting</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115332Z" creationid="hsugawa8651" creationdate="20181118T115332Z">
+        <seg>見積り</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Ranges in generators and comprehensions can depend on previous ranges by writing multiple &lt;x1/&gt;for&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155036Z" creationid="hsugawa8651" creationdate="20181109T155036Z">
@@ -14699,6 +14831,16 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since code is represented
+by objects that can be created and manipulated from within the language, it is possible for a
+program to transform and generate its own code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115135Z" creationid="hsugawa8651" creationdate="20181118T115135Z">
+        <seg>コードが表現されるため 言語内で作成および操作できるオブジェクトがあります。 独自のコードを変換して生成するプログラムです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since counting up and
 down like the above &lt;x3/&gt;while&lt;x4/&gt; loop does is so common, it can be expressed more concisely with a
 &lt;x5/&gt;for&lt;x6/&gt; loop:</seg>
@@ -14857,6 +14999,14 @@ you'll need to take some extra precautions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032222Z" creationid="hsugawa8651" creationdate="20181116T032222Z">
         <seg>試行されるべきでない操作には、次のものがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sometimes extra parentheses around the argument to &lt;x1/&gt;:&lt;x2/&gt; are needed to avoid ambiguity in parsing.:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115324Z" creationid="hsugawa8651" creationdate="20181118T115324Z">
+        <seg>構文解析のあいまいさを避けるために、&lt;x1/&gt;:&lt;x2/&gt;への引数を囲む余分な括弧が必要になる場合があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15097,6 +15247,14 @@ interoperable code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152848Z" creationid="hsugawa8651" creationdate="20181117T152848Z">
         <seg>&lt;x1/&gt;App&lt;x2/&gt;というアプリケーションを開発していると仮定します。&lt;x3/&gt;Pub&lt;x4/&gt;と&lt;x5/&gt;Priv&lt;x6/&gt;の2つのパッケージを使用しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Symbols</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115302Z" creationid="hsugawa8651" creationdate="20181118T115302Z">
+        <seg>Symbols</seg>
       </tuv>
     </tu>
     <tu>
@@ -15441,6 +15599,23 @@ arbitrary-precision floating point and integer arithmetic, respectively.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;`Symbol`&lt;x2/&gt; constructor takes any number of arguments and creates a new symbol by concatenating
+their string representations together:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115319Z" creationid="hsugawa8651" creationdate="20181118T115319Z">
+        <seg>&lt;x1/&gt;"シンボル"&lt;x2/&gt;コンストラクタは任意の数の引数を取り、新しいシンボルを連結することによって新しいシンボルを作成します。 これらの文字列の表現は次のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;`dump`&lt;x2/&gt; function provides indented and annotated display of &lt;x3/&gt;Expr&lt;x4/&gt; objects:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115244Z" creationid="hsugawa8651" creationdate="20181118T115244Z">
+        <seg>&lt;x1/&gt;`dump'&lt;x2/&gt;関数は、&lt;x3/&gt;Expr&lt;x4/&gt;オブジェクトのインデントされた注釈付きの表示を提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;`typemin`&lt;x2/&gt; and &lt;x3/&gt;`typemax`&lt;x4/&gt; functions also apply to floating-point types:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111123Z" creationid="hsugawa8651" creationdate="20181112T110920Z">
@@ -15543,6 +15718,16 @@ precision integer and floating point numbers respectively.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111544Z" creationid="hsugawa8651" creationdate="20181112T111544Z">
         <seg>&lt;x5/&gt;"BigInt"&lt;x6/&gt;および&lt;x7/&gt;"BigFloat"&lt;x8/&gt;"は、任意のためにJuliaで利用可能である。 精度整数と浮動小数点数をそれぞれ指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x7/&gt;:&lt;x8/&gt; character, followed
+by paired parentheses around a single statement of Julia code, produces an &lt;x9/&gt;Expr&lt;x10/&gt; object based
+on the enclosed code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115341Z" creationid="hsugawa8651" creationdate="20181118T115341Z">
+        <seg>&lt;x7/&gt;:&lt;x8/&gt;文字の後に続く Juliaコードの単一文の周りに括弧で括られた括弧によって、&lt;x9/&gt;Expr&lt;x10/&gt;オブジェクトを生成します。 を使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16320,6 +16505,15 @@ variable or expression.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The key point here is that Julia code is internally represented as a data structure that is accessible
+from the language itself.&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115242Z" creationid="hsugawa8651" creationdate="20181118T115242Z">
+        <seg>ここでのキーポイントは、Juliaコードは、アクセス可能なデータ構造として内部的に表現されるということです。 &lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The lack of type declarations in most dynamic
 languages, however, means that one cannot instruct the compiler about
 the types of values, and often cannot explicitly talk about types at
@@ -16515,6 +16709,15 @@ are:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152318Z" creationid="hsugawa8651" creationdate="20181117T152318Z">
         <seg>次のセクションでは、間接呼び出しを使用して同様の効果を効率的に達成する方法について説明します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The next step is to &lt;x1/&gt;parse&lt;x2/&gt; each string
+into an object called an expression, represented by the Julia type &lt;x3/&gt;Expr&lt;x4/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115159Z" creationid="hsugawa8651" creationdate="20181118T115159Z">
+        <seg>次のステップは、各文字列を&lt;x1/&gt;parse&lt;x2/&gt;に変換することです。 は、Juliaタイプ&lt;x3/&gt;Expr&lt;x4/&gt;:で表される表現と呼ばれるオブジェクトになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16798,6 +17001,15 @@ preceding return type).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The second syntactic purpose of the &lt;x1/&gt;:&lt;x2/&gt; character is to create expression objects without using
+the explicit &lt;x3/&gt;Expr&lt;x4/&gt; constructor.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115336Z" creationid="hsugawa8651" creationdate="20181118T115336Z">
+        <seg>&lt;x1/&gt;:&lt;x2/&gt;文字の2番目の構文目的は、次のような表現オブジェクトを使用せずに表現オブジェクトを作成することです。 明示的な&lt;x3/&gt;Expr&lt;x4/&gt;コンストラクタです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The short function syntax is accordingly quite idiomatic, considerably reducing
 both typing and visual noise.</seg>
       </tuv>
@@ -16921,6 +17133,14 @@ declaration syntax demonstrated above is equivalent to the following compact "as
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151257Z" creationid="hsugawa8651" creationdate="20181117T151257Z">
         <seg>タプルはSIMD型と同じサイズである必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The two expressions constructed above – by parsing and by direct construction – are equivalent:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115239Z" creationid="hsugawa8651" creationdate="20181118T115239Z">
+        <seg>上で作成された2つの式(構文解析と直接構築によって)は、次のようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17488,6 +17708,15 @@ optimize broadcasting.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This allows sophisticated code generation without
+extra build steps, and also allows true Lisp-style macros operating at the level of &lt;x1/&gt;abstract syntax trees&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115138Z" creationid="hsugawa8651" creationdate="20181118T115138Z">
+        <seg>これにより、高度なコード生成が可能になります。 追加のビルドステップで、&lt;x1/&gt;抽象構文ツリー&lt;x2/&gt;のレベルで動作する真のLispスタイルのマクロが可能になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This allows, for example, passing an &lt;x2/&gt;argv&lt;x3/&gt; pointer array of type
 &lt;x4/&gt;Vector{String}&lt;x5/&gt; to an argument of type &lt;x6/&gt;Ptr{Ptr{Cchar}}&lt;x7/&gt;.</seg>
       </tuv>
@@ -17777,6 +18006,14 @@ is platform-dependent and not well-specified.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024923Z" creationid="hsugawa8651" creationdate="20181110T024923Z">
         <seg>これは、シェバンの引数の構文解析が はプラットフォーム依存であり、よく指定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is referred to as &lt;x5/&gt;quoting&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115338Z" creationid="hsugawa8651" creationdate="20181118T115338Z">
+        <seg>これは&lt;x5/&gt;引用符&lt;x6/&gt;と呼ばれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18792,6 +19029,14 @@ like &lt;x1/&gt;`in`&lt;x2/&gt;, or &lt;x3/&gt;`mean`&lt;x4/&gt; and &lt;x5/&gt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T105929Z" creationid="hsugawa8651" creationdate="20181112T105929Z">
         <seg>ここでは、関数を定義する完全な全体像とは程遠いことを説明しておきましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What happens next?&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115154Z" creationid="hsugawa8651" creationdate="20181118T115154Z">
+        <seg>What happens next?&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -20678,6 +20923,14 @@ as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154417Z" creationid="hsugawa8651" creationdate="20181109T154417Z">
         <seg>&lt;x1/&gt;BitArray&lt;x2/&gt;であり、すべての値は&lt;x3/&gt;false&lt;x4/&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>a &lt;x1/&gt;Symbol&lt;x2/&gt; identifying the kind of expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115211Z" creationid="hsugawa8651" creationdate="20181118T115211Z">
+        <seg>&lt;x1/&gt;記号&lt;x2/&gt;で、表現の種類を識別します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26869,6 +27122,26 @@ QuoteNode
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; dump(ex2)
+Expr
+  head: Symbol call
+  args: Array{Any}((3,))
+    1: Symbol +
+    2: Int64 1
+    3: Int64 1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115245Z" creationid="hsugawa8651" creationdate="20181118T115245Z">
+        <seg>julia&gt; dump(ex2)
+Expr
+  head: Symbol call
+  args: Array{Any}((3,))
+    1: Symbol +
+    2: Int64 1
+    3: Int64 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; e = quote quote $$x end end
 quote
     &lt;x1/&gt;= none:1 =&lt;x2/&gt;
@@ -27093,6 +27366,78 @@ end
 
 julia&gt; typeof(ex)
 Expr</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; ex1 = Meta.parse(prog)
+:(1 + 1)
+
+julia&gt; typeof(ex1)
+Expr</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115200Z" creationid="hsugawa8651" creationdate="20181118T115200Z">
+        <seg>julia&gt; ex1 = Meta.parse(prog)
+:(1 + 1)
+
+julia&gt; typeof(ex1)
+Expr</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; ex1 == ex2
+true</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115236Z" creationid="hsugawa8651" creationdate="20181118T115236Z">
+        <seg>julia&gt; ex1 == ex2
+true</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; ex1.args
+3-element Array{Any,1}:
+  :+
+ 1
+ 1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115221Z" creationid="hsugawa8651" creationdate="20181118T115221Z">
+        <seg>julia&gt; ex1.args
+3-element Array{Any,1}:
+  :+
+ 1
+ 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; ex1.head
+:call</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115214Z" creationid="hsugawa8651" creationdate="20181118T115214Z">
+        <seg>julia&gt; ex1.head
+:call</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; ex2 = Expr(:call, :+, 1, 1)
+:(1 + 1)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115230Z" creationid="hsugawa8651" creationdate="20181118T115230Z">
+        <seg>julia&gt; ex2 = Expr(:call, :+, 1, 1)
+:(1 + 1)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; ex3 = Meta.parse("(4 + 4) / 2")
+:((4 + 4) / 2)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115250Z" creationid="hsugawa8651" creationdate="20181118T115250Z">
+        <seg>julia&gt; ex3 = Meta.parse("(4 + 4) / 2")
+:((4 + 4) / 2)</seg>
       </tuv>
     </tu>
     <tu>
@@ -30039,6 +30384,16 @@ I have $100 in my account.</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T021128Z" creationid="hsugawa8651" creationdate="20181116T021128Z">
         <seg>julia&gt; println(raw"\\ \\\"")
 \\ \"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; prog = "1 + 1"
+"1 + 1"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115151Z" creationid="hsugawa8651" creationdate="20181118T115151Z">
+        <seg>julia&gt; prog = "1 + 1"
+"1 + 1"</seg>
       </tuv>
     </tu>
     <tu>
@@ -34683,6 +35038,14 @@ when, how often or how many times these side-effects will occur</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150252Z" creationid="hsugawa8651" creationdate="20181117T150252Z">
         <seg>空のタプル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the expression arguments, which may be symbols, other expressions, or literal values:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115220Z" creationid="hsugawa8651" creationdate="20181118T115217Z">
+        <seg>式引数はシンボル、その他の式、またはリテラル値であることができます。</seg>
       </tuv>
     </tu>
     <tu>
