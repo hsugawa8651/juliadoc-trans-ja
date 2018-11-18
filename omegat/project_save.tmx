@@ -9635,6 +9635,14 @@ the insertion point of a value not found in a sorted array:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Enable or disable syntax and method deprecation warnings (&lt;c0&gt;error&lt;/c0&gt; turns warnings into errors)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183114Z" creationid="hsugawa8651" creationdate="20181118T183114Z">
+        <seg>構文およびメソッドの非推奨警告を有効または無効にします((&lt;c0&gt;error&lt;/c0&gt;は警告をエラーに変換します)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Enable or disable syntax and method deprecation warnings (&lt;x1/&gt;error&lt;x2/&gt; turns warnings into errors)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224733Z" creationid="hsugawa8651" creationdate="20181109T224733Z">
@@ -19192,8 +19200,8 @@ known as a read-eval-print loop or "REPL") by double-clicking the Julia executab
       <tuv lang="EN-US">
         <seg>The easiest way to learn and experiment with Julia is by starting an interactive session (also known as a read-eval-print loop or "REPL") by double-clicking the Julia executable or running &lt;c0&gt;julia&lt;/c0&gt; from the command line:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T173416Z" creationid="hsugawa8651" creationdate="20181118T173416Z">
-        <seg>Juliaを学んだり試したりする一番簡単な方法は、インタラクティブ・セッション（read-eval-print loop、もしくは”repl”とも呼ばれるものです）を使ったものです。セッションを起動するには、Juliaの実行ファイルをダブルクリックするか、コマンドラインから&lt;x1/&gt;julia&lt;x2/&gt;を実行します。
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182950Z" creationid="hsugawa8651" creationdate="20181118T173416Z">
+        <seg>Juliaを学んだり試したりする一番簡単な方法は、インタラクティブ・セッション（read-eval-print loop、すなわち、 ”REPL”とも呼ばれるものです）を使ったものです。セッションを起動するには、Juliaの実行ファイルをダブルクリックするか、コマンドラインから&lt;c0&gt;julia&lt;/c0&gt;を実行します。
 
 </seg>
       </tuv>
