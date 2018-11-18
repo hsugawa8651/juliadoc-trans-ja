@@ -2307,8 +2307,8 @@ on the node, and defaults to 1.</seg>
 processes, while &lt;c9&gt;&lt;s10&gt;--machinefile&lt;/s10&gt; &lt;s11&gt;file&lt;/s11&gt;&lt;/c9&gt; will launch a worker for each line in
 file &lt;c12&gt;&lt;s13&gt;file&lt;/s13&gt;&lt;/c12&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084910Z" creationid="hsugawa8651" creationdate="20181118T084910Z">
-        <seg>-p n でn個のワーカーを追加で起動することができ、 --machinefile file では file ファイルの各行ごとにワーカーが起動されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T175618Z" creationid="hsugawa8651" creationdate="20181118T084910Z">
+        <seg>&lt;c4&gt;&lt;s5&gt;-p&lt;/s5&gt; &lt;s6&gt;n&lt;/s6&gt;&lt;/c4&gt;  で&lt;c7&gt;&lt;s8&gt;n&lt;/s8&gt;&lt;/c7&gt;個のワーカーを追加で起動することができ、&lt;c9&gt;&lt;s10&gt;--machinefile&lt;/s10&gt; &lt;s11&gt;file&lt;/s11&gt;&lt;/c9&gt; では&lt;c12&gt;&lt;s13&gt;file&lt;/s13&gt;&lt;/c12&gt; ファイルの各行ごとにワーカーが起動されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12595,8 +12595,8 @@ advantages of Julia over comparable systems include:</seg>
         <seg>In addition to this manual, there are various other resources that may
 help new users get started with Julia:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T085632Z" creationid="hsugawa8651" creationdate="20181118T085632Z">
-        <seg>新しいユーザーがJuliaを始めるにあたり、このマニュアルの他にも以下のリソースが参考になるでしょう。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T175802Z" creationid="hsugawa8651" creationdate="20181118T085632Z">
+        <seg>新しいユーザを支援するための有用な学習リソースのリストは、Julia Webサイトの&lt;x1/&gt;学習&lt;x2/&gt;ページに掲載されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19521,8 +19521,8 @@ as calling a library function from C code.</seg>
 passwordless &lt;c16&gt;&lt;s17&gt;ssh&lt;/s17&gt;&lt;/c16&gt; login, with Julia installed at the same location as the
 current host.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T085355Z" creationid="hsugawa8651" creationdate="20181118T084922Z">
-        <seg>&lt;c14&gt;&lt;s15&gt;file&lt;/s15&gt;&lt;/c14&gt; で定義されたマシンは、パスワード無しで &lt;c16&gt;&lt;s17&gt;ssh&lt;/s17&gt;&lt;/c16&gt;s17 アクセスでき、現在のホストと同じ場所にJuliaがインストールされている必要があります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T175657Z" creationid="hsugawa8651" creationdate="20181118T084922Z">
+        <seg>&lt;c14&gt;&lt;s15&gt;file&lt;/s15&gt;&lt;/c14&gt; で定義されたマシンは、パスワード無しで &lt;c16&gt;&lt;s17&gt;ssh&lt;/s17&gt;&lt;/c16&gt; アクセスでき、現在のホストと同じ場所にJuliaがインストールされている必要があります。</seg>
       </tuv>
     </tu>
     <tu>
