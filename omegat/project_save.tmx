@@ -16736,8 +16736,8 @@ those available for the &lt;c0&gt;&lt;s1&gt;perl&lt;/s1&gt;&lt;/c0&gt; and &lt;c
         <seg>There are various ways to run Julia code and provide options, similar to those available for the
 &lt;x1/&gt;perl&lt;x2/&gt; and &lt;x3/&gt;ruby&lt;x4/&gt; programs:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224520Z" creationid="hsugawa8651" creationdate="20181109T224520Z">
-        <seg>Juliaコードを実行するにはさまざまな方法があり、次のようなオプションを提供することができます。 &lt;x1/&gt;perl&lt;x2/&gt;および&lt;x3/&gt;ruby&lt;x4/&gt;プログラム:</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T092737Z" creationid="hsugawa8651" creationdate="20181109T224520Z">
+        <seg>他の言語（&lt;x1/&gt;perl&lt;x2/&gt; や &lt;x3/&gt;ruby&lt;x4/&gt; など）のように、Juliaを実行するには様々な方法やオプションがあります。</seg>
       </tuv>
     </tu>
     <tu>
