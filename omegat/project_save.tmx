@@ -13509,6 +13509,14 @@ the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Integer value N launches N additional local worker processes; &lt;c0&gt;auto&lt;/c0&gt; launches as many workers as the number of local CPU threads (logical cores)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T174356Z" creationid="hsugawa8651" creationdate="20181118T174356Z">
+        <seg>整数値Nは、N個のローカル・ワーカー・プロセスを起動します。&lt;c0&gt;auto&lt;/c0&gt;は、ローカルCPUスレッド(論理コア)の数と同じ数のワーカーを起動します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Integer value N launches N additional local worker processes; &lt;x1/&gt;auto&lt;x2/&gt; launches as many workers as the number of local CPU threads (logical cores)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224711Z" creationid="hsugawa8651" creationdate="20181109T224711Z">
@@ -14613,6 +14621,14 @@ Julia represents its own code as a data structure of the language itself.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153944Z" creationid="hsugawa8651" creationdate="20181109T153944Z">
         <seg>ccallと同様に、これらの引数はすべてコンパイル時に評価され、containingメソッドが定義されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Limit usage of CPU features up to &lt;c0&gt;&lt;target&gt;&lt;/c0&gt;; set to &lt;c1&gt;help&lt;/c1&gt; to see the available options</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T174535Z" creationid="hsugawa8651" creationdate="20181118T174535Z">
+        <seg>CPU機能の使用を制限&lt;c0&gt;&lt;target&gt;&lt;/c0&gt;に制限します。&lt;c1&gt;help&lt;/c1&gt;に設定すると、使用可能なオプションが表示されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16881,6 +16897,14 @@ an interactive session.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Run processes on hosts listed in &lt;c0&gt;&lt;file&gt;&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T174418Z" creationid="hsugawa8651" creationdate="20181118T174418Z">
+        <seg>&lt;c0&gt;&lt;file&gt;&lt;/c0&gt;にリストされたホスト上でプロセスを実行する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Run processes on hosts listed in &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224714Z" creationid="hsugawa8651" creationdate="20181109T224714Z">
@@ -17105,8 +17129,8 @@ iterable type.</seg>
       <tuv lang="EN-US">
         <seg>Set the optimization level (default level is 2 if unspecified or 3 if used without a level)</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224743Z" creationid="hsugawa8651" creationdate="20181109T224743Z">
-        <seg>最適化レベルを設定します(指定されていない場合はデフォルトレベルは2、レベルなしで使用される場合は3です)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T174546Z" creationid="hsugawa8651" creationdate="20181109T224743Z">
+        <seg>デバッグ情報の生成レベルを有効/設定します(デフォルトレベルは、指定されていない場合は1、レベルなしでは2を指定します)。</seg>
       </tuv>
     </tu>
     <tu>
