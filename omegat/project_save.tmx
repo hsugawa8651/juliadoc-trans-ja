@@ -22061,8 +22061,8 @@ Julia &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized) &lt;x4/&gt;f.(args.
         <seg>To exit the interactive session, type &lt;c0&gt;&lt;s1&gt;^D&lt;/s1&gt;&lt;/c0&gt; — the control key
 together with the &lt;c2&gt;&lt;s3&gt;d&lt;/s3&gt;&lt;/c2&gt; key or type &lt;c4&gt;&lt;s5&gt;quit()&lt;/s5&gt;&lt;/c4&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084437Z" creationid="hsugawa8651" creationdate="20181118T083847Z">
-        <seg>インタラクティブ・セッションを終了するには、&lt;c0&gt;&lt;s1&gt;^D&lt;/s1&gt;&lt;/c0&gt; — コントロールキーと &lt;c2&gt;&lt;s3&gt;d&lt;/s3&gt;&lt;/c2&gt; キーを同時に押す — もしくは、 &lt;c4&gt;&lt;s5&gt;quit()&lt;/s5&gt;&lt;/c4&gt; と入力してください。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T175133Z" creationid="hsugawa8651" creationdate="20181118T083847Z">
+        <seg>インタラクティブ・セッションを終了するには、&lt;c0&gt;&lt;s1&gt;^D&lt;/s1&gt;&lt;/c0&gt; — コントロールキー&lt;c2&gt;&lt;s3&gt;^&lt;/s3&gt;&lt;/c2&gt;と &lt;c2&gt;&lt;s3&gt;d&lt;/s3&gt;&lt;c2&gt; キーを同時に押す — もしくは、 &lt;c4&gt;&lt;s5&gt;quit()&lt;/s5&gt;&lt;/c4&gt;と入力してください。</seg>
       </tuv>
     </tu>
     <tu>
