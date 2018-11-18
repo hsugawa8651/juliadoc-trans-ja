@@ -7577,6 +7577,14 @@ they are equivalent to &lt;x3/&gt;broadcast&lt;x4/&gt; calls and are fused with 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Binary, octal, and hexadecimal literals may be signed by a &lt;c0&gt;-&lt;/c0&gt; immediately preceding the unsigned literal.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185604Z" creationid="hsugawa8651" creationdate="20181118T185604Z">
+        <seg>2進数、8進数、および16進数のリテラルは、符号なしリテラルのすぐ前に&lt;c0&gt;-&lt;/c0&gt;をつけると負号がつきます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Binary, octal, and hexadecimal literals may be signed by a &lt;x1/&gt;-&lt;x2/&gt; immediately preceding the
 unsigned literal.</seg>
       </tuv>
@@ -13193,6 +13201,14 @@ literal, which has the same length but leading digit &lt;x3/&gt;1&lt;x4/&gt;.</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the case of leading zeros, the size is determined by the minimal needed size for a literal, which has the same length but leading digit &lt;c1&gt;1&lt;/c1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185326Z" creationid="hsugawa8651" creationdate="20181118T185326Z">
+        <seg>先行ゼロの場合、サイズは、必要最小限のサイズで決定されます。 リテラルは同じ長さですが、先頭桁はx3/&gt;1&lt;x4/&gt;です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the context of an expression, symbols are used to indicate access to variables; when an expression
 is evaluated, a symbol is replaced with the value bound to that symbol in the appropriate &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref scope-of-variables).</seg>
       </tuv>
@@ -18407,6 +18423,14 @@ the size.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>That allows the user to control the size.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185354Z" creationid="hsugawa8651" creationdate="20181118T185354Z">
+        <seg>これによってユーザは サイズを制御することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>That is, &lt;x11/&gt;eps(x)&lt;x12/&gt; yields a value of the same type as &lt;x13/&gt;x&lt;x14/&gt; such that
 &lt;x15/&gt;x + eps(x)&lt;x16/&gt; is the next representable floating-point value larger than &lt;x17/&gt;x&lt;x18/&gt;:</seg>
       </tuv>
@@ -20095,6 +20119,14 @@ by the &lt;x1/&gt;`typemin`&lt;x2/&gt; and &lt;x3/&gt;`typemax`&lt;x4/&gt; funct
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The minimum and maximum representable values of primitive numeric types such as integers are given by the &lt;a0&gt;&lt;c1&gt;typemin&lt;/c1&gt;&lt;/a0&gt; and &lt;a2&gt;&lt;c3&gt;typemax&lt;/c3&gt;&lt;/a2&gt; functions:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185644Z" creationid="hsugawa8651" creationdate="20181118T185644Z">
+        <seg>整数などのプリミティブ数値型の最小および最大表現可能値を指定します。 &lt;a0&gt;&lt;c1&gt;typemin&lt;/c1&gt;&lt;/a0&gt;および&lt;a2&gt;&lt;c3&gt;typemax&lt;/c3&gt;&lt;/a2&gt;関数:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The most significant departures of Julia from typical dynamic languages
 are:</seg>
       </tuv>
@@ -20592,6 +20624,14 @@ of the binary data item is the minimal needed size, if the leading digit of the 
 &lt;x1/&gt;0&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225415Z" creationid="hsugawa8651" creationdate="20181109T225415Z">
+        <seg>サイズ リテラルの先頭桁が必要ない場合は、バイナリ・データ項目の最小サイズが2進数データ項目となります。 &lt;x1/&gt;0&lt;x2/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The size of the binary data item is the minimal needed size, if the leading digit of the literal is not &lt;c0&gt;0&lt;/c0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185322Z" creationid="hsugawa8651" creationdate="20181118T185322Z">
         <seg>サイズ リテラルの先頭桁が必要ない場合は、バイナリ・データ項目の最小サイズが2進数データ項目となります。 &lt;x1/&gt;0&lt;x2/&gt;。</seg>
       </tuv>
     </tu>
@@ -21405,6 +21445,14 @@ and can be converted to/from the latter via &lt;x4/&gt;Array(bitarray)&lt;x5/&gt
 would do, with the two's complement of the value:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225518Z" creationid="hsugawa8651" creationdate="20181109T225518Z">
+        <seg>これらは符号なしのリテラルと同じサイズの符号なし整数を生成します。 2年代の価値を補完することができます</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They produce an unsigned integer of the same size as the unsigned literal would do, with the two's complement of the value:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185610Z" creationid="hsugawa8651" creationdate="20181118T185610Z">
         <seg>これらは符号なしのリテラルと同じサイズの符号なし整数を生成します。 2年代の価値を補完することができます</seg>
       </tuv>
     </tu>
@@ -23053,6 +23101,14 @@ will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154811Z" creationid="hsugawa8651" creationdate="20181109T154811Z">
         <seg>値は、任意のオブジェクトとして指定することができますが は一般的に&lt;x7/&gt;1:n&lt;x8/&gt;または&lt;x9/&gt;2:(n-1)&lt;x10/&gt;、または&lt;x11/&gt;[1.2、3.4、5.7]&lt;x12/&gt;のような明示的な値の配列である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Values which cannot be stored in &lt;c2&gt;UInt128&lt;/c2&gt; cannot be written as such literals.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185400Z" creationid="hsugawa8651" creationdate="20181118T185400Z">
+        <seg>&lt;x5/&gt;UInt128&lt;x6/&gt;に格納できない値は、そのようなリテラルとは書くことができません。</seg>
       </tuv>
     </tu>
     <tu>
