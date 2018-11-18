@@ -2227,6 +2227,16 @@ The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>:b&lt;x1/&gt; is used in the expression construction, so the value of the
+variable &lt;x2/&gt;b&lt;x3/&gt; at that time is irrelevant -- &lt;x4/&gt;:b&lt;x5/&gt; is just a symbol and the variable &lt;x6/&gt;b&lt;x7/&gt; need not
+even be defined.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165313Z" creationid="hsugawa8651" creationdate="20181118T165313Z">
+        <seg>:b&lt;x1/&gt;は式構築で使用されるので その時の変数&lt;x2/&gt;b&lt;x3/&gt;は無関係である-&lt;x4/&gt;:b&lt;x5/&gt;は単なる記号であり、変数&lt;x6/&gt;b&lt;x7/&gt;は必要ない。 定義する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>;&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063149Z" creationid="hsugawa8651" creationdate="20181114T063149Z">
@@ -3355,6 +3365,15 @@ fused with any nested "dot" calls.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A function can also take one or more &lt;x4/&gt;Expr&lt;x5/&gt; objects as arguments, and return another
+&lt;x6/&gt;Expr&lt;x7/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165327Z" creationid="hsugawa8651" creationdate="20181118T165327Z">
+        <seg>関数はまた、一つ以上の&lt;x4/&gt;Expr&lt;x5/&gt;オブジェクトを引数として取得することもでき、また別のオブジェクトを返すこともできます。 &lt;x6/&gt;Expr&lt;x7/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A function is called using the traditional parenthesis syntax:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025625Z" creationid="hsugawa8651" creationdate="20181110T025625Z">
@@ -3412,6 +3431,16 @@ array it indexes into.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112047Z" creationid="hsugawa8651" creationdate="20181112T112047Z">
         <seg>Juliaのパワーと拡張性の多くは、インフォーマルなインターフェースの集合から生まれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A macro maps
+a tuple of arguments to a returned &lt;x1/&gt;expression&lt;x2/&gt;, and the resulting expression is compiled directly
+rather than requiring a runtime &lt;x3/&gt;`eval`&lt;x4/&gt; call.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165338Z" creationid="hsugawa8651" creationdate="20181118T165338Z">
+        <seg>マクロマップ 返された&lt;x1/&gt;式&lt;x2/&gt;への引数のタプルで、生成された式は直接コンパイルされる。 実行時の&lt;x3/&gt;`eval'&lt;x4/&gt;呼び出しを要求するのではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4605,6 +4634,15 @@ step, and length (or stop) instead of computing every single element.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As another example, here is a function that doubles any numeric argument, but leaves expressions
+alone:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165332Z" creationid="hsugawa8651" creationdate="20181118T165332Z">
+        <seg>別の例としては、数値引数を2倍にする関数がありますが、式は次のようになります。 単独:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As can be seen, &lt;x1/&gt;A&lt;x2/&gt; is changed to the sorted array &lt;x3/&gt;[-2.7, 1.3, 3.1, 4.4]&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150538Z" creationid="hsugawa8651" creationdate="20181117T150538Z">
@@ -4637,6 +4675,15 @@ may make sense.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064234Z" creationid="hsugawa8651" creationdate="20181114T064234Z">
         <seg>数値配列については、概念が存在する配列タイプに対して、安定していないデフォルトアルゴリズムを選択してください。 安定したソートは意味がありません(つまり、等しい値を比較する2つの値が区別されない場合) 意味があるかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As hinted above, one extremely useful feature of Julia is the capability to generate and manipulate
+Julia code within Julia itself.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165320Z" creationid="hsugawa8651" creationdate="20181118T165320Z">
+        <seg>上で示唆したように、Juliaの非常に有用な機能の一つは、生成と操作を可能にする機能です。 Julia自身内のJuliaコード。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4720,6 +4767,14 @@ are known; e.g. they apply to &lt;x1/&gt;Point{Int}&lt;x2/&gt; but not to &lt;x3
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As we have seen, such expressions support interpolation with &lt;x1/&gt;$&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165222Z" creationid="hsugawa8651" creationdate="20181118T165218Z">
+        <seg>前述のように、このような表現は、&lt;x1/&gt;$x2/&gt;で補間をサポートしています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As with any &lt;x1/&gt;ccall&lt;x2/&gt;, it is essential to get the argument signature exactly correct.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152501Z" creationid="hsugawa8651" creationdate="20181117T152501Z">
@@ -4756,6 +4811,14 @@ to the implied field types: &lt;x1/&gt;Point{Int64}(1,2)&lt;x2/&gt; works, but &
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Assignments</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165133Z" creationid="hsugawa8651" creationdate="20181118T165133Z">
+        <seg>代入</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Associativity</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164950Z" creationid="hsugawa8651" creationdate="20181118T164950Z">
@@ -4768,6 +4831,15 @@ to the implied field types: &lt;x1/&gt;Point{Int64}(1,2)&lt;x2/&gt; works, but &
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063651Z" creationid="hsugawa8651" creationdate="20181114T063651Z">
         <seg>&lt;x1/&gt;-O3&lt;x2/&gt;では、コンパイラ&lt;x/&gt;は、そのようなタプル上のオペレーションを自動的にベクトル化することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At expression evaluation time, however, the value of the symbol &lt;x8/&gt;:b&lt;x9/&gt; is resolved
+by looking up the value of the variable &lt;x10/&gt;b&lt;x11/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165315Z" creationid="hsugawa8651" creationdate="20181118T165315Z">
+        <seg>しかし、エクスプレッション評価時には、シンボル&lt;x8/&gt;:b&lt;x9/&gt;の値が解決されます。 変数&lt;x10/&gt;b&lt;x11/&gt;の値を調べます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9565,6 +9637,15 @@ the insertion point of a value not found in a sorted array:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Every &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref modules) has its own &lt;x4/&gt;`eval`&lt;x5/&gt; function that evaluates expressions in its global
+scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165246Z" creationid="hsugawa8651" creationdate="20181118T165246Z">
+        <seg>&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@refモジュール)はすべて、そのグローバルな表現を評価する独自の&lt;x4/&gt;`eval'&lt;x5/&gt;関数を持っています。 範囲。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Every C type also has a corresponding Julia type with the same name, prefixed by C.
 This can help for writing portable code (and remembering that an &lt;x1/&gt;int&lt;x2/&gt; in C is not the same as
 an &lt;x3/&gt;Int&lt;x4/&gt; in Julia).</seg>
@@ -9777,6 +9858,15 @@ construction of complex Julia expressions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115234Z" creationid="hsugawa8651" creationdate="20181118T115225Z">
         <seg>式は、&lt;x1/&gt;プレフィックス表記&lt;x2/&gt;で直接構築することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Expressions passed to &lt;x6/&gt;`eval`&lt;x7/&gt; are not limited to returning values -- they can
+also have side-effects that alter the state of the enclosing module's environment:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165249Z" creationid="hsugawa8651" creationdate="20181118T165249Z">
+        <seg>&lt;x6/&gt;`eval`&lt;x7/&gt;に渡される式は、値を返すことに限定されるわけではありません--それらは値を返すことができます。 また、エンディングモジュールの環境の状態を変更する副作用もあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10956,6 +11046,14 @@ are identical to the passed values.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Functions on &lt;x1/&gt;Expr&lt;x2/&gt;essions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165318Z" creationid="hsugawa8651" creationdate="20181118T165318Z">
+        <seg>&lt;x1/&gt;Expr&lt;x2/&gt;essions上の関数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Further Reading</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120209Z" creationid="hsugawa8651" creationdate="20181118T120209Z">
@@ -11062,6 +11160,15 @@ for the key &lt;x13/&gt;x&lt;x14/&gt;).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041754Z" creationid="hsugawa8651" creationdate="20181112T041754Z">
         <seg>辞書&lt;x1/&gt;D&lt;x2/&gt;を与えられると、構文&lt;x3/&gt;D[x]&lt;x4/&gt;は、キー&lt;x5/&gt;x&lt;x6/&gt;(存在する場合)の値を返すか、あるいはスローします。 エラーと&lt;x7/&gt;D[x]=y&lt;x8/&gt;は、&lt;x11/&gt;D&lt;x12/&gt;(既存の値を置き換える)の&lt;x9/&gt;x=&gt;y&lt;x10/&gt;のキー値ペアを格納します。 &lt;x13/&gt;x&lt;x14/&gt;x14/&gt;)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Given an expression object, one can cause Julia to evaluate (execute) it at global scope using
+&lt;x1/&gt;`eval`&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165244Z" creationid="hsugawa8651" creationdate="20181118T165244Z">
+        <seg>エクスプレッションオブジェクトを指定すると、次のようにして、グローバルスコープでJuliaを評価(実行)することができます。 &lt;x1/&gt;`eval'&lt;x2/&gt;:</seg>
       </tuv>
     </tu>
     <tu>
@@ -11223,6 +11330,22 @@ where syntactic conflicts arise:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is a simple example:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165256Z" creationid="hsugawa8651" creationdate="20181118T165256Z">
+        <seg>簡単な例を次に示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is a simple, motivating example:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165329Z" creationid="hsugawa8651" creationdate="20181118T165329Z">
+        <seg>簡単な動機付けの例を次に示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is a slightly more complex example that discovers the local machine's hostname:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133838Z" creationid="hsugawa8651" creationdate="20181117T133838Z">
@@ -11328,6 +11451,15 @@ having &lt;x5/&gt;obj&lt;x6/&gt; fields pointing to themselves:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155902Z" creationid="hsugawa8651" creationdate="20181117T155902Z">
         <seg>ここでは、別の試みを行います。 &lt;x3/&gt;SelfReferential&lt;x4/&gt;タイプを定義する際には、0つの引数内部コンストラクタを使用してインスタンスを返します。 &lt;x5/&gt;obj&lt;x6/&gt;フィールドが自分自身を指していることを示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here, the evaluation of an expression object causes a value to be assigned to the global variable
+&lt;x1/&gt;x&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165251Z" creationid="hsugawa8651" creationdate="20181118T165251Z">
+        <seg>ここで、エクスプレッションオブジェクトの評価によって、グローバル変数に値が割り当てられます。 &lt;x1/&gt;x&lt;x2/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11458,6 +11590,14 @@ that specific type parameters cannot be requested manually.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124239Z" creationid="hsugawa8651" creationdate="20181118T124239Z">
         <seg>しかし、場合によっては、内部コンストラクタを提供しなくてもよい場合があります。 特定のタイプパラメータを手動で要求することはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, in some situations it is necessary to quote code &lt;x3/&gt;without&lt;x4/&gt; performing interpolation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165224Z" creationid="hsugawa8651" creationdate="20181118T165224Z">
+        <seg>しかし、状況によっては、&lt;x4/&gt;を実行せずに、コード&lt;x3/&gt;を引用符で括る必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14501,6 +14641,14 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Macros provide a method to include generated code in the final body of a program.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165334Z" creationid="hsugawa8651" creationdate="20181118T165334Z">
+        <seg>マクロは、プログラムの最終的なボディに生成されたコードを含める方法を提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Many functions for constructing and initializing arrays are provided.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154333Z" creationid="hsugawa8651" creationdate="20181109T154333Z">
@@ -14616,6 +14764,14 @@ array of half the size of the input array – and is typically not quite as fast
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064117Z" creationid="hsugawa8651" creationdate="20181114T064117Z">
         <seg>MergeSort&lt;x1/&gt;は、O(nログn)安定ソートアルゴリズムですが、インプレースではありません。一時的に必要です。 入力アレイのサイズの半分の配列で、通常は&lt;x2/&gt;QuickSort&lt;x3/&gt;のように高速ではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Metaprogramming</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165152Z" creationid="hsugawa8651" creationdate="20181118T165152Z">
+        <seg>メタプログラミング</seg>
       </tuv>
     </tu>
     <tu>
@@ -15295,6 +15451,14 @@ and it may not be explicitly closed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note the important distinction between the way &lt;x9/&gt;a&lt;x10/&gt; and &lt;x11/&gt;b&lt;x12/&gt; are used:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165300Z" creationid="hsugawa8651" creationdate="20181118T165300Z">
+        <seg>&lt;x10/&gt;a&lt;x10/&gt;と&lt;x12/&gt;b&lt;x12/&gt;との間では、次のような重要な違いがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note though, that &lt;x10/&gt;import X&lt;x11/&gt; can load different packages in different contexts: &lt;x12/&gt;X&lt;x13/&gt; can refer to one package named &lt;x14/&gt;X&lt;x15/&gt; in the main project but potentially different packages named &lt;x16/&gt;X&lt;x17/&gt; in each dependency.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152743Z" creationid="hsugawa8651" creationdate="20181117T152743Z">
@@ -15581,6 +15745,14 @@ into a function call as individual arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230819Z" creationid="hsugawa8651" creationdate="20181109T230819Z">
         <seg>一方、条件付きチェーンの最後では、任意のタイプの表現を使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>On the other hand, the &lt;x1/&gt;symbol&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165309Z" creationid="hsugawa8651" creationdate="20181118T165309Z">
+        <seg>一方、&lt;x1/&gt;記号は&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -15975,6 +16147,14 @@ MIME types) of user-defined types.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Pair</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165120Z" creationid="hsugawa8651" creationdate="20181118T165120Z">
+        <seg>ペア</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Pair{Int, Int}&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150709Z" creationid="hsugawa8651" creationdate="20181117T150709Z">
@@ -16148,6 +16328,14 @@ requires using &lt;x3/&gt;llvmcall&lt;x4/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Program representation</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165157Z" creationid="hsugawa8651" creationdate="20181118T165157Z">
+        <seg>プログラム表現</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Project environments</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121047Z" creationid="hsugawa8651" creationdate="20181118T121047Z">
@@ -16252,6 +16440,14 @@ in this case from a stable sort (unless the array records its mutations in some 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224722Z" creationid="hsugawa8651" creationdate="20181109T224722Z">
         <seg>quietスタートアップ:バナーがない、REPL警告が省略されていない</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>QuoteNode&lt;x1/&gt; can also be used for certain advanced metaprogramming tasks.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165231Z" creationid="hsugawa8651" creationdate="20181118T165231Z">
+        <seg>QuoteNode&lt;x1/&gt;は、特定の高度なメタプログラミング・タスクにも使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16996,6 +17192,15 @@ down like the above &lt;x3/&gt;while&lt;x4/&gt; loop does is so common, it can b
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T231131Z" creationid="hsugawa8651" creationdate="20181109T231131Z">
         <seg>カウントアップして &lt;x4/&gt;ループは非常に一般的であるので、上記&lt;x3/&gt;のようにダウンすることができる。 &lt;x6/&gt;ループの場合は&lt;x5/&gt;&lt;x6/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since expressions are just &lt;x1/&gt;Expr&lt;x2/&gt; objects which can be constructed programmatically and then evaluated,
+it is possible to dynamically generate arbitrary code which can then be run using &lt;x3/&gt;`eval`&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165254Z" creationid="hsugawa8651" creationdate="20181118T165254Z">
+        <seg>式は、プログラム的に構築されて評価されることができる、単純な&lt;x1/&gt;Expr&lt;x2/&gt;オブジェクトであるからです。 任意のコードを動的に生成して、&lt;x3/&gt;`eval'&lt;x4/&gt;を使用して実行することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17812,6 +18017,14 @@ sessions, not when Julia code is run in other ways.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224357Z" creationid="hsugawa8651" creationdate="20181109T224357Z">
         <seg>&lt;x1/&gt;--&lt;x2/&gt;デリミタは、July:を対象とした引数から、スクリプトファイルに対して指定されたコマンドライン引数を区切るために使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;:&lt;x2/&gt; character has two syntactic purposes in Julia.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165201Z" creationid="hsugawa8651" creationdate="20181118T165201Z">
+        <seg>&lt;x1/&gt;:&lt;x2/&gt;文字は、Juliaでは2つの構文的な目的を持っています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18751,6 +18964,16 @@ it will be a &lt;x7/&gt;CartesianIndex&lt;x8/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The first form creates a &lt;x3/&gt;`Symbol`&lt;x4/&gt;,
+an &lt;x5/&gt;interned string&lt;x6/&gt; used as one building-block
+of expressions:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165204Z" creationid="hsugawa8651" creationdate="20181118T165204Z">
+        <seg>最初の形式では、&lt;x3/&gt;`Symbol'&lt;x4/&gt;が作成されます。 &lt;x5/&gt;インターンされたストリング&lt;x6/&gt;は、1つのビルディング・ブロックとして使用されます。 式:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The first index</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113023Z" creationid="hsugawa8651" creationdate="20181112T113012Z">
@@ -19068,6 +19291,16 @@ it is short, self-contained, and implements an entire basic Julia type.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The intuition behind this behavior is that &lt;x1/&gt;x&lt;x2/&gt; is evaluated once for each &lt;x3/&gt;$&lt;x4/&gt;:
+one &lt;x5/&gt;$&lt;x6/&gt; works similarly to &lt;x7/&gt;eval(:x)&lt;x8/&gt;, giving &lt;x9/&gt;x&lt;x10/&gt;'s value, while two &lt;x11/&gt;$&lt;x12/&gt;s do the
+equivalent of &lt;x13/&gt;eval(eval(:x))&lt;x14/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165209Z" creationid="hsugawa8651" creationdate="20181118T165209Z">
+        <seg>この挙動の背後にある直感は、&lt;x1/&gt;x&lt;x2/&gt;が、&lt;x3/&gt;$&lt;x4/&gt;に1回ずつ評価されることである。 &lt;x5/&gt;$&lt;x6/&gt;は、&lt;x7/&gt;eval(:x)&lt;x8/&gt;と同様に動作します。&lt;x9/&gt;x10/&gt;の値は&lt;x9/&gt;x&lt;x10/&gt;の値であり、2&lt;x11/&gt;$x12/&gt;です。 &lt;x13/&gt;eval(eval(:x))&lt;x14/&gt;に相当します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The key point here is that Julia code is internally represented as a data structure that is accessible
 from the language itself.&lt;x1/&gt;</seg>
       </tuv>
@@ -19379,6 +19612,14 @@ type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123941Z" creationid="hsugawa8651" creationdate="20181118T123941Z">
         <seg>一方、外部コンストラクタ宣言は 同じ実数の値のペアにのみ適用される、一般的な&lt;x7/&gt;ポイント&lt;x8/&gt;コンストラクタのメソッド の双曲線コサインを返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The parser yields &lt;x7/&gt;QuoteNode&lt;x8/&gt;s for simple quoted items like symbols:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165229Z" creationid="hsugawa8651" creationdate="20181118T165229Z">
+        <seg>パーサは、シンボルのような単純な引用項目に対して、&lt;x7/&gt;QuoteNode&lt;x8/&gt;sを生成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19997,6 +20238,14 @@ and &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref command-interpolation).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The usual representation of a &lt;x1/&gt;quote&lt;x2/&gt; form in an AST is an &lt;x3/&gt;Expr&lt;x4/&gt; with head &lt;x5/&gt;:quote&lt;x6/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165216Z" creationid="hsugawa8651" creationdate="20181118T165216Z">
+        <seg>ASTにおける&lt;x1/&gt;引用符&lt;x2/&gt;の典型的な表現は&lt;x3/&gt;Expr&lt;x4/&gt;であり、head&lt;x5/&gt;:quote&lt;x6/&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The value can be manipulated through
 this pointer using &lt;x1/&gt;`unsafe_load`&lt;x2/&gt; and &lt;x3/&gt;`unsafe_store!`&lt;x4/&gt;.</seg>
       </tuv>
@@ -20014,11 +20263,28 @@ this pointer using &lt;x1/&gt;`unsafe_load`&lt;x2/&gt; and &lt;x3/&gt;`unsafe_st
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The value of &lt;x1/&gt;a&lt;x2/&gt; is used to construct the expression &lt;x3/&gt;ex&lt;x4/&gt; which applies the &lt;x5/&gt;+&lt;x6/&gt; function to the
+value 1 and the variable &lt;x7/&gt;b&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165258Z" creationid="hsugawa8651" creationdate="20181118T165258Z">
+        <seg>&lt;x1/&gt;&lt;x2/&gt;の値は、&lt;x4/&gt;&lt;x6/&gt;関数を適用する&lt;x/&gt;の式&lt;x4/&gt;を構成するために使用される。 値1および変数&lt;x7/&gt;b&lt;x8/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The value of both compound expression constructs
 is that of the last subexpression.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225759Z" creationid="hsugawa8651" creationdate="20181109T225759Z">
         <seg>複合式の両方の構成要素の値 は最後のサブ式のものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The value of the &lt;x1/&gt;variable&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165302Z" creationid="hsugawa8651" creationdate="20181118T165302Z">
+        <seg>&lt;x1/&gt;変数&lt;x2/&gt;の値</seg>
       </tuv>
     </tu>
     <tu>
@@ -21075,6 +21341,15 @@ without using extra memory, and applies the given function elementwise:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This kind of quoting does not yet have syntax, but is represented internally
+as an object of type &lt;x5/&gt;QuoteNode&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165227Z" creationid="hsugawa8651" creationdate="20181118T165227Z">
+        <seg>この種の引用符はまだ構文はありませんが、内部的に表現されています &lt;x5/&gt;QuoteNode&lt;x6/&gt;型のオブジェクトとして使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This kind of syntax is convenient for data processing, but in other languages vectorization
 is also often required for performance: if loops are slow, the "vectorized" version of a function
 can call fast library code written in a low-level language.</seg>
@@ -21448,6 +21723,15 @@ cases, an error occurs since the left-hand value is not a function.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111854Z" creationid="hsugawa8651" creationdate="20181112T111854Z">
         <seg>これらの両方で 左側の値は関数ではないため、エラーが発生します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thus, the value of &lt;x2/&gt;a&lt;x3/&gt; when the expression is evaluated no longer matters: the
+value in the expression is already &lt;x4/&gt;1&lt;x5/&gt;, independent of whatever the value of &lt;x6/&gt;a&lt;x7/&gt; might be.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165307Z" creationid="hsugawa8651" creationdate="20181118T165307Z">
+        <seg>したがって、発現が評価されなくなったときの&lt;x2/&gt;a&lt;x3/&gt;の値は、以下のようになる。 式の値は&lt;x6/&gt;1&lt;x5/&gt;であり、&lt;x6/&gt;a&lt;x7/&gt;の値とは無関係である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22164,6 +22448,14 @@ like &lt;x1/&gt;`in`&lt;x2/&gt;, or &lt;x3/&gt;`mean`&lt;x4/&gt; and &lt;x5/&gt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155908Z" creationid="hsugawa8651" creationdate="20181117T155908Z">
         <seg>このコンストラクタが動作し、実際には自己参照であるオブジェクトを構成していることを確認できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We have already seen one example of a function returning &lt;x1/&gt;Expr&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165322Z" creationid="hsugawa8651" creationdate="20181118T165322Z">
+        <seg>私たちはすでに、&lt;x1/&gt;Expr&lt;x2/&gt;を返す関数の一例を見てきました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23597,6 +23889,14 @@ ERROR: DivideError: integer division error
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`ceil(T, x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165135Z" creationid="hsugawa8651" creationdate="20181118T165135Z">
+        <seg>`ceil(T, x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`ceil(x)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031212Z" creationid="hsugawa8651" creationdate="20181114T031212Z">
@@ -23651,6 +23951,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;. For more det
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`copysign(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165142Z" creationid="hsugawa8651" creationdate="20181118T165142Z">
+        <seg>`copysign(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`deepcopy(A)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064418Z" creationid="hsugawa8651" creationdate="20181114T064418Z">
@@ -23687,6 +23995,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;. For more det
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150349Z" creationid="hsugawa8651" creationdate="20181117T150349Z">
         <seg>`eltype(A)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`eval`&lt;x1/&gt; and effects</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165242Z" creationid="hsugawa8651" creationdate="20181118T165242Z">
+        <seg>`eval`&lt;x1/&gt;とエフェクト</seg>
       </tuv>
     </tu>
     <tu>
@@ -23751,6 +24067,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;. For more det
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095854Z" creationid="hsugawa8651" creationdate="20181118T095854Z">
         <seg>`fldmod(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`flipsign(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165145Z" creationid="hsugawa8651" creationdate="20181118T165145Z">
+        <seg>`flipsign(x,y)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -24012,6 +24336,15 @@ Consider these examples of this syntax:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`parse`&lt;x1/&gt; function, which takes a string of Julia code and returns the corresponding
+&lt;x2/&gt;Expr&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165324Z" creationid="hsugawa8651" creationdate="20181118T165324Z">
+        <seg>'parse'&lt;x1/&gt;関数は、Juliaコードの文字列を取得して、対応する &lt;x2/&gt;Expr&lt;x3/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`push!`&lt;x1/&gt;ing each element into a &lt;x2/&gt;Vector{Any}&lt;x3/&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112721Z" creationid="hsugawa8651" creationdate="20181112T112721Z">
@@ -24105,6 +24438,14 @@ and all further calculations will take these changes in account.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095928Z" creationid="hsugawa8651" creationdate="20181118T095928Z">
         <seg>`sign(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`signbit(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165140Z" creationid="hsugawa8651" creationdate="20181118T165140Z">
+        <seg>`signbit(x)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -24209,6 +24550,14 @@ and all further calculations will take these changes in account.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031229Z" creationid="hsugawa8651" creationdate="20181114T031229Z">
         <seg>`trunc(T, x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`trunc(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165138Z" creationid="hsugawa8651" creationdate="20181118T165138Z">
+        <seg>`trunc(x)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -24454,6 +24803,15 @@ or &lt;x7/&gt;Ptr{Any}&lt;x8/&gt; (corresponding to &lt;x9/&gt;jl_value_t**&lt;x
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135208Z" creationid="hsugawa8651" creationdate="20181117T135208Z">
         <seg>&lt;x1/&gt;および&lt;x2/&gt;b&lt;x3/&gt;、&lt;x4/&gt;の最大値(a)&lt;x5/&gt;は、最も大きい値を示します。 &lt;x6/&gt;&lt;x7/&gt;。&lt;x8/&gt;min(a,b)&lt;x9/&gt;と&lt;x10/&gt;最小(a)&lt;x11/&gt;と同じ関係が成り立つ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>a&lt;x1/&gt; at expression construction time is used as an immediate value in
+the expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165305Z" creationid="hsugawa8651" creationdate="20181118T165305Z">
+        <seg>式の構築時の&lt;x1/&gt;は、次のように直接値として使用されます。 で指定します。</seg>
       </tuv>
     </tu>
     <tu>
