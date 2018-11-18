@@ -20637,6 +20637,14 @@ object</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>as well as the negation on &lt;x1/&gt;`Bool`&lt;x2/&gt; types:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095038Z" creationid="hsugawa8651" creationdate="20181118T095038Z">
+        <seg>&lt;x1/&gt;'Bool'&lt;x2/&gt;型への否定と同様に</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>at the end of a function name, &lt;x1/&gt;!&lt;x2/&gt; is used as a convention to indicate that a function modifies its argument(s)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032245Z" creationid="hsugawa8651" creationdate="20181114T032245Z">
@@ -20687,16 +20695,16 @@ object</seg>
       <tuv lang="EN-US">
         <seg>binary minus</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132019Z" creationid="hsugawa8651" creationdate="20181113T132019Z">
-        <seg>binary minus</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094812Z" creationid="hsugawa8651" creationdate="20181113T132019Z">
+        <seg>2項減算</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>binary plus</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132007Z" creationid="hsugawa8651" creationdate="20181113T132007Z">
-        <seg>バイナリプラス</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094829Z" creationid="hsugawa8651" creationdate="20181113T132007Z">
+        <seg>2項加算</seg>
       </tuv>
     </tu>
     <tu>
@@ -21127,8 +21135,8 @@ perhaps range-types &lt;x6/&gt;Ind&lt;x7/&gt; of your own design.</seg>
       <tuv lang="EN-US">
         <seg>divide</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132049Z" creationid="hsugawa8651" creationdate="20181113T132049Z">
-        <seg>分割する</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094914Z" creationid="hsugawa8651" creationdate="20181113T132049Z">
+        <seg>除算</seg>
       </tuv>
     </tu>
     <tu>
@@ -22535,8 +22543,16 @@ output = similar(input, Eltype)</seg>
       <tuv lang="EN-US">
         <seg>integer divide</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132104Z" creationid="hsugawa8651" creationdate="20181113T132104Z">
-        <seg>整数除算</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094927Z" creationid="hsugawa8651" creationdate="20181113T132104Z">
+        <seg>整商</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>inverse divide</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094941Z" creationid="hsugawa8651" creationdate="20181118T094941Z">
+        <seg>左除算</seg>
       </tuv>
     </tu>
     <tu>
@@ -33090,32 +33106,32 @@ Captured variables can present performance challenges; see
       <tuv lang="EN-US">
         <seg>performs addition</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132011Z" creationid="hsugawa8651" creationdate="20181113T132011Z">
-        <seg>追加を実行する</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094849Z" creationid="hsugawa8651" creationdate="20181113T132011Z">
+        <seg>加算する</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>performs division</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132053Z" creationid="hsugawa8651" creationdate="20181113T132053Z">
-        <seg>除算を実行する</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094920Z" creationid="hsugawa8651" creationdate="20181113T132053Z">
+        <seg>除算する</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>performs multiplication</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132037Z" creationid="hsugawa8651" creationdate="20181113T132037Z">
-        <seg>乗算を実行する</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094907Z" creationid="hsugawa8651" creationdate="20181113T132037Z">
+        <seg>乗算する</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>performs subtraction</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132025Z" creationid="hsugawa8651" creationdate="20181113T132025Z">
-        <seg>減算を実行する</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094859Z" creationid="hsugawa8651" creationdate="20181113T132025Z">
+        <seg>減算する</seg>
       </tuv>
     </tu>
     <tu>
@@ -33132,6 +33148,14 @@ Captured variables can present performance challenges; see
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110813Z" creationid="hsugawa8651" creationdate="20181112T110813Z">
         <seg>正の無限大</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>power</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094950Z" creationid="hsugawa8651" creationdate="20181118T094950Z">
+        <seg>冪乗</seg>
       </tuv>
     </tu>
     <tu>
@@ -33220,8 +33244,8 @@ primitive type «name» &lt;: «supertype» «bits» end</seg>
       <tuv lang="EN-US">
         <seg>raises &lt;x1/&gt;x&lt;x2/&gt; to the &lt;x3/&gt;y&lt;x4/&gt;th power</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132134Z" creationid="hsugawa8651" creationdate="20181113T132134Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;を&lt;x3/&gt;y&lt;x4/&gt;の累乗に引き上げる</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095015Z" creationid="hsugawa8651" creationdate="20181113T132134Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の&lt;x3/&gt;y&lt;x4/&gt;乗する</seg>
       </tuv>
     </tu>
     <tu>
@@ -33284,8 +33308,8 @@ end</seg>
       <tuv lang="EN-US">
         <seg>remainder</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132141Z" creationid="hsugawa8651" creationdate="20181113T132141Z">
-        <seg>残り</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095022Z" creationid="hsugawa8651" creationdate="20181113T132141Z">
+        <seg>剰余</seg>
       </tuv>
     </tu>
     <tu>
@@ -34015,6 +34039,14 @@ when, how often or how many times these side-effects will occur</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>times</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094753Z" creationid="hsugawa8651" creationdate="20181118T094753Z">
+        <seg>乗算</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>true : odd(n - 1);
 
 julia&gt; odd(n) = (n == 0) ?</seg>
@@ -34063,6 +34095,14 @@ julia&gt; odd(n) = (n == 0) ?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031111Z" creationid="hsugawa8651" creationdate="20181114T031111Z">
         <seg>typeof(x)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>unary minus</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094738Z" creationid="hsugawa8651" creationdate="20181118T094738Z">
+        <seg>単項マイナス</seg>
       </tuv>
     </tu>
     <tu>
