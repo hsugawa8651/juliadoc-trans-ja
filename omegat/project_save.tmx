@@ -837,6 +837,14 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id man-numeric-literal-coefficients)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120543Z" creationid="hsugawa8651" creationdate="20181118T120543Z">
+        <seg>[@id manの数値リテラル係数](@id man-numeric-literal-coefficients)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id man-raw-string-literals)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T021121Z" creationid="hsugawa8651" creationdate="20181116T021121Z">
@@ -1332,6 +1340,14 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031749Z" creationid="hsugawa8651" creationdate="20181114T031749Z">
         <seg>--machine-file &lt;x1/&gt;&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>--math-mode={ieee,fast}&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120237Z" creationid="hsugawa8651" creationdate="20181118T120237Z">
+        <seg>--math-mode={ieee,fast}&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -2029,6 +2045,14 @@ The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063544Z" creationid="hsugawa8651" creationdate="20181114T063544Z">
         <seg>:&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:_fopen : :fopen), ...)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120257Z" creationid="hsugawa8651" creationdate="20181118T120257Z">
+        <seg>:_fopen : :fopen), ...)</seg>
       </tuv>
     </tu>
     <tu>
@@ -3510,6 +3534,14 @@ Dingo/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>AbstractString&lt;x1/&gt;s.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120404Z" creationid="hsugawa8651" creationdate="20181118T120404Z">
+        <seg>AbstractString&lt;x1/&gt;s.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Accessing Data through a Pointer</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152522Z" creationid="hsugawa8651" creationdate="20181117T152522Z">
@@ -3991,6 +4023,14 @@ a bug so that it can be resolved.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Arbitrary Precision Arithmetic</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120359Z" creationid="hsugawa8651" creationdate="20181118T120359Z">
+        <seg>任意精度計算</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Arguments
 to &lt;x3/&gt;`ccall`&lt;x4/&gt; are as follows:</seg>
       </tuv>
@@ -4355,6 +4395,14 @@ argument types</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082127Z" creationid="hsugawa8651" creationdate="20181118T082127Z">
         <seg>それぞれの引数の型ごとに最適化されたコードを自動生成します
 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Background and References</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120355Z" creationid="hsugawa8651" creationdate="20181118T120355Z">
+        <seg>背景と参照</seg>
       </tuv>
     </tu>
     <tu>
@@ -7522,6 +7570,14 @@ julia&gt; newfun()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Complex blocks:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120300Z" creationid="hsugawa8651" creationdate="20181118T120300Z">
+        <seg>複雑なブロック:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>ComplexF32&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134419Z" creationid="hsugawa8651" creationdate="20181117T134419Z">
@@ -8626,6 +8682,14 @@ can be tedious compared to "normal" Julia syntax.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Division errors</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120333Z" creationid="hsugawa8651" creationdate="20181118T120333Z">
+        <seg>除算エラー</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Division functions</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095820Z" creationid="hsugawa8651" creationdate="20181118T095820Z">
@@ -9258,6 +9322,14 @@ and type definitions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Floating-Point Numbers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120338Z" creationid="hsugawa8651" creationdate="20181118T120338Z">
+        <seg>浮動小数点数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Floating-point arithmetic entails many subtleties which can be surprising to users who are unfamiliar
 with the low-level implementation details.</seg>
       </tuv>
@@ -9281,6 +9353,22 @@ and negative zero.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110744Z" creationid="hsugawa8651" creationdate="20181112T110744Z">
         <seg>浮動小数点数は&lt;x1/&gt;2 0x2/&gt;、正0は正の値です。 マイナス0です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Floating-point types:&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120321Z" creationid="hsugawa8651" creationdate="20181118T120321Z">
+        <seg>Floating-point types:&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Floating-point zero</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120344Z" creationid="hsugawa8651" creationdate="20181118T120344Z">
+        <seg>浮動小数点0</seg>
       </tuv>
     </tu>
     <tu>
@@ -10287,6 +10375,14 @@ implemented in software and use &lt;x3/&gt;`Float32`&lt;x4/&gt; for calculations
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Handling Operating System Variation</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120249Z" creationid="hsugawa8651" creationdate="20181118T120249Z">
+        <seg>オペレーティング・システムの変動の処理</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>HasEltype()&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112145Z" creationid="hsugawa8651" creationdate="20181112T112145Z">
@@ -10644,6 +10740,14 @@ most books on scientific computation, and also in the following references:</seg
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111444Z" creationid="hsugawa8651" creationdate="20181112T111444Z">
         <seg>しかし、これらの微妙な点については、以下で詳細に説明します。 科学的計算に関する本や、以下の参考文献にもある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, type promotion between the primitive types above and &lt;x1/&gt;`BigInt`&lt;x2/&gt;/&lt;x3/&gt;`BigFloat`&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120409Z" creationid="hsugawa8651" creationdate="20181118T120409Z">
+        <seg>しかし、上のプリミティブ型と&lt;x1/&gt;`BigInt'&lt;x2/&gt;/&lt;x3/&gt;`BigFloat'&lt;x4/&gt;の間には、型プロモーションがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12098,6 +12202,14 @@ the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Integer types:&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120312Z" creationid="hsugawa8651" creationdate="20181118T120312Z">
+        <seg>整数型:&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Integer value N launches N additional local worker processes; &lt;x1/&gt;auto&lt;x2/&gt; launches as many workers as the number of local CPU threads (logical cores)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224711Z" creationid="hsugawa8651" creationdate="20181109T224711Z">
@@ -12110,6 +12222,14 @@ the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044717Z" creationid="hsugawa8651" creationdate="20181112T044717Z">
         <seg>Integers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Integers and Floating-Point Numbers</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120309Z" creationid="hsugawa8651" creationdate="20181118T120309Z">
+        <seg>整数と浮動小数点数</seg>
       </tuv>
     </tu>
     <tu>
@@ -13167,6 +13287,14 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135104Z" creationid="hsugawa8651" creationdate="20181117T135104Z">
         <seg>論理索引付け</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Machine epsilon</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120349Z" creationid="hsugawa8651" creationdate="20181118T120349Z">
+        <seg>機械イプシロン</seg>
       </tuv>
     </tu>
     <tu>
@@ -14355,6 +14483,14 @@ by calling another constructor method, such as the automatically provided defaul
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Overflow behavior</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120330Z" creationid="hsugawa8651" creationdate="20181118T120330Z">
+        <seg>オーバーフローの動作</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Overloading &lt;x1/&gt;`show`&lt;x2/&gt; allows one to indicate arbitrary multimedia representations (keyed by standard
 MIME types) of user-defined types.</seg>
       </tuv>
@@ -14732,6 +14868,14 @@ an interactive session.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Resources</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120244Z" creationid="hsugawa8651" creationdate="20181118T120244Z">
+        <seg>リソース</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Return a mutable array with the specified element type and size</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094500Z" creationid="hsugawa8651" creationdate="20181118T094500Z">
@@ -14857,6 +15001,14 @@ an interactive session.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095723Z" creationid="hsugawa8651" creationdate="20181118T095723Z">
         <seg>丸め関数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Rounding modes</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120353Z" creationid="hsugawa8651" creationdate="20181118T120353Z">
+        <seg>丸めモード</seg>
       </tuv>
     </tu>
     <tu>
@@ -15188,6 +15340,14 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131708Z" creationid="hsugawa8651" creationdate="20181113T131708Z">
         <seg>同様に、&lt;x1/&gt;コピー(:ブロードキャスト)&lt;x2/&gt;を使用して、場所を指定しないブロードキャストを完全に上書きできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Simple blocks:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120254Z" creationid="hsugawa8651" creationdate="20181118T120254Z">
+        <seg>単純なブロック:</seg>
       </tuv>
     </tu>
     <tu>
@@ -16440,6 +16600,14 @@ arithmetic</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The default @.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120236Z" creationid="hsugawa8651" creationdate="20181118T120236Z">
+        <seg>デフォルトの@,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The default constructor
 is equivalent to writing your own inner constructor method that takes all of the object's fields
 as parameters (constrained to be of the correct type, if the corresponding field has a type),
@@ -17088,6 +17256,15 @@ were written as &lt;x1/&gt;v(1) &lt; v(2) &amp;&amp; v(2) &lt;= v(3)&lt;x2/&gt;.
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030745Z" creationid="hsugawa8651" creationdate="20181114T030745Z">
         <seg>中間表現は、式が1回だけ評価されるのではなく、1回だけ評価されます。 &lt;x1/&gt;v(1)&lt;v(2)&amp;v(2)&lt;=v(3)&lt;x2/&gt;と記述されている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The minimum and maximum representable values of primitive numeric types such as integers are given
+by the &lt;x1/&gt;`typemin`&lt;x2/&gt; and &lt;x3/&gt;`typemax`&lt;x4/&gt; functions:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120325Z" creationid="hsugawa8651" creationdate="20181118T120325Z">
+        <seg>整数などのプリミティブ数値型の最小および最大表現可能値を指定します。 &lt;x1/&gt;「テーパミン」&lt;x2/&gt;および&lt;x3/&gt;「テーペマス」&lt;x4/&gt;関数:</seg>
       </tuv>
     </tu>
     <tu>
@@ -17772,6 +17949,15 @@ same:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are three specified standard floating-point values that do not correspond to any point on
+the real number line:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120346Z" creationid="hsugawa8651" creationdate="20181118T120346Z">
+        <seg>指定された3つの標準浮動小数点値は、任意の点に対応していません。 実数線:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are two Julia constructs
 that accomplish this: &lt;x1/&gt;begin&lt;x2/&gt; blocks and &lt;x3/&gt;(;)&lt;x4/&gt; chains.</seg>
       </tuv>
@@ -18313,6 +18499,15 @@ than the required &lt;x3/&gt;`Bool`&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133842Z" creationid="hsugawa8651" creationdate="20181117T133842Z">
         <seg>この例ではまず、バイトの配列を割り当て、次にCライブラリ関数&lt;x1/&gt;gethostname&lt;x2/&gt;を呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This example highlights the general principle that the adjacent representable floating-point numbers
+also have adjacent binary integer representations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120352Z" creationid="hsugawa8651" creationdate="20181118T120352Z">
+        <seg>この例では、隣接する表現可能浮動小数点数を示す一般的な原理が強調されています。 また、隣接するバイナリ整数表現もあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19094,6 +19289,14 @@ functions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Type</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120314Z" creationid="hsugawa8651" creationdate="20181118T120314Z">
+        <seg>タイプ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Type &lt;x1/&gt;VecElement{T}&lt;x2/&gt; is intended for building libraries of SIMD operations.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063637Z" creationid="hsugawa8651" creationdate="20181114T063637Z">
@@ -19334,6 +19537,14 @@ for the last entry in a conditional chain is an error:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112254Z" creationid="hsugawa8651" creationdate="20181112T112254Z">
         <seg>&lt;x1/&gt;IteratorSizeによって返される値&lt;x/&gt;(IterType)&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Values can be converted to &lt;x1/&gt;`Float32`&lt;x2/&gt; easily:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120339Z" creationid="hsugawa8651" creationdate="20181118T120339Z">
+        <seg>値を&lt;x1/&gt;`Float32'&lt;x2/&gt;に変換することは容易にできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20434,6 +20645,14 @@ and can be converted to/from the latter via &lt;x4/&gt;Array(bitarray)&lt;x5/&gt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110129Z" creationid="hsugawa8651" creationdate="20181112T110129Z">
         <seg>`Int16`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Int32`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120320Z" creationid="hsugawa8651" creationdate="20181118T120320Z">
+        <seg>`Int32`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -23834,6 +24053,14 @@ output = similar(input, Eltype)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>introduction&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120357Z" creationid="hsugawa8651" creationdate="20181118T120357Z">
+        <seg>導入&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>inverse divide</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094941Z" creationid="hsugawa8651" creationdate="20181118T094941Z">
@@ -24700,6 +24927,16 @@ NaN
 
 julia&gt; 0 * Inf
 NaN</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 10_000, 0.000_000_005, 0xdead_beef, 0b1011_0010
+(10000, 5.0e-9, 0xdeadbeef, 0xb2)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120341Z" creationid="hsugawa8651" creationdate="20181118T120341Z">
+        <seg>julia&gt; 10_000, 0.000_000_005, 0xdead_beef, 0b1011_0010
+(10000, 5.0e-9, 0xdeadbeef, 0xb2)</seg>
       </tuv>
     </tu>
     <tu>
@@ -34276,6 +34513,14 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>not a number</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120348Z" creationid="hsugawa8651" creationdate="20181118T120348Z">
+        <seg>数字ではない</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>not supported by &lt;x1/&gt;ccall&lt;x2/&gt; or &lt;x3/&gt;@cfunction&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151731Z" creationid="hsugawa8651" creationdate="20181117T151731Z">
@@ -36134,6 +36379,14 @@ julia&gt; 1 + 2
 
 julia&gt; ans
 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> </seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120317Z" creationid="hsugawa8651" creationdate="20181118T120317Z">
+        <seg> </seg>
       </tuv>
     </tu>
     <tu>
