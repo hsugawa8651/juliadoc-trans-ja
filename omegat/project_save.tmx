@@ -7972,6 +7972,14 @@ create a &lt;x16/&gt;SubArray&lt;x17/&gt; view instead.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By the &lt;a1&gt;IEEE 754 standard&lt;/a1&gt;, these floating-point values are the results of certain arithmetic operations:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190814Z" creationid="hsugawa8651" creationdate="20181118T190814Z">
+        <seg>&lt;x3/&gt;IEEE754規格の&lt;x4/&gt;では これらの浮動小数点値は、特定の算術演算の結果です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By the &lt;x3/&gt;IEEE 754 standard&lt;x4/&gt;,
 these floating-point values are the results of certain arithmetic operations:</seg>
       </tuv>
@@ -10954,6 +10962,14 @@ to each other and other floats, see &lt;x1/&gt;Numeric Comparisons&lt;x2/&gt;.</
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110845Z" creationid="hsugawa8651" creationdate="20181112T110845Z">
         <seg>これらの非有限浮動小数点値がどのように並べられるかについてのさらなる議論については、次の通りである。 お互いや他のフロートについては、&lt;x1/&gt;数値比較&lt;x2/&gt;を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For further discussion of how these non-finite floating-point values are ordered with respect to each other and other floats, see &lt;a0&gt;Numeric Comparisons&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190801Z" creationid="hsugawa8651" creationdate="20181118T190801Z">
+        <seg>これらの非有限浮動小数点値がどのように並べられるかについてのさらなる議論については、次の通りである。 お互いや他のフロートについては、&lt;a0&gt;Numeric Comparisons&lt;/a0&gt;を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14564,6 +14580,14 @@ binaries or compiling from source.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia provides &lt;a0&gt;&lt;c1&gt;eps&lt;/c1&gt;&lt;/a0&gt;, which gives the distance between &lt;c2&gt;1.0&lt;/c2&gt; and the next larger representable floating-point value:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190901Z" creationid="hsugawa8651" creationdate="20181118T190901Z">
+        <seg>Juliaは&lt;a0&gt;&lt;c1&gt;eps&lt;/c1&gt;&lt;/a0&gt;を提供する。これは&lt;x3/&gt;1.0&lt;x4/&gt;と次に大きい表現型の距離を与える。 浮動小数点値:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia provides &lt;x1/&gt;`eps`&lt;x2/&gt;, which gives the distance between &lt;x3/&gt;1.0&lt;x4/&gt; and the next larger representable
 floating-point value:</seg>
       </tuv>
@@ -15428,6 +15452,14 @@ it is important to know the distance between two adjacent representable floating
 which is often known as &lt;x1/&gt;machine epsilon&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111132Z" creationid="hsugawa8651" creationdate="20181112T111132Z">
+        <seg>ほとんどの実数は浮動小数点数で正確に表現することはできません。したがって、多くの目的で使用することはできません。 2つの隣接する表現可能浮動小数点数間の距離を知ることが重要です。 これはしばしば&lt;x1/&gt;機械イプシロン&lt;x2/&gt;と呼ばれる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Most real numbers cannot be represented exactly with floating-point numbers, and so for many purposes it is important to know the distance between two adjacent representable floating-point numbers, which is often known as &lt;a0&gt;machine epsilon&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190832Z" creationid="hsugawa8651" creationdate="20181118T190832Z">
         <seg>ほとんどの実数は浮動小数点数で正確に表現することはできません。したがって、多くの目的で使用することはできません。 2つの隣接する表現可能浮動小数点数間の距離を知ることが重要です。 これはしばしば&lt;x1/&gt;機械イプシロン&lt;x2/&gt;と呼ばれる。</seg>
       </tuv>
     </tu>
@@ -21520,6 +21552,14 @@ can be seen using the &lt;x3/&gt;`bitstring`&lt;x4/&gt; function:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>They are equal to each other but have different binary representations, as can be seen using the &lt;a1&gt;&lt;c2&gt;bitstring&lt;/c2&gt;&lt;/a1&gt; function:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190705Z" creationid="hsugawa8651" creationdate="20181118T190705Z">
+        <seg>これらは互いに等しいが、バイナリ表現は異なっている。 は、&lt;a1&gt;&lt;c2&gt;bitstring&lt;/c2&gt;&lt;/a1&gt;関数を使用して表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>They can be used similarly to &lt;x2/&gt;Array{Bool}&lt;x3/&gt; arrays (which store one byte per boolean value),
 and can be converted to/from the latter via &lt;x4/&gt;Array(bitarray)&lt;x5/&gt; and &lt;x6/&gt;BitArray(array)&lt;x7/&gt;, respectively.</seg>
       </tuv>
@@ -25648,6 +25688,14 @@ or &lt;x7/&gt;Ptr{Any}&lt;x8/&gt; (corresponding to &lt;x9/&gt;jl_value_t**&lt;x
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110835Z" creationid="hsugawa8651" creationdate="20181112T110835Z">
         <seg>すべての有限浮動小数点値より小さい値</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>a value not &lt;c0&gt;==&lt;/c0&gt; to any floating-point value (including itself)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190737Z" creationid="hsugawa8651" creationdate="20181118T190737Z">
+        <seg>浮動小数点値(自身を含む)に対して&lt;c0&gt;==&lt;/c0&gt;ではない値</seg>
       </tuv>
     </tu>
     <tu>
