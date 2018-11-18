@@ -7779,6 +7779,14 @@ integers and floating-point numbers as immediate values in code are known as num
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Built-in representations of such values are called numeric primitives, while representations of integers and floating-point numbers as immediate values in code are known as numeric literals.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T184253Z" creationid="hsugawa8651" creationdate="20181118T184253Z">
+        <seg>このような値の組み込み表現は、数値プリミティブと呼ばれます。コードの即値となる整数と浮動小数点数は表現は、数値リテラルと呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But here is a thing you should pay attention to: suppose &lt;x1/&gt;x&lt;x2/&gt; is bound to an object of type &lt;x3/&gt;Array&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025034Z" creationid="hsugawa8651" creationdate="20181110T025034Z">
