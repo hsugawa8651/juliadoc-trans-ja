@@ -781,6 +781,14 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id man-constructors)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123702Z" creationid="hsugawa8651" creationdate="20181118T123702Z">
+        <seg>(@id man-constructors)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id man-dot-operators)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132431Z" creationid="hsugawa8651" creationdate="20181113T132431Z">
@@ -4515,6 +4523,14 @@ command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As usual, the promotion system makes interactions with other numeric types effortless:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123656Z" creationid="hsugawa8651" creationdate="20181118T123656Z">
+        <seg>通常のように、プロモーションシステムは、他の数値型との相互作用を容易にします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As with any &lt;x1/&gt;ccall&lt;x2/&gt;, it is essential to get the argument signature exactly correct.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152501Z" creationid="hsugawa8651" creationdate="20181117T152501Z">
@@ -7987,6 +8003,14 @@ iteration&lt;x8/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Constructing infinite rational values is acceptable:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123643Z" creationid="hsugawa8651" creationdate="20181118T123643Z">
+        <seg>無限有理値の構築は許容されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Construction and Initialization</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150402Z" creationid="hsugawa8651" creationdate="20181117T150402Z">
@@ -8015,6 +8039,15 @@ iteration&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224750Z" creationid="hsugawa8651" creationdate="20181109T224750Z">
         <seg>&lt;x1/&gt;@inline&lt;x2/&gt;宣言の上書きを含め、インライン化が許可されているかどうかを制御する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Conversion from rational to floating-point respects the following identity for any integral values
+of &lt;x1/&gt;a&lt;x2/&gt; and &lt;x3/&gt;b&lt;x4/&gt;, with the exception of the case &lt;x5/&gt;a == 0&lt;x6/&gt; and &lt;x7/&gt;b == 0&lt;x8/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123557Z" creationid="hsugawa8651" creationdate="20181118T123557Z">
+        <seg>有理から浮動小数点への変換は、すべての積分値について次の識別を反映します。 &lt;x1/&gt;a&lt;x2/&gt;と&lt;x3/&gt;b&lt;x4/&gt;は例外であり、&lt;x×&gt;a==0&lt;x6/&gt;、&lt;x7/&gt;b==0&lt;x8/&gt;の例外を除く。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8875,6 +8908,15 @@ manner that allows all custom arrays to behave similarly.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121355Z" creationid="hsugawa8651" creationdate="20181118T121355Z">
         <seg>ディンゴ&lt;x1/&gt;は、&lt;x2/&gt;[deps]&lt;x3/&gt;セクション以外のプロジェクトファイルを持っているため、何もインポートできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Direct comparison of the numerator and denominator is generally not necessary, since the standard
+arithmetic and comparison operations are defined for rational values:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123628Z" creationid="hsugawa8651" creationdate="20181118T123628Z">
+        <seg>分子と分母の直接比較は、一般的には必要ではないので、一般的には必要ではない。 算術演算と比較演算は、有理値に対して定義されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15456,6 +15498,14 @@ using the &lt;x1/&gt;`//`&lt;x2/&gt; operator:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Rationals can easily be converted to floating-point numbers:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123601Z" creationid="hsugawa8651" creationdate="20181118T123601Z">
+        <seg>合理化は、簡単に浮動小数点数に変換できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Recall that the variable &lt;x1/&gt;`ans`&lt;x2/&gt; is set to the value of the last expression evaluated in
 an interactive session.</seg>
       </tuv>
@@ -19912,6 +19962,15 @@ composite types were introduced.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This normalized form for a ratio of integers is unique, so equality of rational values can be
+tested by checking for equality of the numerator and denominator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123536Z" creationid="hsugawa8651" creationdate="20181118T123536Z">
+        <seg>整数の比率に対する正規化された形式は固有であるため、合理的な値の同等性は 分子と分母の等価性を確認することによって試験されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This object can be iterated to produce values on demand, instead of allocating
 an array and storing them in advance (see &lt;x1/&gt;Iteration&lt;x2/&gt;).</seg>
       </tuv>
@@ -20373,6 +20432,14 @@ functions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123428Z" creationid="hsugawa8651" creationdate="20181118T123428Z">
         <seg>sqrt(complex(x))を試してみてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Trying to construct a &lt;x1/&gt;`NaN`&lt;x2/&gt; rational value, however, is invalid:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123650Z" creationid="hsugawa8651" creationdate="20181118T123650Z">
+        <seg>しかし、&lt;x1/&gt;「NaN」&lt;x2/&gt;合理的値を構築しようとすることは、無効である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25758,6 +25825,20 @@ julia&gt; 2.5f-4
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; 0//0
+ERROR: ArgumentError: invalid rational: zero(Int64)//zero(Int64)
+Stacktrace:
+[...]</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123651Z" creationid="hsugawa8651" creationdate="20181118T123651Z">
+        <seg>julia&gt; 0//0
+ERROR: ArgumentError: invalid rational: zero(Int64)//zero(Int64)
+Stacktrace:
+[...]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; 0b10
 0x02
 
@@ -26228,6 +26309,58 @@ julia&gt; 1 + 3/4im
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; 2//3 == 6//9
+true
+
+julia&gt; 2//3 == 9//27
+false
+
+julia&gt; 3//7 &lt; 1//2
+true
+
+julia&gt; 3//4 &gt; 2//3
+true
+
+julia&gt; 2//4 + 1//6
+2//3
+
+julia&gt; 5//12 - 1//4
+1//6
+
+julia&gt; 5//8 * 3//12
+5//32
+
+julia&gt; 6//5 / 10//7
+21//25</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123538Z" creationid="hsugawa8651" creationdate="20181118T123538Z">
+        <seg>julia&gt; 2//3 == 6//9
+true
+
+julia&gt; 2//3 == 9//27
+false
+
+julia&gt; 3//7 &lt; 1//2
+true
+
+julia&gt; 3//4 &gt; 2//3
+true
+
+julia&gt; 2//4 + 1//6
+2//3
+
+julia&gt; 5//12 - 1//4
+1//6
+
+julia&gt; 5//8 * 3//12
+5//32
+
+julia&gt; 6//5 / 10//7
+21//25</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; 25 in Squares(10)
 true
 
@@ -26260,6 +26393,98 @@ julia&gt; std(Squares(100))
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111740Z" creationid="hsugawa8651" creationdate="20181112T111740Z">
         <seg>julia&gt; 2^2x
 64</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 3//5 + 1
+8//5
+
+julia&gt; 3//5 - 0.5
+0.09999999999999998
+
+julia&gt; 2//7 * (1 + 2im)
+2//7 + 4//7*im
+
+julia&gt; 2//7 * (1.5 + 2im)
+0.42857142857142855 + 0.5714285714285714im
+
+julia&gt; 3//2 / (1 + 2im)
+3//10 - 3//5*im
+
+julia&gt; 1//2 + 2im
+1//2 + 2//1*im
+
+julia&gt; 1 + 2//3im
+1//1 - 2//3*im
+
+julia&gt; 0.5 == 1//2
+true
+
+julia&gt; 0.33 == 1//3
+false
+
+julia&gt; 0.33 &lt; 1//3
+true
+
+julia&gt; 1//3 - 0.33
+0.0033333333333332993</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123657Z" creationid="hsugawa8651" creationdate="20181118T123657Z">
+        <seg>julia&gt; 3//5 + 1
+8//5
+
+julia&gt; 3//5 - 0.5
+0.09999999999999998
+
+julia&gt; 2//7 * (1 + 2im)
+2//7 + 4//7*im
+
+julia&gt; 2//7 * (1.5 + 2im)
+0.42857142857142855 + 0.5714285714285714im
+
+julia&gt; 3//2 / (1 + 2im)
+3//10 - 3//5*im
+
+julia&gt; 1//2 + 2im
+1//2 + 2//1*im
+
+julia&gt; 1 + 2//3im
+1//1 - 2//3*im
+
+julia&gt; 0.5 == 1//2
+true
+
+julia&gt; 0.33 == 1//3
+false
+
+julia&gt; 0.33 &lt; 1//3
+true
+
+julia&gt; 1//3 - 0.33
+0.0033333333333332993</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 5//0
+1//0
+
+julia&gt; -3//0
+-1//0
+
+julia&gt; typeof(ans)
+Rational{Int64}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123645Z" creationid="hsugawa8651" creationdate="20181118T123645Z">
+        <seg>julia&gt; 5//0
+1//0
+
+julia&gt; -3//0
+-1//0
+
+julia&gt; typeof(ans)
+Rational{Int64}</seg>
       </tuv>
     </tu>
     <tu>
@@ -28310,6 +28535,20 @@ julia&gt; eval(ex)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; a = 1; b = 2;
+
+julia&gt; isequal(float(a//b), a/b)
+true</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123633Z" creationid="hsugawa8651" creationdate="20181118T123633Z">
+        <seg>julia&gt; a = 1; b = 2;
+
+julia&gt; isequal(float(a//b), a/b)
+true</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; a = 1; b = 2; a + b*im
 1 + 2im</seg>
       </tuv>
@@ -30098,6 +30337,16 @@ julia&gt; firstlast(Val(true))
 
 julia&gt; firstlast(Val(false))
 "Last"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; float(3//4)
+0.75</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123550Z" creationid="hsugawa8651" creationdate="20181118T123550Z">
+        <seg>julia&gt; float(3//4)
+0.75</seg>
       </tuv>
     </tu>
     <tu>
