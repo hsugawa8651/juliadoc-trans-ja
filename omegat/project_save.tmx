@@ -16620,8 +16620,8 @@ it is shown or not.</seg>
         <seg>The variable &lt;x1/&gt;Sys.KERNEL&lt;x2/&gt; can be used to handle such
 cases.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224825Z" creationid="hsugawa8651" creationdate="20181109T224825Z">
-        <seg>変数&lt;x1/&gt;Sys.KERNEL&lt;x2/&gt;は、このような処理を行うために使用することができます。 のようになります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T093240Z" creationid="hsugawa8651" creationdate="20181109T224825Z">
+        <seg>変数&lt;x1/&gt;Sys.KERNEL&lt;x2/&gt;は、そのような場合を扱うために使用することができます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -18450,8 +18450,8 @@ are needed to separate the generator from subsequent arguments:</seg>
         <seg>When writing cross-platform applications or libraries, it is often necessary to allow for
 differences between operating systems.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224823Z" creationid="hsugawa8651" creationdate="20181109T224823Z">
-        <seg>クロスプラットフォームアプリケーションやライブラリを記述する場合は、次のようなことがよくあります。 オペレーティング・システム間の違い。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T093219Z" creationid="hsugawa8651" creationdate="20181109T224823Z">
+        <seg>クロスプラットフォームアプリケーションやライブラリを記述する場合は、 オペレーティング・システム間の違いを許す必要があります。</seg>
       </tuv>
     </tu>
     <tu>
