@@ -3001,12 +3001,8 @@ arguments, as noted above).</seg>
         <seg>A rich language of types for constructing and describing objects,
 that can also optionally be used to make type declarations</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082013Z" creationid="hsugawa8651" creationdate="20181118T082013Z">
-        <seg>
-オブジェクトを作成したり説明したりするのに使うことができる、型に関する豊富な機能を提供します。プログラマ自身で型を宣言することもできます
-多重ディスパッチ によってさまざまな引数の組み合わせごとに関数の振る舞いを定義できます
-それぞれの引数の型ごとに最適化されたコードを自動生成します
-Cのような静的コンパイル言語に迫る性能を実現します</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082102Z" creationid="hsugawa8651" creationdate="20181118T082013Z">
+        <seg>オブジェクトを作成したり説明したりするのに使うことができる、型に関する豊富な機能を提供します。プログラマ自身で型を宣言することもできます</seg>
       </tuv>
     </tu>
     <tu>
@@ -3552,6 +3548,16 @@ or that &lt;x5/&gt;(;)&lt;x6/&gt; chains be single-line:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Although one sometimes speaks of dynamic languages as being “typeless”,
+they are definitely not: every object, whether primitive or
+user-defined, has a type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082226Z" creationid="hsugawa8651" creationdate="20181118T082226Z">
+        <seg>動的言語は「型がない」と言われることがありますが、そんなことはありません。 プリミティブであれユーザー定義であれ、全てのオブジェクトは何らかの型を持ちます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An &lt;x1/&gt;environment&lt;x2/&gt; determines what &lt;x3/&gt;import X&lt;x4/&gt; and &lt;x5/&gt;using X&lt;x6/&gt; mean in various code contexts and what files these statements cause to be loaded.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152914Z" creationid="hsugawa8651" creationdate="20181117T152914Z">
@@ -4030,6 +4036,16 @@ command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150557Z" creationid="hsugawa8651" creationdate="20181117T150557Z">
         <seg>自動変換:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Automatic generation of efficient, specialized code for different
+argument types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082127Z" creationid="hsugawa8651" creationdate="20181118T082127Z">
+        <seg>それぞれの引数の型ごとに最適化されたコードを自動生成します
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -9563,6 +9579,15 @@ for the key &lt;x13/&gt;x&lt;x14/&gt;).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Good performance, approaching that of statically-compiled languages
+like C</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082137Z" creationid="hsugawa8651" creationdate="20181118T082137Z">
+        <seg>Cのような静的コンパイル言語に迫る性能を実現します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>HasEltype()&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112145Z" creationid="hsugawa8651" creationdate="20181112T112145Z">
@@ -10470,6 +10495,16 @@ when applied to an argument tuple as a function.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In Julia, types are
+themselves run-time objects, and can also be used to convey information
+to the compiler.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082257Z" creationid="hsugawa8651" creationdate="20181118T082257Z">
+        <seg>Juliaでは、型そのものが実行時オブジェクトとなり、同時にコンパイラに対して情報を伝えるために利用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In Julia, we can access the parts independently to make a copy of that string:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151216Z" creationid="hsugawa8651" creationdate="20181117T151216Z">
@@ -10678,6 +10713,16 @@ be used in their specific case.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112852Z" creationid="hsugawa8651" creationdate="20181112T112852Z">
         <seg>場合によっては、タイプが必要になることがあります。 さらに効率的なアルゴリズムを知っているときにそれらの余分な行動を追加的に専門化すること 特定の場合に使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In static languages, on the other hand, while one can — and usually
+must — annotate types for the compiler, types exist only at compile time
+and cannot be manipulated or expressed at run time.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082250Z" creationid="hsugawa8651" creationdate="20181118T082250Z">
+        <seg> 一方静的言語においては、コンパイラのために型注釈をつけることができます（ほぼ必須でしょう）が、型の情報はコンパイル時にのみ存在し、実行時には操作したり取得したりすることができません。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -14736,6 +14781,17 @@ or 64-bit:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The ability to define function behavior across many combinations of
+argument types via &lt;a0&gt;multiple
+dispatch&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082157Z" creationid="hsugawa8651" creationdate="20181118T082117Z">
+        <seg>&lt;a0&gt;多重ディスパッチ&lt;/a0&gt; によってさまざまな引数の組み合わせごとに関数の振る舞いを定義できます
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The above results are all &lt;x1/&gt;`Float64`&lt;x2/&gt; values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110619Z" creationid="hsugawa8651" creationdate="20181112T110619Z">
@@ -14965,9 +15021,8 @@ implementation instead.</seg>
 written in Julia itself, including primitive operations like integer
 arithmetic</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082002Z" creationid="hsugawa8651" creationdate="20181118T082002Z">
-        <seg>
-言語のコア部分は最小限の機能しか提供しません。整数の四則演算のような初等演算を含む標準ライブラリはJulia自身で書かれています</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082055Z" creationid="hsugawa8651" creationdate="20181118T082002Z">
+        <seg>言語のコア部分は最小限の機能しか提供しません。整数の四則演算のような初等演算を含む標準ライブラリはJulia自身で書かれています</seg>
       </tuv>
     </tu>
     <tu>
@@ -15415,6 +15470,17 @@ variable or expression.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223955Z" creationid="hsugawa8651" creationdate="20181109T223955Z">
         <seg>入力タイプは、タプルではなく、リテラルタプルとして記述する必要があります。 変数または式。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The lack of type declarations in most dynamic
+languages, however, means that one cannot instruct the compiler about
+the types of values, and often cannot explicitly talk about types at
+all.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082237Z" creationid="hsugawa8651" creationdate="20181118T082237Z">
+        <seg>多くの動的言語における型宣言の欠落は、コンパイラに対して値の型を伝えられない、または型について何ら触れることができないということを意味します。</seg>
       </tuv>
     </tu>
     <tu>
