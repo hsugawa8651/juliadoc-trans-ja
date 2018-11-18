@@ -2668,6 +2668,14 @@ __m256 dist( __m256 a, __m256 b ) {
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x1/&gt;is preferred over&lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;`size(A) == size(B) || throw(DimensionMismatch("Size of A not equal to size of B"))`.&lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;However, sometimes it makes sense to keep the uppercase first letter, for instance if an argument&lt;x10/&gt;&lt;x11/&gt;to a function is a capital letter: `size(A,1) == size(B,2) || throw(DimensionMismatch("A has first dimension..."))`.&lt;x12/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124708Z" creationid="hsugawa8651" creationdate="20181118T124708Z">
+        <seg>&lt;x1/&gt;&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;'サイズ(A)==サイズ(Bの大きさに等しくないDimensionMismatch(Size of A not equal to size of B"))`&lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;ただし、引数&lt;x12/&gt;&lt;x11/&gt;&lt;x8/&gt;&lt;x12/&gt;が大文字である場合などは、大文字の文字を使用することを意味します。&lt;x12/&gt;&lt;x11/&gt;&lt;x8/&gt;&lt;x12/&gt;&lt;x12/&gt;&lt;x12/&gt;&lt;x12/&gt;&lt;x12/&gt;A,1B,2DimensionMismatch</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x1/&gt;strides(A)[i]&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083450Z" creationid="hsugawa8651" creationdate="20181113T083450Z">
@@ -3834,6 +3842,14 @@ of the expression by the variable:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111834Z" creationid="hsugawa8651" creationdate="20181112T111834Z">
         <seg>さらに、括弧で括られた表現は変数の係数として使用され、乗算を意味します。 変数による表現は次のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Additionally, some exception types take one or more arguments that are used for error reporting:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124650Z" creationid="hsugawa8651" creationdate="20181118T124650Z">
+        <seg>また、いくつかの例外タイプには、エラー報告に使用される一つ以上の引数があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7389,6 +7405,14 @@ over the dimensions of the array, collecting the offset in each dimension into t
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Both variables (&lt;x2/&gt;i&lt;x3/&gt; and &lt;x4/&gt;j&lt;x5/&gt;) are set to their current iteration values each time the inner loop runs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124538Z" creationid="hsugawa8651" creationdate="20181118T124538Z">
+        <seg>両方の変数(&lt;x2/&gt;i&lt;x3/&gt;と&lt;x4/&gt;j&lt;x5/&gt;)は、内部ループが実行されるたびに、それぞれの電流反復値に設定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Brief description</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094355Z" creationid="hsugawa8651" creationdate="20181118T094355Z">
@@ -9490,6 +9514,22 @@ Any Julia type that is not a subtype of &lt;x5/&gt;`Signed`&lt;x6/&gt; is assume
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Exception&lt;x1/&gt;s are thrown when an unexpected condition has occurred.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124558Z" creationid="hsugawa8651" creationdate="20181118T124558Z">
+        <seg>例外&lt;x1/&gt;は、予期しない条件が発生したときにスローされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Exceptions can be created explicitly with &lt;x1/&gt;`throw`&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124625Z" creationid="hsugawa8651" creationdate="20181118T124625Z">
+        <seg>例外は、&lt;x1/&gt;`throw'&lt;x2/&gt;で明示的に作成することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Existing code then seamlessly applies to the new data
 types.</seg>
       </tuv>
@@ -9963,6 +10003,15 @@ signature for Windows:</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>For example,
+&lt;x1/&gt;size(A) == size(B) || throw(DimensionMismatch("size of A not equal to size of B"))&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124704Z" creationid="hsugawa8651" creationdate="20181118T124704Z">
+        <seg>たとえば &lt;x1/&gt;サイズ(A)==サイズ(B)スロー(Bのサイズに等しくないDimensionMismatch("サイズはBの大きさに等しくない"))&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example,
 &lt;x11/&gt;[1,2,3] ^ 3&lt;x12/&gt; is not defined, since there is no standard
 mathematical meaning to "cubing" a (non-square) array, but
 &lt;x13/&gt;[1,2,3] .^ 3&lt;x14/&gt; is defined as computing the elementwise
@@ -10104,6 +10153,26 @@ are true where the corresponding elements of &lt;x7/&gt;A&lt;x8/&gt; are between
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, a customized
+square root function can be written to automatically call either the real or complex square root
+method on demand using &lt;x5/&gt;Exception&lt;x6/&gt;s :</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124748Z" creationid="hsugawa8651" creationdate="20181118T124748Z">
+        <seg>たとえば、カスタマイズされた 平方根関数は、実数または複素数の平方根を自動的に呼び出すように書くことができます。 &lt;x5/&gt;例外&lt;x6/&gt;を使用した要求の方法&lt;x5/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, a function defined only
+for nonnegative numbers could be written to &lt;x3/&gt;`throw`&lt;x4/&gt; a &lt;x5/&gt;`DomainError`&lt;x6/&gt; if the argument
+is negative:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124627Z" creationid="hsugawa8651" creationdate="20181118T124627Z">
+        <seg>たとえば、定義された関数は 負の数が指定された場合、負の数は&lt;x3/&gt;'throw'&lt;x4/&gt;a&lt;x5/&gt;'DomainError&lt;x6/&gt;に書き込まれます。 は否定的です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, a module that can display
 PNG images in a window can register this capability with Julia, so that calling &lt;x1/&gt;`display(x)`&lt;x2/&gt; on
 types with PNG representations will automatically display the image using the module's window.</seg>
@@ -10234,6 +10303,15 @@ the constraint that the first number is not greater than the second one.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155741Z" creationid="hsugawa8651" creationdate="20181117T155741Z">
         <seg>たとえば、実数のペアを保持するタイプを宣言する場合は、次のように指定します。 最初の数値が2番目の数値より大きい制約がないことを示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, the &lt;x1/&gt;`sqrt`&lt;x2/&gt; function throws a &lt;x3/&gt;`DomainError`&lt;x4/&gt; if applied to a negative
+real value:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124610Z" creationid="hsugawa8651" creationdate="20181118T124610Z">
+        <seg>例えば、&lt;x1/&gt;"sqqrt"&lt;x2/&gt;関数は、負に印加された場合、&lt;x/&gt;"DomainError&lt;x4/&gt;をスローする。 実価値:</seg>
       </tuv>
     </tu>
     <tu>
@@ -11475,6 +11553,16 @@ the indices: &lt;x3/&gt;prod(length(I_1), length(I_2), ..., length(I_n))&lt;x4/&
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If &lt;x1/&gt;fussy_sqrt&lt;x2/&gt; is called with a negative value from another function, instead of trying to continue
+execution of the calling function, it returns immediately, displaying the error message in the
+interactive session:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124729Z" creationid="hsugawa8651" creationdate="20181118T124729Z">
+        <seg>もし&lt;x1/&gt;fusy_sqrt&lt;x2/&gt;が別の関数から負の値を持って呼び出された場合、それは継続される代わりに 呼び出し関数の実行で、ただちにエラー・メッセージが表示されます。 対話型セッション:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If &lt;x10/&gt;include("source.jl")&lt;x11/&gt; is called multiple times, &lt;x12/&gt;source.jl&lt;x13/&gt; is evaluated multiple times.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152704Z" creationid="hsugawa8651" creationdate="20181117T152704Z">
@@ -11841,6 +11929,15 @@ outside/afterwards.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121114Z" creationid="hsugawa8651" creationdate="20181118T121114Z">
         <seg>マニフェストファイルが存在しない場合、&lt;x2/&gt;グラフ&lt;x3/&gt;は空である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If this example were rewritten to use a &lt;x1/&gt;for&lt;x2/&gt; keyword for each variable, then the output would
+be different: the second and fourth values would contain &lt;x3/&gt;0&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124545Z" creationid="hsugawa8651" creationdate="20181118T124545Z">
+        <seg>この例が、各変数ごとに&lt;x2/&gt;キーワードに対して&lt;x1/&gt;を使用するように書き直された場合、出力は次のようになります。 異なる値:2番目と4番目の値は&lt;x3/&gt;0&lt;x4/&gt;を含むことになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12305,6 +12402,15 @@ words, while developing you might use a workflow something like this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In other circumstances, it is handy to be able to stop an iteration and move on to the next one
+immediately.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124517Z" creationid="hsugawa8651" creationdate="20181118T124517Z">
+        <seg>他の状況では、反復を停止して次のイテレーションに移動することは便利です。 のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In other words, if the path to our example project directory is &lt;x2/&gt;/home/me/animals&lt;x3/&gt; then the &lt;x4/&gt;paths&lt;x5/&gt; map could be represented by this dictionary:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121359Z" creationid="hsugawa8651" creationdate="20181118T121359Z">
@@ -12383,6 +12489,16 @@ callback.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In realistic usage
+there is more code to be evaluated after the &lt;x5/&gt;continue&lt;x6/&gt;, and often there are multiple points from
+which one calls &lt;x7/&gt;continue&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124527Z" creationid="hsugawa8651" creationdate="20181118T124527Z">
+        <seg>現実的な使い方で &lt;x5/&gt;continue&lt;x6/&gt;以降に評価されるコードが多くあり、多くの場合、以下のような複数のポイントが存在します。 これは&lt;x8/&gt;を続けて&lt;x8/&gt;を続けます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In some cases it might be convenient not to have to define &lt;x1/&gt;MyStyle&lt;x2/&gt;, in which case you can
 leverage one of the general broadcast wrappers:</seg>
       </tuv>
@@ -12408,6 +12524,16 @@ and cannot be manipulated or expressed at run time.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082250Z" creationid="hsugawa8651" creationdate="20181118T082250Z">
         <seg> 一方静的言語においては、コンパイラのために型注釈をつけることができます（ほぼ必須でしょう）が、型の情報はコンパイル時にのみ存在し、実行時には操作したり取得したりすることができません。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In such cases, it may be best for the exceptional condition to either terminate the
+program while printing a diagnostic error message, or if the programmer has provided code to handle
+such exceptional circumstances then allow that code to take the appropriate action.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124553Z" creationid="hsugawa8651" creationdate="20181118T124553Z">
+        <seg>このような場合、例外的な条件は、次のいずれかの方法で終了することが最善の条件になります。 診断エラー・メッセージの印刷中、またはプログラマがコードを処理するためのコードを提供している場合はプログラム このような例外的な状況は、そのコードが適切なアクションをとることを可能にします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13390,6 +13516,14 @@ of this call; defining one is sufficient no matter what order the user supplies 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131758Z" creationid="hsugawa8651" creationdate="20181113T131758Z">
         <seg>両方の引数の両方を定義する必要はありませんが、両方の命令を定義する必要はありません。 この呼び出しの定義では、ユーザが引数を指定する順序にかかわらず、一つだけで十分であることになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It needs to be called to obtain an &lt;x3/&gt;Exception&lt;x4/&gt; object:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124642Z" creationid="hsugawa8651" creationdate="20181118T124642Z">
+        <seg>&lt;x3/&gt;例外&lt;x4/&gt;オブジェクトを取得するには、次のコマンドを呼び出す必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14505,6 +14639,15 @@ all of the &lt;x11/&gt;then&lt;x12/&gt; blocks and the alternate implementation 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Multiple nested &lt;x1/&gt;for&lt;x2/&gt; loops can be combined into a single outer loop, forming the cartesian product
+of its iterables:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124530Z" creationid="hsugawa8651" creationdate="20181118T124530Z">
+        <seg>&lt;x2/&gt;ループに対して複数のネストされた&lt;x1/&gt;は、単一の外側ループに結合され、デカルト積を形成することができる。 次のように表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>N/A</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110219Z" creationid="hsugawa8651" creationdate="20181112T110219Z">
@@ -14699,6 +14842,14 @@ division.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123248Z" creationid="hsugawa8651" creationdate="20181118T123248Z">
         <seg>&lt;x1/&gt;3/4im==3/(4*im)==-(3/4*im)&lt;x2/&gt;は、リテラル係数がより強く結合するので、以下のようになることに注意してください。 分割。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that &lt;x1/&gt;`DomainError`&lt;x2/&gt; without parentheses is not an exception, but a type of exception.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124640Z" creationid="hsugawa8651" creationdate="20181118T124640Z">
+        <seg>括弧なしの&lt;x1/&gt;'DomainError&lt;x2/&gt;は例外ではなく、例外のタイプであることに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16862,6 +17013,16 @@ and so we can mutate the array:</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>Stacktrace:
+[...]</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124613Z" creationid="hsugawa8651" creationdate="20181118T124613Z">
+        <seg>Stacktrace:
+[...]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Stacktrace:
 [...]
 
 julia&gt; sqrt(-1 + 0im)
@@ -16991,6 +17152,14 @@ interoperable code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121223Z" creationid="hsugawa8651" creationdate="20181118T121223Z">
         <seg>&lt;x18/&gt;DEPOT_PATH&lt;x19/&gt;の内容が&lt;x20/&gt;["/home/me/.jula","/usr/local/julia"]であると仮定します。次に、Juliaは次のパスを参照して、それらが存在するかどうかを調べます。次のパスを参照してください:X21</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Suppose we want to stop execution immediately if the square root of a negative number is taken.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124713Z" creationid="hsugawa8651" creationdate="20181118T124713Z">
+        <seg>負の数の平方根が取られた場合には、すぐに実行を停止したいと考えます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17427,6 +17596,23 @@ their string representations together:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;`error`&lt;x2/&gt; function is used to produce an &lt;x3/&gt;`ErrorException`&lt;x4/&gt; that interrupts
+the normal flow of control.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124711Z" creationid="hsugawa8651" creationdate="20181118T124711Z">
+        <seg>&lt;x1/&gt;'エラー"&lt;x2/&gt;関数は、&lt;x3/&gt;'ErrorException&lt;x4/&gt;を生成するために使用されます。 制御の正常な流れです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;`throw`&lt;x2/&gt; function</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124623Z" creationid="hsugawa8651" creationdate="20181118T124623Z">
+        <seg>&lt;x1/&gt;`throw'&lt;x2/&gt;関数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;`typemin`&lt;x2/&gt; and &lt;x3/&gt;`typemax`&lt;x4/&gt; functions also apply to floating-point types:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111123Z" creationid="hsugawa8651" creationdate="20181112T110920Z">
@@ -17460,6 +17646,14 @@ is permitted). Now, suppose that we have a 1d array &lt;x17/&gt;A&lt;x18/&gt; of
 using the &lt;x19/&gt;qsort&lt;x20/&gt; function (rather than Julia's built-in &lt;x21/&gt;sort&lt;x22/&gt; function). Before we worry about
 calling &lt;x23/&gt;qsort&lt;x24/&gt; and passing arguments, we need to write a comparison function that works for some
 arbitrary objects (which define &lt;x25/&gt;&lt;&lt;x26/&gt;):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;continue&lt;x2/&gt; keyword accomplishes this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124520Z" creationid="hsugawa8651" creationdate="20181118T124520Z">
+        <seg>&lt;x1/&gt;continue&lt;x2/&gt;キーワードを使用すると、次のことが実現されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17517,6 +17711,22 @@ can be specified via the &lt;x3/&gt;lt&lt;x4/&gt; keyword.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032029Z" creationid="hsugawa8651" creationdate="20181114T032029Z">
         <seg>The &lt;x1/&gt;state&lt;x2/&gt; object may be anything, and should be chosen appropriately for each iterable type.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;try/catch&lt;x2/&gt; statement</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124745Z" creationid="hsugawa8651" creationdate="20181118T124745Z">
+        <seg>&lt;x1/&gt;try/catch&lt;x2/&gt;ステートメント</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;try/catch&lt;x2/&gt; statement allows for &lt;x3/&gt;Exception&lt;x4/&gt;s to be tested for.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124740Z" creationid="hsugawa8651" creationdate="20181118T124740Z">
+        <seg>&lt;x1/&gt;try/catch&lt;x2/&gt;ステートメントでは、&lt;x3/&gt;Exception&lt;x4/&gt;sをテストすることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17835,6 +18045,15 @@ it, and then finally copy the realization of the &lt;x13/&gt;Broadcasted&lt;x14/
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131542Z" creationid="hsugawa8651" creationdate="20181113T131542Z">
         <seg>内蔵の ブロードキャスト・マシンは、引数に基づいて結果のタイプとサイズを決定し、割り当てます。 そして、最後に、&lt;x13/&gt;ブロードキャストされた&lt;x14/&gt;オブジェクトの実現をデフォルトでその中にコピーします。 &lt;x15/&gt;copyto!(::AbstractArray,::ブロードキャスト)&lt;x16/&gt;メソッド。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The built-in &lt;x2/&gt;Exception&lt;x3/&gt;s listed
+below all interrupt the normal flow of control.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124600Z" creationid="hsugawa8651" creationdate="20181118T124600Z">
+        <seg>組み込みの&lt;x2/&gt;例外&lt;x3/&gt;が一覧表示されています。 すべての割り込みが制御の正常な流れを中断します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19726,6 +19945,14 @@ instances of the type &lt;x13/&gt;SummedArray{Int32,Int32}&lt;x14/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Therefore, assignments to &lt;x6/&gt;i&lt;x7/&gt; will not be visible to subsequent iterations:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124540Z" creationid="hsugawa8651" creationdate="20181118T124540Z">
+        <seg>したがって、&lt;x6/&gt;i&lt;x7/&gt;への割り当ては、次の反復では可視ではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Therefore, if an &lt;x1/&gt;Array&lt;x2/&gt; contains data in the wrong format, it will have to be explicitly converted
 using a call such as &lt;x3/&gt;trunc(Int32, a)&lt;x4/&gt;.</seg>
       </tuv>
@@ -19824,6 +20051,14 @@ end and at the call site; however, &lt;x1/&gt;don't copy them&lt;x2/&gt;, for th
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120717Z" creationid="hsugawa8651" creationdate="20181112T112023Z">
         <seg>これらの関数は、不要なオーバーヘッドを回避するために&lt;x1/&gt;数値比較&lt;x2/&gt;で役立ちます。 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These loops are both exited early by using &lt;x7/&gt;break&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124514Z" creationid="hsugawa8651" creationdate="20181118T124514Z">
+        <seg>これらのループは両方とも、&lt;x7/&gt;ブレーク&lt;x8/&gt;を使用して早期に終了されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20384,6 +20619,15 @@ cooperative multitasking are implemented in Julia using tasks.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is a somewhat contrived example since we could produce the same behavior more clearly by
+negating the condition and placing the &lt;x1/&gt;println&lt;x2/&gt; call inside the &lt;x3/&gt;if&lt;x4/&gt; block.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124524Z" creationid="hsugawa8651" creationdate="20181118T124524Z">
+        <seg>これは、同じ振る舞いをより明確に生成することができるので、多少工夫された例です。 &lt;x4/&gt;ブロックが&lt;x4/&gt;ブロックの場合には、&lt;x/&gt;println&lt;x2/&gt;の呼び出しを&lt;x3/&gt;の内部に配置します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is a very common pattern throughout Julia Base: a small set of required methods
 define an informal interface that enable many fancier behaviors.</seg>
       </tuv>
@@ -20622,6 +20866,14 @@ statically compile.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111830Z" creationid="hsugawa8651" creationdate="20181112T111830Z">
         <seg>これは例えば &lt;x9/&gt;1/2im&lt;x10/&gt;=&lt;x11/&gt;-0.5im&lt;x12/&gt;6//2(2 + 1)&lt;x14/&gt;=&lt;x15/&gt;=&lt;x15/&gt;1//1&lt;x16/&gt;となります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This mechanism can be implemented easily by custom exception types following the way &lt;x1/&gt;`UndefVarError`&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124654Z" creationid="hsugawa8651" creationdate="20181118T124654Z">
+        <seg>このメカニズムは、&lt;x1/&gt;`UndefVarError'&lt;x2/&gt;のように、カスタム例外タイプによって容易に実装することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20971,6 +21223,15 @@ the unspecified fields uninitialized.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152628Z" creationid="hsugawa8651" creationdate="20181117T152628Z">
         <seg>これを行うには、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref Base.AsyncCondition)オブジェクトを作成し、&lt;x6/&gt;`wait`&lt;x7/&gt;を次のようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To do this, we can define a fussy version of the &lt;x1/&gt;`sqrt`&lt;x2/&gt; function that raises an error
+if its argument is negative:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124716Z" creationid="hsugawa8651" creationdate="20181118T124716Z">
+        <seg>これを行うには、エラーを起こす&lt;x1/&gt;`sqqrt&lt;x2/&gt;関数のファジーなバージョンを定義することができます。 引数が負の値である場合:</seg>
       </tuv>
     </tu>
     <tu>
@@ -21671,6 +21932,15 @@ that the element type of the array matches &lt;x3/&gt;T&lt;x4/&gt;, and the addr
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When an unexpected condition occurs, a function may be unable to return a reasonable value to
+its caller.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124550Z" creationid="hsugawa8651" creationdate="20181118T124550Z">
+        <seg>予期しない状態が発生した場合、関数は妥当な値を返すことができません。 その呼び出し元。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When both
 libraries and executables are generated by LLVM, it is possible to perform whole-program optimizations
 that can even optimize across this boundary, but Julia does not yet support that.</seg>
@@ -21993,6 +22263,14 @@ numeric operators like &lt;x7/&gt;`+`&lt;x8/&gt; do, and works for all kinds of 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>With this syntax, iterables may still refer to outer loop variables; e.g. &lt;x1/&gt;for i = 1:n, j = 1:i&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124534Z" creationid="hsugawa8651" creationdate="20181118T124534Z">
+        <seg>この構文では、iterablesは依然として外部ループ変数を参照することができます。例えば、i=1:n、j=1:i&lt;x2/&gt;のような&lt;x1/&gt;です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Without any explicitly provided inner constructors, the declaration of the composite type &lt;x11/&gt;Point{T&lt;:Real}&lt;x12/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123908Z" creationid="hsugawa8651" creationdate="20181118T123908Z">
@@ -22190,6 +22468,14 @@ of the &lt;x3/&gt;bar&lt;x4/&gt; and &lt;x5/&gt;baz&lt;x6/&gt; fields:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131836Z" creationid="hsugawa8651" creationdate="20181113T131836Z">
         <seg>バイナリの&lt;x1/&gt;BroadcastStyle&lt;x2/&gt;を書く必要はありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You may define your own exceptions in the following way:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124617Z" creationid="hsugawa8651" creationdate="20181118T124617Z">
+        <seg>次の方法で独自の例外を定義することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24257,6 +24543,14 @@ object</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>break&lt;x1/&gt; statement inside such a loop exits the entire nest of loops, not just the inner one.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124536Z" creationid="hsugawa8651" creationdate="20181118T124536Z">
+        <seg>このようなループ内のbreak&lt;x1/&gt;ステートメントは、内部だけではなくループのネスト全体を終了させます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>broadcast(f, args...)&lt;x1/&gt;, providing a convenient syntax to broadcast any function
 (&lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref man-vectorized)).</seg>
       </tuv>
@@ -24812,6 +25106,34 @@ with &lt;x2/&gt;$&lt;x3/&gt;).</seg>
         <seg>ex : msgs[1]
            msg = string(msg_body)
            return :($ex ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>exp(-x) : throw(DomainError(x, "argument must be nonnegative"))
+f (generic function with 1 method)
+
+julia&gt; f(1)
+0.36787944117144233
+
+julia&gt; f(-1)
+ERROR: DomainError with -1:
+argument must be nonnegative
+Stacktrace:
+ [1] f(::Int64) at ./none:1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124633Z" creationid="hsugawa8651" creationdate="20181118T124633Z">
+        <seg>exp(-x) : throw(DomainError(x, "argument must be nonnegative"))
+f (generic function with 1 method)
+
+julia&gt; f(1)
+0.36787944117144233
+
+julia&gt; f(-1)
+ERROR: DomainError with -1:
+argument must be nonnegative
+Stacktrace:
+ [1] f(::Int64) at ./none:1</seg>
       </tuv>
     </tu>
     <tu>
@@ -31011,6 +31333,44 @@ julia&gt; f(1)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; f(x) = try
+           sqrt(x)
+       catch
+           sqrt(complex(x, 0))
+       end
+f (generic function with 1 method)
+
+julia&gt; f(1)
+1.0
+
+julia&gt; f(-1)
+0.0 + 1.0im</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124749Z" creationid="hsugawa8651" creationdate="20181118T124749Z">
+        <seg>julia&gt; f(x) = try
+           sqrt(x)
+       catch
+           sqrt(complex(x, 0))
+       end
+f (generic function with 1 method)
+
+julia&gt; f(1)
+1.0
+
+julia&gt; f(-1)
+0.0 + 1.0im</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; f(x) = x&gt;=0 ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124629Z" creationid="hsugawa8651" creationdate="20181118T124629Z">
+        <seg>julia&gt; f(x) = x&gt;=0 ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; f(x,y) = 3x + 4y;
 
 julia&gt; A = [1.0, 2.0, 3.0];
@@ -31374,6 +31734,30 @@ julia&gt; z
     <tu>
       <tuv lang="EN-US">
         <seg>julia&gt; for i = 1:10
+           if i % 3 != 0
+               continue
+           end
+           println(i)
+       end
+3
+6
+9</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124521Z" creationid="hsugawa8651" creationdate="20181118T124521Z">
+        <seg>julia&gt; for i = 1:10
+           if i % 3 != 0
+               continue
+           end
+           println(i)
+       end
+3
+6
+9</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; for i = 1:10
            z = i
            global z
        end
@@ -31407,6 +31791,48 @@ ERROR: UndefVarError: z not defined</seg>
 
 julia&gt; z
 ERROR: UndefVarError: z not defined</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; for i = 1:2, j = 3:4
+           println((i, j))
+           i = 0
+       end
+(1, 3)
+(1, 4)
+(2, 3)
+(2, 4)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124541Z" creationid="hsugawa8651" creationdate="20181118T124541Z">
+        <seg>julia&gt; for i = 1:2, j = 3:4
+           println((i, j))
+           i = 0
+       end
+(1, 3)
+(1, 4)
+(2, 3)
+(2, 4)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; for i = 1:2, j = 3:4
+           println((i, j))
+       end
+(1, 3)
+(1, 4)
+(2, 3)
+(2, 4)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124531Z" creationid="hsugawa8651" creationdate="20181118T124531Z">
+        <seg>julia&gt; for i = 1:2, j = 3:4
+           println((i, j))
+       end
+(1, 3)
+(1, 4)
+(2, 3)
+(2, 4)</seg>
       </tuv>
     </tu>
     <tu>
@@ -32155,6 +32581,62 @@ tryeval2 (generic function with 1 method)
 
 julia&gt; tryeval2()
 2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; function verbose_fussy_sqrt(x)
+           println("before fussy_sqrt")
+           r = fussy_sqrt(x)
+           println("after fussy_sqrt")
+           return r
+       end
+verbose_fussy_sqrt (generic function with 1 method)
+
+julia&gt; verbose_fussy_sqrt(2)
+before fussy_sqrt
+after fussy_sqrt
+1.4142135623730951
+
+julia&gt; verbose_fussy_sqrt(-1)
+before fussy_sqrt
+ERROR: negative x not allowed
+Stacktrace:
+ [1] error at ./error.jl:33 [inlined]
+ [2] fussy_sqrt at ./none:1 [inlined]
+ [3] verbose_fussy_sqrt(::Int64) at ./none:3
+ [4] top-level scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124730Z" creationid="hsugawa8651" creationdate="20181118T124730Z">
+        <seg>julia&gt; function verbose_fussy_sqrt(x)
+           println("before fussy_sqrt")
+           r = fussy_sqrt(x)
+           println("after fussy_sqrt")
+           return r
+       end
+verbose_fussy_sqrt (generic function with 1 method)
+
+julia&gt; verbose_fussy_sqrt(2)
+before fussy_sqrt
+after fussy_sqrt
+1.4142135623730951
+
+julia&gt; verbose_fussy_sqrt(-1)
+before fussy_sqrt
+ERROR: negative x not allowed
+Stacktrace:
+ [1] error at ./error.jl:33 [inlined]
+ [2] fussy_sqrt at ./none:1 [inlined]
+ [3] verbose_fussy_sqrt(::Int64) at ./none:3
+ [4] top-level scope</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; fussy_sqrt(x) = x &gt;= 0 ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124718Z" creationid="hsugawa8651" creationdate="20181118T124718Z">
+        <seg>julia&gt; fussy_sqrt(x) = x &gt;= 0 ?</seg>
       </tuv>
     </tu>
     <tu>
@@ -34651,6 +35133,30 @@ HasPlain(438103441441)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; struct MyCustomException &lt;: Exception end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124619Z" creationid="hsugawa8651" creationdate="20181118T124619Z">
+        <seg>julia&gt; struct MyCustomException &lt;: Exception end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; struct MyUndefVarError &lt;: Exception
+           var::Symbol
+       end
+
+julia&gt; Base.showerror(io::IO, e::MyUndefVarError) = print(io, e.var, " not defined")</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124655Z" creationid="hsugawa8651" creationdate="20181118T124655Z">
+        <seg>julia&gt; struct MyUndefVarError &lt;: Exception
+           var::Symbol
+       end
+
+julia&gt; Base.showerror(io::IO, e::MyUndefVarError) = print(io, e.var, " not defined")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; struct NoFields
        end
 
@@ -35341,6 +35847,16 @@ Stacktrace:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; throw(UndefVarError(:x))
+ERROR: UndefVarError: x not defined</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124651Z" creationid="hsugawa8651" creationdate="20181118T124651Z">
+        <seg>julia&gt; throw(UndefVarError(:x))
+ERROR: UndefVarError: x not defined</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; trace = backtrace()
 18-element Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}:
  Ptr{Nothing} @0x00007fd8734c6209
@@ -35539,6 +36055,22 @@ DataType
 
 julia&gt; typeof(Union)
 DataType</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; typeof(DomainError(nothing)) &lt;: Exception
+true
+
+julia&gt; typeof(DomainError) &lt;: Exception
+false</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124643Z" creationid="hsugawa8651" creationdate="20181118T124643Z">
+        <seg>julia&gt; typeof(DomainError(nothing)) &lt;: Exception
+true
+
+julia&gt; typeof(DomainError) &lt;: Exception
+false</seg>
       </tuv>
     </tu>
     <tu>
@@ -37625,6 +38157,15 @@ multiplication is higher than other binary operators such as multiplication
     <tu>
       <tuv lang="EN-US">
         <seg>note
+When writing an error message, it is preferred to make the first word lowercase.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124701Z" creationid="hsugawa8651" creationdate="20181118T124701Z">
+        <seg>メモ エラー・メッセージを書き込む場合は、最初のワード小文字を小文字にすることをお勧めします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>note
 You only need to read this chapter if you want to understand the technical details of package loading.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152756Z" creationid="hsugawa8651" creationdate="20181117T152756Z">
@@ -38431,6 +38972,36 @@ asind  acosd  atand  acotd  asecd  acscd</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063529Z" creationid="hsugawa8651" creationdate="20181114T063529Z">
         <seg>関数呼び出しに引数を指定するか、またはvarargs関数を宣言します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>sqrt(x) : error("negative x not allowed")
+fussy_sqrt (generic function with 1 method)
+
+julia&gt; fussy_sqrt(2)
+1.4142135623730951
+
+julia&gt; fussy_sqrt(-1)
+ERROR: negative x not allowed
+Stacktrace:
+ [1] error at ./error.jl:33 [inlined]
+ [2] fussy_sqrt(::Int64) at ./none:1
+ [3] top-level scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124720Z" creationid="hsugawa8651" creationdate="20181118T124720Z">
+        <seg>sqrt(x) : error("negative x not allowed")
+fussy_sqrt (generic function with 1 method)
+
+julia&gt; fussy_sqrt(2)
+1.4142135623730951
+
+julia&gt; fussy_sqrt(-1)
+ERROR: negative x not allowed
+Stacktrace:
+ [1] error at ./error.jl:33 [inlined]
+ [2] fussy_sqrt(::Int64) at ./none:1
+ [3] top-level scope</seg>
       </tuv>
     </tu>
     <tu>
