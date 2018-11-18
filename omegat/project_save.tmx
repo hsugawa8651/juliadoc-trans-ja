@@ -2998,6 +2998,19 @@ arguments, as noted above).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A rich language of types for constructing and describing objects,
+that can also optionally be used to make type declarations</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082013Z" creationid="hsugawa8651" creationdate="20181118T082013Z">
+        <seg>
+オブジェクトを作成したり説明したりするのに使うことができる、型に関する豊富な機能を提供します。プログラマ自身で型を宣言することもできます
+多重ディスパッチ によってさまざまな引数の組み合わせごとに関数の振る舞いを定義できます
+それぞれの引数の型ごとに最適化されたコードを自動生成します
+Cのような静的コンパイル言語に迫る性能を実現します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A scalar index.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150441Z" creationid="hsugawa8651" creationdate="20181117T150441Z">
@@ -11267,8 +11280,8 @@ block's type.</seg>
 multi-paradigm, combining features of imperative, functional, and
 object-oriented programming.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081641Z" creationid="hsugawa8651" creationdate="20181118T081641Z">
-        <seg> Juliaは命令型プログラミング・関数型プログラミング・オブジェクト指向プログラミングの機能を組み合わせたマルチパラダイム言語です。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081817Z" creationid="hsugawa8651" creationdate="20181118T081641Z">
+        <seg>Juliaは命令型プログラミング・関数型プログラミング・オブジェクト指向プログラミングの機能を組み合わせたマルチパラダイム言語です。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -11667,8 +11680,8 @@ performance, achieved using type inference and &lt;a0&gt;just-in-time (JIT)
 compilation&lt;/a0&gt;,
 implemented using &lt;a1&gt;LLVM&lt;/a1&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081625Z" creationid="hsugawa8651" creationdate="20181118T081625Z">
-        <seg>Juliaは任意の型付け、多重ディスパッチ、そして優れた性能を提供します。 これは型推論と、 LLVM によって実装された just-in-time (JIT) コンパイラ によって実現されるものです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081814Z" creationid="hsugawa8651" creationdate="20181118T081625Z">
+        <seg>Juliaは任意の型付け、多重ディスパッチ、そして優れた性能を提供します。 これは型推論と、&lt;a1&gt;LLVM&lt;/a1&gt;によって実装された &lt;a0&gt;just-in-time (JIT) コンパイラ&lt;/a0&gt;によって実現されるものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14948,6 +14961,17 @@ implementation instead.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The core language imposes very little; the standard library is
+written in Julia itself, including primitive operations like integer
+arithmetic</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082002Z" creationid="hsugawa8651" creationdate="20181118T082002Z">
+        <seg>
+言語のコア部分は最小限の機能しか提供しません。整数の四則演算のような初等演算を含む標準ライブラリはJulia自身で書かれています</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The default constructor
 is equivalent to writing your own inner constructor method that takes all of the object's fields
 as parameters (constrained to be of the correct type, if the corresponding field has a type),
@@ -15551,6 +15575,16 @@ were written as &lt;x1/&gt;v(1) &lt; v(2) &amp;&amp; v(2) &lt;= v(3)&lt;x2/&gt;.
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030745Z" creationid="hsugawa8651" creationdate="20181114T030745Z">
         <seg>中間表現は、式が1回だけ評価されるのではなく、1回だけ評価されます。 &lt;x1/&gt;v(1)&lt;v(2)&amp;v(2)&lt;=v(3)&lt;x2/&gt;と記述されている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The most significant departures of Julia from typical dynamic languages
+are:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081945Z" creationid="hsugawa8651" creationdate="20181118T081945Z">
+        <seg>一般の動的言語と比べてJuliaが特に優れている点としては以下のようなものが挙げられます。
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -17134,6 +17168,17 @@ above).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032339Z" creationid="hsugawa8651" creationdate="20181116T032339Z">
         <seg>したがって、我々は、&lt;x2/&gt;のタイプごとに&lt;x1/&gt;をループするだけである。この場合には &lt;x3/&gt;N&lt;x4/&gt;(関数が生成される関数が複数回生成されるエッジを除く)&lt;x3/&gt;で一度1回指定します。 )。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To
+achieve this, Julia builds upon the lineage of
+mathematical programming languages, but also borrows much from popular
+dynamic languages, including &lt;a2&gt;Lisp&lt;/a2&gt;, &lt;a3&gt;Perl&lt;/a3&gt;, &lt;a4&gt;Python&lt;/a4&gt;, &lt;a5&gt;Lua&lt;/a5&gt;, and &lt;a6&gt;Ruby&lt;/a6&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081924Z" creationid="hsugawa8651" creationdate="20181118T081727Z">
+        <seg>このことを実現するために、Juliaは数値計算言語の系譜を踏まえつつも、 &lt;a2&gt;Lisp&lt;/a2&gt; 、 &lt;a3&gt;Perl&lt;/a3&gt; 、 &lt;a4&gt;Python&lt;/a4&gt; 、 &lt;a5&gt;Lua&lt;/a5&gt; 、そして &lt;a6&gt;Ruby&lt;/a6&gt; などの広く使われている動的言語からも多くのアイデアを得ています。</seg>
       </tuv>
     </tu>
     <tu>
