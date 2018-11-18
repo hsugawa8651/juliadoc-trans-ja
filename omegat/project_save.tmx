@@ -6525,6 +6525,16 @@ that the function will modify.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Because Julia’s compiler is different from the interpreters used
+for languages like Python or R, you may find that Julia’s performance
+is unintuitive at first.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081506Z" creationid="hsugawa8651" creationdate="20181118T081506Z">
+        <seg>JuliaのコンパイラはPythonやRで使われるようなインタプリタとは異なるので、もしかしたら最初はその性能に気づかないかもしれません。 遅いと感じたら、何かを試す前に Performance Tips を参照することをお勧めします。 Juliaがどのように動作するかを理解すれば、C言語と同等の速さで動くコードを簡単に書くことができるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because of the lack of a central naming authority, a single project can quite possibly end up depending on different packages that have the same name.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152837Z" creationid="hsugawa8651" creationdate="20181117T152837Z">
@@ -9360,6 +9370,17 @@ bindings, see the &lt;x3/&gt;CxxWrap&lt;x4/&gt; package.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Fortunately, modern language design and compiler techniques
+make it possible to mostly eliminate the performance trade-off and
+provide a single environment productive enough for prototyping and
+efficient enough for deploying performance-intensive applications.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081421Z" creationid="hsugawa8651" creationdate="20181118T081421Z">
+        <seg> 幸い、最近の言語設計やコンパイラの進歩によって、性能の低下を避けつつ、「生産的なプロトタイピング」と「高性能なアプリケーションの効率的なデプロイ」の両方をひとつの環境で提供することが可能になりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Fractions</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030828Z" creationid="hsugawa8651" creationdate="20181114T030828Z">
@@ -10283,6 +10304,16 @@ specify this trait, the default value &lt;x5/&gt;IndexCartesian()&lt;x6/&gt; is 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155920Z" creationid="hsugawa8651" creationdate="20181109T155920Z">
         <seg>もしあなたが この特性を指定します。デフォルト値&lt;x5/&gt;IndexCartesian()&lt;x6/&gt;は使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you find that something is slow, we highly
+recommend reading through the &lt;a0&gt;&lt;s1&gt;Performance Tips&lt;/s1&gt;&lt;/a0&gt;
+section before trying anything else.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081550Z" creationid="hsugawa8651" creationdate="20181118T081550Z">
+        <seg>JuliaのコンパイラはPythonやRで使われるようなインタプリタとは異なるので、もしかしたら最初はその性能に気づかないかもしれません。 遅いと感じたら、何かを試す前に &lt;s1&gt;Performance Tips &lt;/s1&gt;を参照することをお勧めします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11232,6 +11263,16 @@ block's type.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is
+multi-paradigm, combining features of imperative, functional, and
+object-oriented programming.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081641Z" creationid="hsugawa8651" creationdate="20181118T081641Z">
+        <seg> Juliaは命令型プログラミング・関数型プログラミング・オブジェクト指向プログラミングの機能を組み合わせたマルチパラダイム言語です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is also often useful to allow iteration over a collection in &lt;x1/&gt;reverse order&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112857Z" creationid="hsugawa8651" creationdate="20181112T112857Z">
@@ -11621,6 +11662,17 @@ session (technically, in module &lt;x3/&gt;Main&lt;x4/&gt;), it is always presen
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia features optional typing, multiple dispatch, and good
+performance, achieved using type inference and &lt;a0&gt;just-in-time (JIT)
+compilation&lt;/a0&gt;,
+implemented using &lt;a1&gt;LLVM&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081625Z" creationid="hsugawa8651" creationdate="20181118T081625Z">
+        <seg>Juliaは任意の型付け、多重ディスパッチ、そして優れた性能を提供します。 これは型推論と、 LLVM によって実装された just-in-time (JIT) コンパイラ によって実現されるものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia function arguments follow a convention sometimes called "pass-by-sharing", which means that
 values are not copied when they are passed to functions.</seg>
       </tuv>
@@ -11723,6 +11775,16 @@ situations like hash key comparisons:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030534Z" creationid="hsugawa8651" creationdate="20181114T030534Z">
         <seg>Juliaは特別な値の数値をテストするための追加機能を提供しています。 ハッシュ・キー比較のような状況:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia provides ease and expressiveness
+for high-level numerical computing, in the same way as languages such
+as R, MATLAB, and Python, but also supports general programming.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081706Z" creationid="hsugawa8651" creationdate="20181118T081706Z">
+        <seg>JuliaはR、MATLAB、Pythonなどと同様に高度な数値計算のための簡単で高い表現力を持つ記法を提供しつつ、一般的なプログラミングもサポートします。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -12919,6 +12981,15 @@ session evaluates the expression and shows its value.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224313Z" creationid="hsugawa8651" creationdate="20181109T224313Z">
         <seg>ユーザーが&lt;x11/&gt;1+2&lt;x12/&gt;などの完全な式を入力してからヒットすると、対話型の sessionは式を評価し、その値を表示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once you understand how Julia
+works, it’s easy to write code that’s nearly as fast as C.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081603Z" creationid="hsugawa8651" creationdate="20181118T081603Z">
+        <seg> Juliaがどのように動作するかを理解すれば、C言語と同等の速さで動くコードを簡単に書くことができるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14364,6 +14435,17 @@ array:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083211Z" creationid="hsugawa8651" creationdate="20181113T083211Z">
         <seg>そのスーパータイプと3は メソッドは、&lt;x7/&gt;SquaresVector&lt;x8/&gt;を実行するために必要とされるものであり、これは、実行可能な、インデックス可能な、完全に機能するものです。 配列:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The
+Julia programming language fills this role: it is a flexible dynamic
+language, appropriate for scientific and numerical computing, with
+performance comparable to traditional statically-typed languages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081452Z" creationid="hsugawa8651" creationdate="20181118T081452Z">
+        <seg> Juliaはこのような目的のために開発されています。つまり、Juliaは柔軟な動的言語であると同時に、古くからの静的型付け言語と同等の性能を実現することで科学計算や数値計算に適してたものになっています。</seg>
       </tuv>
     </tu>
     <tu>
