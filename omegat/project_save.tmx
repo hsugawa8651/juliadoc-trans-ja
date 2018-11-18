@@ -837,6 +837,14 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id man-interfaces-broadcasting)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164815Z" creationid="hsugawa8651" creationdate="20181118T164815Z">
+        <seg>(@id man-interfaces-broadcasting)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id man-loops)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230921Z" creationid="hsugawa8651" creationdate="20181109T230921Z">
@@ -921,6 +929,14 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T020800Z" creationid="hsugawa8651" creationdate="20181116T020800Z">
         <seg>(@id string-interpolation)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@id writing-binary-broadcasting-rules)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164851Z" creationid="hsugawa8651" creationdate="20181118T164851Z">
+        <seg>(@id writing-binary-broadcasting-rules)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1252,6 +1268,14 @@ julia&gt; range(minmax(10, 2))
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030842Z" creationid="hsugawa8651" creationdate="20181114T030842Z">
         <seg>+ - \| ⊻&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>+ - √&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165006Z" creationid="hsugawa8651" creationdate="20181118T165006Z">
+        <seg>+ - √&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1722,6 +1746,14 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>//&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165023Z" creationid="hsugawa8651" creationdate="20181118T165023Z">
+        <seg>//&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>/etc/julia/startup.jl</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054824Z" creationid="hsugawa8651" creationdate="20181116T054824Z">
@@ -2115,6 +2147,14 @@ The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>: ..&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165047Z" creationid="hsugawa8651" creationdate="20181118T165047Z">
+        <seg>: ..&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>: &lt;x1/&gt;iid&lt;x2/&gt;, independently and identically distributed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064449Z" creationid="hsugawa8651" creationdate="20181114T064449Z">
@@ -2199,6 +2239,14 @@ The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063559Z" creationid="hsugawa8651" creationdate="20181114T063559Z">
         <seg>&lt;:&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;&lt; &gt;&gt; &gt;&gt;&gt;&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165018Z" creationid="hsugawa8651" creationdate="20181118T165018Z">
+        <seg>&lt;&lt; &gt;&gt; &gt;&gt;&gt;&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3811,6 +3859,14 @@ us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Addition</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165046Z" creationid="hsugawa8651" creationdate="20181118T165046Z">
+        <seg>加算</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Additional
 convenience constructor methods, supplying default values or auxiliary transformations, should
 be provided as outer constructors that call the inner constructors to do the heavy lifting.</seg>
@@ -4696,6 +4752,14 @@ to the implied field types: &lt;x1/&gt;Point{Int64}(1,2)&lt;x2/&gt; works, but &
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134913Z" creationid="hsugawa8651" creationdate="20181117T134913Z">
         <seg>割り当て</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Associativity</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164950Z" creationid="hsugawa8651" creationdate="20181118T164950Z">
+        <seg>結合度</seg>
       </tuv>
     </tu>
     <tu>
@@ -5716,6 +5780,14 @@ Base.any!</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041923Z" creationid="hsugawa8651" creationdate="20181112T041923Z">
         <seg>Base.append!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base.axes(x)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164826Z" creationid="hsugawa8651" creationdate="20181118T164826Z">
+        <seg>Base.axes(x)&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -7536,6 +7608,14 @@ BroadcastStyle(a::AbstractArrayStyle{M}, ::DefaultArrayStyle{N}) where {M,N} =
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Broadcasting behavior of &lt;x1/&gt;SrcType&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164822Z" creationid="hsugawa8651" creationdate="20181118T164822Z">
+        <seg>&lt;x1/&gt;SrcType&lt;x2/&gt;のブロードキャスト動作</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Broadcasting&lt;x1/&gt; is triggered by an explicit call to &lt;x2/&gt;broadcast&lt;x3/&gt; or &lt;x4/&gt;broadcast!&lt;x5/&gt;, or implicitly by
 "dot" operations like &lt;x6/&gt;A .+ b&lt;x7/&gt; or &lt;x8/&gt;f.(x, y)&lt;x9/&gt;.</seg>
       </tuv>
@@ -7856,12 +7936,28 @@ can create performance challenges as discussed in &lt;x7/&gt;&lt;x8/&gt;&lt;x9/&
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Category</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164940Z" creationid="hsugawa8651" creationdate="20181118T164940Z">
+        <seg>カテゴリ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Chained comparisons use the
 &lt;x1/&gt;&amp;&amp;&lt;x2/&gt; operator for scalar comparisons, and the &lt;x3/&gt;`&amp;`&lt;x4/&gt; operator for elementwise comparisons,
 which allows them to work on arrays.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030720Z" creationid="hsugawa8651" creationdate="20181114T030720Z">
         <seg>チェーン化された比較は スカラー比較のための&lt;x1/&gt;&amp;&amp;&lt;x2/&gt;演算子と、エレメント比較のための&lt;x3/&gt;&amp;"&lt;x4/&gt;演算子 これにより、アレイ上での作業が可能になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Chaining comparisons</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164915Z" creationid="hsugawa8651" creationdate="20181118T164915Z">
+        <seg>連鎖比較</seg>
       </tuv>
     </tu>
     <tu>
@@ -7960,6 +8056,14 @@ julia&gt; newfun()
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161218Z" creationid="hsugawa8651" creationdate="20181114T161218Z">
         <seg>比較-&lt;x1/&gt;==&lt;x2/&gt;,&lt;x3/&gt;!=&lt;x4/&gt;,&lt;x5/&gt;≒&lt;x6/&gt;(&lt;x7/&gt;'&lt;x6/&gt;(&lt;x7/&gt;'イサッポロス&lt;x8/&gt;)&lt;x9/&gt;≉&lt;x10/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comparisons</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165056Z" creationid="hsugawa8651" creationdate="20181118T165056Z">
+        <seg>比較</seg>
       </tuv>
     </tu>
     <tu>
@@ -8227,6 +8331,14 @@ iteration&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124318Z" creationid="hsugawa8651" creationdate="20181118T124318Z">
         <seg>Control Flow</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Control flow</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165113Z" creationid="hsugawa8651" creationdate="20181118T165113Z">
+        <seg>制御フロー</seg>
       </tuv>
     </tu>
     <tu>
@@ -9270,6 +9382,14 @@ other types</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082846Z" creationid="hsugawa8651" creationdate="20181118T082846Z">
         <seg>数値型他の型の、エレガントで拡張性のある変換やプロモーション [2]
 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Elementary Functions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164916Z" creationid="hsugawa8651" creationdate="20181118T164916Z">
+        <seg>基本関数</seg>
       </tuv>
     </tu>
     <tu>
@@ -14199,6 +14319,14 @@ integer literals and engineering notation for floating-point literals.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Left&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165035Z" creationid="hsugawa8651" creationdate="20181118T165035Z">
+        <seg>左&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Libc.MS_ASYNC&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043203Z" creationid="hsugawa8651" creationdate="20181112T043203Z">
@@ -14438,6 +14566,14 @@ copy of the input, and returning that copy.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043424Z" creationid="hsugawa8651" creationdate="20181112T043424Z">
         <seg>Mathematical Functions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Mathematical Operations and Elementary Functions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164907Z" creationid="hsugawa8651" creationdate="20181118T164907Z">
+        <seg>算術演算と基本関数</seg>
       </tuv>
     </tu>
     <tu>
@@ -14728,6 +14864,14 @@ of its iterables:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Multiplication</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165030Z" creationid="hsugawa8651" creationdate="20181118T165030Z">
+        <seg>乗算</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>N/A</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110219Z" creationid="hsugawa8651" creationdate="20181112T110219Z">
@@ -14840,6 +14984,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025132Z" creationid="hsugawa8651" creationdate="20181110T025132Z">
         <seg>いいえ、関数内の&lt;x/&gt;または&lt;x3/&gt;インポート&lt;x4/&gt;ステートメントを&lt;x2/&gt;のインポートを使用することはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Non-associative</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165110Z" creationid="hsugawa8651" creationdate="20181118T165110Z">
+        <seg>非結合</seg>
       </tuv>
     </tu>
     <tu>
@@ -15559,6 +15711,22 @@ level operators and functions, in a way that is independent of the underlying st
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Operator Precedence and Associativity</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164937Z" creationid="hsugawa8651" creationdate="20181118T164918Z">
+        <seg>演算子の優先順位と結合度</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Operators</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164942Z" creationid="hsugawa8651" creationdate="20181118T164942Z">
+        <seg>演算子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Operators are just functions with special notation — to extend
 addition to new user-defined data types, you define new methods for the
 &lt;c0&gt;&lt;s1&gt;+&lt;/s1&gt;&lt;/c0&gt; function.</seg>
@@ -15944,6 +16112,14 @@ requires using &lt;x3/&gt;llvmcall&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063640Z" creationid="hsugawa8651" creationdate="20181114T063640Z">
         <seg>実用化 &lt;x3/&gt;リウムカル&lt;x4/&gt;を使用する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Precedence rules for mixing styles</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164824Z" creationid="hsugawa8651" creationdate="20181118T164824Z">
+        <seg>スタイルをミキシングするための優先順位規則</seg>
       </tuv>
     </tu>
     <tu>
@@ -16379,6 +16555,14 @@ an interactive session.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Right&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165016Z" creationid="hsugawa8651" creationdate="20181118T165016Z">
+        <seg>右&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Rounding functions</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095723Z" creationid="hsugawa8651" creationdate="20181118T095723Z">
@@ -16557,6 +16741,14 @@ iterable type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113328Z" creationid="hsugawa8651" creationdate="20181112T113328Z">
         <seg>以下の説明を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Selecting an appropriate output array</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164829Z" creationid="hsugawa8651" creationdate="20181118T164829Z">
+        <seg>適切な出力配列を選択する</seg>
       </tuv>
     </tu>
     <tu>
@@ -17335,8 +17527,8 @@ value &lt;x3/&gt;1&lt;x4/&gt; to the floating-point value &lt;x5/&gt;1.0&lt;x6/&
       <tuv lang="EN-US">
         <seg>Syntax</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030853Z" creationid="hsugawa8651" creationdate="20181114T030853Z">
-        <seg>Syntax</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164952Z" creationid="hsugawa8651" creationdate="20181114T030853Z">
+        <seg>構文</seg>
       </tuv>
     </tu>
     <tu>
@@ -21662,6 +21854,14 @@ arguments, but with generated functions this is impossible.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Unary</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165004Z" creationid="hsugawa8651" creationdate="20181118T165004Z">
+        <seg>単項演算</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Unary arithmetic -- &lt;x1/&gt;-&lt;x2/&gt;, &lt;x3/&gt;+&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161212Z" creationid="hsugawa8651" creationdate="20181114T161212Z">
@@ -22432,6 +22632,14 @@ like any value:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Working with &lt;x1/&gt;Broadcasted&lt;x2/&gt; objects</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164850Z" creationid="hsugawa8651" creationdate="20181118T164850Z">
+        <seg>&lt;x1/&gt;ブロードキャストされた&lt;x2/&gt;オブジェクトの操作</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>X = A[I_1, I_2, ..., I_n]</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160712Z" creationid="hsugawa8651" creationdate="20181114T160712Z">
@@ -22772,6 +22980,14 @@ version = "3.4.2"</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032327Z" creationid="hsugawa8651" creationdate="20181114T032327Z">
         <seg>\|&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>\|&gt;&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165050Z" creationid="hsugawa8651" creationdate="20181118T165050Z">
+        <seg>\|&gt;&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
