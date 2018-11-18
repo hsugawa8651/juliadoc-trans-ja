@@ -7677,6 +7677,14 @@ the values in parentheses (see &lt;x1/&gt;Functions&lt;x2/&gt; for more about fu
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Both of these cases throw a &lt;a3&gt;&lt;c4&gt;DivideError&lt;/c4&gt;&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190107Z" creationid="hsugawa8651" creationdate="20181118T190107Z">
+        <seg>これらの場合は両方とも、&lt;a3&gt;&lt;c4&gt;DivideError&lt;/c4&gt;&lt;/a3&gt;を throwします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Both of these cases throw a &lt;x5/&gt;`DivideError`&lt;x6/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110529Z" creationid="hsugawa8651" creationdate="20181112T110529Z">
@@ -13712,6 +13720,14 @@ a complex value directly from its real and imaginary parts:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150659Z" creationid="hsugawa8651" creationdate="20181117T150659Z">
         <seg>Int&lt;x1/&gt;, &lt;x2/&gt;Float64&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Integer division (the &lt;c0&gt;div&lt;/c0&gt; function) has two exceptional cases: dividing by zero, and dividing the lowest negative number (&lt;a1&gt;&lt;c2&gt;typemin&lt;/c2&gt;&lt;/a1&gt;) by -1.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190033Z" creationid="hsugawa8651" creationdate="20181118T190033Z">
+        <seg>整数除算(&lt;c0&gt;div&lt;/c0&gt; 関数)は2つの例外的なケースを持っています:　0で除した場合。最も低い負の数(&lt;a1&gt;&lt;c2&gt;typemin&lt;/c2&gt;&lt;/a1&gt;)を-1でで除した場合。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20405,6 +20421,14 @@ of &lt;x17/&gt;b&lt;x18/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152535Z" creationid="hsugawa8651" creationdate="20181117T152535Z">
         <seg>参照メモリは、安全に解放されたり解放されたりすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The remainder and modulus functions (&lt;c5&gt;rem&lt;/c5&gt; and &lt;c6&gt;mod&lt;/c6&gt;) throw a &lt;a7&gt;&lt;c8&gt;DivideError&lt;/c8&gt;&lt;/a7&gt; when their second argument is zero.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190257Z" creationid="hsugawa8651" creationdate="20181118T190257Z">
+        <seg>余りと剰余関数((&lt;c5&gt;rem&lt;/c5&gt; および&lt;c6&gt;mod&lt;/c6&gt;)は、 2番目の引数は0のとき、&lt;a7&gt;&lt;c8&gt;DivideError&lt;/c8&gt;&lt;/a7&gt;をthrowする。</seg>
       </tuv>
     </tu>
     <tu>
