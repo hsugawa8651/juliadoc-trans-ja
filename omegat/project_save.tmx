@@ -1786,6 +1786,14 @@ V = view(A, [1,2,4], :)   &lt;x6/&gt; is not strided, as the spacing between row
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>1&lt;x1/&gt; is a literal 64-bit signed integer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115400Z" creationid="hsugawa8651" creationdate="20181118T115400Z">
+        <seg>1&lt;x1/&gt;は、リテラル64ビットの符号付き整数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>2*x : x, (opr1, opr2))
            retexpr = Expr(:call, op, opr1f, opr2f)
            return retexpr
@@ -4153,6 +4161,15 @@ being indexed. Indexing syntax without the &lt;x3/&gt;end&lt;x4/&gt; keyword is 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134841Z" creationid="hsugawa8651" creationdate="20181117T134841Z">
         <seg>この構文の特殊な部分として、&lt;x1/&gt;end&lt;x2/&gt;キーワードを使用して、最後のインデックスを表すことができます。 最も内側の配列のサイズによって決定される、索引付けブラケット内の各寸法 インデックス作成されています。&lt;x3/&gt;end&lt;x4/&gt;キーワードなしのインデックス構文は、&lt;x5/&gt;`getindex'&lt;x6/&gt;への呼び出しと同じです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As an alternative, Julia allows &lt;x5/&gt;interpolation&lt;x6/&gt; of
+literals or expressions into quoted expressions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115410Z" creationid="hsugawa8651" creationdate="20181118T115410Z">
+        <seg>代わりに、Juliaは、&lt;x5/&gt;補間&lt;x6/&gt;を可能にします。 リテラルまたはエクスプレッションを引用して表現します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7615,6 +7632,14 @@ methods that specialize on &lt;x7/&gt;DestStyle&lt;x8/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Consider this example:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115447Z" creationid="hsugawa8651" creationdate="20181118T115447Z">
+        <seg>次の例を考慮してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Considered alone, this may seem relatively trivial; &lt;x1/&gt;CartesianIndex&lt;x2/&gt; simply
 gathers multiple integers together into one object that represents a single
 multidimensional index.</seg>
@@ -8515,6 +8540,15 @@ manner that allows all custom arrays to behave similarly.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Direct construction of &lt;x1/&gt;Expr&lt;x2/&gt; objects with value arguments is powerful, but &lt;x3/&gt;Expr&lt;x4/&gt; constructors
+can be tedious compared to "normal" Julia syntax.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115408Z" creationid="hsugawa8651" creationdate="20181118T115408Z">
+        <seg>値引数を持つ&lt;x1/&gt;Expr&lt;x2/&gt;オブジェクトの直接構築は強力ですが、&lt;x3/&gt;Expr&lt;x4/&gt;コンストラクタは強力です。 は、「通常の」ジュリア構文と比較して、退屈である可能性があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Disallow or enable unsafe floating point optimizations (overrides @fastmath declaration)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224756Z" creationid="hsugawa8651" creationdate="20181109T224756Z">
@@ -8794,6 +8828,14 @@ the insertion point of a value not found in a sorted array:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Evaluating this expression yields an interpolated &lt;x5/&gt;3&lt;x6/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115630Z" creationid="hsugawa8651" creationdate="20181118T115630Z">
+        <seg>この式を評価すると、補間された&lt;x5/&gt;3&lt;x6/&gt;が得られます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Events</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042013Z" creationid="hsugawa8651" creationdate="20181110T042013Z">
@@ -8969,6 +9011,15 @@ this means that:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Expression interpolation allows convenient, readable programmatic
+construction of complex Julia expressions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115427Z" creationid="hsugawa8651" creationdate="20181118T115427Z">
+        <seg>表現の補間により、便利で読み取り可能なプログラムが可能になります。 複雑なジュリア表現の構築。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Expressions and evaluation</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115329Z" creationid="hsugawa8651" creationdate="20181118T115326Z">
@@ -8981,6 +9032,16 @@ this means that:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115234Z" creationid="hsugawa8651" creationdate="20181118T115225Z">
         <seg>式は、&lt;x1/&gt;プレフィックス表記&lt;x2/&gt;で直接構築することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Expressions provided by the parser generally only have symbols, other expressions, and literal
+values as their args, whereas expressions constructed by Julia code can have arbitrary run-time
+values without literal forms as args.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115351Z" creationid="hsugawa8651" creationdate="20181118T115351Z">
+        <seg>パーサーによって提供される式には、一般的にはシンボル、その他の表現、およびリテラルがあります。 値はargsとして、Juliaコードで構築された式は任意のランタイムを持つことができます。 引数としてリテラル・フォームを使用しない値。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9548,6 +9609,15 @@ work on hosts without AVX support.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150602Z" creationid="hsugawa8651" creationdate="20181117T150602Z">
         <seg>たとえば、次の呼び出しを行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, the following code generates a function call where the number of arguments is
+determined programmatically:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115438Z" creationid="hsugawa8651" creationdate="20181118T115438Z">
+        <seg>たとえば、次のコードは、引数の数が指定された関数呼び出しを生成します。 プログラムで決定されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10444,6 +10514,14 @@ comparison is undefined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, the outer &lt;x1/&gt;quote&lt;x2/&gt; expression is able to interpolate values inside the &lt;x3/&gt;$&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115455Z" creationid="hsugawa8651" creationdate="20181118T115455Z">
+        <seg>しかし、外側の&lt;x1/&gt;引用符&lt;x2/&gt;の式は、&lt;x3/&gt;$&lt;x4/&gt;の範囲内での値を補間することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, these subtleties are described in detail in
 most books on scientific computation, and also in the following references:</seg>
       </tuv>
@@ -11293,6 +11371,15 @@ words, while developing you might use a workflow something like this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In other words, the &lt;x5/&gt;$&lt;x6/&gt; expression "belongs to" the inner quote expression, and
+so its argument is only evaluated when the inner quote expression is:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115452Z" creationid="hsugawa8651" creationdate="20181118T115452Z">
+        <seg>つまり、&lt;x5/&gt;$&lt;x6/&gt;式は内部引用符式に属していて その引数は、内部引用符式が次のような場合にのみ評価されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In other words, the binary representation is truncated
 to fit.</seg>
       </tuv>
@@ -11546,6 +11633,30 @@ language features (e.g. only &lt;x11/&gt;character(len=1)&lt;x12/&gt; will be pe
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083257Z" creationid="hsugawa8651" creationdate="20181113T083257Z">
         <seg>この例では、&lt;x1/&gt;のような{T}(A::SparseArray,::Type{T},dims::Dims)&lt;x2/&gt;を定義することによって達成される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this example, the tuple &lt;x1/&gt;(1,2,3)&lt;x2/&gt; is interpolated as an expression into a conditional test:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115422Z" creationid="hsugawa8651" creationdate="20181118T115422Z">
+        <seg>この例では、タプル&lt;x1/&gt;(1,2,3)&lt;x2/&gt;は条件付きテストへの式として補間されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this example, the value of variable &lt;x1/&gt;a&lt;x2/&gt; is interpolated:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115415Z" creationid="hsugawa8651" creationdate="20181118T115415Z">
+        <seg>この例では、変数&lt;x1/&gt;a&lt;x2/&gt;の値が補間されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this specific example, &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;a&lt;x4/&gt; are symbols, &lt;x5/&gt;*(b,c)&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115359Z" creationid="hsugawa8651" creationdate="20181118T115359Z">
+        <seg>この具体的な例では、&lt;x1/&gt;+&lt;x2/&gt;と&lt;x3/&gt;a&lt;x4/&gt;は、記号であり、&lt;x5/&gt;*(b,c)&lt;x6/&gt;である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11900,6 +12011,30 @@ the first block in &lt;x1/&gt;if @generated&lt;x2/&gt; is used, and a normal one
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042019Z" creationid="hsugawa8651" creationdate="20181110T042019Z">
         <seg>Internals</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interpolating into an unquoted expression is not supported and will cause a compile-time error:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115420Z" creationid="hsugawa8651" creationdate="20181118T115417Z">
+        <seg>引用符で囲まれていない式への補間はサポートされておらず、コンパイル時エラーが発生します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interpolation</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115405Z" creationid="hsugawa8651" creationdate="20181118T115405Z">
+        <seg>補間</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interpolation is indicated by a prefix &lt;x7/&gt;$&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115412Z" creationid="hsugawa8651" creationdate="20181118T115412Z">
+        <seg>補間はプレフィックス&lt;x7/&gt;$&lt;x8/&gt;で示されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13246,6 +13381,14 @@ all of the &lt;x11/&gt;then&lt;x12/&gt; blocks and the alternate implementation 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Naturally, it is possible for quote expressions to contain other quote expressions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115443Z" creationid="hsugawa8651" creationdate="20181118T115443Z">
+        <seg>当然ながら、quote式には他の引用符式を含めることもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Neither juxtaposition of two parenthesized expressions, nor placing a variable before a parenthesized
 expression, however, can be used to imply multiplication:</seg>
       </tuv>
@@ -13260,6 +13403,14 @@ expression, however, can be used to imply multiplication:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160131Z" creationid="hsugawa8651" creationdate="20181109T160131Z">
         <seg>ネストされた「ドットコール」&lt;x5/&gt;f.(...)&lt;x6/&gt;(&lt;x7/&gt;.+&lt;x8/&gt;eteteraへの呼び出しを含む) &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man dot演算子)は、単一の&lt;x12/&gt;ブロードキャスト・&lt;x13/&gt;コールに対して使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Nested quote</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115441Z" creationid="hsugawa8651" creationdate="20181118T115441Z">
+        <seg>ネストされた引用符</seg>
       </tuv>
     </tu>
     <tu>
@@ -13595,6 +13746,32 @@ and it may not be explicitly closed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Notice that &lt;x1/&gt;:(1 + 2)&lt;x2/&gt; now appears in the result instead of the symbol &lt;x3/&gt;:x&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115458Z" creationid="hsugawa8651" creationdate="20181118T115458Z">
+        <seg>&lt;x1/&gt;:(1 + 2)&lt;x2/&gt;は、シンボル&lt;x3/&gt;:x&lt;x4/&gt;ではなく、結果に表示されることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notice that the &lt;x1/&gt;$&lt;x2/&gt; interpolation syntax allows inserting only a single expression into an
+enclosing expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115431Z" creationid="hsugawa8651" creationdate="20181118T115431Z">
+        <seg>&lt;x1/&gt;$x2/&gt;補間構文では、1つの式のみを挿入できます。 式を囲みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notice that the result contains &lt;x1/&gt;Expr(:$, :x)&lt;x2/&gt;, which means that &lt;x3/&gt;x&lt;x4/&gt; has not been
+evaluated yet.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115449Z" creationid="hsugawa8651" creationdate="20181118T115449Z">
+        <seg>結果が&lt;x1/&gt;Expr(:$, :x)&lt;x2/&gt;であることに注目してください。&lt;x3/&gt;x4/&gt;は、&lt;x3/&gt;x&lt;x4/&gt;のことを意味しません。 評価されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Notice that this is an &lt;x1/&gt;IndexCartesian&lt;x2/&gt; array, so we must manually define &lt;x3/&gt;`getindex`&lt;x4/&gt; and &lt;x5/&gt;`setindex!`&lt;x6/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083225Z" creationid="hsugawa8651" creationdate="20181113T083225Z">
@@ -13702,6 +13879,15 @@ using the &lt;x19/&gt;qsort&lt;x20/&gt; function (rather than Julia's built-in &
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135422Z" creationid="hsugawa8651" creationdate="20181117T135422Z">
         <seg>または</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Occasionally, you have an array of expressions and need them all to become arguments of
+the surrounding expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115434Z" creationid="hsugawa8651" creationdate="20181118T115434Z">
+        <seg>時には、式の配列を持っていて、それをすべて引数にする必要があります。 で指定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15112,6 +15298,14 @@ SparseVecStyle(::Val{N}) where N = Broadcast.DefaultArrayStyle{N}()</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151306Z" creationid="hsugawa8651" creationdate="20181117T151306Z">
         <seg>具体的には、次のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Splatting interpolation</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115429Z" creationid="hsugawa8651" creationdate="20181118T115429Z">
+        <seg>スプラッティング補間</seg>
       </tuv>
     </tu>
     <tu>
@@ -17230,6 +17424,15 @@ by placing a &lt;x1/&gt;=&lt;x2/&gt; immediately after the operator.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The use of &lt;x1/&gt;$&lt;x2/&gt; for expression interpolation is intentionally reminiscent of &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref string-interpolation)
+and &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref command-interpolation).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115425Z" creationid="hsugawa8651" creationdate="20181118T115425Z">
+        <seg>表現補間に&lt;x1/&gt;$&lt;x2/&gt;を使用することは意図的に&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref string interpolation)を連想させます。 &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@refコマンドの補間)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The value can be manipulated through
 this pointer using &lt;x1/&gt;`unsafe_load`&lt;x2/&gt; and &lt;x3/&gt;`unsafe_store!`&lt;x4/&gt;.</seg>
       </tuv>
@@ -17406,6 +17609,15 @@ those available for the &lt;c0&gt;&lt;s1&gt;perl&lt;/s1&gt;&lt;/c0&gt; and &lt;c
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T092737Z" creationid="hsugawa8651" creationdate="20181109T224520Z">
         <seg>他の言語（&lt;x1/&gt;perl&lt;x2/&gt; や &lt;x3/&gt;ruby&lt;x4/&gt; など）のように、Juliaを実行するには様々な方法やオプションがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is a second syntactic form of quoting for multiple expressions: blocks of code enclosed
+in &lt;x1/&gt;quote ... end&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115403Z" creationid="hsugawa8651" creationdate="20181118T115403Z">
+        <seg>複数の表現に対して引用符で囲まれた2番目の構文形式の構文があります。 &lt;x1/&gt;引用では、&lt;x/&gt;&lt;x2/&gt;である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17785,6 +17997,14 @@ keys and values (i.e. this example creates a &lt;x2/&gt;Dict{String, Int64}&lt;x
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032114Z" creationid="hsugawa8651" creationdate="20181114T032114Z">
         <seg>この呼び出しは、以下のようなタイプ情報を推測しようとします。 キーと値(すなわち、この例では、&lt;x2/&gt;Dict{String,Int64}&lt;x3/&gt;を作成します)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This can be done with the syntax &lt;x3/&gt;$(xs...)&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115436Z" creationid="hsugawa8651" creationdate="20181118T115436Z">
+        <seg>これは、構文&lt;x3/&gt;$(xs...)&lt;x4/&gt;で行うことができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18756,6 +18976,14 @@ arguments, but with generated functions this is impossible.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152818Z" creationid="hsugawa8651" creationdate="20181117T152818Z">
         <seg>Juliaがこれらの質問に答えることを理解することは、パッケージのロードを理解する上で重要です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Understanding how interpolation works in these cases can be a bit tricky.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115445Z" creationid="hsugawa8651" creationdate="20181118T115445Z">
+        <seg>これらの場合に補間がどのように機能するかを理解することは、少し厄介です。</seg>
       </tuv>
     </tu>
     <tu>
