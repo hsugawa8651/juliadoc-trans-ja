@@ -3571,6 +3571,14 @@ that can also optionally be used to make type declarations</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A rich language of types for constructing and describing objects, that can also optionally be used to make type declarations</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182505Z" creationid="hsugawa8651" creationdate="20181118T182505Z">
+        <seg>オブジェクトを作成したり説明したりするのに使うことができる、型に関する豊富な機能を提供します。プログラマ自身で型を宣言することもできます</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A scalar index.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150441Z" creationid="hsugawa8651" creationdate="20181117T150441Z">
@@ -4181,6 +4189,14 @@ or that &lt;x5/&gt;(;)&lt;x6/&gt; chains be single-line:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225821Z" creationid="hsugawa8651" creationdate="20181109T225821Z">
         <seg>典型的なものではあるが、&lt;x3/&gt;が&lt;x4/&gt;ブロックがマルチラインである必要はない。 または&lt;x5/&gt;(;)&lt;x6/&gt;鎖は単一行である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Although one sometimes speaks of dynamic languages as being "typeless", they are definitely not: every object, whether primitive or user-defined, has a type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182553Z" creationid="hsugawa8651" creationdate="20181118T182553Z">
+        <seg>動的言語は「型がない」と言われることがありますが、そんなことはありません。 プリミティブであれユーザー定義であれ、全てのオブジェクトは何らかの型を持ちます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -4877,6 +4893,15 @@ method definition to make all calls to the general &lt;x4/&gt;Point&lt;x5/&gt; c
 argument types</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082127Z" creationid="hsugawa8651" creationdate="20181118T082127Z">
+        <seg>それぞれの引数の型ごとに最適化されたコードを自動生成します
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Automatic generation of efficient, specialized code for different argument types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182539Z" creationid="hsugawa8651" creationdate="20181118T182539Z">
         <seg>それぞれの引数の型ごとに最適化されたコードを自動生成します
 </seg>
       </tuv>
@@ -7413,6 +7438,14 @@ that the function will modify.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Because Julia's compiler is different from the interpreters used for languages like Python or R, you may find that Julia's performance is unintuitive at first.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182341Z" creationid="hsugawa8651" creationdate="20181118T182341Z">
+        <seg>JuliaのコンパイラはPythonやRで使われるようなインタプリタとは異なるので、もしかしたら最初はその性能に気づかないかもしれません。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because Julia’s compiler is different from the interpreters used
 for languages like Python or R, you may find that Julia’s performance
 is unintuitive at first.</seg>
@@ -9816,6 +9849,14 @@ types.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Existing code then seamlessly applies to the new data types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182629Z" creationid="hsugawa8651" creationdate="20181118T182629Z">
+        <seg>こうすることで、既存のコードをシームレスに新たなデータ型対応させることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Explicitly,
 this means that:</seg>
       </tuv>
@@ -10830,6 +10871,14 @@ over the past decades.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For large scale numerical problems, speed always has been, continues to be, and probably always will be crucial: the amount of data being processed has easily kept pace with Moore's Law over the past decades.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182652Z" creationid="hsugawa8651" creationdate="20181118T182652Z">
+        <seg>大規模数値計算問題では計算速度はこれまでもこれからも、常に重大な問題です。 処理されるデータ量は過去数十年にわたってムーアの法則にしたがって増え続けています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For many types, forming new objects by binding their field values together is all that is ever
 needed to create instances.</seg>
       </tuv>
@@ -11033,6 +11082,15 @@ efficient enough for deploying performance-intensive applications.</seg>
 licensed&lt;/a0&gt;)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082628Z" creationid="hsugawa8651" creationdate="20181118T082628Z">
+        <seg>フリーかつオープンソース（ MITライセンス ）
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Free and open source (&lt;a0&gt;MIT licensed&lt;/a0&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182703Z" creationid="hsugawa8651" creationdate="20181118T182703Z">
         <seg>フリーかつオープンソース（ MITライセンス ）
 </seg>
       </tuv>
@@ -11245,6 +11303,14 @@ for the key &lt;x13/&gt;x&lt;x14/&gt;).</seg>
 like C</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082137Z" creationid="hsugawa8651" creationdate="20181118T082137Z">
+        <seg>Cのような静的コンパイル言語に迫る性能を実現します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Good performance, approaching that of statically-compiled languages like C</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182543Z" creationid="hsugawa8651" creationdate="20181118T182543Z">
         <seg>Cのような静的コンパイル言語に迫る性能を実現します</seg>
       </tuv>
     </tu>
@@ -12357,6 +12423,14 @@ section before trying anything else.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you find that something is slow, we highly recommend reading through the &lt;a0&gt;Performance Tips&lt;/a0&gt; section before trying anything else.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182406Z" creationid="hsugawa8651" creationdate="20181118T182406Z">
+        <seg>遅いと感じたら、何かを試す前に&lt;a0&gt;Performance Tips&lt;/a0&gt;を参照することをお勧めします。 Juliaがどのように動作するかを理解すれば、C言語と同等の速さで動くコードを簡単に書くことができるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you have code that you want executed whenever Julia is run, you can
 put it in &lt;c0&gt;&lt;s1&gt;~/.juliarc.jl&lt;/s1&gt;&lt;/c0&gt;:</seg>
       </tuv>
@@ -12553,6 +12627,14 @@ to the compiler.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In Julia, types are themselves run-time objects, and can also be used to convey information to the compiler.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182606Z" creationid="hsugawa8651" creationdate="20181118T182606Z">
+        <seg>Juliaでは、型そのものが実行時オブジェクトとなり、同時にコンパイラに対して情報を伝えるために利用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In Julia, vectorized functions are
 &lt;x7/&gt;not&lt;x8/&gt; required for performance, and indeed it is often beneficial to write your own loops (see
 &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-performance-tips)), but they can still be convenient.</seg>
@@ -12595,6 +12677,14 @@ with each other and use most of the methods defined in Julia Base for &lt;x1/&gt
 advantages of Julia over comparable systems include:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082616Z" creationid="hsugawa8651" creationdate="20181118T082616Z">
+        <seg>これに加え、Juliaは以下のような長所を持ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In addition to the above, some advantages of Julia over comparable systems include:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182658Z" creationid="hsugawa8651" creationdate="20181118T182658Z">
         <seg>これに加え、Juliaは以下のような長所を持ちます。</seg>
       </tuv>
     </tu>
@@ -12892,6 +12982,14 @@ be used in their specific case.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112852Z" creationid="hsugawa8651" creationdate="20181112T112852Z">
         <seg>場合によっては、タイプが必要になることがあります。 さらに効率的なアルゴリズムを知っているときにそれらの余分な行動を追加的に専門化すること 特定の場合に使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In static languages, on the other hand, while one can – and usually must – annotate types for the compiler, types exist only at compile time and cannot be manipulated or expressed at run time.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182603Z" creationid="hsugawa8651" creationdate="20181118T182603Z">
+        <seg> 一方静的言語においては、コンパイラのために型注釈をつけることができます（ほぼ必須でしょう）が、型の情報はコンパイル時にのみ存在し、実行時には操作したり取得したりすることができません。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -13782,6 +13880,14 @@ taking all arguments explicitly and enforcing essential error checking and trans
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is multi-paradigm, combining features of imperative, functional, and object-oriented programming.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182428Z" creationid="hsugawa8651" creationdate="20181118T182428Z">
+        <seg>Juliaは命令型プログラミング・関数型プログラミング・オブジェクト指向プログラミングの機能を組み合わせたマルチパラダイム言語です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is often quite useful, however, to have access to some of your favorite tools—standard libraries, profilers, debuggers, personal utilities, etc.—even if they are not dependencies of the project you're working on.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121412Z" creationid="hsugawa8651" creationdate="20181118T121412Z">
@@ -14057,6 +14163,14 @@ and efficiency in a single language.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia aims to create an unprecedented combination of ease-of-use, power, and efficiency in a single language.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182655Z" creationid="hsugawa8651" creationdate="20181118T182655Z">
+        <seg>Juliaは、扱いやすさ・強力さ・効率性の前例のない組み合わせを1つの言語で実現しようとしています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia also defines the types &lt;x1/&gt;Int&lt;x2/&gt; and &lt;x3/&gt;UInt&lt;x4/&gt;, which are aliases for the system's signed and unsigned
 native integer types respectively:</seg>
       </tuv>
@@ -14158,6 +14272,14 @@ compilation&lt;/a0&gt;,
 implemented using &lt;a1&gt;LLVM&lt;/a1&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081814Z" creationid="hsugawa8651" creationdate="20181118T081625Z">
+        <seg>Juliaは任意の型付け、多重ディスパッチ、そして優れた性能を提供します。 これは型推論と、&lt;a1&gt;LLVM&lt;/a1&gt;によって実装された &lt;a0&gt;just-in-time (JIT) コンパイラ&lt;/a0&gt;によって実現されるものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia features optional typing, multiple dispatch, and good performance, achieved using type inference and &lt;a0&gt;just-in-time (JIT) compilation&lt;/a0&gt;, implemented using &lt;a1&gt;LLVM&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182421Z" creationid="hsugawa8651" creationdate="20181118T182421Z">
         <seg>Juliaは任意の型付け、多重ディスパッチ、そして優れた性能を提供します。 これは型推論と、&lt;a1&gt;LLVM&lt;/a1&gt;によって実装された &lt;a0&gt;just-in-time (JIT) コンパイラ&lt;/a0&gt;によって実現されるものです。</seg>
       </tuv>
     </tu>
@@ -14300,6 +14422,14 @@ for high-level numerical computing, in the same way as languages such
 as R, MATLAB, and Python, but also supports general programming.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081706Z" creationid="hsugawa8651" creationdate="20181118T081706Z">
+        <seg>JuliaはR、MATLAB、Pythonなどと同様に高度な数値計算のための簡単で高い表現力を持つ記法を提供しつつ、一般的なプログラミングもサポートします。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia provides ease and expressiveness for high-level numerical computing, in the same way as languages such as R, MATLAB, and Python, but also supports general programming.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182435Z" creationid="hsugawa8651" creationdate="20181118T182435Z">
         <seg>JuliaはR、MATLAB、Pythonなどと同様に高度な数値計算のための簡単で高い表現力を持つ記法を提供しつつ、一般的なプログラミングもサポートします。 </seg>
       </tuv>
     </tu>
@@ -15913,6 +16043,14 @@ works, it’s easy to write code that’s nearly as fast as C.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Once you understand how Julia works, it's easy to write code that's nearly as fast as C.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182411Z" creationid="hsugawa8651" creationdate="20181118T182411Z">
+        <seg> Juliaがどのように動作するかを理解すれば、C言語と同等の速さで動くコードを簡単に書くことができるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One can either restart Julia or use the
 &lt;x1/&gt;Libdl&lt;x2/&gt; functions to manage the library explicitly, such as:</seg>
       </tuv>
@@ -16005,6 +16143,14 @@ level operators and functions, in a way that is independent of the underlying st
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164942Z" creationid="hsugawa8651" creationdate="20181118T164942Z">
         <seg>演算子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Operators are just functions with special notation – to extend addition to new user-defined data types, you define new methods for the &lt;c0&gt;+&lt;/c0&gt; function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182625Z" creationid="hsugawa8651" creationdate="20181118T182625Z">
+        <seg>これに対してJuliaの演算子は（特殊な記法を持った）単なる関数に過ぎません。 ユーザーが定義したデータ型に対して加算処理を追加したい場合は、&lt;c0&gt;+&lt;/c0&gt; 関数に対して新たなメソッドを定義します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16313,6 +16459,14 @@ that of other dynamic languages, and even rivals that of
 statically-compiled languages.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082529Z" creationid="hsugawa8651" creationdate="20181118T082529Z">
+        <seg>実行時型推論（任意の型注釈で補うこともできます）によって、またプロジェクト発足時からの性能に対する強い欲求によって、Juliaの計算効率は他の動的言語を圧倒し、静的コンパイル言語と競うレベルにあります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Partly because of run-time type inference (augmented by optional type annotations), and partly because of a strong focus on performance from the inception of the project, Julia's computational efficiency exceeds that of other dynamic languages, and even rivals that of statically-compiled languages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182644Z" creationid="hsugawa8651" creationdate="20181118T182644Z">
         <seg>実行時型推論（任意の型注釈で補うこともできます）によって、またプロジェクト発足時からの性能に対する強い欲求によって、Juliaの計算効率は他の動的言語を圧倒し、静的コンパイル言語と競うレベルにあります。 </seg>
       </tuv>
     </tu>
@@ -18584,6 +18738,15 @@ dispatch&lt;/a0&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The ability to define function behavior across many combinations of argument types via &lt;a0&gt;multiple dispatch&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182532Z" creationid="hsugawa8651" creationdate="20181118T182532Z">
+        <seg>&lt;a0&gt;多重ディスパッチ&lt;/a0&gt; によってさまざまな引数の組み合わせごとに関数の振る舞いを定義できます
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The above results are all &lt;x1/&gt;`Float64`&lt;x2/&gt; values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110619Z" creationid="hsugawa8651" creationdate="20181112T110619Z">
@@ -18849,6 +19012,14 @@ expressions or blocks are evaluated.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152344Z" creationid="hsugawa8651" creationdate="20181117T152344Z">
         <seg>cfunctionポインタでの内容とコードは、&lt;x7/&gt;`ファイナライザー''&lt;x8/&gt;によって消去されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The core language imposes very little; Julia Base and the standard library is written in Julia itself, including primitive operations like integer arithmetic</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182457Z" creationid="hsugawa8651" creationdate="20181118T182457Z">
+        <seg>言語のコア部分は最小限の機能しか提供しません。整数の四則演算のような初等演算を含む標準ライブラリはJulia自身で書かれています</seg>
       </tuv>
     </tu>
     <tu>
@@ -19497,6 +19668,14 @@ all.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The lack of type declarations in most dynamic languages, however, means that one cannot instruct the compiler about the types of values, and often cannot explicitly talk about types at all.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182559Z" creationid="hsugawa8651" creationdate="20181118T182559Z">
+        <seg>多くの動的言語における型宣言の欠落は、コンパイラに対して値の型を伝えられない、または型について何ら触れることができないということを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The last index, used in &lt;x1/&gt;X[end]&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113029Z" creationid="hsugawa8651" creationdate="20181112T113029Z">
@@ -19696,6 +19875,15 @@ by the &lt;x1/&gt;`typemin`&lt;x2/&gt; and &lt;x3/&gt;`typemax`&lt;x4/&gt; funct
 are:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081945Z" creationid="hsugawa8651" creationdate="20181118T081945Z">
+        <seg>一般の動的言語と比べてJuliaが特に優れている点としては以下のようなものが挙げられます。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The most significant departures of Julia from typical dynamic languages are:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182452Z" creationid="hsugawa8651" creationdate="20181118T182452Z">
         <seg>一般の動的言語と比べてJuliaが特に優れている点としては以下のようなものが挙げられます。
 </seg>
       </tuv>
@@ -21709,6 +21897,15 @@ dispatch.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This model is a good fit for mathematical programming, where it is unnatural for the first argument to "own" an operation as in traditional object-oriented dispatch.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182612Z" creationid="hsugawa8651" creationdate="20181118T182612Z">
+        <seg>このモデルは数値計算にとても適しています。 従来のオブジェクト指向ディスパッチのように、第一引数が演算子を「所有」するのは不自然です。 
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This much was already mentioned briefly when
 composite types were introduced.</seg>
       </tuv>
@@ -21996,6 +22193,14 @@ encapsulate the value inside a &lt;x3/&gt;`Ref{T}`&lt;x4/&gt; of the appropriate
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151827Z" creationid="hsugawa8651" creationdate="20181117T151827Z">
         <seg>&lt;x1/&gt;'ccall'&lt;x2/&gt;の中でこれを達成するためには、まず 該当するタイプの&lt;x3/&gt;'Ref{T}&lt;x4/&gt;の内部に値をカプセル化します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To achieve this, Julia builds upon the lineage of mathematical programming languages, but also borrows much from popular dynamic languages, including &lt;a2&gt;Lisp&lt;/a2&gt;, &lt;a3&gt;Perl&lt;/a3&gt;, &lt;a4&gt;Python&lt;/a4&gt;, &lt;a5&gt;Lua&lt;/a5&gt;, and &lt;a6&gt;Ruby&lt;/a6&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182445Z" creationid="hsugawa8651" creationdate="20181118T182445Z">
+        <seg>このことを実現するために、Juliaは数値計算言語の系譜を踏まえつつも、 &lt;a2&gt;Lisp&lt;/a2&gt; 、 &lt;a3&gt;Perl&lt;/a3&gt; 、 &lt;a4&gt;Python&lt;/a4&gt; 、 &lt;a5&gt;Lua&lt;/a5&gt; 、そして &lt;a6&gt;Ruby&lt;/a6&gt; などの広く使われている動的言語からも多くのアイデアを得ています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23054,6 +23259,15 @@ defined on different combinations of argument types, and applied by
 dispatching to the most specific matching definition.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082337Z" creationid="hsugawa8651" creationdate="20181118T082337Z">
+        <seg>カジュアルプログラマは型や多重ディスパッチを明示的に使う必要はありませんが、これらはJuliaの基礎となる機能です。 関数はさまざまな引数の組み合わせに対して定義され、実行時には最も当てはまる定義が適用されます。 
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>While the casual programmer need not explicitly use types or multiple dispatch, they are the core unifying features of Julia: functions are defined on different combinations of argument types, and applied by dispatching to the most specific matching definition.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182609Z" creationid="hsugawa8651" creationdate="20181118T182609Z">
         <seg>カジュアルプログラマは型や多重ディスパッチを明示的に使う必要はありませんが、これらはJuliaの基礎となる機能です。 関数はさまざまな引数の組み合わせに対して定義され、実行時には最も当てはまる定義が適用されます。 
 </seg>
       </tuv>
