@@ -1058,8 +1058,8 @@ Julia code from a C header file.)</seg>
 &lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;(@ref man-strings), and &lt;x11/&gt;Interpolation&lt;x12/&gt;, but should be easy enough to understand for users
 with some existing programming experience.)</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225610Z" creationid="hsugawa8651" creationdate="20181109T225610Z">
-        <seg>(上記の式では、&lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref man loops)など、まだ導入されていないいくつかの機能を使用しています。 &lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;(@ref manストリング)、&lt;x11/&gt;補間&lt;x12/&gt;は、ユーザが理解するのに十分な大きさである必要があります。 既存のプログラミング経験があります)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T122539Z" creationid="hsugawa8651" creationdate="20181109T225610Z">
+        <seg>(上記の式では、&lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref man loops)など、まだ導入されていないいくつかの機能を使用しています。 &lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;(@ref man-strings)、&lt;x11/&gt;補間&lt;x12/&gt;は、ユーザが理解するのに十分な大きさである必要があります。 既存のプログラミング経験があります)。</seg>
       </tuv>
     </tu>
     <tu>
