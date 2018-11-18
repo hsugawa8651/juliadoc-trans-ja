@@ -8,8 +8,8 @@
       <tuv lang="EN-US">
         <seg>!!!</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111813Z" creationid="hsugawa8651" creationdate="20181112T111813Z">
-        <seg>!!!</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T093933Z" creationid="hsugawa8651" creationdate="20181112T111813Z">
+        <seg>!!! note</seg>
       </tuv>
     </tu>
     <tu>
@@ -6875,6 +6875,14 @@ over the dimensions of the array, collecting the offset in each dimension into t
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Brief description&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094059Z" creationid="hsugawa8651" creationdate="20181118T094059Z">
+        <seg>簡単な説明&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Broadcast and vectorization</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T020223Z" creationid="hsugawa8651" creationdate="20181116T020223Z">
@@ -8255,6 +8263,14 @@ throw a conversion error.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Default definition&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094057Z" creationid="hsugawa8651" creationdate="20181118T094057Z">
+        <seg>デフォルト定義&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>DefaultArrayStyle&lt;x1/&gt; "loses" to any other
 &lt;x2/&gt;AbstractArrayStyle&lt;x3/&gt; that has been defined because of the following methods:</seg>
       </tuv>
@@ -9054,6 +9070,14 @@ signature for Windows:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152434Z" creationid="hsugawa8651" creationdate="20181117T152434Z">
         <seg>たとえば &lt;x11/&gt;ベース/libc.jl&lt;x12/&gt;は上記と同じように&lt;x13/&gt;gethostname&lt;x15/&gt;`ccall'&lt;x16/&gt;のように見えますが、正しいものは正しいものです。 Windowsのシグニチャ:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example &lt;x9/&gt;2^3x&lt;x10/&gt; is parsed as &lt;x11/&gt;2^(3x)&lt;x12/&gt;, and &lt;x13/&gt;2x^3&lt;x14/&gt; is parsed as &lt;x15/&gt;2*(x^3)&lt;x16/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T093824Z" creationid="hsugawa8651" creationdate="20181118T093824Z">
+        <seg>例えば&lt;x9/&gt;2^3x&lt;x10/&gt;は&lt;x11/&gt;2^(3x)&lt;x12/&gt;と解析され、&lt;x13/&gt;2x^3&lt;x14/&gt;は&lt;x15/&gt;2*(x^3)&lt;x16/&gt;と構文解析される。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10734,6 +10758,14 @@ subtype &lt;x1/&gt;AbstractArrayStyle&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150459Z" creationid="hsugawa8651" creationdate="20181117T150459Z">
         <seg>実装</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Important optional methods&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094055Z" creationid="hsugawa8651" creationdate="20181118T094055Z">
+        <seg>重要なオプションのメソッド&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -13310,6 +13342,14 @@ using the &lt;x19/&gt;qsort&lt;x20/&gt; function (rather than Julia's built-in &
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041604Z" creationid="hsugawa8651" creationdate="20181112T041604Z">
         <seg>Number&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Numeric literals also work as coefficients to parenthesized expressions:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T093832Z" creationid="hsugawa8651" creationdate="20181118T093832Z">
+        <seg>数値リテラルは、括弧で括られた式への係数としても機能します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -32592,6 +32632,17 @@ are provided as &lt;x3/&gt;hidden arguments&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151043Z" creationid="hsugawa8651" creationdate="20181117T151043Z">
         <seg>メモ Fortran関数の長さが&lt;x1/&gt;文字(len=*)&lt;x2/&gt;の可変長文字列を持つ場合は、文字列の長さを指定します。 は、&lt;x3/&gt;隠し引数&lt;x4/&gt;として提供されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>note
+The precedence of numeric literal coefficients used for implicit
+multiplication is higher than other binary operators such as multiplication
+(&lt;x1/&gt;*&lt;x2/&gt;), and division (&lt;x3/&gt;/&lt;x4/&gt;, &lt;x5/&gt;\&lt;x6/&gt;, and &lt;x7/&gt;//&lt;x8/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T093957Z" creationid="hsugawa8651" creationdate="20181118T093857Z">
+        <seg>暗黙的に使用される数値リテラル係数の優先順位 乗算は、乗算のような他の二乗演算子よりも高い (&lt;x1/&gt;*&lt;x2/&gt;)、除算(&lt;x3/&gt;/&lt;x4/&gt;、&lt;x5/&gt;\&lt;x6/&gt;、&lt;x7/&gt;/&lt;x8/&gt;)。</seg>
       </tuv>
     </tu>
     <tu>
