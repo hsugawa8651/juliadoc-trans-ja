@@ -589,8 +589,8 @@ $JULIA_BINDIR/julia-debug</seg>
       <tuv lang="EN-US">
         <seg>&amp;&amp;&lt;x1/&gt; followed by &lt;x2/&gt;\|\|&lt;x3/&gt; followed by &lt;x4/&gt;?&lt;x5/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030904Z" creationid="hsugawa8651" creationdate="20181114T030904Z">
-        <seg>&amp;&amp;&lt;x1/&gt; followed by &lt;x2/&gt;\|\|&lt;x3/&gt; followed by &lt;x4/&gt;?&lt;x5/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095628Z" creationid="hsugawa8651" creationdate="20181114T030904Z">
+        <seg>&amp;&amp;&lt;x1/&gt;の後に&lt;x2/&gt;\\&lt;x3/&gt;が続き、続いて&lt;x4/&gt;?&lt;x5/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3233,6 +3233,14 @@ that can also optionally be used to make type declarations</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083457Z" creationid="hsugawa8651" creationdate="20181113T083457Z">
         <seg>ストローブされたアレイは、&lt;x1/&gt;AbstractArray&lt;x2/&gt;のサブタイプであり、そのエントリは固定された歩進でメモリ内に格納される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A symbol representing the operator associativity can also be found by calling the built-in function &lt;x1/&gt;Base.operator_associativity&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095638Z" creationid="hsugawa8651" creationdate="20181118T095638Z">
+        <seg>演算子の自動調整を表すシンボルは、組み込み関数&lt;x1/&gt;Base.operator_associative&lt;x2/&gt;:を呼び出すことによっても検出されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8855,6 +8863,14 @@ this means that:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Exponentiation</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095558Z" creationid="hsugawa8651" creationdate="20181118T095558Z">
+        <seg>累乗</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Expression</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134547Z" creationid="hsugawa8651" creationdate="20181117T134547Z">
@@ -12542,8 +12558,8 @@ integer literals and engineering notation for floating-point literals.</seg>
       <tuv lang="EN-US">
         <seg>Left</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030817Z" creationid="hsugawa8651" creationdate="20181114T030817Z">
-        <seg>Left</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095606Z" creationid="hsugawa8651" creationdate="20181114T030817Z">
+        <seg>左</seg>
       </tuv>
     </tu>
     <tu>
@@ -13482,6 +13498,14 @@ using the &lt;x19/&gt;qsort&lt;x20/&gt; function (rather than Julia's built-in &
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Numerical Conversions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095708Z" creationid="hsugawa8651" creationdate="20181118T095708Z">
+        <seg>数値変換</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>OR</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135422Z" creationid="hsugawa8651" creationdate="20181117T135422Z">
@@ -14252,6 +14276,14 @@ an interactive session.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Right</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095611Z" creationid="hsugawa8651" creationdate="20181118T095611Z">
+        <seg>右</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Run processes on hosts listed in &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224714Z" creationid="hsugawa8651" creationdate="20181109T224714Z">
@@ -14336,6 +14368,14 @@ system.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132207Z" creationid="hsugawa8651" creationdate="20181113T132207Z">
         <seg>プロモーションの詳細については、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref変換とプロモーション)を参照してください。 システム。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref conversion-and-promotion) for how to define your own conversions and promotions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095716Z" creationid="hsugawa8651" creationdate="20181118T095716Z">
+        <seg>独自の変換とプロモーションを定義する方法については、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref conversion and promotion)を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14547,6 +14587,14 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063328Z" creationid="hsugawa8651" creationdate="20181114T063328Z">
         <seg>同様に、サブタイプによっては、&lt;x4/&gt;&lt;x5/&gt;&lt;x6/&gt;(@ref Base.Multimedia.redisplay)をオーバーライドすることを希望する場合もあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Similarly, such operators are assigned associativity &lt;x5/&gt;:none&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095706Z" creationid="hsugawa8651" creationdate="20181118T095706Z">
+        <seg>同様に、このような演算子には、関連付け&lt;x5/&gt;:なし&lt;x6/&gt;が割り当てられています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21259,6 +21307,14 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>equality</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095405Z" creationid="hsugawa8651" creationdate="20181118T095405Z">
+        <seg>等値</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>equivalent to &lt;x1/&gt;--code-coverage=user&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224802Z" creationid="hsugawa8651" creationdate="20181109T224802Z">
@@ -22575,6 +22631,14 @@ obj2 = MyModule.somefunction(obj1)
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131755Z" creationid="hsugawa8651" creationdate="20181113T131755Z">
         <seg>&lt;x1/&gt;タプル&lt;x2/&gt;"が0次元配列に対して(出力コンテナはタプルになります)"勝ち"であることを示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>inequality</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095427Z" creationid="hsugawa8651" creationdate="20181118T095427Z">
+        <seg>非等値</seg>
       </tuv>
     </tu>
     <tu>
@@ -32311,10 +32375,18 @@ julia&gt; ∑(2, 3)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>less than</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095434Z" creationid="hsugawa8651" creationdate="20181118T095434Z">
+        <seg>より小さい</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>less than or equal to</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030435Z" creationid="hsugawa8651" creationdate="20181114T030412Z">
-        <seg>以下の値以下</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095449Z" creationid="hsugawa8651" creationdate="20181114T030412Z">
+        <seg>以下</seg>
       </tuv>
     </tu>
     <tu>
