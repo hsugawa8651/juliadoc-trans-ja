@@ -4201,6 +4201,16 @@ or that &lt;x5/&gt;(;)&lt;x6/&gt; chains be single-line:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Although one sometimes speaks of dynamic languages as being "typeless",
+they are definitely not: every object, whether primitive or
+user-defined, has a type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183824Z" creationid="hsugawa8651" creationdate="20181118T183824Z">
+        <seg>動的言語は「型がない」と言われることがありますが、そんなことはありません。 プリミティブであれユーザー定義であれ、全てのオブジェクトは何らかの型を持ちます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Although one sometimes speaks of dynamic languages as being "typeless", they are definitely not: every object, whether primitive or user-defined, has a type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182553Z" creationid="hsugawa8651" creationdate="20181118T182553Z">
@@ -10913,6 +10923,17 @@ and load in the new changes.</seg>
       <tuv lang="EN-US">
         <seg>For large scale numerical problems, speed
 always has been, continues to be, and probably always will be crucial:
+the amount of data being processed has easily kept pace with Moore's Law
+over the past decades.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183920Z" creationid="hsugawa8651" creationdate="20181118T183920Z">
+        <seg>大規模数値計算問題では計算速度はこれまでもこれからも、常に重大な問題です。 処理されるデータ量は過去数十年にわたってムーアの法則にしたがって増え続けています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For large scale numerical problems, speed
+always has been, continues to be, and probably always will be crucial:
 the amount of data being processed has easily kept pace with Moore’s Law
 over the past decades.</seg>
       </tuv>
@@ -14338,6 +14359,20 @@ implemented using &lt;a1&gt;LLVM&lt;/a1&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia features optional typing, multiple dispatch, and good
+performance, achieved using type inference and `just-in-time (JIT)
+compilation &lt;https://en.wikipedia.org/wiki/Just-in-time_compilation&gt;`_,
+implemented using `LLVM
+&lt;https://en.wikipedia.org/wiki/Low_Level_Virtual_Machine&gt;`_.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183648Z" creationid="hsugawa8651" creationdate="20181118T183648Z">
+        <seg>Juliaは任意の型付け、多重ディスパッチ、そして優れた性能を提供します。 これは型推論と、`LLVM
+&lt;https://en.wikipedia.org/wiki/Low_Level_Virtual_Machine&gt;`によって実装された `just-in-time (JIT)
+コンパイラ &lt;https://en.wikipedia.org/wiki/Just-in-time_compilation&gt;`によって実現されるものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia features optional typing, multiple dispatch, and good performance, achieved using type inference and &lt;a0&gt;just-in-time (JIT) compilation&lt;/a0&gt;, implemented using &lt;a1&gt;LLVM&lt;/a1&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182421Z" creationid="hsugawa8651" creationdate="20181118T182421Z">
@@ -16252,6 +16287,16 @@ addition to new user-defined data types, you define new methods for the
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Operators are just functions with special notation — to extend
+addition to new user-defined data types, you define new methods for the
+``+`` function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183854Z" creationid="hsugawa8651" creationdate="20181118T183854Z">
+        <seg>これに対してJuliaの演算子は（特殊な記法を持った）単なる関数に過ぎません。 ユーザーが定義したデータ型に対して加算処理を追加したい場合は、``+`` 関数に対して新たなメソッドを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Optional methods&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094608Z" creationid="hsugawa8651" creationdate="20181118T094608Z">
@@ -16535,6 +16580,18 @@ MIME types) of user-defined types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041654Z" creationid="hsugawa8651" creationdate="20181112T041654Z">
         <seg>Partially implemented by:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Partly because of run-time type inference (augmented by optional type
+annotations), and partly because of a strong focus on performance from
+the inception of the project, Julia's computational efficiency exceeds
+that of other dynamic languages, and even rivals that of
+statically-compiled languages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183913Z" creationid="hsugawa8651" creationdate="20181118T183913Z">
+        <seg>実行時型推論（任意の型注釈で補うこともできます）によって、またプロジェクト発足時からの性能に対する強い欲求によって、Juliaの計算効率は他の動的言語を圧倒し、静的コンパイル言語と競うレベルにあります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -21974,6 +22031,18 @@ statically compile.</seg>
       <tuv lang="EN-US">
         <seg>This model is a
 good fit for mathematical programming, where it is unnatural for the
+first argument to "own" an operation as in traditional object-oriented
+dispatch.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183905Z" creationid="hsugawa8651" creationdate="20181118T183905Z">
+        <seg>このモデルは数値計算にとても適しています。 従来のオブジェクト指向ディスパッチのように、第一引数が演算子を「所有」するのは不自然です。 
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This model is a
+good fit for mathematical programming, where it is unnatural for the
 first argument to “own” an operation as in traditional object-oriented
 dispatch.</seg>
       </tuv>
@@ -22271,6 +22340,27 @@ dynamic languages, including &lt;a2&gt;Lisp&lt;/a2&gt;, &lt;a3&gt;Perl&lt;/a3&gt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081924Z" creationid="hsugawa8651" creationdate="20181118T081727Z">
         <seg>このことを実現するために、Juliaは数値計算言語の系譜を踏まえつつも、 &lt;a2&gt;Lisp&lt;/a2&gt; 、 &lt;a3&gt;Perl&lt;/a3&gt; 、 &lt;a4&gt;Python&lt;/a4&gt; 、 &lt;a5&gt;Lua&lt;/a5&gt; 、そして &lt;a6&gt;Ruby&lt;/a6&gt; などの広く使われている動的言語からも多くのアイデアを得ています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To
+achieve this, Julia builds upon the lineage of
+mathematical programming languages, but also borrows much from popular
+dynamic languages, including `Lisp
+&lt;https://en.wikipedia.org/wiki/Lisp_(programming_language)&gt;`_, `Perl
+&lt;https://en.wikipedia.org/wiki/Perl_(programming_language)&gt;`_, `Python
+&lt;https://en.wikipedia.org/wiki/Python_(programming_language)&gt;`_, `Lua
+&lt;https://en.wikipedia.org/wiki/Lua_(programming_language)&gt;`_, and `Ruby
+&lt;https://en.wikipedia.org/wiki/Ruby_(programming_language)&gt;`_.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183807Z" creationid="hsugawa8651" creationdate="20181118T183807Z">
+        <seg>このことを実現するために、Juliaは数値計算言語の系譜を踏まえつつも、 `Lisp
+&lt;https://en.wikipedia.org/wiki/Lisp_(programming_language)&gt;`_ 、  `Perl
+&lt;https://en.wikipedia.org/wiki/Perl_(programming_language)&gt;`_、 `Python
+&lt;https://en.wikipedia.org/wiki/Python_(programming_language)&gt;`_、`Lua
+&lt;https://en.wikipedia.org/wiki/Lua_(programming_language)&gt;`_、そして `Ruby
+&lt;https://en.wikipedia.org/wiki/Ruby_(programming_language)&gt;`_ などの広く使われている動的言語からも多くのアイデアを得ています。</seg>
       </tuv>
     </tu>
     <tu>
