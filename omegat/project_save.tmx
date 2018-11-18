@@ -3523,6 +3523,15 @@ it also handles tuples and treats any argument that is not an array, tuple or &l
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Additionally, &lt;x1/&gt;`sinpi(x)`&lt;x2/&gt; and &lt;x3/&gt;`cospi(x)`&lt;x4/&gt; are provided for more accurate computations
+of &lt;x5/&gt;`sin(pi*x)`&lt;x6/&gt; and &lt;x7/&gt;`cos(pi*x)`&lt;x8/&gt; respectively.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100122Z" creationid="hsugawa8651" creationdate="20181118T100122Z">
+        <seg>さらに、より正確な計算のために、&lt;x1/&gt;`sinpi(x)'&lt;x2/&gt;および&lt;x3/&gt;"co-spi(x)"&lt;x4/&gt;が提供される。 &lt;x5/&gt;'sin(pi*x)'&lt;x6/&gt;'cos(pi*x)'&lt;x8/&gt;'&lt;x8/&gt;のそれぞれ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Additionally, Julia provides
 software support for &lt;x1/&gt;Arbitrary Precision Arithmetic&lt;x2/&gt;, which can handle operations on numeric
 values that cannot be represented effectively in native hardware representations, but at the cost
@@ -3618,6 +3627,14 @@ on the values to be manipulated.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063939Z" creationid="hsugawa8651" creationdate="20181112T045027Z">
         <seg>ソートと順序の関連関数はすべて、合計オーダーを定義する「より少ない」リレーションに依存しています。 操作する値を指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All the standard trigonometric and hyperbolic functions are also defined:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100110Z" creationid="hsugawa8651" creationdate="20181118T100110Z">
+        <seg>標準的な三角関数と双曲線関数もすべて定義されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9149,6 +9166,14 @@ encountered when computing with them, see David Goldberg's paper &lt;x1/&gt;What
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For an overview of why functions like &lt;x1/&gt;`hypot`&lt;x2/&gt;, &lt;x3/&gt;`expm1`&lt;x4/&gt;, and &lt;x5/&gt;`log1p`&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100105Z" creationid="hsugawa8651" creationdate="20181118T100105Z">
+        <seg>なぜなら、&lt;x1/&gt;'のような関数が、なぜ&lt;x1/&gt;"&lt;x2/&gt;"、&lt;x3/&gt;"、&lt;x3/&gt;、&lt;x5/&gt;"log1p"&lt;x6/&gt;のようなものであるのかの概要である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For direct C++ interfacing, see the &lt;x1/&gt;Cxx&lt;x2/&gt; package.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152645Z" creationid="hsugawa8651" creationdate="20181117T152645Z">
@@ -9261,6 +9286,14 @@ library module, only supports two dimensions, so it just defines
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083154Z" creationid="hsugawa8651" creationdate="20181113T083154Z">
         <seg>例えば、&lt;x4/&gt;SparseArrays&lt;x5/&gt;の&lt;x4/&gt;は、&lt;x4/&gt;の&lt;x/&gt;から&lt;x/&gt;の範囲である。SparseMatrixCSC ライブラリモジュールは、2つの次元のみをサポートしているため &lt;x6/&gt;getindex(A::SparseMatrixCSC,i::Int,j::Int)&lt;x7/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, &lt;x3/&gt;`sind(x)`&lt;x4/&gt; computes the sine of &lt;x5/&gt;x&lt;x6/&gt; where &lt;x7/&gt;x&lt;x8/&gt; is specified in degrees.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100127Z" creationid="hsugawa8651" creationdate="20181118T100127Z">
+        <seg>例えば、&lt;x3/&gt;'sind(x)&lt;x6/&gt;は&lt;x5/&gt;x&lt;x6/&gt;の正弦を計算し、&lt;x7/&gt;x&lt;x8/&gt;は度で指定される。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11092,6 +11125,15 @@ be written in a vectorized style for performance.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In order to compute trigonometric functions with degrees instead of radians, suffix the function
+with &lt;x1/&gt;d&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100125Z" creationid="hsugawa8651" creationdate="20181118T100125Z">
+        <seg>ラジアンではなく度で三角関数を計算するには、関数をサフィックスします。 &lt;x1/&gt;d&lt;x2/&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In order to control the
 type explicitly, a type can be prepended to the comprehension.</seg>
       </tuv>
@@ -12757,6 +12799,15 @@ copy of the input, and returning that copy.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Many other special mathematical functions are provided by the package
+&lt;x1/&gt;SpecialFunctions.jl&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100139Z" creationid="hsugawa8651" creationdate="20181118T100139Z">
+        <seg>その他の特殊な数学的関数は、パッケージによって提供されます。 &lt;x1/&gt;SpecialFunctions.jl&lt;x2/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Mapping C Functions to Julia</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151457Z" creationid="hsugawa8651" creationdate="20181117T151457Z">
@@ -13957,6 +14008,14 @@ n</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Powers, logs and roots</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100005Z" creationid="hsugawa8651" creationdate="20181118T100005Z">
+        <seg>冪乗、対数、冪乗根</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Practical use of it
 requires using &lt;x3/&gt;llvmcall&lt;x4/&gt;.</seg>
       </tuv>
@@ -14882,6 +14941,14 @@ SparseVecStyle(::Val{N}) where N = Broadcast.DefaultArrayStyle{N}()</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Special functions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100132Z" creationid="hsugawa8651" creationdate="20181118T100132Z">
+        <seg>特殊な機能</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Specifically:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151306Z" creationid="hsugawa8651" creationdate="20181117T151306Z">
@@ -15744,6 +15811,14 @@ implementation instead.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032417Z" creationid="hsugawa8651" creationdate="20181116T032417Z">
         <seg>コンパイラは、便利であればそれを使用しますが、そうでなければ通常のものを使用することを選択することができます。 代わりに実装する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The complete list of trigonometric functions with degree variants is:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100128Z" creationid="hsugawa8651" creationdate="20181118T100128Z">
+        <seg>次数の変数を持つ三角関数の完全なリストは次のとおりです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17177,6 +17252,15 @@ normal functions, which happen to support infix operator syntax, but always eval
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These are all single-argument functions, with &lt;x1/&gt;`atan`&lt;x2/&gt; also accepting two arguments
+corresponding to a traditional &lt;x3/&gt;`atan2`&lt;x4/&gt; function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100119Z" creationid="hsugawa8651" creationdate="20181118T100119Z">
+        <seg>これらはすべて単一引数関数であり、&lt;x1/&gt;`atan'&lt;x2/&gt;は2つの引数を受け入れます。 これは従来の&lt;x3/&gt;atan2&lt;x4/&gt;関数に対応しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These examples are hopefully helpful to illustrate how generated functions work, both in the definition
 end and at the call site; however, &lt;x1/&gt;don't copy them&lt;x2/&gt;, for the following reasons:</seg>
       </tuv>
@@ -18294,6 +18378,14 @@ functions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041713Z" creationid="hsugawa8651" creationdate="20181110T041659Z">
         <seg>モジュール関数を使用するには、&lt;x1/&gt;インポートモジュール&lt;x2/&gt;を使用してモジュールをインポートし、&lt;x3/&gt;モジュール.fn(x)&lt;x4/&gt;を使用して 関数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Trigonometric and hyperbolic functions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100112Z" creationid="hsugawa8651" creationdate="20181118T100112Z">
+        <seg>三角関数と双曲線関数</seg>
       </tuv>
     </tu>
     <tu>
@@ -19867,6 +19959,14 @@ ERROR: DivideError: integer division error
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`cbrt(x)`&lt;x1/&gt;, &lt;x2/&gt;∛x&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100011Z" creationid="hsugawa8651" creationdate="20181118T100011Z">
+        <seg>`cbrt(x)`&lt;x1/&gt;, &lt;x2/&gt;∛x&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`ccall`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152234Z" creationid="hsugawa8651" creationdate="20181117T152234Z">
@@ -19965,6 +20065,30 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;. For more det
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150349Z" creationid="hsugawa8651" creationdate="20181117T150349Z">
         <seg>`eltype(A)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`exp(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100020Z" creationid="hsugawa8651" creationdate="20181118T100020Z">
+        <seg>`exp(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`expm1(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100023Z" creationid="hsugawa8651" creationdate="20181118T100023Z">
+        <seg>`expm1(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`exponent(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100055Z" creationid="hsugawa8651" creationdate="20181118T100055Z">
+        <seg>'exponent(x)'&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -20090,6 +20214,14 @@ Consider these examples of this syntax:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`hypot(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100015Z" creationid="hsugawa8651" creationdate="20181118T100015Z">
+        <seg>`hypot(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`isequal(x, y)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030539Z" creationid="hsugawa8651" creationdate="20181114T030539Z">
@@ -20146,6 +20278,14 @@ Consider these examples of this syntax:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`ldexp(x,n)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100028Z" creationid="hsugawa8651" creationdate="20181118T100028Z">
+        <seg>'ldexp(x,n)'&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`length(A)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153218Z" creationid="hsugawa8651" creationdate="20181109T153218Z">
@@ -20158,6 +20298,46 @@ Consider these examples of this syntax:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112304Z" creationid="hsugawa8651" creationdate="20181112T112304Z">
         <seg>`length(iter)`&lt;x1/&gt;`length(iter)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`log(b,x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100039Z" creationid="hsugawa8651" creationdate="20181118T100039Z">
+        <seg>'log(b,x)'&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`log(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100036Z" creationid="hsugawa8651" creationdate="20181118T100036Z">
+        <seg>`log(x)'&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`log10(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100046Z" creationid="hsugawa8651" creationdate="20181118T100046Z">
+        <seg>`log10(x)'&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`log1p(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100051Z" creationid="hsugawa8651" creationdate="20181118T100051Z">
+        <seg>'log1p(x)'&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`log2(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100043Z" creationid="hsugawa8651" creationdate="20181118T100043Z">
+        <seg>'log2(x)'&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -20307,6 +20487,14 @@ and all further calculations will take these changes in account.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`significand(x)`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100059Z" creationid="hsugawa8651" creationdate="20181118T100059Z">
+        <seg>「significand(x)」&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`similar(A, T, dims...)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064421Z" creationid="hsugawa8651" creationdate="20181114T064421Z">
@@ -20335,6 +20523,14 @@ and all further calculations will take these changes in account.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064222Z" creationid="hsugawa8651" creationdate="20181114T064222Z">
         <seg>`sort.jl`&lt;x1/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`sqrt(x)`&lt;x1/&gt;, &lt;x2/&gt;√x&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100007Z" creationid="hsugawa8651" creationdate="20181118T100007Z">
+        <seg>`sqrt(x)`&lt;x1/&gt;, &lt;x2/&gt;√x&lt;x3/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -20566,6 +20762,22 @@ or &lt;x7/&gt;Ptr{Any}&lt;x8/&gt; (corresponding to &lt;x9/&gt;jl_value_t**&lt;x
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>a value with the magnitude of &lt;x1/&gt;x&lt;x2/&gt; and the sign of &lt;x3/&gt;x*y&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095945Z" creationid="hsugawa8651" creationdate="20181118T095945Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の大きさを持つ値で、&lt;x3/&gt;x*y&lt;x4/&gt;の符号</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>a value with the magnitude of &lt;x1/&gt;x&lt;x2/&gt; and the sign of &lt;x3/&gt;y&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095941Z" creationid="hsugawa8651" creationdate="20181118T095941Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の大きさの値で、&lt;x3/&gt;y&lt;x4/&gt;の符号</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>a!( )&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032243Z" creationid="hsugawa8651" creationdate="20181114T032243Z">
@@ -20664,6 +20876,22 @@ abstract type Unsigned &lt;: Integer end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063536Z" creationid="hsugawa8651" creationdate="20181114T063536Z">
         <seg>オブジェクト/モジュールの名前付きフィールド(呼び出し&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref Base.getproperty)または&lt;x4/&gt;&lt;x6/&gt;&lt;x6/&gt;&lt;x6/&gt;&lt;x6/&gt;(@ref Base.setproperty!))は、要素関数呼び出し(&lt;x7/&gt;ブロードキャスト"&lt;x8/&gt;)を呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>accurate &lt;x1/&gt;exp(x)-1&lt;x2/&gt; for &lt;x3/&gt;x&lt;x4/&gt; near zero</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100026Z" creationid="hsugawa8651" creationdate="20181118T100026Z">
+        <seg>正確&lt;x1/&gt;exp(x)-1&lt;x2/&gt;&lt;x0/&gt;x&lt;x4/&gt;x&lt;x4/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>accurate &lt;x1/&gt;log(1+x)&lt;x2/&gt; for &lt;x3/&gt;x&lt;x4/&gt; near zero</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100053Z" creationid="hsugawa8651" creationdate="20181118T100053Z">
+        <seg>&lt;x3/&gt;x&lt;x4/&gt;近傍0付近では正確な&lt;x1/&gt;log(1+x)&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -20869,6 +21097,30 @@ object</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>base 10 logarithm of &lt;x1/&gt;x&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100049Z" creationid="hsugawa8651" creationdate="20181118T100049Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の10対数の対数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>base 2 logarithm of &lt;x1/&gt;x&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100045Z" creationid="hsugawa8651" creationdate="20181118T100045Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の2対数の対数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>base &lt;x1/&gt;b&lt;x2/&gt; logarithm of &lt;x3/&gt;x&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100041Z" creationid="hsugawa8651" creationdate="20181118T100041Z">
+        <seg>&lt;x1/&gt;b&lt;x2/&gt;&lt;x3/&gt;x&lt;x4/&gt;の底面の底面&lt;x/&gt;b&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>begin multi-line comment (these are nestable)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032254Z" creationid="hsugawa8651" creationdate="20181114T032254Z">
@@ -20885,6 +21137,14 @@ object</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>binary exponent of &lt;x1/&gt;x&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100057Z" creationid="hsugawa8651" creationdate="20181118T100057Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;のバイナリ指数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>binary minus</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094812Z" creationid="hsugawa8651" creationdate="20181113T132019Z">
@@ -20897,6 +21157,14 @@ object</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094829Z" creationid="hsugawa8651" creationdate="20181113T132007Z">
         <seg>2項加算</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>binary significand (a.k.a.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100100Z" creationid="hsugawa8651" creationdate="20181118T100100Z">
+        <seg>2進数の有意差(a.k.a.)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21256,6 +21524,14 @@ println(call_dist(a,b))</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>cube root of &lt;x1/&gt;x&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100014Z" creationid="hsugawa8651" creationdate="20181118T100014Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の立方体根</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>currently unsupported by &lt;x1/&gt;@cfunction&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151722Z" creationid="hsugawa8651" creationdate="20181117T151722Z">
@@ -21487,6 +21763,15 @@ with &lt;x2/&gt;$&lt;x3/&gt;).</seg>
         <seg>ex : msgs[1]
            msg = string(msg_body)
            return :($ex ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>expm1, log1p, erfc&lt;x1/&gt;,
+and &lt;x2/&gt;hypot&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100107Z" creationid="hsugawa8651" creationdate="20181118T100107Z">
+        <seg>expm1、log1p、erfc&lt;x1/&gt; &lt;x2/&gt;hypot&lt;x3/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22581,6 +22866,14 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>hypotenuse of right-angled triangle with other sides of length &lt;x1/&gt;x&lt;x2/&gt; and &lt;x3/&gt;y&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100018Z" creationid="hsugawa8651" creationdate="20181118T100018Z">
+        <seg>長さ&lt;x1/&gt;x&lt;x2/&gt;と&lt;x3/&gt;y&lt;x4/&gt;の他の辺を持つ直角三角形の斜辺</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>if (a == b)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T021308Z" creationid="hsugawa8651" creationdate="20181116T021308Z">
@@ -22767,6 +23060,14 @@ obj2 = MyModule.somefunction(obj1)
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095931Z" creationid="hsugawa8651" creationdate="20181118T095931Z">
         <seg>&lt;x1/&gt;x&lt;x2/&gt;の符号を示し、-1 0、または+1を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>indicates whether the sign bit is on (true) or off (false)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095936Z" creationid="hsugawa8651" creationdate="20181118T095936Z">
+        <seg>符号ビットがオン(true)かオフ(false)かを示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -32721,6 +33022,14 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>mantissa) of a floating-point number &lt;x1/&gt;x&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100102Z" creationid="hsugawa8651" creationdate="20181118T100102Z">
+        <seg>浮動小数点数&lt;x1/&gt;x&lt;x2/&gt;の仮数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>map(OneTo, size(A))&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022516Z" creationid="hsugawa8651" creationdate="20181113T022516Z">
@@ -33067,6 +33376,22 @@ uuid = "8f986787-14fe-4607-ba5d-fbff2944afa9"
 [deps]
 Priv = "ba13f791-ae1d-465a-978b-69c3ad90f72b"
 Pub  = "c07ecb7d-0dc9-4db7-8803-fadaaeaf08e1"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>natural exponential function at &lt;x1/&gt;x&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100022Z" creationid="hsugawa8651" creationdate="20181118T100022Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;での自然指数関数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>natural logarithm of &lt;x1/&gt;x&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100037Z" creationid="hsugawa8651" creationdate="20181118T100037Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の自然対数</seg>
       </tuv>
     </tu>
     <tu>
@@ -33908,10 +34233,35 @@ that &lt;x2/&gt;SparseArray&lt;x3/&gt; is mutable (supports &lt;x4/&gt;setindex!
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>sin    cos    tan    cot    sec    csc
+sinh   cosh   tanh   coth   sech   csch
+asin   acos   atan   acot   asec   acsc
+asinh  acosh  atanh  acoth  asech  acsch
+sinc   cosc</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100115Z" creationid="hsugawa8651" creationdate="20181118T100115Z">
+        <seg>sin    cos    tan    cot    sec    csc
+sinh   cosh   tanh   coth   sech   csch
+asin   acos   atan   acot   asec   acsc
+asinh  acosh  atanh  acoth  asech  acsch
+sinc   cosc</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>sin.(a)&lt;x1/&gt; to vectorize via &lt;x2/&gt;broadcast&lt;x3/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150008Z" creationid="hsugawa8651" creationdate="20181117T150008Z">
         <seg>sin.(a)&lt;x2/&gt;ブロードキャストを介してベクトル化する&lt;x2/&gt;ブロードキャスト&lt;x/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>sind   cosd   tand   cotd   secd   cscd
+asind  acosd  atand  acotd  asecd  acscd</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100143Z" creationid="hsugawa8651" creationdate="20181118T100143Z">
+        <seg>コサイド・コッド・コッド・コッド・セッド・cscd アシンド・アコシド・アンド・アコッドアセットアクシッド</seg>
       </tuv>
     </tu>
     <tu>
@@ -33944,6 +34294,14 @@ that &lt;x2/&gt;SparseArray&lt;x3/&gt; is mutable (supports &lt;x4/&gt;setindex!
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063529Z" creationid="hsugawa8651" creationdate="20181114T063529Z">
         <seg>関数呼び出しに引数を指定するか、またはvarargs関数を宣言します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>square root of &lt;x1/&gt;x&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100010Z" creationid="hsugawa8651" creationdate="20181118T100010Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の平方根</seg>
       </tuv>
     </tu>
     <tu>
@@ -34838,6 +35196,14 @@ s[k2] == qs[k2]                        &lt;x5/&gt; =&gt; true</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132255Z" creationid="hsugawa8651" creationdate="20181113T132255Z">
         <seg>x ⊻ y&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x*2^n&lt;x1/&gt; computed efficiently for integer values of &lt;x2/&gt;n&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100034Z" creationid="hsugawa8651" creationdate="20181118T100034Z">
+        <seg>x*2^n&lt;x1/&gt;は、&lt;x2/&gt;n&lt;x3/&gt;の整数値に対して効率的に計算されます。</seg>
       </tuv>
     </tu>
     <tu>
