@@ -1110,6 +1110,14 @@ Julia code from a C header file.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(The above expression uses several features that have yet to be introduced, including &lt;a4&gt;for loops&lt;/a4&gt;, &lt;a5&gt;Strings&lt;/a5&gt;, and &lt;a6&gt;Interpolation&lt;/a6&gt;, but should be easy enough to understand for users with some existing programming experience.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185709Z" creationid="hsugawa8651" creationdate="20181118T185709Z">
+        <seg>(上記の式では、&lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref man loops)など、まだ導入されていないいくつかの機能を使用しています。 &lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;(@ref man-strings)、&lt;x11/&gt;補間&lt;x12/&gt;は、ユーザが理解するのに十分な大きさである必要があります。 既存のプログラミング経験があります)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(The above expression uses several features that have yet to be introduced, including &lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref man-loops),
 &lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;(@ref man-strings), and &lt;x11/&gt;Interpolation&lt;x12/&gt;, but should be easy enough to understand for users
 with some existing programming experience.)</seg>
@@ -12716,8 +12724,8 @@ sharing&lt;x2/&gt;</seg>
       <tuv lang="EN-US">
         <seg>In Julia, exceeding the maximum representable value of a given type results in a wraparound behavior:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225601Z" creationid="hsugawa8651" creationdate="20181109T225601Z">
-        <seg>ジュリアでは、指定されたタイプの最大表現可能な値を超えると、ラップアラウンド動作が行われます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185823Z" creationid="hsugawa8651" creationdate="20181109T225601Z">
+        <seg>Juliaでは、指定されたタイプの最大表現可能な値を超えると、ラップアラウンド動作が行われます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20954,6 +20962,14 @@ is the last expression in the body of the function definition.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025723Z" creationid="hsugawa8651" creationdate="20181110T025723Z">
         <seg>関数によって返される値は、評価された最後の式の値です。これは、デフォルトでは次の値です。 は、関数定義の本文で最後の式です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The values returned by &lt;a0&gt;&lt;c1&gt;typemin&lt;/c1&gt;&lt;/a0&gt; and &lt;a2&gt;&lt;c3&gt;typemax&lt;/c3&gt;&lt;/a2&gt; are always of the given argument type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185806Z" creationid="hsugawa8651" creationdate="20181118T185806Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;typemin&lt;/c1&gt;&lt;/a0&gt;と&lt;a2&gt;&lt;c3&gt;typemax&lt;/c3&gt;&lt;/a2&gt;は常に与えられた引数の型である。</seg>
       </tuv>
     </tu>
     <tu>
