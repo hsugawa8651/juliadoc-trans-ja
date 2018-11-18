@@ -7446,6 +7446,16 @@ that the function will modify.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Because Julia's compiler is different from the interpreters used
+for languages like Python or R, you may find that Julia's performance
+is unintuitive at first.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183517Z" creationid="hsugawa8651" creationdate="20181118T183517Z">
+        <seg>JuliaのコンパイラはPythonやRで使われるようなインタプリタとは異なるので、もしかしたら最初はその性能に気づかないかもしれません。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because Julia's compiler is different from the interpreters used for languages like Python or R, you may find that Julia's performance is unintuitive at first.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182341Z" creationid="hsugawa8651" creationdate="20181118T182341Z">
@@ -12455,6 +12465,16 @@ specify this trait, the default value &lt;x5/&gt;IndexCartesian()&lt;x6/&gt; is 
     <tu>
       <tuv lang="EN-US">
         <seg>If you find that something is slow, we highly
+recommend reading through the :ref:`man-performance-tips`
+section before trying anything else.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183539Z" creationid="hsugawa8651" creationdate="20181118T183539Z">
+        <seg>JuliaのコンパイラはPythonやRで使われるようなインタプリタとは異なるので、もしかしたら最初はその性能に気づかないかもしれません。 遅いと感じたら、何かを試す前に  :ref:`man-performance-tips` を参照することをお勧めします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you find that something is slow, we highly
 recommend reading through the &lt;a0&gt;&lt;s1&gt;Performance Tips&lt;/s1&gt;&lt;/a0&gt;
 section before trying anything else.</seg>
       </tuv>
@@ -16088,6 +16108,15 @@ session evaluates the expression and shows its value.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121033Z" creationid="hsugawa8651" creationdate="20181118T121033Z">
         <seg>このパッケージがロードされると、すなわち最初のインポート後、同じ&lt;x17/&gt;uuid&lt;x18/&gt;への後続のインポート解決は、元のすでにロードされているパッケージモジュールへの新しいバインドを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once you understand how Julia
+works, it's easy to write code that's nearly as fast as C.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183544Z" creationid="hsugawa8651" creationdate="20181118T183544Z">
+        <seg> Juliaがどのように動作するかを理解すれば、C言語と同等の速さで動くコードを簡単に書くことができるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
