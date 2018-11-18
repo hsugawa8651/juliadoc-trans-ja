@@ -1072,6 +1072,16 @@ with some existing programming experience.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(Using mathematicians' &lt;x5/&gt;i&lt;x6/&gt; or engineers' &lt;x7/&gt;j&lt;x8/&gt; for this global constant were rejected since they are such popular index variable names.) Since Julia allows numeric literals to be &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-numeric-literal-coefficients),
+this binding suffices to provide convenient syntax for complex numbers, similar to the traditional
+mathematical notation:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123035Z" creationid="hsugawa8651" creationdate="20181118T123035Z">
+        <seg>(このグローバル定数に対して数学者の&lt;x5/&gt;i&lt;x6/&gt;を使用するか、あるいはエンジニアの&lt;x7/&gt;j&lt;x8/&gt;を使用することは拒否されました。なぜなら、Juliaは数値リテラルが&lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref manの数値リテラル係数)であるためです。 この結合は、従来のものと同様に、複素数に対して便利な構文を提供するのに十分である。 数学的表記法:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(generic function with 1 method)
 
 julia&gt; change_array!(x)
@@ -2751,6 +2761,16 @@ function unicode_data()
             codepoint = parse(UInt32, "0x$id")
             names[codepoint] = titlecase(lowercase(
                 name == "" ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion) are defined
+so that operations on any combination of predefined numeric types, whether primitive or composite,
+behave as expected.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123023Z" creationid="hsugawa8651" creationdate="20181118T123023Z">
+        <seg>&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref変換とプロモーション)は定義されています。 定義済みの数値タイプの任意の組合せで、プリミティブまたはコンポジットのいずれであっても動作するようにします。 期待どおりに動作します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13262,6 +13282,15 @@ values.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia includes predefined types for both complex and rational numbers, and supports
+all the standard &lt;x1/&gt;Mathematical Operations and Elementary Functions&lt;x2/&gt; on them.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123012Z" creationid="hsugawa8651" creationdate="20181118T123012Z">
+        <seg>Juliaは、複雑な数値と有理数の両方に対して定義済みのタイプを含み、サポートされています。 すべての標準的な&lt;x1/&gt;数学的操作と基本的な関数&lt;x2/&gt;がそれらの上にあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia installation is straightforward, whether using precompiled
 binaries or compiling from source.</seg>
       </tuv>
@@ -17657,6 +17686,15 @@ the other with an explicit constructor:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The global constant &lt;x1/&gt;`im`&lt;x2/&gt; is bound to the complex number &lt;x3/&gt;i&lt;x4/&gt;, representing the principal
+square root of -1.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123030Z" creationid="hsugawa8651" creationdate="20181118T123030Z">
+        <seg>グローバル定数&lt;x1/&gt;`im'&lt;x2/&gt;は、複素数&lt;x3/&gt;i&lt;x4/&gt;に結合されており、これは主なものである。 -1の平方根です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The hexadecimal integer literal expression &lt;x1/&gt;0xff&lt;x2/&gt; could be interpreted as the numeric literal
 &lt;x3/&gt;0&lt;x4/&gt; multiplied by the variable &lt;x5/&gt;xff&lt;x6/&gt;.</seg>
       </tuv>
@@ -21056,6 +21094,14 @@ the greatest size (potentially including padding).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151150Z" creationid="hsugawa8651" creationdate="20181117T151150Z">
         <seg>&lt;x1/&gt;の近似を知ることができるのなら、それは&lt;x x/&gt;&lt;x2/&gt;の近似値を得ることができる。 最大サイズ(パディングを含む可能性があります)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can perform all the standard arithmetic operations with complex numbers:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123048Z" creationid="hsugawa8651" creationdate="20181118T123048Z">
+        <seg>複雑な数値を使用して、すべての標準算術演算を実行できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25897,6 +25943,64 @@ NaN</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120341Z" creationid="hsugawa8651" creationdate="20181118T120341Z">
         <seg>julia&gt; 10_000, 0.000_000_005, 0xdead_beef, 0b1011_0010
 (10000, 5.0e-9, 0xdeadbeef, 0xb2)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; 2(1 - 1im)
+2 - 2im
+
+julia&gt; (2 + 3im) - 1
+1 + 3im
+
+julia&gt; (1 + 2im) + 0.5
+1.5 + 2.0im
+
+julia&gt; (2 + 3im) - 0.5im
+2.0 + 2.5im
+
+julia&gt; 0.75(1 + 2im)
+0.75 + 1.5im
+
+julia&gt; (2 + 3im) / 2
+1.0 + 1.5im
+
+julia&gt; (1 - 3im) / (2 + 2im)
+-0.5 - 1.0im
+
+julia&gt; 2im^2
+-2 + 0im
+
+julia&gt; 1 + 3/4im
+1.0 - 0.75im</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123152Z" creationid="hsugawa8651" creationdate="20181118T123152Z">
+        <seg>julia&gt; 2(1 - 1im)
+2 - 2im
+
+julia&gt; (2 + 3im) - 1
+1 + 3im
+
+julia&gt; (1 + 2im) + 0.5
+1.5 + 2.0im
+
+julia&gt; (2 + 3im) - 0.5im
+2.0 + 2.5im
+
+julia&gt; 0.75(1 + 2im)
+0.75 + 1.5im
+
+julia&gt; (2 + 3im) / 2
+1.0 + 1.5im
+
+julia&gt; (1 - 3im) / (2 + 2im)
+-0.5 - 1.0im
+
+julia&gt; 2im^2
+-2 + 0im
+
+julia&gt; 1 + 3/4im
+1.0 - 0.75im</seg>
       </tuv>
     </tu>
     <tu>
@@ -34699,6 +34803,52 @@ ERROR: UndefVarError: z not defined</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225811Z" creationid="hsugawa8651" creationdate="20181109T225811Z">
         <seg>julia&gt; z = (x = 1; y = 2; x + y)
 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; z = 1 + 2im
+1 + 2im
+
+julia&gt; real(1 + 2im) &lt;x1/&gt; real part of z
+1
+
+julia&gt; imag(1 + 2im) &lt;x2/&gt; imaginary part of z
+2
+
+julia&gt; conj(1 + 2im) &lt;x3/&gt; complex conjugate of z
+1 - 2im
+
+julia&gt; abs(1 + 2im) &lt;x4/&gt; absolute value of z
+2.23606797749979
+
+julia&gt; abs2(1 + 2im) &lt;x5/&gt; squared absolute value
+5
+
+julia&gt; angle(1 + 2im) &lt;x6/&gt; phase angle in radians
+1.1071487177940904</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123144Z" creationid="hsugawa8651" creationdate="20181118T123144Z">
+        <seg>julia&gt; z = 1 + 2im
+1 + 2im
+
+julia&gt; real(1 + 2im) &lt;x1/&gt; real part of z
+1
+
+julia&gt; imag(1 + 2im) &lt;x2/&gt; imaginary part of z
+2
+
+julia&gt; conj(1 + 2im) &lt;x3/&gt; complex conjugate of z
+1 - 2im
+
+julia&gt; abs(1 + 2im) &lt;x4/&gt; absolute value of z
+2.23606797749979
+
+julia&gt; abs2(1 + 2im) &lt;x5/&gt; squared absolute value
+5
+
+julia&gt; angle(1 + 2im) &lt;x6/&gt; phase angle in radians
+1.1071487177940904</seg>
       </tuv>
     </tu>
     <tu>
