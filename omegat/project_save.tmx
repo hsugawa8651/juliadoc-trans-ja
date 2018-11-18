@@ -807,8 +807,8 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
       <tuv lang="EN-US">
         <seg>(@id man-getting-started)</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120215Z" creationid="hsugawa8651" creationdate="20181118T120215Z">
-        <seg>(@id man getting started)</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164517Z" creationid="hsugawa8651" creationdate="20181118T120215Z">
+        <seg>(@id man-getting-started)</seg>
       </tuv>
     </tu>
     <tu>
@@ -817,6 +817,22 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113200Z" creationid="hsugawa8651" creationdate="20181112T113200Z">
         <seg>(@id man-interface-array)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@id man-interface-iteration)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164643Z" creationid="hsugawa8651" creationdate="20181118T164643Z">
+        <seg>(@id man-interface-iteration)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@id man-interface-strided-arrays)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164754Z" creationid="hsugawa8651" creationdate="20181118T164754Z">
+        <seg>(@id man-interface-strided-arrays)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1150,10 +1166,34 @@ julia&gt; x &lt;x1/&gt; x is unchanged!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(if &lt;x1/&gt;IndexCartesian&lt;x2/&gt;, where &lt;x3/&gt;N = ndims(A)&lt;x4/&gt;) N-dimensional scalar indexed assignment</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164734Z" creationid="hsugawa8651" creationdate="20181118T164734Z">
+        <seg>(もし&lt;x1/&gt;IndexCartesian&lt;x2/&gt;であって、&lt;x3/&gt;N=ンダムス(A)&lt;x4/&gt;)N次元スカラーインデックス割り当て</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(if &lt;x1/&gt;IndexCartesian&lt;x2/&gt;, where &lt;x3/&gt;N = ndims(A)&lt;x4/&gt;) N-dimensional scalar indexing</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094445Z" creationid="hsugawa8651" creationdate="20181118T094445Z">
         <seg>(もし&lt;x1/&gt;IndexCartesian&lt;x2/&gt;である場合&lt;x3/&gt;N = ndims(A)&lt;x4/&gt;)N-次元スカラーインデックス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(if &lt;x1/&gt;IndexLinear&lt;x2/&gt;) Linear scalar indexing</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164724Z" creationid="hsugawa8651" creationdate="20181118T164724Z">
+        <seg>(&lt;x1/&gt;IndexLinear&lt;x2/&gt;)線形スカラーのインデックス作成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(if &lt;x1/&gt;IndexLinear&lt;x2/&gt;) Scalar indexed assignment</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164731Z" creationid="hsugawa8651" creationdate="20181118T164731Z">
+        <seg>(&lt;x1/&gt;IndexLinear&lt;x2/&gt;)スカラーのインデックス割り当て</seg>
       </tuv>
     </tu>
     <tu>
@@ -9506,6 +9546,14 @@ Any Julia type that is not a subtype of &lt;x5/&gt;`Signed`&lt;x6/&gt; is assume
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Examples:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164632Z" creationid="hsugawa8651" creationdate="20181118T164632Z">
+        <seg>Examples:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Exception Handling&lt;x1/&gt;: &lt;x2/&gt;try&lt;x3/&gt;-&lt;x4/&gt;catch&lt;x5/&gt;, &lt;x6/&gt;`error`&lt;x7/&gt; and &lt;x8/&gt;`throw`&lt;x9/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225735Z" creationid="hsugawa8651" creationdate="20181109T225735Z">
@@ -10964,6 +11012,14 @@ implemented in software and use &lt;x3/&gt;`Float32`&lt;x4/&gt; for calculations
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>HasShape{N}()&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164653Z" creationid="hsugawa8651" creationdate="20181118T164653Z">
+        <seg>HasShape{N}()&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Hence, expressions starting with a numeric literal
 followed by &lt;x9/&gt;F&lt;x10/&gt; are interpreted as the numerical literal multiplied by a variable, which means that, for
 example, &lt;x11/&gt;1.5F22&lt;x12/&gt; is equal to &lt;x13/&gt;1.5 * F22&lt;x14/&gt;.</seg>
@@ -11009,8 +11065,8 @@ example, &lt;x11/&gt;1.5F22&lt;x12/&gt; is equal to &lt;x13/&gt;1.5 * F22&lt;x14
         <seg>Here are some situations
 where syntactic conflicts arise:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111920Z" creationid="hsugawa8651" creationdate="20181112T111920Z">
-        <seg>次に状況を示します。 構文的な競合が発生します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164626Z" creationid="hsugawa8651" creationdate="20181112T111920Z">
+        <seg>次に、構文の競合が発生する状況を示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12876,6 +12932,14 @@ syntax without the &lt;x6/&gt;end&lt;x7/&gt; keyword is equivalent to a call to
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Indexing</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164702Z" creationid="hsugawa8651" creationdate="20181118T164702Z">
+        <seg>インデックス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Indexing and assignment</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150029Z" creationid="hsugawa8651" creationdate="20181117T150029Z">
@@ -13163,6 +13227,14 @@ the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224718Z" creationid="hsugawa8651" creationdate="20181109T224718Z">
         <seg>Interactiveモード;REPLは実行され、&lt;x1/&gt;イスインタラクティブ()&lt;x2/&gt;はtrueです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interfaces</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164640Z" creationid="hsugawa8651" creationdate="20181118T164640Z">
+        <seg>インタフェース</seg>
       </tuv>
     </tu>
     <tu>
@@ -14245,6 +14317,14 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Literal zero and one</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164630Z" creationid="hsugawa8651" creationdate="20181118T164630Z">
+        <seg>リテラル0と1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Literal zero of type &lt;x1/&gt;x&lt;x2/&gt; or type of variable &lt;x3/&gt;x&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112010Z" creationid="hsugawa8651" creationdate="20181112T112010Z">
@@ -15192,6 +15272,14 @@ using the &lt;x19/&gt;qsort&lt;x20/&gt; function (rather than Julia's built-in &
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Number of elements</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164747Z" creationid="hsugawa8651" creationdate="20181118T164743Z">
+        <seg>要素の数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Number&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041604Z" creationid="hsugawa8651" creationdate="20181112T041604Z">
@@ -16130,10 +16218,42 @@ an interactive session.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Required methods</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164651Z" creationid="hsugawa8651" creationdate="20181118T164651Z">
+        <seg>必要なメソッド</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Resources</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120244Z" creationid="hsugawa8651" creationdate="20181118T120244Z">
         <seg>リソース</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Return a mutable array with the same element type and size &lt;x1/&gt;dims&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164752Z" creationid="hsugawa8651" creationdate="20181118T164752Z">
+        <seg>同じ要素タイプとサイズを持つ可変配列を返す&lt;x1/&gt;ディムス&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Return a mutable array with the same shape and element type</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164749Z" creationid="hsugawa8651" creationdate="20181118T164749Z">
+        <seg>同じシェイプとエレメントタイプを持つ可変配列を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Return a mutable array with the same shape and the specified element type</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164750Z" creationid="hsugawa8651" creationdate="20181118T164750Z">
+        <seg>同じ形状および指定された要素タイプを持つ可変配列を返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17225,6 +17345,14 @@ value &lt;x3/&gt;1&lt;x4/&gt; to the floating-point value &lt;x5/&gt;1.0&lt;x6/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150615Z" creationid="hsugawa8651" creationdate="20181117T150615Z">
         <seg>構文/キーワード</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Syntax Conflicts</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164546Z" creationid="hsugawa8651" creationdate="20181118T164546Z">
+        <seg>構文の矛盾</seg>
       </tuv>
     </tu>
     <tu>
@@ -24876,6 +25004,14 @@ defalg(v::AbstractArray{&lt;:Number}) = QuickSort</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>defined in terms of scalar &lt;x1/&gt;getindex&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164736Z" creationid="hsugawa8651" creationdate="20181118T164736Z">
+        <seg>スカラー&lt;x1/&gt;getindex&lt;x2/&gt;の観点から定義されている</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>defined in terms of scalar &lt;x1/&gt;setindex!&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022349Z" creationid="hsugawa8651" creationdate="20181113T022349Z">
@@ -26553,6 +26689,14 @@ Markdown.parse("```\n\$ julia\n\n$(banner)\njulia&gt; 1 + 2\n3\n\njulia&gt; ans\
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112106Z" creationid="hsugawa8651" creationdate="20181112T112106Z">
         <seg>iterate(iter, state)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>iterate&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164740Z" creationid="hsugawa8651" creationdate="20181118T164740Z">
+        <seg>繰り返し&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -38750,6 +38894,14 @@ paths = reduce(merge, reverse([paths₁, paths₂, …]))</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113245Z" creationid="hsugawa8651" creationdate="20181112T113245Z">
         <seg>setindex!(A, v, i::Int)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>setindex!(X, v, i)&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164709Z" creationid="hsugawa8651" creationdate="20181118T164709Z">
+        <seg>setindex!(X, v, i)&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
