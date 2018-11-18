@@ -2023,6 +2023,16 @@ The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c6&gt;&lt;s7&gt;ARGS&lt;/s7&gt;&lt;/c6&gt; is also set when script code
+is given using the &lt;c8&gt;&lt;s9&gt;-e&lt;/s9&gt;&lt;/c8&gt; option on the command line (see the &lt;c10&gt;&lt;s11&gt;julia&lt;/s11&gt;&lt;/c10&gt;
+help output below).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084517Z" creationid="hsugawa8651" creationdate="20181118T084517Z">
+        <seg>コマンドラインで -e オプションが設定された際にも ARGS は設定されます（下の julia ヘルプ出力を参照してください）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s0&gt;&lt;/s0&gt;$ julia
                _
    _       _ _(_)_     |  A fresh approach to technical computing
@@ -4015,6 +4025,16 @@ from &lt;x1/&gt;`AbstractArray`&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154132Z" creationid="hsugawa8651" creationdate="20181109T154132Z">
         <seg>このように、カスタム配列タイプを継承することによって、カスタム配列タイプを定義することも可能です。 &lt;x1/&gt;'AbstractArray'&lt;x2/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As the example implies, the following command-line arguments to &lt;c0&gt;&lt;s1&gt;julia&lt;/s1&gt;&lt;/c0&gt;
+are taken as command-line arguments to the program &lt;c2&gt;&lt;s3&gt;script.jl&lt;/s3&gt;&lt;/c2&gt;, passed
+in the global constant &lt;c4&gt;&lt;s5&gt;ARGS&lt;/s5&gt;&lt;/c4&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084507Z" creationid="hsugawa8651" creationdate="20181118T084507Z">
+        <seg>上の例が示すように、後ろの引数は script.jl というプログラムのコマンドライン引数として取られ、 グローバル定数 ARGS に渡されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9234,6 +9254,15 @@ arguments given to a script, you could do this:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, to just print the arguments given to a
+script, you could do this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084523Z" creationid="hsugawa8651" creationdate="20181118T084523Z">
+        <seg>例えば以下のようにすることで、スクリプトに渡された引数を単純に出力することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, to match C prototypes of the form:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153924Z" creationid="hsugawa8651" creationdate="20181109T153924Z">
@@ -13199,8 +13228,8 @@ the user has entered a complete expression, such as &lt;c8&gt;&lt;s9&gt;1&lt;/s9
 hits enter, the interactive session evaluates the expression and shows
 its value.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T083924Z" creationid="hsugawa8651" creationdate="20181118T083924Z">
-        <seg>ユーザーが完全な式、例えば 1 + 2 を入力し、エンターキーを押すと、その式が評価され、値が表示されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084316Z" creationid="hsugawa8651" creationdate="20181118T083924Z">
+        <seg>ユーザーが完全な式、例えば &lt;c8&gt;&lt;s9&gt;1&lt;/s9&gt;&lt;/c8&gt; &lt;s10&gt;+&lt;/s10&gt; &lt;s11&gt;2&lt;/s11&gt; を入力し、エンターキーを押すと、その式が評価され、値が表示されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17589,8 +17618,8 @@ Julia &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized) &lt;x4/&gt;f.(args.
         <seg>To exit the interactive session, type &lt;c0&gt;&lt;s1&gt;^D&lt;/s1&gt;&lt;/c0&gt; — the control key
 together with the &lt;c2&gt;&lt;s3&gt;d&lt;/s3&gt;&lt;/c2&gt; key or type &lt;c4&gt;&lt;s5&gt;quit()&lt;/s5&gt;&lt;/c4&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T083847Z" creationid="hsugawa8651" creationdate="20181118T083847Z">
-        <seg>インタラクティブ・セッションを終了するには、^D — コントロールキーと d キーを同時に押す — もしくは、 quit() と入力してください。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084437Z" creationid="hsugawa8651" creationdate="20181118T083847Z">
+        <seg>インタラクティブ・セッションを終了するには、&lt;c0&gt;&lt;s1&gt;^D&lt;/s1&gt;&lt;/c0&gt; — コントロールキーと &lt;c2&gt;&lt;s3&gt;d&lt;/s3&gt;&lt;/c2&gt; キーを同時に押す — もしくは、 &lt;c4&gt;&lt;s5&gt;quit()&lt;/s5&gt;&lt;/c4&gt; と入力してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18163,8 +18192,8 @@ field alignment.</seg>
         <seg>When run in interactive
 mode, &lt;c6&gt;&lt;s7&gt;julia&lt;/s7&gt;&lt;/c6&gt; displays a banner and prompts the user for input.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T083908Z" creationid="hsugawa8651" creationdate="20181118T083908Z">
-        <seg>インタラクティブ・モードで起動すると、 julia のバナーが表示され、プロンプトがユーザーの入力を待ちます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084338Z" creationid="hsugawa8651" creationdate="20181118T083908Z">
+        <seg>インタラクティブ・モードで起動すると、 &lt;c6&gt;&lt;s7&gt;julia&lt;/s7&gt;&lt;/c6&gt; のバナーが表示され、プロンプトがユーザーの入力を待ちます。</seg>
       </tuv>
     </tu>
     <tu>
