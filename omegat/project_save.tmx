@@ -3545,6 +3545,46 @@ hellohelloh&lt;/c0&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; isconcretetype(Complex)
+false
+
+julia&gt; isconcretetype(Complex{Float32})
+true
+
+julia&gt; isconcretetype(Vector{Complex})
+true
+
+julia&gt; isconcretetype(Vector{Complex{Float32}})
+true
+
+julia&gt; isconcretetype(Union{})
+false
+
+julia&gt; isconcretetype(Union{Int,String})
+false&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T193039Z" creationid="hsugawa8651" creationdate="20181118T193039Z">
+        <seg>&lt;c0&gt;julia&gt; isconcretetype(Complex)
+false
+
+julia&gt; isconcretetype(Complex{Float32})
+true
+
+julia&gt; isconcretetype(Vector{Complex})
+true
+
+julia&gt; isconcretetype(Vector{Complex{Float32}})
+true
+
+julia&gt; isconcretetype(Union{})
+false
+
+julia&gt; isconcretetype(Union{Int,String})
+false&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;product(iters...)&lt;/c0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192342Z" creationid="hsugawa8651" creationdate="20181118T192342Z">
@@ -29338,6 +29378,102 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152443Z" creationid="hsugawa8651" creationdate="20181117T152436Z">
         <seg>hn=Vector{UInt8}(undef,256) err=ccall(:gethostname,stdcall,Int32,(Ptr{UInt8},UInt32),hn,長さ(hn))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L5-L11</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192818Z" creationid="hsugawa8651" creationdate="20181118T192818Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L5-L11</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L17-L22</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192828Z" creationid="hsugawa8651" creationdate="20181118T192828Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L17-L22</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L25-L30</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192838Z" creationid="hsugawa8651" creationdate="20181118T192838Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L25-L30</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L33-L37</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192845Z" creationid="hsugawa8651" creationdate="20181118T192845Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L33-L37</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L45-L49</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192901Z" creationid="hsugawa8651" creationdate="20181118T192901Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L45-L49</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1480-L1503</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192912Z" creationid="hsugawa8651" creationdate="20181118T192912Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1480-L1503</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1506-L1526</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192921Z" creationid="hsugawa8651" creationdate="20181118T192921Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1506-L1526</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1530-L1550</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192935Z" creationid="hsugawa8651" creationdate="20181118T192935Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1530-L1550</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/essentials.jl#L385-L415</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T193032Z" creationid="hsugawa8651" creationdate="20181118T193032Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/essentials.jl#L385-L415</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/reflection.jl#L131-L144</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T193007Z" creationid="hsugawa8651" creationdate="20181118T193007Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/reflection.jl#L131-L144</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/reflection.jl#L396-L400</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T193051Z" creationid="hsugawa8651" creationdate="20181118T193051Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/reflection.jl#L396-L400</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/reflection.jl#L424-L450</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T193043Z" creationid="hsugawa8651" creationdate="20181118T193043Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/reflection.jl#L424-L450</seg>
       </tuv>
     </tu>
     <tu>
