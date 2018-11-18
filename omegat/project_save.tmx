@@ -3697,8 +3697,8 @@ us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
         <seg>All numeric types interoperate naturally without explicit casting, thanks to a
 flexible, user-extensible &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225156Z" creationid="hsugawa8651" creationdate="20181109T225156Z">
-        <seg>すべての数値型は、明示的なキャストなしで自然に相互運用されます。 柔軟なユーザー拡張可能な&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref変換とプロモーション)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120717Z" creationid="hsugawa8651" creationdate="20181109T225156Z">
+        <seg>すべての数値型は、明示的なキャストなしで自然に相互運用されます。 柔軟なユーザー拡張可能な&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10974,8 +10974,8 @@ including iteration and multidimensional indexing built on top of single-element
 arguments have a common &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion) then they get
 converted to that type using &lt;x6/&gt;`convert`&lt;x7/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154521Z" creationid="hsugawa8651" creationdate="20181109T154521Z">
-        <seg>すべて 引数には共通の&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref変換とプロモーション)があります。 &lt;x6/&gt;'convert`&lt;x7/&gt;を使用して、そのタイプに変換されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120717Z" creationid="hsugawa8651" creationdate="20181109T154521Z">
+        <seg>すべて 引数には共通の&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion)があります。 &lt;x6/&gt;'convert`&lt;x7/&gt;を使用して、そのタイプに変換されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15095,8 +15095,8 @@ the &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-multi-dim-arrays) and the &lt;x6/
         <seg>See &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref conversion-and-promotion) for details of the promotion
 system.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132207Z" creationid="hsugawa8651" creationdate="20181113T132207Z">
-        <seg>プロモーションの詳細については、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref変換とプロモーション)を参照してください。 システム。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120717Z" creationid="hsugawa8651" creationdate="20181113T132207Z">
+        <seg>プロモーションの詳細については、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref conversion-and-promotion)を参照してください。 システム。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18120,8 +18120,8 @@ end and at the call site; however, &lt;x1/&gt;don't copy them&lt;x2/&gt;, for th
         <seg>These functions are useful in &lt;x1/&gt;Numeric Comparisons&lt;x2/&gt; to avoid overhead from unnecessary
 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112023Z" creationid="hsugawa8651" creationdate="20181112T112023Z">
-        <seg>これらの関数は、不要なオーバーヘッドを回避するために&lt;x1/&gt;数値比較&lt;x2/&gt;で役立ちます。 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref変換とプロモーション)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120717Z" creationid="hsugawa8651" creationdate="20181112T112023Z">
+        <seg>これらの関数は、不要なオーバーヘッドを回避するために&lt;x1/&gt;数値比較&lt;x2/&gt;で役立ちます。 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion)。</seg>
       </tuv>
     </tu>
     <tu>
