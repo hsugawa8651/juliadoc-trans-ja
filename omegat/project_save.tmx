@@ -9501,6 +9501,15 @@ limited to &lt;a1&gt;UTF-8&lt;/a1&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Efficient support for &lt;a0&gt;Unicode&lt;/a0&gt;, including but not limited to &lt;a1&gt;UTF-8&lt;/a1&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182744Z" creationid="hsugawa8651" creationdate="20181118T182744Z">
+        <seg>&lt;a0&gt;Unicode&lt;/a0&gt; の効率的なサポート。 &lt;a1&gt;UTF-8&lt;/a1&gt; も含みますが、これに限定しません
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Either &lt;x1/&gt;EltypeUnknown()&lt;x2/&gt; or &lt;x3/&gt;HasEltype()&lt;x4/&gt; as appropriate</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112153Z" creationid="hsugawa8651" creationdate="20181112T112153Z">
@@ -9515,6 +9524,14 @@ other types</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082846Z" creationid="hsugawa8651" creationdate="20181118T082846Z">
         <seg>数値型他の型の、エレガントで拡張性のある変換やプロモーション [2]
 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Elegant and extensible conversions and promotions for numeric and other types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182737Z" creationid="hsugawa8651" creationdate="20181118T182737Z">
+        <seg>数値型他の型の、エレガントで拡張性のある変換やプロモーション </seg>
       </tuv>
     </tu>
     <tu>
@@ -14703,6 +14720,15 @@ integer literals and engineering notation for floating-point literals.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152410Z" creationid="hsugawa8651" creationdate="20181117T152410Z">
         <seg>Libdl.dlclose(lib)&lt;x4/&gt;ライブラリを明示的に閉じます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Lightweight "green" threading (&lt;a0&gt;coroutines&lt;/a0&gt;)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182724Z" creationid="hsugawa8651" creationdate="20181118T182724Z">
+        <seg>軽量で”greenな”スレッドシステム [1] （ &lt;a0&gt;コルーチン&lt;/a0&gt; ）
+</seg>
       </tuv>
     </tu>
     <tu>
