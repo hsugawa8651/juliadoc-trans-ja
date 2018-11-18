@@ -7583,8 +7583,8 @@ Possible fix, define
         <seg>Captured variables
 can create performance challenges as discussed in &lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;(@ref man-performance-tips).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120038Z" creationid="hsugawa8651" creationdate="20181118T120038Z">
-        <seg>キャプチャされた変数 &lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;(@ref manのパフォーマンス・ヒント)で説明されているように、パフォーマンス・チャレンジを作成することができます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121847Z" creationid="hsugawa8651" creationdate="20181118T120038Z">
+        <seg>キャプチャされた変数 &lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;(@ref man-performance-tipsで説明されているように、パフォーマンス・チャレンジを作成することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7592,8 +7592,8 @@ can create performance challenges as discussed in &lt;x7/&gt;&lt;x8/&gt;&lt;x9/&
         <seg>Captured variables can present performance challenges; see
 &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref man-performance-tips).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160702Z" creationid="hsugawa8651" creationdate="20181114T160702Z">
-        <seg>キャプチャされた変数はパフォーマンス上の問題を提示することがあります。 &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref manのパフォーマンス・ヒント)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121847Z" creationid="hsugawa8651" creationdate="20181114T160702Z">
+        <seg>キャプチャされた変数はパフォーマンス上の問題を提示することがあります。 &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref man-performance-tips。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8748,8 +8748,8 @@ two functions for custom types to override how they are stored in a hash table.<
 elements are stored contiguously in column-major order (see additional notes in
 &lt;x4/&gt;&lt;x5/&gt;&lt;x6/&gt;(@ref man-performance-tips)).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160418Z" creationid="hsugawa8651" creationdate="20181109T160418Z">
-        <seg>DenseArray&lt;x1/&gt;は、すべての配列を含むことを意図した&lt;x2/&gt;AbstractArray&lt;x3/&gt;の抽象サブタイプである。 要素は列主順序で連続的に格納されます(追加の注記を参照してください)。 &lt;x4/&gt;&lt;x5/&gt;&lt;x6/&gt;(@ref manのパフォーマンス・ヒント))。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121847Z" creationid="hsugawa8651" creationdate="20181109T160418Z">
+        <seg>DenseArray&lt;x1/&gt;は、すべての配列を含むことを意図した&lt;x2/&gt;AbstractArray&lt;x3/&gt;の抽象サブタイプである。 要素は列主順序で連続的に格納されます(追加の注記を参照してください)。 &lt;x4/&gt;&lt;x5/&gt;&lt;x6/&gt;(@ref man-performance-tips)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11742,8 +11742,8 @@ to the compiler.</seg>
 &lt;x7/&gt;not&lt;x8/&gt; required for performance, and indeed it is often beneficial to write your own loops (see
 &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-performance-tips)), but they can still be convenient.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120057Z" creationid="hsugawa8651" creationdate="20181118T120057Z">
-        <seg>ジュリアではベクトル化された関数は &lt;x7/&gt;はパフォーマンスに必要な&lt;x8/&gt;ではありません。実際には、独自のループを作成することが有益です( &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref manのパフォーマンス・ヒント)はありますが、それでも便利です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121847Z" creationid="hsugawa8651" creationdate="20181118T120057Z">
+        <seg>ジュリアではベクトル化された関数は &lt;x7/&gt;はパフォーマンスに必要な&lt;x8/&gt;ではありません。実際には、独自のループを作成することが有益です( &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-performance-tipsはありますが、それでも便利です。</seg>
       </tuv>
     </tu>
     <tu>
