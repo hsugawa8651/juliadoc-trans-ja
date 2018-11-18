@@ -8519,6 +8519,15 @@ Any Julia type that is not a subtype of &lt;x5/&gt;`Signed`&lt;x6/&gt; is assume
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Existing code then seamlessly applies to the new data
+types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082518Z" creationid="hsugawa8651" creationdate="20181118T082441Z">
+        <seg>こうすることで、既存のコードをシームレスに新たなデータ型対応させることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Explicitly,
 this means that:</seg>
       </tuv>
@@ -9231,6 +9240,17 @@ and load in the new changes.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152355Z" creationid="hsugawa8651" creationdate="20181117T152355Z">
         <seg>たとえば、Juliaと共に使用するCコードを作成する場合は、コンパイルする必要があります。 Cコードをジュリアから呼び出して、ライブラリを閉じ、編集を行い、再コンパイルします。 新しい変更にロードされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For large scale numerical problems, speed
+always has been, continues to be, and probably always will be crucial:
+the amount of data being processed has easily kept pace with Moore’s Law
+over the past decades.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082547Z" creationid="hsugawa8651" creationdate="20181118T082547Z">
+        <seg>大規模数値計算問題では計算速度はこれまでもこれからも、常に重大な問題です。 処理されるデータ量は過去数十年にわたってムーアの法則にしたがって増え続けています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11651,6 +11671,15 @@ languages.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia aims to create an unprecedented combination of ease-of-use, power,
+and efficiency in a single language.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082559Z" creationid="hsugawa8651" creationdate="20181118T082559Z">
+        <seg>Juliaは、扱いやすさ・強力さ・効率性の前例のない組み合わせを1つの言語で実現しようとしています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia also defines the types &lt;x1/&gt;Int&lt;x2/&gt; and &lt;x3/&gt;UInt&lt;x4/&gt;, which are aliases for the system's signed and unsigned
 native integer types respectively:</seg>
       </tuv>
@@ -13114,6 +13143,16 @@ level operators and functions, in a way that is independent of the underlying st
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Operators are just functions with special notation — to extend
+addition to new user-defined data types, you define new methods for the
+&lt;c0&gt;&lt;s1&gt;+&lt;/s1&gt;&lt;/c0&gt; function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082506Z" creationid="hsugawa8651" creationdate="20181118T082432Z">
+        <seg>これに対してJuliaの演算子は（特殊な記法を持った）単なる関数に過ぎません。 ユーザーが定義したデータ型に対して加算処理を追加したい場合は、&lt;c0&gt;&lt;s1&gt;+&lt;/s1&gt;&lt;/c0&gt; 関数に対して新たなメソッドを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Optionally, with this form you can also specialize on the type of &lt;x1/&gt;dest&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131651Z" creationid="hsugawa8651" creationdate="20181113T131651Z">
@@ -13267,6 +13306,18 @@ MIME types) of user-defined types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041654Z" creationid="hsugawa8651" creationdate="20181112T041654Z">
         <seg>Partially implemented by:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Partly because of run-time type inference (augmented by optional type
+annotations), and partly because of a strong focus on performance from
+the inception of the project, Julia’s computational efficiency exceeds
+that of other dynamic languages, and even rivals that of
+statically-compiled languages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082529Z" creationid="hsugawa8651" creationdate="20181118T082529Z">
+        <seg>実行時型推論（任意の型注釈で補うこともできます）によって、またプロジェクト発足時からの性能に対する強い欲求によって、Juliaの計算効率は他の動的言語を圧倒し、静的コンパイル言語と競うレベルにあります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -17011,6 +17062,18 @@ statically compile.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This model is a
+good fit for mathematical programming, where it is unnatural for the
+first argument to “own” an operation as in traditional object-oriented
+dispatch.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082414Z" creationid="hsugawa8651" creationdate="20181118T082414Z">
+        <seg>このモデルは数値計算にとても適しています。 従来のオブジェクト指向ディスパッチのように、第一引数が演算子を「所有」するのは不自然です。 
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This much was already mentioned briefly when
 composite types were introduced.</seg>
       </tuv>
@@ -17989,6 +18052,18 @@ objects.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155732Z" creationid="hsugawa8651" creationdate="20181117T155732Z">
         <seg>外部コンストラクタのメソッドは、追加の利便性を提供する問題に対処することに成功しています。 オブジェクトを構築するためのメソッドです。これらのメソッドは、次の2つのユースケースに対応しています。 この章の導入:インバリアントの適用、自己参照の可能化 オブジェクトを選択します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>While the casual programmer need not explicitly use types or multiple
+dispatch, they are the core unifying features of Julia: functions are
+defined on different combinations of argument types, and applied by
+dispatching to the most specific matching definition.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082337Z" creationid="hsugawa8651" creationdate="20181118T082337Z">
+        <seg>カジュアルプログラマは型や多重ディスパッチを明示的に使う必要はありませんが、これらはJuliaの基礎となる機能です。 関数はさまざまな引数の組み合わせに対して定義され、実行時には最も当てはまる定義が適用されます。 
+</seg>
       </tuv>
     </tu>
     <tu>
