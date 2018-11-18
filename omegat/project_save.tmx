@@ -4300,6 +4300,14 @@ accessing the diagonal elements from the first "page" of &lt;x5/&gt;A&lt;x6/&gt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Arrays of plain data types exhibit the same behavior.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123807Z" creationid="hsugawa8651" creationdate="20181118T123807Z">
+        <seg>プレーン・データ型の配列は、同じ動作を示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Arrays of unknown size (C99-compliant variable length structs specified by &lt;x1/&gt;[]&lt;x2/&gt; or &lt;x3/&gt;[0]&lt;x4/&gt;) are not directly supported.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T022808Z" creationid="hsugawa8651" creationdate="20181116T022808Z">
@@ -11034,6 +11042,15 @@ to use computed values as function names by staging through &lt;x3/&gt;`eval`&lt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, not all object fields are
+references.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123754Z" creationid="hsugawa8651" creationdate="20181118T123754Z">
+        <seg>ただし、すべてのオブジェクト・フィールドが 参照。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, numeric literal coefficients parse similarly to unary operators when
 combined with exponentiation.</seg>
       </tuv>
@@ -13320,6 +13337,15 @@ to the specified type. For example, the following call:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia considers some types to be "plain data", meaning all of their data is self-contained
+and does not reference other objects.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123756Z" creationid="hsugawa8651" creationdate="20181118T123756Z">
+        <seg>Juliaは、いくつかのタイプを「プレーン・データ」と見なし、すべてのデータが自己完結型であることを意味しています。 他のオブジェクトは参照されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia does not have an analog of MATLAB's &lt;x1/&gt;clear&lt;x2/&gt; function; once a name is defined in a Julia
 session (technically, in module &lt;x3/&gt;Main&lt;x4/&gt;), it is always present.</seg>
       </tuv>
@@ -13589,6 +13615,15 @@ naturally and automatically.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132201Z" creationid="hsugawa8651" creationdate="20181113T132201Z">
         <seg>Juliaのプロモーションシステムは、引数型の混合物に対して、単に「働く」演算を行う。 自動的に自動的に。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia's system for object construction
+addresses all of these cases and more.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123734Z" creationid="hsugawa8651" creationdate="20181118T123734Z">
+        <seg>ジュリアのオブジェクト構築システム これらすべてのケースに対応しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15092,6 +15127,14 @@ indices.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121201Z" creationid="hsugawa8651" creationdate="20181118T121201Z">
         <seg>そうでない場合は、&lt;x1/&gt;uuid&lt;x2/&gt;に一致するマニフェストスタンザが&lt;x3/&gt;gitツリーsha1&lt;x4/&gt;エントリを持つ場合は、&lt;x5/&gt;uuid&lt;x6/&gt;の確定ハッシュ関数を計算して、&lt;x13/&gt;&lt;x9/&gt;の呼び出しを行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Outer Constructor Methods</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123740Z" creationid="hsugawa8651" creationdate="20181118T123740Z">
+        <seg>外部コンストラクタのメソッド</seg>
       </tuv>
     </tu>
     <tu>
@@ -17940,6 +17983,15 @@ is 1), and follows the Julia-convention of 1-based indexing.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The initial contents of a plain data type is
+undefined:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123801Z" creationid="hsugawa8651" creationdate="20181118T123801Z">
+        <seg>プレーン・データ型の初期内容は、次のとおりです。 未定義:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The inner constructor method can then use the incomplete
 object, finishing its initialization before returning it.</seg>
       </tuv>
@@ -18292,6 +18344,15 @@ example requires chaining multiple uses of the ternary operator together:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121155Z" creationid="hsugawa8651" creationdate="20181118T121155Z">
         <seg>プロジェクト環境のパスマップ&lt;x1/&gt;は、マニフェストファイルが存在する場合は、マニフェストファイルによって決定されます。マニフェストが存在しない場合は、そのファイルが空になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The plain data types consist of primitive types (e.g. &lt;x3/&gt;Int&lt;x4/&gt;)
+and immutable structs of other plain data types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123759Z" creationid="hsugawa8651" creationdate="20181118T123759Z">
+        <seg>プレーン・データ型は、プリミティブ型(例えば、&lt;x3/&gt;Int&lt;x4/&gt;)で構成されています。 その他のプレーン・データ型の不変構造体です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19425,6 +19486,14 @@ commonly passed in registers when using C or Julia calling conventions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223844Z" creationid="hsugawa8651" creationdate="20181109T223844Z">
         <seg>この引数は、containingメソッドが定義された時にコンパイル時に評価されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This avoids the need to continually check for &lt;x1/&gt;null&lt;x2/&gt; values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123751Z" creationid="hsugawa8651" creationdate="20181118T123751Z">
+        <seg>これにより、&lt;x1/&gt;null&lt;x2/&gt;の値を連続的にチェックする必要がなくなります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21191,6 +21260,15 @@ there is a simpler algorithm.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>While you are allowed to create objects with uninitialized fields, any access to an uninitialized
+reference is an immediate error:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123745Z" creationid="hsugawa8651" creationdate="20181118T123745Z">
+        <seg>初期化されていないフィールドを持つオブジェクトを作成することが許可されている間に、初期化されていないオブジェクトへのアクセス権がある 参照は即時エラーです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>William Kahan&lt;x1/&gt;, commonly known as the "Father
 of Floating-Point".</seg>
       </tuv>
@@ -21339,6 +21417,14 @@ the greatest size (potentially including padding).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151150Z" creationid="hsugawa8651" creationdate="20181117T151150Z">
         <seg>&lt;x1/&gt;の近似を知ることができるのなら、それは&lt;x x/&gt;&lt;x2/&gt;の近似値を得ることができる。 最大サイズ(パディングを含む可能性があります)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can pass incomplete objects to other functions from inner constructors to delegate their completion:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123812Z" creationid="hsugawa8651" creationdate="20181118T123812Z">
+        <seg>不完全なオブジェクトを内部コンストラクタから他の関数に渡して、その完了を委任することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33579,6 +33665,26 @@ julia&gt; foo.baz
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; struct HasPlain
+           n::Int
+           HasPlain() = new()
+       end
+
+julia&gt; HasPlain()
+HasPlain(438103441441)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123802Z" creationid="hsugawa8651" creationdate="20181118T123802Z">
+        <seg>julia&gt; struct HasPlain
+           n::Int
+           HasPlain() = new()
+       end
+
+julia&gt; HasPlain()
+HasPlain(438103441441)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; struct NoFields
        end
 
@@ -35439,6 +35545,16 @@ julia&gt; angle(1 + 2im) &lt;x6/&gt; phase angle in radians
            x + y
        end
 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; z.data
+ERROR: UndefRefError: access to undefined reference</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123747Z" creationid="hsugawa8651" creationdate="20181118T123747Z">
+        <seg>julia&gt; z.data
+ERROR: UndefRefError: access to undefined reference</seg>
       </tuv>
     </tu>
     <tu>
