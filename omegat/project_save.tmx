@@ -3344,6 +3344,14 @@ fused with any nested "dot" calls.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A curated list of useful learning resources to help new users get started can be found on the &lt;a0&gt;learning&lt;/a0&gt; page of the main Julia web site.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183249Z" creationid="hsugawa8651" creationdate="20181118T183249Z">
+        <seg>新しいユーザを支援するための有用な学習リソースのリストは、Julia Webサイトの&lt;a0&gt;learning&lt;/a0&gt; ページに掲載されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A curated list of useful learning resources to help new users get started can be found on the &lt;x1/&gt;learning&lt;x2/&gt; page of the main Julia web site.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224812Z" creationid="hsugawa8651" creationdate="20181109T224812Z">
@@ -8460,6 +8468,14 @@ iteration&lt;x8/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Control whether inlining is permitted, including overriding &lt;c0&gt;@inline&lt;/c0&gt; declarations</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183207Z" creationid="hsugawa8651" creationdate="20181118T183207Z">
+        <seg>&lt;c0&gt;@inline&lt;/c0&gt;宣言の上書きを含め、インライン化が許可されているかどうかを制御する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Control whether inlining is permitted, including overriding &lt;x1/&gt;@inline&lt;x2/&gt; declarations</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224750Z" creationid="hsugawa8651" creationdate="20181109T224750Z">
@@ -9357,8 +9373,8 @@ can be tedious compared to "normal" Julia syntax.</seg>
       <tuv lang="EN-US">
         <seg>Disallow or enable unsafe floating point optimizations (overrides @fastmath declaration)</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224756Z" creationid="hsugawa8651" creationdate="20181109T224756Z">
-        <seg>安全でない浮動小数点の最適化を許可または有効にします(@ファストマト宣言を無効にします)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183222Z" creationid="hsugawa8651" creationdate="20181109T224756Z">
+        <seg>安全でない浮動小数点の最適化を許可または有効にします@fastmath宣言を無効にします)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14789,6 +14805,14 @@ Julia represents its own code as a data structure of the language itself.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224739Z" creationid="hsugawa8651" creationdate="20181109T224739Z">
         <seg>CPU機能の使用を制限&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;に制限します。&lt;x4/&gt;ヘルプ&lt;x5/&gt;に設定すると、使用可能なオプションが表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Limit usage of cpu features up to &lt;target&gt;; set to &lt;c0&gt;help&lt;/c0&gt; to see the available options</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183146Z" creationid="hsugawa8651" creationdate="20181118T183146Z">
+        <seg>CPU機能の使用を制限&lt;target&gt;に制限します。&lt;c0&gt;help&lt;/c0&gt;に設定すると、使用可能なオプションが表示されます。</seg>
       </tuv>
     </tu>
     <tu>
