@@ -2023,6 +2023,26 @@ The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s0&gt;&lt;/s0&gt;$ julia
+               _
+   _       _ _(_)_     |  A fresh approach to technical computing
+  (_)     | (_) (_)    |  Documentation: http://docs.julialang.org
+   _ _   _| |_  __ _   |  Type "?help" for help.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T083821Z" creationid="hsugawa8651" creationdate="20181118T083821Z">
+        <seg>&lt;s0&gt;&lt;/s0&gt;$ julia
+               _
+   _       _ _(_)_     |  A fresh approach to technical computing
+  (_)     | (_) (_)    |  Documentation: http://docs.julialang.org
+   _ _   _| |_  __ _   |  Type "?help" for help.&lt;s0&gt;&lt;/s0&gt;$ julia
+               _
+   _       _ _(_)_     |  A fresh approach to technical computing
+  (_)     | (_) (_)    |  Documentation: http://docs.julialang.org
+   _ _   _| |_  __ _   |  Type "?help" for help.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x1/&gt; 32-bit or 64-bit system:
 julia&gt; typeof(3000000000)
 Int64</seg>
@@ -8240,6 +8260,16 @@ being called via the wrong &lt;x5/&gt;libc&lt;x6/&gt; library and cause Julia to
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Download and install Julia by
+following the instructions at
+&lt;a0&gt;http://julialang.org/downloads/&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T083732Z" creationid="hsugawa8651" creationdate="20181118T083732Z">
+        <seg>&lt;a0&gt;http://julialang.org/downloads/&lt;/a0&gt; にある手順に従い、Juliaをダウンロードしてインストールしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Download and install Julia by following the instructions at &lt;x1/&gt;https://julialang.org/downloads/&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224249Z" creationid="hsugawa8651" creationdate="20181109T224249Z">
@@ -10238,6 +10268,15 @@ session with a trailing semicolon, its value is not shown.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If an expression is entered into an interactive session
+with a trailing semicolon, its value is not shown.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T083934Z" creationid="hsugawa8651" creationdate="20181118T083934Z">
+        <seg>式の後ろにセミコロンをつけて入力すると、値は表示されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If any inner constructor method is defined, no default constructor method is provided: it is presumed
 that you have supplied yourself with all the inner constructors you need.</seg>
       </tuv>
@@ -11863,6 +11902,15 @@ values.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia installation is straightforward, whether using precompiled
+binaries or compiling from source.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T083710Z" creationid="hsugawa8651" creationdate="20181118T083710Z">
+        <seg>コンパイル済のバイナリを使うのであれ、ソースからコンパイルするのであれ、Juliaのインストールは簡単です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia installation is straightforward, whether using precompiled binaries or compiling from source.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224247Z" creationid="hsugawa8651" creationdate="20181109T224247Z">
@@ -13134,6 +13182,17 @@ into a function call as individual arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230819Z" creationid="hsugawa8651" creationdate="20181109T230819Z">
         <seg>一方、条件付きチェーンの最後では、任意のタイプの表現を使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once
+the user has entered a complete expression, such as &lt;c8&gt;&lt;s9&gt;1&lt;/s9&gt; &lt;s10&gt;+&lt;/s10&gt; &lt;s11&gt;2&lt;/s11&gt;&lt;/c8&gt;, and
+hits enter, the interactive session evaluates the expression and shows
+its value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T083924Z" creationid="hsugawa8651" creationdate="20181118T083924Z">
+        <seg>ユーザーが完全な式、例えば 1 + 2 を入力し、エンターキーを押すと、その式が評価され、値が表示されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15248,6 +15307,19 @@ smaller for smaller values and larger for larger values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111227Z" creationid="hsugawa8651" creationdate="20181112T111227Z">
         <seg>2つの隣接する表現可能浮動小数点数の間の距離は一定ではありませんが 小さい値では小さくなり、大きい値ほど大きい値になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The easiest way to learn and experiment with Julia is by starting an
+interactive session (also known as a read-eval-print loop or “repl”)
+by double-clicking the Julia executable or running &lt;c0&gt;&lt;s1&gt;julia&lt;/s1&gt;&lt;/c0&gt; from the
+command line:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T083810Z" creationid="hsugawa8651" creationdate="20181118T083810Z">
+        <seg>Juliaを学んだり試したりする一番簡単な方法は、インタラクティブ・セッション（read-eval-print loop、もしくは”repl”とも呼ばれるものです）を使ったものです。セッションを起動するには、Juliaの実行ファイルをダブルクリックするか、コマンドラインから&lt;c0&gt;&lt;s1&gt;julia&lt;/s1&gt;&lt;/c0&gt; を実行します。
+
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -17478,6 +17550,15 @@ Julia &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized) &lt;x4/&gt;f.(args.
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To exit the interactive session, type &lt;c0&gt;&lt;s1&gt;^D&lt;/s1&gt;&lt;/c0&gt; — the control key
+together with the &lt;c2&gt;&lt;s3&gt;d&lt;/s3&gt;&lt;/c2&gt; key or type &lt;c4&gt;&lt;s5&gt;quit()&lt;/s5&gt;&lt;/c4&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T083847Z" creationid="hsugawa8651" creationdate="20181118T083847Z">
+        <seg>インタラクティブ・セッションを終了するには、^D — コントロールキーと d キーを同時に押す — もしくは、 quit() と入力してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To exit the interactive session, type &lt;x1/&gt;CTRL-D&lt;x2/&gt; (press the Control/&lt;x3/&gt;^&lt;x4/&gt; key together with the &lt;x5/&gt;d&lt;x6/&gt; key), or type
 &lt;x7/&gt;exit()&lt;x8/&gt;.</seg>
       </tuv>
@@ -18030,6 +18111,15 @@ field alignment.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152227Z" creationid="hsugawa8651" creationdate="20181117T152227Z">
         <seg>&lt;x1/&gt;"ccall"&lt;x2/&gt;"にデータを渡す場合は、&lt;x3/&gt;'ポインタ''&lt;x4/&gt;関数を使用しないことをお勧めします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When run in interactive
+mode, &lt;c6&gt;&lt;s7&gt;julia&lt;/s7&gt;&lt;/c6&gt; displays a banner and prompts the user for input.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T083908Z" creationid="hsugawa8651" creationdate="20181118T083908Z">
+        <seg>インタラクティブ・モードで起動すると、 julia のバナーが表示され、プロンプトがユーザーの入力を待ちます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33836,6 +33926,41 @@ s[k2] == qs[k2]                        &lt;x5/&gt; =&gt; true</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030601Z" creationid="hsugawa8651" creationdate="20181114T030601Z">
         <seg>x&lt;x1/&gt;は数値ではありません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>| | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 0.4.3 (2016-01-12 21:37 UTC)
+ _/ |\__'_|_|_|\__'_|  |
+|__/                   |  x86_64-apple-darwin13.1.0
+
+julia&gt; 1 + 2
+3
+
+julia&gt; ans
+3</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T083825Z" creationid="hsugawa8651" creationdate="20181118T083825Z">
+        <seg>| | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 0.4.3 (2016-01-12 21:37 UTC)
+ _/ |\__'_|_|_|\__'_|  |
+|__/                   |  x86_64-apple-darwin13.1.0
+
+julia&gt; 1 + 2
+3
+
+julia&gt; ans
+3| | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 0.4.3 (2016-01-12 21:37 UTC)
+ _/ |\__'_|_|_|\__'_|  |
+|__/                   |  x86_64-apple-darwin13.1.0
+
+julia&gt; 1 + 2
+3
+
+julia&gt; ans
+3</seg>
       </tuv>
     </tu>
     <tu>
