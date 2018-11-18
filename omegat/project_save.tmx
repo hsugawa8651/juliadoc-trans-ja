@@ -15538,8 +15538,10 @@ command line:</seg>
 known as a read-eval-print loop or "REPL") by double-clicking the Julia executable or running
 &lt;x1/&gt;julia&lt;x2/&gt; from the command line:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224254Z" creationid="hsugawa8651" creationdate="20181109T224254Z">
-        <seg>Juliaを学習して実験する最も簡単な方法は、対話型セッションを開始することです。 Julia実行可能ファイルをダブルクリックするか、または実行することによって、read-eval-printループまたはREPLと呼ばれる既知の コマンドラインから&lt;x1/&gt;ジュリア&lt;x2/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T091013Z" creationid="hsugawa8651" creationdate="20181109T224254Z">
+        <seg>Juliaを学んだり試したりする一番簡単な方法は、インタラクティブ・セッション（read-eval-print loop、もしくは”repl”とも呼ばれるものです）を使ったものです。セッションを起動するには、Juliaの実行ファイルをダブルクリックするか、コマンドラインから&lt;x1/&gt;julia&lt;x2/&gt;を実行します。
+
+</seg>
       </tuv>
     </tu>
     <tu>
