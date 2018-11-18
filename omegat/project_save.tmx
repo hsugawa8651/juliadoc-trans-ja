@@ -3973,6 +3973,14 @@ of relatively slower performance.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Additionally, Julia provides software support for &lt;a0&gt;Arbitrary Precision Arithmetic&lt;/a0&gt;, which can handle operations on numeric values that cannot be represented effectively in native hardware representations, but at the cost of relatively slower performance.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T184625Z" creationid="hsugawa8651" creationdate="20181118T184625Z">
+        <seg>さらに、ジュリアは &lt;a0&gt;Arbitrary Precision Arithmetic&lt;/a0&gt;をソフトウェアサポートします。ネイティブのハードウェア表現では効果的に表現できないが、コストでは効果的に表現できない値 比較的遅いパフォーマンスとなるような、数値の操作を処理できます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Additionally, full support for &lt;x1/&gt;Complex and Rational Numbers&lt;x2/&gt; is built on top of these primitive
 numeric types.</seg>
       </tuv>
@@ -10439,6 +10447,14 @@ the following program, when compiled with &lt;x5/&gt;julia -O3&lt;x6/&gt; genera
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, &lt;c0&gt;1&lt;/c0&gt; is an integer literal, while &lt;c1&gt;1.0&lt;/c1&gt; is a floating-point literal; their binary in-memory representations as objects are numeric primitives.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T184442Z" creationid="hsugawa8651" creationdate="20181118T184442Z">
+        <seg>たとえば、&lt;c0&gt;1&lt;/c0&gt;は整数リテラルであり、&lt;c1&gt;1.0&lt;/c1&gt;は浮動小数点リテラルです。それらのオブジェクトの、2進数メモリー内表現が、数値プリミティブです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, &lt;x1/&gt;1&lt;x2/&gt; is an integer literal, while &lt;x3/&gt;1.0&lt;x4/&gt; is a floating-point literal; their binary
 in-memory representations as objects are numeric primitives.</seg>
       </tuv>
@@ -14481,6 +14497,14 @@ floating-point value:</seg>
 bitwise operators as well as standard mathematical functions are defined over them.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225045Z" creationid="hsugawa8651" creationdate="20181109T225045Z">
+        <seg>Juliaは、さまざまな原始的な数値型を提供し、算術演算の完全な補完を提供します。 ビット演算子と標準数学関数がそれらの上に定義されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia provides a broad range of primitive numeric types, and a full complement of arithmetic and bitwise operators as well as standard mathematical functions are defined over them.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T184452Z" creationid="hsugawa8651" creationdate="20181118T184452Z">
         <seg>Juliaは、さまざまな原始的な数値型を提供し、算術演算の完全な補完を提供します。 ビット演算子と標準数学関数がそれらの上に定義されています。</seg>
       </tuv>
     </tu>
@@ -21210,6 +21234,14 @@ directly onto numeric types and operations that are natively supported on modern
 allowing Julia to take full advantage of computational resources.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225049Z" creationid="hsugawa8651" creationdate="20181109T225049Z">
+        <seg>これらのマップ 現代のコンピューターでネイティブにサポートされている数値型や操作に直接 ジュリアが計算資源を最大限に活用できるようにすることです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These map directly onto numeric types and operations that are natively supported on modern computers, thus allowing Julia to take full advantage of computational resources.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T184456Z" creationid="hsugawa8651" creationdate="20181118T184456Z">
         <seg>これらのマップ 現代のコンピューターでネイティブにサポートされている数値型や操作に直接 ジュリアが計算資源を最大限に活用できるようにすることです。</seg>
       </tuv>
     </tu>
