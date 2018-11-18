@@ -6875,6 +6875,14 @@ over the dimensions of the array, collecting the offset in each dimension into t
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Brief description</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094355Z" creationid="hsugawa8651" creationdate="20181118T094355Z">
+        <seg>簡単な説明</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Brief description&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094059Z" creationid="hsugawa8651" creationdate="20181118T094059Z">
@@ -7044,6 +7052,16 @@ a 64-bit floating-point value.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111220Z" creationid="hsugawa8651" creationdate="20181112T111220Z">
         <seg>定義では&lt;x1/&gt;eps(1.0)&lt;x2/&gt;は&lt;x3/&gt;(Float64)&lt;x4/&gt;と同じであり、&lt;x5/&gt;は&lt;x5/&gt;1.0&lt;x6/&gt;である。 64ビットの浮動小数点値です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By extending
+the &lt;x5/&gt;`eltype`&lt;x6/&gt; method, we can give that information to Julia and help it make more specialized
+code in the more complicated methods.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094302Z" creationid="hsugawa8651" creationdate="20181118T094302Z">
+        <seg>&lt;x5/&gt;`eltype`&lt;x6/&gt; の方法を拡張することにより、Julia に情報を提供し、より専門的なものにする手助けをすることができます。 より複雑なメソッドのコードです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12704,6 +12722,14 @@ for &lt;x2/&gt;x&lt;x3/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Methods to implement</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094350Z" creationid="hsugawa8651" creationdate="20181118T094350Z">
+        <seg>実装する方法</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Mixed-type comparisons between signed integers, unsigned integers, and floats can be tricky.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030621Z" creationid="hsugawa8651" creationdate="20181114T030621Z">
@@ -13983,6 +14009,14 @@ an interactive session.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150802Z" creationid="hsugawa8651" creationdate="20181117T150802Z">
         <seg>配列または構造体として表されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Required Methods</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094116Z" creationid="hsugawa8651" creationdate="20181118T094116Z">
+        <seg>必要なメソッド</seg>
       </tuv>
     </tu>
     <tu>
@@ -16180,6 +16214,14 @@ determining a single answer for a given set of arguments.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The number of items in each dimension, if known</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094113Z" creationid="hsugawa8651" creationdate="20181118T094113Z">
+        <seg>各次元のアイテム数(既知の場合)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The number of items, if known</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112228Z" creationid="hsugawa8651" creationdate="20181112T112228Z">
@@ -18322,6 +18364,15 @@ may lead to incorrect results or segmentation faults.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We also know the number of elements in our sequence, so
+we can extend &lt;x7/&gt;`length`&lt;x8/&gt;, too:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094310Z" creationid="hsugawa8651" creationdate="20181118T094310Z">
+        <seg>また、シーケンス内のエレメント数も知っています。 &lt;x7/&gt;の長さ&lt;x8/&gt;を拡張することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We believe there are many good reasons to prefer dynamic
 languages for these applications, and we do not expect their use to
 diminish.</seg>
@@ -18344,6 +18395,16 @@ diminish.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112506Z" creationid="hsugawa8651" creationdate="20181112T112506Z">
         <seg>すべての要素を繰り返し処理することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We can use many of the builtin methods that work with iterables,
+like &lt;x1/&gt;`in`&lt;x2/&gt;, or &lt;x3/&gt;`mean`&lt;x4/&gt; and &lt;x5/&gt;`std`&lt;x6/&gt; from the
+&lt;x7/&gt;Statistics&lt;x8/&gt; standard library module:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094125Z" creationid="hsugawa8651" creationdate="20181118T094125Z">
+        <seg>iterablesで動作する組み込みメソッドの多くを使うことができます。 &lt;x2/&gt;の&lt;x1/&gt;、&lt;x/&gt;、&lt;x3/&gt;、&lt;x4/&gt;、&lt;x6/&gt;'のように &lt;x7/&gt;統計情報&lt;x8/&gt;標準ライブラリモジュール:</seg>
       </tuv>
     </tu>
     <tu>
@@ -18620,6 +18681,15 @@ others &lt;x7/&gt;optionally&lt;x8/&gt; permit placing hidden arguments directly
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024734Z" creationid="hsugawa8651" creationdate="20181110T024734Z">
         <seg>これは、新しいコードを開発する際に不便な場合がありますが、優れた回避策があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>While this is starting to support more of the &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-array-indexing),
+there's still quite a number of behaviors missing.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094342Z" creationid="hsugawa8651" creationdate="20181118T094342Z">
+        <seg>これは、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man array indexing)のより多くのサポートを開始しています。 まだ多くの行動が失われています。</seg>
       </tuv>
     </tu>
     <tu>
