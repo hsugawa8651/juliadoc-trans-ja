@@ -12665,6 +12665,15 @@ not convert keys on insertion.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Like Lisp,
+Julia represents its own code as a data structure of the language itself.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100155Z" creationid="hsugawa8651" creationdate="20181118T100155Z">
+        <seg>Lispと同じように Juliaは自身のコードを言語自体のデータ構造として表しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Like ccall, all of these arguments will be evaluated at compile-time, when the containing method is defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153944Z" creationid="hsugawa8651" creationdate="20181109T153944Z">
@@ -16869,6 +16878,14 @@ as long as they don't affect the layout of the type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151235Z" creationid="hsugawa8651" creationdate="20181117T151235Z">
         <seg>関数の静的パラメータは、呼び出しシグネチャのタイプパラメータとして使用できます。 タイプのレイアウトに影響を与えない限りです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The strongest legacy of Lisp in the Julia language is its metaprogramming support.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100153Z" creationid="hsugawa8651" creationdate="20181118T100153Z">
+        <seg>Julia言語でのLispの最も強力なレガシーは、そのメタプログラミングのサポートです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -34260,8 +34277,9 @@ sinc   cosc</seg>
         <seg>sind   cosd   tand   cotd   secd   cscd
 asind  acosd  atand  acotd  asecd  acscd</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100143Z" creationid="hsugawa8651" creationdate="20181118T100143Z">
-        <seg>コサイド・コッド・コッド・コッド・セッド・cscd アシンド・アコシド・アンド・アコッドアセットアクシッド</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100144Z" creationid="hsugawa8651" creationdate="20181118T100143Z">
+        <seg>sind   cosd   tand   cotd   secd   cscd
+asind  acosd  atand  acotd  asecd  acscd</seg>
       </tuv>
     </tu>
     <tu>
