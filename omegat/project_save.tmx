@@ -12176,8 +12176,8 @@ integer literals and engineering notation for floating-point literals.</seg>
         <seg>Lightweight “green” threading
 (&lt;a0&gt;coroutines&lt;/a0&gt;)</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082816Z" creationid="hsugawa8651" creationdate="20181118T082816Z">
-        <seg>軽量で”greenな”スレッドシステム [1] （ コルーチン ）
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T083202Z" creationid="hsugawa8651" creationdate="20181118T082816Z">
+        <seg>軽量で”greenな”スレッドシステム [1] （ &lt;a0&gt;コルーチン&lt;/a0&gt; ）
 </seg>
       </tuv>
     </tu>
