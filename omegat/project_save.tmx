@@ -16683,8 +16683,8 @@ collection.</seg>
         <seg>There are several functions in the &lt;x3/&gt;Sys&lt;x4/&gt; module intended to make this easier:
 &lt;x5/&gt;isunix&lt;x6/&gt;, &lt;x7/&gt;islinux&lt;x8/&gt;, &lt;x9/&gt;isapple&lt;x10/&gt;, &lt;x11/&gt;isbsd&lt;x12/&gt;, and &lt;x13/&gt;iswindows&lt;x14/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224828Z" creationid="hsugawa8651" creationdate="20181109T224828Z">
-        <seg>&lt;x3/&gt;Sys&lt;x4/&gt;モジュールには、以下のような機能がいくつか用意されています。 &lt;x5/&gt;イシュニク&lt;x6/&gt;、&lt;x7/&gt;アリヌス&lt;x8/&gt;、&lt;x9/&gt;イサプリ&lt;x10/&gt;、&lt;x11/&gt;イズベスト&lt;x12/&gt;、&lt;x13/&gt;イスウィンドウズ&lt;x14/&gt;。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T093424Z" creationid="hsugawa8651" creationdate="20181109T224828Z">
+        <seg>&lt;x3/&gt;Sys&lt;x4/&gt;モジュールには、これをより容易にすることを目的とした、いくつかの関数があります。&lt;x5/&gt;isunix&lt;x6/&gt;, &lt;x7/&gt;islinux&lt;x8/&gt;, &lt;x9/&gt;isapple&lt;x10/&gt;, &lt;x11/&gt;isbsd&lt;x12/&gt;, and &lt;x13/&gt;iswindows&lt;x14/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
