@@ -10244,6 +10244,14 @@ are compared according to the &lt;x1/&gt;IEEE 754 standard&lt;x2/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Floating-point numbers have &lt;a0&gt;two zeros&lt;/a0&gt;, positive zero and negative zero.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190648Z" creationid="hsugawa8651" creationdate="20181118T190648Z">
+        <seg>浮動小数点数は&lt;a0&gt;2つのゼロ &lt;/a0&gt;を持ちます。すなわち、正のゼロと、負のゼロです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Floating-point numbers have &lt;x1/&gt;two zeros&lt;x2/&gt;, positive zero
 and negative zero.</seg>
       </tuv>
@@ -11444,6 +11452,14 @@ like C</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Half-precision floating-point numbers are also supported (&lt;a0&gt;&lt;c1&gt;Float16&lt;/c1&gt;&lt;/a0&gt;), but they are implemented in software and use &lt;a2&gt;&lt;c3&gt;Float32&lt;/c3&gt;&lt;/a2&gt; for calculations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190510Z" creationid="hsugawa8651" creationdate="20181118T190510Z">
+        <seg>半精度浮動小数点数もサポートされている(&lt;a0&gt;&lt;c1&gt;Float16&lt;/c1&gt;&lt;/a0&gt;)が、これらの浮動小数点数は次のようになります。 ソフトウェアで実装され、&lt;a2&gt;&lt;c3&gt;Float32&lt;/c3&gt;&lt;/a2&gt; を使用して計算に使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Half-precision floating-point numbers are also supported (&lt;x1/&gt;`Float16`&lt;x2/&gt;), but they are
 implemented in software and use &lt;x3/&gt;`Float32`&lt;x4/&gt; for calculations.</seg>
       </tuv>
@@ -11709,6 +11725,14 @@ can be used in the same (covariant) context of the input argument to a &lt;x11/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152108Z" creationid="hsugawa8651" creationdate="20181117T152108Z">
         <seg>ここで、入力&lt;x1/&gt;p&lt;x2/&gt;は、タイプ&lt;x3/&gt;Ref{gsl_mutation}&lt;x4/&gt;であることを宣言され、メモリは、メモリを意味する。 &lt;x5/&gt;p&lt;x6/&gt;は、ジュリアまたはC.Aポインタによって割り当てられたメモリへのC.Aポインタによって管理されることがあります。 &lt;x7/&gt;Ptr{gsl mutation}&lt;x8/&gt;であるが、&lt;x9/&gt;'Base.チコンベルト'&lt;x10/&gt;を用いて変換することができ、したがって は、&lt;x11/&gt;`ccall'&lt;x12/&gt;への入力引数の同じ(共変)コンテキストで使用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Hexadecimal floating-point literals are also valid, but only as &lt;a0&gt;&lt;c1&gt;Float64&lt;/c1&gt;&lt;/a0&gt; values, with &lt;c2&gt;p&lt;/c2&gt; preceding the base-2 exponent:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190437Z" creationid="hsugawa8651" creationdate="20181118T190437Z">
+        <seg>16進数浮動小数点リテラルは有効であるが、&lt;x1/&gt;'Float64&lt;x2/&gt;の値としてのみ有効である。 &lt;x3/&gt;p&lt;x4/&gt;は、ベース2指数の前にあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14990,6 +15014,14 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110539Z" creationid="hsugawa8651" creationdate="20181112T110539Z">
         <seg>リテラル浮動小数点数は、標準形式で表されます。 &lt;x1/&gt;E表記法&lt;x2/&gt;必要に応じて&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Literal floating-point numbers are represented in the standard formats, using &lt;a0&gt;E-notation&lt;/a0&gt; when necessary:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190352Z" creationid="hsugawa8651" creationdate="20181118T190352Z">
+        <seg>リテラル浮動小数点数は、標準形式で表されます。必要に応じて &lt;a0&gt;E表記法&lt;/a0&gt;が用いられます</seg>
       </tuv>
     </tu>
     <tu>
@@ -19011,6 +19043,14 @@ dispatch&lt;/a0&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The above results are all &lt;a0&gt;&lt;c1&gt;Float64&lt;/c1&gt;&lt;/a0&gt; values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190407Z" creationid="hsugawa8651" creationdate="20181118T190407Z">
+        <seg>上記の結果は全て&lt;x1/&gt;'Float64&lt;x2/&gt;の値である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The above results are all &lt;x1/&gt;`Float64`&lt;x2/&gt; values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110619Z" creationid="hsugawa8651" creationdate="20181112T110619Z">
@@ -20892,6 +20932,14 @@ rely on the default fallback &lt;x2/&gt;`Broadcast.DefaultArrayStyle`&lt;x3/&gt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131129Z" creationid="hsugawa8651" creationdate="20181113T131129Z">
         <seg>単項変異体の状態 特定のブロードキャスト動作や出力タイプを実装することを意図しており デフォルトのフォールバック&lt;x2/&gt;`ブロードキャスト.DefaultArrayStyle'&lt;x3/&gt;に依存します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The underscore &lt;c0&gt;_&lt;/c0&gt; can be used as digit separator:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190521Z" creationid="hsugawa8651" creationdate="20181118T190521Z">
+        <seg>アンダースコア&lt;x1/&gt;_&lt;x2/&gt;は、桁区切り記号として使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23124,6 +23172,14 @@ for the last entry in a conditional chain is an error:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112254Z" creationid="hsugawa8651" creationdate="20181112T112254Z">
         <seg>&lt;x1/&gt;IteratorSizeによって返される値&lt;x/&gt;(IterType)&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Values can be converted to &lt;a0&gt;&lt;c1&gt;Float32&lt;/c1&gt;&lt;/a0&gt; easily:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190425Z" creationid="hsugawa8651" creationdate="20181118T190425Z">
+        <seg>値を&lt;x1/&gt;`Float32'&lt;x2/&gt;に変換することは容易にできます。</seg>
       </tuv>
     </tu>
     <tu>
