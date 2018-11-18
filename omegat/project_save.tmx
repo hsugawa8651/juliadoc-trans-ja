@@ -12391,6 +12391,16 @@ put it in &lt;c0&gt;&lt;s1&gt;~/.juliarc.jl&lt;/s1&gt;&lt;/c0&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you have code that you want executed whenever Julia is run, you can put it in &lt;c0&gt;~/.julia/config/startup.jl&lt;/c0&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T174046Z" creationid="hsugawa8651" creationdate="20181118T174046Z">
+        <seg>Juliaの起動時に毎回実行したいコードがあれば、 &lt;c0&gt;/.julia/config/startup.jl&lt;/c0&gt; に書いておくことができます。
+
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you just want to install and use packages, simply use Julia's built-in package manager to add packages to your environment and write &lt;x1/&gt;import X&lt;x2/&gt; or &lt;x3/&gt;using X&lt;x4/&gt; in your code to load packages that you've added.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152754Z" creationid="hsugawa8651" creationdate="20181117T152754Z">
@@ -14669,6 +14679,14 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112010Z" creationid="hsugawa8651" creationdate="20181112T112010Z">
         <seg>&lt;x1/&gt;x&lt;x2/&gt;のリテラル0、または変数&lt;x3/&gt;x&lt;x4/&gt;のタイプ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Load &lt;c0&gt;&lt;file&gt;&lt;/c0&gt; immediately on all processors</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T174329Z" creationid="hsugawa8651" creationdate="20181118T174329Z">
+        <seg>すべてのプロセッサで&lt;c0&gt;&lt;file&gt;&lt;/c0&gt;を即時にロード</seg>
       </tuv>
     </tu>
     <tu>
@@ -17057,6 +17075,14 @@ iterable type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112352Z" creationid="hsugawa8651" creationdate="20181112T112352Z">
         <seg>逐次的反復は、&lt;x1/&gt;'reiterate'&lt;x2/&gt;関数によって実装される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Set &lt;dir&gt; as the home project/environment.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T174218Z" creationid="hsugawa8651" creationdate="20181118T174218Z">
+        <seg>&lt;dir&gt;をホームプロジェクト/環境として設定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20610,6 +20636,14 @@ those available for the &lt;c0&gt;&lt;s1&gt;perl&lt;/s1&gt;&lt;/c0&gt; and &lt;c
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T092737Z" creationid="hsugawa8651" creationdate="20181109T224520Z">
         <seg>他の言語（&lt;x1/&gt;perl&lt;x2/&gt; や &lt;x3/&gt;ruby&lt;x4/&gt; など）のように、Juliaを実行するには様々な方法やオプションがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are various ways to run Julia code and provide options, similar to those available for the &lt;c0&gt;perl&lt;/c0&gt; and &lt;c1&gt;ruby&lt;/c1&gt; programs:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T174145Z" creationid="hsugawa8651" creationdate="20181118T174145Z">
+        <seg>他の言語（&lt;c0&gt;perl&lt;/c0&gt; や &lt;c1&gt;ruby&lt;/c1&gt; など）のように、Juliaを実行するには様々な方法やオプションがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -39174,8 +39208,8 @@ end</seg>
       <tuv lang="EN-US">
         <seg>option will search through parent directories until a Project.toml or JuliaProject.toml file is found.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031541Z" creationid="hsugawa8651" creationdate="20181114T031541Z">
-        <seg>オプションは、Project.トミルまたはJuliaProject.トミルファイルが見つかるまで、親ディレクトリを検索します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T174249Z" creationid="hsugawa8651" creationdate="20181114T031541Z">
+        <seg>オプションは、Project.toml またはJuliaProject.tomlファイルが見つかるまで、親ディレクトリを検索します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -40973,6 +41007,18 @@ $ julia
 Greetings!</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224503Z" creationid="hsugawa8651" creationdate="20181109T224503Z">
+        <seg>안녕하세요?")' &gt; &lt;x1/&gt;/.julia/config/startup.jl
+$ julia
+Greetings!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>안녕하세요?")' &gt; ~/.julia/config/startup.jl
+$ julia
+Greetings!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T174105Z" creationid="hsugawa8651" creationdate="20181118T174105Z">
         <seg>안녕하세요?")' &gt; &lt;x1/&gt;/.julia/config/startup.jl
 $ julia
 Greetings!</seg>
