@@ -1738,6 +1738,238 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../../manual/arrays/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191817Z" creationid="hsugawa8651" creationdate="20181118T191817Z">
+        <seg>../../manual/arrays/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/calling-c-and-fortran-code/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191830Z" creationid="hsugawa8651" creationdate="20181118T191830Z">
+        <seg>../../manual/calling-c-and-fortran-code/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/code-loading/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191839Z" creationid="hsugawa8651" creationdate="20181118T191839Z">
+        <seg>../../manual/code-loading/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/embedding/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191837Z" creationid="hsugawa8651" creationdate="20181118T191837Z">
+        <seg>../../manual/embedding/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/environment-variables/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191834Z" creationid="hsugawa8651" creationdate="20181118T191834Z">
+        <seg>../../manual/environment-variables/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/faq/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191855Z" creationid="hsugawa8651" creationdate="20181118T191855Z">
+        <seg>../../manual/faq/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/handling-operating-system-variation/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191832Z" creationid="hsugawa8651" creationdate="20181118T191832Z">
+        <seg>../../manual/handling-operating-system-variation/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/metaprogramming/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191809Z" creationid="hsugawa8651" creationdate="20181118T191757Z">
+        <seg>../../manual/metaprogramming/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/missing/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191820Z" creationid="hsugawa8651" creationdate="20181118T191820Z">
+        <seg>../../manual/missing/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/networking-and-streams/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191822Z" creationid="hsugawa8651" creationdate="20181118T191822Z">
+        <seg>../../manual/networking-and-streams/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/noteworthy-differences/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191858Z" creationid="hsugawa8651" creationdate="20181118T191858Z">
+        <seg>../../manual/noteworthy-differences/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/parallel-computing/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191825Z" creationid="hsugawa8651" creationdate="20181118T191825Z">
+        <seg>../../manual/parallel-computing/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/performance-tips/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191847Z" creationid="hsugawa8651" creationdate="20181118T191847Z">
+        <seg>../../manual/performance-tips/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/profile/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191842Z" creationid="hsugawa8651" creationdate="20181118T191842Z">
+        <seg>../../manual/profile/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/running-external-programs/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191827Z" creationid="hsugawa8651" creationdate="20181118T191827Z">
+        <seg>../../manual/running-external-programs/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/stacktraces/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191844Z" creationid="hsugawa8651" creationdate="20181118T191844Z">
+        <seg>../../manual/stacktraces/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/style-guide/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191852Z" creationid="hsugawa8651" creationdate="20181118T191852Z">
+        <seg>../../manual/style-guide/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/unicode-input/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191900Z" creationid="hsugawa8651" creationdate="20181118T191900Z">
+        <seg>../../manual/unicode-input/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/workflow-tips/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191849Z" creationid="hsugawa8651" creationdate="20181118T191849Z">
+        <seg>../../manual/workflow-tips/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../arrays/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191914Z" creationid="hsugawa8651" creationdate="20181118T191914Z">
+        <seg>../arrays/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../base/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191902Z" creationid="hsugawa8651" creationdate="20181118T191902Z">
+        <seg>../base/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../collections/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191904Z" creationid="hsugawa8651" creationdate="20181118T191904Z">
+        <seg>../collections/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../constants/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191921Z" creationid="hsugawa8651" creationdate="20181118T191921Z">
+        <seg>../constants/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../file/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191923Z" creationid="hsugawa8651" creationdate="20181118T191923Z">
+        <seg>../file/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../math/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191906Z" creationid="hsugawa8651" creationdate="20181118T191906Z">
+        <seg>../math/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../multi-threading/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191918Z" creationid="hsugawa8651" creationdate="20181118T191918Z">
+        <seg>../multi-threading/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../numbers/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191908Z" creationid="hsugawa8651" creationdate="20181118T191908Z">
+        <seg>../numbers/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../parallel/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191916Z" creationid="hsugawa8651" creationdate="20181118T191916Z">
+        <seg>../parallel/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../strings/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191911Z" creationid="hsugawa8651" creationdate="20181118T191911Z">
+        <seg>../strings/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>.&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063530Z" creationid="hsugawa8651" creationdate="20181114T063530Z">
@@ -2273,6 +2505,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030856Z" creationid="hsugawa8651" creationdate="20181114T030856Z">
         <seg>&lt;\|&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Metaprogramming&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191807Z" creationid="hsugawa8651" creationdate="20181118T191807Z">
+        <seg>メタプログラミング</seg>
       </tuv>
     </tu>
     <tu>
