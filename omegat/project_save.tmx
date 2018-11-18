@@ -789,6 +789,14 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id man-getting-started)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120215Z" creationid="hsugawa8651" creationdate="20181118T120215Z">
+        <seg>(@id man getting started)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id man-interface-array)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113200Z" creationid="hsugawa8651" creationdate="20181112T113200Z">
@@ -841,6 +849,14 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134939Z" creationid="hsugawa8651" creationdate="20181117T134939Z">
         <seg>(@id man-supported-index-types)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@id man-vectorized)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120051Z" creationid="hsugawa8651" creationdate="20181118T120051Z">
+        <seg>[man-vectorized](@id man-vectorized)</seg>
       </tuv>
     </tu>
     <tu>
@@ -2586,6 +2602,15 @@ The operators &lt;x14/&gt;+&lt;x15/&gt;, &lt;x16/&gt;++&lt;x17/&gt; and &lt;x18/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x14/&gt;&lt;x15/&gt;&lt;x16/&gt; This
+loop fusion is not a compiler optimization that may or may not occur, it is a &lt;x17/&gt;syntactic guarantee&lt;x18/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120139Z" creationid="hsugawa8651" creationdate="20181118T120139Z">
+        <seg>&lt;x14/&gt;&lt;x15/&gt;&lt;x16/&gt; ループ融合はコンパイラーの最適化ではなく、あるいは発生する可能性のあるコンパイラーの最適化ではありません。&lt;x17/&gt;の構文保証&lt;x18/&gt;です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x16/&gt;count&lt;x17/&gt; is the number of workers to spawn on the node, and defaults
 to 1.</seg>
       </tuv>
@@ -2706,6 +2731,14 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161423Z" creationid="hsugawa8651" creationdate="20181114T161423Z">
         <seg>&lt;x4/&gt;ライブラリ&lt;x5/&gt;は以下のとおりです。 共有ライブラリの名前:(プラットフォーム固有の)ロードパスで使用可能な共有ライブラリ 名前で解決する必要があり、必要に応じて直接パスを指定することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x5/&gt;-p n&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120219Z" creationid="hsugawa8651" creationdate="20181118T120219Z">
+        <seg>&lt;x5/&gt;-p n&lt;x6/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3041,6 +3074,16 @@ by the combined behavior of its methods.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155705Z" creationid="hsugawa8651" creationdate="20181117T155705Z">
         <seg>コンストラクタは、その全体的な振る舞いが定義されているという点で、Juliaの他の関数と同じです。 それは、その方法の組み合わせによるものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A convenient syntax for this is &lt;x5/&gt;X .= ...&lt;x6/&gt;, which
+is equivalent to &lt;x7/&gt;broadcast!(identity, X, ...)&lt;x8/&gt; except that, as above, the &lt;x9/&gt;broadcast!&lt;x10/&gt; loop is
+fused with any nested "dot" calls.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120152Z" creationid="hsugawa8651" creationdate="20181118T120152Z">
+        <seg>このための便利な構文は&lt;x5/&gt;X.=.…&lt;x6/&gt;である。 は、&lt;x7/&gt;ブロードキャストと同等であり、&lt;x9/&gt;ブロードキャスト!&lt;x8/&gt;は、上記のように、&lt;x9/&gt;ブロードキャスト!&lt;x10/&gt;ループを意味します。 ネストされた「ドット」コールと融合されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7110,6 +7153,15 @@ for its &lt;x1/&gt;obj&lt;x2/&gt; field?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But that approach requires you to decide in advance
+which functions you want to vectorize.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120112Z" creationid="hsugawa8651" creationdate="20181118T120112Z">
+        <seg>しかしこのアプローチでは事前に決定する必要があります はベクトル化されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But, &lt;x2/&gt;g(x::T) where {T} = ccall(:notvalid, T, (T,), x)&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151243Z" creationid="hsugawa8651" creationdate="20181117T151243Z">
@@ -7340,6 +7392,15 @@ Possible fix, define
   g(x::Float64, y) in Main at none:1
 Possible fix, define
   g(::Float64, ::Float64)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Captured variables
+can create performance challenges as discussed in &lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;(@ref man-performance-tips).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120038Z" creationid="hsugawa8651" creationdate="20181118T120038Z">
+        <seg>キャプチャされた変数 &lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;(@ref manのパフォーマンス・ヒント)で説明されているように、パフォーマンス・チャレンジを作成することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9103,6 +9164,16 @@ values without literal forms as args.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Finally, the maximum efficiency is typically achieved when the output array of a vectorized operation
+is &lt;x1/&gt;pre-allocated&lt;x2/&gt;, so that repeated calls do not allocate new arrays over and over again for
+the results (see &lt;x3/&gt;Pre-allocating outputs&lt;x4/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120149Z" creationid="hsugawa8651" creationdate="20181118T120149Z">
+        <seg>最後に、最大効率は、ベクトル化された演算の出力アレイの場合に、典型的に達成される。 は&lt;x1/&gt;事前割り当て&lt;x2/&gt;であるため、繰り返し呼び出しは、新しいアレイを繰り返し割り当てないようにします。 結果(&lt;x3/&gt;事前割り当ての事前割り当て&lt;x/&gt;)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Finally, you can use &lt;x1/&gt;`ccall`&lt;x2/&gt; to actually generate a call to the library function.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223825Z" creationid="hsugawa8651" creationdate="20181109T223825Z">
@@ -9343,6 +9414,14 @@ signature for Windows:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example &lt;x18/&gt;sin&lt;x19/&gt; can be applied to all elements in the vector &lt;x20/&gt;A&lt;x21/&gt;, like so:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120102Z" creationid="hsugawa8651" creationdate="20181118T120102Z">
+        <seg>たとえば、&lt;x18/&gt;sin&lt;x19/&gt;は、&lt;x20/&gt;A&lt;X21/&gt;のベクトル&lt;x20/&gt;のすべての要素に適用できます。これは、次のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example &lt;x9/&gt;2^3x&lt;x10/&gt; is parsed as &lt;x11/&gt;2^(3x)&lt;x12/&gt;, and &lt;x13/&gt;2x^3&lt;x14/&gt; is parsed as &lt;x15/&gt;2*(x^3)&lt;x16/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T093824Z" creationid="hsugawa8651" creationdate="20181118T093824Z">
@@ -9367,6 +9446,16 @@ mathematical meaning to "cubing" a (non-square) array, but
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132451Z" creationid="hsugawa8651" creationdate="20181113T132451Z">
         <seg>たとえば &lt;x11/&gt;[1,2,3]^3&lt;x12/&gt;は定義されていません。これは、標準がないためです。 (非正方形の)配列を"cubing"するための数学的意味はあるが &lt;x13/&gt;[1,2,3].^3&lt;x14/&gt;は、要素を計算するために定義されています。 (または"ベクトル化された")結果&lt;x15/&gt;[1^3 2^3 3^3]&lt;x16/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example,
+&lt;x6/&gt;sin.(cos.(X))&lt;x7/&gt; is equivalent to &lt;x8/&gt;broadcast(x -&gt; sin(cos(x)), X)&lt;x9/&gt;, similar to &lt;x10/&gt;[sin(cos(x)) for x in X]&lt;x11/&gt;:
+there is only a single loop over &lt;x12/&gt;X&lt;x13/&gt;, and a single array is allocated for the result.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120137Z" creationid="hsugawa8651" creationdate="20181118T120137Z">
+        <seg>たとえば &lt;x6/&gt;sin.(cos.(X))&lt;x7/&gt;は、&lt;x8/&gt;ブロードキャスト(x-&gt;sin(cos(x))、X)&lt;x9/&gt;(X)&lt;x9/&gt;(x)&lt;x9/&gt;(x)に相当します。 &lt;x12/&gt;X&lt;x13/&gt;には1つのループしか存在せず、結果に対して単一の配列が割り当てられます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9418,6 +9507,15 @@ in-memory representations as objects are numeric primitives.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154704Z" creationid="hsugawa8651" creationdate="20181109T154704Z">
         <seg>たとえば、&lt;x11/&gt;任意の[x,y,z]&lt;x12/&gt;は、任意の値を含むことができる異機種間配列を構成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, &lt;x11/&gt;X .= sin.(Y)&lt;x12/&gt; is equivalent to &lt;x13/&gt;broadcast!(sin, X, Y)&lt;x14/&gt;,
+overwriting &lt;x15/&gt;X&lt;x16/&gt; with &lt;x17/&gt;sin.(Y)&lt;x18/&gt; in-place.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120155Z" creationid="hsugawa8651" creationdate="20181118T120155Z">
+        <seg>たとえば、&lt;x11/&gt;X.=sin.(Y)&lt;x12/&gt;は、&lt;x13/&gt;ブロードキャスト!(sin,X,Y)&lt;x14/&gt;に相当します。 &lt;x17/&gt;X&lt;x16/&gt;を&lt;x17/&gt;sinで上書きします。(Y)&lt;x18/&gt;インプレースで上書きします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9548,6 +9646,17 @@ infix syntax &lt;x3/&gt;A ⊗ B&lt;x4/&gt; for Kronecker products (&lt;x5/&gt;`k
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132636Z" creationid="hsugawa8651" creationdate="20181113T132636Z">
         <seg>たとえば、&lt;x1/&gt;(A,B)=kon(A,B)&lt;x2/&gt;を定義して便利な値を指定するとします。 infix syntax&lt;x3/&gt;A∩B&lt;x4/&gt;Kronecker製品の場合(&lt;x5/&gt;kon'&lt;x6/&gt;)、次に &lt;x7/&gt;[A,B].0.23[C,D]&lt;x8/&gt;は、追加符号化なしで&lt;x9/&gt;[AúC]&lt;x10/&gt;を計算する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, if you have &lt;x7/&gt;f(x,y) = 3x + 4y&lt;x8/&gt;, then &lt;x9/&gt;f.(pi,A)&lt;x10/&gt; will return
+a new array consisting of &lt;x11/&gt;f(pi,a)&lt;x12/&gt; for each &lt;x13/&gt;a&lt;x14/&gt; in &lt;x15/&gt;A&lt;x16/&gt;, and &lt;x17/&gt;f.(vector1,vector2)&lt;x18/&gt; will return
+a new vector consisting of &lt;x19/&gt;f(vector1[i],vector2[i])&lt;x20/&gt; for each index &lt;x21/&gt;i&lt;x22/&gt; (throwing an exception
+if the vectors have different length).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120119Z" creationid="hsugawa8651" creationdate="20181118T120119Z">
+        <seg>たとえば、&lt;x7/&gt;f(x,y)=3x+4y&lt;x8/&gt;の場合、&lt;x9/&gt;f.(pi,A)&lt;x10/&gt;は返されます。 &lt;x15/&gt;a&lt;x16/&gt;の&lt;x13/&gt;a&lt;x14/&gt;の&lt;x11/&gt;f(pi,a)&lt;x12/&gt;で構成される新しい配列であり、&lt;x17/&gt;f.(vector1,vector2)&lt;x18/&gt;は &lt;x19/&gt;f(vector1[i],vector2[i])&lt;x20/&gt;for each index&lt;X21/&gt;i&lt;x22/&gt;(例外をスローする)で構成される新しいベクトル ベクトルの長さが異なる場合。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10038,6 +10147,14 @@ are identical to the passed values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150046Z" creationid="hsugawa8651" creationdate="20181110T041654Z">
         <seg>関数は以下のトピックでグループ化されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Further Reading</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120209Z" creationid="hsugawa8651" creationdate="20181118T120209Z">
+        <seg>さらに読む</seg>
       </tuv>
     </tu>
     <tu>
@@ -10901,6 +11018,17 @@ back to a Julia object reference by &lt;x11/&gt;`unsafe_pointer_to_objref(ptr)`&
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the left-hand side is an array-indexing expression,
+e.g. &lt;x19/&gt;X[2:end] .= sin.(Y)&lt;x20/&gt;, then it translates to &lt;x21/&gt;broadcast!&lt;x22/&gt; on a &lt;x23/&gt;view&lt;x24/&gt;, e.g.
+&lt;x25/&gt;broadcast!(sin, view(X, 2:lastindex(X)), Y)&lt;x26/&gt;,
+so that the left-hand side is updated in-place.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120159Z" creationid="hsugawa8651" creationdate="20181118T120159Z">
+        <seg>左側が配列インデックス式である場合は たとえば&lt;x19/&gt;X[2:end].=sin.(Y)&lt;x20/&gt;、次のように&lt;x23/&gt;ビュー&lt;x24/&gt;で&lt;X21/&gt;ブロードキャスト!&lt;x22/&gt;に変換されます。 &lt;x25/&gt;ブロードキャスト!(sin,view(X,2:lastindex(X)),Y)&lt;x26/&gt; 左側がインプレイス更新されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the memory is already owned by Julia, or is an &lt;x1/&gt;isbits&lt;x2/&gt; type, and is known to be non-null:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151809Z" creationid="hsugawa8651" creationdate="20181117T151809Z">
@@ -11174,6 +11302,16 @@ to the compiler.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082257Z" creationid="hsugawa8651" creationdate="20181118T082257Z">
         <seg>Juliaでは、型そのものが実行時オブジェクトとなり、同時にコンパイラに対して情報を伝えるために利用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In Julia, vectorized functions are
+&lt;x7/&gt;not&lt;x8/&gt; required for performance, and indeed it is often beneficial to write your own loops (see
+&lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-performance-tips)), but they can still be convenient.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120057Z" creationid="hsugawa8651" creationdate="20181118T120057Z">
+        <seg>ジュリアではベクトル化された関数は &lt;x7/&gt;はパフォーマンスに必要な&lt;x8/&gt;ではありません。実際には、独自のループを作成することが有益です( &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref manのパフォーマンス・ヒント)はありますが、それでも便利です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11479,6 +11617,16 @@ used in the sense of singling out a particular method of the constructor from al
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155702Z" creationid="hsugawa8651" creationdate="20181117T155702Z">
         <seg>このような状況では、一般的には、この用語は は、「コンストラクタ関数」ではなく「コンストラクタメソッド」を意味するために使用されます。特に コンストラクタの特定のメソッドを、他のすべてのコンストラクタから削除するという意味で使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In technical-computing languages, it is common to have "vectorized" versions of functions, which
+simply apply a given function &lt;x1/&gt;f(x)&lt;x2/&gt; to each element of an array &lt;x3/&gt;A&lt;x4/&gt; to yield a new array via
+&lt;x5/&gt;f(A)&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120053Z" creationid="hsugawa8651" creationdate="20181118T120053Z">
+        <seg>技術計算言語では、関数の「ベクトル化」バージョンが一般的であることが一般的です。 単純に与えられた関数&lt;x1/&gt;f(x)&lt;x2/&gt;を配列&lt;x3/&gt;A&lt;x4/&gt;の各要素に適用して、新しい配列を生成する。 &lt;x5/&gt;f(A)&lt;x6/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13194,6 +13342,16 @@ can be found within the &lt;x25/&gt;&lt;x26/&gt;&lt;x27/&gt;(@ref man-interface-
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>More generally, &lt;x1/&gt;f.(args...)&lt;x2/&gt; is actually equivalent to &lt;x3/&gt;broadcast(f, args...)&lt;x4/&gt;, which allows
+you to operate on multiple arrays (even of different shapes), or a mix of arrays and scalars (see
+&lt;x5/&gt;Broadcasting&lt;x6/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120117Z" creationid="hsugawa8651" creationdate="20181118T120117Z">
+        <seg>より一般的には、&lt;x1/&gt;f.(args.…)&lt;x2/&gt;は、実際には&lt;x3/&gt;ブロードキャスト(f、args.…)&lt;x4/&gt;と同等であり、これにより 複数の配列(異なる形状であっても)を操作したり、配列とスカラーを混在させたりすることができます( &lt;x5/&gt;ブロードキャスト&lt;x6/&gt;)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>More on this below.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152745Z" creationid="hsugawa8651" creationdate="20181117T152745Z">
@@ -13210,6 +13368,14 @@ combining row and column vectors to produce a matrix).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115833Z" creationid="hsugawa8651" creationdate="20181113T132539Z">
         <seg>より具体的には、&lt;x1/&gt;a.^b&lt;x2/&gt;は、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-vectorized)として解析されます。 &lt;x6/&gt;(^).(a,b)&lt;x7/&gt;&lt;x8/&gt;&lt;x8/&gt;&lt;x9/&gt;(@ref Broadcasting)動作を実行します。 配列とスカラを組み合わせることができ、同じサイズの配列(実行することができる) この操作エレメントは、異なる形状の配列(例えば 行列を生成するために行と列のベクトルを結合します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Moreover, &lt;x1/&gt;nested&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120129Z" creationid="hsugawa8651" creationdate="20181118T120129Z">
+        <seg>さらに、&lt;x1/&gt;ネストされた&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -13896,6 +14062,15 @@ the surrounding expression.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155757Z" creationid="hsugawa8651" creationdate="20181117T155757Z">
         <seg>もちろん、オブジェクトの内部悪魔の招待状を回避することは、不適切なプラクティスです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Of course, you can omit the dot if you write a specialized "vector" method of &lt;x1/&gt;f&lt;x2/&gt;, e.g. via &lt;x3/&gt;f(A::AbstractArray) = map(f, A)&lt;x4/&gt;,
+and this is just as efficient as &lt;x5/&gt;f.(A)&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120109Z" creationid="hsugawa8651" creationdate="20181118T120109Z">
+        <seg>もちろん、&lt;x1/&gt;f&lt;x2/&gt;の特殊な「ベクトル」方式を書く場合は、例えば&lt;x3/&gt;f(A::AbstractArray)=map(f, A)&lt;x4/&gt;を使ってドットを省略することができます。 これは、&lt;x5/&gt;f.(A)&lt;x6/&gt;と同じくらい効率的です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15017,6 +15192,17 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since adding dots to many operations and function calls in an expression
+can be tedious and lead to code that is difficult to read, the macro
+&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref @&lt;x4/&gt;dot&lt;x5/&gt;) is provided to convert &lt;x6/&gt;every&lt;x7/&gt; function call,
+operation, and assignment in an expression into the "dotted" version.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120207Z" creationid="hsugawa8651" creationdate="20181118T120207Z">
+        <seg>式の多くの操作と関数呼び出しにドットを追加することで は退屈で、読むのが難しいコードにつながり、マクロを読み取ることができない &lt;x6/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref@&lt;x4/&gt;ドット&lt;x5/&gt;)は、&lt;x6/&gt;すべての&lt;x7/&gt;関数呼び出しを変換するために提供されます。 「ドット」バージョンへの式での操作および割り当て。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since code is represented
 by objects that can be created and manipulated from within the language, it is possible for a
 program to transform and generate its own code.</seg>
@@ -15445,6 +15631,14 @@ interoperable code.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Switch</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120224Z" creationid="hsugawa8651" creationdate="20181118T120224Z">
+        <seg>Switch</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Symbols</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115302Z" creationid="hsugawa8651" creationdate="20181118T115302Z">
@@ -15604,6 +15798,15 @@ to hold or acquire any while executing Julia code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044738Z" creationid="hsugawa8651" creationdate="20181112T044738Z">
         <seg>Tasks</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Technically, the fusion stops as soon as
+a "non-dot" function call is encountered; for example, in &lt;x2/&gt;sin.(sort(cos.(X)))&lt;x3/&gt; the &lt;x4/&gt;sin&lt;x5/&gt; and &lt;x6/&gt;cos&lt;x7/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120143Z" creationid="hsugawa8651" creationdate="20181118T120143Z">
+        <seg>技術的には、融合はすぐに停止する。 "非ドット"関数呼び出しが発生します。たとえば、&lt;x2/&gt;sin(sort(cos.(X)))&lt;x3/&gt;sin&lt;x4/&gt;&lt;x6/&gt;cos&lt;x7/&gt;と&lt;x6/&gt;cos&lt;x7/&gt;cos&lt;x7/&gt;となります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17658,6 +17861,15 @@ the operator in such cases.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Therefore, &lt;x12/&gt;any&lt;x13/&gt; Julia function
+&lt;x14/&gt;f&lt;x15/&gt; can be applied elementwise to any array (or other collection) with the syntax &lt;x16/&gt;f.(A)&lt;x17/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120059Z" creationid="hsugawa8651" creationdate="20181118T120059Z">
+        <seg>したがって、&lt;x12/&gt;任意の&lt;x13/&gt;ジュリア関数です。 &lt;x14/&gt;f&lt;x15/&gt;は、&lt;x16/&gt;f.(A)&lt;x17/&gt;という構文を持つ任意の配列(またはその他のコレクション)に対して、要素ごとに適用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Therefore, if an &lt;x1/&gt;Array&lt;x2/&gt; contains data in the wrong format, it will have to be explicitly converted
 using a call such as &lt;x3/&gt;trunc(Int32, a)&lt;x4/&gt;.</seg>
       </tuv>
@@ -18301,6 +18513,16 @@ without using extra memory, and applies the given function elementwise:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152925Z" creationid="hsugawa8651" creationdate="20181117T152925Z">
         <seg>この種の環境は、ジュリア0.6以前に存在していた唯一の種であった。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This kind of syntax is convenient for data processing, but in other languages vectorization
+is also often required for performance: if loops are slow, the "vectorized" version of a function
+can call fast library code written in a low-level language.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120055Z" creationid="hsugawa8651" creationdate="20181118T120055Z">
+        <seg>この種の構文はデータ処理に便利ですが、その他の言語ではベクトル化されています。 また、パフォーマンスには多くの場合、ループが必要となります。ループが低速である場合、関数の「ベクトル化」バージョンが必要です。 は、低レベル言語で記述された高速ライブラリコードを呼び出すことができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22386,6 +22608,22 @@ f(x, y) = f(promote(x, y)...)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T054426Z" creationid="hsugawa8651" creationdate="20181116T054426Z">
         <seg>f(x::Tuple{}) = 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>f.(args...)&lt;x1/&gt; calls are &lt;x2/&gt;fused&lt;x3/&gt; into a single &lt;x4/&gt;broadcast&lt;x5/&gt; loop.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120132Z" creationid="hsugawa8651" creationdate="20181118T120132Z">
+        <seg>f.(args.…)&lt;x1/&gt;コールは、&lt;x2/&gt;の融合&lt;x3/&gt;を単一の&lt;x4/&gt;ブロードキャスト・&lt;x5/&gt;ループに&lt;x2/&gt;融合させます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>f.(args...)&lt;x1/&gt; calls are encountered.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120141Z" creationid="hsugawa8651" creationdate="20181118T120141Z">
+        <seg>f.(args.)&lt;x1/&gt;呼び出しが検出されました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -34887,6 +35125,14 @@ asind  acosd  atand  acotd  asecd  acscd</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112237Z" creationid="hsugawa8651" creationdate="20181112T112237Z">
         <seg>size(iter, [dim])&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>sort&lt;x1/&gt; function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120146Z" creationid="hsugawa8651" creationdate="20181118T120146Z">
+        <seg>sort&lt;x1/&gt;関数です。</seg>
       </tuv>
     </tu>
     <tu>
