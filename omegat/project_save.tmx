@@ -13101,6 +13101,14 @@ farther away from zero.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In other words, the representable floating-point numbers are densest in the real number line near zero, and grow sparser exponentially as one moves farther away from zero.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191159Z" creationid="hsugawa8651" creationdate="20181118T191159Z">
+        <seg>言い換えれば、表現可能浮動小数点 数は0近くの実数線で最も密集しており、指数関数的に成長するにつれて指数関数的に成長する 0から遠く離れています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In particular, nested dot calls like &lt;x2/&gt;f.(g.(x))&lt;x3/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132604Z" creationid="hsugawa8651" creationdate="20181113T132604Z">
@@ -18519,6 +18527,14 @@ the size.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>That is, &lt;c8&gt;eps(x)&lt;/c8&gt; yields a value of the same type as &lt;c9&gt;x&lt;/c9&gt; such that &lt;c10&gt;x + eps(x)&lt;/c10&gt; is the next representable floating-point value larger than &lt;c11&gt;x&lt;/c11&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191145Z" creationid="hsugawa8651" creationdate="20181118T191145Z">
+        <seg>すなわち、&lt;c8&gt;eps(x)&lt;/c8&gt;は、&lt;c9&gt;x&lt;/c9&gt;と同じタイプの値を生成し、それによって &lt;c10&gt;x + eps(x)&lt;/c10&gt;は、 &lt;c11&gt;x&lt;/c11&gt;より大きい次の表現可能浮動小数点値です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>That is, &lt;x11/&gt;eps(x)&lt;x12/&gt; yields a value of the same type as &lt;x13/&gt;x&lt;x14/&gt; such that
 &lt;x15/&gt;x + eps(x)&lt;x16/&gt; is the next representable floating-point value larger than &lt;x17/&gt;x&lt;x18/&gt;:</seg>
       </tuv>
@@ -18600,6 +18616,14 @@ resulting expression contains &lt;x5/&gt;only&lt;x6/&gt; the second &lt;x7/&gt;p
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111934Z" creationid="hsugawa8651" creationdate="20181112T111934Z">
         <seg>32ビット浮動小数点リテラル式&lt;x1/&gt;1f22&lt;x2/&gt;は、数値リテラルとして解釈することができます。 &lt;x3/&gt;1.5&lt;x4/&gt;は、変数&lt;x5/&gt;F22&lt;x6/&gt;で乗算されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a6&gt;&lt;c7&gt;eps&lt;/c7&gt;&lt;/a6&gt; function can also take a floating-point value as an argument, and gives the absolute difference between that value and the next representable floating point value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191045Z" creationid="hsugawa8651" creationdate="20181118T191045Z">
+        <seg>&lt;a6&gt;&lt;c7&gt;eps&lt;/c7&gt;&lt;/a6&gt;関数は、浮動小数点値を 引数は、その値と次の表現可能な値との間に絶対差を与えます。 浮動小数点値。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19478,6 +19502,14 @@ with:</seg>
 smaller for smaller values and larger for larger values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111227Z" creationid="hsugawa8651" creationdate="20181112T111227Z">
+        <seg>2つの隣接する表現可能浮動小数点数の間の距離は一定ではありませんが 小さい値では小さくなり、大きい値ほど大きい値になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The distance between two adjacent representable floating-point numbers is not constant, but is smaller for smaller values and larger for larger values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191154Z" creationid="hsugawa8651" creationdate="20181118T191154Z">
         <seg>2つの隣接する表現可能浮動小数点数の間の距離は一定ではありませんが 小さい値では小さくなり、大きい値ほど大きい値になります。</seg>
       </tuv>
     </tu>
@@ -21530,6 +21562,14 @@ yields a &lt;x5/&gt;SparseMatStyle&lt;x6/&gt;, and anything of higher dimensiona
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022712Z" creationid="hsugawa8651" creationdate="20181113T022712Z">
         <seg>これらの2つの方法は、Juliaによって&lt;x5/&gt;IndexLinear()&lt;x6/&gt;および&lt;x7/&gt;IndexCartesian()&lt;x8/&gt;と同定されている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These values are &lt;c0&gt;2.0^-23&lt;/c0&gt; and &lt;c1&gt;2.0^-52&lt;/c1&gt; as &lt;a2&gt;&lt;c3&gt;Float32&lt;/c3&gt;&lt;/a2&gt; and &lt;a4&gt;&lt;c5&gt;Float64&lt;/c5&gt;&lt;/a4&gt; values, respectively.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191028Z" creationid="hsugawa8651" creationdate="20181118T191028Z">
+        <seg>これらの値は&lt;c0&gt;2.0^-23&lt;/c0&gt;と&lt;c1&gt;2.0^-52&lt;/c1&gt;であり、&lt;a2&gt;&lt;c3&gt;Float32&lt;/c3&gt;&lt;/a2&gt;および&lt;a4&gt;&lt;c5&gt;Float64&lt;/c5&gt;&lt;/a4&gt;の値である。 それぞれ。</seg>
       </tuv>
     </tu>
     <tu>
