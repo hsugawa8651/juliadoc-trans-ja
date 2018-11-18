@@ -1698,6 +1698,14 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>1 ⊘ 2&lt;x1/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124147Z" creationid="hsugawa8651" creationdate="20181118T124147Z">
+        <seg>1 ⊘ 2&lt;x1/&gt;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>1-dimensional &lt;x2/&gt;`Array`&lt;x3/&gt;)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043131Z" creationid="hsugawa8651" creationdate="20181112T043131Z">
@@ -2551,6 +2559,16 @@ exec julia --color=yes --startup-file=no -e 'include(popfirst!(ARGS))' \
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022821Z" creationid="hsugawa8651" creationdate="20181113T022821Z">
         <seg>&lt;x1/&gt;IndexLinear()&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x1/&gt;OurRational&lt;x2/&gt; has a single inner constructor method which checks that
+both of &lt;x3/&gt;num&lt;x4/&gt; and &lt;x5/&gt;den&lt;x6/&gt; aren't zero and ensures that every rational is constructed in "lowest
+terms" with a non-negative denominator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124121Z" creationid="hsugawa8651" creationdate="20181118T124121Z">
+        <seg>&lt;x1/&gt;OurRational&lt;x2/&gt;は、単一のインナー・コンストラクタ・メソッドを持っていて、それをチェックする。 &lt;x3/&gt;num&lt;x4/&gt;の両方と&lt;x5/&gt;den&lt;x6/&gt;は0ではなく、すべての有理が「最低」で構築されることを保証します。 「負ではない分母を持つ」。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4557,6 +4575,16 @@ be thrown immediately.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As you can see, for constructor calls with explicit type parameters, the arguments are converted
+to the implied field types: &lt;x1/&gt;Point{Int64}(1,2)&lt;x2/&gt; works, but &lt;x3/&gt;Point{Int64}(1.0,2.5)&lt;x4/&gt; raises an
+&lt;x5/&gt;`InexactError`&lt;x6/&gt; when converting &lt;x7/&gt;2.5&lt;x8/&gt; to &lt;x9/&gt;`Int64`&lt;x10/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123900Z" creationid="hsugawa8651" creationdate="20181118T123900Z">
+        <seg>明示的な型パラメータを持つコンストラクタ呼び出しでは、引数は変換されます。 &lt;x1/&gt;点{Int64}(1,2)&lt;x2/&gt;は動作しますが、&lt;x3/&gt;点{Int64}(1.0,2.5)&lt;x4/&gt;は &lt;x7/&gt;2.5&lt;x8/&gt;を&lt;x9/&gt;"Int64"&lt;x10/&gt;に変換する際には、&lt;x6/&gt;'InexactError'&lt;x6/&gt;'となります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Assignment</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134913Z" creationid="hsugawa8651" creationdate="20181117T134913Z">
@@ -4569,6 +4597,15 @@ be thrown immediately.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063651Z" creationid="hsugawa8651" creationdate="20181114T063651Z">
         <seg>&lt;x1/&gt;-O3&lt;x2/&gt;では、コンパイラ&lt;x/&gt;は、そのようなタプル上のオペレーションを自動的にベクトル化することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At the risk of spoiling the suspense, we can reveal here that all it takes is the following outer
+method definition to make all calls to the general &lt;x4/&gt;Point&lt;x5/&gt; constructor work as one would expect:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124031Z" creationid="hsugawa8651" creationdate="20181118T124031Z">
+        <seg>サスペンスを台無しにする危険性がある場合は、以下のように、すべてが以下の外にあることを明らかにすることができます。 一般的な&lt;x4/&gt;ポイント&lt;x5/&gt;コンストラクタへのすべての呼び出しを行うメソッド定義は、次のように動作します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7094,6 +7131,16 @@ Base.vec</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Because
+this is the only inner constructor for &lt;x15/&gt;OurRational&lt;x16/&gt;, we can be certain that &lt;x17/&gt;OurRational&lt;x18/&gt; objects are
+always constructed in this normalized form.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124129Z" creationid="hsugawa8651" creationdate="20181118T124129Z">
+        <seg>なぜなら これは、&lt;x15/&gt;OurRational&lt;x16/&gt;の内部コンストラクタであり、&lt;x17/&gt;OurRational&lt;x18/&gt;オブジェクトがあることは確かです。 常にこの正規化された形式で作成されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because C doesn't support multiple return values, often C functions will take pointers to data
 that the function will modify.</seg>
       </tuv>
@@ -7682,6 +7729,14 @@ can create performance challenges as discussed in &lt;x7/&gt;&lt;x8/&gt;&lt;x9/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135012Z" creationid="hsugawa8651" creationdate="20181117T135012Z">
         <seg>デカルト指数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Case Study: Rational</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124055Z" creationid="hsugawa8651" creationdate="20181118T124055Z">
+        <seg>ケーススタディ:合理的</seg>
       </tuv>
     </tu>
     <tu>
@@ -9679,6 +9734,14 @@ and negative zero.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Following the outer constructor definitions, we defined a number of methods for the &lt;x1/&gt;⊘&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124146Z" creationid="hsugawa8651" creationdate="20181118T124146Z">
+        <seg>外部コンストラクタ定義に従って、&lt;x1/&gt;θ&lt;x2/&gt;のためにいくつかの方法を定義しました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For
 &lt;x5/&gt;`BigFloat`&lt;x6/&gt; the &lt;x7/&gt;GNU MPFR library&lt;x8/&gt; is used,
 and for &lt;x9/&gt;`BigInt`&lt;x10/&gt; the &lt;x11/&gt;&lt;x12/&gt;&lt;x13/&gt;</seg>
@@ -9760,6 +9823,14 @@ types themselves, functions, special singletons like &lt;x13/&gt;`missing`&lt;x1
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131053Z" creationid="hsugawa8651" creationdate="20181113T131053Z">
         <seg>その他の種類(これに限定されるものではないが タイプ自身、関数、&lt;x13/&gt;'missing"&lt;x14/&gt;、&lt;x15/&gt;`nothing"&lt;x15/&gt;のような特別な単一トン、そして日付)などです。 &lt;x17/&gt;Base.broadcastable&lt;x18/&gt;は、&lt;x19/&gt;Ref&lt;x20/&gt;でラップされた引数を返し、0次元として動作します。 ブロードキャストのための「スカラー」。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For a more general way to make all such calls work sensibly, see &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref conversion-and-promotion).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124028Z" creationid="hsugawa8651" creationdate="20181118T124028Z">
+        <seg>このような呼び出しをすべて適切に動作させるための一般的な方法は、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref変換とプロモーション)を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11070,6 +11141,14 @@ combined with exponentiation.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, other similar calls still don't work:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124023Z" creationid="hsugawa8651" creationdate="20181118T124023Z">
+        <seg>しかし、その他の類似したコールはまだ機能していない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, since the automatic vectorization cannot be relied upon, future use will mostly be via
 libraries that use &lt;x1/&gt;llvmcall&lt;x2/&gt;.</seg>
       </tuv>
@@ -12011,6 +12090,14 @@ and substitution before any actual parsing or interpretation occurs.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In fact, &lt;x7/&gt;Point{T}&lt;x8/&gt; is a distinct constructor function for each type &lt;x9/&gt;T&lt;x10/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123905Z" creationid="hsugawa8651" creationdate="20181118T123905Z">
+        <seg>実際、&lt;x7/&gt;ポイント{T}&lt;x8/&gt;は、それぞれのタイプ&lt;x9/&gt;T&lt;x10/&gt;に対して個別のコンストラクタ関数である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In fact, the &lt;x15/&gt;Pub&lt;x16/&gt; package has started to use it.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152856Z" creationid="hsugawa8651" creationdate="20181117T152856Z">
@@ -12881,6 +12968,15 @@ the first block in &lt;x1/&gt;if @generated&lt;x2/&gt; is used, and a normal one
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It also provides a single general
+outer &lt;x4/&gt;Point&lt;x5/&gt; constructor that takes pairs of real arguments, which must be of the same type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123913Z" creationid="hsugawa8651" creationdate="20181118T123913Z">
+        <seg>また、単一の一般的な 外部&lt;x4/&gt;ポイント&lt;x5/&gt;コンストラクタで、実際の引数のペアを指定します。このコンストラクタは、同じタイプである必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It can also be used directly in a &lt;x4/&gt;`for`&lt;x5/&gt; loop since the syntax:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112437Z" creationid="hsugawa8651" creationdate="20181112T112437Z">
@@ -13576,6 +13672,14 @@ conversions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia's &lt;x2/&gt;Rational&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124153Z" creationid="hsugawa8651" creationdate="20181118T124153Z">
+        <seg>Julia's&lt;x2/&gt;Rational&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia's base library has a an internal &lt;x1/&gt;sub2ind&lt;x2/&gt; function to calculate a linear index into an n-dimensional
 array, based on a set of n multilinear indices - in other words, to calculate the index &lt;x3/&gt;i&lt;x4/&gt; that
 can be used to index into an array &lt;x5/&gt;A&lt;x6/&gt; using &lt;x7/&gt;A[i]&lt;x8/&gt;, instead of &lt;x9/&gt;A[x,y,z,...]&lt;x10/&gt;.</seg>
@@ -14113,6 +14217,16 @@ combining row and column vectors to produce a matrix).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115833Z" creationid="hsugawa8651" creationdate="20181113T132539Z">
         <seg>より具体的には、&lt;x1/&gt;a.^b&lt;x2/&gt;は、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-vectorized)として解析されます。 &lt;x6/&gt;(^).(a,b)&lt;x7/&gt;&lt;x8/&gt;&lt;x8/&gt;&lt;x9/&gt;(@ref Broadcasting)動作を実行します。 配列とスカラを組み合わせることができ、同じサイズの配列(実行することができる) この操作エレメントは、異なる形状の配列(例えば 行列を生成するために行と列のベクトルを結合します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Moreover,
+since constructors can leverage all of the power of the type system, methods, and multiple dispatch,
+defining sophisticated behavior is typically quite simple.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124053Z" creationid="hsugawa8651" creationdate="20181118T124053Z">
+        <seg>さらに コンストラクタは、型システム、メソッド、および複数のディスパッチのすべてを活用できます。 高度な動作を定義することは、一般的に非常に単純です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14744,6 +14858,14 @@ the variables &lt;x11/&gt;A&lt;x12/&gt; and &lt;x13/&gt;x&lt;x14/&gt; were disti
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Now things get interesting.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124118Z" creationid="hsugawa8651" creationdate="20181118T124118Z">
+        <seg>これで面白いですね。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Now,
 by default, &lt;x11/&gt;broadcasted&lt;x12/&gt; just calls the &lt;x13/&gt;Broadcasted&lt;x14/&gt; constructor to create the lazy representation
 of the fused expression tree, but you can choose to override it for a particular combination
@@ -15141,6 +15263,14 @@ indices.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>OurRational&lt;x1/&gt; also provides several outer constructor methods for convenience.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124133Z" creationid="hsugawa8651" creationdate="20181118T124133Z">
+        <seg>OurRational&lt;x1/&gt;には、便宜上、いくつかの外部コンストラクタメソッドも用意されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Outer Constructor Methods</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123740Z" creationid="hsugawa8651" creationdate="20181118T123740Z">
@@ -15334,6 +15464,15 @@ platforms such as Linux.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Perhaps the best way to tie all these pieces together is to present a real world example of a
+parametric composite type and its constructor methods.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124057Z" creationid="hsugawa8651" creationdate="20181118T124057Z">
+        <seg>これらすべてを結びつける最良の方法は、実際の例を提示することである。 パラメトリック複合型とそのコンストラクタメソッドです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perhaps you've defined a type and then realize you need to add a new field.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024714Z" creationid="hsugawa8651" creationdate="20181110T024714Z">
@@ -15348,6 +15487,15 @@ types designed to mimic the internal structure of corresponding C structs.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151449Z" creationid="hsugawa8651" creationdate="20181117T151449Z">
         <seg>Cに含まれるポインタ 構造体は、対応するジュリア構造内の&lt;x11/&gt;Ptr{T}&lt;x12/&gt;の型のフィールドとして表されるべきである。 は、対応するC構造体の内部構造を模倣するように設計されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Point{T}&lt;x1/&gt;, for each possible type &lt;x2/&gt;T&lt;:Real&lt;x3/&gt;, that
+behaves just like non-parametric default inner constructors do.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123910Z" creationid="hsugawa8651" creationdate="20181118T123910Z">
+        <seg>点{T}&lt;x1/&gt;は、それぞれの可能なタイプ&lt;x2/&gt;T&lt;:Real&lt;x3/&gt;に対して は、非パラメトリックデフォルトのインナーコンストラクタと同じように動作します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15554,6 +15702,14 @@ in this case from a stable sort (unless the array records its mutations in some 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123500Z" creationid="hsugawa8651" creationdate="20181118T123500Z">
         <seg>有理数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Rational Numbers&lt;x1/&gt; -- its entire behavior is defined in these few lines.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124158Z" creationid="hsugawa8651" creationdate="20181118T124158Z">
+        <seg>Rational Number&lt;x1/&gt;--その動作全体は、これらの数行で定義されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16132,6 +16288,16 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since
+&lt;x9/&gt;gcd&lt;x10/&gt; returns the greatest common divisor of its arguments with sign matching the first argument
+(&lt;x11/&gt;den&lt;x12/&gt; here), after this division the new value of &lt;x13/&gt;den&lt;x14/&gt; is guaranteed to be non-negative.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124126Z" creationid="hsugawa8651" creationdate="20181118T124126Z">
+        <seg>以降 &lt;x9/&gt;gcd&lt;x10/&gt;は、最初の引数と一致する符号を持つ引数の最大公約数を返します。 (&lt;x11/&gt;den&lt;x12/&gt;ここで)この除算の後、&lt;x13/&gt;den&lt;x14/&gt;の新しい値は負ではないことが保証されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since &lt;x5/&gt;Zebra&lt;x6/&gt; does not appear in the project file, the import will fail even though &lt;x7/&gt;Zebra&lt;x8/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121144Z" creationid="hsugawa8651" creationdate="20181118T121144Z">
@@ -16220,6 +16386,16 @@ obvious, let us briefly explain it.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155840Z" creationid="hsugawa8651" creationdate="20181117T155840Z">
         <seg>根本的な困難はすぐにはない わかりやすく説明しましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since the method declaration restricts the arguments to being of the
+same type, calls like &lt;x2/&gt;Point(1,2.5)&lt;x3/&gt;, with arguments of different types, result in "no method"
+errors.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123952Z" creationid="hsugawa8651" creationdate="20181118T123952Z">
+        <seg>メソッド宣言によって引き数が制限されるため 同じタイプで、&lt;x2/&gt;ポイント(1,2.5)&lt;x3/&gt;のような呼び出しがあり、さまざまなタイプの引数がある場合は、「メソッドなし」となります。 エラーです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16623,6 +16799,15 @@ interoperable code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121223Z" creationid="hsugawa8651" creationdate="20181118T121223Z">
         <seg>&lt;x18/&gt;DEPOT_PATH&lt;x19/&gt;の内容が&lt;x20/&gt;["/home/me/.jula","/usr/local/julia"]であると仮定します。次に、Juliaは次のパスを参照して、それらが存在するかどうかを調べます。次のパスを参照してください:X21</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Suppose we wanted to make the constructor call &lt;x1/&gt;Point(1,2.5)&lt;x2/&gt; work by "promoting" the integer
+value &lt;x3/&gt;1&lt;x4/&gt; to the floating-point value &lt;x5/&gt;1.0&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123956Z" creationid="hsugawa8651" creationdate="20181118T123956Z">
+        <seg>コンストラクタの呼び出し&lt;x1/&gt;Point(1,2.5)&lt;x2/&gt;work by"promote"を実行して、この整数を指定したいとします。 浮動小数点値&lt;x1/&gt;を浮動小数点値&lt;x5/&gt;1.0&lt;x6/&gt;に値&lt;x6/&gt;&lt;x6/&gt;で指定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17120,6 +17305,14 @@ can be specified via the &lt;x3/&gt;lt&lt;x4/&gt; keyword.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;promote&lt;x2/&gt; function converts all its arguments to a common type -- in this case &lt;x3/&gt;`Float64`&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124037Z" creationid="hsugawa8651" creationdate="20181118T124037Z">
+        <seg>&lt;x1/&gt;プロモート&lt;x2/&gt;関数は、すべての引数を共通の型に変換します。この場合は、&lt;x3/&gt;`Float64'&lt;x4/&gt;のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;state&lt;x2/&gt; object may be anything, and should be chosen appropriately for each iterable type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032029Z" creationid="hsugawa8651" creationdate="20181114T032029Z">
@@ -17456,6 +17649,15 @@ so they can follow the same codepath.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The call &lt;x1/&gt;Point{Int64}(1,2)&lt;x2/&gt; will invoke the definition &lt;x3/&gt;Point{T}(x,y)&lt;x4/&gt; inside the
+&lt;x5/&gt;struct&lt;x6/&gt; block.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123938Z" creationid="hsugawa8651" creationdate="20181118T123938Z">
+        <seg>&lt;x1/&gt;ポイント{Int64}(1,2)&lt;x2/&gt;は、次のように定義&lt;x3/&gt;ポイント{T}(x,y)&lt;x4/&gt;を呼び出します。 &lt;x5/&gt;構造体&lt;x6/&gt;ブロック。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The callback you pass to C should only execute a &lt;x1/&gt;`ccall`&lt;x2/&gt; to &lt;x3/&gt;:uv_async_send&lt;x4/&gt;, passing
 &lt;x5/&gt;cond.handle&lt;x6/&gt; as the argument, taking care to avoid any allocations or other interactions with the
 Julia runtime.</seg>
@@ -17704,6 +17906,14 @@ is 1, 2, 4 or 8 bytes.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The field declarations &lt;x5/&gt;num::T&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124112Z" creationid="hsugawa8651" creationdate="20181118T124112Z">
+        <seg>フィールド宣言&lt;x5/&gt;num::T&lt;x6/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The final argument
 &lt;x1/&gt;bc&lt;x2/&gt; is a lazy representation of a (potentially fused) broadcast operation, a &lt;x3/&gt;Broadcasted&lt;x4/&gt;</seg>
       </tuv>
@@ -17777,6 +17987,25 @@ it will be a &lt;x7/&gt;CartesianIndex&lt;x8/&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113023Z" creationid="hsugawa8651" creationdate="20181112T113012Z">
         <seg>最初のインデックス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first is the "standard"
+general constructor that infers the type parameter &lt;x2/&gt;T&lt;x3/&gt; from the type of the numerator and denominator
+when they have the same type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124136Z" creationid="hsugawa8651" creationdate="20181118T124136Z">
+        <seg>一つ目は「標準」です 分子の種類と分母のタイプからの型パラメータ&lt;x2/&gt;T&lt;x3/&gt;を推論する一般的なコンストラクタ 同じタイプを持っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first line -- &lt;x1/&gt;struct OurRational{T&lt;:Integer} &lt;: Real&lt;x2/&gt; -- declares that &lt;x3/&gt;OurRational&lt;x4/&gt; takes one
+type parameter of an integer type, and is itself a real type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124107Z" creationid="hsugawa8651" creationdate="20181118T124107Z">
+        <seg>最初の行--&lt;x1/&gt;struct OurRational{T&lt;:Integer}&lt;:Real&lt;x2/&gt;--&lt;x3/&gt;は、&lt;x3/&gt;OurRational&lt;x/&gt;を宣言します。 integer型のパラメータで、それ自体が実際の型です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18358,6 +18587,16 @@ example requires chaining multiple uses of the ternary operator together:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The outer constructor declaration, on the other hand, defines a
+method for the general &lt;x7/&gt;Point&lt;x8/&gt; constructor which only applies to pairs of values of the same real
+type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123941Z" creationid="hsugawa8651" creationdate="20181118T123941Z">
+        <seg>一方、外部コンストラクタ宣言は 同じ実数の値のペアにのみ適用される、一般的な&lt;x7/&gt;ポイント&lt;x8/&gt;コンストラクタのメソッド の双曲線コサインを返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The path of a package &lt;x2/&gt;uuid&lt;x3/&gt; named &lt;x4/&gt;X&lt;x5/&gt; is determined by these two rules:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121157Z" creationid="hsugawa8651" creationdate="20181118T121157Z">
@@ -18646,6 +18885,16 @@ allocated in Julia to be freed by an external library) is equally invalid.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The second applies when the given numerator and denominator values
+have different types: it promotes them to a common type and then delegates construction to the
+outer constructor for arguments of matching type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124139Z" creationid="hsugawa8651" creationdate="20181118T124139Z">
+        <seg>2番目は、与えられた分子と分母の値がある場合に適用されます。 は異なるタイプを持ち、一般的なタイプにプロモートしてから、次のように構築を行います。 一致するタイプの引数用の外部コンストラクタです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The second argument to &lt;x1/&gt;`ccall`&lt;x2/&gt; can optionally be a calling convention specifier (immediately
 preceding return type).</seg>
       </tuv>
@@ -18677,6 +18926,15 @@ both typing and visual noise.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025621Z" creationid="hsugawa8651" creationdate="20181110T025621Z">
         <seg>したがって、短い関数構文は非常に奇妙なものになり、大幅に減少します。 タイプとビジュアルノイズの両方です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The simplest way to achieve this is to define the
+following additional outer constructor method:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124001Z" creationid="hsugawa8651" creationdate="20181118T124001Z">
+        <seg>これを実現する最も簡単な方法は、次のように定義することです。 次の追加の外部コンストラクタメソッド:</seg>
       </tuv>
     </tu>
     <tu>
@@ -18803,6 +19061,15 @@ converted to that type using &lt;x6/&gt;`convert`&lt;x7/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121405Z" creationid="hsugawa8651" creationdate="20181118T121405Z">
         <seg>3番目と最終的な環境は、複数の環境を重ね合わせることによって、一つの複合環境でパッケージを利用できるようにするというものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The third outer constructor turns integer values
+into rationals by supplying a value of &lt;x4/&gt;1&lt;x5/&gt; as the denominator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124143Z" creationid="hsugawa8651" creationdate="20181118T124143Z">
+        <seg>3番目の外部コンストラクタは整数値を返します。 &lt;x4/&gt;1&lt;x5/&gt;の値を分母として供給することにより、合理的になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19524,6 +19791,14 @@ commonly passed in registers when using C or Julia calling conventions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This automatic provision of constructors is equivalent to the following explicit declaration:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123915Z" creationid="hsugawa8651" creationdate="20181118T123915Z">
+        <seg>コンストラクタの自動プロビジョニングは、次の明示的な宣言に相当します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This avoids the need to continually check for &lt;x1/&gt;null&lt;x2/&gt; values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123751Z" creationid="hsugawa8651" creationdate="20181118T123751Z">
@@ -19659,6 +19934,14 @@ inner constructor method.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155814Z" creationid="hsugawa8651" creationdate="20181117T155814Z">
         <seg>この宣言は、明示的には&lt;x1/&gt;Foo&lt;x2/&gt;タイプの以前の定義と同じ効果を持っています。 インナーコンストラクタメソッド。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This declaration makes constructor calls without explicit type parameters, like &lt;x9/&gt;Point(1,2)&lt;x10/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123943Z" creationid="hsugawa8651" creationdate="20181118T123943Z">
+        <seg>この宣言は、&lt;x9/&gt;ポイント(1,2)&lt;x10/&gt;のような明示的なタイプパラメータなしのコンストラクタ呼び出しを行います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19816,6 +20099,15 @@ define an informal interface that enable many fancier behaviors.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112840Z" creationid="hsugawa8651" creationdate="20181112T112840Z">
         <seg>これは、Julia Base全体で非常に一般的なパターンです。必要なメソッドの集合です。 多くのファン的な振る舞いを可能にするインフォーマルなインターフェースを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is accomplished by dividing the given numerator and
+denominator values by their greatest common divisor, computed using the &lt;x7/&gt;gcd&lt;x8/&gt; function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124123Z" creationid="hsugawa8651" creationdate="20181118T124123Z">
+        <seg>これは、与えられた分子を分割することによって達成される。 分母値は、&lt;x7/&gt;gcd&lt;x8/&gt;関数を使用して計算され、最大公約数によって計算されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20040,6 +20332,14 @@ statically compile.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111830Z" creationid="hsugawa8651" creationdate="20181112T111830Z">
         <seg>これは例えば &lt;x9/&gt;1/2im&lt;x10/&gt;=&lt;x11/&gt;-0.5im&lt;x12/&gt;6//2(2 + 1)&lt;x14/&gt;=&lt;x15/&gt;=&lt;x15/&gt;1//1&lt;x16/&gt;となります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This method uses the &lt;x1/&gt;`convert`&lt;x2/&gt; function to explicitly convert &lt;x3/&gt;x&lt;x4/&gt; to &lt;x5/&gt;`Float64`&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124007Z" creationid="hsugawa8651" creationdate="20181118T124007Z">
+        <seg>この方法は&lt;x1/&gt;変換&lt;x2/&gt;関数を使用して&lt;x3/&gt;x&lt;x4/&gt;を明示的に&lt;x/&gt;「Float64」&lt;x6/&gt;に変換する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20300,6 +20600,15 @@ above).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Thus, while the implicit type parameter constructors provided by default in Julia are fairly strict,
+it is possible to make them behave in a more relaxed but sensible manner quite easily.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124048Z" creationid="hsugawa8651" creationdate="20181118T124048Z">
+        <seg>したがって、デフォルトでは、Juliaで提供されている暗黙的なタイプのパラメータコンストラクタは、かなり厳密ですが よりリラックスした、より合理的な方法で、より簡単に行動することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To
 achieve this, Julia builds upon the lineage of
 mathematical programming languages, but also borrows much from popular
@@ -20510,6 +20819,16 @@ alternative implementations of generated functions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063731Z" creationid="hsugawa8651" creationdate="20181112T044840Z">
         <seg>配列をインプレイスにソートするには、ソート関数の「bang」バージョンを使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To that end, we implement our own rational number type
+&lt;x1/&gt;OurRational&lt;x2/&gt;, similar to Julia's built-in &lt;x3/&gt;`Rational`&lt;x4/&gt; type, defined in
+&lt;x5/&gt;`rational.jl`&lt;x6/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124100Z" creationid="hsugawa8651" creationdate="20181118T124100Z">
+        <seg>そのためには、独自の数値型を実装します。 &lt;x1/&gt;OurRational&lt;x2/&gt;は、Juliaの組み込み&lt;x3/&gt;の「Rational」&lt;x4/&gt;タイプと似ています。 &lt;x5/&gt;`合理的な.jl'&lt;x6/&gt;:</seg>
       </tuv>
     </tu>
     <tu>
@@ -20984,6 +21303,15 @@ like &lt;x1/&gt;`in`&lt;x2/&gt;, or &lt;x3/&gt;`mean`&lt;x4/&gt; and &lt;x5/&gt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>What's really going on here is that &lt;x1/&gt;Point&lt;x2/&gt;, &lt;x3/&gt;Point{Float64}&lt;x4/&gt; and &lt;x5/&gt;Point{Int64}&lt;x6/&gt; are all different
+constructor functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123903Z" creationid="hsugawa8651" creationdate="20181118T123903Z">
+        <seg>ここでは、&lt;x1/&gt;点&lt;x2/&gt;、&lt;x3/&gt;点{Float64}&lt;x4/&gt;および&lt;x5/&gt;点{Int64}&lt;x6/&gt;がすべて異なっていることを示している。 コンストラクタ関数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>What&lt;x1/&gt; package is &lt;x2/&gt;X&lt;x3/&gt; in this context?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152815Z" creationid="hsugawa8651" creationdate="20181117T152815Z">
@@ -21120,6 +21448,17 @@ indexed with a multidimensional set of indices, the fallback &lt;x2/&gt;getindex
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083148Z" creationid="hsugawa8651" creationdate="20181113T083148Z">
         <seg>アレイが次に 索引の多次元集合でインデックスを作成します。フォールバック&lt;x2/&gt;getindex(A::AbstractArray, I...)()&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the type is implied
+by the arguments to the constructor call, as in &lt;x11/&gt;Point(1,2)&lt;x12/&gt;, then the types of the
+arguments must agree -- otherwise the &lt;x13/&gt;T&lt;x14/&gt; cannot be determined -- but any pair of real
+arguments with matching type may be given to the generic &lt;x15/&gt;Point&lt;x16/&gt; constructor.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123854Z" creationid="hsugawa8651" creationdate="20181118T123854Z">
+        <seg>タイプが暗黙の場合 &lt;x11/&gt;Point(1,2)&lt;x12/&gt;のようにコンストラクタ呼び出しの引数によって、次のように入力されます。 引数は一致する必要があります。そうでない場合は、&lt;x13/&gt;T&lt;x14/&gt;を指定できませんが、実数のペアはすべて指定されています。 一般的な&lt;x15/&gt;Point&lt;x16/&gt;コンストラクタには、一致するタイプの引数を指定することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21316,6 +21655,32 @@ of Floating-Point".</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112503Z" creationid="hsugawa8651" creationdate="20181112T112503Z">
         <seg>&lt;x1/&gt;'reiterate''&lt;x2/&gt;定義では、&lt;x3/&gt;Squares&lt;x4/&gt;タイプはすでにかなり強力です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>With this method definition what was previously a &lt;x2/&gt;`MethodError`&lt;x3/&gt; now
+successfully creates a point of type &lt;x4/&gt;Point{Float64}&lt;x5/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124015Z" creationid="hsugawa8651" creationdate="20181118T124015Z">
+        <seg>この方法の定義では、以前は&lt;x2/&gt;'MethodError''&lt;x3/&gt;であった。 は、&lt;x4/&gt;ポイント{Float64}&lt;x5/&gt;のポイントを作成します。&lt;x4/&gt;&lt;x/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>With this method definition, the &lt;x5/&gt;Point&lt;x6/&gt; constructor promotes its arguments the same way that
+numeric operators like &lt;x7/&gt;`+`&lt;x8/&gt; do, and works for all kinds of real numbers:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124040Z" creationid="hsugawa8651" creationdate="20181118T124040Z">
+        <seg>このメソッド定義では、&lt;x5/&gt;ポイント&lt;x6/&gt;コンストラクタは、引数を同じ方法でプロモートします。 &lt;x7/&gt;`+`&lt;x8/&gt;のような数値演算子は、すべての種類の実数に対して動作します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Without any explicitly provided inner constructors, the declaration of the composite type &lt;x11/&gt;Point{T&lt;:Real}&lt;x12/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123908Z" creationid="hsugawa8651" creationdate="20181118T123908Z">
+        <seg>明示的に提供された内部コンストラクタがない場合、複合型&lt;x11/&gt;ポイント{T&lt;:Real}&lt;x12/&gt;の宣言</seg>
       </tuv>
     </tu>
     <tu>
@@ -21960,6 +22325,14 @@ and can be converted to/from the latter via &lt;x4/&gt;Array(bitarray)&lt;x5/&gt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110237Z" creationid="hsugawa8651" creationdate="20181112T110237Z">
         <seg>`Float64`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Float64`&lt;x1/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124011Z" creationid="hsugawa8651" creationdate="20181118T124011Z">
+        <seg>`Float64`&lt;x1/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -23889,6 +24262,15 @@ defalg(v::AbstractArray{&lt;:Number}) = QuickSort</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063507Z" creationid="hsugawa8651" creationdate="20181114T063507Z">
         <seg>文字列リテラルを区切る</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>den::T&lt;x1/&gt; indicate that the data held in a &lt;x2/&gt;OurRational{T}&lt;x3/&gt; object are a pair of integers of type
+&lt;x4/&gt;T&lt;x5/&gt;, one representing the rational value's numerator and the other representing its denominator.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124115Z" creationid="hsugawa8651" creationdate="20181118T124115Z">
+        <seg>den::T&lt;x1/&gt;は、&lt;x2/&gt;OurRational{T}&lt;x3/&gt;オブジェクトに保持されたデータが、型の整数のペアであることを示します。 &lt;x4/&gt;T&lt;x5/&gt;。有理値の分子を表し、もう一方は分母を表します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28177,6 +28559,22 @@ Closest candidates are:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; Point(1,2.5)
+Point{Float64}(1.0, 2.5)
+
+julia&gt; typeof(ans)
+Point{Float64}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124016Z" creationid="hsugawa8651" creationdate="20181118T124016Z">
+        <seg>julia&gt; Point(1,2.5)
+Point{Float64}(1.0, 2.5)
+
+julia&gt; typeof(ans)
+Point{Float64}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; Point(1.0,2.0)
 Point{Float64}(1.0, 2.0)
 
@@ -28201,6 +28599,58 @@ Point{Int64}(1, 2)
 
 julia&gt; typeof(ans)
 Point{Int64}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Point(1.5,2)
+ERROR: MethodError: no method matching Point(::Float64, ::Int64)
+Closest candidates are:
+  Point(::T&lt;:Real, !Matched::T&lt;:Real) where T&lt;:Real at none:1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124024Z" creationid="hsugawa8651" creationdate="20181118T124024Z">
+        <seg>julia&gt; Point(1.5,2)
+ERROR: MethodError: no method matching Point(::Float64, ::Int64)
+Closest candidates are:
+  Point(::T&lt;:Real, !Matched::T&lt;:Real) where T&lt;:Real at none:1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Point(1.5,2)
+Point{Float64}(1.5, 2.0)
+
+julia&gt; Point(1,1//2)
+Point{Rational{Int64}}(1//1, 1//2)
+
+julia&gt; Point(1.0,1//2)
+Point{Float64}(1.0, 0.5)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124041Z" creationid="hsugawa8651" creationdate="20181118T124041Z">
+        <seg>julia&gt; Point(1.5,2)
+Point{Float64}(1.5, 2.0)
+
+julia&gt; Point(1,1//2)
+Point{Rational{Int64}}(1//1, 1//2)
+
+julia&gt; Point(1.0,1//2)
+Point{Float64}(1.0, 0.5)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Point(x::Int64, y::Float64) = Point(convert(Float64,x),y);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124004Z" creationid="hsugawa8651" creationdate="20181118T124004Z">
+        <seg>julia&gt; Point(x::Int64, y::Float64) = Point(convert(Float64,x),y);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Point(x::Real, y::Real) = Point(promote(x,y)...);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124034Z" creationid="hsugawa8651" creationdate="20181118T124034Z">
+        <seg>julia&gt; Point(x::Real, y::Real) = Point(promote(x,y)...);</seg>
       </tuv>
     </tu>
     <tu>
@@ -33759,6 +34209,120 @@ true</seg>
            x::Real
            y::Real
            OrderedPair(x,y) = x &gt; y ?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; struct OurRational{T&lt;:Integer} &lt;: Real
+           num::T
+           den::T
+           function OurRational{T}(num::T, den::T) where T&lt;:Integer
+               if num == 0 &amp;&amp; den == 0
+                    error("invalid rational: 0//0")
+               end
+               g = gcd(den, num)
+               num = div(num, g)
+               den = div(den, g)
+               new(num, den)
+           end
+       end
+
+julia&gt; OurRational(n::T, d::T) where {T&lt;:Integer} = OurRational{T}(n,d)
+OurRational
+
+julia&gt; OurRational(n::Integer, d::Integer) = OurRational(promote(n,d)...)
+OurRational
+
+julia&gt; OurRational(n::Integer) = OurRational(n,one(n))
+OurRational
+
+julia&gt; ⊘(n::Integer, d::Integer) = OurRational(n,d)
+⊘ (generic function with 1 method)
+
+julia&gt; ⊘(x::OurRational, y::Integer) = x.num ⊘ (x.den*y)
+⊘ (generic function with 2 methods)
+
+julia&gt; ⊘(x::Integer, y::OurRational) = (x*y.den) ⊘ y.num
+⊘ (generic function with 3 methods)
+
+julia&gt; ⊘(x::Complex, y::Real) = complex(real(x) ⊘ y, imag(x) ⊘ y)
+⊘ (generic function with 4 methods)
+
+julia&gt; ⊘(x::Real, y::Complex) = (x*y') ⊘ real(y*y')
+⊘ (generic function with 5 methods)
+
+julia&gt; function ⊘(x::Complex, y::Complex)
+           xy = x*y'
+           yy = real(y*y')
+           complex(real(xy) ⊘ yy, imag(xy) ⊘ yy)
+       end
+⊘ (generic function with 6 methods)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124101Z" creationid="hsugawa8651" creationdate="20181118T124101Z">
+        <seg>julia&gt; struct OurRational{T&lt;:Integer} &lt;: Real
+           num::T
+           den::T
+           function OurRational{T}(num::T, den::T) where T&lt;:Integer
+               if num == 0 &amp;&amp; den == 0
+                    error("invalid rational: 0//0")
+               end
+               g = gcd(den, num)
+               num = div(num, g)
+               den = div(den, g)
+               new(num, den)
+           end
+       end
+
+julia&gt; OurRational(n::T, d::T) where {T&lt;:Integer} = OurRational{T}(n,d)
+OurRational
+
+julia&gt; OurRational(n::Integer, d::Integer) = OurRational(promote(n,d)...)
+OurRational
+
+julia&gt; OurRational(n::Integer) = OurRational(n,one(n))
+OurRational
+
+julia&gt; ⊘(n::Integer, d::Integer) = OurRational(n,d)
+⊘ (generic function with 1 method)
+
+julia&gt; ⊘(x::OurRational, y::Integer) = x.num ⊘ (x.den*y)
+⊘ (generic function with 2 methods)
+
+julia&gt; ⊘(x::Integer, y::OurRational) = (x*y.den) ⊘ y.num
+⊘ (generic function with 3 methods)
+
+julia&gt; ⊘(x::Complex, y::Real) = complex(real(x) ⊘ y, imag(x) ⊘ y)
+⊘ (generic function with 4 methods)
+
+julia&gt; ⊘(x::Real, y::Complex) = (x*y') ⊘ real(y*y')
+⊘ (generic function with 5 methods)
+
+julia&gt; function ⊘(x::Complex, y::Complex)
+           xy = x*y'
+           yy = real(y*y')
+           complex(real(xy) ⊘ yy, imag(xy) ⊘ yy)
+       end
+⊘ (generic function with 6 methods)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; struct Point{T&lt;:Real}
+           x::T
+           y::T
+           Point{T}(x,y) where {T&lt;:Real} = new(x,y)
+       end
+
+julia&gt; Point(x::T, y::T) where {T&lt;:Real} = Point{T}(x,y);</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123916Z" creationid="hsugawa8651" creationdate="20181118T123916Z">
+        <seg>julia&gt; struct Point{T&lt;:Real}
+           x::T
+           y::T
+           Point{T}(x,y) where {T&lt;:Real} = new(x,y)
+       end
+
+julia&gt; Point(x::T, y::T) where {T&lt;:Real} = Point{T}(x,y);</seg>
       </tuv>
     </tu>
     <tu>
