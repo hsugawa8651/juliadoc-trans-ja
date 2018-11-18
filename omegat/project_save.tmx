@@ -6865,6 +6865,14 @@ unsigned literal.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Bitwise Operators</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095132Z" creationid="hsugawa8651" creationdate="20181118T095132Z">
+        <seg>ビット毎の演算</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Boolean operations &lt;x1/&gt;without&lt;x2/&gt; short-circuit evaluation can be done with the bitwise boolean operators
 introduced in &lt;x3/&gt;Mathematical Operations and Elementary Functions&lt;x4/&gt;: &lt;x5/&gt;&amp;&lt;x6/&gt; and &lt;x7/&gt;|&lt;x8/&gt;.</seg>
       </tuv>
@@ -8410,8 +8418,8 @@ manner that allows all custom arrays to behave similarly.</seg>
       <tuv lang="EN-US">
         <seg>Description</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110803Z" creationid="hsugawa8651" creationdate="20181112T110803Z">
-        <seg>Description</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095053Z" creationid="hsugawa8651" creationdate="20181112T110803Z">
+        <seg>説明</seg>
       </tuv>
     </tu>
     <tu>
@@ -13032,8 +13040,8 @@ all of the &lt;x11/&gt;then&lt;x12/&gt; blocks and the alternate implementation 
       <tuv lang="EN-US">
         <seg>Name</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110802Z" creationid="hsugawa8651" creationdate="20181112T110802Z">
-        <seg>Name</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095052Z" creationid="hsugawa8651" creationdate="20181112T110802Z">
+        <seg>名前</seg>
       </tuv>
     </tu>
     <tu>
@@ -13458,6 +13466,14 @@ using the &lt;x19/&gt;qsort&lt;x20/&gt; function (rather than Julia's built-in &
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Numeric Comparisons</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095336Z" creationid="hsugawa8651" creationdate="20181118T095336Z">
+        <seg>数値比較</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Numeric literals also work as coefficients to parenthesized expressions:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T093832Z" creationid="hsugawa8651" creationdate="20181118T093832Z">
@@ -13657,6 +13673,14 @@ level operators and functions, in a way that is independent of the underlying st
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160305Z" creationid="hsugawa8651" creationdate="20181109T160305Z">
         <seg>&lt;x11/&gt;AbstractArray&lt;x12/&gt;オブジェクトに対する操作は、より高い値を使用して定義されます。 レベル演算子と関数は、基礎となる記憶域とは独立して存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Operator</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095345Z" creationid="hsugawa8651" creationdate="20181118T095345Z">
+        <seg>演算子</seg>
       </tuv>
     </tu>
     <tu>
@@ -18372,6 +18396,14 @@ are not possible in the translation to Julia.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Updating operators</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095301Z" creationid="hsugawa8651" creationdate="20181118T095301Z">
+        <seg>更新演算子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Upon return, the contents of &lt;x1/&gt;width&lt;x2/&gt; and &lt;x3/&gt;range&lt;x4/&gt; can be retrieved (if they were changed by &lt;x5/&gt;foo&lt;x6/&gt;)
 by &lt;x7/&gt;width[]&lt;x8/&gt; and &lt;x9/&gt;range[]&lt;x10/&gt;; that is, they act like zero-dimensional arrays.</seg>
       </tuv>
@@ -20629,6 +20661,14 @@ object</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>arithmetic shift&lt;x1/&gt; right</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095241Z" creationid="hsugawa8651" creationdate="20181118T095241Z">
+        <seg>算術シフト&lt;x1/&gt; 右</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>array indexing (calling &lt;x1/&gt;`getindex`&lt;x2/&gt; or &lt;x3/&gt;`setindex!`&lt;x4/&gt;)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063044Z" creationid="hsugawa8651" creationdate="20181114T063044Z">
@@ -20711,8 +20751,16 @@ object</seg>
       <tuv lang="EN-US">
         <seg>bitwise and</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132241Z" creationid="hsugawa8651" creationdate="20181113T132241Z">
-        <seg>bitwise and</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095157Z" creationid="hsugawa8651" creationdate="20181113T132241Z">
+        <seg>ビット毎の積</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>bitwise not</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095145Z" creationid="hsugawa8651" creationdate="20181118T095145Z">
+        <seg>ビット毎の否定</seg>
       </tuv>
     </tu>
     <tu>
@@ -20727,8 +20775,8 @@ object</seg>
       <tuv lang="EN-US">
         <seg>bitwise or</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132250Z" creationid="hsugawa8651" creationdate="20181113T132250Z">
-        <seg>bitwise or</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095207Z" creationid="hsugawa8651" creationdate="20181113T132250Z">
+        <seg>ビット毎の和</seg>
       </tuv>
     </tu>
     <tu>
@@ -20876,8 +20924,8 @@ Base.unsafe_store!</seg>
       <tuv lang="EN-US">
         <seg>changes &lt;x1/&gt;true&lt;x2/&gt; to &lt;x3/&gt;false&lt;x4/&gt; and vice versa</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132157Z" creationid="hsugawa8651" creationdate="20181113T132157Z">
-        <seg>changes &lt;x1/&gt;true&lt;x2/&gt; to &lt;x3/&gt;false&lt;x4/&gt; and vice versa</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095059Z" creationid="hsugawa8651" creationdate="20181113T132157Z">
+        <seg>&lt;x1/&gt;true&lt;x2/&gt;から&lt;x3/&gt;false&lt;x4/&gt;に変更されます。その逆も同様です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -32795,6 +32843,14 @@ Pub  = "c07ecb7d-0dc9-4db7-8803-fadaaeaf08e1"</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083058Z" creationid="hsugawa8651" creationdate="20181113T083058Z">
         <seg>ndims(A)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>negation</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095056Z" creationid="hsugawa8651" creationdate="20181118T095056Z">
+        <seg>否定</seg>
       </tuv>
     </tu>
     <tu>
