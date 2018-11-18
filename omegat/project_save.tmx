@@ -13515,6 +13515,16 @@ an interactive session.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Scientific computing has traditionally required the highest performance,
+yet domain experts have largely moved to slower dynamic languages for
+daily work.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081334Z" creationid="hsugawa8651" creationdate="20181118T081334Z">
+        <seg>科学技術計算には常に最高の性能が求められますが、この分野のエキスパートたちはより低速な動的言語を使って仕事をしています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Second"
  "3.</seg>
       </tuv>
@@ -17522,6 +17532,16 @@ may lead to incorrect results or segmentation faults.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083508Z" creationid="hsugawa8651" creationdate="20181113T083508Z">
         <seg>警告:基礎となるストレージが実際にはストライドされていない場合は、これらのメソッドを実装しないでください。 誤った結果やセグメント化の障害につながる可能性があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We believe there are many good reasons to prefer dynamic
+languages for these applications, and we do not expect their use to
+diminish.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081351Z" creationid="hsugawa8651" creationdate="20181118T081351Z">
+        <seg> 私達はこの分野で動的言語を用いることにたくさんの利点があることを理解していますし、動的言語が使われないようにしたいわけでもありません。</seg>
       </tuv>
     </tu>
     <tu>
