@@ -960,8 +960,8 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
         <seg>(@ref man-dot-operators) such as &lt;x1/&gt;.+&lt;x2/&gt; and &lt;x3/&gt;.*&lt;x4/&gt; are equivalent
 to &lt;x5/&gt;broadcast&lt;x6/&gt; calls (except that they fuse, as described below).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161313Z" creationid="hsugawa8651" creationdate="20181114T161313Z">
-        <seg>(@ref man dot演算子)例えば&lt;x1/&gt;.+&lt;x2/&gt;&lt;x3/&gt;.*&lt;x4/&gt;は等価です。 &lt;x5/&gt;ブロードキャスト&lt;x6/&gt;コール(以下に説明するように融合することを除く)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T122046Z" creationid="hsugawa8651" creationdate="20181114T161313Z">
+        <seg>(@ref man-dot-operators)例えば&lt;x1/&gt;.+&lt;x2/&gt;&lt;x3/&gt;.*&lt;x4/&gt;は等価です。 &lt;x5/&gt;ブロードキャスト&lt;x6/&gt;コール(以下に説明するように融合することを除く)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2786,8 +2786,8 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
         <seg>&lt;x5/&gt;X .+= Y&lt;x6/&gt; etcetera is equivalent to &lt;x7/&gt;X .= X .+ Y&lt;x8/&gt; and results in a fused in-place assignment;
 see also &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-dot-operators).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T105916Z" creationid="hsugawa8651" creationdate="20181112T105916Z">
-        <seg>&lt;x5/&gt;X.+=Y&lt;x6/&gt;eteteraは&lt;x7/&gt;Xと同等であり、X.+Y&lt;x8/&gt;Y&lt;x8/&gt;となり、結果は融合されたインプレース割り当てになります。 &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man dot演算子)も参照してください。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T122046Z" creationid="hsugawa8651" creationdate="20181112T105916Z">
+        <seg>&lt;x5/&gt;X.+=Y&lt;x6/&gt;eteteraは&lt;x7/&gt;Xと同等であり、X.+Y&lt;x8/&gt;Y&lt;x8/&gt;となり、結果は融合されたインプレース割り当てになります。 &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-dot-operators)も参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3863,8 +3863,8 @@ to build some more advanced (and valid) functionality...</seg>
 that can be applied to arrays (and combinations of arrays and scalars) in such
 &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref man-vectorized), e.g. &lt;x9/&gt;z .== sin.(x .* y)&lt;x10/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115833Z" creationid="hsugawa8651" creationdate="20181109T160010Z">
-        <seg>また、&lt;x2/&gt;バイナリ演算子の&lt;x1/&gt;は、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man dot演算子)をサポートします。 は、配列(および配列とスカラーの組み合わせ)に適用することができます。 &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref man-vectorized)、例えば&lt;x9/&gt;z.=sin.(x .* y)&lt;x10/&gt;。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T122046Z" creationid="hsugawa8651" creationdate="20181109T160010Z">
+        <seg>また、&lt;x2/&gt;バイナリ演算子の&lt;x1/&gt;は、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-dot-operators)をサポートします。 は、配列(および配列とスカラーの組み合わせ)に適用することができます。 &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref man-vectorized)、例えば&lt;x9/&gt;z.=sin.(x .* y)&lt;x10/&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14111,8 +14111,8 @@ expression, however, can be used to imply multiplication:</seg>
         <seg>Nested "dot calls" &lt;x5/&gt;f.(...)&lt;x6/&gt; (including calls to &lt;x7/&gt;.+&lt;x8/&gt; etcetera)
 &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-dot-operators) into a single &lt;x12/&gt;broadcast&lt;x13/&gt; call.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160131Z" creationid="hsugawa8651" creationdate="20181109T160131Z">
-        <seg>ネストされた「ドットコール」&lt;x5/&gt;f.(...)&lt;x6/&gt;(&lt;x7/&gt;.+&lt;x8/&gt;eteteraへの呼び出しを含む) &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man dot演算子)は、単一の&lt;x12/&gt;ブロードキャスト・&lt;x13/&gt;コールに対して使用されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T122046Z" creationid="hsugawa8651" creationdate="20181109T160131Z">
+        <seg>ネストされた「ドットコール」&lt;x5/&gt;f.(...)&lt;x6/&gt;(&lt;x7/&gt;.+&lt;x8/&gt;eteteraへの呼び出しを含む) &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-dot-operators)は、単一の&lt;x12/&gt;ブロードキャスト・&lt;x13/&gt;コールに対して使用されます。</seg>
       </tuv>
     </tu>
     <tu>
