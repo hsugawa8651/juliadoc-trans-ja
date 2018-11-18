@@ -7925,6 +7925,14 @@ commonly passed in registers when using C or Julia calling conventions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By definition, &lt;c0&gt;eps(1.0)&lt;/c0&gt; is the same as &lt;c1&gt;eps(Float64)&lt;/c1&gt; since &lt;c2&gt;1.0&lt;/c2&gt; is a 64-bit floating-point value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191339Z" creationid="hsugawa8651" creationdate="20181118T191339Z">
+        <seg>定義により、&lt;c0&gt;eps(1.0)&lt;/c0&gt; は&lt;c1&gt;eps(Float64)&lt;/c1&gt;です。なぜなら、&lt;c2&gt;1.0&lt;/c2&gt; は、 64ビットの浮動小数点値です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By definition, &lt;x1/&gt;eps(1.0)&lt;x2/&gt; is the same as &lt;x3/&gt;eps(Float64)&lt;x4/&gt; since &lt;x5/&gt;1.0&lt;x6/&gt; is
 a 64-bit floating-point value.</seg>
       </tuv>
