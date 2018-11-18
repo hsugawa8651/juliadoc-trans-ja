@@ -401,6 +401,62 @@ x is equal to y</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192137Z" creationid="hsugawa8651" creationdate="20181118T192137Z">
+        <seg>#</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.Iterators.Stateful</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192142Z" creationid="hsugawa8651" creationdate="20181118T192142Z">
+        <seg>#Base.Iterators.Stateful</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.Iterators.countfrom</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192244Z" creationid="hsugawa8651" creationdate="20181118T192244Z">
+        <seg>#Base.Iterators.countfrom</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.Iterators.enumerate</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192217Z" creationid="hsugawa8651" creationdate="20181118T192217Z">
+        <seg>#Base.Iterators.enumerate</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.Iterators.rest</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192232Z" creationid="hsugawa8651" creationdate="20181118T192232Z">
+        <seg>#Base.Iterators.rest</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.Iterators.zip</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192206Z" creationid="hsugawa8651" creationdate="20181118T192206Z">
+        <seg>#Base.Iterators.zip</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Iteration-utilities-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192139Z" creationid="hsugawa8651" creationdate="20181118T192139Z">
+        <seg>#Iteration-utilities-1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>$ cat -n Tmp/test/runtests.jl
  1	using Tmp
  2	Tmp.greet()</seg>
@@ -1738,6 +1794,206 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../../devdocs/ast/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192049Z" creationid="hsugawa8651" creationdate="20181118T192049Z">
+        <seg>../../devdocs/ast/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/backtraces/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192125Z" creationid="hsugawa8651" creationdate="20181118T192125Z">
+        <seg>../../devdocs/backtraces/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/boundscheck/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192117Z" creationid="hsugawa8651" creationdate="20181118T192117Z">
+        <seg>../../devdocs/boundscheck/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/callconv/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192058Z" creationid="hsugawa8651" creationdate="20181118T192058Z">
+        <seg>../../devdocs/callconv/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/cartesian/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192103Z" creationid="hsugawa8651" creationdate="20181118T192103Z">
+        <seg>../../devdocs/cartesian/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/compiler/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192100Z" creationid="hsugawa8651" creationdate="20181118T192100Z">
+        <seg>../../devdocs/compiler/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/debuggingtips/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192127Z" creationid="hsugawa8651" creationdate="20181118T192127Z">
+        <seg>../../devdocs/debuggingtips/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/eval/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192056Z" creationid="hsugawa8651" creationdate="20181118T192056Z">
+        <seg>../../devdocs/eval/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/functions/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192102Z" creationid="hsugawa8651" creationdate="20181118T192102Z">
+        <seg>../../devdocs/functions/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/inference/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192123Z" creationid="hsugawa8651" creationdate="20181118T192123Z">
+        <seg>../../devdocs/inference/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/init/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192046Z" creationid="hsugawa8651" creationdate="20181118T192046Z">
+        <seg>../../devdocs/init/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/isbitsunionarrays/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192109Z" creationid="hsugawa8651" creationdate="20181118T192109Z">
+        <seg>../../devdocs/isbitsunionarrays/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/llvm/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192113Z" creationid="hsugawa8651" creationdate="20181118T192113Z">
+        <seg>../../devdocs/llvm/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/locks/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192118Z" creationid="hsugawa8651" creationdate="20181118T192118Z">
+        <seg>../../devdocs/locks/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/meta/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192105Z" creationid="hsugawa8651" creationdate="20181118T192105Z">
+        <seg>../../devdocs/meta/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/object/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192054Z" creationid="hsugawa8651" creationdate="20181118T192054Z">
+        <seg>../../devdocs/object/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/offset-arrays/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192120Z" creationid="hsugawa8651" creationdate="20181118T192120Z">
+        <seg>../../devdocs/offset-arrays/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/reflection/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192043Z" creationid="hsugawa8651" creationdate="20181118T192043Z">
+        <seg>../../devdocs/reflection/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/require/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192122Z" creationid="hsugawa8651" creationdate="20181118T192122Z">
+        <seg>../../devdocs/require/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/sanitizers/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192130Z" creationid="hsugawa8651" creationdate="20181118T192130Z">
+        <seg>../../devdocs/sanitizers/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/stdio/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192115Z" creationid="hsugawa8651" creationdate="20181118T192115Z">
+        <seg>../../devdocs/stdio/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/subarrays/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192107Z" creationid="hsugawa8651" creationdate="20181118T192107Z">
+        <seg>../../devdocs/subarrays/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/sysimg/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192111Z" creationid="hsugawa8651" creationdate="20181118T192111Z">
+        <seg>../../devdocs/sysimg/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/types/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192051Z" creationid="hsugawa8651" creationdate="20181118T192051Z">
+        <seg>../../devdocs/types/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/valgrind/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192129Z" creationid="hsugawa8651" creationdate="20181118T192129Z">
+        <seg>../../devdocs/valgrind/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../../manual/arrays/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191817Z" creationid="hsugawa8651" creationdate="20181118T191817Z">
@@ -1890,6 +2146,222 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../../stdlib/Base64/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191940Z" creationid="hsugawa8651" creationdate="20181118T191940Z">
+        <seg>../../stdlib/Base64/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/CRC32c/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191942Z" creationid="hsugawa8651" creationdate="20181118T191942Z">
+        <seg>../../stdlib/CRC32c/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/Dates/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191947Z" creationid="hsugawa8651" creationdate="20181118T191947Z">
+        <seg>../../stdlib/Dates/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/DelimitedFiles/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191949Z" creationid="hsugawa8651" creationdate="20181118T191949Z">
+        <seg>../../stdlib/DelimitedFiles/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/Distributed/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191952Z" creationid="hsugawa8651" creationdate="20181118T191952Z">
+        <seg>../../stdlib/Distributed/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/FileWatching/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191953Z" creationid="hsugawa8651" creationdate="20181118T191953Z">
+        <seg>../../stdlib/FileWatching/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/InteractiveUtils/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191955Z" creationid="hsugawa8651" creationdate="20181118T191955Z">
+        <seg>../../stdlib/InteractiveUtils/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/LibGit2/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191957Z" creationid="hsugawa8651" creationdate="20181118T191957Z">
+        <seg>../../stdlib/LibGit2/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/Libdl/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191959Z" creationid="hsugawa8651" creationdate="20181118T191959Z">
+        <seg>../../stdlib/Libdl/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/LinearAlgebra/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192001Z" creationid="hsugawa8651" creationdate="20181118T192001Z">
+        <seg>../../stdlib/LinearAlgebra/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/Logging/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192004Z" creationid="hsugawa8651" creationdate="20181118T192004Z">
+        <seg>../../stdlib/Logging/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/Markdown/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192005Z" creationid="hsugawa8651" creationdate="20181118T192005Z">
+        <seg>../../stdlib/Markdown/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/Mmap/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192007Z" creationid="hsugawa8651" creationdate="20181118T192007Z">
+        <seg>../../stdlib/Mmap/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/Pkg/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192009Z" creationid="hsugawa8651" creationdate="20181118T192009Z">
+        <seg>../../stdlib/Pkg/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/Printf/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192011Z" creationid="hsugawa8651" creationdate="20181118T192011Z">
+        <seg>../../stdlib/Printf/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/Profile/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192013Z" creationid="hsugawa8651" creationdate="20181118T192013Z">
+        <seg>../../stdlib/Profile/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/REPL/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192015Z" creationid="hsugawa8651" creationdate="20181118T192015Z">
+        <seg>../../stdlib/REPL/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/Random/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192017Z" creationid="hsugawa8651" creationdate="20181118T192017Z">
+        <seg>../../stdlib/Random/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/SHA/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192019Z" creationid="hsugawa8651" creationdate="20181118T192019Z">
+        <seg>../../stdlib/SHA/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/Serialization/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192021Z" creationid="hsugawa8651" creationdate="20181118T192021Z">
+        <seg>../../stdlib/Serialization/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/SharedArrays/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192023Z" creationid="hsugawa8651" creationdate="20181118T192023Z">
+        <seg>../../stdlib/SharedArrays/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/Sockets/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192025Z" creationid="hsugawa8651" creationdate="20181118T192025Z">
+        <seg>../../stdlib/Sockets/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/SparseArrays/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192026Z" creationid="hsugawa8651" creationdate="20181118T192026Z">
+        <seg>../../stdlib/SparseArrays/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/Statistics/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192029Z" creationid="hsugawa8651" creationdate="20181118T192029Z">
+        <seg>../../stdlib/Statistics/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/Test/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192036Z" creationid="hsugawa8651" creationdate="20181118T192036Z">
+        <seg>../../stdlib/Test/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/UUIDs/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192038Z" creationid="hsugawa8651" creationdate="20181118T192038Z">
+        <seg>../../stdlib/UUIDs/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../stdlib/Unicode/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192040Z" creationid="hsugawa8651" creationdate="20181118T192040Z">
+        <seg>../../stdlib/Unicode/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../arrays/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191914Z" creationid="hsugawa8651" creationdate="20181118T191914Z">
@@ -1902,6 +2374,14 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191902Z" creationid="hsugawa8651" creationdate="20181118T191902Z">
         <seg>../base/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../c/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191932Z" creationid="hsugawa8651" creationdate="20181118T191932Z">
+        <seg>../c/</seg>
       </tuv>
     </tu>
     <tu>
@@ -1926,6 +2406,22 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191923Z" creationid="hsugawa8651" creationdate="20181118T191923Z">
         <seg>../file/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../io-network/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191925Z" creationid="hsugawa8651" creationdate="20181118T191925Z">
+        <seg>../io-network/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../libc/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191934Z" creationid="hsugawa8651" creationdate="20181118T191934Z">
+        <seg>../libc/</seg>
       </tuv>
     </tu>
     <tu>
@@ -1958,6 +2454,46 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191916Z" creationid="hsugawa8651" creationdate="20181118T191916Z">
         <seg>../parallel/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../parallel/#Base.Channel</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192151Z" creationid="hsugawa8651" creationdate="20181118T192151Z">
+        <seg>../parallel/#Base.Channel</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../punctuation/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191927Z" creationid="hsugawa8651" creationdate="20181118T191927Z">
+        <seg>../punctuation/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../simd-types/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191937Z" creationid="hsugawa8651" creationdate="20181118T191937Z">
+        <seg>../simd-types/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../sort/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191929Z" creationid="hsugawa8651" creationdate="20181118T191929Z">
+        <seg>../sort/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../stacktraces/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191936Z" creationid="hsugawa8651" creationdate="20181118T191936Z">
+        <seg>../stacktraces/</seg>
       </tuv>
     </tu>
     <tu>
@@ -2509,10 +3045,238 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Iterators.Stateful&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192145Z" creationid="hsugawa8651" creationdate="20181118T192145Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Iterators.Stateful&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Iterators.countfrom&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192246Z" creationid="hsugawa8651" creationdate="20181118T192246Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Iterators.countfrom&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Iterators.enumerate&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192220Z" creationid="hsugawa8651" creationdate="20181118T192220Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Iterators.enumerate&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Iterators.rest&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192234Z" creationid="hsugawa8651" creationdate="20181118T192234Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Iterators.rest&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Iterators.zip&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192208Z" creationid="hsugawa8651" creationdate="20181118T192208Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Iterators.zip&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Metaprogramming&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191807Z" creationid="hsugawa8651" creationdate="20181118T191807Z">
         <seg>メタプログラミング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Stateful(itr)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192147Z" creationid="hsugawa8651" creationdate="20181118T192147Z">
+        <seg>&lt;c0&gt;Stateful(itr)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;countfrom(start=1, step=1)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192247Z" creationid="hsugawa8651" creationdate="20181118T192247Z">
+        <seg>&lt;c0&gt;countfrom(start=1, step=1)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;enumerate(iter)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192222Z" creationid="hsugawa8651" creationdate="20181118T192222Z">
+        <seg>&lt;c0&gt;enumerate(iter)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; a = 1:5
+1:5
+
+julia&gt; b = ["e","d","b","c","a"]
+5-element Array{String,1}:
+ "e"
+ "d"
+ "b"
+ "c"
+ "a"
+
+julia&gt; c = zip(a,b)
+Base.Iterators.Zip2{UnitRange{Int64},Array{String,1}}(1:5, ["e", "d", "b", "c", "a"])
+
+julia&gt; length(c)
+5
+
+julia&gt; first(c)
+(1, "e")&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192213Z" creationid="hsugawa8651" creationdate="20181118T192213Z">
+        <seg>&lt;c0&gt;julia&gt; a = 1:5
+1:5
+
+julia&gt; b = ["e","d","b","c","a"]
+5-element Array{String,1}:
+ "e"
+ "d"
+ "b"
+ "c"
+ "a"
+
+julia&gt; c = zip(a,b)
+Base.Iterators.Zip2{UnitRange{Int64},Array{String,1}}(1:5, ["e", "d", "b", "c", "a"])
+
+julia&gt; length(c)
+5
+
+julia&gt; first(c)
+(1, "e")&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; a = Iterators.Stateful("abcdef");
+
+julia&gt; isempty(a)
+false
+
+julia&gt; popfirst!(a)
+'a': ASCII/Unicode U+0061 (category Ll: Letter, lowercase)
+
+julia&gt; collect(Iterators.take(a, 3))
+3-element Array{Char,1}:
+ 'b'
+ 'c'
+ 'd'
+
+julia&gt; collect(a)
+2-element Array{Char,1}:
+ 'e'
+ 'f'&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192158Z" creationid="hsugawa8651" creationdate="20181118T192158Z">
+        <seg>&lt;c0&gt;julia&gt; a = Iterators.Stateful("abcdef");
+
+julia&gt; isempty(a)
+false
+
+julia&gt; popfirst!(a)
+'a': ASCII/Unicode U+0061 (category Ll: Letter, lowercase)
+
+julia&gt; collect(Iterators.take(a, 3))
+3-element Array{Char,1}:
+ 'b'
+ 'c'
+ 'd'
+
+julia&gt; collect(a)
+2-element Array{Char,1}:
+ 'e'
+ 'f'&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; a = Iterators.Stateful([1,1,1,2,3,4]);
+
+julia&gt; for x in a; x == 1 || break; end
+
+julia&gt; Base.peek(a)
+3
+
+julia&gt; sum(a) # Sum the remaining elements
+7&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192200Z" creationid="hsugawa8651" creationdate="20181118T192200Z">
+        <seg>&lt;c0&gt;julia&gt; a = Iterators.Stateful([1,1,1,2,3,4]);
+
+julia&gt; for x in a; x == 1 || break; end
+
+julia&gt; Base.peek(a)
+3
+
+julia&gt; sum(a) # Sum the remaining elements
+7&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; a = ["a", "b", "c"];
+
+julia&gt; for (index, value) in enumerate(a)
+           println("$index $value")
+       end
+1 a
+2 b
+3 c&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192226Z" creationid="hsugawa8651" creationdate="20181118T192226Z">
+        <seg>&lt;c0&gt;julia&gt; a = ["a", "b", "c"];
+
+julia&gt; for (index, value) in enumerate(a)
+           println("$index $value")
+       end
+1 a
+2 b
+3 c&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; collect(Iterators.rest([1,2,3,4], 2))
+3-element Array{Int64,1}:
+ 2
+ 3
+ 4&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192240Z" creationid="hsugawa8651" creationdate="20181118T192240Z">
+        <seg>&lt;c0&gt;julia&gt; collect(Iterators.rest([1,2,3,4], 2))
+3-element Array{Int64,1}:
+ 2
+ 3
+ 4&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;rest(iter, state)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192235Z" creationid="hsugawa8651" creationdate="20181118T192235Z">
+        <seg>&lt;c0&gt;rest(iter, state)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;zip(iters...)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192210Z" creationid="hsugawa8651" creationdate="20181118T192210Z">
+        <seg>&lt;c0&gt;zip(iters...)&lt;/c0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -28270,6 +29034,46 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152443Z" creationid="hsugawa8651" creationdate="20181117T152436Z">
         <seg>hn=Vector{UInt8}(undef,256) err=ccall(:gethostname,stdcall,Int32,(Ptr{UInt8},UInt32),hn,長さ(hn))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/d789231e9985537686052db9b2314c0d51656308/base/iterators.jl#L110-L132</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192229Z" creationid="hsugawa8651" creationdate="20181118T192229Z">
+        <seg>https://github.com/JuliaLang/julia/blob/d789231e9985537686052db9b2314c0d51656308/base/iterators.jl#L110-L132</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/d789231e9985537686052db9b2314c0d51656308/base/iterators.jl#L339-L367</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192215Z" creationid="hsugawa8651" creationdate="20181118T192215Z">
+        <seg>https://github.com/JuliaLang/julia/blob/d789231e9985537686052db9b2314c0d51656308/base/iterators.jl#L339-L367</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/d789231e9985537686052db9b2314c0d51656308/base/iterators.jl#L455-L468</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192241Z" creationid="hsugawa8651" creationdate="20181118T192241Z">
+        <seg>https://github.com/JuliaLang/julia/blob/d789231e9985537686052db9b2314c0d51656308/base/iterators.jl#L455-L468</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/d789231e9985537686052db9b2314c0d51656308/base/iterators.jl#L984-L1035</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192203Z" creationid="hsugawa8651" creationdate="20181118T192203Z">
+        <seg>https://github.com/JuliaLang/julia/blob/d789231e9985537686052db9b2314c0d51656308/base/iterators.jl#L984-L1035</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/master/doc/src/base/iterators.md</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192134Z" creationid="hsugawa8651" creationdate="20181118T192134Z">
+        <seg>https://github.com/JuliaLang/julia/blob/master/doc/src/base/iterators.md</seg>
       </tuv>
     </tu>
     <tu>
