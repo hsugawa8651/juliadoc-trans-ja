@@ -8277,8 +8277,8 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
 &lt;a0&gt;Unicode&lt;/a0&gt;, including but not
 limited to &lt;a1&gt;UTF-8&lt;/a1&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082900Z" creationid="hsugawa8651" creationdate="20181118T082900Z">
-        <seg>Unicode の効率的なサポート。 UTF-8 も含みますが、これに限定しません
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T083006Z" creationid="hsugawa8651" creationdate="20181118T082900Z">
+        <seg>&lt;a0&gt;Unicode&lt;/a0&gt; の効率的なサポート。 &lt;a1&gt;UTF-8&lt;/a1&gt; も含みますが、これに限定しません
 </seg>
       </tuv>
     </tu>
@@ -12204,6 +12204,14 @@ not convert keys on insertion.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224739Z" creationid="hsugawa8651" creationdate="20181109T224739Z">
         <seg>CPU機能の使用を制限&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;に制限します。&lt;x4/&gt;ヘルプ&lt;x5/&gt;に設定すると、使用可能なオプションが表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Lisp-like macros and other metaprogramming facilities</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T082943Z" creationid="hsugawa8651" creationdate="20181118T082943Z">
+        <seg>Lispライクなマクロやその他のメタプログラミング機構</seg>
       </tuv>
     </tu>
     <tu>
