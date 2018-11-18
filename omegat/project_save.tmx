@@ -2023,6 +2023,24 @@ The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c21&gt;&lt;s22&gt;user&lt;/s22&gt;&lt;/c21&gt; defaults to current user,
+&lt;c23&gt;&lt;s24&gt;port&lt;/s24&gt;&lt;/c23&gt; to the standard ssh port.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T085227Z" creationid="hsugawa8651" creationdate="20181118T084952Z">
+        <seg>デフォルトでは、&lt;c21&gt;&lt;s22&gt;user&lt;/s22&gt;&lt;/c21&gt; は現在のユーザー、 &lt;c23&gt;&lt;s24&gt;port&lt;/s24&gt;&lt;/c23&gt; は標準のsshポートになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c25&gt;&lt;s26&gt;count&lt;/s26&gt;&lt;/c25&gt; is the number of workers to spawn
+on the node, and defaults to 1.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T085203Z" creationid="hsugawa8651" creationdate="20181118T085004Z">
+        <seg>&lt;c25&gt;&lt;s26&gt;count&lt;/s26&gt;&lt;/c25&gt; はノードで作成されるワーカーの数で、デフォルトは1です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c4&gt;&lt;s5&gt;-p&lt;/s5&gt; &lt;s6&gt;n&lt;/s6&gt;&lt;/c4&gt; will launch an additional &lt;c7&gt;&lt;s8&gt;n&lt;/s8&gt;&lt;/c7&gt; worker
 processes, while &lt;c9&gt;&lt;s10&gt;--machinefile&lt;/s10&gt; &lt;s11&gt;file&lt;/s11&gt;&lt;/c9&gt; will launch a worker for each line in
 file &lt;c12&gt;&lt;s13&gt;file&lt;/s13&gt;&lt;/c12&gt;.</seg>
@@ -8325,6 +8343,15 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Each machine definition takes the form
+&lt;c18&gt;&lt;s19&gt;[count*][user@]host[:port]&lt;/s19&gt; &lt;s20&gt;[bind_addr[:port]]&lt;/s20&gt;&lt;/c18&gt; .</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084939Z" creationid="hsugawa8651" creationdate="20181118T084939Z">
+        <seg>各マシンの定義は [count*][user@]host[:port] [bind_addr[:port]] という形式で書かれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Each method of a generated function has its own view of defined functions:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T015729Z" creationid="hsugawa8651" creationdate="20181116T015729Z">
@@ -10507,6 +10534,17 @@ section before trying anything else.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T081550Z" creationid="hsugawa8651" creationdate="20181118T081550Z">
         <seg>JuliaのコンパイラはPythonやRで使われるようなインタプリタとは異なるので、もしかしたら最初はその性能に気づかないかもしれません。 遅いと感じたら、何かを試す前に &lt;s1&gt;Performance Tips &lt;/s1&gt;を参照することをお勧めします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you have code that you want executed whenever Julia is run, you can
+put it in &lt;c0&gt;&lt;s1&gt;~/.juliarc.jl&lt;/s1&gt;&lt;/c0&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T085054Z" creationid="hsugawa8651" creationdate="20181118T085054Z">
+        <seg>Juliaの起動時に毎回実行したいコードがあれば、 &lt;c0&gt;&lt;s1&gt;~/.juliarc.jl&lt;/s1&gt;&lt;/c0&gt; に書いておくことができます。
+
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -15810,6 +15848,16 @@ as calling a library function from C code.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The machines defined in &lt;c14&gt;&lt;s15&gt;file&lt;/s15&gt;&lt;/c14&gt; must be accessible via a
+passwordless &lt;c16&gt;&lt;s17&gt;ssh&lt;/s17&gt;&lt;/c16&gt; login, with Julia installed at the same location as the
+current host.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084922Z" creationid="hsugawa8651" creationdate="20181118T084922Z">
+        <seg>file で定義されたマシンは、パスワード無しで ssh アクセスでき、現在のホストと同じ場所にJuliaがインストールされている必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The machines defined in &lt;x6/&gt;file&lt;x7/&gt; must be accessible via a password-less
 &lt;x8/&gt;ssh&lt;x9/&gt; login, with Julia installed at the same location as the current host.</seg>
       </tuv>
@@ -15975,6 +16023,16 @@ value for the &lt;x7/&gt;obj&lt;x8/&gt; field of another instance, such as, for 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155854Z" creationid="hsugawa8651" creationdate="20181117T155854Z">
         <seg>唯一の解決策は、不完全に初期化されたインスタンスを作成することです。 &lt;x3/&gt;SelfReferential&lt;x4/&gt;のうち、未割り当ての&lt;x6/&gt;obj&lt;x6/&gt;&lt;x6/&gt;フィールドを指定し、その不完全なインスタンスを有効にして使用します。 他のインスタンスの&lt;x7/&gt;obj&lt;x8/&gt;フィールドの値(例えば、それ自体)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The optional &lt;c27&gt;&lt;s28&gt;bind-to&lt;/s28&gt; &lt;s29&gt;bind_addr[:port]&lt;/s29&gt;&lt;/c27&gt;
+specifies the ip-address and port that other workers should use to
+connect to this worker.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T085144Z" creationid="hsugawa8651" creationdate="20181118T085022Z">
+        <seg>&lt;c27&gt;&lt;s28&gt;bind-to&lt;/s28&gt; &lt;s29&gt;bind_addr[:port]&lt;/s29&gt;&lt;/c27&gt; オプションを指定すると、他のワーカーがそのワーカーと接続する際に使うIPアドレスとポートを設定することもできます。</seg>
       </tuv>
     </tu>
     <tu>
