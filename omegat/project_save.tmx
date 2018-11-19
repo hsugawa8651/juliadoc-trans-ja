@@ -2682,6 +2682,14 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../getting-started/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T034035Z" creationid="hsugawa8651" creationdate="20181119T034035Z">
+        <seg>../getting-started/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../integers-and-floating-point-numbers/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031849Z" creationid="hsugawa8651" creationdate="20181119T031849Z">
@@ -2806,6 +2814,14 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191911Z" creationid="hsugawa8651" creationdate="20181118T191911Z">
         <seg>../strings/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../style-guide/#Style-Guide-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T034023Z" creationid="hsugawa8651" creationdate="20181119T034023Z">
+        <seg>../style-guide/#Style-Guide-1</seg>
       </tuv>
     </tu>
     <tu>
@@ -3457,6 +3473,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192208Z" creationid="hsugawa8651" creationdate="20181118T192208Z">
         <seg>&lt;a0&gt;&lt;c1&gt;Base.Iterators.zip&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;s1&gt;Previous&lt;/s1&gt;&lt;s2&gt;Getting Started&lt;/s2&gt;&lt;/a0&gt;&lt;a3&gt;&lt;s4&gt;Next&lt;/s4&gt;&lt;s5&gt;Integers and Floating-Point Numbers&lt;/s5&gt;&lt;/a3&gt;&lt;/f6&gt;&lt;/a7&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T034114Z" creationid="hsugawa8651" creationdate="20181119T034102Z">
+        <seg>&lt;a0&gt;&lt;s1&gt;前&lt;/s1&gt;&lt;s2&gt;スタートアップ&lt;/s2&gt;&lt;/a0&gt;&lt;a3&gt;&lt;s4&gt;次&lt;/s4&gt;&lt;s5&gt;整数および浮動小数点数&lt;/s&gt;&lt;/a&gt;&lt;/a3&gt;&lt;/a7&gt;&lt;/a3&gt;&lt;/f3&gt;&lt;/a7&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -13192,8 +13216,8 @@ are identical to the passed values.</seg>
       <tuv lang="EN-US">
         <seg>Functions that write to their arguments have names that end in &lt;c0&gt;!&lt;/c0&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033945Z" creationid="hsugawa8651" creationdate="20181119T033810Z">
-        <seg>Functions that write to their arguments have names that end in &lt;c0&gt;!&lt;/c0&gt;.引数に書き込む関数の名前の末尾は ! とします。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T034021Z" creationid="hsugawa8651" creationdate="20181119T033810Z">
+        <seg>引数に書き込む関数は、名前の末尾を&lt;c0&gt;!&lt;/c0&gt;とします。</seg>
       </tuv>
     </tu>
     <tu>
