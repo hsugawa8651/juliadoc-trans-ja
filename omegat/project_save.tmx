@@ -16618,6 +16618,14 @@ where syntactic conflicts arise:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is an example of a &lt;c2&gt;while&lt;/c2&gt; loop:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141117Z" creationid="hsugawa8651" creationdate="20181119T141117Z">
+        <seg>&lt;c2&gt;while&lt;/c2&gt;ループの例を次に示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is example of the short form used to quote an arithmetic expression:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115343Z" creationid="hsugawa8651" creationdate="20181118T115343Z">
@@ -19382,6 +19390,14 @@ be evaluated and returned depending on the preceding conditionals:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It will be evaluated and returned depending on the preceding conditionals:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141016Z" creationid="hsugawa8651" creationdate="20181119T141016Z">
+        <seg>これは前の条件式に応じて評価され、戻り値を返します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It's easy to experiment with this behavior:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140318Z" creationid="hsugawa8651" creationdate="20181109T230248Z">
@@ -21455,8 +21471,8 @@ into a function call as individual arguments.</seg>
       <tuv lang="EN-US">
         <seg>On the other hand, any type of expression can be used at the end of a conditional chain.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230819Z" creationid="hsugawa8651" creationdate="20181109T230819Z">
-        <seg>一方、条件付きチェーンの最後では、任意のタイプの表現を使用できます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141004Z" creationid="hsugawa8651" creationdate="20181109T230819Z">
+        <seg>一方、条件式の連鎖の最終項では、あらゆる型の式が利用可能です。。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23919,6 +23935,15 @@ resulting expression contains &lt;x5/&gt;only&lt;x6/&gt; the second &lt;x7/&gt;p
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134204Z" creationid="hsugawa8651" creationdate="20181119T134127Z">
         <seg>この、&lt;c0&gt;elseif&lt;/c0&gt; および &lt;c1&gt;else&lt;/c1&gt;ブロックは省略可能で、&lt;c2&gt;elseif&lt;/c2&gt;ブロックは、書いた数だけ使うことができます。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c0&gt;while&lt;/c0&gt; loop evaluates the condition expression (&lt;c1&gt;i &lt;= 5&lt;/c1&gt; in this case), and as long it remains &lt;c2&gt;true&lt;/c2&gt;, keeps also evaluating the body of the &lt;c3&gt;while&lt;/c3&gt; loop.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141226Z" creationid="hsugawa8651" creationdate="20181119T141226Z">
+        <seg>&lt;c0&gt;while&lt;/c0&gt; ループは、条件式 （この場合は&lt;c1&gt;i &lt;= 5&lt;/c1&gt;）を評価し、その式が&lt;c2&gt;真&lt;/c2&gt;である間、&lt;c3&gt;while&lt;/c3&gt;ループ本体の評価を続けます。 
 </seg>
       </tuv>
     </tu>
@@ -26644,6 +26669,14 @@ that accomplish this: &lt;x1/&gt;begin&lt;x2/&gt; blocks and &lt;x3/&gt;(;)&lt;x
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133614Z" creationid="hsugawa8651" creationdate="20181119T133512Z">
         <seg>これを実現するJuliaの制御構造には、&lt;c0&gt;beginブロック&lt;/c0&gt;と、セミコロン&lt;c1&gt;(;)&lt;/c1&gt;連鎖の２つがあります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are two constructs for repeated evaluation of expressions: the &lt;c0&gt;while&lt;/c0&gt; loop and the &lt;c1&gt;for&lt;/c1&gt; loop.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141057Z" creationid="hsugawa8651" creationdate="20181119T141057Z">
+        <seg>式を繰り返し評価する制御構造は２つあります。&lt;c0&gt;while&lt;/c0&gt;ループと&lt;c1&gt;for&lt;/c1&gt;ループです。</seg>
       </tuv>
     </tu>
     <tu>
