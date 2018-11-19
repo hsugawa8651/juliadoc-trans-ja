@@ -5181,6 +5181,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Tasks (aka Coroutines)&lt;/a0&gt;: &lt;a1&gt;&lt;c2&gt;yieldto()&lt;/c2&gt;&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133312Z" creationid="hsugawa8651" creationdate="20181119T133312Z">
+        <seg>&lt;a0&gt;タスク (コルーチンの別称)&lt;/a0&gt;: &lt;a1&gt;&lt;c2&gt;yieldto()&lt;/c2&gt;&lt;/a1&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Tasks&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125927Z" creationid="hsugawa8651" creationdate="20181119T125927Z">
@@ -24731,8 +24739,8 @@ it will be a &lt;x7/&gt;CartesianIndex&lt;x8/&gt;:</seg>
       <tuv lang="EN-US">
         <seg>The first five control flow mechanisms are standard to high-level programming languages.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225741Z" creationid="hsugawa8651" creationdate="20181109T225741Z">
-        <seg>最初の5つの制御フローメカニズムは、高レベルプログラミング言語に対して標準的なものです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133326Z" creationid="hsugawa8651" creationdate="20181109T225741Z">
+        <seg>はじめの５つは、高水準なプログラミング言語には標準的な制御構造です。 [タスク]はそれほど標準的ではありませんが、ローカルに限らない制御構造で、一時的に保留している計算を切り替えることができます。 タスクは、強力な制御構造で、Juliaでは、例外処理や協調的マルチタスクの実装に、使われています。 日常的なプログラムには、タスクを直接使う必要はないかもしれませんが、ある種の問題は、タスクを使うとはるかに簡単に解くことができます。</seg>
       </tuv>
     </tu>
     <tu>
