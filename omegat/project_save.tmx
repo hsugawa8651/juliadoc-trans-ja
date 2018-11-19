@@ -7133,6 +7133,14 @@ help output below).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;cond&gt; &lt;statement&gt; end&lt;/c4&gt;, one can write &lt;c5&gt;&lt;cond&gt; || &lt;statement&gt;&lt;/c5&gt; (which could be read as: &lt;cond&gt; &lt;e6&gt;or else&lt;/e6&gt; &lt;statement&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140623Z" creationid="hsugawa8651" creationdate="20181119T140538Z">
+        <seg>&lt;条件式&gt; &lt;実行文&gt; end&lt;/c4&gt;は、 &lt;c5&gt;&lt;条件式&gt; || &lt;実行文&gt;&lt;/c5&gt;と書けます （||は、&lt;e6&gt;"でなければ"&lt;/e6&gt; と読み下せます)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s0&gt;&lt;/s0&gt;&lt;s1&gt;$&lt;/s1&gt; &lt;s2&gt;julia&lt;/s2&gt; &lt;s3&gt;script&lt;/s3&gt;&lt;s4&gt;.&lt;/s4&gt;&lt;s5&gt;jl&lt;/s5&gt; &lt;s6&gt;arg1&lt;/s6&gt; &lt;s7&gt;arg2&lt;/s7&gt;&lt;s8&gt;...&lt;/s8&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084039Z" creationid="hsugawa8651" creationdate="20181118T084039Z">
@@ -12545,6 +12553,14 @@ introduced in &lt;x3/&gt;Mathematical Operations and Elementary Functions&lt;x4/
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230550Z" creationid="hsugawa8651" creationdate="20181109T230550Z">
         <seg>&lt;x2/&gt;短絡評価なしのブール演算&lt;x1/&gt;は、ビット単位のブール演算子で実行できます。 &lt;x3/&gt;演算と基本関数&lt;x4/&gt;:&lt;x5/&gt;&amp;&lt;x6/&gt;&lt;x6/&gt;&lt;x8/&gt;と&lt;x6/&gt;&lt;x8/&gt;で導入されました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Both &lt;c9&gt;&amp;&amp;&lt;/c9&gt; and &lt;c10&gt;||&lt;/c10&gt; associate to the right, but &lt;c11&gt;&amp;&amp;&lt;/c11&gt; has higher precedence than &lt;c12&gt;||&lt;/c12&gt; does.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140307Z" creationid="hsugawa8651" creationdate="20181119T140307Z">
+        <seg>&lt;c9&gt;&amp;&amp;&lt;/c9&gt; と&lt;c10&gt;||&lt;/c10&gt;は共に、右から結合しますが、&lt;c11&gt;&amp;&amp;&lt;/c11&gt;は&lt;c12&gt;||&lt;/c12&gt;より、優先順位が高いです。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -18749,6 +18765,15 @@ of the iteration state externally from the object.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Instead of &lt;c1&gt;if &lt;cond&gt; &lt;statement&gt; end&lt;/c1&gt;, one can write &lt;c2&gt;&lt;cond&gt; &amp;&amp; &lt;statement&gt;&lt;/c2&gt; (which could be read as: &lt;cond&gt; &lt;e3&gt;and then&lt;/e3&gt; &lt;statement&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140510Z" creationid="hsugawa8651" creationdate="20181119T140510Z">
+        <seg>&lt;c1&gt;if &lt;条件式&gt; &lt;実行文&gt; end&lt;/c1&gt;の代わりに、&lt;c2&gt; &lt;条件式&gt; &amp;&amp; &lt;実行文&gt;&lt;/c2&gt;と書けます （&amp;&amp;は、&lt;e3&gt;"の時は"&lt;/e3&gt; と読み下せます)。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Instead of &lt;x3/&gt;if &lt;x4/&gt; &lt;x5/&gt; end&lt;x6/&gt;, one can write &lt;x7/&gt;&lt;x8/&gt; &amp;&amp; &lt;x9/&gt;&lt;x10/&gt; (which could be
 read as: &lt;x11/&gt;</seg>
       </tuv>
@@ -19351,8 +19376,8 @@ be evaluated and returned depending on the preceding conditionals:</seg>
       <tuv lang="EN-US">
         <seg>It's easy to experiment with this behavior:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230248Z" creationid="hsugawa8651" creationdate="20181109T230248Z">
-        <seg>この動作を試してみると簡単です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140318Z" creationid="hsugawa8651" creationdate="20181109T230248Z">
+        <seg>これは簡単に試してみることができます：</seg>
       </tuv>
     </tu>
     <tu>
@@ -22893,6 +22918,14 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155802Z" creationid="hsugawa8651" creationdate="20181109T155802Z">
         <seg>同様にインデックス化 &lt;x7/&gt;N&lt;x8/&gt;-次元ブール配列は、実効的には、以下のように、インデックス化と同じである。 &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;sのベクトルであり、その値は&lt;x11/&gt;真&lt;x12/&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Similarly, instead of &lt;c4&gt;if !</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140550Z" creationid="hsugawa8651" creationdate="20181119T140550Z">
+        <seg> 同様に、 &lt;c4&gt;if ！ </seg>
       </tuv>
     </tu>
     <tu>
@@ -27150,6 +27183,15 @@ an integer value.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This behavior is frequently used in Julia to form an alternative to very short &lt;c0&gt;if&lt;/c0&gt; statements.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140408Z" creationid="hsugawa8651" creationdate="20181119T140408Z">
+        <seg>Juliaでは、非常に短い&lt;c0&gt;if&lt;/c0&gt;文の代わりに、短絡評価が頻繁に利用されます。 
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This behavior is frequently used in Julia to form an alternative to very short &lt;x1/&gt;if&lt;x2/&gt; statements.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230359Z" creationid="hsugawa8651" creationdate="20181109T230359Z">
@@ -29495,6 +29537,14 @@ of &lt;x1/&gt;&amp;&amp;&lt;x2/&gt; and &lt;x3/&gt;||&lt;x4/&gt; operators.</seg
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230405Z" creationid="hsugawa8651" creationdate="20181109T230405Z">
         <seg>さまざまな組み合わせのアソシエティビティと優先順位によって、同じ方法で簡単に実験することができます。 &lt;x1/&gt;&amp;&amp;&lt;x2/&gt;および&lt;x3/&gt;&lt;x4/&gt;演算子のことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can easily experiment in the same way with the associativity and precedence of various combinations of &lt;c0&gt;&amp;&amp;&lt;/c0&gt; and &lt;c1&gt;||&lt;/c1&gt; operators.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140346Z" creationid="hsugawa8651" creationdate="20181119T140346Z">
+        <seg>同様の手法で、&lt;c0&gt;&amp;&amp;&lt;/c0&gt;と&lt;c1&gt;||&lt;/c1&gt;の演算子のさまざまな組み合わせに対して、結合性と優先順位を簡単に試すことができます。</seg>
       </tuv>
     </tu>
     <tu>
