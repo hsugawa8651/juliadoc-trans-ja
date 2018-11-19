@@ -5505,6 +5505,14 @@ BitArray{N}(undef, dims::NTuple{N,Int})&lt;/c0&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Exception&lt;/c0&gt;s are thrown when an unexpected condition has occurred.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T143244Z" creationid="hsugawa8651" creationdate="20181119T143206Z">
+        <seg>&lt;c0&gt;例外&lt;/c0&gt;は予想外の状況が発生したときに投げられます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;IndexCartesian()&lt;/c0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131858Z" creationid="hsugawa8651" creationdate="20181119T131858Z">
@@ -18323,6 +18331,14 @@ such exceptional circumstances then allow that code to take the appropriate acti
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In such cases, it may be best for the exceptional condition to either terminate the program, printing a diagnostic error message, or if the programmer has provided code to handle such exceptional circumstances, allow that code to take the appropriate action.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T143142Z" creationid="hsugawa8651" creationdate="20181119T143142Z">
+        <seg> そんな例外的な状況に対する最善の策は、プログラムを終了させることかもしれないし、状況を報告するエラーメッセージを出力することかもしれません。また、プログラマが例外的な状況に対応するコードを用意している場合は、そのコードに適切な処置をとらせることかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In such cases, the result is always 1-d.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155056Z" creationid="hsugawa8651" creationdate="20181109T155056Z">
@@ -24723,6 +24739,14 @@ it, and then finally copy the realization of the &lt;x13/&gt;Broadcasted&lt;x14/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The built-in &lt;c1&gt;Exception&lt;/c1&gt;s listed below all interrupt the normal flow of control.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T143221Z" creationid="hsugawa8651" creationdate="20181119T143221Z">
+        <seg>以下に挙げた標準装備の&lt;c1&gt;例外&lt;/c1&gt;は、すべて、通常の制御の流れを中断します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The built-in &lt;x2/&gt;Exception&lt;x3/&gt;s listed
 below all interrupt the normal flow of control.</seg>
       </tuv>
@@ -29252,6 +29276,14 @@ its caller.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124550Z" creationid="hsugawa8651" creationdate="20181118T124550Z">
         <seg>予期しない状態が発生した場合、関数は妥当な値を返すことができません。 その呼び出し元。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When an unexpected condition occurs, a function may be unable to return a reasonable value to its caller.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T143108Z" creationid="hsugawa8651" creationdate="20181119T143108Z">
+        <seg>予想外の状態が発生した場合、関数は呼び出しに対して、適切な値を返せないかもしれません。</seg>
       </tuv>
     </tu>
     <tu>
