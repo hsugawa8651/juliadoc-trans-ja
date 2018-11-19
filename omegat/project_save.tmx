@@ -497,6 +497,30 @@ x is equal to y</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#Base.IndexCartesian</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131828Z" creationid="hsugawa8651" creationdate="20181119T131828Z">
+        <seg>#Base.IndexCartesian</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.IndexLinear</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131824Z" creationid="hsugawa8651" creationdate="20181119T131824Z">
+        <seg>#Base.IndexLinear</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.IndexStyle</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131820Z" creationid="hsugawa8651" creationdate="20181119T131820Z">
+        <seg>#Base.IndexStyle</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Base.Iterators.Stateful</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192142Z" creationid="hsugawa8651" creationdate="20181118T192142Z">
@@ -573,6 +597,14 @@ x is equal to y</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192206Z" creationid="hsugawa8651" creationdate="20181118T192206Z">
         <seg>#Base.Iterators.zip</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.IteratorsMD.CartesianIndices</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131814Z" creationid="hsugawa8651" creationdate="20181119T131814Z">
+        <seg>#Base.IteratorsMD.CartesianIndices</seg>
       </tuv>
     </tu>
     <tu>
@@ -681,6 +713,30 @@ x is equal to y</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#Base.axes-Tuple{AbstractArray,Any}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131737Z" creationid="hsugawa8651" creationdate="20181119T131737Z">
+        <seg>#Base.axes-Tuple{AbstractArray,Any}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.axes-Tuple{Any}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131722Z" creationid="hsugawa8651" creationdate="20181119T131722Z">
+        <seg>#Base.axes-Tuple{Any}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.eachindex</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131808Z" creationid="hsugawa8651" creationdate="20181119T131808Z">
+        <seg>#Base.eachindex</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Base.falses</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131523Z" creationid="hsugawa8651" creationdate="20181119T131523Z">
@@ -713,6 +769,14 @@ x is equal to y</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#Base.length-Tuple{AbstractArray}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131745Z" creationid="hsugawa8651" creationdate="20181119T131745Z">
+        <seg>#Base.length-Tuple{AbstractArray}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Base.ones</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131432Z" creationid="hsugawa8651" creationdate="20181119T131432Z">
@@ -725,6 +789,14 @@ x is equal to y</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131549Z" creationid="hsugawa8651" creationdate="20181119T131549Z">
         <seg>#Base.similar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.size</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131717Z" creationid="hsugawa8651" creationdate="20181119T131717Z">
+        <seg>#Base.size</seg>
       </tuv>
     </tu>
     <tu>
@@ -2402,6 +2474,14 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../../devdocs/offset-arrays/#man-custom-indices-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131723Z" creationid="hsugawa8651" creationdate="20181119T131723Z">
+        <seg>../../devdocs/offset-arrays/#man-custom-indices-1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../../devdocs/reflection/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192043Z" creationid="hsugawa8651" creationdate="20181118T192043Z">
@@ -3030,6 +3110,14 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191904Z" creationid="hsugawa8651" creationdate="20181118T191904Z">
         <seg>../collections/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../collections/#Base.UnitRange</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131813Z" creationid="hsugawa8651" creationdate="20181119T131813Z">
+        <seg>../collections/#Base.UnitRange</seg>
       </tuv>
     </tu>
     <tu>
@@ -3877,6 +3965,22 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.IndexLinear&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131848Z" creationid="hsugawa8651" creationdate="20181119T131848Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.IndexLinear&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.IndexStyle&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131822Z" creationid="hsugawa8651" creationdate="20181119T131822Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.IndexStyle&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;&lt;c1&gt;Base.Iterators.Stateful&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192145Z" creationid="hsugawa8651" creationdate="20181118T192145Z">
@@ -4037,6 +4141,22 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.axes&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Method&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131730Z" creationid="hsugawa8651" creationdate="20181119T131730Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.axes&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Method&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.eachindex&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131809Z" creationid="hsugawa8651" creationdate="20181119T131809Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.eachindex&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;&lt;c1&gt;Base.falses&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131524Z" creationid="hsugawa8651" creationdate="20181119T131524Z">
@@ -4069,6 +4189,22 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.length&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Method&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131758Z" creationid="hsugawa8651" creationdate="20181119T131758Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.length&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Method&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.ndims&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131711Z" creationid="hsugawa8651" creationdate="20181119T131711Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.ndims&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;&lt;c1&gt;Base.ones&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131437Z" creationid="hsugawa8651" creationdate="20181119T131437Z">
@@ -4081,6 +4217,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131550Z" creationid="hsugawa8651" creationdate="20181119T131550Z">
         <seg>&lt;a0&gt;&lt;c1&gt;Base.similar&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.size&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131719Z" creationid="hsugawa8651" creationdate="20181119T131719Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.size&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5031,8 +5175,8 @@ even be defined.</seg>
       <tuv lang="EN-US">
         <seg>&lt;a0&gt;source&lt;/a0&gt;&lt;/s1&gt;&lt;s2&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130930Z" creationid="hsugawa8651" creationdate="20181119T130930Z">
-        <seg>&lt;a0&gt;source&lt;/a0&gt;&lt;/s1&gt;&lt;s2&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131847Z" creationid="hsugawa8651" creationdate="20181119T130930Z">
+        <seg>&lt;a0&gt;ソース&lt;/a0&gt;&lt;/s1&gt;&lt;s2&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5143,6 +5287,14 @@ Array{T,N}(undef, dims)&lt;/c0&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Base.IndexStyle(::Type{&lt;:MyArray}) = IndexLinear()&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131827Z" creationid="hsugawa8651" creationdate="20181119T131827Z">
+        <seg>&lt;c0&gt;Base.IndexStyle(::Type{&lt;:MyArray}) = IndexLinear()&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;BitArray(itr)&lt;/c0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131510Z" creationid="hsugawa8651" creationdate="20181119T131510Z">
@@ -5197,6 +5349,24 @@ BitArray{N}(undef, dims::NTuple{N,Int})&lt;/c0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131330Z" creationid="hsugawa8651" creationdate="20181119T131330Z">
         <seg>&lt;c0&gt;DenseVector{T}&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;IndexLinear()&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131850Z" creationid="hsugawa8651" creationdate="20181119T131850Z">
+        <seg>&lt;c0&gt;IndexLinear()&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;IndexStyle(A)
+IndexStyle(typeof(A))&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131823Z" creationid="hsugawa8651" creationdate="20181119T131823Z">
+        <seg>&lt;c0&gt;IndexStyle(A)
+IndexStyle(typeof(A))&lt;/c0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5321,6 +5491,22 @@ BitArray{N}(undef, dims::NTuple{N,Int})&lt;/c0&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;axes(A)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131731Z" creationid="hsugawa8651" creationdate="20181119T131731Z">
+        <seg>&lt;c0&gt;axes(A)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;axes(A, d)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131738Z" creationid="hsugawa8651" creationdate="20181119T131738Z">
+        <seg>&lt;c0&gt;axes(A, d)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;countfrom(start=1, step=1)&lt;/c0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192247Z" creationid="hsugawa8651" creationdate="20181118T192247Z">
@@ -5341,6 +5527,14 @@ BitArray{N}(undef, dims::NTuple{N,Int})&lt;/c0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192310Z" creationid="hsugawa8651" creationdate="20181118T192310Z">
         <seg>&lt;c0&gt;drop(iter, n)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;eachindex(A...)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131810Z" creationid="hsugawa8651" creationdate="20181119T131810Z">
+        <seg>&lt;c0&gt;eachindex(A...)&lt;/c0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5413,6 +5607,104 @@ julia&gt; B = Array{Float64}(undef, 2) # N determined by the input
 2-element Array{Float64,1}:
  1.87103e-320
  0.0&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; A = [1 2; 3 4];
+
+julia&gt; for i in eachindex(A) # linear indexing
+           println(i)
+       end
+1
+2
+3
+4
+
+julia&gt; for i in eachindex(view(A, 1:2, 1:1)) # Cartesian indexing
+           println(i)
+       end
+CartesianIndex(1, 1)
+CartesianIndex(2, 1)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131817Z" creationid="hsugawa8651" creationdate="20181119T131817Z">
+        <seg>&lt;c0&gt;julia&gt; A = [1 2; 3 4];
+
+julia&gt; for i in eachindex(A) # linear indexing
+           println(i)
+       end
+1
+2
+3
+4
+
+julia&gt; for i in eachindex(view(A, 1:2, 1:1)) # Cartesian indexing
+           println(i)
+       end
+CartesianIndex(1, 1)
+CartesianIndex(2, 1)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; A = fill(1, (2,3,4));
+
+julia&gt; size(A)
+(2, 3, 4)
+
+julia&gt; size(A, 2)
+3&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131726Z" creationid="hsugawa8651" creationdate="20181119T131726Z">
+        <seg>&lt;c0&gt;julia&gt; A = fill(1, (2,3,4));
+
+julia&gt; size(A)
+(2, 3, 4)
+
+julia&gt; size(A, 2)
+3&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; A = fill(1, (3,4,5));
+
+julia&gt; ndims(A)
+3&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131715Z" creationid="hsugawa8651" creationdate="20181119T131715Z">
+        <seg>&lt;c0&gt;julia&gt; A = fill(1, (3,4,5));
+
+julia&gt; ndims(A)
+3&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; A = fill(1, (5,6,7));
+
+julia&gt; axes(A)
+(Base.OneTo(5), Base.OneTo(6), Base.OneTo(7))&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131734Z" creationid="hsugawa8651" creationdate="20181119T131734Z">
+        <seg>&lt;c0&gt;julia&gt; A = fill(1, (5,6,7));
+
+julia&gt; axes(A)
+(Base.OneTo(5), Base.OneTo(6), Base.OneTo(7))&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; A = fill(1, (5,6,7));
+
+julia&gt; axes(A, 2)
+Base.OneTo(6)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131742Z" creationid="hsugawa8651" creationdate="20181119T131742Z">
+        <seg>&lt;c0&gt;julia&gt; A = fill(1, (5,6,7));
+
+julia&gt; axes(A, 2)
+Base.OneTo(6)&lt;/c0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -6133,6 +6425,22 @@ false&lt;/c0&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; length([1, 2, 3, 4])
+4
+
+julia&gt; length([1 2; 3 4])
+4&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131805Z" creationid="hsugawa8651" creationdate="20181119T131805Z">
+        <seg>&lt;c0&gt;julia&gt; length([1, 2, 3, 4])
+4
+
+julia&gt; length([1 2; 3 4])
+4&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;julia&gt; ones(1,2)
 1×2 Array{Float64,2}:
  1.0  1.0
@@ -6265,6 +6573,22 @@ julia&gt; zeros(Int8, 2, 3)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;length(A::AbstractArray)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131801Z" creationid="hsugawa8651" creationdate="20181119T131801Z">
+        <seg>&lt;c0&gt;length(A::AbstractArray)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;ndims(A::AbstractArray) -&gt; Integer&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131712Z" creationid="hsugawa8651" creationdate="20181119T131712Z">
+        <seg>&lt;c0&gt;ndims(A::AbstractArray) -&gt; Integer&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;ones([T=Float64,] dims...)&lt;/c0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131438Z" creationid="hsugawa8651" creationdate="20181119T131438Z">
@@ -6325,6 +6649,14 @@ julia&gt; zeros(Int8, 2, 3)
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131612Z" creationid="hsugawa8651" creationdate="20181119T131612Z">
         <seg>&lt;c0&gt;similar(storagetype, axes)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;size(A::AbstractArray, [dim])&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131720Z" creationid="hsugawa8651" creationdate="20181119T131720Z">
+        <seg>&lt;c0&gt;size(A::AbstractArray, [dim])&lt;/c0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -32494,6 +32826,46 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L108-L120</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131716Z" creationid="hsugawa8651" creationdate="20181119T131716Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L108-L120</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L145-L158</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131806Z" creationid="hsugawa8651" creationdate="20181119T131806Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L145-L158</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L167-L202</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131818Z" creationid="hsugawa8651" creationdate="20181119T131818Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L167-L202</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L18-L37</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131728Z" creationid="hsugawa8651" creationdate="20181119T131728Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L18-L37</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L40-L54</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131743Z" creationid="hsugawa8651" creationdate="20181119T131743Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L40-L54</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L5-L11</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192818Z" creationid="hsugawa8651" creationdate="20181118T192818Z">
@@ -32514,6 +32886,14 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131628Z" creationid="hsugawa8651" creationdate="20181119T131628Z">
         <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L594-L615</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L60-L72</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131735Z" creationid="hsugawa8651" creationdate="20181119T131735Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L60-L72</seg>
       </tuv>
     </tu>
     <tu>
@@ -32802,6 +33182,14 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T193032Z" creationid="hsugawa8651" creationdate="20181118T193032Z">
         <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/essentials.jl#L385-L415</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/indices.jl#L44-L69</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131837Z" creationid="hsugawa8651" creationdate="20181119T131837Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/indices.jl#L44-L69</seg>
       </tuv>
     </tu>
     <tu>
