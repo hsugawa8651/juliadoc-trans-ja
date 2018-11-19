@@ -5755,6 +5755,14 @@ IndexStyle(typeof(A))&lt;/c0&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;if&lt;/c0&gt; blocks also return a value, which may seem unintuitive to users coming from many other languages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134714Z" creationid="hsugawa8651" creationdate="20181119T134649Z">
+        <seg>&lt;c0&gt;if&lt;/c0&gt;ブロックは値を返しますが、他の言語を利用する多くの人の直観に反するようです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;if&lt;/c0&gt; blocks are "leaky", i.e. they do not introduce a local scope.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134528Z" creationid="hsugawa8651" creationdate="20181119T134425Z">
@@ -16972,6 +16980,14 @@ on this behavior, make sure all possible code paths define a value for the varia
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, when depending on this behavior, make sure all possible code paths define a value for the variable.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134601Z" creationid="hsugawa8651" creationdate="20181119T134601Z">
+        <seg>ただし、こういった使い方をする場合は、とりうるすべての分岐で、変数の値が定義されていることを確認してください。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, which implementation is used depends on compiler implementation details, so it
 is essential for the two implementations to behave identically.</seg>
       </tuv>
@@ -21004,6 +21020,14 @@ Evaluation in Julia, as outlined in the next section.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that very short conditional statements (one-liners) are frequently expressed using Short-Circuit Evaluation in Julia, as outlined in the next section.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134803Z" creationid="hsugawa8651" creationdate="20181119T134803Z">
+        <seg>Juliaでは、非常に短い条件文（ワンライナー）は、短絡評価を使って表現されることが非常に多い点に注意してください。 次のセクションで概説します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that when using &lt;x1/&gt;ccall&lt;x2/&gt; with the tuple input
 (e.g., &lt;x3/&gt;ccall((:my_fcn, "./my_lib.so"), ...)&lt;x4/&gt;), the library is opened implicitly
 and it may not be explicitly closed.</seg>
@@ -24962,6 +24986,14 @@ change to the above function results in a runtime error</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following change to the above function results in a runtime error</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134616Z" creationid="hsugawa8651" creationdate="20181119T134616Z">
+        <seg>上記の関数を次のように変更すると、実行時エラーが発生します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following example computes a dot product using a BLAS function.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151846Z" creationid="hsugawa8651" creationdate="20181117T151846Z">
@@ -26328,8 +26360,8 @@ it is shown or not.</seg>
       <tuv lang="EN-US">
         <seg>The variable &lt;c0&gt;relation&lt;/c0&gt; is declared inside the &lt;c1&gt;if&lt;/c1&gt; block, but used outside.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134405Z" creationid="hsugawa8651" creationdate="20181119T134405Z">
-        <seg>変数&lt;c0&gt;relation&lt;/c0&gt;は&lt;c1&gt;if&lt;/c1&gt;ブロックの内側で宣言されていますが、使用されるのは外側です。 ただし、こういった使い方をする場合は、とりうるすべての分岐で、変数の値が定義されていることを確認してください。 上記の関数を次のように変更すると、実行時エラーが発生します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134543Z" creationid="hsugawa8651" creationdate="20181119T134405Z">
+        <seg>変数&lt;c0&gt;relation&lt;/c0&gt;は&lt;c1&gt;if&lt;/c1&gt;ブロックの内側で宣言されていますが、使用されるのは外側です。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -27757,6 +27789,14 @@ so</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This value is simply the return value of the last executed statement in the branch that was chosen, so</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134659Z" creationid="hsugawa8651" creationdate="20181119T134659Z">
+        <seg>この値は、単純に、分岐の中から選択されて、最後に実行された文の戻り値です。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This value represents invalid operators and not
 operators of lowest precedence.</seg>
       </tuv>
@@ -28402,6 +28442,14 @@ letter and does not behave like &lt;x7/&gt;f&lt;x8/&gt; in numeric literals.</se
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230035Z" creationid="hsugawa8651" creationdate="20181109T230035Z">
         <seg>Cとは異なり、MATLAB、Perl、Python、Rubyなどですが、Javaと同様に、さらに厳密なタイプの言語もあります。 --条件式の値が&lt;x1/&gt;真&lt;x2/&gt;または&lt;x3/&gt;false&lt;x4/&gt;以外の値である場合はエラーになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike C, MATLAB, Perl, Python, and Ruby – but like Java, and a few other stricter, typed languages – it is an error if the value of a conditional expression is anything but &lt;c0&gt;true&lt;/c0&gt; or &lt;c1&gt;false&lt;/c1&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134844Z" creationid="hsugawa8651" creationdate="20181119T134844Z">
+        <seg>条件式の値が、&lt;c0&gt;true&lt;/c0&gt; か &lt;c1&gt;false&lt;/c1&gt; 以外の値だと、エラーが発生します。 この仕様は、C、MATLAB、PerlやPython、Rubyとは異なりますが、Javaなどの厳格な型付け言語と同等です。</seg>
       </tuv>
     </tu>
     <tu>
