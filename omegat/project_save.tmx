@@ -9702,6 +9702,15 @@ command-line arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As the example implies, the following command-line arguments to &lt;x1/&gt;julia&lt;x2/&gt; are taken as command-line
+arguments to the program &lt;x3/&gt;script.jl&lt;x4/&gt;, passed in the global constant &lt;x5/&gt;ARGS&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T231840Z" creationid="hsugawa8651" creationdate="20181119T231840Z">
+        <seg>上の例が示すように、後ろの引数は &lt;c2&gt;&lt;s3&gt;script.jl&lt;/s3&gt;&lt;/c2&gt; というプログラムのコマンドライン引数として取られ、 グローバル定数 &lt;c4&gt;&lt;s5&gt;ARGS&lt;/s5&gt;&lt;/c4&gt;に渡されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As user code never has to look inside the &lt;x9/&gt;gsl_permutation&lt;x10/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151936Z" creationid="hsugawa8651" creationdate="20181117T151936Z">
@@ -21079,6 +21088,15 @@ also set when a Julia expression is given using the &lt;x11/&gt;-e&lt;x12/&gt; o
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that &lt;x9/&gt;ARGS&lt;x10/&gt; is also set when script code
+is given using the &lt;x11/&gt;-e&lt;x12/&gt; option on the command line (see the &lt;x13/&gt;julia&lt;x14/&gt; help output below) but &lt;x15/&gt;PROGRAM_FILE&lt;x16/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T231910Z" creationid="hsugawa8651" creationdate="20181119T231910Z">
+        <seg>コマンドラインで &lt;c8&gt;&lt;s9&gt;-e&lt;/s9&gt;&lt;/c8&gt; オプションが設定された際にも&lt;c6&gt;&lt;s7&gt; ARGS&lt;/s7&gt;&lt;/c6&gt; は設定されます（下の  &lt;c10&gt;&lt;s11&gt;julia&lt;/s11&gt;&lt;/c10&gt; ヘルプ出力を参照してください）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that Julia
 knows how to convert an array into a &lt;x5/&gt;Ptr{Cdouble}&lt;x6/&gt;, how to compute the size of a type in bytes
 (identical to C's &lt;x7/&gt;sizeof&lt;x8/&gt; operator), and so on.</seg>
@@ -21616,6 +21634,15 @@ with all other numeric types thanks to Julia's &lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;
 session evaluates the expression and shows its value.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T091352Z" creationid="hsugawa8651" creationdate="20181109T224313Z">
+        <seg>ユーザーが完全な式、例えば &lt;x11/&gt; 1 + &lt;x12/&gt; を入力し、エンターキーを押すと、その式が評価され、値が表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once the user has entered a complete expression, such as &lt;x9/&gt;1 + 2&lt;x10/&gt;, and hits enter, the interactive
+session evaluates the expression and shows its value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T231753Z" creationid="hsugawa8651" creationdate="20181119T231753Z">
         <seg>ユーザーが完全な式、例えば &lt;x11/&gt; 1 + &lt;x12/&gt; を入力し、エンターキーを押すと、その式が評価され、値が表示されます。</seg>
       </tuv>
     </tu>
@@ -24121,6 +24148,14 @@ sessions, not when Julia code is run in other ways.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;--&lt;x2/&gt; delimiter can be used to separate command-line args to the scriptfile from args to Julia:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T231939Z" creationid="hsugawa8651" creationdate="20181119T231939Z">
+        <seg>&lt;x1/&gt;--&lt;x2/&gt;デリミタは、July:を対象とした引数から、スクリプトファイルに対して指定されたコマンドライン引数を区切るために使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;--&lt;x2/&gt; delimiter can be used to separate command-line arguments intended for the script file from arguments intended for Julia:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224357Z" creationid="hsugawa8651" creationdate="20181109T224357Z">
@@ -24393,6 +24428,15 @@ can be specified via the &lt;x3/&gt;lt&lt;x4/&gt; keyword.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121423Z" creationid="hsugawa8651" creationdate="20181118T121423Z">
         <seg>&lt;x11/&gt;の逆方向&lt;x12/&gt;&lt;x12/&gt;は、&lt;x13/&gt;merge&lt;x14/&gt;が、引数ディクショナリ内のキー間の衝突があるときに最初の引数ではなく、最後の引数を優先するためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x13/&gt;ans&lt;x14/&gt; variable is only
+bound in interactive sessions, not when Julia code is run in other ways.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T231821Z" creationid="hsugawa8651" creationdate="20181119T231808Z">
+        <seg>&lt;x15/&gt;ans&lt;x16/&gt;はインタラクティブ・セッションでのみ利用可能で、他の方法でJuliaのコードが実行された際には使うことができません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25042,6 +25086,18 @@ known as a read-eval-print loop or "REPL") by double-clicking the Julia executab
 &lt;x1/&gt;julia&lt;x2/&gt; from the command line:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T091013Z" creationid="hsugawa8651" creationdate="20181109T224254Z">
+        <seg>Juliaを学んだり試したりする一番簡単な方法は、インタラクティブ・セッション（read-eval-print loop、もしくは”repl”とも呼ばれるものです）を使ったものです。セッションを起動するには、Juliaの実行ファイルをダブルクリックするか、コマンドラインから&lt;x1/&gt;julia&lt;x2/&gt;を実行します。
+
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The easiest way to learn and experiment with Julia is by starting an interactive session (also
+known as a read-eval-print loop or "repl") by double-clicking the Julia executable or running
+&lt;x1/&gt;julia&lt;x2/&gt; from the command line:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T231742Z" creationid="hsugawa8651" creationdate="20181119T231742Z">
         <seg>Juliaを学んだり試したりする一番簡単な方法は、インタラクティブ・セッション（read-eval-print loop、もしくは”repl”とも呼ばれるものです）を使ったものです。セッションを起動するには、Juliaの実行ファイルをダブルクリックするか、コマンドラインから&lt;x1/&gt;julia&lt;x2/&gt;を実行します。
 
 </seg>
@@ -25796,6 +25852,15 @@ are:</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182452Z" creationid="hsugawa8651" creationdate="20181118T182452Z">
         <seg>一般の動的言語と比べてJuliaが特に優れている点としては以下のようなものが挙げられます。
 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The name of the script
+itself is passed in as the global &lt;x7/&gt;PROGRAM_FILE&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T231904Z" creationid="hsugawa8651" creationdate="20181119T231904Z">
+        <seg>このスクリプト自体の名前は、グローバルな&lt;x7/&gt;PROGRAM_FILE&lt;x8/&gt;として渡されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26726,6 +26791,15 @@ cases.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225941Z" creationid="hsugawa8651" creationdate="20181109T225941Z">
         <seg>The variable &lt;x1/&gt;relation&lt;x2/&gt; is declared inside the &lt;x3/&gt;if&lt;x4/&gt; block, but used outside.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The variable &lt;x11/&gt;ans&lt;x12/&gt; is bound to the
+value of the last evaluated expression whether it is shown or not.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T231802Z" creationid="hsugawa8651" creationdate="20181119T231802Z">
+        <seg>&lt;x13/&gt;ans&lt;x14/&gt; という変数は、最後に評価された式の値（それが表示されたか否かに関わらず）に束縛されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29371,6 +29445,14 @@ mode, &lt;c6&gt;&lt;s7&gt;julia&lt;/s7&gt;&lt;/c6&gt; displays a banner and prom
         <seg>When run in interactive mode, &lt;c4&gt;julia&lt;/c4&gt; displays a banner and prompts the user for input.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T181339Z" creationid="hsugawa8651" creationdate="20181118T173437Z">
+        <seg>インタラクティブ・モードで起動すると、 &lt;c4&gt;julia&lt;/c4&gt; のバナーが表示され、プロンプトがユーザーの入力を待ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When run in interactive mode, &lt;x7/&gt;julia&lt;x8/&gt; displays a banner and prompts the user for input.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T231750Z" creationid="hsugawa8651" creationdate="20181119T231750Z">
         <seg>インタラクティブ・モードで起動すると、 &lt;c4&gt;julia&lt;/c4&gt; のバナーが表示され、プロンプトがユーザーの入力を待ちます。</seg>
       </tuv>
     </tu>
