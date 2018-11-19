@@ -16668,8 +16668,8 @@ where syntactic conflicts arise:</seg>
       <tuv lang="EN-US">
         <seg>Here the &lt;c0&gt;1:5&lt;/c0&gt; is a &lt;c1&gt;Range&lt;/c1&gt; object, representing the sequence of numbers 1, 2, 3, 4, 5.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141541Z" creationid="hsugawa8651" creationdate="20181119T141541Z">
-        <seg>この1:5は、Rangeオブジェクトで、1,2,3,4,5の数列をあらわしています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141719Z" creationid="hsugawa8651" creationdate="20181119T141541Z">
+        <seg>この&lt;c0&gt;1:5&lt;/c0&gt;は、&lt;c1&gt;Range&lt;/c1&gt;オブジェクトで、1,2,3,4,5の数列をあらわしています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17602,8 +17602,8 @@ violate this invariant.</seg>
       <tuv lang="EN-US">
         <seg>If the variable &lt;c6&gt;i&lt;/c6&gt; has not been introduced in an other scope, in the &lt;c7&gt;for&lt;/c7&gt; loop form, it is visible only inside of the &lt;c8&gt;for&lt;/c8&gt; loop, and not afterwards.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141640Z" creationid="hsugawa8651" creationdate="20181119T141640Z">
-        <seg>forループ方式の時は、変数iが、他のスコープにとりこまれていない場合、変数は forループの内部でのみ見えて、その後ろでは見えません。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141837Z" creationid="hsugawa8651" creationdate="20181119T141640Z">
+        <seg>&lt;c7&gt;for&lt;/c7&gt;ループ方式の時は、変数&lt;c6&gt;i&lt;/c6&gt;が、他のスコープにとりこまれていない場合、変数は &lt;c8&gt;for&lt;/c8&gt;ループの内部でのみ見えて、その後ろでは見えません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18057,6 +18057,14 @@ the function to be applied alongside its arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131512Z" creationid="hsugawa8651" creationdate="20181113T131512Z">
         <seg>一般的に、ブロードキャスト動作は 引数と共に適用される関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In general, the &lt;c0&gt;for&lt;/c0&gt; loop construct can iterate over any container.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141958Z" creationid="hsugawa8651" creationdate="20181119T141958Z">
+        <seg>一般に、forループはどのコンテナに対しても反復処理が可能です。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -18530,6 +18538,14 @@ the code read more clearly:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124439Z" creationid="hsugawa8651" creationdate="20181118T124439Z">
         <seg>これらの場合には (ただし、&lt;x4/&gt;&lt;x8/&gt;&lt;x6/&gt;)のキーワード&lt;x3/&gt;は、&lt;x x/&gt;=&lt;x8/&gt;&lt;x8/&gt;の代わりに一般的に使用されます。 コードはより明確に読まれます</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In these cases, the alternative (but fully equivalent) keyword &lt;c1&gt;in&lt;/c1&gt; or &lt;c2&gt;∈&lt;/c2&gt; is typically used instead of &lt;c3&gt;=&lt;/c3&gt;, since it makes the code read more clearly:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142006Z" creationid="hsugawa8651" creationdate="20181119T142006Z">
+        <seg>これらのケースでは、=の代わりに、完全に同等なキーワードのinや∈が広く使われます。というのも、コードがよりわかりやすくなるからです。.</seg>
       </tuv>
     </tu>
     <tu>
@@ -21644,8 +21660,8 @@ during which the variable is visible.</seg>
       <tuv lang="EN-US">
         <seg>One rather important distinction between the previous &lt;c4&gt;while&lt;/c4&gt; loop form and the &lt;c5&gt;for&lt;/c5&gt; loop form is the scope during which the variable is visible.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141618Z" creationid="hsugawa8651" creationdate="20181119T141618Z">
-        <seg> 前述のwhileループ方式とforループ方式のかなり重要な違いの1つは、ループの実行中の変数が見えるスコープです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141755Z" creationid="hsugawa8651" creationdate="20181119T141618Z">
+        <seg>前述の&lt;c4&gt;while&lt;/c4&gt;ループ方式と&lt;c5&gt;for&lt;/c5&gt;ループ方式のかなり重要な違いの1つは、ループの実行中の変数が見えるスコープです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22730,6 +22746,14 @@ the &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-multi-dim-arrays) and the &lt;x6/
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022656Z" creationid="hsugawa8651" creationdate="20181113T022656Z">
         <seg>「」を参照してください。 サポートされるメソッドについては、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref manマルチdimアレイ)および&lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref lib arrays)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See &lt;a0&gt;Scope of Variables&lt;/a0&gt; for a detailed explanation of variable scope and how it works in Julia.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141923Z" creationid="hsugawa8651" creationdate="20181119T141923Z">
+        <seg>変数のスコープとJuliaでの動作の詳細については、&lt;a0&gt;変数のスコープ&lt;/a0&gt;を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24009,8 +24033,8 @@ sessions, not when Julia code is run in other ways.</seg>
       <tuv lang="EN-US">
         <seg>The &lt;c2&gt;for&lt;/c2&gt; loop iterates through these values, assigning each one in turn to the variable &lt;c3&gt;i&lt;/c3&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141558Z" creationid="hsugawa8651" creationdate="20181119T141558Z">
-        <seg> for ループはこれらの値を反復し、順番に変数iに代入します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141734Z" creationid="hsugawa8651" creationdate="20181119T141558Z">
+        <seg>&lt;c2&gt;for&lt;/c2&gt; ループはこれらの値を反復し、順番に変数&lt;c3&gt;i&lt;/c3&gt;に代入します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29794,6 +29818,14 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T231201Z" creationid="hsugawa8651" creationdate="20181109T231201Z">
         <seg>新しい対話型セッション・インスタンスまたは別の変数が必要です。 テストする名前:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You'll either need a new interactive session instance or a different variable name to test this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141654Z" creationid="hsugawa8651" creationdate="20181119T141654Z">
+        <seg> これを試すには、新規の対話セッションか、別の変数名が必要です。</seg>
       </tuv>
     </tu>
     <tu>
