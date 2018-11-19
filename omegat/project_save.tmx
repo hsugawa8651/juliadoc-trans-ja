@@ -18994,6 +18994,14 @@ in most languages taking three operands:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It gets its name from being the only operator in most languages taking three operands:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134954Z" creationid="hsugawa8651" creationdate="20181119T134954Z">
+        <seg>「三項演算子」の名前は、多くの他の言語では、3つの被演算子をとる唯一の演算子であることに由来します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It has a special compilation rule: a homogeneous tuple of &lt;x1/&gt;VecElement{T}&lt;x2/&gt; maps to an LLVM &lt;x3/&gt;vector&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063645Z" creationid="hsugawa8651" creationdate="20181114T063645Z">
@@ -26010,6 +26018,14 @@ determined by the number of hex digits used:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The so-called "ternary operator", &lt;c0&gt;?:&lt;/c0&gt;, is closely related to the &lt;c1&gt;if&lt;/c1&gt;-&lt;c2&gt;elseif&lt;/c2&gt;-&lt;c3&gt;else&lt;/c3&gt; syntax, but is used where a conditional choice between single expression values is required, as opposed to conditional execution of longer blocks of code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135027Z" creationid="hsugawa8651" creationdate="20181119T134947Z">
+        <seg>いわゆる「三項演算子」&lt;c0&gt;？:&lt;/c0&gt;は、&lt;c1&gt;if&lt;/c1&gt;-&lt;c2&gt;elseif&lt;/c2&gt;-&lt;c3&gt;else&lt;/c3&gt;構文と密接に関連しています。 前者は単一の式の値を選択するような条件分岐を行う場合に利用されますが、後者は条件式の実行がもっと長いコードのブロックになる場合に使います。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The so-called "ternary operator", &lt;x1/&gt;?:&lt;x2/&gt;, is closely related to the &lt;x3/&gt;if&lt;x4/&gt;-&lt;x5/&gt;elseif&lt;x6/&gt;-&lt;x7/&gt;else&lt;x8/&gt; syntax,
 but is used where a conditional choice between single expression values is required, as opposed
 to conditional execution of longer blocks of code.</seg>
@@ -27197,6 +27213,14 @@ inner constructor method.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225348Z" creationid="hsugawa8651" creationdate="20181109T225348Z">
         <seg>これは、Juliaコードが他の方法で実行されている場合には発生しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This error indicates that the conditional was of the wrong type: &lt;a0&gt;&lt;c1&gt;Int64&lt;/c1&gt;&lt;/a0&gt; rather than the required &lt;a2&gt;&lt;c3&gt;Bool&lt;/c3&gt;&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134917Z" creationid="hsugawa8651" creationdate="20181119T134917Z">
+        <seg>このエラーは、条件式の型が誤りであることを示しています。 &lt;a0&gt;&lt;c1&gt;Int64&lt;/c1&gt;&lt;/a0&gt; は、要求される&lt;a2&gt;&lt;c3&gt;Bool&lt;/c3&gt;&lt;/a2&gt;に適合しません。</seg>
       </tuv>
     </tu>
     <tu>
