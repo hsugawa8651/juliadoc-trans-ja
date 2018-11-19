@@ -5255,7 +5255,7 @@ even be defined.</seg>
       <tuv lang="EN-US">
         <seg>&lt;a0&gt;source&lt;/a0&gt;&lt;/s1&gt;&lt;s2&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131847Z" creationid="hsugawa8651" creationdate="20181119T130930Z">
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T132308Z" creationid="hsugawa8651" creationdate="20181119T130930Z">
         <seg>&lt;a0&gt;ソース&lt;/a0&gt;&lt;/s1&gt;&lt;s2&gt;</seg>
       </tuv>
     </tu>
@@ -7193,8 +7193,8 @@ help output below).</seg>
       <tuv lang="EN-US">
         <seg>&lt;s0&gt;Examples&lt;/s0&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131040Z" creationid="hsugawa8651" creationdate="20181119T131040Z">
-        <seg>&lt;s0&gt;例&lt;/s0&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T132225Z" creationid="hsugawa8651" creationdate="20181119T131040Z">
+        <seg>&lt;s0&gt;Examples&lt;/s0&gt;</seg>
       </tuv>
     </tu>
     <tu>
