@@ -18063,8 +18063,8 @@ the function to be applied alongside its arguments.</seg>
       <tuv lang="EN-US">
         <seg>In general, the &lt;c0&gt;for&lt;/c0&gt; loop construct can iterate over any container.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141958Z" creationid="hsugawa8651" creationdate="20181119T141958Z">
-        <seg>一般に、forループはどのコンテナに対しても反復処理が可能です。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142014Z" creationid="hsugawa8651" creationdate="20181119T141958Z">
+        <seg>一般に、&lt;c0&gt;for&lt;/c0&gt;ループはどのコンテナに対しても反復処理が可能です。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -18544,8 +18544,8 @@ the code read more clearly:</seg>
       <tuv lang="EN-US">
         <seg>In these cases, the alternative (but fully equivalent) keyword &lt;c1&gt;in&lt;/c1&gt; or &lt;c2&gt;∈&lt;/c2&gt; is typically used instead of &lt;c3&gt;=&lt;/c3&gt;, since it makes the code read more clearly:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142006Z" creationid="hsugawa8651" creationdate="20181119T142006Z">
-        <seg>これらのケースでは、=の代わりに、完全に同等なキーワードのinや∈が広く使われます。というのも、コードがよりわかりやすくなるからです。.</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142059Z" creationid="hsugawa8651" creationdate="20181119T142006Z">
+        <seg>これらのケースでは、&lt;c3&gt;=&lt;/c3&gt;の代わりに、完全に同等なキーワードの&lt;c1&gt;in&lt;/c1&gt;や&lt;c2&gt;∈&lt;/c2&gt;が広く使われます。というのも、コードがよりわかりやすくなるからです。.</seg>
       </tuv>
     </tu>
     <tu>
@@ -19332,6 +19332,14 @@ only evaluated if the condition expression evaluates to &lt;x9/&gt;true&lt;x10/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230156Z" creationid="hsugawa8651" creationdate="20181109T230156Z">
         <seg>&lt;x2/&gt;-&lt;x3/&gt;elseif&lt;x4/&gt;&lt;x5/&gt;else&lt;x6/&gt;以外の&lt;x6/&gt;&lt;x6/&gt;の場合は、&lt;x7/&gt;:&lt;x8/&gt;:&lt;x8/&gt;=&lt;x8/&gt;となる。 条件式が&lt;x9/&gt;真&lt;x10/&gt;または&lt;x11/&gt;false&lt;x12/&gt;と評価された場合にのみ評価されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is sometimes convenient to terminate the repetition of a &lt;c0&gt;while&lt;/c0&gt; before the test condition is falsified or stop iterating in a &lt;c1&gt;for&lt;/c1&gt; loop before the end of the iterable object is reached.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142251Z" creationid="hsugawa8651" creationdate="20181119T142207Z">
+        <seg>&lt;c0&gt;while&lt;/c0&gt;ループで、条件式が偽になる前に繰り返しを終了したり、&lt;c1&gt;for&lt;/c1&gt;ループで、最後のイテラブル・オブジェクトに達する前に反復を止めたりすると、便利なことがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27356,6 +27364,14 @@ keys and values (i.e. this example creates a &lt;x2/&gt;Dict{String, Int64}&lt;x
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This can be accomplished with the &lt;c2&gt;break&lt;/c2&gt; keyword:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142222Z" creationid="hsugawa8651" creationdate="20181119T142222Z">
+        <seg> これは&lt;c2&gt;break&lt;/c2&gt;キーワードで実現できます：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This can be accomplished with the &lt;x5/&gt;break&lt;x6/&gt; keyword:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124502Z" creationid="hsugawa8651" creationdate="20181118T124502Z">
@@ -28949,6 +28965,14 @@ manual (see, e.g., &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-multi-dim-arrays))
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124450Z" creationid="hsugawa8651" creationdate="20181118T124450Z">
         <seg>次のセクションでは、さまざまなタイプの定義可能なコンテナが導入され、議論されています。 マニュアル(例えば、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man multi dim arrays))を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Various types of iterable containers will be introduced and discussed in later sections of the manual (see, e.g., &lt;a0&gt;Multi-dimensional Arrays&lt;/a0&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142153Z" creationid="hsugawa8651" creationdate="20181119T142153Z">
+        <seg>さまざまなタイプのイテラブル・コンテナについて、マニュアルの後ろの章で紹介・検討します（&lt;a0&gt;多次元配列&lt;/a0&gt;参照）。</seg>
       </tuv>
     </tu>
     <tu>
