@@ -18262,8 +18262,8 @@ which one calls &lt;x7/&gt;continue&lt;x8/&gt;.</seg>
       <tuv lang="EN-US">
         <seg>In realistic usage there is more code to be evaluated after the &lt;c2&gt;continue&lt;/c2&gt;, and often there are multiple points from which one calls &lt;c3&gt;continue&lt;/c3&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142602Z" creationid="hsugawa8651" creationdate="20181119T142602Z">
-        <seg> 実際に使用するときは、&lt;c2&gt;continue&lt;/c2&gt;の後に評価するコードがもっとあって、&lt;c3&gt;continue&lt;/c3&gt;を呼び出す箇所も複数ある場合でしょう。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142942Z" creationid="hsugawa8651" creationdate="20181119T142602Z">
+        <seg>現実的な使用では、&lt;c2&gt;continue&lt;/c2&gt;の後に評価されるべきコードが多くあり、そしてしばしば、一つは&lt;c3&gt;continue&lt;/c3&gt;を呼び出す複数の点がある。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20760,6 +20760,16 @@ all of the &lt;x11/&gt;then&lt;x12/&gt; blocks and the alternate implementation 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063224Z" creationid="hsugawa8651" creationdate="20181114T063224Z">
         <seg>&lt;x15/&gt;D[.…]&lt;x16/&gt;への複数の引数は、タプルに変換されます。たとえば、構文は &lt;x17/&gt;D[x,y]&lt;x18/&gt;は、&lt;x19/&gt;D[(x,y)]&lt;x20/&gt;、即ち、タプル&lt;X21/&gt;(x,y)&lt;x22/&gt;によってキー付けされる値を意味する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Multiple nested &lt;c0&gt;for&lt;/c0&gt; loops can be combined into a single outer loop, forming the cartesian product of its iterables:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142930Z" creationid="hsugawa8651" creationdate="20181119T142804Z">
+        <seg>ネストしたforループ内のbreak文は、内側のループだけでなく、ネスト全体のループを終了します。
+
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -27698,8 +27708,8 @@ negating the condition and placing the &lt;x1/&gt;println&lt;x2/&gt; call inside
       <tuv lang="EN-US">
         <seg>This is a somewhat contrived example since we could produce the same behavior more clearly by negating the condition and placing the &lt;c0&gt;println&lt;/c0&gt; call inside the &lt;c1&gt;if&lt;/c1&gt; block.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142521Z" creationid="hsugawa8651" creationdate="20181119T142521Z">
-        <seg>これは不自然な例です。というのも、条件式を否定してifブロック内にprintlnの呼び出しを置いた方が、同じ動作をより明確に書けるからです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142715Z" creationid="hsugawa8651" creationdate="20181119T142521Z">
+        <seg>これは不自然な例です。というのも、条件式を否定して&lt;c1&gt;if&lt;/c1&gt;ブロック内に&lt;c0&gt;println&lt;/c0&gt;の呼び出しを置いた方が、同じ動作をより明確に書けるからです。</seg>
       </tuv>
     </tu>
     <tu>
