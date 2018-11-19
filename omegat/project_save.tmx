@@ -409,6 +409,14 @@ x is equal to y</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#Allowed-Variable-Names-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033428Z" creationid="hsugawa8651" creationdate="20181119T033428Z">
+        <seg>#Allowed-Variable-Names-1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Base.Iterators.Stateful</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192142Z" creationid="hsugawa8651" creationdate="20181118T192142Z">
@@ -3453,6 +3461,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Allowed Variable Names&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033437Z" creationid="hsugawa8651" creationdate="20181119T033437Z">
+        <seg>&lt;a0&gt;Allowed Variable Names&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Complex and Rational Numbers&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031915Z" creationid="hsugawa8651" creationdate="20181119T031915Z">
@@ -3933,6 +3949,22 @@ julia&gt; for (index, value) in enumerate(a)
  2
  3
  4&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; else = false
+ERROR: syntax: unexpected "else"
+
+julia&gt; try = "No"
+ERROR: syntax: unexpected "="&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033347Z" creationid="hsugawa8651" creationdate="20181119T033347Z">
+        <seg>&lt;c0&gt;julia&gt; else = false
+ERROR: syntax: unexpected "else"
+
+julia&gt; try = "No"
+ERROR: syntax: unexpected "="&lt;/c0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -13843,6 +13875,14 @@ most books on scientific computation, and also in the following references:</seg
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, this is obviously not recommended to avoid potential confusion.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033435Z" creationid="hsugawa8651" creationdate="20181119T033435Z">
+        <seg>しかし、これは混乱を避ける目的で、推奨されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, type promotion between the primitive types above and &lt;x1/&gt;`BigInt`&lt;x2/&gt;/&lt;x3/&gt;`BigFloat`&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120409Z" creationid="hsugawa8651" creationdate="20181118T120409Z">
@@ -18389,8 +18429,8 @@ addition to new user-defined data types, you define new methods for the
       <tuv lang="EN-US">
         <seg>Operators like &lt;c0&gt;+&lt;/c0&gt; are also valid identifiers, but are parsed specially.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033047Z" creationid="hsugawa8651" creationdate="20181119T033047Z">
-        <seg>例えば + のような演算子も変数名として有効な識別子ですが、異なった解析がされます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033205Z" creationid="hsugawa8651" creationdate="20181119T033047Z">
+        <seg>例えば &lt;c0&gt;+&lt;/c0&gt; のような演算子も変数名として有効な識別子ですが、異なった解析がされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20189,6 +20229,14 @@ sharing memory with the original array rather than by copying it. A &lt;x4/&gt;S
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135339Z" creationid="hsugawa8651" creationdate="20181117T135339Z">
         <seg>サブアレイ&lt;x1/&gt;は、インデックス作成を実行する&lt;x2/&gt;AbstractArray&lt;x3/&gt;の特殊化です。 コピーするよりも、元のアレイとのメモリを共有することです。&lt;x4/&gt;サブアレイ&lt;x5/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Subsequent characters may also include !</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033339Z" creationid="hsugawa8651" creationdate="20181119T033255Z">
+        <seg>二文字目以降は、</seg>
       </tuv>
     </tu>
     <tu>
@@ -28005,6 +28053,14 @@ abstract type Unsigned &lt;: Integer end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>and digits (0-9 and other characters in categories Nd/No), as well as other Unicode code points: diacritics and other modifying marks (categories Mn/Mc/Me/Sk), some punctuation connectors (category Pc), primes, and a few other characters.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033302Z" creationid="hsugawa8651" creationdate="20181119T033302Z">
+        <seg>！や数字（0から9とNd･Noカテゴリ内のその他の記号）、その他のUnicode符号点 （発音区別符号およびその他の修飾文字（Mn/Mc/Me/Skカテゴリ）、句読点コネクタ（Pcカテゴリ）、 プライム記号、その他の文字）を使用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>and gets &lt;x1/&gt;2d15fe94-a1f7-436c-a4d8-07a9a496e01c&lt;x2/&gt;, which indicates that in the context of the &lt;x3/&gt;Pub&lt;x4/&gt; package, &lt;x5/&gt;import Priv&lt;x6/&gt; refers to the public &lt;x7/&gt;Priv&lt;x8/&gt; package, rather than the private one which the app depends on directly.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121138Z" creationid="hsugawa8651" creationdate="20181118T121138Z">
@@ -29968,6 +30024,14 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152443Z" creationid="hsugawa8651" creationdate="20181117T152436Z">
         <seg>hn=Vector{UInt8}(undef,256) err=ccall(:gethostname,stdcall,Int32,(Ptr{UInt8},UInt32),hn,長さ(hn))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>http://www.fileformat.info/info/unicode/category/index.htm</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033442Z" creationid="hsugawa8651" creationdate="20181119T033442Z">
+        <seg>http://www.fileformat.info/info/unicode/category/index.htm</seg>
       </tuv>
     </tu>
     <tu>
