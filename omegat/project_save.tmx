@@ -16570,6 +16570,14 @@ where syntactic conflicts arise:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is the anatomy of the &lt;c0&gt;if&lt;/c0&gt;-&lt;c1&gt;elseif&lt;/c1&gt;-&lt;c2&gt;else&lt;/c2&gt; conditional syntax:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133925Z" creationid="hsugawa8651" creationdate="20181119T133925Z">
+        <seg>ここで、 &lt;c0&gt;if&lt;/c0&gt;-&lt;c1&gt;elseif&lt;/c1&gt;-&lt;c2&gt;else&lt;/c2&gt;型の条件分岐構文を解剖してみましょう</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is the anatomy of the &lt;x1/&gt;if&lt;x2/&gt;-&lt;x3/&gt;elseif&lt;x4/&gt;-&lt;x5/&gt;else&lt;x6/&gt; conditional syntax:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225837Z" creationid="hsugawa8651" creationdate="20181109T225837Z">
@@ -16588,8 +16596,8 @@ where syntactic conflicts arise:</seg>
       <tuv lang="EN-US">
         <seg>Here it is in action:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225850Z" creationid="hsugawa8651" creationdate="20181109T225850Z">
-        <seg>ここでは次の操作を実行しています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133954Z" creationid="hsugawa8651" creationdate="20181109T225850Z">
+        <seg>例を挙げると、</seg>
       </tuv>
     </tu>
     <tu>
@@ -17378,6 +17386,14 @@ back to a Julia object reference by &lt;x11/&gt;`unsafe_pointer_to_objref(ptr)`&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152144Z" creationid="hsugawa8651" creationdate="20181117T152144Z">
         <seg>Cラッパーが、ユーザーがジュリアによって管理されたメモリーへのポインタを渡すことを予期しない場合は &lt;x1/&gt;p::Ptr{gsl mutations}&lt;x2/&gt;ラッパーの方が、同様に&lt;x3/&gt;の"ccall"&lt;x4/&gt;においても同様である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the condition expression &lt;c0&gt;x &lt; y&lt;/c0&gt; is &lt;c1&gt;true&lt;/c1&gt;, then the corresponding block is evaluated; otherwise the condition expression &lt;c2&gt;x &gt; y&lt;/c2&gt; is evaluated, and if it is &lt;c3&gt;true&lt;/c3&gt;, the corresponding block is evaluated; if neither expression is true, the &lt;c4&gt;else&lt;/c4&gt; block is evaluated.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134103Z" creationid="hsugawa8651" creationdate="20181119T133948Z">
+        <seg>条件式&lt;c0&gt;x &lt; y&lt;/c0&gt;が&lt;c1&gt;真&lt;/c1&gt;の時は、対応するブロックが評価され、さもなければ、条件式&lt;c2&gt;x &gt; y&lt;/c2&gt;が評価され、これが&lt;c3&gt;真&lt;/c3&gt;の場合は、対応するブロックが評価されます。いずれの式も真でない場合、&lt;c4&gt;else&lt;/c4&gt;ブロックが評価されます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -23742,6 +23758,15 @@ resulting expression contains &lt;x5/&gt;only&lt;x6/&gt; the second &lt;x7/&gt;p
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;c0&gt;elseif&lt;/c0&gt; and &lt;c1&gt;else&lt;/c1&gt; blocks are optional, and as many &lt;c2&gt;elseif&lt;/c2&gt; blocks as desired can be used.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134204Z" creationid="hsugawa8651" creationdate="20181119T134127Z">
+        <seg>この、&lt;c0&gt;elseif&lt;/c0&gt; および &lt;c1&gt;else&lt;/c1&gt;ブロックは省略可能で、&lt;c2&gt;elseif&lt;/c2&gt;ブロックは、書いた数だけ使うことができます。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;c14&gt;&lt;s15&gt;ans&lt;/s15&gt;&lt;/c14&gt; variable is only bound in interactive
 sessions, not when Julia code is run in other ways.</seg>
       </tuv>
@@ -24468,6 +24493,15 @@ implementation instead.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154623Z" creationid="hsugawa8651" creationdate="20181109T154623Z">
         <seg>連結関数は、頻繁に使用されるため、特別な構文が使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The condition expressions in the &lt;c3&gt;if&lt;/c3&gt;-&lt;c4&gt;elseif&lt;/c4&gt;-&lt;c5&gt;else&lt;/c5&gt; construct are evaluated until the first one evaluates to &lt;c6&gt;true&lt;/c6&gt;, after which the associated block is evaluated, and no further condition expressions or blocks are evaluated.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134134Z" creationid="hsugawa8651" creationdate="20181119T134134Z">
+        <seg> if-elseif-else構文中の条件文は、真になるものが現れるまで評価が続きます。 その真になった条件式に対応するブロックが評価されると、あとの条件式やブロックは評価されません。
+</seg>
       </tuv>
     </tu>
     <tu>
