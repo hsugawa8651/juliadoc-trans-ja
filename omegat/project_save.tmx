@@ -15046,6 +15046,14 @@ be used in their specific case.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In some contexts, operators can be used just like variables; for example &lt;c1&gt;(+)&lt;/c1&gt; refers to the addition function, and &lt;c2&gt;(+) = f&lt;/c2&gt; will reassign it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033156Z" creationid="hsugawa8651" creationdate="20181119T033059Z">
+        <seg>ある文脈では、 演算子は変数のように使用することができます。例えば、 &lt;c1&gt;(+)&lt;/c1&gt;は足し算を意味し、 &lt;c2&gt;(+) = f&lt;/c2&gt;は 再代入を行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In static languages, on the other hand, while one can – and usually must – annotate types for the compiler, types exist only at compile time and cannot be manipulated or expressed at run time.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182603Z" creationid="hsugawa8651" creationdate="20181118T182603Z">
@@ -17352,6 +17360,14 @@ Clang), you will need to use the &lt;x1/&gt;-shared&lt;x2/&gt; and &lt;x3/&gt;-f
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Most of the Unicode infix operators (in category Sm), such as &lt;c3&gt;⊕&lt;/c3&gt;, are parsed as infix operators and are available for user-defined methods (e.g. you can use &lt;c4&gt;const ⊗ = kron&lt;/c4&gt; to define &lt;c5&gt;⊗&lt;/c5&gt; as an infix Kronecker product).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033110Z" creationid="hsugawa8651" creationdate="20181119T033110Z">
+        <seg> ⊕ などのUnicode中置演算子（Smカテゴリ）のほとんどは、 中置演算子として解析され、ユーザ定義のメソッド（ ⊕ をクロネッカー積として定義するために const ⊗ = kron を 使用する等）として使用することが可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Most of these functions
 also accept a first input &lt;x3/&gt;T&lt;x4/&gt;, which is the element type of the array.</seg>
       </tuv>
@@ -18367,6 +18383,14 @@ addition to new user-defined data types, you define new methods for the
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T183854Z" creationid="hsugawa8651" creationdate="20181118T183854Z">
         <seg>これに対してJuliaの演算子は（特殊な記法を持った）単なる関数に過ぎません。 ユーザーが定義したデータ型に対して加算処理を追加したい場合は、``+`` 関数に対して新たなメソッドを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Operators like &lt;c0&gt;+&lt;/c0&gt; are also valid identifiers, but are parsed specially.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033047Z" creationid="hsugawa8651" creationdate="20181119T033047Z">
+        <seg>例えば + のような演算子も変数名として有効な識別子ですが、異なった解析がされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22278,6 +22302,14 @@ determining a single answer for a given set of arguments.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The only explicitly disallowed names for variables are the names of built-in statements:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033119Z" creationid="hsugawa8651" creationdate="20181119T033119Z">
+        <seg>ビルトインステートメントの名前のみを変数名として使用することはできません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The only solution is to allow creating an incompletely initialized instance
 of &lt;x3/&gt;SelfReferential&lt;x4/&gt; with an unassigned &lt;x5/&gt;obj&lt;x6/&gt; field, and using that incomplete instance as a valid
 value for the &lt;x7/&gt;obj&lt;x8/&gt; field of another instance, such as, for example, itself.</seg>
@@ -25263,6 +25295,14 @@ will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032459Z" creationid="hsugawa8651" creationdate="20181119T032459Z">
         <seg>変数名は大文字と小文字が区別され、言語的な意味を持ちません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Variable names must begin with a letter (A-Z or a-z), underscore, or a subset of Unicode code points greater than 00A0; in particular, &lt;a0&gt;Unicode character categories&lt;/a0&gt; Lu/Ll/Lt/Lm/Lo/Nl (letters), Sc/So (currency and other symbols), and a few other letter-like characters (e.g. a subset of the Sm math symbols) are allowed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033028Z" creationid="hsugawa8651" creationdate="20181119T033028Z">
+        <seg>変数名は、文字（AからZまたはaからz）、アンダースコア、もしくは00A0よりも大きなUnicodeの サブセットの符号点である必要があります。特に、Unicode文字カテゴリ のLu/Ll/Lt/Lm/Lo/Nl （文字）、 Sc/So（通貨とその他の記号）、その他の記号（Sm数学記号のサブセットなど）を使用することができます。 ！や数字（0から9とNd･Noカテゴリ内のその他の記号）、その他のUnicode符号点 （発音区別符号およびその他の修飾文字（Mn/Mc/Me/Skカテゴリ）、句読点コネクタ（Pcカテゴリ）、 プライム記号、その他の文字）を使用することができます。</seg>
       </tuv>
     </tu>
     <tu>
