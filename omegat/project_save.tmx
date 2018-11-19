@@ -3565,6 +3565,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Base64&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130119Z" creationid="hsugawa8651" creationdate="20181119T130119Z">
+        <seg>&lt;a0&gt;Base64&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Basic functions&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125630Z" creationid="hsugawa8651" creationdate="20181119T125616Z">
@@ -3577,6 +3585,30 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125623Z" creationid="hsugawa8651" creationdate="20181119T125623Z">
         <seg>&lt;a0&gt;ブロードキャストおよびベクトル化&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;C Interface&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130046Z" creationid="hsugawa8651" creationdate="20181119T130046Z">
+        <seg>&lt;a0&gt;Cインタフェース&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;C Standard Library&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130056Z" creationid="hsugawa8651" creationdate="20181119T130056Z">
+        <seg>&lt;a0&gt;C標準ライブラリ&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;CRC32c&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130121Z" creationid="hsugawa8651" creationdate="20181119T130121Z">
+        <seg>&lt;a0&gt;CRC32c&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3669,6 +3701,38 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Dates&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130125Z" creationid="hsugawa8651" creationdate="20181119T130125Z">
+        <seg>&lt;a0&gt;日付&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Delimited Files&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130153Z" creationid="hsugawa8651" creationdate="20181119T130153Z">
+        <seg>&lt;a0&gt;デリミタ付きファイル&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Distributed Computing&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130157Z" creationid="hsugawa8651" creationdate="20181119T130157Z">
+        <seg>&lt;a0&gt;分散コンピューティング&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Dynamic Linker&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130211Z" creationid="hsugawa8651" creationdate="20181119T130211Z">
+        <seg>&lt;a0&gt;ダイナミックリンカー&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Embedding Julia&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072431Z" creationid="hsugawa8651" creationdate="20181119T072431Z">
@@ -3689,6 +3753,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125543Z" creationid="hsugawa8651" creationdate="20181119T125543Z">
         <seg>&lt;a0&gt;Essentials&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;File Events&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130200Z" creationid="hsugawa8651" creationdate="20181119T130200Z">
+        <seg>&lt;a0&gt;ファイル・イベント&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3733,6 +3805,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;I/O and Network&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125948Z" creationid="hsugawa8651" creationdate="20181119T125948Z">
+        <seg>&lt;a0&gt;入出力およびネットワーク&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Indexing and assignment&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125644Z" creationid="hsugawa8651" creationdate="20181119T125644Z">
@@ -3749,10 +3829,50 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Interactive Utilities&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130202Z" creationid="hsugawa8651" creationdate="20181119T130202Z">
+        <seg>&lt;a0&gt;インタラクティブ・ユーティリティ&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Interfaces&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072245Z" creationid="hsugawa8651" creationdate="20181119T072245Z">
         <seg>&lt;a0&gt;インタフェース&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;LibGit2&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130204Z" creationid="hsugawa8651" creationdate="20181119T130204Z">
+        <seg>&lt;a0&gt;LibGit2&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Linear Algebra&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130213Z" creationid="hsugawa8651" creationdate="20181119T130213Z">
+        <seg>&lt;a0&gt;線形代数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Logging&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130215Z" creationid="hsugawa8651" creationdate="20181119T130215Z">
+        <seg>&lt;a0&gt;ロギング&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Markdown&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130217Z" creationid="hsugawa8651" creationdate="20181119T130217Z">
+        <seg>&lt;a0&gt;Markdown&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3769,6 +3889,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125550Z" creationid="hsugawa8651" creationdate="20181119T125550Z">
         <seg>&lt;a0&gt;数学&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Memory-mapped I/O&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130252Z" creationid="hsugawa8651" creationdate="20181119T130252Z">
+        <seg>&lt;a0&gt;メモリ配置入出力&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3853,10 +3981,34 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Pkg&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130255Z" creationid="hsugawa8651" creationdate="20181119T130255Z">
+        <seg>&lt;a0&gt;Pkg&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Printf&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130259Z" creationid="hsugawa8651" creationdate="20181119T130259Z">
+        <seg>&lt;a0&gt;Printf&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Profiling&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072450Z" creationid="hsugawa8651" creationdate="20181119T072450Z">
         <seg>&lt;a0&gt;プロファイリング&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Punctuation&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130014Z" creationid="hsugawa8651" creationdate="20181119T130014Z">
+        <seg>&lt;a0&gt;句読法&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3869,6 +4021,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;SIMD Support&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130113Z" creationid="hsugawa8651" creationdate="20181119T130113Z">
+        <seg>&lt;a0&gt;SIMDサポート&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Scope of Variables&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031954Z" creationid="hsugawa8651" creationdate="20181119T031954Z">
@@ -3877,9 +4037,25 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Sorting and Related Functions&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130024Z" creationid="hsugawa8651" creationdate="20181119T130024Z">
+        <seg>&lt;a0&gt;整列と関連関数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Stack Traces&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072507Z" creationid="hsugawa8651" creationdate="20181119T072507Z">
+        <seg>&lt;a0&gt;スタック・トレース&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;StackTraces&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130110Z" creationid="hsugawa8651" creationdate="20181119T130110Z">
         <seg>&lt;a0&gt;スタック・トレース&lt;/a0&gt;</seg>
       </tuv>
     </tu>
@@ -3905,6 +4081,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125927Z" creationid="hsugawa8651" creationdate="20181119T125927Z">
         <seg>&lt;a0&gt;タスク&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;The Julia REPL&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130309Z" creationid="hsugawa8651" creationdate="20181119T130309Z">
+        <seg>&lt;a0&gt;Julia REPL&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -4643,6 +4827,14 @@ help output below).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031820Z" creationid="hsugawa8651" creationdate="20181119T031820Z">
         <seg>&lt;s0&gt;マニュアル&lt;/s0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;Standard Library&lt;/s0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130116Z" creationid="hsugawa8651" creationdate="20181119T130116Z">
+        <seg>&lt;s0&gt;標準ライブラリ&lt;/s0&gt;</seg>
       </tuv>
     </tu>
     <tu>
