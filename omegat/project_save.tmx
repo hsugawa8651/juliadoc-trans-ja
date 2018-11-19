@@ -417,6 +417,14 @@ x is equal to y</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#Array-functions-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125830Z" creationid="hsugawa8651" creationdate="20181119T125830Z">
+        <seg>#Array-functions-1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Base.Iterators.Stateful</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192142Z" creationid="hsugawa8651" creationdate="20181118T192142Z">
@@ -505,6 +513,30 @@ x is equal to y</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#Broadcast-and-vectorization-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125618Z" creationid="hsugawa8651" creationdate="20181119T125618Z">
+        <seg>#Broadcast-and-vectorization-1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Combinatorics-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125842Z" creationid="hsugawa8651" creationdate="20181119T125842Z">
+        <seg>#Combinatorics-1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Concatenation-and-permutation-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125657Z" creationid="hsugawa8651" creationdate="20181119T125657Z">
+        <seg>#Concatenation-and-permutation-1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Constructors-and-Types-1</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125600Z" creationid="hsugawa8651" creationdate="20181119T125600Z">
@@ -533,6 +565,14 @@ x is equal to y</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031834Z" creationid="hsugawa8651" creationdate="20181119T031834Z">
         <seg>#Resources-1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Views-(SubArrays-and-other-view-types)-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125646Z" creationid="hsugawa8651" creationdate="20181119T125646Z">
+        <seg>#Views-(SubArrays-and-other-view-types)-1</seg>
       </tuv>
     </tu>
     <tu>
@@ -3509,6 +3549,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Array functions&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125840Z" creationid="hsugawa8651" creationdate="20181119T125840Z">
+        <seg>&lt;a0&gt;配列関数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Arrays&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125559Z" creationid="hsugawa8651" creationdate="20181119T125559Z">
@@ -3519,8 +3567,16 @@ even be defined.</seg>
       <tuv lang="EN-US">
         <seg>&lt;a0&gt;Basic functions&lt;/a0&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125616Z" creationid="hsugawa8651" creationdate="20181119T125616Z">
-        <seg>&lt;a0&gt;基本的な関数&lt;/a0&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125630Z" creationid="hsugawa8651" creationdate="20181119T125616Z">
+        <seg>&lt;a0&gt;基本関数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Broadcast and vectorization&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125623Z" creationid="hsugawa8651" creationdate="20181119T125623Z">
+        <seg>&lt;a0&gt;ブロードキャストおよびベクトル化&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3549,10 +3605,34 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Combinatorics&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125922Z" creationid="hsugawa8651" creationdate="20181119T125922Z">
+        <seg>&lt;a0&gt;組み合わせ&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Complex and Rational Numbers&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031915Z" creationid="hsugawa8651" creationdate="20181119T031915Z">
         <seg>&lt;a0&gt;複素数と有理数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Concatenation and permutation&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125828Z" creationid="hsugawa8651" creationdate="20181119T125828Z">
+        <seg>&lt;a0&gt;連結と置換&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Constants&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125932Z" creationid="hsugawa8651" creationdate="20181119T125932Z">
+        <seg>&lt;a0&gt;定数&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3613,6 +3693,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Filesystem&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125935Z" creationid="hsugawa8651" creationdate="20181119T125935Z">
+        <seg>&lt;a0&gt;ファイルシステム&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Functions&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031923Z" creationid="hsugawa8651" creationdate="20181119T031923Z">
@@ -3641,6 +3729,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031805Z" creationid="hsugawa8651" creationdate="20181119T031805Z">
         <seg>&lt;a0&gt;Home&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Indexing and assignment&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125644Z" creationid="hsugawa8651" creationdate="20181119T125644Z">
+        <seg>&lt;a0&gt;インデックスと代入&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3705,6 +3801,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072252Z" creationid="hsugawa8651" creationdate="20181119T072252Z">
         <seg>&lt;a0&gt;モジュール&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Multi-Threading&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125929Z" creationid="hsugawa8651" creationdate="20181119T125929Z">
+        <seg>&lt;a0&gt;マルチスレッド&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3793,6 +3897,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072545Z" creationid="hsugawa8651" creationdate="20181119T072545Z">
         <seg>&lt;a0&gt;スタイル・ガイド&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Tasks&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125927Z" creationid="hsugawa8651" creationdate="20181119T125927Z">
+        <seg>&lt;a0&gt;タスク&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
