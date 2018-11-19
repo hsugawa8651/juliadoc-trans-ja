@@ -4533,6 +4533,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Conditional Evaluation&lt;/a0&gt;: &lt;c1&gt;if&lt;/c1&gt;-&lt;c2&gt;elseif&lt;/c2&gt;-&lt;c3&gt;else&lt;/c3&gt; and &lt;c4&gt;?:&lt;/c4&gt; (ternary operator).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T132917Z" creationid="hsugawa8651" creationdate="20181119T132917Z">
+        <seg>&lt;a0&gt;条件評価&lt;/a0&gt;: &lt;c1&gt;if&lt;/c1&gt;-&lt;c2&gt;elseif&lt;/c2&gt;-&lt;c3&gt;else&lt;/c3&gt; と &lt;c4&gt;？:&lt;/c4&gt; (三項演算子)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Constants&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125932Z" creationid="hsugawa8651" creationdate="20181119T125932Z">
@@ -4633,6 +4641,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130539Z" creationid="hsugawa8651" creationdate="20181119T130539Z">
         <seg>&lt;a0&gt;Juliaコードの評価&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Exception Handling&lt;/a0&gt;: &lt;c1&gt;try&lt;/c1&gt;-&lt;c2&gt;catch&lt;/c2&gt;, &lt;a3&gt;&lt;c4&gt;error()&lt;/c4&gt;&lt;/a3&gt; and &lt;a5&gt;&lt;c6&gt;throw()&lt;/c6&gt;&lt;/a5&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133215Z" creationid="hsugawa8651" creationdate="20181119T133215Z">
+        <seg>&lt;a0&gt;例外処理&lt;/a0&gt;: &lt;c1&gt;try&lt;/c1&gt;-&lt;c2&gt;catch&lt;/c2&gt;, &lt;a3&gt;&lt;c4&gt;error()&lt;/c4&gt;&lt;/a3&gt; と &lt;a5&gt;&lt;c6&gt;throw()&lt;/c6&gt;&lt;/a5&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4989,6 +5005,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Repeated Evaluation: Loops&lt;/a0&gt;: &lt;c1&gt;while&lt;/c1&gt; and &lt;c2&gt;for&lt;/c2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133056Z" creationid="hsugawa8651" creationdate="20181119T133056Z">
+        <seg>&lt;a0&gt;繰り返し評価: ループ&lt;/a0&gt;: &lt;c1&gt;while&lt;/c1&gt; と &lt;c2&gt;for&lt;/c2&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Reporting and analyzing crashes (segfaults)&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130809Z" creationid="hsugawa8651" creationdate="20181119T130809Z">
@@ -5049,6 +5073,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130335Z" creationid="hsugawa8651" creationdate="20181119T130335Z">
         <seg>&lt;a0&gt;共有配列&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Short-Circuit Evaluation&lt;/a0&gt;: &lt;c1&gt;&amp;&amp;&lt;/c1&gt;, &lt;c2&gt;||&lt;/c2&gt; and chained comparisons.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133000Z" creationid="hsugawa8651" creationdate="20181119T133000Z">
+        <seg>&lt;a0&gt;短絡評価&lt;/a0&gt;: &lt;c1&gt;&amp;&amp;&lt;/c1&gt;, &lt;c2&gt;||&lt;/c2&gt; と比較の連鎖。</seg>
       </tuv>
     </tu>
     <tu>
