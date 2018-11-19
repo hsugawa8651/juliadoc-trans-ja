@@ -18378,8 +18378,8 @@ the previous section this is the value of the expression &lt;x3/&gt;x + y&lt;x4/
       <tuv lang="EN-US">
         <seg>In the expression &lt;c0&gt;a || b&lt;/c0&gt;, the subexpression &lt;c1&gt;b&lt;/c1&gt; is only evaluated if &lt;c2&gt;a&lt;/c2&gt; evaluates to &lt;c3&gt;false&lt;/c3&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135810Z" creationid="hsugawa8651" creationdate="20181119T135810Z">
-        <seg>a || bという式で、bが評価されるのは、aの評価が偽の時のみです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135939Z" creationid="hsugawa8651" creationdate="20181119T135810Z">
+        <seg>&lt;c0&gt;a || b&lt;/c0&gt;という式で、&lt;c1&gt;b&lt;/c1&gt;が評価されるのは、&lt;c2&gt;a&lt;/c2&gt;の評価が&lt;c3&gt;偽&lt;/c3&gt;の時のみです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25812,6 +25812,15 @@ with less information loss.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152844Z" creationid="hsugawa8651" creationdate="20181117T152844Z">
         <seg>&lt;x3/&gt;"what is"X"と"は、&lt;x5/&gt;X&lt;x6/&gt;のUUIDを決定することによって答えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The reasoning is that &lt;c0&gt;a &amp;&amp; b&lt;/c0&gt; must be &lt;c1&gt;false&lt;/c1&gt; if &lt;c2&gt;a&lt;/c2&gt; is &lt;c3&gt;false&lt;/c3&gt;, regardless of the value of &lt;c4&gt;b&lt;/c4&gt;, and likewise, the value of &lt;c5&gt;a || b&lt;/c5&gt; must be true if &lt;c6&gt;a&lt;/c6&gt; is &lt;c7&gt;true&lt;/c7&gt;, regardless of the value of &lt;c8&gt;b&lt;/c8&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140207Z" creationid="hsugawa8651" creationdate="20181119T140207Z">
+        <seg>なぜなら、&lt;c4&gt;b&lt;/c4&gt;の値にかかわらず、&lt;c2&gt;a&lt;/c2&gt;が&lt;c3&gt;偽&lt;/c3&gt;の時には、&lt;c0&gt;a &amp;&amp; b&lt;/c0&gt;は&lt;c1&gt;偽&lt;/c1&gt;でなければならないからです。 同様に、&lt;c8&gt;b&lt;/c8&gt;の値にかかわらず、&lt;c6&gt;a&lt;/c6&gt;が&lt;c7&gt;真&lt;/c7&gt;の時には、&lt;c5&gt;a || b&lt;/c5&gt;は真でなければなりません。
+</seg>
       </tuv>
     </tu>
     <tu>
