@@ -449,6 +449,14 @@ x is equal to y</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#Base.DenseVector</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131328Z" creationid="hsugawa8651" creationdate="20181119T131328Z">
+        <seg>#Base.DenseVector</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Base.Iterators.Stateful</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192142Z" creationid="hsugawa8651" creationdate="20181118T192142Z">
@@ -529,6 +537,78 @@ x is equal to y</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#Base.Matrix</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131203Z" creationid="hsugawa8651" creationdate="20181119T131203Z">
+        <seg>#Base.Matrix</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.Matrix-Tuple{Missing,Any,Any}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131304Z" creationid="hsugawa8651" creationdate="20181119T131304Z">
+        <seg>#Base.Matrix-Tuple{Missing,Any,Any}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.Matrix-Tuple{Nothing,Any,Any}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131222Z" creationid="hsugawa8651" creationdate="20181119T131222Z">
+        <seg>#Base.Matrix-Tuple{Nothing,Any,Any}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.Matrix-Tuple{UndefInitializer,Any,Any}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131213Z" creationid="hsugawa8651" creationdate="20181119T131213Z">
+        <seg>#Base.Matrix-Tuple{UndefInitializer,Any,Any}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.VecOrMat</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131313Z" creationid="hsugawa8651" creationdate="20181119T131313Z">
+        <seg>#Base.VecOrMat</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.Vector</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131121Z" creationid="hsugawa8651" creationdate="20181119T131121Z">
+        <seg>#Base.Vector</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.Vector-Tuple{Missing,Any}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131153Z" creationid="hsugawa8651" creationdate="20181119T131153Z">
+        <seg>#Base.Vector-Tuple{Missing,Any}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.Vector-Tuple{Nothing,Any}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131144Z" creationid="hsugawa8651" creationdate="20181119T131144Z">
+        <seg>#Base.Vector-Tuple{Nothing,Any}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.Vector-Tuple{UndefInitializer,Any}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131132Z" creationid="hsugawa8651" creationdate="20181119T131132Z">
+        <seg>#Base.Vector-Tuple{UndefInitializer,Any}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Basic-functions-1</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125612Z" creationid="hsugawa8651" creationdate="20181119T125612Z">
@@ -581,6 +661,54 @@ x is equal to y</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130923Z" creationid="hsugawa8651" creationdate="20181119T130923Z">
         <seg>#Core.Array</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Core.Array-Tuple{Missing,Any}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131052Z" creationid="hsugawa8651" creationdate="20181119T131052Z">
+        <seg>#Core.Array-Tuple{Missing,Any}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Core.Array-Tuple{Nothing,Any}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131042Z" creationid="hsugawa8651" creationdate="20181119T131042Z">
+        <seg>#Core.Array-Tuple{Nothing,Any}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Core.Array-Tuple{UndefInitializer,Any}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131021Z" creationid="hsugawa8651" creationdate="20181119T131021Z">
+        <seg>#Core.Array-Tuple{UndefInitializer,Any}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Core.DenseArray</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131320Z" creationid="hsugawa8651" creationdate="20181119T131320Z">
+        <seg>#Core.DenseArray</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Core.UndefInitializer</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131101Z" creationid="hsugawa8651" creationdate="20181119T131101Z">
+        <seg>#Core.UndefInitializer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Core.undef</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131026Z" creationid="hsugawa8651" creationdate="20181119T131026Z">
+        <seg>#Core.undef</seg>
       </tuv>
     </tu>
     <tu>
@@ -2738,6 +2866,14 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../base/#Base.missing</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131055Z" creationid="hsugawa8651" creationdate="20181119T131055Z">
+        <seg>../base/#Base.missing</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../c/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191932Z" creationid="hsugawa8651" creationdate="20181118T191932Z">
@@ -2766,6 +2902,14 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191921Z" creationid="hsugawa8651" creationdate="20181118T191921Z">
         <seg>../constants/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../constants/#Core.nothing</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131047Z" creationid="hsugawa8651" creationdate="20181119T131047Z">
+        <seg>../constants/#Core.nothing</seg>
       </tuv>
     </tu>
     <tu>
@@ -3525,10 +3669,26 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.AbstractVecOrMat&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Constant&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131009Z" creationid="hsugawa8651" creationdate="20181119T131009Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.AbstractVecOrMat&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Constant&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;&lt;c1&gt;Base.AbstractVector&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130938Z" creationid="hsugawa8651" creationdate="20181119T130938Z">
         <seg>&lt;a0&gt;&lt;c1&gt;Base.AbstractVector&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.DenseVector&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131329Z" creationid="hsugawa8651" creationdate="20181119T131329Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.DenseVector&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -3617,6 +3777,86 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192208Z" creationid="hsugawa8651" creationdate="20181118T192208Z">
         <seg>&lt;a0&gt;&lt;c1&gt;Base.Iterators.zip&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Matrix&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Method&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131214Z" creationid="hsugawa8651" creationdate="20181119T131214Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Matrix&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Method&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Matrix&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131204Z" creationid="hsugawa8651" creationdate="20181119T131204Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Matrix&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.VecOrMat&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Constant&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131314Z" creationid="hsugawa8651" creationdate="20181119T131314Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.VecOrMat&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Constant&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Vector&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Method&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131133Z" creationid="hsugawa8651" creationdate="20181119T131133Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Vector&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Method&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Vector&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131123Z" creationid="hsugawa8651" creationdate="20181119T131123Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.Vector&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Core.Array&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Method&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131023Z" creationid="hsugawa8651" creationdate="20181119T131023Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Core.Array&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Method&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Core.Array&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131015Z" creationid="hsugawa8651" creationdate="20181119T131015Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Core.Array&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Core.DenseArray&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131322Z" creationid="hsugawa8651" creationdate="20181119T131322Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Core.DenseArray&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Core.UndefInitializer&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131103Z" creationid="hsugawa8651" creationdate="20181119T131103Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Core.UndefInitializer&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Core.undef&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Constant&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131113Z" creationid="hsugawa8651" creationdate="20181119T131113Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Core.undef&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Constant&lt;/s2&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -4553,6 +4793,14 @@ julia&gt; x = "Hello World!"
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;AbstractVecOrMat{T}&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131011Z" creationid="hsugawa8651" creationdate="20181119T131011Z">
+        <seg>&lt;c0&gt;AbstractVecOrMat{T}&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;AbstractVector{T}&lt;/c0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130952Z" creationid="hsugawa8651" creationdate="20181119T130952Z">
@@ -4561,10 +4809,144 @@ julia&gt; x = "Hello World!"
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Array{T,N} &lt;: AbstractArray{T,N}&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131016Z" creationid="hsugawa8651" creationdate="20181119T131016Z">
+        <seg>&lt;c0&gt;Array{T,N} &lt;: AbstractArray{T,N}&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Array{T}(missing, dims)
+Array{T,N}(missing, dims)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131054Z" creationid="hsugawa8651" creationdate="20181119T131054Z">
+        <seg>&lt;c0&gt;Array{T}(missing, dims)
+Array{T,N}(missing, dims)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Array{T}(nothing, dims)
+Array{T,N}(nothing, dims)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131045Z" creationid="hsugawa8651" creationdate="20181119T131045Z">
+        <seg>&lt;c0&gt;Array{T}(nothing, dims)
+Array{T,N}(nothing, dims)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Array{T}(undef, dims)
+Array{T,N}(undef, dims)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131024Z" creationid="hsugawa8651" creationdate="20181119T131024Z">
+        <seg>&lt;c0&gt;Array{T}(undef, dims)
+Array{T,N}(undef, dims)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;DenseArray{T, N} &lt;: AbstractArray{T,N}&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131323Z" creationid="hsugawa8651" creationdate="20181119T131323Z">
+        <seg>&lt;c0&gt;DenseArray{T, N} &lt;: AbstractArray{T,N}&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;DenseVector{T}&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131330Z" creationid="hsugawa8651" creationdate="20181119T131330Z">
+        <seg>&lt;c0&gt;DenseVector{T}&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Matrix{T} &lt;: AbstractMatrix{T}&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131206Z" creationid="hsugawa8651" creationdate="20181119T131206Z">
+        <seg>&lt;c0&gt;Matrix{T} &lt;: AbstractMatrix{T}&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Matrix{T}(missing, m, n)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131306Z" creationid="hsugawa8651" creationdate="20181119T131306Z">
+        <seg>&lt;c0&gt;Matrix{T}(missing, m, n)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Matrix{T}(nothing, m, n)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131224Z" creationid="hsugawa8651" creationdate="20181119T131224Z">
+        <seg>&lt;c0&gt;Matrix{T}(nothing, m, n)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Matrix{T}(undef, m, n)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131216Z" creationid="hsugawa8651" creationdate="20181119T131216Z">
+        <seg>&lt;c0&gt;Matrix{T}(undef, m, n)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;Stateful(itr)&lt;/c0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192147Z" creationid="hsugawa8651" creationdate="20181118T192147Z">
         <seg>&lt;c0&gt;Stateful(itr)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;UndefInitializer&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131105Z" creationid="hsugawa8651" creationdate="20181119T131105Z">
+        <seg>&lt;c0&gt;UndefInitializer&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;VecOrMat{T}&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131315Z" creationid="hsugawa8651" creationdate="20181119T131315Z">
+        <seg>&lt;c0&gt;VecOrMat{T}&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Vector{T} &lt;: AbstractVector{T}&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131125Z" creationid="hsugawa8651" creationdate="20181119T131125Z">
+        <seg>&lt;c0&gt;Vector{T} &lt;: AbstractVector{T}&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Vector{T}(missing, m)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131155Z" creationid="hsugawa8651" creationdate="20181119T131155Z">
+        <seg>&lt;c0&gt;Vector{T}(missing, m)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Vector{T}(nothing, m)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131146Z" creationid="hsugawa8651" creationdate="20181119T131146Z">
+        <seg>&lt;c0&gt;Vector{T}(nothing, m)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Vector{T}(undef, n)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131136Z" creationid="hsugawa8651" creationdate="20181119T131136Z">
+        <seg>&lt;c0&gt;Vector{T}(undef, n)&lt;/c0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -4605,6 +4987,196 @@ julia&gt; x = "Hello World!"
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192354Z" creationid="hsugawa8651" creationdate="20181118T192354Z">
         <seg>&lt;c0&gt;flatten(iter)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; A = Array{Float64,2}(undef, 2, 3) # N given explicitly
+2×3 Array{Float64,2}:
+ 6.90198e-310  6.90198e-310  6.90198e-310
+ 6.90198e-310  6.90198e-310  0.0
+
+julia&gt; B = Array{Float64}(undef, 2) # N determined by the input
+2-element Array{Float64,1}:
+ 1.87103e-320
+ 0.0&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131032Z" creationid="hsugawa8651" creationdate="20181119T131032Z">
+        <seg>&lt;c0&gt;julia&gt; A = Array{Float64,2}(undef, 2, 3) # N given explicitly
+2×3 Array{Float64,2}:
+ 6.90198e-310  6.90198e-310  6.90198e-310
+ 6.90198e-310  6.90198e-310  0.0
+
+julia&gt; B = Array{Float64}(undef, 2) # N determined by the input
+2-element Array{Float64,1}:
+ 1.87103e-320
+ 0.0&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; Array{Float64,1}(UndefInitializer(), 3)
+3-element Array{Float64,1}:
+ 2.2752528595e-314
+ 2.202942107e-314
+ 2.275252907e-314&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131110Z" creationid="hsugawa8651" creationdate="20181119T131110Z">
+        <seg>&lt;c0&gt;julia&gt; Array{Float64,1}(UndefInitializer(), 3)
+3-element Array{Float64,1}:
+ 2.2752528595e-314
+ 2.202942107e-314
+ 2.275252907e-314&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; Array{Float64,1}(undef, 3)
+3-element Array{Float64,1}:
+ 2.2752528595e-314
+ 2.202942107e-314
+ 2.275252907e-314&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131118Z" creationid="hsugawa8651" creationdate="20181119T131118Z">
+        <seg>&lt;c0&gt;julia&gt; Array{Float64,1}(undef, 3)
+3-element Array{Float64,1}:
+ 2.2752528595e-314
+ 2.202942107e-314
+ 2.275252907e-314&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; Array{Union{Missing, String}}(missing, 2)
+2-element Array{Union{Missing, String},1}:
+ missing
+ missing
+
+julia&gt; Array{Union{Missing, Int}}(missing, 2, 3)
+2×3 Array{Union{Missing, Int64},2}:
+ missing  missing  missing
+ missing  missing  missing&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131100Z" creationid="hsugawa8651" creationdate="20181119T131100Z">
+        <seg>&lt;c0&gt;julia&gt; Array{Union{Missing, String}}(missing, 2)
+2-element Array{Union{Missing, String},1}:
+ missing
+ missing
+
+julia&gt; Array{Union{Missing, Int}}(missing, 2, 3)
+2×3 Array{Union{Missing, Int64},2}:
+ missing  missing  missing
+ missing  missing  missing&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; Array{Union{Nothing, String}}(nothing, 2)
+2-element Array{Union{Nothing, String},1}:
+ nothing
+ nothing
+
+julia&gt; Array{Union{Nothing, Int}}(nothing, 2, 3)
+2×3 Array{Union{Nothing, Int64},2}:
+ nothing  nothing  nothing
+ nothing  nothing  nothing&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131050Z" creationid="hsugawa8651" creationdate="20181119T131050Z">
+        <seg>&lt;c0&gt;julia&gt; Array{Union{Nothing, String}}(nothing, 2)
+2-element Array{Union{Nothing, String},1}:
+ nothing
+ nothing
+
+julia&gt; Array{Union{Nothing, Int}}(nothing, 2, 3)
+2×3 Array{Union{Nothing, Int64},2}:
+ nothing  nothing  nothing
+ nothing  nothing  nothing&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; Matrix{Float64}(undef, 2, 3)
+2×3 Array{Float64,2}:
+ 6.93517e-310  6.93517e-310  6.93517e-310
+ 6.93517e-310  6.93517e-310  1.29396e-320&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131219Z" creationid="hsugawa8651" creationdate="20181119T131219Z">
+        <seg>&lt;c0&gt;julia&gt; Matrix{Float64}(undef, 2, 3)
+2×3 Array{Float64,2}:
+ 6.93517e-310  6.93517e-310  6.93517e-310
+ 6.93517e-310  6.93517e-310  1.29396e-320&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; Matrix{Union{Missing, String}}(missing, 2, 3)
+2×3 Array{Union{Missing, String},2}:
+ missing  missing  missing
+ missing  missing  missing&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131309Z" creationid="hsugawa8651" creationdate="20181119T131309Z">
+        <seg>&lt;c0&gt;julia&gt; Matrix{Union{Missing, String}}(missing, 2, 3)
+2×3 Array{Union{Missing, String},2}:
+ missing  missing  missing
+ missing  missing  missing&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; Matrix{Union{Nothing, String}}(nothing, 2, 3)
+2×3 Array{Union{Nothing, String},2}:
+ nothing  nothing  nothing
+ nothing  nothing  nothing&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131259Z" creationid="hsugawa8651" creationdate="20181119T131259Z">
+        <seg>&lt;c0&gt;julia&gt; Matrix{Union{Nothing, String}}(nothing, 2, 3)
+2×3 Array{Union{Nothing, String},2}:
+ nothing  nothing  nothing
+ nothing  nothing  nothing&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; Vector{Float64}(undef, 3)
+3-element Array{Float64,1}:
+ 6.90966e-310
+ 6.90966e-310
+ 6.90966e-310&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131140Z" creationid="hsugawa8651" creationdate="20181119T131140Z">
+        <seg>&lt;c0&gt;julia&gt; Vector{Float64}(undef, 3)
+3-element Array{Float64,1}:
+ 6.90966e-310
+ 6.90966e-310
+ 6.90966e-310&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; Vector{Union{Missing, String}}(missing, 2)
+2-element Array{Union{Missing, String},1}:
+ missing
+ missing&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131159Z" creationid="hsugawa8651" creationdate="20181119T131159Z">
+        <seg>&lt;c0&gt;julia&gt; Vector{Union{Missing, String}}(missing, 2)
+2-element Array{Union{Missing, String},1}:
+ missing
+ missing&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; Vector{Union{Nothing, String}}(nothing, 2)
+2-element Array{Union{Nothing, String},1}:
+ nothing
+ nothing&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131150Z" creationid="hsugawa8651" creationdate="20181119T131150Z">
+        <seg>&lt;c0&gt;julia&gt; Vector{Union{Nothing, String}}(nothing, 2)
+2-element Array{Union{Nothing, String},1}:
+ nothing
+ nothing&lt;/c0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5047,6 +5619,14 @@ julia&gt; UniversalDeclarationOfHumanRightsStart = "人人生而自由，在尊�
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;undef&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131115Z" creationid="hsugawa8651" creationdate="20181119T131115Z">
+        <seg>&lt;c0&gt;undef&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;zip(iters...)&lt;/c0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192210Z" creationid="hsugawa8651" creationdate="20181118T192210Z">
@@ -5259,6 +5839,14 @@ help output below).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130439Z" creationid="hsugawa8651" creationdate="20181119T130439Z">
         <seg>&lt;s0&gt;Julia内部構造の記述&lt;/s0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;Examples&lt;/s0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131040Z" creationid="hsugawa8651" creationdate="20181119T131040Z">
+        <seg>&lt;s0&gt;例&lt;/s0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -12486,6 +13074,14 @@ other types</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Element type &lt;c6&gt;T&lt;/c6&gt; must be able to hold these values, i.e. &lt;c7&gt;Nothing &lt;: T&lt;/c7&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131256Z" creationid="hsugawa8651" creationdate="20181119T131226Z">
+        <seg>要素型&lt;c6&gt;T&lt;/c6&gt;は、これらの値を保持できなければなりません。つまり、&lt;:t7&gt;Nothing&lt;:T&lt;/c7&gt;です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Elementary Functions</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164916Z" creationid="hsugawa8651" creationdate="20181118T164916Z">
@@ -19390,6 +19986,14 @@ generation of default constructors:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>One-dimensional &lt;a0&gt;&lt;c1&gt;DenseArray&lt;/c1&gt;&lt;/a0&gt; with elements of type &lt;c2&gt;T&lt;/c2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131331Z" creationid="hsugawa8651" creationdate="20181119T131331Z">
+        <seg>One-dimensional &lt;a0&gt;&lt;c1&gt;DenseArray&lt;/c1&gt;&lt;/a0&gt; with elements of type &lt;c2&gt;T&lt;/c2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Operations on &lt;x11/&gt;AbstractArray&lt;x12/&gt; objects are defined using higher
 level operators and functions, in a way that is independent of the underlying storage.</seg>
       </tuv>
@@ -26186,6 +26790,14 @@ arguments, but with generated functions this is impossible.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Union type of &lt;a0&gt;&lt;c1&gt;Vector{T}&lt;/c1&gt;&lt;/a0&gt; and &lt;a2&gt;&lt;c3&gt;Matrix{T}&lt;/c3&gt;&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131316Z" creationid="hsugawa8651" creationdate="20181119T131316Z">
+        <seg>Union type of &lt;a0&gt;&lt;c1&gt;Vector{T}&lt;/c1&gt;&lt;/a0&gt; and &lt;a2&gt;&lt;c3&gt;Matrix{T}&lt;/c3&gt;&lt;/a2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Unlike &lt;x1/&gt;E&lt;x2/&gt;, which is equivalent to &lt;x3/&gt;e&lt;x4/&gt; in numeric literals for historical reasons, &lt;x5/&gt;F&lt;x6/&gt; is just another
 letter and does not behave like &lt;x7/&gt;f&lt;x8/&gt; in numeric literals.</seg>
       </tuv>
@@ -31156,6 +31768,94 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L52-L57</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131130Z" creationid="hsugawa8651" creationdate="20181119T131130Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L52-L57</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L60-L65</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131211Z" creationid="hsugawa8651" creationdate="20181119T131211Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L60-L65</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L67-L71</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131319Z" creationid="hsugawa8651" creationdate="20181119T131319Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L67-L71</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L74-L79</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131327Z" creationid="hsugawa8651" creationdate="20181119T131327Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L74-L79</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L82-L86</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131335Z" creationid="hsugawa8651" creationdate="20181119T131335Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/array.jl#L82-L86</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1381-L1394</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131142Z" creationid="hsugawa8651" creationdate="20181119T131142Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1381-L1394</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1397-L1411</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131152Z" creationid="hsugawa8651" creationdate="20181119T131152Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1397-L1411</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1414-L1428</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131201Z" creationid="hsugawa8651" creationdate="20181119T131201Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1414-L1428</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1431-L1443</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131220Z" creationid="hsugawa8651" creationdate="20181119T131220Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1431-L1443</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1446-L1460</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131301Z" creationid="hsugawa8651" creationdate="20181119T131301Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1446-L1460</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1463-L1477</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131311Z" creationid="hsugawa8651" creationdate="20181119T131311Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1463-L1477</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1480-L1503</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192912Z" creationid="hsugawa8651" creationdate="20181118T192912Z">
@@ -31176,6 +31876,22 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192935Z" creationid="hsugawa8651" creationdate="20181118T192935Z">
         <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1530-L1550</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1553-L1568</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131111Z" creationid="hsugawa8651" creationdate="20181119T131111Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1553-L1568</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1571-L1586</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131119Z" creationid="hsugawa8651" creationdate="20181119T131119Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/docs/basedocs.jl#L1571-L1586</seg>
       </tuv>
     </tu>
     <tu>
