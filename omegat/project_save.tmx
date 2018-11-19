@@ -4549,6 +4549,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Conditional Evaluation&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133820Z" creationid="hsugawa8651" creationdate="20181119T133820Z">
+        <seg>&lt;a0&gt;条件付き評価&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Conditional Evaluation&lt;/a0&gt;: &lt;c1&gt;if&lt;/c1&gt;-&lt;c2&gt;elseif&lt;/c2&gt;-&lt;c3&gt;else&lt;/c3&gt; and &lt;c4&gt;?:&lt;/c4&gt; (ternary operator).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T132917Z" creationid="hsugawa8651" creationdate="20181119T132917Z">
@@ -9066,6 +9074,14 @@ it is possible to return incompletely initialized objects:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Although it is typical, there is no requirement that &lt;c1&gt;begin&lt;/c1&gt; blocks be multiline or that &lt;c2&gt;(;)&lt;/c2&gt; chains be single-line:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133805Z" creationid="hsugawa8651" creationdate="20181119T133724Z">
+        <seg>&lt;c1&gt;begin&lt;/c1&gt;ブロックは複数行で、セミコロン&lt;c2&gt;(;)&lt;/c2&gt;連鎖は単一行で使うのが一般的ですが、これに従う必要はありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Although it is typical, there is no requirement that &lt;x3/&gt;begin&lt;x4/&gt; blocks be multiline
 or that &lt;x5/&gt;(;)&lt;x6/&gt; chains be single-line:</seg>
       </tuv>
@@ -13289,6 +13305,14 @@ value of a boolean expression.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Conditional evaluation allows portions of code to be evaluated or not evaluated depending on the value of a boolean expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133843Z" creationid="hsugawa8651" creationdate="20181119T133843Z">
+        <seg>条件付き評価では、コードの一部がブール式の値に応じて、評価されたりされなかったりします。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Consequently, specializing on &lt;x5/&gt;DestType&lt;x6/&gt; has lower precedence than
 methods that specialize on &lt;x7/&gt;DestStyle&lt;x8/&gt;.</seg>
       </tuv>
@@ -16607,8 +16631,8 @@ the display on a nested &lt;x2/&gt;Expr&lt;x3/&gt;:</seg>
       <tuv lang="EN-US">
         <seg>Here's an example of a &lt;c2&gt;begin&lt;/c2&gt; block:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133527Z" creationid="hsugawa8651" creationdate="20181119T133527Z">
-        <seg>beginブロックの例を次に示します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133627Z" creationid="hsugawa8651" creationdate="20181119T133527Z">
+        <seg>&lt;c2&gt;begin&gt;¥&lt;/c2&gt;ブロックの例を次に示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22935,6 +22959,14 @@ which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since these are fairly small, simple expressions, they could easily be placed onto a single line, which is where the &lt;c0&gt;(;)&lt;/c0&gt; chain syntax comes in handy:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133657Z" creationid="hsugawa8651" creationdate="20181119T133657Z">
+        <seg>この例では、式がかなり小さくて単純なので、簡単に1行にまとめることができます。こういう場合に便利なのが、セミコロン&lt;c0&gt;(;)&lt;/c0&gt;連鎖構文です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since these two &lt;x31/&gt;Priv&lt;x32/&gt; packages are different but both required for &lt;x33/&gt;App&lt;x34/&gt; to continue working correctly, the expression &lt;x35/&gt;import Priv&lt;x36/&gt; must refer to different &lt;x37/&gt;Priv&lt;x38/&gt; packages depending on whether it occurs in &lt;x39/&gt;App&lt;x40/&gt;'s code or in &lt;x41/&gt;Pub&lt;x42/&gt;'s code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152906Z" creationid="hsugawa8651" creationdate="20181117T152906Z">
@@ -26361,8 +26393,8 @@ that accomplish this: &lt;x1/&gt;begin&lt;x2/&gt; blocks and &lt;x3/&gt;(;)&lt;x
       <tuv lang="EN-US">
         <seg>There are two Julia constructs that accomplish this: &lt;c0&gt;begin&lt;/c0&gt; blocks and &lt;c1&gt;(;)&lt;/c1&gt; chains.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133512Z" creationid="hsugawa8651" creationdate="20181119T133512Z">
-        <seg>これを実現するJuliaの制御構造には、beginブロックと、セミコロン(;)連鎖の２つがあります。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133614Z" creationid="hsugawa8651" creationdate="20181119T133512Z">
+        <seg>これを実現するJuliaの制御構造には、&lt;c0&gt;beginブロック&lt;/c0&gt;と、セミコロン&lt;c1&gt;(;)&lt;/c1&gt;連鎖の２つがあります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -27621,6 +27653,14 @@ in &lt;x1/&gt;Functions&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225818Z" creationid="hsugawa8651" creationdate="20181109T225818Z">
         <seg>この構文は、簡潔な単一行関数定義フォームが導入された場合に特に有用です。 &lt;x1/&gt;の関数&lt;x2/&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This syntax is particularly useful with the terse single-line function definition form introduced in &lt;a0&gt;Functions&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133739Z" creationid="hsugawa8651" creationdate="20181119T133718Z">
+        <seg>この構文は、&lt;a0&gt;Functions&lt;/a0&gt; の章で紹介した、簡潔で単一行の関数定義方式と一緒に使うと、特に便利です。</seg>
       </tuv>
     </tu>
     <tu>
