@@ -15737,6 +15737,14 @@ the constraint that the first number is not greater than the second one.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, the &lt;a0&gt;&lt;c1&gt;sqrt()&lt;/c1&gt;&lt;/a0&gt; function throws a &lt;a2&gt;&lt;c3&gt;DomainError&lt;/c3&gt;&lt;/a2&gt; if applied to a negative real value:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T143348Z" creationid="hsugawa8651" creationdate="20181119T143348Z">
+        <seg>たとえば、負の実数値に &lt;a0&gt;&lt;c1&gt;sqrt()&lt;/c1&gt;&lt;/a0&gt; 関数を適用すると、&lt;a2&gt;&lt;c3&gt;DomainError&lt;/c3&gt;&lt;/a2&gt; が投げられます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, the &lt;x1/&gt;`sqrt`&lt;x2/&gt; function throws a &lt;x3/&gt;`DomainError`&lt;x4/&gt; if applied to a negative
 real value:</seg>
       </tuv>
