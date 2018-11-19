@@ -12548,6 +12548,14 @@ unsigned literal.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Boolean operations &lt;e0&gt;without&lt;/e0&gt; short-circuit evaluation can be done with the bitwise boolean operators introduced in &lt;a1&gt;Mathematical Operations and Elementary Functions&lt;/a1&gt;: &lt;c2&gt;&amp;&lt;/c2&gt; and &lt;c3&gt;|&lt;/c3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140754Z" creationid="hsugawa8651" creationdate="20181119T140754Z">
+        <seg>短絡評価&lt;e0&gt;ではない&lt;/e0&gt;ブール演算は、&lt;a1&gt;算術処理と基本的な関数&lt;/a1&gt;で紹介した、 &lt;c2&gt;&amp;&lt;/c2&gt; と &lt;c3&gt;|&lt;/c3&gt;の、ビット単位の論理演算子を使って行うことができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Boolean operations &lt;x1/&gt;without&lt;x2/&gt; short-circuit evaluation can be done with the bitwise boolean operators
 introduced in &lt;x3/&gt;Mathematical Operations and Elementary Functions&lt;x4/&gt;: &lt;x5/&gt;&amp;&lt;x6/&gt; and &lt;x7/&gt;|&lt;x8/&gt;.</seg>
       </tuv>
@@ -15599,8 +15607,8 @@ types with PNG representations will automatically display the image using the mo
       <tuv lang="EN-US">
         <seg>For example, a recursive factorial routine could be defined like this:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230444Z" creationid="hsugawa8651" creationdate="20181109T230444Z">
-        <seg>例えば、再帰階乗ルーチンは、次のように定義できます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140643Z" creationid="hsugawa8651" creationdate="20181109T230444Z">
+        <seg>たとえば、再帰的な階乗ルーチンは次のように定義できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19995,6 +20003,14 @@ arguments, so instead of specializing on &lt;x5/&gt;broadcasted(f, args...)&lt;x
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131620Z" creationid="hsugawa8651" creationdate="20181113T131620Z">
         <seg>まるで その他の機械は、&lt;x3/&gt;をブロードキャストして、その組み合わせを計算します。 引数は、&lt;x5/&gt;ブロードキャスト(f,args.)&lt;x6/&gt;に特化するのではなく、特殊化することができます。 &lt;x7/&gt;ブロードキャスト(::DestStyle,f,args.)&lt;x8/&gt;任意のスタイル、関数、引数の組み合わせに対して&lt;x8/&gt;を指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Just like condition expressions used in &lt;c0&gt;if&lt;/c0&gt;, &lt;c1&gt;elseif&lt;/c1&gt; or the ternary operator, the operands of &lt;c2&gt;&amp;&amp;&lt;/c2&gt; or &lt;c3&gt;||&lt;/c3&gt; must be boolean values (&lt;c4&gt;true&lt;/c4&gt; or &lt;c5&gt;false&lt;/c5&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140919Z" creationid="hsugawa8651" creationdate="20181119T140919Z">
+        <seg>&lt;c0&gt;if&lt;/c0&gt;、&lt;c1&gt;elseif&lt;/c1&gt;、三項演算子で使用される条件式のと同様に、 &lt;c2&gt;&amp;&amp;&lt;/c2&gt;や&lt;c3&gt;||&lt;/c3&gt;の被演算子は、ブール値（&lt;c4&gt;true&lt;/c4&gt; か &lt;c5&gt;false&lt;/c5&gt;）でなければなりません。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -26814,6 +26830,14 @@ corresponding to a traditional &lt;x3/&gt;`atan2`&lt;x4/&gt; function.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These are normal functions, which happen to support infix operator syntax, but always evaluate their arguments:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140804Z" creationid="hsugawa8651" creationdate="20181119T140804Z">
+        <seg>これらの演算子は、たまたま中置記法を採用しただけの通常の関数で、常に引数を評価します。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These are only available to the user who installed them.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121257Z" creationid="hsugawa8651" creationdate="20181118T121257Z">
@@ -28713,6 +28737,14 @@ for the last entry in a conditional chain is an error:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230812Z" creationid="hsugawa8651" creationdate="20181109T230812Z">
         <seg>非ブール値を使用する場合は 条件付きチェーンの最後のエントリはエラーになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using a non-boolean value anywhere except for the last entry in a conditional chain is an error:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140930Z" creationid="hsugawa8651" creationdate="20181119T140930Z">
+        <seg>条件式の連鎖で、最終項以外で、非ブール値を使用するとエラーになります。</seg>
       </tuv>
     </tu>
     <tu>
