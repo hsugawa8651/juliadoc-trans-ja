@@ -16083,6 +16083,14 @@ let's try a two-way version first:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For the sake of clarity, let's try a two-way version first:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135356Z" creationid="hsugawa8651" creationdate="20181119T135356Z">
+        <seg>わかりやすい二分岐版をまずみてみましょう：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For these problems, one needs &lt;x1/&gt;inner&lt;x2/&gt; constructor methods.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155734Z" creationid="hsugawa8651" creationdate="20181117T155734Z">
@@ -17440,6 +17448,14 @@ evaluated; if neither expression is true, the &lt;x9/&gt;else&lt;x10/&gt; block 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the expression &lt;c0&gt;x &lt; y&lt;/c0&gt; is true, the entire ternary operator expression evaluates to the string &lt;c1&gt;"less than"&lt;/c1&gt; and otherwise it evaluates to the string &lt;c2&gt;"not less than"&lt;/c2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135454Z" creationid="hsugawa8651" creationdate="20181119T135454Z">
+        <seg>式&lt;c0&gt;x &lt; y&lt;/c0&gt;が真の場合、三項演算子の式全体は、文字列 &lt;c1&gt;"less than"&lt;/c1&gt; に評価され、偽の場合は文字列 &lt;c2&gt;"not less than"&lt;/c2&gt; に評価されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the expression &lt;x1/&gt;x &lt; y&lt;x2/&gt; is true, the entire ternary operator expression evaluates to the string
 &lt;x3/&gt;"less than"&lt;x4/&gt; and otherwise it evaluates to the string &lt;x5/&gt;"not less than"&lt;x6/&gt;.</seg>
       </tuv>
@@ -18402,6 +18418,15 @@ print.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230106Z" creationid="hsugawa8651" creationdate="20181109T230106Z">
         <seg>前の例では &lt;x1/&gt;println&lt;x2/&gt;コールは3つのブランチすべてで共有されます。唯一の実際の選択は、次のいずれかです。 印刷。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the previous example, the &lt;c0&gt;println&lt;/c0&gt; call is shared by all three branches: the only real choice is which literal string to print.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135337Z" creationid="hsugawa8651" creationdate="20181119T135337Z">
+        <seg> 前述の例では&lt;c0&gt;println&lt;/c0&gt;を呼び出すのは3つの分岐すべてで共通しています。 実質的な分岐は、出力される文字列リテラルです。 
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -24764,8 +24789,9 @@ known as a read-eval-print loop or "REPL") by double-clicking the Julia executab
       <tuv lang="EN-US">
         <seg>The easiest way to understand this behavior is to see an example.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230103Z" creationid="hsugawa8651" creationdate="20181109T230103Z">
-        <seg>この動作を理解する最も簡単な方法は、例を見ることです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135302Z" creationid="hsugawa8651" creationdate="20181109T230103Z">
+        <seg>この動作を理解する最も簡単な方法は、例を見ることでしょう。
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -24783,6 +24809,14 @@ is 1, 2, 4 or 8 bytes.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151316Z" creationid="hsugawa8651" creationdate="20181117T151316Z">
         <seg>タプルの要素タイプは、&lt;x1/&gt;VecElement{T}&lt;x2/&gt;のインスタンスでなければならない。ここで、&lt;x3/&gt;T&lt;x4/&gt;はプリミティブ型である。 は、1 2 4バイトまたは8バイトです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The expression &lt;c0&gt;a&lt;/c0&gt;, before the &lt;c1&gt;?&lt;/c1&gt;, is a condition expression, and the ternary operation evaluates the expression &lt;c2&gt;b&lt;/c2&gt;, before the &lt;c3&gt;:&lt;/c3&gt;, if the condition &lt;c4&gt;a&lt;/c4&gt; is &lt;c5&gt;true&lt;/c5&gt; or the expression &lt;c6&gt;c&lt;/c6&gt;, after the &lt;c7&gt;:&lt;/c7&gt;, if it is &lt;c8&gt;false&lt;/c8&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135252Z" creationid="hsugawa8651" creationdate="20181119T135252Z">
+        <seg>&lt;c1&gt;！&lt;/c1&gt;の前にある式&lt;c0&gt;a&lt;/c0&gt;は条件式で、三項演算は&lt;c4&gt;a&lt;/c4&gt;が&lt;c5&gt;真&lt;/c5&gt;のときは、&lt;c3&gt;:&lt;/c3&gt;の前にある&lt;c2&gt;b&lt;/c2&gt;を評価し、&lt;c8&gt;偽&lt;/c8&gt;の時は、&lt;c7&gt;:&lt;/c7&gt;の後にある&lt;c6&gt;c&lt;/c6&gt;を評価します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25602,6 +25636,14 @@ example requires chaining multiple uses of the ternary operator together:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230140Z" creationid="hsugawa8651" creationdate="20181109T230140Z">
         <seg>オリジナルの3ウェイ 例では、三元演算子の複数の使用を一緒に連鎖する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The original three-way example requires chaining multiple uses of the ternary operator together:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135506Z" creationid="hsugawa8651" creationdate="20181119T135506Z">
+        <seg>もともとの三分岐版の例では、三項演算子を複数連鎖させて使用​​する必要があります。q</seg>
       </tuv>
     </tu>
     <tu>
@@ -27170,8 +27212,8 @@ is relaxed for incrementally-loaded precompiled modules to allow calling any fun
       <tuv lang="EN-US">
         <seg>This could be written more concisely using the ternary operator.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230116Z" creationid="hsugawa8651" creationdate="20181109T230116Z">
-        <seg>これは、三元演算子を使用してより簡潔に書くことができます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135346Z" creationid="hsugawa8651" creationdate="20181109T230116Z">
+        <seg>これは三項演算子を使ってより簡潔に書くことができます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -28145,8 +28187,9 @@ use the syntax &lt;x4/&gt;Dict{KeyType,ValueType}(...)&lt;x5/&gt;.</seg>
       <tuv lang="EN-US">
         <seg>To facilitate chaining, the operator associates from right to left.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230200Z" creationid="hsugawa8651" creationdate="20181109T230200Z">
-        <seg>連鎖を容易にするために、オペレータは右から左へと関連する。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135521Z" creationid="hsugawa8651" creationdate="20181109T230200Z">
+        <seg>連鎖を利用する時は、演算子の結合順は右から左です。 
+</seg>
       </tuv>
     </tu>
     <tu>
