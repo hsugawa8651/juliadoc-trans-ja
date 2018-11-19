@@ -3493,6 +3493,22 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Calling C and Fortran Code&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072405Z" creationid="hsugawa8651" creationdate="20181119T072405Z">
+        <seg>&lt;a0&gt;CとFortranのコードを呼び出す&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Code Loading&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072433Z" creationid="hsugawa8651" creationdate="20181119T072433Z">
+        <seg>&lt;a0&gt;コードのロード&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Complex and Rational Numbers&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031915Z" creationid="hsugawa8651" creationdate="20181119T031915Z">
@@ -3525,6 +3541,22 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Embedding Julia&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072431Z" creationid="hsugawa8651" creationdate="20181119T072431Z">
+        <seg>&lt;a0&gt;埋め込みJulia&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Environment Variables&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072428Z" creationid="hsugawa8651" creationdate="20181119T072428Z">
+        <seg>&lt;a0&gt;環境変数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Functions&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031923Z" creationid="hsugawa8651" creationdate="20181119T031923Z">
@@ -3541,6 +3573,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Handling Operating System Variation&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072423Z" creationid="hsugawa8651" creationdate="20181119T072423Z">
+        <seg>&lt;a0&gt;オペレーティング・システムの違いを扱う&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Home&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031805Z" creationid="hsugawa8651" creationdate="20181119T031805Z">
@@ -3553,6 +3593,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031854Z" creationid="hsugawa8651" creationdate="20181119T031854Z">
         <seg>&lt;a0&gt;整数および浮動小数点数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Interfaces&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072245Z" creationid="hsugawa8651" creationdate="20181119T072245Z">
+        <seg>&lt;a0&gt;インタフェース&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3581,6 +3629,70 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Missing Values&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072317Z" creationid="hsugawa8651" creationdate="20181119T072317Z">
+        <seg>&lt;a0&gt;欠損値&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Modules&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072252Z" creationid="hsugawa8651" creationdate="20181119T072252Z">
+        <seg>&lt;a0&gt;モジュール&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Multi-dimensional Arrays&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072302Z" creationid="hsugawa8651" creationdate="20181119T072302Z">
+        <seg>&lt;a0&gt;多次元配列&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Networking and Streams&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072322Z" creationid="hsugawa8651" creationdate="20181119T072322Z">
+        <seg>&lt;a0&gt;ネットワーキングおよびストリーム&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Parallel Computing&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072325Z" creationid="hsugawa8651" creationdate="20181119T072325Z">
+        <seg>&lt;a0&gt;並列計算&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Performance Tips&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072532Z" creationid="hsugawa8651" creationdate="20181119T072532Z">
+        <seg>&lt;a0&gt;性能向上のヒント&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Profiling&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072450Z" creationid="hsugawa8651" creationdate="20181119T072450Z">
+        <seg>&lt;a0&gt;プロファイリング&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Running External Programs&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072343Z" creationid="hsugawa8651" creationdate="20181119T072343Z">
+        <seg>&lt;a0&gt;外部プログラムの実行&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Scope of Variables&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031954Z" creationid="hsugawa8651" creationdate="20181119T031954Z">
@@ -3589,10 +3701,26 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Stack Traces&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072507Z" creationid="hsugawa8651" creationdate="20181119T072507Z">
+        <seg>&lt;a0&gt;スタック・トレース&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Strings&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031918Z" creationid="hsugawa8651" creationdate="20181119T031918Z">
         <seg>&lt;a0&gt;文字列&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Style Guide&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072545Z" creationid="hsugawa8651" creationdate="20181119T072545Z">
+        <seg>&lt;a0&gt;スタイル・ガイド&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -30132,6 +30260,22 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072221Z" creationid="hsugawa8651" creationdate="20181119T072221Z">
+        <seg>https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://docs.julialang.org/en/v1/base/arrays/index.html</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072219Z" creationid="hsugawa8651" creationdate="20181119T072219Z">
+        <seg>https://docs.julialang.org/en/v1/base/arrays/index.html</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L5-L11</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192818Z" creationid="hsugawa8651" creationdate="20181118T192818Z">
@@ -43801,6 +43945,14 @@ ccall(:foo, Cvoid, (Ref{Cint}, Ref{Cfloat}), width, range)</seg>
         <seg>width = Ref{Cint}(0)
 range = Ref{Cfloat}(0)
 ccall(:foo, Cvoid, (Ref{Cint}, Ref{Cfloat}), width, range)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>width=device-width, initial-scale=1.0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072213Z" creationid="hsugawa8651" creationdate="20181119T072213Z">
+        <seg>width=device-width, initial-scale=1.0</seg>
       </tuv>
     </tu>
     <tu>
