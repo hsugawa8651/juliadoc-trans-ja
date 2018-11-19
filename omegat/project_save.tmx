@@ -2634,10 +2634,26 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../constructors/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032029Z" creationid="hsugawa8651" creationdate="20181119T032029Z">
+        <seg>../constructors/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../control-flow/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031924Z" creationid="hsugawa8651" creationdate="20181119T031924Z">
         <seg>../control-flow/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../conversion-and-promotion/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032035Z" creationid="hsugawa8651" creationdate="20181119T032035Z">
+        <seg>../conversion-and-promotion/</seg>
       </tuv>
     </tu>
     <tu>
@@ -2702,6 +2718,14 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031855Z" creationid="hsugawa8651" creationdate="20181119T031855Z">
         <seg>../mathematical-operations/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../methods/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032025Z" creationid="hsugawa8651" creationdate="20181119T032025Z">
+        <seg>../methods/</seg>
       </tuv>
     </tu>
     <tu>
@@ -3437,10 +3461,26 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Constructors&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032034Z" creationid="hsugawa8651" creationdate="20181119T032034Z">
+        <seg>&lt;a0&gt;コンストラクタ&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Control Flow&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031927Z" creationid="hsugawa8651" creationdate="20181119T031927Z">
         <seg>&lt;a0&gt;制御フロー&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Conversion and Promotion&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032234Z" creationid="hsugawa8651" creationdate="20181119T032234Z">
+        <seg>&lt;a0&gt;変換と昇格&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3493,6 +3533,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Methods&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032028Z" creationid="hsugawa8651" creationdate="20181119T032028Z">
+        <seg>&lt;a0&gt;メソッド&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Scope of Variables&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031954Z" creationid="hsugawa8651" creationdate="20181119T031954Z">
@@ -3505,6 +3553,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031918Z" creationid="hsugawa8651" creationdate="20181119T031918Z">
         <seg>&lt;a0&gt;文字列&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Types&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032023Z" creationid="hsugawa8651" creationdate="20181119T032023Z">
+        <seg>&lt;a0&gt;型&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
