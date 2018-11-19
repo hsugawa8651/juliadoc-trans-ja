@@ -473,6 +473,14 @@ x is equal to y</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#Base.Broadcast.broadcast</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131935Z" creationid="hsugawa8651" creationdate="20181119T131935Z">
+        <seg>#Base.Broadcast.broadcast</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Base.DenseMatrix</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131336Z" creationid="hsugawa8651" creationdate="20181119T131336Z">
@@ -729,6 +737,14 @@ x is equal to y</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#Base.conj!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131907Z" creationid="hsugawa8651" creationdate="20181119T131907Z">
+        <seg>#Base.conj!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Base.eachindex</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131808Z" creationid="hsugawa8651" creationdate="20181119T131808Z">
@@ -797,6 +813,22 @@ x is equal to y</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131717Z" creationid="hsugawa8651" creationdate="20181119T131717Z">
         <seg>#Base.size</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.stride</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131917Z" creationid="hsugawa8651" creationdate="20181119T131917Z">
+        <seg>#Base.stride</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.strides</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131924Z" creationid="hsugawa8651" creationdate="20181119T131924Z">
+        <seg>#Base.strides</seg>
       </tuv>
     </tu>
     <tu>
@@ -2658,6 +2690,14 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../../manual/functions/#man-vectorized-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131932Z" creationid="hsugawa8651" creationdate="20181119T131932Z">
+        <seg>../../manual/functions/#man-vectorized-1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../../manual/getting-started/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003100Z" creationid="hsugawa8651" creationdate="20181119T003100Z">
@@ -3230,6 +3270,14 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191906Z" creationid="hsugawa8651" creationdate="20181118T191906Z">
         <seg>../math/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../math/#Base.conj</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131912Z" creationid="hsugawa8651" creationdate="20181119T131912Z">
+        <seg>../math/#Base.conj</seg>
       </tuv>
     </tu>
     <tu>
@@ -3965,6 +4013,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.IndexCartesian&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131857Z" creationid="hsugawa8651" creationdate="20181119T131857Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.IndexCartesian&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;&lt;c1&gt;Base.IndexLinear&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131848Z" creationid="hsugawa8651" creationdate="20181119T131848Z">
@@ -4149,6 +4205,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.conj!&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131909Z" creationid="hsugawa8651" creationdate="20181119T131909Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.conj!&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;&lt;c1&gt;Base.eachindex&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131809Z" creationid="hsugawa8651" creationdate="20181119T131809Z">
@@ -4225,6 +4289,22 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131719Z" creationid="hsugawa8651" creationdate="20181119T131719Z">
         <seg>&lt;a0&gt;&lt;c1&gt;Base.size&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.stride&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131918Z" creationid="hsugawa8651" creationdate="20181119T131918Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.stride&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.strides&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131925Z" creationid="hsugawa8651" creationdate="20181119T131925Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.strides&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Function&lt;/s2&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5353,6 +5433,14 @@ BitArray{N}(undef, dims::NTuple{N,Int})&lt;/c0&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;IndexCartesian()&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131858Z" creationid="hsugawa8651" creationdate="20181119T131858Z">
+        <seg>&lt;c0&gt;IndexCartesian()&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;IndexLinear()&lt;/c0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131850Z" creationid="hsugawa8651" creationdate="20181119T131850Z">
@@ -5507,6 +5595,14 @@ IndexStyle(typeof(A))&lt;/c0&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;conj!(A)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131910Z" creationid="hsugawa8651" creationdate="20181119T131910Z">
+        <seg>&lt;c0&gt;conj!(A)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;countfrom(start=1, step=1)&lt;/c0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192247Z" creationid="hsugawa8651" creationdate="20181118T192247Z">
@@ -5647,6 +5743,134 @@ CartesianIndex(2, 1)&lt;/c0&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; A = [1+im 2-im; 2+2im 3+im]
+2×2 Array{Complex{Int64},2}:
+ 1+1im  2-1im
+ 2+2im  3+1im
+
+julia&gt; conj!(A);
+
+julia&gt; A
+2×2 Array{Complex{Int64},2}:
+ 1-1im  2+1im
+ 2-2im  3-1im&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131915Z" creationid="hsugawa8651" creationdate="20181119T131915Z">
+        <seg>&lt;c0&gt;julia&gt; A = [1+im 2-im; 2+2im 3+im]
+2×2 Array{Complex{Int64},2}:
+ 1+1im  2-1im
+ 2+2im  3+1im
+
+julia&gt; conj!(A);
+
+julia&gt; A
+2×2 Array{Complex{Int64},2}:
+ 1-1im  2+1im
+ 2-2im  3-1im&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; A = [1, 2, 3, 4, 5]
+5-element Array{Int64,1}:
+ 1
+ 2
+ 3
+ 4
+ 5
+
+julia&gt; B = [1 2; 3 4; 5 6; 7 8; 9 10]
+5×2 Array{Int64,2}:
+ 1   2
+ 3   4
+ 5   6
+ 7   8
+ 9  10
+
+julia&gt; broadcast(+, A, B)
+5×2 Array{Int64,2}:
+  2   3
+  5   6
+  8   9
+ 11  12
+ 14  15
+
+julia&gt; parse.(Int, ["1", "2"])
+2-element Array{Int64,1}:
+ 1
+ 2
+
+julia&gt; abs.((1, -2))
+(1, 2)
+
+julia&gt; broadcast(+, 1.0, (0, -2.0))
+(1.0, -1.0)
+
+julia&gt; (+).([[0,2], [1,3]], Ref{Vector{Int}}([1,-1]))
+2-element Array{Array{Int64,1},1}:
+ [1, 1]
+ [2, 2]
+
+julia&gt; string.(("one","two","three","four"), ": ", 1:4)
+4-element Array{String,1}:
+ "one: 1"
+ "two: 2"
+ "three: 3"
+ "four: 4"
+&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T132215Z" creationid="hsugawa8651" creationdate="20181119T132215Z">
+        <seg>&lt;c0&gt;julia&gt; A = [1, 2, 3, 4, 5]
+5-element Array{Int64,1}:
+ 1
+ 2
+ 3
+ 4
+ 5
+
+julia&gt; B = [1 2; 3 4; 5 6; 7 8; 9 10]
+5×2 Array{Int64,2}:
+ 1   2
+ 3   4
+ 5   6
+ 7   8
+ 9  10
+
+julia&gt; broadcast(+, A, B)
+5×2 Array{Int64,2}:
+  2   3
+  5   6
+  8   9
+ 11  12
+ 14  15
+
+julia&gt; parse.(Int, ["1", "2"])
+2-element Array{Int64,1}:
+ 1
+ 2
+
+julia&gt; abs.((1, -2))
+(1, 2)
+
+julia&gt; broadcast(+, 1.0, (0, -2.0))
+(1.0, -1.0)
+
+julia&gt; (+).([[0,2], [1,3]], Ref{Vector{Int}}([1,-1]))
+2-element Array{Array{Int64,1},1}:
+ [1, 1]
+ [2, 2]
+
+julia&gt; string.(("one","two","three","four"), ": ", 1:4)
+4-element Array{String,1}:
+ "one: 1"
+ "two: 2"
+ "three: 3"
+ "four: 4"
+&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;julia&gt; A = fill(1, (2,3,4));
 
 julia&gt; size(A)
@@ -5677,6 +5901,40 @@ julia&gt; ndims(A)
 
 julia&gt; ndims(A)
 3&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; A = fill(1, (3,4,5));
+
+julia&gt; stride(A,2)
+3
+
+julia&gt; stride(A,3)
+12&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131922Z" creationid="hsugawa8651" creationdate="20181119T131922Z">
+        <seg>&lt;c0&gt;julia&gt; A = fill(1, (3,4,5));
+
+julia&gt; stride(A,2)
+3
+
+julia&gt; stride(A,3)
+12&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; A = fill(1, (3,4,5));
+
+julia&gt; strides(A)
+(1, 3, 12)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131929Z" creationid="hsugawa8651" creationdate="20181119T131929Z">
+        <seg>&lt;c0&gt;julia&gt; A = fill(1, (3,4,5));
+
+julia&gt; strides(A)
+(1, 3, 12)&lt;/c0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -6657,6 +6915,22 @@ julia&gt; zeros(Int8, 2, 3)
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131720Z" creationid="hsugawa8651" creationdate="20181119T131720Z">
         <seg>&lt;c0&gt;size(A::AbstractArray, [dim])&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;stride(A, k::Integer)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131920Z" creationid="hsugawa8651" creationdate="20181119T131920Z">
+        <seg>&lt;c0&gt;stride(A, k::Integer)&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;strides(A)&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131927Z" creationid="hsugawa8651" creationdate="20181119T131927Z">
+        <seg>&lt;c0&gt;strides(A)&lt;/c0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -32858,6 +33132,22 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L311-L323</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131930Z" creationid="hsugawa8651" creationdate="20181119T131930Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L311-L323</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L326-L341</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131923Z" creationid="hsugawa8651" creationdate="20181119T131923Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L326-L341</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/abstractarray.jl#L40-L54</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131743Z" creationid="hsugawa8651" creationdate="20181119T131743Z">
@@ -33018,6 +33308,14 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/arraymath.jl#L5-L26</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131916Z" creationid="hsugawa8651" creationdate="20181119T131916Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/arraymath.jl#L5-L26</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/bitarray.jl#L356-L368</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131528Z" creationid="hsugawa8651" creationdate="20181119T131528Z">
@@ -33054,6 +33352,14 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131449Z" creationid="hsugawa8651" creationdate="20181119T131449Z">
         <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/bitarray.jl#L7-L11</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/broadcast.jl#L626-L701</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T132218Z" creationid="hsugawa8651" creationdate="20181119T132218Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/broadcast.jl#L626-L701</seg>
       </tuv>
     </tu>
     <tu>
@@ -33182,6 +33488,14 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T193032Z" creationid="hsugawa8651" creationdate="20181118T193032Z">
         <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/essentials.jl#L385-L415</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/indices.jl#L31-L41</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131905Z" creationid="hsugawa8651" creationdate="20181119T131905Z">
+        <seg>https://github.com/JuliaLang/julia/blob/6b2d211d22288ef7e66fc0f5bd21d8db952f28ba/base/indices.jl#L31-L41</seg>
       </tuv>
     </tu>
     <tu>
