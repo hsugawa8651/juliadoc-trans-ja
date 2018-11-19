@@ -13192,8 +13192,8 @@ are identical to the passed values.</seg>
       <tuv lang="EN-US">
         <seg>Functions that write to their arguments have names that end in &lt;c0&gt;!&lt;/c0&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033810Z" creationid="hsugawa8651" creationdate="20181119T033810Z">
-        <seg>Functions that write to their arguments have names that end in &lt;c0&gt;!&lt;/c0&gt;.引数に書き込む関数名は ! で終わります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033945Z" creationid="hsugawa8651" creationdate="20181119T033810Z">
+        <seg>Functions that write to their arguments have names that end in &lt;c0&gt;!&lt;/c0&gt;.引数に書き込む関数の名前の末尾は ! とします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23495,8 +23495,8 @@ corresponding to a traditional &lt;x3/&gt;`atan2`&lt;x4/&gt; function.</seg>
       <tuv lang="EN-US">
         <seg>These are sometimes called "mutating" or "in-place" functions because they are intended to produce changes in their arguments after the function is called, not just return a value.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033832Z" creationid="hsugawa8651" creationdate="20181119T033832Z">
-        <seg>これらの関数は、関数が呼び出された際に戻り値を返すだけでなく引数に変更を加えるため、「変異」または「in-place」と呼ばれています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033941Z" creationid="hsugawa8651" creationdate="20181119T033832Z">
+        <seg>これらの関数は、関数が呼び出された際に戻り値を返すだけでなく引数に変更を加えるため、「mutating」または「in-place」と呼ばれています。</seg>
       </tuv>
     </tu>
     <tu>
