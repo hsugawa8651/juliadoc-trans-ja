@@ -425,6 +425,30 @@ x is equal to y</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#Base.AbstractMatrix</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130958Z" creationid="hsugawa8651" creationdate="20181119T130958Z">
+        <seg>#Base.AbstractMatrix</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.AbstractVecOrMat</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131007Z" creationid="hsugawa8651" creationdate="20181119T131007Z">
+        <seg>#Base.AbstractVecOrMat</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Base.AbstractVector</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130936Z" creationid="hsugawa8651" creationdate="20181119T130936Z">
+        <seg>#Base.AbstractVector</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Base.Iterators.Stateful</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192142Z" creationid="hsugawa8651" creationdate="20181118T192142Z">
@@ -545,6 +569,22 @@ x is equal to y</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#Core.AbstractArray</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130916Z" creationid="hsugawa8651" creationdate="20181119T130916Z">
+        <seg>#Core.AbstractArray</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Core.Array</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130923Z" creationid="hsugawa8651" creationdate="20181119T130923Z">
+        <seg>#Core.Array</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Iteration-utilities-1</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192139Z" creationid="hsugawa8651" creationdate="20181118T192139Z">
@@ -573,6 +613,14 @@ x is equal to y</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125646Z" creationid="hsugawa8651" creationdate="20181119T125646Z">
         <seg>#Views-(SubArrays-and-other-view-types)-1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#lib-arrays-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130912Z" creationid="hsugawa8651" creationdate="20181119T130912Z">
+        <seg>#lib-arrays-1</seg>
       </tuv>
     </tu>
     <tu>
@@ -2018,6 +2066,14 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../../devdocs/gc-sa/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130750Z" creationid="hsugawa8651" creationdate="20181119T130750Z">
+        <seg>../../devdocs/gc-sa/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../../devdocs/inference/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192123Z" creationid="hsugawa8651" creationdate="20181118T192123Z">
@@ -2102,6 +2158,14 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192130Z" creationid="hsugawa8651" creationdate="20181118T192130Z">
         <seg>../../devdocs/sanitizers/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../devdocs/ssair/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130743Z" creationid="hsugawa8651" creationdate="20181119T130743Z">
+        <seg>../../devdocs/ssair/</seg>
       </tuv>
     </tu>
     <tu>
@@ -2278,6 +2342,14 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003131Z" creationid="hsugawa8651" creationdate="20181119T003131Z">
         <seg>../../manual/interfaces/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/interfaces/#man-interface-array-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130925Z" creationid="hsugawa8651" creationdate="20181119T130925Z">
+        <seg>../../manual/interfaces/#man-interface-array-1</seg>
       </tuv>
     </tu>
     <tu>
@@ -3445,6 +3517,22 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.AbstractMatrix&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131001Z" creationid="hsugawa8651" creationdate="20181119T131001Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.AbstractMatrix&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.AbstractVector&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130938Z" creationid="hsugawa8651" creationdate="20181119T130938Z">
+        <seg>&lt;a0&gt;&lt;c1&gt;Base.AbstractVector&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;&lt;c1&gt;Base.Iterators.Stateful&lt;/c1&gt;&lt;/a0&gt; — &lt;s2&gt;Type&lt;/s2&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192145Z" creationid="hsugawa8651" creationdate="20181118T192145Z">
@@ -3541,6 +3629,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;s1&gt;&lt;/s1&gt; Edit on GitHub&lt;/a0&gt;&lt;/n2&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130846Z" creationid="hsugawa8651" creationdate="20181119T130846Z">
+        <seg>&lt;a0&gt;&lt;s1&gt;&lt;/s1&gt; Edit on GitHub&lt;/a0&gt;&lt;/n2&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Allowed Variable Names&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033437Z" creationid="hsugawa8651" creationdate="20181119T033437Z">
@@ -3553,6 +3649,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125840Z" creationid="hsugawa8651" creationdate="20181119T125840Z">
         <seg>&lt;a0&gt;配列関数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Arrays with custom indices&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130731Z" creationid="hsugawa8651" creationdate="20181119T130731Z">
+        <seg>&lt;a0&gt;カスタムインデックスを持つ配列&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3585,6 +3689,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125630Z" creationid="hsugawa8651" creationdate="20181119T125616Z">
         <seg>&lt;a0&gt;基本関数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Bounds checking&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130715Z" creationid="hsugawa8651" creationdate="20181119T130715Z">
+        <seg>&lt;a0&gt;境界チェック&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3845,6 +3957,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Inference&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130741Z" creationid="hsugawa8651" creationdate="20181119T130741Z">
+        <seg>&lt;a0&gt;型推論&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Initialization of the Julia runtime&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130443Z" creationid="hsugawa8651" creationdate="20181119T130443Z">
@@ -3889,6 +4009,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130609Z" creationid="hsugawa8651" creationdate="20181119T130609Z">
         <seg>&lt;a0&gt;Julia関数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Julia SSA-form IR&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130747Z" creationid="hsugawa8651" creationdate="20181119T130747Z">
+        <seg>&lt;a0&gt;Julia SSA-form IR&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3981,6 +4109,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Module loading&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130733Z" creationid="hsugawa8651" creationdate="20181119T130733Z">
+        <seg>&lt;a0&gt;モジュールのロード&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Modules&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072252Z" creationid="hsugawa8651" creationdate="20181119T072252Z">
@@ -4069,6 +4205,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Proper maintenance and care of multi-threading locks&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130722Z" creationid="hsugawa8651" creationdate="20181119T130722Z">
+        <seg>&lt;a0&gt;マルチスレッド・ロックの適切な保守と管理&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Punctuation&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130014Z" creationid="hsugawa8651" creationdate="20181119T130014Z">
@@ -4093,6 +4237,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Reporting and analyzing crashes (segfaults)&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130809Z" creationid="hsugawa8651" creationdate="20181119T130809Z">
+        <seg>&lt;a0&gt;クラッシュの報告と分析(segfaults)&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Running External Programs&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072343Z" creationid="hsugawa8651" creationdate="20181119T072343Z">
@@ -4113,6 +4265,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130113Z" creationid="hsugawa8651" creationdate="20181119T130113Z">
         <seg>&lt;a0&gt;SIMDサポート&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Sanitizer support&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130837Z" creationid="hsugawa8651" creationdate="20181119T130837Z">
+        <seg>&lt;a0&gt;サニタイザのサポート&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -4181,6 +4341,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Static analyzer annotations for GC correctness in C code&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130758Z" creationid="hsugawa8651" creationdate="20181119T130758Z">
+        <seg>&lt;a0&gt;CコードにおけるGCの正確さのための静的アナライザ注釈(&lt;/a0&gt;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Statistics&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130400Z" creationid="hsugawa8651" creationdate="20181119T130353Z">
@@ -4209,6 +4377,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130631Z" creationid="hsugawa8651" creationdate="20181119T130631Z">
         <seg>&lt;a0&gt;部分配列&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;System Image Building&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130641Z" creationid="hsugawa8651" creationdate="20181119T130641Z">
+        <seg>&lt;a0&gt;システムイメージのビルド&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -4277,10 +4453,50 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Using Valgrind with Julia&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130827Z" creationid="hsugawa8651" creationdate="20181119T130827Z">
+        <seg>&lt;a0&gt;Julia&lt;/a0&gt;におけるValgrindの使用&lt;/a&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Variables&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031847Z" creationid="hsugawa8651" creationdate="20181119T031847Z">
         <seg>&lt;a0&gt;変数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Working with LLVM&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130647Z" creationid="hsugawa8651" creationdate="20181119T130647Z">
+        <seg>&lt;a0&gt;LLVMを使用する&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;gdb debugging tips&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130813Z" creationid="hsugawa8651" creationdate="20181119T130813Z">
+        <seg>&lt;a0&gt;gdbデバッグのヒント&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;printf() and stdio in the Julia runtime&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130707Z" creationid="hsugawa8651" creationdate="20181119T130707Z">
+        <seg>&lt;a0&gt;Juliaランタイムにおけるprintf()とstdio&lt;/a&gt;&lt;/a&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;source&lt;/a0&gt;&lt;/s1&gt;&lt;s2&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130930Z" creationid="hsugawa8651" creationdate="20181119T130930Z">
+        <seg>&lt;a0&gt;source&lt;/a0&gt;&lt;/s1&gt;&lt;s2&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -4317,6 +4533,30 @@ julia&gt; x = 1 + 1
 # You can assign values of other types, like strings of text
 julia&gt; x = "Hello World!"
 "Hello World!"&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;AbstractArray{T,N}&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130922Z" creationid="hsugawa8651" creationdate="20181119T130922Z">
+        <seg>&lt;c0&gt;AbstractArray{T,N}&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;AbstractMatrix{T}&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131002Z" creationid="hsugawa8651" creationdate="20181119T131002Z">
+        <seg>&lt;c0&gt;AbstractMatrix{T}&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;AbstractVector{T}&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130952Z" creationid="hsugawa8651" creationdate="20181119T130952Z">
+        <seg>&lt;c0&gt;AbstractVector{T}&lt;/c0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -4983,6 +5223,14 @@ help output below).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s0&gt;Arrays&lt;/s0&gt;&lt;a1&gt;&lt;/a1&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130911Z" creationid="hsugawa8651" creationdate="20181119T130911Z">
+        <seg>&lt;s0&gt;配列&lt;/s0&gt;&lt;a1&gt;&lt;/a1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s0&gt;Base&lt;/s0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125541Z" creationid="hsugawa8651" creationdate="20181119T125541Z">
@@ -4995,6 +5243,14 @@ help output below).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130415Z" creationid="hsugawa8651" creationdate="20181119T130415Z">
         <seg>&lt;s0&gt;開発者用ドキュメント&lt;/s0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;Developing/debugging Julia's C code&lt;/s0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130805Z" creationid="hsugawa8651" creationdate="20181119T130805Z">
+        <seg>&lt;s0&gt;JuliaのCコードを作成/デバッグする&lt;/s0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -7540,6 +7796,14 @@ argument types</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120355Z" creationid="hsugawa8651" creationdate="20181118T120355Z">
         <seg>背景と参照</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Base</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130839Z" creationid="hsugawa8651" creationdate="20181119T130839Z">
+        <seg>Base</seg>
       </tuv>
     </tu>
     <tu>
@@ -31032,6 +31296,14 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192203Z" creationid="hsugawa8651" creationdate="20181118T192203Z">
         <seg>https://github.com/JuliaLang/julia/blob/d789231e9985537686052db9b2314c0d51656308/base/iterators.jl#L984-L1035</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://github.com/JuliaLang/julia/blob/master/doc/src/base/arrays.md</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T130841Z" creationid="hsugawa8651" creationdate="20181119T130841Z">
+        <seg>https://github.com/JuliaLang/julia/blob/master/doc/src/base/arrays.md</seg>
       </tuv>
     </tu>
     <tu>
