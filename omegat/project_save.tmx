@@ -16666,6 +16666,14 @@ where syntactic conflicts arise:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here the &lt;c0&gt;1:5&lt;/c0&gt; is a &lt;c1&gt;Range&lt;/c1&gt; object, representing the sequence of numbers 1, 2, 3, 4, 5.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141541Z" creationid="hsugawa8651" creationdate="20181119T141541Z">
+        <seg>この1:5は、Rangeオブジェクトで、1,2,3,4,5の数列をあらわしています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here the &lt;x1/&gt;1:5&lt;x2/&gt; is a range object, representing the sequence of numbers 1, 2, 3, 4, 5.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124428Z" creationid="hsugawa8651" creationdate="20181118T124428Z">
@@ -17480,6 +17488,15 @@ evaluated; if neither expression is true, the &lt;x9/&gt;else&lt;x10/&gt; block 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the condition expression is &lt;c4&gt;false&lt;/c4&gt; when the &lt;c5&gt;while&lt;/c5&gt; loop is first reached, the body is never evaluated.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141322Z" creationid="hsugawa8651" creationdate="20181119T141322Z">
+        <seg>条件式の評価が&lt;c4&gt;偽&lt;/c4&gt;に初めてなると、その後、本体は決して評価されません。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the condition expression is &lt;x9/&gt;false&lt;x10/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124421Z" creationid="hsugawa8651" creationdate="20181118T124421Z">
@@ -17579,6 +17596,14 @@ violate this invariant.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155755Z" creationid="hsugawa8651" creationdate="20181117T155755Z">
         <seg>タイプが宣言されている場合は、&lt;x1/&gt;mutable&lt;x2/&gt;の値を入力すると、フィールド値を入力して、フィールド値を直接変更することができます。 この不変に違反します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the variable &lt;c6&gt;i&lt;/c6&gt; has not been introduced in an other scope, in the &lt;c7&gt;for&lt;/c7&gt; loop form, it is visible only inside of the &lt;c8&gt;for&lt;/c8&gt; loop, and not afterwards.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141640Z" creationid="hsugawa8651" creationdate="20181119T141640Z">
+        <seg>forループ方式の時は、変数iが、他のスコープにとりこまれていない場合、変数は forループの内部でのみ見えて、その後ろでは見えません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21617,6 +21642,14 @@ during which the variable is visible.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>One rather important distinction between the previous &lt;c4&gt;while&lt;/c4&gt; loop form and the &lt;c5&gt;for&lt;/c5&gt; loop form is the scope during which the variable is visible.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141618Z" creationid="hsugawa8651" creationdate="20181119T141618Z">
+        <seg> 前述のwhileループ方式とforループ方式のかなり重要な違いの1つは、ループの実行中の変数が見えるスコープです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One way to do this is to provide a
 constructor only for &lt;x15/&gt;SummedArray&lt;x16/&gt;, but inside the &lt;x17/&gt;struct&lt;x18/&gt; definition block to suppress
 generation of default constructors:</seg>
@@ -23059,6 +23092,14 @@ down like the above &lt;x3/&gt;while&lt;x4/&gt; loop does is so common, it can b
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since counting up and down like the above &lt;c1&gt;while&lt;/c1&gt; loop does is so common, it can be expressed more concisely with a &lt;c2&gt;for&lt;/c2&gt; loop:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141513Z" creationid="hsugawa8651" creationdate="20181119T141357Z">
+        <seg>上記の&lt;c1&gt;while&lt;/c1&gt;ループのようなカウントアップ・カウントダウンは非常に一般的ですが、&lt;c2&gt;for&lt;/c2&gt;ループなら、より簡潔に表現できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since expressions are just &lt;x1/&gt;Expr&lt;x2/&gt; objects which can be constructed programmatically and then evaluated,
 it is possible to dynamically generate arbitrary code which can then be run using &lt;x3/&gt;`eval`&lt;x4/&gt;.</seg>
       </tuv>
@@ -23940,6 +23981,14 @@ resulting expression contains &lt;x5/&gt;only&lt;x6/&gt; the second &lt;x7/&gt;p
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;c0&gt;for&lt;/c0&gt; loop makes common repeated evaluation idioms easier to write.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141414Z" creationid="hsugawa8651" creationdate="20181119T141341Z">
+        <seg>&lt;c0&gt;for&lt;/c0&gt;ループは、よくある繰り返し評価を、書きやすい慣用表現にしたものです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;c0&gt;while&lt;/c0&gt; loop evaluates the condition expression (&lt;c1&gt;i &lt;= 5&lt;/c1&gt; in this case), and as long it remains &lt;c2&gt;true&lt;/c2&gt;, keeps also evaluating the body of the &lt;c3&gt;while&lt;/c3&gt; loop.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141226Z" creationid="hsugawa8651" creationdate="20181119T141226Z">
@@ -23954,6 +24003,14 @@ sessions, not when Julia code is run in other ways.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T084210Z" creationid="hsugawa8651" creationdate="20181118T084007Z">
         <seg>&lt;c14&gt;&lt;s15&gt;ans &lt;/s15&gt;&lt;/c14&gt;はインタラクティブ・セッションでのみ利用可能で、他の方法でJuliaのコードが実行された際には使うことができません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c2&gt;for&lt;/c2&gt; loop iterates through these values, assigning each one in turn to the variable &lt;c3&gt;i&lt;/c3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141558Z" creationid="hsugawa8651" creationdate="20181119T141558Z">
+        <seg> for ループはこれらの値を反復し、順番に変数iに代入します。</seg>
       </tuv>
     </tu>
     <tu>
