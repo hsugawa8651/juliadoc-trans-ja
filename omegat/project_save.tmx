@@ -497,6 +497,22 @@ x is equal to y</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#Basic-functions-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125612Z" creationid="hsugawa8651" creationdate="20181119T125612Z">
+        <seg>#Basic-functions-1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Constructors-and-Types-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125600Z" creationid="hsugawa8651" creationdate="20181119T125600Z">
+        <seg>#Constructors-and-Types-1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#Iteration-utilities-1</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192139Z" creationid="hsugawa8651" creationdate="20181118T192139Z">
@@ -3493,6 +3509,22 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Arrays&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125559Z" creationid="hsugawa8651" creationdate="20181119T125559Z">
+        <seg>&lt;a0&gt;配列&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Basic functions&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125616Z" creationid="hsugawa8651" creationdate="20181119T125616Z">
+        <seg>&lt;a0&gt;基本的な関数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Calling C and Fortran Code&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072405Z" creationid="hsugawa8651" creationdate="20181119T072405Z">
@@ -3509,10 +3541,26 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Collections and Data Structures&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125547Z" creationid="hsugawa8651" creationdate="20181119T125547Z">
+        <seg>&lt;a0&gt;コレクションとデータ構造&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Complex and Rational Numbers&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031915Z" creationid="hsugawa8651" creationdate="20181119T031915Z">
         <seg>&lt;a0&gt;複素数と有理数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Constructors and Types&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125611Z" creationid="hsugawa8651" creationdate="20181119T125611Z">
+        <seg>&lt;a0&gt;コンストラクタと型&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3553,6 +3601,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072428Z" creationid="hsugawa8651" creationdate="20181119T072428Z">
         <seg>&lt;a0&gt;環境変数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Essentials&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125543Z" creationid="hsugawa8651" creationdate="20181119T125543Z">
+        <seg>&lt;a0&gt;Essentials&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3613,6 +3669,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Mathematics&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125550Z" creationid="hsugawa8651" creationdate="20181119T125550Z">
+        <seg>&lt;a0&gt;数学&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Metaprogramming&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191807Z" creationid="hsugawa8651" creationdate="20181118T191807Z">
@@ -3657,6 +3721,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T072322Z" creationid="hsugawa8651" creationdate="20181119T072322Z">
         <seg>&lt;a0&gt;ネットワーキングおよびストリーム&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Numbers&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125552Z" creationid="hsugawa8651" creationdate="20181119T125552Z">
+        <seg>&lt;a0&gt;数値&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3729,6 +3801,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032023Z" creationid="hsugawa8651" creationdate="20181119T032023Z">
         <seg>&lt;a0&gt;型&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Unicode Input&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125537Z" creationid="hsugawa8651" creationdate="20181119T125537Z">
+        <seg>&lt;a0&gt;Unicode入力&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -4435,6 +4515,14 @@ help output below).</seg>
                            Count executions of source lines (omitting setting is equivalent to "user")
  --track-allocation={none|user|all}, --track-allocation
                            Count bytes allocated by each source line</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;Base&lt;/s0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125541Z" creationid="hsugawa8651" creationdate="20181119T125541Z">
+        <seg>&lt;s0&gt;Base&lt;/s0&gt;</seg>
       </tuv>
     </tu>
     <tu>
