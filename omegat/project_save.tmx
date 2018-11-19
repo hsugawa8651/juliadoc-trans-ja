@@ -4517,6 +4517,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Compound Expressions&lt;/a0&gt;: &lt;c1&gt;begin&lt;/c1&gt; and &lt;c2&gt;(;)&lt;/c2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T132810Z" creationid="hsugawa8651" creationdate="20181119T132810Z">
+        <seg>&lt;a0&gt;複合式&lt;/a0&gt;: &lt;c1&gt;begin&lt;/c1&gt; と&lt;c2&gt;(;)&lt;/c2&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Concatenation and permutation&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T125828Z" creationid="hsugawa8651" creationdate="20181119T125828Z">
@@ -19540,8 +19548,8 @@ collection of standard mathematical functions.</seg>
       <tuv lang="EN-US">
         <seg>Julia provides a variety of control flow constructs:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225711Z" creationid="hsugawa8651" creationdate="20181109T225711Z">
-        <seg>Juliaは、さまざまな制御フロー構成を提供しています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T132702Z" creationid="hsugawa8651" creationdate="20181109T225711Z">
+        <seg>Juliaには、さまざまな制御構造があります。</seg>
       </tuv>
     </tu>
     <tu>
