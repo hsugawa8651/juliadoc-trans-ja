@@ -13190,6 +13190,14 @@ are identical to the passed values.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Functions that write to their arguments have names that end in &lt;c0&gt;!&lt;/c0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033810Z" creationid="hsugawa8651" creationdate="20181119T033810Z">
+        <seg>Functions that write to their arguments have names that end in &lt;c0&gt;!&lt;/c0&gt;.引数に書き込む関数名は ! で終わります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Further Reading</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120209Z" creationid="hsugawa8651" creationdate="20181118T120209Z">
@@ -17539,6 +17547,30 @@ of its iterables:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095052Z" creationid="hsugawa8651" creationdate="20181112T110802Z">
         <seg>名前</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Names of &lt;c0&gt;Type&lt;/c0&gt;s and &lt;c1&gt;Module&lt;/c1&gt;s begin with a capital letter and word separation is shown with upper camel case instead of underscores.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033722Z" creationid="hsugawa8651" creationdate="20181119T033722Z">
+        <seg>&lt;c0&gt;型&lt;/c0&gt;&gt;と &lt;c1&gt;モジュール&lt;/c1&gt;の名前は大文字で始まり、単語の区切りはアンダースコアの代わりにキャメルケースで表記されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Names of &lt;c0&gt;function&lt;/c0&gt;s and &lt;c1&gt;macro&lt;/c1&gt;s are in lower case, without underscores.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033745Z" creationid="hsugawa8651" creationdate="20181119T033745Z">
+        <seg>&lt;c0&gt;関数&lt;/c0&gt;や &lt;c1&gt;マクロ&lt;/c1&gt;の名前はアンダースコアを含まない小文字で表記されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Names of variables are in lower case.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033618Z" creationid="hsugawa8651" creationdate="20181119T033618Z">
+        <seg>変数名を小文字で表記する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23461,6 +23493,14 @@ corresponding to a traditional &lt;x3/&gt;`atan2`&lt;x4/&gt; function.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These are sometimes called "mutating" or "in-place" functions because they are intended to produce changes in their arguments after the function is called, not just return a value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033832Z" creationid="hsugawa8651" creationdate="20181119T033832Z">
+        <seg>これらの関数は、関数が呼び出された際に戻り値を返すだけでなく引数に変更を加えるため、「変異」または「in-place」と呼ばれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These composite environments are called &lt;x1/&gt;environment stacks&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121407Z" creationid="hsugawa8651" creationdate="20181118T121407Z">
@@ -25821,6 +25861,14 @@ dimensionalities, by creating a constructor for your style that takes a &lt;x3/&
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>While Julia imposes few restrictions on valid names, it has become useful to adopt the following conventions:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033614Z" creationid="hsugawa8651" creationdate="20181119T033614Z">
+        <seg>Juliaは有効な名前に制限をほとんど課していませんが、次の規則を採用すると便利です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>While outer constructor methods succeed in addressing the problem of providing additional convenience
 methods for constructing objects, they fail to address the other two use cases mentioned in the
 introduction of this chapter: enforcing invariants, and allowing construction of self-referential
@@ -25969,6 +26017,14 @@ like any value:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124513Z" creationid="hsugawa8651" creationdate="20181118T124513Z">
         <seg>&lt;x1/&gt;ブレーク&lt;x2/&gt;キーワードがないと、&lt;x4/&gt;ループは自身では終了せず、&lt;x6/&gt;ループの&lt;x5/&gt;は1000まで繰り返されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Word separation can be indicated by underscores (&lt;c0&gt;'_'&lt;/c0&gt;), but use of underscores is discouraged unless the name would be hard to read otherwise.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033641Z" creationid="hsugawa8651" creationdate="20181119T033641Z">
+        <seg>単語の区切りはアンダースコア（&lt;c0&gt;'_'&lt;/c0&gt;）で表すことができますが、変数名が読みにくい場合の除き使用は推奨されていません。</seg>
       </tuv>
     </tu>
     <tu>
