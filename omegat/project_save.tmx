@@ -5755,6 +5755,14 @@ IndexStyle(typeof(A))&lt;/c0&gt;</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;if&lt;/c0&gt; blocks are "leaky", i.e. they do not introduce a local scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134528Z" creationid="hsugawa8651" creationdate="20181119T134425Z">
+        <seg>&lt;c0&gt;if&lt;/c0&gt;ブロックには「漏れ」があり、ローカルスコープを採用していません。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;julia&gt; A = Array{Float64,2}(undef, 2, 3) # N given explicitly
 2×3 Array{Float64,2}:
  6.90198e-310  6.90198e-310  6.90198e-310
@@ -23024,6 +23032,14 @@ the two tuples, multiplication and addition/subtraction.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>So, we could have defined the &lt;c3&gt;test&lt;/c3&gt; function above as</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134457Z" creationid="hsugawa8651" creationdate="20181119T134457Z">
+        <seg>そのため、上記の&lt;c3&gt;test&lt;/c3&gt;関数は、このようにも定義できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>So, we could have defined the &lt;x6/&gt;test&lt;x7/&gt; function above as</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225921Z" creationid="hsugawa8651" creationdate="20181109T225921Z">
@@ -24499,8 +24515,8 @@ implementation instead.</seg>
       <tuv lang="EN-US">
         <seg>The condition expressions in the &lt;c3&gt;if&lt;/c3&gt;-&lt;c4&gt;elseif&lt;/c4&gt;-&lt;c5&gt;else&lt;/c5&gt; construct are evaluated until the first one evaluates to &lt;c6&gt;true&lt;/c6&gt;, after which the associated block is evaluated, and no further condition expressions or blocks are evaluated.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134134Z" creationid="hsugawa8651" creationdate="20181119T134134Z">
-        <seg> if-elseif-else構文中の条件文は、真になるものが現れるまで評価が続きます。 その真になった条件式に対応するブロックが評価されると、あとの条件式やブロックは評価されません。
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134305Z" creationid="hsugawa8651" creationdate="20181119T134134Z">
+        <seg>&lt;c3&gt;if&lt;/c3&gt;-&lt;c4&gt;elseif&lt;/c4&gt;-&lt;c5&gt;else&lt;/c5&gt;構文中の条件文は、&lt;c6&gt;真&lt;/c6&gt;になるものが現れるまで評価が続きます。 その真になった条件式に対応するブロックが評価されると、あとの条件式やブロックは評価されません。
 </seg>
       </tuv>
     </tu>
@@ -26310,6 +26326,14 @@ it is shown or not.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The variable &lt;c0&gt;relation&lt;/c0&gt; is declared inside the &lt;c1&gt;if&lt;/c1&gt; block, but used outside.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134405Z" creationid="hsugawa8651" creationdate="20181119T134405Z">
+        <seg>変数&lt;c0&gt;relation&lt;/c0&gt;は&lt;c1&gt;if&lt;/c1&gt;ブロックの内側で宣言されていますが、使用されるのは外側です。 ただし、こういった使い方をする場合は、とりうるすべての分岐で、変数の値が定義されていることを確認してください。 上記の関数を次のように変更すると、実行時エラーが発生します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The variable &lt;c6&gt;ans&lt;/c6&gt; is bound to the value of the last evaluated expression whether it is shown or not.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T181404Z" creationid="hsugawa8651" creationdate="20181118T173452Z">
@@ -27507,6 +27531,14 @@ before.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225918Z" creationid="hsugawa8651" creationdate="20181109T225918Z">
         <seg>つまり、新しい変数は &lt;x4/&gt;の場合は&lt;x/&gt;の範囲内で、&lt;x4/&gt;の場合は&lt;x4/&gt;の範囲内で定義されていても、定義されていない場合でも定義されます。 の前にあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This means that new variables defined inside the &lt;c1&gt;if&lt;/c1&gt; clauses can be used after the &lt;c2&gt;if&lt;/c2&gt; block, even if they weren't defined before.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134519Z" creationid="hsugawa8651" creationdate="20181119T134443Z">
+        <seg>これは、&lt;c1&gt;if&lt;/c1&gt;句の中で定義した新しい変数が、&lt;c2&gt;if&lt;/c2&gt;ブロックの後ろで使えるということです。 たとえifブロックの前で定義していなくてもよいのです。 </seg>
       </tuv>
     </tu>
     <tu>
