@@ -3573,6 +3573,42 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;# Assign the value 10 to the variable x
+julia&gt; x = 10
+10
+
+# Doing math with x's value
+julia&gt; x + 1
+11
+
+# Reassign x's value
+julia&gt; x = 1 + 1
+2
+
+# You can assign values of other types, like strings of text
+julia&gt; x = "Hello World!"
+"Hello World!"&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032411Z" creationid="hsugawa8651" creationdate="20181119T032411Z">
+        <seg>&lt;c0&gt;# Assign the value 10 to the variable x
+julia&gt; x = 10
+10
+
+# Doing math with x's value
+julia&gt; x + 1
+11
+
+# Reassign x's value
+julia&gt; x = 1 + 1
+2
+
+# You can assign values of other types, like strings of text
+julia&gt; x = "Hello World!"
+"Hello World!"&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;c0&gt;Stateful(itr)&lt;/c0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192147Z" creationid="hsugawa8651" creationdate="20181118T192147Z">
@@ -3973,6 +4009,40 @@ false
 
 julia&gt; isconcretetype(Union{Int,String})
 false&lt;/c0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;julia&gt; x = 1.0
+1.0
+
+julia&gt; y = -3
+-3
+
+julia&gt; Z = "My string"
+"My string"
+
+julia&gt; customary_phrase = "Hello world!"
+"Hello world!"
+
+julia&gt; UniversalDeclarationOfHumanRightsStart = "人人生而自由，在尊严和权利上一律平等。"
+"人人生而自由，在尊严和权利上一律平等。"&lt;/c0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032501Z" creationid="hsugawa8651" creationdate="20181119T032501Z">
+        <seg>&lt;c0&gt;julia&gt; x = 1.0
+1.0
+
+julia&gt; y = -3
+-3
+
+julia&gt; Z = "My string"
+"My string"
+
+julia&gt; customary_phrase = "Hello world!"
+"Hello world!"
+
+julia&gt; UniversalDeclarationOfHumanRightsStart = "人人生而自由，在尊严和权利上一律平等。"
+"人人生而自由，在尊严和权利上一律平等。"&lt;/c0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5437,6 +5507,14 @@ that wraps a standard &lt;x3/&gt;Array&lt;x4/&gt; with additional structure.</se
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101451Z" creationid="hsugawa8651" creationdate="20181112T101451Z">
         <seg>しかし、このような戻り値の典型的な使用法は、それぞれの値を変数に抽出することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A variable, in Julia, is a name associated (or bound) to a value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032356Z" creationid="hsugawa8651" creationdate="20181119T032356Z">
+        <seg>Juliaにおける変数は、値に関連（または紐づく）する名前になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15027,6 +15105,14 @@ simply apply a given function &lt;x1/&gt;f(x)&lt;x2/&gt; to each element of an a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the Julia REPL and several other Julia editing environments, you can type many Unicode math symbols by typing the backslashed LaTeX symbol name followed by tab.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032540Z" creationid="hsugawa8651" creationdate="20181119T032540Z">
+        <seg>REPLおよび他のJuliaの編集環境では、バックスラッシュを伴うLaTex記号とタブを 入力することで、Unicode数学記号を入力することが可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the REPL, included paths are interpreted relative to the current working directory, &lt;x18/&gt;pwd()&lt;x19/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T122935Z" creationid="hsugawa8651" creationdate="20181118T122935Z">
@@ -16051,6 +16137,14 @@ be evaluated and returned depending on the preceding conditionals:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It's useful when you want to store a value (that you obtained after some math, for example) for later use.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032405Z" creationid="hsugawa8651" creationdate="20181119T032405Z">
+        <seg>これは、 計算によって得た値などを後に使用するために保存する際に便利です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Iterating over the &lt;x1/&gt;CartesianIndices&lt;x2/&gt; of the &lt;x3/&gt;axes(::Broadcasted)&lt;x4/&gt; and using
 indexing with the resulting &lt;x5/&gt;CartesianIndex&lt;x6/&gt; object to compute the result.</seg>
       </tuv>
@@ -16449,6 +16543,14 @@ situations like hash key comparisons:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030534Z" creationid="hsugawa8651" creationdate="20181114T030534Z">
         <seg>Juliaは特別な値の数値をテストするための追加機能を提供しています。 ハッシュ・キー比較のような状況:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia provides an extremely flexible system for naming variables.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032444Z" creationid="hsugawa8651" creationdate="20181119T032444Z">
+        <seg>Juliaでは変数名を柔軟に設定することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24956,6 +25058,14 @@ arguments, but with generated functions this is impossible.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Unicode names (in UTF-8 encoding) are allowed:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032527Z" creationid="hsugawa8651" creationdate="20181119T032527Z">
+        <seg>Unicode（UTF-8）の変数名を使用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Unlike &lt;x1/&gt;E&lt;x2/&gt;, which is equivalent to &lt;x3/&gt;e&lt;x4/&gt; in numeric literals for historical reasons, &lt;x5/&gt;F&lt;x6/&gt; is just another
 letter and does not behave like &lt;x7/&gt;f&lt;x8/&gt; in numeric literals.</seg>
       </tuv>
@@ -25137,6 +25247,14 @@ will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225510Z" creationid="hsugawa8651" creationdate="20181109T225510Z">
         <seg>&lt;x5/&gt;UInt128&lt;x6/&gt;に格納できない値は、そのようなリテラルとは書くことができません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Variable names are case-sensitive, and have no semantic meaning (that is, the language will not treat variables differently based on their names).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032459Z" creationid="hsugawa8651" creationdate="20181119T032459Z">
+        <seg>変数名は大文字と小文字が区別され、言語的な意味を持ちません。</seg>
       </tuv>
     </tu>
     <tu>
