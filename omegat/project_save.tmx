@@ -14905,6 +14905,14 @@ this means that:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Explicitly, this means that:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135844Z" creationid="hsugawa8651" creationdate="20181119T135844Z">
+        <seg>つまり、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Exponentiation</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095558Z" creationid="hsugawa8651" creationdate="20181118T095558Z">
@@ -18358,6 +18366,24 @@ the previous section this is the value of the expression &lt;x3/&gt;x + y&lt;x4/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the expression &lt;c0&gt;a &amp;&amp; b&lt;/c0&gt;, the subexpression &lt;c1&gt;b&lt;/c1&gt; is only evaluated if &lt;c2&gt;a&lt;/c2&gt; evaluates to &lt;c3&gt;true&lt;/c3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135913Z" creationid="hsugawa8651" creationdate="20181119T135804Z">
+        <seg>&lt;c0&gt;a &amp;&amp; b&lt;/c0&gt;という式で、&lt;c1&gt;b&lt;/c1&gt;が評価されるのは、&lt;c2&gt;a&lt;/c2&gt;の評価が&lt;c3&gt;真&lt;/c3&gt;のときのみです。
+
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the expression &lt;c0&gt;a || b&lt;/c0&gt;, the subexpression &lt;c1&gt;b&lt;/c1&gt; is only evaluated if &lt;c2&gt;a&lt;/c2&gt; evaluates to &lt;c3&gt;false&lt;/c3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135810Z" creationid="hsugawa8651" creationdate="20181119T135810Z">
+        <seg>a || bという式で、bが評価されるのは、aの評価が偽の時のみです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the expression &lt;x1/&gt;A[I_1, I_2, ..., I_n]&lt;x2/&gt;, each &lt;x3/&gt;I_k&lt;x4/&gt; may be a scalar index, an
 array of scalar indices, or an object that represents an array of scalar
 indices and can be converted to such by &lt;x5/&gt;`to_indices`&lt;x6/&gt;:</seg>
@@ -19206,6 +19232,15 @@ functions may be unexpectedly slow.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113111Z" creationid="hsugawa8651" creationdate="20181112T113111Z">
         <seg>また、最初の有効なインデックスを指定するには、&lt;x5/&gt;'firstindex&lt;x6/&gt;を定義することをお勧めします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is significant that like &lt;c0&gt;if&lt;/c0&gt;-&lt;c1&gt;elseif&lt;/c1&gt;-&lt;c2&gt;else&lt;/c2&gt;, the expressions before and after the &lt;c3&gt;:&lt;/c3&gt; are only evaluated if the condition expression evaluates to &lt;c4&gt;true&lt;/c4&gt; or &lt;c5&gt;false&lt;/c5&gt;, respectively:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135645Z" creationid="hsugawa8651" creationdate="20181119T135645Z">
+        <seg>重要なのは、&lt;c0&gt;if&lt;/c0&gt;-&lt;c1&gt;elseif&lt;/c1&gt;-&lt;c2&gt;else&lt;/c2&gt;の場合と同様に、 &lt;c3&gt;:&lt;/c3&gt; の前後の式は、それぞれ条件式が&lt;c4&gt;真&lt;/c4&gt;・&lt;c5&gt;偽&lt;/c5&gt;の時、そしてその時だけ、評価されるということです。
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -24450,6 +24485,14 @@ evaluated as are necessary to determine the final boolean value of the entire ch
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230229Z" creationid="hsugawa8651" creationdate="20181109T230229Z">
         <seg>動作は &lt;x1/&gt;&amp;&amp;&lt;x2/&gt;と&lt;x3/&gt;&lt;x4/&gt;ブール演算子を持つ最も命令的なプログラミング言語:シリーズ これらの演算子によって接続されたブール式のうち、最小の数だけが チェーン全体の最終的なブール値を決定するために必要な評価が行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The behavior is found in most imperative programming languages having the &lt;c0&gt;&amp;&amp;&lt;/c0&gt; and &lt;c1&gt;||&lt;/c1&gt; boolean operators: in a series of boolean expressions connected by these operators, only the minimum number of expressions are evaluated as are necessary to determine the final boolean value of the entire chain.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135839Z" creationid="hsugawa8651" creationdate="20181119T135702Z">
+        <seg> 命令型プログラミング言語にみられる&lt;c0&gt;&amp;&amp;&lt;/c0&gt;や&lt;c1&gt;||&lt;/c1&gt;のブール演算子のほとんどは短絡評価です。 これらの演算子で連結したブール式の中で、評価されるのは、式全体のブール値を決定する最小限のものだけです。</seg>
       </tuv>
     </tu>
     <tu>
