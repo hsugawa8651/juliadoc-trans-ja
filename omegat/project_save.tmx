@@ -497,6 +497,22 @@ x is equal to y</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#LLVM-Interface-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003207Z" creationid="hsugawa8651" creationdate="20181119T003207Z">
+        <seg>#LLVM-Interface-1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#Resources-1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031834Z" creationid="hsugawa8651" creationdate="20181119T031834Z">
+        <seg>#Resources-1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>$ cat -n Tmp/test/runtests.jl
  1	using Tmp
  2	Tmp.greet()</seg>
@@ -1834,6 +1850,38 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../../</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003056Z" creationid="hsugawa8651" creationdate="20181119T003056Z">
+        <seg>../../</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../assets/documenter.css</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003034Z" creationid="hsugawa8651" creationdate="20181119T003034Z">
+        <seg>../../assets/documenter.css</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../assets/julia-manual.css</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003035Z" creationid="hsugawa8651" creationdate="20181119T003035Z">
+        <seg>../../assets/julia-manual.css</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../assets/logo.png</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003038Z" creationid="hsugawa8651" creationdate="20181119T003038Z">
+        <seg>../../assets/logo.png</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../../devdocs/ast/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T192049Z" creationid="hsugawa8651" creationdate="20181118T192049Z">
@@ -2034,6 +2082,14 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../../index.html</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003036Z" creationid="hsugawa8651" creationdate="20181119T003036Z">
+        <seg>../../index.html</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../../manual/arrays/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191817Z" creationid="hsugawa8651" creationdate="20181118T191817Z">
@@ -2054,6 +2110,46 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191839Z" creationid="hsugawa8651" creationdate="20181118T191839Z">
         <seg>../../manual/code-loading/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/complex-and-rational-numbers/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003113Z" creationid="hsugawa8651" creationdate="20181119T003113Z">
+        <seg>../../manual/complex-and-rational-numbers/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/constructors/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003127Z" creationid="hsugawa8651" creationdate="20181119T003127Z">
+        <seg>../../manual/constructors/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/control-flow/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003119Z" creationid="hsugawa8651" creationdate="20181119T003119Z">
+        <seg>../../manual/control-flow/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/conversion-and-promotion/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003129Z" creationid="hsugawa8651" creationdate="20181119T003129Z">
+        <seg>../../manual/conversion-and-promotion/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/documentation/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003135Z" creationid="hsugawa8651" creationdate="20181119T003135Z">
+        <seg>../../manual/documentation/</seg>
       </tuv>
     </tu>
     <tu>
@@ -2082,10 +2178,50 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../../manual/functions/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003117Z" creationid="hsugawa8651" creationdate="20181119T003117Z">
+        <seg>../../manual/functions/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/getting-started/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003100Z" creationid="hsugawa8651" creationdate="20181119T003100Z">
+        <seg>../../manual/getting-started/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../../manual/handling-operating-system-variation/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191832Z" creationid="hsugawa8651" creationdate="20181118T191832Z">
         <seg>../../manual/handling-operating-system-variation/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/integers-and-floating-point-numbers/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003108Z" creationid="hsugawa8651" creationdate="20181119T003108Z">
+        <seg>../../manual/integers-and-floating-point-numbers/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/interfaces/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003131Z" creationid="hsugawa8651" creationdate="20181119T003131Z">
+        <seg>../../manual/interfaces/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/mathematical-operations/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003111Z" creationid="hsugawa8651" creationdate="20181119T003111Z">
+        <seg>../../manual/mathematical-operations/</seg>
       </tuv>
     </tu>
     <tu>
@@ -2098,10 +2234,26 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../../manual/methods/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003125Z" creationid="hsugawa8651" creationdate="20181119T003125Z">
+        <seg>../../manual/methods/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../../manual/missing/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191820Z" creationid="hsugawa8651" creationdate="20181118T191820Z">
         <seg>../../manual/missing/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/modules/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003133Z" creationid="hsugawa8651" creationdate="20181119T003133Z">
+        <seg>../../manual/modules/</seg>
       </tuv>
     </tu>
     <tu>
@@ -2162,6 +2314,14 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../../manual/strings/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003115Z" creationid="hsugawa8651" creationdate="20181119T003115Z">
+        <seg>../../manual/strings/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../../manual/style-guide/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191852Z" creationid="hsugawa8651" creationdate="20181118T191852Z">
@@ -2170,10 +2330,34 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../../manual/types/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003122Z" creationid="hsugawa8651" creationdate="20181119T003122Z">
+        <seg>../../manual/types/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../../manual/unicode-input/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191900Z" creationid="hsugawa8651" creationdate="20181118T191900Z">
         <seg>../../manual/unicode-input/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/variables-and-scoping/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003121Z" creationid="hsugawa8651" creationdate="20181119T003121Z">
+        <seg>../../manual/variables-and-scoping/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../../manual/variables/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003105Z" creationid="hsugawa8651" creationdate="20181119T003105Z">
+        <seg>../../manual/variables/</seg>
       </tuv>
     </tu>
     <tu>
@@ -2434,10 +2618,26 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../complex-and-rational-numbers/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031900Z" creationid="hsugawa8651" creationdate="20181119T031900Z">
+        <seg>../complex-and-rational-numbers/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../constants/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191921Z" creationid="hsugawa8651" creationdate="20181118T191921Z">
         <seg>../constants/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../control-flow/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031924Z" creationid="hsugawa8651" creationdate="20181119T031924Z">
+        <seg>../control-flow/</seg>
       </tuv>
     </tu>
     <tu>
@@ -2450,10 +2650,34 @@ mycompare (generic function with 1 method)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>../functions/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031919Z" creationid="hsugawa8651" creationdate="20181119T031919Z">
+        <seg>../functions/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../integers-and-floating-point-numbers/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031849Z" creationid="hsugawa8651" creationdate="20181119T031849Z">
+        <seg>../integers-and-floating-point-numbers/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>../io-network/</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191925Z" creationid="hsugawa8651" creationdate="20181118T191925Z">
         <seg>../io-network/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../iterators/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003203Z" creationid="hsugawa8651" creationdate="20181119T003203Z">
+        <seg>../iterators/</seg>
       </tuv>
     </tu>
     <tu>
@@ -2470,6 +2694,14 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191906Z" creationid="hsugawa8651" creationdate="20181118T191906Z">
         <seg>../math/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../mathematical-operations/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031855Z" creationid="hsugawa8651" creationdate="20181119T031855Z">
+        <seg>../mathematical-operations/</seg>
       </tuv>
     </tu>
     <tu>
@@ -2542,6 +2774,30 @@ mycompare (generic function with 1 method)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191911Z" creationid="hsugawa8651" creationdate="20181118T191911Z">
         <seg>../strings/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../types/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031956Z" creationid="hsugawa8651" creationdate="20181119T031956Z">
+        <seg>../types/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../variables-and-scoping/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031928Z" creationid="hsugawa8651" creationdate="20181119T031928Z">
+        <seg>../variables-and-scoping/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>../variables/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031840Z" creationid="hsugawa8651" creationdate="20181119T031840Z">
+        <seg>../variables/</seg>
       </tuv>
     </tu>
     <tu>
@@ -3173,10 +3429,90 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Complex and Rational Numbers&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031915Z" creationid="hsugawa8651" creationdate="20181119T031915Z">
+        <seg>&lt;a0&gt;複素数と有理数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Control Flow&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031927Z" creationid="hsugawa8651" creationdate="20181119T031927Z">
+        <seg>&lt;a0&gt;制御フロー&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Functions&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031923Z" creationid="hsugawa8651" creationdate="20181119T031923Z">
+        <seg>&lt;a0&gt;関数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Getting Started&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031832Z" creationid="hsugawa8651" creationdate="20181119T031832Z">
+        <seg>&lt;a0&gt;はじめよう&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Home&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031805Z" creationid="hsugawa8651" creationdate="20181119T031805Z">
+        <seg>&lt;a0&gt;Home&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Integers and Floating-Point Numbers&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031854Z" creationid="hsugawa8651" creationdate="20181119T031854Z">
+        <seg>&lt;a0&gt;整数および浮動小数点数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Mathematical Operations and Elementary Functions&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031859Z" creationid="hsugawa8651" creationdate="20181119T031859Z">
+        <seg>&lt;a0&gt;算術演算と基本関数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;Metaprogramming&lt;/a0&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T191807Z" creationid="hsugawa8651" creationdate="20181118T191807Z">
         <seg>メタプログラミング</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Scope of Variables&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031954Z" creationid="hsugawa8651" creationdate="20181119T031954Z">
+        <seg>&lt;a0&gt;変数のスコープ (可視範囲)&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Strings&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031918Z" creationid="hsugawa8651" creationdate="20181119T031918Z">
+        <seg>&lt;a0&gt;文字列&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Variables&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031847Z" creationid="hsugawa8651" creationdate="20181119T031847Z">
+        <seg>&lt;a0&gt;変数&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -3789,6 +4125,14 @@ help output below).</seg>
                            Count executions of source lines (omitting setting is equivalent to "user")
  --track-allocation={none|user|all}, --track-allocation
                            Count bytes allocated by each source line</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;Manual&lt;/s0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031820Z" creationid="hsugawa8651" creationdate="20181119T031820Z">
+        <seg>&lt;s0&gt;マニュアル&lt;/s0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -18831,6 +19175,14 @@ daily work.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Search docs</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031803Z" creationid="hsugawa8651" creationdate="20181119T031803Z">
+        <seg>ドキュメントを検索</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Second"
  "3.</seg>
       </tuv>
@@ -20446,6 +20798,22 @@ the Bessel J function populate the Julia array &lt;x1/&gt;result_array&lt;x2/&gt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121409Z" creationid="hsugawa8651" creationdate="20181118T121409Z">
         <seg>Julia&lt;x3/&gt;LOAD_PATH&lt;x4/&gt;グローバルは、環境のスタックを定義します。環境スタックは、ジュリアプロセスが動作する環境を定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Julia Language</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031753Z" creationid="hsugawa8651" creationdate="20181119T031753Z">
+        <seg>Julia言語</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Julia Language logo</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031736Z" creationid="hsugawa8651" creationdate="20181119T031736Z">
+        <seg>The Julia Language logo</seg>
       </tuv>
     </tu>
     <tu>
@@ -29378,6 +29746,22 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152443Z" creationid="hsugawa8651" creationdate="20181117T152436Z">
         <seg>hn=Vector{UInt8}(undef,256) err=ccall(:gethostname,stdcall,Int32,(Ptr{UInt8},UInt32),hn,長さ(hn))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003031Z" creationid="hsugawa8651" creationdate="20181119T003031Z">
+        <seg>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T003033Z" creationid="hsugawa8651" creationdate="20181119T003033Z">
+        <seg>https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css</seg>
       </tuv>
     </tu>
     <tu>
