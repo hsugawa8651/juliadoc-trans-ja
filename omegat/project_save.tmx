@@ -18156,6 +18156,14 @@ immediately.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In other circumstances, it is handy to be able to stop an iteration and move on to the next one immediately.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142414Z" creationid="hsugawa8651" creationdate="20181119T142414Z">
+        <seg>他の状況では、繰り返しを停止してすぐに次回に移ることができれば便利なことがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In other words, if the path to our example project directory is &lt;x2/&gt;/home/me/animals&lt;x3/&gt; then the &lt;x4/&gt;paths&lt;x5/&gt; map could be represented by this dictionary:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121359Z" creationid="hsugawa8651" creationdate="20181118T121359Z">
@@ -18248,6 +18256,14 @@ which one calls &lt;x7/&gt;continue&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124527Z" creationid="hsugawa8651" creationdate="20181118T124527Z">
         <seg>現実的な使い方で &lt;x5/&gt;continue&lt;x6/&gt;以降に評価されるコードが多くあり、多くの場合、以下のような複数のポイントが存在します。 これは&lt;x8/&gt;を続けて&lt;x8/&gt;を続けます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In realistic usage there is more code to be evaluated after the &lt;c2&gt;continue&lt;/c2&gt;, and often there are multiple points from which one calls &lt;c3&gt;continue&lt;/c3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142602Z" creationid="hsugawa8651" creationdate="20181119T142602Z">
+        <seg> 実際に使用するときは、&lt;c2&gt;continue&lt;/c2&gt;の後に評価するコードがもっとあって、&lt;c3&gt;continue&lt;/c3&gt;を呼び出す箇所も複数ある場合でしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24004,6 +24020,14 @@ resulting expression contains &lt;x5/&gt;only&lt;x6/&gt; the second &lt;x7/&gt;p
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;c0&gt;continue&lt;/c0&gt; keyword accomplishes this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142454Z" creationid="hsugawa8651" creationdate="20181119T142454Z">
+        <seg>&lt;c0&gt;continue&lt;/c0&gt;キーワードは、これを実現します：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;c0&gt;elseif&lt;/c0&gt; and &lt;c1&gt;else&lt;/c1&gt; blocks are optional, and as many &lt;c2&gt;elseif&lt;/c2&gt; blocks as desired can be used.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134204Z" creationid="hsugawa8651" creationdate="20181119T134127Z">
@@ -27010,6 +27034,14 @@ end and at the call site; however, &lt;x1/&gt;don't copy them&lt;x2/&gt;, for th
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These loops are both exited early by using &lt;c3&gt;break&lt;/c3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142403Z" creationid="hsugawa8651" creationdate="20181119T142403Z">
+        <seg>これらのループを早い段階で終了するには、共に、&lt;c3&gt;break&lt;/c3&gt;を使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These loops are both exited early by using &lt;x7/&gt;break&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124514Z" creationid="hsugawa8651" creationdate="20181118T124514Z">
@@ -27660,6 +27692,14 @@ negating the condition and placing the &lt;x1/&gt;println&lt;x2/&gt; call inside
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124524Z" creationid="hsugawa8651" creationdate="20181118T124524Z">
         <seg>これは、同じ振る舞いをより明確に生成することができるので、多少工夫された例です。 &lt;x4/&gt;ブロックが&lt;x4/&gt;ブロックの場合には、&lt;x/&gt;println&lt;x2/&gt;の呼び出しを&lt;x3/&gt;の内部に配置します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is a somewhat contrived example since we could produce the same behavior more clearly by negating the condition and placing the &lt;c0&gt;println&lt;/c0&gt; call inside the &lt;c1&gt;if&lt;/c1&gt; block.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142521Z" creationid="hsugawa8651" creationdate="20181119T142521Z">
+        <seg>これは不自然な例です。というのも、条件式を否定してifブロック内にprintlnの呼び出しを置いた方が、同じ動作をより明確に書けるからです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29582,6 +29622,14 @@ like any value:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025632Z" creationid="hsugawa8651" creationdate="20181110T025632Z">
         <seg>括弧なしでは、式&lt;x1/&gt;f&lt;x2/&gt;は関数オブジェクトを参照しており、この関数オブジェクトを渡すことができます。 どの値でも</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Without the &lt;c0&gt;break&lt;/c0&gt; keyword, the above &lt;c1&gt;while&lt;/c1&gt; loop would never terminate on its own, and the &lt;c2&gt;for&lt;/c2&gt; loop would iterate up to 1000.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142339Z" creationid="hsugawa8651" creationdate="20181119T142339Z">
+        <seg>&lt;c0&gt;break&lt;/c0&gt;キーワードがなければ、上記の&lt;c1&gt;while&lt;/c1&gt;ループは決して自身で終了することはなく、&lt;c2&gt;for&lt;/c2&gt;ループは1000まで繰り返されます。 </seg>
       </tuv>
     </tu>
     <tu>
