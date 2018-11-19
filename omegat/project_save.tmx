@@ -4365,6 +4365,14 @@ even be defined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a0&gt;&lt;c1&gt;Task&lt;/c1&gt;&lt;/a0&gt;s are not so standard: they provide non-local control flow, making it possible to switch between temporarily-suspended computations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133425Z" creationid="hsugawa8651" creationdate="20181119T133350Z">
+        <seg>&lt;a0&gt;&lt;c1&gt; タスク&lt;/c1&gt;&lt;/a0&gt;はそれほど標準的ではありませんが、ローカルに限らない制御構造で、一時的に保留している計算を切り替えることができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a0&gt;&lt;s1&gt;Previous&lt;/s1&gt;&lt;s2&gt;Getting Started&lt;/s2&gt;&lt;/a0&gt;&lt;a3&gt;&lt;s4&gt;Next&lt;/s4&gt;&lt;s5&gt;Integers and Floating-Point Numbers&lt;/s5&gt;&lt;/a3&gt;&lt;/f6&gt;&lt;/a7&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T034114Z" creationid="hsugawa8651" creationdate="20181119T034102Z">
@@ -4513,6 +4521,14 @@ even be defined.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031915Z" creationid="hsugawa8651" creationdate="20181119T031915Z">
         <seg>&lt;a0&gt;複素数と有理数&lt;/a0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a0&gt;Compound Expressions&lt;/a0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133438Z" creationid="hsugawa8651" creationdate="20181119T133438Z">
+        <seg>複合式&lt;a0&gt;Compound Expressions&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -14718,6 +14734,14 @@ direct usage of tasks, but certain problems can be solved much more easily by us
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Everyday programming requires no direct usage of tasks, but certain problems can be solved much more easily by using tasks.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133413Z" creationid="hsugawa8651" creationdate="20181119T133413Z">
+        <seg>日常的なプログラムには、タスクを直接使う必要はないかもしれませんが、ある種の問題は、タスクを使うとはるかに簡単に解くことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Exactly corresponds to the &lt;x1/&gt;complex double&lt;x2/&gt; type in C (or &lt;x3/&gt;COMPLEX*16&lt;x4/&gt; in Fortran).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134434Z" creationid="hsugawa8651" creationdate="20181117T134434Z">
@@ -16577,6 +16601,14 @@ the display on a nested &lt;x2/&gt;Expr&lt;x3/&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115301Z" creationid="hsugawa8651" creationdate="20181118T115301Z">
         <seg>次に例を示します ネストされた&lt;x2/&gt;Expr&lt;x3/&gt;上の表示</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here's an example of a &lt;c2&gt;begin&lt;/c2&gt; block:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133527Z" creationid="hsugawa8651" creationdate="20181119T133527Z">
+        <seg>beginブロックの例を次に示します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23027,6 +23059,14 @@ in order, returning the value of the last subexpression as its value.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Sometimes it is convenient to have a single expression which evaluates several subexpressions in order, returning the value of the last subexpression as its value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133459Z" creationid="hsugawa8651" creationdate="20181119T133459Z">
+        <seg>何個かの部分式を順番に評価していき、最後の式の値を戻り値とするような単一の式を考えると、便利なことが、時々あります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Sometimes, it's just convenient to be able to construct objects
 with fewer or different types of parameters than they have fields.</seg>
       </tuv>
@@ -24739,8 +24779,8 @@ it will be a &lt;x7/&gt;CartesianIndex&lt;x8/&gt;:</seg>
       <tuv lang="EN-US">
         <seg>The first five control flow mechanisms are standard to high-level programming languages.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133326Z" creationid="hsugawa8651" creationdate="20181109T225741Z">
-        <seg>はじめの５つは、高水準なプログラミング言語には標準的な制御構造です。 [タスク]はそれほど標準的ではありませんが、ローカルに限らない制御構造で、一時的に保留している計算を切り替えることができます。 タスクは、強力な制御構造で、Juliaでは、例外処理や協調的マルチタスクの実装に、使われています。 日常的なプログラムには、タスクを直接使う必要はないかもしれませんが、ある種の問題は、タスクを使うとはるかに簡単に解くことができます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133336Z" creationid="hsugawa8651" creationdate="20181109T225741Z">
+        <seg>はじめの５つは、高水準なプログラミング言語には標準的な制御構造です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26151,6 +26191,14 @@ is that of the last subexpression.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The value of both compound expression constructs is that of the last subexpression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133520Z" creationid="hsugawa8651" creationdate="20181119T133520Z">
+        <seg>どちらの複合式も、最後の部分式の値が戻り値になります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The value of the &lt;x1/&gt;variable&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165302Z" creationid="hsugawa8651" creationdate="20181118T165302Z">
@@ -26307,6 +26355,14 @@ that accomplish this: &lt;x1/&gt;begin&lt;x2/&gt; blocks and &lt;x3/&gt;(;)&lt;x
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225757Z" creationid="hsugawa8651" creationdate="20181109T225757Z">
         <seg>ジュリアの構成が2あります これは、&lt;x1/&gt;が&lt;x2/&gt;ブロックと&lt;x3/&gt;(;)&lt;x4/&gt;鎖を形成することを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are two Julia constructs that accomplish this: &lt;c0&gt;begin&lt;/c0&gt; blocks and &lt;c1&gt;(;)&lt;/c1&gt; chains.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133512Z" creationid="hsugawa8651" creationdate="20181119T133512Z">
+        <seg>これを実現するJuliaの制御構造には、beginブロックと、セミコロン(;)連鎖の２つがあります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -27151,6 +27207,14 @@ cooperative multitasking are implemented in Julia using tasks.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225749Z" creationid="hsugawa8651" creationdate="20181109T225749Z">
         <seg>これは強力な構成であり、例外処理とも呼ばれます。 タスクを使用して、Juliaで協調的マルチタスクを実装します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is a powerful construct: both exception handling and cooperative multitasking are implemented in Julia using tasks.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133404Z" creationid="hsugawa8651" creationdate="20181119T133404Z">
+        <seg>タスクは、強力な制御構造で、Juliaでは、例外処理や協調的マルチタスクの実装に、使われています。 </seg>
       </tuv>
     </tu>
     <tu>
