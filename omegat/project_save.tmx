@@ -9300,8 +9300,8 @@ pointers to allocated values on the heap or stack.</seg>
 or the rounding can be changed only within the execution of a particular block of code by using
 the same functions with a &lt;x4/&gt;do&lt;x5/&gt; block:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111701Z" creationid="hsugawa8651" creationdate="20181112T111701Z">
-        <seg>あるいは、精度 または、次のようにして、特定のコード・ブロックを実行する場合にのみ、丸めを変更することができます。 &lt;x4/&gt;do&lt;x5/&gt;ブロックを持つ同じ機能を持つ。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040110Z" creationid="hsugawa8651" creationdate="20181112T111701Z">
+        <seg>また、コード内の特定のブロックのみの精度や端数処理の変更をしたい場合は、 &lt;x4/&gt;do&lt;x5/&gt;  ブロックを併用することで設定が可能です。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -17651,8 +17651,8 @@ most books on scientific computation, and also in the following references:</seg
       <tuv lang="EN-US">
         <seg>However, type promotion between the primitive types above and &lt;x1/&gt;`BigInt`&lt;x2/&gt;/&lt;x3/&gt;`BigFloat`&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120409Z" creationid="hsugawa8651" creationdate="20181118T120409Z">
-        <seg>しかし、上のプリミティブ型と&lt;x1/&gt;`BigInt'&lt;x2/&gt;/&lt;x3/&gt;`BigFloat'&lt;x4/&gt;の間には、型プロモーションがあります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035937Z" creationid="hsugawa8651" creationdate="20181118T120409Z">
+        <seg>しかし、上記のプリミティブ型と&lt;x1/&gt;`BigInt`&lt;x2/&gt; または &lt;x3/&gt;`BigFloat`&lt;x4/&gt; 間の型変換は、自動では行われず、 明示的に指定する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19929,8 +19929,8 @@ these methods were defined at the REPL, we get the apparent line number &lt;x7/&
       <tuv lang="EN-US">
         <seg>It also makes writing exponential functions more elegant:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111756Z" creationid="hsugawa8651" creationdate="20181112T111736Z">
-        <seg>また、指数関数をよりエレガントに書くことができます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040209Z" creationid="hsugawa8651" creationdate="20181112T111736Z">
+        <seg>また、指数関数を簡潔に記載することが可能です。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -26246,8 +26246,9 @@ value, with ties rounded towards the nearest value with an even least significan
       <tuv lang="EN-US">
         <seg>The default precision (in number of bits of the significand) and rounding mode of &lt;x1/&gt;`BigFloat`&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111601Z" creationid="hsugawa8651" creationdate="20181112T111601Z">
-        <seg>&lt;x1/&gt;'BigFloat&lt;x2/&gt;のデフォルト精度(ビット数のビット数)と丸めモード&lt;x1/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040028Z" creationid="hsugawa8651" creationdate="20181112T111601Z">
+        <seg>デフォルトの精度（仮数のビット数で設定）および&lt;x1/&gt;`BigFloat`&lt;x2/&gt;関数の端数処理は
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -27415,8 +27416,8 @@ unary operators such as negation.</seg>
         <seg>The precedence of numeric literal coefficients is the same as that of unary operators such as
 negation.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235801Z" creationid="hsugawa8651" creationdate="20181119T235801Z">
-        <seg>数値リテラル係数の優先順位は、次の値よりもわずかに低くなります。 否定のような単項演算子です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040223Z" creationid="hsugawa8651" creationdate="20181119T235801Z">
+        <seg>数値リテラル係数の優先順位は、否定のような単項演算子と同様です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29482,8 +29483,8 @@ can call fast library code written in a low-level language.</seg>
         <seg>This makes writing polynomial expressions
 much cleaner:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111727Z" creationid="hsugawa8651" creationdate="20181112T111727Z">
-        <seg>これにより、多項式式が作成されます。 よりクリーンです</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040152Z" creationid="hsugawa8651" creationdate="20181112T111727Z">
+        <seg>これにより多項式をより明確に記載することができます。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -30231,8 +30232,8 @@ preceded by a numeric literal, implying multiplication.</seg>
         <seg>To make common numeric formulas and expressions clearer, Julia allows variables to be immediately
 preceded by a numeric literal, implying multiplication.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235755Z" creationid="hsugawa8651" creationdate="20181119T235755Z">
-        <seg>一般的な数式や式をより明確にするために、Juliaは変数をすぐに使用できるようにします。 先行する数値リテラルは、乗算を意味します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040140Z" creationid="hsugawa8651" creationdate="20181119T235755Z">
+        <seg>一般的な数値式や表現をより明確にするため、Juliaでは乗算の数値リテラルが変数を 先行することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33047,8 +33048,9 @@ Consider these examples of this syntax:</seg>
         <seg>`setprecision()`&lt;x1/&gt; and &lt;x2/&gt;`setrounding()`&lt;x3/&gt;,
 and all further calculations will take these changes in account.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235748Z" creationid="hsugawa8651" creationdate="20181119T235748Z">
-        <seg>`setprecision()`&lt;x1/&gt; および&lt;x2/&gt;`setrounding()`&lt;x3/&gt; さらに計算を行うと、これらの変更は考慮されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040056Z" creationid="hsugawa8651" creationdate="20181119T235748Z">
+        <seg>`setprecision()`&lt;x1/&gt;および &lt;x2/&gt;`setrounding()`&lt;x3/&gt;を使用することで設定変更が可能です。設定変更後の演算は全てこの変更が反映されます。 
+</seg>
       </tuv>
     </tu>
     <tu>
