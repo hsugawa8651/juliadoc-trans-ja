@@ -2327,8 +2327,8 @@ mycompare (generic function with 1 method)</seg>
       <tuv lang="EN-US">
         <seg>-Inf&lt;x1/&gt; is equal to itself and less then everything else except &lt;x2/&gt;NaN&lt;x3/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030505Z" creationid="hsugawa8651" creationdate="20181114T030505Z">
-        <seg>-Inf&lt;x1/&gt;はそれ自身と等しく、&lt;x2/&gt;NaN&lt;x3/&gt;以外のすべてのものはそれより小さい。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064343Z" creationid="hsugawa8651" creationdate="20181114T030505Z">
+        <seg> -Inf &lt;x1/&gt;はそれ自体と等しく、 &lt;x2/&gt;NaN&lt;x3/&gt; を除く全てよりも小さいです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15619,8 +15619,8 @@ and type definitions.</seg>
       <tuv lang="EN-US">
         <seg>Finite numbers are ordered in the usual manner.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030459Z" creationid="hsugawa8651" creationdate="20181114T030459Z">
-        <seg>有限数は通常の方法で順序付けされる。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064215Z" creationid="hsugawa8651" creationdate="20181114T030459Z">
+        <seg>有限数は標準的な方法で順序付けされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15703,8 +15703,8 @@ with the low-level implementation details.</seg>
         <seg>Floating-point numbers
 are compared according to the &lt;x1/&gt;IEEE 754 standard&lt;x2/&gt;:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030457Z" creationid="hsugawa8651" creationdate="20181114T030457Z">
-        <seg>浮動小数点数 は、&lt;x1/&gt;IEEE754規格&lt;x2/&gt;に従って比較されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064153Z" creationid="hsugawa8651" creationdate="20181114T030457Z">
+        <seg> 浮動小数点数は &lt;x1/&gt;&gt;IEEE 754規格&lt;x2/&gt; に準拠して比較されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19579,8 +19579,8 @@ anything other than an &lt;x5/&gt;Int&lt;x6/&gt; will throw a &lt;x7/&gt;`Method
       <tuv lang="EN-US">
         <seg>Inf&lt;x1/&gt; is equal to itself and greater than everything else except &lt;x2/&gt;NaN&lt;x3/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030503Z" creationid="hsugawa8651" creationdate="20181114T030503Z">
-        <seg>Inf&lt;x1/&gt;はそれ自身に等しく、&lt;x2/&gt;NaN&lt;x3/&gt;を除く他のすべてより大きい。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064304Z" creationid="hsugawa8651" creationdate="20181114T030503Z">
+        <seg>Inf&lt;x1/&gt; はそれ自体と等しく、 &lt;x2/&gt;NaN&lt;x3/&gt; を除く全てよりも大きいです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20798,8 +20798,8 @@ collection of standard mathematical functions.</seg>
         <seg>Julia provides additional functions to test numbers for special values, which can be useful in
 situations like hash key comparisons:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030534Z" creationid="hsugawa8651" creationdate="20181114T030534Z">
-        <seg>Juliaは特別な値の数値をテストするための追加機能を提供しています。 ハッシュ・キー比較のような状況:</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064428Z" creationid="hsugawa8651" creationdate="20181114T030534Z">
+        <seg>Juliaは、ハッシュ値の比較など、特別な値を比較するための機能を提供します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23346,8 +23346,8 @@ behaves just like non-parametric default inner constructors do.</seg>
       <tuv lang="EN-US">
         <seg>Positive zero is equal but not greater than negative zero.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030501Z" creationid="hsugawa8651" creationdate="20181114T030501Z">
-        <seg>正の0は負の値で、負の値は0より大きくなります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064239Z" creationid="hsugawa8651" creationdate="20181114T030501Z">
+        <seg>正のゼロは負のゼロに等しいですが、大きくはありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26966,8 +26966,8 @@ all.</seg>
       <tuv lang="EN-US">
         <seg>The last point is potentially surprising and thus worth noting:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030511Z" creationid="hsugawa8651" creationdate="20181114T030511Z">
-        <seg>最後の点は潜在的に驚くべきものであり、注目すべきことである。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064349Z" creationid="hsugawa8651" creationdate="20181114T030511Z">
+        <seg>最後の記述は驚くべきものかもしれませんが、特段意味があるものではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33630,6 +33630,14 @@ abstract type Unsigned &lt;: Integer end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030531Z" creationid="hsugawa8651" creationdate="20181114T030531Z">
         <seg>また、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man multi dim arrayS)で特別な頭痛を引き起こす可能性があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>and can cause especial headaches with &lt;x1/&gt;Arrays&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064414Z" creationid="hsugawa8651" creationdate="20181120T064414Z">
+        <seg>これは、 配列&lt;x1/&gt;Arrays&lt;x2/&gt;と共に理解に苦しむものかもしれません。</seg>
       </tuv>
     </tu>
     <tu>
