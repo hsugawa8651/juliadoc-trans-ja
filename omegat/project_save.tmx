@@ -9174,10 +9174,36 @@ Dingo/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Abstract Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144139Z" creationid="hsugawa8651" creationdate="20181120T144139Z">
+        <seg>抽象型 Abstract Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Abstract number types</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044708Z" creationid="hsugawa8651" creationdate="20181112T044708Z">
         <seg>Abstract number types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Abstract types allow the construction of a hierarchy of types, providing a context
+into which concrete types can fit.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144341Z" creationid="hsugawa8651" creationdate="20181120T144341Z">
+        <seg>抽象型によって、型の階層を形成して、適合する具象型のコンテキストと考えることができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Abstract types cannot be instantiated, and serve only as nodes in the type graph, thereby describing
+sets of related concrete types: those concrete types which are their descendants.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144158Z" creationid="hsugawa8651" creationdate="20181120T144158Z">
+        <seg>抽象型はインスタンス化ができなくて、型のグラフの中ではノードになるだけですが、だからこそ 関連する具象型の集合を記述できるといえます。抽象型に対して子孫となる具象型を集合と考えるのです。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -9590,6 +9616,15 @@ file.jl&lt;x8/&gt; to execute a script while being able to catch
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024913Z" creationid="hsugawa8651" creationdate="20181110T024913Z">
         <seg>または、&lt;x7/&gt;julia-e'include(ポプファースト!(ARGS))'を使用することもできます。 ファイル.jl&lt;x8/&gt;を実行すると、スクリプトをキャッチしながらスクリプトを実行することができます。 &lt;x11/&gt;'try'&lt;x12/&gt;ブロックで&lt;x9/&gt;InterruptException&lt;x10/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Although
+they have different representation sizes, &lt;x29/&gt;Int8&lt;x30/&gt;, &lt;x31/&gt;Int16&lt;x32/&gt;, &lt;x33/&gt;Int32&lt;x34/&gt;, &lt;x35/&gt;Int64&lt;x36/&gt; and &lt;x37/&gt;Int128&lt;x38/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144251Z" creationid="hsugawa8651" creationdate="20181120T144251Z">
+        <seg>Int8、Int16、Int32、Int64、Int128 は表現のサイズは異なりますが、すべて符号付き整数型という点で共通しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15087,6 +15122,16 @@ throw a conversion error.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Currently, type declarations
+cannot be used in global scope, e.g. in the REPL, since Julia does not yet have constant-type
+globals.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144037Z" creationid="hsugawa8651" creationdate="20181120T144037Z">
+        <seg>宣言の前であっても、現在のスコープ全体に適用されます。 型宣言はREPLなどのグローバルスコープでは使用できません。 というのも、現時点では、Juliaには まだ定数型のグローバル変数がないからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Custom implementation of &lt;x1/&gt;broadcast!&lt;x2/&gt;, specializing on &lt;x3/&gt;DestStyle&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083617Z" creationid="hsugawa8651" creationdate="20181113T083617Z">
@@ -15157,6 +15202,16 @@ throw a conversion error.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083541Z" creationid="hsugawa8651" creationdate="20181113T083541Z">
         <seg>&lt;x3/&gt;x&lt;x2/&gt;の指数を&lt;x3/&gt;の軸(x)&lt;x4/&gt;に従って宣言する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Declarations can also be attached to function definitions:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144110Z" creationid="hsugawa8651" creationdate="20181120T144110Z">
+        <seg>また宣言を関数の定義に差し込むこともできます。
+
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -17008,6 +17063,16 @@ sums a series without allocating memory:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154929Z" creationid="hsugawa8651" creationdate="20181109T154929Z">
         <seg>たとえば、次の式を指定します。 は、メモリを割り当てずに連続した値を加算します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, the greatest common
+denominator algorithm works for all kinds of integers, but will not work for floating-point
+numbers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144334Z" creationid="hsugawa8651" creationdate="20181120T144334Z">
+        <seg>たとえば、最大公約数を求めるアルゴリズムはすべての種類の整数で動作しますが、浮動小数点数では動作しないでしょう。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -21296,6 +21361,16 @@ object-oriented programming.</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>It is common for
+a piece of code to make sense, for example, only if its arguments are some kind of integer,
+but not really depend on what particular &lt;x16/&gt;kind&lt;x17/&gt; of integer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144319Z" creationid="hsugawa8651" creationdate="20181120T144319Z">
+        <seg>あるコードが意図せず動作可能である、ということはよくあることで、たとえば、関数の引数を整数型のなにかに指定していても、じつのところ、特定の整数の種類に依存しない場合などです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is common for
 the same conceptual function or operation to be implemented quite differently for different types
 of arguments: adding two integers is very different from adding two floating-point numbers, both
 of which are distinct from adding an integer to a floating-point number.</seg>
@@ -25434,11 +25509,8 @@ types of numeric values: &lt;x3/&gt;`Int8`&lt;x4/&gt;, &lt;x5/&gt;`UInt8`&lt;x6/
 &lt;x11/&gt;`Int32`&lt;x12/&gt;, &lt;x13/&gt;`UInt32`&lt;x14/&gt;, &lt;x15/&gt;`Int64`&lt;x16/&gt;, &lt;x17/&gt;`UInt64`&lt;x18/&gt;, &lt;x19/&gt;`Int128`&lt;x20/&gt;,
 &lt;x21/&gt;`UInt128`&lt;x22/&gt;, &lt;x23/&gt;`Float16`&lt;x24/&gt;, &lt;x25/&gt;`Float32`&lt;x26/&gt;, and &lt;x27/&gt;`Float64`&lt;x28/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094913Z" creationid="hsugawa8651" creationdate="20181120T094913Z">
-        <seg>Recall that in &lt;x1/&gt;Integers and Floating-Point Numbers&lt;x2/&gt;, we introduced a variety of concrete
-types of numeric values: &lt;x3/&gt;`Int8`&lt;x4/&gt;, &lt;x5/&gt;`UInt8`&lt;x6/&gt;, &lt;x7/&gt;`Int16`&lt;x8/&gt;, &lt;x9/&gt;`UInt16`&lt;x10/&gt;,
-&lt;x11/&gt;`Int32`&lt;x12/&gt;, &lt;x13/&gt;`UInt32`&lt;x14/&gt;, &lt;x15/&gt;`Int64`&lt;x16/&gt;, &lt;x17/&gt;`UInt64`&lt;x18/&gt;, &lt;x19/&gt;`Int128`&lt;x20/&gt;,
-&lt;x21/&gt;`UInt128`&lt;x22/&gt;, &lt;x23/&gt;`Float16`&lt;x24/&gt;, &lt;x25/&gt;`Float32`&lt;x26/&gt;, and &lt;x27/&gt;`Float64`&lt;x28/&gt;.</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144239Z" creationid="hsugawa8651" creationdate="20181120T094913Z">
+        <seg>整数と浮動小数点数 で導入した、さまざまな数値の具象型を思い出してください。 Int8、 UInt8、 Int16、 UInt16、 Int32、 UInt32、 Int64、 UInt64、 Int128、 UInt128、 Float16、 Float32、 Float64 です。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -25634,6 +25706,15 @@ the &lt;x1/&gt;global&lt;x2/&gt; keyword.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223843Z" creationid="hsugawa8651" creationdate="20181109T223843Z">
         <seg>戻り型(宣言されたC型をJuliaにマッピングするには、次を参照)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Returning from this function behaves just like an assignment to a variable with a declared type:
+the value is always converted to &lt;x1/&gt;Float64&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144122Z" creationid="hsugawa8651" creationdate="20181120T144122Z">
+        <seg>この関数の戻り値は、型宣言をした変数への代入と同じように処理されます。値は常にFloat64に変換されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33470,6 +33551,16 @@ arguments, but with generated functions this is impossible.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>UInt8&lt;x1/&gt;, &lt;x2/&gt;UInt16&lt;x3/&gt;, &lt;x4/&gt;UInt32&lt;x5/&gt;,
+&lt;x6/&gt;UInt64&lt;x7/&gt; and &lt;x8/&gt;UInt128&lt;x9/&gt; are all unsigned integer types, while &lt;x10/&gt;Float16&lt;x11/&gt;, &lt;x12/&gt;Float32&lt;x13/&gt; and
+&lt;x14/&gt;Float64&lt;x15/&gt; are distinct in being floating-point types rather than integers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144308Z" creationid="hsugawa8651" creationdate="20181120T144308Z">
+        <seg> 同様にUInt8、UInt16、UInt32、 UInt64、UInt128はすべて、符号なし整数型であり、 一方、Float16、Float32、Float64は浮動小数点型で、整数型とは別物です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>UTF-8 is a variable-width encoding, meaning that not all characters are encoded
 in the same number of bytes.</seg>
       </tuv>
@@ -33922,6 +34013,17 @@ we can extend &lt;x7/&gt;`length`&lt;x8/&gt;, too:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094310Z" creationid="hsugawa8651" creationdate="20181118T094310Z">
         <seg>また、シーケンス内のエレメント数も知っています。 &lt;x7/&gt;の長さ&lt;x8/&gt;を拡張することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We begin with
+abstract types even though they have no instantiation because they are the backbone of the type
+system: they form the conceptual hierarchy which makes Julia's type system more than just a collection
+of object implementations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144211Z" creationid="hsugawa8651" creationdate="20181120T144211Z">
+        <seg>型の説明は抽象型から始めましょう。インスタンス化はできないですが、型システムのバックボーンだからです。 抽象型は概念的な階層を形成して、Juliaの型システムを、単なるオブジェクトの実装の寄せ集め以上のものにしています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -37134,6 +37236,14 @@ addone(x) = x + oneunit(x)             &lt;x4/&gt; any type supporting + and one
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154351Z" creationid="hsugawa8651" creationdate="20181109T154351Z">
         <seg>初期化されていない密な&lt;x1/&gt;`配列"&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>and applies to the whole current scope, even before the declaration.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144051Z" creationid="hsugawa8651" creationdate="20181120T144051Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
