@@ -19725,6 +19725,14 @@ function to call.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this case the final (empty) line before the closing &lt;x1/&gt;"""&lt;x2/&gt; sets the indentation level.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083554Z" creationid="hsugawa8651" creationdate="20181120T083554Z">
+        <seg>この場合、閉じる """ の前の最後の（空の）行はインデントレベルを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In this case the result is &lt;x5/&gt;5&lt;x6/&gt;,
 because &lt;x7/&gt;f(1,2)&lt;x8/&gt; invokes the first method of &lt;x9/&gt;f&lt;x10/&gt; above.</seg>
       </tuv>
@@ -22704,6 +22712,16 @@ defines the &lt;x3/&gt;`eltype`&lt;x4/&gt;, and the second defines the &lt;x5/&g
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083208Z" creationid="hsugawa8651" creationdate="20181113T083208Z">
         <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;の2つのパラメータを指定することが非常に重要であることに注意してください。最初のパラメータは次のようになります。 &lt;x3/&gt;'エルテープ&lt;x4/&gt;を定義し、2番目は&lt;x5/&gt;'ンダムス''&lt;x6/&gt;を定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that line breaks in literal strings, whether single- or triple-quoted, result in a newline
+(LF) character &lt;x1/&gt;\n&lt;x2/&gt; in the string, even if your editor uses a carriage return &lt;x3/&gt;\r&lt;x4/&gt; (CR) or CRLF
+combination to end lines.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083645Z" creationid="hsugawa8651" creationdate="20181120T083645Z">
+        <seg>シングルクオートかトリプルクオートかどうかに関係なく、文字列リテラルの改行は、 たとえあなたのエディタがキャリッジリターン &lt;x3/&gt;\r&lt;x4/&gt;(CR) またはCRLFの組み合わせを行末に使っているとしても、文字列内の改行(LF)文字 &lt;x1/&gt;\n&lt;x2/&gt;になります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -30972,6 +30990,15 @@ of those methods are, use the &lt;x3/&gt;`methods()`&lt;x4/&gt; function:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To include a CR in a string, use an explicit escape &lt;x5/&gt;\r&lt;x6/&gt;; for example,
+you can enter the literal string &lt;x7/&gt;"a CRLF line ending\r\n"&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083714Z" creationid="hsugawa8651" creationdate="20181120T083714Z">
+        <seg>文字列にCRを含めるためには、明示的に &lt;x5/&gt;\r&lt;x6/&gt;でエスケープを使用してください。例えば、文字列リテラル &lt;x7/&gt;"a CRLF line ending\r\n"&lt;x8/&gt;を入力することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To include a literal &lt;x1/&gt;$&lt;x2/&gt; in a string literal, escape it with a backslash:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083032Z" creationid="hsugawa8651" creationdate="20181120T083032Z">
@@ -32553,6 +32580,14 @@ six):</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can lexicographically compare strings using the standard comparison operators:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083723Z" creationid="hsugawa8651" creationdate="20181120T083723Z">
+        <seg>文字列を標準比較演算子を使用して比較できます。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can pass incomplete objects to other functions from inner constructors to delegate their completion:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123812Z" creationid="hsugawa8651" creationdate="20181118T123812Z">
@@ -32582,6 +32617,30 @@ a normal value:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120943Z" creationid="hsugawa8651" creationdate="20181118T120943Z">
         <seg>開発ツールを含む環境をスタックにプッシュすることができ、REPLとスクリプトから入手できますが、内部パッケージからは利用できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can search for the index of a particular character using the &lt;x1/&gt;`search()`&lt;x2/&gt; function:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083747Z" creationid="hsugawa8651" creationdate="20181120T083747Z">
+        <seg>&lt;x1/&gt;`search()`&lt;x2/&gt; 関数を使用して特定の文字のインデックスを検索することができます。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can start the search for a character at a given offset by providing a third argument:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083752Z" creationid="hsugawa8651" creationdate="20181120T083752Z">
+        <seg>3番目の引数を指定することで指定されたオフセットで文字の検索をすることができます。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can use the &lt;x1/&gt;`contains()`&lt;x2/&gt; function to check if a substring is contained in a string:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083815Z" creationid="hsugawa8651" creationdate="20181120T083815Z">
+        <seg>&lt;x1/&gt;`contains()`&lt;x2/&gt; 関数を使用して、文字列に部分文字列が含まれているか確認することができます。:</seg>
       </tuv>
     </tu>
     <tu>
