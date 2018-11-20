@@ -8575,6 +8575,14 @@ an array and returns a new array containing the resulting values:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A common use of variables is giving names to specific, unchanging values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142627Z" creationid="hsugawa8651" creationdate="20181120T142612Z">
+        <seg>特定の不変の値に名前を与えるために変数を使う、ということはよくあります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A constructor is just like any other function in Julia in that its overall behavior is defined
 by the combined behavior of its methods.</seg>
       </tuv>
@@ -14253,6 +14261,14 @@ iteration&lt;x8/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Constants</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142618Z" creationid="hsugawa8651" creationdate="20181120T142618Z">
+        <seg>定数Constants</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Constructing infinite rational values is acceptable:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123643Z" creationid="hsugawa8651" creationdate="20181118T123643Z">
@@ -16364,6 +16380,14 @@ of pointers to memory managed by either Julia or C through the implicit call to 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For Loops and Comprehensions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142457Z" creationid="hsugawa8651" creationdate="20181120T142457Z">
+        <seg>Forループと内包表記</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For a brief but lucid presentation of how floating-point numbers are represented, see John D.
 Cook's &lt;x1/&gt;article&lt;x2/&gt;</seg>
       </tuv>
@@ -18056,6 +18080,14 @@ in turn calls the automatically provided two-argument constructor method.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here we create and store two closures that return variable &lt;x1/&gt;i&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142359Z" creationid="hsugawa8651" creationdate="20181120T142359Z">
+        <seg>ここでは、変数iを返す2つのクロージャを生成して格納しています。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here we created a function &lt;x1/&gt;change_array!&lt;x2/&gt;, that assigns &lt;x3/&gt;5&lt;x4/&gt; to the first element of the passed
 array (bound to &lt;x5/&gt;x&lt;x6/&gt; at the call site, and bound to &lt;x7/&gt;A&lt;x8/&gt; within the function).</seg>
       </tuv>
@@ -18261,6 +18293,14 @@ mutable arrays should also implement &lt;x14/&gt;`setindex!`&lt;x15/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, comprehensions do not do this, and always freshly allocate their iteration variables:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142555Z" creationid="hsugawa8651" creationdate="20181120T142555Z">
+        <seg>しかし、内包表記はこれとは異なり、常に繰返しの変数を新しく割り当てます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, doing this will also be very slow and leak memory, so you should usually avoid this and instead keep reading.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152317Z" creationid="hsugawa8651" creationdate="20181117T152317Z">
@@ -18316,6 +18356,15 @@ that specific type parameters cannot be requested manually.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165224Z" creationid="hsugawa8651" creationdate="20181118T165224Z">
         <seg>しかし、状況によっては、&lt;x4/&gt;を実行せずに、コード&lt;x3/&gt;を引用符で括る必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, it is always the same
+variable &lt;x3/&gt;i&lt;x4/&gt;, so the two closures behave identically.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142415Z" creationid="hsugawa8651" creationdate="20181120T142415Z">
+        <seg>しかし、変数iは常に同じなので、2つのクロージャは挙動は同一です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25932,6 +25981,15 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since &lt;x1/&gt;let&lt;x2/&gt; introduces a new scope block, the inner local &lt;x3/&gt;x&lt;x4/&gt; is a different variable than the
+outer local &lt;x5/&gt;x&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142448Z" creationid="hsugawa8651" creationdate="20181120T142448Z">
+        <seg>letによって、新しいスコープブロックが導入されるので、内側のローカル変数xは外側のローカル変数xとは異なります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since &lt;x5/&gt;Zebra&lt;x6/&gt; does not appear in the project file, the import will fail even though &lt;x7/&gt;Zebra&lt;x8/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121144Z" creationid="hsugawa8651" creationdate="20181118T121144Z">
@@ -26021,6 +26079,15 @@ must be called to create an object.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155801Z" creationid="hsugawa8651" creationdate="20181117T155801Z">
         <seg>外部コンストラクタ メソッドは、他のコンストラクタ・メソッドを呼び出してオブジェクトを作成できるだけで、最終的には内部コンストラクタを作成できます オブジェクトを作成するために呼び出される必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since the &lt;x1/&gt;begin&lt;x2/&gt; construct does not introduce a new scope, it can be useful to use a zero-argument
+&lt;x3/&gt;let&lt;x4/&gt; to just introduce a new scope block without creating any new bindings:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142434Z" creationid="hsugawa8651" creationdate="20181120T142434Z">
+        <seg>複合式beginでは新しいスコープを導入しないので、新しいスコープブロックを導入するためだけに、引数がなくて新しい束縛を行わないlet文を、使うと便利なことがあります 。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26678,6 +26745,15 @@ of arguments".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Such variables are only
+assigned once.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142633Z" creationid="hsugawa8651" creationdate="20181120T142633Z">
+        <seg>このような変数への代入は一度きりです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Suppose the contents of &lt;x18/&gt;DEPOT_PATH&lt;x19/&gt; is &lt;x20/&gt;["/home/me/.julia", "/usr/local/julia"]&lt;x21/&gt;; then Julia will look at the following paths to see if they exist:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121223Z" creationid="hsugawa8651" creationdate="20181118T121223Z">
@@ -27326,6 +27402,15 @@ is permitted). Now, suppose that we have a 1d array &lt;x17/&gt;A&lt;x18/&gt; of
 using the &lt;x19/&gt;qsort&lt;x20/&gt; function (rather than Julia's built-in &lt;x21/&gt;sort&lt;x22/&gt; function). Before we worry about
 calling &lt;x23/&gt;qsort&lt;x24/&gt; and passing arguments, we need to write a comparison function that works for some
 arbitrary objects (which define &lt;x25/&gt;&lt;&lt;x26/&gt;):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;const&lt;x2/&gt; declaration is allowed on both global and local variables, but is especially useful
+for globals.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142652Z" creationid="hsugawa8651" creationdate="20181120T142652Z">
+        <seg>const宣言は、グローバルとローカルの両方の変数に利用できますが、特にグローバルの時に有益です。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -31536,6 +31621,14 @@ subsections, and arrays of booleans to select elements at their &lt;x14/&gt;true
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This intent can be conveyed to the compiler using the &lt;x1/&gt;const&lt;x2/&gt; keyword:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142636Z" creationid="hsugawa8651" creationdate="20181120T142636Z">
+        <seg>こうした意図を、次のconstキーワードを使って、コンパイラに伝えることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is
 invisible to users as it is immediately realized through a call to &lt;x11/&gt;copy&lt;x12/&gt;, but it is this container
 that provides the basis for broadcast's extensibility for authors of custom types.</seg>
@@ -31655,6 +31748,14 @@ first argument to &lt;x1/&gt;`map()`&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121140Z" creationid="hsugawa8651" creationdate="20181118T121140Z">
         <seg>これは、&lt;x9/&gt;Priv&lt;x10/&gt;という名前が、パッケージの依存関係の一つとは異なるパッケージをメイン・プロジェクトで参照できるため、パッケージ・エコシステム内で重複する名前を使用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is in contrast to &lt;x4/&gt;while&lt;x5/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142528Z" creationid="hsugawa8651" creationdate="20181120T142528Z">
+        <seg>つまり、forループおよび内包表記は、内側でletブロックを使ったwhileループと同様の動作をします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33482,6 +33583,15 @@ diminish.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112506Z" creationid="hsugawa8651" creationdate="20181112T112506Z">
         <seg>すべての要素を繰り返し処理することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We can use &lt;x5/&gt;let&lt;x6/&gt; to create a new binding
+for &lt;x7/&gt;i&lt;x8/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142419Z" creationid="hsugawa8651" creationdate="20181120T142419Z">
+        <seg> letを使って、次のような新しいiの束縛を生成することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -37932,6 +38042,23 @@ end
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>for&lt;x1/&gt; loops and &lt;x2/&gt;Comprehensions&lt;x3/&gt; have the following behavior: any new variables introduced
+in their body scopes are freshly allocated for each loop iteration.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142523Z" creationid="hsugawa8651" creationdate="20181120T142523Z">
+        <seg>forループおよび内包表記 の挙動は以下の通りです。 本体のスコープに導入された新しい変数は、ループの繰返しごとに新しく割り当てられます。 これは、whileループでは、 すべての繰返しで変数が再利用されるのとは対照的です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>for&lt;x1/&gt; loops will reuse existing variables for its iteration variable:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142543Z" creationid="hsugawa8651" creationdate="20181120T142543Z">
+        <seg>forループで繰返しに使う変数は、既存の変数を再利用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>free(ptr)&lt;x1/&gt; when the returned &lt;x2/&gt;Array&lt;x3/&gt; object is finalized.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152608Z" creationid="hsugawa8651" creationdate="20181117T152608Z">
@@ -42231,6 +42358,40 @@ Foo
 
 julia&gt; Foo(1)
 Foo(1, 1)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Fs = Array{Any}(2); i = 1;
+
+julia&gt; while i &lt;= 2
+           let i = i
+               Fs[i] = ()-&gt;i
+           end
+           i += 1
+       end
+
+julia&gt; Fs[1]()
+1
+
+julia&gt; Fs[2]()
+2</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142421Z" creationid="hsugawa8651" creationdate="20181120T142421Z">
+        <seg>julia&gt; Fs = Array{Any}(2); i = 1;
+
+julia&gt; while i &lt;= 2
+           let i = i
+               Fs[i] = ()-&gt;i
+           end
+           i += 1
+       end
+
+julia&gt; Fs[1]()
+1
+
+julia&gt; Fs[2]()
+2</seg>
       </tuv>
     </tu>
     <tu>
@@ -54206,6 +54367,14 @@ of type &lt;x5/&gt;Number&lt;x6/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124416Z" creationid="hsugawa8651" creationdate="20181118T124416Z">
         <seg>while&lt;x1/&gt; loop:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>while&lt;x1/&gt; loops with &lt;x2/&gt;let&lt;x3/&gt; blocks inside:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142532Z" creationid="hsugawa8651" creationdate="20181120T142532Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
