@@ -8571,8 +8571,8 @@ by the combined behavior of its methods.</seg>
 is equivalent to &lt;x7/&gt;broadcast!(identity, X, ...)&lt;x8/&gt; except that, as above, the &lt;x9/&gt;broadcast!&lt;x10/&gt; loop is
 fused with any nested "dot" calls.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120152Z" creationid="hsugawa8651" creationdate="20181118T120152Z">
-        <seg>このための便利な構文は&lt;x5/&gt;X.=.…&lt;x6/&gt;である。 は、&lt;x7/&gt;ブロードキャストと同等であり、&lt;x9/&gt;ブロードキャスト!&lt;x8/&gt;は、上記のように、&lt;x9/&gt;ブロードキャスト!&lt;x10/&gt;ループを意味します。 ネストされた「ドット」コールと融合されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T135758Z" creationid="hsugawa8651" creationdate="20181118T120152Z">
+        <seg>このような場合につかうと便利な構文のX .= ...は、broadcast!(identity, X, ...)とほぼ同等ですが、上記のように、broadcast!ループが、"ドット"呼び出しのネストと融合される点が違います。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -15991,6 +15991,16 @@ values without literal forms as args.</seg>
       <tuv lang="EN-US">
         <seg>Finally, the maximum efficiency is typically achieved when the output array of a vectorized operation
 is &lt;x1/&gt;pre-allocated&lt;x2/&gt;, so that repeated calls do not allocate new arrays over and over again for
+the results (&lt;x3/&gt;Pre-allocating outputs&lt;x4/&gt;:).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T135851Z" creationid="hsugawa8651" creationdate="20181120T135851Z">
+        <seg>最後に、一般的に、効率が最大限に達するのは、ベクトル化演算の出力用の配列に、事前にメモリが割り当てられている場合で、関数呼び出しを何回繰り返しても、新たに出力用の配列にメモリが割り当てられることは、ありません(出力の事前割り当て &lt;x3/&gt;Pre-allocating outputs&lt;x4/&gt; :)。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Finally, the maximum efficiency is typically achieved when the output array of a vectorized operation
+is &lt;x1/&gt;pre-allocated&lt;x2/&gt;, so that repeated calls do not allocate new arrays over and over again for
 the results (see &lt;x3/&gt;Pre-allocating outputs&lt;x4/&gt;).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120149Z" creationid="hsugawa8651" creationdate="20181118T120149Z">
@@ -16456,8 +16466,8 @@ when applied to &lt;x3/&gt;-1&lt;x4/&gt; versus &lt;x5/&gt;-1 + 0im&lt;x6/&gt; e
         <seg>For example, &lt;x11/&gt;X .= sin.(Y)&lt;x12/&gt; is equivalent to &lt;x13/&gt;broadcast!(sin, X, Y)&lt;x14/&gt;,
 overwriting &lt;x15/&gt;X&lt;x16/&gt; with &lt;x17/&gt;sin.(Y)&lt;x18/&gt; in-place.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120155Z" creationid="hsugawa8651" creationdate="20181118T120155Z">
-        <seg>たとえば、&lt;x11/&gt;X.=sin.(Y)&lt;x12/&gt;は、&lt;x13/&gt;ブロードキャスト!(sin,X,Y)&lt;x14/&gt;に相当します。 &lt;x17/&gt;X&lt;x16/&gt;を&lt;x17/&gt;sinで上書きします。(Y)&lt;x18/&gt;インプレースで上書きします。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T135734Z" creationid="hsugawa8651" creationdate="20181118T120155Z">
+        <seg>たとえば、X .= sin.(Y) は broadcast!(sin, X, Y)と同様に、X をsin.(Y) で上書きします。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -18811,6 +18821,16 @@ so that the left-hand side is updated in-place.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120159Z" creationid="hsugawa8651" creationdate="20181118T120159Z">
         <seg>左側が配列インデックス式である場合は たとえば&lt;x19/&gt;X[2:end].=sin.(Y)&lt;x20/&gt;、次のように&lt;x23/&gt;ビュー&lt;x24/&gt;で&lt;X21/&gt;ブロードキャスト!&lt;x22/&gt;に変換されます。 &lt;x25/&gt;ブロードキャスト!(sin,view(X,2:lastindex(X)),Y)&lt;x26/&gt; 左側がインプレイス更新されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the left-hand side is an array-indexing expression,
+e.g. &lt;x19/&gt;X[2:end] .= sin.(Y)&lt;x20/&gt;, then it translates to &lt;x21/&gt;broadcast!&lt;x22/&gt; on a &lt;x23/&gt;view&lt;x24/&gt;, e.g. &lt;x25/&gt;broadcast!(sin, view(X, 2:endof(X)), Y)&lt;x26/&gt;,
+so that the left-hand side is updated in-place.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T135722Z" creationid="hsugawa8651" creationdate="20181120T135722Z">
+        <seg>左辺がe.g. X[2:end] .= sin.(Y)のように配列インデックスを使った式である場合、viewに対するbroadcast!、つまりbroadcast!(sin, view(X, 2:endof(X)), Y)のように、変換されて、左辺側が更新されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25551,6 +25571,17 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since adding dots to many operations and function calls in an expression
+can be tedious and lead to code that is difficult to read, the macro
+&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref @&lt;x4/&gt;dot&lt;x5/&gt;) is provided to convert &lt;x6/&gt;every&lt;x7/&gt; function call,
+operation, and assignment in an expression into the "dotted" version.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T135634Z" creationid="hsugawa8651" creationdate="20181120T135634Z">
+        <seg>式の中に出てくる多くの演算子にdotをつけて関数呼び出しを行うのはうんざりするし、コードが読みづらくなります。 @.マクロを使うと、式中の、関数呼び出し、演算子、代入すべてに対して"ドット"を付加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since all packages in a package directory environment are, by definition, subdirectories with the expected entry-point files, their &lt;x1/&gt;paths&lt;x2/&gt; map entries always have this form.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121402Z" creationid="hsugawa8651" creationdate="20181118T121402Z">
@@ -26476,8 +26507,8 @@ to hold or acquire any while executing Julia code.</seg>
         <seg>Technically, the fusion stops as soon as
 a "non-dot" function call is encountered; for example, in &lt;x2/&gt;sin.(sort(cos.(X)))&lt;x3/&gt; the &lt;x4/&gt;sin&lt;x5/&gt; and &lt;x6/&gt;cos&lt;x7/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120143Z" creationid="hsugawa8651" creationdate="20181118T120143Z">
-        <seg>技術的には、融合はすぐに停止する。 "非ドット"関数呼び出しが発生します。たとえば、&lt;x2/&gt;sin(sort(cos.(X)))&lt;x3/&gt;sin&lt;x4/&gt;&lt;x6/&gt;cos&lt;x7/&gt;と&lt;x6/&gt;cos&lt;x7/&gt;cos&lt;x7/&gt;となります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T135904Z" creationid="hsugawa8651" creationdate="20181118T120143Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
@@ -52592,8 +52623,8 @@ asind  acosd  atand  acotd  asecd  acscd</seg>
       <tuv lang="EN-US">
         <seg>sort&lt;x1/&gt; function.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120146Z" creationid="hsugawa8651" creationdate="20181118T120146Z">
-        <seg>sort&lt;x1/&gt;関数です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T135913Z" creationid="hsugawa8651" creationdate="20181118T120146Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
