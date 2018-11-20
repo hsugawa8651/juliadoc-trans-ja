@@ -9910,6 +9910,15 @@ an expression whose value is returned:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As mentioned briefly in &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-functions), optional arguments are implemented as syntax for multiple
+method definitions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022946Z" creationid="hsugawa8651" creationdate="20181120T022855Z">
+        <seg>[関数]（@ ref man-functions）で簡単に述べたように、オプション引数は複数のメソッドを定義する構文として実装されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As such, it's also possible to define custom array types by inheriting
 from &lt;x1/&gt;`AbstractArray`&lt;x2/&gt;.</seg>
       </tuv>
@@ -13512,6 +13521,14 @@ julia&gt; newfun()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Compare how these results differ:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022654Z" creationid="hsugawa8651" creationdate="20181120T022654Z">
+        <seg>これらの結果がどのように異なるかを比較します：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Comparison -- &lt;x1/&gt;==&lt;x2/&gt;, &lt;x3/&gt;!=&lt;x4/&gt;, &lt;x5/&gt;≈&lt;x6/&gt; (&lt;x7/&gt;`isapprox`&lt;x8/&gt;), &lt;x9/&gt;≉&lt;x10/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161218Z" creationid="hsugawa8651" creationdate="20181114T161218Z">
@@ -16302,6 +16319,14 @@ we can override the generic iterative version with a more performant solution:</
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, this definition:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022934Z" creationid="hsugawa8651" creationdate="20181120T022934Z">
+        <seg>これは以下の3つのメソッドに変換されます：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, this is used to convert an &lt;x4/&gt;Array&lt;x5/&gt; of objects (e.g. strings) to an array of pointers.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150606Z" creationid="hsugawa8651" creationdate="20181117T150606Z">
@@ -16391,8 +16416,8 @@ then cache it in a shared reference for that session.</seg>
       <tuv lang="EN-US">
         <seg>For example:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025044Z" creationid="hsugawa8651" creationdate="20181110T025044Z">
-        <seg>次に例を示します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022813Z" creationid="hsugawa8651" creationdate="20181110T025044Z">
+        <seg>例えば：</seg>
       </tuv>
     </tu>
     <tu>
@@ -16761,6 +16786,15 @@ are identical to the passed values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025708Z" creationid="hsugawa8651" creationdate="20181110T025708Z">
         <seg>関数引数自体は 新しい変数&lt;x1/&gt;バインディング&lt;x2/&gt;(値を参照できる新しい場所)ですが、それらが参照する値は は、渡された値と同じです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Function parameters can also be used to constrain the number of arguments that may be supplied
+to a "varargs" function (&lt;x1/&gt;Varargs Functions&lt;x2/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022730Z" creationid="hsugawa8651" creationdate="20181120T022723Z">
+        <seg>関数のパラメータは、 "varargs"関数(可変引数関数)が受け取る引数の数を制限するためにも使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21541,6 +21575,14 @@ combining row and column vectors to produce a matrix).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>More usefully, it is possible to constrain varargs methods by a parameter.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022802Z" creationid="hsugawa8651" creationdate="20181120T022802Z">
+        <seg>さらに便利なことに、パラメータで可変引数メソッドを制約することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Moreover,
 since constructors can leverage all of the power of the type system, methods, and multiple dispatch,
 defining sophisticated behavior is typically quite simple.</seg>
@@ -22003,6 +22045,14 @@ NUL characters).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160912Z" creationid="hsugawa8651" creationdate="20181114T160912Z">
         <seg>最後の2つのケースでは、結果として得られる配列のサイズが異なることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note on Optional and keyword Arguments</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022844Z" creationid="hsugawa8651" creationdate="20181120T022844Z">
+        <seg>オプション引数とキーワード引数の注意点</seg>
       </tuv>
     </tu>
     <tu>
@@ -23125,6 +23175,14 @@ MIME types) of user-defined types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123826Z" creationid="hsugawa8651" creationdate="20181118T123826Z">
         <seg>パラメトリック・タイプでは、コンストラクター・ストーリーにいくつかのしわが追加されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Parametrically-constrained Varargs methods</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022709Z" creationid="hsugawa8651" creationdate="20181120T022709Z">
+        <seg>パラメトリック制約付き可変引数メソッド</seg>
       </tuv>
     </tu>
     <tu>
@@ -27148,6 +27206,15 @@ determining a single answer for a given set of arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031031Z" creationid="hsugawa8651" creationdate="20181114T031031Z">
         <seg>&lt;x1/&gt;T(x)&lt;x2/&gt;または&lt;x3/&gt;変換(T,x)&lt;x4/&gt;は、&lt;x5/&gt;x&lt;x6/&gt;を&lt;x7/&gt;T&lt;x8/&gt;型の値に変換する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The notation &lt;x3/&gt;Vararg{T,N}&lt;x4/&gt; is used to indicate
+such a constraint.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022750Z" creationid="hsugawa8651" creationdate="20181120T022750Z">
+        <seg> Vararg{T,N}という記法は、そういう制約のために使用われます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -41213,6 +41280,38 @@ julia&gt; gen2(1)
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; f(1)
+"definition for Int"
+
+julia&gt; g(1)
+"definition for Int"
+
+julia&gt; wait(schedule(t, 1))
+"original definition"
+
+julia&gt; t = @async f(wait()); yield();
+
+julia&gt; wait(schedule(t, 1))
+"definition for Int"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022657Z" creationid="hsugawa8651" creationdate="20181120T022657Z">
+        <seg>julia&gt; f(1)
+"definition for Int"
+
+julia&gt; g(1)
+"definition for Int"
+
+julia&gt; wait(schedule(t, 1))
+"original definition"
+
+julia&gt; t = @async f(wait()); yield();
+
+julia&gt; wait(schedule(t, 1))
+"definition for Int"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; f(1) &amp; t(2)
 1
 2
@@ -49788,6 +49887,14 @@ when, how often or how many times these side-effects will occur</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>translates to the following three methods:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022911Z" creationid="hsugawa8651" creationdate="20181120T022911Z">
+        <seg>これは以下の3つのメソッドに変換されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>true : odd(n - 1);
 
 julia&gt; odd(n) = (n == 0) ?</seg>
@@ -50086,6 +50193,14 @@ ccall(:foo, Cvoid, (Ref{Cint}, Ref{Cfloat}), width, range)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063141Z" creationid="hsugawa8651" creationdate="20181114T063141Z">
         <seg>空間的に分離された表現で、水平連結(calling&lt;x1/&gt;`ヘカト'&lt;x2/&gt;または&lt;x3/&gt;'ホフカト''&lt;x4/&gt;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>would be called only when the number of &lt;x1/&gt;indexes&lt;x2/&gt; matches the dimensionality of the array.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022839Z" creationid="hsugawa8651" creationdate="20181120T022839Z">
+        <seg>&lt;x1/&gt;indexes&lt;x2/&gt;の数が配列の次元の数と一致する場合にのみ呼び出されます。</seg>
       </tuv>
     </tu>
     <tu>
