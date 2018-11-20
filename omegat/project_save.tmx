@@ -21262,8 +21262,8 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
       <tuv lang="EN-US">
         <seg>Literal one of type &lt;x1/&gt;x&lt;x2/&gt; or type of variable &lt;x3/&gt;x&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112020Z" creationid="hsugawa8651" creationdate="20181112T112020Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;または変数&lt;x3/&gt;x&lt;x4/&gt;の型のリテラル</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T041239Z" creationid="hsugawa8651" creationdate="20181112T112020Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;型、または、 変数 &lt;x3/&gt;x&lt;x4/&gt; の型の、リテラル1</seg>
       </tuv>
     </tu>
     <tu>
@@ -28573,8 +28573,8 @@ end and at the call site; however, &lt;x1/&gt;don't copy them&lt;x2/&gt;, for th
         <seg>These functions are useful in &lt;x1/&gt;Numeric Comparisons&lt;x2/&gt; to avoid overhead from unnecessary
 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120717Z" creationid="hsugawa8651" creationdate="20181112T112023Z">
-        <seg>これらの関数は、不要なオーバーヘッドを回避するために&lt;x1/&gt;数値比較&lt;x2/&gt;で役立ちます。 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T041303Z" creationid="hsugawa8651" creationdate="20181112T112023Z">
+        <seg>これらの関数は、 時の不要な &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion).の オーバーヘッドを回避する際に有効です。</seg>
       </tuv>
     </tu>
     <tu>
