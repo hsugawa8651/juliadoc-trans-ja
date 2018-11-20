@@ -1725,8 +1725,8 @@ be accessed in a fusing fashion by &lt;x9/&gt;.=&lt;x10/&gt; assignment). In fac
         <seg>(@ref next) returns next character at or after the index &lt;x1/&gt;i&lt;x2/&gt; and the next valid
 character index following that.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T084133Z" creationid="hsugawa8651" creationdate="20181120T084133Z">
-        <seg>(c, j = next(str,i) はインデックスi に格納された文字とインデックス i 以降で最初の有効なインデックスを返します。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T084231Z" creationid="hsugawa8651" creationdate="20181120T084133Z">
+        <seg>(c, j = next(str,i) はインデックス&lt;x1/&gt;i&lt;x2/&gt; に格納された文字とインデックス i 以降で最初の有効なインデックスを返します。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -1741,8 +1741,8 @@ character index following that.</seg>
       <tuv lang="EN-US">
         <seg>(@ref start) gives the first valid index at which a character can be found in &lt;x1/&gt;str&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T084114Z" creationid="hsugawa8651" creationdate="20181120T084114Z">
-        <seg>(@ref start) start(str) は、&lt;x1/&gt;str&lt;x2/&gt; にある最初の有効なインデックス(通常は1)を返します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T084242Z" creationid="hsugawa8651" creationdate="20181120T084114Z">
+        <seg>(@ref start) i=start(str) は、&lt;x1/&gt;str&lt;x2/&gt; にある最初の有効なインデックス(通常は1)を返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -32350,6 +32350,15 @@ of Floating-Point".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>With &lt;x3/&gt;`start()`&lt;x4/&gt; and &lt;x5/&gt;`endof()`&lt;x6/&gt;, can be used to iterate
+through the characters in &lt;x7/&gt;str&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T084200Z" creationid="hsugawa8651" creationdate="20181120T084200Z">
+        <seg>&lt;x3/&gt;`start()`&lt;x4/&gt; や &lt;x5/&gt;`endof()`&lt;x6/&gt;と併用することで、 &lt;x7/&gt;str&lt;x8/&gt;内の文字を反復処理することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>With only &lt;x1/&gt;`iterate`&lt;x2/&gt; definition, the &lt;x3/&gt;Squares&lt;x4/&gt; type is already pretty powerful.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112503Z" creationid="hsugawa8651" creationdate="20181112T112503Z">
@@ -33809,6 +33818,15 @@ Consider these examples of this syntax:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100015Z" creationid="hsugawa8651" creationdate="20181118T100015Z">
         <seg>`hypot(x,y)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`ind2chr(str,i)`&lt;x1/&gt; gives the number of characters in &lt;x2/&gt;str&lt;x3/&gt; up to and including any at index
+&lt;x4/&gt;i&lt;x5/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T084328Z" creationid="hsugawa8651" creationdate="20181120T084328Z">
+        <seg>`ind2chr(str,i)`&lt;x1/&gt;は、文字列&lt;x2/&gt;str&lt;x3/&gt;の、インデックス1からインデックスiまでに格納されている文字数を返します。</seg>
       </tuv>
     </tu>
     <tu>
