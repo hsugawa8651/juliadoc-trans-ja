@@ -8604,8 +8604,8 @@ a function is called a &lt;x1/&gt;method&lt;x2/&gt;.</seg>
       <tuv lang="EN-US">
         <seg>A function is called using the traditional parenthesis syntax:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025625Z" creationid="hsugawa8651" creationdate="20181110T025625Z">
-        <seg>関数は、従来の括弧構文を使用して呼び出されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125247Z" creationid="hsugawa8651" creationdate="20181110T025625Z">
+        <seg>関数は、従来の括弧を使う構文で呼び出されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10235,6 +10235,14 @@ be thrown immediately.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082455Z" creationid="hsugawa8651" creationdate="20181120T082455Z">
         <seg>そして文字列の連結は &lt;x8/&gt;greet * whom != whom * greet&lt;x9/&gt;であるように行列の乗算と同様、非可換演算です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As with variables, Unicode can also be used for function names:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125318Z" creationid="hsugawa8651" creationdate="20181120T125318Z">
+        <seg>変数名と同様に関数名にもUnicodeを使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19616,8 +19624,8 @@ meaning that it is unconstrained since all values in Julia are instances of the 
         <seg>In the assignment form, the body of the function must be a single expression, although it can
 be a compound expression (see &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-compound-expressions)).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025518Z" creationid="hsugawa8651" creationdate="20181110T025518Z">
-        <seg>割り当てフォームでは、関数の本文は単一の式である必要がありますが 複合式(&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man compound expressions)を参照)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125215Z" creationid="hsugawa8651" creationdate="20181110T025518Z">
+        <seg>代入方式では、関数の本体は単一の式でなければなりませんが、その式は複合式(  &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-compound-expressions)を参照)でもかまいません。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -20935,8 +20943,8 @@ indexing with the resulting &lt;x5/&gt;CartesianIndex&lt;x6/&gt; object to compu
 functions are not pure mathematical functions, in the sense that functions can alter and be affected
 by the global state of the program.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T124942Z" creationid="hsugawa8651" creationdate="20181110T025452Z">
-        <seg>関数は、プログラムのグローバルな状態を変更したり、逆に、グローバルな状態に、挙動が影響を受けたりします。 そういう意味で、純粋に数学的ではありません。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125111Z" creationid="hsugawa8651" creationdate="20181110T025452Z">
+        <seg>関数は、純粋に数学的な関数ではありません。プログラムのグローバルな状態を変更したり、逆に、グローバルな状態に影響を受けたりします。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -24883,8 +24891,8 @@ iterable type.</seg>
         <seg>Short, simple function definitions
 are common in Julia.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025617Z" creationid="hsugawa8651" creationdate="20181110T025617Z">
-        <seg>簡潔で単純な関数定義 ジュリアによく見られます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125230Z" creationid="hsugawa8651" creationdate="20181110T025617Z">
+        <seg>こうした短くて簡単な関数定義は、Juliaではよく使われます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26800,8 +26808,8 @@ generally work correctly as a fallback for any specific array implementation.</s
       <tuv lang="EN-US">
         <seg>The basic syntax for defining functions in Julia is:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T124937Z" creationid="hsugawa8651" creationdate="20181110T025456Z">
-        <seg> Juliaで関数を定義する基本構文は次のとおりです。。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125027Z" creationid="hsugawa8651" creationdate="20181110T025456Z">
+        <seg> Juliaで関数を定義する基本構文は次のとおりです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28598,8 +28606,8 @@ the explicit &lt;x3/&gt;Expr&lt;x4/&gt; constructor.</seg>
         <seg>The short function syntax is accordingly quite idiomatic, considerably reducing
 both typing and visual noise.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025621Z" creationid="hsugawa8651" creationdate="20181110T025621Z">
-        <seg>したがって、短い関数構文は非常に奇妙なものになり、大幅に減少します。 タイプとビジュアルノイズの両方です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125241Z" creationid="hsugawa8651" creationdate="20181110T025621Z">
+        <seg>短い関数構文を多用するほど、文字数が大幅に少なくなり、見た目もすっきりします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28793,8 +28801,8 @@ into rationals by supplying a value of &lt;x4/&gt;1&lt;x5/&gt; as the denominato
         <seg>The traditional function
 declaration syntax demonstrated above is equivalent to the following compact "assignment form":</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025506Z" creationid="hsugawa8651" creationdate="20181110T025506Z">
-        <seg>従来の機能 上記の宣言構文は、次のコンパクトな「割り当てフォーム」に相当します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125139Z" creationid="hsugawa8651" creationdate="20181110T025506Z">
+        <seg>上に示したような、従来の関数を宣言する構文と、つぎのような、コンパクトな「代入方式」とは同等です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29267,8 +29275,8 @@ in &lt;x1/&gt;quote ... end&lt;x2/&gt;.</seg>
       <tuv lang="EN-US">
         <seg>There is a second, more terse syntax for defining a function in Julia.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025503Z" creationid="hsugawa8651" creationdate="20181110T025503Z">
-        <seg>Juliaで関数を定義するには、2番目のより簡潔な構文があります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125124Z" creationid="hsugawa8651" creationdate="20181110T025503Z">
+        <seg>もっと簡潔に関数を定義する第二の構文もあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -32674,8 +32682,8 @@ numeric operators like &lt;x7/&gt;`+`&lt;x8/&gt; do, and works for all kinds of 
         <seg>Without parentheses, the expression &lt;x1/&gt;f&lt;x2/&gt; refers to the function object, and can be passed around
 like any value:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025632Z" creationid="hsugawa8651" creationdate="20181110T025632Z">
-        <seg>括弧なしでは、式&lt;x1/&gt;f&lt;x2/&gt;は関数オブジェクトを参照しており、この関数オブジェクトを渡すことができます。 どの値でも</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125305Z" creationid="hsugawa8651" creationdate="20181110T025632Z">
+        <seg>括弧をつけない式&lt;x1/&gt;f&lt;x2/&gt;は、関数オブジェクトを表し、他の値と同じように受け渡しができます。</seg>
       </tuv>
     </tu>
     <tu>
