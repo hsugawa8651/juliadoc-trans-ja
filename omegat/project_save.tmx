@@ -17098,8 +17098,8 @@ example, &lt;x11/&gt;1.5F22&lt;x12/&gt; is equal to &lt;x13/&gt;1.5 * F22&lt;x14
       <tuv lang="EN-US">
         <seg>Here are some simple examples using arithmetic operators:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132210Z" creationid="hsugawa8651" creationdate="20181113T132210Z">
-        <seg>次に、算術演算子を使用する簡単な例をいくつか示します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063521Z" creationid="hsugawa8651" creationdate="20181113T132210Z">
+        <seg>以下は算術演算の例です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20933,8 +20933,8 @@ and readable, without sacrificing performance, and using less memory at times.</
         <seg>Julia's promotion system makes arithmetic operations on mixtures of argument types "just work"
 naturally and automatically.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132201Z" creationid="hsugawa8651" creationdate="20181113T132201Z">
-        <seg>Juliaのプロモーションシステムは、引数型の混合物に対して、単に「働く」演算を行う。 自動的に自動的に。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063439Z" creationid="hsugawa8651" creationdate="20181113T132201Z">
+        <seg>Juliaのプロモーションシステムは、複数の引数の型を含む算術演算が自然にかつ自動的に 動作するようにしています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24002,8 +24002,8 @@ the &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-multi-dim-arrays) and the &lt;x6/
         <seg>See &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref conversion-and-promotion) for details of the promotion
 system.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120717Z" creationid="hsugawa8651" creationdate="20181113T132207Z">
-        <seg>プロモーションの詳細については、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref conversion-and-promotion)を参照してください。 システム。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063513Z" creationid="hsugawa8651" creationdate="20181113T132207Z">
+        <seg>プロモーションシステムの詳細については &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;変換とプロモーション(@ref conversion-and-promotion)を参照ください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33723,8 +33723,8 @@ object</seg>
       <tuv lang="EN-US">
         <seg>as well as the negation on &lt;x1/&gt;`Bool`&lt;x2/&gt; types:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095038Z" creationid="hsugawa8651" creationdate="20181118T095038Z">
-        <seg>&lt;x1/&gt;'Bool'&lt;x2/&gt;型への否定と同様に</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063332Z" creationid="hsugawa8651" creationdate="20181118T095038Z">
+        <seg>&lt;x1/&gt;`Bool`&lt;x2/&gt;(@ref) 型の否定形についても同様。</seg>
       </tuv>
     </tu>
     <tu>
@@ -34040,8 +34040,8 @@ Base.unsafe_store!</seg>
       <tuv lang="EN-US">
         <seg>changes &lt;x1/&gt;true&lt;x2/&gt; to &lt;x3/&gt;false&lt;x4/&gt; and vice versa</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095059Z" creationid="hsugawa8651" creationdate="20181113T132157Z">
-        <seg>&lt;x1/&gt;true&lt;x2/&gt;から&lt;x3/&gt;false&lt;x4/&gt;に変更されます。その逆も同様です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063426Z" creationid="hsugawa8651" creationdate="20181113T132157Z">
+        <seg>&lt;x1/&gt;true&lt;x2/&gt;を&lt;x3/&gt;false&lt;x4/&gt;に変える。または、その逆。</seg>
       </tuv>
     </tu>
     <tu>
@@ -34434,16 +34434,16 @@ mycompare (generic function with 1 method)</seg>
       <tuv lang="EN-US">
         <seg>equivalent to &lt;x1/&gt;rem(x,y)&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132147Z" creationid="hsugawa8651" creationdate="20181113T132147Z">
-        <seg>&lt;x1/&gt;rem(x,y)&lt;x2/&gt;に相当する</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063312Z" creationid="hsugawa8651" creationdate="20181113T132147Z">
+        <seg>&lt;x1/&gt;rem(x,y)&lt;x2/&gt;と同等</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>equivalent to &lt;x1/&gt;y / x&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132124Z" creationid="hsugawa8651" creationdate="20181113T132124Z">
-        <seg>&lt;x1/&gt;y/x&lt;x2/&gt;に相当する</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063230Z" creationid="hsugawa8651" creationdate="20181113T132124Z">
+        <seg>&lt;x1/&gt;y/x&lt;x2/&gt;と同等</seg>
       </tuv>
     </tu>
     <tu>
@@ -49004,8 +49004,8 @@ primitive type «name» &lt;: «supertype» «bits» end</seg>
       <tuv lang="EN-US">
         <seg>raises &lt;x1/&gt;x&lt;x2/&gt; to the &lt;x3/&gt;y&lt;x4/&gt;th power</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095015Z" creationid="hsugawa8651" creationdate="20181113T132134Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;の&lt;x3/&gt;y&lt;x4/&gt;乗する</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063246Z" creationid="hsugawa8651" creationdate="20181113T132134Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;を&lt;x3/&gt;y&lt;x4/&gt;乗する</seg>
       </tuv>
     </tu>
     <tu>
