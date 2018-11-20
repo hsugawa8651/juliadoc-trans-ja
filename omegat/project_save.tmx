@@ -13348,6 +13348,14 @@ introduced in &lt;x3/&gt;Mathematical Operations and Elementary Functions&lt;x4/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Both abstract and concrete types can be parameterized by other types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143549Z" creationid="hsugawa8651" creationdate="20181120T143549Z">
+        <seg>抽象型と具象型は両方とも、他の型によるパラメータ化可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Both concatenation and string interpolation call &lt;x1/&gt;`string()`&lt;x2/&gt; to convert objects into string
 form.</seg>
       </tuv>
@@ -21576,6 +21584,16 @@ more general methods where the declared parameter types are abstract:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It turns out that being able to inherit behavior is much more important than being
+able to inherit structure, and inheriting both causes significant difficulties in traditional
+object-oriented languages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143418Z" creationid="hsugawa8651" creationdate="20181120T143418Z">
+        <seg>振る舞いを継承できるほうが、構造を継承できるよりも重要であり、共に継承しようとすると、従来のオブジェクト指向言語では、深刻な困難が生じることがわかっています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It will
 be evaluated and returned depending on the preceding conditionals:</seg>
       </tuv>
@@ -22278,6 +22296,14 @@ addresses all of these cases and more.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia's type system is designed to be powerful and expressive, yet clear, intuitive and unobtrusive.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143644Z" creationid="hsugawa8651" creationdate="20181120T143623Z">
+        <seg>Juliaの型システムは、強力で表現力豊かだけれども、わかりやすく直観的で目障りにならないように設計されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia's type system is dynamic, but gains some of the advantages of static type systems by making
 it possible to indicate that certain values are of specific types.</seg>
       </tuv>
@@ -22752,6 +22778,14 @@ literal values, and symbols.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165334Z" creationid="hsugawa8651" creationdate="20181118T165334Z">
         <seg>マクロは、プログラムの最終的なボディに生成されたコードを含める方法を提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Many Julia programmers may never feel the need to write code that explicitly uses types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143652Z" creationid="hsugawa8651" creationdate="20181120T143652Z">
+        <seg> Juliaのプログラマは、型を明示してコードを書く必要性をまったく感じない人が多いかもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24513,6 +24547,14 @@ generation of default constructors:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Only values, not variables, have types -- variables are simply names bound to values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143535Z" creationid="hsugawa8651" creationdate="20181120T143535Z">
+        <seg>変数ではなく、値だけが型を持ちます。変数は値に束縛された単なる名前です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Operations on &lt;x11/&gt;AbstractArray&lt;x12/&gt; objects are defined using higher
 level operators and functions, in a way that is independent of the underlying storage.</seg>
       </tuv>
@@ -24692,6 +24734,15 @@ that determine type parameters automatically can be added, for example construct
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030930Z" creationid="hsugawa8651" creationdate="20181114T030918Z">
         <seg>単項演算子の他の組成は、右の連想であるeで解析されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Other high-level aspects of Julia's type system that should be mentioned
+up front are:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143431Z" creationid="hsugawa8651" creationdate="20181120T143431Z">
+        <seg> 他に、先に言及すべきJuliaの型システムの高水準な特徴をあげると、</seg>
       </tuv>
     </tu>
     <tu>
@@ -26359,6 +26410,15 @@ and let-blocks.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Some
+kinds of programming, however, become clearer, simpler, faster and more robust with declared types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143701Z" creationid="hsugawa8651" creationdate="20181120T143701Z">
+        <seg>しかし、ある種のプログラムでは、型を宣言すると、より明快で、単純で、速く、堅牢になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Some C libraries execute their callbacks from a different thread, and since Julia isn't thread-safe
 you'll need to take some extra precautions.</seg>
       </tuv>
@@ -27358,6 +27418,14 @@ in the others.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T013810Z" creationid="hsugawa8651" creationdate="20181120T013810Z">
         <seg>2x + yという定義は、最初の場合にだけ使われていますが、2x - yという定義が、その他では使われています。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;::&lt;x2/&gt; operator can be used to attach type annotations to expressions and variables in programs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143721Z" creationid="hsugawa8651" creationdate="20181120T143721Z">
+        <seg>::演算子は、プログラム内の式や変数に型注釈を付ける用途に使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30743,6 +30811,25 @@ be accessed in a fusing fashion by &lt;x9/&gt;.=&lt;x10/&gt; assignment).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There is no division between object and non-object values: all values in Julia are true objects
+having a type that belongs to a single, fully connected type graph, all nodes of which are equally
+first-class as types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143444Z" creationid="hsugawa8651" creationdate="20181120T143444Z">
+        <seg>オブジェクトか非オブジェクトかという値の区別がありません。Juliaでは、すべての値は型を持つ真のオブジェクトです。その型は、すべてのノードが型として等しく第一級である、完全に連結した単一の型のグラフに属しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is no meaningful concept of a "compile-time type": the only type a value has is its actual
+type when the program is running.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143509Z" creationid="hsugawa8651" creationdate="20181120T143509Z">
+        <seg>「コンパイル時の型」という考え方は全く無意味です。値のとる型はただ一つであり、実行時に実際にとるものだけです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There is one additional special calling convention &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref Base.llvmcall),
 which allows inserting calls to LLVM intrinsics directly.</seg>
       </tuv>
@@ -31141,6 +31228,17 @@ syntaxes:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130451Z" creationid="hsugawa8651" creationdate="20181120T130451Z">
         <seg>また、以下の構文のいずれかを使用して、名前をつけずに無名で、生成することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They can also be parameterized
+by symbols, by values of any type for which &lt;x1/&gt;`isbits()`&lt;x2/&gt; returns true (essentially, things
+like numbers and bools that are stored like C types or structs with no pointers to other objects),
+and also by tuples thereof.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143631Z" creationid="hsugawa8651" creationdate="20181120T143555Z">
+        <seg>型以外にも、シンボル、値でその型がisbits() で真となるもの（本質的には数やブール値のような、他のオブジェクトへのポインタを持たないC言語の型や構造体などに格納されるもの）、及びこれらのタプルなどによってパラメータ化可能です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -31882,6 +31980,15 @@ is platform-dependent and not well-specified.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024923Z" creationid="hsugawa8651" creationdate="20181110T024923Z">
         <seg>これは、シェバンの引数の構文解析が はプラットフォーム依存であり、よく指定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is called a "run-time type" in object-oriented languages
+where the combination of static compilation with polymorphism makes this distinction significant.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143524Z" creationid="hsugawa8651" creationdate="20181120T143524Z">
+        <seg>これはオブジェクト指向言語では「実行時型」と呼ばれ、オブジェクト指向言語において多相型の静的コンパイルを行うときは、この型の違いは重要になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33191,6 +33298,14 @@ the least-indented line.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Type Declarations</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143711Z" creationid="hsugawa8651" creationdate="20181120T143711Z">
+        <seg>型宣言 Type Declarations</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Type Parameters</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151219Z" creationid="hsugawa8651" creationdate="20181117T151219Z">
@@ -33205,6 +33320,15 @@ arguments at the end of the argument list.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151047Z" creationid="hsugawa8651" creationdate="20181117T151047Z">
         <seg>リストにこれらの引数を入力して配置するには、コンパイラを使用します。 特定の場合、コンパイラ・ベンダーは通常、&lt;x5/&gt;Csize_t&lt;x6/&gt;をタイプとして使用し、非表示を追加します。 引数リストの最後にある引数を指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Type parameters may be omitted when they do not need to be referenced
+or restricted.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143636Z" creationid="hsugawa8651" creationdate="20181120T143636Z">
+        <seg>参照や制限をする必要がない場合は、型パラメータは省略しても構いません。</seg>
       </tuv>
     </tu>
     <tu>
