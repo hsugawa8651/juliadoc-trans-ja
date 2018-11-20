@@ -15238,6 +15238,15 @@ any of the characters or encodings that one may encounter when handling non-ASCI
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Describing Julia in the lingo of &lt;x1/&gt;type systems&lt;x2/&gt;, it
+is: dynamic, nominative and parametric.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143305Z" creationid="hsugawa8651" creationdate="20181120T143305Z">
+        <seg>Juliaについて型システム の術語を使って記述すると,動的、公称的、パラメータ的です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Description</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095053Z" creationid="hsugawa8651" creationdate="20181112T110803Z">
@@ -15401,6 +15410,15 @@ being called via the wrong &lt;x5/&gt;libc&lt;x6/&gt; library and cause Julia to
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T234618Z" creationid="hsugawa8651" creationdate="20181119T234618Z">
         <seg>ドキュメントの作成&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Doing so will typically increase both the performance and robustness
+of these systems, and perhaps somewhat counterintuitively, often significantly simplify them.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143252Z" creationid="hsugawa8651" creationdate="20181120T143252Z">
+        <seg> 型注釈を加えると、通常は、システムのパフォーマンスと堅牢性が向上します。 そして、おそらくなにか直観に反する気がするでしょうが、非常に単純化されることもよく起こります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17673,6 +17691,16 @@ inner functions used elsewhere in the language, variables from the enclosing sco
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134820Z" creationid="hsugawa8651" creationdate="20181117T134820Z">
         <seg>ジェネレータは内部機能によって実装されています。 言語で他の場所で使用される内部関数、囲みスコープからの変数は、次のようになります。 "捕獲された"内部関数では、例えば&lt;x1/&gt;sum(p[i]-q[i]for i=1:n)&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Generic types can be parameterized, and the hierarchical
+relationships between types are &lt;x3/&gt;explicitly declared&lt;x4/&gt;,
+rather than &lt;x5/&gt;implied by compatible structure&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143319Z" creationid="hsugawa8651" creationdate="20181120T143319Z">
+        <seg>汎化型によってパラメータ化が可能となり、型の階層関係は、明示的に宣言するのであって、 互換構造から推論されるわけではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22250,6 +22278,15 @@ addresses all of these cases and more.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia's type system is dynamic, but gains some of the advantages of static type systems by making
+it possible to indicate that certain values are of specific types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143105Z" creationid="hsugawa8651" creationdate="20181120T143105Z">
+        <seg>Juliaの型システムは動的ですが、静的型付システムの利点も、ある程度取り入れています。 ある種の値に対しては、型を判定できるのです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia, like most technical computing languages, provides a first-class array implementation.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154040Z" creationid="hsugawa8651" creationdate="20181109T154040Z">
@@ -22884,6 +22921,15 @@ array of half the size of the input array – and is typically not quite as fast
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T015901Z" creationid="hsugawa8651" creationdate="20181120T015901Z">
         <seg>メソッド定義で、任意で型パラメータをつけて、シグネチャを細かく指定することができます。：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Method dispatch is explored in
+detail in &lt;x1/&gt;Methods&lt;x2/&gt;, but is rooted in the type system presented here.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143137Z" creationid="hsugawa8651" creationdate="20181120T143137Z">
+        <seg>メソッド・ディスパッチはメソッドで詳説しますが、根本となるのは、ここに示した型システムなのです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24418,6 +24464,15 @@ like this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082038Z" creationid="hsugawa8651" creationdate="20181120T082038Z">
         <seg>最も一般的で便利な文字列操作の一つが連結です。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One particularly distinctive feature of Julia's type system is that concrete types may not subtype
+each other: all concrete types are final and may only have abstract types as their supertypes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143336Z" creationid="hsugawa8651" creationdate="20181120T143336Z">
+        <seg> Juliaの型システムに独自の特徴の一つは、具象型は互いのサブタイプとはならない点です。 すべての具象型は拡張できず、抽象型のスーパータイプを持てるのみです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28265,6 +28320,14 @@ arithmetic</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The default behavior in Julia when types are omitted is to allow values to be of any type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143152Z" creationid="hsugawa8651" creationdate="20181120T143152Z">
+        <seg>型を省略した時は、値がどんな型であっても許されるのが、Juliaのデフォルトの動作です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The default constructor
 is equivalent to writing your own inner constructor method that takes all of the object's fields
 as parameters (constrained to be of the correct type, if the corresponding field has a type),
@@ -31434,6 +31497,16 @@ first &lt;x4/&gt;page&lt;x5/&gt; from &lt;x6/&gt;A&lt;x7/&gt; as a separate step
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This can be of great assistance
+in generating efficient code, but even more significantly, it allows method dispatch on the types
+of function arguments to be deeply integrated with the language.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143126Z" creationid="hsugawa8651" creationdate="20181120T143126Z">
+        <seg>これは、効率的なコードを生成するのに大いに役立っています。 しかし、さらに重要なのは、関数の引数の型に対するメソッド・ディスパッチが可能になり、この機能がJulia言語に深く統合されていることです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This can happen when one of their dependencies is shadowed by a version in an earlier environment in the stack.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121433Z" creationid="hsugawa8651" creationdate="20181118T121433Z">
@@ -32497,6 +32570,15 @@ since each character in a string must have its own index.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T100726Z" creationid="hsugawa8651" creationdate="20181120T100726Z">
         <seg>したがって、文字列内のそれぞれの文字は固有のインデックスを持つため、  &lt;x4/&gt;length(s) &lt;= endof(s)&lt;x5/&gt;を使用して識別ができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thus,
+one can write many useful Julia programs without ever explicitly using types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143201Z" creationid="hsugawa8651" creationdate="20181120T143201Z">
+        <seg> つまり、型をわざわざ指定しなくても、Juliaなら有用なプログラムを沢山かけるのです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33840,6 +33922,16 @@ converted to type &lt;x5/&gt;T&lt;x6/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When additional
+expressiveness is needed, however, it is easy to gradually introduce explicit type annotations
+into previously "untyped" code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143225Z" creationid="hsugawa8651" creationdate="20181120T143225Z">
+        <seg> しかし必要に応じて、もともと*型指定のなかった**コードに、少しづつ型注釈を書き加えていくのも簡単なのです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When an array is passed to C as a &lt;x1/&gt;Ptr{T}&lt;x2/&gt; argument, it is not reinterpret-cast: Julia requires
 that the element type of the array matches &lt;x3/&gt;T&lt;x4/&gt;, and the address of the first element is passed.</seg>
       </tuv>
@@ -34263,6 +34355,15 @@ there's still quite a number of behaviors missing.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094342Z" creationid="hsugawa8651" creationdate="20181118T094342Z">
         <seg>これは、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man array indexing)のより多くのサポートを開始しています。 まだ多くの行動が失われています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>While this might at first seem unduly restrictive, it has many beneficial consequences with surprisingly
+few drawbacks.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143403Z" creationid="hsugawa8651" creationdate="20181120T143403Z">
+        <seg>はじめは、この制約が不当に厳しく思えるかも知れませんが、多くの利点があり、欠点はほとんどないのです。 </seg>
       </tuv>
     </tu>
     <tu>
