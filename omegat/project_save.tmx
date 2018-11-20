@@ -18975,8 +18975,8 @@ pointers to memory locations.</seg>
       <tuv lang="EN-US">
         <seg>In Julia, a function is an object that maps a tuple of argument values to a return value.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025448Z" creationid="hsugawa8651" creationdate="20181110T025448Z">
-        <seg>Juliaでは、関数は引数値のタプルを戻り値にマップするオブジェクトです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125000Z" creationid="hsugawa8651" creationdate="20181110T025448Z">
+        <seg>Juliaでは、関数は引数値のタプルを戻り値に写像するオブジェクトです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20935,8 +20935,8 @@ indexing with the resulting &lt;x5/&gt;CartesianIndex&lt;x6/&gt; object to compu
 functions are not pure mathematical functions, in the sense that functions can alter and be affected
 by the global state of the program.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025452Z" creationid="hsugawa8651" creationdate="20181110T025452Z">
-        <seg>ジュリア 関数は純粋な数学的関数ではなく、関数が変更され、影響を受けることがあるという意味では プログラムの世界的な状態です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T124942Z" creationid="hsugawa8651" creationdate="20181110T025452Z">
+        <seg>関数は、プログラムのグローバルな状態を変更したり、逆に、グローバルな状態に、挙動が影響を受けたりします。 そういう意味で、純粋に数学的ではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26800,8 +26800,8 @@ generally work correctly as a fallback for any specific array implementation.</s
       <tuv lang="EN-US">
         <seg>The basic syntax for defining functions in Julia is:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025456Z" creationid="hsugawa8651" creationdate="20181110T025456Z">
-        <seg>Juliaで関数を定義するための基本的な構文は次のとおりです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T124937Z" creationid="hsugawa8651" creationdate="20181110T025456Z">
+        <seg> Juliaで関数を定義する基本構文は次のとおりです。。</seg>
       </tuv>
     </tu>
     <tu>
