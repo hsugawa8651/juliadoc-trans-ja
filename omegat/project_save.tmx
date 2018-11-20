@@ -1893,6 +1893,16 @@ with a clean workspace, for instance a newly started REPL.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(See &lt;x9/&gt;Methods&lt;x10/&gt; for more
+information on multiple dispatch.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144948Z" creationid="hsugawa8651" creationdate="20181120T144948Z">
+        <seg>（多重ディスパッチの詳細については、メソッドを参照してください。）
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(The &lt;x1/&gt;Clang package&lt;x2/&gt; can be used to auto-generate
 Julia code from a C header file.)</seg>
       </tuv>
@@ -9821,6 +9831,14 @@ only for passing varargs or computed keywords as described below.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132616Z" creationid="hsugawa8651" creationdate="20181120T132616Z">
         <seg>後述の可変引数や計算済みのキーワードを使う場合には、明示的にセミコロンを使わなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An important use of abstract types is to provide default implementations for concrete types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144800Z" creationid="hsugawa8651" creationdate="20181120T144747Z">
+        <seg>抽象型の重要な用途は、具象型のデフォルトの実装を提供することです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17985,6 +18003,15 @@ and macro-definitions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Hence, &lt;x13/&gt;AbstractFloat&lt;x14/&gt; is a proper subtype of &lt;x15/&gt;Real&lt;x16/&gt;, including only
+floating-point representations of real numbers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144659Z" creationid="hsugawa8651" creationdate="20181120T144659Z">
+        <seg> したがって、 AbstractFloat はRealの真のサブタイプで、実数のうち浮動小数点数の表現のみを含みます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Hence, expressions starting with a numeric literal
 followed by &lt;x9/&gt;F&lt;x10/&gt; are interpreted as the numerical literal multiplied by a variable, which means that, for
 example, &lt;x11/&gt;1.5F22&lt;x12/&gt; is equal to &lt;x13/&gt;1.5 * F22&lt;x14/&gt;.</seg>
@@ -21178,6 +21205,15 @@ the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Integers are further subdivided into
+&lt;x17/&gt;`Signed`&lt;x18/&gt; and &lt;x19/&gt;`Unsigned`&lt;x20/&gt; varieties.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144712Z" creationid="hsugawa8651" creationdate="20181120T144712Z">
+        <seg>I整数はさらにSigned と Unsigned に細分されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Interacting with the contents or methods of &lt;x1/&gt;Core.Compiler&lt;x2/&gt; in any way.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032226Z" creationid="hsugawa8651" creationdate="20181116T032226Z">
@@ -21298,6 +21334,16 @@ outer &lt;x4/&gt;Point&lt;x5/&gt; constructor that takes pairs of real arguments
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123913Z" creationid="hsugawa8651" creationdate="20181118T123913Z">
         <seg>また、単一の一般的な 外部&lt;x4/&gt;ポイント&lt;x5/&gt;コンストラクタで、実際の引数のペアを指定します。このコンストラクタは、同じタイプである必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It can also be used
+in expressions as a subtype operator which returns &lt;x3/&gt;true&lt;x4/&gt; when its left operand is a subtype of
+its right operand:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144735Z" creationid="hsugawa8651" creationdate="20181120T144735Z">
+        <seg> &lt;:演算子はサブタイプ演算子として使うこともできて、左側の被演算子が右側の被演算子のサブタイプであるときに真を返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27608,6 +27654,15 @@ in the others.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;&lt;:&lt;x2/&gt; operator in general means "is a subtype of", and, used in declarations like this, declares
+the right-hand type to be an immediate supertype of the newly declared type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144732Z" creationid="hsugawa8651" creationdate="20181120T144732Z">
+        <seg>通常、&lt;:演算子は、「is a subtype of（～のサブタイプである）」を意味し、宣言に使う場合は、右側の型が新しく宣言する型の直のスーパータイプであるという宣言を意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-numeric-literal-coefficients) does not work when constructing a complex number
 from variables.</seg>
       </tuv>
@@ -28965,6 +29020,15 @@ function object, and subsequent method definitions add new methods to the existi
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012929Z" creationid="hsugawa8651" creationdate="20181120T012904Z">
         <seg>最初のメソッド定義では、関数オブジェクトを作成され、次回以降のメソッド定義では、既存の関数オブジェクトに新しいメソッドが追加されます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first thing to note is that the above argument declarations are equivalent to &lt;x1/&gt;x::Any&lt;x2/&gt; and
+&lt;x3/&gt;y::Any&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144827Z" creationid="hsugawa8651" creationdate="20181120T144827Z">
+        <seg>まず注意すべきことは、上記の引数の宣言は x::Anyかつy::Anyと同等であることです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33077,6 +33141,15 @@ dynamic languages, including `Lisp
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To
+give a simple example, consider:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144804Z" creationid="hsugawa8651" creationdate="20181120T144804Z">
+        <seg>簡単な例を挙げてみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To accomplish this within a &lt;x1/&gt;`ccall`&lt;x2/&gt;, you need to first
 encapsulate the value inside a &lt;x3/&gt;`Ref{T}`&lt;x4/&gt; of the appropriate type.</seg>
       </tuv>
@@ -34590,6 +34663,15 @@ is a subtype of any other.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143916Z" creationid="hsugawa8651" creationdate="20181120T143916Z">
         <seg> ::の右側が具象型の場合、左辺の値はその型の実装でなければなりません。 すべて具象型は拡張できず、その実装は他の具象型の実装とはならないことを思い出してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When this function is invoked, say as &lt;x5/&gt;myplus(2,5)&lt;x6/&gt;, the dispatcher chooses the most
+specific method named &lt;x7/&gt;myplus&lt;x8/&gt; that matches the given arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144838Z" creationid="hsugawa8651" creationdate="20181120T144838Z">
+        <seg> この関数がたとえばmyplus(2,5)のように呼び出されると、ディスパッチャはmyplusと名がつくメソッドで引数の合うものの中から最も特化したメソッドを選択します。</seg>
       </tuv>
     </tu>
     <tu>
