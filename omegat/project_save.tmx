@@ -8541,6 +8541,15 @@ as that MIME type; this is automatic if one calls &lt;x21/&gt;show&lt;x22/&gt; o
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A classic example is &lt;x1/&gt;`map()`&lt;x2/&gt;, which applies a function to each value of
+an array and returns a new array containing the resulting values:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130623Z" creationid="hsugawa8651" creationdate="20181120T130623Z">
+        <seg> 定番の例としては、&lt;x1/&gt;`map()`&lt;x2/&gt;があります。 この関数は、 配列の各要素に関数を適用したものを、新しい配列として返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A classic example is the standard C library &lt;x1/&gt;qsort&lt;x2/&gt; function, declared as:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133921Z" creationid="hsugawa8651" creationdate="20181117T133921Z">
@@ -8939,6 +8948,14 @@ this fashion is to check if &lt;x3/&gt;abspath(PROGRAM_FILE) == @__FILE__&lt;x4/
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024900Z" creationid="hsugawa8651" creationdate="20181110T024900Z">
         <seg>ファイルが実行されることを判別する方法 この方法は、&lt;x3/&gt;アブスパス(PROGRAM_FILE)==@_FILE__&lt;x4/&gt;が&lt;x6/&gt;真&lt;x6/&gt;であるかどうかをチェックすることです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A zero-argument anonymous function is written as &lt;x3/&gt;()-&gt;3&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130908Z" creationid="hsugawa8651" creationdate="20181120T130817Z">
+        <seg>引数が０個の場合は&lt;x3/&gt;()-&gt;3&lt;x4/&gt;.のように書きます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9559,6 +9576,14 @@ user-defined, has a type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152914Z" creationid="hsugawa8651" creationdate="20181117T152914Z">
         <seg>&lt;x1/&gt;環境&lt;x2/&gt;は、X&lt;x6/&gt;のインポートX&lt;x4/&gt;および&lt;x5/&gt;を、さまざまなコードコンテキストでX&lt;x6/&gt;平均を使用して決定し、これらの文がロードするファイルを決定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An anonymous function accepting multiple arguments can be written using the syntax &lt;x1/&gt;(x,y,z)-&gt;2x+y-z&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130839Z" creationid="hsugawa8651" creationdate="20181120T130808Z">
+        <seg>無名関数が複数の引数をとる場合は、&lt;x1/&gt;(x,y,z)-&gt;2x+y-z&lt;x2/&gt;のように書きます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19870,6 +19895,15 @@ the code read more clearly:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In these situations, the anonymous function construct allows easy creation of a single-use function
+object without needing a name:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130706Z" creationid="hsugawa8651" creationdate="20181120T130706Z">
+        <seg> そんな時、無名関数を使えば、使い捨ての関数オブジェクトを名前もつけずに簡単に作成できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In this
 case, the expression must evaluate to a &lt;x3/&gt;Ptr&lt;x4/&gt;, which will be used as the address of the native
 function to call.</seg>
@@ -23362,6 +23396,14 @@ indices directly instead of first calling &lt;x13/&gt;`findall`&lt;x14/&gt;.</se
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151211Z" creationid="hsugawa8651" creationdate="20181117T151211Z">
         <seg>これらを処理する最良の方法は、バイトオフセットを直接処理することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Often, however, a ready-to-use, named function does not exist.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130701Z" creationid="hsugawa8651" creationdate="20181120T130701Z">
+        <seg> ですが、多くの場合、すぐ使える名前付きの関数なんて存在しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30464,6 +30506,15 @@ has a special argument syntax, and is sometimes implied rather than explicitly w
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T011442Z" creationid="hsugawa8651" creationdate="20181120T011442Z">
         <seg>これは、従来のオブジェクト指向言語とは異なります。従来のオブジェクト指向言語では、通常は最初の引数のみに基づいてディスパッチが行われ、最初の引数を特別視して引数に見えないような構文を持つものもあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is fine if a named function effecting the transform one wants already exists to pass as the
+first argument to &lt;x1/&gt;`map()`&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130650Z" creationid="hsugawa8651" creationdate="20181120T130650Z">
+        <seg>配列に対して実行したい変換が、名前つきの関数として存在していて、&lt;x1/&gt;`map()`&lt;x2/&gt;の1番目の引数に使える場合は、問題ありません。</seg>
       </tuv>
     </tu>
     <tu>
