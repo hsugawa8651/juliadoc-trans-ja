@@ -9253,8 +9253,8 @@ to build some more advanced (and valid) functionality...</seg>
       <tuv lang="EN-US">
         <seg>Also recommended is Bruce Dawson's &lt;x1/&gt;series of blog posts on floating-point numbers&lt;x2/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111500Z" creationid="hsugawa8651" creationdate="20181112T111500Z">
-        <seg>また、浮動小数点数&lt;x2/&gt;についてはBruce Dawsonの&lt;x1/&gt;シリーズのブログ記事をお勧めします。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035203Z" creationid="hsugawa8651" creationdate="20181112T111500Z">
+        <seg>Bruce Dawsonによる浮動小数点数に関する一連のブログ記事もお勧めします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10130,8 +10130,8 @@ argument types</seg>
       <tuv lang="EN-US">
         <seg>Background and References</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120355Z" creationid="hsugawa8651" creationdate="20181118T120355Z">
-        <seg>背景と参照</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035033Z" creationid="hsugawa8651" creationdate="20181118T120355Z">
+        <seg>背景と考察</seg>
       </tuv>
     </tu>
     <tu>
@@ -15679,8 +15679,8 @@ and type definitions.</seg>
         <seg>Floating-point arithmetic entails many subtleties which can be surprising to users who are unfamiliar
 with the low-level implementation details.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111346Z" creationid="hsugawa8651" creationdate="20181112T111346Z">
-        <seg>浮動小数点演算は、慣れ親しみのあるユーザに驚くほどの繊細さを必要とします。 低レベルの実装の詳細です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035040Z" creationid="hsugawa8651" creationdate="20181112T111346Z">
+        <seg>浮動小数点数演算は、あまり経験のないユーザには難しいかもしれませんが、多くの応用的な知識が必要です。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -15793,8 +15793,8 @@ of pointers to memory managed by either Julia or C through the implicit call to 
         <seg>For a brief but lucid presentation of how floating-point numbers are represented, see John D.
 Cook's &lt;x1/&gt;article&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111455Z" creationid="hsugawa8651" creationdate="20181112T111455Z">
-        <seg>浮動小数点数がどのように表されるかについての簡潔な説明は、John Dを参照してください。 クックの&lt;x1/&gt;成形品&lt;x2/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035154Z" creationid="hsugawa8651" creationdate="20181112T111455Z">
+        <seg>浮動小数点数の表現に関するの簡潔かつ明快な説明は、John D. Cookの&lt;x1/&gt;記事&lt;/x2&gt;および実数の理想化された抽象化によりどのように表現が異なるかに関するいくつかの問題についての彼の紹介を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17611,8 +17611,8 @@ more than a single method definition may be provided.</seg>
         <seg>However, these subtleties are described in detail in
 most books on scientific computation, and also in the following references:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111444Z" creationid="hsugawa8651" creationdate="20181112T111444Z">
-        <seg>しかし、これらの微妙な点については、以下で詳細に説明します。 科学的計算に関する本や、以下の参考文献にもある。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035049Z" creationid="hsugawa8651" creationdate="20181112T111444Z">
+        <seg>しかし、応用的な知識は科学技術計算に関する書籍や以下参考に詳細が記載されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21367,6 +21367,16 @@ copy of the input, and returning that copy.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154222Z" creationid="hsugawa8651" creationdate="20181109T154222Z">
         <seg>多くの非重複関数は、次のように実装されています。 明示的に最後に&lt;x6/&gt;!&lt;x7/&gt;を追加して、同じ名前の関数を呼び出します。 入力のコピーを返し、そのコピーを返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Many other
+functions assume the default &lt;x11/&gt;`RoundNearest`&lt;x12/&gt; mode is set, and can give erroneous results
+when operating under other rounding modes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035006Z" creationid="hsugawa8651" creationdate="20181120T035006Z">
+        <seg>その他の多くの関数は、デフォルトの &lt;x11/&gt;`RoundNearest`&lt;x12/&gt;モードが 設定されている前提で機能し、その他の端数処理モードでの演算処理では誤った結果を出力する場合があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26278,8 +26288,8 @@ or a 64-bit architecture:</seg>
         <seg>The definitive guide to floating point arithmetic is the &lt;x1/&gt;IEEE 754-2008 Standard&lt;x2/&gt;;
 however, it is not available for free online.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111446Z" creationid="hsugawa8651" creationdate="20181112T111446Z">
-        <seg>浮動小数点演算の最終的なガイドは、&lt;x1/&gt;IEEE754-2008標準&lt;x2/&gt;です。 ただし、無料のオンラインでは利用できません。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035107Z" creationid="hsugawa8651" creationdate="20181112T111446Z">
+        <seg>浮動小数点演算の最も有効なガイドは &lt;x1/&gt;IEEE754-2008規格&lt;x2/&gt;です。しかし、オンライン上で無償で利用することはできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -36458,14 +36468,6 @@ output = similar(input, Eltype)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094927Z" creationid="hsugawa8651" creationdate="20181113T132104Z">
         <seg>整商</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>introduction&lt;x1/&gt;</seg>
-      </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120357Z" creationid="hsugawa8651" creationdate="20181118T120357Z">
-        <seg>導入&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
