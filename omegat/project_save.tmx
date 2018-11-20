@@ -9201,6 +9201,15 @@ us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>All indexing in Julia is 1-based: the first element of any integer-indexed object is found at
+index 1.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080841Z" creationid="hsugawa8651" creationdate="20181120T080829Z">
+        <seg>Julia のインデックスは全て1から始まります。つまり、整数インデックスを持つオブジェクトの最初の要素のインデックスは1になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All numeric types interoperate naturally without explicit casting, thanks to a
 flexible, user-extensible &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion).</seg>
       </tuv>
@@ -18606,6 +18615,14 @@ is a valid code point, use the &lt;x3/&gt;`isvalid()`&lt;x4/&gt; function:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you want to extract a character from a string, you index into it:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080808Z" creationid="hsugawa8651" creationdate="20181120T080808Z">
+        <seg>文字列から文字を抽出する場合はその文字列にインデックスを添える必要があります。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you want your Julia process to have access only to the packages in one project or package directory, make it the only entry in &lt;x5/&gt;LOAD_PATH&lt;x6/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121411Z" creationid="hsugawa8651" creationdate="20181118T121411Z">
@@ -25062,6 +25079,14 @@ provided &lt;x5/&gt;`stride(A,k)`&lt;x6/&gt; method accesses the &lt;x7/&gt;k&lt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160458Z" creationid="hsugawa8651" creationdate="20181109T160458Z">
         <seg>ストローブされた配列 は、各次元のタプルを返す&lt;x3/&gt;`end(A)'&lt;x4/&gt;メソッドを定義する必要があります。 &lt;x5/&gt;`stride(A,k)'は、このタプル内の&lt;x7/&gt;k&lt;x8/&gt;番目のエレメントにアクセスします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>String literals are delimited by double quotes or triple double quotes:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080756Z" creationid="hsugawa8651" creationdate="20181120T080756Z">
+        <seg>文字列リテラルはダブルクオーテーションまたは3つのダブルクオーテーションで区切られます。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -31977,6 +32002,14 @@ integer value back to a &lt;x5/&gt;Char&lt;x6/&gt; just as easily:</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080305Z" creationid="hsugawa8651" creationdate="20181120T080305Z">
         <seg>また、整数値を簡単に &lt;x5/&gt;Char&lt;x6/&gt;  へと変換し直すこともできます。:
 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can do comparisons and a limited amount of arithmetic with &lt;x1/&gt;Char&lt;x2/&gt; values:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080741Z" creationid="hsugawa8651" creationdate="20181120T080741Z">
+        <seg>&lt;x1/&gt;Char&lt;x2/&gt;値を使用して限定的な算術演算や Char 同士の比較を行うことができます。:</seg>
       </tuv>
     </tu>
     <tu>
