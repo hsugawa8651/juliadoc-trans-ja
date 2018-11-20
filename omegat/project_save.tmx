@@ -13189,8 +13189,8 @@ commonly passed in registers when using C or Julia calling conventions.</seg>
         <seg>By definition, &lt;x1/&gt;eps(1.0)&lt;x2/&gt; is the same as &lt;x3/&gt;eps(Float64)&lt;x4/&gt; since &lt;x5/&gt;1.0&lt;x6/&gt; is
 a 64-bit floating-point value.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111220Z" creationid="hsugawa8651" creationdate="20181112T111220Z">
-        <seg>定義では&lt;x1/&gt;eps(1.0)&lt;x2/&gt;は&lt;x3/&gt;(Float64)&lt;x4/&gt;と同じであり、&lt;x5/&gt;は&lt;x5/&gt;1.0&lt;x6/&gt;である。 64ビットの浮動小数点値です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034706Z" creationid="hsugawa8651" creationdate="20181112T111220Z">
+        <seg>定義上、 &lt;x5/&gt;1.0&lt;x6/&gt;は64ビットの浮動小数点値であるため、 &lt;x1/&gt;eps(1.0)&lt;x2/&gt;は &lt;x3/&gt;eps(Float64)&lt;x4/&gt;  と同一です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17903,8 +17903,8 @@ appropriate representable value.</seg>
 representable value, however, if wanted, the manner in which this rounding is done can be changed
 according to the rounding modes presented in the &lt;x1/&gt;IEEE 754 standard&lt;x2/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235652Z" creationid="hsugawa8651" creationdate="20181119T235652Z">
-        <seg>しかし、この丸めが行われる方法は &lt;x1/&gt;IEEE754標準&lt;x2/&gt;で提示された丸めモードに従って必要に応じて変更された。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034814Z" creationid="hsugawa8651" creationdate="20181119T235652Z">
+        <seg>値が割り切れる浮動小数点数ではない場合、適切な表現可能な値に繰り上げる必要があります。 しかし、必要な場合は、どのように繰り上げするかは&lt;x1/&gt; IEEE 754規格&lt;x2/&gt; の 端数処理モードに準拠して変更が可能です。。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20499,8 +20499,8 @@ native integer types respectively:</seg>
         <seg>Julia also provides the &lt;x1/&gt;`nextfloat()`&lt;x2/&gt; and &lt;x3/&gt;`prevfloat()`&lt;x4/&gt; functions which return
 the next largest or smallest representable floating-point number to the argument respectively:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235619Z" creationid="hsugawa8651" creationdate="20181119T235619Z">
-        <seg>また、Juliaは、&lt;x1/&gt;`nextfloat()`&lt;x2/&gt;と、&lt;x3/&gt;`prevfloat()`&lt;x4/&gt;関数を提供します。 引数に対して次の最大または最小の表現可能浮動小数点数をそれぞれ指定します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034735Z" creationid="hsugawa8651" creationdate="20181119T235619Z">
+        <seg>Juliaは、次の最大または最小の浮動小数点数を引数に戻り値として与える &lt;x1/&gt;`nextfloat()`&lt;x2/&gt; および &lt;x3/&gt;`prevfloat()`&lt;x4/&gt;関数を提供しています。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -26228,8 +26228,8 @@ and passes them to &lt;x1/&gt;new&lt;x2/&gt;, returning the resulting object:</s
         <seg>The default mode used is always &lt;x1/&gt;`RoundNearest`&lt;x2/&gt;, which rounds to the nearest representable
 value, with ties rounded towards the nearest value with an even least significant bit.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111339Z" creationid="hsugawa8651" creationdate="20181112T111339Z">
-        <seg>使用されるデフォルト・モードは常に&lt;x1/&gt;`RoundNearest'&lt;x2/&gt;であり、これは最も近い表現可能なものに丸められます。 値は、最も近い値に対して、最も近い値に丸められ、最も重要なビットであることを示します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034833Z" creationid="hsugawa8651" creationdate="20181112T111339Z">
+        <seg>デフォルトでは、偶数の最下位ビットに最も近い値になるよう値を 繰り上げる &lt;x1/&gt;`RoundNearest`&lt;x2/&gt;,が常に使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29132,8 +29132,8 @@ than the required &lt;x3/&gt;`Bool`&lt;x4/&gt;.</seg>
         <seg>This example highlights the general principle that the adjacent representable floating-point numbers
 also have adjacent binary integer representations.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120352Z" creationid="hsugawa8651" creationdate="20181118T120352Z">
-        <seg>この例では、隣接する表現可能浮動小数点数を示す一般的な原理が強調されています。 また、隣接するバイナリ整数表現もあります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034747Z" creationid="hsugawa8651" creationdate="20181118T120352Z">
+        <seg>この例では、隣接する浮動小数点数は隣接する二進整数を持つという一般的な原則を表しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -50148,6 +50148,17 @@ Julia's &lt;x1/&gt;Char&lt;x2/&gt; type is 32 bits, which is not the same as the
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151018Z" creationid="hsugawa8651" creationdate="20181117T151018Z">
         <seg>警告 Juliaの&lt;x1/&gt;Char&lt;x2/&gt;型は32ビットで、ワイド文字タイプ(&lt;x3/&gt;wchar_t&lt;x4/&gt;または すべてのプラットフォームで、&lt;x5/&gt;wint_t&lt;x6/&gt;)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>warning
+Rounding is generally only correct for basic arithmetic functions (&lt;x1/&gt;`+()`&lt;x2/&gt;, &lt;x3/&gt;`-()`&lt;x4/&gt;,
+&lt;x5/&gt;`*()`&lt;x6/&gt;, &lt;x7/&gt;`/()`&lt;x8/&gt; and &lt;x9/&gt;`sqrt()`&lt;x10/&gt;) and type conversion operations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034954Z" creationid="hsugawa8651" creationdate="20181120T034917Z">
+        <seg>warning
+端数処理は通常基本的な算術関数（&lt;x1/&gt;`+()`&lt;x2/&gt;、&lt;x3/&gt;`-()`&lt;x4/&gt;,、&lt;x5/&gt;`*()`&lt;x6/&gt;、&lt;x7/&gt;`/()`&lt;x8/&gt;、&lt;x9/&gt;`sqrt()`&lt;x10/&gt;）および 型変換処理においてのみ正常に機能します。</seg>
       </tuv>
     </tu>
     <tu>
