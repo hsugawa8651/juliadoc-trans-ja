@@ -2005,6 +2005,15 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>*&lt;x1/&gt; typically denotes a &lt;x2/&gt;noncommutative&lt;x3/&gt; operation, where the
+order of the operands &lt;x4/&gt;does&lt;x5/&gt; matter.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082416Z" creationid="hsugawa8651" creationdate="20181120T082357Z">
+        <seg>これに対して *&lt;x1/&gt;  はよく &lt;x2/&gt;noncommutative&lt;x3/&gt;非可換 演算（被演算子の順番が関係 ある 演算）を表します。&lt;x4/&gt;does&lt;x5/&gt; </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>+ - \| ⊻&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030842Z" creationid="hsugawa8651" creationdate="20181114T030842Z">
@@ -9516,6 +9525,23 @@ etc. For example, &lt;x11/&gt;Any[x, y, z]&lt;x12/&gt; constructs a heterogeneou
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An example of this is matrix addition, where &lt;x5/&gt;A + B == B + A&lt;x6/&gt; for any matrices &lt;x7/&gt;A&lt;x8/&gt; and &lt;x9/&gt;B&lt;x10/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082306Z" creationid="hsugawa8651" creationdate="20181120T082306Z">
+        <seg>例えば行列の加算は、&lt;x5/&gt;A + B == B + A&lt;x6/&gt; は &lt;x7/&gt;A&lt;x8/&gt; と &lt;x9/&gt;B&lt;x10/&gt;が同じサイズで有る限り成り立つ可換演算です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An example of this is matrix multiplication, where in general
+&lt;x6/&gt;A * B != B * A&lt;x7/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082432Z" creationid="hsugawa8651" creationdate="20181120T082413Z">
+        <seg>例えば行列の乗算は、&lt;x6/&gt;A * B != B * A&lt;x7/&gt;が基本的に成り立つ非可換演算です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An inefficient way to do this would
 be to replicate the vector to the size of the matrix:</seg>
       </tuv>
@@ -10020,6 +10046,15 @@ method definitions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As such, &lt;x10/&gt;*&lt;x11/&gt; is a more natural choice for an infix string concatenation
+operator, consistent with common mathematical use.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082515Z" creationid="hsugawa8651" creationdate="20181120T082515Z">
+        <seg>これらのことから、 文字列連結演算子としての&lt;x10/&gt;*&lt;x11/&gt; はより数学においての使われ方に準拠した、自然な選択といえるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As such, it's also possible to define custom array types by inheriting
 from &lt;x1/&gt;`AbstractArray`&lt;x2/&gt;.</seg>
       </tuv>
@@ -10120,6 +10155,15 @@ be thrown immediately.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123820Z" creationid="hsugawa8651" creationdate="20181118T123820Z">
         <seg>コンストラクタから返される不完全なオブジェクトの場合と同様に、&lt;x1/&gt;complete_me&lt;x2/&gt;またはその呼び出し先のいずれかである場合 &lt;x5/&gt;遅延&lt;x6/&gt;オブジェクトの&lt;x3/&gt;データ&lt;x4/&gt;フィールドにアクセスしてから、初期化するようにしてください。エラーが発生すると、エラーが発生する可能性があります。 すぐにスローされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As with matrix multiplication, string concatenation is noncommutative:
+&lt;x8/&gt;greet * whom != whom * greet&lt;x9/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082455Z" creationid="hsugawa8651" creationdate="20181120T082455Z">
+        <seg>そして文字列の連結は &lt;x8/&gt;greet * whom != whom * greet&lt;x9/&gt;であるように行列の乗算と同様、非可換演算です。 </seg>
       </tuv>
     </tu>
     <tu>
