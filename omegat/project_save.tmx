@@ -1949,6 +1949,15 @@ operators with special evaluation semantics like &lt;x1/&gt;&amp;&amp;&lt;x2/&gt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(There may be a performance issue, however, in the case
+of function arguments that are containers of abstract types; see &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-performance-tips).)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145101Z" creationid="hsugawa8651" creationdate="20181120T145101Z">
+        <seg>（ただし、関数の引数が抽象型のコンテナである場合は、パフォーマンス上、問題になる可能性があります（[パフォーマンスのヒント]（@ ref man-performance-tips）を参照してください）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(This allows for coexistence with other tools that might consider files called &lt;x13/&gt;Project.toml&lt;x14/&gt; and &lt;x15/&gt;Manifest.toml&lt;x16/&gt; significant.) For pure Julia projects, however, the names &lt;x17/&gt;Project.toml&lt;x18/&gt; and &lt;x19/&gt;Manifest.toml&lt;x20/&gt; are preferred.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121055Z" creationid="hsugawa8651" creationdate="20181118T121055Z">
@@ -8873,6 +8882,22 @@ arguments, as noted above).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A primitive type can optionally be declared to be a subtype of some supertype.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145227Z" creationid="hsugawa8651" creationdate="20181120T145227Z">
+        <seg>原始型は、必要に応じてどのスーパータイプのサブタイプなのかを宣言することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A primitive type is a concrete type whose data consists of plain old bits.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145120Z" creationid="hsugawa8651" creationdate="20181120T145120Z">
+        <seg>原始型は、データが普通のビットで構成される具象型です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A project environment is determined by a directory containing a project file called &lt;x1/&gt;Project.toml&lt;x2/&gt;, and optionally a manifest file called &lt;x3/&gt;Manifest.toml&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121049Z" creationid="hsugawa8651" creationdate="20181118T121049Z">
@@ -9835,6 +9860,16 @@ only for passing varargs or computed keywords as described below.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An important point to note is that there is no loss in performance if the programmer relies on
+a function whose arguments are abstract types, because it is recompiled for each tuple of argument
+concrete types with which it is invoked.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145053Z" creationid="hsugawa8651" creationdate="20181120T145053Z">
+        <seg>注目すべき重要な点は、引数が抽象型である関数を使っても、パフォーマンスが落ちないことです。 というのも関数は、呼び出される引数の具象型の組が異なるごとに、再コンパイルされるからです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An important use of abstract types is to provide default implementations for concrete types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144800Z" creationid="hsugawa8651" creationdate="20181120T144747Z">
@@ -10567,6 +10602,16 @@ is appended to, or else a &lt;x1/&gt;`MethodError`&lt;x2/&gt; is raised.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164950Z" creationid="hsugawa8651" creationdate="20181118T164950Z">
         <seg>結合度</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Assuming no method more specific than the above is found, Julia next internally defines and compiles
+a method called &lt;x1/&gt;myplus&lt;x2/&gt; specifically for two &lt;x3/&gt;Int&lt;x4/&gt; arguments based on the generic function given
+above, i.e., it implicitly defines and compiles:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145007Z" creationid="hsugawa8651" creationdate="20181120T145007Z">
+        <seg>上記のメソッドより適切なものが見つからない場合は、引き続きJuliaは内部的にmyplusという名のメソッドを、上記の汎化関数に、2つの引数をIntに特化した上で、定義とコンパイルを行います。つまり、暗黙的に定義とコンパイルをおこないます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13994,6 +14039,15 @@ obj2 = MyModule.somefunction(obj1)   &lt;x5/&gt; this time it worked!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Classic examples of primitive
+types are integers and floating-point values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145128Z" creationid="hsugawa8651" creationdate="20181120T145128Z">
+        <seg>原始型の定番の例は、整数と浮動小数点数です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Closest candidates are:
   newfun() at none:1 (method too new to be called from this world context.)
  in tryeval() at none:1
@@ -15119,6 +15173,15 @@ throw a conversion error.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150900Z" creationid="hsugawa8651" creationdate="20181117T150900Z">
         <seg>Cuchar&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Currently, only sizes that are multiples of
+8 bits are supported.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145252Z" creationid="hsugawa8651" creationdate="20181120T145252Z">
+        <seg> 現在は、8ビットの倍数であるサイズのみが利用可能です。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -18981,6 +19044,15 @@ provided, the memory layout must correspond in the same way to these strides.</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If a supertype
+is omitted, then the type defaults to having &lt;x1/&gt;Any&lt;x2/&gt; as its immediate supertype.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145238Z" creationid="hsugawa8651" creationdate="20181120T145238Z">
+        <seg> スーパータイプを省略すると、デフォルトでは、Anyがその型の直接のスーパータイプになります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If a type is defined as a subtype of &lt;x1/&gt;AbstractArray&lt;x2/&gt;, it inherits a very large set of rich behaviors
 including iteration and multidimensional indexing built on top of single-element access.</seg>
       </tuv>
@@ -20002,6 +20074,15 @@ and substitution before any actual parsing or interpretation occurs.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152856Z" creationid="hsugawa8651" creationdate="20181117T152856Z">
         <seg>実際には、&lt;x15/&gt;Pub&lt;x16/&gt;パッケージが使用されるようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In fact, the standard
+primitive types are all defined in the language itself:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145146Z" creationid="hsugawa8651" creationdate="20181120T145146Z">
+        <seg>実際、標準装備の原始型はすべてJulia自体で定義されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25365,6 +25446,14 @@ requires using &lt;x3/&gt;llvmcall&lt;x4/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Primitive Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145109Z" creationid="hsugawa8651" creationdate="20181120T145109Z">
+        <seg>原始型 Primitive Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Print this message</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224608Z" creationid="hsugawa8651" creationdate="20181109T224608Z">
@@ -27393,6 +27482,15 @@ a "non-dot" function call is encountered; for example, in &lt;x2/&gt;sin.(sort(c
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Thanks to multiple dispatch, the programmer
+has full control over whether the default or more specific method is used.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145039Z" creationid="hsugawa8651" creationdate="20181120T145039Z">
+        <seg>多重ディスパッチのおかげで、プログラマは、デフォルトのメソッドと、より特化したメソッドのどちらを使用するかを完全に制御できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>That allows the user to control
 the size.</seg>
       </tuv>
@@ -28621,6 +28719,16 @@ arithmetic</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The declaration
+of &lt;x3/&gt;`Bool`&lt;x4/&gt; above therefore means that a boolean value takes eight bits to store, and has
+&lt;x5/&gt;`Integer`&lt;x6/&gt; as its immediate supertype.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145245Z" creationid="hsugawa8651" creationdate="20181120T145245Z">
+        <seg>したがって、上記のBool 宣言は、ブール値の格納に8ビットを要し、Integer が直接のスーパータイプであることを意味しています 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The default @.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120236Z" creationid="hsugawa8651" creationdate="20181118T120236Z">
@@ -29269,6 +29377,14 @@ happens to contain only a single character.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The general syntaxes for declaring a primitive type are:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145157Z" creationid="hsugawa8651" creationdate="20181120T145157Z">
+        <seg>原始型を宣言するための一般的な構文は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The general syntaxes for declaring an
 abstract type are:</seg>
       </tuv>
@@ -29796,6 +29912,15 @@ such a constraint.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022750Z" creationid="hsugawa8651" creationdate="20181120T022750Z">
         <seg> Vararg{T,N}という記法は、そういう制約のために使用われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The number of bits indicates how much storage the type requires and the name gives the new type
+a name.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145219Z" creationid="hsugawa8651" creationdate="20181120T145219Z">
+        <seg>ビット数は、その型が格納に何ビット必要とするかを示し、新しい型の名前に使われます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -30581,6 +30706,15 @@ in terms of methods chosen by multiple dispatch on run-time argument types is de
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The types &lt;x1/&gt;`Bool`&lt;x2/&gt;, &lt;x3/&gt;`Int8`&lt;x4/&gt; and &lt;x5/&gt;`UInt8`&lt;x6/&gt; all have identical representations:
+they are eight-bit chunks of memory.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145312Z" creationid="hsugawa8651" creationdate="20181120T145312Z">
+        <seg>Bool、 Int8、 UInt8 の型はすべて同一の表現です。これらは8ビットのメモリの塊です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The types of keyword arguments can be made explicit as follows:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132656Z" creationid="hsugawa8651" creationdate="20181120T132656Z">
@@ -31155,6 +31289,15 @@ instances of the type &lt;x13/&gt;SummedArray{Int32,Int32}&lt;x14/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124540Z" creationid="hsugawa8651" creationdate="20181118T124540Z">
         <seg>したがって、&lt;x6/&gt;i&lt;x7/&gt;への割り当ては、次の反復では可視ではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Therefore, boolean values, although they really need just a single bit,
+cannot be declared to be any smaller than eight bits.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145301Z" creationid="hsugawa8651" creationdate="20181120T145301Z">
+        <seg>したがって、ブール値に本当に必要なのは1ビットだけですが、8ビットより小さい宣言にはできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33011,6 +33154,15 @@ type:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Thus, abstract types allow programmers to write generic functions that can later be used as the
+default method by many combinations of concrete types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145032Z" creationid="hsugawa8651" creationdate="20181120T145032Z">
+        <seg>このように、抽象型を使用すると、プログラマは、あとあと、具象型の組み合わせの多くに対してデフォルトのメソッドとして使用できる汎化関数を、記述できます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Thus, although the &lt;x1/&gt;⊘&lt;x2/&gt; operator usually returns an instance of &lt;x3/&gt;OurRational&lt;x4/&gt;, if either
 of its arguments are complex integers, it will return an instance of &lt;x5/&gt;Complex{OurRational}&lt;x6/&gt; instead.</seg>
       </tuv>
@@ -33873,6 +34025,15 @@ qualified access.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141339Z" creationid="hsugawa8651" creationdate="20181120T141339Z">
         <seg>グローバルスコープとは異なり、ローカルスコープは名前空間ではないため、何かしらの限定的なアクセスによって、内側のスコープの変数を親スコープから取り出すことができません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike most languages, Julia lets you declare your
+own primitive types, rather than providing only a fixed set of built-in ones.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145143Z" creationid="hsugawa8651" creationdate="20181120T145143Z">
+        <seg>ほとんどの言語とは異なり、Juliaでは標準装備の固定した原始型が利用可能なだけではなく、独自の原始型を宣言することができます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -37484,6 +37645,14 @@ addone(x) = x + oneunit(x)             &lt;x4/&gt; any type supporting + and one
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033302Z" creationid="hsugawa8651" creationdate="20181119T033302Z">
         <seg>！や数字（0から9とNd･Noカテゴリ内のその他の記号）、その他のUnicode符号点 （発音区別符号およびその他の修飾文字（Mn/Mc/Me/Skカテゴリ）、句読点コネクタ（Pcカテゴリ）、 プライム記号、その他の文字）を使用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>and finally, it invokes this specific method.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145019Z" creationid="hsugawa8651" creationdate="20181120T145019Z">
+        <seg>最後に、この特化メソッドを呼び出します。</seg>
       </tuv>
     </tu>
     <tu>
