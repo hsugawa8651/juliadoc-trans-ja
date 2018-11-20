@@ -33882,8 +33882,8 @@ object</seg>
       <tuv lang="EN-US">
         <seg>binary exponent of &lt;x1/&gt;x&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100057Z" creationid="hsugawa8651" creationdate="20181118T100057Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;のバイナリ指数</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073856Z" creationid="hsugawa8651" creationdate="20181118T100057Z">
+        <seg>2の &lt;x1/&gt;x&lt;x2/&gt;乗</seg>
       </tuv>
     </tu>
     <tu>
@@ -33906,8 +33906,8 @@ object</seg>
       <tuv lang="EN-US">
         <seg>binary significand (a.k.a.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100100Z" creationid="hsugawa8651" creationdate="20181118T100100Z">
-        <seg>2進数の有意差(a.k.a.)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074032Z" creationid="hsugawa8651" creationdate="20181118T100100Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
@@ -48287,8 +48287,8 @@ end</seg>
       <tuv lang="EN-US">
         <seg>mantissa) of a floating-point number &lt;x1/&gt;x&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100102Z" creationid="hsugawa8651" creationdate="20181118T100102Z">
-        <seg>浮動小数点数&lt;x1/&gt;x&lt;x2/&gt;の仮数</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074027Z" creationid="hsugawa8651" creationdate="20181118T100102Z">
+        <seg>浮動小数点数 &lt;x1/&gt;x&lt;x2/&gt; に対する 2進仮数2進数の有意差(a.k.a.)。</seg>
       </tuv>
     </tu>
     <tu>
