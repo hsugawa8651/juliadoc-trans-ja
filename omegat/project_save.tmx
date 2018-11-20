@@ -9101,8 +9101,8 @@ of relatively slower performance.</seg>
         <seg>Additionally, full support for &lt;x1/&gt;Complex and Rational Numbers&lt;x2/&gt; is built on top of these primitive
 numeric types.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225152Z" creationid="hsugawa8651" creationdate="20181109T225152Z">
-        <seg>さらに、&lt;x1/&gt;ComplexおよびRational Numbers&lt;x2/&gt;の完全なサポートは、これらのプリミティブに基づいて構築されています。 数値型。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032518Z" creationid="hsugawa8651" creationdate="20181109T225152Z">
+        <seg>加えて、&lt;x1/&gt;&gt;複素数と有理数&lt;x2/&gt; へのサポートは、これらの数値プリミティブ型を踏まえて構築されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9169,8 +9169,8 @@ us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
         <seg>All numeric types interoperate naturally without explicit casting, thanks to a
 flexible, user-extensible &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120717Z" creationid="hsugawa8651" creationdate="20181109T225156Z">
-        <seg>すべての数値型は、明示的なキャストなしで自然に相互運用されます。 柔軟なユーザー拡張可能な&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032554Z" creationid="hsugawa8651" creationdate="20181109T225156Z">
+        <seg> 全ての数値型は、明示的に割り当てることなく自然に相互運用します。&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion)</seg>
       </tuv>
     </tu>
     <tu>
@@ -19791,8 +19791,8 @@ the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
       <tuv lang="EN-US">
         <seg>Integers</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044717Z" creationid="hsugawa8651" creationdate="20181112T044717Z">
-        <seg>Integers</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032607Z" creationid="hsugawa8651" creationdate="20181112T044717Z">
+        <seg>整数</seg>
       </tuv>
     </tu>
     <tu>
@@ -20482,8 +20482,8 @@ given, and on the types of all of the function's arguments.</seg>
         <seg>Julia also defines the types &lt;x1/&gt;Int&lt;x2/&gt; and &lt;x3/&gt;UInt&lt;x4/&gt;, which are aliases for the system's signed and unsigned
 native integer types respectively:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110348Z" creationid="hsugawa8651" creationdate="20181112T110348Z">
-        <seg>また、Juliaは、システムの署名と符号なしのエイリアスである、&lt;x1/&gt;Int&lt;x2/&gt;と&lt;x3/&gt;UInt&lt;x4/&gt;のタイプを定義します。 ネイティブの整数型:</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032727Z" creationid="hsugawa8651" creationdate="20181112T110348Z">
+        <seg>Juliaは、システムの符号つきまたは符号なしの固有の整数型のエイリアスである &lt;x1/&gt;Int&lt;x2/&gt; および &lt;x3/&gt;UInt&lt;x4/&gt; 型を定義します。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -21050,8 +21050,8 @@ integer literals and engineering notation for floating-point literals.</seg>
         <seg>Larger integer literals that cannot be represented using only 32 bits but can be represented in
 64 bits always create 64-bit integers, regardless of the system type:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225319Z" creationid="hsugawa8651" creationdate="20181109T225319Z">
-        <seg>32ビットのみを使用して表現することはできないが、次のように表現できる整数リテラル 64ビットは、システムタイプに関係なく、常に64ビットの整数を作成します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032741Z" creationid="hsugawa8651" creationdate="20181109T225319Z">
+        <seg>32ビットを使用して表現できないが、64ビットでは表現できるような大きな整数リテラルの場合、 システムタイプに関係なく常に64ビット整数を作成します。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -21249,8 +21249,8 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
       <tuv lang="EN-US">
         <seg>Literal integers are represented in the standard manner:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225202Z" creationid="hsugawa8651" creationdate="20181109T225202Z">
-        <seg>リテラル整数は、標準的な方法で表されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032611Z" creationid="hsugawa8651" creationdate="20181109T225202Z">
+        <seg>整数リテラルは標準的な方法で表現されます。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -25824,8 +25824,8 @@ the Bessel J function populate the Julia array &lt;x1/&gt;result_array&lt;x2/&gt
         <seg>The Julia internal variable &lt;x1/&gt;`Sys.WORD_SIZE`&lt;x2/&gt; indicates whether the target system is 32-bit
 or 64-bit:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110332Z" creationid="hsugawa8651" creationdate="20181112T110332Z">
-        <seg>Julia内部変数&lt;x1/&gt;`Sys.WORD_SIZE`&lt;x2/&gt;は、ターゲットシステムが32ビットであるかどうかを示します。 または64ビット:</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032653Z" creationid="hsugawa8651" creationdate="20181112T110332Z">
+        <seg>Juliaの内部変数  &lt;x1/&gt;`Sys.WORD_SIZE`&lt;x2/&gt;  はターゲットシステムが32ビットまたは64ビットのどちらかであることを示します。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -26251,8 +26251,8 @@ value, with ties rounded towards the nearest value with an even least significan
         <seg>The default type for an integer literal depends on whether the target system has a 32-bit architecture
 or a 64-bit architecture:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110320Z" creationid="hsugawa8651" creationdate="20181112T110320Z">
-        <seg>整数リテラルのデフォルト・タイプは、ターゲット・システムに32ビット・アーキテクチャーがあるかどうかによって異なります。 64ビットのアーキテクチャ:</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032632Z" creationid="hsugawa8651" creationdate="20181112T110320Z">
+        <seg>整数リテラルのデフォルトの型は、ターゲットシステムのアーキテクチャが32ビットであるか 64ビットであるかによって異なります。:</seg>
       </tuv>
     </tu>
     <tu>
