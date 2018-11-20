@@ -15531,6 +15531,14 @@ values without literal forms as args.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Finally, let's take a look at some more complex examples where this rule comes into play.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T021303Z" creationid="hsugawa8651" creationdate="20181120T021303Z">
+        <seg>最後に、このルールが適用されるより複雑な例を、いくつか見てみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Finally, one should define a function
 &lt;x25/&gt;display(d::D, x)&lt;x26/&gt; that queries &lt;x27/&gt;`showable(mime, x)`&lt;x28/&gt; for the &lt;x29/&gt;mime&lt;x30/&gt; types supported by &lt;x31/&gt;D&lt;x32/&gt;</seg>
       </tuv>
@@ -16667,6 +16675,14 @@ efficient enough for deploying performance-intensive applications.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121446Z" creationid="hsugawa8651" creationdate="20181118T121446Z">
         <seg>幸いなことに、ほとんどのJuliaユーザーは、コード読み込みの技術的な詳細を忘れ、組み込みパッケージ・マネージャーを使用して、適切なプロジェクトやマニフェスト・ファイルにパッケージ&lt;x x/&gt;x2/&gt;を追加して、&lt;x5/&gt;x&lt;x6/&gt;をロード&lt;x5/&gt;X&lt;x6/&gt;に読み込むことはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fortunately, there is an easy solution: call the function using &lt;x1/&gt;`Base.invokelatest`&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T021242Z" creationid="hsugawa8651" creationdate="20181120T021242Z">
+        <seg>幸いにも、簡単な解決策があって、Base.invokelatestを使って関数を呼び出せば、いいのです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19094,6 +19110,15 @@ into a single argument.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the example above, we see that the "current world" (in which the method &lt;x1/&gt;newfun()&lt;x2/&gt; exists),
+is one greater than the task-local "runtime world" that was fixed when the execution of &lt;x3/&gt;tryeval&lt;x4/&gt; started.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T021229Z" creationid="hsugawa8651" creationdate="20181120T021229Z">
+        <seg>上記の例では、メソッドnewfun()が存在する「現在の世界」が、tryeval開始時に設定されたタスクローカルの「実行時の世界」よりも１つ大きいことがわかります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the example function, &lt;x1/&gt;f&lt;x2/&gt;, from
 the previous section this is the value of the expression &lt;x3/&gt;x + y&lt;x4/&gt;.</seg>
       </tuv>
@@ -19805,6 +19830,14 @@ the first block in &lt;x1/&gt;if @generated&lt;x2/&gt; is used, and a normal one
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112319Z" creationid="hsugawa8651" creationdate="20181112T112319Z">
         <seg>IsInfinite()&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It also allows comparing the methods available in two worlds just by comparing their ordinal value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T021218Z" creationid="hsugawa8651" creationdate="20181120T021218Z">
+        <seg>また、世代を比較するだけで、2つの世界で利用できるメソッドを比較することもできます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -24443,6 +24476,14 @@ in order, returning the value of the last subexpression as its value.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Sometimes it is necessary to get around this (for example, if you are implementing the above REPL).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T021236Z" creationid="hsugawa8651" creationdate="20181120T021236Z">
+        <seg>場合によってはこれを回避する必要があります（たとえば、上記のREPLを実装している場合など）。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Sometimes, it's just convenient to be able to construct objects
 with fewer or different types of parameters than they have fields.</seg>
       </tuv>
@@ -28659,6 +28700,15 @@ optimize broadcasting.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This allows describing "the set of method definitions visible to a given runtime environment"
+as a single number, or "world age".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T021208Z" creationid="hsugawa8651" creationdate="20181120T021155Z">
+        <seg>これにより、「実行時環境から見えるメソッド定義の集合」を、単一の数値「世界世代」として記述することができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This allows sophisticated code generation without
 extra build steps, and also allows true Lisp-style macros operating at the level of &lt;x1/&gt;abstract syntax trees&lt;x2/&gt;.</seg>
       </tuv>
@@ -29438,6 +29488,15 @@ dispatch.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182612Z" creationid="hsugawa8651" creationdate="20181118T182612Z">
         <seg>このモデルは数値計算にとても適しています。 従来のオブジェクト指向ディスパッチのように、第一引数が演算子を「所有」するのは不自然です。 
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This monotonically increasing value tracks each method definition operation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T021200Z" creationid="hsugawa8651" creationdate="20181120T021135Z">
+        <seg> この単調に増加する値は、各メソッド定義の操作を追跡します。 
 </seg>
       </tuv>
     </tu>
