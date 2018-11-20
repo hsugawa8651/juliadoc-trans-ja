@@ -9672,6 +9672,15 @@ etc. For example, &lt;x11/&gt;Any[x, y, z]&lt;x12/&gt; constructs a heterogeneou
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An explicit semicolon is required
+only for passing varargs or computed keywords as described below.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132616Z" creationid="hsugawa8651" creationdate="20181120T132616Z">
+        <seg>後述の可変引数や計算済みのキーワードを使う場合には、明示的にセミコロンを使わなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An inefficient way to do this would
 be to replicate the vector to the size of the matrix:</seg>
       </tuv>
@@ -15890,6 +15899,14 @@ values without literal forms as args.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Extra keyword arguments can be collected using &lt;x1/&gt;...&lt;x2/&gt;, as in varargs functions:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132722Z" creationid="hsugawa8651" creationdate="20181120T132722Z">
+        <seg>追加のキーワード引数は、可変引数関数で使う&lt;x1/&gt;...&lt;x2/&gt;をつけて、まとめることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Federated package management and precise software reproducibility are difficult but worthy goals in a package system.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121442Z" creationid="hsugawa8651" creationdate="20181118T121442Z">
@@ -21832,6 +21849,15 @@ integer literals and engineering notation for floating-point literals.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132113Z" creationid="hsugawa8651" creationdate="20181120T132113Z">
         <seg>キーワード引数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Keyword argument default values are evaluated only when necessary (when a corresponding keyword
+argument is not passed), and in left-to-right order.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132635Z" creationid="hsugawa8651" creationdate="20181120T132635Z">
+        <seg>キーワード引数のデフォルト値は、（対応する値が渡されなくて）必要になった時だけ、左から右の順番で評価されます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -29254,6 +29280,14 @@ in terms of methods chosen by multiple dispatch on run-time argument types is de
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The types of keyword arguments can be made explicit as follows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132656Z" creationid="hsugawa8651" creationdate="20181120T132656Z">
+        <seg>キーワード引数の型は以下のように明示的に指定できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The unary variant states
 that you intend to implement specific broadcasting behavior and/or output type, and do not wish to
 rely on the default fallback &lt;x2/&gt;`Broadcast.DefaultArrayStyle`&lt;x3/&gt;.</seg>
@@ -29696,6 +29730,15 @@ which allows inserting calls to LLVM intrinsics directly.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T122410Z" creationid="hsugawa8651" creationdate="20181117T152448Z">
         <seg>さらに特別な呼び出し規則が一つあります&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref Base.llvmcall)。 ではLLVM組み込みへの呼び出しを直接挿入することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Therefore default expressions may refer to
+prior keyword arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132651Z" creationid="hsugawa8651" creationdate="20181120T132651Z">
+        <seg>そのため、デフォルトの式は評価済みのキーワード引数を参照していてもかまいません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -32870,6 +32913,14 @@ object.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012140Z" creationid="hsugawa8651" creationdate="20181120T012015Z">
         <seg> &lt;x5/&gt;this&lt;x6/&gt; オブジェクトがメソッド呼び出しのレシーバである場合は省略できます。&lt;x7/&gt;meth(arg1,arg2)&lt;x8/&gt;と書くだけで、&lt;x3/&gt;this&lt;x4/&gt;は受け取るオブジェクトを暗示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the function is called, the semicolon is optional: one can either call &lt;x1/&gt;plot(x, y, width=2)&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132539Z" creationid="hsugawa8651" creationdate="20181120T132539Z">
+        <seg>関数呼び出しの際に、セミコロンは必ずしも必要ありません。&lt;x1/&gt;plot(x, y, width=2)&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -37058,6 +37109,18 @@ end</seg>
         a[i] *= 2
     end
     return a
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function f(;x::Int64=1)
+    &lt;x1/&gt;
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132658Z" creationid="hsugawa8651" creationdate="20181120T132658Z">
+        <seg>function f(;x::Int64=1)
+    &lt;x1/&gt;
 end</seg>
       </tuv>
     </tu>
@@ -51657,6 +51720,14 @@ Captured variables can present performance challenges; see
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T020328Z" creationid="hsugawa8651" creationdate="20181116T020328Z">
         <seg>pipeline(`do_work`, stdout=pipeline(`sort`, "out.txt"), stderr="errs.txt")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>plot(x, y; width=2)&lt;x1/&gt;, but the former style is more common.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132605Z" creationid="hsugawa8651" creationdate="20181120T132605Z">
+        <seg>plot(x, y; width=2)&lt;x1/&gt;と、どちらでもよいのですが、ふつうは１つ目の書き方をします。 </seg>
       </tuv>
     </tu>
     <tu>
