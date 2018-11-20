@@ -13056,6 +13056,15 @@ introduced in &lt;x3/&gt;Mathematical Operations and Elementary Functions&lt;x4/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Both concatenation and string interpolation call &lt;x1/&gt;`string()`&lt;x2/&gt; to convert objects into string
+form.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082926Z" creationid="hsugawa8651" creationdate="20181120T082926Z">
+        <seg>補間と文字列連結はいずれもオブジェクトを文字列形式に変換するために &lt;x1/&gt;`string()`&lt;x2/&gt;を呼び出します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Both expressions are interpreted as function application: any expression that is not a numeric
 literal, when immediately followed by a parenthetical, is interpreted as a function applied to
 the values in parentheses (see &lt;x1/&gt;Functions&lt;x2/&gt; for more about functions).</seg>
@@ -15817,6 +15826,15 @@ and type definitions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134309Z" creationid="hsugawa8651" creationdate="20181117T134309Z">
         <seg>まず、いくつかの関連するJulia型用語のレビューを行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>First, if the opening &lt;x3/&gt;"""&lt;x4/&gt; is followed by a
+newline, the newline is stripped from the resulting string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083114Z" creationid="hsugawa8651" creationdate="20181120T083114Z">
+        <seg>まず、始めの &lt;x3/&gt;"""&lt;x4/&gt; の後ろに改行が続いた場合、結果の文字列から改行は取り除かれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22143,6 +22161,15 @@ Clang), you will need to use the &lt;x1/&gt;-shared&lt;x2/&gt; and &lt;x3/&gt;-f
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160550Z" creationid="hsugawa8651" creationdate="20181109T160550Z">
         <seg>ほとんどのCおよびFortranライブラリは出荷されています。 はすでに共有ライブラリとしてコンパイルされていますが、GCCを使用して自分でコードをコンパイルする場合は Clang)は、&lt;x1/&gt;-shared&lt;x2/&gt;および&lt;x3/&gt;-fPIC&lt;x4/&gt;オプションを使用する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Most non-&lt;x3/&gt;AbstractString&lt;x4/&gt; objects are converted to strings closely corresponding to how
+they are entered as literal expressions:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082946Z" creationid="hsugawa8651" creationdate="20181120T082946Z">
+        <seg>ほとんどの非 &lt;x3/&gt;AbstractString&lt;x4/&gt;  オブジェクトは、どのようにリテラル表現として入力されるかに対応する文字列に変換されます。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -29348,6 +29375,15 @@ can be seen using the &lt;x3/&gt;bits&lt;x4/&gt; function: :</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>They can
+contain &lt;x1/&gt;"&lt;x2/&gt; symbols without escaping.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083214Z" creationid="hsugawa8651" creationdate="20181120T083214Z">
+        <seg>これらはエスケープなしで　" 記号を含めることができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>They can be used similarly to &lt;x2/&gt;Array{Bool}&lt;x3/&gt; arrays (which store one byte per boolean value),
 and can be converted to/from the latter via &lt;x4/&gt;Array(bitarray)&lt;x5/&gt; and &lt;x6/&gt;BitArray(array)&lt;x7/&gt;, respectively.</seg>
       </tuv>
@@ -30055,6 +30091,14 @@ Python, Ruby and Perl, among other dynamic languages.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025715Z" creationid="hsugawa8651" creationdate="20181110T025715Z">
         <seg>これはSchemeで見られる動作と同じです。ほとんどのLispです。 Python、Ruby、Perlは、その他の動的言語の中でもとりわけ優れています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is useful for defining strings within code that is indented.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083228Z" creationid="hsugawa8651" creationdate="20181120T083228Z">
+        <seg>れはインデントされたコード内 の文字列を定義するのに便利です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30919,6 +30963,14 @@ of those methods are, use the &lt;x3/&gt;`methods()`&lt;x4/&gt; function:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To include a literal &lt;x1/&gt;$&lt;x2/&gt; in a string literal, escape it with a backslash:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083032Z" creationid="hsugawa8651" creationdate="20181120T083032Z">
+        <seg>文字列リテラルにリテラル &lt;x1/&gt;$&lt;x2/&gt; を含める場合は、バックスラッシュを使ってエスケープする必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To make common numeric formulae and expressions clearer, Julia allows variables to be immediately
 preceded by a numeric literal, implying multiplication.</seg>
       </tuv>
@@ -31051,10 +31103,27 @@ functions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Trailing whitespace is left unaltered.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083205Z" creationid="hsugawa8651" creationdate="20181120T083205Z">
+        <seg>末尾の空白は変更されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Trigonometric and hyperbolic functions</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100112Z" creationid="hsugawa8651" creationdate="20181118T100112Z">
         <seg>三角関数と双曲線関数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Triple-quoted strings are also dedented to the level of
+the least-indented line.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083221Z" creationid="hsugawa8651" creationdate="20181120T083221Z">
+        <seg>3つのダブルクオーテーションで囲まれた文字列は、最もインデントされていない行合わせでインデントします。こ</seg>
       </tuv>
     </tu>
     <tu>
@@ -31911,6 +31980,15 @@ mode, &lt;c6&gt;&lt;s7&gt;julia&lt;/s7&gt;&lt;/c6&gt; displays a banner and prom
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T091404Z" creationid="hsugawa8651" creationdate="20181109T224306Z">
         <seg>インタラクティブ・モードで起動すると、 &lt;x9/&gt;julia&lt;x10/&gt; のバナーが表示され、プロンプトがユーザーの入力を待ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When strings are created using triple-quotes (&lt;x1/&gt;"""..."""&lt;x2/&gt;) they have some special behavior that
+can be useful for creating longer blocks of text.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083100Z" creationid="hsugawa8651" creationdate="20181120T083100Z">
+        <seg>文字列が3つのダブルクオーテーション(&lt;x1/&gt;"""..."""&lt;x2/&gt;) they have some special behavior that)を使用して作成される場合、長いテキストを作成するのに便利な 特殊な動作をします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -34005,6 +34083,15 @@ and all further calculations will take these changes in account.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`string()`&lt;x1/&gt; is the identity for &lt;x2/&gt;AbstractString&lt;x3/&gt; and &lt;x4/&gt;Char&lt;x5/&gt; values, so these are interpolated
+into strings as themselves, unquoted and unescaped:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083019Z" creationid="hsugawa8651" creationdate="20181120T083019Z">
+        <seg>`string()`&lt;x1/&gt;は &lt;x2/&gt;AbstractString&lt;x3/&gt;  および &lt;x4/&gt;Char&lt;x5/&gt;値と同一です。そのため、これらはクオーテーションが付かず、 エスケープもされずにそのまま文字列に補間されます。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`trues(dims...)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064403Z" creationid="hsugawa8651" creationdate="20181114T064403Z">
@@ -34799,6 +34886,14 @@ object</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131627Z" creationid="hsugawa8651" creationdate="20181113T131627Z">
         <seg>broadcasted(::DefaultArrayStyle{1}, ::typeof(-), r::OrdinalRange) = range(-first(r), step=-step(r), length=length(r))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>but</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083140Z" creationid="hsugawa8651" creationdate="20181120T083140Z">
+        <seg>しかし</seg>
       </tuv>
     </tu>
     <tu>
@@ -37387,6 +37482,14 @@ Base.banner(io)
 banner = String(take!(io))
 import Markdown
 Markdown.parse("```\n\$ julia\n\n$(banner)\njulia&gt; 1 + 2\n3\n\njulia&gt; ans\n3\n```")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>is equivalent to</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083123Z" creationid="hsugawa8651" creationdate="20181120T083123Z">
+        <seg>は以下と同等です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -51340,6 +51443,14 @@ ccall(:foo, Cvoid, (Ref{Cint}, Ref{Cfloat}), width, range)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134254Z" creationid="hsugawa8651" creationdate="20181117T134254Z">
         <seg>次のような動作をします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>will contain a literal newline at the beginning.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083157Z" creationid="hsugawa8651" creationdate="20181120T083157Z">
+        <seg>これは最初にリテラル改行を含みます。</seg>
       </tuv>
     </tu>
     <tu>
