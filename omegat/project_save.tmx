@@ -16923,6 +16923,14 @@ inner functions used elsewhere in the language, variables from the enclosing sco
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Getting Started</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032029Z" creationid="hsugawa8651" creationdate="20181120T032029Z">
+        <seg>Juliaをはじめる</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Getting Started&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T234345Z" creationid="hsugawa8651" creationdate="20181119T234345Z">
