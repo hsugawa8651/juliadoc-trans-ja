@@ -9228,8 +9228,8 @@ on the values to be manipulated.</seg>
       <tuv lang="EN-US">
         <seg>All the standard trigonometric and hyperbolic functions are also defined:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100110Z" creationid="hsugawa8651" creationdate="20181118T100110Z">
-        <seg>標準的な三角関数と双曲線関数もすべて定義されています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074431Z" creationid="hsugawa8651" creationdate="20181118T100110Z">
+        <seg>標準的な全ての三角関数と双曲線関数も定義されています。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -15864,6 +15864,14 @@ encountered when computing with them, see David Goldberg's paper &lt;x1/&gt;What
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035356Z" creationid="hsugawa8651" creationdate="20181112T111503Z">
         <seg>浮動小数点数に関する高度かつ詳細な議論および演算時の数値の精度の問題については、David Goldbergの論文 &lt;x1/&gt;What Every Computer Scientist Should Know About Floating-PointArithmetic&lt;x2/&gt;を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For an overview of why functions like &lt;x1/&gt;`hypot()`&lt;x2/&gt;, &lt;x3/&gt;`expm1()`&lt;x4/&gt;, and &lt;x5/&gt;`log1p()`&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074415Z" creationid="hsugawa8651" creationdate="20181120T074415Z">
+        <seg>&lt;x1/&gt;`hypot()`&lt;x2/&gt;, &lt;x3/&gt;`expm1()`&lt;x4/&gt; および&lt;x5/&gt;`log1p()`&lt;x6/&gt; などの関数が必要かつ有用な理由については、 </seg>
       </tuv>
     </tu>
     <tu>
@@ -34582,8 +34590,8 @@ Stacktrace:
         <seg>expm1, log1p, erfc&lt;x1/&gt;,
 and &lt;x2/&gt;hypot&lt;x3/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100107Z" creationid="hsugawa8651" creationdate="20181118T100107Z">
-        <seg>expm1、log1p、erfc&lt;x1/&gt; &lt;x2/&gt;hypot&lt;x3/&gt;。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074421Z" creationid="hsugawa8651" creationdate="20181118T100107Z">
+        <seg>expm1、 log1p、erfc および hypot に関するJohn D. Cookのブログ記事を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -48287,8 +48295,8 @@ end</seg>
       <tuv lang="EN-US">
         <seg>mantissa) of a floating-point number &lt;x1/&gt;x&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074027Z" creationid="hsugawa8651" creationdate="20181118T100102Z">
-        <seg>浮動小数点数 &lt;x1/&gt;x&lt;x2/&gt; に対する 2進仮数2進数の有意差(a.k.a.)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074255Z" creationid="hsugawa8651" creationdate="20181118T100102Z">
+        <seg>浮動小数点数 &lt;x1/&gt;x&lt;x2/&gt; に対する 2進仮数 (significand すなわち mantissa)</seg>
       </tuv>
     </tu>
     <tu>
