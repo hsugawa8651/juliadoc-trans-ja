@@ -7951,8 +7951,8 @@ The operators &lt;x14/&gt;+&lt;x15/&gt;, &lt;x16/&gt;++&lt;x17/&gt; and &lt;x18/
         <seg>&lt;x14/&gt;&lt;x15/&gt;&lt;x16/&gt; This
 loop fusion is not a compiler optimization that may or may not occur, it is a &lt;x17/&gt;syntactic guarantee&lt;x18/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140023Z" creationid="hsugawa8651" creationdate="20181118T120139Z">
-        <seg>このループ融合は、行われる場合も行われない場合もあるコンパイラの最適化によるものではなく、 f.(args...)がネストして呼び出されたときに、必ず行われるように"構文的に保証されて" います。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140352Z" creationid="hsugawa8651" creationdate="20181118T120139Z">
+        <seg>このループ融合は、行われる場合も行われない場合もあるコンパイラの最適化によるものではなく、 f.(args...)&lt;x1/&gt;がネストして呼び出されたときに、必ず行われるように"構文的に保証されて" います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16389,8 +16389,8 @@ mathematical meaning to "cubing" a (non-square) array, but
 &lt;x6/&gt;sin.(cos.(X))&lt;x7/&gt; is equivalent to &lt;x8/&gt;broadcast(x -&gt; sin(cos(x)), X)&lt;x9/&gt;, similar to &lt;x10/&gt;[sin(cos(x)) for x in X]&lt;x11/&gt;:
 there is only a single loop over &lt;x12/&gt;X&lt;x13/&gt;, and a single array is allocated for the result.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140144Z" creationid="hsugawa8651" creationdate="20181118T120137Z">
-        <seg>例えば、sin.(cos.(X)) は broadcast(x -&gt; sin(cos(x)), X)とも、 [sin(cos(x)) for x in X]とも同等です。 この時Xに対して1重のループを行うだけで戻り値用の配列１つ分のメモリが確保されるだけです。 [これとは対照的に、典型的なベクトル化されたプログラミング言語でsin(cos(X))と書くと、はじめに一時的な配列にメモリを割り当ててtmp=cos(X)を計算を行い、次にsin(tmp)の計算を別のループで行い、別の配列としてメモリを割り当てます。] </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140321Z" creationid="hsugawa8651" creationdate="20181118T120137Z">
+        <seg>例えば、&lt;x6/&gt;sin.(cos.(X))&lt;x7/&gt; は &lt;x8/&gt;broadcast(x -&gt; sin(cos(x)), X)&lt;x9/&gt;とも、 &lt;x10/&gt;[sin(cos(x)) for x in X]&lt;x11/&gt;とも同等です。 この時&lt;x12/&gt;X&lt;x13/&gt;に対して1重のループを行うだけで戻り値用の配列１つ分のメモリが確保されるだけです。 [これとは対照的に、典型的なベクトル化されたプログラミング言語でsin(cos(X))と書くと、はじめに一時的な配列にメモリを割り当ててtmp=cos(X)を計算を行い、次にsin(tmp)の計算を別のループで行い、別の配列としてメモリを割り当てます。] </seg>
       </tuv>
     </tu>
     <tu>
@@ -26507,8 +26507,8 @@ to hold or acquire any while executing Julia code.</seg>
         <seg>Technically, the fusion stops as soon as
 a "non-dot" function call is encountered; for example, in &lt;x2/&gt;sin.(sort(cos.(X)))&lt;x3/&gt; the &lt;x4/&gt;sin&lt;x5/&gt; and &lt;x6/&gt;cos&lt;x7/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T135933Z" creationid="hsugawa8651" creationdate="20181118T120143Z">
-        <seg>技術的には、ループ融合は"ドットを使わない"関数呼び出しに出会った時点で停止します。例えば、 sin.(sort(cos.(X)))と書くと、 sin と cosはsortをはさんでいるために、融合されることはありません。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140447Z" creationid="hsugawa8651" creationdate="20181118T120143Z">
+        <seg>技術的には、ループ融合は"ドットを使わない"関数呼び出しに出会った時点で停止します。例えば、&lt;x2/&gt;sin.(sort(cos.(X)))&lt;x3/&gt; と書くと、 &lt;x4/&gt;sin&lt;x5/&gt; と &lt;x6/&gt;cos&lt;x7/&gt;はsortをはさんでいるために、融合されることはありません。</seg>
       </tuv>
     </tu>
     <tu>
