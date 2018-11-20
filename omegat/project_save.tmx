@@ -49321,32 +49321,32 @@ paths = reduce(merge, reverse([paths₁, paths₂, …]))</seg>
       <tuv lang="EN-US">
         <seg>round &lt;x1/&gt;x&lt;x2/&gt; to the nearest integer</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031119Z" creationid="hsugawa8651" creationdate="20181114T031119Z">
-        <seg>最も近い整数に対して&lt;x1/&gt;x&lt;x2/&gt;を四捨五入する</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071246Z" creationid="hsugawa8651" creationdate="20181114T031119Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt; を最も近い整数になるように丸める</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>round &lt;x1/&gt;x&lt;x2/&gt; towards &lt;x3/&gt;+Inf&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095740Z" creationid="hsugawa8651" creationdate="20181118T095740Z">
-        <seg>round&lt;x1/&gt;x&lt;x2/&gt;&lt;x3/&gt;+Inf&lt;x4/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071135Z" creationid="hsugawa8651" creationdate="20181118T095740Z">
+        <seg>x を +Inf に向かって丸めを行う</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>round &lt;x1/&gt;x&lt;x2/&gt; towards &lt;x3/&gt;-Inf&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031130Z" creationid="hsugawa8651" creationdate="20181114T031125Z">
-        <seg>round &lt;x1/&gt;x&lt;x2/&gt; towards &lt;x3/&gt;-Inf&lt;x4/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071305Z" creationid="hsugawa8651" creationdate="20181114T031125Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt; を &lt;x3/&gt;-Inf&lt;x4/&gt; に向かって丸めを行う</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>round &lt;x1/&gt;x&lt;x2/&gt; towards zero</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095757Z" creationid="hsugawa8651" creationdate="20181118T095757Z">
-        <seg>round&lt;x1/&gt;x&lt;x2/&gt;(0に対して)</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071209Z" creationid="hsugawa8651" creationdate="20181118T095757Z">
+        <seg>x を0に向かって丸めを行う</seg>
       </tuv>
     </tu>
     <tu>
