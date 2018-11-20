@@ -9808,6 +9808,16 @@ the C library notifies you that it is finished with them.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-characters), in character
+literals, Unicode code points can be represented using Unicode &lt;x4/&gt;\u&lt;x5/&gt; and &lt;x6/&gt;\U&lt;x7/&gt; escape sequences,
+as well as all the standard C escape sequences.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081415Z" creationid="hsugawa8651" creationdate="20181120T081415Z">
+        <seg>上記 &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-characters), の通り、 文字列リテラルでは、Unicodeコードポイントは、C言語の標準的なエスケープ方法と同様に、Unicodeは &lt;x4/&gt;\u&lt;x5/&gt;  および &lt;x6/&gt;\U&lt;x7/&gt; の エスケープを使用することで表すことができます。こ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As a complete but simple example, the following calls the &lt;x1/&gt;clock&lt;x2/&gt; function from the standard C
 library:</seg>
       </tuv>
@@ -12822,6 +12832,15 @@ code in Julia are represented by Julia data structures, powerful &lt;x3/&gt;refl
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152837Z" creationid="hsugawa8651" creationdate="20181117T152837Z">
         <seg>中央の名前付け権限がないため、同じ名前を持つパッケージによっては、単一のプロジェクトが終了する可能性が非常に高くなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Because of variable-length encodings, the number of characters in a string (given by &lt;x1/&gt;`length(s)`&lt;x2/&gt;)
+is not always the same as the last index.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081641Z" creationid="hsugawa8651" creationdate="20181120T081641Z">
+        <seg>可変長インデックスなので、文字列内の文字数（&lt;x1/&gt;`length(s)`&lt;x2/&gt;により取得可能）は、 常に末尾のインデックスの数と同一というわけではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18588,6 +18607,15 @@ put it in &lt;c0&gt;&lt;s1&gt;~/.juliarc.jl&lt;/s1&gt;&lt;/c0&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you index into
+a string at such an invalid byte index, an error is thrown:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081530Z" creationid="hsugawa8651" creationdate="20181120T081530Z">
+        <seg>このような無効なバイトインデックスで文字列にインデックスを付けた場合、例外が投げられます。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you just want to install and use packages, simply use Julia's built-in package manager to add packages to your environment and write &lt;x1/&gt;import X&lt;x2/&gt; or &lt;x3/&gt;using X&lt;x4/&gt; in your code to load packages that you've added.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152754Z" creationid="hsugawa8651" creationdate="20181117T152754Z">
@@ -18799,6 +18827,16 @@ to the compiler.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151216Z" creationid="hsugawa8651" creationdate="20181117T151216Z">
         <seg>Juliaでは、その文字列のコピーを作成するために、パーツに独立してアクセスすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In UTF-8, ASCII characters -- i.e. those with code points less than
+0x80 (128) -- are encoded as they are in ASCII, using a single byte, while code points 0x80 and
+above are encoded using multiple bytes -- up to four per character.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081512Z" creationid="hsugawa8651" creationdate="20181120T081512Z">
+        <seg>UTF-8では、ASCII、つまり0x80(128)以下のコードポイントの文字は 1バイトでASCIIとしてエンコードされ、0x80以上のコードポイントは、1文字あたり最大4バイトのマルチバイトでエンコードされます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -19568,6 +19606,16 @@ language features (e.g. only &lt;x11/&gt;character(len=1)&lt;x12/&gt; will be pe
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151123Z" creationid="hsugawa8651" creationdate="20181117T151123Z">
         <seg>この場合は、隠れた引数はありません。 言語機能(例えば、&lt;x11/&gt;文字(len=1)&lt;x12/&gt;は文字列を渡すことが許されます)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case, the character &lt;x1/&gt;∀&lt;x2/&gt; is a three-byte character, so the indices 2 and 3 are invalid
+and the next character's index is 4; this next valid index can be computed by &lt;x3/&gt;`nextind(s,1)`&lt;x4/&gt;,
+and the next index after that by &lt;x5/&gt;nextind(s,4)&lt;x6/&gt; and so on.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081616Z" creationid="hsugawa8651" creationdate="20181120T081616Z">
+        <seg>この場合、&lt;x1/&gt;∀&lt;x2/&gt;  は3バイト文字であるため、インデックス2と3は無効であり、次の有効なインデックスは4になります。 また、この場合、次の有効なインデックスは&lt;x3/&gt;`nextind(s,1)`&lt;x4/&gt;,で求めることができ、その次の有効なインデックスは &lt;x5/&gt;nextind(s,4)&lt;x6/&gt; で計算でき、 その次は...と求めることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20867,6 +20915,14 @@ implemented using `LLVM
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182421Z" creationid="hsugawa8651" creationdate="20181118T182421Z">
         <seg>Juliaは任意の型付け、多重ディスパッチ、そして優れた性能を提供します。 これは型推論と、&lt;a1&gt;LLVM&lt;/a1&gt;によって実装された &lt;a0&gt;just-in-time (JIT) コンパイラ&lt;/a0&gt;によって実現されるものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia fully supports Unicode characters and strings.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081336Z" creationid="hsugawa8651" creationdate="20181120T081336Z">
+        <seg>JuliaはUnicode文字とUnicode文字列をサポートします。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -25125,6 +25181,15 @@ provided &lt;x5/&gt;`stride(A,k)`&lt;x6/&gt; method accesses the &lt;x7/&gt;k&lt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>String literals are encoded using
+the UTF-8 encoding.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081447Z" creationid="hsugawa8651" creationdate="20181120T081447Z">
+        <seg>文字列リテラルはUTF-8エンコードを使用してエンコードされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Strings are finite sequences of characters.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075230Z" creationid="hsugawa8651" creationdate="20181120T075230Z">
@@ -28892,6 +28957,14 @@ and the point specified by its arguments, interpreted as &lt;x7/&gt;x&lt;x8/&gt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These can likewise be used to write string literals:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081420Z" creationid="hsugawa8651" creationdate="20181120T081420Z">
+        <seg>れらは同様に文字列リテラルを書くために使用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These characters are standardized
 together with a mapping to integer values between 0 and 127 by the &lt;x7/&gt;ASCII&lt;x8/&gt;</seg>
       </tuv>
@@ -29941,6 +30014,15 @@ before.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This means that not every
+byte index into a UTF-8 string is necessarily a valid index for a character.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081525Z" creationid="hsugawa8651" creationdate="20181120T081525Z">
+        <seg>これは、必ずしも全てのUTF-8文字列のインデックスバイトが文字に対して有効なインデックスではないことを意味します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This means that programs making heavy use of generated functions might be impossible to
 statically compile.</seg>
       </tuv>
@@ -30890,6 +30972,15 @@ arguments, but with generated functions this is impossible.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>UTF-8 is a variable-width encoding, meaning that not all characters are encoded
+in the same number of bytes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081459Z" creationid="hsugawa8651" creationdate="20181120T081459Z">
+        <seg>UTF-8は可変幅のエンコードであり、 全ての文字が同じバイト数でエンコードされるわけではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Unary</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165004Z" creationid="hsugawa8651" creationdate="20181118T165004Z">
@@ -31751,6 +31842,15 @@ dimensionalities, by creating a constructor for your style that takes a &lt;x3/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152817Z" creationid="hsugawa8651" creationdate="20181117T152817Z">
         <seg>&lt;x1/&gt;は&lt;x2/&gt;X&lt;x3/&gt;パッケージが存在する可能性がある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Whether these Unicode characters are displayed as escapes or shown as special characters depends
+on your terminal's locale settings and its support for Unicode.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081438Z" creationid="hsugawa8651" creationdate="20181120T081438Z">
+        <seg>これらのUnicode文字がエスケープとして出力されるか特殊な文字として出力されるかは、あなたの端末のロケール設定とそのUnicodeのサポート の状況に依存します。</seg>
       </tuv>
     </tu>
     <tu>
