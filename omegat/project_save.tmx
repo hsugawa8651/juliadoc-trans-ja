@@ -19079,6 +19079,15 @@ Julia type is a homogeneous tuple of &lt;x1/&gt;VecElement&lt;x2/&gt; that natur
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If a composite type is declared with &lt;x1/&gt;mutable struct&lt;x2/&gt; instead of &lt;x3/&gt;struct&lt;x4/&gt;, then instances of
+it can be modified:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T150258Z" creationid="hsugawa8651" creationdate="20181120T150258Z">
+        <seg>structの代わりにmutable structで複合型を宣言すると、インスタンスは変更可能になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If a function argument name is written as a tuple (e.g. &lt;x1/&gt;(x, y)&lt;x2/&gt;) instead of just
 a symbol, then an assignment &lt;x3/&gt;(x, y) = argument&lt;x4/&gt; will be inserted for you:</seg>
       </tuv>
@@ -23809,6 +23818,14 @@ nested &lt;x9/&gt;where&lt;x10/&gt;, e.g. &lt;x11/&gt;where S&lt;:Real where T&l
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165030Z" creationid="hsugawa8651" creationdate="20181118T165030Z">
         <seg>乗算</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Mutable Composite Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T150245Z" creationid="hsugawa8651" creationdate="20181120T150245Z">
+        <seg>可変複合型 Mutable Composite Types</seg>
       </tuv>
     </tu>
     <tu>
