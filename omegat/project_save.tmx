@@ -15117,6 +15117,14 @@ differences, these operations all fall under the general concept of "addition".<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Dictionaries can also be used for this purpose.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132845Z" creationid="hsugawa8651" creationdate="20181120T132845Z">
+        <seg>こういった場合に辞書もまた使われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Dictionaries may also be created with generators.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041748Z" creationid="hsugawa8651" creationdate="20181112T041748Z">
@@ -15556,6 +15564,14 @@ the insertion point of a value not found in a sorted array:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115630Z" creationid="hsugawa8651" creationdate="20181118T115630Z">
         <seg>この式を評価すると、補間された&lt;x5/&gt;3&lt;x6/&gt;が得られます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Evaluation Scope of Default Values</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132924Z" creationid="hsugawa8651" creationdate="20181120T132924Z">
+        <seg>デフォルト値を評価する際のスコープ</seg>
       </tuv>
     </tu>
     <tu>
@@ -16448,6 +16464,14 @@ are true where the corresponding elements of &lt;x7/&gt;A&lt;x8/&gt; are between
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, &lt;x5/&gt;plot(x, y; (:width,2))&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133051Z" creationid="hsugawa8651" creationdate="20181120T133051Z">
+        <seg> plot(x, y; (:width,2)) や plot(x, y; :width =&gt; 2) などと定義は plot(x, y, width=2) と同等です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, &lt;x5/&gt;round(Int,x)&lt;x6/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T070924Z" creationid="hsugawa8651" creationdate="20181114T031052Z">
@@ -16586,6 +16610,15 @@ if the vectors have different length).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120119Z" creationid="hsugawa8651" creationdate="20181118T120119Z">
         <seg>たとえば、&lt;x7/&gt;f(x,y)=3x+4y&lt;x8/&gt;の場合、&lt;x9/&gt;f.(pi,A)&lt;x10/&gt;は返されます。 &lt;x15/&gt;a&lt;x16/&gt;の&lt;x13/&gt;a&lt;x14/&gt;の&lt;x11/&gt;f(pi,a)&lt;x12/&gt;で構成される新しい配列であり、&lt;x17/&gt;f.(vector1,vector2)&lt;x18/&gt;は &lt;x19/&gt;f(vector1[i],vector2[i])&lt;x20/&gt;for each index&lt;X21/&gt;i&lt;x22/&gt;(例外をスローする)で構成される新しいベクトル ベクトルの長さが異なる場合。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, in the call &lt;x1/&gt;plot(x, y; options..., width=2)&lt;x2/&gt; it is possible that the &lt;x3/&gt;options&lt;x4/&gt; structure
+also contains a value for &lt;x5/&gt;width&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132946Z" creationid="hsugawa8651" creationdate="20181120T132946Z">
+        <seg>例えば、plot(x, y; options..., width=2) という関数呼び出しは、optionsの中にwidthの値も設定されています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -19726,6 +19759,15 @@ and cannot be manipulated or expressed at run time.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In such a case the rightmost occurrence takes precedence; in
+this example, &lt;x7/&gt;width&lt;x8/&gt; is certain to have the value &lt;x9/&gt;2&lt;x10/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132938Z" creationid="hsugawa8651" creationdate="20181120T132938Z">
+        <seg>この場合は、右端の出現が優先されます。width の値は 2 に設定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In such cases, it may be best for the exceptional condition to either terminate the
 program while printing a diagnostic error message, or if the programmer has provided code to handle
 such exceptional circumstances then allow that code to take the appropriate action.</seg>
@@ -20337,6 +20379,14 @@ to observe or mutate this state.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064050Z" creationid="hsugawa8651" creationdate="20181114T064050Z">
         <seg>InsertionSort&lt;x1/&gt;は、O(n^2)安定ソートアルゴリズムである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Inside &lt;x1/&gt;f&lt;x2/&gt;, &lt;x3/&gt;kwargs&lt;x4/&gt; will be a collection of &lt;x5/&gt;(key,value)&lt;x6/&gt; tuples, where each &lt;x7/&gt;key&lt;x8/&gt; is a symbol.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132820Z" creationid="hsugawa8651" creationdate="20181120T132820Z">
+        <seg>&lt;x1/&gt;f&lt;x2/&gt;&lt;x3/&gt;の内部では、 &lt;x3/&gt;kwargs&lt;x4/&gt; は、&lt;x7/&gt;key&lt;x8/&gt; がシンボルである &lt;x5/&gt;(key,value)&lt;x6/&gt; tのコレクションになります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -23749,6 +23799,15 @@ works, it’s easy to write code that’s nearly as fast as C.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>One can also pass &lt;x1/&gt;(key,value)&lt;x2/&gt; tuples, or any iterable expression (such as a &lt;x3/&gt;=&gt;&lt;x4/&gt; pair) that
+can be assigned to such a tuple, explicitly after a semicolon.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133116Z" creationid="hsugawa8651" creationdate="20181120T133116Z">
+        <seg> &lt;x1/&gt;(key,value)&lt;x2/&gt; といったタプルや、タプルに代入できる（&lt;x3/&gt;=&gt;&lt;x4/&gt; を使ったペアなど)イテラブルな式などは、明示的に書いたセミコロンの後に続けて渡すことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>One can either restart Julia or use the
 &lt;x1/&gt;Libdl&lt;x2/&gt; functions to manage the library explicitly, such as:</seg>
       </tuv>
@@ -26042,6 +26101,14 @@ interoperable code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151121Z" creationid="hsugawa8651" creationdate="20181117T151121Z">
         <seg>このような動作は、&lt;x7/&gt;ISO_C_BINDING&lt;x8/&gt;を使用して回避することができます。 サブルーチンの定義には&lt;x9/&gt;bind(c)&lt;x10/&gt;を含めることが強く推奨されます。このサブルーチンは、以下のように強く推奨されます。 相互運用可能なコードです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Such collections can be passed as keyword arguments using a semicolon in a call, e.g. &lt;x9/&gt;f(x, z=1; kwargs...)&lt;x10/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132836Z" creationid="hsugawa8651" creationdate="20181120T132836Z">
+        <seg>このコレクションはセミコロンを使って&lt;x9/&gt;f(x, z=1; kwargs...)&lt;x10/&gt;.のように渡すことができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28471,6 +28538,14 @@ itself is passed in as the global &lt;x7/&gt;PROGRAM_FILE&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T173607Z" creationid="hsugawa8651" creationdate="20181118T173537Z">
         <seg>スクリプト自体の名前は、グローバルな&lt;c3&gt;PROGRAM_FILE&lt;/c3&gt;として渡されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The nature of keyword arguments makes it possible to specify the same argument more than once.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132955Z" creationid="hsugawa8651" creationdate="20181120T132955Z">
+        <seg>キーワード引数の性質上、同じ引数に複数回、値を指定できるようになっています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -30905,6 +30980,15 @@ Python, Ruby and Perl, among other dynamic languages.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083239Z" creationid="hsugawa8651" creationdate="20181120T083228Z">
         <seg>これはインデントされたコード内 の文字列を定義するのに便利です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is useful in situations
+where the keyword name is computed at runtime.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133004Z" creationid="hsugawa8651" creationdate="20181120T133004Z">
+        <seg>こういった書き方は実行時にキーワード名を算出する場合に役立ちます。</seg>
       </tuv>
     </tu>
     <tu>
