@@ -18193,6 +18193,15 @@ outside/afterwards.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If there is only a single parameter, the enclosing curly braces (in &lt;x5/&gt;where {T}&lt;x6/&gt;) can be omitted,
+but are often preferred for clarity.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020810Z" creationid="hsugawa8651" creationdate="20181120T020810Z">
+        <seg>パラメータが1つしかない場合は、中括弧（where {T}）を省略することができますが、わかりやくするために、よく好んでつけられます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If this example were rewritten to use a &lt;x1/&gt;for&lt;x2/&gt; keyword for each variable, then the output would
 be different: the second and fourth values would contain &lt;x3/&gt;0&lt;x4/&gt;.</seg>
       </tuv>
