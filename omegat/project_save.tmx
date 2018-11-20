@@ -33617,6 +33617,22 @@ abstract type Unsigned &lt;: Integer end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>accurate &lt;x1/&gt;log(factorial(x))&lt;x2/&gt; for large &lt;x3/&gt;x&lt;x4/&gt;; same as &lt;x5/&gt;lgamma(x+1)&lt;x6/&gt; for &lt;x7/&gt;x &gt; 1&lt;x8/&gt;, zero otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075005Z" creationid="hsugawa8651" creationdate="20181120T075005Z">
+        <seg>大きな値 &lt;x3/&gt;x&lt;x4/&gt;　に対する &lt;x1/&gt;log(factorial(x))&lt;x2/&gt;の正確な値； &lt;x7/&gt;x &gt; 1&lt;x8/&gt;に対して &lt;x5/&gt;lgamma(x+1)&lt;x6/&gt; と同じ。（でなければ0）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>accurate &lt;x1/&gt;log(gamma(x))&lt;x2/&gt; for large &lt;x3/&gt;x&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074818Z" creationid="hsugawa8651" creationdate="20181120T074818Z">
+        <seg>大きな値 &lt;x3/&gt;x&lt;x4/&gt; に対する  &lt;x1/&gt;log(gamma(x))&lt;x2/&gt; の正確な値</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>an &lt;x1/&gt;Array&lt;x2/&gt; filled with the value &lt;x3/&gt;x&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064443Z" creationid="hsugawa8651" creationdate="20181114T064443Z">
@@ -33894,6 +33910,14 @@ object</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032249Z" creationid="hsugawa8651" creationdate="20181114T032249Z">
         <seg>単一行コメントを開始する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>beta function&lt;x1/&gt; at &lt;x2/&gt;x,y&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075028Z" creationid="hsugawa8651" creationdate="20181120T075028Z">
+        <seg>&lt;x2/&gt;x,y&lt;x3/&gt; に対する ベータ関数</seg>
       </tuv>
     </tu>
     <tu>
@@ -35553,8 +35577,8 @@ end</seg>
       <tuv lang="EN-US">
         <seg>gamma function&lt;x1/&gt; at &lt;x2/&gt;x&lt;x3/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074740Z" creationid="hsugawa8651" creationdate="20181120T074740Z">
-        <seg> &lt;x2/&gt;x&lt;x3/&gt; における ガンマ関数n&lt;x1/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074825Z" creationid="hsugawa8651" creationdate="20181120T074740Z">
+        <seg> &lt;x2/&gt;x&lt;x3/&gt; に対する ガンマ関数n&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
