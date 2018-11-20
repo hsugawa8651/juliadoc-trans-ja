@@ -18963,8 +18963,8 @@ so its argument is only evaluated when the inner quote expression is:</seg>
         <seg>In other words, the binary representation is truncated
 to fit.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031042Z" creationid="hsugawa8651" creationdate="20181114T031042Z">
-        <seg>つまり、2進数表現は切り捨てられます。 フィットします。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T070440Z" creationid="hsugawa8651" creationdate="20181114T031042Z">
+        <seg>言い換えれば、バイナリ表現は値に収まるように切り捨てられます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25515,8 +25515,8 @@ function &lt;x7/&gt;gsl_permutation_alloc&lt;x8/&gt;.</seg>
       <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;Rounding functions&lt;x2/&gt; take a type &lt;x3/&gt;T&lt;x4/&gt; as an optional argument.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031049Z" creationid="hsugawa8651" creationdate="20181114T031049Z">
-        <seg>&lt;x1/&gt;丸め関数&lt;x2/&gt;は、オプションの引数として&lt;x3/&gt;T&lt;x4/&gt;の型をとる。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T070533Z" creationid="hsugawa8651" creationdate="20181114T031049Z">
+        <seg> &lt;x1/&gt;Rounding functions&lt;x2/&gt;  は、  &lt;x3/&gt;T&lt;x4/&gt;型をオプション引数としてとります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -50376,8 +50376,8 @@ fetch(reader)</seg>
         <seg>x % T&lt;x1/&gt; converts an integer &lt;x2/&gt;x&lt;x3/&gt; to a value of integer type &lt;x4/&gt;T&lt;x5/&gt; congruent to &lt;x6/&gt;x&lt;x7/&gt; modulo &lt;x8/&gt;2^n&lt;x9/&gt;,
 where &lt;x10/&gt;n&lt;x11/&gt; is the number of bits in &lt;x12/&gt;T&lt;x13/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031040Z" creationid="hsugawa8651" creationdate="20181114T031040Z">
-        <seg>x%T&lt;x1/&gt;は整数&lt;x2/&gt;x&lt;x3/&gt;を整数型&lt;x4/&gt;T&lt;x5/&gt;の値に変換し、&lt;x8/&gt;x&lt;x7/&gt;&lt;x8/&gt;2^n&lt;x9/&gt;のモジュロ&lt;x8/&gt;の値に変換する。 ここで、&lt;x10/&gt;n&lt;x11/&gt;は、&lt;x12/&gt;T&lt;x13/&gt;のビット数である。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T070427Z" creationid="hsugawa8651" creationdate="20181114T031040Z">
+        <seg>x % T&lt;x1/&gt; は、整数 &lt;x2/&gt;x&lt;x3/&gt; を、 &lt;x6/&gt;x&lt;x7/&gt; を法とする&lt;x8/&gt;2^n&lt;x9/&gt; （ &lt;x10/&gt;n&lt;x11/&gt;  は &lt;x12/&gt;T&lt;x13/&gt;のビット数）に一致する整数型 &lt;x4/&gt;T&lt;x5/&gt; の値に変換します。</seg>
       </tuv>
     </tu>
     <tu>
