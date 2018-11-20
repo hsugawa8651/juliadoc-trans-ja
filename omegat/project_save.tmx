@@ -16064,8 +16064,8 @@ are true where the corresponding elements of &lt;x7/&gt;A&lt;x8/&gt; are between
       <tuv lang="EN-US">
         <seg>For example, &lt;x5/&gt;round(Int,x)&lt;x6/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031052Z" creationid="hsugawa8651" creationdate="20181114T031052Z">
-        <seg>たとえば、&lt;x5/&gt;round(Int,x)&lt;x6/&gt;です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T070924Z" creationid="hsugawa8651" creationdate="20181114T031052Z">
+        <seg>例えば、&lt;x5/&gt;round(Int,x)&lt;x6/&gt;は</seg>
       </tuv>
     </tu>
     <tu>
@@ -19751,8 +19751,8 @@ a complex value directly from its real and imaginary parts:</seg>
       <tuv lang="EN-US">
         <seg>Int(round(x))&lt;x1/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031053Z" creationid="hsugawa8651" creationdate="20181114T031053Z">
-        <seg>Int(round(x))&lt;x1/&gt;.</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T070935Z" creationid="hsugawa8651" creationdate="20181114T031053Z">
+        <seg>Int(round(x)) &lt;x1/&gt;の短縮系です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24063,8 +24063,8 @@ system.</seg>
       <tuv lang="EN-US">
         <seg>See &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref conversion-and-promotion) for how to define your own conversions and promotions.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095716Z" creationid="hsugawa8651" creationdate="20181118T095716Z">
-        <seg>独自の変換とプロモーションを定義する方法については、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref conversion and promotion)を参照してください。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071002Z" creationid="hsugawa8651" creationdate="20181118T095716Z">
+        <seg>独自の変換とプロモーションの定義方法については、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref conversion-and-promotion) を参照してください</seg>
       </tuv>
     </tu>
     <tu>
@@ -26757,8 +26757,8 @@ dimension size and stride parameters.</seg>
       <tuv lang="EN-US">
         <seg>The following examples show the different forms.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031056Z" creationid="hsugawa8651" creationdate="20181114T031056Z">
-        <seg>次の例は、さまざまな形式を示しています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T070904Z" creationid="hsugawa8651" creationdate="20181114T031056Z">
+        <seg>以下の例は異なる形式を表しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -39255,6 +39255,86 @@ Int64</seg>
 
 julia&gt; typeof(ans)
 Int64</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Int8(127)
+127
+
+julia&gt; Int8(128)
+ERROR: InexactError()
+Stacktrace:
+ [1] Int8(::Int64) at ./sysimg.jl:77
+
+julia&gt; Int8(127.0)
+127
+
+julia&gt; Int8(3.14)
+ERROR: InexactError()
+Stacktrace:
+ [1] convert(::Type{Int8}, ::Float64) at ./float.jl:658
+ [2] Int8(::Float64) at ./sysimg.jl:77
+
+julia&gt; Int8(128.0)
+ERROR: InexactError()
+Stacktrace:
+ [1] convert(::Type{Int8}, ::Float64) at ./float.jl:658
+ [2] Int8(::Float64) at ./sysimg.jl:77
+
+julia&gt; 127 % Int8
+127
+
+julia&gt; 128 % Int8
+-128
+
+julia&gt; round(Int8,127.4)
+127
+
+julia&gt; round(Int8,127.6)
+ERROR: InexactError()
+Stacktrace:
+ [1] trunc(::Type{Int8}, ::Float64) at ./float.jl:651
+ [2] round(::Type{Int8}, ::Float64) at ./float.jl:337</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T070937Z" creationid="hsugawa8651" creationdate="20181120T070937Z">
+        <seg>julia&gt; Int8(127)
+127
+
+julia&gt; Int8(128)
+ERROR: InexactError()
+Stacktrace:
+ [1] Int8(::Int64) at ./sysimg.jl:77
+
+julia&gt; Int8(127.0)
+127
+
+julia&gt; Int8(3.14)
+ERROR: InexactError()
+Stacktrace:
+ [1] convert(::Type{Int8}, ::Float64) at ./float.jl:658
+ [2] Int8(::Float64) at ./sysimg.jl:77
+
+julia&gt; Int8(128.0)
+ERROR: InexactError()
+Stacktrace:
+ [1] convert(::Type{Int8}, ::Float64) at ./float.jl:658
+ [2] Int8(::Float64) at ./sysimg.jl:77
+
+julia&gt; 127 % Int8
+127
+
+julia&gt; 128 % Int8
+-128
+
+julia&gt; round(Int8,127.4)
+127
+
+julia&gt; round(Int8,127.6)
+ERROR: InexactError()
+Stacktrace:
+ [1] trunc(::Type{Int8}, ::Float64) at ./float.jl:651
+ [2] round(::Type{Int8}, ::Float64) at ./float.jl:337</seg>
       </tuv>
     </tu>
     <tu>
