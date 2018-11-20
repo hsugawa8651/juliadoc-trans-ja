@@ -12907,8 +12907,8 @@ introduced in &lt;x3/&gt;Mathematical Operations and Elementary Functions&lt;x4/
 literal, when immediately followed by a parenthetical, is interpreted as a function applied to
 the values in parentheses (see &lt;x1/&gt;Functions&lt;x2/&gt; for more about functions).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111859Z" creationid="hsugawa8651" creationdate="20181112T111859Z">
-        <seg>両方の式は、関数アプリケーションとして解釈されます。数値ではない任意の式です。 リテラルは、直後に括弧で囲まれた後に、関数として解釈されます。 括弧内の値(関数の関数については&lt;x1/&gt;関数を参照&lt;x2/&gt;を参照)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040545Z" creationid="hsugawa8651" creationdate="20181112T111859Z">
+        <seg>上記2つの式は関数として解釈されています。括弧を伴う式が直後に続く数値リテラルではない式は、 括弧内の値に適用される関数として解釈されます（詳細は Functions を参照ください）。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -22533,8 +22533,8 @@ using the &lt;x19/&gt;qsort&lt;x20/&gt; function (rather than Julia's built-in &
       <tuv lang="EN-US">
         <seg>Numeric literals also work as coefficients to parenthesized expressions:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T093832Z" creationid="hsugawa8651" creationdate="20181118T093832Z">
-        <seg>数値リテラルは、括弧で括られた式への係数としても機能します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040317Z" creationid="hsugawa8651" creationdate="20181118T093832Z">
+        <seg>数値リテラルは括弧内の式の係数としての役割も持ちます。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -24482,8 +24482,8 @@ which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
       <tuv lang="EN-US">
         <seg>So &lt;x1/&gt;2^3x&lt;x2/&gt; is parsed as &lt;x3/&gt;2^(3x)&lt;x4/&gt;, and &lt;x5/&gt;2x^3&lt;x6/&gt; is parsed as &lt;x7/&gt;2*(x^3)&lt;x8/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T000903Z" creationid="hsugawa8651" creationdate="20181120T000903Z">
-        <seg>例えば&lt;x1/&gt;2^3x&lt;x2/&gt;は&lt;x3/&gt;2^(3x)&lt;x4/&gt;と解析され、&lt;x5/&gt;2x^3&lt;x6/&gt;は&lt;x7/&gt;2*(x^3)&lt;x8/&gt;と構文解析される。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040309Z" creationid="hsugawa8651" creationdate="20181120T000903Z">
+        <seg>&lt;x1/&gt;2^3x&lt;x2/&gt;  は &lt;x3/&gt;2^(3x)&lt;x4/&gt;,として 解析され、&lt;x5/&gt;2x^3&lt;x6/&gt; は &lt;x7/&gt;2*(x^3)&lt;x8/&gt;として解析されます。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -48622,8 +48622,8 @@ The precedence of numeric literal coefficients used for implicit
 multiplication is higher than other binary operators such as multiplication
 (&lt;x1/&gt;*&lt;x2/&gt;), and division (&lt;x3/&gt;/&lt;x4/&gt;, &lt;x5/&gt;\&lt;x6/&gt;, and &lt;x7/&gt;//&lt;x8/&gt;).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T093957Z" creationid="hsugawa8651" creationdate="20181118T093857Z">
-        <seg>暗黙的に使用される数値リテラル係数の優先順位 乗算は、乗算のような他の二乗演算子よりも高い (&lt;x1/&gt;*&lt;x2/&gt;)、除算(&lt;x3/&gt;/&lt;x4/&gt;、&lt;x5/&gt;\&lt;x6/&gt;、&lt;x7/&gt;/&lt;x8/&gt;)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040457Z" creationid="hsugawa8651" creationdate="20181120T040457Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
