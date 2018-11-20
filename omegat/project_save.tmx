@@ -8006,6 +8006,16 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref conversion-and-promotion),
+however, shows how clever application of sufficiently advanced technology can be indistinguishable
+from magic.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T013842Z" creationid="hsugawa8651" creationdate="20181120T013842Z">
+        <seg>しかし、[Conversion and Promotion]（@ ref conversion-and-promotion）では、十分に高度な技術をうまく使うと、魔法と区別できないほどになることを示しています。[^ Clarke61]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x5/&gt;X .+= Y&lt;x6/&gt; etcetera is equivalent to &lt;x7/&gt;X .= X .+ Y&lt;x8/&gt; and results in a fused in-place assignment;
 see also &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-dot-operators).</seg>
       </tuv>
@@ -16461,6 +16471,15 @@ objects of a more specific type, such as &lt;x3/&gt;`Float64`&lt;x4/&gt; or &lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For non-numeric values, and for fewer or more than two arguments, the function &lt;x1/&gt;f&lt;x2/&gt; remains undefined,
+and applying it will still result in a &lt;x3/&gt;`MethodError`&lt;x4/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T013906Z" creationid="hsugawa8651" creationdate="20181120T013906Z">
+        <seg>数値以外の値や2つ以上の引数の場合、関数fは未定義のままであり、そのまま適用すると次のようにMethodErrorがおこります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For other types, &lt;x1/&gt;isequal&lt;x2/&gt; defaults to calling &lt;x3/&gt;`==`&lt;x4/&gt;, so if you want to define
 equality for your own types then you only need to add a &lt;x5/&gt;`==`&lt;x6/&gt; method.</seg>
       </tuv>
@@ -21618,6 +21637,15 @@ and count.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>No automatic casting or conversion of function arguments is ever performed: all
+conversion in Julia is non-magical and completely explicit.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T013821Z" creationid="hsugawa8651" creationdate="20181120T013821Z">
+        <seg>関数の引数の自動キャストや変換は一度も実行されません。 Juliaでは、すべての変換は魔法ではなく完全に明示的です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No matter how an &lt;x2/&gt;AbstractArray{T,N}&lt;x3/&gt; is represented internally, &lt;x4/&gt;T&lt;x5/&gt; is the type of
 object returned by &lt;x6/&gt;integer&lt;x7/&gt; indexing (&lt;x8/&gt;A[1, ..., 1]&lt;x9/&gt;, when &lt;x10/&gt;A&lt;x11/&gt; is not empty) and &lt;x12/&gt;N&lt;x13/&gt; should be
 the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;.</seg>
@@ -24947,6 +24975,15 @@ sessions, not when Julia code is run in other ways.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224357Z" creationid="hsugawa8651" creationdate="20181109T224357Z">
         <seg>&lt;x1/&gt;--&lt;x2/&gt;デリミタは、July:を対象とした引数から、スクリプトファイルに対して指定されたコマンドライン引数を区切るために使用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;2x + y&lt;x2/&gt; definition is only used in the first case, while the &lt;x3/&gt;2x - y&lt;x4/&gt; definition is used
+in the others.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T013810Z" creationid="hsugawa8651" creationdate="20181120T013810Z">
+        <seg>2x + yという定義は、最初の場合にだけ使われていますが、2x - yという定義が、その他では使われています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -29139,6 +29176,14 @@ an array and storing them in advance (see &lt;x1/&gt;Iteration&lt;x2/&gt;).</seg
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This output tells us that &lt;x1/&gt;f&lt;x2/&gt; is a function object with two methods.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T013951Z" creationid="hsugawa8651" creationdate="20181120T013951Z">
+        <seg>この出力は、fが2つのメソッドを持つ関数オブジェクトであることを示しています。 これらのメソッドのシグネチャを調べるには、methods()関数を使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This possibility is unavoidable since these entities do not coordinate and may not even know about each other.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152835Z" creationid="hsugawa8651" creationdate="20181117T152835Z">
@@ -31034,6 +31079,15 @@ of &lt;x1/&gt;&amp;&amp;&lt;x2/&gt; and &lt;x3/&gt;||&lt;x4/&gt; operators.</seg
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140346Z" creationid="hsugawa8651" creationdate="20181119T140346Z">
         <seg>同様の手法で、&lt;c0&gt;&amp;&amp;&lt;/c0&gt;と&lt;c1&gt;||&lt;/c1&gt;の演算子のさまざまな組み合わせに対して、結合性と優先順位を簡単に試すことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can easily see which methods exist for a function by entering the function object itself in
+an interactive session:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T013922Z" creationid="hsugawa8651" creationdate="20181120T013922Z">
+        <seg>対話セッションで関数オブジェクト自体を入力すると、関数にどんなメソッドが存在するかを簡単に確認できます。</seg>
       </tuv>
     </tu>
     <tu>
