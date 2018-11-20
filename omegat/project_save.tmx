@@ -35678,8 +35678,8 @@ which is a simplified version of the actual definition from &lt;x2/&gt;`env.jl`&
       <tuv lang="EN-US">
         <seg>greatest positive common divisor of &lt;x1/&gt;x&lt;x2/&gt;, &lt;x3/&gt;y&lt;x4/&gt;,...</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095900Z" creationid="hsugawa8651" creationdate="20181118T095900Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;の最大公約数、&lt;x3/&gt;y&lt;x4/&gt;、……。。。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T072842Z" creationid="hsugawa8651" creationdate="20181118T095900Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt; 、&lt;x3/&gt;y&lt;x4/&gt; 、...の正の最大公約数</seg>
       </tuv>
     </tu>
     <tu>
@@ -48053,8 +48053,8 @@ julia&gt; ∑(2, 3)
       <tuv lang="EN-US">
         <seg>least positive common multiple of &lt;x1/&gt;x&lt;x2/&gt;, &lt;x3/&gt;y&lt;x4/&gt;,...</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095903Z" creationid="hsugawa8651" creationdate="20181118T095903Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;の最小公倍数、&lt;x3/&gt;y&lt;x4/&gt;、……。。。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T072830Z" creationid="hsugawa8651" creationdate="20181118T095903Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt; 、&lt;x3/&gt;y&lt;x4/&gt; 、...の正の最小公倍数</seg>
       </tuv>
     </tu>
     <tu>
@@ -48511,8 +48511,8 @@ end</seg>
       <tuv lang="EN-US">
         <seg>modulus with respect to 2pi;  &lt;x1/&gt;0 &lt;= mod2pi(x)    &lt; 2pi&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095849Z" creationid="hsugawa8651" creationdate="20181118T095849Z">
-        <seg>2πに対する係数&lt;x1/&gt;0&lt;=mod2pi(x)&lt;2pi&lt;x2/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T072602Z" creationid="hsugawa8651" creationdate="20181118T095849Z">
+        <seg>2piを法とする剰余； &lt;x1/&gt;0 &lt;= mod2pi(x) &lt; 2pi&lt;x2/&gt; </seg>
       </tuv>
     </tu>
     <tu>
@@ -49267,16 +49267,16 @@ end</seg>
       <tuv lang="EN-US">
         <seg>returns &lt;x1/&gt;(div(x,y),rem(x,y))&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095853Z" creationid="hsugawa8651" creationdate="20181118T095853Z">
-        <seg>は&lt;x1/&gt;(div(x,y),rem(x,y))&lt;x2/&gt;を返します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T072624Z" creationid="hsugawa8651" creationdate="20181118T095853Z">
+        <seg>&lt;x1/&gt;(div(x,y),rem(x,y))&lt;x2/&gt; を返す</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>returns &lt;x1/&gt;(fld(x,y),mod(x,y))&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095856Z" creationid="hsugawa8651" creationdate="20181118T095856Z">
-        <seg>&lt;x1/&gt;(fld(x,y),mod(x,y))&lt;x2/&gt;を返します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T072654Z" creationid="hsugawa8651" creationdate="20181118T095856Z">
+        <seg>&lt;x1/&gt;(fld(x,y),mod(x,y)&lt;x2/&gt;)&lt; を返す</seg>
       </tuv>
     </tu>
     <tu>
