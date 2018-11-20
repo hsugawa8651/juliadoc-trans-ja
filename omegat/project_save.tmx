@@ -15886,6 +15886,15 @@ and for &lt;x9/&gt;`BigInt`&lt;x10/&gt; the &lt;x11/&gt;&lt;x12/&gt;&lt;x13/&gt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For
+further discussion of UTF-8 encoding issues, see the section below on &lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;(@ref man-byte-array-literals).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082014Z" creationid="hsugawa8651" creationdate="20181120T082014Z">
+        <seg>UTF-8に関するさらなる議論については、以下の&lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;(@ref man-byte-array-literals)バイト配列リテラル のセクションを参照してください。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For &lt;x1/&gt;AbstractArray&lt;x2/&gt; types, defining a &lt;x3/&gt;BroadcastStyle&lt;x4/&gt; supersedes the fallback choice,
 &lt;x5/&gt;`Broadcast.DefaultArrayStyle`&lt;x6/&gt;.</seg>
       </tuv>
@@ -19084,6 +19093,15 @@ be written in a vectorized style for performance.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In mathematics, &lt;x1/&gt;+&lt;x2/&gt; usually denotes a &lt;x3/&gt;commutative&lt;x4/&gt; operation, where the order of the operands does
+not matter.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082229Z" creationid="hsugawa8651" creationdate="20181120T082229Z">
+        <seg>数学では、&lt;x1/&gt;+&lt;x2/&gt; はしばしば &lt;x3/&gt;commutative&lt;x4/&gt; 可換 演算（被演算子の順番が関係ない演算）を表します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In more complex cases, resolving method ambiguities involves a certain
 element of design; this topic is explored further &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-method-design-ambiguities).</seg>
       </tuv>
@@ -20791,6 +20809,14 @@ native integer types respectively:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032727Z" creationid="hsugawa8651" creationdate="20181112T110348Z">
         <seg>Juliaは、システムの符号つきまたは符号なしの固有の整数型のエイリアスである &lt;x1/&gt;Int&lt;x2/&gt; および &lt;x3/&gt;UInt&lt;x4/&gt; 型を定義します。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia also provides &lt;x1/&gt;*&lt;x2/&gt; for string concatenation:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082115Z" creationid="hsugawa8651" creationdate="20181120T082115Z">
+        <seg>Juliaは &lt;x1/&gt;*&lt;x2/&gt; も文字列連結の記述として提供しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23188,6 +23214,14 @@ like this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112136Z" creationid="hsugawa8651" creationdate="20181112T112126Z">
         <seg>&lt;x1/&gt;HasLength()&lt;x2/&gt;の一つ、&lt;x3/&gt;HasShape{N}()&lt;x4/&gt;、&lt;x5/&gt;IsInfinite()&lt;x6/&gt;、必要に応じて&lt;x8/&gt;、&lt;x8/&gt;SizeUnknown()&lt;x8/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One of the most common and useful string operations is concatenation:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082038Z" creationid="hsugawa8651" creationdate="20181120T082038Z">
+        <seg>最も一般的で便利な文字列操作の一つが連結です。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -26079,6 +26113,15 @@ is only defined for pairs of numbers.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121152Z" creationid="hsugawa8651" creationdate="20181118T121152Z">
         <seg>&lt;x10/&gt;Zebra&lt;x11/&gt;パッケージは、マニフェスト・ファイルに明示的な依存関係として表示されるパッケージ(&lt;x12/&gt;Pub&lt;x13/&gt;パッケージおよび&lt;x14/&gt;Priv&lt;x15/&gt;パッケージの一つ)でのみロードできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x10/&gt;`transcode()`&lt;x11/&gt; function is provided to convert data between the various UTF-xx encodings,
+primarily for working with external data and libraries.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082026Z" creationid="hsugawa8651" creationdate="20181120T082026Z">
+        <seg>&lt;x10/&gt;`transcode()`&lt;x11/&gt; 関数は、主に外部データやライブラリを扱うために、様々なUTF-xxエンコーディング間のデータ変換を提供します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -31929,6 +31972,15 @@ on your terminal's locale settings and its support for Unicode.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121303Z" creationid="hsugawa8651" creationdate="20181118T121303Z">
         <seg>依存性として互いに「見える」パッケージは、プロジェクトファイルがプロジェクトファイルを含んでいるかどうかに依存しているか、それらがプロジェクトファイルの&lt;x9/&gt;[deps]&lt;x10/&gt;セクションに表示されるかによって異なります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>While &lt;x1/&gt;*&lt;x2/&gt; may seem like a surprising choice to users of languages that provide &lt;x3/&gt;+&lt;x4/&gt; for string
+concatenation, this use of &lt;x5/&gt;*&lt;x6/&gt; has precedent in mathematics, particularly in abstract algebra.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082206Z" creationid="hsugawa8651" creationdate="20181120T082206Z">
+        <seg>&lt;x3/&gt;+&lt;x4/&gt; を文字列連結の記述としている言語の使用者にとっては Juliaが&lt;x1/&gt;*&lt;x2/&gt; をそれとするのは奇抜に見えるかもしれませんが、 この &lt;x5/&gt;*&lt;x6/&gt;の使われ方は数学、特に抽象代数学においては一般的です。</seg>
       </tuv>
     </tu>
     <tu>
