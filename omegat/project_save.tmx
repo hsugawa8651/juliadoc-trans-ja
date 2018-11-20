@@ -1876,6 +1876,15 @@ be inlined and thus may have even less overhead than calls to shared library fun
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(Note, in this and all following examples it is assumed that their top-level is a global scope
+with a clean workspace, for instance a newly started REPL.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141412Z" creationid="hsugawa8651" creationdate="20181120T141412Z">
+        <seg>（この例と以下のすべては、トップレベルが、新規に起動されたREPLなどの、クリーンなワークスペースを持つグローバルスコープであると想定しています）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(The &lt;x1/&gt;Clang package&lt;x2/&gt; can be used to auto-generate
 Julia code from a C header file.)</seg>
       </tuv>
@@ -8686,6 +8695,15 @@ functions, functions in the Julia runtime, or functions in an application linked
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A local scope &lt;x1/&gt;usually&lt;x2/&gt; inherits all the variables from its parent scope, both for reading and
+writing.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141314Z" creationid="hsugawa8651" creationdate="20181120T141314Z">
+        <seg>ローカルスコープは、通常は、読取・書込ともに、親スコープのすべての変数を受け継いでいます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A logical index
 must be a vector of the same length as the dimension it indexes into, or it
 must be the only index provided and match the size and dimensionality of the
@@ -8729,6 +8747,23 @@ transiently represented by &lt;x9/&gt;Broadcasted(+, 5, Broadcasted(*, 2, x))&lt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131520Z" creationid="hsugawa8651" creationdate="20181113T131520Z">
         <seg>ネストされたツリー &lt;x5/&gt;ブロードキャスト&lt;x6/&gt;コンテナは、暗黙的なドット構文によって構成されます。&lt;x7/&gt;5.+2.*x&lt;x8/&gt;は &lt;x9/&gt;ブロードキャスト(+,5,ブロードキャスト(*, 2, x))&lt;x10/&gt;などによって一時的に表現される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A new local scope is introduced by most code-blocks, see above table for a complete list.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141305Z" creationid="hsugawa8651" creationdate="20181120T141305Z">
+        <seg>ほとんどのコードブロックは、新しいローカルスコープを導入します。上記の表を参照してください。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A newly introduced
+variable in a local scope does not back-propagate to its parent scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141356Z" creationid="hsugawa8651" creationdate="20181120T141356Z">
+        <seg> ローカルスコープ内に新しく導入された変数は、その親スコープに逆伝播しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15353,6 +15388,15 @@ takes the form &lt;x10/&gt;[count*][user@]host[:port] [bind_addr[:port]]&lt;x11/
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Each module introduces a new global scope&lt;x1/&gt;, separate from the global scope of all other modules;
+there is no all-encompassing global scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141202Z" creationid="hsugawa8651" creationdate="20181120T141202Z">
+        <seg>各モジュールは、それぞれ、他のすべてのモジュールと分離した新しいグローバルスコープを導入します。 すべてを包括するスコープは存在しません。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>EachLine&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041611Z" creationid="hsugawa8651" creationdate="20181112T041611Z">
@@ -16627,6 +16671,15 @@ rather than stored.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, here the
+&lt;x1/&gt;z&lt;x2/&gt; is not introduced into the top-level scope:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141400Z" creationid="hsugawa8651" creationdate="20181120T141400Z">
+        <seg>たとえば、この例の zはトップレベルのスコープには導入されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, if &lt;x1/&gt;A&lt;x2/&gt; is a gigabyte-sized array that you no longer need, you can free the memory
 with &lt;x3/&gt;A = nothing&lt;x4/&gt;.</seg>
       </tuv>
@@ -17578,6 +17631,14 @@ for the key &lt;x13/&gt;x&lt;x14/&gt;).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121135Z" creationid="hsugawa8651" creationdate="20181118T121135Z">
         <seg>この依存性&lt;x1/&gt;グラフ&lt;x2/&gt;を指定すると、&lt;x5/&gt;Pub&lt;x6/&gt;の&lt;x6/&gt;Pub&lt;x6/&gt;パッケージで&lt;x3/&gt;のインポートPriv&lt;x4/&gt;を確認すると、次のようになります。&lt;x8/&gt;c07ecb7d-0dc9-4db7-8803-fadaaeaf08e1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Global Scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141141Z" creationid="hsugawa8651" creationdate="20181120T141141Z">
+        <seg>グローバル　スコープ</seg>
       </tuv>
     </tu>
     <tu>
@@ -22365,6 +22426,14 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Local Scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141251Z" creationid="hsugawa8651" creationdate="20181120T141251Z">
+        <seg>ローカルスコープ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Local Scope&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141016Z" creationid="hsugawa8651" creationdate="20181120T141016Z">
@@ -22631,6 +22700,16 @@ you can redefine types and constants.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024738Z" creationid="hsugawa8651" creationdate="20181110T024738Z">
         <seg>モジュールを再定義すると、モジュールを再定義することができます。したがって、モジュール内の新しいコードをすべてラップすることができます。 タイプと定数を再定義できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Modules can introduce variables of other modules into
+their scope through the &lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref modules) statements or through qualified access using the
+dot-notation, i.e. each module is a so-called &lt;x5/&gt;namespace&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141220Z" creationid="hsugawa8651" creationdate="20181120T141220Z">
+        <seg>モジュールは他のモジュールの変数を自分のスコープに導入できて、[usingまたはimport]（@ ref モジュール）文を使うとモジュール全体の導入、dot表記を使うと限定的な導入になります。 つまり、各モジュールはいわゆる名前空間です。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -23442,6 +23521,14 @@ a 1-tuple containing &lt;x9/&gt;Cstring&lt;x10/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that the interactive prompt (aka REPL) is in the global scope of the module &lt;x1/&gt;Main&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141238Z" creationid="hsugawa8651" creationdate="20181120T141238Z">
+        <seg>対話セッション（別名REPL）は、Mainモジュールのグローバルスコープ内であることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that the set of operations that should not be attempted in a generated function is unbounded,
 and the runtime system can currently only detect a subset of the invalid operations.</seg>
       </tuv>
@@ -23457,6 +23544,15 @@ the &lt;x27/&gt;:&lt;x28/&gt;).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230058Z" creationid="hsugawa8651" creationdate="20181109T230058Z">
         <seg>&lt;x19/&gt;?&lt;x20/&gt;と&lt;X21/&gt;:&lt;x22/&gt;以外のスペースは必須です。式は次のようになります。 &lt;x23/&gt;a?b:c&lt;x24/&gt;は、有効な三元表現ではありません(ただし、&lt;x25/&gt;?&lt;x26/&gt;&lt;x26/&gt;)は、&lt;x25/&gt;?&lt;x26/&gt;と &lt;x27/&gt;:&lt;x28/&gt;)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that variable bindings can only
+be changed within their global scope and not from an outside module.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141225Z" creationid="hsugawa8651" creationdate="20181120T141225Z">
+        <seg>変数の束縛が変更されるのは、モジュール内のグローバルスコープのみで、モジュール外では変わらないことに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28296,6 +28392,14 @@ cause Julia to terminate abruptly.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following rules and examples pertain to both hard and soft local scopes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141348Z" creationid="hsugawa8651" creationdate="20181120T141348Z">
+        <seg>次の規則と例は、ハードローカルスコープとソフトローカルスコープの両方に関連します。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following two types are equivalent -- one with a default constructor,
 the other with an explicit constructor:</seg>
       </tuv>
@@ -30053,6 +30157,15 @@ ways of doing so:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131717Z" creationid="hsugawa8651" creationdate="20181113T131717Z">
         <seg>主に2つの その方法は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are two subtypes of local scopes, hard and soft, with slightly different rules
+concerning what variables are inherited.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141325Z" creationid="hsugawa8651" creationdate="20181120T141325Z">
+        <seg> ローカルスコープにはハードとソフトの2つの派生型があり、どの変数が受け継がれるのか、規則がわずかに異なります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -31825,6 +31938,14 @@ functions can be called directly from Julia without any "glue" code, code genera
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Thus &lt;x1/&gt;lexical scope&lt;x2/&gt; means that the scope of variables can be inferred from the source code alone.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141133Z" creationid="hsugawa8651" creationdate="20181120T141133Z">
+        <seg>このように、レキシカルスコープでは、変数のスコープはソースコードだけで推論できることを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Thus far, we have presented only examples of functions defined
 with a single method, applicable to all types of arguments.</seg>
       </tuv>
@@ -32649,6 +32770,16 @@ letter and does not behave like &lt;x7/&gt;f&lt;x8/&gt; in numeric literals.</se
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134844Z" creationid="hsugawa8651" creationdate="20181119T134844Z">
         <seg>条件式の値が、&lt;c0&gt;true&lt;/c0&gt; か &lt;c1&gt;false&lt;/c1&gt; 以外の値だと、エラーが発生します。 この仕様は、C、MATLAB、PerlやPython、Rubyとは異なりますが、Javaなどの厳格な型付け言語と同等です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike global scopes, local scopes are not namespaces,
+thus variables in an inner scope cannot be retrieved from the parent scope through some sort of
+qualified access.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141339Z" creationid="hsugawa8651" creationdate="20181120T141339Z">
+        <seg>グローバルスコープとは異なり、ローカルスコープは名前空間ではないため、何かしらの限定的なアクセスによって、内側のスコープの変数を親スコープから取り出すことができません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -36122,6 +36253,14 @@ addone(x) = x + oneunit(x)             &lt;x4/&gt; any type supporting + and one
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121138Z" creationid="hsugawa8651" creationdate="20181118T121138Z">
         <seg>&lt;x1/&gt;2d15fe94-a1f7-436c-a4d8-07a9a496e01c&lt;x2/&gt;を取得します。&lt;x3/&gt;Pub&lt;x4/&gt;パッケージのコンテキストでは、&lt;x5/&gt;Import Priv&lt;x6/&gt;は、アプリケーションが直接依存するプライベートではなく、public&lt;x7/&gt;Priv&lt;x8/&gt;パッケージを指します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>and not a &lt;x1/&gt;x&lt;x2/&gt; in the scope where &lt;x3/&gt;foo&lt;x4/&gt; is used:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141123Z" creationid="hsugawa8651" creationdate="20181120T141123Z">
+        <seg>fooが使用されるスコープ内のxを参照するわけではありません:</seg>
       </tuv>
     </tu>
     <tu>
