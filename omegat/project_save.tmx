@@ -13070,11 +13070,28 @@ for its &lt;x1/&gt;obj&lt;x2/&gt; field?</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>But neither you, nor any of your callers, nor the functions they call, or etc.
+can call this new method definition!</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T021006Z" creationid="hsugawa8651" creationdate="20181120T021006Z">
+        <seg>しかし、あなたも、呼ぶ関数からも、呼ばれる関数からも、この新しいメソッド定義を呼び出すことはできません！ [訳注:この文の前後は意味がとれませんでした。]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>But that approach requires you to decide in advance
 which functions you want to vectorize.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120112Z" creationid="hsugawa8651" creationdate="20181118T120112Z">
         <seg>しかしこのアプローチでは事前に決定する必要があります はベクトル化されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>But there's an exception: future calls to &lt;x1/&gt;newfun&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T021021Z" creationid="hsugawa8651" creationdate="20181120T021021Z">
+        <seg>しかし、例外はあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17383,6 +17400,15 @@ mutable arrays should also implement &lt;x14/&gt;`setindex!`&lt;x15/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, future calls to &lt;x1/&gt;tryeval&lt;x2/&gt; will continue to see the definition of &lt;x3/&gt;newfun&lt;x4/&gt; as it was
+&lt;x5/&gt;at the previous statement at the REPL&lt;x6/&gt;, and thus before that call to &lt;x7/&gt;tryeval&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T021048Z" creationid="hsugawa8651" creationdate="20181120T021048Z">
+        <seg>しかし、tryevalへの今後の呼び出しが、参照し続けるnewfunの定義は、次回tryevalを呼び出すまではREPLで前回行ったものです。前回のtryevalの呼び出しも同様だったのです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, if needed you can specialize on any or all of these arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131338Z" creationid="hsugawa8651" creationdate="20181113T131338Z">
@@ -19240,6 +19266,15 @@ language features (e.g. only &lt;x11/&gt;character(len=1)&lt;x12/&gt; will be pe
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this example, observe that the new definition for &lt;x1/&gt;newfun&lt;x2/&gt; has been created,
+but can't be immediately called.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020936Z" creationid="hsugawa8651" creationdate="20181120T020936Z">
+        <seg>この例では、newfunの新しい定義は作成されましたが、すぐには呼び出せないことに注意してください。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In this example, the tuple &lt;x1/&gt;(1,2,3)&lt;x2/&gt; is interpolated as an expression into a conditional test:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115422Z" creationid="hsugawa8651" creationdate="20181118T115422Z">
@@ -19321,6 +19356,15 @@ index of dimension &lt;x9/&gt;k&lt;x10/&gt; by &lt;x11/&gt;1&lt;x12/&gt; should 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160502Z" creationid="hsugawa8651" creationdate="20181109T160502Z">
         <seg>増加 &lt;x11/&gt;1&lt;x12/&gt;&lt;x12/&gt;の寸法&lt;x9/&gt;k&lt;x10/&gt;は、&lt;x15/&gt;'getindex(A,i)'&lt;x15/&gt;のインデックス&lt;x13/&gt;i&lt;x14/&gt;を増加させます。 &lt;x17/&gt;`stride(A,k)`&lt;x18/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Indeed, any new method definition won't be visible to the current runtime environment,
+including Tasks and Threads (and any previously defined &lt;x1/&gt;@generated&lt;x2/&gt; functions).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020909Z" creationid="hsugawa8651" creationdate="20181120T020909Z">
+        <seg>実際、新しいメソッド定義は、タスクおよびスレッド（およびそれ以前に定義された@generated関数）を含め、現在の実行時環境ではまったく見えません。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -20935,6 +20979,14 @@ integer literals and engineering notation for floating-point literals.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Let's start with an example to see what this means:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020922Z" creationid="hsugawa8651" creationdate="20181120T020922Z">
+        <seg>これが何を意味するかを例をあげて見てみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Libc.MS_ASYNC&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043203Z" creationid="hsugawa8651" creationdate="20181112T043203Z">
@@ -21644,6 +21696,15 @@ of its iterables:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124530Z" creationid="hsugawa8651" creationdate="20181118T124530Z">
         <seg>&lt;x2/&gt;ループに対して複数のネストされた&lt;x1/&gt;は、単一の外側ループに結合され、デカルト積を形成することができる。 次のように表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Multiple parameters can be separated with commas, e.g. &lt;x7/&gt;where {T, S&lt;:Real}&lt;x8/&gt;, or written using
+nested &lt;x9/&gt;where&lt;x10/&gt;, e.g. &lt;x11/&gt;where S&lt;:Real where T&lt;x12/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020821Z" creationid="hsugawa8651" creationdate="20181120T020821Z">
+        <seg>複数のパラメータは、例えば、カンマで区切ったり(例where {T, S&lt;:Real})、またはネストされたwhereを使ったりして記述されます。（例where S&lt;:Real where T）</seg>
       </tuv>
     </tu>
     <tu>
@@ -26600,6 +26661,15 @@ of a mathematical operator generally depends on the types of all of its argument
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The implementation of this behavior is a "world age counter".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T021113Z" creationid="hsugawa8651" creationdate="20181120T021113Z">
+        <seg>この行動の実装は「世界の世代のカウンター」です。
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The import mechanism allows you to load a package—i.e. an independent, reusable collection of Julia code, wrapped in a module—and makes the resulting module available by the name &lt;x6/&gt;X&lt;x7/&gt; inside of the importing module.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152737Z" creationid="hsugawa8651" creationdate="20181117T152737Z">
@@ -26970,6 +27040,15 @@ itself is passed in as the global &lt;x7/&gt;PROGRAM_FILE&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T173607Z" creationid="hsugawa8651" creationdate="20181118T173537Z">
         <seg>スクリプト自体の名前は、グローバルな&lt;c3&gt;PROGRAM_FILE&lt;/c3&gt;として渡されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The new global is immediately visible to the &lt;x3/&gt;tryeval&lt;x4/&gt; function,
+so you could write &lt;x5/&gt;return newfun&lt;x6/&gt; (without parentheses).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020947Z" creationid="hsugawa8651" creationdate="20181120T020947Z">
+        <seg>新しいグローバルな関数はすぐにtryeval関数から見えるので、return newfun（カッコなし）と書くことができます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -29082,6 +29161,15 @@ has a special argument syntax, and is sometimes implied rather than explicitly w
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is key to Julia's ability to statically infer and compile code to run fast,
+without the usual JIT tricks and overhead.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020859Z" creationid="hsugawa8651" creationdate="20181120T020859Z">
+        <seg>これは、Juliaが静的にコードを推論しコンパイルする際に、通常のJITトリックやオーバーヘッドがなくてすむ鍵となります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is referred to as &lt;x5/&gt;quoting&lt;x6/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115338Z" creationid="hsugawa8651" creationdate="20181118T115338Z">
@@ -30832,6 +30920,15 @@ field alignment.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When redefining a method or adding new methods,
+it is important to realize that these changes don't take effect immediately.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020851Z" creationid="hsugawa8651" creationdate="20181120T020851Z">
+        <seg>メソッドの再定義や、新しいメソッドの追加は、その変更が即座に反映されない、という認識は重要です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When resolving the meaning of &lt;x7/&gt;import X&lt;x8/&gt;, &lt;x9/&gt;roots&lt;x10/&gt; and &lt;x11/&gt;graph&lt;x12/&gt; are used to determine the identity of &lt;x13/&gt;X&lt;x14/&gt; and answer the question &lt;x15/&gt;"what is `X`?"&lt;x16/&gt;, while the &lt;x17/&gt;paths&lt;x18/&gt; map is used to locate the source code of &lt;x19/&gt;X&lt;x20/&gt; and answer the question &lt;x21/&gt;"where is `X`?"&lt;x22/&gt; The specific roles of the three maps are:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120951Z" creationid="hsugawa8651" creationdate="20181118T120951Z">
@@ -31396,6 +31493,14 @@ of the &lt;x3/&gt;bar&lt;x4/&gt; and &lt;x5/&gt;baz&lt;x6/&gt; fields:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124617Z" creationid="hsugawa8651" creationdate="20181118T124617Z">
         <seg>次の方法で独自の例外を定義することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You may want to try this for yourself to see how it works.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T021053Z" creationid="hsugawa8651" creationdate="20181120T021053Z">
+        <seg>これがどのように動作するかを見るために自身で試してみたいと思うかもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -34576,6 +34681,15 @@ end
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152608Z" creationid="hsugawa8651" creationdate="20181117T152608Z">
         <seg>返された&lt;x2/&gt;アレイ&lt;x3/&gt;オブジェクトがファイナライズされたときに、フリー(ptr)&lt;x1/&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>from the REPL&lt;x1/&gt; work as expected,
+being able to both see and call the new definition of &lt;x2/&gt;newfun&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T021034Z" creationid="hsugawa8651" creationdate="20181120T021034Z">
+        <seg>newfunへの REPLからの今後の呼び出しは、期待通りに動作し、newfunの新しい定義を参照して呼び出すことができます。</seg>
       </tuv>
     </tu>
     <tu>
