@@ -15957,6 +15957,15 @@ and for &lt;x9/&gt;`BigInt`&lt;x10/&gt; the &lt;x11/&gt;&lt;x12/&gt;&lt;x13/&gt;
     <tu>
       <tuv lang="EN-US">
         <seg>For
+example:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083236Z" creationid="hsugawa8651" creationdate="20181120T083236Z">
+        <seg>例えば:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For
 further discussion of UTF-8 encoding issues, see the section below on &lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;(@ref man-byte-array-literals).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082014Z" creationid="hsugawa8651" creationdate="20181120T082014Z">
@@ -29378,8 +29387,8 @@ can be seen using the &lt;x3/&gt;bits&lt;x4/&gt; function: :</seg>
         <seg>They can
 contain &lt;x1/&gt;"&lt;x2/&gt; symbols without escaping.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083214Z" creationid="hsugawa8651" creationdate="20181120T083214Z">
-        <seg>これらはエスケープなしで　" 記号を含めることができます。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083528Z" creationid="hsugawa8651" creationdate="20181120T083214Z">
+        <seg>これらはエスケープなしで　&lt;x1/&gt;"&lt;x2/&gt; 記号を含めることができます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -30097,8 +30106,8 @@ Python, Ruby and Perl, among other dynamic languages.</seg>
       <tuv lang="EN-US">
         <seg>This is useful for defining strings within code that is indented.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083228Z" creationid="hsugawa8651" creationdate="20181120T083228Z">
-        <seg>れはインデントされたコード内 の文字列を定義するのに便利です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083239Z" creationid="hsugawa8651" creationdate="20181120T083228Z">
+        <seg>これはインデントされたコード内 の文字列を定義するのに便利です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -31122,8 +31131,8 @@ functions.</seg>
         <seg>Triple-quoted strings are also dedented to the level of
 the least-indented line.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083221Z" creationid="hsugawa8651" creationdate="20181120T083221Z">
-        <seg>3つのダブルクオーテーションで囲まれた文字列は、最もインデントされていない行合わせでインデントします。こ</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083319Z" creationid="hsugawa8651" creationdate="20181120T083221Z">
+        <seg>3つのダブルクオーテーションで囲まれた文字列は、最もインデントされていない行合わせでインデントします。</seg>
       </tuv>
     </tu>
     <tu>
