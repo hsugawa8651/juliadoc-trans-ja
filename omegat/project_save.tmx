@@ -12791,8 +12791,8 @@ they are equivalent to &lt;x3/&gt;broadcast&lt;x4/&gt; calls and are fused with 
       <tuv lang="EN-US">
         <seg>Binary and octal literals are also supported:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225352Z" creationid="hsugawa8651" creationdate="20181109T225352Z">
-        <seg>バイナリリテラルと8進数リテラルもサポートされています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032904Z" creationid="hsugawa8651" creationdate="20181109T225352Z">
+        <seg>2進および8進リテラルについてもサポートされています。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -23615,8 +23615,8 @@ return value, or throws an exception if no appropriate value can be returned.</s
         <seg>Recall that the variable &lt;x1/&gt;`ans`&lt;x2/&gt; is set to the value of the last expression evaluated in
 an interactive session.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225338Z" creationid="hsugawa8651" creationdate="20181109T225338Z">
-        <seg>変数&lt;x1/&gt;`は、最後に評価された最後の式の値に設定されていることを思い出してください。 対話型セッションです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032916Z" creationid="hsugawa8651" creationdate="20181109T225338Z">
+        <seg>前述の通り、変数 &lt;x1/&gt;ans&lt;x2/&gt; は対話セッションで最後に出力された式の値がセットされます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -27133,8 +27133,8 @@ were written as &lt;x1/&gt;v(1) &lt; v(2) &amp;&amp; v(2) &lt;= v(3)&lt;x2/&gt;.
         <seg>The minimum and maximum representable values of primitive numeric types such as integers are given
 by the &lt;x1/&gt;`typemin()`&lt;x2/&gt; and &lt;x3/&gt;`typemax()`&lt;x4/&gt; functions:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235025Z" creationid="hsugawa8651" creationdate="20181119T235025Z">
-        <seg>整数などのプリミティブ数値型の最小および最大表現可能値を指定します。 &lt;x1/&gt;`typemin()`&lt;x2/&gt; および&lt;x3/&gt;`typemax()`&lt;x4/&gt; 関数:</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032958Z" creationid="hsugawa8651" creationdate="20181119T235025Z">
+        <seg>整数のような数値プリミティブ型の最小値と最大値は、 &lt;x1/&gt;`typemin()`&lt;x2/&gt; および&lt;x3/&gt;`typemax()`&lt;x4/&gt;関数により取得が可能です。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -27766,8 +27766,8 @@ of the binary data item is the minimal needed size, if the leading digit of the 
         <seg>The size of the unsigned value is
 determined by the number of hex digits used:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110409Z" creationid="hsugawa8651" creationdate="20181112T110409Z">
-        <seg>符号なし値のサイズは 使用される16進数の数によって決定されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032822Z" creationid="hsugawa8651" creationdate="20181112T110409Z">
+        <seg>符号なしの値の大きさは、使用されている16進数の桁数により決定されます。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -28119,8 +28119,8 @@ is the last expression in the body of the function definition.</seg>
         <seg>The values returned by &lt;x1/&gt;`typemin()`&lt;x2/&gt; and &lt;x3/&gt;`typemax()`&lt;x4/&gt; are always of the given argument
 type.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235118Z" creationid="hsugawa8651" creationdate="20181119T235118Z">
-        <seg>&lt;x1/&gt;typemin&lt;x2/&gt;と&lt;x3/&gt;typemax&lt;x4/&gt;は常に与えられた引数の型である。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033035Z" creationid="hsugawa8651" creationdate="20181119T235118Z">
+        <seg>&lt;x1/&gt;`typemin()`&lt;x2/&gt; および &lt;x3/&gt;`typemax()`&lt;x4/&gt;  の戻り値は常に指定された引数の型となります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -28899,8 +28899,10 @@ commonly passed in registers when using C or Julia calling conventions.</seg>
 values, one typically is using them to represent a fixed numeric byte sequence, rather than just
 an integer value.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225343Z" creationid="hsugawa8651" creationdate="20181109T225343Z">
-        <seg>この動作は、整数に対して符号なしの16進数のリテラルを使用する場合の観察結果に基づいています。 値は通常、固定された数値バイトシーケンスを表すために使用されます。 整数値。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032841Z" creationid="hsugawa8651" creationdate="20181109T225343Z">
+        <seg>この動作は、整数値に符号なし16進リテラルを使用する際、ただの整数ではなく、 通常固定された数値のバイト列を表すという傾向に基づいています。
+
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -29094,8 +29096,8 @@ inner constructor method.</seg>
       <tuv lang="EN-US">
         <seg>This does not occur when Julia code is run in other ways.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225348Z" creationid="hsugawa8651" creationdate="20181109T225348Z">
-        <seg>これは、Juliaコードが他の方法で実行されている場合には発生しません。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032923Z" creationid="hsugawa8651" creationdate="20181109T225348Z">
+        <seg>この処理は、Juliaコードがその他の方法で実行された場合には実施されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30587,8 +30589,8 @@ are not possible in the translation to Julia.</seg>
         <seg>Unsigned integers are input and output using the &lt;x1/&gt;0x&lt;x2/&gt; prefix and hexadecimal (base 16) digits
 &lt;x3/&gt;0-9a-f&lt;x4/&gt; (the capitalized digits &lt;x5/&gt;A-F&lt;x6/&gt; also work for input).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225306Z" creationid="hsugawa8651" creationdate="20181109T225306Z">
-        <seg>符号なし整数は、&lt;x1/&gt;0x&lt;x2/&gt;プレフィックスおよび16進数(base16)桁を使用して入力および出力されます。 &lt;x3/&gt;0 9a f&lt;x4/&gt;(大文字の数字&lt;x5/&gt;A-F&lt;x6/&gt;も入力に有効です)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032817Z" creationid="hsugawa8651" creationdate="20181109T225306Z">
+        <seg>符号なし整数は、 &lt;x1/&gt;0x&lt;x2/&gt; プレフィックスおよび16進数の &lt;x3/&gt;0-9a-f &lt;x4/&gt;（大文字の &lt;x5/&gt;A-F&lt;x6/&gt; は入力時のみ使用可能）を 使用して入力および出力されます。</seg>
       </tuv>
     </tu>
     <tu>
