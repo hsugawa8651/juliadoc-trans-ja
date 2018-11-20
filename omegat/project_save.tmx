@@ -1730,6 +1730,15 @@ be accessed in a fusing fashion by &lt;x9/&gt;.=&lt;x10/&gt; assignment). In fac
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(A &lt;x7/&gt;`transcode()`&lt;x8/&gt; function is
+provided to convert to/from other Unicode encodings.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075740Z" creationid="hsugawa8651" creationdate="20181120T075740Z">
+        <seg>(Unicodeエンコードの変換を行うために &lt;x7/&gt;`transcode()`&lt;x8/&gt; 関数が 提供されていす。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(Again, one should
 &lt;x7/&gt;import Base.display&lt;x8/&gt; to add new methods to &lt;x9/&gt;display&lt;x10/&gt;.) The return values of these functions are
 up to the implementation (since in some cases it may be useful to return a display "handle" of
@@ -14724,6 +14733,16 @@ manner that allows all custom arrays to behave similarly.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Depending on your needs, you can either ignore these complexities
+entirely and just pretend that only ASCII characters exist, or you can write code that can handle
+any of the characters or encodings that one may encounter when handling non-ASCII text.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075640Z" creationid="hsugawa8651" creationdate="20181120T075640Z">
+        <seg>あなたの必要に応じて、これらの複雑な問題を気にせずASCII文字だけを使用したり、非ASCIIテキストを扱う際に 見かける様々な文字やエンコードを使用したコードを書くことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Dequeues</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041832Z" creationid="hsugawa8651" creationdate="20181112T041832Z">
@@ -18132,6 +18151,16 @@ should be used explicitly (see &lt;x5/&gt;Short-Circuit Evaluation&lt;x6/&gt;).<
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If such code encounters
+non-ASCII text, it will gracefully fail with a clear error message, rather than silently introducing
+corrupt results.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075532Z" creationid="hsugawa8651" creationdate="20181120T075532Z">
+        <seg> JuliaはASCII以外のテキストが検出された場合、エラーをただ出力するのではなく、明確なエラーメッセージを出力して処理を終了します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the
 &lt;x4/&gt;own&lt;x5/&gt; parameter is omitted or false, the caller must ensure the buffer remains in existence until
 all access is complete.</seg>
@@ -19007,6 +19036,15 @@ farther away from zero.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121016Z" creationid="hsugawa8651" creationdate="20181118T121016Z">
         <seg>特に、&lt;x17/&gt;インポートX&lt;x18/&gt;は、&lt;x19/&gt;コンテキスト&lt;x20/&gt;に応じて異なるパッケージを参照することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In particular, you can write C-style string code to process ASCII strings,
+and they will work as expected, both in terms of performance and semantics.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075521Z" creationid="hsugawa8651" creationdate="20181120T075521Z">
+        <seg>特に、ASCIIの文字列を処理するためにC言語スタイルに文字列コードを書くことができ、パフォーマンスと乞うっ文的な意味の両面で期待通りの動作をします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20472,6 +20510,16 @@ by the global state of the program.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025452Z" creationid="hsugawa8651" creationdate="20181110T025452Z">
         <seg>ジュリア 関数は純粋な数学的関数ではなく、関数が変更され、影響を受けることがあるという意味では プログラムの世界的な状態です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia
+makes dealing with plain ASCII text simple and efficient, and handling Unicode is as simple and
+efficient as possible.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075510Z" creationid="hsugawa8651" creationdate="20181120T075510Z">
+        <seg>JuliaはASCIIテキストの取り扱いをシンプルかつ効率的にし、Unicodeの取り扱いも同様に可能な限りシンプル かつ効率的にします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26161,6 +26209,14 @@ below all interrupt the normal flow of control.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The built-in concrete type used for strings (and string literals) in Julia is &lt;x1/&gt;`String`&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075717Z" creationid="hsugawa8651" creationdate="20181120T075717Z">
+        <seg>Juliaにおける文字列を扱うビルトインの型は&lt;x1/&gt;`String`&lt;x2/&gt;です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The built-in fallback &lt;x17/&gt;broadcast&lt;x18/&gt; and
 &lt;x19/&gt;broadcast!&lt;x20/&gt; methods similarly construct a transient &lt;x21/&gt;Broadcasted&lt;x22/&gt; representation of the operation
 so they can follow the same codepath.</seg>
@@ -28347,6 +28403,14 @@ collection.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are a few noteworthy high-level features about Julia's strings:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075656Z" creationid="hsugawa8651" creationdate="20181120T075656Z">
+        <seg>Juliaには、文字列に関係する特筆すべき高度な機能があります：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are currently four sorting algorithms available in base Julia:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064002Z" creationid="hsugawa8651" creationdate="20181114T064002Z">
@@ -28638,6 +28702,15 @@ and the point specified by its arguments, interpreted as &lt;x7/&gt;x&lt;x8/&gt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033941Z" creationid="hsugawa8651" creationdate="20181119T033832Z">
         <seg>これらの関数は、関数が呼び出された際に戻り値を返すだけでなく引数に変更を加えるため、「mutating」または「in-place」と呼ばれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These characters are standardized
+together with a mapping to integer values between 0 and 127 by the &lt;x7/&gt;ASCII&lt;x8/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075450Z" creationid="hsugawa8651" creationdate="20181120T075450Z">
+        <seg>これらの文字は、ASCII 規格 において、0から127の番号をそれぞれ割り振られて標準化されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29849,6 +29922,15 @@ programs in more ways, and since normal code is more readable than code-generati
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This supports the full range of &lt;x3/&gt;Unicode&lt;x4/&gt; characters via
+the &lt;x5/&gt;UTF-8&lt;x6/&gt; encoding.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075727Z" creationid="hsugawa8651" creationdate="20181120T075727Z">
+        <seg>これは、UTF-8 エンコーディング下で 全ての Unicode をサポートします。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This syntax is particularly useful with the terse single-line function definition form introduced
 in &lt;x1/&gt;Functions&lt;x2/&gt;.</seg>
       </tuv>
@@ -30633,6 +30715,16 @@ arguments, but with generated functions this is impossible.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Unicode&lt;x1/&gt; standard
+tackles the complexities of what exactly a character is, and is generally accepted as the definitive
+standard addressing this problem.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075628Z" creationid="hsugawa8651" creationdate="20181120T075628Z">
+        <seg> Unicode 規格は、ある文字が一体何なのかという複雑な問題に取り組んでおり、また、 この問題に対処する決定的な規格として一般的に認識されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Union type of &lt;a0&gt;&lt;c1&gt;Vector{T}&lt;/c1&gt;&lt;/a0&gt; and &lt;a2&gt;&lt;c3&gt;Matrix{T}&lt;/c3&gt;&lt;/a2&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131316Z" creationid="hsugawa8651" creationdate="20181119T131316Z">
@@ -31316,6 +31408,14 @@ arguments with matching type may be given to the generic &lt;x15/&gt;Point&lt;x1
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123854Z" creationid="hsugawa8651" creationdate="20181118T123854Z">
         <seg>タイプが暗黙の場合 &lt;x11/&gt;Point(1,2)&lt;x12/&gt;のようにコンストラクタ呼び出しの引数によって、次のように入力されます。 引数は一致する必要があります。そうでない場合は、&lt;x13/&gt;T&lt;x14/&gt;を指定できませんが、実数のペアはすべて指定されています。 一般的な&lt;x15/&gt;Point&lt;x16/&gt;コンストラクタには、一致するタイプの引数を指定することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When this happens, modifying the code to handle non-ASCII data is straightforward.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075603Z" creationid="hsugawa8651" creationdate="20181120T075603Z">
+        <seg>この場合、非ASCIIデータを処理できるように 修正することは簡単です。</seg>
       </tuv>
     </tu>
     <tu>
