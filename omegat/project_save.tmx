@@ -13435,8 +13435,8 @@ can call this new method definition!</seg>
         <seg>But that approach requires you to decide in advance
 which functions you want to vectorize.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120112Z" creationid="hsugawa8651" creationdate="20181118T120112Z">
-        <seg>しかしこのアプローチでは事前に決定する必要があります はベクトル化されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134845Z" creationid="hsugawa8651" creationdate="20181118T120112Z">
+        <seg>しかし、こういった手法では、事前にどの関数をベクトル化するかを決める必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16332,8 +16332,8 @@ signature for Windows:</seg>
       <tuv lang="EN-US">
         <seg>For example &lt;x18/&gt;sin&lt;x19/&gt; can be applied to all elements in the vector &lt;x20/&gt;A&lt;x21/&gt;, like so:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120102Z" creationid="hsugawa8651" creationdate="20181118T120102Z">
-        <seg>たとえば、&lt;x18/&gt;sin&lt;x19/&gt;は、&lt;x20/&gt;A&lt;X21/&gt;のベクトル&lt;x20/&gt;のすべての要素に適用できます。これは、次のようになります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134820Z" creationid="hsugawa8651" creationdate="20181118T120102Z">
+        <seg>例えば、ベクトル&lt;x20/&gt;A&lt;x21/&gt;のすべての要素に&lt;x18/&gt;sin&lt;x19/&gt;関数を適用することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22584,8 +22584,8 @@ can be found within the &lt;x25/&gt;&lt;x26/&gt;&lt;x27/&gt;(@ref man-interface-
 you to operate on multiple arrays (even of different shapes), or a mix of arrays and scalars (see
 &lt;x5/&gt;Broadcasting&lt;x6/&gt;).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120117Z" creationid="hsugawa8651" creationdate="20181118T120117Z">
-        <seg>より一般的には、&lt;x1/&gt;f.(args.…)&lt;x2/&gt;は、実際には&lt;x3/&gt;ブロードキャスト(f、args.…)&lt;x4/&gt;と同等であり、これにより 複数の配列(異なる形状であっても)を操作したり、配列とスカラーを混在させたりすることができます( &lt;x5/&gt;ブロードキャスト&lt;x6/&gt;)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T135024Z" creationid="hsugawa8651" creationdate="20181118T120117Z">
+        <seg>さらに、大概の場合は、&lt;x1/&gt;f.(args...)&lt;x2/&gt; と &lt;x3/&gt;broadcast(f, args...)&lt;x4/&gt;は実質的に同等であり、複数の配列(形が違っていてもかまいません)の場合や、配列とスカラーを混合した場合(ブロードキャスト&lt;x5/&gt;Broadcasting&lt;x6/&gt;参照)も操作可能です。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -23690,8 +23690,8 @@ a character is.</seg>
         <seg>Of course, you can omit the dot if you write a specialized "vector" method of &lt;x1/&gt;f&lt;x2/&gt;, e.g. via &lt;x3/&gt;f(A::AbstractArray) = map(f, A)&lt;x4/&gt;,
 and this is just as efficient as &lt;x5/&gt;f.(A)&lt;x6/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120109Z" creationid="hsugawa8651" creationdate="20181118T120109Z">
-        <seg>もちろん、&lt;x1/&gt;f&lt;x2/&gt;の特殊な「ベクトル」方式を書く場合は、例えば&lt;x3/&gt;f(A::AbstractArray)=map(f, A)&lt;x4/&gt;を使ってドットを省略することができます。 これは、&lt;x5/&gt;f.(A)&lt;x6/&gt;と同じくらい効率的です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134927Z" creationid="hsugawa8651" creationdate="20181118T120109Z">
+        <seg>もちろん、"ベクトル版"のメソッド &lt;x1/&gt;f&lt;x2/&gt;を &lt;x3/&gt;f(A::AbstractArray) = map(f, A)&lt;x4/&gt;のようにわざわざ書けば、dotを省略することもできます。この場合、効率は　&lt;x5/&gt;f.(A)&lt;x6/&gt;という書き方と変わりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29982,8 +29982,8 @@ instances of the type &lt;x13/&gt;SummedArray{Int32,Int32}&lt;x14/&gt;.</seg>
         <seg>Therefore, &lt;x12/&gt;any&lt;x13/&gt; Julia function
 &lt;x14/&gt;f&lt;x15/&gt; can be applied elementwise to any array (or other collection) with the syntax &lt;x16/&gt;f.(A)&lt;x17/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120059Z" creationid="hsugawa8651" creationdate="20181118T120059Z">
-        <seg>したがって、&lt;x12/&gt;任意の&lt;x13/&gt;ジュリア関数です。 &lt;x14/&gt;f&lt;x15/&gt;は、&lt;x16/&gt;f.(A)&lt;x17/&gt;という構文を持つ任意の配列(またはその他のコレクション)に対して、要素ごとに適用することができます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134747Z" creationid="hsugawa8651" creationdate="20181118T120059Z">
+        <seg>Juliaでは &lt;x12/&gt;すべての&lt;x13/&gt; 関数 &lt;x14/&gt;f&lt;x15/&gt; に対して、配列（その他のコレクション)の各要素に適用する &lt;x16/&gt;f.(A)&lt;x17/&gt; という構文が用意されています。 </seg>
       </tuv>
     </tu>
     <tu>
