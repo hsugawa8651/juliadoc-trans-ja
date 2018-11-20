@@ -9089,8 +9089,8 @@ it also handles tuples and treats any argument that is not an array, tuple or &l
         <seg>Additionally, &lt;x1/&gt;`sinpi(x)`&lt;x2/&gt; and &lt;x3/&gt;`cospi(x)`&lt;x4/&gt; are provided for more accurate computations
 of &lt;x5/&gt;`sin(pi*x)`&lt;x6/&gt; and &lt;x7/&gt;`cos(pi*x)`&lt;x8/&gt; respectively.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100122Z" creationid="hsugawa8651" creationdate="20181118T100122Z">
-        <seg>さらに、より正確な計算のために、&lt;x1/&gt;`sinpi(x)'&lt;x2/&gt;および&lt;x3/&gt;"co-spi(x)"&lt;x4/&gt;が提供される。 &lt;x5/&gt;'sin(pi*x)'&lt;x6/&gt;'cos(pi*x)'&lt;x8/&gt;'&lt;x8/&gt;のそれぞれ。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074626Z" creationid="hsugawa8651" creationdate="20181118T100122Z">
+        <seg>さらに、&lt;x1/&gt;`sinpi(x)`&lt;x2/&gt; および&lt;x3/&gt;`cospi(x)`&lt;x4/&gt;は、より正確な &lt;x5/&gt;`sin(pi*x)`&lt;x6/&gt; および &lt;x7/&gt;`cos(pi*x)`&lt;x8/&gt;の計算のために提供されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16055,8 +16055,8 @@ library module, only supports two dimensions, so it just defines
       <tuv lang="EN-US">
         <seg>For example, &lt;x3/&gt;`sind(x)`&lt;x4/&gt; computes the sine of &lt;x5/&gt;x&lt;x6/&gt; where &lt;x7/&gt;x&lt;x8/&gt; is specified in degrees.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100127Z" creationid="hsugawa8651" creationdate="20181118T100127Z">
-        <seg>例えば、&lt;x3/&gt;'sind(x)&lt;x6/&gt;は&lt;x5/&gt;x&lt;x6/&gt;の正弦を計算し、&lt;x7/&gt;x&lt;x8/&gt;は度で指定される。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074709Z" creationid="hsugawa8651" creationdate="20181118T100127Z">
+        <seg>例えば、&lt;x3/&gt;`sind(x)`&lt;x4/&gt; は、角度で指定された &lt;x7/&gt;x&lt;x8/&gt;  の正弦を計算します。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -18868,8 +18868,8 @@ element of design; this topic is explored further &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&
         <seg>In order to compute trigonometric functions with degrees instead of radians, suffix the function
 with &lt;x1/&gt;d&lt;x2/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100125Z" creationid="hsugawa8651" creationdate="20181118T100125Z">
-        <seg>ラジアンではなく度で三角関数を計算するには、関数をサフィックスします。 &lt;x1/&gt;d&lt;x2/&gt;である。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074644Z" creationid="hsugawa8651" creationdate="20181118T100125Z">
+        <seg>ラジアンではなく角度で三角関数を計算するためには、 &lt;x1/&gt;d&lt;x2/&gt; を関数の末尾に付与してください。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -26216,8 +26216,8 @@ implementation instead.</seg>
       <tuv lang="EN-US">
         <seg>The complete list of trigonometric functions with degree variants is:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100128Z" creationid="hsugawa8651" creationdate="20181118T100128Z">
-        <seg>次数の変数を持つ三角関数の完全なリストは次のとおりです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074656Z" creationid="hsugawa8651" creationdate="20181118T100128Z">
+        <seg>角度で計算できる三角関数のリストは以下の通りです。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -28570,6 +28570,16 @@ corresponding to a traditional &lt;x3/&gt;`atan2`&lt;x4/&gt; function.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100119Z" creationid="hsugawa8651" creationdate="20181118T100119Z">
         <seg>これらはすべて単一引数関数であり、&lt;x1/&gt;`atan'&lt;x2/&gt;は2つの引数を受け入れます。 これは従来の&lt;x3/&gt;atan2&lt;x4/&gt;関数に対応しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These are all single-argument functions, with the exception of &lt;x1/&gt;atan2&lt;x2/&gt;,
+which gives the angle in &lt;x3/&gt;radians&lt;x4/&gt; between the &lt;x5/&gt;x&lt;x6/&gt;-axis
+and the point specified by its arguments, interpreted as &lt;x7/&gt;x&lt;x8/&gt; and &lt;x9/&gt;y&lt;x10/&gt; coordinates.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074543Z" creationid="hsugawa8651" creationdate="20181120T074543Z">
+        <seg>これらはすべて引数が1つの関数ですが、 &lt;x1/&gt;atan2&lt;x2/&gt;は例外で、角度を&lt;x5/&gt;x&lt;x6/&gt;軸と引数で 指定された点の &lt;x3/&gt;ラジアン&lt;x4/&gt; で表し、&lt;x7/&gt;x&lt;x8/&gt;座標と&lt;x9/&gt;y&lt;x10/&gt; 座標として解釈します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -35537,6 +35547,14 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030932Z" creationid="hsugawa8651" creationdate="20181114T030932Z">
         <seg>g., &lt;x7/&gt;√√-a&lt;x8/&gt; as &lt;x9/&gt;√(√(-a))&lt;x10/&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>gamma function&lt;x1/&gt; at &lt;x2/&gt;x&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074740Z" creationid="hsugawa8651" creationdate="20181120T074740Z">
+        <seg> &lt;x2/&gt;x&lt;x3/&gt; における ガンマ関数n&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
