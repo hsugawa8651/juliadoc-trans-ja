@@ -1829,8 +1829,8 @@ with some existing programming experience.)</seg>
 &lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;(@ref man-strings), and &lt;x11/&gt;Interpolation&lt;x12/&gt;, but should be easy enough to understand for users
 with some existing programming experience.)</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235141Z" creationid="hsugawa8651" creationdate="20181119T235141Z">
-        <seg>(上記の式では、&lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref man loops)など、まだ導入されていないいくつかの機能を使用しています。 &lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;(@ref man-strings)、&lt;x11/&gt;補間&lt;x12/&gt;は、ユーザが理解するのに十分な大きさである必要があります。 既存のプログラミング経験があります)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033127Z" creationid="hsugawa8651" creationdate="20181119T235141Z">
+        <seg>（上記の式は、まだ紹介されていない for loops&lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref man-loops),、Strings&lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;(@ref man-strings)、&lt;x11/&gt;Interpolation&lt;x12/&gt; などの機能が含まれていますが、プログラミング経験者にとっては難しいものではないはずです。）</seg>
       </tuv>
     </tu>
     <tu>
@@ -18558,8 +18558,8 @@ sharing&lt;x2/&gt;</seg>
       <tuv lang="EN-US">
         <seg>In Julia, exceeding the maximum representable value of a given type results in a wraparound behavior:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T185823Z" creationid="hsugawa8651" creationdate="20181109T225601Z">
-        <seg>Juliaでは、指定されたタイプの最大表現可能な値を超えると、ラップアラウンド動作が行われます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033143Z" creationid="hsugawa8651" creationdate="20181109T225601Z">
+        <seg>Juliaでは、指定された型の表現可能な最大値を超えた場合、ワードラップが発生します。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -18683,8 +18683,8 @@ with Julia:</seg>
         <seg>In applications where overflow is possible, explicit checking for wraparound produced
 by overflow is essential; otherwise, the &lt;x3/&gt;`BigInt`&lt;x4/&gt; type in &lt;x5/&gt;Arbitrary Precision Arithmetic&lt;x6/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110524Z" creationid="hsugawa8651" creationdate="20181112T110524Z">
-        <seg>オーバーフローが可能なアプリケーションでは、ラップアラウンドの明示的なチェックが行われます。 オーバフローは必須である。それ以外の場合は、&lt;x5/&gt;'BigInt'&lt;x4/&gt;は任意精度演算&lt;x6/&gt;任意精度演算&lt;x6/&gt;である。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033318Z" creationid="hsugawa8651" creationdate="20181112T110524Z">
+        <seg> オーバーフローを許容するアプリケーションでは、オーバーフローにより発生したワードラップの明示的なチェックは不可欠です。 チェックが難しい場合は、任意精度計算&lt;x5/&gt;Arbitrary Precision Arithmetic&lt;x6/&gt; の  &lt;x3/&gt;`BigInt`&lt;x4/&gt;型を使用することをお勧めします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19750,8 +19750,8 @@ a complex value directly from its real and imaginary parts:</seg>
         <seg>Integer division (the &lt;x1/&gt;div&lt;x2/&gt; function) has two exceptional cases: dividing by zero, and dividing
 the lowest negative number (&lt;x3/&gt;`typemin()`&lt;x4/&gt;) by -1.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235209Z" creationid="hsugawa8651" creationdate="20181119T235209Z">
-        <seg>整数除算(&lt;x1/&gt;div&lt;x2/&gt;関数)は2つの例外的なケースを持っています:0で除算して除算します。 -1で最も低い負の数(&lt;x3/&gt;`typemin()`&lt;x4/&gt;)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033400Z" creationid="hsugawa8651" creationdate="20181119T235209Z">
+        <seg>整数の除算（ &lt;x1/&gt;div&lt;x2/&gt;関数）には、0で割る、最小の負の数（ &lt;x3/&gt;`typemin()`&lt;x4/&gt;)）を−1で割るの2つの 例外的ケースがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23045,8 +23045,8 @@ make instances.</seg>
       <tuv lang="EN-US">
         <seg>Overflow behavior</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120330Z" creationid="hsugawa8651" creationdate="20181118T120330Z">
-        <seg>オーバーフローの動作</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033146Z" creationid="hsugawa8651" creationdate="20181118T120330Z">
+        <seg>オーバーフロー処理</seg>
       </tuv>
     </tu>
     <tu>
@@ -29691,8 +29691,8 @@ an array and storing them in advance (see &lt;x1/&gt;Iteration&lt;x2/&gt;).</seg
         <seg>This reflects the characteristics of the underlying arithmetic of integers as implemented on modern
 computers.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110518Z" creationid="hsugawa8651" creationdate="20181112T110518Z">
-        <seg>これは、近現代で実装されている整数の基礎となる算術の特性を反映しています。 コンピューター。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033220Z" creationid="hsugawa8651" creationdate="20181112T110518Z">
+        <seg>これは現代のコンピュータで実行される基本演算の特性を反映しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29899,8 +29899,8 @@ of its arguments are complex integers, it will return an instance of &lt;x5/&gt;
       <tuv lang="EN-US">
         <seg>Thus, arithmetic with Julia integers is actually a form of &lt;x1/&gt;modular arithmetic&lt;x2/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110521Z" creationid="hsugawa8651" creationdate="20181112T110521Z">
-        <seg>したがって、Julia整数による算術は実際には&lt;x1/&gt;モジュラ算術&lt;x2/&gt;の形式である。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033247Z" creationid="hsugawa8651" creationdate="20181112T110521Z">
+        <seg>このように、Juliaにおける整数の演算は、 &lt;x1/&gt;合同算術&lt;x2/&gt; の 形をとります。</seg>
       </tuv>
     </tu>
     <tu>
