@@ -10032,6 +10032,15 @@ to the implied field types: &lt;x1/&gt;Point{Int64}(1,2)&lt;x2/&gt; works, but &
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As you can see, the type of the appended element must match the element type of the vector it
+is appended to, or else a &lt;x1/&gt;`MethodError`&lt;x2/&gt; is raised.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020142Z" creationid="hsugawa8651" creationdate="20181120T020142Z">
+        <seg>ご覧のように、追加する要素の型は、追加されるベクトルの要素の型と一致しなければなりません。でなければ、MethodError が生成されます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Assignment</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134913Z" creationid="hsugawa8651" creationdate="20181117T134913Z">
@@ -17218,6 +17227,15 @@ the display on a nested &lt;x2/&gt;Expr&lt;x3/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here's an example where the method type parameter &lt;x1/&gt;T&lt;x2/&gt; is used as the type parameter to the parametric
+type &lt;x3/&gt;Vector{T}&lt;x4/&gt; in the method signature:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020122Z" creationid="hsugawa8651" creationdate="20181120T020122Z">
+        <seg>メソッドの型パラメータTが、メソッドのシグネチャのパラメトリック型に対する型パラメータVector{T}として使用される例を次に示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here, &lt;x1/&gt;(2, 3)&lt;x2/&gt; is a &lt;x3/&gt;`Tuple`&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154539Z" creationid="hsugawa8651" creationdate="20181109T154539Z">
@@ -19098,6 +19116,15 @@ indices and can be converted to such by &lt;x5/&gt;`to_indices`&lt;x6/&gt;:</seg
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T230237Z" creationid="hsugawa8651" creationdate="20181109T230237Z">
         <seg>&lt;x1/&gt;a b&lt;x2/&gt;の式において、サブ式&lt;x/&gt;b&lt;x4/&gt;は、&lt;x5/&gt;a&lt;x6/&gt;が&lt;x7/&gt;false&lt;x8/&gt;と評価された場合にのみ評価される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the following example, the method type parameter
+&lt;x3/&gt;T&lt;x4/&gt; is used as the return value:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020149Z" creationid="hsugawa8651" creationdate="20181120T020149Z">
+        <seg>次の例では、メソッドの型パラメータ Tが戻り値として使用されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21276,6 +21303,23 @@ array of half the size of the input array – and is typically not quite as fast
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T234626Z" creationid="hsugawa8651" creationdate="20181119T234626Z">
         <seg>メタプログラミング&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Method definitions can optionally have type parameters qualifying the signature:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T015901Z" creationid="hsugawa8651" creationdate="20181120T015901Z">
+        <seg>メソッド定義で、任意で型パラメータをつけて、シグネチャを細かく指定することができます。：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Method type parameters are not restricted to being used as the types of arguments:
+they can be used anywhere a value would be in the signature of the function or body of the function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020114Z" creationid="hsugawa8651" creationdate="20181120T020114Z">
+        <seg>メソッドの型パラメータは、引数の型として使えるだけでなく、関数の本体または関数のシグネチャの、値がある場所であればどこでも使えます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24607,6 +24651,15 @@ interoperable code.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Such definitions correspond to methods whose type signatures are &lt;x1/&gt;UnionAll&lt;x2/&gt; types
+(see &lt;x3/&gt;UnionAll Types&lt;x4/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020027Z" creationid="hsugawa8651" creationdate="20181120T020027Z">
+        <seg>そのような定義はシグネチャがUnionAll型であるメソッドに対応します(全合併型 参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Such functions behave just like they would in traditional dynamically typed languages.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012202Z" creationid="hsugawa8651" creationdate="20181120T012202Z">
@@ -26252,6 +26305,15 @@ type parameter of an integer type, and is itself a real type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124107Z" creationid="hsugawa8651" creationdate="20181118T124107Z">
         <seg>最初の行--&lt;x1/&gt;struct OurRational{T&lt;:Integer}&lt;:Real&lt;x2/&gt;--&lt;x3/&gt;は、&lt;x3/&gt;OurRational&lt;x/&gt;を宣言します。 integer型のパラメータで、それ自体が実際の型です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first method applies whenever both arguments are of the same concrete type, regardless of
+what type that is, while the second method acts as a catch-all, covering all other cases.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T015956Z" creationid="hsugawa8651" creationdate="20181120T015956Z">
+        <seg>第1のメソッドは、両方の引数が同じ具象型であれば、どんな型であれ適用されます。第2のメソッドは他のすべての場合に渡る全捕捉として働きます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29051,6 +29113,15 @@ without using extra memory, and applies the given function elementwise:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This kind of definition of function behavior by dispatch is quite common -- idiomatic, even --
+in Julia.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020050Z" creationid="hsugawa8651" creationdate="20181120T020050Z">
+        <seg>Juliaでは、このようにディスパッチを使って関数の動作を定義するのは、まったく普通であって、慣用的でさえあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This kind of environment was the only kind that existed in Julia 0.6 and earlier.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152925Z" creationid="hsugawa8651" creationdate="20181117T152925Z">
@@ -29485,6 +29556,16 @@ with a single method, applicable to all types of arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T005942Z" creationid="hsugawa8651" creationdate="20181120T005942Z">
         <seg>ここまでで例示した関数は、単一のメソッドで定義されたものだけで、すべての型の引数に適用可能です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thus,
+overall, this defines a boolean function that checks whether its two arguments are of the same
+type:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020011Z" creationid="hsugawa8651" creationdate="20181120T020011Z">
+        <seg> したがって、これは全体として、2つの引数が同じ型であるかどうかを検査するブール関数の定義になっています。</seg>
       </tuv>
     </tu>
     <tu>
