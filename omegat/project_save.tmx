@@ -34103,8 +34103,8 @@ Base.unsafe_store!</seg>
       <tuv lang="EN-US">
         <seg>ceiling division; quotient rounded towards &lt;x1/&gt;+Inf&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095829Z" creationid="hsugawa8651" creationdate="20181118T095829Z">
-        <seg>天井部;商は&lt;x1/&gt;+Inf&lt;x2/&gt;に向かって丸められる</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071850Z" creationid="hsugawa8651" creationdate="20181118T095829Z">
+        <seg>天井整商; &lt;x1/&gt;+Inf&lt;x2/&gt; に向かって丸めた商</seg>
       </tuv>
     </tu>
     <tu>
@@ -34814,8 +34814,8 @@ table_entries(
       <tuv lang="EN-US">
         <seg>floored division; quotient rounded towards &lt;x1/&gt;-Inf&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071509Z" creationid="hsugawa8651" creationdate="20181118T095825Z">
-        <seg>床関数のように、商を &lt;x1/&gt;-Inf&lt;x2/&gt; に向かって丸める除算</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071821Z" creationid="hsugawa8651" creationdate="20181118T095825Z">
+        <seg>床整商; &lt;x1/&gt;-Inf&lt;x2/&gt; に向かって丸めた商</seg>
       </tuv>
     </tu>
     <tu>
@@ -50140,8 +50140,8 @@ julia&gt; odd(n) = (n == 0) ?</seg>
       <tuv lang="EN-US">
         <seg>truncated division; quotient rounded towards zero</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071520Z" creationid="hsugawa8651" creationdate="20181114T031243Z">
-        <seg>商を 0に向かって丸める除算</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071745Z" creationid="hsugawa8651" creationdate="20181114T031243Z">
+        <seg>整商; 0に向かって丸めた商 </seg>
       </tuv>
     </tu>
     <tu>
