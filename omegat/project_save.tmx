@@ -18759,6 +18759,15 @@ a symbol, then an assignment &lt;x3/&gt;(x, y) = argument&lt;x4/&gt; will be ins
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If a global variable will
+not change, adding a &lt;x3/&gt;const&lt;x4/&gt; declaration solves this performance problem.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142712Z" creationid="hsugawa8651" creationdate="20181120T142712Z">
+        <seg>グローバル変数に変更がない場合、const宣言を追加すると、このパフォーマンス上の問題は解決します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If a number doesn't have an exact floating-point representation, it must be rounded to an
 appropriate representable value.</seg>
       </tuv>
@@ -21270,6 +21279,15 @@ a different system.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is difficult for the compiler to optimize code involving global variables, since
+their values (or even their types) might change at almost any time.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142701Z" creationid="hsugawa8651" creationdate="20181120T142701Z">
+        <seg>コンパイラが、グローバル変数を含むコードを最適化することは困難です。 というのも、その値（時には型も）はほとんどいつでも変わりうるからです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is efficient for very small &lt;x2/&gt;n&lt;x3/&gt;, and
 is used internally by &lt;x4/&gt;QuickSort&lt;x5/&gt;.</seg>
       </tuv>
@@ -22643,6 +22661,14 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Local constants are quite different.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142721Z" creationid="hsugawa8651" creationdate="20181120T142721Z">
+        <seg>ローカル定数は全く異なります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Logical indexing</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135104Z" creationid="hsugawa8651" creationdate="20181117T135104Z">
@@ -23536,6 +23562,15 @@ division.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124640Z" creationid="hsugawa8651" creationdate="20181118T124640Z">
         <seg>括弧なしの&lt;x1/&gt;'DomainError&lt;x2/&gt;は例外ではなく、例外のタイプであることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that &lt;x1/&gt;const&lt;x2/&gt; only affects the variable binding; the variable may be bound to a mutable object
+(such as an array), and that object may still be modified.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142750Z" creationid="hsugawa8651" creationdate="20181120T142750Z">
+        <seg>const宣言が有効なのは、変数に束縛されている場合だけなので注意してください。 （配列など）可変なオブジェクトに変数を束縛しても、そのオブジェクトは変更されている可能性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26420,6 +26455,15 @@ SparseVecStyle(::Val{N}) where N = Broadcast.DefaultArrayStyle{N}()</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Special top-level assignments, such as those performed by the &lt;x1/&gt;function&lt;x2/&gt; and &lt;x3/&gt;struct&lt;x4/&gt; keywords,
+are constant by default.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142742Z" creationid="hsugawa8651" creationdate="20181120T142742Z">
+        <seg>functionやstructキーワードによって実行されるような、特殊なトップレベルの代入は、デフォルトでは定数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Specifically &lt;x10/&gt;:X =&gt; uuid&lt;x11/&gt; goes in &lt;x12/&gt;roots&lt;x13/&gt; for each such &lt;x14/&gt;X&lt;x15/&gt; where &lt;x16/&gt;uuid&lt;x17/&gt; is defined as:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121307Z" creationid="hsugawa8651" creationdate="20181118T121307Z">
@@ -28086,6 +28130,15 @@ however, it may do so, yielding even greater performance gains.)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133708Z" creationid="hsugawa8651" creationdate="20181117T133708Z">
         <seg>呼び出されるコードは共有ライブラリとして使用可能である必要があります。ほとんどのCおよびFortranライブラリは、次のようになります。 はすでに共有ライブラリとしてコンパイルされていますが、GCCを使用して自分でコードをコンパイルする場合は Clang)は、&lt;x1/&gt;-共有&lt;x2/&gt;および&lt;x3/&gt;-fPIC&lt;x4/&gt;オプションを使用する必要があります。 JuliaのJITはネイティブのC呼び出しと同じであるため、結果として生じるオーバーヘッドは同じです。 Cコードからライブラリ関数を呼び出します(CとJuliaの両方での非ライブラリ関数呼び出しです)。 共有ライブラリ関数への呼び出しよりも、インライン化されるため、オーバーヘッドが少なくなります。両方とも ライブラリと実行可能ファイルはLLVMによって生成されるため、プログラム全体の最適化を実行することができます。 この境界を越えて最適化することもできますがジュリアはまだサポートしていません将来は しかし、それによってパフォーマンスが向上する可能性があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The compiler is able to determine automatically when a local
+variable is constant, so local constant declarations are not necessary for performance purposes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142733Z" creationid="hsugawa8651" creationdate="20181120T142733Z">
+        <seg>コンパイラは、ローカル変数が定数だと自動的に判別できるため、パフォーマンス目的でローカルの定数の宣言をする必要はありません。</seg>
       </tuv>
     </tu>
     <tu>
