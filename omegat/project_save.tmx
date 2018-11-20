@@ -1744,8 +1744,8 @@ some type).</seg>
         <seg>(By convention, we tend to space operators more tightly if they get applied before other nearby
 operators.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132219Z" creationid="hsugawa8651" creationdate="20181113T132219Z">
-        <seg>(慣習的には、他の近傍に適用されると、オペレータの間隔が狭くなる傾向があります。 演算子。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063538Z" creationid="hsugawa8651" creationdate="20181113T132219Z">
+        <seg>（慣例的に、他の演算子が適用される場合は、スペースを開けずに記載する傾向があります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -15247,8 +15247,8 @@ an &lt;x3/&gt;Int&lt;x4/&gt; in Julia).</seg>
         <seg>Every binary arithmetic and bitwise operator also has an updating version that assigns the result
 of the operation back into its left operand.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132351Z" creationid="hsugawa8651" creationdate="20181113T132351Z">
-        <seg>すべてのバイナリ算術演算子とビット演算子には、結果を指定する更新バージョンもあります。 は左オペランドに戻る。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063812Z" creationid="hsugawa8651" creationdate="20181113T132351Z">
+        <seg>全ての二項演算子とビット単位の演算子には、被演算子の処理の結果を代入できる更新機能があります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -16464,8 +16464,8 @@ to each other and other floats, see &lt;x1/&gt;Numeric Comparisons&lt;x2/&gt;.</
         <seg>For instance, we would generally write &lt;x1/&gt;-x + 2&lt;x2/&gt; to reflect that first &lt;x3/&gt;x&lt;x4/&gt; gets negated,
 and then &lt;x5/&gt;2&lt;x6/&gt; is added to that result.)</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132223Z" creationid="hsugawa8651" creationdate="20181113T132223Z">
-        <seg>例えば、一般的に&lt;x/&gt;x+2&lt;x2/&gt;を書くと、最初の&lt;x3/&gt;x4/&gt;が否定されることを反映することができます。 その結果、&lt;x5/&gt;2&lt;x6/&gt;が追加されます)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063607Z" creationid="hsugawa8651" creationdate="20181113T132223Z">
+        <seg>例えば、通常 &lt;x1/&gt;-x + 2&lt;x2/&gt; と記載しますが、これは最初に &lt;x3/&gt;x&lt;x4/&gt; を負の数にし、その後 &lt;x5/&gt;2&lt;x6/&gt; をその結果に足します。）。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17090,8 +17090,8 @@ example, &lt;x11/&gt;1.5F22&lt;x12/&gt; is equal to &lt;x13/&gt;1.5 * F22&lt;x14
       <tuv lang="EN-US">
         <seg>Here are some examples with bitwise operators:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132327Z" creationid="hsugawa8651" creationdate="20181113T132327Z">
-        <seg>ビット演算子の例を次に示します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063750Z" creationid="hsugawa8651" creationdate="20181113T132327Z">
+        <seg>以下はビット単位演算子の例です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33707,8 +33707,8 @@ object</seg>
       <tuv lang="EN-US">
         <seg>arithmetic shift&lt;x1/&gt; right</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095241Z" creationid="hsugawa8651" creationdate="20181118T095241Z">
-        <seg>算術シフト&lt;x1/&gt; 右</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063731Z" creationid="hsugawa8651" creationdate="20181118T095241Z">
+        <seg>算術右桁送り</seg>
       </tuv>
     </tu>
     <tu>
@@ -33843,16 +33843,16 @@ object</seg>
       <tuv lang="EN-US">
         <seg>bitwise and</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095157Z" creationid="hsugawa8651" creationdate="20181113T132241Z">
-        <seg>ビット毎の積</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063632Z" creationid="hsugawa8651" creationdate="20181113T132241Z">
+        <seg>ビット毎の論理積</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>bitwise not</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095145Z" creationid="hsugawa8651" creationdate="20181118T095145Z">
-        <seg>ビット毎の否定</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063625Z" creationid="hsugawa8651" creationdate="20181118T095145Z">
+        <seg>ビット毎の論理否定</seg>
       </tuv>
     </tu>
     <tu>
@@ -33867,16 +33867,16 @@ object</seg>
       <tuv lang="EN-US">
         <seg>bitwise or</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095207Z" creationid="hsugawa8651" creationdate="20181113T132250Z">
-        <seg>ビット毎の和</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063637Z" creationid="hsugawa8651" creationdate="20181113T132250Z">
+        <seg>ビット毎の論理和</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>bitwise xor (exclusive or)</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132300Z" creationid="hsugawa8651" creationdate="20181113T132300Z">
-        <seg>ビット単位のXOR(排他的な排他的な排他的論理和)</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063655Z" creationid="hsugawa8651" creationdate="20181113T132300Z">
+        <seg>ビット単位のXOR (排他的論理和)</seg>
       </tuv>
     </tu>
     <tu>
@@ -47960,16 +47960,16 @@ x::Int8 = 10   &lt;x2/&gt; as the left-hand side of an assignment</seg>
       <tuv lang="EN-US">
         <seg>logical shift&lt;x1/&gt; right</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132309Z" creationid="hsugawa8651" creationdate="20181113T132309Z">
-        <seg>論理シフト&lt;x1/&gt;右</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063714Z" creationid="hsugawa8651" creationdate="20181113T132309Z">
+        <seg>論理右桁送り</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>logical/arithmetic shift left</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132323Z" creationid="hsugawa8651" creationdate="20181113T132323Z">
-        <seg>論理/算術シフト左</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063747Z" creationid="hsugawa8651" creationdate="20181113T132323Z">
+        <seg>論理/算術左桁送り</seg>
       </tuv>
     </tu>
     <tu>
