@@ -9777,8 +9777,10 @@ the C function may end up throwing an invalid memory access exception.</seg>
         <seg>As a result, the type of the
 variable may change.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132421Z" creationid="hsugawa8651" creationdate="20181113T132421Z">
-        <seg>その結果 変数が変更される可能性があります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064018Z" creationid="hsugawa8651" creationdate="20181113T132421Z">
+        <seg>これにより、変数の型が変更されることがあります。
+
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -16405,8 +16407,8 @@ be &lt;x11/&gt;`Int64`&lt;x12/&gt;.</seg>
         <seg>For example, writing &lt;x3/&gt;x += 3&lt;x4/&gt; is equivalent to
 writing &lt;x5/&gt;x = x + 3&lt;x6/&gt;:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132344Z" creationid="hsugawa8651" creationdate="20181113T132344Z">
-        <seg>たとえば、&lt;x3/&gt;x+=3&lt;x4/&gt;の書き込みは、次のようになります。 書き込み&lt;x5/&gt;x=x+3&lt;x6/&gt;:</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063911Z" creationid="hsugawa8651" creationdate="20181113T132344Z">
+        <seg>例えば、 &lt;x3/&gt;x += 3&lt;x4/&gt;  と記載することで&lt;x5/&gt;x = x + 3&lt;x6/&gt; と書くのと等価です。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -19828,8 +19830,8 @@ the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
       <tuv lang="EN-US">
         <seg>Integers are compared in the standard manner -- by comparison of bits.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030454Z" creationid="hsugawa8651" creationdate="20181114T030454Z">
-        <seg>整数は、標準的な方法で比較されます(ビットを比較します)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064137Z" creationid="hsugawa8651" creationdate="20181114T030454Z">
+        <seg>整数は標準的な方法（ビットの比較）により比較されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24790,8 +24792,8 @@ julia&gt; sqrt(-1 + 0im)
       <tuv lang="EN-US">
         <seg>Standard comparison operations are defined for all the primitive numeric types:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132654Z" creationid="hsugawa8651" creationdate="20181113T132654Z">
-        <seg>標準的な比較操作は、すべてのプリミティブ数値タイプに対して定義されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064039Z" creationid="hsugawa8651" creationdate="20181113T132654Z">
+        <seg>標準的な比較演算子は、全ての数値プリミティブ型に定義されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28036,16 +28038,16 @@ rely on the default fallback &lt;x2/&gt;`Broadcast.DefaultArrayStyle`&lt;x3/&gt;
         <seg>The updating version of the binary operator is formed
 by placing a &lt;x1/&gt;=&lt;x2/&gt; immediately after the operator.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132348Z" creationid="hsugawa8651" creationdate="20181113T132348Z">
-        <seg>バイナリ演算子の更新バージョンが形成されます。 演算子の直後に&lt;x1/&gt;=&lt;x2/&gt;を配置します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063838Z" creationid="hsugawa8651" creationdate="20181113T132348Z">
+        <seg>二項演算子の更新機能は、演算子の後ろに &lt;x1/&gt;=&lt;x2/&gt; を記載することで実行できます。 </seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>The updating versions of all the binary arithmetic and bitwise operators are:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132411Z" creationid="hsugawa8651" creationdate="20181113T132411Z">
-        <seg>すべてのバイナリ算術演算子とビット演算子の更新バージョンは次のとおりです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063927Z" creationid="hsugawa8651" creationdate="20181113T132411Z">
+        <seg>更新機能を持つ二項演算子とビット単位の演算子は以下の通りです。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -34410,8 +34412,8 @@ mycompare (generic function with 1 method)</seg>
       <tuv lang="EN-US">
         <seg>equality</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095405Z" creationid="hsugawa8651" creationdate="20181118T095405Z">
-        <seg>等値</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064058Z" creationid="hsugawa8651" creationdate="20181118T095405Z">
+        <seg>等しい</seg>
       </tuv>
     </tu>
     <tu>
@@ -36456,8 +36458,8 @@ obj2 = MyModule.somefunction(obj1)
       <tuv lang="EN-US">
         <seg>inequality</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095427Z" creationid="hsugawa8651" creationdate="20181118T095427Z">
-        <seg>非等値</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064108Z" creationid="hsugawa8651" creationdate="20181118T095427Z">
+        <seg>異なる</seg>
       </tuv>
     </tu>
     <tu>
@@ -48579,8 +48581,8 @@ A C function declared to return &lt;x1/&gt;Cvoid&lt;x2/&gt; will return the valu
         <seg>note
 An updating operator rebinds the variable on the left-hand side.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132418Z" creationid="hsugawa8651" creationdate="20181113T132418Z">
-        <seg>メモ 更新演算子は、左側の変数を再バインドします。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064006Z" creationid="hsugawa8651" creationdate="20181113T132418Z">
+        <seg>note 更新機能の結果は、左辺にある変数に紐付きます。</seg>
       </tuv>
     </tu>
     <tu>
