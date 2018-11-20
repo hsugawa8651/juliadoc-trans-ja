@@ -20821,6 +20821,15 @@ output (such as images, formatted text, or even audio and video), consisting of 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Just as you can put subtype constraints on type parameters in type declarations (see &lt;x1/&gt;Parametric Types&lt;x2/&gt;),
+you can also constrain type parameters of methods:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020239Z" creationid="hsugawa8651" creationdate="20181120T020239Z">
+        <seg>型宣言（&lt;x1/&gt;Parametric Types&lt;x2/&gt;を参照）に出てくる型パラメータにサブタイプ制約を付加できるのと同様に、メソッドの型パラメータも制約することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Just like
 inner functions used elsewhere in the language, variables from the enclosing scope can be
 "captured" in the inner function.</seg>
@@ -22980,6 +22989,15 @@ MIME types) of user-defined types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123823Z" creationid="hsugawa8651" creationdate="20181118T123823Z">
         <seg>パラメトリックコンストラクタ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Parametric methods allow the same syntax as &lt;x1/&gt;where&lt;x2/&gt; expressions used to write types
+(see &lt;x3/&gt;UnionAll Types&lt;x4/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020315Z" creationid="hsugawa8651" creationdate="20181120T020315Z">
+        <seg>パラメトリックメソッドでは、型の作成に使用されるwhere式と同じ構文を使用できます（全合併型を参照）。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25354,6 +25372,15 @@ can be specified via the &lt;x3/&gt;lt&lt;x4/&gt; keyword.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124037Z" creationid="hsugawa8651" creationdate="20181118T124037Z">
         <seg>&lt;x1/&gt;プロモート&lt;x2/&gt;関数は、すべての引数を共通の型に変換します。この場合は、&lt;x3/&gt;`Float64'&lt;x4/&gt;のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;same_type_numeric&lt;x2/&gt; function behaves much like the &lt;x3/&gt;same_type&lt;x4/&gt; function defined above, but
+is only defined for pairs of numbers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020258Z" creationid="hsugawa8651" creationdate="20181120T020258Z">
+        <seg>このsame_type_numeric関数は、以前に定義した関数same_typeと非常によく似た動作をしますが、数値の組に対してのみ定義されています。</seg>
       </tuv>
     </tu>
     <tu>
