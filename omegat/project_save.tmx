@@ -8929,8 +8929,8 @@ that wraps a standard &lt;x3/&gt;Array&lt;x4/&gt; with additional structure.</se
       <tuv lang="EN-US">
         <seg>A typical usage of such a pair of return values, however, extracts each value into a variable.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101451Z" creationid="hsugawa8651" creationdate="20181112T101451Z">
-        <seg>しかし、このような戻り値の典型的な使用法は、それぞれの値を変数に抽出することです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131115Z" creationid="hsugawa8651" creationdate="20181112T101451Z">
+        <seg>しかし値のペアを返す典型的な用法は、それぞれの値を取り出して、別の変数に割り当てる場合でしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16635,6 +16635,15 @@ work on hosts without AVX support.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, the following
+function returns a pair of values:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131046Z" creationid="hsugawa8651" creationdate="20181120T131046Z">
+        <seg> 以下の例では関数は値のペアを返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, the following call:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150602Z" creationid="hsugawa8651" creationdate="20181117T150602Z">
@@ -18070,6 +18079,16 @@ most books on scientific computation, and also in the following references:</seg
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, tuples
+can be created and destructured without needing parentheses, thereby providing an illusion that
+multiple values are being returned, rather than a single tuple value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131041Z" creationid="hsugawa8651" creationdate="20181120T131041Z">
+        <seg>しかし、タプルは括弧を使わなくても、生成したり、分解したりできるので、1組のタプルではなく、複数の値が返された、と錯覚を起こすでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, type promotion between the primitive types above and &lt;x1/&gt;`BigInt`&lt;x2/&gt;/&lt;x3/&gt;`BigFloat`&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035937Z" creationid="hsugawa8651" creationdate="20181118T120409Z">
@@ -18755,8 +18774,8 @@ something other than 1), you should specialize &lt;x1/&gt;`axes`&lt;x2/&gt;.</se
         <seg>If you call it in an interactive session without assigning the return value anywhere, you will
 see the tuple returned:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101352Z" creationid="hsugawa8651" creationdate="20181112T101352Z">
-        <seg>これを対話型セッションで呼び出しても、戻り値はどこにも割り当てられない場合は 戻されたタプルを参照してください。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131102Z" creationid="hsugawa8651" creationdate="20181112T101352Z">
+        <seg>対話セッションで戻り値をどこにも代入しない場合は、タプルが返されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19078,6 +19097,14 @@ sharing&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125956Z" creationid="hsugawa8651" creationdate="20181120T102056Z">
         <seg>Juliaでは、ほとんどの演算子は、特殊な構文をとっていても、単なる関数です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In Julia, one returns a tuple of values to simulate returning multiple values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131022Z" creationid="hsugawa8651" creationdate="20181120T131022Z">
+        <seg>Juliaでは、複数の値を返したい時は、疑似的に値のタプルを返します。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -20005,6 +20032,15 @@ optimization.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032415Z" creationid="hsugawa8651" creationdate="20181116T032415Z">
         <seg>この定義の定義では、コード生成機能は基本的にオプションです。 最適化。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this usage, a block of code is
+wrapped in a zero-argument function, which is later invoked by calling it as &lt;x5/&gt;f()&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130958Z" creationid="hsugawa8651" creationdate="20181120T130958Z">
+        <seg>この記法では、コードのブロックを引数のない関数で囲んでおき、あとから&lt;x5/&gt;f()&lt;x6/&gt;のように呼び出します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21476,8 +21512,8 @@ type of a given variable.</seg>
       <tuv lang="EN-US">
         <seg>Julia supports simple tuple "destructuring" that facilitates this:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101454Z" creationid="hsugawa8651" creationdate="20181112T101454Z">
-        <seg>Juliaは単純なタプル"destructing"をサポートしており、これを容易にしています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131136Z" creationid="hsugawa8651" creationdate="20181112T101454Z">
+        <seg> Juliaでは、次のように簡単にタプルの分割をすることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22474,6 +22510,14 @@ all of the &lt;x11/&gt;then&lt;x12/&gt; blocks and the alternate implementation 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032408Z" creationid="hsugawa8651" creationdate="20181116T032408Z">
         <seg>@生成&lt;x10/&gt;ブロックが発生した場合には複数の&lt;x9/&gt;が存在し、その場合には生成された実装が使用される。 すべての&lt;x11/&gt;&lt;x12/&gt;ブロックと代替実装は、すべて&lt;x13/&gt;else&lt;x14/&gt;ブロックを使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Multiple Return Values</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131011Z" creationid="hsugawa8651" creationdate="20181120T131011Z">
+        <seg>複数の戻り値</seg>
       </tuv>
     </tu>
     <tu>
@@ -27797,6 +27841,15 @@ square root of -1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The idea of a function with no arguments
+may seem strange, but is useful for "delaying" a computation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130946Z" creationid="hsugawa8651" creationdate="20181120T130946Z">
+        <seg>引数のない関数というのは、奇妙に感じるかもしれませんが、計算を"遅らせる"場合に便利です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The identity element
 of this set is the empty string, &lt;x11/&gt;""&lt;x12/&gt;.</seg>
       </tuv>
@@ -30387,8 +30440,8 @@ some degree of enforcement of a type's invariants.</seg>
       <tuv lang="EN-US">
         <seg>This has the exact same effect as the previous definition of &lt;x1/&gt;foo&lt;x2/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101533Z" creationid="hsugawa8651" creationdate="20181112T101533Z">
-        <seg>これは、&lt;x1/&gt;foo&lt;x2/&gt;の前の定義とまったく同じ効果を持っています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131210Z" creationid="hsugawa8651" creationdate="20181112T101533Z">
+        <seg>この書き方は以前の &lt;x1/&gt;foo&lt;x2/&gt;の定義とまったく同等の効力をもちます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -32115,6 +32168,14 @@ will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Varargs Functions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131224Z" creationid="hsugawa8651" creationdate="20181120T131224Z">
+        <seg>可変引数関数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Variable names are case-sensitive, and have no semantic meaning (that is, the language will not treat variables differently based on their names).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T032459Z" creationid="hsugawa8651" creationdate="20181119T032459Z">
@@ -33034,8 +33095,8 @@ broadcasting shape rules yourself, but this may be helpful in limited situations
       <tuv lang="EN-US">
         <seg>You can also return multiple values via an explicit usage of the &lt;x1/&gt;return&lt;x2/&gt; keyword:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101528Z" creationid="hsugawa8651" creationdate="20181112T101528Z">
-        <seg>また、&lt;x1/&gt;return&lt;x2/&gt;キーワードを明示的に使用して、複数の値を返すこともできます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131149Z" creationid="hsugawa8651" creationdate="20181112T101528Z">
+        <seg>キーワード &lt;x1/&gt;return&lt;x2/&gt; を使って、明示的に複数の値を返すこともできます。</seg>
       </tuv>
     </tu>
     <tu>
