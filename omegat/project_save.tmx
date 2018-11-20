@@ -17795,16 +17795,16 @@ the result will be a reference to this object, and the object will not be copied
         <seg>If &lt;x1/&gt;T&lt;x2/&gt; is a floating-point type, the result is the nearest representable value, which could be
 positive or negative infinity.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031034Z" creationid="hsugawa8651" creationdate="20181114T031034Z">
-        <seg>&lt;x1/&gt;T&lt;x2/&gt;が浮動小数点型である場合、その結果は最も近い表現可能な値となり 正または負の無限大。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T070157Z" creationid="hsugawa8651" creationdate="20181114T031034Z">
+        <seg>&lt;x1/&gt;T&lt;x2/&gt;が浮動小数点型の場合、変換の結果は最も近い表現可能な、正または負の無限大にもなり得る値になります。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>If &lt;x1/&gt;T&lt;x2/&gt; is an integer type, an &lt;x3/&gt;InexactError&lt;x4/&gt; is raised if &lt;x5/&gt;x&lt;x6/&gt; is not representable by &lt;x7/&gt;T&lt;x8/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031036Z" creationid="hsugawa8651" creationdate="20181114T031036Z">
-        <seg>&lt;x1/&gt;T&lt;x2/&gt;が整数の場合、&lt;x5/&gt;x&lt;x6/&gt;が&lt;x7/&gt;T&lt;x8/&gt;で表されない場合、&lt;x3/&gt;InexactError&lt;x4/&gt;が生成される。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T070313Z" creationid="hsugawa8651" creationdate="20181114T031036Z">
+        <seg>&lt;x1/&gt;T&lt;x2/&gt;T が整数型の場合、 &lt;x5/&gt;x&lt;x6/&gt; が &lt;x7/&gt;/&gt;T&lt;x8/&gt;で表現できない際は&lt;x3/&gt;InexactError&lt;x4/&gt;が発生します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20901,8 +20901,8 @@ type of a given variable.</seg>
         <seg>Julia supports three forms of numerical conversion, which differ in their handling of inexact
 conversions.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031029Z" creationid="hsugawa8651" creationdate="20181114T031029Z">
-        <seg>Juliaは、3つの形式の数値変換をサポートしていますが、それは不正確であるためです。 変換。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T070054Z" creationid="hsugawa8651" creationdate="20181114T031029Z">
+        <seg>Juliaは、３つの形式の数値変換をサポートしています。この3つは、不正確な変換を扱う方法が異なります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27310,8 +27310,8 @@ determining a single answer for a given set of arguments.</seg>
       <tuv lang="EN-US">
         <seg>The notation &lt;x1/&gt;T(x)&lt;x2/&gt; or &lt;x3/&gt;convert(T,x)&lt;x4/&gt; converts &lt;x5/&gt;x&lt;x6/&gt; to a value of type &lt;x7/&gt;T&lt;x8/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031031Z" creationid="hsugawa8651" creationdate="20181114T031031Z">
-        <seg>&lt;x1/&gt;T(x)&lt;x2/&gt;または&lt;x3/&gt;変換(T,x)&lt;x4/&gt;は、&lt;x5/&gt;x&lt;x6/&gt;を&lt;x7/&gt;T&lt;x8/&gt;型の値に変換する。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T070142Z" creationid="hsugawa8651" creationdate="20181114T031031Z">
+        <seg>表記法  &lt;x1/&gt;T(x)&lt;x2/&gt;  または &lt;x3/&gt;convert(T,x)&lt;x4/&gt;は、 &lt;x5/&gt;x&lt;x6/&gt;  を &lt;x7/&gt;T&lt;x8/&gt;型の値に変換します。</seg>
       </tuv>
     </tu>
     <tu>
