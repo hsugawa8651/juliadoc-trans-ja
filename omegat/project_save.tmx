@@ -16696,6 +16696,14 @@ sums a series without allocating memory:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, the library function &lt;x1/&gt;`parse(T, num, base)`&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131920Z" creationid="hsugawa8651" creationdate="20181120T131920Z">
+        <seg>例えば、ライブラリ関数の &lt;x1/&gt;`parse(T, num, base)`&lt;x2/&gt; は文字列をある基数の数値として解釈します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, the result of &lt;x5/&gt;A[2, I, 3]&lt;x6/&gt; is an
 array with size &lt;x7/&gt;size(I)&lt;x8/&gt;.</seg>
       </tuv>
@@ -19413,6 +19421,15 @@ be written in a vectorized style for performance.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In many cases, function arguments have sensible default values and therefore might not need to
+be passed explicitly in every call.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131850Z" creationid="hsugawa8651" creationdate="20181120T131850Z">
+        <seg>多くの場合、関数の引数には適切なデフォルト値があるので、すべての呼び出しで、値を明示的に渡す必要はないかもしれません。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In mathematics, &lt;x1/&gt;+&lt;x2/&gt; usually denotes a &lt;x3/&gt;commutative&lt;x4/&gt; operation, where the order of the operands does
 not matter.</seg>
       </tuv>
@@ -21777,6 +21794,23 @@ integer literals and engineering notation for floating-point literals.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Keyword Arguments</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132113Z" creationid="hsugawa8651" creationdate="20181120T132113Z">
+        <seg>キーワード引数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Keyword arguments can make these complex interfaces
+easier to use and extend by allowing arguments to be identified by name instead of only by position.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132147Z" creationid="hsugawa8651" creationdate="20181120T132147Z">
+        <seg> そんな関数の呼び出し方を覚えるのは難しいものです。 キーワード引数は、引数の指定を位置ではなく、名前でおこなって、複雑な入力方法を、使いやすく、拡張するものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>LLVM Interface</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042029Z" creationid="hsugawa8651" creationdate="20181110T042029Z">
@@ -23842,6 +23876,15 @@ addition to new user-defined data types, you define new methods for the
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Optional arguments are actually just a convenient syntax for writing multiple method definitions
+with different numbers of arguments (see &lt;x1/&gt;Note on Optional and keyword Arguments&lt;x2/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132059Z" creationid="hsugawa8651" creationdate="20181120T132059Z">
+        <seg>省略可能な引数は、実際には、引数の個数の違う複数のメソッドの定義を書くための便利な構文なのです。 ( オプション引数とキーワード引数の注意点 &lt;x1/&gt;Note on Optional and keyword Arguments&lt;x2/&gt; を参照).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Optional methods&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094608Z" creationid="hsugawa8651" creationdate="20181118T094608Z">
@@ -25503,6 +25546,14 @@ you'll need to take some extra precautions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041726Z" creationid="hsugawa8651" creationdate="20181110T041726Z">
         <seg>関数の中には、修正(例えば&lt;x3/&gt;ソート!&lt;x4/&gt;)や修正されない(&lt;x5/&gt;ソート&lt;x6/&gt;)バージョンの両方があるものがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some functions need a large number of arguments, or have a large number of behaviors.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132130Z" creationid="hsugawa8651" creationdate="20181120T132130Z">
+        <seg>関数の中には、多数の引数が必要なものや、様々な挙動をとるものがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30188,6 +30239,15 @@ commonly passed in registers when using C or Julia calling conventions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This behavior
+can be expressed concisely as:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131955Z" creationid="hsugawa8651" creationdate="20181120T131955Z">
+        <seg>この振る舞いは簡潔に以下のように記述できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This behavior is based on the observation that when one uses unsigned hex literals for integer
 values, one typically is using them to represent a fixed numeric byte sequence, rather than just
 an integer value.</seg>
@@ -33022,6 +33082,14 @@ through the characters in &lt;x7/&gt;str&lt;x8/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>With this definition, the function can be called with either two or three arguments, and &lt;x1/&gt;10&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132034Z" creationid="hsugawa8651" creationdate="20181120T132034Z">
+        <seg>この定義では、関数を２個または3個の引数で呼び出すことができて、 ３番目の引数を指定しない場合は、&lt;x1/&gt;10&lt;x2/&gt;が自動的に引き渡されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>With this method definition what was previously a &lt;x2/&gt;`MethodError`&lt;x3/&gt; now
 successfully creates a point of type &lt;x4/&gt;Point{Float64}&lt;x5/&gt;:</seg>
       </tuv>
@@ -35645,6 +35713,14 @@ object</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>base&lt;x1/&gt; argument defaults to &lt;x2/&gt;10&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131947Z" creationid="hsugawa8651" creationdate="20181120T131947Z">
+        <seg>引数 base&lt;x1/&gt; のデフォルト値は&lt;x2/&gt;10&lt;x3/&gt;. です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>begin multi-line comment (these are nestable)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032254Z" creationid="hsugawa8651" creationdate="20181114T032254Z">
@@ -37251,6 +37327,18 @@ end</seg>
     finally
         close(io)
     end
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function parse(T, num, base=10)
+    &lt;x1/&gt;
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131957Z" creationid="hsugawa8651" creationdate="20181120T131957Z">
+        <seg>function parse(T, num, base=10)
+    &lt;x1/&gt;
 end</seg>
       </tuv>
     </tu>
@@ -46870,6 +46958,28 @@ julia&gt; page[[CartesianIndex(1,1),
   6
  11
  16</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; parse(Int,"12",10)
+12
+
+julia&gt; parse(Int,"12",3)
+5
+
+julia&gt; parse(Int,"12")
+12</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132100Z" creationid="hsugawa8651" creationdate="20181120T132100Z">
+        <seg>julia&gt; parse(Int,"12",10)
+12
+
+julia&gt; parse(Int,"12",3)
+5
+
+julia&gt; parse(Int,"12")
+12</seg>
       </tuv>
     </tu>
     <tu>
