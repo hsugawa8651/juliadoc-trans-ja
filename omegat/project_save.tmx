@@ -17892,6 +17892,16 @@ on &lt;x3/&gt;DestStyle&lt;x4/&gt;, then you should define a method with the fol
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If one of the arguments is a 64-bit
+float but the other one is not, then the &lt;x7/&gt;f(Float64,Float64)&lt;x8/&gt; method cannot be called and
+the more general &lt;x9/&gt;f(Number,Number)&lt;x10/&gt; method must be used:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T013644Z" creationid="hsugawa8651" creationdate="20181120T013644Z">
+        <seg>引数の1つが64ビット浮動小数点数で、もう1つがそうでない場合、この&lt;x7/&gt;f(Float64,Float64)&lt;x8/&gt;メソッドは呼び出すことができず、より一般的な&lt;x9/&gt;f(Number,Number)&lt;x10/&gt; メソッドを使用する必要があります。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If proper finalization of &lt;x13/&gt;a&lt;x14/&gt; depends on &lt;x15/&gt;b&lt;x16/&gt; being valid,
 it must be handled in other ways.</seg>
       </tuv>
