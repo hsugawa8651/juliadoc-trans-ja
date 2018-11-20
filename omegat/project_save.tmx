@@ -1722,10 +1722,27 @@ be accessed in a fusing fashion by &lt;x9/&gt;.=&lt;x10/&gt; assignment). In fac
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@ref next) returns next character at or after the index &lt;x1/&gt;i&lt;x2/&gt; and the next valid
+character index following that.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T084133Z" creationid="hsugawa8651" creationdate="20181120T084133Z">
+        <seg>(c, j = next(str,i) はインデックスi に格納された文字とインデックス i 以降で最初の有効なインデックスを返します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@ref scope-of-variables)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T234529Z" creationid="hsugawa8651" creationdate="20181119T234529Z">
         <seg>(@ref scope-of-variables)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@ref start) gives the first valid index at which a character can be found in &lt;x1/&gt;str&lt;x2/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T084114Z" creationid="hsugawa8651" creationdate="20181120T084114Z">
+        <seg>(@ref start) start(str) は、&lt;x1/&gt;str&lt;x2/&gt; にある最初の有効なインデックス(通常は1)を返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27576,6 +27593,15 @@ all.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The last error is because &lt;x1/&gt;'o'&lt;x2/&gt; is a character literal, and &lt;x3/&gt;`contains()`&lt;x4/&gt; is a generic
+function that looks for subsequences.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083849Z" creationid="hsugawa8651" creationdate="20181120T083849Z">
+        <seg>最後のエラーは、&lt;x1/&gt;'o'&lt;x2/&gt;が文字リテラルであり、&lt;x3/&gt;`contains()`&lt;x4/&gt;は部分列を探す汎用関数であるために起こりました。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The last index, used in &lt;x1/&gt;X[end]&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113029Z" creationid="hsugawa8651" creationdate="20181112T113029Z">
@@ -31007,6 +31033,14 @@ you can enter the literal string &lt;x7/&gt;"a CRLF line ending\r\n"&lt;x8/&gt;.
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To look for an element in a sequence, you must use &lt;x5/&gt;`in()`&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083923Z" creationid="hsugawa8651" creationdate="20181120T083923Z">
+        <seg>文字リテラルを使って文字列ないの要素を探すためには&lt;x5/&gt;`in()`&lt;x6/&gt;を使用する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To make common numeric formulae and expressions clearer, Julia allows variables to be immediately
 preceded by a numeric literal, implying multiplication.</seg>
       </tuv>
@@ -31184,6 +31218,14 @@ the least-indented line.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041603Z" creationid="hsugawa8651" creationdate="20181112T041603Z">
         <seg>Tuple&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Two other handy string functions are &lt;x1/&gt;`repeat()`&lt;x2/&gt; and &lt;x3/&gt;`join()`&lt;x4/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083955Z" creationid="hsugawa8651" creationdate="20181120T083955Z">
+        <seg>その他の2つの便利な文字列関数は  &lt;x1/&gt;`repeat()`&lt;x2/&gt; および&lt;x3/&gt;`join()`&lt;x4/&gt;関数です。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -33594,6 +33636,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;. For more det
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`endof(str)`&lt;x1/&gt; gives the maximal (byte) index that can be used to index into &lt;x2/&gt;str&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T084019Z" creationid="hsugawa8651" creationdate="20181120T084019Z">
+        <seg>`endof(str)`&lt;x1/&gt; は &lt;x2/&gt;str&lt;x3/&gt; へのインデックス付けに使用できる最大の（バイト）インデックスを返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`eval`&lt;x1/&gt; and effects</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165242Z" creationid="hsugawa8651" creationdate="20181118T165242Z">
@@ -33847,6 +33897,14 @@ Consider these examples of this syntax:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112304Z" creationid="hsugawa8651" creationdate="20181112T112304Z">
         <seg>`length(iter)`&lt;x1/&gt;`length(iter)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`length(str)`&lt;x1/&gt; the number of characters in &lt;x2/&gt;str&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T084042Z" creationid="hsugawa8651" creationdate="20181120T084042Z">
+        <seg>`length(str)`&lt;x1/&gt;は  &lt;x2/&gt;str&lt;x3/&gt;.の文字数を返します。</seg>
       </tuv>
     </tu>
     <tu>
