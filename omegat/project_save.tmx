@@ -9740,8 +9740,8 @@ a bug so that it can be resolved.</seg>
       <tuv lang="EN-US">
         <seg>Argument Passing Behavior</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T101739Z" creationid="hsugawa8651" creationdate="20181120T101739Z">
-        <seg>引き数受け渡しにおける振る舞い</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125333Z" creationid="hsugawa8651" creationdate="20181120T101739Z">
+        <seg>引数渡しの振る舞い</seg>
       </tuv>
     </tu>
     <tu>
@@ -10076,8 +10076,8 @@ Julia code within Julia itself.</seg>
 or functional languages, the &lt;x5/&gt;return&lt;x6/&gt; keyword causes a function to return immediately, providing
 an expression whose value is returned:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025731Z" creationid="hsugawa8651" creationdate="20181110T025731Z">
-        <seg>Cとその他のほとんどの命令 または関数を使用すると、&lt;x5/&gt;return&lt;x6/&gt;キーワードによって関数が即座に返され、次の関数が返されます。 値が返される式。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125606Z" creationid="hsugawa8651" creationdate="20181110T025731Z">
+        <seg>C言語ほかの命令型言語や、関数型言語と同様に、&lt;x5/&gt;return&lt;x6/&gt; キーワードを使うと、指定された式の値がすぐに返されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17129,8 +17129,8 @@ but you can change its content.</seg>
 new variable &lt;x1/&gt;bindings&lt;x2/&gt; (new locations that can refer to values), but the values they refer to
 are identical to the passed values.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025708Z" creationid="hsugawa8651" creationdate="20181110T025708Z">
-        <seg>関数引数自体は 新しい変数&lt;x1/&gt;バインディング&lt;x2/&gt;(値を参照できる新しい場所)ですが、それらが参照する値は は、渡された値と同じです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125411Z" creationid="hsugawa8651" creationdate="20181110T025708Z">
+        <seg>関数の引数は、新しい変数を &lt;x1/&gt;束縛&lt;x2/&gt; (新しい値を参照)したように振る舞いますが、参照先は渡された値と同一です。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -19685,8 +19685,8 @@ is one greater than the task-local "runtime world" that was fixed when the execu
         <seg>In the example function, &lt;x1/&gt;f&lt;x2/&gt;, from
 the previous section this is the value of the expression &lt;x3/&gt;x + y&lt;x4/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025728Z" creationid="hsugawa8651" creationdate="20181110T025728Z">
-        <seg>例の関数では、&lt;x1/&gt;f&lt;x2/&gt;は 前のセクションは、式&lt;x3/&gt;x+y&lt;x4/&gt;の値です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125547Z" creationid="hsugawa8651" creationdate="20181110T025728Z">
+        <seg>例えば、前節に出てきた &lt;x1/&gt;f&lt;x2/&gt;という関数の戻り値は 、式&lt;x3/&gt;x + y&lt;x4/&gt;.の値です。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -21200,8 +21200,8 @@ implemented using `LLVM
         <seg>Julia function arguments follow a convention sometimes called "pass-by-sharing", which means that
 values are not copied when they are passed to functions.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025705Z" creationid="hsugawa8651" creationdate="20181110T025705Z">
-        <seg>Julia関数の引数は、「共有によるパス」と呼ばれる規則に従うことがあります。これは 値が関数に渡されると、値はコピーされません。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125347Z" creationid="hsugawa8651" creationdate="20181110T025705Z">
+        <seg>Juliaの関数の引数は、時折「共有渡し」と呼ばれる方式に従っていて、関数へ引き渡す際に、値の複写を行いません。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -22142,8 +22142,8 @@ for &lt;x2/&gt;x&lt;x3/&gt;.</seg>
         <seg>Modifications to mutable values (such as &lt;x3/&gt;Array&lt;x4/&gt;s) made within
 a function will be visible to the caller.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025712Z" creationid="hsugawa8651" creationdate="20181110T025712Z">
-        <seg>(&lt;x3/&gt;Array&lt;x4/&gt;s)のような可変値への変更 呼び出し側から関数が表示されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125445Z" creationid="hsugawa8651" creationdate="20181110T025712Z">
+        <seg>関数内で(&lt;x3/&gt;配列&lt;x4/&gt;のような)可変な値を変更すると、呼び出す側にも影響します。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -25092,6 +25092,15 @@ it is possible to dynamically generate arbitrary code which can then be run usin
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165254Z" creationid="hsugawa8651" creationdate="20181118T165254Z">
         <seg>式は、プログラム的に構築されて評価されることができる、単純な&lt;x1/&gt;Expr&lt;x2/&gt;オブジェクトであるからです。 任意のコードを動的に生成して、&lt;x3/&gt;`eval'&lt;x4/&gt;を使用して実行することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since function definitions can be entered into interactive sessions, it is easy to compare these
+definitions:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125627Z" creationid="hsugawa8651" creationdate="20181120T125627Z">
+        <seg>対話セッションでも関数の定義を入力できるので、簡単に定義の比較ができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28987,8 +28996,8 @@ is that of the last subexpression.</seg>
         <seg>The value returned by a function is the value of the last expression evaluated, which, by default,
 is the last expression in the body of the function definition.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025723Z" creationid="hsugawa8651" creationdate="20181110T025723Z">
-        <seg>関数によって返される値は、評価された最後の式の値です。これは、デフォルトでは次の値です。 は、関数定義の本文で最後の式です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125517Z" creationid="hsugawa8651" creationdate="20181110T025723Z">
+        <seg>関数の返す値は、最後に評価された式の値で、デフォルトでは関数定義の本体内で、最後尾の式の値になります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -30379,8 +30388,8 @@ an important part of the operation that it is stored as the first type parameter
         <seg>This is the same behavior found in Scheme, most Lisps,
 Python, Ruby and Perl, among other dynamic languages.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025715Z" creationid="hsugawa8651" creationdate="20181110T025715Z">
-        <seg>これはSchemeで見られる動作と同じです。ほとんどのLispです。 Python、Ruby、Perlは、その他の動的言語の中でもとりわけ優れています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125459Z" creationid="hsugawa8651" creationdate="20181110T025715Z">
+        <seg>こうした挙動は,Scheme,Lispの大部分,Python,Ruby,Perl,その他の動的言語と同様です。</seg>
       </tuv>
     </tu>
     <tu>
