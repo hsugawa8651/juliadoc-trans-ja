@@ -15226,6 +15226,14 @@ being called via the wrong &lt;x5/&gt;libc&lt;x6/&gt; library and cause Julia to
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Do-Block Syntax for Function Arguments</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133734Z" creationid="hsugawa8651" creationdate="20181120T133734Z">
+        <seg>関数の引数に対するDoブロック構文</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Documentation&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T234618Z" creationid="hsugawa8651" creationdate="20181119T234618Z">
@@ -17967,6 +17975,18 @@ even for immutable structs it will not cause any harm for called functions to at
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151856Z" creationid="hsugawa8651" creationdate="20181117T151856Z">
         <seg>しかし 不変構造体でさえ、呼び出された関数がこのような修正を試みることを妨げることはないでしょう。 (つまり、渡されたポインタを通して書くこと)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However,
+if &lt;x9/&gt;a&lt;x10/&gt; and &lt;x11/&gt;b&lt;x12/&gt; were keyword arguments instead, then both would be created in the same scope and
+the &lt;x13/&gt;b&lt;x14/&gt; in &lt;x15/&gt;a=b&lt;x16/&gt; would refer to the subsequent argument &lt;x17/&gt;b&lt;x18/&gt; (shadowing any &lt;x19/&gt;b&lt;x20/&gt; in an outer scope),
+which would result in an undefined variable error (since the default expressions are evaluated
+left-to-right, and &lt;x21/&gt;b&lt;x22/&gt; has not been assigned yet).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133717Z" creationid="hsugawa8651" creationdate="20181120T133717Z">
+        <seg>しかし &lt;x9/&gt;a&lt;x10/&gt; と &lt;x11/&gt;b&lt;x12/&gt; がキーワード引数なら、両方とも同じスコープに生成されて`、&lt;x15/&gt;a=b&lt;x16/&gt;の中の&lt;x13/&gt;b&lt;x14/&gt; は、次の引数の &lt;x17/&gt;b&lt;x18/&gt; を参照するでしょう（スコープ外の&lt;x19/&gt;b&lt;x20/&gt;はシャドーイングされます）。 この結果、変数の未定義エラーが発生するでしょう。(デフォルト値は左から右へ評価されるため、&lt;x21/&gt;b&lt;x22/&gt; にはまだ何も代入されていません)</seg>
       </tuv>
     </tu>
     <tu>
@@ -24412,6 +24432,15 @@ statically-compiled languages.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151822Z" creationid="hsugawa8651" creationdate="20181117T151822Z">
         <seg>入力を変更するためのポインタを渡す</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Passing functions as arguments to other functions is a powerful technique, but the syntax for
+it is not always convenient.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133747Z" creationid="hsugawa8651" creationdate="20181120T133747Z">
+        <seg>関数を引数として他の関数へ渡すことは強力な技法ですが、その構文は必ずしも便利ではありません。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -52837,6 +52866,14 @@ julia&gt; sub2ind_rec((3, 5), 1, 2)
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063557Z" creationid="hsugawa8651" creationdate="20181114T063557Z">
         <seg>symbol a</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>the &lt;x1/&gt;b&lt;x2/&gt; in &lt;x3/&gt;a=b&lt;x4/&gt; refers to a &lt;x5/&gt;b&lt;x6/&gt; in an outer scope, not the subsequent argument &lt;x7/&gt;b&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133523Z" creationid="hsugawa8651" creationdate="20181120T133523Z">
+        <seg>&lt;x3/&gt;a=b&lt;x4/&gt; の中の &lt;x1/&gt;b&lt;x2/&gt; は、スコープ外を参照していて、次の引数の  &lt;x5/&gt;b&lt;x6/&gt; とは、解釈されません。 </seg>
       </tuv>
     </tu>
     <tu>
