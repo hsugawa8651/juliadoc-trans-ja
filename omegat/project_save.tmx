@@ -16466,8 +16466,8 @@ are true where the corresponding elements of &lt;x7/&gt;A&lt;x8/&gt; are between
       <tuv lang="EN-US">
         <seg>For example, &lt;x5/&gt;plot(x, y; (:width,2))&lt;x6/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133051Z" creationid="hsugawa8651" creationdate="20181120T133051Z">
-        <seg> plot(x, y; (:width,2)) や plot(x, y; :width =&gt; 2) などと定義は plot(x, y, width=2) と同等です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133131Z" creationid="hsugawa8651" creationdate="20181120T133051Z">
+        <seg>&lt;x5/&gt;plot(x, y; (:width,2))&lt;x6/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -16567,6 +16567,14 @@ rather than stored.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, given this definition:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133345Z" creationid="hsugawa8651" creationdate="20181120T133345Z">
+        <seg>次式のような定義を例に挙げます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, if &lt;x1/&gt;A&lt;x2/&gt; is a gigabyte-sized array that you no longer need, you can free the memory
 with &lt;x3/&gt;A = nothing&lt;x4/&gt;.</seg>
       </tuv>
@@ -16617,8 +16625,8 @@ if the vectors have different length).</seg>
         <seg>For example, in the call &lt;x1/&gt;plot(x, y; options..., width=2)&lt;x2/&gt; it is possible that the &lt;x3/&gt;options&lt;x4/&gt; structure
 also contains a value for &lt;x5/&gt;width&lt;x6/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132946Z" creationid="hsugawa8651" creationdate="20181120T132946Z">
-        <seg>例えば、plot(x, y; options..., width=2) という関数呼び出しは、optionsの中にwidthの値も設定されています。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133226Z" creationid="hsugawa8651" creationdate="20181120T132946Z">
+        <seg>例えば、&lt;x1/&gt;plot(x, y; options..., width=2)&lt;x2/&gt; という関数呼び出しは、&lt;x3/&gt;options&lt;x4/&gt; の中に &lt;x5/&gt;width&lt;x6/&gt;の値も設定されています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -19142,6 +19150,15 @@ subtype &lt;x1/&gt;AbstractArrayStyle&lt;x2/&gt;.</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>In
+contrast, &lt;x3/&gt;all&lt;x4/&gt; the arguments are in scope when keyword arguments default expressions are evaluated.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133401Z" creationid="hsugawa8651" creationdate="20181120T133339Z">
+        <seg>一方、キーワード引数が評価される際には、&lt;x3/&gt;すべての&lt;x4/&gt;引数のデフォルトの式がスコープ内に存在します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In
 this case the name is resolved within the current process.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T223759Z" creationid="hsugawa8651" creationdate="20181109T223759Z">
@@ -19762,8 +19779,8 @@ and cannot be manipulated or expressed at run time.</seg>
         <seg>In such a case the rightmost occurrence takes precedence; in
 this example, &lt;x7/&gt;width&lt;x8/&gt; is certain to have the value &lt;x9/&gt;2&lt;x10/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132938Z" creationid="hsugawa8651" creationdate="20181120T132938Z">
-        <seg>この場合は、右端の出現が優先されます。width の値は 2 に設定されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133249Z" creationid="hsugawa8651" creationdate="20181120T132938Z">
+        <seg>この場合は、右端の出現が優先されます。&lt;x7/&gt;width&lt;x8/&gt;の値は this example, &lt;x7/&gt;width&lt;x8/&gt; is certain to have the value &lt;x9/&gt;2&lt;x10/&gt; に設定されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24000,6 +24017,14 @@ addition to new user-defined data types, you define new methods for the
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131839Z" creationid="hsugawa8651" creationdate="20181120T131839Z">
         <seg>オプション引数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Optional and keyword arguments differ slightly in how their default values are evaluated.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133304Z" creationid="hsugawa8651" creationdate="20181120T133304Z">
+        <seg>オプション引数とキーワード引数は式のデフォルト値が評価される方法が少し違います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -32750,6 +32775,15 @@ constructor functions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152815Z" creationid="hsugawa8651" creationdate="20181117T152815Z">
         <seg>この文脈では&lt;x1/&gt;パッケージは&lt;x2/&gt;X&lt;x3/&gt;であるか?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When
+optional argument default expressions are evaluated, only &lt;x1/&gt;previous&lt;x2/&gt; arguments are in scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133410Z" creationid="hsugawa8651" creationdate="20181120T133331Z">
+        <seg> オプション引数のデフォルトの式が評価される際、スコープに存在するのは、&lt;x1/&gt;既に&lt;x2/&gt;評価された引数だけです。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -51804,6 +51838,14 @@ Captured variables can present performance challenges; see
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T020328Z" creationid="hsugawa8651" creationdate="20181116T020328Z">
         <seg>pipeline(`do_work`, stdout=pipeline(`sort`, "out.txt"), stderr="errs.txt")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>plot(x, y; :width =&gt; 2)&lt;x1/&gt; are equivalent to &lt;x2/&gt;plot(x, y, width=2)&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133158Z" creationid="hsugawa8651" creationdate="20181120T133158Z">
+        <seg>や plot(x, y; :width =&gt; 2)&lt;x1/&gt;などと定義は &lt;x2/&gt;plot(x, y, width=2)&lt;x3/&gt;と同等です。</seg>
       </tuv>
     </tu>
     <tu>
