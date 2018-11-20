@@ -8139,8 +8139,8 @@ from magic.</seg>
         <seg>&lt;x5/&gt;X .+= Y&lt;x6/&gt; etcetera is equivalent to &lt;x7/&gt;X .= X .+ Y&lt;x8/&gt; and results in a fused in-place assignment;
 see also &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-dot-operators).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T122046Z" creationid="hsugawa8651" creationdate="20181112T105916Z">
-        <seg>&lt;x5/&gt;X.+=Y&lt;x6/&gt;eteteraは&lt;x7/&gt;Xと同等であり、X.+Y&lt;x8/&gt;Y&lt;x8/&gt;となり、結果は融合されたインプレース割り当てになります。 &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-dot-operators)も参照してください。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T135530Z" creationid="hsugawa8651" creationdate="20181112T105916Z">
+        <seg> X .+= Y などの書き方は X .= X .+ Yと同等で、上書きによる代入が融合されて行われます。 (dot演算子参照)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13117,8 +13117,8 @@ arbitrary objects (which define &lt;x25/&gt;&lt;&lt;x26/&gt;):</seg>
         <seg>Binary (or unary) operators like &lt;x1/&gt;.+&lt;x2/&gt; are handled with the same mechanism:
 they are equivalent to &lt;x3/&gt;broadcast&lt;x4/&gt; calls and are fused with other nested "dot" calls.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T105913Z" creationid="hsugawa8651" creationdate="20181112T105913Z">
-        <seg>&lt;x1/&gt;.+&lt;x2/&gt;のようなバイナリ演算子(または単項演算子)は、同じメカニズムで処理されます。 これらは、&lt;x3/&gt;ブロードキャスト&lt;x4/&gt;コールと同等であり、他のネストされた"ドット"コールと融合されています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T135543Z" creationid="hsugawa8651" creationdate="20181112T105913Z">
+        <seg>.+ のような二項(または単項)演算子は同じ仕組みで扱われます。これらはブロードキャスト呼び出しと同等で、 他のネストされた"dot"呼び出しと融合されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25547,17 +25547,6 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121144Z" creationid="hsugawa8651" creationdate="20181118T121144Z">
         <seg>プロジェクトファイルに&lt;x5/&gt;Zebra&lt;x6/&gt;が表示されないため、&lt;x7/&gt;Zebra&lt;x8/&gt;であってもインポートは失敗します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Since adding dots to many operations and function calls in an expression
-can be tedious and lead to code that is difficult to read, the macro
-&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref @&lt;x4/&gt;dot&lt;x5/&gt;) is provided to convert &lt;x6/&gt;every&lt;x7/&gt; function call,
-operation, and assignment in an expression into the "dotted" version.</seg>
-      </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120207Z" creationid="hsugawa8651" creationdate="20181118T120207Z">
-        <seg>式の多くの操作と関数呼び出しにドットを追加することで は退屈で、読むのが難しいコードにつながり、マクロを読み取ることができない &lt;x6/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref@&lt;x4/&gt;ドット&lt;x5/&gt;)は、&lt;x6/&gt;すべての&lt;x7/&gt;関数呼び出しを変換するために提供されます。 「ドット」バージョンへの式での操作および割り当て。</seg>
       </tuv>
     </tu>
     <tu>
