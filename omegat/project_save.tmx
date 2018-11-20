@@ -18931,8 +18931,8 @@ to fit.</seg>
 numbers are densest in the real number line near zero, and grow sparser exponentially as one moves
 farther away from zero.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111224Z" creationid="hsugawa8651" creationdate="20181112T111224Z">
-        <seg>言い換えれば、表現可能浮動小数点 数は0近くの実数線で最も密集しており、指数関数的に成長するにつれて指数関数的に成長する 0から遠く離れています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034627Z" creationid="hsugawa8651" creationdate="20181112T111224Z">
+        <seg>い換えれば、浮動小数点数は実数線上で0に近い場合に最も高密度になり、 0から離れるにつれてまばらになっていきます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25180,8 +25180,8 @@ the size.</seg>
         <seg>That is, &lt;x11/&gt;eps(x)&lt;x12/&gt; yields a value of the same type as &lt;x13/&gt;x&lt;x14/&gt; such that
 &lt;x15/&gt;x + eps(x)&lt;x16/&gt; is the next representable floating-point value larger than &lt;x17/&gt;x&lt;x18/&gt;:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235547Z" creationid="hsugawa8651" creationdate="20181112T111202Z">
-        <seg>すなわち、&lt;x11/&gt;eps(x)&lt;x12/&gt;は、&lt;x13/&gt;x&lt;x14/&gt;と同じタイプの値を生成し、それによって &lt;x15/&gt;x + eps(x)&lt;x16/&gt;は、  &lt;x17/&gt;x&lt;x18/&gt;より大きい次の表現可能浮動小数点値です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034601Z" creationid="hsugawa8651" creationdate="20181112T111202Z">
+        <seg>つまり、 &lt;x11/&gt;eps(x)&lt;x12/&gt; は &lt;x13/&gt;x&lt;x14/&gt; と同様の型の値を生成し、&lt;x15/&gt;x + eps(x)&lt;x16/&gt; は &lt;x17/&gt;x&lt;x18/&gt; よりも 大きい次の浮動小数点値を生成します。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -25738,8 +25738,8 @@ of &lt;x9/&gt;DenseArray&lt;x10/&gt;;  &lt;x11/&gt;`Vector`&lt;x12/&gt; and &lt;
 argument, and gives the absolute difference between that value and the next representable
 floating point value.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235500Z" creationid="hsugawa8651" creationdate="20181119T235500Z">
-        <seg>&lt;x9/&gt;`eps()`&lt;x10/&gt;関数は、浮動小数点値を 引数は、その値と次の表現可能な値との間に絶対差を与えます。 浮動小数点値。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034531Z" creationid="hsugawa8651" creationdate="20181119T235500Z">
+        <seg> &lt;x9/&gt;`eps()`&lt;x10/&gt; 関数は、浮動小数点値を引数として使用したり、ある値と次の浮動小数点値との絶対差を 得ることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26321,8 +26321,8 @@ with:</seg>
         <seg>The distance between two adjacent representable floating-point numbers is not constant, but is
 smaller for smaller values and larger for larger values.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111227Z" creationid="hsugawa8651" creationdate="20181112T111227Z">
-        <seg>2つの隣接する表現可能浮動小数点数の間の距離は一定ではありませんが 小さい値では小さくなり、大きい値ほど大きい値になります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034619Z" creationid="hsugawa8651" creationdate="20181112T111227Z">
+        <seg>隣接する2つの浮動小数点数の距離は一定ではありませんが、小さい値ではその距離はより小さく、 大きい値ではより大きくなります。言</seg>
       </tuv>
     </tu>
     <tu>
@@ -28678,8 +28678,8 @@ yields a &lt;x5/&gt;SparseMatStyle&lt;x6/&gt;, and anything of higher dimensiona
         <seg>These values are &lt;x1/&gt;2.0^-23&lt;x2/&gt; and &lt;x3/&gt;2.0^-52&lt;x4/&gt; as &lt;x5/&gt;`Float32`&lt;x6/&gt; and &lt;x7/&gt;`Float64`&lt;x8/&gt; values,
 respectively.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235437Z" creationid="hsugawa8651" creationdate="20181112T111157Z">
-        <seg>これらの値は&lt;x1/&gt;2.0^-23&lt;x2/&gt;と&lt;x3/&gt;2.0^-52&lt;x4/&gt;であり、&lt;x5/&gt;`Float32`&lt;x6/&gt;および&lt;x7/&gt;`Float64`&lt;x8/&gt;の値である。 それぞれ。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034348Z" creationid="hsugawa8651" creationdate="20181112T111157Z">
+        <seg>これらはそれぞれ &lt;x5/&gt;`Float32`&lt;x6/&gt; および &lt;x7/&gt;`Float64`&lt;x8/&gt;  値として&lt;x1/&gt;2.0^-23&lt;x2/&gt;および &lt;x3/&gt;2.0^-52&lt;x4/&gt;  と なります。</seg>
       </tuv>
     </tu>
     <tu>
