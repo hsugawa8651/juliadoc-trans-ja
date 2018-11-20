@@ -16641,8 +16641,8 @@ a new array consisting of &lt;x11/&gt;f(pi,a)&lt;x12/&gt; for each &lt;x13/&gt;a
 a new vector consisting of &lt;x19/&gt;f(vector1[i],vector2[i])&lt;x20/&gt; for each index &lt;x21/&gt;i&lt;x22/&gt; (throwing an exception
 if the vectors have different length).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120119Z" creationid="hsugawa8651" creationdate="20181118T120119Z">
-        <seg>たとえば、&lt;x7/&gt;f(x,y)=3x+4y&lt;x8/&gt;の場合、&lt;x9/&gt;f.(pi,A)&lt;x10/&gt;は返されます。 &lt;x15/&gt;a&lt;x16/&gt;の&lt;x13/&gt;a&lt;x14/&gt;の&lt;x11/&gt;f(pi,a)&lt;x12/&gt;で構成される新しい配列であり、&lt;x17/&gt;f.(vector1,vector2)&lt;x18/&gt;は &lt;x19/&gt;f(vector1[i],vector2[i])&lt;x20/&gt;for each index&lt;X21/&gt;i&lt;x22/&gt;(例外をスローする)で構成される新しいベクトル ベクトルの長さが異なる場合。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T135254Z" creationid="hsugawa8651" creationdate="20181118T120119Z">
+        <seg>例えば &lt;x7/&gt;f(x,y) = 3x + 4y&lt;x8/&gt;と定義してから&lt;x9/&gt;f.(pi,A)&lt;x10/&gt; と書くと、 &lt;x15/&gt;A&lt;x16/&gt;の各要素&lt;x13/&gt;a&lt;x14/&gt;によって&lt;x11/&gt;f(pi,a)&lt;x12/&gt;と記述される新規の配列が返ってくるし、 &lt;x17/&gt;f.(vector1,vector2)&lt;x18/&gt; と書くとインデックス&lt;x21/&gt;i&lt;x22/&gt;によって各要素が&lt;x19/&gt;f(vector1[i],vector2[i])&lt;x20/&gt;と記述される新規のベクトルが返ってきます。(ベクトルの長さが異なるときは例外が発生します)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22639,8 +22639,8 @@ defining sophisticated behavior is typically quite simple.</seg>
       <tuv lang="EN-US">
         <seg>Moreover, &lt;x1/&gt;nested&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120129Z" creationid="hsugawa8651" creationdate="20181118T120129Z">
-        <seg>さらに、&lt;x1/&gt;ネストされた&lt;x2/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T135151Z" creationid="hsugawa8651" creationdate="20181118T120129Z">
+        <seg>ppさらに、&lt;x1/&gt;ネストされた&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
