@@ -9974,6 +9974,15 @@ method definitions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As of this writing, the valid Unicode code points are &lt;x1/&gt;U+00&lt;x2/&gt; through &lt;x3/&gt;U+d7ff&lt;x4/&gt; and &lt;x5/&gt;U+e000&lt;x6/&gt; through
+&lt;x7/&gt;U+10ffff&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080523Z" creationid="hsugawa8651" creationdate="20181120T080419Z">
+        <seg>現時点では、有効なコードポイントは &lt;x1/&gt;U+00&lt;x2/&gt; から &lt;x3/&gt;U+d7ff&lt;x4/&gt;　までと &lt;x5/&gt;U+e000&lt;x6/&gt; から &lt;x7/&gt;U+10ffff&lt;x8/&gt;までとなっています。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As such, it's also possible to define custom array types by inheriting
 from &lt;x1/&gt;`AbstractArray`&lt;x2/&gt;.</seg>
       </tuv>
@@ -18771,6 +18780,15 @@ use &lt;x10/&gt;exec&lt;x11/&gt; to replace the process to &lt;x12/&gt;julia&lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In addition
+to these Unicode escape forms, all of &lt;x5/&gt;C's traditional escaped input forms&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080655Z" creationid="hsugawa8651" creationdate="20181120T080655Z">
+        <seg>これらのUnicodeエスケープ方式に加えて、 C言語のエスケープ形式 &lt;x5/&gt;C's traditional escaped input forms&lt;x6/&gt;（訳注:ウィキペディア英語版）を用いた入力も可能です。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In addition to all the iterable and indexable methods from above, these types can also interact
 with each other and use most of the methods defined in Julia Base for &lt;x1/&gt;AbstractArrays&lt;x2/&gt;:</seg>
       </tuv>
@@ -21039,6 +21057,15 @@ conversions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121242Z" creationid="hsugawa8651" creationdate="20181118T121242Z">
         <seg>Juliaは、public&lt;x1/&gt;Priv&lt;x2/&gt;パッケージをロードするために存在する最初のものを使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia uses your system's locale and language settings to determine which characters can be printed
+as-is and which must be output using the generic, escaped &lt;x1/&gt;\u&lt;x2/&gt; or &lt;x3/&gt;\U&lt;x4/&gt; input forms.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080641Z" creationid="hsugawa8651" creationdate="20181120T080641Z">
+        <seg>Juliaは、システムのロケールと言語設定を加味して、どの文字が支障なく出力できるか、そしてどの文字が&lt;x1/&gt;\u&lt;x2/&gt;  または &lt;x3/&gt;\U&lt;x4/&gt; を使用してエスケープされた状態で出力すべきか判断します。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -28840,6 +28867,15 @@ end and at the call site; however, &lt;x1/&gt;don't copy them&lt;x2/&gt;, for th
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These have not all been assigned intelligible meanings yet, nor are they necessarily
+interpretable by applications, but all of these values are considered to be valid Unicode characters.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080431Z" creationid="hsugawa8651" creationdate="20181120T080431Z">
+        <seg>これら全てのコードポイントに記号が割り当てられているわけではなく、また必ずしもアプリケーションによっては解釈できないものもありますが、 これら全てのコードポイントは有効なUnicode文字としてみなされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These loops are both exited early by using &lt;c3&gt;break&lt;/c3&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142403Z" creationid="hsugawa8651" creationdate="20181119T142403Z">
@@ -31984,6 +32020,18 @@ the greatest size (potentially including padding).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151150Z" creationid="hsugawa8651" creationdate="20181117T151150Z">
         <seg>&lt;x1/&gt;の近似を知ることができるのなら、それは&lt;x x/&gt;&lt;x2/&gt;の近似値を得ることができる。 最大サイズ(パディングを含む可能性があります)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can input any Unicode character in single quotes using &lt;x1/&gt;\u&lt;x2/&gt; followed by up to four hexadecimal
+digits or &lt;x3/&gt;\U&lt;x4/&gt; followed by up to eight hexadecimal digits (the longest valid value only requires
+six):</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080553Z" creationid="hsugawa8651" creationdate="20181120T080553Z">
+        <seg>シングルクオーテンションで囲まれたエリアの中では、&lt;x1/&gt;\u&lt;x2/&gt; に続けて最大4桁の16進数を入力するか、&lt;x3/&gt;\U&lt;x4/&gt;に続けて最大8桁の16進数（6桁から有効）を入力することで、 Unicode文字を入力することができます。:
+
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -39329,6 +39377,22 @@ julia&gt; factorial(BigInt(40))
     <tu>
       <tuv lang="EN-US">
         <seg>julia&gt; Char(0x110000)
+'\U110000': Unicode U+110000 (category Cn: Other, not assigned)
+
+julia&gt; isvalid(Char, 0x110000)
+false</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080703Z" creationid="hsugawa8651" creationdate="20181120T080703Z">
+        <seg>julia&gt; Char(0x110000)
+'\U110000': Unicode U+110000 (category Cn: Other, not assigned)
+
+julia&gt; isvalid(Char, 0x110000)
+false</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Char(0x110000)
 '\U110000': Unicode U+110000 (category In: Invalid, too high)
 
 julia&gt; isvalid(Char, 0x110000)
@@ -39560,6 +39624,52 @@ julia&gt; Int('\x7f')
 
 julia&gt; Int('\177')
 127</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Int('\0')
+0
+
+julia&gt; Int('\t')
+9
+
+julia&gt; Int('\n')
+10
+
+julia&gt; Int('\e')
+27
+
+julia&gt; Int('\x7f')
+127
+
+julia&gt; Int('\177')
+127
+
+julia&gt; Int('\xff')
+255</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080656Z" creationid="hsugawa8651" creationdate="20181120T080656Z">
+        <seg>julia&gt; Int('\0')
+0
+
+julia&gt; Int('\t')
+9
+
+julia&gt; Int('\n')
+10
+
+julia&gt; Int('\e')
+27
+
+julia&gt; Int('\x7f')
+127
+
+julia&gt; Int('\177')
+127
+
+julia&gt; Int('\xff')
+255</seg>
       </tuv>
     </tu>
     <tu>
