@@ -19244,6 +19244,14 @@ with Julia:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In all these cases, &lt;x1/&gt;x&lt;x2/&gt; is bound to a tuple of the trailing values passed to &lt;x3/&gt;bar&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131442Z" creationid="hsugawa8651" creationdate="20181120T131442Z">
+        <seg>以上のすべてのケースで、&lt;x1/&gt;x&lt;x2/&gt;には、&lt;x3/&gt;bar&lt;x4/&gt;に渡されて残ったものがタプルとして束縛されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In any indexing expression, the keyword &lt;x1/&gt;end&lt;x2/&gt; can be used as a shorthand for the last index (computed
 by &lt;x3/&gt;`endof(str)`&lt;x4/&gt;).</seg>
       </tuv>
@@ -20754,6 +20762,14 @@ taking all arguments explicitly and enforcing essential error checking and trans
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is often convenient to be able to write functions taking an arbitrary number of arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131233Z" creationid="hsugawa8651" creationdate="20181120T131233Z">
+        <seg>関数の引数が任意の個数でも受け取れると便利なことが、よくあります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is often quite useful, however, to have access to some of your favorite tools—standard libraries, profilers, debuggers, personal utilities, etc.—even if they are not dependencies of the project you're working on.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121412Z" creationid="hsugawa8651" creationdate="20181118T121412Z">
@@ -20774,8 +20790,8 @@ the number of dimensions &lt;x3/&gt;N&lt;x4/&gt; and the element type &lt;x5/&gt
         <seg>It is possible to constrain the number of values passed as a variable argument; this will be discussed
 later in &lt;x1/&gt;Parametrically-constrained Varargs methods&lt;x2/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101624Z" creationid="hsugawa8651" creationdate="20181112T101624Z">
-        <seg>変数引数として渡される値の数を制限することは可能です。これについては、以下を参照してください。 &lt;x1/&gt;パラメトリックに拘束されたVarargsメソッド&lt;x2/&gt;の後にあります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131509Z" creationid="hsugawa8651" creationdate="20181112T101624Z">
+        <seg>可変引数として渡される値の個数に制約をかけることも可能です。 これは、あとでパラメトリック制約付き可変引数メソッド &lt;x1/&gt;Parametrically-constrained Varargs methods&lt;x2/&gt; で検討します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23490,6 +23506,15 @@ into a function call as individual arguments.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>On the flip side, it is often handy to "splice" the values contained in an iterable collection
+into a function call as individual arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131525Z" creationid="hsugawa8651" creationdate="20181120T131525Z">
+        <seg>その一方で、イテラブル・コレクションと関数の引数を"継ぎ合わせる"ことも、便利なのでよく行われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>On the other hand, any type of expression can be used at the end of a conditional chain.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141004Z" creationid="hsugawa8651" creationdate="20181109T230819Z">
@@ -25863,6 +25888,15 @@ interoperable code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020027Z" creationid="hsugawa8651" creationdate="20181120T020027Z">
         <seg>そのような定義はシグネチャがUnionAll型であるメソッドに対応します(全合併型 参照)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Such functions are traditionally known as "varargs" functions, which is short for "variable number
+of arguments".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131250Z" creationid="hsugawa8651" creationdate="20181120T131250Z">
+        <seg>そういった関数は伝統的に"可変引数"関数と呼ばれます。 "vararg"(可変引数)は"variable number of arguments"(可変個の引数)の略です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29286,6 +29320,16 @@ value of the last evaluated expression whether it is shown or not.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T091528Z" creationid="hsugawa8651" creationdate="20181114T031359Z">
         <seg>&lt;x13/&gt;ans&lt;x14/&gt; という変数は、最後に評価された式の値（それが表示されたか否かに関わらず）に束縛されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The variables &lt;x1/&gt;a&lt;x2/&gt; and &lt;x3/&gt;b&lt;x4/&gt; are bound to the first two argument values as usual, and the variable
+&lt;x5/&gt;x&lt;x6/&gt; is bound to an iterable collection of the zero or more values passed to &lt;x7/&gt;bar&lt;x8/&gt; after its first
+two arguments:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131406Z" creationid="hsugawa8651" creationdate="20181120T131406Z">
+        <seg>変数 &lt;x1/&gt;a&lt;x2/&gt;,&lt;x3/&gt;b&lt;x4/&gt;には、通常通り、最初の2つの引数の値が束縛されます。 変数 &lt;x5/&gt;x&lt;x6/&gt; に束縛されるのは、長さ０個以上のイテラブル・コレクションで、関数 &lt;x7/&gt;bar&lt;x8/&gt; に始めの2つの引数の後に続けて渡されたものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33115,6 +33159,14 @@ integer value back to a &lt;x5/&gt;Char&lt;x6/&gt; just as easily:</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080305Z" creationid="hsugawa8651" creationdate="20181120T080305Z">
         <seg>また、整数値を簡単に &lt;x5/&gt;Char&lt;x6/&gt;  へと変換し直すこともできます。:
 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can define a varargs function by following the last argument with an ellipsis:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131321Z" creationid="hsugawa8651" creationdate="20181120T131321Z">
+        <seg> 可変引数関数を定義するには、最後の引数の後に...(省略記号)を付けます。</seg>
       </tuv>
     </tu>
     <tu>
