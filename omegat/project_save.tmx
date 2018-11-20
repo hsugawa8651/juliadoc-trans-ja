@@ -13244,8 +13244,8 @@ create a &lt;x16/&gt;SubArray&lt;x17/&gt; view instead.</seg>
         <seg>By the &lt;x3/&gt;IEEE 754 standard&lt;x4/&gt;,
 these floating-point values are the results of certain arithmetic operations:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110847Z" creationid="hsugawa8651" creationdate="20181112T110847Z">
-        <seg>&lt;x3/&gt;IEEE754規格の&lt;x4/&gt;では これらの浮動小数点値は、特定の算術演算の結果です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034109Z" creationid="hsugawa8651" creationdate="20181112T110847Z">
+        <seg> &lt;x3/&gt;IEEE 754規格&lt;x4/&gt; では、これらの浮動小数点値は特定の演算処理の結果として取得されます。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -16434,8 +16434,8 @@ then cache it in a shared reference for that session.</seg>
         <seg>For further discussion of how these non-finite floating-point values are ordered with respect
 to each other and other floats, see &lt;x1/&gt;Numeric Comparisons&lt;x2/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110845Z" creationid="hsugawa8651" creationdate="20181112T110845Z">
-        <seg>これらの非有限浮動小数点値がどのように並べられるかについてのさらなる議論については、次の通りである。 お互いや他のフロートについては、&lt;x1/&gt;数値比較&lt;x2/&gt;を参照してください。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034052Z" creationid="hsugawa8651" creationdate="20181112T110845Z">
+        <seg>どのように非有限浮動小数点値がお互いに、およびその他の浮動値に対して順序付けられているかについては、 &lt;x1/&gt;Numeric Comparisons&lt;x2/&gt;.を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20730,8 +20730,8 @@ binaries or compiling from source.</seg>
         <seg>Julia provides &lt;x1/&gt;`eps()`&lt;x2/&gt;, which gives the distance between &lt;x3/&gt;1.0&lt;x4/&gt; and the next larger representable
 floating-point value:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235345Z" creationid="hsugawa8651" creationdate="20181119T235345Z">
-        <seg>Juliaは&lt;x1/&gt;`eps()`&lt;x2/&gt;を提供する。これは&lt;x3/&gt;1.0&lt;x4/&gt;と次に大きい表現型の距離を与える。 浮動小数点値:</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034246Z" creationid="hsugawa8651" creationdate="20181119T235345Z">
+        <seg>Juliaは、 &lt;x3/&gt;1.0&lt;x4/&gt; と次に大きい浮動小数点値の間の距離を取得する &lt;x1/&gt;`eps()`&lt;x2/&gt; 関数を提供しています。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -21321,8 +21321,8 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
       <tuv lang="EN-US">
         <seg>Machine epsilon</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120349Z" creationid="hsugawa8651" creationdate="20181118T120349Z">
-        <seg>機械イプシロン</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034147Z" creationid="hsugawa8651" creationdate="20181118T120349Z">
+        <seg>計算機エプシロン</seg>
       </tuv>
     </tu>
     <tu>
@@ -21721,8 +21721,10 @@ also accept a first input &lt;x3/&gt;T&lt;x4/&gt;, which is the element type of 
 it is important to know the distance between two adjacent representable floating-point numbers,
 which is often known as &lt;x1/&gt;machine epsilon&lt;x2/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111132Z" creationid="hsugawa8651" creationdate="20181112T111132Z">
-        <seg>ほとんどの実数は浮動小数点数で正確に表現することはできません。したがって、多くの目的で使用することはできません。 2つの隣接する表現可能浮動小数点数間の距離を知ることが重要です。 これはしばしば&lt;x1/&gt;機械イプシロン&lt;x2/&gt;と呼ばれる。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034216Z" creationid="hsugawa8651" creationdate="20181112T111132Z">
+        <seg>ほとんどの実数は、浮動小数点数で正確に表現することができないため、&lt;x1/&gt;計算機イプシロン&lt;x2/&gt; として知られる隣接する２つの浮動小数点数の距離を理解することは、多くの用途のために重要となります。
+
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -25503,8 +25505,8 @@ the normal flow of control.</seg>
       <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;`typemin()`&lt;x2/&gt; and &lt;x3/&gt;`typemax()`&lt;x4/&gt; functions also apply to floating-point types:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235320Z" creationid="hsugawa8651" creationdate="20181119T235320Z">
-        <seg>&lt;x1/&gt;`typemin()`&lt;x2/&gt;と&lt;x3/&gt;`typemax()`&lt;x4/&gt;関数も浮動小数点型に適用される。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034136Z" creationid="hsugawa8651" creationdate="20181119T235320Z">
+        <seg>&lt;x1/&gt;`typemin()`&lt;x2/&gt;および&lt;x3/&gt;`typemax()`&lt;x4/&gt;関数は浮動小数点型に対しても使用が可能です。</seg>
       </tuv>
     </tu>
     <tu>
