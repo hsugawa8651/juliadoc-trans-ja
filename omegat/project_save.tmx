@@ -1535,6 +1535,14 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id man-types)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142951Z" creationid="hsugawa8651" creationdate="20181120T142951Z">
+        <seg>型 (@id man-types)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id man-vectorized)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134417Z" creationid="hsugawa8651" creationdate="20181118T120051Z">
@@ -9371,6 +9379,15 @@ valid index.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134312Z" creationid="hsugawa8651" creationdate="20181120T134312Z">
         <seg>この無名関数が終了した後に、&lt;x5/&gt;`open()`&lt;x6/&gt; はストリームが適切に閉じられたかどうかを確認します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All code in classic dynamically typed languages is polymorphic: only by explicitly checking types,
+or when objects fail to support operations at run-time, are the types of any values ever restricted.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143047Z" creationid="hsugawa8651" creationdate="20181120T143047Z">
+        <seg>古典的な動的型付言語はすべて多相的です。 型に制約が生じるのは、明示的に型検査を行う場合か、オブジェクトが実行時に操作に対応できなくなった場合 くらいのものでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24081,6 +24098,16 @@ using the &lt;x19/&gt;qsort&lt;x20/&gt; function (rather than Julia's built-in &
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Object orientation allows some flexibility in statically
+typed languages by letting code be written without the precise types of values being known at
+compile time.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143022Z" creationid="hsugawa8651" creationdate="20181120T143022Z">
+        <seg> 静的型システムでもオブジェクト指向ではある程度は柔軟で、コンパイル時に値の正確な型がわからなくても プログラムを書くことができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Observe the following specific instances of these rules in our example:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121339Z" creationid="hsugawa8651" creationdate="20181118T121339Z">
@@ -27819,6 +27846,14 @@ dispatch&lt;/a0&gt;</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182532Z" creationid="hsugawa8651" creationdate="20181118T182532Z">
         <seg>&lt;a0&gt;多重ディスパッチ&lt;/a0&gt; によってさまざまな引数の組み合わせごとに関数の振る舞いを定義できます
 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ability to write code that can operate on different types is called polymorphism.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143034Z" creationid="hsugawa8651" creationdate="20181120T143034Z">
+        <seg>異なる型に対して動作可能なプログラムを記述できる能力を多相性[訳注1]_といいます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -33096,6 +33131,17 @@ arguments at the end of the argument list.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041840Z" creationid="hsugawa8651" creationdate="20181110T041840Z">
         <seg>Type relations</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Type systems have traditionally fallen into two quite different camps: static type systems, where
+every program expression must have a type computable before the execution of the program, and
+dynamic type systems, where nothing is known about types until run time, when the actual values
+manipulated by the program are available.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143007Z" creationid="hsugawa8651" creationdate="20181120T142848Z">
+        <seg>型システムは伝統的にまったく異なる2つの陣営に分類されてきました。静的型システムと動的型システムです。 静的型システムでは、すべてのプログラムの式は、実行前に型が算出可能でなくてはなりません。 動的型システムでは、処理するデータが利用可能になる実行時まで、型についてなにもわかりません。</seg>
       </tuv>
     </tu>
     <tu>
