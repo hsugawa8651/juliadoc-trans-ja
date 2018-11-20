@@ -9087,6 +9087,15 @@ be provided as outer constructors that call the inner constructors to do the hea
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Additional discussion of other encodings and
+how to implement support for them is beyond the scope of this document for the time being.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081951Z" creationid="hsugawa8651" creationdate="20181120T081951Z">
+        <seg>その他のエンコーディングとその実装方法は当ドキュメントの対象外となります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Additional functionality is available from a growing collection of available packages.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150049Z" creationid="hsugawa8651" creationdate="20181110T041650Z">
@@ -16357,6 +16366,15 @@ the constraint that the first number is not greater than the second one.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, the &lt;x1/&gt;LegacyStrings.jl&lt;x2/&gt; package
+implements &lt;x3/&gt;UTF16String&lt;x4/&gt; and &lt;x5/&gt;UTF32String&lt;x6/&gt; types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081939Z" creationid="hsugawa8651" creationdate="20181120T081939Z">
+        <seg>例えば、&lt;x1/&gt;LegacyStrings.jl&lt;x2/&gt; パッケージは  &lt;x3/&gt;UTF16String&lt;x4/&gt; および &lt;x5/&gt;UTF32String&lt;x6/&gt;型を実装しています。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, the &lt;x1/&gt;`sqrt`&lt;x2/&gt; function throws a &lt;x3/&gt;`DomainError`&lt;x4/&gt; if applied to a negative
 real value:</seg>
       </tuv>
@@ -16850,6 +16868,16 @@ efficient enough for deploying performance-intensive applications.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121446Z" creationid="hsugawa8651" creationdate="20181118T121446Z">
         <seg>幸いなことに、ほとんどのJuliaユーザーは、コード読み込みの技術的な詳細を忘れ、組み込みパッケージ・マネージャーを使用して、適切なプロジェクトやマニフェスト・ファイルにパッケージ&lt;x x/&gt;x2/&gt;を追加して、&lt;x5/&gt;x&lt;x6/&gt;をロード&lt;x5/&gt;X&lt;x6/&gt;に読み込むことはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fortunately, the above awkward idiom is unnecessary
+for iterating through the characters in a string, since you can just use the string as an iterable
+object, no exception handling required:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081856Z" creationid="hsugawa8651" creationdate="20181120T081856Z">
+        <seg>幸運なことに反復可能なオブジェクトとして文字列を使うことができ、それにより例外処理が不要になるため、 上の例のような冗長的な記述は不要です。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -18612,6 +18640,14 @@ a string at such an invalid byte index, an error is thrown:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081530Z" creationid="hsugawa8651" creationdate="20181120T081530Z">
         <seg>このような無効なバイトインデックスで文字列にインデックスを付けた場合、例外が投げられます。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you iterate through the indices 1 through &lt;x3/&gt;`endof(s)`&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081719Z" creationid="hsugawa8651" creationdate="20181120T081719Z">
+        <seg>インデックス1から &lt;x3/&gt;`endof(s)`&lt;x4/&gt;まで繰り返し処理を行い、</seg>
       </tuv>
     </tu>
     <tu>
@@ -21148,6 +21184,14 @@ conversions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152915Z" creationid="hsugawa8651" creationdate="20181117T152915Z">
         <seg>Juliaは3種類の環境を理解しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia uses the UTF-8 encoding by default, and support for new encodings can be added by packages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081906Z" creationid="hsugawa8651" creationdate="20181120T081906Z">
+        <seg>JuliaはデフォルトでUTF-8エンコーディングを使用し、加えてパッケージで追加できる新しいエンコーディングもサポートしています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -26405,6 +26449,14 @@ evaluated as are necessary to determine the final boolean value of the entire ch
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The blank lines actually have spaces on them.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081838Z" creationid="hsugawa8651" creationdate="20181120T081838Z">
+        <seg>空白行には実際にはスペースがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The body becomes almost identical, but
 instead of calculating the linear index, we build up an &lt;x1/&gt;expression&lt;x2/&gt; that calculates the index:</seg>
       </tuv>
@@ -27091,6 +27143,15 @@ dimension size and stride parameters.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T070904Z" creationid="hsugawa8651" creationdate="20181114T031056Z">
         <seg>以下の例は異なる形式を表しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following is an inefficient and
+verbose way to iterate through the characters of &lt;x6/&gt;s&lt;x7/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081821Z" creationid="hsugawa8651" creationdate="20181120T081821Z">
+        <seg>下の例は &lt;x6/&gt;s&lt;x7/&gt;という文字を反復処理する非効率的で冗長的な方法です。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -30369,6 +30430,15 @@ with a single method, applicable to all types of arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T005942Z" creationid="hsugawa8651" creationdate="20181120T005942Z">
         <seg>ここまでで例示した関数は、単一のメソッドで定義されたものだけで、すべての型の引数に適用可能です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thus we have the identity that &lt;x4/&gt;length(s) &lt;= endof(s)&lt;x5/&gt;,
+since each character in a string must have its own index.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081806Z" creationid="hsugawa8651" creationdate="20181120T081806Z">
+        <seg>したがって、文字列内のそれぞれの文字は固有のインデックスを持つため、  &lt;x4/&gt;length(s) &lt;= endof(s)&lt;x5/&gt;を使用して識別ができます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -42843,6 +42913,40 @@ ERROR: UndefVarError: z not defined</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; for i = 1:endof(s)
+           try
+               println(s[i])
+           catch
+               &lt;x1/&gt; ignore the index error
+           end
+       end
+∀
+
+x
+
+∃
+
+y</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081824Z" creationid="hsugawa8651" creationdate="20181120T081824Z">
+        <seg>julia&gt; for i = 1:endof(s)
+           try
+               println(s[i])
+           catch
+               &lt;x1/&gt; ignore the index error
+           end
+       end
+∀
+
+x
+
+∃
+
+y</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; for i = firstindex(s):lastindex(s)
            try
                println(s[i])
@@ -49987,6 +50091,15 @@ paths = reduce(merge, reverse([paths₁, paths₂, …]))</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071401Z" creationid="hsugawa8651" creationdate="20181118T095757Z">
         <seg>&lt;x1/&gt;x&lt;x2/&gt; を0に向かって丸める</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>s&lt;x1/&gt;, the sequence of characters returned when errors aren't thrown is the sequence
+of characters comprising the string &lt;x2/&gt;s&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081745Z" creationid="hsugawa8651" creationdate="20181120T081745Z">
+        <seg> s &lt;x1/&gt;にインデックスする場合、エラーが出力されなければ文字列  &lt;x2/&gt;s&lt;x3/&gt; を構成する一連の文字列が返されます。 </seg>
       </tuv>
     </tu>
     <tu>
