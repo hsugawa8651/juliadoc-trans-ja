@@ -33617,6 +33617,14 @@ abstract type Unsigned &lt;: Integer end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>accurate &lt;x1/&gt;log(beta(x,y))&lt;x2/&gt; for large &lt;x3/&gt;x&lt;x4/&gt; or &lt;x5/&gt;y&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075128Z" creationid="hsugawa8651" creationdate="20181120T075128Z">
+        <seg>大きな値 &lt;x3/&gt;x&lt;x4/&gt;  または &lt;x5/&gt;y&lt;x6/&gt;  に対する正確な &lt;x1/&gt;log(beta(x,y))&lt;x2/&gt;の値</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>accurate &lt;x1/&gt;log(factorial(x))&lt;x2/&gt; for large &lt;x3/&gt;x&lt;x4/&gt;; same as &lt;x5/&gt;lgamma(x+1)&lt;x6/&gt; for &lt;x7/&gt;x &gt; 1&lt;x8/&gt;, zero otherwise</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075005Z" creationid="hsugawa8651" creationdate="20181120T075005Z">
