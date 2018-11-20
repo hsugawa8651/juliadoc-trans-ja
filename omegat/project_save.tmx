@@ -33458,8 +33458,8 @@ or &lt;x7/&gt;Ptr{Any}&lt;x8/&gt; (corresponding to &lt;x9/&gt;jl_value_t**&lt;x
       <tuv lang="EN-US">
         <seg>a value with the magnitude of &lt;x1/&gt;x&lt;x2/&gt; and the sign of &lt;x3/&gt;x*y&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095945Z" creationid="hsugawa8651" creationdate="20181118T095945Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;の大きさを持つ値で、&lt;x3/&gt;x*y&lt;x4/&gt;の符号</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073227Z" creationid="hsugawa8651" creationdate="20181118T095945Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の大きさで、&lt;x3/&gt;x*y&lt;x4/&gt;と同じ符号を持つ値</seg>
       </tuv>
     </tu>
     <tu>
@@ -34285,8 +34285,8 @@ println(call_dist(a,b))</seg>
       <tuv lang="EN-US">
         <seg>cube root of &lt;x1/&gt;x&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100014Z" creationid="hsugawa8651" creationdate="20181118T100014Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;の立方体根</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073235Z" creationid="hsugawa8651" creationdate="20181118T100014Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の立方根</seg>
       </tuv>
     </tu>
     <tu>
@@ -36297,8 +36297,8 @@ err = ccall(:gethostname, stdcall, Int32, (Ptr{UInt8}, UInt32), hn, length(hn))<
       <tuv lang="EN-US">
         <seg>hypotenuse of right-angled triangle with other sides of length &lt;x1/&gt;x&lt;x2/&gt; and &lt;x3/&gt;y&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100018Z" creationid="hsugawa8651" creationdate="20181118T100018Z">
-        <seg>長さ&lt;x1/&gt;x&lt;x2/&gt;と&lt;x3/&gt;y&lt;x4/&gt;の他の辺を持つ直角三角形の斜辺</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073412Z" creationid="hsugawa8651" creationdate="20181118T100018Z">
+        <seg>長さ &lt;x1/&gt;x&lt;x2/&gt; and &lt;x3/&gt;y&lt;x4/&gt;の辺を持つ直角三角形の斜辺</seg>
       </tuv>
     </tu>
     <tu>
@@ -48662,8 +48662,8 @@ Pub  = "c07ecb7d-0dc9-4db7-8803-fadaaeaf08e1"</seg>
       <tuv lang="EN-US">
         <seg>natural exponential function at &lt;x1/&gt;x&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100022Z" creationid="hsugawa8651" creationdate="20181118T100022Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;での自然指数関数</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073450Z" creationid="hsugawa8651" creationdate="20181118T100022Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt; の自然な指数関数</seg>
       </tuv>
     </tu>
     <tu>
