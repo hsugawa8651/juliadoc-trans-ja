@@ -16501,6 +16501,14 @@ types with PNG representations will automatically display the image using the mo
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, consider a function &lt;x1/&gt;plot&lt;x2/&gt; that plots a line.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132207Z" creationid="hsugawa8651" creationdate="20181120T132207Z">
+        <seg>例えば、&lt;x1/&gt;plot&lt;x2/&gt;という線を描く関数を考えてみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, elements might be computed on request
 rather than stored.</seg>
       </tuv>
@@ -17267,6 +17275,14 @@ variable they have been assigned to.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T034021Z" creationid="hsugawa8651" creationdate="20181119T033810Z">
         <seg>引数に書き込む関数は、名前の末尾を&lt;c0&gt;!&lt;/c0&gt;とします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Functions with keyword arguments are defined using a semicolon in the signature:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132313Z" creationid="hsugawa8651" creationdate="20181120T132313Z">
+        <seg>キーワード引数関数を使う関数は、関数を宣言する行で、セミコロンを使って定義します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18518,6 +18534,15 @@ on &lt;x3/&gt;DestStyle&lt;x4/&gt;, then you should define a method with the fol
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131655Z" creationid="hsugawa8651" creationdate="20181113T131655Z">
         <seg>その代わりに、宛先タイプ&lt;x1/&gt;DestType&lt;x2/&gt;に特化する必要はありません。 &lt;x3/&gt;DestStyle&lt;x4/&gt;では、次のシグニチャを使用してメソッドを定義する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If it accepts keyword arguments, a possible
+call might look like &lt;x3/&gt;plot(x, y, width=2)&lt;x4/&gt;, where we have chosen to specify only line width.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132331Z" creationid="hsugawa8651" creationdate="20181120T132235Z">
+        <seg>キーワード引数を使えば、&lt;x3/&gt;plot(x, y, width=2)&lt;x4/&gt;のように書いて、線の幅だけを指定する、といったことができるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20610,6 +20635,15 @@ the first block in &lt;x1/&gt;if @generated&lt;x2/&gt; is used, and a normal one
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T021218Z" creationid="hsugawa8651" creationdate="20181120T021218Z">
         <seg>また、世代を比較するだけで、2つの世界で利用できるメソッドを比較することもできます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It also becomes possible to pass any subset of a large number of arguments, in any
+order.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132309Z" creationid="hsugawa8651" creationdate="20181120T132309Z">
+        <seg>もう１つは、たくさんの引数の中から、設定する引数を選んでどの順番で指定してもいいのです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23244,6 +23278,15 @@ and it may not be explicitly closed.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151250Z" creationid="hsugawa8651" creationdate="20181117T151250Z">
         <seg>注:この機能は現在、64ビットのx86およびAArch64プラットフォームでのみ実装されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notice
+that this serves two purposes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132245Z" creationid="hsugawa8651" creationdate="20181120T132245Z">
+        <seg> キーワード引数には、２つの目的で役に立ちます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27216,6 +27259,15 @@ so they can follow the same codepath.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The call is easier to read, since we can label an argument with
+its meaning.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132302Z" creationid="hsugawa8651" creationdate="20181120T132302Z">
+        <seg>１つは、関数呼び出しの意図がわかりやすくなります。引数に意味をラベル付けできるからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The callback you pass to C should only execute a &lt;x1/&gt;`ccall`&lt;x2/&gt; to &lt;x3/&gt;:uv_async_send&lt;x4/&gt;, passing
 &lt;x5/&gt;cond.handle&lt;x6/&gt; as the argument, taking care to avoid any allocations or other interactions with the
 Julia runtime.</seg>
@@ -30563,6 +30615,15 @@ to the behavior of &lt;x7/&gt;`getindex`&lt;x8/&gt; and &lt;x9/&gt;`setindex!`&l
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152531Z" creationid="hsugawa8651" creationdate="20181117T152531Z">
         <seg>この関数は意図的に似ています &lt;x7/&gt;`getindex'&lt;x8/&gt;および&lt;x9/&gt;`setindex!`&lt;x10/&gt;(例:&lt;x11/&gt;[]&lt;x12/&gt;アクセス構文)の動作です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This function might have many options,
+for controlling line style, width, color, and so on.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132223Z" creationid="hsugawa8651" creationdate="20181120T132223Z">
+        <seg> この関数には、たくさんのオプションがあって、線のスタイル、幅、色などを操作することができます。 </seg>
       </tuv>
     </tu>
     <tu>
