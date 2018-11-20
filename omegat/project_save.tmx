@@ -8967,8 +8967,8 @@ Dingo/
       <tuv lang="EN-US">
         <seg>AbstractString&lt;x1/&gt;s.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120404Z" creationid="hsugawa8651" creationdate="20181118T120404Z">
-        <seg>AbstractString&lt;x1/&gt;s.</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035828Z" creationid="hsugawa8651" creationdate="20181120T035828Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
@@ -13815,8 +13815,8 @@ iteration&lt;x8/&gt;.</seg>
       <tuv lang="EN-US">
         <seg>Constructors exist to create these types from primitive numerical types, and &lt;x1/&gt;`parse()`&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235715Z" creationid="hsugawa8651" creationdate="20181119T235715Z">
-        <seg>コンストラクタはプリミティブな数値型からこれらのタイプを作成するために存在します。&lt;x1/&gt;`parse()`&lt;x2/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035848Z" creationid="hsugawa8651" creationdate="20181119T235715Z">
+        <seg>コンストラクタは数値プリミティブ型からこれらの型を生成し、&lt;x1/&gt;`parse()`&lt;x2/&gt;は AbstractStringから これらの型を生成する際に使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22690,8 +22690,8 @@ its value.</seg>
         <seg>Once created, they participate in arithmetic
 with all other numeric types thanks to Julia's &lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref conversion-and-promotion):</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111549Z" creationid="hsugawa8651" creationdate="20181112T111549Z">
-        <seg>作成されると、計算に参加します。 その他の数値タイプは、Juliaの&lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref conversion and promotion)(@ref conversion and promotion)のおかげです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035909Z" creationid="hsugawa8651" creationdate="20181112T111549Z">
+        <seg>Juliaの 型プロモーションと変換機構 &lt;x2/&gt;&lt;x3/&gt;&lt;x4/&gt;(@ref conversion-and-promotion)により、一度生成すると、全ての数値型で演算に対応します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25719,8 +25719,8 @@ it to return something different that supports &lt;x5/&gt;axes&lt;x6/&gt; and in
         <seg>The &lt;x5/&gt;`BigInt`&lt;x6/&gt; and &lt;x7/&gt;`BigFloat`&lt;x8/&gt; types are available in Julia for arbitrary
 precision integer and floating point numbers respectively.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111544Z" creationid="hsugawa8651" creationdate="20181112T111544Z">
-        <seg>&lt;x5/&gt;"BigInt"&lt;x6/&gt;および&lt;x7/&gt;"BigFloat"&lt;x8/&gt;"は、任意のためにJuliaで利用可能である。 精度整数と浮動小数点数をそれぞれ指定します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035712Z" creationid="hsugawa8651" creationdate="20181112T111544Z">
+        <seg>Juliaでは任意精度整数と浮動小数点数のための The  &lt;x5/&gt;`BigInt`&lt;x6/&gt; および &lt;x7/&gt;`BigFloat`&lt;x8/&gt; 型を利用いただけます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30053,8 +30053,8 @@ type &lt;x2/&gt;T&lt;x3/&gt; needs to implement &lt;x4/&gt;iterate&lt;x5/&gt; fo
 the &lt;x1/&gt;GNU Multiple Precision Arithmetic Library (GMP)&lt;x2/&gt; and the &lt;x3/&gt;GNU MPFR Library&lt;x4/&gt;,
 respectively.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111540Z" creationid="hsugawa8651" creationdate="20181112T111540Z">
-        <seg>任意精度の整数と浮動小数点数を使用して計算を可能にするには、Juliaラップを使用します。 &lt;x1/&gt;GNU Multi-Precision Library(GMP)&lt;x2/&gt;および&lt;x3/&gt;GNU MPFRライブラリ&lt;x4/&gt; それぞれ。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035644Z" creationid="hsugawa8651" creationdate="20181112T111540Z">
+        <seg>任意精度の整数と浮動小数点数の計算を可能にするため、Juliaは &lt;x1/&gt;GNU Multiple Precision Arithmetic Library (GMP)&lt;x2/&gt; および &lt;x3/&gt;GNU MPFR Library&lt;x4/&gt; に対応しています。</seg>
       </tuv>
     </tu>
     <tu>
