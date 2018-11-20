@@ -49243,8 +49243,8 @@ end</seg>
       <tuv lang="EN-US">
         <seg>remainder; satisfies &lt;x1/&gt;x == div(x,y)*y + rem(x,y)&lt;x2/&gt;; sign matches &lt;x3/&gt;x&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095841Z" creationid="hsugawa8651" creationdate="20181118T095841Z">
-        <seg>残り;&lt;x1/&gt;x==div(x,y)*y+rem(x,y)&lt;x2/&gt;;符号は&lt;x3/&gt;x&lt;x4/&gt;に一致する</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071959Z" creationid="hsugawa8651" creationdate="20181118T095841Z">
+        <seg>余り；  &lt;x1/&gt;x == div(x,y)*y + rem(x,y)&lt;x2/&gt;を満たす；符号は &lt;x3/&gt;x&lt;x4/&gt; と一致</seg>
       </tuv>
     </tu>
     <tu>
