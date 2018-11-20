@@ -13420,8 +13420,8 @@ can create performance challenges as discussed in &lt;x7/&gt;&lt;x8/&gt;&lt;x9/&
 &lt;x1/&gt;&amp;&amp;&lt;x2/&gt; operator for scalar comparisons, and the &lt;x3/&gt;`&amp;`&lt;x4/&gt; operator for elementwise comparisons,
 which allows them to work on arrays.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030720Z" creationid="hsugawa8651" creationdate="20181114T030720Z">
-        <seg>チェーン化された比較は スカラー比較のための&lt;x1/&gt;&amp;&amp;&lt;x2/&gt;演算子と、エレメント比較のための&lt;x3/&gt;&amp;"&lt;x4/&gt;演算子 これにより、アレイ上での作業が可能になります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065156Z" creationid="hsugawa8651" creationdate="20181114T030720Z">
+        <seg>連続した比較は、スカラー比較に&lt;x1/&gt;&amp;&amp;&lt;x2/&gt; 演算子を使用し、 要素単位（elementwiseの比較では配列処理を行う &lt;x3/&gt;`&amp;`&lt;x4/&gt;  演算子を使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13436,8 +13436,8 @@ which allows them to work on arrays.</seg>
       <tuv lang="EN-US">
         <seg>Chaining comparisons is often quite convenient in numerical code.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030717Z" creationid="hsugawa8651" creationdate="20181114T030717Z">
-        <seg>連鎖比較は、数値コードにおいて非常に便利であることが多い。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065125Z" creationid="hsugawa8651" creationdate="20181114T030717Z">
+        <seg>連続した比較は、数値コードで便利です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16040,8 +16040,8 @@ library module, only supports two dimensions, so it just defines
         <seg>For example, &lt;x5/&gt;0 .&lt; A .&lt; 1&lt;x6/&gt; gives a boolean array whose entries
 are true where the corresponding elements of &lt;x7/&gt;A&lt;x8/&gt; are between 0 and 1.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030724Z" creationid="hsugawa8651" creationdate="20181114T030724Z">
-        <seg>たとえば、&lt;x5/&gt;0.&lt;A.&lt;1&lt;x6/&gt;は、エントリを入力するブール型配列を示します。 は、&lt;x7/&gt;A&lt;x8/&gt;の対応する要素が0から1の間であることを意味します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065217Z" creationid="hsugawa8651" creationdate="20181114T030724Z">
+        <seg>例えば、 &lt;x5/&gt;0 .&lt; A .&lt; 1&lt;x6/&gt; は、 &lt;x7/&gt;A&lt;x8/&gt;に 対応する要素が0と1の間に存在し、エントリが真であるブール値配列を返します。。。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17600,8 +17600,8 @@ standard&lt;x2/&gt;.</seg>
         <seg>However, the order of evaluations in a chained
 comparison is undefined.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030738Z" creationid="hsugawa8651" creationdate="20181114T030738Z">
-        <seg>しかし、連鎖的な評価の順序は 比較は未定義です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065334Z" creationid="hsugawa8651" creationdate="20181114T030738Z">
+        <seg>しかし、連続した比較の処理順は 定義されていません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18102,8 +18102,8 @@ it must be handled in other ways.</seg>
         <seg>If side effects are required, the short-circuit &lt;x3/&gt;&amp;&amp;&lt;x4/&gt; operator
 should be used explicitly (see &lt;x5/&gt;Short-Circuit Evaluation&lt;x6/&gt;).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030751Z" creationid="hsugawa8651" creationdate="20181114T030751Z">
-        <seg>副作用が必要な場合は、短絡&lt;x3/&gt;&amp;&amp;&lt;x4/&gt;演算子を使用します。 明示的に使用する必要があります(&lt;x5/&gt;Short-Term Evaluation&lt;x6/&gt;を参照)。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065419Z" creationid="hsugawa8651" creationdate="20181114T030751Z">
+        <seg> 副次効果が必要な場合は、短絡 &lt;x3/&gt;&amp;&amp;&lt;x4/&gt;  演算子を明示的に使用する必要があります。（ 短絡評価 &lt;x5/&gt;Short-Circuit Evaluation&lt;x6/&gt;参照）</seg>
       </tuv>
     </tu>
     <tu>
@@ -20296,8 +20296,8 @@ be to replicate the vector to the size of the matrix:</seg>
         <seg>It is strongly recommended not to use expressions with side effects (such
 as printing) in chained comparisons.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030749Z" creationid="hsugawa8651" creationdate="20181114T030749Z">
-        <seg>副作用のない表現式を使用しないことを強くお勧めします。 連鎖比較では、印刷として使用されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065346Z" creationid="hsugawa8651" creationdate="20181114T030749Z">
+        <seg>連続した比較で副次効果のある式（印刷など）を使用しないことを推奨します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22383,8 +22383,8 @@ and it may not be explicitly closed.</seg>
       <tuv lang="EN-US">
         <seg>Note the evaluation behavior of chained comparisons:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030727Z" creationid="hsugawa8651" creationdate="20181114T030727Z">
-        <seg>チェーン化された比較の評価動作に注意してください。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065226Z" creationid="hsugawa8651" creationdate="20181114T030727Z">
+        <seg>連続した比較の値の処理に注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27164,8 +27164,8 @@ this to happen with &lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref Base.GC.gc).</seg>
         <seg>The middle expression is only evaluated once, rather than twice as it would be if the expression
 were written as &lt;x1/&gt;v(1) &lt; v(2) &amp;&amp; v(2) &lt;= v(3)&lt;x2/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030745Z" creationid="hsugawa8651" creationdate="20181114T030745Z">
-        <seg>中間表現は、式が1回だけ評価されるのではなく、1回だけ評価されます。 &lt;x1/&gt;v(1)&lt;v(2)&amp;v(2)&lt;=v(3)&lt;x2/&gt;と記述されている。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065318Z" creationid="hsugawa8651" creationdate="20181114T030745Z">
+        <seg>&lt;x1/&gt;v(1) &lt; v(2) &amp;&amp; v(2) &lt;= v(3)&lt;x2/&gt;と記載されている場合は2度処理されるかのように 思われるかもしれませんが、中間の式は1度だけ処理されます。</seg>
       </tuv>
     </tu>
     <tu>
