@@ -22639,6 +22639,15 @@ the surrounding expression.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Of course, the real trouble comes when one asks what
+a character is.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075244Z" creationid="hsugawa8651" creationdate="20181120T075244Z">
+        <seg>ここでいう記号とは一般的な意味のそれとは少し違います。 Ω</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Of course, you can omit the dot if you write a specialized "vector" method of &lt;x1/&gt;f&lt;x2/&gt;, e.g. via &lt;x3/&gt;f(A::AbstractArray) = map(f, A)&lt;x4/&gt;,
 and this is just as efficient as &lt;x5/&gt;f.(A)&lt;x6/&gt;.</seg>
       </tuv>
@@ -24891,6 +24900,14 @@ provided &lt;x5/&gt;`stride(A,k)`&lt;x6/&gt; method accesses the &lt;x7/&gt;k&lt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Strings are finite sequences of characters.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075230Z" creationid="hsugawa8651" creationdate="20181120T075230Z">
+        <seg>文字列は有限の記号の連続を意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Strings in Julia can contain invalid UTF-8 code unit sequences.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T020620Z" creationid="hsugawa8651" creationdate="20181116T020620Z">
@@ -26169,6 +26186,15 @@ Julia runtime.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152633Z" creationid="hsugawa8651" creationdate="20181117T152633Z">
         <seg>Cに渡されるコールバックは、&lt;x1/&gt;`ccall'&lt;x2/&gt;を実行して、&lt;x3/&gt;:uv_async_send&lt;x4/&gt;を通過させるべきです。 &lt;x5/&gt;cond.handle&lt;x6/&gt;は引数として指定し、割り当てやその他の相互作用がないように注意してください。 Juliaランタイム。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The characters that English speakers are familiar with are the letters &lt;x1/&gt;A&lt;x2/&gt;, &lt;x3/&gt;B&lt;x4/&gt;,
+&lt;x5/&gt;C&lt;x6/&gt;, etc., together with numerals and common punctuation symbols.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075300Z" creationid="hsugawa8651" creationdate="20181120T075300Z">
+        <seg>英語話者にとって馴染みのある記号は A 、B 、C 、などの文字と、アラビア数字や句読記号です。</seg>
       </tuv>
     </tu>
     <tu>
