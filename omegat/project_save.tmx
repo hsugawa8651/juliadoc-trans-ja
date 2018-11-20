@@ -8327,8 +8327,8 @@ end</seg>
         <seg>A
 great deal of care has been taken to ensure that Julia does them correctly.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030659Z" creationid="hsugawa8651" creationdate="20181114T030659Z">
-        <seg>A ジュリアが正しいことをすることを保証するために、細心の注意が払われてきました。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064710Z" creationid="hsugawa8651" creationdate="20181114T030659Z">
+        <seg> Juliaでは、このような処理を正確に実施できるよう、細心の注意が払われています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16581,6 +16581,15 @@ and applying it will still result in a &lt;x3/&gt;`MethodError`&lt;x4/&gt;:</seg
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For other types, &lt;x1/&gt;isequal()&lt;x2/&gt; defaults to calling &lt;x3/&gt;`==()`&lt;x4/&gt;, so if you want to define
+equality for your own types then you only need to add a &lt;x5/&gt;`==()`&lt;x6/&gt; method.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064753Z" creationid="hsugawa8651" creationdate="20181120T064753Z">
+        <seg>その他の型については、 &lt;x1/&gt;isequal()&lt;x2/&gt;  はデフォルトで &lt;x3/&gt;`==()`&lt;x4/&gt;を呼び出すため、 使用している型の等式を定義したい場合は、&lt;x5/&gt;`==()`&lt;x6/&gt; メソッドを追加することで定義することができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For other types, &lt;x1/&gt;isequal&lt;x2/&gt; defaults to calling &lt;x3/&gt;`==`&lt;x4/&gt;, so if you want to define
 equality for your own types then you only need to add a &lt;x5/&gt;`==`&lt;x6/&gt; method.</seg>
       </tuv>
@@ -21548,8 +21557,8 @@ for &lt;x2/&gt;x&lt;x3/&gt;.</seg>
       <tuv lang="EN-US">
         <seg>Mixed-type comparisons between signed integers, unsigned integers, and floats can be tricky.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030621Z" creationid="hsugawa8651" creationdate="20181114T030621Z">
-        <seg>符号付き整数、符号なし整数、浮動小数点間の混合型比較は、難しいことがあります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064658Z" creationid="hsugawa8651" creationdate="20181114T030621Z">
+        <seg>符号付き整数、符号がない整数、および浮動小数点数間の複数の型の比較は注意が必要です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -32796,6 +32805,14 @@ Consider these examples of this syntax:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`isequal()`&lt;x1/&gt; considers &lt;x2/&gt;NaN&lt;x3/&gt;s equal to each other:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064622Z" creationid="hsugawa8651" creationdate="20181120T064622Z">
+        <seg>`isequal()`&lt;x1/&gt; は、&lt;x2/&gt;NaN&lt;x3/&gt; 同士は等しいと解釈します。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`isequal(x, y)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030539Z" creationid="hsugawa8651" creationdate="20181114T030539Z">
@@ -36526,6 +36543,14 @@ Markdown.parse("```\n\$ julia\n\n$(banner)\njulia&gt; 1 + 2\n3\n\njulia&gt; ans\
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042111Z" creationid="hsugawa8651" creationdate="20181110T042111Z">
         <seg>は次のように変換されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>isequal()&lt;x1/&gt; can also be used to distinguish signed zeros:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064640Z" creationid="hsugawa8651" creationdate="20181120T064640Z">
+        <seg>isequal()&lt;x1/&gt; は符号付き0を区別するためにも使用することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -50490,8 +50515,8 @@ s[k2] == qs[k2]                        &lt;x5/&gt; =&gt; true</seg>
       <tuv lang="EN-US">
         <seg>x&lt;x1/&gt; and &lt;x2/&gt;y&lt;x3/&gt; are identical</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030543Z" creationid="hsugawa8651" creationdate="20181114T030543Z">
-        <seg>x&lt;x1/&gt;および&lt;x2/&gt;y&lt;x3/&gt;は同一である</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064515Z" creationid="hsugawa8651" creationdate="20181114T030543Z">
+        <seg>x&lt;x1/&gt; と &lt;x2/&gt;y&lt;x3/&gt; は等価か </seg>
       </tuv>
     </tu>
     <tu>
@@ -50506,24 +50531,24 @@ s[k2] == qs[k2]                        &lt;x5/&gt; =&gt; true</seg>
       <tuv lang="EN-US">
         <seg>x&lt;x1/&gt; is a finite number</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030547Z" creationid="hsugawa8651" creationdate="20181114T030547Z">
-        <seg>x&lt;x1/&gt;は有限数である</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064524Z" creationid="hsugawa8651" creationdate="20181114T030547Z">
+        <seg>x&lt;x1/&gt; は有限数であるか 　　</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>x&lt;x1/&gt; is infinite</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030555Z" creationid="hsugawa8651" creationdate="20181114T030555Z">
-        <seg>x&lt;x1/&gt;は無限です</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064540Z" creationid="hsugawa8651" creationdate="20181114T030555Z">
+        <seg>x&lt;x1/&gt; は無限であるか</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>x&lt;x1/&gt; is not a number</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030601Z" creationid="hsugawa8651" creationdate="20181114T030601Z">
-        <seg>x&lt;x1/&gt;は数値ではありません</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064558Z" creationid="hsugawa8651" creationdate="20181114T030601Z">
+        <seg>x は非数字か 　</seg>
       </tuv>
     </tu>
     <tu>
