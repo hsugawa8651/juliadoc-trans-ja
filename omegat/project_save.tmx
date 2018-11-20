@@ -20831,8 +20831,8 @@ as R, MATLAB, and Python, but also supports general programming.</seg>
         <seg>Julia provides functions which return literal 0 and 1 corresponding to a specified type or the
 type of a given variable.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112000Z" creationid="hsugawa8651" creationdate="20181112T112000Z">
-        <seg>Juliaは、指定されたタイプまたは指定されたタイプに対応するリテラル0および1を返す関数を返します。 指定された変数のタイプです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T041028Z" creationid="hsugawa8651" creationdate="20181112T112000Z">
+        <seg>Juliaは、特定の方や特定の変数の型に対応してリテラル0および1を返す関数を提供しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21278,8 +21278,9 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
       <tuv lang="EN-US">
         <seg>Literal zero of type &lt;x1/&gt;x&lt;x2/&gt; or type of variable &lt;x3/&gt;x&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112010Z" creationid="hsugawa8651" creationdate="20181112T112010Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;のリテラル0、または変数&lt;x3/&gt;x&lt;x4/&gt;のタイプ</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T041149Z" creationid="hsugawa8651" creationdate="20181112T112010Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt; 型、または、変数 &lt;x3/&gt;x&lt;x4/&gt; の型のリテラル0
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -26602,8 +26603,8 @@ function object, and subsequent method definitions add new methods to the existi
         <seg>The floating-point literal expression &lt;x1/&gt;1e10&lt;x2/&gt; could be interpreted as the numeric literal &lt;x3/&gt;1&lt;x4/&gt; multiplied
 by the variable &lt;x5/&gt;e10&lt;x6/&gt;, and similarly with the equivalent &lt;x7/&gt;E&lt;x8/&gt; form.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040721Z" creationid="hsugawa8651" creationdate="20181112T111928Z">
-        <seg>浮動小数点リテラルの表記 1e10 は、数値リテラル 1 掛ける指数関数のような変数 e10 と解釈される可能性があります</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040942Z" creationid="hsugawa8651" creationdate="20181112T111928Z">
+        <seg>浮動小数点リテラルの表記 &lt;x1/&gt;1e10&lt;x2/&gt; は、数値リテラル &lt;x3/&gt;1&lt;x4/&gt; 掛ける指数関数のような変数 &lt;x5/&gt;e10&lt;x6/&gt; と解釈される可能性があります</seg>
       </tuv>
     </tu>
     <tu>
@@ -26813,8 +26814,8 @@ square root of -1.</seg>
         <seg>The hexadecimal integer literal expression &lt;x1/&gt;0xff&lt;x2/&gt; could be interpreted as the numeric literal
 &lt;x3/&gt;0&lt;x4/&gt; multiplied by the variable &lt;x5/&gt;xff&lt;x6/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040708Z" creationid="hsugawa8651" creationdate="20181112T111924Z">
-        <seg>16進整数リテラルの表記 0xff は、数値リテラル 0 掛ける変数 xff と解釈される可能性があります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T041009Z" creationid="hsugawa8651" creationdate="20181112T111924Z">
+        <seg>16進整数リテラルの表記 &lt;x1/&gt;0xff&lt;x2/&gt; は、数値リテラル &lt;x3/&gt;0&lt;x4/&gt; 掛ける変数 &lt;x5/&gt;xff&lt;x6/&gt; と解釈される可能性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33239,8 +33240,8 @@ create a &lt;x16/&gt;SubArray&lt;x17/&gt; view instead.</seg>
       <tuv lang="EN-US">
         <seg>`zero(x)`&lt;x1/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112005Z" creationid="hsugawa8651" creationdate="20181112T112005Z">
-        <seg>'0(x)'&lt;x1/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T041035Z" creationid="hsugawa8651" creationdate="20181112T112005Z">
+        <seg>`zero(x)`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
