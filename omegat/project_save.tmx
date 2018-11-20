@@ -9084,8 +9084,8 @@ software support for &lt;x1/&gt;Arbitrary Precision Arithmetic&lt;x2/&gt;, which
 values that cannot be represented effectively in native hardware representations, but at the cost
 of relatively slower performance.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225054Z" creationid="hsugawa8651" creationdate="20181109T225054Z">
-        <seg>さらに、ジュリアは &lt;x1/&gt;任意精度算術演算&lt;x2/&gt;のソフトウェアサポートで、数値の操作を処理できます。 ネイティブのハードウェア表現では効果的に表現できないが、コストでは効果的に表現できない値 比較的遅いパフォーマンスです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032242Z" creationid="hsugawa8651" creationdate="20181109T225054Z">
+        <seg>さらに、Juliaは、 使用しているハードウェアでは効果的に表現できない数値の演算処理を行うことができる 任意精度計算 の ソフトウェアサポートを提供します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13049,8 +13049,8 @@ BroadcastStyle(a::AbstractArrayStyle{M}, ::DefaultArrayStyle{N}) where {M,N} =
         <seg>Built-in representations of such values are called numeric primitives, while representations of
 integers and floating-point numbers as immediate values in code are known as numeric literals.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225037Z" creationid="hsugawa8651" creationdate="20181109T225037Z">
-        <seg>このような値の組み込み表現は、数値プリミティブと呼ばれますが、表現は次のようになります。 整数と浮動小数点数は、コードの即時値として知られており、数値リテラルと呼ばれます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032350Z" creationid="hsugawa8651" creationdate="20181109T225037Z">
+        <seg>コード内の即値としての整数と浮動小数点値の表現は 数値リテラルとして知られている一方で、ビルトインのこれらの値の表現は数値プリミティブと呼ばれています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -15956,8 +15956,8 @@ the following program, when compiled with &lt;x5/&gt;julia -O3&lt;x6/&gt; genera
         <seg>For example, &lt;x1/&gt;1&lt;x2/&gt; is an integer literal, while &lt;x3/&gt;1.0&lt;x4/&gt; is a floating-point literal; their binary
 in-memory representations as objects are numeric primitives.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225041Z" creationid="hsugawa8651" creationdate="20181109T225041Z">
-        <seg>たとえば、&lt;x1/&gt;1&lt;x2/&gt;は整数リテラルであり、&lt;x3/&gt;1.0&lt;x4/&gt;は浮動小数点リテラルであり、それらのバイナリは2進数リテラルです。 メモリー内表現は、数値プリミティブです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032420Z" creationid="hsugawa8651" creationdate="20181109T225041Z">
+        <seg>例えば、 &lt;x1/&gt;1&lt;x2/&gt; は整数リテラルですが、&lt;x3/&gt;1.0&lt;x4/&gt; は浮動小数点リテラルです。これらのオブジェクトとしての インメモリ表現が数値プリミティブです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19815,8 +19815,8 @@ the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
       <tuv lang="EN-US">
         <seg>Integers and floating-point values are the basic building blocks of arithmetic and computation.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225032Z" creationid="hsugawa8651" creationdate="20181109T225032Z">
-        <seg>整数および浮動小数点値は、算術演算と計算の基本的な構成要素です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032400Z" creationid="hsugawa8651" creationdate="20181109T225032Z">
+        <seg>整数と浮動小数点値は、演算処理の基本的要素です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20748,8 +20748,8 @@ floating-point value:</seg>
         <seg>Julia provides a broad range of primitive numeric types, and a full complement of arithmetic and
 bitwise operators as well as standard mathematical functions are defined over them.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225045Z" creationid="hsugawa8651" creationdate="20181109T225045Z">
-        <seg>Juliaは、さまざまな原始的な数値型を提供し、算術演算の完全な補完を提供します。 ビット演算子と標準数学関数がそれらの上に定義されています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032331Z" creationid="hsugawa8651" creationdate="20181109T225045Z">
+        <seg>Juliaは、幅広いプリミティブ数値型を提供し、標準的な数学関数はもちろん算術演算やビット演算子の 補完が定義されています。これらは、現代のコンピュータでサポートされている数値型や演算処理と関連づけます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -26625,8 +26625,8 @@ change to the above function results in a runtime error</seg>
       <tuv lang="EN-US">
         <seg>The following are Julia's primitive numeric types:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225110Z" creationid="hsugawa8651" creationdate="20181109T225110Z">
-        <seg>Juliaのプリミティブな数値型は次のとおりです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032232Z" creationid="hsugawa8651" creationdate="20181109T225110Z">
+        <seg>以下はJuliaにおける数値プリミティブ型です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28580,8 +28580,8 @@ end and at the call site; however, &lt;x1/&gt;don't copy them&lt;x2/&gt;, for th
 directly onto numeric types and operations that are natively supported on modern computers, thus
 allowing Julia to take full advantage of computational resources.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225049Z" creationid="hsugawa8651" creationdate="20181109T225049Z">
-        <seg>これらのマップ 現代のコンピューターでネイティブにサポートされている数値型や操作に直接 ジュリアが計算資源を最大限に活用できるようにすることです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032313Z" creationid="hsugawa8651" creationdate="20181109T225049Z">
+        <seg>これにより、Juliaは演算処理のリソースを最大限活用することができます。</seg>
       </tuv>
     </tu>
     <tu>
