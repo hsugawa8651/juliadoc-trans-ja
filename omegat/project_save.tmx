@@ -12907,8 +12907,8 @@ introduced in &lt;x3/&gt;Mathematical Operations and Elementary Functions&lt;x4/
 literal, when immediately followed by a parenthetical, is interpreted as a function applied to
 the values in parentheses (see &lt;x1/&gt;Functions&lt;x2/&gt; for more about functions).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040545Z" creationid="hsugawa8651" creationdate="20181112T111859Z">
-        <seg>上記2つの式は関数として解釈されています。括弧を伴う式が直後に続く数値リテラルではない式は、 括弧内の値に適用される関数として解釈されます（詳細は Functions を参照ください）。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040604Z" creationid="hsugawa8651" creationdate="20181112T111859Z">
+        <seg>上記2つの式は関数として解釈されています。括弧を伴う式が直後に続く数値リテラルではない式は、 括弧内の値に適用される関数として解釈されます（詳細は &lt;x1/&gt;Functions&lt;x2/&gt;を参照ください）。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -15503,16 +15503,21 @@ values without literal forms as args.</seg>
       <tuv lang="EN-US">
         <seg>Expressions starting with &lt;x1/&gt;0x&lt;x2/&gt; are always hexadecimal literals.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111941Z" creationid="hsugawa8651" creationdate="20181112T111941Z">
-        <seg>&lt;x1/&gt;0x&lt;x2/&gt;で始まる式は常に16進数のリテラルです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040809Z" creationid="hsugawa8651" creationdate="20181112T111941Z">
+        <seg>&lt;x1/&gt;0x&lt;x2/&gt; で始まる式は、常に16進リテラルとして解釈されます。
+
+</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Expressions starting with a numeric literal followed by &lt;x1/&gt;e&lt;x2/&gt; or &lt;x3/&gt;E&lt;x4/&gt; are always floating-point literals.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111944Z" creationid="hsugawa8651" creationdate="20181112T111944Z">
-        <seg>数字リテラル後に&lt;x1/&gt;e&lt;x2/&gt;または&lt;x3/&gt;E&lt;x4/&gt;が続く式は常に浮動小数点リテラルである。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040804Z" creationid="hsugawa8651" creationdate="20181112T111944Z">
+        <seg>&lt;x1/&gt;e&lt;x2/&gt; または &lt;x3/&gt;E&lt;x4/&gt;が続く数値リテラルで始まる式は、浮動小数点リテラルとして解釈されます。
+
+
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -17110,8 +17115,8 @@ example, &lt;x11/&gt;1.5F22&lt;x12/&gt; is equal to &lt;x13/&gt;1.5 * F22&lt;x14
         <seg>Here are some situations
 where syntactic conflicts arise:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164626Z" creationid="hsugawa8651" creationdate="20181112T111920Z">
-        <seg>次に、構文の競合が発生する状況を示します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040656Z" creationid="hsugawa8651" creationdate="20181112T111920Z">
+        <seg>以下は構文の競合が発生する状況の例です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18691,8 +18696,8 @@ by overflow is essential; otherwise, the &lt;x3/&gt;`BigInt`&lt;x4/&gt; type in 
       <tuv lang="EN-US">
         <seg>In both cases, we resolve the ambiguity in favor of interpretation as a numeric literals:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T000910Z" creationid="hsugawa8651" creationdate="20181120T000910Z">
-        <seg>すべての場合に、あいまいさは数値リテラルとして解釈されるために解決されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040731Z" creationid="hsugawa8651" creationdate="20181120T000910Z">
+        <seg>上記両ケースでは、優先的に数値リテラルとして解釈されるようにすることで、あいまいさを回避しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21033,8 +21038,8 @@ arguments, so instead of specializing on &lt;x5/&gt;broadcasted(f, args...)&lt;x
         <seg>Juxtaposed literal coefficient syntax may conflict with two numeric literal syntaxes: hexadecimal
 integer literals and engineering notation for floating-point literals.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111916Z" creationid="hsugawa8651" creationdate="20181112T111916Z">
-        <seg>並列リテラル係数構文は、2つの数値リテラル構文と矛盾する場合があります:16進数 浮動小数点リテラルの整数リテラルとエンジニアリング表記。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040651Z" creationid="hsugawa8651" creationdate="20181112T111916Z">
+        <seg>並列されたリテラル係数の構文は、16進整数リテラルと浮動小数点リテラルの指数表記の2つの 数値リテラルと競合する場合があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22259,8 +22264,8 @@ Julia code from a C header file.)</seg>
         <seg>Note that no whitespace may come between a numeric literal coefficient
 and the identifier or parenthesized expression which it multiplies.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111907Z" creationid="hsugawa8651" creationdate="20181112T111907Z">
-        <seg>数値リテラル係数の間に空白がないことに注意してください。 また、乗算する識別子または括弧で括られた式を指定します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040624Z" creationid="hsugawa8651" creationdate="20181112T111907Z">
+        <seg>数値リテラル係数と乗算識別子や括弧で囲まれた式の間には、空白を入れることができませんので、注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25008,8 +25013,8 @@ value &lt;x3/&gt;1&lt;x4/&gt; to the floating-point value &lt;x5/&gt;1.0&lt;x6/&
       <tuv lang="EN-US">
         <seg>Syntax Conflicts</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164546Z" creationid="hsugawa8651" creationdate="20181118T164546Z">
-        <seg>構文の矛盾</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040641Z" creationid="hsugawa8651" creationdate="20181118T164546Z">
+        <seg>構文の競合</seg>
       </tuv>
     </tu>
     <tu>
@@ -25889,8 +25894,8 @@ dispatch&lt;/a0&gt;</seg>
         <seg>The above syntactic enhancements significantly reduce the visual noise incurred when writing common
 mathematical formulae.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111904Z" creationid="hsugawa8651" creationdate="20181112T111904Z">
-        <seg>上記の構文的拡張は、一般的な書き込みの際に発生する視覚的なノイズを大幅に低減します。 数式。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040620Z" creationid="hsugawa8651" creationdate="20181112T111904Z">
+        <seg>上記の構文の拡張機能は、同様な数式を記載する際の視覚的なノイズを低減します。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -26597,8 +26602,8 @@ function object, and subsequent method definitions add new methods to the existi
         <seg>The floating-point literal expression &lt;x1/&gt;1e10&lt;x2/&gt; could be interpreted as the numeric literal &lt;x3/&gt;1&lt;x4/&gt; multiplied
 by the variable &lt;x5/&gt;e10&lt;x6/&gt;, and similarly with the equivalent &lt;x7/&gt;E&lt;x8/&gt; form.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111928Z" creationid="hsugawa8651" creationdate="20181112T111928Z">
-        <seg>浮動小数点リテラル式&lt;x1/&gt;1e10&lt;x2/&gt;は、数値リテラル&lt;x3/&gt;1&lt;x4/&gt;を乗算したものと解釈することができます。 変数&lt;x5/&gt;E10&lt;x6/&gt;であり、同様に等価な&lt;x7/&gt;E&lt;x8/&gt;の形式である。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040721Z" creationid="hsugawa8651" creationdate="20181112T111928Z">
+        <seg>浮動小数点リテラルの表記 1e10 は、数値リテラル 1 掛ける指数関数のような変数 e10 と解釈される可能性があります</seg>
       </tuv>
     </tu>
     <tu>
@@ -26808,8 +26813,8 @@ square root of -1.</seg>
         <seg>The hexadecimal integer literal expression &lt;x1/&gt;0xff&lt;x2/&gt; could be interpreted as the numeric literal
 &lt;x3/&gt;0&lt;x4/&gt; multiplied by the variable &lt;x5/&gt;xff&lt;x6/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111924Z" creationid="hsugawa8651" creationdate="20181112T111924Z">
-        <seg>16進数の整数リテラル式&lt;x1/&gt;0xff&lt;x2/&gt;は、数値リテラルとして解釈することができます。 &lt;x3/&gt;0&lt;x4/&gt;は、変数&lt;x5/&gt;xff&lt;x6/&gt;で乗算されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040708Z" creationid="hsugawa8651" creationdate="20181112T111924Z">
+        <seg>16進整数リテラルの表記 0xff は、数値リテラル 0 掛ける変数 xff と解釈される可能性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29921,8 +29926,8 @@ of its arguments are complex integers, it will return an instance of &lt;x5/&gt;
         <seg>Thus, in both of these
 cases, an error occurs since the left-hand value is not a function.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111854Z" creationid="hsugawa8651" creationdate="20181112T111854Z">
-        <seg>これらの両方で 左側の値は関数ではないため、エラーが発生します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040554Z" creationid="hsugawa8651" creationdate="20181112T111854Z">
+        <seg>上記の例では、左辺の値が関数ではないため、エラーが発生します。</seg>
       </tuv>
     </tu>
     <tu>
