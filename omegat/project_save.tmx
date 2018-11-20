@@ -10177,6 +10177,14 @@ literals or expressions into quoted expressions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As an assertion to help confirm that your program works the way you expect,</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143734Z" creationid="hsugawa8651" creationdate="20181120T143734Z">
+        <seg>型注釈を表明として扱い、プログラムに想定される動作の確認に役立てる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As an example, consider calling &lt;x1/&gt;`map()`&lt;x2/&gt; on a function with several
 cases:</seg>
       </tuv>
@@ -19210,6 +19218,15 @@ omitted it will default to &lt;x7/&gt;`Float64`&lt;x8/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the type assertion is not true,
+an exception is thrown, otherwise, the left-hand value is returned:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143928Z" creationid="hsugawa8651" creationdate="20181120T143928Z">
+        <seg> 型表明が真でない場合は例外が投げられますが、そうでなければ左側の値が返されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the type were declared &lt;x1/&gt;mutable&lt;x2/&gt;, you could reach in and directly change the field values to
 violate this invariant.</seg>
       </tuv>
@@ -21197,6 +21214,15 @@ outer &lt;x4/&gt;Point&lt;x5/&gt; constructor that takes pairs of real arguments
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112437Z" creationid="hsugawa8651" creationdate="20181112T112437Z">
         <seg>構文は、構文が次のように指定されているため、&lt;x x/&gt;ループでは直接&lt;x4/&gt;で使用することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It can be used anywhere to assert that the value of the expression on the left is an instance
+of the type on the right.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143840Z" creationid="hsugawa8651" creationdate="20181120T143840Z">
+        <seg> ::演算子はどこでも使用できて、::の左側の式の値は、右側の型のインスタンスであることを表明します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30749,6 +30775,14 @@ ways of doing so:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are two primary reasons to do this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143730Z" creationid="hsugawa8651" creationdate="20181120T143730Z">
+        <seg> 型注釈をつける理由は、主に2つあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are two subtypes of local scopes, hard and soft, with slightly different rules
 concerning what variables are inherited.</seg>
       </tuv>
@@ -31353,6 +31387,14 @@ etc.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This "declaration" behavior only occurs in specific contexts:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144013Z" creationid="hsugawa8651" creationdate="20181120T144013Z">
+        <seg>この「宣言」の動作は、特定のコンテキストでのみ発生します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This &lt;x4/&gt;Squares&lt;x5/&gt; sequence is starting to look
 more and more like a vector as we've added behaviors to it.</seg>
       </tuv>
@@ -31366,6 +31408,14 @@ more and more like a vector as we've added behaviors to it.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121110Z" creationid="hsugawa8651" creationdate="20181118T121110Z">
         <seg>このUUIDは、メインアプリケーションが&lt;x15/&gt;インポートPriv&lt;x16/&gt;を評価するときにロードおよび使用する&lt;x13/&gt;Priv&lt;x14/&gt;パッケージを識別します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This allows a type assertion to be attached to any expression in-place.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143939Z" creationid="hsugawa8651" creationdate="20181120T143939Z">
+        <seg>このようにすると、プログラム内の任意の式に型表明を差し込むことができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -31795,6 +31845,15 @@ also have adjacent binary integer representations.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152307Z" creationid="hsugawa8651" creationdate="20181117T152307Z">
         <seg>この表現は&lt;x1/&gt;ストリング&lt;x2/&gt;を使用して名前を作成し、次にこの名前を新しい&lt;x3/&gt;`ccall'&lt;x4/&gt;に置き換えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This feature is useful for avoiding performance "gotchas" that could occur if one of the assignments
+to a variable changed its type unexpectedly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144008Z" creationid="hsugawa8651" creationdate="20181120T144008Z">
+        <seg>この機能は、変数に代入を行って、想定外の型に変更された時におこりうる、パフォーマンスの「落とし穴」を避けるために役立ちます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33113,6 +33172,15 @@ can declare the argument as &lt;x7/&gt;Ptr{Cvoid}&lt;x8/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To provide extra type information to the compiler, which can then improve performance in some
+cases</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143742Z" creationid="hsugawa8651" creationdate="20181120T143742Z">
+        <seg>コンパイラが追加的な型情報を利用できるようにして、状況によってはパフォーマンスを向上できるようにする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To reduce the need for these
 verbose calls to &lt;x1/&gt;`string()`&lt;x2/&gt; or repeated multiplications, Julia allows interpolation into string literals
 using &lt;x3/&gt;$&lt;x4/&gt;, as in Perl:</seg>
@@ -34082,6 +34150,26 @@ its caller.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When appended to a variable on the left-hand side of an assignment, or as part of a &lt;x1/&gt;local&lt;x2/&gt; declaration,
+the &lt;x3/&gt;::&lt;x4/&gt; operator means something a bit different: it declares the variable to always have the
+specified type, like a type declaration in a statically-typed language such as C. Every value
+assigned to the variable will be converted to the declared type using &lt;x5/&gt;`convert()`&lt;x6/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143952Z" creationid="hsugawa8651" creationdate="20181120T143952Z">
+        <seg>代入文の左側の変数や、local宣言の一部に追加されると、::演算子の意味が少し変わります。 つまり、C言語のような静的型付き言語の型宣言のように、常に変数は指定した型であるという宣言になります。 変数に代入される値はすべて、宣言された型に convert() を使って変換されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When appended to an expression computing a value, the &lt;x1/&gt;::&lt;x2/&gt; operator is read as "is an instance
+of".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143830Z" creationid="hsugawa8651" creationdate="20181120T143830Z">
+        <seg>計算式に追加した::演算子は、 "is an instance of(～のインスタンスである)"と読み下すことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When both
 libraries and executables are generated by LLVM, it is possible to perform whole-program optimizations
 that can even optimize across this boundary, but Julia does not yet support that.</seg>
@@ -34258,6 +34346,15 @@ object.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When the type is abstract, it suffices for the value to be implemented
+by a concrete type that is a subtype of the abstract type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143924Z" creationid="hsugawa8651" creationdate="20181120T143924Z">
+        <seg> 抽象型の場合は、その抽象型のサブタイプの具象型によって値が実装されていれば十分です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When the type is implied
 by the arguments to the constructor call, as in &lt;x11/&gt;Point(1,2)&lt;x12/&gt;, then the types of the
 arguments must agree -- otherwise the &lt;x13/&gt;T&lt;x14/&gt; cannot be determined -- but any pair of real
@@ -34265,6 +34362,16 @@ arguments with matching type may be given to the generic &lt;x15/&gt;Point&lt;x1
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123854Z" creationid="hsugawa8651" creationdate="20181118T123854Z">
         <seg>タイプが暗黙の場合 &lt;x11/&gt;Point(1,2)&lt;x12/&gt;のようにコンストラクタ呼び出しの引数によって、次のように入力されます。 引数は一致する必要があります。そうでない場合は、&lt;x13/&gt;T&lt;x14/&gt;を指定できませんが、実数のペアはすべて指定されています。 一般的な&lt;x15/&gt;Point&lt;x16/&gt;コンストラクタには、一致するタイプの引数を指定することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the type on the right is concrete, the value on the left must have
+that type as its implementation -- recall that all concrete types are final, so no implementation
+is a subtype of any other.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143916Z" creationid="hsugawa8651" creationdate="20181120T143916Z">
+        <seg> ::の右側が具象型の場合、左辺の値はその型の実装でなければなりません。 すべて具象型は拡張できず、その実装は他の具象型の実装とはならないことを思い出してください。</seg>
       </tuv>
     </tu>
     <tu>
