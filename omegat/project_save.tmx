@@ -13959,6 +13959,14 @@ iteration&lt;x8/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Constructing strings using concatenation can become a bit cumbersome, however.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082721Z" creationid="hsugawa8651" creationdate="20181120T082721Z">
+        <seg>しかしながら、連結を使って文字列を構成するのは少々扱いにくくなってしまうかもしれません。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Construction and Initialization</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150402Z" creationid="hsugawa8651" creationdate="20181117T150402Z">
@@ -22027,6 +22035,15 @@ you to operate on multiple arrays (even of different shapes), or a mix of arrays
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>More precisely, the set of all finite-length strings &lt;x1/&gt;S&lt;x2/&gt; together with the string concatenation operator
+&lt;x3/&gt;*&lt;x4/&gt; forms a &lt;x5/&gt;free monoid&lt;x6/&gt; (&lt;x7/&gt;S&lt;x8/&gt;, &lt;x9/&gt;*&lt;x10/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082612Z" creationid="hsugawa8651" creationdate="20181120T082612Z">
+        <seg>より厳密に言えば、全ての有限の長さを持つ文字列の集合 &lt;x1/&gt;S&lt;x2/&gt;  と文字列連結演算子 &lt;x3/&gt;*&lt;x4/&gt; は &lt;x5/&gt;free monoid&lt;x6/&gt;自由モノイド (&lt;x7/&gt;S&lt;x8/&gt;, &lt;x9/&gt;*&lt;x10/&gt;) を形成します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>More specifically, &lt;x1/&gt;a .^ b&lt;x2/&gt; is parsed as the &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-vectorized)
 &lt;x6/&gt;(^).(a,b)&lt;x7/&gt;, which performs a &lt;x8/&gt;&lt;x9/&gt;&lt;x10/&gt;(@ref Broadcasting) operation:
 it can combine arrays and scalars, arrays of the same size (performing
@@ -27370,6 +27387,15 @@ square root of -1.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The identity element
+of this set is the empty string, &lt;x11/&gt;""&lt;x12/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082631Z" creationid="hsugawa8651" creationdate="20181120T082631Z">
+        <seg>この集合の単位元は空の文字列 &lt;x11/&gt;""&lt;x12/&gt;.です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The implementation
 of a mathematical operator generally depends on the types of all of its arguments.</seg>
       </tuv>
@@ -28293,6 +28319,15 @@ both typing and visual noise.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025621Z" creationid="hsugawa8651" creationdate="20181110T025621Z">
         <seg>したがって、短い関数構文は非常に奇妙なものになり、大幅に減少します。 タイプとビジュアルノイズの両方です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The shortest complete expression after the &lt;x1/&gt;$&lt;x2/&gt; is taken as the expression whose value is to be
+interpolated into the string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082849Z" creationid="hsugawa8651" creationdate="20181120T082849Z">
+        <seg> &lt;x1/&gt;$&lt;x2/&gt;  の後の最短の完全な式は、値が文字列に補間される式として解釈されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29972,6 +30007,15 @@ without the usual JIT tricks and overhead.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is more readable and convenient and equivalent to the above string concatenation -- the system
+rewrites this apparent single string literal into a concatenation of string literals with variables.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082834Z" creationid="hsugawa8651" creationdate="20181120T082834Z">
+        <seg>この方法は呼びやすくかつ便利です。システムが単一文字リテラルを変数と文字列リテラルの連結に書き換えるので、上記の文字列連結と動作は変わりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is referred to as &lt;x5/&gt;quoting&lt;x6/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115338Z" creationid="hsugawa8651" creationdate="20181118T115338Z">
@@ -30630,6 +30674,14 @@ it is possible to make them behave in a more relaxed but sensible manner quite e
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Thus, you can interpolate any expression into a string using parentheses:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082908Z" creationid="hsugawa8651" creationdate="20181120T082908Z">
+        <seg>したがって、括弧を使用して任意の式を文字列に補間することができます。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To
 achieve this, Julia builds upon the lineage of
 mathematical programming languages, but also borrows much from popular
@@ -30907,6 +30959,16 @@ can declare the argument as &lt;x7/&gt;Ptr{Cvoid}&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T140855Z" creationid="hsugawa8651" creationdate="20181117T140855Z">
         <seg>データを事前に変換することなく、異なるタイプ&lt;x3/&gt;のポインタとして配列&lt;x1/&gt;A&lt;x2/&gt;を通過させること。 (例えば、&lt;x5/&gt;Float64&lt;x6/&gt;アレイを、解釈されていないバイトで動作する関数に渡すために) は、引数を&lt;x7/&gt;Ptr{Cvoid}&lt;x8/&gt;として宣言することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To reduce the need for these
+verbose calls to &lt;x1/&gt;`string()`&lt;x2/&gt; or repeated multiplications, Julia allows interpolation into string literals
+using &lt;x3/&gt;$&lt;x4/&gt;, as in Perl:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082817Z" creationid="hsugawa8651" creationdate="20181120T082817Z">
+        <seg>これらの冗長な&lt;x1/&gt;`string()`&lt;x2/&gt;  もしくは * の呼び出しの機会を減らすために、JuliaはPerlのように&lt;x3/&gt;$&lt;x4/&gt; を使用して文字列リテラルに補間を行うことができます。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -31973,6 +32035,16 @@ combined to determine a single &lt;x1/&gt;DestStyle&lt;x2/&gt; that controls the
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131249Z" creationid="hsugawa8651" creationdate="20181113T131249Z">
         <seg>ブロードキャスト操作に複数の引数が含まれる場合、個々の引数スタイルは次のようになります。 結合して、出力コンテナのタイプを制御する単一の&lt;x1/&gt;DestStyle&lt;x2/&gt;を決定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Whenever a free monoid is not commutative, the operation is
+typically represented as &lt;x13/&gt;\cdot&lt;x14/&gt;, &lt;x15/&gt;*&lt;x16/&gt;, or a similar symbol, rather than &lt;x17/&gt;+&lt;x18/&gt;, which as stated usually
+implies commutativity.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T082706Z" creationid="hsugawa8651" creationdate="20181120T082706Z">
+        <seg>自由モノイドが非可換である時、連結演算子は、しばしば可換の状態であることを表す時に用いられる&lt;x17/&gt;+&lt;x18/&gt;よりも &lt;x13/&gt;\cdot&lt;x14/&gt; や &lt;x15/&gt;*&lt;x16/&gt; 、その他の類似した記号で表されることが多いです。</seg>
       </tuv>
     </tu>
     <tu>
