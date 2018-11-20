@@ -3915,6 +3915,17 @@ an array &lt;x22/&gt;A&lt;x23/&gt;, it performs a &lt;x24/&gt;single&lt;x25/&gt;
     <tu>
       <tuv lang="EN-US">
         <seg>:
+In C++ or Java, for example, in a method call like &lt;x1/&gt;obj.meth(arg1,arg2)&lt;x2/&gt;, the object obj "receives"
+the method call and is implicitly passed to the method via the &lt;x3/&gt;this&lt;x4/&gt; keyword, rather than as
+an explicit method argument.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T011945Z" creationid="hsugawa8651" creationdate="20181120T011924Z">
+        <seg>:例えば、C ++やJavaでは、obj.meth(arg1,arg2)のようなメソッドが呼ばれる時は、オブジェクトobjはメソッド呼び出しを「受け取り」、暗黙のうちにthisキーワードを介して、引数だと明示されずに、メソッドに引き渡されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>:
 Nomenclature: while the term "constructor" generally refers to the entire function which constructs
 objects of a type, it is common to abuse terminology slightly and refer to specific constructor
 methods as "constructors".</seg>
@@ -7939,6 +7950,15 @@ function unicode_data()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt; Using all of a function's arguments to choose which method should be invoked, rather than
+just the first, is known as &lt;x6/&gt;multiple dispatch&lt;x7/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T011742Z" creationid="hsugawa8651" creationdate="20181120T011503Z">
+        <seg>&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt; 関数の、最初の引数だけではなく、すべての引数を使用して、呼び出すメソッドを選択することは、多重ディスパッチとして知られています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion) are defined
 so that operations on any combination of predefined numeric types, whether primitive or composite,
 behave as expected.</seg>
@@ -8409,6 +8429,15 @@ fused with any nested "dot" calls.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224812Z" creationid="hsugawa8651" creationdate="20181109T224812Z">
         <seg>新しいユーザを支援するための有用な学習リソースのリストは、Julia Webサイトの&lt;x1/&gt;学習&lt;x2/&gt;ページに掲載されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A definition of one possible behavior for
+a function is called a &lt;x1/&gt;method&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T005932Z" creationid="hsugawa8651" creationdate="20181120T005932Z">
+        <seg>こうした関数の、とるかもしれない１つの動作の定義は、メソッドと呼ばれます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -8938,6 +8967,15 @@ Dingo/
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152506Z" creationid="hsugawa8651" creationdate="20181117T152506Z">
         <seg>グローバル変数へのアクセス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Accordingly, in
+Julia, these behaviors all belong to a single object: the &lt;x4/&gt;+&lt;x5/&gt; function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T005902Z" creationid="hsugawa8651" creationdate="20181120T005902Z">
+        <seg> したがって、Juliaでは、これらの挙動はすべて1つのオブジェクト「+関数」に属します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9497,6 +9535,14 @@ a bug so that it can be resolved.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Applying it to any other types of arguments will result in a &lt;x1/&gt;`MethodError`&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012517Z" creationid="hsugawa8651" creationdate="20181120T012517Z">
+        <seg>この関数定義を他の型の引数に適用すると、次のような&lt;x1/&gt;`MethodError`&lt;x2/&gt;になります。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Arbitrary Precision Arithmetic</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120359Z" creationid="hsugawa8651" creationdate="20181118T120359Z">
@@ -9947,6 +9993,14 @@ to the implied field types: &lt;x1/&gt;Point{Int64}(1,2)&lt;x2/&gt; works, but &
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123900Z" creationid="hsugawa8651" creationdate="20181118T123900Z">
         <seg>明示的な型パラメータを持つコンストラクタ呼び出しでは、引数は変換されます。 &lt;x1/&gt;点{Int64}(1,2)&lt;x2/&gt;は動作しますが、&lt;x3/&gt;点{Int64}(1.0,2.5)&lt;x4/&gt;は &lt;x7/&gt;2.5&lt;x8/&gt;を&lt;x9/&gt;"Int64"&lt;x10/&gt;に変換する際には、&lt;x6/&gt;'InexactError'&lt;x6/&gt;'となります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As you can see, the arguments must be precisely of type &lt;x1/&gt;`Float64`&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012546Z" creationid="hsugawa8651" creationdate="20181120T012546Z">
+        <seg>これを見て分かるように、引数はちょうど&lt;x1/&gt;`Float64`&lt;x2/&gt;型でなければなりません。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -12581,6 +12635,16 @@ always constructed in this normalized form.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Because &lt;x3/&gt;Float64&lt;x4/&gt; is a concrete
+type and concrete types cannot be subclassed in Julia, such a definition can only be applied
+to arguments that are exactly of type &lt;x5/&gt;Float64&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012721Z" creationid="hsugawa8651" creationdate="20181120T012721Z">
+        <seg>&lt;x3/&gt;Float64&lt;x4/&gt;は具象型で、具象型はJuliaでは、サブクラス化できないので、このような定義はちょうど型が&lt;x5/&gt;Float64&lt;x6/&gt;の引数のみに適用ができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because C doesn't support multiple return values, often C functions will take pointers to data
 that the function will modify.</seg>
       </tuv>
@@ -15047,6 +15111,16 @@ the insertion point of a value not found in a sorted array:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Even beyond
+mathematical operations, however, multiple dispatch ends up being a powerful and convenient paradigm
+for structuring and organizing programs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012031Z" creationid="hsugawa8651" creationdate="20181120T012031Z">
+        <seg>しかし、数学的な操作以外でも、多重ディスパッチは、プログラムの構築し組織化する強力で便利なパラダイムです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Events</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T042013Z" creationid="hsugawa8651" creationdate="20181110T042013Z">
@@ -17360,6 +17434,16 @@ comparison is undefined.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, the signatures of method
+definitions can be annotated to indicate the types of arguments in addition to their number, and
+more than a single method definition may be provided.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T005956Z" creationid="hsugawa8651" creationdate="20181120T005956Z">
+        <seg>しかし、メソッド定義のシグネチャに、型注釈をつけると、引数の型と数を指定でき、複数のメソッド定義を与えることができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, these subtleties are described in detail in
 most books on scientific computation, and also in the following references:</seg>
       </tuv>
@@ -17946,6 +18030,15 @@ terms such that the denominator is non-negative:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123510Z" creationid="hsugawa8651" creationdate="20181118T123510Z">
         <seg>有理の分子と分母が共通の因子をもつ場合には、それらは最小に減少する 分母が負でないことを示す用語。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the patchwork is well designed, even though the implementations of the methods may be quite
+different, the outward behavior of the function will appear seamless and consistent.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T010039Z" creationid="hsugawa8651" creationdate="20181120T010039Z">
+        <seg>パッチワークがうまく設計されていれば、メソッドの実装がかなり異なっていても、外側からは関数の動作は継ぎ目なく一貫しているように見えます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19902,6 +19995,15 @@ of this call; defining one is sufficient no matter what order the user supplies 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It may often be useful, however, to write
+more general methods where the declared parameter types are abstract:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012736Z" creationid="hsugawa8651" creationdate="20181120T012736Z">
+        <seg>しかし、宣言するパラメータの型が抽象的な、汎化メソッドを書くと、けっこう役に立つかもしれません。。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It needs to be called to obtain an &lt;x3/&gt;Exception&lt;x4/&gt; object:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124642Z" creationid="hsugawa8651" creationdate="20181118T124642Z">
@@ -20057,6 +20159,16 @@ and efficiency in a single language.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182655Z" creationid="hsugawa8651" creationdate="20181118T182655Z">
         <seg>Juliaは、扱いやすさ・強力さ・効率性の前例のない組み合わせを1つの言語で実現しようとしています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia allows
+the dispatch process to choose which of a function's methods to call based on the number of arguments
+given, and on the types of all of the function's arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T010457Z" creationid="hsugawa8651" creationdate="20181120T010457Z">
+        <seg>Juliaでは、ディスパッチの過程で、関数のメソッドのどれを呼び出すか、関数のすべての引数の型と個数に基づいて、選択できます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -21326,6 +21438,16 @@ all of the &lt;x11/&gt;then&lt;x12/&gt; blocks and the alternate implementation 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Multiple dispatch is particularly useful for mathematical code, where it makes little sense to
+artificially deem the operations to "belong" to one argument more than any of the others: does
+the addition operation in &lt;x8/&gt;x + y&lt;x9/&gt; belong to &lt;x10/&gt;x&lt;x11/&gt; any more than it does to &lt;x12/&gt;y&lt;x13/&gt;?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T011729Z" creationid="hsugawa8651" creationdate="20181120T011518Z">
+        <seg> 多重ディスパッチは特に数学のコードで有用です。演算がどの引数に、より「属している」かと不自然なことを考えても、意味がないからです。&lt;x8/&gt;x + y&lt;x9/&gt;の式の中の足し算は、 &lt;x10/&gt;x&lt;x11/&gt; に&lt;x12/&gt; y&lt;x13/&gt;よりも属してると思いますか？ </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Multiple nested &lt;c0&gt;for&lt;/c0&gt; loops can be combined into a single outer loop, forming the cartesian product of its iterables:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T142930Z" creationid="hsugawa8651" creationdate="20181119T142804Z">
@@ -21471,6 +21593,17 @@ expression, however, can be used to imply multiplication:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T234653Z" creationid="hsugawa8651" creationdate="20181119T234653Z">
         <seg>ネットワーキングおよびストリーム&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Nevertheless, we have used multiple dispatch and methods almost continually without being aware
+of it: all of Julia's standard functions and operators, like the aforementioned &lt;x1/&gt;+&lt;x2/&gt; function,
+have many methods defining their behavior over various possible combinations of argument type
+and count.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012228Z" creationid="hsugawa8651" creationdate="20181120T012228Z">
+        <seg>にもかかわらず、私たちは知らない間に、ほぼ断続的に多重ディスパッチとメソッドを使用してきました。 前述の&lt;x1/&gt;+&lt;x2/&gt;関数のような、Juliaの標準的な関数と演算子はすべて、多くのメソッドを持ち、引数の型と個数のさまざまな組み合わせに対して動作が定義されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22444,6 +22577,16 @@ that determine type parameters automatically can be added, for example construct
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030930Z" creationid="hsugawa8651" creationdate="20181114T030918Z">
         <seg>単項演算子の他の組成は、右の連想であるeで解析されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Other numeric
+types, such as integers or 32-bit floating-point values, are not automatically converted
+to 64-bit floating-point, nor are strings parsed as numbers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012601Z" creationid="hsugawa8651" creationdate="20181120T012601Z">
+        <seg>他の整数や32ビット浮動小数点数などの数値型は、自動的に64ビット浮動小数点数に変換されず、文字列も数字として解析されません。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -24336,6 +24479,14 @@ interoperable code.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Such functions behave just like they would in traditional dynamically typed languages.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012202Z" creationid="hsugawa8651" creationdate="20181120T012202Z">
+        <seg>そのような関数は、従来の動的型付け言語と同じように動作します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Suppose the contents of &lt;x18/&gt;DEPOT_PATH&lt;x19/&gt; is &lt;x20/&gt;["/home/me/.julia", "/usr/local/julia"]&lt;x21/&gt;; then Julia will look at the following paths to see if they exist:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121223Z" creationid="hsugawa8651" creationdate="20181118T121223Z">
@@ -25499,6 +25650,14 @@ Julia runtime.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The choice of which method to execute when a function is applied is called &lt;x1/&gt;dispatch&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T010049Z" creationid="hsugawa8651" creationdate="20181120T010049Z">
+        <seg>実行するメソッドを、関数が適用される際に選択することを、ディスパッチと呼ばれます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The code to be called must be available as a shared library.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160547Z" creationid="hsugawa8651" creationdate="20181109T160547Z">
@@ -25960,6 +26119,15 @@ type parameter of an integer type, and is itself a real type.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The first method definition for a function creates the
+function object, and subsequent method definitions add new methods to the existing function object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012929Z" creationid="hsugawa8651" creationdate="20181120T012904Z">
+        <seg>最初のメソッド定義では、関数オブジェクトを作成され、次回以降のメソッド定義では、既存の関数オブジェクトに新しいメソッドが追加されます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The floating-point literal expression &lt;x1/&gt;1e10&lt;x2/&gt; could be interpreted as the numeric literal &lt;x3/&gt;1&lt;x4/&gt; multiplied
 by the variable &lt;x5/&gt;e10&lt;x6/&gt;, and similarly with the equivalent &lt;x7/&gt;E&lt;x8/&gt; form.</seg>
       </tuv>
@@ -26184,6 +26352,15 @@ square root of -1.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151333Z" creationid="hsugawa8651" creationdate="20181117T151333Z">
         <seg>ホストマシンは、必要なSIMDレジスタを持っている必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The implementation
+of a mathematical operator generally depends on the types of all of its arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T011627Z" creationid="hsugawa8651" creationdate="20181120T011627Z">
+        <seg>数学的演算子の実装は、一般には、すべての引数の型に依存しています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -26536,6 +26713,15 @@ are:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The most specific method definition matching the number and types of the arguments will be executed
+when the function is applied.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012940Z" creationid="hsugawa8651" creationdate="20181120T012940Z">
+        <seg>関数の適用時に、引数の数と型が最も一致するメソッド定義が実行されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The name of the script
 itself is passed in as the global &lt;x7/&gt;PROGRAM_FILE&lt;x8/&gt;.</seg>
       </tuv>
@@ -26772,6 +26958,16 @@ with less information loss.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124249Z" creationid="hsugawa8651" creationdate="20181118T124249Z">
         <seg>問題は、&lt;x1/&gt;S&lt;x2/&gt;が&lt;x3/&gt;T&lt;x4/&gt;よりも大きいタイプであることであるため、多くの要素を合計することができる。 情報損失が少ない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The problem of
+handling disparate numeric types is delegated to the arithmetic operations in the
+expression &lt;x3/&gt;2x - y&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012831Z" creationid="hsugawa8651" creationdate="20181120T012831Z">
+        <seg> 異なる数値型を処理する問題は、式&lt;x3/&gt;2x - y&lt;x4/&gt;の算術演算に委譲されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28041,6 +28237,14 @@ and can be converted to/from the latter via &lt;x4/&gt;Array(bitarray)&lt;x5/&gt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>They need not be of the same type, so long as they are each numeric values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012816Z" creationid="hsugawa8651" creationdate="20181120T012816Z">
+        <seg>それらがそれぞれ数値である限り、同じ型である必要はありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>They produce an unsigned integer of the same size as the unsigned literal
 would do, with the two's complement of the value:</seg>
       </tuv>
@@ -28473,6 +28677,15 @@ functions, functions in the Julia runtime, or functions in an application linked
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This function definition applies only to calls where &lt;x1/&gt;x&lt;x2/&gt; and &lt;x3/&gt;y&lt;x4/&gt; are both values of type
+&lt;x5/&gt;`Float64`&lt;x6/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012445Z" creationid="hsugawa8651" creationdate="20181120T012426Z">
+        <seg>この関数定義は、xとyの値の型が両方ともFloat64である呼び出しにだけ、適用されます：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This function is intentionally similar
 to the behavior of &lt;x7/&gt;`getindex`&lt;x8/&gt; and &lt;x9/&gt;`setindex!`&lt;x10/&gt; (e.g. &lt;x11/&gt;[]&lt;x12/&gt; access syntax).</seg>
       </tuv>
@@ -28603,6 +28816,16 @@ is platform-dependent and not well-specified.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024923Z" creationid="hsugawa8651" creationdate="20181110T024923Z">
         <seg>これは、シェバンの引数の構文解析が はプラットフォーム依存であり、よく指定されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is different than traditional
+object-oriented languages, where dispatch occurs based only on the first argument, which often
+has a special argument syntax, and is sometimes implied rather than explicitly written as an argument.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T011442Z" creationid="hsugawa8651" creationdate="20181120T011442Z">
+        <seg>これは、従来のオブジェクト指向言語とは異なります。従来のオブジェクト指向言語では、通常は最初の引数のみに基づいてディスパッチが行われ、最初の引数を特別視して引数に見えないような構文を持つものもあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28826,6 +29049,14 @@ statically compile.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124654Z" creationid="hsugawa8651" creationdate="20181118T124654Z">
         <seg>このメカニズムは、&lt;x1/&gt;`UndefVarError'&lt;x2/&gt;のように、カスタム例外タイプによって容易に実装することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This method definition applies to any pair of arguments that are instances of &lt;x1/&gt;`Number`&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012802Z" creationid="hsugawa8651" creationdate="20181120T012802Z">
+        <seg>このメソッド定義は&lt;x1/&gt;`Number`&lt;x2/&gt;のインスタンスである任意の引数のペアに適用されます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -29095,6 +29326,15 @@ functions can be called directly from Julia without any "glue" code, code genera
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Thus far, we have presented only examples of functions defined
+with a single method, applicable to all types of arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T005942Z" creationid="hsugawa8651" creationdate="20181120T005942Z">
+        <seg>ここまでで例示した関数は、単一のメソッドで定義されたものだけで、すべての型の引数に適用可能です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Thus, although the &lt;x1/&gt;⊘&lt;x2/&gt; operator usually returns an instance of &lt;x3/&gt;OurRational&lt;x4/&gt;, if either
 of its arguments are complex integers, it will return an instance of &lt;x5/&gt;Complex{OurRational}&lt;x6/&gt; instead.</seg>
       </tuv>
@@ -29117,6 +29357,25 @@ cases, an error occurs since the left-hand value is not a function.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111854Z" creationid="hsugawa8651" creationdate="20181112T111854Z">
         <seg>これらの両方で 左側の値は関数ではないため、エラーが発生します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thus, the
+overall behavior of a function is a patchwork of the behaviors of its various method definitions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T010019Z" creationid="hsugawa8651" creationdate="20181120T010019Z">
+        <seg> したがって、関数の全体的な動作は、さまざまなメソッド定義の動作のパッチワークです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thus, the two method definitions above, taken together, define the
+behavior for &lt;x1/&gt;f&lt;x2/&gt; over all pairs of instances of the abstract type &lt;x3/&gt;Number&lt;x4/&gt; -- but with a different
+behavior specific to pairs of &lt;x5/&gt;`Float64`&lt;x6/&gt; values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T013006Z" creationid="hsugawa8651" creationdate="20181120T013006Z">
+        <seg> したがって、上の2つのメソッド定義が一緒になって、抽象型Numberのインスタンスのペアすべてに対してfの動作を定義しますが、値Float64のペアに固有の動作は異なります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -29246,6 +29505,15 @@ the unspecified fields uninitialized.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To define a function with multiple methods, one simply defines the function multiple times, with
+different numbers and types of arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012916Z" creationid="hsugawa8651" creationdate="20181120T012916Z">
+        <seg>複数のメソッドを持つ関数を定義するには、単に複数回の関数の定義を、数と型の異なる引数に対して、行うだけです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To do this, create an &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref Base.AsyncCondition) object and &lt;x6/&gt;`wait`&lt;x7/&gt; on it:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152628Z" creationid="hsugawa8651" creationdate="20181117T152628Z">
@@ -29355,6 +29623,16 @@ use the syntax &lt;x4/&gt;Dict{KeyType,ValueType}(...)&lt;x5/&gt;.</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135521Z" creationid="hsugawa8651" creationdate="20181109T230200Z">
         <seg>連鎖を利用する時は、演算子の結合順は右から左です。 
 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To facilitate using many different implementations of the same concept smoothly, functions need
+not be defined all at once, but can rather be defined piecewise by providing specific behaviors
+for certain combinations of argument types and counts.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T005920Z" creationid="hsugawa8651" creationdate="20181120T005920Z">
+        <seg>同じ概念の異なる多くの実装を、円滑に利用するためには、関数すべてを一度に定義する必要はなくて、引数の型と個数の組み合わせごとに、特定の動作を指定して、区分的に定義できます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -29747,6 +30025,15 @@ are not possible in the translation to Julia.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Until now, we have, in our examples, defined only functions with a single method having unconstrained
+argument types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012151Z" creationid="hsugawa8651" creationdate="20181120T012151Z">
+        <seg>今までの例では、引数に型の制約がない、単一のメソッドしかない関数しか定義していませんでした。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Updating operators</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095301Z" creationid="hsugawa8651" creationdate="20181118T095301Z">
@@ -30131,6 +30418,15 @@ functionality like command line argument handling.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When a function is applied to a particular
+tuple of arguments, the most specific method applicable to those arguments is applied.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T010007Z" creationid="hsugawa8651" creationdate="20181120T010007Z">
+        <seg>関数が特定の引数の組に適用されるとき、それらの引数に適用可能なものから最も特化したメソッドが適用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When a scalar value is passed with &lt;x1/&gt;&amp;&lt;x2/&gt; as an argument of type &lt;x3/&gt;Ptr{T}&lt;x4/&gt;, the value will first be
 converted to type &lt;x5/&gt;T&lt;x6/&gt;.</seg>
       </tuv>
@@ -30209,6 +30505,15 @@ platforms.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T233954Z" creationid="hsugawa8651" creationdate="20181119T233954Z">
         <seg>クロスプラットフォームアプリケーションやライブラリを記述する場合は、 オペレーティング・システム間の違いを許す必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When defining a function, one can optionally constrain the types of parameters it is applicable
+to, using the &lt;x1/&gt;::&lt;x2/&gt; type-assertion operator, introduced in the section on &lt;x3/&gt;Composite Types&lt;x4/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012437Z" creationid="hsugawa8651" creationdate="20181120T012335Z">
+        <seg>関数を定義するときには、必要に応じて、 &lt;x3/&gt;複合型&lt;x4/&gt;に関するセクションで紹介した&lt;x1/&gt;::&lt;x2/&gt;型表明演算子を使って、適用可能なパラメータの型を、制限することができます：</seg>
       </tuv>
     </tu>
     <tu>
@@ -30293,6 +30598,16 @@ indexed with a multidimensional set of indices, the fallback &lt;x2/&gt;getindex
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083148Z" creationid="hsugawa8651" creationdate="20181113T083148Z">
         <seg>アレイが次に 索引の多次元集合でインデックスを作成します。フォールバック&lt;x2/&gt;getindex(A::AbstractArray, I...)()&lt;x3/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the current &lt;x5/&gt;this&lt;x6/&gt; object is the receiver of a method call,
+it can be omitted altogether, writing just &lt;x7/&gt;meth(arg1,arg2)&lt;x8/&gt;, with &lt;x9/&gt;this&lt;x10/&gt; implied as the receiving
+object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012140Z" creationid="hsugawa8651" creationdate="20181120T012015Z">
+        <seg> &lt;x5/&gt;this&lt;x6/&gt; オブジェクトがメソッド呼び出しのレシーバである場合は省略できます。&lt;x7/&gt;meth(arg1,arg2)&lt;x8/&gt;と書くだけで、&lt;x3/&gt;this&lt;x4/&gt;は受け取るオブジェクトを暗示します。</seg>
       </tuv>
     </tu>
     <tu>
