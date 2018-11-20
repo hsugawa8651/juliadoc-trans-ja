@@ -9890,6 +9890,14 @@ only for passing varargs or computed keywords as described below.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An immutable object might contain mutable objects, such as arrays, as fields.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145959Z" creationid="hsugawa8651" creationdate="20181120T145959Z">
+        <seg>不変オブジェクトには、配列などの可変なオブジェクトがフィールドとして含まれることがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An important point to note is that there is no loss in performance if the programmer relies on
 a function whose arguments are abstract types, because it is recompiled for each tuple of argument
 concrete types with which it is invoked.</seg>
@@ -14256,6 +14264,14 @@ annotated with types using the &lt;x3/&gt;::&lt;x4/&gt; operator:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145606Z" creationid="hsugawa8651" creationdate="20181120T145606Z">
         <seg>複合型を定義するには、structキーワードのあとにフィールド名のブロックを置き、必要に応じて::演算子を使って型注釈を加えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Composite types with no fields are singletons; there can be only one instance of such types:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T150131Z" creationid="hsugawa8651" creationdate="20181120T150131Z">
+        <seg>フィールドのない複合型はシングルトンです。そのような型のインスタンスは1つしか作れません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26830,6 +26846,14 @@ which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Singleton types are described in further detail &lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref man-singleton-types).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T150211Z" creationid="hsugawa8651" creationdate="20181120T150211Z">
+        <seg>シングルトン型については、below  &lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref man-singleton-types) で詳しく説明します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>SizeUnknown()&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112328Z" creationid="hsugawa8651" creationdate="20181112T112328Z">
@@ -27972,6 +27996,15 @@ from variables.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123438Z" creationid="hsugawa8651" creationdate="20181118T123438Z">
         <seg>複素数を構成する場合、&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man数値リテラル係数)は動作しません。 変数から。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;===&lt;x2/&gt; function confirms that the "two" constructed instances of &lt;x3/&gt;NoFields&lt;x4/&gt; are actually one
+and the same.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T150154Z" creationid="hsugawa8651" creationdate="20181120T150154Z">
+        <seg>&lt;x1/&gt;===&lt;x2/&gt;関数によって、NoFieldsの「2つの」生成されたインスタンスが、実際には同一であることを確認できます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -31427,6 +31460,16 @@ be accessed in a fusing fashion by &lt;x9/&gt;.=&lt;x10/&gt; assignment).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There is much more to say about how instances of composite types are created, but that discussion
+depends on both &lt;x1/&gt;Parametric Types&lt;x2/&gt; and on &lt;x3/&gt;Methods&lt;x4/&gt;, and is sufficiently important
+to be addressed in its own section: &lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref man-constructors).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T150223Z" creationid="hsugawa8651" creationdate="20181120T150223Z">
+        <seg>複合型のインスタンスがどのように作成されるかについては、もっと多くの言うべきことがありますが、その議論はパラメトリック型 と メソッドの両方もかかわり、独自の章を立てて解説するほど十分重要ですConstructors。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There is no division between object and non-object values: all values in Julia are true objects
 having a type that belongs to a single, fully connected type graph, all nodes of which are equally
 first-class as types.</seg>
@@ -33284,6 +33327,16 @@ environment variable:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131508Z" creationid="hsugawa8651" creationdate="20181113T131508Z">
         <seg>これらの引数自体がネストされている可能性があります。 &lt;x3/&gt;ブロードキャスト&lt;x4/&gt;コンテナで、評価対象となる大きな表現ツリーを形成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Those contained
+objects will remain mutable; only the fields of the immutable object itself cannot be changed
+to point to different objects.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T150013Z" creationid="hsugawa8651" creationdate="20181120T150013Z">
+        <seg> 含まれているオブジェクトは可変のままです。 不変オブジェクトのフィールド自体が、別のオブジェクトを指すように変更できなくなるだけです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -35207,6 +35260,15 @@ dimensionalities, by creating a constructor for your style that takes a &lt;x3/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131857Z" creationid="hsugawa8651" creationdate="20181113T131857Z">
         <seg>&lt;x1/&gt;AbstractArrayStyle&lt;x2/&gt;をサブタイプ化する場合は必ず、結合するルールを定義する必要があります。 &lt;x3/&gt;Val(N)&lt;x4/&gt;引数を取るスタイルのコンストラクタを作成することによって、次元性を実現します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Where required, mutable composite objects can be declared with the keyword &lt;x1/&gt;mutable struct&lt;x2/&gt;, to be
+discussed in the next section.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T150021Z" creationid="hsugawa8651" creationdate="20181120T150021Z">
+        <seg>必要に応じて、可変な複合オブジェクトをキーワードmutable structで宣言することができます（次のセクションで検討します）。</seg>
       </tuv>
     </tu>
     <tu>
