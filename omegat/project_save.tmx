@@ -1197,8 +1197,8 @@ $JULIA_BINDIR/julia-debug</seg>
       <tuv lang="EN-US">
         <seg>&amp;&amp;&lt;x1/&gt; followed by &lt;x2/&gt;\|\|&lt;x3/&gt; followed by &lt;x4/&gt;?&lt;x5/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095628Z" creationid="hsugawa8651" creationdate="20181114T030904Z">
-        <seg>&amp;&amp;&lt;x1/&gt;の後に&lt;x2/&gt;\\&lt;x3/&gt;が続き、続いて&lt;x4/&gt;?&lt;x5/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065912Z" creationid="hsugawa8651" creationdate="20181114T030904Z">
+        <seg>&amp;&amp;&lt;x1/&gt;のあとに、&lt;x2/&gt;\|\|&lt;x3/&gt;が続き、更に、&lt;x4/&gt;?&lt;x5/&gt;が続く</seg>
       </tuv>
     </tu>
     <tu>
@@ -3965,6 +3965,14 @@ The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165047Z" creationid="hsugawa8651" creationdate="20181118T165047Z">
         <seg>: ..&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>: ..&lt;x1/&gt; followed by &lt;x2/&gt;\|&gt;&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065808Z" creationid="hsugawa8651" creationdate="20181120T065808Z">
+        <seg>: ..&lt;x1/&gt; の後に、&lt;x2/&gt;\|&gt;&lt;x3/&gt;が続く</seg>
       </tuv>
     </tu>
     <tu>
