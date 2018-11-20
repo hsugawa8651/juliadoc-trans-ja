@@ -9472,6 +9472,15 @@ unlike the equivalent Julia functions exposed by &lt;x3/&gt;Core.Intrinsics&lt;x
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Also, the function that arguments are spliced into need not be a varargs function (although it
+often is):</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131807Z" creationid="hsugawa8651" creationdate="20181120T131807Z">
+        <seg>また、継ぎ合わせる関数のほうも、可変引数関数でなくてもかまいません。(よくあります)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Also, when calling a Fortran function, all inputs must be passed as
 pointers to allocated values on the heap or stack.</seg>
       </tuv>
@@ -10311,6 +10320,15 @@ to the implied field types: &lt;x1/&gt;Point{Int64}(1,2)&lt;x2/&gt; works, but &
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123900Z" creationid="hsugawa8651" creationdate="20181118T123900Z">
         <seg>明示的な型パラメータを持つコンストラクタ呼び出しでは、引数は変換されます。 &lt;x1/&gt;点{Int64}(1,2)&lt;x2/&gt;は動作しますが、&lt;x3/&gt;点{Int64}(1.0,2.5)&lt;x4/&gt;は &lt;x7/&gt;2.5&lt;x8/&gt;を&lt;x9/&gt;"Int64"&lt;x10/&gt;に変換する際には、&lt;x6/&gt;'InexactError'&lt;x6/&gt;'となります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As you can see, if the wrong number of elements are in the spliced container, then the function
+call will fail, just as it would if too many arguments were given explicitly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131741Z" creationid="hsugawa8651" creationdate="20181120T131741Z">
+        <seg>ご覧のように、継ぎ合わせるコンテナの要素の数が間違っていると、明示した引数が多すぎる場合と同じように、関数の呼び出しは失敗します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17269,6 +17287,14 @@ variable they have been assigned to.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Furthermore, the iterable object spliced into a function call need not be a tuple:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131820Z" creationid="hsugawa8651" creationdate="20181120T131630Z">
+        <seg>さらに、関数呼び出しと継ぎ合わせるイテラブル・オブジェクトはタプルである必要はありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Garbage Collection Safety</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152223Z" creationid="hsugawa8651" creationdate="20181117T152223Z">
@@ -19945,6 +19971,15 @@ function to call.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152325Z" creationid="hsugawa8651" creationdate="20181117T152325Z">
         <seg>この 例:式は、ネイティブのアドレスとして使用される&lt;x3/&gt;Ptr&lt;x4/&gt;に評価される必要があります。 関数が呼び出されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case a tuple of values is spliced into a varargs call precisely where the variable number
+of arguments go.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131618Z" creationid="hsugawa8651" creationdate="20181120T131618Z">
+        <seg>この場合は、タプルと関数の引数の数がちょうど同じ状態で継ぎ合わされています。 ...を使う必要がないですね。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23795,6 +23830,14 @@ addition to new user-defined data types, you define new methods for the
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033205Z" creationid="hsugawa8651" creationdate="20181119T033047Z">
         <seg>例えば &lt;c0&gt;+&lt;/c0&gt; のような演算子も変数名として有効な識別子ですが、異なった解析がされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Optional Arguments</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131839Z" creationid="hsugawa8651" creationdate="20181120T131839Z">
+        <seg>オプション引数</seg>
       </tuv>
     </tu>
     <tu>
@@ -30967,6 +31010,14 @@ composite types were introduced.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This need not be the case, however:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131649Z" creationid="hsugawa8651" creationdate="20181120T131649Z">
+        <seg></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This normalized form for a ratio of integers is unique, so equality of rational values can be
 tested by checking for equality of the numerator and denominator.</seg>
       </tuv>
@@ -31443,6 +31494,15 @@ different numbers and types of arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152628Z" creationid="hsugawa8651" creationdate="20181117T152628Z">
         <seg>これを行うには、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref Base.AsyncCondition)オブジェクトを作成し、&lt;x6/&gt;`wait`&lt;x7/&gt;を次のようにします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To do this, one also uses &lt;x1/&gt;...&lt;x2/&gt; but in the function
+call instead:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131548Z" creationid="hsugawa8651" creationdate="20181120T131548Z">
+        <seg>これは、関数呼び出しの中で、 &lt;x1/&gt;...&lt;x2/&gt; を使っておこないます。</seg>
       </tuv>
     </tu>
     <tu>
