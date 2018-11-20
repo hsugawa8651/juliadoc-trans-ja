@@ -66,6 +66,16 @@ Multiplication operator.</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>"""
+"  Hello,\n  world.\n"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094339Z" creationid="hsugawa8651" creationdate="20181120T094339Z">
+        <seg>"""
+"  Hello,\n  world.\n"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>"""
 ...
 
 ...
@@ -1509,6 +1519,14 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id man-strings)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094138Z" creationid="hsugawa8651" creationdate="20181120T094138Z">
+        <seg>文字列 (@id man-strings)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id man-supported-index-types)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134939Z" creationid="hsugawa8651" creationdate="20181117T134939Z">
@@ -1537,6 +1555,14 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043422Z" creationid="hsugawa8651" creationdate="20181112T043422Z">
         <seg>(@id math-ops)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@id non-standard-string-literals)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094435Z" creationid="hsugawa8651" creationdate="20181120T094415Z">
+        <seg>非標準な文字列リテラル (@id non-standard-string-literals)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1772,6 +1798,15 @@ at index &lt;x1/&gt;n&lt;x2/&gt;, where &lt;x3/&gt;n&lt;x4/&gt; is the length of
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081039Z" creationid="hsugawa8651" creationdate="20181120T081039Z">
         <seg>しかし、下に示すように、文字列の長さ &lt;x3/&gt;n&lt;x4/&gt;のとき、文字列の最後の要素が、インデックス&lt;x1/&gt;n&lt;x2/&gt;が見出されるとは限りません。）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(As we will see below, this does not necessarily mean that the last element is found
+at index &lt;x7/&gt;n&lt;x8/&gt;, where &lt;x9/&gt;n&lt;x10/&gt; is the length of the string.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T100304Z" creationid="hsugawa8651" creationdate="20181120T100304Z">
+        <seg>しかし、下に示すように、 &lt;x3/&gt;n&lt;x4/&gt;が文字列の長さであるとき、文字列の最後の要素が、インデックス&lt;x1/&gt;n&lt;x2/&gt;が見出されるとは限りません。）</seg>
       </tuv>
     </tu>
     <tu>
@@ -4039,8 +4074,8 @@ The unary operators &lt;x1/&gt;+&lt;x2/&gt; and &lt;x3/&gt;-&lt;x4/&gt; require 
       <tuv lang="EN-US">
         <seg>:( println("Hello, world!") )</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T015259Z" creationid="hsugawa8651" creationdate="20181116T015259Z">
-        <seg>:( println("Hello, world!") )</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T101445Z" creationid="hsugawa8651" creationdate="20181116T015259Z">
+        <seg>:( println("Hello, world!") ) に置き換えます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8420,6 +8455,17 @@ external C and Fortran functions that expect this memory layout.</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>A &lt;x1/&gt;Char&lt;x2/&gt; value represents a single character: it is just a 32-bit primitive type with a special literal
+representation and appropriate arithmetic behaviors, and which can be converted
+to a numeric value representing a
+&lt;x3/&gt;Unicode code point&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T095452Z" creationid="hsugawa8651" creationdate="20181120T095452Z">
+        <seg>&lt;x1/&gt;Char&lt;x2/&gt; 値は単体の文字を表します。これは特殊なリテラル表現と適切な算術演算を持つ32ビットのプリミティブタイプであり、 数値は &lt;x3/&gt;Unicode code point&lt;x4/&gt;Unicodeコードポイント として解釈されます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;x1/&gt;Char&lt;x2/&gt; value represents a single character: it is just a 32-bit primitive type with a special literal
 representation and appropriate arithmetic behaviors, whose numeric value is interpreted as a
 &lt;x3/&gt;Unicode code point&lt;x4/&gt;.</seg>
       </tuv>
@@ -9688,6 +9734,14 @@ a bug so that it can be resolved.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120359Z" creationid="hsugawa8651" creationdate="20181118T120359Z">
         <seg>任意精度計算</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Argument Passing Behavior</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T101739Z" creationid="hsugawa8651" creationdate="20181120T101739Z">
+        <seg>引き数受け渡しにおける振る舞い</seg>
       </tuv>
     </tu>
     <tu>
@@ -13697,6 +13751,14 @@ julia&gt; newfun()
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132640Z" creationid="hsugawa8651" creationdate="20181113T132640Z">
         <seg>ドット演算子と数値リテラルを組み合わせることは、あいまいです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Common Operations</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094400Z" creationid="hsugawa8651" creationdate="20181120T094400Z">
+        <seg>共通の演算</seg>
       </tuv>
     </tu>
     <tu>
@@ -18757,6 +18819,14 @@ a string at such an invalid byte index, an error is thrown:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you iterate through the indices 1 through &lt;x3/&gt;`lastindex(s)`&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T100635Z" creationid="hsugawa8651" creationdate="20181120T100635Z">
+        <seg>インデックス1から &lt;x3/&gt;`lastindex(s)`&lt;x4/&gt;まで繰り返し処理を行い、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you just want to install and use packages, simply use Julia's built-in package manager to add packages to your environment and write &lt;x1/&gt;import X&lt;x2/&gt; or &lt;x3/&gt;using X&lt;x4/&gt; in your code to load packages that you've added.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152754Z" creationid="hsugawa8651" creationdate="20181117T152754Z">
@@ -18788,6 +18858,15 @@ have two options:</seg>
 is a valid code point, use the &lt;x3/&gt;`isvalid()`&lt;x4/&gt; function:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080354Z" creationid="hsugawa8651" creationdate="20181120T080354Z">
+        <seg>もし変換された値が有効なコードポイントであるか確認したい場合は、&lt;x3/&gt;`isvalid()`&lt;x4/&gt;関数を使用してください。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to check that each converted value
+is a valid code point, use the &lt;x3/&gt;`isvalid`&lt;x4/&gt; function:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T095929Z" creationid="hsugawa8651" creationdate="20181120T095929Z">
         <seg>もし変換された値が有効なコードポイントであるか確認したい場合は、&lt;x3/&gt;`isvalid()`&lt;x4/&gt;関数を使用してください。:</seg>
       </tuv>
     </tu>
@@ -18915,6 +18994,14 @@ sharing&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033143Z" creationid="hsugawa8651" creationdate="20181109T225601Z">
         <seg>Juliaでは、指定された型の表現可能な最大値を超えた場合、ワードラップが発生します。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In Julia, most operators are just functions with support for special syntax.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T102056Z" creationid="hsugawa8651" creationdate="20181120T102056Z">
+        <seg>Juliaでは、関数に対するすべての引数は、&lt;x1/&gt;に渡されます。 共有&lt;x2/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -19791,6 +19878,15 @@ but can't be immediately called.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020936Z" creationid="hsugawa8651" creationdate="20181120T020936Z">
         <seg>この例では、newfunの新しい定義は作成されましたが、すぐには呼び出せないことに注意してください。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this example, the compiler will replace all
+instances of &lt;x5/&gt;@sayhello&lt;x6/&gt; with:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T101432Z" creationid="hsugawa8651" creationdate="20181120T101336Z">
+        <seg>この例では、&lt;x5/&gt;@sayhello&lt;x6/&gt;のインスタンスの全てを</seg>
       </tuv>
     </tu>
     <tu>
@@ -21807,6 +21903,15 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Macro arguments may include expressions,
+literal values, and symbols.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T100951Z" creationid="hsugawa8651" creationdate="20181120T100951Z">
+        <seg>マクロの引き数は、式、リテラル値、シンボルを含むことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Macros provide a method to include generated code in the final body of a program.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165334Z" creationid="hsugawa8651" creationdate="20181118T165334Z">
@@ -22199,6 +22304,15 @@ Clang), you will need to use the &lt;x1/&gt;-shared&lt;x2/&gt; and &lt;x3/&gt;-f
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Most indexing in Julia is 1-based: the first element of many integer-indexed objects is found at
+index 1.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T100223Z" creationid="hsugawa8651" creationdate="20181120T100223Z">
+        <seg>Julia では、ほどんどのインデックスは1から始まります。すなわち、整数でインデックスされるオブジェクトでは、ほぼ、最初の要素はインデックス1に見つかります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Most non-&lt;x3/&gt;AbstractString&lt;x4/&gt; objects are converted to strings closely corresponding to how
 they are entered as literal expressions:</seg>
       </tuv>
@@ -22561,6 +22675,15 @@ does not check that every character value is valid.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080342Z" creationid="hsugawa8651" creationdate="20181120T080342Z">
         <seg>全ての整数値が有効なUnicodeコードポイントではありません。しかしパフォーマンスの為に、Juliaは &lt;x1/&gt;Char()&lt;x2/&gt;  の呼び出しの際に 引数が有効なUnicodeコードポイントであるかをチェックしません。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Not all integer values are valid Unicode code points, but for performance, the &lt;x1/&gt;Char&lt;x2/&gt; conversion
+does not check that every character value is valid.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T095908Z" creationid="hsugawa8651" creationdate="20181120T095908Z">
+        <seg>全ての整数値が、有効なUnicodeコードポイントではありません。しかしパフォーマンスのために、&lt;x1/&gt;Char()&lt;x2/&gt; への変換の際に、文字の値が、有効であるかどうかをチェックしません。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -23007,6 +23130,14 @@ of function and arguments.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Now, consider a slightly more complex macro:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T101047Z" creationid="hsugawa8651" creationdate="20181120T101047Z">
+        <seg>ここでは、もう少し複雑なマクロを示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Now, suppose that we have a 1d array &lt;x17/&gt;A&lt;x18/&gt; of values in Julia that we want to sort
 using the &lt;x19/&gt;qsort&lt;x20/&gt; function (rather than Julia's built-in &lt;x21/&gt;sort&lt;x22/&gt; function).</seg>
       </tuv>
@@ -23431,6 +23562,14 @@ level operators and functions, in a way that is independent of the underlying st
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164942Z" creationid="hsugawa8651" creationdate="20181118T164942Z">
         <seg>演算子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Operators Are Functions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T102028Z" creationid="hsugawa8651" creationdate="20181120T102028Z">
+        <seg>演算子は関数である</seg>
       </tuv>
     </tu>
     <tu>
@@ -24101,6 +24240,14 @@ in this case from a stable sort (unless the array records its mutations in some 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Range indexing makes a copy of the selected part of the original string.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T100529Z" creationid="hsugawa8651" creationdate="20181120T100529Z">
+        <seg>範囲によるインデックスは、元の文字列のうち、選択された部分のコピーを作ります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Ranges in generators and comprehensions can depend on previous ranges by writing multiple &lt;x1/&gt;for&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155036Z" creationid="hsugawa8651" creationdate="20181109T155036Z">
@@ -24171,6 +24318,20 @@ return value, or throws an exception if no appropriate value can be returned.</s
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123828Z" creationid="hsugawa8651" creationdate="20181118T123828Z">
         <seg>&lt;x1/&gt;パラメトリックタイプ&lt;x2/&gt;からリコールされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Recall that in &lt;x1/&gt;Integers and Floating-Point Numbers&lt;x2/&gt;, we introduced a variety of concrete
+types of numeric values: &lt;x3/&gt;`Int8`&lt;x4/&gt;, &lt;x5/&gt;`UInt8`&lt;x6/&gt;, &lt;x7/&gt;`Int16`&lt;x8/&gt;, &lt;x9/&gt;`UInt16`&lt;x10/&gt;,
+&lt;x11/&gt;`Int32`&lt;x12/&gt;, &lt;x13/&gt;`UInt32`&lt;x14/&gt;, &lt;x15/&gt;`Int64`&lt;x16/&gt;, &lt;x17/&gt;`UInt64`&lt;x18/&gt;, &lt;x19/&gt;`Int128`&lt;x20/&gt;,
+&lt;x21/&gt;`UInt128`&lt;x22/&gt;, &lt;x23/&gt;`Float16`&lt;x24/&gt;, &lt;x25/&gt;`Float32`&lt;x26/&gt;, and &lt;x27/&gt;`Float64`&lt;x28/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094913Z" creationid="hsugawa8651" creationdate="20181120T094913Z">
+        <seg>Recall that in &lt;x1/&gt;Integers and Floating-Point Numbers&lt;x2/&gt;, we introduced a variety of concrete
+types of numeric values: &lt;x3/&gt;`Int8`&lt;x4/&gt;, &lt;x5/&gt;`UInt8`&lt;x6/&gt;, &lt;x7/&gt;`Int16`&lt;x8/&gt;, &lt;x9/&gt;`UInt16`&lt;x10/&gt;,
+&lt;x11/&gt;`Int32`&lt;x12/&gt;, &lt;x13/&gt;`UInt32`&lt;x14/&gt;, &lt;x15/&gt;`Int64`&lt;x16/&gt;, &lt;x17/&gt;`UInt64`&lt;x18/&gt;, &lt;x19/&gt;`Int128`&lt;x20/&gt;,
+&lt;x21/&gt;`UInt128`&lt;x22/&gt;, &lt;x23/&gt;`Float16`&lt;x24/&gt;, &lt;x25/&gt;`Float32`&lt;x26/&gt;, and &lt;x27/&gt;`Float64`&lt;x28/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -25300,6 +25461,22 @@ and so we can mutate the array:</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>Stacktrace:
+ [1] Point{Float64}(::Float64) at ./sysimg.jl:77
+
+julia&gt; Point{Float64}(1.0,2.0,3.0)
+ERROR: MethodError: no method matching Point{Float64}(::Float64, ::Float64, ::Float64)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T095136Z" creationid="hsugawa8651" creationdate="20181120T095136Z">
+        <seg>Stacktrace:
+ [1] Point{Float64}(::Float64) at ./sysimg.jl:77
+
+julia&gt; Point{Float64}(1.0,2.0,3.0)
+ERROR: MethodError: no method matching Point{Float64}(::Float64, ::Float64, ::Float64)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Stacktrace:
 [...]</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124613Z" creationid="hsugawa8651" creationdate="20181118T124613Z">
@@ -25383,6 +25560,14 @@ provided &lt;x5/&gt;`stride(A,k)`&lt;x6/&gt; method accesses the &lt;x7/&gt;k&lt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>String Basics</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094206Z" creationid="hsugawa8651" creationdate="20181120T094206Z">
+        <seg>文字列の基本</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>String literals are delimited by double quotes or triple double quotes:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080756Z" creationid="hsugawa8651" creationdate="20181120T080756Z">
@@ -25428,6 +25613,14 @@ the UTF-8 encoding.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151131Z" creationid="hsugawa8651" creationdate="20181117T151131Z">
         <seg>構造型の対応付け</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Style Guide</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094637Z" creationid="hsugawa8651" creationdate="20181120T094637Z">
+        <seg>スタイル・ガイド</seg>
       </tuv>
     </tu>
     <tu>
@@ -26195,6 +26388,14 @@ can be specified via the &lt;x3/&gt;lt&lt;x4/&gt; keyword.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124037Z" creationid="hsugawa8651" creationdate="20181118T124037Z">
         <seg>&lt;x1/&gt;プロモート&lt;x2/&gt;関数は、すべての引数を共通の型に変換します。この場合は、&lt;x3/&gt;`Float64'&lt;x4/&gt;のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;return&lt;x2/&gt; Keyword</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T101757Z" creationid="hsugawa8651" creationdate="20181120T101757Z">
+        <seg>&lt;x1/&gt;return&lt;x2/&gt;キーワード</seg>
       </tuv>
     </tu>
     <tu>
@@ -29342,6 +29543,17 @@ generally work correctly as a fallback for any specific array implementation.</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>These operators cannot be functions
+since &lt;x5/&gt;Short-Circuit Evaluation&lt;x6/&gt; requires that their operands are not evaluated before evaluation
+of the operator.) Accordingly, you can also apply them using parenthesized argument lists, just
+as you would any other function:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T102458Z" creationid="hsugawa8651" creationdate="20181120T102458Z">
+        <seg>これらの演算子は、関数にはできません短絡評価&lt;x5/&gt;Short-Circuit Evaluation&lt;x6/&gt; 演算子の評価の前に、オペランドを評価しないことが必要だからです。したがって、演算子を、括弧に囲まれた引き数リストにも適用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These rules allow broadcasting to keep the sparse representation for operations that result
 in one or two dimensional outputs, but produce an &lt;x7/&gt;Array&lt;x8/&gt; for any other dimensionality.</seg>
       </tuv>
@@ -29793,6 +30005,15 @@ is relaxed for incrementally-loaded precompiled modules to allow calling any fun
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This converts
+the return value to the specified type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T101854Z" creationid="hsugawa8651" creationdate="20181120T101854Z">
+        <seg>これで、返り値を指定の型に変換できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This could be written more concisely using the ternary operator.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135346Z" creationid="hsugawa8651" creationdate="20181109T230116Z">
@@ -29931,6 +30152,14 @@ to the behavior of &lt;x7/&gt;`getindex`&lt;x8/&gt; and &lt;x9/&gt;`setindex!`&l
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152531Z" creationid="hsugawa8651" creationdate="20181117T152531Z">
         <seg>この関数は意図的に似ています &lt;x7/&gt;`getindex'&lt;x8/&gt;および&lt;x9/&gt;`setindex!`&lt;x10/&gt;(例:&lt;x11/&gt;[]&lt;x12/&gt;アクセス構文)の動作です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This function will always return an &lt;x1/&gt;Int8&lt;x2/&gt; regardless of the types of &lt;x3/&gt;x&lt;x4/&gt; and &lt;x5/&gt;y&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T102012Z" creationid="hsugawa8651" creationdate="20181120T102012Z">
+        <seg>この関数は、&lt;x3/&gt;x&lt;x4/&gt;と &lt;x5/&gt;y&lt;x6/&gt;の型によらず、いつでも &lt;x1/&gt;Int8&lt;x2/&gt; の値を返す。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30671,6 +30900,15 @@ since each character in a string must have its own index.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Thus we have the identity that &lt;x4/&gt;length(s) &lt;= lastindex(s)&lt;x5/&gt;,
+since each character in a string must have its own index.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T100726Z" creationid="hsugawa8651" creationdate="20181120T100726Z">
+        <seg>したがって、文字列内のそれぞれの文字は固有のインデックスを持つため、  &lt;x4/&gt;length(s) &lt;= endof(s)&lt;x5/&gt;を使用して識別ができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Thus,
 overall, this defines a boolean function that checks whether its two arguments are of the same
 type:</seg>
@@ -31189,6 +31427,14 @@ functions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Triple-Quoted String Literals</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094337Z" creationid="hsugawa8651" creationdate="20181120T094337Z">
+        <seg>三重にクォートされた文字列リテラル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Triple-quoted strings are also dedented to the level of
 the least-indented line.</seg>
       </tuv>
@@ -31383,6 +31629,14 @@ in the same number of bytes.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T234945Z" creationid="hsugawa8651" creationdate="20181119T234945Z">
         <seg>Unicode入力&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unicode and UTF-8</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094221Z" creationid="hsugawa8651" creationdate="20181120T094221Z">
+        <seg>Unicode と UTF-8</seg>
       </tuv>
     </tu>
     <tu>
@@ -31790,6 +32044,14 @@ like &lt;x1/&gt;`in`&lt;x2/&gt;, or &lt;x3/&gt;`mean`&lt;x4/&gt; and &lt;x5/&gt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155908Z" creationid="hsugawa8651" creationdate="20181117T155908Z">
         <seg>このコンストラクタが動作し、実際には自己参照であるオブジェクトを構成していることを確認できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We have already seen a function &lt;x1/&gt;f(::Expr...) -&gt; Expr&lt;x2/&gt; in a previous section.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T101555Z" creationid="hsugawa8651" creationdate="20181120T101555Z">
+        <seg>私達は、前の説で、関数&lt;x1/&gt;f(::Expr...) -&gt; Expr&lt;x2/&gt;を見てきました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -32528,8 +32790,8 @@ broadcasting shape rules yourself, but this may be helpful in limited situations
       <tuv lang="EN-US">
         <seg>You can also extract a substring using range indexing:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081218Z" creationid="hsugawa8651" creationdate="20181120T081218Z">
-        <seg>範囲のインデックスを使用することで、文字列の一部分を抽出することができます。:</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T100435Z" creationid="hsugawa8651" creationdate="20181120T081218Z">
+        <seg>範囲のインデックスを使用することで、文字列の一部分を抽出できます。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -32572,6 +32834,14 @@ integer value back to a &lt;x5/&gt;Char&lt;x6/&gt; just as easily:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080741Z" creationid="hsugawa8651" creationdate="20181120T080741Z">
         <seg>&lt;x1/&gt;Char&lt;x2/&gt;値を使用して限定的な算術演算や Char 同士の比較を行うことができます。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can easily convert a &lt;x1/&gt;Char&lt;x2/&gt; to its integer value, i.e. code point:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T095602Z" creationid="hsugawa8651" creationdate="20181120T095602Z">
+        <seg>&lt;x1/&gt;Char&lt;x2/&gt;  を整数値、すなわち、コードポイントへ簡単に変換できます。:q</seg>
       </tuv>
     </tu>
     <tu>
@@ -32651,6 +32921,15 @@ six):</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123048Z" creationid="hsugawa8651" creationdate="20181118T123048Z">
         <seg>複雑な数値を使用して、すべての標準算術演算を実行できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can perform arithmetic and other operations with &lt;x1/&gt;`end`&lt;x2/&gt;, just like
+a normal value:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T100401Z" creationid="hsugawa8651" creationdate="20181120T100401Z">
+        <seg>通常の値と同様に、&lt;x1/&gt;`end`&lt;x2/&gt;を用いて、算術演算やその他の処理を行うことができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33560,6 +33839,14 @@ by &lt;x2/&gt;`ccall`&lt;x3/&gt;, and a type describing the value stored in the 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`chr2ind(str,j)`&lt;x1/&gt; gives the index at which the &lt;x2/&gt;j&lt;x3/&gt;th character in &lt;x4/&gt;str&lt;x5/&gt; occurs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T084551Z" creationid="hsugawa8651" creationdate="20181120T084551Z">
+        <seg>`chr2ind(str,j)`&lt;x1/&gt; は &lt;x4/&gt;str&lt;x5/&gt;  の &lt;x2/&gt;j&lt;x3/&gt; 番目の文字が格納されているインデックスの値を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`cld(x,y)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095826Z" creationid="hsugawa8651" creationdate="20181118T095826Z">
@@ -34350,6 +34637,14 @@ as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>a = Array{Union{Int,AbstractString,Tuple,Array}}(n)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094730Z" creationid="hsugawa8651" creationdate="20181120T094730Z">
+        <seg>a = Array{Union{Int,AbstractString,Tuple,Array}}(n)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>a = Vector{Union{Int,AbstractString,Tuple,Array}}(undef, n)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T021227Z" creationid="hsugawa8651" creationdate="20181116T021227Z">
@@ -34618,6 +34913,20 @@ abstract type Unsigned &lt;: Integer end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074818Z" creationid="hsugawa8651" creationdate="20181120T074818Z">
         <seg>大きな値 &lt;x3/&gt;x&lt;x4/&gt; に対する  &lt;x1/&gt;log(gamma(x))&lt;x2/&gt; の正確な値</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>addone(x::Int) = x + 1                 &lt;x1/&gt; works only for Int
+addone(x::Integer) = x + oneunit(x)    &lt;x2/&gt; any integer type
+addone(x::Number) = x + oneunit(x)     &lt;x3/&gt; any numeric type
+addone(x) = x + oneunit(x)             &lt;x4/&gt; any type supporting + and oneunit</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094653Z" creationid="hsugawa8651" creationdate="20181120T094653Z">
+        <seg>addone(x::Int) = x + 1                 &lt;x1/&gt; works only for Int
+addone(x::Integer) = x + oneunit(x)    &lt;x2/&gt; any integer type
+addone(x::Number) = x + oneunit(x)     &lt;x3/&gt; any numeric type
+addone(x) = x + oneunit(x)             &lt;x4/&gt; any type supporting + and oneunit</seg>
       </tuv>
     </tu>
     <tu>
@@ -36097,6 +36406,24 @@ end</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>function double!(a::AbstractArray{&lt;:Number})
+    for i = 1:endof(a)
+        a[i] *= 2
+    end
+    return a
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094712Z" creationid="hsugawa8651" creationdate="20181120T094712Z">
+        <seg>function double!(a::AbstractArray{&lt;:Number})
+    for i = 1:endof(a)
+        a[i] *= 2
+    end
+    return a
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function double!(a::AbstractArray{&lt;:Number})
     for i = firstindex(a):lastindex(a)
         a[i] *= 2
     end
@@ -36106,6 +36433,24 @@ end</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T021222Z" creationid="hsugawa8651" creationdate="20181116T021222Z">
         <seg>function double!(a::AbstractArray{&lt;:Number})
     for i = firstindex(a):lastindex(a)
+        a[i] *= 2
+    end
+    return a
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>function double(a::AbstractArray{&lt;:Number})
+    for i = 1:endof(a)
+        a[i] *= 2
+    end
+    return a
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094709Z" creationid="hsugawa8651" creationdate="20181120T094709Z">
+        <seg>function double(a::AbstractArray{&lt;:Number})
+    for i = 1:endof(a)
         a[i] *= 2
     end
     return a
@@ -36428,6 +36773,18 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>function norm(p::Point{Real})
+    sqrt(p.x^2 + p.y^2)
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T095115Z" creationid="hsugawa8651" creationdate="20181120T095115Z">
+        <seg>function norm(p::Point{Real})
+    sqrt(p.x^2 + p.y^2)
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>function open(f::Function, args...)
     io = open(args...)
     try
@@ -36625,6 +36982,14 @@ which is a simplified version of the actual definition from &lt;x2/&gt;`env.jl`&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112956Z" creationid="hsugawa8651" creationdate="20181112T112956Z">
         <seg>getindex(X, i)&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>getindex(x::NativeType, i) = unsafe_load(x.p, i)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094811Z" creationid="hsugawa8651" creationdate="20181120T094811Z">
+        <seg>getindex(x::NativeType, i) = unsafe_load(x.p, i)</seg>
       </tuv>
     </tu>
     <tu>
@@ -37880,6 +38245,16 @@ true</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; "DATA\xff\u2200"
+ERROR: syntax: invalid UTF-8 sequence</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094553Z" creationid="hsugawa8651" creationdate="20181120T094553Z">
+        <seg>julia&gt; "DATA\xff\u2200"
+ERROR: syntax: invalid UTF-8 sequence</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; "abracadabra" &lt; "xylophone"
 true
 
@@ -38005,6 +38380,22 @@ julia&gt; (1+2)::Int
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T021429Z" creationid="hsugawa8651" creationdate="20181116T021429Z">
         <seg>julia&gt; (1+2)::AbstractFloat
 ERROR: TypeError: in typeassert, expected AbstractFloat, got Int64
+
+julia&gt; (1+2)::Int
+3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; (1+2)::AbstractFloat
+ERROR: TypeError: typeassert: expected AbstractFloat, got Int64
+
+julia&gt; (1+2)::Int
+3</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094854Z" creationid="hsugawa8651" creationdate="20181120T094854Z">
+        <seg>julia&gt; (1+2)::AbstractFloat
+ERROR: TypeError: typeassert: expected AbstractFloat, got Int64
 
 julia&gt; (1+2)::Int
 3</seg>
@@ -40137,6 +40528,22 @@ false</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>julia&gt; Foo((), 23.5, 1)
+ERROR: InexactError()
+Stacktrace:
+ [1] convert(::Type{Int64}, ::Float64) at ./float.jl:679
+ [2] Foo(::Tuple{}, ::Float64, ::Int64) at ./none:2</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T095014Z" creationid="hsugawa8651" creationdate="20181120T095014Z">
+        <seg>julia&gt; Foo((), 23.5, 1)
+ERROR: InexactError()
+Stacktrace:
+ [1] convert(::Type{Int64}, ::Float64) at ./float.jl:679
+ [2] Foo(::Tuple{}, ::Float64, ::Int64) at ./none:2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Foo((), 23.5, 1)
 ERROR: InexactError: Int64(Int64, 23.5)
 Stacktrace:
 [...]</seg>
@@ -40531,6 +40938,34 @@ Stacktrace:
     <tu>
       <tuv lang="EN-US">
         <seg>julia&gt; IntOrString = Union{Int,AbstractString}
+Union{AbstractString, Int64}
+
+julia&gt; 1 :: IntOrString
+1
+
+julia&gt; "Hello!" :: IntOrString
+"Hello!"
+
+julia&gt; 1.0 :: IntOrString
+ERROR: TypeError: typeassert: expected Union{AbstractString, Int64}, got Float64</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T095045Z" creationid="hsugawa8651" creationdate="20181120T095045Z">
+        <seg>julia&gt; IntOrString = Union{Int,AbstractString}
+Union{AbstractString, Int64}
+
+julia&gt; 1 :: IntOrString
+1
+
+julia&gt; "Hello!" :: IntOrString
+"Hello!"
+
+julia&gt; 1.0 :: IntOrString
+ERROR: TypeError: typeassert: expected Union{AbstractString, Int64}, got Float64</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; IntOrString = Union{Int,AbstractString}
 Union{Int64, AbstractString}
 
 julia&gt; 1 :: IntOrString
@@ -40758,6 +41193,34 @@ Point{Float64}(1.0, 0.5)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124034Z" creationid="hsugawa8651" creationdate="20181118T124034Z">
         <seg>julia&gt; Point(x::Real, y::Real) = Point(promote(x,y)...);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Pointy{Float64}
+Pointy{Float64}
+
+julia&gt; Pointy{Real}
+Pointy{Real}
+
+julia&gt; Pointy{AbstractString}
+ERROR: TypeError: Pointy: in T, expected T&lt;:Real, got Type{AbstractString}
+
+julia&gt; Pointy{1}
+ERROR: TypeError: Pointy: in T, expected T&lt;:Real, got Int64</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T095205Z" creationid="hsugawa8651" creationdate="20181120T095205Z">
+        <seg>julia&gt; Pointy{Float64}
+Pointy{Float64}
+
+julia&gt; Pointy{Real}
+Pointy{Real}
+
+julia&gt; Pointy{AbstractString}
+ERROR: TypeError: Pointy: in T, expected T&lt;:Real, got Type{AbstractString}
+
+julia&gt; Pointy{1}
+ERROR: TypeError: Pointy: in T, expected T&lt;:Real, got Int64</seg>
       </tuv>
     </tu>
     <tu>
@@ -41497,6 +41960,32 @@ julia&gt; :(f(1, $(args...)))
     <tu>
       <tuv lang="EN-US">
         <seg>julia&gt; b"DATA\xff\u2200"
+8-element Array{UInt8,1}:
+ 0x44
+ 0x41
+ 0x54
+ 0x41
+ 0xff
+ 0xe2
+ 0x88
+ 0x80</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094547Z" creationid="hsugawa8651" creationdate="20181120T094547Z">
+        <seg>julia&gt; b"DATA\xff\u2200"
+8-element Array{UInt8,1}:
+ 0x44
+ 0x41
+ 0x54
+ 0x41
+ 0xff
+ 0xe2
+ 0x88
+ 0x80</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; b"DATA\xff\u2200"
 8-element Base.CodeUnits{UInt8,String}:
  0x44
  0x41
@@ -41518,6 +42007,28 @@ julia&gt; :(f(1, $(args...)))
  0xe2
  0x88
  0x80</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; b"\xff"
+1-element Array{UInt8,1}:
+ 0xff
+
+julia&gt; b"\uff"
+2-element Array{UInt8,1}:
+ 0xc3
+ 0xbf</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094556Z" creationid="hsugawa8651" creationdate="20181120T094556Z">
+        <seg>julia&gt; b"\xff"
+1-element Array{UInt8,1}:
+ 0xff
+
+julia&gt; b"\uff"
+2-element Array{UInt8,1}:
+ 0xc3
+ 0xbf</seg>
       </tuv>
     </tu>
     <tu>
@@ -41944,6 +42455,40 @@ julia&gt; z = 100
 
 julia&gt; z = 100
 100</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; contains("Hello, world.", "world")
+true
+
+julia&gt; contains("Xylophon", "o")
+true
+
+julia&gt; contains("Xylophon", "a")
+false
+
+julia&gt; contains("Xylophon", 'o')
+ERROR: MethodError: no method matching contains(::String, ::Char)
+Closest candidates are:
+  contains(!Matched::Function, ::Any, !Matched::Any) at reduce.jl:664
+  contains(::AbstractString, !Matched::AbstractString) at strings/search.jl:378</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094406Z" creationid="hsugawa8651" creationdate="20181120T094406Z">
+        <seg>julia&gt; contains("Hello, world.", "world")
+true
+
+julia&gt; contains("Xylophon", "o")
+true
+
+julia&gt; contains("Xylophon", "a")
+false
+
+julia&gt; contains("Xylophon", 'o')
+ERROR: MethodError: no method matching contains(::String, ::Char)
+Closest candidates are:
+  contains(!Matched::Function, ::Any, !Matched::Any) at reduce.jl:664
+  contains(::AbstractString, !Matched::AbstractString) at strings/search.jl:378</seg>
       </tuv>
     </tu>
     <tu>
@@ -43000,6 +43545,22 @@ julia&gt; f(2.0, 3)
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T021658Z" creationid="hsugawa8651" creationdate="20181116T021658Z">
         <seg>julia&gt; fieldnames(Foo)
 (:bar, :baz, :qux)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; fieldnames(foo)
+3-element Array{Symbol,1}:
+ :bar
+ :baz
+ :qux</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T095017Z" creationid="hsugawa8651" creationdate="20181120T095017Z">
+        <seg>julia&gt; fieldnames(foo)
+3-element Array{Symbol,1}:
+ :bar
+ :baz
+ :qux</seg>
       </tuv>
     </tu>
     <tu>
@@ -44702,6 +45263,22 @@ true</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; ismatch(r"^\s*(?:&lt;x1/&gt;|$)", "not a comment")
+false
+
+julia&gt; ismatch(r"^\s*(?:&lt;x2/&gt;|$)", "&lt;x3/&gt; a comment")
+true</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094446Z" creationid="hsugawa8651" creationdate="20181120T094446Z">
+        <seg>julia&gt; ismatch(r"^\s*(?:&lt;x1/&gt;|$)", "not a comment")
+false
+
+julia&gt; ismatch(r"^\s*(?:&lt;x2/&gt;|$)", "&lt;x3/&gt; a comment")
+true</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; isvalid("DATA\xff\u2200")
 false</seg>
       </tuv>
@@ -44830,6 +45407,94 @@ julia&gt; m.match
 
 julia&gt; m.captures
 3-element Array{Union{Nothing, SubString{String}},1}:
+ "a"
+ nothing
+ "d"
+
+julia&gt; m.offset
+1
+
+julia&gt; m.offsets
+3-element Array{Int64,1}:
+ 1
+ 0
+ 2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; m = match(r"(a|b)(c)?(d)", "acd")
+RegexMatch("acd", 1="a", 2="c", 3="d")
+
+julia&gt; m.match
+"acd"
+
+julia&gt; m.captures
+3-element Array{Union{SubString{String}, Void},1}:
+ "a"
+ "c"
+ "d"
+
+julia&gt; m.offset
+1
+
+julia&gt; m.offsets
+3-element Array{Int64,1}:
+ 1
+ 2
+ 3
+
+julia&gt; m = match(r"(a|b)(c)?(d)", "ad")
+RegexMatch("ad", 1="a", 2=nothing, 3="d")
+
+julia&gt; m.match
+"ad"
+
+julia&gt; m.captures
+3-element Array{Union{SubString{String}, Void},1}:
+ "a"
+ nothing
+ "d"
+
+julia&gt; m.offset
+1
+
+julia&gt; m.offsets
+3-element Array{Int64,1}:
+ 1
+ 0
+ 2</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094504Z" creationid="hsugawa8651" creationdate="20181120T094504Z">
+        <seg>julia&gt; m = match(r"(a|b)(c)?(d)", "acd")
+RegexMatch("acd", 1="a", 2="c", 3="d")
+
+julia&gt; m.match
+"acd"
+
+julia&gt; m.captures
+3-element Array{Union{SubString{String}, Void},1}:
+ "a"
+ "c"
+ "d"
+
+julia&gt; m.offset
+1
+
+julia&gt; m.offsets
+3-element Array{Int64,1}:
+ 1
+ 2
+ 3
+
+julia&gt; m = match(r"(a|b)(c)?(d)", "ad")
+RegexMatch("ad", 1="a", 2=nothing, 3="d")
+
+julia&gt; m.match
+"ad"
+
+julia&gt; m.captures
+3-element Array{Union{SubString{String}, Void},1}:
  "a"
  nothing
  "d"
@@ -45960,11 +46625,31 @@ julia&gt; join(["apples", "bananas", "pineapples"], ", ", " and ")
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; replace("a", r".", s"\g&lt;x1/&gt;1")
+"a1"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094524Z" creationid="hsugawa8651" creationdate="20181120T094524Z">
+        <seg>julia&gt; replace("a", r".", s"\g&lt;x1/&gt;1")
+"a1"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; replace("first second", r"(\w+) (?&lt;x1/&gt;\w+)" =&gt; s"\g&lt;x2/&gt; \1")
 "second first"</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T021021Z" creationid="hsugawa8651" creationdate="20181116T021021Z">
         <seg>julia&gt; replace("first second", r"(\w+) (?&lt;x1/&gt;\w+)" =&gt; s"\g&lt;x2/&gt; \1")
+"second first"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; replace("first second", r"(\w+) (?&lt;x1/&gt;\w+)", s"\g&lt;x2/&gt; \1")
+"second first"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094520Z" creationid="hsugawa8651" creationdate="20181120T094520Z">
+        <seg>julia&gt; replace("first second", r"(\w+) (?&lt;x1/&gt;\w+)", s"\g&lt;x2/&gt; \1")
 "second first"</seg>
       </tuv>
     </tu>
@@ -46192,6 +46877,38 @@ julia&gt; s[4]
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; s[1]
+'∀': Unicode U+2200 (category Sm: Symbol, math)
+
+julia&gt; s[2]
+ERROR: UnicodeError: invalid character index
+[...]
+
+julia&gt; s[3]
+ERROR: UnicodeError: invalid character index
+[...]
+
+julia&gt; s[4]
+' ': ASCII/Unicode U+0020 (category Zs: Separator, space)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094223Z" creationid="hsugawa8651" creationdate="20181120T094223Z">
+        <seg>julia&gt; s[1]
+'∀': Unicode U+2200 (category Sm: Symbol, math)
+
+julia&gt; s[2]
+ERROR: UnicodeError: invalid character index
+[...]
+
+julia&gt; s[3]
+ERROR: UnicodeError: invalid character index
+[...]
+
+julia&gt; s[4]
+' ': ASCII/Unicode U+0020 (category Zs: Separator, space)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; same_type(1, 2)
 true
 
@@ -46302,6 +47019,50 @@ ERROR: MethodError: no method matching same_type_numeric(::String, ::String)
 
 julia&gt; same_type_numeric(Int32(1), Int64(2))
 false</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; search("xylophone", 'o')
+4
+
+julia&gt; search("xylophone", 'o', 5)
+7
+
+julia&gt; search("xylophone", 'o', 8)
+0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094404Z" creationid="hsugawa8651" creationdate="20181120T094404Z">
+        <seg>julia&gt; search("xylophone", 'o')
+4
+
+julia&gt; search("xylophone", 'o', 5)
+7
+
+julia&gt; search("xylophone", 'o', 8)
+0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; search("xylophone", 'x')
+1
+
+julia&gt; search("xylophone", 'p')
+5
+
+julia&gt; search("xylophone", 'z')
+0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094402Z" creationid="hsugawa8651" creationdate="20181120T094402Z">
+        <seg>julia&gt; search("xylophone", 'x')
+1
+
+julia&gt; search("xylophone", 'p')
+5
+
+julia&gt; search("xylophone", 'z')
+0</seg>
       </tuv>
     </tu>
     <tu>
@@ -46645,6 +47406,30 @@ julia&gt; str[end+1]
 ERROR: BoundsError: attempt to access "Hello, world.\n"
   at index [15]
 Stacktrace:
+[...]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; str[0]
+ERROR: BoundsError: attempt to access "Hello, world.\n"
+  at index [0]
+[...]
+
+julia&gt; str[end+1]
+ERROR: BoundsError: attempt to access "Hello, world.\n"
+  at index [15]
+[...]</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094210Z" creationid="hsugawa8651" creationdate="20181120T094210Z">
+        <seg>julia&gt; str[0]
+ERROR: BoundsError: attempt to access "Hello, world.\n"
+  at index [0]
+[...]
+
+julia&gt; str[end+1]
+ERROR: BoundsError: attempt to access "Hello, world.\n"
+  at index [15]
 [...]</seg>
       </tuv>
     </tu>
@@ -49684,6 +50469,20 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>mutable struct MyType
+    ...
+    x::Union{Void,T}
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094718Z" creationid="hsugawa8651" creationdate="20181120T094718Z">
+        <seg>mutable struct MyType
+    ...
+    x::Union{Void,T}
+end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>mutable struct NativeType
     p::Ptr{UInt8}
     ...
@@ -50251,6 +51050,46 @@ primitive type Float32 &lt;: AbstractFloat 32 end
 primitive type Float64 &lt;: AbstractFloat 64 end
 
 primitive type Bool &lt;: Integer 8 end
+primitive type Char 32 end
+
+primitive type Int8    &lt;: Signed   8 end
+primitive type UInt8   &lt;: Unsigned 8 end
+primitive type Int16   &lt;: Signed   16 end
+primitive type UInt16  &lt;: Unsigned 16 end
+primitive type Int32   &lt;: Signed   32 end
+primitive type UInt32  &lt;: Unsigned 32 end
+primitive type Int64   &lt;: Signed   64 end
+primitive type UInt64  &lt;: Unsigned 64 end
+primitive type Int128  &lt;: Signed   128 end
+primitive type UInt128 &lt;: Unsigned 128 end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094944Z" creationid="hsugawa8651" creationdate="20181120T094944Z">
+        <seg>primitive type Float16 &lt;: AbstractFloat 16 end
+primitive type Float32 &lt;: AbstractFloat 32 end
+primitive type Float64 &lt;: AbstractFloat 64 end
+
+primitive type Bool &lt;: Integer 8 end
+primitive type Char 32 end
+
+primitive type Int8    &lt;: Signed   8 end
+primitive type UInt8   &lt;: Unsigned 8 end
+primitive type Int16   &lt;: Signed   16 end
+primitive type UInt16  &lt;: Unsigned 16 end
+primitive type Int32   &lt;: Signed   32 end
+primitive type UInt32  &lt;: Unsigned 32 end
+primitive type Int64   &lt;: Signed   64 end
+primitive type UInt64  &lt;: Unsigned 64 end
+primitive type Int128  &lt;: Signed   128 end
+primitive type UInt128 &lt;: Unsigned 128 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>primitive type Float16 &lt;: AbstractFloat 16 end
+primitive type Float32 &lt;: AbstractFloat 32 end
+primitive type Float64 &lt;: AbstractFloat 64 end
+
+primitive type Bool &lt;: Integer 8 end
 primitive type Char &lt;: AbstractChar 32 end
 
 primitive type Int8    &lt;: Signed   8 end
@@ -50515,6 +51354,14 @@ of characters comprising the string &lt;x2/&gt;s&lt;x3/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081745Z" creationid="hsugawa8651" creationdate="20181120T081745Z">
         <seg> s &lt;x1/&gt;にインデックスする場合、エラーが出力されなければ文字列  &lt;x2/&gt;s&lt;x3/&gt; を構成する一連の文字列が返されます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>s&lt;x1/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094512Z" creationid="hsugawa8651" creationdate="20181120T094512Z">
+        <seg>s&lt;x1/&gt;.</seg>
       </tuv>
     </tu>
     <tu>
