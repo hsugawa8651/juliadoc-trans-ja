@@ -10076,6 +10076,15 @@ literals or expressions into quoted expressions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As an example, consider calling &lt;x1/&gt;`map()`&lt;x2/&gt; on a function with several
+cases:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133816Z" creationid="hsugawa8651" creationdate="20181120T133816Z">
+        <seg> 例として、 &lt;x1/&gt;`map()`&lt;x2/&gt;を呼び出すいくつかのケースを考えてみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As an example, suppose a package directory has the following structure and content:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121323Z" creationid="hsugawa8651" creationdate="20181118T121323Z">
@@ -21656,6 +21665,14 @@ collection of standard mathematical functions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia provides a reserved word &lt;x1/&gt;do&lt;x2/&gt; for rewriting this code more clearly:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133833Z" creationid="hsugawa8651" creationdate="20181120T133833Z">
+        <seg>Juliaの予約語である&lt;x1/&gt;do&lt;x2/&gt;を使って、もっと明解に書きかえてみましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia provides a variety of control flow constructs:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T132702Z" creationid="hsugawa8651" creationdate="20181109T225711Z">
@@ -25404,6 +25421,15 @@ applies the operator elementwise.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Similarly, &lt;x7/&gt;do a,b&lt;x8/&gt; would create a two-argument anonymous function, and a
+plain &lt;x9/&gt;do&lt;x10/&gt; would declare that what follows is an anonymous function of the form &lt;x11/&gt;() -&gt; ...&lt;x12/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134006Z" creationid="hsugawa8651" creationdate="20181120T134006Z">
+        <seg>。 同様に &lt;x7/&gt;do a,b&lt;x8/&gt; と書くと、引数が2個の無名関数が生成され、また、単に &lt;x9/&gt;do&lt;x10/&gt;  と書くと&lt;x11/&gt;() -&gt; ...&lt;x12/&gt;という形式の無名関数が生成されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Similarly, for array arguments (&lt;x11/&gt;T[]&lt;x12/&gt; or &lt;x13/&gt;T*&lt;x14/&gt;), the
 Julia type should again be &lt;x15/&gt;Ptr{T}&lt;x16/&gt;, not &lt;x17/&gt;Vector{T}&lt;x18/&gt;.</seg>
       </tuv>
@@ -26159,6 +26185,15 @@ interoperable code.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Such calls are especially awkward to write when the function argument
+requires multiple lines.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133800Z" creationid="hsugawa8651" creationdate="20181120T133800Z">
+        <seg>特に関数の引数が何行にも渡る場合は、書くのが厄介でしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Such collections can be passed as keyword arguments using a semicolon in a call, e.g. &lt;x9/&gt;f(x, z=1; kwargs...)&lt;x10/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132836Z" creationid="hsugawa8651" creationdate="20181120T132836Z">
@@ -26830,6 +26865,15 @@ arbitrary objects (which define &lt;x25/&gt;&lt;&lt;x26/&gt;):</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124520Z" creationid="hsugawa8651" creationdate="20181118T124520Z">
         <seg>&lt;x1/&gt;continue&lt;x2/&gt;キーワードを使用すると、次のことが実現されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;do x&lt;x2/&gt; syntax creates an anonymous function with argument &lt;x3/&gt;x&lt;x4/&gt; and passes it as the first argument
+to &lt;x5/&gt;`map()`&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T133926Z" creationid="hsugawa8651" creationdate="20181120T133926Z">
+        <seg>&lt;x1/&gt;do x&lt;x2/&gt;  という構文では &lt;x3/&gt;x&lt;x4/&gt; を引数にとる無名関数が生成されて、&lt;x5/&gt;`map()`&lt;x6/&gt;の第一引数として渡されます</seg>
       </tuv>
     </tu>
     <tu>
