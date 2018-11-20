@@ -9217,6 +9217,15 @@ to the data.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>All string types are subtypes of the abstract type &lt;x1/&gt;AbstractString&lt;x2/&gt;, and external packages define
+additional &lt;x3/&gt;AbstractString&lt;x4/&gt; subtypes (e.g. for other encodings).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075834Z" creationid="hsugawa8651" creationdate="20181120T075803Z">
+        <seg>すべての文字列型は抽象型 &lt;x1/&gt;AbstractString&lt;x2/&gt; のサブタイプであり、外部パッケージは追加の&lt;x3/&gt;AbstractString&lt;x4/&gt;  のサブタイプ（例えばその他のエンコーディング用） を定義します。文</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All the looping is performed compile-time,
 and we avoid looping during execution entirely.</seg>
       </tuv>
@@ -9925,6 +9934,14 @@ an expression whose value is returned:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025731Z" creationid="hsugawa8651" creationdate="20181110T025731Z">
         <seg>Cとその他のほとんどの命令 または関数を使用すると、&lt;x5/&gt;return&lt;x6/&gt;キーワードによって関数が即座に返され、次の関数が返されます。 値が返される式。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As in Java, strings are immutable: the value of an &lt;x1/&gt;AbstractString&lt;x2/&gt; object cannot be changed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075938Z" creationid="hsugawa8651" creationdate="20181120T075938Z">
+        <seg>Javaと同様に、文字列は変更不可能です。つまり &lt;x1/&gt;AbstractString&lt;x2/&gt;  オブジェクトの値は変更できません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13698,6 +13715,15 @@ result.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154707Z" creationid="hsugawa8651" creationdate="20181109T154707Z">
         <seg>連結構文には、同じように 結果。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Conceptually, a string is a &lt;x1/&gt;partial function&lt;x2/&gt; from indices to characters: for some index values,
+no character value is returned, and instead an exception is thrown.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080045Z" creationid="hsugawa8651" creationdate="20181120T080005Z">
+        <seg>概念的には、文字列はインデックスから文字への部分的な関数&lt;x1/&gt;partial function&lt;x2/&gt;です。インデックス値によっては文字列は返されず、例外が出力されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18427,6 +18453,16 @@ to ensure that &lt;x9/&gt;isequal(x,y)&lt;x10/&gt; implies &lt;x11/&gt;hash(x) =
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you define a function expecting
+a string argument, you should declare the type as &lt;x5/&gt;AbstractString&lt;x6/&gt; in order to accept any string
+type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075842Z" creationid="hsugawa8651" creationdate="20181120T075816Z">
+        <seg>文字列の引数を扱う関数を定義する場合は、任意の文字列型を使用するために &lt;x5/&gt;AbstractString&lt;x6/&gt; を型として宣言する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you don't
 specify this trait, the default value &lt;x5/&gt;IndexCartesian()&lt;x6/&gt; is used.</seg>
       </tuv>
@@ -21258,6 +21294,15 @@ not convert keys on insertion.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032110Z" creationid="hsugawa8651" creationdate="20181114T032110Z">
         <seg>&lt;x2/&gt;Dict&lt;x3/&gt;と同様に、&lt;x4/&gt;はハッシュに&lt;x4/&gt;ハッシュ&lt;x5/&gt;を使用し、&lt;x8/&gt;等価&lt;x7/&gt;は&lt;x8/&gt;等価&lt;x7/&gt;である。 挿入時にキーを変換しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Like C and Java, but unlike most dynamic languages, Julia has a first-class type representing
+a single character, called &lt;x1/&gt;Char&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075905Z" creationid="hsugawa8651" creationdate="20181120T075905Z">
+        <seg>C言語やJavaと同様に、しかしほとんどの動的言語とは異なり、Juliaには &lt;x1/&gt;Char&lt;x2/&gt;. と呼ばれる1文字を表す第1級型があります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -29527,6 +29572,15 @@ has a special argument syntax, and is sometimes implied rather than explicitly w
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is just a special kind of 32-bit primitive type whose numeric
+value represents a Unicode code point.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075915Z" creationid="hsugawa8651" creationdate="20181120T075915Z">
+        <seg>これは数値がUnicodeコードポイントを表す特殊な種類の32ビットのビット型です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is key to Julia's ability to statically infer and compile code to run fast,
 without the usual JIT tricks and overhead.</seg>
       </tuv>
@@ -30260,6 +30314,14 @@ the unspecified fields uninitialized.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155857Z" creationid="hsugawa8651" creationdate="20181117T155857Z">
         <seg>不完全に初期化されたオブジェクトを作成できるようにするために、Juliaは&lt;x1/&gt;"new`&lt;x2/&gt;関数を許可します。 は、型が持つフィールド数よりも少ない数で呼び出され、オブジェクトを使用してオブジェクトを返します。 未指定のフィールドが初期化されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To construct a different string value, you construct a new string from parts of other strings.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075948Z" creationid="hsugawa8651" creationdate="20181120T075948Z">
+        <seg>異なる文字列の値を作成したい場合は、他の文字列の一部から新しく作成するのが良いでしょう。</seg>
       </tuv>
     </tu>
     <tu>
