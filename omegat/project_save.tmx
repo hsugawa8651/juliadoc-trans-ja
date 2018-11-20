@@ -8384,6 +8384,16 @@ external C and Fortran functions that expect this memory layout.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A &lt;x1/&gt;Char&lt;x2/&gt; value represents a single character: it is just a 32-bit primitive type with a special literal
+representation and appropriate arithmetic behaviors, whose numeric value is interpreted as a
+&lt;x3/&gt;Unicode code point&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080154Z" creationid="hsugawa8651" creationdate="20181120T080107Z">
+        <seg>&lt;x1/&gt;Char&lt;x2/&gt; 値は単体の文字を表します。これは特殊なリテラル表現と適切な算術演算を持つ32ビットのプリミティブタイプであり、 数値は &lt;x3/&gt;Unicode code point&lt;x4/&gt;Unicodeコードポイント として解釈されます。 C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A &lt;x1/&gt;break&lt;x2/&gt; statement inside such a loop exits the entire nest of loops, not just the inner one.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T000428Z" creationid="hsugawa8651" creationdate="20181120T000428Z">
@@ -17289,6 +17299,15 @@ where syntactic conflicts arise:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here is how &lt;x5/&gt;Char&lt;x6/&gt; values are
+input and shown:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080203Z" creationid="hsugawa8651" creationdate="20181120T080203Z">
+        <seg>har 値の入力と表示方法は以下の通りです。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here is the anatomy of the &lt;c0&gt;if&lt;/c0&gt;-&lt;c1&gt;elseif&lt;/c1&gt;-&lt;c2&gt;else&lt;/c2&gt; conditional syntax:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133925Z" creationid="hsugawa8651" creationdate="20181119T133925Z">
@@ -18565,6 +18584,15 @@ have two options:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025135Z" creationid="hsugawa8651" creationdate="20181110T025135Z">
         <seg>必要な場合 モジュールをインポートするために、特定の関数または関数のセット内のシンボルのみを使用するには、次のようにします。 には次の2つのオプションがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to check that each converted value
+is a valid code point, use the &lt;x3/&gt;`isvalid()`&lt;x4/&gt; function:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080354Z" creationid="hsugawa8651" creationdate="20181120T080354Z">
+        <seg>もし変換された値が有効なコードポイントであるか確認したい場合は、&lt;x3/&gt;`isvalid()`&lt;x4/&gt;関数を使用してください。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -22210,6 +22238,15 @@ all types of arguments.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Not all integer values are valid Unicode code points, but for performance, the &lt;x1/&gt;Char()&lt;x2/&gt; conversion
+does not check that every character value is valid.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080342Z" creationid="hsugawa8651" creationdate="20181120T080342Z">
+        <seg>全ての整数値が有効なUnicodeコードポイントではありません。しかしパフォーマンスの為に、Juliaは &lt;x1/&gt;Char()&lt;x2/&gt;  の呼び出しの際に 引数が有効なUnicodeコードポイントであるかをチェックしません。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Not all types support &lt;x1/&gt;axes&lt;x2/&gt; and indexing, but many are convenient to allow in broadcast.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131033Z" creationid="hsugawa8651" creationdate="20181113T131033Z">
@@ -22788,6 +22825,15 @@ indices directly instead of first calling &lt;x13/&gt;`findall`&lt;x14/&gt;.</se
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151211Z" creationid="hsugawa8651" creationdate="20181117T151211Z">
         <seg>これらを処理する最良の方法は、バイトオフセットを直接処理することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>On 32-bit architectures, &lt;x1/&gt;`typeof(ans)`&lt;x2/&gt; will be &lt;x3/&gt;`Int32`&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080253Z" creationid="hsugawa8651" creationdate="20181120T080253Z">
+        <seg>32ビットのアーキテクチャ上では、 &lt;x1/&gt;`typeof(ans)`&lt;x2/&gt; は&lt;x3/&gt;`Int32`&lt;x4/&gt;.を返します。 
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -29068,6 +29114,17 @@ as a single number, or "world age".</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This allows for efficient
+indexing into strings by the byte index of an encoded representation rather than by a character
+index, which cannot be implemented both efficiently and simply for variable-width encodings of
+Unicode strings.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080115Z" creationid="hsugawa8651" creationdate="20181120T080115Z">
+        <seg>これは、Unicode文字列 の可変幅のエンコードに対して効率的かつシンプルに実装できない文字列インデックスではなく、エンコードされた表現のバイトインデックスによる文字列 への効率的なインデックスを可能にします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This allows sophisticated code generation without
 extra build steps, and also allows true Lisp-style macros operating at the level of &lt;x1/&gt;abstract syntax trees&lt;x2/&gt;.</seg>
       </tuv>
@@ -31866,6 +31923,24 @@ broadcasting shape rules yourself, but this may be helpful in limited situations
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101528Z" creationid="hsugawa8651" creationdate="20181112T101528Z">
         <seg>また、&lt;x1/&gt;return&lt;x2/&gt;キーワードを明示的に使用して、複数の値を返すこともできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can convert a &lt;x1/&gt;Char&lt;x2/&gt; to its integer value, i.e. code point, easily:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080229Z" creationid="hsugawa8651" creationdate="20181120T080229Z">
+        <seg>&lt;x1/&gt;Char&lt;x2/&gt;  を整数値（コードポイント）へと簡単に変換することができます。:q</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can convert an
+integer value back to a &lt;x5/&gt;Char&lt;x6/&gt; just as easily:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080305Z" creationid="hsugawa8651" creationdate="20181120T080305Z">
+        <seg>また、整数値を簡単に &lt;x5/&gt;Char&lt;x6/&gt;  へと変換し直すこともできます。:
+</seg>
       </tuv>
     </tu>
     <tu>
