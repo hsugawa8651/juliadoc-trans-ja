@@ -33585,16 +33585,16 @@ abstract type Unsigned &lt;: Integer end</seg>
       <tuv lang="EN-US">
         <seg>accurate &lt;x1/&gt;exp(x)-1&lt;x2/&gt; for &lt;x3/&gt;x&lt;x4/&gt; near zero</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100026Z" creationid="hsugawa8651" creationdate="20181118T100026Z">
-        <seg>正確&lt;x1/&gt;exp(x)-1&lt;x2/&gt;&lt;x0/&gt;x&lt;x4/&gt;x&lt;x4/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073533Z" creationid="hsugawa8651" creationdate="20181118T100026Z">
+        <seg>0に近い &lt;x3/&gt;x&lt;x4/&gt;  に対する、 &lt;x1/&gt;exp(x)-1&lt;x2/&gt; の正確な値</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>accurate &lt;x1/&gt;log(1+x)&lt;x2/&gt; for &lt;x3/&gt;x&lt;x4/&gt; near zero</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100053Z" creationid="hsugawa8651" creationdate="20181118T100053Z">
-        <seg>&lt;x3/&gt;x&lt;x4/&gt;近傍0付近では正確な&lt;x1/&gt;log(1+x)&lt;x2/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073820Z" creationid="hsugawa8651" creationdate="20181118T100053Z">
+        <seg>0に近い &lt;x3/&gt;x&lt;x4/&gt;  に対する、正確な &lt;x1/&gt;log(1+x)&lt;x2/&gt;の値</seg>
       </tuv>
     </tu>
     <tu>
@@ -33842,24 +33842,24 @@ object</seg>
       <tuv lang="EN-US">
         <seg>base 10 logarithm of &lt;x1/&gt;x&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100049Z" creationid="hsugawa8651" creationdate="20181118T100049Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;の10対数の対数</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073740Z" creationid="hsugawa8651" creationdate="20181118T100049Z">
+        <seg>10 を底とした &lt;x1/&gt;x&lt;x2/&gt;の対数</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>base 2 logarithm of &lt;x1/&gt;x&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100045Z" creationid="hsugawa8651" creationdate="20181118T100045Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;の2対数の対数</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073725Z" creationid="hsugawa8651" creationdate="20181118T100045Z">
+        <seg>2 を底とした &lt;x1/&gt;x&lt;x2/&gt;の対数</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>base &lt;x1/&gt;b&lt;x2/&gt; logarithm of &lt;x3/&gt;x&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100041Z" creationid="hsugawa8651" creationdate="20181118T100041Z">
-        <seg>&lt;x1/&gt;b&lt;x2/&gt;&lt;x3/&gt;x&lt;x4/&gt;の底面の底面&lt;x/&gt;b&lt;x2/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073656Z" creationid="hsugawa8651" creationdate="20181118T100041Z">
+        <seg>&lt;x1/&gt;b&lt;x2/&gt;  を底とした &lt;x3/&gt;x&lt;x4/&gt;の対数</seg>
       </tuv>
     </tu>
     <tu>
@@ -50639,8 +50639,8 @@ s[k2] == qs[k2]                        &lt;x5/&gt; =&gt; true</seg>
       <tuv lang="EN-US">
         <seg>x*2^n&lt;x1/&gt; computed efficiently for integer values of &lt;x2/&gt;n&lt;x3/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T100034Z" creationid="hsugawa8651" creationdate="20181118T100034Z">
-        <seg>x*2^n&lt;x1/&gt;は、&lt;x2/&gt;n&lt;x3/&gt;の整数値に対して効率的に計算されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073627Z" creationid="hsugawa8651" creationdate="20181118T100034Z">
+        <seg>整数値&lt;x2/&gt;n&lt;x3/&gt; に対して効率的に計算された x*2^n&lt;x1/&gt; の値</seg>
       </tuv>
     </tu>
     <tu>
