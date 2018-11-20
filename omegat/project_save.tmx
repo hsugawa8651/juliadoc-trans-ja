@@ -1333,6 +1333,14 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id man-ambiguities)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014304Z" creationid="hsugawa8651" creationdate="20181120T014304Z">
+        <seg>メソッドの曖昧さ (@id man-ambiguities)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id man-anonymous-functions)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025951Z" creationid="hsugawa8651" creationdate="20181110T025951Z">
@@ -9334,6 +9342,15 @@ or that &lt;x5/&gt;(;)&lt;x6/&gt; chains be single-line:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Although it seems a simple concept, multiple dispatch on the types of values is perhaps the single
+most powerful and central feature of the Julia language.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014201Z" creationid="hsugawa8651" creationdate="20181120T014149Z">
+        <seg>単純な考え方のように見えますが、値型に対する多重ディスパッチは、おそらくJulia言語の最も強力で中心的な機能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Although one sometimes speaks of dynamic languages as being "typeless",
 they are definitely not: every object, whether primitive or
 user-defined, has a type.</seg>
@@ -13840,6 +13857,15 @@ provides a traits-based mechanism to enable efficient generic code for all array
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022812Z" creationid="hsugawa8651" creationdate="20181113T022812Z">
         <seg>リニアインデックスを複数のインデックス添字に変換することは、一般的に非常に高価です。したがって、次のようになります。 は、すべての配列タイプに対して効率的な汎用コードを有効にするための属性ベースのメカニズムを提供します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Core operations typically have dozens
+of methods:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014211Z" creationid="hsugawa8651" creationdate="20181120T014211Z">
+        <seg>中心となる演算には通常数十種類のメソッドがあります:</seg>
       </tuv>
     </tu>
     <tu>
@@ -18936,6 +18962,16 @@ simply apply a given function &lt;x1/&gt;f(x)&lt;x2/&gt; to each element of an a
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the absence of a type declaration with &lt;x1/&gt;::&lt;x2/&gt;, the type of a method parameter is &lt;x3/&gt;Any&lt;x4/&gt; by default,
+meaning that it is unconstrained since all values in Julia are instances of the abstract type
+&lt;x5/&gt;Any&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014114Z" creationid="hsugawa8651" creationdate="20181120T014114Z">
+        <seg>::による型宣言がない場合、メソッドのパラメータの型はデフォルトではAnyであり、Juliaのすべての値が抽象型Anyのインスタンスであるため、制約がないことを意味しています 。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the assignment form, the body of the function must be a single expression, although it can
 be a compound expression (see &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-compound-expressions)).</seg>
       </tuv>
@@ -19676,6 +19712,15 @@ the first block in &lt;x1/&gt;if @generated&lt;x2/&gt; is used, and a normal one
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It also indicates the file and line number where the methods were defined: because
+these methods were defined at the REPL, we get the apparent line number &lt;x7/&gt;none:1&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014059Z" creationid="hsugawa8651" creationdate="20181120T014059Z">
+        <seg>また、メソッドが定義されたファイルと行番号も表示されます。 これらのメソッドはREPLで定義されているため、見かけの行番号none:1が表示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It also makes writing exponential functions more elegant:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111756Z" creationid="hsugawa8651" creationdate="20181112T111736Z">
@@ -19889,6 +19934,15 @@ later in &lt;x1/&gt;Parametrically-constrained Varargs methods&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T101624Z" creationid="hsugawa8651" creationdate="20181112T101624Z">
         <seg>変数引数として渡される値の数を制限することは可能です。これについては、以下を参照してください。 &lt;x1/&gt;パラメトリックに拘束されたVarargsメソッド&lt;x2/&gt;の後にあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is possible to define a set of function methods such that there is no unique most specific
+method applicable to some combinations of arguments:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014257Z" creationid="hsugawa8651" creationdate="20181120T014257Z">
+        <seg>ある種の引数の組み合わせに対しては、最も特化するメソッドが一意に定まらない、関数メソッドの組み合わせに、定義がなってしまう可能性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21473,6 +21527,16 @@ the addition operation in &lt;x8/&gt;x + y&lt;x9/&gt; belong to &lt;x10/&gt;x&lt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T011729Z" creationid="hsugawa8651" creationdate="20181120T011518Z">
         <seg> 多重ディスパッチは特に数学のコードで有用です。演算がどの引数に、より「属している」かと不自然なことを考えても、意味がないからです。&lt;x8/&gt;x + y&lt;x9/&gt;の式の中の足し算は、 &lt;x10/&gt;x&lt;x11/&gt; に&lt;x12/&gt; y&lt;x13/&gt;よりも属してると思いますか？ </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Multiple dispatch together with the flexible parametric type system give Julia its ability to
+abstractly express high-level algorithms decoupled from implementation details, yet generate efficient,
+specialized code to handle each case at run time.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014245Z" creationid="hsugawa8651" creationdate="20181120T014245Z">
+        <seg>多重ディスパッチと柔軟なパラメトリック型システムによって、Juliaに与えられた能力は、高水準のアルゴリズムを抽象的に表現して、実装の詳細から切り離し、実行時に各ケースに特化して処理する効率的なコードを生成することです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28566,6 +28630,15 @@ first &lt;x4/&gt;page&lt;x5/&gt; from &lt;x6/&gt;A&lt;x7/&gt; as a separate step
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This catch-all is less specific than any other possible method definition for a pair of parameter
+values, so it will only be called on pairs of arguments to which no other method definition applies.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014134Z" creationid="hsugawa8651" creationdate="20181120T014134Z">
+        <seg>この全捕捉は、どの引数のペアに対する他のメソッド定義よりも特化していないため、他のメソッド定義が適用されない引数のペアに対してのみ呼び出されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This code will be common to both versions, and is run-time code in both versions
 (it will be quoted and returned as an expression from the generated version).</seg>
       </tuv>
@@ -29178,8 +29251,8 @@ an array and storing them in advance (see &lt;x1/&gt;Iteration&lt;x2/&gt;).</seg
       <tuv lang="EN-US">
         <seg>This output tells us that &lt;x1/&gt;f&lt;x2/&gt; is a function object with two methods.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T013951Z" creationid="hsugawa8651" creationdate="20181120T013951Z">
-        <seg>この出力は、fが2つのメソッドを持つ関数オブジェクトであることを示しています。 これらのメソッドのシグネチャを調べるには、methods()関数を使用します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014023Z" creationid="hsugawa8651" creationdate="20181120T013951Z">
+        <seg>この出力は、fが2つのメソッドを持つ関数オブジェクトであることを示しています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -29444,6 +29517,14 @@ value in the expression is already &lt;x4/&gt;1&lt;x5/&gt;, independent of whate
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Thus, we can define a catch-all method for &lt;x7/&gt;f&lt;x8/&gt; like so:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014120Z" creationid="hsugawa8651" creationdate="20181120T014120Z">
+        <seg>したがって、fの全捕捉メソッドを以下のように定義することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Thus, we can utilize generated functions to move the iteration to compile-time; in compiler parlance,
 we use generated functions to manually unroll the loop.</seg>
       </tuv>
@@ -29688,6 +29769,15 @@ for certain combinations of argument types and counts.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T005920Z" creationid="hsugawa8651" creationdate="20181120T005920Z">
         <seg>同じ概念の異なる多くの実装を、円滑に利用するためには、関数すべてを一度に定義する必要はなくて、引数の型と個数の組み合わせごとに、特定の動作を指定して、区分的に定義できます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To find out what the signatures
+of those methods are, use the &lt;x3/&gt;`methods()`&lt;x4/&gt; function:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014028Z" creationid="hsugawa8651" creationdate="20181120T014017Z">
+        <seg>これらのメソッドのシグネチャを調べるには、methods()関数を使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -31239,6 +31329,14 @@ name to test this:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063035Z" creationid="hsugawa8651" creationdate="20181114T063035Z">
         <seg>[,]&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>[...]</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014308Z" creationid="hsugawa8651" creationdate="20181120T014308Z">
+        <seg>[...]</seg>
       </tuv>
     </tu>
     <tu>
@@ -43293,6 +43391,54 @@ RegexMatch("&lt;x4/&gt;")</seg>
       <tuv lang="EN-US">
         <seg>julia&gt; methods(+)
 &lt;x1/&gt; 180 methods for generic function "+":
++(x::Bool, z::Complex{Bool}) in Base at complex.jl:224
++(x::Bool, y::Bool) in Base at bool.jl:89
++(x::Bool) in Base at bool.jl:86
++(x::Bool, y::T) where T&lt;:AbstractFloat in Base at bool.jl:96
++(x::Bool, z::Complex) in Base at complex.jl:231
++(a::Float16, b::Float16) in Base at float.jl:372
++(x::Float32, y::Float32) in Base at float.jl:374
++(x::Float64, y::Float64) in Base at float.jl:375
++(z::Complex{Bool}, x::Bool) in Base at complex.jl:225
++(z::Complex{Bool}, x::Real) in Base at complex.jl:239
++(x::Char, y::Integer) in Base at char.jl:40
++(c::BigInt, x::BigFloat) in Base.MPFR at mpfr.jl:303
++(a::BigInt, b::BigInt, c::BigInt, d::BigInt, e::BigInt) in Base.GMP at gmp.jl:303
++(a::BigInt, b::BigInt, c::BigInt, d::BigInt) in Base.GMP at gmp.jl:296
++(a::BigInt, b::BigInt, c::BigInt) in Base.GMP at gmp.jl:290
++(x::BigInt, y::BigInt) in Base.GMP at gmp.jl:258
++(x::BigInt, c::Union{UInt16, UInt32, UInt64, UInt8}) in Base.GMP at gmp.jl:315
+...
++(a, b, c, xs...) at operators.jl:119</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014213Z" creationid="hsugawa8651" creationdate="20181120T014213Z">
+        <seg>julia&gt; methods(+)
+&lt;x1/&gt; 180 methods for generic function "+":
++(x::Bool, z::Complex{Bool}) in Base at complex.jl:224
++(x::Bool, y::Bool) in Base at bool.jl:89
++(x::Bool) in Base at bool.jl:86
++(x::Bool, y::T) where T&lt;:AbstractFloat in Base at bool.jl:96
++(x::Bool, z::Complex) in Base at complex.jl:231
++(a::Float16, b::Float16) in Base at float.jl:372
++(x::Float32, y::Float32) in Base at float.jl:374
++(x::Float64, y::Float64) in Base at float.jl:375
++(z::Complex{Bool}, x::Bool) in Base at complex.jl:225
++(z::Complex{Bool}, x::Real) in Base at complex.jl:239
++(x::Char, y::Integer) in Base at char.jl:40
++(c::BigInt, x::BigFloat) in Base.MPFR at mpfr.jl:303
++(a::BigInt, b::BigInt, c::BigInt, d::BigInt, e::BigInt) in Base.GMP at gmp.jl:303
++(a::BigInt, b::BigInt, c::BigInt, d::BigInt) in Base.GMP at gmp.jl:296
++(a::BigInt, b::BigInt, c::BigInt) in Base.GMP at gmp.jl:290
++(x::BigInt, y::BigInt) in Base.GMP at gmp.jl:258
++(x::BigInt, c::Union{UInt16, UInt32, UInt64, UInt8}) in Base.GMP at gmp.jl:315
+...
++(a, b, c, xs...) at operators.jl:119</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; methods(+)
+&lt;x1/&gt; 180 methods for generic function "+":
 [1] +(x::Bool, z::Complex{Bool}) in Base at complex.jl:227
 [2] +(x::Bool, y::Bool) in Base at bool.jl:89
 [3] +(x::Bool) in Base at bool.jl:86
@@ -49531,6 +49677,15 @@ subsections, and arrays of booleans to select elements at their &lt;x14/&gt;true
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134826Z" creationid="hsugawa8651" creationdate="20181117T134826Z">
         <seg>ここで、各&lt;x1/&gt;I_k&lt;x2/&gt;はスカラー整数、整数の配列、またはその他のいずれかである。 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref manサポートされているインデックス・タイプ)。これには、以下のものが含まれます。 &lt;x6/&gt;「コロン」&lt;x7/&gt;(&lt;x8/&gt;:&lt;x9/&gt;)は、次元全体のすべてのインデックスを選択するために使用されます。 &lt;x10/&gt;a:c&lt;x11/&gt;または&lt;x12/&gt;a:b:c&lt;x13/&gt;to select連続またはストライドされたものを選択するための範囲 サブセクションは、&lt;x14/&gt;真の&lt;x15/&gt;インデックスで選択要素を選択するためのブール演算の配列です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>which shows that &lt;x1/&gt;f&lt;x2/&gt; has two methods, one taking two &lt;x3/&gt;Float64&lt;x4/&gt; arguments and one taking arguments
+of type &lt;x5/&gt;Number&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014043Z" creationid="hsugawa8651" creationdate="20181120T014043Z">
+        <seg>すると表示されるのは、fが二つのメソッドを持っていて、一方は2つのFloat64の引数を取り、他方は型がNumberの引数を取ることです。 </seg>
       </tuv>
     </tu>
     <tu>
