@@ -33819,16 +33819,16 @@ object</seg>
       <tuv lang="EN-US">
         <seg>binary minus</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094812Z" creationid="hsugawa8651" creationdate="20181113T132019Z">
-        <seg>2項減算</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063152Z" creationid="hsugawa8651" creationdate="20181113T132019Z">
+        <seg>２項減算</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>binary plus</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094829Z" creationid="hsugawa8651" creationdate="20181113T132007Z">
-        <seg>2項加算</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063148Z" creationid="hsugawa8651" creationdate="20181113T132007Z">
+        <seg>２項加算</seg>
       </tuv>
     </tu>
     <tu>
@@ -48194,8 +48194,8 @@ end</seg>
       <tuv lang="EN-US">
         <seg>maps values to their additive inverses</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131958Z" creationid="hsugawa8651" creationdate="20181113T131958Z">
-        <seg>値を加算インスタンスにマップします。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063119Z" creationid="hsugawa8651" creationdate="20181113T131958Z">
+        <seg>値を加法の逆元と関連付ける</seg>
       </tuv>
     </tu>
     <tu>
@@ -48866,32 +48866,32 @@ Captured variables can present performance challenges; see
       <tuv lang="EN-US">
         <seg>performs addition</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094849Z" creationid="hsugawa8651" creationdate="20181113T132011Z">
-        <seg>加算する</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063132Z" creationid="hsugawa8651" creationdate="20181113T132011Z">
+        <seg>加算を行う</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>performs division</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094920Z" creationid="hsugawa8651" creationdate="20181113T132053Z">
-        <seg>除算する</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063216Z" creationid="hsugawa8651" creationdate="20181113T132053Z">
+        <seg>除算を行う</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>performs multiplication</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094907Z" creationid="hsugawa8651" creationdate="20181113T132037Z">
-        <seg>乗算する</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063208Z" creationid="hsugawa8651" creationdate="20181113T132037Z">
+        <seg>乗算を行う</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>performs subtraction</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094859Z" creationid="hsugawa8651" creationdate="20181113T132025Z">
-        <seg>減算する</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063157Z" creationid="hsugawa8651" creationdate="20181113T132025Z">
+        <seg>減算を行う</seg>
       </tuv>
     </tu>
     <tu>
@@ -49873,8 +49873,8 @@ when, how often or how many times these side-effects will occur</seg>
       <tuv lang="EN-US">
         <seg>the identity operation</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131949Z" creationid="hsugawa8651" creationdate="20181113T131949Z">
-        <seg>the identity operation</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063039Z" creationid="hsugawa8651" creationdate="20181113T131949Z">
+        <seg>恒等演算</seg>
       </tuv>
     </tu>
     <tu>
@@ -50021,8 +50021,8 @@ julia&gt; odd(n) = (n == 0) ?</seg>
       <tuv lang="EN-US">
         <seg>unary plus</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T062837Z" creationid="hsugawa8651" creationdate="20181118T094734Z">
-        <seg>単一項加法</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063030Z" creationid="hsugawa8651" creationdate="20181118T094734Z">
+        <seg>単項プラス</seg>
       </tuv>
     </tu>
     <tu>
