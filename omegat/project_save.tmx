@@ -13765,6 +13765,15 @@ can create performance challenges as discussed in &lt;x7/&gt;&lt;x8/&gt;&lt;x9/&
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Certain constructs in the language introduce &lt;x1/&gt;scope blocks&lt;x2/&gt;, which are regions of code that are
+eligible to be the scope of some set of variables.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140836Z" creationid="hsugawa8651" creationdate="20181120T140836Z">
+        <seg>言語の構成要素によっては、スコープブロックという、 変数のスコープとして適切なコードの範囲が導入されています。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Chained comparisons use the
 &lt;x1/&gt;&amp;&amp;&lt;x2/&gt; operator for scalar comparisons, and the &lt;x3/&gt;`&amp;`&lt;x4/&gt; operator for elementwise comparisons,
 which allows them to work on arrays.</seg>
@@ -16674,6 +16683,15 @@ also contains a value for &lt;x5/&gt;width&lt;x6/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, in the following code the &lt;x3/&gt;x&lt;x4/&gt; inside &lt;x5/&gt;foo&lt;x6/&gt; refers
+to the &lt;x7/&gt;x&lt;x8/&gt; in the global scope of its module &lt;x9/&gt;Bar&lt;x10/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141108Z" creationid="hsugawa8651" creationdate="20181120T141108Z">
+        <seg>たとえば、次のコードでは、fooの内部のxは、Barモジュールのグローバルスコープ内にあるxを参照します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, it enables
 accessing the diagonal elements from the first "page" of &lt;x5/&gt;A&lt;x6/&gt; from above:</seg>
       </tuv>
@@ -17564,6 +17582,14 @@ for the key &lt;x13/&gt;x&lt;x14/&gt;).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Global Scope&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140952Z" creationid="hsugawa8651" creationdate="20181120T140952Z">
+        <seg>グローバルスコープ&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Global variables exported by native libraries can be accessed by name using the &lt;x1/&gt;`cglobal`&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152508Z" creationid="hsugawa8651" creationdate="20181117T152508Z">
@@ -17618,6 +17644,14 @@ implemented in software and use &lt;x3/&gt;`Float32`&lt;x4/&gt; for calculations
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T234743Z" creationid="hsugawa8651" creationdate="20181119T234743Z">
         <seg>オペレーティング・システムの違いを扱う&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Hard Local Scope&lt;x1/&gt;: functions (either syntax, anonymous &amp; do-blocks), &lt;x2/&gt;struct&lt;x3/&gt;, &lt;x4/&gt;macro&lt;x5/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141036Z" creationid="hsugawa8651" creationdate="20181120T141036Z">
+        <seg>ハードローカルスコープ: 関数 (通常構文、 無名関数 、 do-ブロック), struct, macro</seg>
       </tuv>
     </tu>
     <tu>
@@ -21822,6 +21856,16 @@ conversions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia uses &lt;x1/&gt;lexical scoping&lt;x2/&gt;,
+meaning that a function's scope does not inherit from its caller's scope, but from the scope in
+which the function was defined.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141103Z" creationid="hsugawa8651" creationdate="20181120T141103Z">
+        <seg>Juliaはレキシカルスコープを使用して、これは、関数のスコープは呼び出し元のスコープを受け継がないで、関数が定義されたスコープを受け継ぐというものです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia uses the UTF-8 encoding by default, and support for new encodings can be added by packages.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081906Z" creationid="hsugawa8651" creationdate="20181120T081906Z">
@@ -22317,6 +22361,14 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224730Z" creationid="hsugawa8651" creationdate="20181109T224730Z">
         <seg>履歴をロードまたは保存する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Local Scope&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141016Z" creationid="hsugawa8651" creationdate="20181120T141016Z">
+        <seg>ローカルスコープ&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -23134,6 +23186,14 @@ does not check that every character value is valid.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131033Z" creationid="hsugawa8651" creationdate="20181113T131033Z">
         <seg>すべてのタイプが&lt;x1/&gt;軸&lt;x2/&gt;とインデックス作成をサポートするわけではありませんが、ブロードキャストでは多くの場合に便利です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notably missing from this table are &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-compound-expressions) and &lt;x4/&gt;&lt;x5/&gt;&lt;x6/&gt;(@ref man-conditional-evaluation), which do &lt;x7/&gt;not&lt;x8/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141052Z" creationid="hsugawa8651" creationdate="20181120T141052Z">
+        <seg>この表にない目立ったものは、 [begin ブロック]（@ ref man-compound-expressions）と[if ブロック]（@ ref man-conditional-evaluation）です。 これらは新しいスコープブロックを導入しません。 以下、少しずつ規則の違う３つのスコープと、特別な規則のブロックについて説明します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25216,6 +25276,14 @@ daily work.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Scope name</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140938Z" creationid="hsugawa8651" creationdate="20181120T140938Z">
+        <seg>スコープ名</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Search docs</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T031803Z" creationid="hsugawa8651" creationdate="20181119T031803Z">
@@ -25794,6 +25862,14 @@ the two tuples, multiplication and addition/subtraction.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T225921Z" creationid="hsugawa8651" creationdate="20181109T225921Z">
         <seg>そこで、上記の&lt;x6/&gt;test&lt;x7/&gt;関数を定義することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Soft Local Scope&lt;x1/&gt;: &lt;x2/&gt;for&lt;x3/&gt;, &lt;x4/&gt;while&lt;x5/&gt;, comprehensions, try-catch-finally, &lt;x6/&gt;let&lt;x7/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141020Z" creationid="hsugawa8651" creationdate="20181120T141020Z">
+        <seg>ソフトローカルスコープ: for, while, 内包表記, try-catch-finally, let</seg>
       </tuv>
     </tu>
     <tu>
@@ -26621,6 +26697,15 @@ performance comparable to traditional statically-typed languages.</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>The
+constructs introducing scope blocks are:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140916Z" creationid="hsugawa8651" creationdate="20181120T140916Z">
+        <seg>スコープブロックを導入する構成要素は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The
 name of the script itself is passed in as the global &lt;x7/&gt;PROGRAM_FILE&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224334Z" creationid="hsugawa8651" creationdate="20181109T224334Z">
@@ -26635,6 +26720,16 @@ resulting expression contains &lt;x5/&gt;only&lt;x6/&gt; the second &lt;x7/&gt;p
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T015342Z" creationid="hsugawa8651" creationdate="20181116T015342Z">
         <seg>The
 resulting expression contains &lt;x5/&gt;only&lt;x6/&gt; the second &lt;x7/&gt;println&lt;x8/&gt;:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The
+rules for when the same variable name does or doesn't refer to the same thing are called scope
+rules; this section spells them out in detail.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140821Z" creationid="hsugawa8651" creationdate="20181120T140821Z">
+        <seg>同じ変数名が、いつ同じものを参照し、いつそうではないかを、決める規則は、スコープ規則と呼ばれます。 このセクションで詳しく説明します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29229,6 +29324,15 @@ allocated in Julia to be freed by an external library) is equally invalid.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The scope of a variable cannot be an arbitrary
+set of source lines; instead, it will always line up with one of these blocks.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140851Z" creationid="hsugawa8651" creationdate="20181120T140851Z">
+        <seg>変数のスコープに、ソースコードの勝手な行の範囲を割り当てることはできません。常にスコープブロックのいずれかを割り当てます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The second and third arguments are both optional, defaulting to the element type and dimensions of &lt;x3/&gt;A&lt;x4/&gt; if omitted.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154442Z" creationid="hsugawa8651" creationdate="20181109T154442Z">
@@ -29890,6 +29994,15 @@ the real number line:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033918Z" creationid="hsugawa8651" creationdate="20181118T120346Z">
         <seg>実数直線上に対応しない3つの浮動小数点値が存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are two
+main types of scopes in Julia, &lt;x3/&gt;global scope&lt;x4/&gt; and &lt;x5/&gt;local scope&lt;x6/&gt;, the latter can be nested.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140904Z" creationid="hsugawa8651" creationdate="20181120T140904Z">
+        <seg> Juliaにはグローバルスコープとローカルスコープの2つの主要なスコープがあり、ローカルスコープはネストすることができます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -36258,6 +36371,14 @@ object</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150247Z" creationid="hsugawa8651" creationdate="20181117T150247Z">
         <seg>ビット単位のXOR演算子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>block/construct introducing this kind of scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140947Z" creationid="hsugawa8651" creationdate="20181120T140947Z">
+        <seg>スコープを採用している　ブロック／構成要素</seg>
       </tuv>
     </tu>
     <tu>
@@ -51469,6 +51590,14 @@ time() = ... &lt;x1/&gt; compute something
 
 @time time()
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>module&lt;x1/&gt;, &lt;x2/&gt;baremodule&lt;x3/&gt;, at interactive prompt (REPL)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141008Z" creationid="hsugawa8651" creationdate="20181120T141008Z">
+        <seg>module, baremodule, 対話セッション (REPL)</seg>
       </tuv>
     </tu>
     <tu>
