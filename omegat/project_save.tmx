@@ -33377,8 +33377,8 @@ as &lt;x5/&gt;a .= a .+ b&lt;x6/&gt;, where &lt;x7/&gt;.=&lt;x8/&gt; is a fused 
       <tuv lang="EN-US">
         <seg>a positive value with the magnitude of &lt;x1/&gt;x&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095924Z" creationid="hsugawa8651" creationdate="20181118T095924Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;の大きさをもつ正の値</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T072923Z" creationid="hsugawa8651" creationdate="20181118T095924Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt; の大きさの、正の値</seg>
       </tuv>
     </tu>
     <tu>
@@ -33466,8 +33466,8 @@ or &lt;x7/&gt;Ptr{Any}&lt;x8/&gt; (corresponding to &lt;x9/&gt;jl_value_t**&lt;x
       <tuv lang="EN-US">
         <seg>a value with the magnitude of &lt;x1/&gt;x&lt;x2/&gt; and the sign of &lt;x3/&gt;y&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095941Z" creationid="hsugawa8651" creationdate="20181118T095941Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;の大きさの値で、&lt;x3/&gt;y&lt;x4/&gt;の符号</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073147Z" creationid="hsugawa8651" creationdate="20181118T095941Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt;の大きさで、&lt;x3/&gt;y&lt;x4/&gt;と同じ符号を持つ値</seg>
       </tuv>
     </tu>
     <tu>
@@ -36511,16 +36511,16 @@ obj2 = MyModule.somefunction(obj1)
       <tuv lang="EN-US">
         <seg>indicates the sign of &lt;x1/&gt;x&lt;x2/&gt;, returning -1, 0, or +1</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095931Z" creationid="hsugawa8651" creationdate="20181118T095931Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;の符号を示し、-1 0、または+1を返します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073033Z" creationid="hsugawa8651" creationdate="20181118T095931Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt; の符号を示し、 -1、 0、 または +1を返す</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>indicates whether the sign bit is on (true) or off (false)</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095936Z" creationid="hsugawa8651" creationdate="20181118T095936Z">
-        <seg>符号ビットがオン(true)かオフ(false)かを示します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073040Z" creationid="hsugawa8651" creationdate="20181118T095936Z">
+        <seg>符号ビットがオン（true）またはオフ（false）であるかを示す</seg>
       </tuv>
     </tu>
     <tu>
@@ -50072,8 +50072,8 @@ when, how often or how many times these side-effects will occur</seg>
       <tuv lang="EN-US">
         <seg>the squared magnitude of &lt;x1/&gt;x&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095927Z" creationid="hsugawa8651" creationdate="20181118T095927Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt;の二乗された大きさ</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073001Z" creationid="hsugawa8651" creationdate="20181118T095927Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt; の大きさの２乗</seg>
       </tuv>
     </tu>
     <tu>
