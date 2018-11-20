@@ -15793,8 +15793,8 @@ of pointers to memory managed by either Julia or C through the implicit call to 
         <seg>For a brief but lucid presentation of how floating-point numbers are represented, see John D.
 Cook's &lt;x1/&gt;article&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035154Z" creationid="hsugawa8651" creationdate="20181112T111455Z">
-        <seg>浮動小数点数の表現に関するの簡潔かつ明快な説明は、John D. Cookの&lt;x1/&gt;記事&lt;/x2&gt;および実数の理想化された抽象化によりどのように表現が異なるかに関するいくつかの問題についての彼の紹介を参照してください。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035316Z" creationid="hsugawa8651" creationdate="20181112T111455Z">
+        <seg>浮動小数点数の表現に関するの簡潔かつ明快な説明は、John D. Cookの&lt;x1/&gt;紹介記事&lt;x2/&gt;を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15839,8 +15839,8 @@ types themselves, functions, special singletons like &lt;x13/&gt;`missing`&lt;x1
         <seg>For an excellent, in-depth discussion of floating-point numbers and issues of numerical accuracy
 encountered when computing with them, see David Goldberg's paper &lt;x1/&gt;What Every Computer Scientist Should Know About Floating-Point Arithmetic&lt;x2/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111503Z" creationid="hsugawa8651" creationdate="20181112T111503Z">
-        <seg>浮動小数点数と数値精度の問題について、優れた詳細な議論を行うには、次のようにします。 これらを使って計算する際に遭遇するのは、David Goldbergの論文&lt;x1/&gt;What Every計算機科学者Should知っておくべき浮動小数点演算&lt;x2/&gt;を参照することです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035356Z" creationid="hsugawa8651" creationdate="20181112T111503Z">
+        <seg>浮動小数点数に関する高度かつ詳細な議論および演算時の数値の精度の問題については、David Goldbergの論文 &lt;x1/&gt;What Every Computer Scientist Should Know About Floating-PointArithmetic&lt;x2/&gt;を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15864,8 +15864,8 @@ encountered when computing with them, see David Goldberg's paper &lt;x1/&gt;What
         <seg>For even more extensive documentation of the history of, rationale for, and issues with floating-point
 numbers, as well as discussion of many other topics in numerical computing, see the &lt;x1/&gt;collected writings&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111506Z" creationid="hsugawa8651" creationdate="20181112T111506Z">
-        <seg>浮動小数点の履歴、理論的根拠、問題についてさらに広範な文書を作成するには、次の手順を実行します。 数値計算は、数値計算では他の多くのトピックについて議論するだけでなく、&lt;x1/&gt;収集された文書を参照してください。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035516Z" creationid="hsugawa8651" creationdate="20181112T111506Z">
+        <seg>より広範囲な歴史や合理性、浮動小数点数の問題に関する文献、およびその他の数値計算に関する議論については、「浮動小数点の父」として知られる William Kahanの&lt;x1/&gt;論文&lt;x2/&gt;を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22591,8 +22591,8 @@ and this is just as efficient as &lt;x5/&gt;f.(A)&lt;x6/&gt;.</seg>
       <tuv lang="EN-US">
         <seg>Of particular interest may be &lt;x2/&gt;An Interview with the Old Man of Floating-Point&lt;x3/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111534Z" creationid="hsugawa8651" creationdate="20181112T111534Z">
-        <seg>特に関心があるのは、&lt;x2/&gt;である。浮動小数点のOld Manとのインタビューである&lt;x3/&gt;。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035602Z" creationid="hsugawa8651" creationdate="20181112T111534Z">
+        <seg>特に &lt;x2/&gt;An Interview with the Old Man of Floating-Point&lt;x3/&gt;は特に興味深いものとなっています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -31413,8 +31413,8 @@ reference is an immediate error:</seg>
         <seg>William Kahan&lt;x1/&gt;, commonly known as the "Father
 of Floating-Point".</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111531Z" creationid="hsugawa8651" creationdate="20181112T111531Z">
-        <seg>ウィリアム・カハン&lt;x1/&gt;、通称「父」 浮動小数点の値を指定します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035540Z" creationid="hsugawa8651" creationdate="20181120T035540Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
