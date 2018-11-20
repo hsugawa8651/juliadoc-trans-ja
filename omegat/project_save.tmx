@@ -14638,6 +14638,14 @@ throw a conversion error.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Define a function &lt;x1/&gt;f(x)&lt;x2/&gt;, which initially has one method:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022521Z" creationid="hsugawa8651" creationdate="20181120T022521Z">
+        <seg>最初は1つのメソッドを持つ関数f(x)を定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Define these
 two functions for custom types to override how they are stored in a hash table.</seg>
       </tuv>
@@ -22359,6 +22367,14 @@ the variables &lt;x11/&gt;A&lt;x12/&gt; and &lt;x13/&gt;x&lt;x14/&gt; were disti
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Now we add some new methods to &lt;x1/&gt;f(x)&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022631Z" creationid="hsugawa8651" creationdate="20181120T022631Z">
+        <seg>ここでいくつかの新しいメソッドをf(x)に追加します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Now,
 by default, &lt;x11/&gt;broadcasted&lt;x12/&gt; just calls the &lt;x13/&gt;Broadcasted&lt;x14/&gt; constructor to create the lazy representation
 of the fused expression tree, but you can choose to override it for a particular combination
@@ -24674,6 +24690,14 @@ julia&gt; sqrt(-1 + 0im)
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123245Z" creationid="hsugawa8651" creationdate="20181118T123245Z">
         <seg>複雑な値を操作するための標準関数が用意されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Start some other operations that use &lt;x1/&gt;f(x)&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022617Z" creationid="hsugawa8651" creationdate="20181120T022617Z">
+        <seg>他のf(x)を使う操作を開始します。</seg>
       </tuv>
     </tu>
     <tu>
