@@ -48377,6 +48377,14 @@ scalars (a &lt;x2/&gt;Broadcasting&lt;x3/&gt; operation); these have the additio
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>mod()&lt;x1/&gt; with offset 1; returns &lt;x2/&gt;r∈(0,y]&lt;x3/&gt; for &lt;x4/&gt;y&gt;0&lt;x5/&gt; or &lt;x6/&gt;r∈[y,0)&lt;x7/&gt; for &lt;x8/&gt;y&lt;0&lt;x9/&gt;, where &lt;x10/&gt;mod(r, y) == mod(x, y)&lt;x11/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T072505Z" creationid="hsugawa8651" creationdate="20181120T072505Z">
+        <seg>オフセットが1の mod()&lt;x1/&gt;  ； &lt;x10/&gt;mod(r, y) == mod(x, y)&lt;x11/&gt;の場合、 &lt;x4/&gt;y&gt;0&lt;x5/&gt;  なら &lt;x2/&gt;r∈(0,y]&lt;x3/&gt; を、&lt;x8/&gt;y&lt;0&lt;x9/&gt;ならに &lt;x6/&gt;r∈[y,0)&lt;x7/&gt; を返す</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>mod&lt;x1/&gt; with offset 1; returns &lt;x2/&gt;r∈(0,y]&lt;x3/&gt; for &lt;x4/&gt;y&gt;0&lt;x5/&gt; or &lt;x6/&gt;r∈[y,0)&lt;x7/&gt; for &lt;x8/&gt;y&lt;0&lt;x9/&gt;, where &lt;x10/&gt;mod(r, y) == mod(x, y)&lt;x11/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095846Z" creationid="hsugawa8651" creationdate="20181118T095846Z">
@@ -48511,8 +48519,8 @@ end</seg>
       <tuv lang="EN-US">
         <seg>modulus; satisfies &lt;x1/&gt;x == fld(x,y)*y + mod(x,y)&lt;x2/&gt;; sign matches &lt;x3/&gt;y&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031309Z" creationid="hsugawa8651" creationdate="20181114T031309Z">
-        <seg>係数;&lt;x1/&gt;x==fld(x,y)*y+mod(x,y)&lt;x2/&gt;;符号は&lt;x3/&gt;y&lt;x4/&gt;に一致する。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T072327Z" creationid="hsugawa8651" creationdate="20181114T031309Z">
+        <seg>剰余； &lt;x1/&gt;x == fld(x,y)*y + mod(x,y)&lt;x2/&gt;;を満たす；符号は &lt;x3/&gt;y&lt;x4/&gt; と一致</seg>
       </tuv>
     </tu>
     <tu>
