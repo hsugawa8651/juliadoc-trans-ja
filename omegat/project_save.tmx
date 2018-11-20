@@ -9913,8 +9913,9 @@ an expression whose value is returned:</seg>
         <seg>As mentioned briefly in &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-functions), optional arguments are implemented as syntax for multiple
 method definitions.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022946Z" creationid="hsugawa8651" creationdate="20181120T022855Z">
-        <seg>[関数]（@ ref man-functions）で簡単に述べたように、オプション引数は複数のメソッドを定義する構文として実装されています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T023057Z" creationid="hsugawa8651" creationdate="20181120T022855Z">
+        <seg>As mentioned briefly in &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-functions), optional arguments are implemented as syntax for multiple
+method definitions.</seg>
       </tuv>
     </tu>
     <tu>
@@ -16321,8 +16322,8 @@ we can override the generic iterative version with a more performant solution:</
       <tuv lang="EN-US">
         <seg>For example, this definition:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T022934Z" creationid="hsugawa8651" creationdate="20181120T022934Z">
-        <seg>これは以下の3つのメソッドに変換されます：</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T023053Z" creationid="hsugawa8651" creationdate="20181120T022934Z">
+        <seg>例として、この定義を見てみましょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17632,6 +17633,14 @@ most books on scientific computation, and also in the following references:</seg
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, this need not always be the case.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T023220Z" creationid="hsugawa8651" creationdate="20181120T023220Z">
+        <seg>しかし、必ずこうする必要はなく、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, type promotion between the primitive types above and &lt;x1/&gt;`BigInt`&lt;x2/&gt;/&lt;x3/&gt;`BigFloat`&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120409Z" creationid="hsugawa8651" creationdate="20181118T120409Z">
@@ -18319,6 +18328,14 @@ to ensure that &lt;x9/&gt;isequal(x,y)&lt;x10/&gt; implies &lt;x11/&gt;hash(x) =
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030708Z" creationid="hsugawa8651" creationdate="20181114T030708Z">
         <seg>定義する場合 独自の等価性関数は、おそらく対応する&lt;x7/&gt;'ハッシュ''&lt;x8/&gt;メソッドを定義する必要があります。 &lt;x9/&gt;isequal(x,y)&lt;x10/&gt;が&lt;x11/&gt;ハッシュ(x)==hash(y)&lt;x12/&gt;を意味することを保証する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you define a fourth method that is more specialized for integers:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T023225Z" creationid="hsugawa8651" creationdate="20181120T023225Z">
+        <seg>整数に特化した4番目のメソッドを定義した場合は、次のようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19312,6 +19329,15 @@ function to call.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152325Z" creationid="hsugawa8651" creationdate="20181117T152325Z">
         <seg>この 例:式は、ネイティブのアドレスとして使用される&lt;x3/&gt;Ptr&lt;x4/&gt;に評価される必要があります。 関数が呼び出されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case the result is &lt;x5/&gt;5&lt;x6/&gt;,
+because &lt;x7/&gt;f(1,2)&lt;x8/&gt; invokes the first method of &lt;x9/&gt;f&lt;x10/&gt; above.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T023212Z" creationid="hsugawa8651" creationdate="20181120T023212Z">
+        <seg>この場合、結果は5で、f(1,2)は最初のfメソッドを呼び出すからです。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -29463,6 +29489,14 @@ its functions can only accept argument types with a statically-known, fixed sign
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T153957Z" creationid="hsugawa8651" creationdate="20181109T153957Z">
         <seg>つまり &lt;x1/&gt;@cfunction&lt;x2/&gt;-生成されたポインタは、WINAPIが&lt;x3/&gt;stdcall&lt;x4/&gt;を想定している呼び出しでは使用できません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This means that calling &lt;x1/&gt;f()&lt;x2/&gt; is equivalent to calling &lt;x3/&gt;f(1,2)&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T023203Z" creationid="hsugawa8651" creationdate="20181120T023132Z">
+        <seg>これは、f()の呼び出しとf(1,2)の呼び出しは同等なことを意味します。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -49867,6 +49901,14 @@ when, how often or how many times these side-effects will occur</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154231Z" creationid="hsugawa8651" creationdate="20181109T154231Z">
         <seg>&lt;x1/&gt;A&lt;x2/&gt;に含まれるエレメントのタイプ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>then the result of both &lt;x1/&gt;f()&lt;x2/&gt; and &lt;x3/&gt;f(1,2)&lt;x4/&gt; is &lt;x5/&gt;-3&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T023246Z" creationid="hsugawa8651" creationdate="20181120T023246Z">
+        <seg>f()とf(1,2)の結果は両方とも-3です。言い換えれば、オプション引数は、その関数の特定のメソッドではなく、関数自体に結び付けられます。オプション引数の型によって、どのメソッドが呼び出されるかが変わります。オプション引数がグローバル変数で定義されている場合、オプション引数の型は実行時に変更されることさえあります。</seg>
       </tuv>
     </tu>
     <tu>
