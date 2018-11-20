@@ -1905,6 +1905,15 @@ with some existing programming experience.)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(The exceptions are
+operators with special evaluation semantics like &lt;x1/&gt;&amp;&amp;&lt;x2/&gt; and &lt;x3/&gt;||&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130032Z" creationid="hsugawa8651" creationdate="20181120T130032Z">
+        <seg>( （例外は評価戦略が特殊な演算子で、&lt;x1/&gt;&amp;&amp;&lt;x2/&gt;や&lt;x3/&gt;||&lt;x4/&gt;などがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(This allows for coexistence with other tools that might consider files called &lt;x13/&gt;Project.toml&lt;x14/&gt; and &lt;x15/&gt;Manifest.toml&lt;x16/&gt; significant.) For pure Julia projects, however, the names &lt;x17/&gt;Project.toml&lt;x18/&gt; and &lt;x19/&gt;Manifest.toml&lt;x20/&gt; are preferred.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121055Z" creationid="hsugawa8651" creationdate="20181118T121055Z">
@@ -8584,6 +8593,14 @@ a function is called a &lt;x1/&gt;method&lt;x2/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A few special expressions correspond to calls to functions with non-obvious names.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130222Z" creationid="hsugawa8651" creationdate="20181120T130222Z">
+        <seg>特殊な式で、分かりづらい名前ながら、関数呼び出しに対応しているものが、いくつかあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A function &lt;x1/&gt;`display(x)`&lt;x2/&gt; to request the richest available multimedia display of a Julia object
 &lt;x3/&gt;x&lt;x4/&gt; (with a plain-text fallback).</seg>
       </tuv>
@@ -13583,8 +13600,8 @@ they don't intend to change.</seg>
       <tuv lang="EN-US">
         <seg>Calls</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134559Z" creationid="hsugawa8651" creationdate="20181117T134559Z">
-        <seg>Calls</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130242Z" creationid="hsugawa8651" creationdate="20181117T134559Z">
+        <seg>関数呼び出し</seg>
       </tuv>
     </tu>
     <tu>
@@ -19008,8 +19025,8 @@ sharing&lt;x2/&gt;</seg>
       <tuv lang="EN-US">
         <seg>In Julia, most operators are just functions with support for special syntax.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T102056Z" creationid="hsugawa8651" creationdate="20181120T102056Z">
-        <seg>Juliaでは、関数に対するすべての引数は、&lt;x1/&gt;に渡されます。 共有&lt;x2/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125956Z" creationid="hsugawa8651" creationdate="20181120T102056Z">
+        <seg>Juliaでは、ほとんどの演算子は、特殊な構文をとっていても、単なる関数です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23586,8 +23603,16 @@ level operators and functions, in a way that is independent of the underlying st
       <tuv lang="EN-US">
         <seg>Operators Are Functions</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T102028Z" creationid="hsugawa8651" creationdate="20181120T102028Z">
-        <seg>演算子は関数である</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125945Z" creationid="hsugawa8651" creationdate="20181120T102028Z">
+        <seg>演算子は関数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Operators With Special Names</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130216Z" creationid="hsugawa8651" creationdate="20181120T130216Z">
+        <seg>特殊な名前の演算子</seg>
       </tuv>
     </tu>
     <tu>
@@ -27747,6 +27772,15 @@ is 1), and follows the Julia-convention of 1-based indexing.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The infix form is exactly equivalent to the function application form -- in fact the former is
+parsed to produce the function call internally.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130115Z" creationid="hsugawa8651" creationdate="20181120T130115Z">
+        <seg>中置方式は関数適用方式とまったく同等です。じつのところ、中置方式は構文解析後に、内部的に関数呼び出しを行っているのです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The initial contents of a plain data type is
 undefined:</seg>
       </tuv>
@@ -29593,8 +29627,8 @@ since &lt;x5/&gt;Short-Circuit Evaluation&lt;x6/&gt; requires that their operand
 of the operator.) Accordingly, you can also apply them using parenthesized argument lists, just
 as you would any other function:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T102458Z" creationid="hsugawa8651" creationdate="20181120T102458Z">
-        <seg>これらの演算子は、関数にはできません短絡評価&lt;x5/&gt;Short-Circuit Evaluation&lt;x6/&gt; 演算子の評価の前に、オペランドを評価しないことが必要だからです。したがって、演算子を、括弧に囲まれた引き数リストにも適用できます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130059Z" creationid="hsugawa8651" creationdate="20181120T102458Z">
+        <seg>これらの演算子は関数たりえません。 というのは、短絡評価&lt;x5/&gt;Short-Circuit Evaluation&lt;x6/&gt;は被演算子が評価されていなくても、演算の評価をおこなうからです。） したがって、演算子は、他の関数と同様に、括弧でくくった引数のリストに対して、適用することがきます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29845,6 +29879,15 @@ extra build steps, and also allows true Lisp-style macros operating at the level
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150834Z" creationid="hsugawa8651" creationdate="20181117T150834Z">
         <seg>これにより、例えば、&lt;x2/&gt;argv&lt;x3/&gt;ポインタ配列を通過させることができる。 &lt;x4/&gt;Vector{String}&lt;x5/&gt;は、&lt;x6/&gt;Ptr{Ptr{Cchar}}&lt;x7/&gt;の型を引数にします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This also means that you can assign and pass around
+operators such as &lt;x1/&gt;`+()`&lt;x2/&gt; and &lt;x3/&gt;`*()`&lt;x4/&gt; just like you would with other function values:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130139Z" creationid="hsugawa8651" creationdate="20181120T130139Z">
+        <seg>そのため、 &lt;x1/&gt;`+()`&lt;x2/&gt;や &lt;x3/&gt;`*()`&lt;x4/&gt;といった演算子も、他の関数値と同様に、代入や受け渡しを、行うことができます。.</seg>
       </tuv>
     </tu>
     <tu>
@@ -31650,6 +31693,14 @@ in the same number of bytes.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161212Z" creationid="hsugawa8651" creationdate="20181114T161212Z">
         <seg>単項算術--&lt;x1/&gt;-&lt;x2/&gt;,&lt;x3/&gt;+&lt;x4/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Under the name &lt;x1/&gt;f&lt;x2/&gt;, the function does not support infix notation, however.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130208Z" creationid="hsugawa8651" creationdate="20181120T130208Z">
+        <seg>かしながら、&lt;x1/&gt;f&lt;x2/&gt; のような名前の関数は、中置記法に対応していません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33937,6 +33988,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;. For more det
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`ctranspose()`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130253Z" creationid="hsugawa8651" creationdate="20181120T130253Z">
+        <seg>`ctranspose()`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`deepcopy(A)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064418Z" creationid="hsugawa8651" creationdate="20181114T064418Z">
@@ -34105,6 +34164,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;. For more det
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>`hcat()`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130245Z" creationid="hsugawa8651" creationdate="20181120T130245Z">
+        <seg>`hcat()`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>`hcat(A...)`&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064514Z" creationid="hsugawa8651" creationdate="20181114T064514Z">
@@ -34117,6 +34184,14 @@ the length of the tuple returned by &lt;x14/&gt;`size`&lt;x15/&gt;. For more det
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025842Z" creationid="hsugawa8651" creationdate="20181110T025842Z">
         <seg>`hcat`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`hvcat()`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130250Z" creationid="hsugawa8651" creationdate="20181120T130250Z">
+        <seg>`hvcat()`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -34588,6 +34663,14 @@ into strings as themselves, unquoted and unescaped:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165138Z" creationid="hsugawa8651" creationdate="20181118T165138Z">
         <seg>`trunc(x)`&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`vcat()`&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130248Z" creationid="hsugawa8651" creationdate="20181120T130248Z">
+        <seg>`vcat()`&lt;x1/&gt;</seg>
       </tuv>
     </tu>
     <tu>
