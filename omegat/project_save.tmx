@@ -1537,8 +1537,8 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
       <tuv lang="EN-US">
         <seg>(@id man-vectorized)</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120051Z" creationid="hsugawa8651" creationdate="20181118T120051Z">
-        <seg>[man-vectorized](@id man-vectorized)</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134417Z" creationid="hsugawa8651" creationdate="20181118T120051Z">
+        <seg>関数をベクトル化するドット構文 [man-vectorized](@id man-vectorized)</seg>
       </tuv>
     </tu>
     <tu>
@@ -19339,8 +19339,8 @@ to the compiler.</seg>
 &lt;x7/&gt;not&lt;x8/&gt; required for performance, and indeed it is often beneficial to write your own loops (see
 &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-performance-tips)), but they can still be convenient.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121847Z" creationid="hsugawa8651" creationdate="20181118T120057Z">
-        <seg>ジュリアではベクトル化された関数は &lt;x7/&gt;はパフォーマンスに必要な&lt;x8/&gt;ではありません。実際には、独自のループを作成することが有益です( &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-performance-tipsはありますが、それでも便利です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134709Z" creationid="hsugawa8651" creationdate="20181118T120057Z">
+        <seg> Juliaではパフォーマンスをよくするために関数をベクトル化する必要は &lt;x7/&gt;ありません &lt;x8/&gt;。 実際に、自分でループを書いたほうがよいこともよくあります(パフォーマンス ティップス&lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-performance-tips) 参照)。それでも、ベクトル化は便利なので、</seg>
       </tuv>
     </tu>
     <tu>
@@ -19901,8 +19901,8 @@ used in the sense of singling out a particular method of the constructor from al
 simply apply a given function &lt;x1/&gt;f(x)&lt;x2/&gt; to each element of an array &lt;x3/&gt;A&lt;x4/&gt; to yield a new array via
 &lt;x5/&gt;f(A)&lt;x6/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120053Z" creationid="hsugawa8651" creationdate="20181118T120053Z">
-        <seg>技術計算言語では、関数の「ベクトル化」バージョンが一般的であることが一般的です。 単純に与えられた関数&lt;x1/&gt;f(x)&lt;x2/&gt;を配列&lt;x3/&gt;A&lt;x4/&gt;の各要素に適用して、新しい配列を生成する。 &lt;x5/&gt;f(A)&lt;x6/&gt;。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134514Z" creationid="hsugawa8651" creationdate="20181118T120053Z">
+        <seg>技術計算向けののプログラム言語では、関数を"ベクトル化"したバージョンを作ることがよくあります。 単純に、既存の関数&lt;x1/&gt;f(x)&lt;x2/&gt;を配列&lt;x3/&gt;A&lt;x4/&gt; の各要素に適用して、新しい配列を作る&lt;x5/&gt;f(A)&lt;x6/&gt;.という関数を作るのです。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -31198,8 +31198,8 @@ as an object of type &lt;x5/&gt;QuoteNode&lt;x6/&gt;.</seg>
 is also often required for performance: if loops are slow, the "vectorized" version of a function
 can call fast library code written in a low-level language.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120055Z" creationid="hsugawa8651" creationdate="20181118T120055Z">
-        <seg>この種の構文はデータ処理に便利ですが、その他の言語ではベクトル化されています。 また、パフォーマンスには多くの場合、ループが必要となります。ループが低速である場合、関数の「ベクトル化」バージョンが必要です。 は、低レベル言語で記述された高速ライブラリコードを呼び出すことができます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134532Z" creationid="hsugawa8651" creationdate="20181118T120055Z">
+        <seg>この類の構文はデータ処理用に便利ですが、他のプログラミング言語ではパフォーマンスをあげるためにベクトル化は必要となることもよくあります。ループが遅い場合には、低水準のプログラム言語で書かれた高速なベクトル版の関数を呼び出して使うのです。</seg>
       </tuv>
     </tu>
     <tu>
