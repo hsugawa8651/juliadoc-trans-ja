@@ -14842,8 +14842,8 @@ can be tedious compared to "normal" Julia syntax.</seg>
       <tuv lang="EN-US">
         <seg>Division functions</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095820Z" creationid="hsugawa8651" creationdate="20181118T095820Z">
-        <seg>割り算関数</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071414Z" creationid="hsugawa8651" creationdate="20181118T095820Z">
+        <seg>除算関数</seg>
       </tuv>
     </tu>
     <tu>
@@ -34814,8 +34814,8 @@ table_entries(
       <tuv lang="EN-US">
         <seg>floored division; quotient rounded towards &lt;x1/&gt;-Inf&lt;x2/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095825Z" creationid="hsugawa8651" creationdate="20181118T095825Z">
-        <seg>床分割部;商は&lt;x1/&gt;-Inf&lt;x2/&gt;に丸められる</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071509Z" creationid="hsugawa8651" creationdate="20181118T095825Z">
+        <seg>床関数のように、商を &lt;x1/&gt;-Inf&lt;x2/&gt; に向かって丸める除算</seg>
       </tuv>
     </tu>
     <tu>
@@ -49329,24 +49329,24 @@ paths = reduce(merge, reverse([paths₁, paths₂, …]))</seg>
       <tuv lang="EN-US">
         <seg>round &lt;x1/&gt;x&lt;x2/&gt; towards &lt;x3/&gt;+Inf&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071135Z" creationid="hsugawa8651" creationdate="20181118T095740Z">
-        <seg>x を +Inf に向かって丸めを行う</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071349Z" creationid="hsugawa8651" creationdate="20181118T095740Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt; を &lt;x3/&gt;+Inf&lt;x4/&gt; に向かって丸める</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>round &lt;x1/&gt;x&lt;x2/&gt; towards &lt;x3/&gt;-Inf&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071305Z" creationid="hsugawa8651" creationdate="20181114T031125Z">
-        <seg>&lt;x1/&gt;x&lt;x2/&gt; を &lt;x3/&gt;-Inf&lt;x4/&gt; に向かって丸めを行う</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071317Z" creationid="hsugawa8651" creationdate="20181114T031125Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt; を &lt;x3/&gt;-Inf&lt;x4/&gt; に向かって丸める</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>round &lt;x1/&gt;x&lt;x2/&gt; towards zero</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071209Z" creationid="hsugawa8651" creationdate="20181118T095757Z">
-        <seg>x を0に向かって丸めを行う</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071401Z" creationid="hsugawa8651" creationdate="20181118T095757Z">
+        <seg>&lt;x1/&gt;x&lt;x2/&gt; を0に向かって丸める</seg>
       </tuv>
     </tu>
     <tu>
@@ -50140,8 +50140,8 @@ julia&gt; odd(n) = (n == 0) ?</seg>
       <tuv lang="EN-US">
         <seg>truncated division; quotient rounded towards zero</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T031243Z" creationid="hsugawa8651" creationdate="20181114T031243Z">
-        <seg>分割された除算;商は0に向かって丸められます</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071520Z" creationid="hsugawa8651" creationdate="20181114T031243Z">
+        <seg>商を 0に向かって丸める除算</seg>
       </tuv>
     </tu>
     <tu>
