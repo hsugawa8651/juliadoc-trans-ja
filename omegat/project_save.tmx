@@ -19185,8 +19185,8 @@ by overflow is essential; otherwise, the &lt;x3/&gt;`BigInt`&lt;x4/&gt; type in 
       <tuv lang="EN-US">
         <seg>In conjunction with other control flow, however, &lt;x11/&gt;return&lt;x12/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025752Z" creationid="hsugawa8651" creationdate="20181110T025752Z">
-        <seg>しかし、他の制御フローと連動して、&lt;x11/&gt;return&lt;x12/&gt;を返します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125816Z" creationid="hsugawa8651" creationdate="20181110T025752Z">
+        <seg>けれども、実行順序を制御する場合、&lt;x11/&gt;return&lt;x12/&gt;は役に立ちます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23236,6 +23236,16 @@ the surrounding expression.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Of course, in a purely linear function body like &lt;x1/&gt;g&lt;x2/&gt;, the usage of &lt;x3/&gt;return&lt;x4/&gt; is pointless since
+the expression &lt;x5/&gt;x + y&lt;x6/&gt; is never evaluated and we could simply make &lt;x7/&gt;x * y&lt;x8/&gt; the last expression
+in the function and omit the &lt;x9/&gt;return&lt;x10/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125846Z" creationid="hsugawa8651" creationdate="20181120T125733Z">
+        <seg>もちろん、&lt;x1/&gt;g&lt;x2/&gt;のように直線的に順次処理を行う関数で、&lt;x3/&gt;return&lt;x4/&gt; を使っても仕方がありません。 というのも、&lt;x5/&gt;x + y&lt;x6/&gt; という式は決して評価されないので、単に &lt;x7/&gt;x * y&lt;x8/&gt;  という式で終わって、&lt;x9/&gt;return&lt;x10/&gt; を削ればいいからです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Of course, messing around with an object's internals uninvited is bad practice.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155757Z" creationid="hsugawa8651" creationdate="20181117T155757Z">
@@ -26536,6 +26546,15 @@ precision integer and floating point numbers respectively.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x5/&gt;return&lt;x6/&gt; on the last line could be omitted
+since it is the last expression.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125934Z" creationid="hsugawa8651" creationdate="20181120T125934Z">
+        <seg> 最終行の &lt;x5/&gt;return&lt;x6/&gt;は最後尾の式なので省略可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x7/&gt;:&lt;x8/&gt; character, followed
 by paired parentheses around a single statement of Julia code, produces an &lt;x9/&gt;Expr&lt;x10/&gt; object based
 on the enclosed code.</seg>
@@ -29184,6 +29203,15 @@ same:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134404Z" creationid="hsugawa8651" creationdate="20181117T134404Z">
         <seg>他のタイプが定義されていないため、以下のように注意すべき特殊なタイプがいくつかあります。 同じ:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are three possible points of return from this function, returning the values of three different
+expressions, depending on the values of &lt;x1/&gt;x&lt;x2/&gt; and &lt;x3/&gt;y&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125922Z" creationid="hsugawa8651" creationdate="20181120T125922Z">
+        <seg>この関数には、値を返せる場所が３か所ありますが、３つの異なる式のどの値が返されるのかは、&lt;x1/&gt;x&lt;x2/&gt;  と &lt;x3/&gt;y&lt;x4/&gt; の 値に応じて変化します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -52687,8 +52715,8 @@ s[k2] == qs[k2]                        &lt;x5/&gt; =&gt; true</seg>
       <tuv lang="EN-US">
         <seg>x&lt;x1/&gt; and &lt;x2/&gt;y&lt;x3/&gt;, avoiding overflow:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025755Z" creationid="hsugawa8651" creationdate="20181110T025755Z">
-        <seg>x&lt;x1/&gt;と&lt;x2/&gt;y&lt;x3/&gt;はオーバーフローを回避します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125803Z" creationid="hsugawa8651" creationdate="20181110T025755Z">
+        <seg>けれども、実行順序を制御する場合、returnは役に立ちます。 例えば、直角三角形の斜辺を、その他の二辺 x ,yから、桁あふれをさけながら、計算する場合を考えてみましょう。x&lt;x1/&gt;と&lt;x2/&gt;y&lt;x3/&gt;はオーバーフローを回避します。</seg>
       </tuv>
     </tu>
     <tu>
