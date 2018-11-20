@@ -17709,10 +17709,27 @@ implemented in software and use &lt;x3/&gt;`Float32`&lt;x4/&gt; for calculations
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Hard Local Scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141639Z" creationid="hsugawa8651" creationdate="20181120T141639Z">
+        <seg>ハードローカルスコープ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Hard Local Scope&lt;x1/&gt;: functions (either syntax, anonymous &amp; do-blocks), &lt;x2/&gt;struct&lt;x3/&gt;, &lt;x4/&gt;macro&lt;x5/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141036Z" creationid="hsugawa8651" creationdate="20181120T141036Z">
         <seg>ハードローカルスコープ: 関数 (通常構文、 無名関数 、 do-ブロック), struct, macro</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Hard local scopes are introduced by function definitions (in all their forms), struct type definition blocks,
+and macro-definitions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141703Z" creationid="hsugawa8651" creationdate="20181120T141703Z">
+        <seg>ハードローカルスコープは、関数定義(すべての方式)、タイプ定義(structブロック)、およびマクロ定義によって導入されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19497,6 +19514,23 @@ use &lt;x10/&gt;exec&lt;x11/&gt; to replace the process to &lt;x12/&gt;julia&lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In a hard local scope, all variables are inherited from its parent scope unless:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141718Z" creationid="hsugawa8651" creationdate="20181120T141718Z">
+        <seg>ハードローカルスコープでは、次のいづれかの場合を除き、すべての変数は親スコープから受け継ぎます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In a soft local scope, all variables are inherited from its parent scope unless a variable is
+specifically marked with the keyword &lt;x1/&gt;local&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141532Z" creationid="hsugawa8651" creationdate="20181120T141532Z">
+        <seg>ソフトローカルスコープでは、わざわざlocalキーワードをつけていない限り、すべての変数は親スコープから受け継がれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In addition
 to these Unicode escape forms, all of &lt;x5/&gt;C's traditional escaped input forms&lt;x6/&gt;</seg>
       </tuv>
@@ -20178,6 +20212,15 @@ indices and can be converted to such by &lt;x5/&gt;`to_indices`&lt;x6/&gt;:</seg
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In the following example the &lt;x1/&gt;x&lt;x2/&gt; and &lt;x3/&gt;y&lt;x4/&gt; refer always to the same variables as the soft local
+scope inherits both read and write variables:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141554Z" creationid="hsugawa8651" creationdate="20181120T141554Z">
+        <seg>次の例では、ソフトローカルスコープは読取・書込の変数を受け継ぐので、xとyは常に同じ変数を参照しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In the following example, the method type parameter
 &lt;x3/&gt;T&lt;x4/&gt; is used as the return value:</seg>
       </tuv>
@@ -20592,6 +20635,22 @@ to observe or mutate this state.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132820Z" creationid="hsugawa8651" creationdate="20181120T132820Z">
         <seg>&lt;x1/&gt;f&lt;x2/&gt;&lt;x3/&gt;の内部では、 &lt;x3/&gt;kwargs&lt;x4/&gt; は、&lt;x7/&gt;key&lt;x8/&gt; がシンボルである &lt;x5/&gt;(key,value)&lt;x6/&gt; tのコレクションになります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Inside a local scope a new global variable can be defined using the keyword &lt;x1/&gt;global&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141437Z" creationid="hsugawa8651" creationdate="20181120T141437Z">
+        <seg>ローカルスコープ内で、新しいグローバル変数は、globalキーワードを使用して定義することができます。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Inside a local scope a variable can be forced to be a local variable using the &lt;x1/&gt;local&lt;x2/&gt; keyword:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141422Z" creationid="hsugawa8651" creationdate="20181120T141422Z">
+        <seg>ローカルスコープの内部では、localキーワードを使用して変数を強制的にローカル変数にすることができます：</seg>
       </tuv>
     </tu>
     <tu>
@@ -25962,10 +26021,27 @@ the two tuples, multiplication and addition/subtraction.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Soft Local Scope</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141514Z" creationid="hsugawa8651" creationdate="20181120T141514Z">
+        <seg>ソフトローカルスコープ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Soft Local Scope&lt;x1/&gt;: &lt;x2/&gt;for&lt;x3/&gt;, &lt;x4/&gt;while&lt;x5/&gt;, comprehensions, try-catch-finally, &lt;x6/&gt;let&lt;x7/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141020Z" creationid="hsugawa8651" creationdate="20181120T141020Z">
         <seg>ソフトローカルスコープ: for, while, 内包表記, try-catch-finally, let</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Soft local scopes are introduced by for-loops, while-loops, comprehensions, try-catch-finally-blocks,
+and let-blocks.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141541Z" creationid="hsugawa8651" creationdate="20181120T141541Z">
+        <seg>ソフトローカルスコープは、for-ループ、while-ループ、内包表記、try-catch-finally-ブロック、およびlet-ブロックに導入されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28366,6 +28442,14 @@ verbose way to iterate through the characters of &lt;x6/&gt;s&lt;x7/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The following is equivalent to the last example (although stylistically worse):</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141457Z" creationid="hsugawa8651" creationdate="20181120T141457Z">
+        <seg>下記の例は先程の例と同等です（あまりよくないスタイルですが）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The following methods and types in &lt;x1/&gt;Base.StackTraces&lt;x2/&gt; are not exported and need to be called e.g.
 as &lt;x3/&gt;StackTraces.lookup(ptr)&lt;x4/&gt;.</seg>
       </tuv>
@@ -28697,6 +28781,14 @@ array with size &lt;x7/&gt;size(I)&lt;x8/&gt;. Its &lt;x9/&gt;i&lt;x10/&gt;th el
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The location of both the &lt;x1/&gt;local&lt;x2/&gt; and &lt;x3/&gt;global&lt;x4/&gt; keywords within the scope block is irrelevant.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141451Z" creationid="hsugawa8651" creationdate="20181120T141451Z">
+        <seg>スコープブロック内のlocalキーワードとglobalキーワードの位置は、両方ともどこでも構いません。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The machine instructions generated
 by Julia's JIT are the same as a native C call would be, so the resulting overhead is the same
 as calling a library function from C code.</seg>
@@ -29001,6 +29093,15 @@ such a constraint.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112228Z" creationid="hsugawa8651" creationdate="20181112T112228Z">
         <seg>品目数(既知の場合)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The only case
+when it would change the semantics is (currently) a syntax error:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141630Z" creationid="hsugawa8651" creationdate="20181120T141630Z">
+        <seg>globalの有無で意味の変わる（現時点の）唯一のケースは、構文エラーです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30080,6 +30181,14 @@ same:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134404Z" creationid="hsugawa8651" creationdate="20181117T134404Z">
         <seg>他のタイプが定義されていないため、以下のように注意すべき特殊なタイプがいくつかあります。 同じ:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are some extra rules for &lt;x1/&gt;Let Blocks&lt;x2/&gt; and for &lt;x3/&gt;For Loops and Comprehensions&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141545Z" creationid="hsugawa8651" creationdate="20181120T141545Z">
+        <seg> Letブロック と Forループと内包表記 には、いくつかの特別なルールがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33793,6 +33902,14 @@ numeric operators like &lt;x7/&gt;`+`&lt;x8/&gt; do, and works for all kinds of 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124534Z" creationid="hsugawa8651" creationdate="20181118T124534Z">
         <seg>この構文では、iterablesは依然として外部ループ変数を参照することができます。例えば、i=1:n、j=1:i&lt;x2/&gt;のような&lt;x1/&gt;です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Within soft scopes, the &lt;x1/&gt;global&lt;x2/&gt; keyword is never necessary, although allowed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141625Z" creationid="hsugawa8651" creationdate="20181120T141625Z">
+        <seg>ソフトスコープ内では、グローバルキーワードは必要ありませんが、使っても構いません。 </seg>
       </tuv>
     </tu>
     <tu>
