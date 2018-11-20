@@ -9199,6 +9199,14 @@ into which concrete types can fit.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Abstract types are declared using the &lt;x1/&gt;abstract type&lt;x2/&gt; keyword.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144402Z" creationid="hsugawa8651" creationdate="20181120T144402Z">
+        <seg>抽象型はabstract typeキーワードを使用して宣言されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Abstract types cannot be instantiated, and serve only as nodes in the type graph, thereby describing
 sets of related concrete types: those concrete types which are their descendants.</seg>
       </tuv>
@@ -20707,6 +20715,25 @@ wrapped in a zero-argument function, which is later invoked by calling it as &lt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In turn, &lt;x7/&gt;Real&lt;x8/&gt; has two children (it has more, but only two are shown here; we'll get to
+the others later): &lt;x9/&gt;`Integer`&lt;x10/&gt; and &lt;x11/&gt;`AbstractFloat`&lt;x12/&gt;, separating the world into
+representations of integers and representations of real numbers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144642Z" creationid="hsugawa8651" creationdate="20181120T144642Z">
+        <seg>Realには子が２つあります（もっとありますが、ここでとりあげるのは2つだけです。後で他のものにも触れます）。 Integer と AbstractFloat は数の世界を整数の表現と実数の表現に分けます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In type theory, &lt;x3/&gt;Any&lt;x4/&gt; is commonly
+called "top" because it is at the apex of the type graph.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144519Z" creationid="hsugawa8651" creationdate="20181120T144519Z">
+        <seg>型理論でAnyは、型のグラフの頂点にあるため、通常「トップ」と呼ばれます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In-place broadcasting can be supported by defining the appropriate &lt;x1/&gt;copyto!(dest, bc::Broadcasted)&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131637Z" creationid="hsugawa8651" creationdate="20181113T131637Z">
@@ -21651,6 +21678,15 @@ as printing) in chained comparisons.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is the exact
+opposite of &lt;x7/&gt;Any&lt;x8/&gt;: no object is an instance of &lt;x9/&gt;Union{}&lt;x10/&gt; and all types are supertypes of &lt;x11/&gt;Union{}&lt;x12/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144544Z" creationid="hsugawa8651" creationdate="20181120T144544Z">
+        <seg>これはAnyのちょうど逆で、すべてのオブジェクトはUnion{}のインスタンスではなく、すべての型がUnion{}のスーパータイプです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is worth noting that you do not need to (and should not) define both argument orders
 of this call; defining one is sufficient no matter what order the user supplies the arguments in.</seg>
       </tuv>
@@ -21871,6 +21907,15 @@ native integer types respectively:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T032727Z" creationid="hsugawa8651" creationdate="20181112T110348Z">
         <seg>Juliaは、システムの符号つきまたは符号なしの固有の整数型のエイリアスである &lt;x1/&gt;Int&lt;x2/&gt; および &lt;x3/&gt;UInt&lt;x4/&gt; 型を定義します。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia also has a predefined abstract
+"bottom" type, at the nadir of the type graph, which is written as &lt;x5/&gt;Union{}&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144533Z" creationid="hsugawa8651" creationdate="20181120T144533Z">
+        <seg>またJuliaには、事前に定義された抽象型の「ボトム」があり、型のグラフの最下位にあって、Union{}と書きます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -22589,6 +22634,14 @@ easier to use and extend by allowing arguments to be identified by name instead 
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142220Z" creationid="hsugawa8651" creationdate="20181120T142220Z">
         <seg>Letブロック</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let's consider some of the abstract types that make up Julia's numerical hierarchy:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144547Z" creationid="hsugawa8651" creationdate="20181120T144547Z">
+        <seg>Juliaの数の階層を構成する抽象型をいくつか考えてみましょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25582,6 +25635,16 @@ the &lt;x1/&gt;global&lt;x2/&gt; keyword.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Representations of real
+numbers include, of course, floating-point types, but also include other types, such as
+rationals.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144649Z" creationid="hsugawa8651" creationdate="20181120T144649Z">
+        <seg> 実数の表現には、もちろん浮動小数点型が該当しますが、有理数などの他の型も該当します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Represented as either an array or a struct.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150802Z" creationid="hsugawa8651" creationdate="20181117T150802Z">
@@ -27628,6 +27691,14 @@ arbitrary-precision floating point and integer arithmetic, respectively.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;`Number`&lt;x2/&gt; type is a direct child type of &lt;x3/&gt;Any&lt;x4/&gt;, and &lt;x5/&gt;`Real`&lt;x6/&gt; is its child.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144620Z" creationid="hsugawa8651" creationdate="20181120T144620Z">
+        <seg>Number 型はAnyの直下の子の型であり、Real はNumber の子です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;`Symbol`&lt;x2/&gt; constructor takes any number of arguments and creates a new symbol by concatenating
 their string representations together:</seg>
       </tuv>
@@ -27674,6 +27745,14 @@ the normal flow of control.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111123Z" creationid="hsugawa8651" creationdate="20181112T110920Z">
         <seg>&lt;x1/&gt;`テーパミン'&lt;x2/&gt;と&lt;x3/&gt;'テーペマス'&lt;x4/&gt;関数も浮動小数点型に適用される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;abstract type&lt;x2/&gt; keyword introduces a new abstract type, whose name is given by &lt;x3/&gt;«name»&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144435Z" creationid="hsugawa8651" creationdate="20181120T144435Z">
+        <seg>abstract typeキーワードは、その名前を«name»とする、新たな抽象型を導入します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29122,6 +29201,15 @@ happens to contain only a single character.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155109Z" creationid="hsugawa8651" creationdate="20181109T155109Z">
         <seg>n次元配列Aへの索引付けの一般的な構文は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The general syntaxes for declaring an
+abstract type are:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144406Z" creationid="hsugawa8651" creationdate="20181120T144406Z">
+        <seg>抽象型を宣言する一般的な構文は次のとおりです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -31450,6 +31538,16 @@ a 1-tuple containing &lt;x9/&gt;Cstring&lt;x10/&gt;:</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>This
+name can be optionally followed by &lt;x5/&gt;&lt;:&lt;x6/&gt; and an already-existing type, indicating that the newly
+declared abstract type is a subtype of this "parent" type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144448Z" creationid="hsugawa8651" creationdate="20181120T144448Z">
+        <seg> 必要に応じて、この名前の後に&lt;:と既存の型を続けた場合、新たに宣言された抽象型がこの既存の型を「親」とするサブタイプであることを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This
 separation is typically quite natural.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155835Z" creationid="hsugawa8651" creationdate="20181117T155835Z">
@@ -31536,6 +31634,15 @@ extra build steps, and also allows true Lisp-style macros operating at the level
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115138Z" creationid="hsugawa8651" creationdate="20181118T115138Z">
         <seg>これにより、高度なコード生成が可能になります。 追加のビルドステップで、&lt;x1/&gt;抽象構文ツリー&lt;x2/&gt;のレベルで動作する真のLispスタイルのマクロが可能になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This allows you, for example, to easily program to any type
+that is an integer, without restricting an algorithm to a specific type of integer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144347Z" creationid="hsugawa8651" creationdate="20181120T144347Z">
+        <seg>こうすると、例えば、あるアルゴリズムを整数の特定の型に制限することなく、任意の型の整数に対して簡単にプログラムすることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -34338,6 +34445,15 @@ field alignment.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When no supertype is given, the default supertype is &lt;x1/&gt;Any&lt;x2/&gt; -- a predefined abstract type that
+all objects are instances of and all types are subtypes of.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144506Z" creationid="hsugawa8651" creationdate="20181120T144506Z">
+        <seg>スーパータイプの指定がない場合、デフォルトのスーパータイプはAnyです。 Anyは事前に定義された抽象型で、すべてのオブジェクトはAnyのインスタンスであり、すべての型がAnyのサブタイプです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When one of the operands of &lt;x12/&gt;⊘&lt;x13/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124211Z" creationid="hsugawa8651" creationdate="20181118T124211Z">
@@ -37078,6 +37194,16 @@ abstract type AbstractFloat &lt;: Real end
 abstract type Integer  &lt;: Real end
 abstract type Signed   &lt;: Integer end
 abstract type Unsigned &lt;: Integer end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>abstract type «name» end
+abstract type «name» &lt;: «supertype» end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144408Z" creationid="hsugawa8651" creationdate="20181120T144408Z">
+        <seg>abstract type «name» end
+abstract type «name» &lt;: «supertype» end</seg>
       </tuv>
     </tu>
     <tu>
