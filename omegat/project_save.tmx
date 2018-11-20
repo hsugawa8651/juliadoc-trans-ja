@@ -12923,8 +12923,8 @@ the values in parentheses (see &lt;x1/&gt;Functions&lt;x2/&gt; for more about fu
       <tuv lang="EN-US">
         <seg>Both of these cases throw a &lt;x5/&gt;`DivideError`&lt;x6/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110529Z" creationid="hsugawa8651" creationdate="20181112T110529Z">
-        <seg>これらの場合は両方とも、&lt;x6/&gt;「DivideError」&lt;x6/&gt;をスローします。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033424Z" creationid="hsugawa8651" creationdate="20181112T110529Z">
+        <seg>どちらの結果も &lt;x5/&gt;`DivideError`&lt;x6/&gt;となります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17377,8 +17377,8 @@ with &lt;x3/&gt;p&lt;x4/&gt; preceding the base-2 exponent:</seg>
       <tuv lang="EN-US">
         <seg>Hexadecimal floating-point literals are also valid, but only as &lt;x1/&gt;`Float64`&lt;x2/&gt; values:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235239Z" creationid="hsugawa8651" creationdate="20181119T235239Z">
-        <seg>16進数浮動小数点リテラルは有効であるが、&lt;x1/&gt;'Float64&lt;x2/&gt;の値としてのみ有効である。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033707Z" creationid="hsugawa8651" creationdate="20181119T235239Z">
+        <seg>16進数の浮動小数点リテラルも有効ですが、 &lt;x1/&gt;`Float64`&lt;x2/&gt; 値としてのみ使用が可能です。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -21216,8 +21216,8 @@ Julia represents its own code as a data structure of the language itself.</seg>
         <seg>Literal &lt;x3/&gt;`Float32`&lt;x4/&gt; values can be
 entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt;:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110604Z" creationid="hsugawa8651" creationdate="20181112T110604Z">
-        <seg>リテラル&lt;x3/&gt;`Float32'&lt;x4/&gt;の値は &lt;x7/&gt;e&lt;x8/&gt;の代わりに&lt;x5/&gt;f&lt;x6/&gt;を書き込むことによって入力されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033618Z" creationid="hsugawa8651" creationdate="20181112T110604Z">
+        <seg>リテラル &lt;x3/&gt;`Float32`&lt;x4/&gt;  値は、 &lt;x5/&gt;f&lt;x6/&gt;  の代わりに &lt;x7/&gt;e&lt;x8/&gt;を使用することで入力が可能です。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -21241,8 +21241,8 @@ entered by writing an &lt;x5/&gt;f&lt;x6/&gt; in place of &lt;x7/&gt;e&lt;x8/&gt
       <tuv lang="EN-US">
         <seg>Literal floating-point numbers are represented in the standard formats:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T235223Z" creationid="hsugawa8651" creationdate="20181119T235223Z">
-        <seg>リテラル浮動小数点数は、標準形式で表されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033510Z" creationid="hsugawa8651" creationdate="20181119T235223Z">
+        <seg>浮動小数点数リテラルは標準的な形式で表されます。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -25868,8 +25868,8 @@ dispatch&lt;/a0&gt;</seg>
       <tuv lang="EN-US">
         <seg>The above results are all &lt;x1/&gt;`Float64`&lt;x2/&gt; values.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110619Z" creationid="hsugawa8651" creationdate="20181112T110619Z">
-        <seg>上記の結果は全て&lt;x1/&gt;'Float64&lt;x2/&gt;の値である。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033549Z" creationid="hsugawa8651" creationdate="20181112T110619Z">
+        <seg>上記の結果は、全て&lt;x1/&gt;`Float64`&lt;x2/&gt;  値です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27530,8 +27530,8 @@ of &lt;x17/&gt;b&lt;x18/&gt;.</seg>
         <seg>The remainder and modulus functions (&lt;x7/&gt;rem&lt;x8/&gt; and &lt;x9/&gt;mod&lt;x10/&gt;) throw a &lt;x11/&gt;`DivideError`&lt;x12/&gt; when their
 second argument is zero.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T110536Z" creationid="hsugawa8651" creationdate="20181112T110536Z">
-        <seg>残りと弾性関数(&lt;x7/&gt;rem&lt;x8/&gt;および&lt;x9/&gt;mod&lt;x10/&gt;)は、それらの関数を用いた場合、&lt;x11/&gt;'DivideError&lt;x12/&gt;をスローする。 2番目の引数は0です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033456Z" creationid="hsugawa8651" creationdate="20181112T110536Z">
+        <seg>余りおよび絶対値の 関数（&lt;x7/&gt;rem&lt;x8/&gt; および &lt;x9/&gt;mod&lt;x10/&gt; ）についても、その第二引数が0の際に &lt;x11/&gt;`DivideError`&lt;x12/&gt; となります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30704,8 +30704,8 @@ for the last entry in a conditional chain is an error:</seg>
       <tuv lang="EN-US">
         <seg>Values can be converted to &lt;x1/&gt;`Float32`&lt;x2/&gt; easily:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T120339Z" creationid="hsugawa8651" creationdate="20181118T120339Z">
-        <seg>値を&lt;x1/&gt;`Float32'&lt;x2/&gt;に変換することは容易にできます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T033646Z" creationid="hsugawa8651" creationdate="20181118T120339Z">
+        <seg>値は簡単に &lt;x1/&gt;`Float32`&lt;x2/&gt; に変換することが可能です。:</seg>
       </tuv>
     </tu>
     <tu>
