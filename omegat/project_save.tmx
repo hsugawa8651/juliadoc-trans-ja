@@ -9316,6 +9316,14 @@ valid index.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>After your function exits, &lt;x5/&gt;`open()`&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134312Z" creationid="hsugawa8651" creationdate="20181120T134312Z">
+        <seg>この無名関数が終了した後に、&lt;x5/&gt;`open()`&lt;x6/&gt; はストリームが適切に閉じられたかどうかを確認します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All comma-separated expressions after &lt;x1/&gt;for&lt;x2/&gt; are interpreted as ranges.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154952Z" creationid="hsugawa8651" creationdate="20181109T154948Z">
@@ -16812,6 +16820,15 @@ array with size &lt;x7/&gt;size(I)&lt;x8/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, there is a version of &lt;x3/&gt;`open()`&lt;x4/&gt; that runs code ensuring
+that the opened file is eventually closed:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134205Z" creationid="hsugawa8651" creationdate="20181120T134205Z">
+        <seg>たとえば、コードの実行後に開いたファイルが最終的に閉じられることを保証するように、 &lt;x3/&gt;`open()`&lt;x4/&gt; に手を加えることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, there's a formula to compute the sum of squares, so
 we can override the generic iterative version with a more performant solution:</seg>
       </tuv>
@@ -17883,6 +17900,15 @@ type &lt;x3/&gt;Vector{T}&lt;x4/&gt; in the method signature:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here, &lt;x1/&gt;`open()`&lt;x2/&gt; first opens the file for writing and then passes the resulting output stream
+to the anonymous function you defined in the &lt;x3/&gt;do ... end&lt;x4/&gt; block.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134250Z" creationid="hsugawa8651" creationdate="20181120T134250Z">
+        <seg>ここでは、 &lt;x1/&gt;`open()`&lt;x2/&gt; は書き込み用のファイルを開き、出力ストリームを &lt;x3/&gt;do ... end&lt;x4/&gt;ブロックで定義された無名関数に渡します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Here, for example, is another attempt
 at defining the &lt;x3/&gt;SelfReferential&lt;x4/&gt; type, this time using a zero-argument inner constructor returning instances
 having &lt;x5/&gt;obj&lt;x6/&gt; fields pointing to themselves:</seg>
@@ -17966,6 +17992,16 @@ with &lt;x3/&gt;p&lt;x4/&gt; preceding the base-2 exponent:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024917Z" creationid="hsugawa8651" creationdate="20181110T024917Z">
         <seg>&lt;x3/&gt;&lt;x4/&gt;!/usr/bin/env&lt;x5/&gt;?を使用して、&lt;x1/&gt;ジュリア&lt;x2/&gt;にオプションを渡す方法を教えてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How these arguments are initialized depends on the "outer" function; here, &lt;x1/&gt;`map()`&lt;x2/&gt; will
+sequentially set &lt;x3/&gt;x&lt;x4/&gt; to &lt;x5/&gt;A&lt;x6/&gt;, &lt;x7/&gt;B&lt;x8/&gt;, &lt;x9/&gt;C&lt;x10/&gt;, calling the anonymous function on each, just as would happen
+in the syntax &lt;x11/&gt;map(func, [A, B, C])&lt;x12/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134105Z" creationid="hsugawa8651" creationdate="20181120T134105Z">
+        <seg>こうした引数が、どうのように初期化されるかは、外側の関数によって、異なります。 ここで取り上げた &lt;x1/&gt;`map()`&lt;x2/&gt;では、&lt;x3/&gt;x&lt;x4/&gt;  に対して 、順番に、&lt;x5/&gt;A&lt;x6/&gt;, &lt;x7/&gt;B&lt;x8/&gt;, &lt;x9/&gt;C&lt;x10/&gt; が代入されて、その都度、無名関数が 呼び出されます。ちょうど&lt;x11/&gt;map(func, [A, B, C])&lt;x12/&gt;という構文を使ったときと同じです。.</seg>
       </tuv>
     </tu>
     <tu>
@@ -29740,6 +29776,15 @@ collection.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There are many possible uses quite different from &lt;x1/&gt;`map()`&lt;x2/&gt;, such
+as managing system state.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134148Z" creationid="hsugawa8651" creationdate="20181120T134148Z">
+        <seg>また&lt;x1/&gt;`map()`&lt;x2/&gt;と全く違う使い方もたくさんあって、システムの状態を管理するようなこともできます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There are several
 functions in the &lt;x3/&gt;Sys&lt;x4/&gt; module intended to make this easier: &lt;x5/&gt;isunix&lt;x6/&gt;, &lt;x7/&gt;islinux&lt;x8/&gt;, &lt;x9/&gt;isapple&lt;x10/&gt;,
 &lt;x11/&gt;isbsd&lt;x12/&gt;, and &lt;x13/&gt;iswindows&lt;x14/&gt;.</seg>
@@ -30951,6 +30996,14 @@ denominator values by their greatest common divisor, computed using the &lt;x7/&
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is accomplished by the following definition:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134218Z" creationid="hsugawa8651" creationdate="20181120T134218Z">
+        <seg>次のように定義すれば、実現できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is accomplished just by making an appropriate call with
 &lt;x1/&gt;`ccall`&lt;x2/&gt; syntax, which looks like an ordinary function call.</seg>
       </tuv>
@@ -31473,6 +31526,15 @@ in &lt;x1/&gt;Functions&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133739Z" creationid="hsugawa8651" creationdate="20181119T133718Z">
         <seg>この構文は、&lt;a0&gt;Functions&lt;/a0&gt; の章で紹介した、簡潔で単一行の関数定義方式と一緒に使うと、特に便利です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This syntax makes it easier to use functions to effectively extend the language, since calls look
+like normal code blocks.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134124Z" creationid="hsugawa8651" creationdate="20181120T134124Z">
+        <seg>この構文を使うと、関数呼び出しが通常のコードブロックのように見えるため、簡単に、言語を効果的に拡張できます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -33381,6 +33443,15 @@ through the characters in &lt;x7/&gt;str&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112503Z" creationid="hsugawa8651" creationdate="20181112T112503Z">
         <seg>&lt;x1/&gt;'reiterate''&lt;x2/&gt;定義では、&lt;x3/&gt;Squares&lt;x4/&gt;タイプはすでにかなり強力です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>With the &lt;x1/&gt;do&lt;x2/&gt; block syntax, it helps to check the documentation or implementation to know how
+the arguments of the user function are initialized.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134406Z" creationid="hsugawa8651" creationdate="20181120T134406Z">
+        <seg>&lt;x1/&gt;do&lt;x2/&gt;ブロック構文は、文書や実装をチェックして、ユーザー定義関数の引数がどのように初期化されているかを理解する際に役立ちます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -53075,6 +53146,14 @@ julia&gt; odd(n) = (n == 0) ?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T071745Z" creationid="hsugawa8651" creationdate="20181114T031243Z">
         <seg>整商; 0に向かって丸めた商 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>try/finally&lt;x1/&gt; construct will be described in &lt;x2/&gt;Control Flow&lt;x3/&gt;.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134351Z" creationid="hsugawa8651" creationdate="20181120T134351Z">
+        <seg>これは無名関数が正常に終了しても、例外を投げても行われます。( try/finally&lt;x1/&gt;  については 制御構造 &lt;x2/&gt;Control Flow&lt;x3/&gt;に記述しています)</seg>
       </tuv>
     </tu>
     <tu>
