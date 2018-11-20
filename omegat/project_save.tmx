@@ -1971,6 +1971,14 @@ julia&gt; range(minmax(10, 2))
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>* / % &amp; \&lt;x1/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065708Z" creationid="hsugawa8651" creationdate="20181120T065708Z">
+        <seg>* / % &amp; \&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>*&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032336Z" creationid="hsugawa8651" creationdate="20181114T032336Z">
@@ -3535,8 +3543,8 @@ mycompare (generic function with 1 method)</seg>
       <tuv lang="EN-US">
         <seg>.&lt;x1/&gt; followed by &lt;x2/&gt;::&lt;x3/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030812Z" creationid="hsugawa8651" creationdate="20181114T030812Z">
-        <seg>&lt;x1/&gt;に続いて&lt;x2/&gt;::&lt;x3/&gt;</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065649Z" creationid="hsugawa8651" creationdate="20181114T030812Z">
+        <seg>.&lt;x1/&gt;の後に、&lt;x2/&gt;::&lt;x3/&gt; が続く  </seg>
       </tuv>
     </tu>
     <tu>
@@ -12842,8 +12850,8 @@ unsigned literal.</seg>
       <tuv lang="EN-US">
         <seg>Bitshifts</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030823Z" creationid="hsugawa8651" creationdate="20181114T030823Z">
-        <seg>Bitshifts</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065718Z" creationid="hsugawa8651" creationdate="20181114T030823Z">
+        <seg>ビットシフト</seg>
       </tuv>
     </tu>
     <tu>
@@ -16739,8 +16747,8 @@ efficient enough for deploying performance-intensive applications.</seg>
       <tuv lang="EN-US">
         <seg>Fractions</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030828Z" creationid="hsugawa8651" creationdate="20181114T030828Z">
-        <seg>Fractions</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065704Z" creationid="hsugawa8651" creationdate="20181114T030828Z">
+        <seg>分数</seg>
       </tuv>
     </tu>
     <tu>
@@ -20556,6 +20564,14 @@ the next largest or smallest representable floating-point number to the argument
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Julia applies the following order of operations, from highest precedence to lowest:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065448Z" creationid="hsugawa8651" creationdate="20181120T065448Z">
+        <seg>Juliaは、優先順位の高いものから低いものまで、以下の処理順序を適用しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Julia automatically inserts calls to the &lt;x1/&gt;`Base.cconvert`&lt;x2/&gt; function to convert each argument
 to the specified type.</seg>
       </tuv>
@@ -20800,8 +20816,8 @@ collection of standard mathematical functions.</seg>
       <tuv lang="EN-US">
         <seg>Julia provides a comprehensive collection of mathematical functions and operators.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030755Z" creationid="hsugawa8651" creationdate="20181114T030755Z">
-        <seg>Juliaは、数学的関数と演算子の包括的なコレクションを提供しています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065429Z" creationid="hsugawa8651" creationdate="20181114T030755Z">
+        <seg>Juliaは、包括的な数学関数および演算子を提供します。こ</seg>
       </tuv>
     </tu>
     <tu>
@@ -22883,6 +22899,14 @@ level operators and functions, in a way that is independent of the underlying st
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T095345Z" creationid="hsugawa8651" creationdate="20181118T095345Z">
         <seg>演算子</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Operator Precedence</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065547Z" creationid="hsugawa8651" creationdate="20181120T065547Z">
+        <seg>演算子の優先順位</seg>
       </tuv>
     </tu>
     <tu>
@@ -28639,8 +28663,8 @@ operations are defined over as broad a class of numerical values as permit sensi
 including integers, floating-point numbers, rationals, and complex numbers,
 wherever such definitions make sense.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030759Z" creationid="hsugawa8651" creationdate="20181114T030759Z">
-        <seg>これらの数学的な 操作は、許容可能な定義として、数値の幅広いクラスにわたって定義されます。 整数、浮動小数点数、理数、複素数などを含みます。 このような定義が意味を持つのです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065440Z" creationid="hsugawa8651" creationdate="20181114T030759Z">
+        <seg>れらの数学的演算子は、 整数、浮動小数点数、有理数、およびそれらの複合などを許容可能な定義として、 幅広い数値クラスとして定義されています。</seg>
       </tuv>
     </tu>
     <tu>
