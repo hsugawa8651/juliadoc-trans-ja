@@ -14130,6 +14130,14 @@ julia&gt; newfun()
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Code using immutable objects can be easier to reason about.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145931Z" creationid="hsugawa8651" creationdate="20181120T145931Z">
+        <seg>不変オブジェクトを使ったコードは、理解しやすくなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Collections and Data Structures</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150130Z" creationid="hsugawa8651" creationdate="20181117T150130Z">
@@ -14230,6 +14238,15 @@ julia&gt; newfun()
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145428Z" creationid="hsugawa8651" creationdate="20181120T145428Z">
         <seg>複合型 Composite Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Composite objects declared with &lt;x1/&gt;struct&lt;x2/&gt; are &lt;x3/&gt;immutable&lt;x4/&gt;; they cannot be modified
+after construction.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145849Z" creationid="hsugawa8651" creationdate="20181120T145849Z">
+        <seg>structで宣言された複合型オブジェクトは不変です。生成後に変更することはできません。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -18755,6 +18772,14 @@ more than a single method definition may be provided.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, the value for &lt;x3/&gt;baz&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145746Z" creationid="hsugawa8651" creationdate="20181120T145746Z">
+        <seg>ただし、bazの値はIntに変換できる必要があります</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, these subtleties are described in detail in
 most books on scientific computation, and also in the following references:</seg>
       </tuv>
@@ -21308,6 +21333,14 @@ a complex value directly from its real and imaginary parts:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Int&lt;x1/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145750Z" creationid="hsugawa8651" creationdate="20181120T145750Z">
+        <seg></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Integer division (the &lt;c0&gt;div&lt;/c0&gt; function) has two exceptional cases: dividing by zero, and dividing the lowest negative number (&lt;a1&gt;&lt;c2&gt;typemin&lt;/c2&gt;&lt;/a1&gt;) by -1.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190033Z" creationid="hsugawa8651" creationdate="20181118T190033Z">
@@ -21549,6 +21582,14 @@ its right operand:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It can be more efficient.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145907Z" creationid="hsugawa8651" creationdate="20181120T145907Z">
+        <seg>より効率的にできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It can be used anywhere to assert that the value of the expression on the left is an instance
 of the type on the right.</seg>
       </tuv>
@@ -21739,6 +21780,14 @@ taking all arguments explicitly and enforcing essential error checking and trans
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182428Z" creationid="hsugawa8651" creationdate="20181118T182428Z">
         <seg>Juliaは命令型プログラミング・関数型プログラミング・オブジェクト指向プログラミングの機能を組み合わせたマルチパラダイム言語です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is not possible to violate the invariants provided by the type's constructors.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145927Z" creationid="hsugawa8651" creationdate="20181120T145927Z">
+        <seg>型コンストラクタで規定される不変性を破ることはできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23881,6 +23930,15 @@ and count.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>New objects of type &lt;x1/&gt;Foo&lt;x2/&gt; are created by applying the &lt;x3/&gt;Foo&lt;x4/&gt; type object like a function
+to values for its fields:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145624Z" creationid="hsugawa8651" creationdate="20181120T145624Z">
+        <seg>型Fooの新しいオブジェクトは、型オブジェクトFooを、そのフィールド値に対して、関数のように適用して作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No automatic casting or conversion of function arguments is ever performed: all
 conversion in Julia is non-magical and completely explicit.</seg>
       </tuv>
@@ -24823,6 +24881,16 @@ works, it’s easy to write code that’s nearly as fast as C.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182411Z" creationid="hsugawa8651" creationdate="20181118T182411Z">
         <seg> Juliaがどのように動作するかを理解すれば、C言語と同等の速さで動くコードを簡単に書くことができるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One accepts any arguments and calls
+&lt;x5/&gt;`convert()`&lt;x6/&gt; to convert them to the types of the fields, and the other accepts arguments
+that match the field types exactly.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145722Z" creationid="hsugawa8651" creationdate="20181120T145722Z">
+        <seg> 1つはどんな引数でも受け入れて、convert() を呼び出してフィールドの型に変換します。 もう1つはフィールドの型と完全に一致する引数を受け取ります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26677,6 +26745,14 @@ must be called to create an object.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since the &lt;x1/&gt;bar&lt;x2/&gt; field is unconstrained in type, any value will do.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145741Z" creationid="hsugawa8651" creationdate="20181120T145741Z">
+        <seg>barフィールドには型の制約はないので、値は何でも構いません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since the &lt;x1/&gt;begin&lt;x2/&gt; construct does not introduce a new scope, it can be useful to use a zero-argument
 &lt;x3/&gt;let&lt;x4/&gt; to just introduce a new scope block without creating any new bindings:</seg>
       </tuv>
@@ -26898,6 +26974,15 @@ you'll need to take some extra precautions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032222Z" creationid="hsugawa8651" creationdate="20181116T032222Z">
         <seg>試行されるべきでない操作には、次のものがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some structs can be packed efficiently into arrays, and in some cases the
+compiler is able to avoid allocating immutable objects entirely.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145918Z" creationid="hsugawa8651" creationdate="20181120T145918Z">
+        <seg>構造体には効率的に配列にパックできるものもあり、場合によっては、コンパイラは、不変オブジェクトへのメモリの割り当てを完全に避けることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30295,6 +30380,15 @@ expression &lt;x3/&gt;2x - y&lt;x4/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The reason both of these are generated is that this makes
+it easier to add new definitions without inadvertently replacing a default constructor.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145726Z" creationid="hsugawa8651" creationdate="20181120T145726Z">
+        <seg> 2つのコンストラクタが生成されるのは、新しい定義を追加を簡単に、不注意でデフォルトのコンストラクタを置き換えることなく、できるようにするためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The reason to allow &lt;x1/&gt;modifying local&lt;x2/&gt; variables of parent scopes in nested functions is to allow
 constructing &lt;x3/&gt;closures&lt;x4/&gt; which
 have a private state, for instance the &lt;x5/&gt;state&lt;x6/&gt; variable in the following example:</seg>
@@ -32804,6 +32898,14 @@ much cleaner:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This may seem odd at first, but it has several advantages:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145859Z" creationid="hsugawa8651" creationdate="20181120T145859Z">
+        <seg>これは最初は奇妙に思えるかもしれませんが、いくつかの利点があります：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This may sound like a strange restriction,
 but remember that since C is not a dynamic language like Julia,
 its functions can only accept argument types with a statically-known, fixed signature.</seg>
@@ -33880,6 +33982,15 @@ the least-indented line.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Two constructors are generated
+automatically (these are called &lt;x3/&gt;default constructors&lt;x4/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145709Z" creationid="hsugawa8651" creationdate="20181120T145649Z">
+        <seg> 2つのコンストラクタが自動的に生成されます（これらはデフォルトコンストラクタと呼ばれます）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Two other handy string functions are &lt;x1/&gt;`repeat()`&lt;x2/&gt; and &lt;x3/&gt;`join()`&lt;x4/&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T083955Z" creationid="hsugawa8651" creationdate="20181120T083955Z">
@@ -34698,6 +34809,14 @@ converted to type &lt;x5/&gt;T&lt;x6/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When a type is applied like a function it is called a &lt;x1/&gt;constructor&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145638Z" creationid="hsugawa8651" creationdate="20181120T145638Z">
+        <seg>型は関数のように適用するとき、コンストラクタと呼ばれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When additional
 expressiveness is needed, however, it is easy to gradually introduce explicit type annotations
 into previously "untyped" code.</seg>
@@ -35421,6 +35540,14 @@ broadcasting shape rules yourself, but this may be helpful in limited situations
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can access the field values of a composite object using the traditional &lt;x1/&gt;foo.bar&lt;x2/&gt; notation:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145830Z" creationid="hsugawa8651" creationdate="20181120T145830Z">
+        <seg>伝統的なfoo.bar表記法を使用して、複合型のオブジェクトのフィールド値にアクセスできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can also combine dot operations with function chaining using &lt;x1/&gt;`|&gt;`&lt;x2/&gt;, as in this example:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T105918Z" creationid="hsugawa8651" creationdate="20181112T105918Z">
@@ -35654,6 +35781,14 @@ of the &lt;x3/&gt;bar&lt;x4/&gt; and &lt;x5/&gt;baz&lt;x6/&gt; fields:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124617Z" creationid="hsugawa8651" creationdate="20181118T124617Z">
         <seg>次の方法で独自の例外を定義することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You may find a list of field names using the &lt;x1/&gt;fieldnames&lt;x2/&gt; function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145759Z" creationid="hsugawa8651" creationdate="20181120T145759Z">
+        <seg>fieldnames関数を使用して、フィールド名を列挙することができます。</seg>
       </tuv>
     </tu>
     <tu>
