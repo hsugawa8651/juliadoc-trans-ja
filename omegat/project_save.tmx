@@ -1750,6 +1750,15 @@ some type).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(As we will see below, this does not necessarily mean that the last element is found
+at index &lt;x1/&gt;n&lt;x2/&gt;, where &lt;x3/&gt;n&lt;x4/&gt; is the length of the string.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081039Z" creationid="hsugawa8651" creationdate="20181120T081039Z">
+        <seg>しかし、下に示すように、文字列の長さ &lt;x3/&gt;n&lt;x4/&gt;のとき、文字列の最後の要素が、インデックス&lt;x1/&gt;n&lt;x2/&gt;が見出されるとは限りません。）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(By convention, we tend to space operators more tightly if they get applied before other nearby
 operators.</seg>
       </tuv>
@@ -18708,6 +18717,14 @@ pointers to memory locations.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In Julia these are very different things.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081321Z" creationid="hsugawa8651" creationdate="20181120T081321Z">
+        <seg> Juliaでは Char 型と String 型はとても異なったものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In Julia, a function is an object that maps a tuple of argument values to a return value.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T025448Z" creationid="hsugawa8651" creationdate="20181110T025448Z">
@@ -18854,6 +18871,15 @@ with Julia:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111937Z" creationid="hsugawa8651" creationdate="20181112T111937Z">
         <seg>すべての場合に、あいまいさは数値リテラルとして解釈されるために解決されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In any indexing expression, the keyword &lt;x1/&gt;end&lt;x2/&gt; can be used as a shorthand for the last index (computed
+by &lt;x3/&gt;`endof(str)`&lt;x4/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081115Z" creationid="hsugawa8651" creationdate="20181120T081115Z">
+        <seg>どのインデックス表現でも、キーワード &lt;x1/&gt;end&lt;x2/&gt; は（&lt;x3/&gt;`endof(str)`&lt;x4/&gt;) で求められる）インデックスの末尾の省略形として使うことができます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -22640,6 +22666,14 @@ enclosing expression.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115431Z" creationid="hsugawa8651" creationdate="20181118T115431Z">
         <seg>&lt;x1/&gt;$x2/&gt;補間構文では、1つの式のみを挿入できます。 式を囲みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notice that the expressions &lt;x1/&gt;str[k]&lt;x2/&gt; and &lt;x3/&gt;str[k:k]&lt;x4/&gt; do not give the same result:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081245Z" creationid="hsugawa8651" creationdate="20181120T081245Z">
+        <seg>&lt;x1/&gt;str[k]&lt;x2/&gt; と &lt;x3/&gt;str[k:k]&lt;x4/&gt;は同じ結果にならないことに留意してください。:</seg>
       </tuv>
     </tu>
     <tu>
@@ -27040,6 +27074,15 @@ the other with an explicit constructor:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The former is a single character value of type &lt;x1/&gt;Char&lt;x2/&gt;, while the latter is a string value that
+happens to contain only a single character.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081316Z" creationid="hsugawa8651" creationdate="20181120T081316Z">
+        <seg>前者の記法では一文字のみを取得することが想定されているので、前者は  &lt;x1/&gt;Char&lt;x2/&gt;型になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The full dependency graph of the first environment in a stack is guaranteed to be included intact in the stacked environment including the same versions of all dependencies.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121430Z" creationid="hsugawa8651" creationdate="20181118T121430Z">
@@ -31060,6 +31103,14 @@ for the last entry in a conditional chain is an error:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Using an index less than 1 or greater than &lt;x1/&gt;end&lt;x2/&gt; raises an error:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081204Z" creationid="hsugawa8651" creationdate="20181120T081204Z">
+        <seg>1よりも小さい、または&lt;x1/&gt;end&lt;x2/&gt;よりも大きい値のインデックスを使用した場合、エラーが出力されます。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Utility Collections</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043134Z" creationid="hsugawa8651" creationdate="20181112T043134Z">
@@ -31972,6 +32023,14 @@ broadcasting shape rules yourself, but this may be helpful in limited situations
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>You can also extract a substring using range indexing:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081218Z" creationid="hsugawa8651" creationdate="20181120T081218Z">
+        <seg>範囲のインデックスを使用することで、文字列の一部分を抽出することができます。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>You can also find the numerical precedence for any given operator via the built-in function &lt;x1/&gt;Base.operator_precedence&lt;x2/&gt;, where higher numbers take precedence:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030952Z" creationid="hsugawa8651" creationdate="20181114T030952Z">
@@ -32081,6 +32140,15 @@ six):</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123048Z" creationid="hsugawa8651" creationdate="20181118T123048Z">
         <seg>複雑な数値を使用して、すべての標準算術演算を実行できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can perform arithmetic and other operations with &lt;x5/&gt;end&lt;x6/&gt;, just like
+a normal value:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081129Z" creationid="hsugawa8651" creationdate="20181120T081129Z">
+        <seg>&lt;x5/&gt;end&lt;x6/&gt; は通常の値と同様に、算術演算やその他の処理を行うことができます。</seg>
       </tuv>
     </tu>
     <tu>
