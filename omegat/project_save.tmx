@@ -1567,6 +1567,14 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id scope-of-variables)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140704Z" creationid="hsugawa8651" creationdate="20181120T140704Z">
+        <seg>変数のスコープ (@id scope-of-variables)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id string-interpolation)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T020800Z" creationid="hsugawa8651" creationdate="20181116T020800Z">
@@ -25477,6 +25485,15 @@ applies the operator elementwise.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Similarly there are many other cases
+where different blocks of code can use the same name without referring to the same thing.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140752Z" creationid="hsugawa8651" creationdate="20181120T140752Z">
+        <seg>同様に、異なるコードブロックで、同じ名前を、同じものを参照することなく、使用できる多くの他のケースがあります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Similarly, &lt;x7/&gt;do a,b&lt;x8/&gt; would create a two-argument anonymous function, and a
 plain &lt;x9/&gt;do&lt;x10/&gt; would declare that what follows is an anonymous function of the form &lt;x11/&gt;() -&gt; ...&lt;x12/&gt;.</seg>
       </tuv>
@@ -27000,6 +27017,14 @@ is only defined for pairs of numbers.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;scope&lt;x2/&gt; of a variable is the region of code within which a variable is visible.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140717Z" creationid="hsugawa8651" creationdate="20181120T140717Z">
+        <seg>変数のスコープとは、変数を参照できるコードの範囲のことです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;state&lt;x2/&gt; object may be anything, and should be chosen appropriately for each iterable type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T032029Z" creationid="hsugawa8651" creationdate="20181114T032029Z">
@@ -27587,6 +27612,15 @@ implementation instead.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154623Z" creationid="hsugawa8651" creationdate="20181109T154623Z">
         <seg>連結関数は、頻繁に使用されるため、特別な構文が使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The concept is intuitive: two functions can both have arguments
+called &lt;x3/&gt;x&lt;x4/&gt; without the two &lt;x5/&gt;x&lt;x6/&gt;'s referring to the same thing.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140738Z" creationid="hsugawa8651" creationdate="20181120T140738Z">
+        <seg>この概念は直観的で、２つの関数が、同じ名前の引数xを、それぞれのxが同じものを参照することなく、使用できるというものです。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -32720,6 +32754,15 @@ will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T033028Z" creationid="hsugawa8651" creationdate="20181119T033028Z">
         <seg>変数名は、文字（AからZまたはaからz）、アンダースコア、もしくは00A0よりも大きなUnicodeの サブセットの符号点である必要があります。特に、Unicode文字カテゴリ のLu/Ll/Lt/Lm/Lo/Nl （文字）、 Sc/So（通貨とその他の記号）、その他の記号（Sm数学記号のサブセットなど）を使用することができます。 ！や数字（0から9とNd･Noカテゴリ内のその他の記号）、その他のUnicode符号点 （発音区別符号およびその他の修飾文字（Mn/Mc/Me/Skカテゴリ）、句読点コネクタ（Pcカテゴリ）、 プライム記号、その他の文字）を使用することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Variable scoping
+helps avoid variable naming conflicts.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T140727Z" creationid="hsugawa8651" creationdate="20181120T140727Z">
+        <seg>変数のスコープは、変数の名前が衝突するのを避けるのに役立ちます。 </seg>
       </tuv>
     </tu>
     <tu>
