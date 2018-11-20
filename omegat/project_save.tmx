@@ -18347,6 +18347,16 @@ see the tuple returned:</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>If you define
+your own equality function, you should probably define a corresponding &lt;x7/&gt;`hash()`&lt;x8/&gt; method
+to ensure that &lt;x9/&gt;isequal(x,y)&lt;x10/&gt; implies &lt;x11/&gt;hash(x) == hash(y)&lt;x12/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065031Z" creationid="hsugawa8651" creationdate="20181120T065031Z">
+        <seg>もし等値関数を定義したい場合は、&lt;x7/&gt;`hash()`&lt;x8/&gt; メソッドを定義して、する&lt;x9/&gt;isequal(x,y)&lt;x10/&gt;が &lt;x11/&gt;hash(x) == hash(y)&lt;x12/&gt;を表すように保証することをお勧めします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you define
 your own equality function, you should probably define a corresponding &lt;x7/&gt;`hash`&lt;x8/&gt; method
 to ensure that &lt;x9/&gt;isequal(x,y)&lt;x10/&gt; implies &lt;x11/&gt;hash(x) == hash(y)&lt;x12/&gt;.</seg>
       </tuv>
@@ -30584,8 +30594,10 @@ letter and does not behave like &lt;x7/&gt;f&lt;x8/&gt; in numeric literals.</se
         <seg>Unlike most languages, with the &lt;x1/&gt;notable exception of Python&lt;x2/&gt;,
 comparisons can be arbitrarily chained:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030712Z" creationid="hsugawa8651" creationdate="20181114T030712Z">
-        <seg>ほとんどの言語とは異なり、&lt;x1/&gt;はPython&lt;x2/&gt;の例外的な例外です。 比較は任意に連鎖させることができます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T065109Z" creationid="hsugawa8651" creationdate="20181114T030712Z">
+        <seg>&lt;x1/&gt;Pythonのような例外&lt;x2/&gt; を 除く、ほとんどの言語とは異なり、比較は任意に連続して使用することができます。
+
+</seg>
       </tuv>
     </tu>
     <tu>
