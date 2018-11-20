@@ -9699,6 +9699,14 @@ come before its inner usage:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An assignment modifies an existing value location, and &lt;x3/&gt;let&lt;x4/&gt; creates new locations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142243Z" creationid="hsugawa8651" creationdate="20181120T142243Z">
+        <seg> 代入は既存の値の場所を変更し、letは新しい場所を生成します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An environment's &lt;x1/&gt;graph&lt;x2/&gt; is a multilevel map which assigns, for each &lt;x3/&gt;context&lt;x4/&gt; UUID, a map from names to UUIDs, similar to the &lt;x5/&gt;roots&lt;x6/&gt; map but specific to that &lt;x7/&gt;context&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121011Z" creationid="hsugawa8651" creationdate="20181118T121011Z">
@@ -13257,6 +13265,15 @@ unsigned literal.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Blocks which introduce a soft local scope, such as loops, are generally used to manipulate the
+variables in their parent scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142054Z" creationid="hsugawa8651" creationdate="20181120T142054Z">
+        <seg>ループなどのソフトローカルスコープが導入されるブロックは、通常、親スコープ内の変数を操作するために使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Bobcat&lt;x1/&gt; can and does import both &lt;x2/&gt;Cobra&lt;x3/&gt; and &lt;x4/&gt;Dingo&lt;x5/&gt;, which both have project files with UUIDs and are declared as dependencies in &lt;x6/&gt;Bobcat&lt;x7/&gt;'s &lt;x8/&gt;[deps]&lt;x9/&gt; section.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121342Z" creationid="hsugawa8651" creationdate="20181118T121342Z">
@@ -14320,6 +14337,15 @@ iteration&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224750Z" creationid="hsugawa8651" creationdate="20181109T224750Z">
         <seg>&lt;x1/&gt;@inline&lt;x2/&gt;宣言の上書きを含め、インライン化が許可されているかどうかを制御する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Conversely, the code inside blocks which introduce a hard local scope (function, type, and macro
+definitions) can be executed at any place in a program.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142124Z" creationid="hsugawa8651" creationdate="20181120T142124Z">
+        <seg>一方、ハードローカルスコープを導入するブロック（関数・型・マクロの定義）内のコードは、プログラムの任意の場所で実行できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17920,6 +17946,14 @@ where syntactic conflicts arise:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T141117Z" creationid="hsugawa8651" creationdate="20181119T141117Z">
         <seg>&lt;c2&gt;while&lt;/c2&gt;ループの例を次に示します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is an example where the behavior of &lt;x5/&gt;let&lt;x6/&gt; is needed:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142340Z" creationid="hsugawa8651" creationdate="20181120T142340Z">
+        <seg>letの挙動が必要な例です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22303,6 +22337,14 @@ easier to use and extend by allowing arguments to be identified by name instead 
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Let Blocks</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142220Z" creationid="hsugawa8651" creationdate="20181120T142220Z">
+        <seg>Letブロック</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Let's start with an example to see what this means:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020922Z" creationid="hsugawa8651" creationdate="20181120T020922Z">
@@ -25215,6 +25257,16 @@ an interactive session.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Remotely changing the state of global
+variables in other modules should be done with care and thus this is an opt-in feature requiring
+the &lt;x1/&gt;global&lt;x2/&gt; keyword.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142142Z" creationid="hsugawa8651" creationdate="20181120T142142Z">
+        <seg> 他のモジュールのグローバル変数の状態を外側から変更する場合は注意が必要です。 そのため、これはわざわざglobalキーワードをつけなければできないオプトインの機能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Represented as either an array or a struct.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150802Z" creationid="hsugawa8651" creationdate="20181117T150802Z">
@@ -25592,6 +25644,14 @@ for example, &lt;x4/&gt;f.(args...)&lt;x5/&gt; implicitly calls &lt;x6/&gt;broad
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115833Z" creationid="hsugawa8651" creationdate="20181117T150003Z">
         <seg>&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-vectorized)も参照してください。 たとえば、&lt;x4/&gt;f.(args...)&lt;x5/&gt;は暗黙的に&lt;x6/&gt;ブロードキャスト(f,args.…)&lt;x7/&gt;を呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See also the closures in the examples in the next two sections.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142204Z" creationid="hsugawa8651" creationdate="20181120T142204Z">
+        <seg>続く2セクションの例にあるクロージャも参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27471,6 +27531,15 @@ precision integer and floating point numbers respectively.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x5/&gt;let&lt;x6/&gt; syntax accepts a comma-separated series of assignments
+and variable names:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142257Z" creationid="hsugawa8651" creationdate="20181120T142257Z">
+        <seg> let構文は、カンマで区切った一連の代入と変数名を受け取ります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x5/&gt;return&lt;x6/&gt; on the last line could be omitted
 since it is the last expression.</seg>
       </tuv>
@@ -27725,6 +27794,15 @@ other code written in Julia.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154129Z" creationid="hsugawa8651" creationdate="20181109T154129Z">
         <seg>アレイ・ライブラリーは実装されています。 ほとんどの場合、ジュリア自身は、コンパイラーからのパフォーマンスを導き出し その他のコードはジュリアに書かれています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The assignments are evaluated in order, with each right-hand side evaluated in the scope before
+the new variable on the left-hand side has been introduced.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142320Z" creationid="hsugawa8651" creationdate="20181120T142320Z">
+        <seg>代入は順番に評価されて、毎回、右側がスコープ内で評価されてから、左側の新しい変数が導入されます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -29408,6 +29486,16 @@ expression &lt;x3/&gt;2x - y&lt;x4/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The reason to allow &lt;x1/&gt;modifying local&lt;x2/&gt; variables of parent scopes in nested functions is to allow
+constructing &lt;x3/&gt;closures&lt;x4/&gt; which
+have a private state, for instance the &lt;x5/&gt;state&lt;x6/&gt; variable in the following example:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142149Z" creationid="hsugawa8651" creationdate="20181120T142149Z">
+        <seg>ネストされた関数から親スコープのローカル変数を変更できるのは、 プライベートな状態（たとえば、次の例のstate変数）を持つクロージャを構築できるようにするためです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The reasoning is that &lt;c0&gt;a &amp;&amp; b&lt;/c0&gt; must be &lt;c1&gt;false&lt;/c1&gt; if &lt;c2&gt;a&lt;/c2&gt; is &lt;c3&gt;false&lt;/c3&gt;, regardless of the value of &lt;c4&gt;b&lt;/c4&gt;, and likewise, the value of &lt;c5&gt;a || b&lt;/c5&gt; must be true if &lt;c6&gt;a&lt;/c6&gt; is &lt;c7&gt;true&lt;/c7&gt;, regardless of the value of &lt;c8&gt;b&lt;/c8&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T140207Z" creationid="hsugawa8651" creationdate="20181119T140207Z">
@@ -30437,6 +30525,15 @@ prior keyword arguments.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Therefore it makes sense to write
+something like &lt;x1/&gt;let x = x&lt;x2/&gt; since the two &lt;x3/&gt;x&lt;x4/&gt; variables are distinct and have separate storage.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142337Z" creationid="hsugawa8651" creationdate="20181120T142337Z">
+        <seg>したがってlet x = xのような記述は意味を成します。2つの変数xは別物で、別々の記憶域を持つからです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Therefore this syntax is disallowed, and spaces must be used around
 the operator in such cases.</seg>
       </tuv>
@@ -31263,6 +31360,15 @@ inner constructor method.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121132Z" creationid="hsugawa8651" creationdate="20181118T121132Z">
         <seg>この依存性&lt;x1/&gt;グラフ&lt;x2/&gt;は辞書として表され、次のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This difference is usually not important, and is only detectable in the case of variables that
+outlive their scope via closures.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142253Z" creationid="hsugawa8651" creationdate="20181120T142253Z">
+        <seg>通常はこの差が影響することは少なく、検出できるのも、クロージャを介したスコープ外の変数の場合にだけです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -32179,6 +32285,15 @@ with a single method, applicable to all types of arguments.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Thus their default is to fully access all variables in their
+parent scope.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142057Z" creationid="hsugawa8651" creationdate="20181120T142057Z">
+        <seg> そのため、デフォルトでは、親スコープのすべての変数に無制限にアクセスできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Thus we have the identity that &lt;x4/&gt;length(s) &lt;= endof(s)&lt;x5/&gt;,
 since each character in a string must have its own index.</seg>
       </tuv>
@@ -32994,6 +33109,15 @@ letter and does not behave like &lt;x7/&gt;f&lt;x8/&gt; in numeric literals.</se
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T134844Z" creationid="hsugawa8651" creationdate="20181119T134844Z">
         <seg>条件式の値が、&lt;c0&gt;true&lt;/c0&gt; か &lt;c1&gt;false&lt;/c1&gt; 以外の値だと、エラーが発生します。 この仕様は、C、MATLAB、PerlやPython、Rubyとは異なりますが、Javaなどの厳格な型付け言語と同等です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike assignments to local variables, &lt;x1/&gt;let&lt;x2/&gt; statements allocate new variable bindings each time
+they run.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142232Z" creationid="hsugawa8651" creationdate="20181120T142232Z">
+        <seg>ローカル変数に代入する時とは異なり、let文は実行するたびに変数の束縛に新たなメモリを割り当てます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -46869,6 +46993,34 @@ false</seg>
            x
        end
 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; let
+           state = 0
+           global counter
+           counter() = state += 1
+       end;
+
+julia&gt; counter()
+1
+
+julia&gt; counter()
+2</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142150Z" creationid="hsugawa8651" creationdate="20181120T142150Z">
+        <seg>julia&gt; let
+           state = 0
+           global counter
+           counter() = state += 1
+       end;
+
+julia&gt; counter()
+1
+
+julia&gt; counter()
+2</seg>
       </tuv>
     </tu>
     <tu>
