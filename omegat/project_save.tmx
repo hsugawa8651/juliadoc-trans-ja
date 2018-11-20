@@ -20771,8 +20771,8 @@ bitwise operators as well as standard mathematical functions are defined over th
 numeric primitive types, as well as providing portable, efficient implementations of a comprehensive
 collection of standard mathematical functions.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131929Z" creationid="hsugawa8651" creationdate="20181113T131929Z">
-        <seg>Juliaはすべての基本的な演算子とビット演算子の完全なコレクションを提供しています。 数値プリミティブ型で、包括的で効率的な包括的な実装を提供します。 標準数学関数のコレクションです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T062802Z" creationid="hsugawa8651" creationdate="20181113T131929Z">
+        <seg>Juliaは、基本的な数値プリミティブ型の全ての算術演算子とビット演算子だけでなく、 可搬的かつ標準的な数学関数の効率的な実装を実現しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -50021,8 +50021,8 @@ julia&gt; odd(n) = (n == 0) ?</seg>
       <tuv lang="EN-US">
         <seg>unary plus</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094734Z" creationid="hsugawa8651" creationdate="20181118T094734Z">
-        <seg>単項プラス</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T062837Z" creationid="hsugawa8651" creationdate="20181118T094734Z">
+        <seg>単一項加法</seg>
       </tuv>
     </tu>
     <tu>
