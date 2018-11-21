@@ -8795,6 +8795,15 @@ rather than requiring a runtime &lt;x3/&gt;`eval`&lt;x4/&gt; call.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A mutable object is like a little container that might hold different values over time,
+and so can only be reliably identified with its address.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T080826Z" creationid="hsugawa8651" creationdate="20181121T080826Z">
+        <seg>可変オブジェクトは、時間によって値の変わりうる小さなコンテナと似ていて、アドレスだけで確実に識別できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A nested tree of
 &lt;x5/&gt;Broadcasted&lt;x6/&gt; containers is directly constructed by the implicit dot syntax; &lt;x7/&gt;5 .+ 2.*x&lt;x8/&gt; is
 transiently represented by &lt;x9/&gt;Broadcasted(+, 5, Broadcasted(*, 2, x))&lt;x10/&gt;, for example.</seg>
@@ -9946,6 +9955,15 @@ is like an outer constructor method, except for two differences:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T135000Z" creationid="hsugawa8651" creationdate="20181117T135000Z">
         <seg>スカラーインデックスの配列を表すオブジェクトで、&lt;x1/&gt;によって変換されて、&lt;x1/&gt;によって変換されます。デフォルトでは、次のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An object with an immutable type is passed around (both in assignment statements and in function
+calls) by copying, whereas a mutable type is passed around by reference.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T080933Z" creationid="hsugawa8651" creationdate="20181121T080933Z">
+        <seg>不変型のオブジェクトは、（代入文と関数呼び出しの両方で）コピーを受け渡ししますが、可変型の場合は参照を受け渡しします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15469,6 +15487,16 @@ manner that allows all custom arrays to behave similarly.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Depending on whether &lt;x5/&gt;x&lt;x6/&gt; is passed
+by copying or by reference, this statement may or may not alter the actual argument in the calling
+routine.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081048Z" creationid="hsugawa8651" creationdate="20181121T081048Z">
+        <seg>x`の渡し方がコピーか参照かによって、この文の呼び出し側ルーチンの実引数は変更されたりされなかったりします。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Depending on your needs, you can either ignore these complexities
 entirely and just pretend that only ASCII characters exist, or you can write code that can handle
 any of the characters or encodings that one may encounter when handling non-ASCII text.</seg>
@@ -17153,6 +17181,15 @@ its sum:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124242Z" creationid="hsugawa8651" creationdate="20181118T124242Z">
         <seg>例えば、正確な表現とともにベクトルを格納するタイプを定義するとします。 その合計:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, suppose &lt;x1/&gt;x&lt;x2/&gt; is a function argument of an abstract type, and suppose
+that the function changes a field: &lt;x3/&gt;x.isprocessed = true&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081042Z" creationid="hsugawa8651" creationdate="20181121T081042Z">
+        <seg>たとえばxは関数の抽象型の引数で、関数のフィールドを以下のように変更したとします。 x.isprocessed = true </seg>
       </tuv>
     </tu>
     <tu>
@@ -19566,6 +19603,24 @@ but are often preferred for clarity.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If they were separated, i.e., if the fields of objects passed around
+by copying could be modified, then it would become more difficult to reason about certain instances
+of generic code.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081008Z" creationid="hsugawa8651" creationdate="20181121T081008Z">
+        <seg>この2つが独立している場合、つまり、コピーによって渡されたオブジェクトのフィールドが可変の場合、汎化コードの特定のインスタンスについての推論は、より困難になります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If they would be considered identical, the type should probably be immutable.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T080916Z" creationid="hsugawa8651" creationdate="20181121T080916Z">
+        <seg>同一であるとみなせるならば、おそらくその型は不変にすべきでしょう。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If this example were rewritten to use a &lt;x1/&gt;for&lt;x2/&gt; keyword for each variable, then the output would
 be different: the second and fourth values would contain &lt;x3/&gt;0&lt;x4/&gt;.</seg>
       </tuv>
@@ -20151,6 +20206,15 @@ iterate over any array type.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In contrast, an instance of an immutable type is associated with specific field values ---
+the field values alone tell you everything about the object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T080852Z" creationid="hsugawa8651" creationdate="20181121T080852Z">
+        <seg> 対照的に、不変型のインスタンスは、特定のフィールド値に関連づけられています。 フィールド値だけで、オブジェクトに関するすべてがわかります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In contrast, pointers returned by the C function called should be declared to be of output type
 &lt;x9/&gt;`Ptr{T}`&lt;x10/&gt;, reflecting that the memory pointed to is managed by C only.</seg>
       </tuv>
@@ -20165,6 +20229,16 @@ and substitution before any actual parsing or interpretation occurs.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115141Z" creationid="hsugawa8651" creationdate="20181118T115141Z">
         <seg>これとは対照的に、プリプロセッサ「マクロ」システムは、CおよびC++のシステムと同様に、テキスト操作を実行します。 実際の構文解析または解釈の前に置換する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In deciding whether to make a type mutable, ask whether two instances
+with the same field values would be considered identical, or if they might need to change independently
+over time.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T080907Z" creationid="hsugawa8651" creationdate="20181121T080907Z">
+        <seg>型を可変にするかどうかを決めるには、同じフィールド値を持つ2つのインスタンスは同一だとみなせるか、あるいは時間とともに別々に変更する必要があるかを考えます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -20348,6 +20422,15 @@ work with the &lt;x5/&gt;Broadcasted&lt;x6/&gt; wrapper to compute each element.
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T113139Z" creationid="hsugawa8651" creationdate="20181112T113139Z">
         <seg>&lt;x9/&gt;Int&lt;x10/&gt;の範囲またはベクトルを用いたインデックス作成をサポートするためには、別の方法を記述する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In order to support mutation, such objects are generally allocated on the heap, and have
+stable memory addresses.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T080814Z" creationid="hsugawa8651" creationdate="20181121T080814Z">
+        <seg>変更に対応できるように、このようなオブジェクトは、一般にヒープ上に割り当てられ、メモリアドレスが一定しています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -21801,10 +21884,27 @@ taking all arguments explicitly and enforcing essential error checking and trans
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is instructive, particularly for readers whose background is C/C++, to consider why these two
+properties go hand in hand.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081000Z" creationid="hsugawa8651" creationdate="20181121T081000Z">
+        <seg>特にC/C++のことを知っている読者には、この2つの特性がどうして連携しているのか考えるとためになるでしょう。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is multi-paradigm, combining features of imperative, functional, and object-oriented programming.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T182428Z" creationid="hsugawa8651" creationdate="20181118T182428Z">
         <seg>Juliaは命令型プログラミング・関数型プログラミング・オブジェクト指向プログラミングの機能を組み合わせたマルチパラダイム言語です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is not permitted to modify the fields of a composite immutable type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T080942Z" creationid="hsugawa8651" creationdate="20181121T080942Z">
+        <seg>不変な複合型のフィールドを変更することはできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22613,6 +22713,16 @@ type of a given variable.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T041028Z" creationid="hsugawa8651" creationdate="20181112T112000Z">
         <seg>Juliaは、特定の方や特定の変数の型に対応してリテラル0および1を返す関数を提供しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Julia sidesteps the possibility of creating functions with unknown effects in this scenario
+by forbidding modification of fields of objects passed around by copying.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081101Z" creationid="hsugawa8651" creationdate="20181121T081101Z">
+        <seg>Julia sidesteps the possibility of creating functions with unknown effects in this scenario
+by forbidding modification of fields of objects passed around by copying.</seg>
       </tuv>
     </tu>
     <tu>
@@ -33903,6 +34013,14 @@ cases</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143742Z" creationid="hsugawa8651" creationdate="20181120T143742Z">
         <seg>コンパイラが追加的な型情報を利用できるようにして、状況によってはパフォーマンスを向上できるようにする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To recap, two essential properties define immutability in Julia:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T080925Z" creationid="hsugawa8651" creationdate="20181121T080925Z">
+        <seg>まとめ、Juliaにおいて不変性を定義する2つの本質的な特性：</seg>
       </tuv>
     </tu>
     <tu>
