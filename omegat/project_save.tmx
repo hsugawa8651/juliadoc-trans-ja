@@ -9764,8 +9764,8 @@ differences between &lt;x19/&gt;`Bool`&lt;x20/&gt;, &lt;x21/&gt;`Int8`&lt;x22/&g
 behavior -- the way functions are defined to act when given objects of these types as
 arguments.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145409Z" creationid="hsugawa8651" creationdate="20181120T145409Z">
-        <seg> Bool、 Int8、 UInt8 のその他の違いはすべて挙動にかかわるものです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T132315Z" creationid="hsugawa8651" creationdate="20181120T145409Z">
+        <seg>&lt;x19/&gt;`Bool`&lt;x20/&gt;、&lt;x21/&gt;`Int8`&lt;x22/&gt;、 &lt;x23/&gt;`UInt8`&lt;x24/&gt;のその他の違いはすべて挙動にかかわるものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -34474,8 +34474,8 @@ without using extra memory, and applies the given function elementwise:</seg>
 which in turn dictates behavior, then it would be impossible to make &lt;x25/&gt;`Bool`&lt;x26/&gt; behave
 any differently than &lt;x27/&gt;`Int8`&lt;x28/&gt; or &lt;x29/&gt;`UInt8`&lt;x30/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145420Z" creationid="hsugawa8651" creationdate="20181120T145420Z">
-        <seg> つまり、それぞれの型のオブジェクトを引数にとる時に、関数の動作がどう定義されているかの違いです。 これが公称的な型システムが必要な理由です。もしも構造によって型が決定するならば、型の構造から挙動がそのまま決まってしまうので、Bool が Int8 や UInt8 と異なる挙動をとることは不可能になるでしょう。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T132237Z" creationid="hsugawa8651" creationdate="20181120T145420Z">
+        <seg> つまり、それぞれの型のオブジェクトを引数にとる時に、関数の動作がどう定義されているかの違いです。 これが公称的な型システムが必要な理由です。もしも構造によって型が決定するならば、型の構造から挙動がそのまま決まってしまうので、&lt;x25/&gt;`Bool`&lt;x26/&gt; が&lt;x27/&gt;`Int8`&lt;x28/&gt; や&lt;x29/&gt;`UInt8`&lt;x30/&gt;と異なる挙動をとることは不可能になるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
