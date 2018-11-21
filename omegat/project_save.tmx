@@ -1836,6 +1836,15 @@ operators.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(Equivalently, one could define &lt;x1/&gt;function norm{T&lt;:Real}(p::Point{T})&lt;x2/&gt; or
+&lt;x3/&gt;function norm(p::Point{T} where T&lt;:Real)&lt;x4/&gt;; see &lt;x5/&gt;UnionAll Types&lt;x6/&gt;.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082111Z" creationid="hsugawa8651" creationdate="20181121T082111Z">
+        <seg>（同等の定義として、function norm{T&lt;:Real}(p::Point{T})や、function norm(p::Point{T} where T&lt;:Real)があります。（全合併型 を参照。）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(For comparison
 operations like &lt;x5/&gt;&lt;&lt;x6/&gt;, &lt;x7/&gt;only&lt;x8/&gt; the elementwise &lt;x9/&gt;.&lt;&lt;x10/&gt; version is applicable to arrays.)</seg>
       </tuv>
@@ -8659,6 +8668,15 @@ fused with any nested "dot" calls.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T135758Z" creationid="hsugawa8651" creationdate="20181118T120152Z">
         <seg>このような場合につかうと便利な構文のX .= ...は、broadcast!(identity, X, ...)とほぼ同等ですが、上記のように、broadcast!ループが、"ドット"呼び出しのネストと融合される点が違います。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A correct way to define a method that accepts all arguments of type &lt;x1/&gt;Point{T}&lt;x2/&gt; where &lt;x3/&gt;T&lt;x4/&gt; is
+a subtype of &lt;x5/&gt;`Real`&lt;x6/&gt; is:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082053Z" creationid="hsugawa8651" creationdate="20181121T082053Z">
+        <seg>TがRealのサブタイプであるPoint{T}という型のすべてを、引数として受け入れるメソッドを定義する正しい方法は次のとおりです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16775,6 +16793,16 @@ further discussion of UTF-8 encoding issues, see the section below on &lt;x7/&gt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For
+that reason, you can also apply &lt;x3/&gt;Point&lt;x4/&gt; itself as a constructor, provided that the implied value
+of the parameter type &lt;x5/&gt;T&lt;x6/&gt; is unambiguous:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082307Z" creationid="hsugawa8651" creationdate="20181121T082307Z">
+        <seg>そのため、Pointのパラメータの型Tが推定可能で曖昧さがない場合は、Point自体をコンストラクタとして適用することも可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For &lt;x1/&gt;AbstractArray&lt;x2/&gt; types, defining a &lt;x3/&gt;BroadcastStyle&lt;x4/&gt; supersedes the fallback choice,
 &lt;x5/&gt;`Broadcast.DefaultArrayStyle`&lt;x6/&gt;.</seg>
       </tuv>
@@ -17780,6 +17808,14 @@ it.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For the default constructor, exactly one argument must be supplied for each field:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082224Z" creationid="hsugawa8651" creationdate="20181121T082224Z">
+        <seg>デフォルトのコンストラクタには、各フィールドにちょうど1つの引数を指定する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For the sake of clarity,
 let's try a two-way version first:</seg>
       </tuv>
@@ -18710,6 +18746,14 @@ with &lt;x3/&gt;p&lt;x4/&gt; preceding the base-2 exponent:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024917Z" creationid="hsugawa8651" creationdate="20181110T024917Z">
         <seg>&lt;x3/&gt;&lt;x4/&gt;!/usr/bin/env&lt;x5/&gt;?を使用して、&lt;x1/&gt;ジュリア&lt;x2/&gt;にオプションを渡す方法を教えてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How does one construct a &lt;x1/&gt;Point&lt;x2/&gt; object?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082147Z" creationid="hsugawa8651" creationdate="20181121T082147Z">
+        <seg>Pointオブジェクトはどのように構成するのでしょうか？</seg>
       </tuv>
     </tu>
     <tu>
@@ -20476,6 +20520,15 @@ be passed explicitly in every call.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In many cases, it is redundant to provide the type of &lt;x1/&gt;Point&lt;x2/&gt; object one wants to construct, since
+the types of arguments to the constructor call already implicitly provide type information.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082303Z" creationid="hsugawa8651" creationdate="20181121T082303Z">
+        <seg>多くの場合、生成したいPointオブジェクトの型を指定するのは冗長です。 Pointコンストラクタを呼び出す時の引数に、すでに型情報が隠されているからです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In many languages, composite types are
 the only kind of user-definable type, and they are by far the most commonly used user-defined
 type in Julia as well.</seg>
@@ -22095,6 +22148,18 @@ method applicable to some combinations of arguments:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014257Z" creationid="hsugawa8651" creationdate="20181120T014257Z">
         <seg>ある種の引数の組み合わせに対しては、最も特化するメソッドが一意に定まらない、関数メソッドの組み合わせに、定義がなってしまう可能性があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is possible to define custom constructors for composite
+types, which will be discussed in detail in &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-constructors), but in the absence of any special
+constructor declarations, there are two default ways of creating new composite objects, one in
+which the type parameters are explicitly given and the other in which they are implied by the
+arguments to the object constructor.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082133Z" creationid="hsugawa8651" creationdate="20181121T082133Z">
+        <seg> [コンストラクタ]（@ ref man-constructor）で詳しく説明しますが、複合型に独自のコンストラクタを定義することは可能ですが、特別にコンストラクタの宣言をしなくても、デフォルトで新しい複合型オブジェクトを作成する方法が2通りあります。1つは型パラメータを明示的に与えるもの、もう1つはオブジェクトコンストラクタへの引数から暗黙裡に推定されるものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23778,6 +23843,14 @@ can be found within the &lt;x25/&gt;&lt;x26/&gt;&lt;x27/&gt;(@ref man-interface-
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>More examples will be discussed later in &lt;x1/&gt;Methods&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082115Z" creationid="hsugawa8651" creationdate="20181121T082115Z">
+        <seg>より多くの例については、後の メソッド で説明します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>More generally, &lt;x1/&gt;f.(args...)&lt;x2/&gt; is actually equivalent to &lt;x3/&gt;broadcast(f, args...)&lt;x4/&gt;, which allows
 you to operate on multiple arrays (even of different shapes), or a mix of arrays and scalars (see
 &lt;x5/&gt;Broadcasting&lt;x6/&gt;).</seg>
@@ -25285,6 +25358,14 @@ generation of default constructors:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131331Z" creationid="hsugawa8651" creationdate="20181119T131331Z">
         <seg>One-dimensional &lt;a0&gt;&lt;c1&gt;DenseArray&lt;/c1&gt;&lt;/a0&gt; with elements of type &lt;c2&gt;T&lt;/c2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Only one default constructor is generated for parametric types, since overriding it is not possible.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082248Z" creationid="hsugawa8651" creationdate="20181121T082248Z">
+        <seg>パラメトリック型に対しては、デフォルトのコンストラクタは1つしか生成されません。オーバーライドできないためです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27146,6 +27227,14 @@ errors.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since the type &lt;x1/&gt;Point{Float64}&lt;x2/&gt; is a concrete type equivalent to &lt;x3/&gt;Point&lt;x4/&gt; declared with &lt;x5/&gt;`Float64`&lt;x6/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082203Z" creationid="hsugawa8651" creationdate="20181121T082203Z">
+        <seg>型Point{Float64}は、TにFloat64 を代入して宣言したPointと同等の具象型なので、Pointと同様のコンストラクタとして適用できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since these are fairly small, simple expressions, they could easily be placed onto a single line,
 which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
       </tuv>
@@ -27975,6 +28064,14 @@ value &lt;x3/&gt;1&lt;x4/&gt; to the floating-point value &lt;x5/&gt;1.0&lt;x6/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151245Z" creationid="hsugawa8651" creationdate="20181117T151245Z">
         <seg>T&lt;x1/&gt;は静的に認識されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>T&lt;x1/&gt;, it can be applied as a constructor accordingly:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082211Z" creationid="hsugawa8651" creationdate="20181121T082211Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
@@ -32770,6 +32867,14 @@ is relaxed for incrementally-loaded precompiled modules to allow calling any fun
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123452Z" creationid="hsugawa8651" creationdate="20181118T123452Z">
         <seg>この構成により、乗算と加算演算が回避されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This constructor accepts any arguments and converts them to the field types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082251Z" creationid="hsugawa8651" creationdate="20181121T082251Z">
+        <seg>このコンストラクタは任意の引数を受け取り、フィールドの型に変換します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -44977,6 +45082,20 @@ false
 
 julia&gt; Point{Float64} &lt;: Point{Real}
 false</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>julia&gt; Point{Float64}(1.0)
+ERROR: MethodError: Cannot `convert` an object of type Float64 to an object of type Point{Float64}
+This may have arisen from a call to the constructor Point{Float64}(...),
+since type constructors fall back to convert methods.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082226Z" creationid="hsugawa8651" creationdate="20181121T082226Z">
+        <seg>julia&gt; Point{Float64}(1.0)
+ERROR: MethodError: Cannot `convert` an object of type Float64 to an object of type Point{Float64}
+This may have arisen from a call to the constructor Point{Float64}(...),
+since type constructors fall back to convert methods.</seg>
       </tuv>
     </tu>
     <tu>
