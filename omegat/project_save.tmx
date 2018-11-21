@@ -19414,8 +19414,8 @@ more than a single method definition may be provided.</seg>
       <tuv lang="EN-US">
         <seg>However, the value for &lt;x3/&gt;baz&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145746Z" creationid="hsugawa8651" creationdate="20181120T145746Z">
-        <seg>ただし、bazの値はIntに変換できる必要があります</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T133252Z" creationid="hsugawa8651" creationdate="20181120T145746Z">
+        <seg>ただし、&lt;x3/&gt;baz&lt;x4/&gt;の値はIntに変換できる必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24897,8 +24897,8 @@ and count.</seg>
         <seg>New objects of type &lt;x1/&gt;Foo&lt;x2/&gt; are created by applying the &lt;x3/&gt;Foo&lt;x4/&gt; type object like a function
 to values for its fields:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145624Z" creationid="hsugawa8651" creationdate="20181120T145624Z">
-        <seg>型Fooの新しいオブジェクトは、型オブジェクトFooを、そのフィールド値に対して、関数のように適用して作成します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T133023Z" creationid="hsugawa8651" creationdate="20181120T145624Z">
+        <seg>型&lt;x1/&gt;Foo&lt;x2/&gt;の新しいオブジェクトは、型オブジェクト&lt;x3/&gt;Foo&lt;x4/&gt;を、そのフィールド値に対して、関数のように適用して作成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25903,8 +25903,8 @@ works, it’s easy to write code that’s nearly as fast as C.</seg>
 &lt;x5/&gt;`convert()`&lt;x6/&gt; to convert them to the types of the fields, and the other accepts arguments
 that match the field types exactly.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145722Z" creationid="hsugawa8651" creationdate="20181120T145722Z">
-        <seg> 1つはどんな引数でも受け入れて、convert() を呼び出してフィールドの型に変換します。 もう1つはフィールドの型と完全に一致する引数を受け取ります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T133125Z" creationid="hsugawa8651" creationdate="20181120T145722Z">
+        <seg>1つはどんな引数でも受け入れて、&lt;x5/&gt;`convert()`&lt;x6/&gt;を呼び出してフィールドの型に変換します。 もう1つはフィールドの型と完全に一致する引数を受け取ります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27912,8 +27912,8 @@ must be called to create an object.</seg>
       <tuv lang="EN-US">
         <seg>Since the &lt;x1/&gt;bar&lt;x2/&gt; field is unconstrained in type, any value will do.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145741Z" creationid="hsugawa8651" creationdate="20181120T145741Z">
-        <seg>barフィールドには型の制約はないので、値は何でも構いません。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T133237Z" creationid="hsugawa8651" creationdate="20181120T145741Z">
+        <seg>&lt;x1/&gt;bar&lt;x2/&gt;フィールドには型の制約はないので、値は何でも構いません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -31744,8 +31744,9 @@ expression &lt;x3/&gt;2x - y&lt;x4/&gt;.</seg>
         <seg>The reason both of these are generated is that this makes
 it easier to add new definitions without inadvertently replacing a default constructor.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145726Z" creationid="hsugawa8651" creationdate="20181120T145726Z">
-        <seg> 2つのコンストラクタが生成されるのは、新しい定義を追加を簡単に、不注意でデフォルトのコンストラクタを置き換えることなく、できるようにするためです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T133206Z" creationid="hsugawa8651" creationdate="20181120T145726Z">
+        <seg>2つのコンストラクタが生成されるのは、新しい定義を追加を簡単に、不注意でデフォルトのコンストラクタを置き換えることなく、できるようにするためです。
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -35779,8 +35780,8 @@ the least-indented line.</seg>
         <seg>Two constructors are generated
 automatically (these are called &lt;x3/&gt;default constructors&lt;x4/&gt;).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145709Z" creationid="hsugawa8651" creationdate="20181120T145649Z">
-        <seg> 2つのコンストラクタが自動的に生成されます（これらはデフォルトコンストラクタと呼ばれます）。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T133144Z" creationid="hsugawa8651" creationdate="20181120T145649Z">
+        <seg>2つのコンストラクタが自動的に生成されます（これらは&lt;x3/&gt;デフォルトコンストラクタ&lt;x4/&gt;と呼ばれます）。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -36818,8 +36819,8 @@ tuple type is generated on demand:</seg>
       <tuv lang="EN-US">
         <seg>When a type is applied like a function it is called a &lt;x1/&gt;constructor&lt;x2/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145638Z" creationid="hsugawa8651" creationdate="20181120T145638Z">
-        <seg>型は関数のように適用するとき、コンストラクタと呼ばれます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T133157Z" creationid="hsugawa8651" creationdate="20181120T145638Z">
+        <seg>型は関数のように適用するとき、&lt;x1/&gt;コンストラクタ&lt;x2/&gt;と呼ばれます。 </seg>
       </tuv>
     </tu>
     <tu>
