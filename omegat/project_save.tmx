@@ -35864,6 +35864,21 @@ manipulated by the program are available.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Type systems have traditionally fallen into two quite different camps: static type systems, where
+every program expression must have a type computable before the execution of the program, and
+dynamic type systems, where nothing is known about types until run time, when the actual values
+manipulated by the program are available. Object orientation allows some flexibility in statically
+typed languages by letting code be written without the precise types of values being known at
+compile time. The ability to write code that can operate on different types is called polymorphism.
+All code in classic dynamically typed languages is polymorphic: only by explicitly checking types,
+or when objects fail to support operations at run-time, are the types of any values ever restricted.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T123608Z" creationid="hsugawa8651" creationdate="20181121T123608Z">
+        <seg>型システムは伝統的にまったく異なる2つの陣営に分類されてきました。静的型システムと動的型システムです。 静的型システムでは、すべてのプログラムの式は、実行前に型が算出可能でなくてはなりません。 動的型システムでは、処理するデータが利用可能になる実行時まで、型についてなにもわかりません。 静的型システムでもオブジェクト指向ではある程度は柔軟で、コンパイル時に値の正確な型がわからなくても プログラムを書くことができます。 異なる型に対して動作可能なプログラムを記述できる能力を多相性[訳注1]_といいます。 古典的な動的型付言語はすべて多相的です。 型に制約が生じるのは、明示的に型検査を行う場合か、オブジェクトが実行時に操作に対応できなくなった場合 くらいのものでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Type variables can be restricted with subtype relations.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083713Z" creationid="hsugawa8651" creationdate="20181121T083713Z">
