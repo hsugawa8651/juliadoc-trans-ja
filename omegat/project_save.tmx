@@ -9927,8 +9927,8 @@ format for displaying an object by overloading a three-argument form of &lt;x9/&
         <seg>Although
 they have different representation sizes, &lt;x29/&gt;Int8&lt;x30/&gt;, &lt;x31/&gt;Int16&lt;x32/&gt;, &lt;x33/&gt;Int32&lt;x34/&gt;, &lt;x35/&gt;Int64&lt;x36/&gt; and &lt;x37/&gt;Int128&lt;x38/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125321Z" creationid="hsugawa8651" creationdate="20181120T144251Z">
-        <seg> Int8、Int16、Int32、Int64、Int128 は表現のサイズは異なりますが、すべて符号付き整数型という点で共通しています。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125613Z" creationid="hsugawa8651" creationdate="20181120T144251Z">
+        <seg>&lt;x29/&gt;Int8&lt;x30/&gt;、&lt;x31/&gt;Int16&lt;x32/&gt;、&lt;x33/&gt;Int32&lt;x34/&gt;、&lt;x35/&gt;Int64&lt;x36/&gt;、&lt;x37/&gt;Int128&lt;x38/&gt; は表現のサイズは異なりますが、すべて符号付き整数型という点で共通しています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -17813,7 +17813,7 @@ sums a series without allocating memory:</seg>
 denominator algorithm works for all kinds of integers, but will not work for floating-point
 numbers.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144334Z" creationid="hsugawa8651" creationdate="20181120T144334Z">
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125431Z" creationid="hsugawa8651" creationdate="20181120T144334Z">
         <seg>たとえば、最大公約数を求めるアルゴリズムはすべての種類の整数で動作しますが、浮動小数点数では動作しないでしょう。 </seg>
       </tuv>
     </tu>
@@ -22512,8 +22512,8 @@ object-oriented programming.</seg>
 a piece of code to make sense, for example, only if its arguments are some kind of integer,
 but not really depend on what particular &lt;x16/&gt;kind&lt;x17/&gt; of integer.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144319Z" creationid="hsugawa8651" creationdate="20181120T144319Z">
-        <seg>あるコードが意図せず動作可能である、ということはよくあることで、たとえば、関数の引数を整数型のなにかに指定していても、じつのところ、特定の整数の種類に依存しない場合などです。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125352Z" creationid="hsugawa8651" creationdate="20181120T144319Z">
+        <seg>あるコードが意図せず動作可能である、ということはよくあることで、たとえば、関数の引数を整数型のなにかに指定していても、じつのところ、特定の整数の種類に依存しない場合などです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33616,8 +33616,8 @@ extra build steps, and also allows true Lisp-style macros operating at the level
         <seg>This allows you, for example, to easily program to any type
 that is an integer, without restricting an algorithm to a specific type of integer.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144347Z" creationid="hsugawa8651" creationdate="20181120T144347Z">
-        <seg>こうすると、例えば、あるアルゴリズムを整数の特定の型に制限することなく、任意の型の整数に対して簡単にプログラムすることができます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125425Z" creationid="hsugawa8651" creationdate="20181120T144347Z">
+        <seg>こうすると、例えば、あるアルゴリズムを整数の特定の型に制限することなく、任意の型の整数に対して簡単にプログラムすることができます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -35978,8 +35978,8 @@ arguments, but with generated functions this is impossible.</seg>
 &lt;x6/&gt;UInt64&lt;x7/&gt; and &lt;x8/&gt;UInt128&lt;x9/&gt; are all unsigned integer types, while &lt;x10/&gt;Float16&lt;x11/&gt;, &lt;x12/&gt;Float32&lt;x13/&gt; and
 &lt;x14/&gt;Float64&lt;x15/&gt; are distinct in being floating-point types rather than integers.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144308Z" creationid="hsugawa8651" creationdate="20181120T144308Z">
-        <seg> 同様にUInt8、UInt16、UInt32、 UInt64、UInt128はすべて、符号なし整数型であり、 一方、Float16、Float32、Float64は浮動小数点型で、整数型とは別物です。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125543Z" creationid="hsugawa8651" creationdate="20181120T144308Z">
+        <seg>同様にUInt8&lt;x1/&gt;、&lt;x2/&gt;UInt16&lt;x3/&gt;、&lt;x4/&gt;UInt32&lt;x5/&gt;、 &lt;x6/&gt;UInt64&lt;x7/&gt;、&lt;x8/&gt;UInt128&lt;x9/&gt;はすべて、符号なし整数型であり、 一方、&lt;x10/&gt;Float16&lt;x11/&gt;、&lt;x12/&gt;Float32&lt;x13/&gt;、&lt;x14/&gt;Float64&lt;x15/&gt;は浮動小数点型で、整数型とは別物です。 </seg>
       </tuv>
     </tu>
     <tu>
