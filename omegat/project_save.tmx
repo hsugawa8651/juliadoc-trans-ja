@@ -10974,8 +10974,8 @@ is appended to, or else a &lt;x1/&gt;`MethodError`&lt;x2/&gt; is raised.</seg>
 a method called &lt;x1/&gt;myplus&lt;x2/&gt; specifically for two &lt;x3/&gt;Int&lt;x4/&gt; arguments based on the generic function given
 above, i.e., it implicitly defines and compiles:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145007Z" creationid="hsugawa8651" creationdate="20181120T145007Z">
-        <seg>上記のメソッドより適切なものが見つからない場合は、引き続きJuliaは内部的にmyplusという名のメソッドを、上記の汎化関数に、2つの引数をIntに特化した上で、定義とコンパイルを行います。つまり、暗黙的に定義とコンパイルをおこないます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T131602Z" creationid="hsugawa8651" creationdate="20181120T145007Z">
+        <seg>上記のメソッドより適切なものが見つからない場合は、引き続きJuliaは内部的に&lt;x1/&gt;myplus&lt;x2/&gt; という名のメソッドを、上記の汎化関数に、2つの引数を&lt;x3/&gt;Int&lt;x4/&gt;に特化した上で、定義とコンパイルを行います。つまり、暗黙的に定義とコンパイルをおこないます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18764,8 +18764,8 @@ and macro-definitions.</seg>
         <seg>Hence, &lt;x13/&gt;AbstractFloat&lt;x14/&gt; is a proper subtype of &lt;x15/&gt;Real&lt;x16/&gt;, including only
 floating-point representations of real numbers.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130609Z" creationid="hsugawa8651" creationdate="20181120T144659Z">
-        <seg> したがって、&lt;x13/&gt;AbstractFloat&lt;x14/&gt;は&lt;x15/&gt;Real&lt;x16/&gt;の真のサブタイプで、実数のうち浮動小数点数の表現のみを含みます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T131508Z" creationid="hsugawa8651" creationdate="20181120T144659Z">
+        <seg>したがって、&lt;x13/&gt;AbstractFloat&lt;x14/&gt;は&lt;x15/&gt;Real&lt;x16/&gt;の真のサブタイプで、実数のうち浮動小数点数の表現のみを含みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22274,8 +22274,8 @@ the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
         <seg>Integers are further subdivided into
 &lt;x17/&gt;`Signed`&lt;x18/&gt; and &lt;x19/&gt;`Unsigned`&lt;x20/&gt; varieties.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130634Z" creationid="hsugawa8651" creationdate="20181120T144712Z">
-        <seg> 整数はさらに&lt;x17/&gt;`Signed`&lt;x18/&gt;  と&lt;x19/&gt;`Unsigned`&lt;x20/&gt;  に細分されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T131511Z" creationid="hsugawa8651" creationdate="20181120T144712Z">
+        <seg>整数はさらに&lt;x17/&gt;`Signed`&lt;x18/&gt;  と&lt;x19/&gt;`Unsigned`&lt;x20/&gt;  に細分されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23099,8 +23099,8 @@ native integer types respectively:</seg>
         <seg>Julia also has a predefined abstract
 "bottom" type, at the nadir of the type graph, which is written as &lt;x5/&gt;Union{}&lt;x6/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130317Z" creationid="hsugawa8651" creationdate="20181120T144533Z">
-        <seg> またJuliaには、事前に定義された抽象型の「ボトム」があり、型のグラフの最下位にあって、"bottom" type, at the nadir of the type graph, which is written as &lt;x5/&gt;Union{}&lt;x6/&gt;と書きます。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T131457Z" creationid="hsugawa8651" creationdate="20181120T144533Z">
+        <seg>またJuliaには、事前に定義された抽象型の「ボトム」があり、型のグラフの最下位にあって、"bottom" type, at the nadir of the type graph, which is written as &lt;x5/&gt;Union{}&lt;x6/&gt;と書きます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -33525,8 +33525,8 @@ a 1-tuple containing &lt;x9/&gt;Cstring&lt;x10/&gt;:</seg>
 name can be optionally followed by &lt;x5/&gt;&lt;:&lt;x6/&gt; and an already-existing type, indicating that the newly
 declared abstract type is a subtype of this "parent" type.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144448Z" creationid="hsugawa8651" creationdate="20181120T144448Z">
-        <seg> 必要に応じて、この名前の後に&lt;:と既存の型を続けた場合、新たに宣言された抽象型がこの既存の型を「親」とするサブタイプであることを意味します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T131453Z" creationid="hsugawa8651" creationdate="20181120T144448Z">
+        <seg>必要に応じて、この名前の後に&lt;:と既存の型を続けた場合、新たに宣言された抽象型がこの既存の型を「親」とするサブタイプであることを意味します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -36864,8 +36864,8 @@ the &lt;x3/&gt;::&lt;x4/&gt; operator means something a bit different: it declar
 specified type, like a type declaration in a statically-typed language such as C. Every value
 assigned to the variable will be converted to the declared type using &lt;x5/&gt;`convert()`&lt;x6/&gt;:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143952Z" creationid="hsugawa8651" creationdate="20181120T143952Z">
-        <seg>代入文の左側の変数や、local宣言の一部に追加されると、::演算子の意味が少し変わります。 つまり、C言語のような静的型付き言語の型宣言のように、常に変数は指定した型であるという宣言になります。 変数に代入される値はすべて、宣言された型に convert() を使って変換されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T131403Z" creationid="hsugawa8651" creationdate="20181120T143952Z">
+        <seg>代入文の左側の変数や、 &lt;x1/&gt;local&lt;x2/&gt;宣言の一部に追加されると、 &lt;x3/&gt;::&lt;x4/&gt; 演算子の意味が少し変わります。 つまり、C言語のような静的型付き言語の型宣言のように、常に変数は指定した型であるという宣言になります。 変数に代入される値はすべて、宣言された型に &lt;x5/&gt;`convert()`&lt;x6/&gt; を使って変換されます。</seg>
       </tuv>
     </tu>
     <tu>
