@@ -7878,6 +7878,15 @@ exec julia --color=yes --startup-file=no -e 'include(popfirst!(ARGS))' \
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x1/&gt;Array{T} where T&lt;:Integer&lt;x2/&gt; refers to all arrays whose element type is some kind of
+&lt;x3/&gt;`Integer`&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083719Z" creationid="hsugawa8651" creationdate="20181121T083719Z">
+        <seg> Array{T} where T&lt;:Integerは、配列で要素の型がIntegerのいずれかになるものすべてを指しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x1/&gt;IndexLinear()&lt;x2/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022821Z" creationid="hsugawa8651" creationdate="20181113T022821Z">
@@ -8301,6 +8310,15 @@ indirectly.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160440Z" creationid="hsugawa8651" creationdate="20181109T160440Z">
         <seg>&lt;x8/&gt;'view'&lt;x9/&gt;は、入力インデックスベクトルを &lt;x10/&gt;サブアレイ&lt;x11/&gt;オブジェクトで、後でオリジナルの配列をインデックス化するために使用できます。 間接的に。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;x9/&gt;Array{T} where Int&lt;:T&lt;:Number&lt;x10/&gt; refers to all arrays of &lt;x11/&gt;`Number`&lt;x12/&gt;s that are able to
+contain &lt;x13/&gt;Int&lt;x14/&gt;s (since &lt;x15/&gt;T&lt;x16/&gt; must be at least as big as &lt;x17/&gt;Int&lt;x18/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083744Z" creationid="hsugawa8651" creationdate="20181121T083744Z">
+        <seg>Array{T} where Int&lt;:T&lt;:Numberは Numberの配列でIntを含みうるものすべてを指します（少なくとも、T はInt以上の大きさでなければなりません）。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -9219,8 +9237,8 @@ is written to all referenced locations of &lt;x6/&gt;A&lt;x7/&gt;.</seg>
       <tuv lang="EN-US">
         <seg>A&lt;x1/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132601Z" creationid="hsugawa8651" creationdate="20181113T132601Z">
-        <seg>A&lt;x1/&gt;.</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083624Z" creationid="hsugawa8651" creationdate="20181113T132601Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
@@ -10397,6 +10415,14 @@ library:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T224014Z" creationid="hsugawa8651" creationdate="20181109T224014Z">
         <seg>完全ではあるが単純な例として、以下の呼び出しは標準Cから&lt;x1/&gt;クロック&lt;x2/&gt;関数を呼び出します。 ライブラリ:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As a consequence, &lt;x11/&gt;T1&lt;x12/&gt; can be constructed with a zero-argument constructor &lt;x13/&gt;a=T1()&lt;x14/&gt; but &lt;x15/&gt;T2&lt;x16/&gt; cannot.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083903Z" creationid="hsugawa8651" creationdate="20181121T083903Z">
+        <seg>したがって、T1は引数のないコンストラクタでa=T1()のように構築することはできますが、T2ではできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17040,6 +17066,16 @@ signature for Windows:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example &lt;x3/&gt;Tuple{T,Array{S}} where S&lt;:AbstractArray{T} where T&lt;:Real&lt;x4/&gt; refers to 2-tuples
+whose first element is some &lt;x5/&gt;`Real`&lt;x6/&gt;, and whose second element is an &lt;x7/&gt;Array&lt;x8/&gt; of any
+kind of array whose element type contains the type of the first tuple element.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083812Z" creationid="hsugawa8651" creationdate="20181121T083812Z">
+        <seg>例えば、Tuple{T,Array{S}} where S&lt;:AbstractArray{T} where T&lt;:Realは、第1要素はRealのいずれかで、 第2要素は、各要素が第1要素の型を含む型の配列である配列の、2要素-タプルを参照します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example &lt;x4/&gt;Ptr&lt;x5/&gt; could be more
 accurately written as &lt;x6/&gt;Ptr{T} where T&lt;x7/&gt;, meaning all values whose type is &lt;x8/&gt;Ptr{T}&lt;x9/&gt; for some value
 of &lt;x10/&gt;T&lt;x11/&gt;.</seg>
@@ -17102,6 +17138,15 @@ a 2-element tuple type resembles the following immutable type:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082934Z" creationid="hsugawa8651" creationdate="20181121T082934Z">
         <seg>たとえば、2要素タプル型は、次の複合型に似ています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example,
+consider the two types created by the following declarations:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083824Z" creationid="hsugawa8651" creationdate="20181121T083824Z">
+        <seg>たとえば、次の宣言で作成される2つの型を考えてみましょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17584,6 +17629,15 @@ array with size &lt;x7/&gt;size(I)&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131841Z" creationid="hsugawa8651" creationdate="20181113T131841Z">
         <seg>たとえば、疎な配列コードには次の定義があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, the type of all
+1-dimensional arrays can be written as &lt;x14/&gt;Array{T,1} where T&lt;x15/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083706Z" creationid="hsugawa8651" creationdate="20181121T083706Z">
+        <seg> 例えば、すべての1次元配列の型は、Array{T,1} where Tと書くことができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24704,6 +24758,14 @@ they can modify their parent scope's &lt;x3/&gt;local&lt;x4/&gt; variables:</seg
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that &lt;x5/&gt;T2&lt;x6/&gt; is an abstract type, e.g., &lt;x7/&gt;Array{Array{Int,1},1} &lt;: T2&lt;x8/&gt;, whereas &lt;x9/&gt;T1&lt;x10/&gt; is a concrete type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083853Z" creationid="hsugawa8651" creationdate="20181121T083853Z">
+        <seg> T2は抽象型であり、Array{Array{Int,1},1} &lt;: T2であるのに対して、T1は具象型である点に注意してください。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note that &lt;x9/&gt;ARGS&lt;x10/&gt; is
 also set when a Julia expression is given using the &lt;x11/&gt;-e&lt;x12/&gt; option on the command line (see the
 &lt;x13/&gt;julia&lt;x14/&gt; help output below) but &lt;x15/&gt;PROGRAM_FILE&lt;x16/&gt; will be empty.</seg>
@@ -25373,6 +25435,15 @@ into a function call as individual arguments.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165309Z" creationid="hsugawa8651" creationdate="20181118T165309Z">
         <seg>一方、&lt;x1/&gt;記号は&lt;x2/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>On the other hand, type &lt;x3/&gt;T2&lt;x4/&gt; defines a 1-dimensional array of 1-dimensional arrays all of whose inner arrays must have the
+same type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083847Z" creationid="hsugawa8651" creationdate="20181121T083847Z">
+        <seg>一方、型T2は、すべての内側の配列の型が等しい1次元配列の1次元配列を定義します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27314,6 +27385,14 @@ outer local &lt;x5/&gt;x&lt;x6/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since &lt;x1/&gt;where&lt;x2/&gt; expressions nest, type variable bounds can refer to outer type variables.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083802Z" creationid="hsugawa8651" creationdate="20181121T083802Z">
+        <seg>where式はネストするので、型変数を限定する式は外側の型変数を参照することができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since &lt;x5/&gt;Zebra&lt;x6/&gt; does not appear in the project file, the import will fail even though &lt;x7/&gt;Zebra&lt;x8/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121144Z" creationid="hsugawa8651" creationdate="20181118T121144Z">
@@ -27563,6 +27642,14 @@ which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T040309Z" creationid="hsugawa8651" creationdate="20181120T000903Z">
         <seg>&lt;x1/&gt;2^3x&lt;x2/&gt;  は &lt;x3/&gt;2^(3x)&lt;x4/&gt;,として 解析され、&lt;x5/&gt;2x^3&lt;x6/&gt; は &lt;x7/&gt;2*(x^3)&lt;x8/&gt;として解析されます。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So &lt;x6/&gt;A{B,C}&lt;x7/&gt; is equivalent to &lt;x8/&gt;A{B}{C}&lt;x9/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083640Z" creationid="hsugawa8651" creationdate="20181121T083640Z">
+        <seg> よってA{B,C}とA{B}{C}は同等です。 こ</seg>
       </tuv>
     </tu>
     <tu>
@@ -29005,6 +29092,14 @@ is only defined for pairs of numbers.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124740Z" creationid="hsugawa8651" creationdate="20181118T124740Z">
         <seg>&lt;x1/&gt;try/catch&lt;x2/&gt;ステートメントでは、&lt;x3/&gt;Exception&lt;x4/&gt;sをテストすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;where&lt;x2/&gt; keyword itself can be nested inside a more complex declaration.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083820Z" creationid="hsugawa8651" creationdate="20181121T083820Z">
+        <seg>whereキーワード自体は、より複雑な宣言の中でネストすることができます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -31269,8 +31364,8 @@ of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, e
       <tuv lang="EN-US">
         <seg>The result is expected to be another &lt;x2/&gt;UnionAll&lt;x3/&gt; type, into which &lt;x4/&gt;C&lt;x5/&gt; is then substituted.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083621Z" creationid="hsugawa8651" creationdate="20181121T083621Z">
-        <seg>その結果は別の全合併型になることと想定されているので、Cで置換します。 よってA{B,C}とA{B}{C}は同等です。 これはArray{Float64}のように、型を部分的にインスタンス化することができる理由の説明となっています。 最初のパラメータの値は固定されていますが、2番目の値はすべてのとりうる値にまたがっているからです。 明示的にwhere構文を使用すると、どんなパラメータの部分集合にでも固定できます。 例えば、すべての1次元配列の型は、Array{T,1} where Tと書くことができます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083633Z" creationid="hsugawa8651" creationdate="20181121T083621Z">
+        <seg>その結果は別の全合併型になることと想定されているので、Cで置換します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -31637,11 +31732,28 @@ converted to that type using &lt;x6/&gt;`convert`&lt;x7/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The syntax &lt;x19/&gt;where T&gt;:Int&lt;x20/&gt; also works to specify only the lower bound of a type variable,
+and &lt;x21/&gt;Array{&gt;:Int}&lt;x22/&gt; is equivalent to &lt;x23/&gt;Array{T} where T&gt;:Int&lt;x24/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083755Z" creationid="hsugawa8651" creationdate="20181121T083755Z">
+        <seg>構文where T&gt;:Intはまた、型変数の下限のみを指定していて、 Array{&gt;:Int}は、Array{T} where T&gt;:Int同等です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The syntax &lt;x3/&gt;new{T,S}&lt;x4/&gt; allows
 specifying parameters for the type to be constructed, i.e. this call will return a &lt;x5/&gt;SummedArray{T,S}&lt;x6/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124309Z" creationid="hsugawa8651" creationdate="20181118T124309Z">
         <seg>構文&lt;x3/&gt;new{T,S}&lt;x4/&gt;は、次のことを可能にします。 構成するタイプのパラメータを指定します。つまり、この呼び出しは、&lt;x5/&gt;SummedArray{T,S}&lt;x6/&gt;を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The syntax &lt;x5/&gt;Array{&lt;:Integer}&lt;x6/&gt; is a convenient shorthand for &lt;x7/&gt;Array{T} where T&lt;:Integer&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083730Z" creationid="hsugawa8651" creationdate="20181121T083730Z">
+        <seg> 構文Array{&lt;:Integer}はArray{T} where T&lt;:Integerの便利な簡略表記です。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -32256,6 +32368,15 @@ those available for the &lt;c0&gt;&lt;s1&gt;perl&lt;/s1&gt;&lt;/c0&gt; and &lt;c
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T174145Z" creationid="hsugawa8651" creationdate="20181118T174145Z">
         <seg>他の言語（&lt;c0&gt;perl&lt;/c0&gt; や &lt;c1&gt;ruby&lt;/c1&gt; など）のように、Juliaを実行するには様々な方法やオプションがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is a convenient syntax for naming such types, similar to the short form of function
+definition syntax:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083907Z" creationid="hsugawa8651" creationdate="20181121T083907Z">
+        <seg>このような型を命名する便利な構文があり、それは関数定義の短い形の構文と似ています：</seg>
       </tuv>
     </tu>
     <tu>
@@ -33405,6 +33526,15 @@ also have adjacent binary integer representations.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This explains why it is possible to partially instantiate a type, as in &lt;x10/&gt;Array{Float64}&lt;x11/&gt;: the first
+parameter value has been fixed, but the second still ranges over all possible values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083648Z" creationid="hsugawa8651" creationdate="20181121T083648Z">
+        <seg>れはArray{Float64}のように、型を部分的にインスタンス化することができる理由の説明となっています。 最初のパラメータの値は固定されていますが、2番目の値はすべてのとりうる値にまたがっているからです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This expression constructs a name using &lt;x1/&gt;string&lt;x2/&gt;, then substitutes this name into a new &lt;x3/&gt;`ccall`&lt;x4/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152307Z" creationid="hsugawa8651" creationdate="20181117T152307Z">
@@ -33622,6 +33752,14 @@ has a special argument syntax, and is sometimes implied rather than explicitly w
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T011442Z" creationid="hsugawa8651" creationdate="20181120T011442Z">
         <seg>これは、従来のオブジェクト指向言語とは異なります。従来のオブジェクト指向言語では、通常は最初の引数のみに基づいてディスパッチが行われ、最初の引数を特別視して引数に見えないような構文を持つものもあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is equivalent to &lt;x1/&gt;const Vector = Array{T,1} where T&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083918Z" creationid="hsugawa8651" creationdate="20181121T083918Z">
+        <seg>これはconst Vector = Array{T,1} where Tと同等です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -35112,6 +35250,15 @@ automatically (these are called &lt;x3/&gt;default constructors&lt;x4/&gt;).</se
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Type &lt;x1/&gt;T1&lt;x2/&gt; defines a 1-dimensional array of 1-dimensional arrays; each
+of the inner arrays consists of objects of the same type, but this type may vary from one inner array to the next.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083839Z" creationid="hsugawa8651" creationdate="20181121T083839Z">
+        <seg>型T1は、1次元配列を要素とする、1次元配列を定義します。 内側の配列は同じ型のオブジェクトで構成されますが、この型は内側の配列ごとに異なる場合があります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Type &lt;x1/&gt;VecElement{T}&lt;x2/&gt; is intended for building libraries of SIMD operations.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063637Z" creationid="hsugawa8651" creationdate="20181114T063637Z">
@@ -35194,6 +35341,22 @@ manipulated by the program are available.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143007Z" creationid="hsugawa8651" creationdate="20181120T142848Z">
         <seg>型システムは伝統的にまったく異なる2つの陣営に分類されてきました。静的型システムと動的型システムです。 静的型システムでは、すべてのプログラムの式は、実行前に型が算出可能でなくてはなりません。 動的型システムでは、処理するデータが利用可能になる実行時まで、型についてなにもわかりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Type variables can be restricted with subtype relations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083713Z" creationid="hsugawa8651" creationdate="20181121T083713Z">
+        <seg>型変数は、サブタイプの関係をつかって制限することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Type variables can have both lower and upper bounds.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083737Z" creationid="hsugawa8651" creationdate="20181121T083737Z">
+        <seg>型変数は、下限と上限の両方を指定することができます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -35554,6 +35717,14 @@ for the last entry in a conditional chain is an error:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081204Z" creationid="hsugawa8651" creationdate="20181120T081204Z">
         <seg>1よりも小さい、または&lt;x1/&gt;end&lt;x2/&gt;よりも大きい値のインデックスを使用した場合、エラーが出力されます。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using explicit &lt;x12/&gt;where&lt;x13/&gt; syntax, any subset of parameters can be fixed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083654Z" creationid="hsugawa8651" creationdate="20181121T083654Z">
+        <seg>明示的にwhere構文を使用すると、どんなパラメータの部分集合にでも固定できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -36733,6 +36904,16 @@ all type objects as its instances, including, of course, singleton types:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T164850Z" creationid="hsugawa8651" creationdate="20181118T164850Z">
         <seg>&lt;x1/&gt;ブロードキャストされた&lt;x2/&gt;オブジェクトの操作</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Writing &lt;x3/&gt;Vector{Float64}&lt;x4/&gt; is equivalent to writing &lt;x5/&gt;Array{Float64,1}&lt;x6/&gt;, and the umbrella type
+&lt;x7/&gt;Vector&lt;x8/&gt; has as instances all &lt;x9/&gt;Array&lt;x10/&gt; objects where the second parameter -- the number of array
+dimensions -- is 1, regardless of what the element type is.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083930Z" creationid="hsugawa8651" creationdate="20181121T083930Z">
+        <seg> Vector{Float64}と書くのは、Array{Float64,1}と書くのと同等です。 包括型の Vectorは、2番目のパラメータ（配列の次元数）が1である、すべてのArrayオブジェクトを、要素の種類に関係なく、インスタンスとして持ちます。 </seg>
       </tuv>
     </tu>
     <tu>
