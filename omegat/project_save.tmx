@@ -2013,8 +2013,8 @@ operators with special evaluation semantics like &lt;x1/&gt;&amp;&amp;&lt;x2/&gt
         <seg>(There may be a performance issue, however, in the case
 of function arguments that are containers of abstract types; see &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-performance-tips).)</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145101Z" creationid="hsugawa8651" creationdate="20181120T145101Z">
-        <seg>（ただし、関数の引数が抽象型のコンテナである場合は、パフォーマンス上、問題になる可能性があります（[パフォーマンスのヒント]（@ ref man-performance-tips）を参照してください）。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T131723Z" creationid="hsugawa8651" creationdate="20181120T145101Z">
+        <seg>（ただし、関数の引数が抽象型のコンテナである場合は、パフォーマンス上、問題になる可能性があります（ パフォーマンスのヒント &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-performance-tips)を参照してください）。</seg>
       </tuv>
     </tu>
     <tu>
