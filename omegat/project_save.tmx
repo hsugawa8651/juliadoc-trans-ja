@@ -8197,6 +8197,15 @@ from magic.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x5/&gt;Ptr&lt;x6/&gt; itself cannot be a normal data type, since without
+knowing the type of the referenced data the type clearly cannot be used for memory operations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083511Z" creationid="hsugawa8651" creationdate="20181121T083511Z">
+        <seg>Ptr自体は通常のデータ型ではありえません。というのも、参照するデータの型が分からなければ、 明らかに、その型を記憶操作に使用できないからです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x5/&gt;X .+= Y&lt;x6/&gt; etcetera is equivalent to &lt;x7/&gt;X .= X .+ Y&lt;x8/&gt; and results in a fused in-place assignment;
 see also &lt;x9/&gt;&lt;x10/&gt;&lt;x11/&gt;(@ref man-dot-operators).</seg>
       </tuv>
@@ -8727,6 +8736,14 @@ a function is called a &lt;x1/&gt;method&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121329Z" creationid="hsugawa8651" creationdate="20181118T121329Z">
         <seg>注意する一般的な規則は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A few popular languages have singleton types, including Haskell, Scala and Ruby.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083341Z" creationid="hsugawa8651" creationdate="20181121T083341Z">
+        <seg>Haskell、Scala、Rubyなどの人気のある言語には、シングルトン型が備わっています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -10069,6 +10086,15 @@ calls) by copying, whereas a mutable type is passed around by reference.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T080933Z" creationid="hsugawa8651" creationdate="20181121T080933Z">
         <seg>不変型のオブジェクトは、（代入文と関数呼び出しの両方で）コピーを受け渡ししますが、可変型の場合は参照を受け渡しします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And of course, all specific pointer types are subtypes of
+the umbrella &lt;x7/&gt;Ptr&lt;x8/&gt; type:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083434Z" creationid="hsugawa8651" creationdate="20181121T083434Z">
+        <seg>もちろん、個別のポインタ型はすべて、包括型Ptrのサブタイプです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15881,6 +15907,15 @@ following the instructions at
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Each &lt;x14/&gt;where&lt;x15/&gt; introduces a single type variable, so these expressions are nested for types with
+multiple parameters, for example &lt;x16/&gt;Array{T,N} where N where T&lt;x17/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083602Z" creationid="hsugawa8651" creationdate="20181121T083602Z">
+        <seg>それぞれのwhereは型変数を一つ導入するため、こういった式は複数のパラメータを持つ場合、 例えばArray{T,N} where N where Tのように、型に対してネストします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Each kind of environment defines these three maps differently, as detailed in the following sections.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121035Z" creationid="hsugawa8651" creationdate="20181118T121035Z">
@@ -17005,6 +17040,16 @@ signature for Windows:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example &lt;x4/&gt;Ptr&lt;x5/&gt; could be more
+accurately written as &lt;x6/&gt;Ptr{T} where T&lt;x7/&gt;, meaning all values whose type is &lt;x8/&gt;Ptr{T}&lt;x9/&gt; for some value
+of &lt;x10/&gt;T&lt;x11/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083541Z" creationid="hsugawa8651" creationdate="20181121T083541Z">
+        <seg> 例えば、Ptrは、より正確にはPtr{T} where Tと書くことができて、あるTという値によってPtr{T}と書ける型をもつ値すべてを意味します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example &lt;x9/&gt;2^3x&lt;x10/&gt; is parsed as &lt;x11/&gt;2^(3x)&lt;x12/&gt;, and &lt;x13/&gt;2x^3&lt;x14/&gt; is parsed as &lt;x15/&gt;2*(x^3)&lt;x16/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T093824Z" creationid="hsugawa8651" creationdate="20181118T093824Z">
@@ -17372,6 +17417,15 @@ accessing the diagonal elements from the first "page" of &lt;x5/&gt;A&lt;x6/&gt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155710Z" creationid="hsugawa8651" creationdate="20181117T155710Z">
         <seg>たとえば、次のようにコンストラクタメソッドを追加するとします。 &lt;x1/&gt;Foo&lt;x2/&gt;オブジェクトは1つの引数をとり、&lt;x3/&gt;bar&lt;x4/&gt;と&lt;x5/&gt;baz&lt;x6/&gt;の両方で指定された値を使用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, pointers are represented as
+primitive types which would be declared in Julia like this:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083413Z" creationid="hsugawa8651" creationdate="20181121T083413Z">
+        <seg>たとえば、ポインタは原始型として表現できて、Juliaでは以下のように宣言します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18822,6 +18876,14 @@ with &lt;x3/&gt;p&lt;x4/&gt; preceding the base-2 exponent:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082147Z" creationid="hsugawa8651" creationdate="20181121T082147Z">
         <seg>Pointオブジェクトはどのように構成するのでしょうか？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How does this work?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083500Z" creationid="hsugawa8651" creationdate="20181121T083500Z">
+        <seg>これはどのようにして実現しているのでしょうか？ </seg>
       </tuv>
     </tu>
     <tu>
@@ -20534,6 +20596,15 @@ primitive types are all defined in the language itself:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In general usage,
+the term "singleton type" refers to a type whose only instance is a single value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083348Z" creationid="hsugawa8651" creationdate="20181121T083348Z">
+        <seg>通常の用法では、「シングルトン型」という術語は、唯一のインスタンスがで単一の値である型を指します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In general, a broadcast operation is represented by a lazy &lt;x1/&gt;Broadcasted&lt;x2/&gt; container that holds onto
 the function to be applied alongside its arguments.</seg>
       </tuv>
@@ -21282,6 +21353,15 @@ and the next index after that by &lt;x5/&gt;nextind(s,4)&lt;x6/&gt; and so on.</
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T081616Z" creationid="hsugawa8651" creationdate="20181120T081616Z">
         <seg>この場合、&lt;x1/&gt;∀&lt;x2/&gt;  は3バイト文字であるため、インデックス2と3は無効であり、次の有効なインデックスは4になります。 また、この場合、次の有効なインデックスは&lt;x3/&gt;`nextind(s,1)`&lt;x4/&gt;,で求めることができ、その次の有効なインデックスは &lt;x5/&gt;nextind(s,4)&lt;x6/&gt; で計算でき、 その次は...と求めることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this context, the parameter &lt;x12/&gt;T&lt;x13/&gt; is also often called a "type variable" since it is
+like a variable that ranges over types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083549Z" creationid="hsugawa8651" creationdate="20181121T083549Z">
+        <seg>この文脈では、パラメータTは型をまたぐ変数のようなものであるため、よく「型変数」と呼ばれます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -25963,6 +26043,14 @@ MIME types) of user-defined types.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Parametric Primitive Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083404Z" creationid="hsugawa8651" creationdate="20181121T083404Z">
+        <seg>パラメトリック原始型 Parametric Primitive Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Parametric Types</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081412Z" creationid="hsugawa8651" creationdate="20181121T081412Z">
@@ -26188,6 +26276,14 @@ requires using &lt;x3/&gt;llvmcall&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145109Z" creationid="hsugawa8651" creationdate="20181120T145109Z">
         <seg>原始型 Primitive Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Primitive types can also be declared parametrically.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083410Z" creationid="hsugawa8651" creationdate="20181121T083410Z">
+        <seg>原始型にもパラメータをつけて宣言することができます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -28008,6 +28104,14 @@ sharing memory with the original array rather than by copying it. A &lt;x4/&gt;S
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Such a type expresses the &lt;x13/&gt;iterated union&lt;x14/&gt; of types for all values of some parameter.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083527Z" creationid="hsugawa8651" creationdate="20181121T083527Z">
+        <seg>この型は、あるパラメータをすべての値に対して繰り返し合併した型を表現します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Such behaviour can be avoided by using &lt;x7/&gt;ISO_C_BINDING&lt;x8/&gt; and
 including &lt;x9/&gt;bind(c)&lt;x10/&gt; in the definition of the subroutine, which is strongly recommended for
 interoperable code.</seg>
@@ -29202,6 +29306,15 @@ handled by &lt;x1/&gt;similar&lt;x2/&gt;, using the Broadcasted object as its fi
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131302Z" creationid="hsugawa8651" creationdate="20181113T131302Z">
         <seg>結果配列の実際の割り当ては次のとおりです。 ブロードキャストオブジェクトを最初の引数として使用して、&lt;x1/&gt;類似の&lt;x2/&gt;で処理されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The answer is that &lt;x7/&gt;Ptr&lt;x8/&gt; (or other parametric types like &lt;x9/&gt;Array&lt;x10/&gt;) is a different kind of type called a
+&lt;x11/&gt;UnionAll&lt;x12/&gt; type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083519Z" creationid="hsugawa8651" creationdate="20181121T083519Z">
+        <seg>答えは、Ptrの型（また他のArrayのようなパラメトリック型）は、全合併型と呼ばれる種類の異なる型です 。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -31154,6 +31267,14 @@ of the variable ranges &lt;x13/&gt;rx&lt;x14/&gt;, &lt;x15/&gt;ry&lt;x16/&gt;, e
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The result is expected to be another &lt;x2/&gt;UnionAll&lt;x3/&gt; type, into which &lt;x4/&gt;C&lt;x5/&gt; is then substituted.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083621Z" creationid="hsugawa8651" creationdate="20181121T083621Z">
+        <seg>その結果は別の全合併型になることと想定されているので、Cで置換します。 よってA{B,C}とA{B}{C}は同等です。 これはArray{Float64}のように、型を部分的にインスタンス化することができる理由の説明となっています。 最初のパラメータの値は固定されていますが、2番目の値はすべてのとりうる値にまたがっているからです。 明示的にwhere構文を使用すると、どんなパラメータの部分集合にでも固定できます。 例えば、すべての1次元配列の型は、Array{T,1} where Tと書くことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The result of indexing an &lt;x1/&gt;AbstractArray&lt;x2/&gt; can itself be an array (for instance when indexing by
 an &lt;x3/&gt;AbstractRange&lt;x4/&gt;).</seg>
       </tuv>
@@ -31398,6 +31519,17 @@ determined by the number of hex digits used:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The slightly odd feature of these declarations as compared to typical parametric composite types,
+is that the type parameter &lt;x1/&gt;T&lt;x2/&gt; is not used in the definition of the type itself -- it is just
+an abstract tag, essentially defining an entire family of types with identical structure, differentiated
+only by their type parameter.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083426Z" creationid="hsugawa8651" creationdate="20181121T083426Z">
+        <seg>一般的なパラメトリック複合型と比べて、この宣言のちょっと変な特徴は、型パラメータTが型自体の定義に使われていないことです。 つまり、型パラメータは抽象的なタグであり、本質的に同一の構造である型の族全体をに定義し、型パラメータだけで差別化されています。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The so-called "ternary operator", &lt;c0&gt;?:&lt;/c0&gt;, is closely related to the &lt;c1&gt;if&lt;/c1&gt;-&lt;c2&gt;elseif&lt;/c2&gt;-&lt;c3&gt;else&lt;/c3&gt; syntax, but is used where a conditional choice between single expression values is required, as opposed to conditional execution of longer blocks of code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T135027Z" creationid="hsugawa8651" creationdate="20181119T134947Z">
@@ -31585,6 +31717,14 @@ the type &lt;x3/&gt;Point{AbstractString}&lt;x4/&gt; is a "point" whose "coordin
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083200Z" creationid="hsugawa8651" creationdate="20181121T083146Z">
         <seg>型Vararg{T,N}は、ちょうどN個の型Tに対応します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The type application syntax &lt;x1/&gt;A{B,C}&lt;x2/&gt; requires &lt;x3/&gt;A&lt;x4/&gt; to be a &lt;x5/&gt;UnionAll&lt;x6/&gt; type, and first substitutes &lt;x7/&gt;B&lt;x8/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083614Z" creationid="hsugawa8651" creationdate="20181121T083614Z">
+        <seg>型の適用構文A{B,C}には、Aが全合併型であることが必要です。 まずAの一番外側の型変数をBで置換します。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -33609,6 +33749,16 @@ Python, Ruby and Perl, among other dynamic languages.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is useful for writing methods (especially parametric
+ones) whose behavior depends on a type that is given as an explicit argument rather than implied
+by the type of one of its arguments.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083336Z" creationid="hsugawa8651" creationdate="20181121T083336Z">
+        <seg>これが役に立つのは、挙動が型に依存する（特にパラメトリックな）メソッドを書く時で、 しかもその型が勝手に推測されるのではなく、わざわざ引数として与える場合です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is useful in situations
 where the keyword name is computed at runtime.</seg>
       </tuv>
@@ -33736,6 +33886,16 @@ its functions can only accept argument types with a statically-known, fixed sign
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151227Z" creationid="hsugawa8651" creationdate="20181117T151227Z">
         <seg>これは奇妙な制限のように聞こえるかもしれませんが でもCはジュリアのようなダイナミックな言語ではないので その関数は、静的に既知の固定署名を持つ引数型の引数型のみを受け入れることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This meaning
+applies to Julia's singleton types, but with that caveat that only type objects have singleton
+types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083352Z" creationid="hsugawa8651" creationdate="20181121T083352Z">
+        <seg>この意味はJuliaのシングルトン型にも当てはまりますが、型オブジェクトだけがシングルトン型になるという点に注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -34244,6 +34404,15 @@ type:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T020011Z" creationid="hsugawa8651" creationdate="20181120T020011Z">
         <seg> したがって、これは全体として、2つの引数が同じ型であるかどうかを検査するブール関数の定義になっています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thus, &lt;x3/&gt;Ptr{Float64}&lt;x4/&gt; and &lt;x5/&gt;Ptr{Int64}&lt;x6/&gt; are distinct types, even though
+they have identical representations.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083431Z" creationid="hsugawa8651" creationdate="20181121T083431Z">
+        <seg>そのため、Ptr{Float64}とPtr{Int64}は、表現は同一であっても、型としては異なります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -35180,6 +35349,22 @@ standard addressing this problem.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>UnionAll Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083446Z" creationid="hsugawa8651" creationdate="20181121T083446Z">
+        <seg>全合併型 UnionAll Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>UnionAll&lt;x1/&gt; types are usually written using the keyword &lt;x2/&gt;where&lt;x3/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083533Z" creationid="hsugawa8651" creationdate="20181121T083533Z">
+        <seg>全合併型は、通常、キーワードwhereを使って記述されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Unlike &lt;x1/&gt;E&lt;x2/&gt;, which is equivalent to &lt;x3/&gt;e&lt;x4/&gt; in numeric literals for historical reasons, &lt;x5/&gt;F&lt;x6/&gt; is just another
 letter and does not behave like &lt;x7/&gt;f&lt;x8/&gt; in numeric literals.</seg>
       </tuv>
@@ -35285,6 +35470,16 @@ argument types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012151Z" creationid="hsugawa8651" creationdate="20181120T012151Z">
         <seg>今までの例では、引数に型の制約がない、単一のメソッドしかない関数しか定義していませんでした。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Until we discuss &lt;x1/&gt;Parametric Methods&lt;x2/&gt; and &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref conversion-and-promotion), it is difficult to explain
+the utility of the singleton type construct, but in short, it allows one to specialize function
+behavior on specific type &lt;x6/&gt;values&lt;x7/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083325Z" creationid="hsugawa8651" creationdate="20181121T083325Z">
+        <seg>パラメトリックメソッドと変換の議論がすむまで、 シングルトン型がどう役に立つのかを説明するのは難しいですが、手短にいうと、関数の挙動を特定の型の値だけに特化することができるのです。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -35664,6 +35859,15 @@ like &lt;x1/&gt;`in`&lt;x2/&gt;, or &lt;x3/&gt;`mean`&lt;x4/&gt; and &lt;x5/&gt;
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165322Z" creationid="hsugawa8651" creationdate="20181118T165322Z">
         <seg>私たちはすでに、&lt;x1/&gt;Expr&lt;x2/&gt;を返す関数の一例を見てきました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We have said that a parametric type like &lt;x1/&gt;Ptr&lt;x2/&gt; acts as a supertype of all its instances
+(&lt;x3/&gt;Ptr{Int64}&lt;x4/&gt; etc.).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083453Z" creationid="hsugawa8651" creationdate="20181121T083453Z">
+        <seg>Ptrのようなパラメトリック型はすべてのインスタンス（Ptr{Int64}など）のスーパータイプのように振る舞うと前に述べましました。 </seg>
       </tuv>
     </tu>
     <tu>
