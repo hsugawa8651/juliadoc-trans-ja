@@ -8536,6 +8536,14 @@ representation and appropriate arithmetic behaviors, whose numeric value is inte
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A &lt;x1/&gt;DataType&lt;x2/&gt; may be abstract or concrete.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081251Z" creationid="hsugawa8651" creationdate="20181121T081251Z">
+        <seg>DataTypeは抽象型でも具象型でもかまいません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A &lt;x1/&gt;break&lt;x2/&gt; statement inside such a loop exits the entire nest of loops, not just the inner one.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T000428Z" creationid="hsugawa8651" creationdate="20181120T000428Z">
@@ -8606,6 +8614,14 @@ an array and returns a new array containing the resulting values:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142627Z" creationid="hsugawa8651" creationdate="20181120T142612Z">
         <seg>特定の不変の値に名前を与えるために変数を使う、ということはよくあります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A composite type is a &lt;x5/&gt;DataType&lt;x6/&gt; that has field names or is empty (zero size).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081323Z" creationid="hsugawa8651" creationdate="20181121T081323Z">
+        <seg>複合型は、フィールド名を持つか、空（サイズ0）のDataTypeです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9036,6 +9052,15 @@ variable or expression.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133810Z" creationid="hsugawa8651" creationdate="20181117T133810Z">
         <seg>入力タイプのタプル。入力タイプはタプルではなくリテラル・タプルとして記述される必要があります。 変数または式。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A type union is a special abstract type which includes as objects all instances of any of its
+argument types, constructed using the special &lt;x1/&gt;Union&lt;x2/&gt; function:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081401Z" creationid="hsugawa8651" creationdate="20181121T081401Z">
+        <seg>合併型は特殊な抽象型で、引数のいずれかの型のインスタンスすべてをオブジェクトとして含み、特殊な関数Unionを使って構築します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13342,6 +13367,15 @@ code in Julia are represented by Julia data structures, powerful &lt;x3/&gt;refl
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Because of these shared properties, these types are internally represented as instances of the
+same concept, &lt;x1/&gt;DataType&lt;x2/&gt;, which is the type of any of these types:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081241Z" creationid="hsugawa8651" creationdate="20181121T081241Z">
+        <seg>特徴が共通しているため、これらの型は内部的に同じコンセプトDataTypeのインスタンスとして表現されます。 DataTypeはこれらの型のいずれかのことです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because of variable-length encodings, the number of characters in a string (given by &lt;x1/&gt;`length(s)`&lt;x2/&gt;)
 is not always the same as the last index.</seg>
       </tuv>
@@ -15412,6 +15446,14 @@ globals.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Declared Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081130Z" creationid="hsugawa8651" creationdate="20181121T081130Z">
+        <seg>宣言型 Declared Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Default definition&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T094057Z" creationid="hsugawa8651" creationdate="20181118T094057Z">
@@ -16101,6 +16143,14 @@ of the operation back into its left operand.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063812Z" creationid="hsugawa8651" creationdate="20181113T132351Z">
         <seg>全ての二項演算子とビット単位の演算子には、被演算子の処理の結果を代入できる更新機能があります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Every concrete value in the system is an instance of some &lt;x1/&gt;DataType&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081343Z" creationid="hsugawa8651" creationdate="20181121T081343Z">
+        <seg>システムのあらゆる具体的な値は、なんらかのDataTypeのインスタンスです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19315,6 +19365,15 @@ call might look like &lt;x3/&gt;plot(x, y, width=2)&lt;x4/&gt;, where we have ch
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T132331Z" creationid="hsugawa8651" creationdate="20181120T132235Z">
         <seg>キーワード引数を使えば、&lt;x3/&gt;plot(x, y, width=2)&lt;x4/&gt;のように書いて、線の幅だけを指定する、といったことができるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If it is concrete, it has a specified size, storage
+layout, and (optionally) field names.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081259Z" creationid="hsugawa8651" creationdate="20181121T081259Z">
+        <seg>具象型であれば、特定のサイズ、 格納領域の配置 があり、（場合によっては）フィールド名もあります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -22720,9 +22779,8 @@ type of a given variable.</seg>
         <seg>Julia sidesteps the possibility of creating functions with unknown effects in this scenario
 by forbidding modification of fields of objects passed around by copying.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081101Z" creationid="hsugawa8651" creationdate="20181121T081101Z">
-        <seg>Julia sidesteps the possibility of creating functions with unknown effects in this scenario
-by forbidding modification of fields of objects passed around by copying.</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081118Z" creationid="hsugawa8651" creationdate="20181121T081101Z">
+        <seg>Juliaでは、こんな場合に関数の引数がどう作用するのか分からなくなるのを避けるため、オブジェクトをコピー渡しする際のフィールドの変更は禁止されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25578,6 +25636,14 @@ MIME types) of user-defined types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123823Z" creationid="hsugawa8651" creationdate="20181118T123823Z">
         <seg>パラメトリックコンストラクタ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Parametric Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081412Z" creationid="hsugawa8651" creationdate="20181121T081412Z">
+        <seg>パラメトリック型 Parametric Types</seg>
       </tuv>
     </tu>
     <tu>
@@ -29015,6 +29081,15 @@ implementation instead.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The compilers for many languages have an internal union construct for reasoning about types; Julia
+simply exposes it to the programmer.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081405Z" creationid="hsugawa8651" creationdate="20181121T081405Z">
+        <seg>多くの言語のコンパイラには、型推論のための内部的な合併構造があります。Juliaは単にそれをプログラマに公開しているだけです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The complete list of trigonometric functions with degree variants is:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T074656Z" creationid="hsugawa8651" creationdate="20181118T100128Z">
@@ -31006,6 +31081,14 @@ into rationals by supplying a value of &lt;x4/&gt;1&lt;x5/&gt; as the denominato
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The three kinds of types discussed in the previous three sections are actually all closely related.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081151Z" creationid="hsugawa8651" creationdate="20181121T081136Z">
+        <seg>前述の3セクションで説明した3種の型は、実のところ、すべて密接に関連しています。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The traditional function
 declaration syntax demonstrated above is equivalent to the following compact "assignment form":</seg>
       </tuv>
@@ -32009,6 +32092,14 @@ can be seen using the &lt;x3/&gt;bits&lt;x4/&gt; function: :</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>They are explicitly declared.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081145Z" creationid="hsugawa8651" creationdate="20181121T081145Z">
+        <seg>明示的に宣言されている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>They can
 contain &lt;x1/&gt;"&lt;x2/&gt; symbols without escaping.</seg>
       </tuv>
@@ -32056,6 +32147,30 @@ and can be converted to/from the latter via &lt;x4/&gt;Array(bitarray)&lt;x5/&gt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>They have explicitly declared supertypes.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081222Z" creationid="hsugawa8651" creationdate="20181121T081203Z">
+        <seg>明示的にスーパータイプを宣言している。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They have names.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081211Z" creationid="hsugawa8651" creationdate="20181121T081211Z">
+        <seg>名前がある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They may have parameters.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081230Z" creationid="hsugawa8651" creationdate="20181121T081230Z">
+        <seg>パラメータを持ってもよい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>They need not be of the same type, so long as they are each numeric values.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T012816Z" creationid="hsugawa8651" creationdate="20181120T012816Z">
@@ -32087,6 +32202,14 @@ that is sometimes referred to as pointwise indexing.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155651Z" creationid="hsugawa8651" creationdate="20181109T155651Z">
         <seg>コレクションを表します。 各スパン&lt;x3/&gt;N&lt;x4/&gt;の各次元を使用可能にするスカラー指数のことで、索引の形式が可能になります。 ポイントワイズインデックスと呼ばれることもあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They share the same key properties:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081155Z" creationid="hsugawa8651" creationdate="20181121T081142Z">
+        <seg>これらは重要な特徴が共通しています：</seg>
       </tuv>
     </tu>
     <tu>
@@ -33514,6 +33637,15 @@ functions can be called directly from Julia without any "glue" code, code genera
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Thus a bits type is a &lt;x3/&gt;DataType&lt;x4/&gt; with nonzero size, but
+no field names.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081320Z" creationid="hsugawa8651" creationdate="20181121T081320Z">
+        <seg>そして、原始型は、サイズが0ではなく、フィールド名を持たないDataTypeです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Thus far, we have presented only examples of functions defined
 with a single method, applicable to all types of arguments.</seg>
       </tuv>
@@ -34231,6 +34363,14 @@ automatically (these are called &lt;x3/&gt;default constructors&lt;x4/&gt;).</se
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151219Z" creationid="hsugawa8651" creationdate="20181117T151219Z">
         <seg>タイプパラメータ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Type Unions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081350Z" creationid="hsugawa8651" creationdate="20181121T081350Z">
+        <seg>合併型 Type Unions</seg>
       </tuv>
     </tu>
     <tu>
