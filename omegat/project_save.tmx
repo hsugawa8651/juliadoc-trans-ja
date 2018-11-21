@@ -24386,6 +24386,14 @@ dot-notation, i.e. each module is a so-called &lt;x5/&gt;namespace&lt;x6/&gt;.</
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>More about types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T123142Z" creationid="hsugawa8651" creationdate="20181121T123142Z">
+        <seg>[型](@id man-types)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>More concrete examples
 can be found within the &lt;x25/&gt;&lt;x26/&gt;&lt;x27/&gt;(@ref man-interface-strided-arrays).</seg>
       </tuv>
