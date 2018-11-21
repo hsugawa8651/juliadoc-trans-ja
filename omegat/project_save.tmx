@@ -24294,8 +24294,8 @@ array of half the size of the input array – and is typically not quite as fast
         <seg>Method dispatch is explored in
 detail in &lt;x1/&gt;Methods&lt;x2/&gt;, but is rooted in the type system presented here.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143137Z" creationid="hsugawa8651" creationdate="20181120T143137Z">
-        <seg>メソッド・ディスパッチはメソッドで詳説しますが、根本となるのは、ここに示した型システムなのです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124121Z" creationid="hsugawa8651" creationdate="20181120T143137Z">
+        <seg>ソッド・ディスパッチはメソッドで詳説しますが、根本となるのは、ここに示した型システムなのです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30258,8 +30258,8 @@ of &lt;x3/&gt;`Bool`&lt;x4/&gt; above therefore means that a boolean value takes
       <tuv lang="EN-US">
         <seg>The default behavior in Julia when types are omitted is to allow values to be of any type.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143152Z" creationid="hsugawa8651" creationdate="20181120T143152Z">
-        <seg>型を省略した時は、値がどんな型であっても許されるのが、Juliaのデフォルトの動作です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124127Z" creationid="hsugawa8651" creationdate="20181120T143152Z">
+        <seg>型を省略した時は、値がどんな型であっても許されるのが、Juliaのデフォルトの動作です。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -33801,8 +33801,8 @@ first &lt;x4/&gt;page&lt;x5/&gt; from &lt;x6/&gt;A&lt;x7/&gt; as a separate step
 in generating efficient code, but even more significantly, it allows method dispatch on the types
 of function arguments to be deeply integrated with the language.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143126Z" creationid="hsugawa8651" creationdate="20181120T143126Z">
-        <seg>これは、効率的なコードを生成するのに大いに役立っています。 しかし、さらに重要なのは、関数の引数の型に対するメソッド・ディスパッチが可能になり、この機能がJulia言語に深く統合されていることです。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124109Z" creationid="hsugawa8651" creationdate="20181120T143126Z">
+        <seg>これは、効率的なコードを生成するのに大いに役立っています。 しかし、さらに重要なのは、関数の引数の型に対するメソッド・ディスパッチが可能になり、この機能がJulia言語に深く統合されていることです。 メ</seg>
       </tuv>
     </tu>
     <tu>
@@ -35024,6 +35024,15 @@ since each character in a string must have its own index.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T100726Z" creationid="hsugawa8651" creationdate="20181120T100726Z">
         <seg>したがって、文字列内のそれぞれの文字は固有のインデックスを持つため、  &lt;x4/&gt;length(s) &lt;= endof(s)&lt;x5/&gt;を使用して識別ができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thus,
+one can write many useful Julia functions without ever explicitly using types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124225Z" creationid="hsugawa8651" creationdate="20181121T124136Z">
+        <seg>つまり、型をわざわざ指定しなくても、Juliaなら有用なプログラムを沢山かけるのです。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -36779,8 +36788,8 @@ tuple type is generated on demand:</seg>
 expressiveness is needed, however, it is easy to gradually introduce explicit type annotations
 into previously "untyped" code.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143225Z" creationid="hsugawa8651" creationdate="20181120T143225Z">
-        <seg> しかし必要に応じて、もともと*型指定のなかった**コードに、少しづつ型注釈を書き加えていくのも簡単なのです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124238Z" creationid="hsugawa8651" creationdate="20181120T143225Z">
+        <seg>しかし必要に応じて、もともと*型指定のなかった**コードに、少しづつ型注釈を書き加えていくのも簡単なのです。 </seg>
       </tuv>
     </tu>
     <tu>
