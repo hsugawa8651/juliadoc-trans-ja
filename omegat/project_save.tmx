@@ -8250,6 +8250,15 @@ from magic.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x5/&gt;Nullable{T}&lt;x6/&gt; provides
+a minimal interface designed to ensure that interactions with missing values are safe.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084902Z" creationid="hsugawa8651" creationdate="20181121T084902Z">
+        <seg>Nullable{T}には、欠損値のやりとりが安全にできることを保証するように設計された最小限のインターフェースがあります。 このインタフェースはいくつかの関数から成り立っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x5/&gt;Ptr&lt;x6/&gt; itself cannot be a normal data type, since without
 knowing the type of the referenced data the type clearly cannot be used for memory operations.</seg>
       </tuv>
@@ -9457,6 +9466,23 @@ sets of related concrete types: those concrete types which are their descendants
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T035828Z" creationid="hsugawa8651" creationdate="20181120T035828Z">
         <seg></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Access the value of a &lt;x1/&gt;Nullable&lt;x2/&gt; object with a guarantee that a &lt;x3/&gt;`NullException`&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084920Z" creationid="hsugawa8651" creationdate="20181121T084920Z">
+        <seg>Nullableオブジェクトにアクセスする場合に、オブジェクトの値が欠落している時は、NullExceptionが投げられることを保証します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Access the value of a &lt;x1/&gt;Nullable&lt;x2/&gt; object with a guarantee that a default value of type
+&lt;x3/&gt;T&lt;x4/&gt; will be returned if the object's value is missing.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084926Z" creationid="hsugawa8651" creationdate="20181121T084926Z">
+        <seg>Nullableオブジェクトにアクセスする場合に、オブジェクトの値が欠落している時は、型Tのデフォルト値が返されることを保証します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14378,6 +14404,14 @@ obj2 = MyModule.somefunction(obj1)   &lt;x5/&gt; this time it worked!</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Check if a &lt;x1/&gt;Nullable&lt;x2/&gt; object has a missing value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084913Z" creationid="hsugawa8651" creationdate="20181121T084913Z">
+        <seg>Nullableオブジェクトに欠損値があるかどうかを検査します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Classic examples of primitive
 types are integers and floating-point values.</seg>
       </tuv>
@@ -14811,6 +14845,22 @@ iteration&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142618Z" creationid="hsugawa8651" creationdate="20181120T142618Z">
         <seg>定数Constants</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Construct a &lt;x1/&gt;Nullable&lt;x2/&gt; object.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084907Z" creationid="hsugawa8651" creationdate="20181121T084907Z">
+        <seg>Nullableオブジェクトを構築します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Constructing &lt;x1/&gt;`Nullable`&lt;x2/&gt; objects</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T085031Z" creationid="hsugawa8651" creationdate="20181121T085031Z">
+        <seg>Nullable オブジェクトの生成 Constructing &lt;x1/&gt;`Nullable`&lt;x2/&gt; objects</seg>
       </tuv>
     </tu>
     <tu>
@@ -26561,6 +26611,23 @@ platforms such as Linux.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Perform an operation on the value (if it exists) of a &lt;x1/&gt;Nullable&lt;x2/&gt; object, getting a
+&lt;x3/&gt;Nullable&lt;x4/&gt; result.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084935Z" creationid="hsugawa8651" creationdate="20181121T084935Z">
+        <seg>Nullableオブジェクトの値（存在する場合）に操作を実行し、Nullableの結果を取得します。元が欠損値の場合、結果も欠損値になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Perform general operations on single &lt;x1/&gt;Nullable&lt;x2/&gt; objects, propagating the missing data.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T085046Z" creationid="hsugawa8651" creationdate="20181121T085046Z">
+        <seg>単一のNullableオブジェクトに対して一般的な操作を実行し、欠落しているデータを伝播します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perhaps the best way to tie all these pieces together is to present a real world example of a
 parametric composite type and its constructor methods.</seg>
       </tuv>
@@ -31760,6 +31827,14 @@ an &lt;x3/&gt;AbstractRange&lt;x4/&gt;).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083307Z" creationid="hsugawa8651" creationdate="20181113T083307Z">
         <seg>&lt;x1/&gt;AbstractArray&lt;x2/&gt;のインデックス作成の結果は、それ自体が配列(例えば、インデックス作成の際に)であることができます。 &lt;x3/&gt;AbstractRange&lt;x4/&gt;)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The result will be missing if the original value was missing.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084951Z" creationid="hsugawa8651" creationdate="20181121T084951Z">
+        <seg>Nullableオブジェクトの値（存在する場合）に検査を実行し、Nullableオブジェクト自体が存在しないか、検査が失敗したかの結果を取得します。</seg>
       </tuv>
     </tu>
     <tu>
