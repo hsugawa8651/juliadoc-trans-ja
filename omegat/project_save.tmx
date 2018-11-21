@@ -1901,6 +1901,14 @@ be inlined and thus may have even less overhead than calls to shared library fun
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(Note that &lt;x1/&gt;print(..., z)&lt;x2/&gt; here will call the 2-argument &lt;x3/&gt;show(io, z)&lt;x4/&gt; method.) This results in:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084455Z" creationid="hsugawa8651" creationdate="20181121T084455Z">
+        <seg>（ここでは、print(..., z)は、2引数のshow(io, z)メソッドを呼び出すことに注意してください）。この結果こうなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(Note that unlike &lt;x1/&gt;Int&lt;x2/&gt;, &lt;x3/&gt;Float&lt;x4/&gt; does not exist as a type alias for a specific sized
 &lt;x5/&gt;`AbstractFloat`&lt;x6/&gt;.</seg>
       </tuv>
@@ -1915,6 +1923,17 @@ with a clean workspace, for instance a newly started REPL.)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141412Z" creationid="hsugawa8651" creationdate="20181120T141412Z">
         <seg>（この例と以下のすべては、トップレベルが、新規に起動されたREPLなどの、クリーンなワークスペースを持つグローバルスコープであると想定しています）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Of course, we would have to define lots of other methods, too, to make it act like a
+&lt;x9/&gt;`Number`&lt;x10/&gt;, e.g. &lt;x11/&gt;+&lt;x12/&gt;, &lt;x13/&gt;*&lt;x14/&gt;, &lt;x15/&gt;one&lt;x16/&gt;, &lt;x17/&gt;zero&lt;x18/&gt;, promotion rules and so on.) By default,
+instances of this type display rather simply, with information about the type name and
+the field values, as e.g. &lt;x19/&gt;Polar{Float64}(3.0,4.0)&lt;x20/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084358Z" creationid="hsugawa8651" creationdate="20181121T084358Z">
+        <seg>（もちろん、Number型と同じように動作させるためには、他にも多くのメソッドを定義する必要があるでしょう （例えば、+、 *、 one、 zero、昇格のルールなど）。 デフォルトでは、この型のインスタンスの表示はかなり単純で、型名とフィールド値を知らせるだけの、Polar{Float64}(3.0,4.0)のようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9825,6 +9844,17 @@ file.jl&lt;x8/&gt; to execute a script while being able to catch
     <tu>
       <tuv lang="EN-US">
         <seg>Although
+by default the &lt;x5/&gt;show(io, z)&lt;x6/&gt; function is called in both cases, you can define a &lt;x7/&gt;different&lt;x8/&gt; multi-line
+format for displaying an object by overloading a three-argument form of &lt;x9/&gt;show&lt;x10/&gt; that takes the
+&lt;x11/&gt;text/plain&lt;x12/&gt; MIME type as its second argument (see &lt;x13/&gt;Multimedia I/O&lt;x14/&gt;), for example:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084438Z" creationid="hsugawa8651" creationdate="20181121T084438Z">
+        <seg>の）オブジェクトの一部として表示する時にと 、両方を行いたい場合があります。 デフォルトでは、show(io, z)関数が両方の場合に呼び出されますが、ユーザーが定義した別の複数行の形式を表示することもできます。そのためには、3引数のshow関数で、2番目の引数に、text/plainMIMEタイプ（Multimedia I/O参照）をとるものをオーバーロードします。例えば、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Although
 they have different representation sizes, &lt;x29/&gt;Int8&lt;x30/&gt;, &lt;x31/&gt;Int16&lt;x32/&gt;, &lt;x33/&gt;Int32&lt;x34/&gt;, &lt;x35/&gt;Int64&lt;x36/&gt; and &lt;x37/&gt;Int128&lt;x38/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144251Z" creationid="hsugawa8651" creationdate="20181120T144251Z">
@@ -10122,6 +10152,15 @@ the umbrella &lt;x7/&gt;Ptr&lt;x8/&gt; type:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083434Z" creationid="hsugawa8651" creationdate="20181121T083434Z">
         <seg>もちろん、個別のポインタ型はすべて、包括型Ptrのサブタイプです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Another operation that applies to some types is &lt;x1/&gt;`supertype()`&lt;x2/&gt;, which reveals a type's
+supertype.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084243Z" creationid="hsugawa8651" creationdate="20181121T084243Z">
+        <seg>別の一部の型に対する演算としては、supertype()は型のスーパータイプを示します。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -15569,6 +15608,14 @@ globals.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Custom pretty-printing</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084314Z" creationid="hsugawa8651" creationdate="20181121T084314Z">
+        <seg>独自の出力整形 Custom pretty-printing</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Custom types can similarly specialize
 &lt;x21/&gt;Base.broadcastable&lt;x22/&gt; to define their shape, but they should follow the convention that
 &lt;x23/&gt;collect(Base.broadcastable(x)) == collect(x)&lt;x24/&gt;.</seg>
@@ -17546,6 +17593,15 @@ the constraint that the first number is not greater than the second one.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, suppose we define a type to represent
+complex numbers in polar form:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084329Z" creationid="hsugawa8651" creationdate="20181121T084329Z">
+        <seg>たとえば、極座標形式で複素数を表す型を定義するとします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For example, the &lt;a0&gt;&lt;c1&gt;sqrt()&lt;/c1&gt;&lt;/a0&gt; function throws a &lt;a2&gt;&lt;c3&gt;DomainError&lt;/c3&gt;&lt;/a2&gt; if applied to a negative real value:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T143348Z" creationid="hsugawa8651" creationdate="20181119T143348Z">
@@ -18904,6 +18960,16 @@ can be used in the same (covariant) context of the input argument to a &lt;x11/&
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Here, we've added a custom constructor function so that it can take arguments of different
+&lt;x1/&gt;`Real`&lt;x2/&gt; types and promote them to a common type (see &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref man-constructors)
+and &lt;x6/&gt;&lt;x7/&gt;&lt;x8/&gt;(@ref conversion-and-promotion)).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084344Z" creationid="hsugawa8651" creationdate="20181121T084344Z">
+        <seg>この例では、Real型の異なる引数をとると、それらを共通の型に昇格することができるような、独自のコンストラクタ関数を追加しました （ コンストラクタと変換と昇格を参照)。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Hexadecimal floating-point literals are also valid, but only as &lt;a0&gt;&lt;c1&gt;Float64&lt;/c1&gt;&lt;/a0&gt; values, with &lt;c2&gt;p&lt;/c2&gt; preceding the base-2 exponent:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T190437Z" creationid="hsugawa8651" creationdate="20181118T190437Z">
@@ -20031,6 +20097,24 @@ be different: the second and fourth values would contain &lt;x3/&gt;0&lt;x4/&gt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If we want it to display instead as &lt;x1/&gt;3.0 * exp(4.0im)&lt;x2/&gt;, we would define the following method to
+print the object to a given output object &lt;x3/&gt;io&lt;x4/&gt; (representing a file, terminal, buffer, etcetera;
+see &lt;x5/&gt;Networking and Streams&lt;x6/&gt;):</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084402Z" creationid="hsugawa8651" creationdate="20181121T084402Z">
+        <seg>代わりに3.0 * exp(4.0im)のように表示したい場合は、オブジェクトを出力オブジェクトio（ファイル、端末、バッファなどを表します。Networking and Streams 参照）に出力する次のメソッドを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you apply &lt;x1/&gt;`supertype()`&lt;x2/&gt; to other type objects (or non-type objects), a &lt;x3/&gt;`MethodError`&lt;x4/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084302Z" creationid="hsugawa8651" creationdate="20181121T084302Z">
+        <seg>supertype() を他の型のオブジェクト（又は型ではないオブジェクト）に適用した場合は、MethodError が発生します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you are defining an array type that allows non-traditional indexing (indices that start at
 something other than 1), you should specialize &lt;x1/&gt;`axes`&lt;x2/&gt;.</seg>
       </tuv>
@@ -20965,6 +21049,17 @@ farther away from zero.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T132604Z" creationid="hsugawa8651" creationdate="20181113T132604Z">
         <seg>特に、&lt;x2/&gt;f.(g.(x))&lt;x3/&gt;のようなネストされたドットコール</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In particular, sometimes
+one wants both a verbose multi-line printing format, used for displaying a single object in the
+REPL and other interactive environments, and also a more compact single-line format used for
+&lt;x3/&gt;`print()`&lt;x4/&gt; or for displaying the object as part of another object (e.g. in an array).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084425Z" creationid="hsugawa8651" creationdate="20181121T084425Z">
+        <seg>特に、冗長な複数行印刷形式は、REPLなどの対話環境で単一のオブジェクトを表示する時に、簡単な単一行形式は、オブジェクトを別の（配列など</seg>
       </tuv>
     </tu>
     <tu>
@@ -24144,6 +24239,14 @@ can be found within the &lt;x25/&gt;&lt;x26/&gt;&lt;x27/&gt;(@ref man-interface-
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>More fine-grained control over display of &lt;x1/&gt;Polar&lt;x2/&gt; objects is possible.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084414Z" creationid="hsugawa8651" creationdate="20181121T084414Z">
+        <seg>Polarオブジェクトの表示をより細かく制御することが可能です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>More generally, &lt;x1/&gt;f.(args...)&lt;x2/&gt; is actually equivalent to &lt;x3/&gt;broadcast(f, args...)&lt;x4/&gt;, which allows
 you to operate on multiple arrays (even of different shapes), or a mix of arrays and scalars (see
 &lt;x5/&gt;Broadcasting&lt;x6/&gt;).</seg>
@@ -24350,6 +24453,14 @@ parametric abstract types serve the same purpose with respect to parametric comp
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043215Z" creationid="hsugawa8651" creationdate="20181112T043215Z">
         <seg>Multimedia I/O</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Multimedia I/O&lt;x1/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084547Z" creationid="hsugawa8651" creationdate="20181121T084547Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
@@ -25431,6 +25542,14 @@ indices directly instead of first calling &lt;x13/&gt;`findall`&lt;x14/&gt;.</se
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Often, one wants to customize how instances of a type are displayed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084320Z" creationid="hsugawa8651" creationdate="20181121T084320Z">
+        <seg>型のインスタンスがどのように表示されるかをカスタマイズしたい場合がよくおこります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>On 32-bit architectures, &lt;x1/&gt;`typeof(ans)`&lt;x2/&gt; will be &lt;x3/&gt;`Int32`&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080253Z" creationid="hsugawa8651" creationdate="20181120T080253Z">
@@ -25702,6 +25821,14 @@ generation of default constructors:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T131331Z" creationid="hsugawa8651" creationdate="20181119T131331Z">
         <seg>One-dimensional &lt;a0&gt;&lt;c1&gt;DenseArray&lt;/c1&gt;&lt;/a0&gt; with elements of type &lt;c2&gt;T&lt;/c2&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Only declared types (&lt;x3/&gt;DataType&lt;x4/&gt;) have unambiguous supertypes:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084246Z" creationid="hsugawa8651" creationdate="20181121T084246Z">
+        <seg>宣言型（DataType）のみが明確なスーパータイプを持っています：</seg>
       </tuv>
     </tu>
     <tu>
@@ -28584,6 +28711,16 @@ to hold or acquire any while executing Julia code.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T044738Z" creationid="hsugawa8651" creationdate="20181112T044738Z">
         <seg>Tasks</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Technically,
+the REPL calls &lt;x5/&gt;display(z)&lt;x6/&gt; to display the result of executing a line, which defaults to &lt;x7/&gt;show(STDOUT, MIME("text/plain"), z)&lt;x8/&gt;,
+which in turn defaults to &lt;x9/&gt;show(STDOUT, z)&lt;x10/&gt;, but you should &lt;x11/&gt;not&lt;x12/&gt; define new &lt;x13/&gt;`display()`&lt;x14/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084543Z" creationid="hsugawa8651" creationdate="20181121T084543Z">
+        <seg>技術的には、REPLが、display(z)を呼び出して、実行結果の一行を表示します。 冗長な複数行印刷形式は、show(STDOUT, MIME("text/plain"), z)が 、簡単な単一行形式は、show(STDOUT, z)がそれぞれデフォルトです。 しかし、新しいマルチメディアディスプレイハンドラを定義する場合を除いて（Multimedia I/O 参照）、新たにdisplay()メソッドを定義すべきではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33814,6 +33951,15 @@ define an informal interface that enable many fancier behaviors.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112840Z" creationid="hsugawa8651" creationdate="20181112T112840Z">
         <seg>これは、Julia Base全体で非常に一般的なパターンです。必要なメソッドの集合です。 多くのファン的な振る舞いを可能にするインフォーマルなインターフェースを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is accomplished by
+overloading the &lt;x1/&gt;`show()`&lt;x2/&gt; function.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084326Z" creationid="hsugawa8651" creationdate="20181121T084326Z">
+        <seg>これは、show() 関数のオーバーロードによって実現されます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -57179,6 +57325,14 @@ subsections, and arrays of booleans to select elements at their &lt;x14/&gt;true
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T134826Z" creationid="hsugawa8651" creationdate="20181117T134826Z">
         <seg>ここで、各&lt;x1/&gt;I_k&lt;x2/&gt;はスカラー整数、整数の配列、またはその他のいずれかである。 &lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref manサポートされているインデックス・タイプ)。これには、以下のものが含まれます。 &lt;x6/&gt;「コロン」&lt;x7/&gt;(&lt;x8/&gt;:&lt;x9/&gt;)は、次元全体のすべてのインデックスを選択するために使用されます。 &lt;x10/&gt;a:c&lt;x11/&gt;または&lt;x12/&gt;a:b:c&lt;x13/&gt;to select連続またはストライドされたものを選択するための範囲 サブセクションは、&lt;x14/&gt;真の&lt;x15/&gt;インデックスで選択要素を選択するためのブール演算の配列です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>where the single-line &lt;x1/&gt;show(io, z)&lt;x2/&gt; form is still used for an array of &lt;x3/&gt;Polar&lt;x4/&gt; values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084530Z" creationid="hsugawa8651" creationdate="20181121T084530Z">
+        <seg>単一行のshow(io, z)形式は、依然として、Polarの値の配列に使用されています。 </seg>
       </tuv>
     </tu>
     <tu>
