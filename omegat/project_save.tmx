@@ -1561,8 +1561,8 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
       <tuv lang="EN-US">
         <seg>(@id man-types)</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T142951Z" creationid="hsugawa8651" creationdate="20181120T142951Z">
-        <seg>型 (@id man-types)</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T123406Z" creationid="hsugawa8651" creationdate="20181120T142951Z">
+        <seg>[型](@id man-types)</seg>
       </tuv>
     </tu>
     <tu>
