@@ -27006,8 +27006,9 @@ types of numeric values: &lt;x3/&gt;`Int8`&lt;x4/&gt;, &lt;x5/&gt;`UInt8`&lt;x6/
 &lt;x11/&gt;`Int32`&lt;x12/&gt;, &lt;x13/&gt;`UInt32`&lt;x14/&gt;, &lt;x15/&gt;`Int64`&lt;x16/&gt;, &lt;x17/&gt;`UInt64`&lt;x18/&gt;, &lt;x19/&gt;`Int128`&lt;x20/&gt;,
 &lt;x21/&gt;`UInt128`&lt;x22/&gt;, &lt;x23/&gt;`Float16`&lt;x24/&gt;, &lt;x25/&gt;`Float32`&lt;x26/&gt;, and &lt;x27/&gt;`Float64`&lt;x28/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125310Z" creationid="hsugawa8651" creationdate="20181120T094913Z">
-        <seg>整数と浮動小数点数 で導入した、さまざまな数値の具象型を思い出してください。 Int8、 UInt8、 Int16、 UInt16、 Int32、 UInt32、 Int64、 UInt64、 Int128、 UInt128、 Float16、 Float32、 Float64 です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125900Z" creationid="hsugawa8651" creationdate="20181120T094913Z">
+        <seg>整数と浮動小数点数&lt;x1/&gt;Integers and Floating-Point Numbers&lt;x2/&gt; で導入した、さまざまな数値の具象型を思い出してください。 &lt;x3/&gt;`Int8`&lt;x4/&gt;、 &lt;x5/&gt;`UInt8`&lt;x6/&gt;、 &gt;, &lt;x9/&gt;`UInt16`&lt;x10/&gt;,
+、&lt;x9/&gt;`UInt16`&lt;x10/&gt;、&lt;x11/&gt;`Int32`&lt;x12/&gt;、 &lt;x13/&gt;`UInt32`&lt;x14/&gt;、 &lt;x15/&gt;`Int64`&lt;x16/&gt;、&lt;x17/&gt;`UInt64`&lt;x18/&gt;、 &lt;x19/&gt;`Int128`&lt;x20/&gt;、 &lt;x21/&gt;`UInt128`&lt;x22/&gt;、&lt;x23/&gt;`Float16`&lt;x24/&gt;、 &lt;x25/&gt;`Float32`&lt;x26/&gt;、 &lt;x27/&gt;`Float64`&lt;x28/&gt;です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -35824,8 +35825,8 @@ of the inner arrays consists of objects of the same type, but this type may vary
       <tuv lang="EN-US">
         <seg>Type Declarations</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124645Z" creationid="hsugawa8651" creationdate="20181120T143711Z">
-        <seg>[型宣言](## Type Declarations)</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125927Z" creationid="hsugawa8651" creationdate="20181120T143711Z">
+        <seg>型宣言 [](## Type Declarations)</seg>
       </tuv>
     </tu>
     <tu>
