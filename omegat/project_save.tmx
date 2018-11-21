@@ -9437,6 +9437,14 @@ into which concrete types can fit.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Abstract types are declared using the &lt;x1/&gt;`abstract type`&lt;x2/&gt; keyword.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130125Z" creationid="hsugawa8651" creationdate="20181121T130125Z">
+        <seg>抽象型は &lt;x1/&gt;`abstract type`&lt;x2/&gt;キーワードを使用して宣言されます。抽象型を宣言する一般的な構文は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Abstract types are declared using the &lt;x1/&gt;abstract type&lt;x2/&gt; keyword.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144402Z" creationid="hsugawa8651" creationdate="20181120T144402Z">
@@ -22512,8 +22520,8 @@ object-oriented programming.</seg>
 a piece of code to make sense, for example, only if its arguments are some kind of integer,
 but not really depend on what particular &lt;x16/&gt;kind&lt;x17/&gt; of integer.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125352Z" creationid="hsugawa8651" creationdate="20181120T144319Z">
-        <seg>あるコードが意図せず動作可能である、ということはよくあることで、たとえば、関数の引数を整数型のなにかに指定していても、じつのところ、特定の整数の種類に依存しない場合などです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130020Z" creationid="hsugawa8651" creationdate="20181120T144319Z">
+        <seg>あるコードが意図せず動作可能である、ということはよくあることで、たとえば、関数の引数を整数型のなにかに指定していても、じつのところ、特定の整数の &lt;x16/&gt;kind&lt;x17/&gt;種類に依存しない場合などです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29406,8 +29414,8 @@ of its argument.</seg>
       <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;abstract type&lt;x2/&gt; keyword introduces a new abstract type, whose name is given by &lt;x3/&gt;«name»&lt;x4/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144435Z" creationid="hsugawa8651" creationdate="20181120T144435Z">
-        <seg>abstract typeキーワードは、その名前を«name»とする、新たな抽象型を導入します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130155Z" creationid="hsugawa8651" creationdate="20181120T144435Z">
+        <seg>&lt;x1/&gt;abstract type&lt;x2/&gt;キーワードは、その名前を&lt;x3/&gt;«name»&lt;x4/&gt;とする、新たな抽象型を導入します。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -33524,6 +33532,16 @@ declared abstract type is a subtype of this "parent" type.</seg>
     <tu>
       <tuv lang="EN-US">
         <seg>This
+name can be optionally followed by &lt;x5/&gt;`&lt;:`&lt;x6/&gt; and an already-existing type, indicating that the newly
+declared abstract type is a subtype of this "parent" type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130219Z" creationid="hsugawa8651" creationdate="20181121T130219Z">
+        <seg>必要に応じて、この名前の後に &lt;x5/&gt;`&lt;:`&lt;x6/&gt; と既存の型を続けた場合、新たに宣言された抽象型がこの既存の型を「親」とするサブタイプであることを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This
 separation is typically quite natural.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T155835Z" creationid="hsugawa8651" creationdate="20181117T155835Z">
@@ -36941,8 +36959,8 @@ field alignment.</seg>
         <seg>When no supertype is given, the default supertype is &lt;x1/&gt;Any&lt;x2/&gt; -- a predefined abstract type that
 all objects are instances of and all types are subtypes of.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144506Z" creationid="hsugawa8651" creationdate="20181120T144506Z">
-        <seg>スーパータイプの指定がない場合、デフォルトのスーパータイプはAnyです。 Anyは事前に定義された抽象型で、すべてのオブジェクトはAnyのインスタンスであり、すべての型がAnyのサブタイプです。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130243Z" creationid="hsugawa8651" creationdate="20181120T144506Z">
+        <seg>スーパータイプの指定がない場合、デフォルトのスーパータイプは&lt;x1/&gt;Any&lt;x2/&gt;です。 Anyは事前に定義された抽象型で、すべてのオブジェクトはAnyのインスタンスであり、すべての型がAnyのサブタイプです。 </seg>
       </tuv>
     </tu>
     <tu>
