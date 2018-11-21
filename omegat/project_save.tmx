@@ -14615,8 +14615,8 @@ after construction.</seg>
         <seg>Composite types are introduced with the &lt;x1/&gt;struct&lt;x2/&gt; keyword followed by a block of field names, optionally
 annotated with types using the &lt;x3/&gt;::&lt;x4/&gt; operator:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145606Z" creationid="hsugawa8651" creationdate="20181120T145606Z">
-        <seg>複合型を定義するには、structキーワードのあとにフィールド名のブロックを置き、必要に応じて::演算子を使って型注釈を加えます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T132922Z" creationid="hsugawa8651" creationdate="20181120T145606Z">
+        <seg>複合型を定義するには、 &lt;x1/&gt;struct&lt;x2/&gt; キーワードのあとにフィールド名のブロックを置き、必要に応じて&lt;x3/&gt;::&lt;x4/&gt;演算子を使って型注釈を加えます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16832,8 +16832,8 @@ values without literal forms as args.</seg>
       <tuv lang="EN-US">
         <seg>Fields with no type annotation default to &lt;x1/&gt;Any&lt;x2/&gt;, and can accordingly hold any type of value.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145615Z" creationid="hsugawa8651" creationdate="20181120T145615Z">
-        <seg>型注釈のないフィールドは、デフォルトではAny型なので、どんな型の値でも保持することができます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T132949Z" creationid="hsugawa8651" creationdate="20181120T145615Z">
+        <seg>型注釈のないフィールドは、デフォルトでは&lt;x1/&gt;Any&lt;x2/&gt;型なので、どんな型の値でも保持することができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -34370,8 +34370,8 @@ rewrites this apparent single string literal into a concatenation of string lite
 method of a function to use by multiple dispatch, meaning that the types of &lt;x1/&gt;all&lt;x2/&gt; of a function's
 arguments are considered when selecting a method, rather than just the first one (see &lt;x3/&gt;Methods&lt;x4/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145602Z" creationid="hsugawa8651" creationdate="20181120T145602Z">
-        <seg>この仕様が必要なのは、Juliaでは、関数に対して使われるメソッドは、多重ディスパッチによって選択されるからです。 つまり、メソッドを選択するときには、すべての関数の引数の型が考慮され、最初の引数のみではないからです（メソッドとディスパッチの詳細については、メソッドを参照してください）。 したがって、関数が最初の引数だけに「属する」のは不適切です。 各オブジェクトの "内側"にたくさんの名前付きのメソッドをいれるより、メソッド群を編成して関数オブジェクトにする方が、言語設計上、非常に有益です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T132859Z" creationid="hsugawa8651" creationdate="20181120T145602Z">
+        <seg>この仕様が必要なのは、Juliaでは、関数に対して使われるメソッドは、多重ディスパッチによって選択されるからです。 つまり、メソッドを選択するときには、すべて&lt;x1/&gt;all&lt;x2/&gt;の関数の引数の型が考慮され、最初の引数のみではないからです（メソッドとディスパッチの詳細については、メソッド &lt;x3/&gt;Methods&lt;x4/&gt;を参照してください）。</seg>
       </tuv>
     </tu>
     <tu>
