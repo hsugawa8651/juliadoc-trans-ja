@@ -29215,8 +29215,8 @@ in the others.</seg>
       <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;::&lt;x2/&gt; operator can be used to attach type annotations to expressions and variables in programs.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143721Z" creationid="hsugawa8651" creationdate="20181120T143721Z">
-        <seg>::演算子は、プログラム内の式や変数に型注釈を付ける用途に使用できます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124652Z" creationid="hsugawa8651" creationdate="20181120T143721Z">
+        <seg>::演算子は、プログラム内の式や変数に型注釈を付ける用途に使用できます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -32809,8 +32809,8 @@ ways of doing so:</seg>
       <tuv lang="EN-US">
         <seg>There are two primary reasons to do this:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143730Z" creationid="hsugawa8651" creationdate="20181120T143730Z">
-        <seg> 型注釈をつける理由は、主に2つあります。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124657Z" creationid="hsugawa8651" creationdate="20181120T143730Z">
+        <seg>型注釈をつける理由は、主に2つあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33376,6 +33376,17 @@ and also by tuples thereof.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143631Z" creationid="hsugawa8651" creationdate="20181120T143555Z">
         <seg>型以外にも、シンボル、値でその型がisbits() で真となるもの（本質的には数やブール値のような、他のオブジェクトへのポインタを持たないC言語の型や構造体などに格納されるもの）、及びこれらのタプルなどによってパラメータ化可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They can also be parameterized
+by symbols, by values of any type for which &lt;x1/&gt;`isbits`&lt;x2/&gt; returns true (essentially, things
+like numbers and bools that are stored like C types or &lt;x3/&gt;struct&lt;x4/&gt;s with no pointers to other objects),
+and also by tuples thereof.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124552Z" creationid="hsugawa8651" creationdate="20181121T124552Z">
+        <seg>型以外にも、シンボル、値でその型が&lt;x1/&gt;`isbits`&lt;x2/&gt; で真となるもの（本質的には数やブール値のような、他のオブジェクトへのポインタを持たないC言語の型や&lt;x3/&gt;struct&lt;x4/&gt;などに格納されるもの）、及びこれらのタプルなどによってパラメータ化可能です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -35815,8 +35826,8 @@ of the inner arrays consists of objects of the same type, but this type may vary
       <tuv lang="EN-US">
         <seg>Type Declarations</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143711Z" creationid="hsugawa8651" creationdate="20181120T143711Z">
-        <seg>型宣言 Type Declarations</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124645Z" creationid="hsugawa8651" creationdate="20181120T143711Z">
+        <seg>[型宣言](## Type Declarations)</seg>
       </tuv>
     </tu>
     <tu>
@@ -35858,8 +35869,9 @@ arguments at the end of the argument list.</seg>
         <seg>Type parameters may be omitted when they do not need to be referenced
 or restricted.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143636Z" creationid="hsugawa8651" creationdate="20181120T143636Z">
-        <seg>参照や制限をする必要がない場合は、型パラメータは省略しても構いません。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124600Z" creationid="hsugawa8651" creationdate="20181120T143636Z">
+        <seg>参照や制限をする必要がない場合は、型パラメータは省略しても構いません。
+</seg>
       </tuv>
     </tu>
     <tu>
