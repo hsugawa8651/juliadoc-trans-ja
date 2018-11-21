@@ -1901,6 +1901,15 @@ be inlined and thus may have even less overhead than calls to shared library fun
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(Note that unlike &lt;x1/&gt;Int&lt;x2/&gt;, &lt;x3/&gt;Float&lt;x4/&gt; does not exist as a type alias for a specific sized
+&lt;x5/&gt;`AbstractFloat`&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084045Z" creationid="hsugawa8651" creationdate="20181121T084045Z">
+        <seg>（Intと違って、Floatという、AbstractFloatの特定のサイズの型の別名は存在しない点に注意してください。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(Note, in this and all following examples it is assumed that their top-level is a global scope
 with a clean workspace, for instance a newly started REPL.)</seg>
       </tuv>
@@ -10610,6 +10619,15 @@ an expression whose value is returned:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As it happens, types are
+all composite values and thus all have a type of &lt;x1/&gt;DataType&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084213Z" creationid="hsugawa8651" creationdate="20181121T084213Z">
+        <seg>既にみたように、型はすべて複合値なので、すべてDataType型になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As mentioned above, one can also define new display backends.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043304Z" creationid="hsugawa8651" creationdate="20181112T043304Z">
@@ -15577,6 +15595,14 @@ globals.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>DataType&lt;x1/&gt; is its own type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084226Z" creationid="hsugawa8651" creationdate="20181121T084226Z">
+        <seg>DataTypeは自身の型でもあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Date and DateTime&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T234717Z" creationid="hsugawa8651" creationdate="20181119T234717Z">
@@ -17182,6 +17208,15 @@ in-memory representations as objects are numeric primitives.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041750Z" creationid="hsugawa8651" creationdate="20181112T041750Z">
         <seg>例えば、&lt;x1/&gt;Dict(i=&gt;f(i=&gt;f(i)for i=1:10)&lt;x2/&gt;)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, &lt;x1/&gt;UInt&lt;x2/&gt; is aliased to either &lt;x3/&gt;`UInt32`&lt;x4/&gt; or &lt;x5/&gt;`UInt64`&lt;x6/&gt; as is
+appropriate for the size of pointers on the system:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084014Z" creationid="hsugawa8651" creationdate="20181121T084014Z">
+        <seg>たとえば、UIntは、システム上のポインタのサイズに応じて、UInt32 か UInt64　の別名となります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20689,6 +20724,17 @@ be written in a vectorized style for performance.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T154152Z" creationid="hsugawa8651" creationdate="20181109T154152Z">
         <seg>一般的に、多くの他の技術計算言語とは異なり、Juliaはプログラムを期待していない。 パフォーマンスを向上させるためにベクトル化されたスタイルで記述する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In languages where parametric types
+must always be specified in full, this is not especially helpful, but in Julia, this allows one
+to write just &lt;x11/&gt;Vector&lt;x12/&gt; for the abstract type including all one-dimensional dense arrays of any
+element type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083940Z" creationid="hsugawa8651" creationdate="20181121T083940Z">
+        <seg>パラメトリック型を常に完全に指定しなければならない言語では、こういう構文はそんなに有用ではないかもしれません。 しかしJuliaでは、Vectorと書くだけで、任意の要素型のすべての1次元の密な配列を含む抽象型を表すことができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25317,6 +25363,15 @@ a character is.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Of course, this depends on what &lt;x1/&gt;Int&lt;x2/&gt; is aliased to -- but that is predefined to be the correct
+type -- either &lt;x3/&gt;`Int32`&lt;x4/&gt; or &lt;x5/&gt;`Int64`&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084038Z" creationid="hsugawa8651" creationdate="20181121T084038Z">
+        <seg>もちろん、これは Int がInt32と Int64のどちらの別名なのかでかわります。 この別名は正しい型になるように事前に定義されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Of course, you can omit the dot if you write a specialized "vector" method of &lt;x1/&gt;f&lt;x2/&gt;, e.g. via &lt;x3/&gt;f(A::AbstractArray) = map(f, A)&lt;x4/&gt;,
 and this is just as efficient as &lt;x5/&gt;f.(A)&lt;x6/&gt;.</seg>
       </tuv>
@@ -25672,6 +25727,14 @@ level operators and functions, in a way that is independent of the underlying st
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160305Z" creationid="hsugawa8651" creationdate="20181109T160305Z">
         <seg>&lt;x11/&gt;AbstractArray&lt;x12/&gt;オブジェクトに対する操作は、より高い値を使用して定義されます。 レベル演算子と関数は、基礎となる記憶域とは独立して存在します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Operations on Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084104Z" creationid="hsugawa8651" creationdate="20181121T084104Z">
+        <seg>型に対する演算 Operations on Types</seg>
       </tuv>
     </tu>
     <tu>
@@ -27606,6 +27669,23 @@ which is where the &lt;x1/&gt;(;)&lt;x2/&gt; chain syntax comes in handy:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since types in Julia are themselves objects, ordinary functions can operate on them.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084112Z" creationid="hsugawa8651" creationdate="20181121T084112Z">
+        <seg>Juliaの型はそれ自体がオブジェクトなので、通常の関数を作用させることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since, as noted above, types are objects, they also have types, and we can ask
+what their types are:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084152Z" creationid="hsugawa8651" creationdate="20181121T084152Z">
+        <seg> 上記のように、型はオブジェクトであり、それ自体の型もあるので、型に対してその型が何であるかを尋ねることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Singleton types are described in further detail &lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref man-singleton-types).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T150211Z" creationid="hsugawa8651" creationdate="20181120T150211Z">
@@ -27738,6 +27818,17 @@ you'll need to take some extra precautions.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Some functions
+that are particularly useful for working with or exploring types have already been introduced,
+such as the &lt;x1/&gt;&lt;:&lt;x2/&gt; operator, which indicates whether its left hand operand is a subtype of its right
+hand operand.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084126Z" creationid="hsugawa8651" creationdate="20181121T084126Z">
+        <seg> 特に型の操作や探索に役立つ関数がいくつか既に導入されていて、 &lt;:などは、演算子の左側が右側のサブタイプであるかどうかを示す演算子です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Some functions have both modifying (e.g., &lt;x3/&gt;sort!&lt;x4/&gt;) and non-modifying (&lt;x5/&gt;sort&lt;x6/&gt;) versions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041726Z" creationid="hsugawa8651" creationdate="20181110T041726Z">
@@ -27819,6 +27910,14 @@ in order, returning the value of the last subexpression as its value.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181119T133459Z" creationid="hsugawa8651" creationdate="20181119T133459Z">
         <seg>何個かの部分式を順番に評価していき、最後の式の値を戻り値とするような単一の式を考えると、便利なことが、時々あります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sometimes it is convenient to introduce a new name for an already expressible type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084003Z" creationid="hsugawa8651" creationdate="20181121T084003Z">
+        <seg>すでに表現可能な型に新しい名前をつけると便利な場合が時々あります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28911,6 +29010,14 @@ the normal flow of control.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;`isa`&lt;x2/&gt; function tests if an object is of a given type and returns true or false:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084129Z" creationid="hsugawa8651" creationdate="20181121T084129Z">
+        <seg>isa 関数は、オブジェクトが指定された型であるかどうかを検査し、真か偽を返します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;`throw`&lt;x2/&gt; function</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124623Z" creationid="hsugawa8651" creationdate="20181118T124623Z">
@@ -28931,6 +29038,15 @@ the normal flow of control.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T111123Z" creationid="hsugawa8651" creationdate="20181112T110920Z">
         <seg>&lt;x1/&gt;`テーパミン'&lt;x2/&gt;と&lt;x3/&gt;'テーペマス'&lt;x4/&gt;関数も浮動小数点型に適用される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;x1/&gt;`typeof()`&lt;x2/&gt; function, already used throughout the manual in examples, returns the type
+of its argument.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084149Z" creationid="hsugawa8651" creationdate="20181121T084149Z">
+        <seg>typeof() 関数は、既にこのマニュアルを通して例として使っていますが、引数の型を返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33277,6 +33393,14 @@ keys and values (i.e. this example creates a &lt;x2/&gt;Dict{String, Int64}&lt;x
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This can be done with a simple assignment statement.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084009Z" creationid="hsugawa8651" creationdate="20181121T084009Z">
+        <seg> これは簡単な代入文で行うことができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This can be done with the syntax &lt;x3/&gt;$(xs...)&lt;x4/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115436Z" creationid="hsugawa8651" creationdate="20181118T115436Z">
@@ -33716,6 +33840,14 @@ denominator values by their greatest common divisor, computed using the &lt;x7/&
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T160544Z" creationid="hsugawa8651" creationdate="20181109T160544Z">
         <seg>これは、適切な呼び出しを行うことによって実現されます。 &lt;x1/&gt;`ccall'&lt;x2/&gt;構文は、通常の関数呼び出しのように見えます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is accomplished via the following code in &lt;x1/&gt;base/boot.jl&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084023Z" creationid="hsugawa8651" creationdate="20181121T084023Z">
+        <seg>これはbase/boot.jlの中にある以下のコードで実現できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -35267,6 +35399,14 @@ of the inner arrays consists of objects of the same type, but this type may vary
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Type Aliases</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083956Z" creationid="hsugawa8651" creationdate="20181121T083956Z">
+        <seg>型の別名 Type Aliases</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Type Correspondences:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150612Z" creationid="hsugawa8651" creationdate="20181117T150612Z">
@@ -35589,6 +35729,15 @@ comparisons can be arbitrarily chained:</seg>
         <seg>&lt;x1/&gt;Pythonのような例外&lt;x2/&gt; を 除く、ほとんどの言語とは異なり、比較は任意に連続して使用することができます。
 
 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike with integer registers, the floating point register sizes
+are specified by the IEEE-754 standard.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084051Z" creationid="hsugawa8651" creationdate="20181121T084051Z">
+        <seg>整数レジスタとは異なり、浮動小数点レジスタのサイズは、IEEE-754規格で規定されています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -36100,6 +36249,22 @@ any type at all (or a value of any bits type, actually, although here it's clear
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115154Z" creationid="hsugawa8651" creationdate="20181118T115154Z">
         <seg>What happens next?&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What if we repeat the process?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084204Z" creationid="hsugawa8651" creationdate="20181121T084204Z">
+        <seg>この操作を繰り返すとどうなるでしょうか？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What is the type of a type of a type?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084210Z" creationid="hsugawa8651" creationdate="20181121T084210Z">
+        <seg>型の型の型は何でしょうか？ </seg>
       </tuv>
     </tu>
     <tu>
@@ -36623,6 +36788,15 @@ discussed in the next section.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152817Z" creationid="hsugawa8651" creationdate="20181117T152817Z">
         <seg>&lt;x1/&gt;は&lt;x2/&gt;X&lt;x3/&gt;パッケージが存在する可能性がある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Whereas the size of &lt;x7/&gt;Int&lt;x8/&gt; reflects the size of a
+native pointer on that machine.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084058Z" creationid="hsugawa8651" creationdate="20181121T084058Z">
+        <seg>一方Intのサイズは、そのマシン上のネイティブポインタのサイズを反映しています。）</seg>
       </tuv>
     </tu>
     <tu>
