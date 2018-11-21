@@ -17697,8 +17697,8 @@ its sum:</seg>
         <seg>For example, some form of generic programming exists in ML, Haskell, Ada, Eiffel, C++, Java, C&lt;x3/&gt;,
 F&lt;x4/&gt;, and Scala, just to name a few.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081516Z" creationid="hsugawa8651" creationdate="20181121T081449Z">
-        <seg>たとえば、ML、Haskell、Ada、Eiffel、C ++、Java、C＃、F＃、およびScalaなど、少し挙げるだけでも、これだけの言語が何らかの形で汎化プログラミングを取り入れています。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T133820Z" creationid="hsugawa8651" creationdate="20181121T081449Z">
+        <seg>たとえば、ML、Haskell、Ada、Eiffel、C ++、Java、C&lt;x3/&gt;、F&lt;x4/&gt;、およびScalaなど、少し挙げるだけでも、これだけの言語が何らかの形で汎化プログラミングを取り入れています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -32669,8 +32669,8 @@ collection.</seg>
 of &lt;x1/&gt;generic programming&lt;x2/&gt;, wherein data structures
 and algorithms to manipulate them may be specified without specifying the exact types involved.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081512Z" creationid="hsugawa8651" creationdate="20181121T081512Z">
-        <seg>汎化プログラミングでは、必要な型を正確に指定しなくても、処理すべきデータ構造やアルゴリズムを特定することができて、多くの言語で、何らかの形で対応しています。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T133734Z" creationid="hsugawa8651" creationdate="20181121T081512Z">
+        <seg>&lt;x1/&gt;汎化プログラミング&lt;x2/&gt;では、必要な型を正確に指定しなくても、処理すべきデータ構造やアルゴリズムを特定することができて、多くの言語で、何らかの形で対応しています。 </seg>
       </tuv>
     </tu>
     <tu>
