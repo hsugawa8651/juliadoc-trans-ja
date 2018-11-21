@@ -9719,8 +9719,8 @@ us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
         <seg>All declared types (the &lt;x1/&gt;DataType&lt;x2/&gt; variety) can be parameterized, with the same syntax in each
 case.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081557Z" creationid="hsugawa8651" creationdate="20181121T081557Z">
-        <seg>すべての宣言型（DataTypeの仲間）は、それぞれ同じ構文でパラメータ化できます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T133838Z" creationid="hsugawa8651" creationdate="20181121T081557Z">
+        <seg>すべての宣言型（&lt;x1/&gt;DataType&lt;x2/&gt;の仲間）は、それぞれ同じ構文でパラメータ化できます。</seg>
       </tuv>
     </tu>
     <tu>
