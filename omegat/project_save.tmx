@@ -18764,8 +18764,8 @@ and macro-definitions.</seg>
         <seg>Hence, &lt;x13/&gt;AbstractFloat&lt;x14/&gt; is a proper subtype of &lt;x15/&gt;Real&lt;x16/&gt;, including only
 floating-point representations of real numbers.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144659Z" creationid="hsugawa8651" creationdate="20181120T144659Z">
-        <seg> したがって、 AbstractFloat はRealの真のサブタイプで、実数のうち浮動小数点数の表現のみを含みます。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130609Z" creationid="hsugawa8651" creationdate="20181120T144659Z">
+        <seg> したがって、&lt;x13/&gt;AbstractFloat&lt;x14/&gt;は&lt;x15/&gt;Real&lt;x16/&gt;の真のサブタイプで、実数のうち浮動小数点数の表現のみを含みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21804,8 +21804,8 @@ wrapped in a zero-argument function, which is later invoked by calling it as &lt
 the others later): &lt;x9/&gt;`Integer`&lt;x10/&gt; and &lt;x11/&gt;`AbstractFloat`&lt;x12/&gt;, separating the world into
 representations of integers and representations of real numbers.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144642Z" creationid="hsugawa8651" creationdate="20181120T144642Z">
-        <seg>Realには子が２つあります（もっとありますが、ここでとりあげるのは2つだけです。後で他のものにも触れます）。 Integer と AbstractFloat は数の世界を整数の表現と実数の表現に分けます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130533Z" creationid="hsugawa8651" creationdate="20181120T144642Z">
+        <seg>&lt;x7/&gt;Real&lt;x8/&gt;には子が２つあります（もっとありますが、ここでとりあげるのは2つだけです。後で他のものにも触れます）。 &lt;x9/&gt;`Integer`&lt;x10/&gt; と &lt;x11/&gt;`AbstractFloat`&lt;x12/&gt;は数の世界を整数の表現と実数の表現に分けます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -22274,8 +22274,8 @@ the lowest negative number (&lt;x3/&gt;`typemin`&lt;x4/&gt;) by -1.</seg>
         <seg>Integers are further subdivided into
 &lt;x17/&gt;`Signed`&lt;x18/&gt; and &lt;x19/&gt;`Unsigned`&lt;x20/&gt; varieties.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144712Z" creationid="hsugawa8651" creationdate="20181120T144712Z">
-        <seg>I整数はさらにSigned と Unsigned に細分されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130634Z" creationid="hsugawa8651" creationdate="20181120T144712Z">
+        <seg> 整数はさらに&lt;x17/&gt;`Signed`&lt;x18/&gt;  と&lt;x19/&gt;`Unsigned`&lt;x20/&gt;  に細分されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27092,8 +27092,8 @@ the &lt;x1/&gt;global&lt;x2/&gt; keyword.</seg>
 numbers include, of course, floating-point types, but also include other types, such as
 rationals.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144649Z" creationid="hsugawa8651" creationdate="20181120T144649Z">
-        <seg> 実数の表現には、もちろん浮動小数点型が該当しますが、有理数などの他の型も該当します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130543Z" creationid="hsugawa8651" creationdate="20181120T144649Z">
+        <seg>実数の表現には、もちろん浮動小数点型が該当しますが、有理数などの他の型も該当します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29339,8 +29339,8 @@ arbitrary-precision floating point and integer arithmetic, respectively.</seg>
       <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;`Number`&lt;x2/&gt; type is a direct child type of &lt;x3/&gt;Any&lt;x4/&gt;, and &lt;x5/&gt;`Real`&lt;x6/&gt; is its child.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144620Z" creationid="hsugawa8651" creationdate="20181120T144620Z">
-        <seg>Number 型はAnyの直下の子の型であり、Real はNumber の子です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130452Z" creationid="hsugawa8651" creationdate="20181120T144620Z">
+        <seg>&lt;x1/&gt;`Number`&lt;x2/&gt; 型は&lt;x3/&gt;Any&lt;x4/&gt;の直下の子の型であり、&lt;x5/&gt;`Real`&lt;x6/&gt;はNumber の子です。</seg>
       </tuv>
     </tu>
     <tu>
