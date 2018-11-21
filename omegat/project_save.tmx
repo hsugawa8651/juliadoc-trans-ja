@@ -345,6 +345,14 @@ f</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>"Value types"</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084623Z" creationid="hsugawa8651" creationdate="20181121T084623Z">
+        <seg>"値型" "Value types"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>"less than" : "not less than")
 less than
 
@@ -1499,6 +1507,14 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064312Z" creationid="hsugawa8651" creationdate="20181114T064312Z">
         <seg>(@id man-multi-dim-arrays)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(@id man-nullable-types)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084824Z" creationid="hsugawa8651" creationdate="20181121T084824Z">
+        <seg>Null許容型: 欠損値の表現 (@id man-nullable-types)</seg>
       </tuv>
     </tu>
     <tu>
@@ -8634,6 +8650,15 @@ representation and appropriate arithmetic behaviors, whose numeric value is inte
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A &lt;x1/&gt;Polar&lt;x2/&gt; object will then display automatically using HTML in an environment that supports HTML
+display, but you can call &lt;x3/&gt;show&lt;x4/&gt; manually to get HTML output if you want:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084612Z" creationid="hsugawa8651" creationdate="20181121T084612Z">
+        <seg>Polarオブジェクトは、対応する環境ではHTMLを使用して自動的に表示されますが、必要なら手動でshowを呼び出して、HTML出力することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A &lt;x1/&gt;break&lt;x2/&gt; statement inside such a loop exits the entire nest of loops, not just the inner one.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T000428Z" creationid="hsugawa8651" creationdate="20181120T000428Z">
@@ -8696,6 +8721,15 @@ an array and returns a new array containing the resulting values:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133921Z" creationid="hsugawa8651" creationdate="20181117T133921Z">
         <seg>典型的な例として、標準的なCライブラリ&lt;x1/&gt;qsort&lt;x2/&gt;関数があり、次のように宣言されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A common example is the dimensionality
+parameter in &lt;x7/&gt;Array{T,N}&lt;x8/&gt;, where &lt;x9/&gt;T&lt;x10/&gt; is a type (e.g., &lt;x11/&gt;`Float64`&lt;x12/&gt;) but &lt;x13/&gt;N&lt;x14/&gt; is just an &lt;x15/&gt;Int&lt;x16/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084655Z" creationid="hsugawa8651" creationdate="20181121T084655Z">
+        <seg>よくある例として、Array{T,N}で使われる次元のパラメータがあり、この場合Tは型（ Float64など）ですが、NはただのInt型です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14121,6 +14155,16 @@ these floating-point values are the results of certain arithmetic operations:</s
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By way of illustration of this idea, let's introduce a parametric type, &lt;x1/&gt;Val{T}&lt;x2/&gt;,
+which serves as a customary way to exploit this technique for cases where you don't need a more
+elaborate hierarchy.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084717Z" creationid="hsugawa8651" creationdate="20181121T084717Z">
+        <seg>の考え方を説明するために、パラメトリック型のVal{T}を導入しましょう。 手の込んだ階層の必要ない時は、こうした手法にはこの型を慣用的に使います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Bypassing default machinery&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083554Z" creationid="hsugawa8651" creationdate="20181113T083554Z">
@@ -17095,6 +17139,15 @@ encountered when computing with them, see David Goldberg's paper &lt;x1/&gt;What
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For consistency across Julia, the call site should always pass a &lt;x1/&gt;Val&lt;x2/&gt;&lt;x3/&gt;type&lt;x4/&gt; rather than creating
+an &lt;x5/&gt;instance&lt;x6/&gt;, i.e., use &lt;x7/&gt;foo(Val{:bar})&lt;x8/&gt; rather than &lt;x9/&gt;foo(Val{:bar}())&lt;x10/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084751Z" creationid="hsugawa8651" creationdate="20181121T084751Z">
+        <seg>Juliaでは一貫性を保つために、呼び出し側は、常にValのインスタンスを作るのではなく、Valの型を渡す必要があります。 つまり、foo(Val{:bar}())ではなくfoo(Val{:bar})です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For direct C++ interfacing, see the &lt;x1/&gt;Cxx&lt;x2/&gt; package.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152645Z" creationid="hsugawa8651" creationdate="20181117T152645Z">
@@ -17230,6 +17283,15 @@ the following program, when compiled with &lt;x5/&gt;julia -O3&lt;x6/&gt; genera
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T063653Z" creationid="hsugawa8651" creationdate="20181114T063653Z">
         <seg>たとえば &lt;x5/&gt;julia-O3&lt;x6/&gt;でコンパイルされると、次のプログラムは2つのSIMD付加命令を生成します。 x86システム上での(&lt;x7/&gt;アデプス&lt;x8/&gt;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example,
+we can define formatted HTML display of &lt;x3/&gt;Polar&lt;x4/&gt; objects, with superscripts and italics, via:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084603Z" creationid="hsugawa8651" creationdate="20181121T084603Z">
+        <seg>たとえば、Polar書式付きのHTML表示を定義して、上付き文字と斜体を使うには、次のようにします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17974,6 +18036,15 @@ needed to create instances.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131253Z" creationid="hsugawa8651" creationdate="20181113T131253Z">
         <seg>詳細は、&lt;x3/&gt;&lt;x4/&gt;&lt;x5/&gt;(@ref writing binary broadcasting rules)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For more information
+about the proper (and improper) uses of &lt;x5/&gt;Val&lt;x6/&gt;, please read the more extensive discussion in &lt;x7/&gt;&lt;x8/&gt;&lt;x9/&gt;(@ref man-performance-tips).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084816Z" creationid="hsugawa8651" creationdate="20181121T084816Z">
+        <seg>適切な（そして不適切な）Valの使い方の詳細については、the performance tipsの広範に渡る議論を読んでください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19394,6 +19465,16 @@ the static parameters of the function are considered to be part of this static e
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>However, you can dispatch
+on parametric types, and Julia allows you to include "plain bits" values (Types, Symbols, Integers,
+floating-point numbers, tuples, etc.) as type parameters.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084644Z" creationid="hsugawa8651" creationdate="20181121T084644Z">
+        <seg> しかし、パラメトリック型に対してはディスパッチができて、その型パラメータとして「プレーンビット」値（型、シンボル、整数、浮動小数点数、タプルなど）を使うことができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>I passed an argument &lt;x1/&gt;x&lt;x2/&gt; to a function, modified it inside that function, but on the outside, the variable &lt;x3/&gt;x&lt;x4/&gt; is still unchanged.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024952Z" creationid="hsugawa8651" creationdate="20181110T024952Z">
@@ -20533,6 +20614,14 @@ to the compiler.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In Julia, you can't dispatch on a &lt;x1/&gt;value&lt;x2/&gt; such as &lt;x3/&gt;true&lt;x4/&gt; or &lt;x5/&gt;false&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084636Z" creationid="hsugawa8651" creationdate="20181121T084636Z">
+        <seg>IJuliaでは、true や falseのような値によって、ディスパッチすることができません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In UTF-8, ASCII characters -- i.e. those with code points less than
 0x80 (128) -- are encoded as they are in ASCII, using a single byte, while code points 0x80 and
 above are encoded using multiple bytes -- up to four per character.</seg>
@@ -20870,6 +20959,14 @@ type in Julia as well.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In many settings, you need to interact with a value of type &lt;x1/&gt;T&lt;x2/&gt; that may or may not exist.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084831Z" creationid="hsugawa8651" creationdate="20181121T084831Z">
+        <seg>多くの状況で、あるのかどうか分からない、型がTの値を取り扱う必要があります。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In mathematics, &lt;x1/&gt;+&lt;x2/&gt; usually denotes a &lt;x3/&gt;commutative&lt;x4/&gt; operation, where the order of the operands does
 not matter.</seg>
       </tuv>
@@ -21077,6 +21174,14 @@ and they will work as expected, both in terms of performance and semantics.</seg
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T075521Z" creationid="hsugawa8651" creationdate="20181120T075521Z">
         <seg>特に、ASCIIの文字列を処理するためにC言語スタイルに文字列コードを書くことができ、パフォーマンスと乞うっ文的な意味の両面で期待通りの動作をします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In particular, you would never want to write actual code as illustrated above.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084808Z" creationid="hsugawa8651" creationdate="20181121T084808Z">
+        <seg> 特に、上で説明したようなコードを実用のコードとして書きたいとは決して思わないでしょう。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -22769,6 +22874,15 @@ be evaluated and returned depending on the preceding conditionals:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It's worth noting that it's extremely easy to mis-use parametric "value" types, including &lt;x1/&gt;Val&lt;x2/&gt;;
+in unfavorable cases, you can easily end up making the performance of your code much &lt;x3/&gt;worse&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084759Z" creationid="hsugawa8651" creationdate="20181121T084759Z">
+        <seg>Valを含めて、パラメトリックな「値」型は非常に誤用しやすい点に注意してください。 好ましくない場合には、コードのパフォーマンスを簡単に大幅に悪化させることもありえます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Iterating over the &lt;x1/&gt;CartesianIndices&lt;x2/&gt; of the &lt;x3/&gt;axes(::Broadcasted)&lt;x4/&gt; and using
 indexing with the resulting &lt;x5/&gt;CartesianIndex&lt;x6/&gt; object to compute the result.</seg>
       </tuv>
@@ -24353,6 +24467,15 @@ e.g. &lt;x6/&gt;sin.(A)&lt;x7/&gt; will compute the sine of each element of an a
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030803Z" creationid="hsugawa8651" creationdate="20181114T030803Z">
         <seg>さらに、これらの関数(Julia関数のような)は、「ベクトル化」された形式で適用することができます。 &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man vectorized)&lt;x4/&gt;f.(A)&lt;x5/&gt;(A)&lt;x5/&gt;の配列とその他のコレクション 例えば、&lt;x6/&gt;sin(A)&lt;x7/&gt;は、配列&lt;x8/&gt;A&lt;x9/&gt;の各要素の正弦を計算します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Moreover, you can also define &lt;x1/&gt;show&lt;x2/&gt; methods for other MIME types in order to enable richer display
+(HTML, images, etcetera) of objects in environments that support this (e.g. IJulia).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084601Z" creationid="hsugawa8651" creationdate="20181121T084601Z">
+        <seg>さらに、showメソッドを他のMIMEタイプ向けに定義して、対応している環境（例えばIJulia）では、オブジェクトをよりリッチな表示（HTML、画像など）にすることもできます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -27960,6 +28083,15 @@ hand operand.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T041726Z" creationid="hsugawa8651" creationdate="20181110T041726Z">
         <seg>関数の中には、修正(例えば&lt;x3/&gt;ソート!&lt;x4/&gt;)や修正されない(&lt;x5/&gt;ソート&lt;x6/&gt;)バージョンの両方があるものがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some functions in Julia's standard
+library accept &lt;x3/&gt;Val&lt;x4/&gt; types as arguments, and you can also use it to write your own functions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084737Z" creationid="hsugawa8651" creationdate="20181121T084737Z">
+        <seg> Juliaの標準ライブラリの関数にはVal型を引数にとるものもあり、また独自の関数を書く時にも、Val型は使えます。例えば、</seg>
       </tuv>
     </tu>
     <tu>
@@ -32698,6 +32830,14 @@ type when the program is running.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There is no more to the implementation of &lt;x1/&gt;Val&lt;x2/&gt; than this.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084733Z" creationid="hsugawa8651" creationdate="20181121T084733Z">
+        <seg>Valの実装は、これ以上はありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There is one additional special calling convention &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref Base.llvmcall),
 which allows inserting calls to LLVM intrinsics directly.</seg>
       </tuv>
@@ -34990,6 +35130,16 @@ give a simple example, consider:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To
+handle these settings, Julia provides a parametric type called &lt;x3/&gt;`Nullable{T}`&lt;x4/&gt;, which can be thought
+of as a specialized container type that can contain either zero or one values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084844Z" creationid="hsugawa8651" creationdate="20181121T084844Z">
+        <seg>これらの状況を処理するために、Juliaでは、 Nullable{T}と呼ばれる、0個か1個の値を含む特殊なコンテナ型と考えることができる、パラメトリック型が用意されています。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To accomplish this within a &lt;x1/&gt;`ccall`&lt;x2/&gt;, you need to first
 encapsulate the value inside a &lt;x3/&gt;`Ref{T}`&lt;x4/&gt; of the appropriate type.</seg>
       </tuv>
@@ -36028,6 +36178,14 @@ for the last entry in a conditional chain is an error:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043134Z" creationid="hsugawa8651" creationdate="20181112T043134Z">
         <seg>Utility Collections</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Val&lt;x1/&gt; is defined as:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084720Z" creationid="hsugawa8651" creationdate="20181121T084720Z">
+        <seg>Val{T}は次のように定義します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -37360,6 +37518,15 @@ integer value back to a &lt;x5/&gt;Char&lt;x6/&gt; just as easily:</seg>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T080305Z" creationid="hsugawa8651" creationdate="20181120T080305Z">
         <seg>また、整数値を簡単に &lt;x5/&gt;Char&lt;x6/&gt;  へと変換し直すこともできます。:
 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can create your own custom types that take values as parameters, and use them to control dispatch
+of custom types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T084703Z" creationid="hsugawa8651" creationdate="20181121T084703Z">
+        <seg>値をパラメータとする独自の型を作成して、その型によってディスパッチを制御することができます。 こ</seg>
       </tuv>
     </tu>
     <tu>
