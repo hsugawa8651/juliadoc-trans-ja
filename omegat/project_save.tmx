@@ -1957,8 +1957,8 @@ the field values, as e.g. &lt;x19/&gt;Polar{Float64}(3.0,4.0)&lt;x20/&gt;.</seg>
         <seg>(See &lt;x9/&gt;Methods&lt;x10/&gt; for more
 information on multiple dispatch.)</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144948Z" creationid="hsugawa8651" creationdate="20181120T144948Z">
-        <seg>（多重ディスパッチの詳細については、メソッドを参照してください。）
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130832Z" creationid="hsugawa8651" creationdate="20181120T144948Z">
+        <seg>（多重ディスパッチの詳細については、メソッド &lt;x9/&gt;Methods&lt;x10/&gt;を参照してください。）
 </seg>
       </tuv>
     </tu>
@@ -22417,8 +22417,8 @@ outer &lt;x4/&gt;Point&lt;x5/&gt; constructor that takes pairs of real arguments
 in expressions as a subtype operator which returns &lt;x3/&gt;true&lt;x4/&gt; when its left operand is a subtype of
 its right operand:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144735Z" creationid="hsugawa8651" creationdate="20181120T144735Z">
-        <seg> &lt;:演算子はサブタイプ演算子として使うこともできて、左側の被演算子が右側の被演算子のサブタイプであるときに真を返します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130739Z" creationid="hsugawa8651" creationdate="20181120T144735Z">
+        <seg>&lt;:演算子はサブタイプ演算子として使うこともできて、左側の被演算子が右側の被演算子のサブタイプであるときに&lt;x3/&gt;true&lt;x4/&gt;を返します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29239,8 +29239,8 @@ in the others.</seg>
         <seg>The &lt;x1/&gt;&lt;:&lt;x2/&gt; operator in general means "is a subtype of", and, used in declarations like this, declares
 the right-hand type to be an immediate supertype of the newly declared type.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144732Z" creationid="hsugawa8651" creationdate="20181120T144732Z">
-        <seg>通常、&lt;:演算子は、「is a subtype of（～のサブタイプである）」を意味し、宣言に使う場合は、右側の型が新しく宣言する型の直のスーパータイプであるという宣言を意味します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130714Z" creationid="hsugawa8651" creationdate="20181120T144732Z">
+        <seg>通常、 &lt;x1/&gt;&lt;:&lt;x2/&gt; 演算子は、「is a subtype of（～のサブタイプである）」を意味し、宣言に使う場合は、右側の型が新しく宣言する型の直のスーパータイプであるという宣言を意味します。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -30683,8 +30683,8 @@ function object, and subsequent method definitions add new methods to the existi
         <seg>The first thing to note is that the above argument declarations are equivalent to &lt;x1/&gt;x::Any&lt;x2/&gt; and
 &lt;x3/&gt;y::Any&lt;x4/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144827Z" creationid="hsugawa8651" creationdate="20181120T144827Z">
-        <seg>まず注意すべきことは、上記の引数の宣言は x::Anyかつy::Anyと同等であることです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130912Z" creationid="hsugawa8651" creationdate="20181120T144827Z">
+        <seg>まず注意すべきことは、上記の引数の宣言は &lt;x1/&gt;x::Any&lt;x2/&gt;かつ&lt;x3/&gt;y::Any&lt;x4/&gt;と同等であることです。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -37108,8 +37108,8 @@ is a subtype of any other.</seg>
         <seg>When this function is invoked, say as &lt;x5/&gt;myplus(2,5)&lt;x6/&gt;, the dispatcher chooses the most
 specific method named &lt;x7/&gt;myplus&lt;x8/&gt; that matches the given arguments.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144838Z" creationid="hsugawa8651" creationdate="20181120T144838Z">
-        <seg> この関数がたとえばmyplus(2,5)のように呼び出されると、ディスパッチャはmyplusと名がつくメソッドで引数の合うものの中から最も特化したメソッドを選択します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130852Z" creationid="hsugawa8651" creationdate="20181120T144838Z">
+        <seg>この関数がたとえば&lt;x5/&gt;myplus(2,5)&lt;x6/&gt;のように呼び出されると、ディスパッチャは&lt;x7/&gt;myplus&lt;x8/&gt;と名がつくメソッドで引数の合うものの中から最も特化したメソッドを選択します。</seg>
       </tuv>
     </tu>
     <tu>
