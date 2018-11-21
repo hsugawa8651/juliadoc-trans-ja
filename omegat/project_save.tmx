@@ -8207,6 +8207,15 @@ array types that have fixed dimensionality requirements.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x7/&gt;Point{Float64}&lt;x8/&gt; is a concrete type equivalent to the type defined by replacing &lt;x9/&gt;T&lt;x10/&gt; in the definition
+of &lt;x11/&gt;Point&lt;x12/&gt; with &lt;x13/&gt;`Float64`&lt;x14/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081659Z" creationid="hsugawa8651" creationdate="20181121T081659Z">
+        <seg>Point{Float64}は、Point の定義の中のTを Float64と置き換えて定義したのと同等な具象型です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x7/&gt;Priv&lt;x8/&gt; is a private package that you created, whereas &lt;x9/&gt;Pub&lt;x10/&gt; is a public package that you use but don't control.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152850Z" creationid="hsugawa8651" creationdate="20181117T152850Z">
@@ -9531,6 +9540,15 @@ us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>All declared types (the &lt;x1/&gt;DataType&lt;x2/&gt; variety) can be parameterized, with the same syntax in each
+case.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081557Z" creationid="hsugawa8651" creationdate="20181121T081557Z">
+        <seg>すべての宣言型（DataTypeの仲間）は、それぞれ同じ構文でパラメータ化できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>All dimensions indexed with scalars are dropped.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T160835Z" creationid="hsugawa8651" creationdate="20181114T160835Z">
@@ -9928,6 +9946,16 @@ only for passing varargs or computed keywords as described below.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145959Z" creationid="hsugawa8651" creationdate="20181120T145959Z">
         <seg>不変オブジェクトには、配列などの可変なオブジェクトがフィールドとして含まれることがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An important and powerful feature of Julia's type system is that it is parametric: types can take
+parameters, so that type declarations actually introduce a whole family of new types -- one for
+each possible combination of parameter values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081456Z" creationid="hsugawa8651" creationdate="20181121T081442Z">
+        <seg>Juliaの型システムには、パラメトリックという重要かつ強力な特徴があります。 型にパラメータをつけると、型宣言は実質的に、とりうるパラメータ組み合わせの分だけ、新しい型の一族を導入します。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -15828,6 +15856,15 @@ there is no all-encompassing global scope.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Each of these
+is now a usable concrete type:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081710Z" creationid="hsugawa8651" creationdate="20181121T081710Z">
+        <seg>そして、それぞれが、具象型として利用可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>EachLine&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041611Z" creationid="hsugawa8651" creationdate="20181112T041611Z">
@@ -17231,6 +17268,15 @@ its sum:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124242Z" creationid="hsugawa8651" creationdate="20181118T124242Z">
         <seg>例えば、正確な表現とともにベクトルを格納するタイプを定義するとします。 その合計:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, some form of generic programming exists in ML, Haskell, Ada, Eiffel, C++, Java, C&lt;x3/&gt;,
+F&lt;x4/&gt;, and Scala, just to name a few.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081516Z" creationid="hsugawa8651" creationdate="20181121T081449Z">
+        <seg>たとえば、ML、Haskell、Ada、Eiffel、C ++、Java、C＃、F＃、およびScalaなど、少し挙げるだけでも、これだけの言語が何らかの形で汎化プログラミングを取り入れています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -25632,6 +25678,14 @@ MIME types) of user-defined types.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Parametric Composite Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081611Z" creationid="hsugawa8651" creationdate="20181121T081611Z">
+        <seg>パラメトリック複合型 Parametric Composite Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Parametric Constructors</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123823Z" creationid="hsugawa8651" creationdate="20181118T123823Z">
@@ -27183,6 +27237,16 @@ you'll need to take some extra precautions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150044Z" creationid="hsugawa8651" creationdate="20181117T150044Z">
         <seg>一般的な注意事項は次のとおりです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some of these languages support true parametric polymorphism
+(e.g. ML, Haskell, Scala), while others support ad-hoc, template-based styles of generic programming
+(e.g. C++, Java).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081530Z" creationid="hsugawa8651" creationdate="20181121T081530Z">
+        <seg>これらの言語の中には真のパラメトリック多相（ML、Haskell、Scalaなど）に対応するものもあれば、テンプレートベースの汎化プログラミング（C ++、Javaなど）のスタイルに対応するものもあります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -31122,6 +31186,15 @@ declaration syntax demonstrated above is equivalent to the following compact "as
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The type &lt;x1/&gt;Point{Float64}&lt;x2/&gt; is a point whose coordinates are 64-bit floating-point values, while
+the type &lt;x3/&gt;Point{AbstractString}&lt;x4/&gt; is a "point" whose "coordinates" are string objects (see &lt;x5/&gt;Strings&lt;x6/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081725Z" creationid="hsugawa8651" creationdate="20181121T081725Z">
+        <seg>Point{Float64}という型は、座標が64ビット浮動小数点数である点であり、Point{AbstractString}は、その「座標」が文字列オブジェクトである「点」です（ Stringsを参照）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The type arguments to &lt;x1/&gt;ccall&lt;x2/&gt; and &lt;x3/&gt;@cfunction&lt;x4/&gt; are evaluated statically,
 when the method containing the usage is defined.</seg>
       </tuv>
@@ -31456,6 +31529,16 @@ collection.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T064002Z" creationid="hsugawa8651" creationdate="20181114T064002Z">
         <seg>現在、基本的なJuliaには4つのソートアルゴリズムが用意されている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are many languages that support some version
+of &lt;x1/&gt;generic programming&lt;x2/&gt;, wherein data structures
+and algorithms to manipulate them may be specified without specifying the exact types involved.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081512Z" creationid="hsugawa8651" creationdate="20181121T081512Z">
+        <seg>汎化プログラミングでは、必要な型を正確に指定しなくても、処理すべきデータ構造やアルゴリズムを特定することができて、多くの言語で、何らかの形で対応しています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -32636,6 +32719,15 @@ the return value to the specified type.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This declaration defines a new parametric type, &lt;x1/&gt;Point{T}&lt;x2/&gt;, holding two "coordinates" of type
+&lt;x3/&gt;T&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081630Z" creationid="hsugawa8651" creationdate="20181121T081630Z">
+        <seg>この宣言では、2つの型Tの「座標」を保持している新しいパラメトリック型Point{T}を定義しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This declaration has the same effect as the earlier definition of the &lt;x1/&gt;Foo&lt;x2/&gt; type without an explicit
 inner constructor method.</seg>
       </tuv>
@@ -33772,6 +33864,15 @@ value in the expression is already &lt;x4/&gt;1&lt;x5/&gt;, independent of whate
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Thus, this single declaration actually declares an unlimited
+number of types: &lt;x15/&gt;Point{Float64}&lt;x16/&gt;, &lt;x17/&gt;Point{AbstractString}&lt;x18/&gt;, &lt;x19/&gt;Point{Int64}&lt;x20/&gt;, etc.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081707Z" creationid="hsugawa8651" creationdate="20181121T081707Z">
+        <seg>よって、一つの宣言が実質的には、Point{Float64}、Point{AbstractString}、Point{Int64}などの無限の宣言に相当します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Thus, we can define a catch-all method for &lt;x7/&gt;f&lt;x8/&gt; like so:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T014120Z" creationid="hsugawa8651" creationdate="20181120T014120Z">
@@ -34381,6 +34482,14 @@ arguments at the end of the argument list.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151047Z" creationid="hsugawa8651" creationdate="20181117T151047Z">
         <seg>リストにこれらの引数を入力して配置するには、コンパイラを使用します。 特定の場合、コンパイラ・ベンダーは通常、&lt;x5/&gt;Csize_t&lt;x6/&gt;をタイプとして使用し、非表示を追加します。 引数リストの最後にある引数を指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Type parameters are introduced immediately after the type name, surrounded by curly braces:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081616Z" creationid="hsugawa8651" creationdate="20181121T081616Z">
+        <seg>型パラメータは、型名のすぐあとに、中括弧で囲んで挿入します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -35042,6 +35151,35 @@ like &lt;x1/&gt;`in`&lt;x2/&gt;, or &lt;x3/&gt;`mean`&lt;x4/&gt; and &lt;x5/&gt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We will discuss them in the following order: first, parametric composite types, then parametric
+abstract types, and finally parametric bits types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081604Z" creationid="hsugawa8651" creationdate="20181121T081604Z">
+        <seg> まず、パラメトリック複合型、次にパラメトリック抽象型、最後にパラメトリック原始型という順番で説明します。[訳注2]_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We will note, however, that
+because Julia is a dynamically typed language and doesn't need to make all type decisions at compile
+time, many traditional difficulties encountered in static parametric type systems can be relatively
+easily handled.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081548Z" creationid="hsugawa8651" creationdate="20181121T081548Z">
+        <seg>しかし、Juliaは動的型付け言語で、コンパイル時にすべての型を決定する必要はないため、静的パラメトリック型付け言語の多くで生じる従来の困難が、比較的簡単に扱えることを注記しておきます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Well, that's precisely the point of parametric types: it can be
+any type at all (or a value of any bits type, actually, although here it's clearly used as a type).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081648Z" creationid="hsugawa8651" creationdate="20181121T081648Z">
+        <seg>これがまさしくパラメトリック型のポイントです。 どんな型（本当は原始型の値でもいいですが、ここでは型が使われているのが明らかです）でもかまいません。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>What happens if &lt;x1/&gt;import Zebra&lt;x2/&gt; is evaluated in the main &lt;x3/&gt;App&lt;x4/&gt; code base?</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121142Z" creationid="hsugawa8651" creationdate="20181118T121142Z">
@@ -35063,6 +35201,14 @@ constructor functions.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123903Z" creationid="hsugawa8651" creationdate="20181118T123903Z">
         <seg>ここでは、&lt;x1/&gt;点&lt;x2/&gt;、&lt;x3/&gt;点{Float64}&lt;x4/&gt;および&lt;x5/&gt;点{Int64}&lt;x6/&gt;がすべて異なっていることを示している。 コンストラクタ関数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What, one may ask, is &lt;x5/&gt;T&lt;x6/&gt;?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081637Z" creationid="hsugawa8651" creationdate="20181121T081637Z">
+        <seg> Tってなんだ？と誰かが聞くかもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -35697,6 +35843,16 @@ through the characters in &lt;x7/&gt;str&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112503Z" creationid="hsugawa8651" creationdate="20181112T112503Z">
         <seg>&lt;x1/&gt;'reiterate''&lt;x2/&gt;定義では、&lt;x3/&gt;Squares&lt;x4/&gt;タイプはすでにかなり強力です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>With so many different varieties of generic programming and parametric types
+in various languages, we won't even attempt to compare Julia's parametric types to other languages,
+but will instead focus on explaining Julia's system in its own right.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081540Z" creationid="hsugawa8651" creationdate="20181121T081540Z">
+        <seg>言語によって汎化プログラミングやパラメトリック型は多種多様であるため、Juliaのパラメトリック型を他の言語と比較することはせず、Julia自体のシステムについて説明することに専念します。 </seg>
       </tuv>
     </tu>
     <tu>
