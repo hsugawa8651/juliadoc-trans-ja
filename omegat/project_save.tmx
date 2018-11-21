@@ -21813,8 +21813,8 @@ representations of integers and representations of real numbers.</seg>
         <seg>In type theory, &lt;x3/&gt;Any&lt;x4/&gt; is commonly
 called "top" because it is at the apex of the type graph.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144519Z" creationid="hsugawa8651" creationdate="20181120T144519Z">
-        <seg>型理論でAnyは、型のグラフの頂点にあるため、通常「トップ」と呼ばれます。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130300Z" creationid="hsugawa8651" creationdate="20181120T144519Z">
+        <seg>型理論で&lt;x3/&gt;Any&lt;x4/&gt; は、型のグラフの頂点にあるため、通常「トップ」と呼ばれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22847,8 +22847,8 @@ as printing) in chained comparisons.</seg>
         <seg>It is the exact
 opposite of &lt;x7/&gt;Any&lt;x8/&gt;: no object is an instance of &lt;x9/&gt;Union{}&lt;x10/&gt; and all types are supertypes of &lt;x11/&gt;Union{}&lt;x12/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144544Z" creationid="hsugawa8651" creationdate="20181120T144544Z">
-        <seg>これはAnyのちょうど逆で、すべてのオブジェクトはUnion{}のインスタンスではなく、すべての型がUnion{}のスーパータイプです。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130353Z" creationid="hsugawa8651" creationdate="20181120T144544Z">
+        <seg>これは&lt;x7/&gt;Any&lt;x8/&gt;のちょうど逆で、すべてのオブジェクトは&lt;x9/&gt;Union{}&lt;x10/&gt; のインスタンスではなく、すべての型が&lt;x11/&gt;Union{}&lt;x12/&gt;のスーパータイプです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23099,8 +23099,8 @@ native integer types respectively:</seg>
         <seg>Julia also has a predefined abstract
 "bottom" type, at the nadir of the type graph, which is written as &lt;x5/&gt;Union{}&lt;x6/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144533Z" creationid="hsugawa8651" creationdate="20181120T144533Z">
-        <seg>またJuliaには、事前に定義された抽象型の「ボトム」があり、型のグラフの最下位にあって、Union{}と書きます。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T130317Z" creationid="hsugawa8651" creationdate="20181120T144533Z">
+        <seg> またJuliaには、事前に定義された抽象型の「ボトム」があり、型のグラフの最下位にあって、"bottom" type, at the nadir of the type graph, which is written as &lt;x5/&gt;Union{}&lt;x6/&gt;と書きます。 </seg>
       </tuv>
     </tu>
     <tu>
