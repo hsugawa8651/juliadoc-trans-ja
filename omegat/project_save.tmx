@@ -9078,8 +9078,8 @@ arguments, as noted above).</seg>
       <tuv lang="EN-US">
         <seg>A primitive type can optionally be declared to be a subtype of some supertype.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145227Z" creationid="hsugawa8651" creationdate="20181120T145227Z">
-        <seg>原始型は、必要に応じてどのスーパータイプのサブタイプなのかを宣言することができます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T131957Z" creationid="hsugawa8651" creationdate="20181120T145227Z">
+        <seg>原始型は、必要に応じてどのスーパータイプのサブタイプなのかを宣言することができます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -15655,8 +15655,8 @@ throw a conversion error.</seg>
         <seg>Currently, only sizes that are multiples of
 8 bits are supported.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145252Z" creationid="hsugawa8651" creationdate="20181120T145252Z">
-        <seg> 現在は、8ビットの倍数であるサイズのみが利用可能です。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T131915Z" creationid="hsugawa8651" creationdate="20181120T145252Z">
+        <seg>現在は、8ビットの倍数であるサイズのみが利用可能です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19803,8 +19803,8 @@ provided, the memory layout must correspond in the same way to these strides.</s
         <seg>If a supertype
 is omitted, then the type defaults to having &lt;x1/&gt;Any&lt;x2/&gt; as its immediate supertype.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145238Z" creationid="hsugawa8651" creationdate="20181120T145238Z">
-        <seg> スーパータイプを省略すると、デフォルトでは、Anyがその型の直接のスーパータイプになります。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T131953Z" creationid="hsugawa8651" creationdate="20181120T145238Z">
+        <seg>スーパータイプを省略すると、デフォルトでは、&lt;x1/&gt;Any&lt;x2/&gt;がその型の直接のスーパータイプになります。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -26749,8 +26749,8 @@ requires using &lt;x3/&gt;llvmcall&lt;x4/&gt;.</seg>
       <tuv lang="EN-US">
         <seg>Primitive Types</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145109Z" creationid="hsugawa8651" creationdate="20181120T145109Z">
-        <seg>原始型 Primitive Types</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T131741Z" creationid="hsugawa8651" creationdate="20181120T145109Z">
+        <seg>原始型 [](## Primitive Types)</seg>
       </tuv>
     </tu>
     <tu>
@@ -30259,8 +30259,8 @@ arithmetic</seg>
 of &lt;x3/&gt;`Bool`&lt;x4/&gt; above therefore means that a boolean value takes eight bits to store, and has
 &lt;x5/&gt;`Integer`&lt;x6/&gt; as its immediate supertype.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145245Z" creationid="hsugawa8651" creationdate="20181120T145245Z">
-        <seg>したがって、上記のBool 宣言は、ブール値の格納に8ビットを要し、Integer が直接のスーパータイプであることを意味しています 。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T131941Z" creationid="hsugawa8651" creationdate="20181120T145245Z">
+        <seg>したがって、上記の&lt;x3/&gt;`Bool`&lt;x4/&gt;宣言は、ブール値の格納に8ビットを要し、&lt;x5/&gt;`Integer`&lt;x6/&gt;  が直接のスーパータイプであることを意味しています 。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -31486,8 +31486,8 @@ such a constraint.</seg>
         <seg>The number of bits indicates how much storage the type requires and the name gives the new type
 a name.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145219Z" creationid="hsugawa8651" creationdate="20181120T145219Z">
-        <seg>ビット数は、その型が格納に何ビット必要とするかを示し、新しい型の名前に使われます。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T131842Z" creationid="hsugawa8651" creationdate="20181120T145219Z">
+        <seg>ビット数は、その型が格納に何ビット必要とするかを示し、新しい型の名前に使われます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33022,8 +33022,9 @@ instances of the type &lt;x13/&gt;SummedArray{Int32,Int32}&lt;x14/&gt;.</seg>
         <seg>Therefore, boolean values, although they really need just a single bit,
 cannot be declared to be any smaller than eight bits.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145301Z" creationid="hsugawa8651" creationdate="20181120T145301Z">
-        <seg>したがって、ブール値に本当に必要なのは1ビットだけですが、8ビットより小さい宣言にはできません。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T132016Z" creationid="hsugawa8651" creationdate="20181120T145301Z">
+        <seg>Therefore, boolean values, although they really need just a single bit,
+cannot be declared to be any smaller than eight bits.</seg>
       </tuv>
     </tu>
     <tu>
