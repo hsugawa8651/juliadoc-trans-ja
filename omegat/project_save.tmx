@@ -9414,8 +9414,8 @@ Dingo/
       <tuv lang="EN-US">
         <seg>Abstract Types</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144139Z" creationid="hsugawa8651" creationdate="20181120T144139Z">
-        <seg>抽象型 Abstract Types</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125209Z" creationid="hsugawa8651" creationdate="20181120T144139Z">
+        <seg>抽象型 [](## Abstract Types)</seg>
       </tuv>
     </tu>
     <tu>
@@ -9927,8 +9927,8 @@ format for displaying an object by overloading a three-argument form of &lt;x9/&
         <seg>Although
 they have different representation sizes, &lt;x29/&gt;Int8&lt;x30/&gt;, &lt;x31/&gt;Int16&lt;x32/&gt;, &lt;x33/&gt;Int32&lt;x34/&gt;, &lt;x35/&gt;Int64&lt;x36/&gt; and &lt;x37/&gt;Int128&lt;x38/&gt;</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144251Z" creationid="hsugawa8651" creationdate="20181120T144251Z">
-        <seg>Int8、Int16、Int32、Int64、Int128 は表現のサイズは異なりますが、すべて符号付き整数型という点で共通しています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125321Z" creationid="hsugawa8651" creationdate="20181120T144251Z">
+        <seg> Int8、Int16、Int32、Int64、Int128 は表現のサイズは異なりますが、すべて符号付き整数型という点で共通しています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -15780,10 +15780,8 @@ globals.</seg>
       <tuv lang="EN-US">
         <seg>Declarations can also be attached to function definitions:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144110Z" creationid="hsugawa8651" creationdate="20181120T144110Z">
-        <seg>また宣言を関数の定義に差し込むこともできます。
-
-</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125119Z" creationid="hsugawa8651" creationdate="20181120T144110Z">
+        <seg>また宣言を関数の定義に差し込むこともできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27008,8 +27006,8 @@ types of numeric values: &lt;x3/&gt;`Int8`&lt;x4/&gt;, &lt;x5/&gt;`UInt8`&lt;x6/
 &lt;x11/&gt;`Int32`&lt;x12/&gt;, &lt;x13/&gt;`UInt32`&lt;x14/&gt;, &lt;x15/&gt;`Int64`&lt;x16/&gt;, &lt;x17/&gt;`UInt64`&lt;x18/&gt;, &lt;x19/&gt;`Int128`&lt;x20/&gt;,
 &lt;x21/&gt;`UInt128`&lt;x22/&gt;, &lt;x23/&gt;`Float16`&lt;x24/&gt;, &lt;x25/&gt;`Float32`&lt;x26/&gt;, and &lt;x27/&gt;`Float64`&lt;x28/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144239Z" creationid="hsugawa8651" creationdate="20181120T094913Z">
-        <seg>整数と浮動小数点数 で導入した、さまざまな数値の具象型を思い出してください。 Int8、 UInt8、 Int16、 UInt16、 Int32、 UInt32、 Int64、 UInt64、 Int128、 UInt128、 Float16、 Float32、 Float64 です。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125310Z" creationid="hsugawa8651" creationdate="20181120T094913Z">
+        <seg>整数と浮動小数点数 で導入した、さまざまな数値の具象型を思い出してください。 Int8、 UInt8、 Int16、 UInt16、 Int32、 UInt32、 Int64、 UInt64、 Int128、 UInt128、 Float16、 Float32、 Float64 です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27222,8 +27220,8 @@ rationals.</seg>
         <seg>Returning from this function behaves just like an assignment to a variable with a declared type:
 the value is always converted to &lt;x1/&gt;Float64&lt;x2/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144122Z" creationid="hsugawa8651" creationdate="20181120T144122Z">
-        <seg>この関数の戻り値は、型宣言をした変数への代入と同じように処理されます。値は常にFloat64に変換されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125152Z" creationid="hsugawa8651" creationdate="20181120T144122Z">
+        <seg>この関数の戻り値は、型宣言をした変数への代入と同じように処理されます。値は常に&lt;x1/&gt;Float64&lt;x2/&gt;に変換されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33545,8 +33543,8 @@ etc.</seg>
       <tuv lang="EN-US">
         <seg>This "declaration" behavior only occurs in specific contexts:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144013Z" creationid="hsugawa8651" creationdate="20181120T144013Z">
-        <seg>この「宣言」の動作は、特定のコンテキストでのみ発生します</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125034Z" creationid="hsugawa8651" creationdate="20181120T144013Z">
+        <seg>この「宣言」の動作は、特定のコンテキストでのみ発生します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -39958,14 +39956,6 @@ addone(x) = x + oneunit(x)             &lt;x4/&gt; any type supporting + and one
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>and applies to the whole current scope, even before the declaration.</seg>
-      </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T144051Z" creationid="hsugawa8651" creationdate="20181120T144051Z">
-        <seg></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>and can cause especial headaches with &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-multi-dim-arrays):</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T030531Z" creationid="hsugawa8651" creationdate="20181114T030531Z">
@@ -40776,6 +40766,14 @@ eltype(::Type{A}) where {A &lt;: AbstractArray} = eltype(supertype(A))</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125126Z" creationid="hsugawa8651" creationdate="20181121T125126Z">
+        <seg>end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>end
 end
 using Bar</seg>
@@ -40784,6 +40782,28 @@ using Bar</seg>
         <seg>end
 end
 using Bar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>end
+foo (generic function with 1 method)
+
+julia&gt; foo()
+100
+
+julia&gt; typeof(ans)
+Int8</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125017Z" creationid="hsugawa8651" creationdate="20181121T125017Z">
+        <seg>end
+foo (generic function with 1 method)
+
+julia&gt; foo()
+100
+
+julia&gt; typeof(ans)
+Int8</seg>
       </tuv>
     </tu>
     <tu>
@@ -41893,6 +41913,14 @@ end</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>function sinc(x)::Float64</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125121Z" creationid="hsugawa8651" creationdate="20181121T125121Z">
+        <seg>function sinc(x)::Float64</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>function sinc(x)::Float64
     if x == 0
         return 1
@@ -42873,6 +42901,14 @@ elseif x &gt; y
 else
     println("x is equal to y")
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if x == 0</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125123Z" creationid="hsugawa8651" creationdate="20181121T125123Z">
+        <seg>if x == 0</seg>
       </tuv>
     </tu>
     <tu>
@@ -55249,16 +55285,6 @@ julia&gt; ∑(2, 3)
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>local x::Int8  &lt;x1/&gt; in a local declaration
-x::Int8 = 10   &lt;x2/&gt; as the left-hand side of an assignment</seg>
-      </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T021537Z" creationid="hsugawa8651" creationdate="20181116T021537Z">
-        <seg>local x::Int8  &lt;x1/&gt; in a local declaration
-x::Int8 = 10   &lt;x2/&gt; as the left-hand side of an assignment</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>logical shift&lt;x1/&gt; right</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T063714Z" creationid="hsugawa8651" creationdate="20181113T132309Z">
@@ -56481,6 +56507,24 @@ end</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T133236Z" creationid="hsugawa8651" creationdate="20181117T133236Z">
         <seg>return (a &lt; b) ? -1 : ((a &gt; b) ? +1 : 0)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>return 1</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125124Z" creationid="hsugawa8651" creationdate="20181121T125124Z">
+        <seg>return 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>return sin(pi*x)/(pi*x)
+end</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125127Z" creationid="hsugawa8651" creationdate="20181121T125127Z">
+        <seg>return sin(pi*x)/(pi*x)
+end</seg>
       </tuv>
     </tu>
     <tu>
@@ -57755,6 +57799,14 @@ fetch(reader)</seg>
 reader = @async do_compute(read(process, String))
 wait(process)
 fetch(reader)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125014Z" creationid="hsugawa8651" creationdate="20181121T125014Z">
+        <seg>x</seg>
       </tuv>
     </tu>
     <tu>
