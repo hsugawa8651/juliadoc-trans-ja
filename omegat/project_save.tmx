@@ -17019,6 +17019,15 @@ there is only a single loop over &lt;x12/&gt;X&lt;x13/&gt;, and a single array i
     <tu>
       <tuv lang="EN-US">
         <seg>For example,
+a 2-element tuple type resembles the following immutable type:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082934Z" creationid="hsugawa8651" creationdate="20181121T082934Z">
+        <seg>たとえば、2要素タプル型は、次の複合型に似ています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example,
 the following program, when compiled with &lt;x5/&gt;julia -O3&lt;x6/&gt; generates two SIMD addition instructions
 (&lt;x7/&gt;addps&lt;x8/&gt;) on x86 systems:</seg>
       </tuv>
@@ -19019,6 +19028,14 @@ more than a single method definition may be provided.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145746Z" creationid="hsugawa8651" creationdate="20181120T145746Z">
         <seg>ただし、bazの値はIntに変換できる必要があります</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, there are three key differences:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082942Z" creationid="hsugawa8651" creationdate="20181121T082942Z">
+        <seg>ただし、3つの重要な違いがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22360,6 +22377,16 @@ more general methods where the declared parameter types are abstract:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124642Z" creationid="hsugawa8651" creationdate="20181118T124642Z">
         <seg>&lt;x3/&gt;例外&lt;x4/&gt;オブジェクトを取得するには、次のコマンドを呼び出す必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It only makes sense to take ratios of integer values, so the parameter type &lt;x1/&gt;T&lt;x2/&gt; is restricted
+to being a subtype of &lt;x3/&gt;`Integer`&lt;x4/&gt;, and a ratio of integers represents a value on the
+real number line, so any &lt;x5/&gt;`Rational`&lt;x6/&gt; is an instance of the &lt;x7/&gt;`Real`&lt;x8/&gt; abstraction.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082902Z" creationid="hsugawa8651" creationdate="20181121T082902Z">
+        <seg>整数値の比率になる時だけ、意味をなすので、パラメータの型Tは、Integerのサブタイプに限定されています。 整数の比は数直線上の値を表現するので、任意のRational は、抽象型 Real のインスタンスです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -31146,6 +31173,15 @@ allocated in Julia to be freed by an external library) is equally invalid.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The salient
+aspects of a function's arguments are their order and their types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082926Z" creationid="hsugawa8651" creationdate="20181121T082926Z">
+        <seg>関数の引数の目立った特徴は、順序と型です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The same holds for &lt;x8/&gt;`setindex!`&lt;x9/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T083157Z" creationid="hsugawa8651" creationdate="20181113T083157Z">
@@ -32052,6 +32088,15 @@ which allows inserting calls to LLVM intrinsics directly.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T122410Z" creationid="hsugawa8651" creationdate="20181117T152448Z">
         <seg>さらに特別な呼び出し規則が一つあります&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref Base.llvmcall)。 ではLLVM組み込みへの呼び出しを直接挿入することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Therefore a tuple type is similar
+to a parameterized immutable type where each parameter is the type of one field.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082932Z" creationid="hsugawa8651" creationdate="20181121T082932Z">
+        <seg>そのため、タプル型は、不変なパラメトリック複合型で各パラメータがフィールドの型に対応しているものと似ています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -34463,6 +34508,18 @@ of those methods are, use the &lt;x3/&gt;`methods()`&lt;x4/&gt; function:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To give a real-world example of how all this parametric type machinery can be useful, here is
+the actual definition of Julia's &lt;x1/&gt;`Rational`&lt;x2/&gt; immutable type (except that we omit the
+constructor here for simplicity), representing an exact ratio of integers:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082851Z" creationid="hsugawa8651" creationdate="20181121T082851Z">
+        <seg>現実の世界でパラメトリック型という仕組みがどれほど役立つかという例として、 ここでは整数の比を表すRational という不変型の、Juliaでの実際の定義を示します。 （単純化のため、ここではコンストラクタを省略します）
+
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To include a CR in a string, use an explicit escape &lt;x5/&gt;\r&lt;x6/&gt;; for example,
 you can enter the literal string &lt;x7/&gt;"a CRLF line ending\r\n"&lt;x8/&gt;.</seg>
       </tuv>
@@ -34686,10 +34743,34 @@ the least-indented line.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Tuple Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082909Z" creationid="hsugawa8651" creationdate="20181121T082909Z">
+        <seg>タプル型 Tuple Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tuple types may have any number of parameters.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082950Z" creationid="hsugawa8651" creationdate="20181121T082950Z">
+        <seg>タプル型は、任意の数のパラメータを持つことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Tuple&lt;x1/&gt;</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T041603Z" creationid="hsugawa8651" creationdate="20181112T041603Z">
         <seg>Tuple&lt;x1/&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tuples are an abstraction of the arguments of a function -- without the function itself.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082918Z" creationid="hsugawa8651" creationdate="20181121T082918Z">
+        <seg>タプルとは関数本体からその引数だけを抜き出したものです。 </seg>
       </tuv>
     </tu>
     <tu>
