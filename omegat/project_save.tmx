@@ -14606,8 +14606,8 @@ julia&gt; newfun()
         <seg>Composite objects declared with &lt;x1/&gt;struct&lt;x2/&gt; are &lt;x3/&gt;immutable&lt;x4/&gt;; they cannot be modified
 after construction.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145849Z" creationid="hsugawa8651" creationdate="20181120T145849Z">
-        <seg>structで宣言された複合型オブジェクトは不変です。生成後に変更することはできません。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T133422Z" creationid="hsugawa8651" creationdate="20181120T145849Z">
+        <seg> &lt;x1/&gt;struct&lt;x2/&gt;で宣言された複合型オブジェクトは&lt;x3/&gt;不変&lt;x4/&gt;です。生成後に変更することはできません。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -34553,8 +34553,8 @@ much cleaner:</seg>
       <tuv lang="EN-US">
         <seg>This may seem odd at first, but it has several advantages:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145859Z" creationid="hsugawa8651" creationdate="20181120T145859Z">
-        <seg>これは最初は奇妙に思えるかもしれませんが、いくつかの利点があります：</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T133352Z" creationid="hsugawa8651" creationdate="20181120T145859Z">
+        <seg>これは最初は奇妙に思えるかもしれませんが、いくつかの利点があります： </seg>
       </tuv>
     </tu>
     <tu>
@@ -37625,8 +37625,8 @@ broadcasting shape rules yourself, but this may be helpful in limited situations
       <tuv lang="EN-US">
         <seg>You can access the field values of a composite object using the traditional &lt;x1/&gt;foo.bar&lt;x2/&gt; notation:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145830Z" creationid="hsugawa8651" creationdate="20181120T145830Z">
-        <seg>伝統的なfoo.bar表記法を使用して、複合型のオブジェクトのフィールド値にアクセスできます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T133331Z" creationid="hsugawa8651" creationdate="20181120T145830Z">
+        <seg>伝統的な&lt;x1/&gt;foo.bar&lt;x2/&gt;表記法を使用して、複合型のオブジェクトのフィールド値にアクセスできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -37879,8 +37879,8 @@ of the &lt;x3/&gt;bar&lt;x4/&gt; and &lt;x5/&gt;baz&lt;x6/&gt; fields:</seg>
       <tuv lang="EN-US">
         <seg>You may find a list of field names using the &lt;x1/&gt;fieldnames&lt;x2/&gt; function.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T145759Z" creationid="hsugawa8651" creationdate="20181120T145759Z">
-        <seg>fieldnames関数を使用して、フィールド名を列挙することができます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T133315Z" creationid="hsugawa8651" creationdate="20181120T145759Z">
+        <seg>&lt;x1/&gt;fieldnames&lt;x2/&gt;関数を使用して、フィールド名を列挙することができます。</seg>
       </tuv>
     </tu>
     <tu>
