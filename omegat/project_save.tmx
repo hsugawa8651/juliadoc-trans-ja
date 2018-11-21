@@ -1519,6 +1519,14 @@ be resolved by name, and if necessary a direct path may be specified.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(@id man-singleton-types)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083218Z" creationid="hsugawa8651" creationdate="20181121T083218Z">
+        <seg>シングルトン型 (@id man-singleton-types)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>(@id man-strings)</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T094138Z" creationid="hsugawa8651" creationdate="20181120T094138Z">
@@ -8216,6 +8224,15 @@ array types that have fixed dimensionality requirements.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;x7/&gt;NTuple{N,T}&lt;x8/&gt; is a convenient
+alias for &lt;x9/&gt;Tuple{Vararg{T,N}}&lt;x10/&gt;, i.e. a tuple type containing exactly &lt;x11/&gt;N&lt;x12/&gt; elements of type &lt;x13/&gt;T&lt;x14/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083211Z" creationid="hsugawa8651" creationdate="20181121T083211Z">
+        <seg>NTuple{N,T}はTuple{Vararg{T,N}}の便利なエイリアスです。 つまり、型Tの要素をちょうどN個含むタプル型です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;x7/&gt;Point{Float64}&lt;x8/&gt; is a concrete type equivalent to the type defined by replacing &lt;x9/&gt;T&lt;x10/&gt; in the definition
 of &lt;x11/&gt;Point&lt;x12/&gt; with &lt;x13/&gt;`Float64`&lt;x14/&gt;.</seg>
       </tuv>
@@ -10102,6 +10119,14 @@ in an &lt;x12/&gt;Array&lt;x13/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131018Z" creationid="hsugawa8651" creationdate="20181113T131018Z">
         <seg>&lt;x10/&gt;'軸&lt;x11/&gt;を持つすべてのオブジェクトをサポートします。 インデックス作成はブロードキャスト時に引き数として参加することができ、デフォルトではその結果は格納される &lt;x12/&gt;アレイ&lt;x13/&gt;で使用されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Any object that is not a type is not an instance of &lt;x1/&gt;Type&lt;x2/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083306Z" creationid="hsugawa8651" creationdate="20181121T083306Z">
+        <seg>型ではないオブジェクトは、Typeのインスタンスではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16944,6 +16969,15 @@ encountered when computing with them, see David Goldberg's paper &lt;x1/&gt;What
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For each type, &lt;x1/&gt;T&lt;x2/&gt;, the "singleton type" &lt;x3/&gt;Type{T}&lt;x4/&gt; is an abstract type whose only instance is
+the object &lt;x5/&gt;T&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083233Z" creationid="hsugawa8651" creationdate="20181121T083233Z">
+        <seg>型Tそれぞれに対して、 「シングルトン型」 Type{T}は、インスタンスがT唯一つだけの抽象型です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For even more extensive documentation of the history of, rationale for, and issues with floating-point
 numbers, as well as discussion of many other topics in numerical computing, see the &lt;x1/&gt;collected writings&lt;x2/&gt;</seg>
       </tuv>
@@ -20686,6 +20720,15 @@ immediately.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In other words, &lt;x1/&gt;`isa(A,Type{B})`&lt;x2/&gt; is true if and only if &lt;x3/&gt;A&lt;x4/&gt; and &lt;x5/&gt;B&lt;x6/&gt; are the same object
+and that object is a type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083251Z" creationid="hsugawa8651" creationdate="20181121T083251Z">
+        <seg>換言すると、isa(A,Type{B}) は、AとBが同じオブジェクトであり、そのオブジェクトとは型であるのみ真になります。 パ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In other words, if the path to our example project directory is &lt;x2/&gt;/home/me/animals&lt;x3/&gt; then the &lt;x4/&gt;paths&lt;x5/&gt; map could be represented by this dictionary:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121359Z" creationid="hsugawa8651" creationdate="20181118T121359Z">
@@ -21860,6 +21903,15 @@ the first block in &lt;x1/&gt;if @generated&lt;x2/&gt; is used, and a normal one
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115412Z" creationid="hsugawa8651" creationdate="20181118T115412Z">
         <seg>補間はプレフィックス&lt;x7/&gt;$&lt;x8/&gt;で示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Intuitively, this corresponds to the type of a function's arguments being a subtype of the function's
+signature (when the signature matches).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083101Z" creationid="hsugawa8651" creationdate="20181121T083101Z">
+        <seg>直観的には、これは、関数の引数の型が関数のシグネチャのサブタイプであることに相当します（シグネチャが適合する場合）。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24826,6 +24878,14 @@ and it may not be explicitly closed.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note the implications of covariance:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083046Z" creationid="hsugawa8651" creationdate="20181121T083046Z">
+        <seg>暗黙的に共変となる点に注目してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Note the important distinction between the way &lt;x9/&gt;a&lt;x10/&gt; and &lt;x11/&gt;b&lt;x12/&gt; are used:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T165300Z" creationid="hsugawa8651" creationdate="20181118T165300Z">
@@ -24871,6 +24931,14 @@ that this serves two purposes.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T115458Z" creationid="hsugawa8651" creationdate="20181118T115458Z">
         <seg>&lt;x1/&gt;:(1 + 2)&lt;x2/&gt;は、シンボル&lt;x3/&gt;:x&lt;x4/&gt;ではなく、結果に表示されることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notice that &lt;x1/&gt;Vararg{T}&lt;x2/&gt; corresponds to zero or more elements of type &lt;x3/&gt;T&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083134Z" creationid="hsugawa8651" creationdate="20181121T083134Z">
+        <seg>Vararg{T}は、0個以上の型Tに対応することに注意してください。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -27291,6 +27359,14 @@ must be called to create an object.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152846Z" creationid="hsugawa8651" creationdate="20181117T152846Z">
         <seg>分散ネーミング問題は幾分抽象的なので、この問題を理解するためには、具体的なシナリオをウォークスルーすることが有用です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since the definition is a little difficult to parse, let's look at some examples:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083235Z" creationid="hsugawa8651" creationdate="20181121T083235Z">
+        <seg>定義を構文的に説明するのは少し難しいので、例をいくつか見てみましょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30377,6 +30453,15 @@ function that looks for subsequences.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The last parameter of a tuple type can be the special type &lt;x1/&gt;Vararg&lt;x2/&gt;, which denotes any number
+of trailing elements:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083114Z" creationid="hsugawa8651" creationdate="20181121T083114Z">
+        <seg>タプル型の最後のパラメータは、特殊な型である可変引数として、任意の数の後続の要素を示す型とすることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The last point is potentially surprising and thus worth noting:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T064349Z" creationid="hsugawa8651" creationdate="20181114T030511Z">
@@ -31496,6 +31581,14 @@ the type &lt;x3/&gt;Point{AbstractString}&lt;x4/&gt; is a "point" whose "coordin
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The type &lt;x1/&gt;Vararg{T,N}&lt;x2/&gt; corresponds to exactly &lt;x3/&gt;N&lt;x4/&gt; elements of type &lt;x5/&gt;T&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083200Z" creationid="hsugawa8651" creationdate="20181121T083146Z">
+        <seg>型Vararg{T,N}は、ちょうどN個の型Tに対応します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The type arguments to &lt;x1/&gt;ccall&lt;x2/&gt; and &lt;x3/&gt;@cfunction&lt;x4/&gt; are evaluated statically,
 when the method containing the usage is defined.</seg>
       </tuv>
@@ -32044,6 +32137,14 @@ in &lt;x1/&gt;quote ... end&lt;x2/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There is a special kind of abstract parametric type that must be mentioned here: singleton types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083225Z" creationid="hsugawa8651" creationdate="20181121T083225Z">
+        <seg>ここで、特殊なパラメトリック抽象型であるシングルトン型について触れておくべきでしょう。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>There is also a
 &lt;x7/&gt;`broadcast!`&lt;x8/&gt; function to specify an explicit destination (which can also
 be accessed in a fusing fashion by &lt;x9/&gt;.=&lt;x10/&gt; assignment).</seg>
@@ -32088,6 +32189,16 @@ which allows inserting calls to LLVM intrinsics directly.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T122410Z" creationid="hsugawa8651" creationdate="20181117T152448Z">
         <seg>さらに特別な呼び出し規則が一つあります&lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref Base.llvmcall)。 ではLLVM組み込みへの呼び出しを直接挿入することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Therefore
+&lt;x7/&gt;Tuple{Any}&lt;x8/&gt; is considered an abstract type, and tuple types are only concrete if their parameters
+are.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083009Z" creationid="hsugawa8651" creationdate="20181121T083009Z">
+        <seg>したがって Tuple{Any}は、抽象型と見なされます。タプル型は、そのパラメータが具象型の場合にのみ具象型です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -34751,10 +34862,26 @@ the least-indented line.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Tuple types are &lt;x1/&gt;covariant&lt;x2/&gt; in their parameters: &lt;x3/&gt;Tuple{Int}&lt;x4/&gt; is a subtype of &lt;x5/&gt;Tuple{Any}&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083006Z" creationid="hsugawa8651" creationdate="20181121T083006Z">
+        <seg>タプル型は、そのパラメータと共変です。Tuple{Int}はTuple{Any}のサブタイプです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Tuple types may have any number of parameters.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082950Z" creationid="hsugawa8651" creationdate="20181121T082950Z">
         <seg>タプル型は、任意の数のパラメータを持つことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tuple values are written with parentheses and commas.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083032Z" creationid="hsugawa8651" creationdate="20181121T083032Z">
+        <seg>タプルの値は、括弧とカンマをつかって書きます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -34771,6 +34898,14 @@ the least-indented line.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082918Z" creationid="hsugawa8651" creationdate="20181121T082918Z">
         <seg>タプルとは関数本体からその引数だけを抜き出したものです。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tuples do not have field names; fields are only accessed by index.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083019Z" creationid="hsugawa8651" creationdate="20181121T083019Z">
+        <seg>タプルにはフィールド名はありません。フィールドにはインデックスによってのみアクセスできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -35293,6 +35428,23 @@ will commonly be ranges like &lt;x7/&gt;1:n&lt;x8/&gt; or &lt;x9/&gt;2:(n-1)&lt;
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Vararg Tuple Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083108Z" creationid="hsugawa8651" creationdate="20181121T083108Z">
+        <seg>可変引数タプル型 Vararg Tuple Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Vararg tuple types are
+used to represent the arguments accepted by varargs methods (see &lt;x5/&gt;Varargs Functions&lt;x6/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083143Z" creationid="hsugawa8651" creationdate="20181121T083143Z">
+        <seg>可変引数タプル型は、varargsメソッドによって受け入れられる引数を表すために使用されます（可変引数関数を参照）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Varargs Functions</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T131224Z" creationid="hsugawa8651" creationdate="20181120T131224Z">
@@ -35660,6 +35812,15 @@ converted to type &lt;x5/&gt;T&lt;x6/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151905Z" creationid="hsugawa8651" creationdate="20181117T151905Z">
         <seg>&lt;x3/&gt;Ptr{T}&lt;x4/&gt;の引数として&lt;x1/&gt;&amp;&lt;x2/&gt;とスカラー値を渡すと、まず値が次のようになります。 &lt;x5/&gt;T&lt;x6/&gt;に変換されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When a tuple is constructed, an appropriate
+tuple type is generated on demand:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083034Z" creationid="hsugawa8651" creationdate="20181121T083034Z">
+        <seg>タプルが生成されると、必要に応じて適切なタプル型が生成されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -36343,6 +36504,15 @@ like any value:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T124513Z" creationid="hsugawa8651" creationdate="20181118T124513Z">
         <seg>&lt;x1/&gt;ブレーク&lt;x2/&gt;キーワードがないと、&lt;x4/&gt;ループは自身では終了せず、&lt;x6/&gt;ループの&lt;x5/&gt;は1000まで繰り返されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Without the parameter, &lt;x7/&gt;Type&lt;x8/&gt; is simply an abstract type which has
+all type objects as its instances, including, of course, singleton types:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T083256Z" creationid="hsugawa8651" creationdate="20181121T083256Z">
+        <seg>ラメータをつけないTypeは、単なる抽象型であり、すべての型オブジェクトはTypeのインスタンスです（もちろん、シングルトン型も含みます）。</seg>
       </tuv>
     </tu>
     <tu>
