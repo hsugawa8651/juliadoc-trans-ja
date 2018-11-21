@@ -20152,8 +20152,8 @@ omitted it will default to &lt;x7/&gt;`Float64`&lt;x8/&gt;.</seg>
         <seg>If the type assertion is not true,
 an exception is thrown, otherwise, the left-hand value is returned:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143928Z" creationid="hsugawa8651" creationdate="20181120T143928Z">
-        <seg> 型表明が真でない場合は例外が投げられますが、そうでなければ左側の値が返されます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124841Z" creationid="hsugawa8651" creationdate="20181120T143928Z">
+        <seg>型表明が真でない場合は例外が投げられますが、そうでなければ左側の値が返されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22436,8 +22436,8 @@ its right operand:</seg>
         <seg>It can be used anywhere to assert that the value of the expression on the left is an instance
 of the type on the right.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143840Z" creationid="hsugawa8651" creationdate="20181120T143840Z">
-        <seg> ::演算子はどこでも使用できて、::の左側の式の値は、右側の型のインスタンスであることを表明します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124807Z" creationid="hsugawa8651" creationdate="20181120T143840Z">
+        <seg>::演算子はどこでも使用できて、::の左側の式の値は、右側の型のインスタンスであることを表明します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29215,8 +29215,8 @@ in the others.</seg>
       <tuv lang="EN-US">
         <seg>The &lt;x1/&gt;::&lt;x2/&gt; operator can be used to attach type annotations to expressions and variables in programs.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124652Z" creationid="hsugawa8651" creationdate="20181120T143721Z">
-        <seg>::演算子は、プログラム内の式や変数に型注釈を付ける用途に使用できます。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124715Z" creationid="hsugawa8651" creationdate="20181120T143721Z">
+        <seg>&lt;x1/&gt;::&lt;x2/&gt; 演算子は、プログラム内の式や変数に型注釈を付ける用途に使用できます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -36853,11 +36853,22 @@ assigned to the variable will be converted to the declared type using &lt;x5/&gt
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When appended to a variable on the left-hand side of an assignment, or as part of a &lt;x1/&gt;local&lt;x2/&gt; declaration,
+the &lt;x3/&gt;::&lt;x4/&gt; operator means something a bit different: it declares the variable to always have the
+specified type, like a type declaration in a statically-typed language such as C. Every value
+assigned to the variable will be converted to the declared type using &lt;x5/&gt;`convert`&lt;x6/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125007Z" creationid="hsugawa8651" creationdate="20181121T125007Z">
+        <seg>代入文の左側の変数や、 &lt;x1/&gt;local&lt;x2/&gt;宣言の一部に追加されると、&lt;x3/&gt;::&lt;x4/&gt;演算子の意味が少し変わります。 つまり、C言語のような静的型付き言語の型宣言のように、常に変数は指定した型であるという宣言になります。 変数に代入される値はすべて、宣言された型に &lt;x5/&gt;`convert`&lt;x6/&gt;を使って変換されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When appended to an expression computing a value, the &lt;x1/&gt;::&lt;x2/&gt; operator is read as "is an instance
 of".</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143830Z" creationid="hsugawa8651" creationdate="20181120T143830Z">
-        <seg>計算式に追加した::演算子は、 "is an instance of(～のインスタンスである)"と読み下すことができます。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124903Z" creationid="hsugawa8651" creationdate="20181120T143830Z">
+        <seg>計算式に追加した&lt;x1/&gt;::&lt;x2/&gt;演算子は、 "is an instance of(～のインスタンスである)"と読み下すことができます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -37050,8 +37061,8 @@ object.</seg>
         <seg>When the type is abstract, it suffices for the value to be implemented
 by a concrete type that is a subtype of the abstract type.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143924Z" creationid="hsugawa8651" creationdate="20181120T143924Z">
-        <seg> 抽象型の場合は、その抽象型のサブタイプの具象型によって値が実装されていれば十分です。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124911Z" creationid="hsugawa8651" creationdate="20181120T143924Z">
+        <seg>抽象型の場合は、その抽象型のサブタイプの具象型によって値が実装されていれば十分です。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -49422,6 +49433,14 @@ Stacktrace:
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>julia&gt; function foo()</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125010Z" creationid="hsugawa8651" creationdate="20181121T125010Z">
+        <seg>julia&gt; function foo()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>julia&gt; function foo()
            x::Int8 = 100
            x
@@ -57920,6 +57939,14 @@ s[k2] == qs[k2]                        &lt;x5/&gt; =&gt; true</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T073627Z" creationid="hsugawa8651" creationdate="20181118T100034Z">
         <seg>整数値&lt;x2/&gt;n&lt;x3/&gt; に対して効率的に計算された x*2^n&lt;x1/&gt; の値</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>x::Int8 = 100</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T125012Z" creationid="hsugawa8651" creationdate="20181121T125012Z">
+        <seg>x::Int8 = 100</seg>
       </tuv>
     </tu>
     <tu>
