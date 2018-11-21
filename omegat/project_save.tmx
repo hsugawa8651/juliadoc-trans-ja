@@ -10682,6 +10682,14 @@ be thrown immediately.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As with parametric composite types, each such instance is a subtype of &lt;x5/&gt;Pointy&lt;x6/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082441Z" creationid="hsugawa8651" creationdate="20181121T082441Z">
+        <seg>パラメトリック複合型と同様に、各インスタンスはPointyのサブタイプです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As with variables, Unicode can also be used for function names:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125318Z" creationid="hsugawa8651" creationdate="20181120T125318Z">
@@ -14653,6 +14661,15 @@ iteration&lt;x8/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Constructor methods to appropriately handle such mixed cases can be defined, but that will not
+be discussed until later on in &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-constructors).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082403Z" creationid="hsugawa8651" creationdate="20181121T082403Z">
+        <seg>このような型の混ざった場合を適切に扱うコンストラクタメソッドは定義できますが、後の[コンストラクタ]（@ ref man-constructors）まで議論を保留します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Constructors and Types</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T150137Z" creationid="hsugawa8651" creationdate="20181117T150137Z">
@@ -18210,6 +18227,14 @@ for the key &lt;x13/&gt;x&lt;x14/&gt;).</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Given such a declaration, for each choice of &lt;x1/&gt;T&lt;x2/&gt;, we have &lt;x3/&gt;Point{T}&lt;x4/&gt; as a subtype of &lt;x5/&gt;Pointy{T}&lt;x6/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082643Z" creationid="hsugawa8651" creationdate="20181121T082643Z">
+        <seg>この宣言で、それぞれ選んたTに対して、Point{T}はPointy{T}のサブタイプとなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Given this &lt;x1/&gt;roots&lt;x2/&gt; map, in &lt;x3/&gt;App&lt;x4/&gt;'s code the statement &lt;x5/&gt;import Priv&lt;x6/&gt; will cause Julia to look up &lt;x7/&gt;roots[:Priv]&lt;x8/&gt;, which yields &lt;x9/&gt;ba13f791-ae1d-465a-978b-69c3ad90f72b&lt;x10/&gt;, the UUID of the &lt;x11/&gt;Priv&lt;x12/&gt; package that is to be loaded in that context.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121108Z" creationid="hsugawa8651" creationdate="20181118T121108Z">
@@ -20918,6 +20943,15 @@ be a compound expression (see &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-compoun
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T125215Z" creationid="hsugawa8651" creationdate="20181110T025518Z">
         <seg>代入方式では、関数の本体は単一の式でなければなりませんが、その式は複合式(  &lt;x1/&gt;&lt;x2/&gt;&lt;x3/&gt;(@ref man-compound-expressions)を参照)でもかまいません。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the case of &lt;x1/&gt;Point&lt;x2/&gt;, the type of &lt;x3/&gt;T&lt;x4/&gt; is unambiguously implied if and only if the two arguments
+to &lt;x5/&gt;Point&lt;x6/&gt; have the same type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082350Z" creationid="hsugawa8651" creationdate="20181121T082350Z">
+        <seg>Pointの場合、2つの引数が同じ型を持つ場合にのみ、型Tは明確に推定されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24036,6 +24070,15 @@ which is often known as &lt;x1/&gt;machine epsilon&lt;x2/&gt;.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Much as plain old abstract types serve to create a useful hierarchy of types over concrete types,
+parametric abstract types serve the same purpose with respect to parametric composite types.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082531Z" creationid="hsugawa8651" creationdate="20181121T082531Z">
+        <seg>Juliaでは、Pointy{&lt;:Real}という表記で共変型のようなもの、Pointy{&gt;:Int}で反変型のようなものを表現できます。 しかし、専門的には、これらは型の集合を表しています。(全合併型 参照)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Multi-Threading</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T043427Z" creationid="hsugawa8651" creationdate="20181112T043427Z">
@@ -25801,6 +25844,14 @@ MIME types) of user-defined types.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Parametric Abstract Types</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082417Z" creationid="hsugawa8651" creationdate="20181121T082417Z">
+        <seg>パラメトリック抽象型 Parametric Abstract Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Parametric Composite Types</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081611Z" creationid="hsugawa8651" creationdate="20181121T081611Z">
@@ -25821,6 +25872,23 @@ MIME types) of user-defined types.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081412Z" creationid="hsugawa8651" creationdate="20181121T081412Z">
         <seg>パラメトリック型 Parametric Types</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Parametric abstract type declarations declare a collection of abstract types, in much the same
+way:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082420Z" creationid="hsugawa8651" creationdate="20181121T082420Z">
+        <seg>パラメトリック抽象型に対しても、ほぼ同じ方法で、抽象型の一群に対して型宣言を行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Parametric abstract types are invariant, much as parametric composite types are:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082449Z" creationid="hsugawa8651" creationdate="20181121T082449Z">
+        <seg>パラメトリックな抽象型は、パラメトリックな複合型と同じように不変です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30591,6 +30659,16 @@ determining a single answer for a given set of arguments.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The notation &lt;x1/&gt;Pointy{&lt;:Real}&lt;x2/&gt; can be used to express the Julia analogue of a
+&lt;x3/&gt;covariant&lt;x4/&gt; type, while &lt;x5/&gt;Pointy{&gt;:Int}&lt;x6/&gt; the analogue of a &lt;x7/&gt;contravariant&lt;x8/&gt; type,
+but technically these represent &lt;x9/&gt;sets&lt;x10/&gt; of types (see &lt;x11/&gt;UnionAll Types&lt;x12/&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082504Z" creationid="hsugawa8651" creationdate="20181121T082504Z">
+        <seg>Juliaでは、Pointy{&lt;:Real}という表記で共変型のようなもの、Pointy{&gt;:Int}で反変型のようなものを表現できます。 しかし、専門的には、これらは型の集合を表しています。(全合併型 参照)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The notation &lt;x1/&gt;T(x)&lt;x2/&gt; or &lt;x3/&gt;convert(T,x)&lt;x4/&gt; converts &lt;x5/&gt;x&lt;x6/&gt; to a value of type &lt;x7/&gt;T&lt;x8/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T070142Z" creationid="hsugawa8651" creationdate="20181114T031031Z">
@@ -33726,6 +33804,14 @@ computers.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This relationship is also invariant:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082622Z" creationid="hsugawa8651" creationdate="20181121T082622Z">
+        <seg>この関係も不変です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This setting will cause &lt;x1/&gt;eachindex&lt;x2/&gt; iteration over a &lt;x3/&gt;MyArray&lt;x4/&gt; to use integers.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181114T161200Z" creationid="hsugawa8651" creationdate="20181114T161200Z">
@@ -35243,6 +35329,15 @@ may lead to incorrect results or segmentation faults.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>We
+could, for example, have declared &lt;x1/&gt;Point{T}&lt;x2/&gt; to be a subtype of &lt;x3/&gt;Pointy{T}&lt;x4/&gt; as follows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082649Z" creationid="hsugawa8651" creationdate="20181121T082534Z">
+        <seg> たとえば、次のようにPoint{T}をPointy{T}のサブタイプとして宣言することができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>We also know the number of elements in our sequence, so
 we can extend &lt;x7/&gt;`length`&lt;x8/&gt;, too:</seg>
       </tuv>
@@ -35784,6 +35879,14 @@ specific method named &lt;x7/&gt;myplus&lt;x8/&gt; that matches the given argume
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When this isn't the case, the constructor will fail with a &lt;x7/&gt;`MethodError`&lt;x8/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082353Z" creationid="hsugawa8651" creationdate="20181121T082353Z">
+        <seg>これ以外の場合、コンストラクタは失敗して、 MethodError が発生します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>When to use T, Ptr{T} and Ref{T}</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T151437Z" creationid="hsugawa8651" creationdate="20181117T151437Z">
@@ -36067,6 +36170,15 @@ the arguments of the user function are initialized.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T134406Z" creationid="hsugawa8651" creationdate="20181120T134406Z">
         <seg>&lt;x1/&gt;do&lt;x2/&gt;ブロック構文は、文書や実装をチェックして、ユーザー定義関数の引数がどのように初期化されているかを理解する際に役立ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>With this declaration, &lt;x1/&gt;Pointy{T}&lt;x2/&gt; is a distinct abstract type for each type or integer value
+of &lt;x3/&gt;T&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082437Z" creationid="hsugawa8651" creationdate="20181121T082437Z">
+        <seg>この宣言ではPointy{T}は、型や整数値を表すTそれぞれに対して別々の抽象型になります。 </seg>
       </tuv>
     </tu>
     <tu>
