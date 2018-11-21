@@ -9530,6 +9530,16 @@ by simply defining new methods.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Adding annotations serves three primary purposes: to take advantage
+of Julia's powerful multiple-dispatch mechanism,  to improve human readability, and to catch
+programmer errors.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124251Z" creationid="hsugawa8651" creationdate="20181121T124251Z">
+        <seg>型注釈を加えると、通常は、システムのパフォーマンスと堅牢性が向上します。 そして、おそらくなにか直観に反する気がするでしょうが、非常に単純化されることもよく起こります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Adding parentheses lets
 us add a third argument to &lt;x3/&gt;`map`&lt;x4/&gt;:</seg>
       </tuv>
@@ -22885,8 +22895,8 @@ real number line, so any &lt;x5/&gt;`Rational`&lt;x6/&gt; is an instance of the 
 able to inherit structure, and inheriting both causes significant difficulties in traditional
 object-oriented languages.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143418Z" creationid="hsugawa8651" creationdate="20181120T143418Z">
-        <seg>振る舞いを継承できるほうが、構造を継承できるよりも重要であり、共に継承しようとすると、従来のオブジェクト指向言語では、深刻な困難が生じることがわかっています。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124348Z" creationid="hsugawa8651" creationdate="20181120T143418Z">
+        <seg> 振る舞いを継承できるほうが、構造を継承できるよりも重要であり、共に継承しようとすると、従来のオブジェクト指向言語では、深刻な困難が生じることがわかっています。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -26224,8 +26234,8 @@ that determine type parameters automatically can be added, for example construct
         <seg>Other high-level aspects of Julia's type system that should be mentioned
 up front are:</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143431Z" creationid="hsugawa8651" creationdate="20181120T143431Z">
-        <seg> 他に、先に言及すべきJuliaの型システムの高水準な特徴をあげると、</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124353Z" creationid="hsugawa8651" creationdate="20181120T143431Z">
+        <seg>他に、先に言及すべきJuliaの型システムの高水準な特徴をあげると、</seg>
       </tuv>
     </tu>
     <tu>
@@ -37307,8 +37317,8 @@ there's still quite a number of behaviors missing.</seg>
         <seg>While this might at first seem unduly restrictive, it has many beneficial consequences with surprisingly
 few drawbacks.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T143403Z" creationid="hsugawa8651" creationdate="20181120T143403Z">
-        <seg>はじめは、この制約が不当に厳しく思えるかも知れませんが、多くの利点があり、欠点はほとんどないのです。 </seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T124341Z" creationid="hsugawa8651" creationdate="20181120T143403Z">
+        <seg>はじめは、この制約が不当に厳しく思えるかも知れませんが、多くの利点があり、欠点はほとんどないのです。</seg>
       </tuv>
     </tu>
     <tu>
