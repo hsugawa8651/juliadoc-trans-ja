@@ -9996,6 +9996,23 @@ is like an outer constructor method, except for two differences:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An instance of &lt;x1/&gt;Point{Float64}&lt;x2/&gt; can be represented compactly and efficiently as an immediate pair
+of 64-bit values;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081912Z" creationid="hsugawa8651" creationdate="20181121T081912Z">
+        <seg>Point{Float64}のインスタンスは、64ビット値の隣接するペアとして密集して効率的に表現できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An instance of &lt;x1/&gt;Point{Real}&lt;x2/&gt; must be able to hold any pair of instances of &lt;x3/&gt;`Real`&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081923Z" creationid="hsugawa8651" creationdate="20181121T081923Z">
+        <seg>Point{Real} のインスタンスは、どんなRealのペアでも保持できる必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An object that represents an array of scalar indices and can be converted to such by &lt;x1/&gt;`to_indices`&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181109T155534Z" creationid="hsugawa8651" creationdate="20181109T155534Z">
@@ -14459,6 +14476,14 @@ no character value is returned, and instead an exception is thrown.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T121440Z" creationid="hsugawa8651" creationdate="20181118T121440Z">
         <seg>結論</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Concrete &lt;x1/&gt;Point&lt;x2/&gt; types with different values of &lt;x3/&gt;T&lt;x4/&gt; are never subtypes of each other:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081813Z" creationid="hsugawa8651" creationdate="20181121T081813Z">
+        <seg>Tの値が異なる具象型Pointは、決して互いにサブタイプではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20582,6 +20607,15 @@ immediately.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In other words, in the parlance of type theory, Julia's type parameters are &lt;x1/&gt;invariant&lt;x2/&gt;, rather
+than being &lt;x3/&gt;covariant (or even contravariant)&lt;x4/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081849Z" creationid="hsugawa8651" creationdate="20181121T081849Z">
+        <seg>換言すると、型理論の術語では、Juliaの型パラメータは 共変（または反変）ではなく、不変です。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In other words, the &lt;x5/&gt;$&lt;x6/&gt; expression "belongs to" the inner quote expression, and
 so its argument is only evaluated when the inner quote expression is:</seg>
       </tuv>
@@ -25473,6 +25507,14 @@ to 64-bit floating-point, nor are strings parsed as numbers.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Other types, of course, are not subtypes of it:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081738Z" creationid="hsugawa8651" creationdate="20181121T081738Z">
+        <seg>もちろん、他の型はこの型のサブタイプではありません：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Otherwise,
 &lt;x5/&gt;X&lt;x6/&gt; is an array with the same number of dimensions as the sum of the dimensionalities of all the
 indices.</seg>
@@ -25820,6 +25862,15 @@ parametric composite type and its constructor methods.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Point&lt;x1/&gt; itself is also a valid type object, containing all instances &lt;x2/&gt;Point{Float64}&lt;x3/&gt;, &lt;x4/&gt;Point{AbstractString}&lt;x5/&gt;,
+etc. as subtypes:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081728Z" creationid="hsugawa8651" creationdate="20181121T081728Z">
+        <seg>Pointはこれ自体が妥当な型オブジェクトで、Point{Float64}、Point{AbstractString}`などをすべてサブタイプとして含んでいます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Pointers contained in C
 structs should be represented as fields of type &lt;x11/&gt;Ptr{T}&lt;x12/&gt; within the corresponding Julia struct
 types designed to mimic the internal structure of corresponding C structs.</seg>
@@ -26114,6 +26165,14 @@ using the &lt;x1/&gt;`//`&lt;x2/&gt; operator:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181118T123601Z" creationid="hsugawa8651" creationdate="20181118T123601Z">
         <seg>合理化は、簡単に浮動小数点数に変換できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Real&lt;x1/&gt; abstract type.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082036Z" creationid="hsugawa8651" creationdate="20181121T082036Z">
+        <seg></seg>
       </tuv>
     </tu>
     <tu>
@@ -26897,6 +26956,15 @@ vector of &lt;x9/&gt;CartesianIndex{N}&lt;x10/&gt;s where its values are &lt;x11
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since &lt;x1/&gt;Point{Float64}&lt;x2/&gt; is not a subtype of &lt;x3/&gt;Point{Real}&lt;x4/&gt;, the following method can't be applied
+to arguments of type &lt;x5/&gt;Point{Float64}&lt;x6/&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082031Z" creationid="hsugawa8651" creationdate="20181121T082031Z">
+        <seg>Point{Float64}は、Point{Real}のサブタイプではないので、以下のメソッドを型Point{Float64}の引数に適用することはできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since &lt;x1/&gt;let&lt;x2/&gt; introduces a new scope block, the inner local &lt;x3/&gt;x&lt;x4/&gt; is a different variable than the
 outer local &lt;x5/&gt;x&lt;x6/&gt;.</seg>
       </tuv>
@@ -26994,6 +27062,16 @@ indexing and indexed assignment as efficient as possible.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T022702Z" creationid="hsugawa8651" creationdate="20181113T022702Z">
         <seg>インデックス作成は このような重要な部分は、多くの場合、ホット・ループで発生するため、両方とも重要です。 インデックス化とインデックス化された割り当ては可能な限り効率的です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since objects that are instances of &lt;x5/&gt;Real&lt;x6/&gt; can be of arbitrary size and structure, in
+practice an instance of &lt;x7/&gt;Point{Real}&lt;x8/&gt; must be represented as a pair of pointers to
+individually allocated &lt;x9/&gt;Real&lt;x10/&gt; objects.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081933Z" creationid="hsugawa8651" creationdate="20181121T081933Z">
+        <seg>Realのインスタンスとなるオブジェクトは任意のサイズと構造になる可能性があるので、現実的には、Point{Real}のインスタンスは、個別に割り当てられたRealオブジェクトへのポインタのペアとして表現する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29449,6 +29527,18 @@ known as a read-eval-print loop or "repl") by double-clicking the Julia executab
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152813Z" creationid="hsugawa8651" creationdate="20181117T152813Z">
         <seg>&lt;x15/&gt;インポートX&lt;x16/&gt;の効果は、次の2つの質問に依存しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The efficiency gained by being able to store &lt;x1/&gt;Point{Float64}&lt;x2/&gt; objects with immediate values is
+magnified enormously in the case of arrays: an &lt;x3/&gt;Array{Float64}&lt;x4/&gt; can be stored as a contiguous
+memory block of 64-bit floating-point values, whereas an &lt;x5/&gt;Array{Real}&lt;x6/&gt; must be an array of pointers
+to individually allocated &lt;x7/&gt;`Real`&lt;x8/&gt; objects -- which may well be
+&lt;x9/&gt;boxed&lt;x10/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082025Z" creationid="hsugawa8651" creationdate="20181121T082025Z">
+        <seg>Point{Float64}オブジェクトに、値を直接を格納できると、得られる効率は、配列の場合、非常に大きくなります。 Array{Float64}は、64ビットの浮動小数点数の連続したメモリブロックとして格納されますが、Array{Real}はReal オブジェクトにそれぞれ割り当てられたポインタの配列でなければなりません。 64ビットの浮動小数点数がボックス化されていても構いませんが、抽象型Realの実装として宣言された任意の大きさの複素数オブジェクトでもかまいません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33062,6 +33152,16 @@ first argument to &lt;x1/&gt;`map()`&lt;x2/&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T130650Z" creationid="hsugawa8651" creationdate="20181120T130650Z">
         <seg>配列に対して実行したい変換が、名前つきの関数として存在していて、&lt;x1/&gt;`map()`&lt;x2/&gt;の1番目の引数に使える場合は、問題ありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is for practical reasons: while any instance
+of &lt;x5/&gt;Point{Float64}&lt;x6/&gt; may conceptually be like an instance of &lt;x7/&gt;Point{Real}&lt;x8/&gt; as well, the two types
+have different representations in memory:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081902Z" creationid="hsugawa8651" creationdate="20181121T081902Z">
+        <seg>これは現実的な理由によるもので、概念的には、Point{Float64}のインスタンスはPoint{Real} のインスタンスと似ていますが、２つ型のメモリ内の表現は異なります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -55999,6 +56099,15 @@ Rounding is generally only correct for basic arithmetic functions (&lt;x1/&gt;`+
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T034954Z" creationid="hsugawa8651" creationdate="20181120T034917Z">
         <seg>warning
 端数処理は通常基本的な算術関数（&lt;x1/&gt;`+()`&lt;x2/&gt;、&lt;x3/&gt;`-()`&lt;x4/&gt;,、&lt;x5/&gt;`*()`&lt;x6/&gt;、&lt;x7/&gt;`/()`&lt;x8/&gt;、&lt;x9/&gt;`sqrt()`&lt;x10/&gt;）および 型変換処理においてのみ正常に機能します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>warning
+This last point is &lt;x1/&gt;very&lt;x2/&gt; important: even though &lt;x3/&gt;Float64 &lt;: Real&lt;x4/&gt; we &lt;x5/&gt;DO NOT&lt;x6/&gt; have &lt;x7/&gt;Point{Float64} &lt;: Point{Real}&lt;x8/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T081833Z" creationid="hsugawa8651" creationdate="20181121T081833Z">
+        <seg>!!warning この最後の点は非常に重要です。Float64 &lt;: Realは成り立つにもかかわらず、Point{Float64} &lt;: Point{Real}は成り立ちません。</seg>
       </tuv>
     </tu>
     <tu>
