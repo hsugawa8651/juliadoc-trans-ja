@@ -26299,6 +26299,14 @@ to 64-bit floating-point, nor are strings parsed as numbers.</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Other options are handled later by &lt;x5/&gt;`process_options()` in `base/client.jl`&lt;x6/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20190519T151305Z" creationid="hsugawa8651" creationdate="20190519T151305Z">
+        <seg>その他のオプションは、後で&lt;x5/&gt;`process_options()`の`base/client.jl`&lt;x6/&gt;で処理されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Other supported conventions are: &lt;x3/&gt;stdcall&lt;x4/&gt;, &lt;x5/&gt;cdecl&lt;x6/&gt;, &lt;x7/&gt;fastcall&lt;x8/&gt;, and &lt;x9/&gt;thiscall&lt;x10/&gt; (no-op on 64-bit Windows).</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181117T152431Z" creationid="hsugawa8651" creationdate="20181117T152431Z">
