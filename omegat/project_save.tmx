@@ -18359,6 +18359,14 @@ licensed&lt;/a0&gt;)</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Frequently Asked Questions</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20190519T151526Z" creationid="hsugawa8651" creationdate="20190519T151526Z">
+        <seg>よくある質問</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>From these definitions, one obtains the following behavior:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181113T131454Z" creationid="hsugawa8651" creationdate="20181113T131454Z">
@@ -19160,6 +19168,14 @@ with &lt;x3/&gt;p&lt;x4/&gt; preceding the base-2 exponent:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024829Z" creationid="hsugawa8651" creationdate="20181110T024829Z">
         <seg>メインスクリプトとして現在のファイルが実行されているかどうかを確認するにはどうすればよいですか。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How do I delete an object in memory?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20190519T151536Z" creationid="hsugawa8651" creationdate="20190519T151536Z">
+        <seg>メモリ内のオブジェクトを削除する方法。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27609,6 +27625,14 @@ iterable type.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181112T112352Z" creationid="hsugawa8651" creationdate="20181112T112352Z">
         <seg>逐次的反復は、&lt;x1/&gt;'reiterate'&lt;x2/&gt;関数によって実装される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sessions and the REPL</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20190519T151522Z" creationid="hsugawa8651" creationdate="20190519T151522Z">
+        <seg>セッションとREPL</seg>
       </tuv>
     </tu>
     <tu>
