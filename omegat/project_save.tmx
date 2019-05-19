@@ -17596,8 +17596,8 @@ rather than stored.</seg>
         <seg>For example, if &lt;x1/&gt;A&lt;x2/&gt; is a gigabyte-sized array that you no longer need, you can free the memory
 with &lt;x3/&gt;A = nothing&lt;x4/&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024646Z" creationid="hsugawa8651" creationdate="20181110T024646Z">
-        <seg>たとえば、&lt;x1/&gt;A&lt;x2/&gt;が必要なくなったギガバイトサイズのアレイである場合は、メモリを解放することができます。 &lt;x3/&gt;A=何もありません&lt;x4/&gt;。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20190519T152112Z" creationid="hsugawa8651" creationdate="20181110T024646Z">
+        <seg>たとえば、ギガバイトサイズの配列&lt;x1/&gt;A&lt;x2/&gt;が必要なくなった場合は、&lt;x3/&gt;A = nothing&lt;x4/&gt;でメモリをフリーにできます 。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23266,8 +23266,8 @@ and does not reference other objects.</seg>
         <seg>Julia does not have an analog of MATLAB's &lt;x1/&gt;clear&lt;x2/&gt; function; once a name is defined in a Julia
 session (technically, in module &lt;x3/&gt;Main&lt;x4/&gt;), it is always present.</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024636Z" creationid="hsugawa8651" creationdate="20181110T024636Z">
-        <seg>JuliaはMATLABの&lt;x1/&gt;clear&lt;x2/&gt;関数のアナログを持っていない;名前がJuliaで定義された場合 セッション(技術的には、モジュール&lt;x3/&gt;メイン&lt;x4/&gt;)は常に存在します。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20190519T151834Z" creationid="hsugawa8651" creationdate="20181110T024636Z">
+        <seg>JuliaはMATLABの&lt;x1/&gt;clear&lt;x2/&gt;関数の類似関数を持っていません。おらず、Juliaセッション(技術的には&lt;x3/&gt;Main&lt;x4/&gt;モジュール)で一度定義された名前は、常に存在します。</seg>
       </tuv>
     </tu>
     <tu>
