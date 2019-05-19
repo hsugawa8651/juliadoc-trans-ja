@@ -31402,8 +31402,8 @@ garbage collector to keep managing the memory for &lt;x4/&gt;result_array&lt;x5/
         <seg>The memory will be released the next time the garbage collector runs; you can force
 this to happen with &lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref Base.GC.gc).</seg>
       </tuv>
-      <tuv lang="JA" changeid="hsugawa8651" changedate="20181110T024659Z" creationid="hsugawa8651" creationdate="20181110T024659Z">
-        <seg>次にガーベッジ・コレクターが実行されるとメモリーが解放され、次のように強制的に実行されます。 これは&lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref Base.GC.gc)で起こる。</seg>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20190519T152343Z" creationid="hsugawa8651" creationdate="20181110T024659Z">
+        <seg>フリーにされたメモリが開放されるのは、次にガーベッジ・コレクターが実行されるときです。ガーベッジ・コレクターの実行を矯正するには&lt;x5/&gt;&lt;x6/&gt;&lt;x7/&gt;(@ref Base.GC.gc)を用います。</seg>
       </tuv>
     </tu>
     <tu>
