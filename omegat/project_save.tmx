@@ -16651,6 +16651,14 @@ Any Julia type that is not a subtype of &lt;x5/&gt;`Signed`&lt;x6/&gt; is assume
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Execution starts at &lt;x1/&gt;`main()` in `ui/repl.c`&lt;x2/&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20190519T151040Z" creationid="hsugawa8651" creationdate="20190519T151040Z">
+        <seg>実行は`ui/repl.c`&lt;x2/&gt;の&lt;x1/&gt;`main()`で開始されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Existing code then seamlessly applies to the new data
 types.</seg>
       </tuv>
@@ -19168,6 +19176,14 @@ with &lt;x3/&gt;p&lt;x4/&gt; preceding the base-2 exponent:</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181121T082147Z" creationid="hsugawa8651" creationdate="20181121T082147Z">
         <seg>Pointオブジェクトはどのように構成するのでしょうか？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How does the Julia runtime execute &lt;x1/&gt;julia -e 'println("Hello World!")'&lt;x2/&gt; ?</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20190519T151029Z" creationid="hsugawa8651" creationdate="20190519T151029Z">
+        <seg>Juliaランタイムは、どのように&lt;x1/&gt;julia-e'println("Hello World!")'&lt;x2/&gt;?を実行しますか?</seg>
       </tuv>
     </tu>
     <tu>
@@ -21993,6 +22009,14 @@ to observe or mutate this state.</seg>
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181116T032230Z" creationid="hsugawa8651" creationdate="20181116T032230Z">
         <seg>生成された関数の推論は、コードが試行されている間も、&lt;x x/&gt;&lt;x x2/&gt;時間で実行されることがあります。 この状態を観察または突然変異させます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Initialization of the Julia runtime</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20190519T150958Z" creationid="hsugawa8651" creationdate="20190519T150958Z">
+        <seg>&lt;a0&gt;Juliaランタイムの初期化&lt;/a0&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -24903,6 +24927,15 @@ to values for its fields:</seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Next &lt;x1/&gt;`jl_parse_opts()`&lt;x2/&gt; is called to process
+command line options.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20190519T151151Z" creationid="hsugawa8651" creationdate="20190519T151151Z">
+        <seg>次に&lt;x1/&gt;`jl_parse_opts()`&lt;x2/&gt;が呼び出されて、コマンドラインオプションを処理します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No automatic casting or conversion of function arguments is ever performed: all
 conversion in Julia is non-magical and completely explicit.</seg>
       </tuv>
@@ -25108,6 +25141,16 @@ they can modify their parent scope's &lt;x3/&gt;local&lt;x4/&gt; variables:</seg
       </tuv>
       <tuv lang="JA" changeid="hsugawa8651" changedate="20181120T141808Z" creationid="hsugawa8651" creationdate="20181120T141808Z">
         <seg>ネストした関数は、親スコープのローカル変数を変更できるため、グローバルスコープで定義された関数とは異なる動作をする可能性があることに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that &lt;x3/&gt;jl_parse_opts()&lt;x4/&gt; only deals with options that affect code generation
+or early initialization.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20190519T151224Z" creationid="hsugawa8651" creationdate="20190519T151224Z">
+        <seg>&lt;x3/&gt;jl_parse_opts()&lt;x4/&gt;は、コード生成または早期の初期化に影響するオプションのみを扱っていることに注意してください。
+</seg>
       </tuv>
     </tu>
     <tu>
@@ -55470,6 +55513,14 @@ function timeit(f)
     println("elapsed time: ", t1-t0, " seconds")
     return val
 end</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>main()&lt;x1/&gt; calls &lt;x2/&gt;`libsupport_init()`&lt;x3/&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="hsugawa8651" changedate="20190519T151102Z" creationid="hsugawa8651" creationdate="20190519T151102Z">
+        <seg>main()&lt;x1/&gt;は、&lt;x2/&gt;``libsupport_init()`&lt;x3/&gt;を呼び出します。</seg>
       </tuv>
     </tu>
     <tu>
